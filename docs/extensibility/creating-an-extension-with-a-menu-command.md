@@ -1,5 +1,5 @@
 ---
-title: Bir menü komutuyla uzantı oluşturma | Microsoft Docs
+title: Menü komutuyla uzantı oluşturma | Microsoft Docs
 ms.date: 3/16/2019
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,56 +13,56 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fb18792e2d0d357bb131af6c12e97425cd72fd05
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 7cb82a2a5e02b2e109bb5b27ec54d1a2cd965901
+ms.sourcegitcommit: 90c3187d804ad7544367829d07ed4b47d3f8a72d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66345365"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "68821546"
 ---
-# <a name="create-an-extension-with-a-menu-command"></a>Bir menü komutuyla uzantı oluşturma
+# <a name="create-an-extension-with-a-menu-command"></a>Menü komutuyla uzantı oluşturma
 
-Bu izlenecek yol, Not Defteri başlatan bir menü komutuyla uzantı oluşturma işlemini gösterir.
+Bu izlenecek yol, Not defteri 'Ni başlatan menü komutuyla bir uzantının nasıl oluşturulacağını gösterir.
 
 ## <a name="prerequisites"></a>Önkoşullar
 
-Visual Studio 2015'ten başlayarak, size Visual Studio SDK İndirme Merkezi'nden yüklemeyin. Visual Studio kurulumunda isteğe bağlı bir özellik olarak eklenmiştir. VS SDK'yi daha sonra yükleyebilirsiniz. Daha fazla bilgi için [Visual Studio SDK'yı yükleme](../extensibility/installing-the-visual-studio-sdk.md).
+Visual Studio 2015'ten başlayarak, size Visual Studio SDK İndirme Merkezi'nden yüklemeyin. Visual Studio kurulumunda isteğe bağlı bir özellik olarak eklenmiştir. VS SDK'yi daha sonra yükleyebilirsiniz. Daha fazla bilgi için bkz. [Visual Studio SDK 'Yı yüklemeyi](../extensibility/installing-the-visual-studio-sdk.md).
 
-## <a name="create-a-menu-command"></a>Bir menü komutu oluşturun
+## <a name="create-a-menu-command"></a>Menü komutu oluştur
 
-1. Adlı bir VSIX projesi oluşturun **FirstMenuCommand**. VSIX proje şablonunda bulabilirsiniz **yeni proje** iletişim "VSIX" için arama yapın.
+1. **FirstMenuCommand**ADLı bir VSIX projesi oluşturun. "VSIX" araması yaparak VSıX proje şablonunu **Yeni proje** iletişim kutusunda bulabilirsiniz.
 
-2. Projeyi açtığında, adlı bir özel komut öğesi şablonu ekleme **FirstCommand**. İçinde **Çözüm Gezgini**, proje düğümüne sağ tıklayıp **Ekle** > **yeni öğe**. İçinde **Yeni Öğe Ekle** iletişim kutusunda, Git **Visual C#**  > **genişletilebilirlik** seçip **özel komut**. İçinde **adı** alan penceresinin en altında komut dosyası adı için değiştirme *FirstCommand.cs*.
+2. Proje açıldığında, **FirstCommand**adlı özel bir komut öğesi şablonu ekleyin. **Çözüm Gezgini**, proje düğümüne sağ tıklayın ve**Yeni öğe** **Ekle** > ' yi seçin. **Yeni öğe Ekle** iletişim kutusunda,  >  **görsel C#**  **genişletilebilirlik** ' e gidin ve **özel komut**' yi seçin. Pencerenin alt kısmındaki **ad** alanında, komut dosyası adını *FirstCommand.cs*olarak değiştirin.
 
 3. Projeyi oluşturmak ve hata ayıklamaya başlayın.
 
-    Visual Studio'nun deneysel örneğinde görünür. Deneysel örnek hakkında daha fazla bilgi için bkz. [deneysel örneğinde](../extensibility/the-experimental-instance.md).
+    Visual Studio 'nun deneysel örneği görüntülenir. Deneysel örnek hakkında daha fazla bilgi için bkz. [deneysel örnek](../extensibility/the-experimental-instance.md).
 
 ::: moniker range="vs-2017"
 
-4. Deneysel örneğinde açın **Araçları** > **Uzantılar ve güncelleştirmeler** penceresi. Görmelisiniz **FirstMenuCommand** uzantıyı şurada. (Açarsanız **Uzantılar ve güncelleştirmeler** Visual Studio, çalışma örneğinde göremezsiniz **FirstMenuCommand**).
+4. Deneysel örnekte, **Araçlar** > **Uzantılar ve güncelleştirmeler** penceresini açın. **FirstMenuCommand** uzantısını burada görmeniz gerekir. (Visual Studio 'nun çalışma Örneğinizde **Uzantılar ve güncelleştirmeler** açarsanız, **FirstMenuCommand**' i görmezsiniz).
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-4. Deneysel örneğinde açın **uzantıları** > **uzantıları yönetme** penceresi. Görmelisiniz **FirstMenuCommand** uzantıyı şurada. (Açarsanız **uzantıları yönetme** Visual Studio, çalışma örneğinde göremezsiniz **FirstMenuCommand**).
+4. Deneysel örnekte, uzantılar**Yönet** penceresini açın > . **FirstMenuCommand** uzantısını burada görmeniz gerekir. (Visual Studio 'nun çalışma Örneğinizde **Uzantıları Yönet** ' i açarsanız, **FirstMenuCommand**' i görmezsiniz).
 
 ::: moniker-end
 
-Artık Git **Araçları** Deneysel örneğinin menü. Görmelisiniz **çağırma FirstCommand** komutu. Bu noktada, komut bildiren bir ileti kutusu getirir **FirstCommandPackage içinde FirstMenuCommand.FirstCommand.MenuItemCallback()** . Sonraki bölümde bu komut aslında Not defteri başlangıç nasıl göreceğiz.
+Şimdi deneysel örnekteki **Araçlar** menüsüne gidin. **Invoke FirstCommand** komutunu görmeniz gerekir. Bu noktada, komut **FirstMenuCommand. FirstCommand. Menuıitemcallback () Içinde FirstCommandPackage**yazan bir ileti kutusu görüntüler. Bir sonraki bölümde bu komuttan Not defteri 'ni gerçekten nasıl başlatacağız.
 
-## <a name="change-the-menu-command-handler"></a>Menü komut işleyici değiştirme
+## <a name="change-the-menu-command-handler"></a>Menü komut işleyicisini değiştirme
 
-Şimdi komut işleyicinin Not Defteri'ni başlatın güncelleştirelim.
+Şimdi komut işleyicisini Not defteri 'Ni başlatacak şekilde güncelleştirelim.
 
-1. Hata ayıklamayı Durdur ve çalışma Örneğiniz için Visual Studio geri dönün. Açık *FirstCommand.cs* dosya ve aşağıdaki deyimi kullanarak:
+1. Hata ayıklamayı durdurun ve Visual Studio çalışma örneğinizi geri dönün. *FirstCommand.cs* dosyasını açın ve aşağıdaki using ifadesini ekleyin:
 
     ```csharp
     using System.Diagnostics;
     ```
 
-2. Özel FirstCommand Oluşturucusu bulun. Burada komutu için komut hizmeti ölçekledikçe ve komut işleyici belirtilen budur. Komut işleyici adı StartNotepad için aşağıdaki gibi değiştirin:
+2. Özel FirstCommand oluşturucusunu bulun. Bu, komutun komut hizmetine takılmış olduğu ve komut işleyicisi belirtildiği yerdir. Komut işleyicisinin adını StartNotepad ile aşağıdaki gibi değiştirin:
 
     ```csharp
     private FirstCommand(AsyncPackage package, OleMenuCommandService commandService)
@@ -77,7 +77,7 @@ Artık Git **Araçları** Deneysel örneğinin menü. Görmelisiniz **çağırma
     }
     ```
 
-3. Kaldırma `MenuItemCallback` yöntemi ve ekleme bir `StartNotepad` not yalnızca başlayacak yöntemi:
+3. Yöntemi kaldırın ve yalnızca Notepad 'i `StartNotepad` başlatacak bir yöntem ekleyin: `MenuItemCallback`
 
     ```csharp
     private void StartNotepad(object sender, EventArgs e)
@@ -88,17 +88,17 @@ Artık Git **Araçları** Deneysel örneğinin menü. Görmelisiniz **çağırma
     }
     ```
 
-4. Şimdi deneyin. Ne zaman projesinde hata ayıklamaya başlama ve tıklayın **Araçları** > **çağırma FirstCommand**, Not Defteri gündeme örneğini görmeniz gerekir.
+4. Şimdi deneyin. Projede hata ayıklamayı başlattığınızda ve **Araçlar** > **FirstCommand komutunu**tıklattığınızda, Not defteri 'nin bir örneğini görmeniz gerekir.
 
-    Bir örneğini kullanabilir <xref:System.Diagnostics.Process> herhangi bir yürütülebilir dosya, yalnızca not defteri çalıştırmak için sınıf. İle deneyin `calc.exe`, örneğin.
+    Yalnızca Not defteri değil, çalıştırılabilir dosyayı <xref:System.Diagnostics.Process> çalıştırmak için sınıfının bir örneğini kullanabilirsiniz. Örneğin, ile `calc.exe`deneyin.
 
-## <a name="clean-up-the-experimental-environment"></a>Deneysel ortamını temizleyin
+## <a name="clean-up-the-experimental-environment"></a>Deneysel ortamı temizle
 
-Birden fazla uzantı geliştirme veya yalnızca uzantı kodunuzu farklı sürümleriyle sonuçlarını araştırma, Deneysel ortamınızı, gerektiği gibi çalışmayı durdurabilir. Bu durumda, sıfırlama betiği çalıştırmanız gerekir. Çağrıldığı **Visual Studio Deneysel örneğini sıfırlama**, ve Visual Studio SDK'ın bir parçası olarak sunulur. Baştan başlamak üzere bu betik Deneysel ortamından uzantılarınızı için tüm başvuruları kaldırır.
+Birden çok uzantı geliştirmekte veya yalnızca uzantı kodunuzun farklı sürümleriyle sonuçları araştırıyorsanız, deneysel ortamınız bu şekilde çalışmayı durdurabilir. Bu durumda, sıfırlama betiğini çalıştırmanız gerekir. **Visual Studio Deneysel örneğini sıfırlayın**olarak adlandırılır ve Visual Studio SDK 'sının bir parçası olarak dağıtılır. Bu betik, deneysel ortamdan uzantılarınızın tüm başvurularını kaldırır, böylece sıfırdan başlayabilirsiniz.
 
-Bu betik iki yoldan biriyle alabilirsiniz:
+Bu betiğe iki şekilde ulaşabilirsiniz:
 
-1. Masaüstü'nden Bul **Visual Studio Deneysel örneğini sıfırlama**.
+1. Masaüstünden, **Visual Studio Deneysel örneğini Sıfırla**' yı bulun.
 
 2. Komut satırından şu komutu çalıştırın:
 
@@ -107,36 +107,36 @@ Bu betik iki yoldan biriyle alabilirsiniz:
 
     ```
 
-## <a name="deploy-your-extension"></a>Uzantınızı dağıtmak
+## <a name="deploy-your-extension"></a>Uzantınızı dağıtın
 
-İstediğiniz gibi çalışan aracı uzantınızı olduğuna göre arkadaşlarınız ve iş arkadaşları ile paylaşma hakkında düşünmek için zaman var. Visual Studio 2015 yüklü sahip oldukları sürece bu kolay olmasıdır. Tüm yapmanız gereken göndermesini *.vsix* oluşturulan dosya. (Yayın modunda oluşturduğunuzdan emin olun.)
+Araç uzantınızı istediğiniz şekilde çalıştırdığınıza göre, arkadaşlarınızı ve iş arkadaşlarınızla paylaşmayı düşünmek zaman atalım. Bu, Visual Studio 2015 ' nin yüklü olduğu sürece oldukça kolaydır. Yapmanız gerekirse, sizin oluşturduğunuz *. vsix* dosyasını göndermektir. (Yayın modunda derlemeyi unutmayın.)
 
-Bulabilirsiniz *.vsix* dosyasını bu uzantı *FirstMenuCommand* bin dizini. Özellikle, sürüm yapılandırmasını geliştirdim varsayıldığında, onu olacaktır:
+Bu uzantı için *. vsix* dosyasını *FirstMenuCommand* bin dizininde bulabilirsiniz. Özellikle, yayın yapılandırmasını oluşturduğunuz varsayılarak, şu şekilde olacaktır:
 
-*\<Kod dizini > \FirstMenuCommand\FirstMenuCommand\bin\Release\ FirstMenuCommand.vsix*
+*\<kod dizini > \FirstMenuCommand\FirstMenuCommand\bin\Release\ FirstMenuCommand. vsix*
 
-Uzantıyı yüklemek için Visual Studio tüm açık örneklerini kapatın ve ardından çift arkadaşınız gereken *.vsix* getirir dosyasını **VSIX yükleyicisi**. Dosyalar kopyalanır *%LocalAppData%\Microsoft\VisualStudio\<sürüm > \Extensions* dizin.
+Uzantıyı yüklemek için, arkadaşınızın Visual Studio 'nun tüm açık örneklerini kapatması gerekir ve ardından **VSIX yükleyicisini**getiren *. vsix* dosyasına çift tıklayın. Dosyalar, *%LocalAppData%\microsoft\visualstudio\<Version > \Extensions* dizinine kopyalanır.
 
-Arkadaş Visual Studio'yu yeniden getirirse, FirstMenuCommand uzantısı'nda bulabilirsiniz **Araçları** > **Uzantılar ve güncelleştirmeler**. Gidebilir **Uzantılar ve güncelleştirmeler** kaldırın veya uzantı çok devre dışı.
+Arkadaşınız Visual Studio 'yu tekrar getirdiklerinde, **Araçlar** > **Uzantılar ve güncelleştirmeler**' de FirstMenuCommand uzantısını bulacağız. Uzantıyı kaldırmak veya devre dışı bırakmak için **Uzantılar ve güncelleştirmeler** 'e gidebilir.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-Bu kılavuzda Visual Studio uzantısı ile neler yapabileceğinizi yalnızca küçük bir bölümün göstermiştir. Visual Studio uzantıları ile gerçekleştirebileceğiniz diğer (makul kolay) işlemlerden kısa bir listesi aşağıda verilmiştir:
+Bu izlenecek yol, Visual Studio uzantısıyla yapabileceklerinizi yalnızca küçük bir parçasını göstermiştir. Aşağıda, Visual Studio uzantıları ile gerçekleştirebileceğiniz diğer (makul ölçüde kolay) şeyler için kısa bir liste verilmiştir:
 
-1. Basit bir menü komutu ile pek çok şey yapabilirsiniz:
+1. Basit bir menü komutuyla birçok şeyi daha yapabilirsiniz:
 
-   1. Kendi simgesi ekleyin: [Menü komutlarına simge ekleme](../extensibility/adding-icons-to-menu-commands.md)
+   1. Kendi simgenizi ekleyin: [Menü komutlarına simgeler ekleme](../extensibility/adding-icons-to-menu-commands.md)
 
-   2. Menü komutunun metnini değiştirme: [Menü komutunun metnini değiştirme](../extensibility/changing-the-text-of-a-menu-command.md)
+   2. Menü komutunun metnini değiştirin: [Menü komutunun metnini değiştirme](../extensibility/changing-the-text-of-a-menu-command.md)
 
-   3. Bir komutu menüsü kısayolundan ekleyin: [Menü öğelerine klavye kısayolları bağlama](../extensibility/binding-keyboard-shortcuts-to-menu-items.md)
+   3. Bir komuta Menü kısayolu ekleyin: [Klavye kısayollarını menü öğelerine bağlama](../extensibility/binding-keyboard-shortcuts-to-menu-items.md)
 
-2. Farklı türde komutlar, menüler ve araç çubukları ekleyin: [Menüler ve komutlar genişletme](../extensibility/extending-menus-and-commands.md)
+2. Farklı türlerde komutlar, menüler ve araç çubukları ekleyin: [Menüleri ve komutları Genişlet](../extensibility/extending-menus-and-commands.md)
 
-3. Araç pencereleri ekleyin ve yerleşik Visual Studio araç pencerelerini genişletme: [Genişletme ve özelleştirme araç pencereleri](../extensibility/extending-and-customizing-tool-windows.md)
+3. Araç pencerelerini ekleyin ve yerleşik Visual Studio araç pencerelerini genişletin: [Araç pencerelerini genişletme ve özelleştirme](../extensibility/extending-and-customizing-tool-windows.md)
 
-4. IntelliSense, kod önerileri ve diğer özellikler için mevcut kod düzenleyicilerinden ekleyin: [Düzenleyici ve dil hizmetlerini genişletme](../extensibility/extending-the-editor-and-language-services.md)
+4. Mevcut kod düzenleyicilerine IntelliSense, kod önerileri ve diğer özellikleri ekleyin: [Düzenleyiciyi ve dil hizmetlerini genişletme](../extensibility/extending-the-editor-and-language-services.md)
 
-5. Uzantınız için seçenekleri ve özellik sayfaları ve kullanıcı ayarlarını ekleyin: [Özellikler ve özellik penceresini genişletme](../extensibility/extending-properties-and-the-property-window.md) ve [kullanıcı ayarlarını ve seçeneklerini genişletme](../extensibility/extending-user-settings-and-options.md)
+5. Uzantınızın seçeneklerini ve özellik sayfalarını ve Kullanıcı ayarlarını ekleyin: [Özellikleri ve özellik penceresini genişletin](../extensibility/extending-properties-and-the-property-window.md) ve [Kullanıcı ayarlarını ve seçeneklerini genişletin](../extensibility/extending-user-settings-and-options.md)
 
-   Yeni türde bir proje oluşturma gibi daha fazla iş, diğer tür uzantıların gerektirir ([genişletme projeleri](../extensibility/extending-projects.md)), yeni türde bir düzenleyici oluşturma ([özel düzenleyiciler ve tasarımcılar oluşturma](../extensibility/creating-custom-editors-and-designers.md)), veya uygulama, bir yalıtılmış kabuk uzantısını: [Visual Studio yalıtılmış Kabuğu](/visualstudio/extensibility/shell/visual-studio-isolated-shell)
+   Diğer tür uzantılar, yeni bir proje türü oluşturma ([projeleri genişletme](../extensibility/extending-projects.md)), yeni bir düzenleyici türü oluşturma ([özel düzenleyiciler ve tasarımcılar oluşturma](../extensibility/creating-custom-editors-and-designers.md)) veya uzantınızı yalıtılmış bir kabukta uygulama gibi biraz daha fazla iş gerektirir: [Visual Studio yalıtılmış Kabuğu](https://visualstudio.microsoft.com/vs/older-downloads/isolated-shell/)

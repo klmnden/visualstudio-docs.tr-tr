@@ -13,49 +13,49 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: de0044544a97134380900d3e55f54c8fb34431fd
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 9c44864285f3e5701604379a110292c29d3f9b78
+ms.sourcegitcommit: 90c3187d804ad7544367829d07ed4b47d3f8a72d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66352342"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "68821525"
 ---
-# <a name="add-command-line-switches"></a>Komut satırı anahtarları ekleme
-Uygulamak için VSPackage'ı komut satırı anahtarları eklediğiniz zaman *devenv.exe* yürütülür. Kullanım <xref:Microsoft.VisualStudio.Shell.ProvideAppCommandLineAttribute> adını anahtar ve özelliklerini bildirmek için. Bu örnekte, MySwitch anahtar VSPackage adlı bir alt sınıfı için eklenen **AddCommandSwitchPackage** bağımsız değişken olmadan ile otomatik olarak yüklenecek VSPackage'ı.
+# <a name="add-command-line-switches"></a>Komut satırı anahtarları Ekle
+*Devenv. exe* yürütüldüğünde VSPackage 'a uygulanan komut satırı anahtarlarını ekleyebilirsiniz. Anahtarın <xref:Microsoft.VisualStudio.Shell.ProvideAppCommandLineAttribute> adını ve özelliklerini bildirmek için kullanın. Bu örnekte, bir bağımsız değişken içermeyen ve VSPackage otomatik olarak yüklenen VSPackage adlı VSPackage alt sınıfı Için mySwitch anahtarı eklenir.
 
 ```csharp
 [ProvideAppCommandLine("MySwitch", typeof(AddCommandSwitchPackage), Arguments = "0", DemandLoad = 1)]
 ```
 
- Aşağıdaki açıklamalarda adlandırılmış parametreleri gösterilmektedir.
+ Adlandırılmış parametreler aşağıdaki açıklamalarda gösterilmiştir.
 
 ||||
 |-|-|-|-|
 | Parametre | Açıklama|
-| Arguments | Anahtar için bağımsız değişken sayısı. Olabilir "*", veya bağımsız değişkenlerinin listesi. |
-| DemandLoad | Bu 1, aksi durumda 0 olarak ayarlayın, ayarlanırsa VSPackage'ı otomatik olarak yükleyin. |
-| HelpString | Görüntülemek için Yardım dizesi veya kaynak kimliği dizesi **devenv /?** . |
+| Arguments | Anahtar için bağımsız değişkenlerin sayısı. "*" Veya bağımsız değişken listesi olabilir. |
+| Isteğsiz yük | Bu 1 olarak ayarlanırsa VSPackage 'ı otomatik olarak yükleyin, aksi takdirde 0 olarak ayarlayın. |
+| HelpString | **Devenv/?** ile görüntülenecek dizenin Yardım dizesi veya kaynak kimliği. |
 | Ad | Anahtar. |
-| PackageGuid | Paket GUID'si. |
+| PackageGuid | Paketin GUID 'SI. |
 
- İlk bağımsız değişken genellikle 0 veya 1 değeridir. Özel bir değeri ' *' tüm kalan komut satırı bağımsız değişkeni olduğunu göstermek için kullanılabilir. Bu, bir kullanıcı bir hata ayıklayıcı komut dizesi burada geçmelidir senaryoları hata ayıklama için yararlı olabilir.
+ Bağımsız değişkenlerin ilk değeri genellikle 0 veya 1 ' dir. Komut satırının tüm geri kalanın bağımsız değişken olduğunu göstermek için ' * ' özel değeri kullanılabilir. Bu, kullanıcının bir hata ayıklayıcı komut dizesinde geçmesi gereken hata ayıklama senaryolarında yararlı olabilir.
 
- DemandLoad değeri geçerli `true` (1) veya `false` (0) VSPackage'ı otomatik olarak yüklenmesi gerektiğini belirtir.
+ Kullanılan yük değeri (1) `true` ya `false` da (0) VSPackage 'ın otomatik olarak yüklenmesi gerektiğini gösterir.
 
- Görünen dize kaynak kimliği HelpString değerdir **devenv /?** Yardım görüntüleme. Bu değer, "#nnn nnn bir tamsayı olduğu" biçiminde olmalıdır. Kaynak dosyadaki dize değeri bir yeni satır karakteri ile bitmelidir.
+ HelpString değeri, **devenv/?** içinde görüntülenen DIZENIN kaynak kimliğidir. Yardım görüntüleme. Bu değer, nnn ' in bir tamsayı olduğu "#nnn" biçiminde olmalıdır. Kaynak dosyasındaki dize değeri yeni bir satır karakteriyle bitmelidir.
 
- Anahtar adı değerdir.
+ Ad değeri, anahtarın adıdır.
 
- Bu anahtar uygulayan paket GUID'i PackageGuid değerdir. IDE bu GUID VSPackage'ı komut satırı anahtarı uygulandığı kayıt defterinde bulmak için kullanır.
+ PackageGuid değeri, bu anahtarı uygulayan paketin GUID 'sidir. IDE, komut satırı anahtarının uygulandığı kayıt defterindeki VSPackage 'ı bulmak için bu GUID 'yi kullanır.
 
-## <a name="retrieve-command-line-switches"></a>Komut satırı anahtarları alma
- Paketiniz yüklendiğinde, aşağıdaki adımları tamamlayarak komut satırı anahtarları alabilirsiniz.
+## <a name="retrieve-command-line-switches"></a>Komut satırı anahtarlarını alma
+ Paketiniz yüklendiğinde, aşağıdaki adımları tamamlayarak komut satırı anahtarlarını alabilirsiniz.
 
-1. İçinde VSPackage'nın <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A> uygulaması, çağrı `QueryService` üzerinde <xref:Microsoft.VisualStudio.Shell.Interop.SVsAppCommandLine> almak için <xref:Microsoft.VisualStudio.Shell.Interop.IVsAppCommandLine> arabirimi.
+1. VSPackage <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A> uygulamanızda, <xref:Microsoft.VisualStudio.Shell.Interop.IVsAppCommandLine> arabirimini almak <xref:Microsoft.VisualStudio.Shell.Interop.SVsAppCommandLine> için öğesini `QueryService` çağırın.
 
-2. Çağrı <xref:Microsoft.VisualStudio.Shell.Interop.IVsAppCommandLine.GetOption%2A> kullanıcı girilen komut satırı anahtarları alınamadı.
+2. Kullanıcının <xref:Microsoft.VisualStudio.Shell.Interop.IVsAppCommandLine.GetOption%2A> girdiği komut satırı anahtarlarını almak için çağırın.
 
-   Aşağıdaki kod MySwitch komut satırı anahtarı olup kullanıcı tarafından girilen kullanıma nasıl gösterir:
+   Aşağıdaki kod, MySwitch komut satırı anahtarının Kullanıcı tarafından girilip girilmediğini nasıl bulacağınızı göstermektedir:
 
 ```csharp
 IVsAppCommandLine cmdline = (IVsAppCommandLine)GetService(typeof(SVsAppCommandLine));
@@ -66,11 +66,11 @@ string optionValue = "";
 cmdline.GetOption("MySwitch", out isPresent, out optionValue);
 ```
 
- Bu, paket her yüklendiğinde, komut satırı anahtarları için denetlenecek sizin sorumluluğunuzdur.
+ Paketinizin her yüklenilişinde komut satırı anahtarlarınızın denetlenmesi sizin sorumluluğunuzdadır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsAppCommandLine>
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A>
 - [Devenv komut satırı anahtarları](../ide/reference/devenv-command-line-switches.md)
 - [CreatePkgDef yardımcı programı](../extensibility/internals/createpkgdef-utility.md)
-- [. Pkgdef dosyaları](/visualstudio/extensibility/shell/modifying-the-isolated-shell-by-using-the-dot-pkgdef-file)
+- [. Pkgdef dosyaları](https://devblogs.microsoft.com/visualstudio/whats-a-pkgdef-and-why/)

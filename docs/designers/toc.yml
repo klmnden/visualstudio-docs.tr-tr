@@ -2,7 +2,9 @@
   href: designing-user-interfaces.md
 - name: XAML
   items:
-    - name: Visual Studio’da XAML tasarlama
+    - name: XAML'ye genel bakış
+      href: xaml-overview.md
+    - name: Visual Studio ve Blend’de XAML tasarlama
       href: designing-xaml-in-visual-studio.md
     - name: XAML Tasarımcısı
       items:
@@ -15,45 +17,34 @@
           href: organize-objects-into-layout-containers-in-xaml-designer.md
         - name: Kaynak oluşturma ve uygulama
           href: how-to-create-and-apply-a-resource.md
-        - name: 'İzlenecek yol: XAML Tasarımcısı’nda verilere bağlama'
+        - name: 'İzlenecek yol: Verilere bağlama'
           href: walkthrough-binding-to-data-in-xaml-designer.md
-        - name: XAML Tasarımcısı için klavye kısayolları
-          href: keyboard-shortcuts-for-xaml-designer.md
         - name: Proje kodunda hata ayıklama veya kodu devre dışı bırakma
           href: debugging-or-disabling-project-code-in-xaml-designer.md
-        - name: XAML hataları ve uyarıları
-          href: xaml-errors-warnings.md
-    - name: Visual Studio için Blend
-      items:
-        - name: Genel Bakış
-          displayName: Blend for Visual Studio
+        - name: Visual Studio için Blend
           href: creating-a-ui-by-using-blend-for-visual-studio.md
-        - name: Denetimler ekleme ve bunların davranışlarını değiştirme
-          href: insert-controls-and-modify-their-behavior-in-xaml-designer.md
-        - name: 'Resim, video ve ses klipleri ekleme'
-          href: insert-images-videos-and-audio-clips-in-xaml-designer.md
-        - name: Şekiller ve yollar çizin
+        - name: Şekiller ve yollar çizme (Blend)
           href: draw-shapes-and-paths.md
-        - name: Blend'de nesnlerin stilini değiştirme
+        - name: Nesnelerin stilini değiştirme (Blend)
           href: modify-the-style-of-objects-in-blend.md
-        - name: Nesnelere animasyon ekleme
+        - name: Nesnelere animasyon ekleme (Blend)
           href: animate-objects-in-xaml-designer.md
-        - name: Verileri görüntüleme
+        - name: Verileri görüntüleme (Blend)
           href: display-data-in-blend.md
-        - name: Klavye kısayolları ve değiştirici tuşlar
+        - name: Başvuru
           items:
-            - name: Genel Bakış
-              href: keyboard-shortcuts-and-modifier-keys-in-blend.md
-            - name: Klavye kısayolları
+            - name: XAML hataları ve uyarıları
+              href: xaml-errors-warnings.md
+            - name: XAML Tasarımcısı için klavye kısayolları
+              href: keyboard-shortcuts-for-xaml-designer.md
+            - name: Blend için klavye kısayolları
               href: keyboard-shortcuts-in-blend.md
-            - name: Çalışma yüzeyi değiştirici tuşları
+            - name: Çalışma yüzeyi değiştirici tuşları (Blend)
               href: artboard-modifier-keys-in-blend.md
-            - name: Kalem aracı değiştirici tuşları
+            - name: Kalem aracı değiştirici tuşları (Blend)
               href: pen-tool-modifier-keys-in-blend.md
-            - name: Doğrudan seçim aracı değiştirici tuşları
+            - name: Doğrudan seçim aracı değiştirici tuşları (Blend)
               href: direct-selection-tool-modifier-keys-in-blend.md
-        - name: Blend için erişilebilirlik ürünleri ve hizmetleri
-          href: accessibility-products-and-services-blend.md
 - name: Windows Presentation Foundation (WPF)
   items:
     - name: Kullanmaya başlayın

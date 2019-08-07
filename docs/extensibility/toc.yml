@@ -830,6 +830,8 @@
   items:
     - name: Yazılık Geliştirme Seti Oluşturma
       href: creating-a-software-development-kit.md
+    - name: SDK ile NuGet paketi karşılaştırması
+      href: nuget-versus-sdk-references.md
     - name: 'İzlenecek yol: C# veya Visual Basic Kullanarak SDK Oluşturma'
       href: walkthrough-creating-an-sdk-using-csharp-or-visual-basic.md
     - name: 'İzlenecek yol: C++ Kullanarak SDK Oluşturma'

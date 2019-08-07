@@ -11,35 +11,35 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d4a3978ba229dff5f5888a50bf67d263cc2c614e
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 3a22e867fe043437e76ebbf61220dd2adda89c12
+ms.sourcegitcommit: 90c3187d804ad7544367829d07ed4b47d3f8a72d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66331764"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "68822332"
 ---
 # <a name="starting-to-develop-visual-studio-extensions"></a>Visual Studio Uzantıları Geliştirmeye Başlama
 
-Visual Studio uzantısı önce hiçbir zaman yazdıysanız, muhtemelen bazı sorular vardır. Biz burada en yaygın olanlarından bazıları listelediğiniz. Aradığınız bilgileri görmüyorsanız, geri bildirim düğmeleri kullanın (**bu sayfa yardımcı oldu?** ekranın alt kısmındaki), istediğiniz için isteyebilir.
+Daha önce hiç bir Visual Studio uzantısı yazmadıysanız büyük olasılıkla bazı sorularınız olabilir. En yaygın olanlardan bazılarını burada listeliyoruz. Aradığınız bilgileri görmüyorsanız, istediğiniz şeyi sormak için geri bildirim düğmelerini kullanın (ekranın altındaki**Bu sayfa yardımcı oldu mu?** ).
 
 > [!NOTE]
-> Bu makale, Windows üzerinde Visual Studio için geçerlidir. Mac için Visual Studio için bkz: [Mac için Visual Studio genişletme](/visualstudio/mac/extending-visual-studio-mac).
+> Bu makale Windows üzerinde Visual Studio için geçerlidir. Mac için Visual Studio için bkz. [genişletme Mac için Visual Studio](/visualstudio/mac/extending-visual-studio-mac).
 
 ## <a name="what-software-do-i-need-to-develop-visual-studio-extensions"></a>Visual Studio uzantıları geliştirme hangi yazılım gerekiyor?
 
-Visual Studio uzantıları geliştirme için Visual Studio SDK'sı Visual Studio yanı sıra yüklemeniz gerekir. Visual Studio SDK normal kurulumunun bir parçası yükleyebilir veya daha sonra yükleyebilirsiniz. Visual Studio SDK'sını yükleme hakkında daha fazla bilgi için bkz. [Visual Studio SDK](../extensibility/visual-studio-sdk.md).
+Visual Studio uzantıları geliştirmek için Visual Studio 'nun yanı sıra Visual Studio SDK 'sını yüklemeniz gerekir. Visual Studio SDK 'sını düzenli kurulum 'un bir parçası olarak yükleyebilir veya daha sonra yükleyebilirsiniz. Visual Studio SDK'sını yükleme hakkında daha fazla bilgi için bkz. [Visual Studio SDK](../extensibility/visual-studio-sdk.md).
 
 ## <a name="what-kinds-of-things-can-i-do-with-visual-studio-extensions"></a>Visual Studio uzantıları ile ne tür bir şeyler yapabilirim?
 
-Farklı Visual Studio uzantıları imagining için söz konusu olduğunda sky sınırı güçlendirin. Elbette, uzantıların çoğu kod yazma ile yapmak için bir şey vardır ancak, böyle olması gerekmez. Tür uzantıları oluşturabileceğinizi bazı örnekleri aşağıda verilmiştir:
+Çatka, farklı Visual Studio uzantıları görüntüsü oluşturma sırasında olduğu zaman sınırlıdır. Kuşkusuz, çoğu uzantının kod yazmak için bir şey vardır, ancak böyle bir durum olması gerekmez. Tür uzantıları oluşturabileceğinizi bazı örnekleri aşağıda verilmiştir:
 
-- Visual Studio'da söz dizimi renklendirme, IntelliSense ve derleyici ve hata ayıklama desteği bulunmayan diller için destek
+- Visual Studio 'da bulunmayan ve sözdizimi renklendirme, IntelliSense ve derleyici ve hata ayıklama desteği içeren diller için destek
 
 - Çekirdek genişleten üretkenlik araçları, IDE deneyimi ek şablonlar, kodu yeniden düzenleme, yeni iletişim kutuları veya araç pencereleri
 
 - Veri tasarım ya da bulut desteği gibi senaryolar için etki alanına özel tasarımcılar
 
-Uzantıları örnekleri için kullanıma [Visual Studio Market](https://marketplace.visualstudio.com/vs). Birçok uzantının kaynaklanan açık olan ve Market'te kendi GitHub deposunu bağlantılarını içerir.
+Uzantı örnekleri için [Visual Studio Market](https://marketplace.visualstudio.com/vs)inceleyin. Birçok uzantı açık kaynak olarak açıktır ve Market, GitHub depolarına bağlantılar içerir.
 
 ## <a name="which-visual-studio-features-can-i-extend"></a>Hangi Visual Studio özellikleri miyim uzatabilir miyim?
 
@@ -61,7 +61,7 @@ Uygulamada, çoğu kişi, genişletmek istediğiniz özellikleri komutlar, menü
 
 - [Visual Studio’nun Diğer Bölümlerini Genişletme](../extensibility/extending-other-parts-of-visual-studio.md)
 
-- [Visual Studio Yalıtılmış Kabuğu](/visualstudio/extensibility/shell/visual-studio-isolated-shell)
+- [Visual Studio Yalıtılmış Kabuğu](https://visualstudio.microsoft.com/vs/older-downloads/isolated-shell/)
 
 ## <a name="BKMK_ProjectTemplate"></a> Hangi proje şablonları tarafından VSSDK sağlanır?
  İki ana tür uzantılarının VSPackages ve MEF uzantılarıdır. Genel olarak, VSPackage uzantılarına kullanın veya projeleri komutları ve araç pencerelerini genişletme uzantılar için kullanılır. MEF uzantıları genişletme veya Visual Studio Düzenleyicisi özelleştirmek için kullanılır.
@@ -80,7 +80,7 @@ Uygulamada, çoğu kişi, genişletmek istediğiniz özellikleri komutlar, menü
 
 - Temel VSPackages: [VSPackage İçeren Bir Uzantı Oluşturma](../extensibility/creating-an-extension-with-a-vspackage.md)
 
-- VSIX proje şablonu: [VSIX Proje Şablonunu Kullanmaya Başlama](../extensibility/getting-started-with-the-vsix-project-template.md)
+- VSıX proje şablonu: [VSIX Proje Şablonunu Kullanmaya Başlama](../extensibility/getting-started-with-the-vsix-project-template.md)
 
 ## <a name="how-do-i-get-my-extension-to-look-like-visual-studio"></a>Visual Studio gibi görünmesini uzantım nasıl alabilirim?
  Uzantı için kullanıcı arabirimini tasarlamaya yönelik harika ipuçları alın [Visual Studio kullanıcı deneyimi yönergeleri](../extensibility/ux-guidelines/visual-studio-user-experience-guidelines.md).
@@ -91,7 +91,7 @@ Uygulamada, çoğu kişi, genişletmek istediğiniz özellikleri komutlar, menü
 ## <a name="how-can-i-distribute-my-extension"></a>Uzantım nasıl dağıtmak?
  Uzantınızı başka bir bilgisayara yüklemek ya da çift tıklayarak yükleme bir .vsix dosyası olarak arkadaşlarınıza gönderin. VSIX paketlerini hakkında daha fazla bilgi bulabilirsiniz [sevkiyat Visual Studio uzantıları](../extensibility/shipping-visual-studio-extensions.md).
 
- Visual Studio müşterilerine çok sayıda görünür olmasını sağlayan Visual Studio Market'te, uzantınızı da yayımlayabilirsiniz. Uzantı Marketi paketleme ilişkin bir örnek için bkz [izlenecek yol: Visual Studio uzantısı yayımlama](../extensibility/walkthrough-publishing-a-visual-studio-extension.md). Market'te yayımlamak için yapmanız gerekenler hakkında daha fazla bilgi için bkz. [Visual Studio için ürün ve](/azure/devops/extend/overview?view=vsts).
+ Uzantınızı Visual Studio Market de yayımlayabilirsiniz. Bu, çok sayıda Visual Studio müşterilerinin görünmesini sağlar. Market 'e uzantı paketleme örneği için bkz [. İzlenecek yol: Visual Studio uzantısı](../extensibility/walkthrough-publishing-a-visual-studio-extension.md)yayımlanıyor. Market 'te yayımlamak için yapmanız gerekenler hakkında daha fazla bilgi için bkz. [Visual Studio Için ürünler ve uzantılar](/azure/devops/extend/overview?view=vsts).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

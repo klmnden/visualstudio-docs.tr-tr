@@ -1,5 +1,6 @@
 ---
-title: Blend'de klavye kısayolları
+title: Klavye kısayolları
+titleSuffix: Blend for Visual Studio
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 3a1b6830-30c2-4a36-bd14-6961f5edf9cb
@@ -8,112 +9,112 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c38eaaa42ae0869ae26f0a048f69a94684b240c3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c7dc340b25f5a900c9456f56587e39dede6e0ad2
+ms.sourcegitcommit: 90c3187d804ad7544367829d07ed4b47d3f8a72d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62844331"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "68821745"
 ---
-# <a name="keyboard-shortcuts-in-blend"></a>Blend'de klavye kısayolları
+# <a name="keyboard-shortcuts-in-blend-for-visual-studio"></a>Visual Studio için Blend klavye kısayolları
 
 ## <a name="project-shortcuts"></a>Proje kısayolları
 
 |Bunu yapmak için|Bunu yapın|
 |----------------|-------------|
-|Yeni bir proje oluşturma|**CTRL**+**Shift**+**N**|
-|Bir proje veya çözüm (site değil) açın|**CTRL**+**Shift**+**O**|
-|Bir çözümü Kapat|**CTRL**+**Shift**+**C**|
-|Çözüm ya da site bir kopyasını kaydedin|**CTRL**+**Shift**+**P**|
-|Projeye var olan bir öğe ekleyin|**CTRL**+**ediyorum**|
-|Bir başvuru için bir DLL (WPF) ekleyin|**Alt**+**Shift**+**R**|
-|Proje derleme|**CTRL**+**Shift**+**B**|
-|Projeye veya siteye test|**F5**|
+|Yeni bir proje oluşturma|**CTRL**+**SHIFT** N+|
+|Bir projeyi veya çözümü açın (site değil)|**CTRL**+**Shift** O+|
+|Bir çözümü kapatma|**CTRL**+**SHIFT** C+|
+|Çözümün veya sitenin bir kopyasını kaydet|**CTRL**+**Shift** P+|
+|Projeye varolan bir öğe ekleme|**CTRL**I+|
+|DLL 'ye başvuru ekleme (WPF)|**Alt**+**Shift** R+|
+|Proje derleme|**CTRL**+**SHIFT** B+|
+|Projeyi veya siteyi test etme|**F5**|
 
 ## <a name="document-shortcuts"></a>Belge kısayolları
 
 |Bunu yapmak için|Bunu yapın|
 |----------------|-------------|
-|Açık belgeler arasında geçiş yapın|**CTRL**+**sekmesi**|
-|Etkin belgeyi Kaydet|**CTRL**+**S**|
-|Tüm belgeleri kaydetmek|**CTRL**+**Shift**+**S**|
-|Etkin belgeyi Kapat|**Ctrl**+**W**|
-|Tüm açık belgeleri kapatma|**CTRL**+**Shift**+**W**|
-|Son eylemi geri al|**Ctrl**+Z|
-|Geri alınmış son eylemi yinele|**CTRL**+ Y veya **Ctrl**+**Shift**+**Z**|
-|Tasarım zamanı ek açıklama oluşturma|**CTRL**+**Shift**+**T**|
-|Kes|**CTRL**+**X**|
-|Kopyala|**CTRL**+**C**|
-|Yapıştır|**CTRL**+**V**|
+|Açık belgeler arasında geçiş yap|**CTRL**sekmesi+|
+|Etkin belgeyi Kaydet|**CTRL**S+|
+|Tüm belgeleri kaydet|**CTRL**+**Shift** S+|
+|Etkin belgeyi kapat|**Ctrl**+**W**|
+|Tüm açık belgeleri kapat|**CTRL**+**Shift** W+|
+|Son eylemi geri al|**CTRL**+ Z|
+|Geri alınan son eylemi yinele|**CTRL**+ Y veya **CTRL**+**SHIFT**+**Z**|
+|Tasarım zamanı ek açıklaması oluşturma|**CTRL**+**Shift** T+|
+|Kes|**CTRL**X+|
+|Kopyala|**CTRL**C+|
+|Yapıştır|**CTRL**V+|
 |Sil|**Delete**|
-|Metin (XAML görünümünde veya yalnızca JavaScript Düzenleyici) bulma|**CTRL**+**F**|
-|Metin (XAML görünümünde veya yalnızca JavaScript Düzenleyici) Sonrakini Bul|**F3** veya **Ctrl**+**H**|
+|Metin bul (yalnızca XAML görünümü veya JavaScript Düzenleyicisi)|**CTRL**+**F**|
+|Metnin bir sonraki tekrarını bul (yalnızca XAML görünümü veya JavaScript Düzenleyicisi)|**F3** veya **CTRL**+**H**|
 
 ## <a name="object-shortcuts"></a>Nesne kısayolları
 
 |Bunu yapmak için|Bunu yapın|
 |----------------|-------------|
-|Yeni öğe oluşturun|**CTRL**+**N**|
-|Yinelenen bir nesne|Basılı **Alt** ve nesneyi sürükleyin|
-|Bir nesneyi yeniden üst öğe yap|Nesneyi bir düzen paneli ve ENTER tuşuna sürükleyin **Alt**|
-|Denetimdeki metin Düzenle|**F2** (**Esc** çıkmak için)|
-|Bir denetimi (WPF) Düzenle|**CTRL**+**E**|
-|Seçilen nesneler aynı genişliğe olun|**CTRL**+**Shift**+**1**|
-|Seçilen nesneler aynı yükseklikte olun|**CTRL**+**Shift**+**2**|
-|Seçilen nesneler aynı boyutta oluşturun|**CTRL**+**Shift**+**9**|
-|Seçili nesne yatay olarak çevir|**CTRL**+**Shift**+**3**|
-|Seçili nesneyi Dikeyde ters çevirin|**CTRL**+**Shift**+**4**|
-|Birden çok nesne seçin|Basılı **Ctrl**|
-|Birden çok bitişik nesneleri seçin|Basılı **kaydırma**|
-|Ekran boyutu seçimi Sığdır|**CTRL**+**9**|
-|Etkin kapsayıcıyı Sabitle|**CTRL**+**Shift**+**D**|
-|Seçilen nesneler sürükle|**OK** anahtarları|
-|Genişlik otomatik boyutlandırma|**CTRL**+**Shift**+**5**|
-|Otomatik yüksekliği|**CTRL**+**Shift**+**6**|
-|Bir düzen paneline grubu nesneleri|**CTRL**+**G**|
-|Nesnelerin grubunu Çöz|**CTRL**+**Shift**+**G**|
-|Seçili nesne Öne Getir|**CTRL**+**Shift**+**]**|
-|Öne Getir|**CTRL**+**]**|
-|Seçili nesne Arkaya Gönder|**CTRL**+**Shift**+**[**|
-|Bir geri gönder|**Ctrl**+**[**|
-|Bir kullanıcı denetiminin seçili nesnelerin (WPF)|**F8**|
-|Nesneleri oranlarını sınırlamak|Basılı **Shift** nesneyi sürüklerken|
-|15 derecelik artışlarla nesne döndürme|Basılı **Shift** sırasında nesne döndürme|
-|Bir kırpma yolu yap|**CTRL**+**7**|
-|Bir kırpma yolunu serbest bırakın.|**CTRL**+**Shift**+**7**|
-|Bileşik yol yap|**CTRL**+**8**|
-|Bileşik yolu serbest bırakın.|**CTRL**+**Shift**+**8**|
-|Kilit seçimi|**CTRL**+**m**|
-|Tüm nesneleri kilidini aç|**CTRL**+**Shift**+**m**|
-|Seçimi Göster|**CTRL**+**T**|
-|Seçimi Gizle|**CTRL**+**3**|
-|Tüm nesneleri seçin|**CTRL**+**A**|
-|Tüm nesnelerin Seçimi Temizle|**CTRL**+**Shift**+**A**|
+|Yeni öğe oluştur|**CTRL**N+|
+|Nesne yineleme|**Alt** tuşunu basılı tutun ve nesneyi sürükleyin|
+|Bir nesne için yeniden üst öğe|Nesneyi bir düzen panelinin üzerine sürükleyin ve **alt** tuşuna basın|
+|Denetimdeki metni düzenleme|**F2** (Çıkmak için**ESC** )|
+|Bir denetimi düzenleme (WPF)|**CTRL**+**E**|
+|Seçili nesneleri aynı genişliğe getir|**CTRL**+**SHIFT** 1+|
+|Seçili nesneleri aynı yüksekliğe getir|**CTRL**+**SHIFT** 2+|
+|Seçili nesneleri aynı boyuta getir|**CTRL**+ **+ Shift** 9+|
+|Seçili nesneyi Yatayda ters çevir|**CTRL**+**SHIFT** 3+|
+|Seçili nesneyi dikey olarak çevir|**CTRL**+**SHIFT** 4+|
+|Birden çok nesne seçin|**CTRL** tuşunu basılı tutun|
+|Birden çok bitişik nesne seçin|**SHIFT** tuşunu basılı tutun|
+|Seçimi ekran boyutuna sığdır|**CTRL**9+|
+|Etkin kapsayıcıyı sabitle|**CTRL**+**Shift** D+|
+|Seçili nesneleri Sürükle|**Ok** tuşları|
+|Otomatik boyut genişliği|**CTRL**+**SHIFT** 5+|
+|Yüksekliği otomatik boyutlandır|**CTRL**+**SHIFT** 6+|
+|Nesneleri bir Düzen paneline göre gruplandırma|**CTRL**G+|
+|Nesne grubunu Çöz|**CTRL**+**SHIFT** G+|
+|Seçili nesneyi öne getir|**CTRL**+**SHIFT** ]+|
+|Öne getir|**CTRL**]+|
+|Seçili nesneyi geri gönder|**CTRL**+**SHIFT** [+|
+|Arkaya gönder|**CTRL**[+|
+|Seçili nesnelerden (WPF) Kullanıcı denetimi yapma|**F8**|
+|Nesnelerin oranlarını kısıtlama|Nesneyi sürüklerken **SHIFT** tuşunu basılı tutun|
+|Bir nesneyi 15 derecelik artışlarla döndürme|Nesneyi döndürürken **SHIFT** tuşunu basılı tutun|
+|Kırpma yolu oluşturma|**CTRL**7+|
+|Kırpma yolunu serbest bırakma|**CTRL**+**SHIFT** 7+|
+|Bileşik yol oluşturma|**CTRL**8+|
+|Bileşik yol serbest bırakma|**CTRL**+**SHIFT** 8+|
+|Seçimi kilitle|**CTRL**L+|
+|Tüm nesnelerin kilidini aç|**CTRL**+**Shift** L+|
+|Seçimi göster|**CTRL**+**T**|
+|Seçimi Gizle|**CTRL**3+|
+|Tüm nesneleri Seç|**CTRL**A+|
+|Tüm nesnelerin seçimini temizle|**CTRL**+'yeÖtele+|
 
 ## <a name="view-shortcuts"></a>Kısayolları görüntüle
 
 |Bunu yapmak için|Bunu yapın|
 |----------------|-------------|
-|Arasında geçiş **tasarım**, **kod**, ve **bölünmüş** görünümleri|**F11**|
-|Çalışma yüzeyinde yakınlaştırma|**CTRL**+**eşittir işareti** (**=**)|
-|Çalışma yüzeyinde Uzaklaştır|**CTRL**+**eksi işareti** (**-**)|
-|Çalışma yüzeyinde yakınlaştırma veya uzaklaştırma|Fare tekerleğini döndürün|
-|Çalışma yüzeyine sola veya sağa taşı|**Shift** ve fare tekerleğini döndürün|
-|Çalışma yüzeyine yukarı veya Aşağı Taşı|**CTRL** ve fare tekerleğini döndürün|
-|Ekran boyutu seçimi Sığdır|**CTRL**+**0**|
-|Gerçek Boyut çalışma yüzeyinin görünümü|**CTRL**+**1**|
-|Göstermek veya gizlemek tanıtıcıları|**F9**|
-|Göstermek veya gizlemek nesne sınırları|**CTRL**+**Shift**+**H**|
-|Arasında geçiş **tasarım**, **XAML**, ve **bölünmüş** görünümleri|**F11**|
+|**Tasarım**, **kod**ve **bölünmüş** görünümler arasında geçiş yapma|**F11**|
+|Çalışma yüzeyini yakınlaştırma|**CTRL**+**eşittir işareti** ( **=** )|
+|Çalışma yüzeyinde uzaklaştır|**CTRL**+**eksi işareti** ( **-** )|
+|Çalışma yüzeyini yakınlaştırma veya uzaklaştırma|Fare tekerleğini döndürme|
+|Çalışma yüzeyini sola veya sağa taşı|Fare tekerleğini **kaydırma** ve döndürme|
+|Çalışma yüzeyini yukarı veya aşağı taşı|**CTRL** ve fare tekerleğini döndür|
+|Seçimi ekran boyutuna sığdır|**CTRL**0+|
+|Çalışma yüzeyini gerçek boyutta görüntüleme|**CTRL**1+|
+|Tutamaçları göster veya gizle|**F9**|
+|Nesne sınırlarını göster veya gizle|**CTRL**+**Shift**+**H**|
+|**Tasarım**, **xaml**ve **bölünmüş** görünümler arasında geçiş yapma|**F11**|
 
 ## <a name="workspace-shortcuts"></a>Çalışma alanı kısayolları
 
 |Bunu yapmak için|Bunu yapın|
 |----------------|-------------|
-|Arasında geçiş **animasyon** ve **tasarım** çalışma alanları|**CTRL**+**F11**|
-|Göstermek veya gizlemek **varlıklar** paneli|**CTRL**+**süresi**|
-|Göstermek veya gizlemek **sonuçları** paneli|**F12**|
-|Tüm panellerini gösterme veya gizleme|**F4**|
-|Etkin çalışma düzeni Sıfırla|**CTRL**+**Shift**+**R**|
-|Çalışma alanı Kaydır|Basılı **Ara çubuğu**|
-|Geçici olarak **seçimi** (farklı bir araç seçili kalırken) aracı|Basılı **Ctrl**|
+|**Animasyon** ve **Tasarım** çalışma alanları arasında geçiş yapma|**CTRL**F11+|
+|**Varlıklar** panelini göster veya gizle|**CTRL**dönemi+|
+|**Sonuçlar** panelini göster veya gizle|**F12**|
+|Tüm panelleri göster veya gizle|**F4**|
+|Etkin çalışma alanı yerleşimini sıfırlama|**CTRL**+**SHIFT** R+|
+|Çalışma alanını kaydırma|**Ara çubuğu** basılı tut|
+|Geçici olarak **seçim** aracını kullanın (farklı bir araç seçili halde kalır)|**CTRL** tuşunu basılı tutun|

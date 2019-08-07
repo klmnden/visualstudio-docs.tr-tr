@@ -15,20 +15,20 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5dfd699c600875cbf2706eb78890b6e89ea92568
-ms.sourcegitcommit: 3e74ec49a54e5c3da7631f4466128cdf4384af6b
+ms.openlocfilehash: 8dfceb7ca6221a342a5adbc3b3fcd3c193e0109e
+ms.sourcegitcommit: 90c3187d804ad7544367829d07ed4b47d3f8a72d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "65705863"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "68822402"
 ---
 # <a name="convert-dialog-box"></a>Dönüştür İletişim Kutusu
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 **Dönüştür** iletişim kutusu, bir Visual Basic 6 projesinden [!INCLUDE[vbprvblong](../../includes/vbprvblong-md.md)] proje oluşturma gibi eski bir projeden yeni bir proje oluşturmak için bir dönüştürme aracı seçmenize olanak sağlar. Visual Studio 'nun önceki sürümlerinde oluşturulan projeleri yükseltmek için CodePlex Web sitesinde bulunan [Visual Studio proje dönüştürücüsünü](http://go.microsoft.com/fwlink/?LinkID=246465)de kullanabilirsiniz.  
   
- [!INCLUDE[note_settings_general](../../includes/note-settings-general-md.md)].  
-  
+ [!INCLUDE[note_settings_general](../../includes/note-settings-general-md.md)]
+
 ## <a name="opening-the-convert-dialog-box"></a>Dönüştür Iletişim kutusunu açma  
   
 #### <a name="to-access-the-convert-dialog-box"></a>Dönüştür iletişim kutusuna erişmek için  

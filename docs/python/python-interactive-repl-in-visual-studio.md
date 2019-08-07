@@ -10,16 +10,16 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: bc813868f3284ad81849e3a03d864de65d9f54ed
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7ceecffec577528484cd67fd13d3e04f368fb916
+ms.sourcegitcommit: 90c3187d804ad7544367829d07ed4b47d3f8a72d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62896902"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "68822395"
 ---
 # <a name="work-with-the-python-interactive-window"></a>Python etkileşimli pencere ile çalışma
 
-Visual Studio, her biri ile alma REPL üzerine artırır, Python ortamları için bir etkileşimli okuma değerlendirmek yazdırma döngü (REPL) penceresi sağlar *python.exe* komut satırında. **Etkileşimli** penceresi (açılmış **görünümü** > **diğer Windows** > **&lt;ortamı&gt; Etkileşimli** menü komutları) rastgele Python kodu girin ve sonuçlarını hemen görmek olanak sağlar. Öğrenin ve API'ları ve kitaplıkları ile etkileşimli çalışan kod projelerinizde geliştirmek için deneme bu şekilde kodlama yardımcı olur.
+Visual Studio, her biri ile alma REPL üzerine artırır, Python ortamları için bir etkileşimli okuma değerlendirmek yazdırma döngü (REPL) penceresi sağlar *python.exe* komut satırında. **Etkileşimli** penceresi (açılmış **görünümü** > **diğer Windows** >  **&lt;ortamı&gt; Etkileşimli** menü komutları) rastgele Python kodu girin ve sonuçlarını hemen görmek olanak sağlar. Öğrenin ve API'ları ve kitaplıkları ile etkileşimli çalışan kod projelerinizde geliştirmek için deneme bu şekilde kodlama yardımcı olur.
 
 ![Python etkileşimli penceresi](media/interactive-window.png)
 
@@ -34,13 +34,13 @@ Visual Studio Python REPL modları, aralarından seçim yapabileceğiniz birçok
 
 Bu makalede **standart** ve **hata ayıklama** REPL modları. Ipython modları hakkında daha fazla bilgi için bkz: [Ipython REPL kullanma](interactive-repl-ipython.md).
 
-Örnekleri içeren ayrıntılı bilgi için düzenleyici etkileşim aşağıdaki gibi **Ctrl**+**Enter**, bkz: [Öğreticisi 3. adım: Etkileşimli REPL penceresini kullanma](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md).
+Düzenleyiciyle ilgili, **CTRL tuşuna**+da benzer yönergeler dahil ayrıntılı bir kılavuz için bkz [. öğretici adım 3: Etkileşimli REPL penceresini](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md)kullanın.
 
 ## <a name="open-an-interactive-window"></a>Etkileşimli bir pencere açın
 
 Açmak için birkaç şekilde **etkileşimli** penceresi için bir ortam.
 
-Python ortamları penceresine geçin (**görünümü** > **diğer Windows** > **Python ortamları** veya **Ctrl** + **K** > **Ctrl**+**`**) seçip **açık etkileşimli Pencere** komutu veya seçilen ortam düğmesi.
+Python ortamları penceresine geçin (**görünümü** > **diğer Windows** > **Python ortamları** veya **Ctrl** + **K** > **Ctrl**+ **`** ) seçip **açık etkileşimli Pencere** komutu veya seçilen ortam düğmesi.
 
 ![Python ortamları penceresinde etkileşimli penceresi bağlantı](media/interactive-window-opening.png)
 
@@ -56,7 +56,7 @@ Son olarak, kod dosyasını seçin ve kullanmak [ **etkileşime Gönder** komut]
 
 ## <a name="interactive-window-options"></a>Etkileşimli pencere seçenekleri
 
-Çeşitli yönlerini denetleyebilirsiniz **etkileşimli** penceresinden **Araçları** > **seçenekleri** > **Python**  >  **Etkileşimli Windows** (bkz [seçenekleri](python-support-options-and-settings-in-visual-studio.md)):
+**Araç** [](python-support-options-and-settings-in-visual-studio.md) seçenekleriPython > etkileşimli pencereler aracılığıyla etkileşimli pencerenin çeşitli yönlerini denetleyebilir (bkz. Seçenekler):  >  > 
 
 ![Python etkileşimli penceresinde seçenekleri](media/options-interactive-windows.png)
 
@@ -111,7 +111,11 @@ Bu komut, geliştirirken kodunuzu test de dahil olmak üzere, yinelemeli veya ge
 
 <!-- After 15.3 is released, you can also press **Undo** after pasting to restore prompts. Press **Undo** a second time to remove the pasted code entirely. -->
 
-Bir kod dosyası bir karalama defteri kullanırken, genellikle küçük tamamını aynı anda göndermek istediğiniz bir kod bloğunu sahiptir. Kod gruplamak için kod olarak işaretlemek bir *kodu hücreyi* ile başlayan bir açıklama ekleyerek `#%%` hücre başlangıcına sona erdiği Öncekine. Daraltılmış ve genişletilmiş ve kullanarak kod hücreleri olabilir **Ctrl**+**Enter** içindeki kodu hücreyi tüm hücreyi gönderir. **etkileşimli** penceresi ve taşır bir sonraki.
+## <a name="work-with-code-cells"></a>Kod hücreleriyle çalışma
+
+Kod hücreleri, veri çözümlemede kullanılabilir ve çeşitli metin düzenleyicileri tarafından desteklenir.
+
+Örneğin, bir kod dosyasını karalama paneli olarak kullanırken, genellikle tümünü tek seferde göndermek istediğiniz küçük bir kod bloğuna sahip olursunuz. Kod gruplamak için kod olarak işaretlemek bir *kodu hücreyi* ile başlayan bir açıklama ekleyerek `#%%` hücre başlangıcına sona erdiği Öncekine. Daraltılmış ve genişletilmiş ve kullanarak kod hücreleri olabilir **Ctrl**+**Enter** içindeki kodu hücreyi tüm hücreyi gönderir. **etkileşimli** penceresi ve taşır bir sonraki.
 
 Visual Studio gibi yorumlar ile başlayan kod hücreleri de algılar `# In[1]:`, Jupyter not defteri bir Python dosyası olarak dışarı aktarılırken aldığınız biçim. Bu algılama not defterinden çalıştırmayı kolaylaştırır [Azure not defterleri](https://notebooks.azure.com/) bir Python dosyası olarak indirme, Visual Studio'da açarak ve kullanarak **Ctrl**+**Enter**her hücresini çalıştırmak için.
 
@@ -121,4 +125,4 @@ Visual Studio gibi yorumlar ile başlayan kod hücreleri de algılar `# In[1]:`,
 
 **Etkileşimli** penceresinde IntelliSense yalnızca kaynak kod çözümlemeyi dayanır Kod Düzenleyicisi'ni aksine Canlı nesneler dayalı IntelliSense'i içerir. Bu öneriler daha doğru **etkileşimli** penceresiyle, özellikle dinamik olarak üretilen kod. (Örneğin, günlük iletilerini) yan etkileri olan işlevlere geliştirme deneyiminizi etkileyebilir dezavantajı olmasıdır.
 
-Bu davranış bir sorun varsa altındaki ayarları değiştirin **Araçları** > **seçenekleri** > **Python**  >   **Etkileşimli Windows** içinde **tamamlama modunu** grup üzerinde açıklandığı [seçenekleri - etkileşimli pencere](python-support-options-and-settings-in-visual-studio.md#interactive-windows-options).
+Bu davranış bir sorun ise, Seçenekler ' de açıklandığı gibi, **tamamlama modu** grubundaki **Araçlar** > **Seçenekler** > **Python** > **etkileşimli pencereler** altındaki ayarları değiştirin. [ Etkileşimli Windows seçenekleri](python-support-options-and-settings-in-visual-studio.md#interactive-windows-options).

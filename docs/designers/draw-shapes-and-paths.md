@@ -1,6 +1,7 @@
 ---
 title: Şekiller ve yollar çizin
-ms.date: 11/04/2016
+titleSuffix: Blend for Visual Studio
+ms.date: 07/31/2019
 ms.topic: conceptual
 ms.assetid: d5378c59-e2e5-49f0-91f1-aa82d984a33c
 author: gewarren
@@ -8,112 +9,118 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 222826121b270da93bc4bdd867b21fc62730cb07
-ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
+ms.openlocfilehash: 948f18ef9abbea1b54346a86b950b90a82ade1ba
+ms.sourcegitcommit: 90c3187d804ad7544367829d07ed4b47d3f8a72d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66820439"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "68821906"
 ---
 # <a name="draw-shapes-and-paths"></a>Şekiller ve yollar çizin
 
-XAML Tasarımcısı'nda bir *şekli* tamamen beklediğiniz. Örneğin: dikdörtgen, daire veya elips. A *yolu* bir şekil daha esnek bir sürümüdür. Yeni şekil için bunları birleştirmek ya da bunları yeniden şekillendirmek gibi şeyler.
+XAML Tasarımcısı, bir *Şekil* tam olarak beklediğiniz şeydir. Örneğin: dikdörtgen, daire veya elips. *Yol* , bir şeklin daha esnek bir sürümüdür. Bunları yeniden şekillendirme veya yeni şekiller oluşturmak için birlikte birleştirme gibi işlemler yapabilirsiniz.
 
-Şekiller ve yollar iyi yüksek çözünürlüklü ekranlar için ölçeklendirme vektör grafik kullanın. Vektör grafikleri hakkında daha fazla bilgi edinmek istiyorsanız bkz [vektör grafikleri nelerdir](https://www.youtube.com/watch?v=MoCSwF0n-io) veya [vektör grafikleri](http://www.webopedia.com/TERM/V/vector_graphics.html).
+Şekiller ve yollar vektör grafikleri kullanır, bu nedenle yüksek çözünürlüklü ekranlarda da ölçeklenebilirler.
 
-## <a name="Shape"></a> Bir şekil çizme
- Şekillerde bulabilirsiniz **varlıklar** paneli.
+## <a name="draw-a-shape"></a>Şekil çiz
 
- ![Şekil kategorisini varlıklar paneli](../designers/media/b4_shapes_assetspanel.png)
+**Varlıklar** penceresinde şekilleri bulun.
 
- İstediğiniz herhangi bir şekil, çalışma yüzeyine sürükleyin. Ardından, ölçeklendirme, döndürmek, taşıyın veya şekil eğriltmek için şeklin üzerinde tutamaçlarını kullanabilirsiniz.
+![Varlıklar penceresindeki şekiller kategorisi](../designers/media/blend-shapes.png)
 
- ![Handles](../designers/media/84261e83-3091-4490-ab58-4218b188439e.png)
+İstediğiniz herhangi bir şekli çalışma yüzeyine sürükleyin. Ardından, şekli ölçeklendirmek, döndürmek, taşımak veya eğmek için şekildeki tutamaçları kullanın.
 
-## <a name="Path"></a> Bir yol çizin
- Bir dizi bağlantılı çizgiler ve eğrilerdir yoludur. Kullanılamayan, ilginç şekiller oluşturmak için bir yol kullanın **varlıklar** paneli.
+![Handles](../designers/media/84261e83-3091-4490-ab58-4218b188439e.png)
 
- Bir yolu, bir satır, Kalem ve kağıt kullanarak çizebilirsiniz. Bu araçlarda bulabilirsiniz **Araçları** paneli.
+## <a name="draw-a-path"></a>Yol çiz
 
- ![Kalem aracı](../designers/media/717956a8-b6a5-4e37-8af3-70bcfc78c82a.png) ![Kalem aracı seçenekleri](../designers/media/8fbbbb21-be83-4cf6-903b-3a49f00c9860.png)
+Yol, bağlantılı çizgiler ve eğrilerden oluşan bir serisidir. **Varlıklar** penceresinde kullanılamayan ilginç şekiller oluşturmak için bir yol kullanın.
+
+Bir çizgi, kalem veya kurşun kalem kullanarak bir yol çizebilirsiniz. Bu araçları **Araçlar** penceresinde bulabilirsiniz.
 
 ### <a name="draw-a-straight-line"></a>Düz çizgi çizme
- Kullanım **kalem** aracı ![Kalem aracı](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png), veya **satırı** aracı ![Çizgi aracı](../designers/media/eb618397-5283-48be-8396-3449be7b6fbf.png).
 
- **Kalem aracıyla** ![Kalem aracı](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png)
+**Kalem** aracını veya **çizgi** aracını kullanın.
 
- Çalışma yüzeyinde başlangıç noktasını tanımlamak için bir kez tıklayın ve satırın sonuna tanımlamak için yeniden tıklayın.
+**Kalem aracını kullanma**
 
- **Satırı aracını kullanarak** ![satırı aracı](../designers/media/eb618397-5283-48be-8396-3449be7b6fbf.png)
+Çalışma yüzeyinde, başlangıç noktasını tanımlamak için bir kez tıklayın ve sonra satırın sonunu tanımlamak için tekrar ' ye tıklayın.
 
- Çalışma yüzeyinde satır başlatmak istediğiniz sürükleyin ve ardından çizginin sona ermesini istediğiniz noktada bırakın.
+**Çizgi aracını kullanma**
+
+Çalışma yüzeyinde, çizginin başlamasını istediğiniz yere sürükleyin ve sonra çizginin bitmesini istediğiniz noktada serbest bırakın.
 
 ### <a name="draw-a-curve"></a>Eğri çizme
- Kullanım **kalem** aracı ![Kalem aracı](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png).
 
- Çalışma yüzeyinde bir satırın başlangıç noktasını tanımlamak tıklayın ve istenen eğri oluşturmak için işaretçiyi sürükleyin için bir kez tıklayın.
+**Kalem** aracını kullanın.
 
- Yolu kapatmak istiyorsanız ilk satırın noktasında tıklayın.
+Çalışma yüzeyinde bir satırın başlangıç noktasını tanımlamak için bir kez tıklayın ve sonra istediğiniz eğriyi oluşturmak için işaretçinizi tıklatın ve sürükleyin.
+
+Yolu kapatmak istiyorsanız satırdaki ilk noktaya tıklayın.
 
 ### <a name="change-the-shape-of-a-curve"></a>Eğrinin şeklini değiştirme
- Kullanım **doğrudan seçim** aracı ![doğrudan seçim aracı](../designers/media/6dd6571f-c116-451d-8dd2-1f88b8406362.png).
 
- Şekle tıklayın ve ardından eğri şekiller değiştirmek için şekli üzerinde herhangi bir noktaya sürükleyin.
+**Doğrudan seçim** aracını kullanın.
+
+Şekle tıklayın ve sonra eğri şekillerini değiştirmek için şeklin herhangi bir noktasını sürükleyin.
 
 ### <a name="draw-a-free-form-path"></a>Serbest form yolu çizme
- Kullanım **kalem** aracı ![Kalem aracı](../designers/media/509dc167-734f-46c9-b012-987ee63450cd.png).
 
- Çalışma yüzeyinde, gerçek bir kalem kullanarak yaptığınız gibi serbest biçimli yolu çizin.
+**Kurşun kalem** aracını kullanın.
 
-### <a name="remove-part-of-a-path"></a>Yolun bir bölümünü kaldırın
- Kullanım **doğrudan seçim** aracı ![doğrudan seçim aracı](../designers/media/6dd6571f-c116-451d-8dd2-1f88b8406362.png).
+Çalışma yüzeyinde, tıpkı gerçek bir kurşun kalem kullanarak yaptığınız gibi serbest biçimli bir yol çizin.
 
- Silin ve ardından istediğiniz kesimi içeren yolu seçin **Sil** düğmesi.
+### <a name="remove-part-of-a-path"></a>Yolun bir bölümünü kaldır
 
-### <a name="remove-a-point-in-a-path"></a>Bir yolda bir noktası Kaldır
- Kullanım **seçimi** aracı ![seçim aracını](../designers/media/2ff91340-477e-4efa-a0f7-af20851e4daa.png)ve **kalem** aracı ![Kalem aracı](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png).
+**Doğrudan seçim** aracını kullanın.
 
- Kullanım **seçimi** aracı ![seçim aracını](../designers/media/2ff91340-477e-4efa-a0f7-af20851e4daa.png) yolunu seçin. Ardından, **kalem** aracı ![Kalem aracı](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png) kaldırmak istediğiniz noktayı tıklatın.
+Silmek istediğiniz segmenti içeren yolu seçin ve **Sil** düğmesine tıklayın.
 
-### <a name="add-a-point-to-a-path"></a>Bir nokta yolunu Ekle
- Kullanım **seçimi** aracı ![seçim aracını](../designers/media/2ff91340-477e-4efa-a0f7-af20851e4daa.png)ve **kalem** aracı ![Kalem aracı](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png).
+### <a name="remove-a-point-in-a-path"></a>Yoldaki bir noktayı kaldırma
 
- Kullanım **seçimi** aracı ![seçim aracını](../designers/media/2ff91340-477e-4efa-a0f7-af20851e4daa.png) yolunu seçin. Kullanım **kalem** aracı ![Kalem aracı](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png) noktası eklemek istediğiniz yola göre herhangi bir yeri tıklatın.
+Yolu seçmek için **seçim** aracını kullanın. Ardından, kaldırmak istediğiniz noktaya tıklayarak **kalem** aracını kullanın.
 
-## <a name="Convert"></a> Bir şekli bir yola Dönüştür
- Bir şekli bir yolu değiştirmek yollarla değiştirmek için şekli bir yola Dönüştür.
+### <a name="add-a-point-to-a-path"></a>Yola bir işaret ekleyin
 
- **Kısa bir video izleyin:** ![Yüklü Özellikleri Yapılandır](../designers/media/bldadminconsoleinitialconfigicon.png) [yolları ile çalışma: Bir şekli bir yola dönüştürmek](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=147).
+Yolu seçmek için **seçim** aracını kullanın. Noktayı eklemek istediğiniz yolda herhangi bir yere tıklayarak **kalem** aracını kullanın.
 
-## <a name="Combine"></a> Yolları Birleştir
- Tek bir yol, yol ve Şekil birleştirebilirsiniz.
+## <a name="convert-a-shape-to-a-path"></a>Şekli yola dönüştürme
 
- ![Yolları Birleştir](../designers/media/2df17a5d-a338-4ef4-96c5-dae51cc1ca8a.png)
+Bir şekli bir yolu değiştirdiğiniz şekilde değiştirmek için şekli bir yola dönüştürün. Şekli seçin ve sonra **Biçim** > **yolu** > **yola Dönüştür**' nu seçin.
+
+**Kısa bir video izleyin:** ![Yollarla çalışan yüklü](../designers/media/bldadminconsoleinitialconfigicon.png) özellikleri [yapılandırın: Bir şekli yola](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=147)dönüştürür.
+
+> [!NOTE]
+> **Yola Dönüştür** , en az `TargetPlatformVersion` 10.0.16299.0 veya üzeri olan UWP uygulamaları için şu anda kullanılamıyor.
+
+## <a name="combine-paths"></a>Yolları Birleştir
+
+Yolları ve şekilleri tek bir yolda birleştirebilirsiniz.
+
+![Yolları Birleştir](../designers/media/2df17a5d-a338-4ef4-96c5-dae51cc1ca8a.png)
 
 |||||
 |-|-|-|-|
 |![Birleştirme öncesi iki şekil](../designers/media/b1_1.png)|Birleştirme öncesi iki şekil|![Kesiştir](../designers/media/b1_4.png)|Kesiştir|
 |![Birleştir](../designers/media/b1_2.png)|Birleştir|![Örtüşmeyi Dışla](../designers/media/b1_5.png)|Örtüşmeyi Dışla|
-|![Bölme](../designers/media/b1_3.png)|Bölme|![Çıkarma](../designers/media/b1_6.png)|Çıkarma|
+|![Sayısına](../designers/media/b1_3.png)|Sayısına|![Çıkarma](../designers/media/b1_6.png)|Çıkarma|
 
- **Kısa bir video izleyin:** ![Yüklü Özellikleri Yapılandır](../designers/media/bldadminconsoleinitialconfigicon.png) [yolları ile çalışma: Yolları Birleştir](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=195).
+**Kısa bir video izleyin:** ![Yollarla çalışan yüklü](../designers/media/bldadminconsoleinitialconfigicon.png) özellikleri [yapılandırın: Yolları](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=195)birleştirin.
 
-## <a name="Compound"></a> Bileşik yol Oluştur
- Bileşik yol oluşturduğunuzda, yolların herhangi bir kesişen bölümleri sonuçtan çıkartılır ve sonuçlanan yol en alt yolun görsel özelliklerini kabul eder.
+## <a name="create-a-compound-path"></a>Bileşik yol oluşturma
 
- Bileşik yol oluşturduktan sonra istediğiniz zaman parçalara ayırabilirsiniz.
+Bileşik yol oluşturduğunuzda, yolların herhangi bir kesişen bölümleri sonuçtan çıkartılır ve sonuçlanan yol en alt yolun görsel özelliklerini kabul eder.
 
- ![Bileşik yol Kes](../designers/media/2157a8aa-d9a7-4de4-8de5-b10d28f08a84.png)
+Bir bileşik yolu, oluşturduktan sonra istediğiniz zaman bölebilir.
 
- **Kısa bir video izleyin:** ![Yüklü Özellikleri Yapılandır](../designers/media/bldadminconsoleinitialconfigicon.png) [yolları ile çalışma: Bileşik yol Oluştur](https://www.youtube.com/watch?v=Io5bC0-nH6Q).
+![Bileşik yolu bölme](../designers/media/2157a8aa-d9a7-4de4-8de5-b10d28f08a84.png)
 
-## <a name="Clipping"></a> Bir kırpma yolunu oluşturun
- Bir kırpma yolu, kırpma yolu dışına düşen maskelenmiş nesnenin kısımlarını saklayarak, diğer nesneye uygulanan bir yol veya şekildir.
+**Kısa bir video izleyin:** ![Yollarla çalışan yüklü](../designers/media/bldadminconsoleinitialconfigicon.png) özellikleri [yapılandırın: Bileşik yol](https://www.youtube.com/watch?v=Io5bC0-nH6Q)oluşturun.
 
- ![Kırpma yolu](../designers/media/22471e98-a841-4f39-a3ef-36090cf5a625.png)
+## <a name="create-a-clipping-path"></a>Kırpma yolu oluşturma
 
- **Kısa bir video izleyin:** ![Yüklü Özellikleri Yapılandır](../designers/media/bldadminconsoleinitialconfigicon.png) [yolları ile çalışma: Bir kırpma yolunu oluşturun](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=232).
+Bir kırpma yolu, kırpma yolu dışına düşen maskelenmiş nesnenin kısımlarını saklayarak, diğer nesneye uygulanan bir yol veya şekildir.
 
-## <a name="see-also"></a>Ayrıca bkz.
+![Kırpma yolu](../designers/media/22471e98-a841-4f39-a3ef-36090cf5a625.png)
 
-- [Visual Studio için Blend’i kullanarak kullanıcı arabirimi oluşturma](../designers/creating-a-ui-by-using-blend-for-visual-studio.md)
+**Kısa bir video izleyin:** ![Yollarla çalışan yüklü](../designers/media/bldadminconsoleinitialconfigicon.png) özellikleri [yapılandırın: Kırpma yolu](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=232)oluşturun.

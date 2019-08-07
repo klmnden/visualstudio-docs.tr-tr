@@ -1,7 +1,7 @@
 ---
 title: Visual Studio için erişilebilirlik ipuçları ve püf noktaları
 description: Engelli kişiler de dahil olmak üzere, Visual Studio tümleşik geliştirme ortamının (IDE) herkesin kullanması için daha erişilebilir hale getirmenize yardımcı olabilecek ipuçları ve püf noktaları hakkında daha fazla bilgi edinin.
-ms.date: 08/02/2019
+ms.date: 08/06/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - accessibility [Visual Studio]
@@ -11,19 +11,18 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5a3a70f061ea4fd6dd51a3badbed922675b99fba
-ms.sourcegitcommit: b56dc6fadc6c924beed36bb4c2ccc16cf6bcfa1c
+ms.openlocfilehash: ea4d559921fc7cf387116d013906891c74a4ed8c
+ms.sourcegitcommit: 90c3187d804ad7544367829d07ed4b47d3f8a72d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "68740241"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "68822362"
 ---
 # <a name="accessibility-tips-and-tricks-for-visual-studio"></a>Visual Studio için erişilebilirlik ipuçları ve püf noktaları
 
-> [!TIP]
-> Erişilebilirlik güncelleştirmeleri hakkında daha fazla bilgi edinmek için [Visual Studio 2017 sürüm 15,3](https://devblogs.microsoft.com/visualstudio/accessibility-improvements-in-visual-studio-2017-version-15-3/) blog gönderisine bakın.
+Visual Studio, ekran okuyucular ve diğer yardımcı teknolojilerle uyumlu yerleşik erişilebilirlik özelliklerine sahiptir. IDE 'de gezinmek için klavye kısayollarını kullanmak veya görünürlüğü geliştirmek için yüksek karşıtlıklı temalar kullanmak isteyip istemediğiniz, bu sayfada bunun nasıl yapılacağı hakkında birkaç & ipucu bulacaksınız.
 
-Visual Studio, ekran okuyucular ve diğer yardımcı teknolojilerle uyumlu yerleşik erişilebilirlik özelliklerine sahiptir. Bu konuda, yalnızca klavye ile görevleri gerçekleştirmek için kullanabileceğiniz ortak kısayol tuş birleşimleri ve görünürlüğü geliştirmek için yüksek karşıtlıklı Temalar kullanma hakkında bilgiler yer almaktadır. Ayrıca, kodunuzun hakkındaki yararlı bilgileri göstermek için ek açıklamaların nasıl kullanılacağını ve derleme ve kesme noktası olayları için ses ipuçları ayarlamayı gösterir.
+Ayrıca, kodunuzun hakkındaki yararlı bilgileri göstermek için ek açıklamaların nasıl kullanılacağını ve derleme ve kesme noktası olayları için ses ipuçları ayarlamayı da ele aldık.
 
 > [!NOTE]
 > Bu konu, Windows üzerinde Visual Studio için geçerlidir. Mac için Visual Studio için bkz. [Mac için Visual Studio Için erişilebilirlik](/visualstudio/mac/accessibility).
@@ -36,42 +35,54 @@ Visual Studio, ekran okuyucular ve diğer yardımcı teknolojilerle uyumlu yerle
 
 Bazı katlara, bazı renklerin görülmesi daha zordur. Kodlarken, ancak tipik "Yüksek Karşıtlık" temalarını kullanmak istemediğinizde daha fazla karşıtlık isterseniz, artık "mavi (ekstra Karşıtlık)" teması sunuyoruz.
 
-  ![Mavi temayı ve mavi ekstra Karşıtlık temasını karşılaştırın](media/blue-extra-contrast-theme.png)
+  ![Mavi temayı ve mavi ekstra Karşıtlık temasını karşılaştırın](media/blue-extra-contrast-theme.png "Mavi temanın ve mavi ekstra kontrast temasının karşılaştırmasını gösteren ekran görüntüsü")
 
 ## <a name="use-annotations-to-reveal-useful-information-about-your-code"></a>Kodunuzla ilgili yararlı bilgileri açığa çıkarmak için ek açıklamaları kullanın
 
 Visual Studio Düzenleyicisi, screwsürücü ve ampul simgeleri, hata ve uyarı "dalgalı çizgiler", yer işaretleri vb. gibi belirli noktalarda bir kod satırı üzerinde Özellikler ve özellikler hakkında bilgi sahibi olan "donnments" adlı birçok metni içerir. "Satır ek açıklamalarını göster" komut kümesini kullanarak bu donatıcılıkları bulmanıza ve sonra gezinmenize yardımcı olun.
 
-  ![Satır ek açıklamalarını göster komut kümesini kullanın](media/show-line-annotations-command-set.png)
+  ![Satır ek açıklamalarını göster komut kümesini kullanın](media/show-line-annotations-command-set.png "Satır göster ek açıklamaları menü öğesinin ekran görüntüsü")
 
-## <a name="access-toolbars-by-using-shortcut-key-combinations"></a>Kısayol tuşu kombinasyonlarını kullanarak araç çubuklarına erişin
+## <a name="access-toolbars-by-using-keyboard-shortcuts"></a>Klavye kısayollarını kullanarak araç çubuklarına erişin
 
-Visual Studio IDE 'nin birçok araç penceresi gibi araç çubukları vardır. Aşağıdaki kısayol tuş birleşimleri bunlara erişmenize yardımcı olur.
+Visual Studio IDE 'nin birçok araç penceresi gibi araç çubukları vardır. Aşağıdaki klavye kısayolları bunlara erişmenize yardımcı olur.
 
-|Özellik|Açıklama|Anahtar birleşimi|
+|Özellik|Açıklama|Klavye kısayolu|
 |-------------|-----------------| - |
-|IDE araç çubukları|Standart araç çubuğunda ilk düğmeyi seçin.|**Alt**, **CTRL** + **sekmesi**|
-|Araç penceresi araç çubukları|Odağı bir araç penceresinde araç çubuklarına taşıyın. <br> <br> **NOT:** Bu, çoğu araç penceresi için geçerlidir, ancak yalnızca odak bir araç penceresidir. Ayrıca, ALT anahtardan önce SHIFT tuşunu seçmeniz gerekir. Takım Gezgini gibi bazı araç pencerelerinin ALT tuşunu seçmeden önce bir süre için SHIFT tuşunu basılı tutmanız gerekir.|**SHIFT**alt + |
-|Araç Çubukları|Sonraki araç çubuğunda ilk öğeye git (bir araç çubuğu odağa sahip olduğunda).|**CTRL**sekmesi + |
+|IDE araç çubukları|Standart araç çubuğunda ilk düğmeyi seçin.|**Alt**, **CTRL**+**sekmesi**|
+|Araç penceresi araç çubukları|Odağı bir araç penceresinde araç çubuklarına taşıyın. <br> <br> **NOT:** Bu, çoğu araç penceresi için geçerlidir, ancak yalnızca odak bir araç penceresidir. Ayrıca, ALT anahtardan önce SHIFT tuşunu seçmeniz gerekir. Takım Gezgini gibi bazı araç pencerelerinin ALT tuşunu seçmeden önce bir süre için SHIFT tuşunu basılı tutmanız gerekir.|**SHIFT**alt+|
+|Araç Çubukları|Sonraki araç çubuğunda ilk öğeye git (bir araç çubuğu odağa sahip olduğunda).|**CTRL**sekmesi+|
 
-### <a name="other-useful-shortcut-key-combinations"></a>Diğer faydalı kısayol tuşu birleşimleri
+### <a name="other-useful-keyboard-shortcuts"></a>Diğer faydalı klavye kısayolları
 
-Diğer bazı faydalı kısayol tuş birleşimleri şunlardır.
+Diğer bazı faydalı klavye kısayolları aşağıdakileri içerir.
 
-|Özellik|Açıklama|Anahtar birleşimi|
+|Özellik|Açıklama|Klavye kısayolu|
 |-------------|-----------------| - |
-|IDE|Yüksek Karşıtlık açma ve kapatma. <br> <br> **NOT:** Standart Windows kısayolu|**Sol alt + sol SHIFT + PrtScn**|
-|İletişim kutusu|İletişim kutusunda onay kutusu seçeneğini belirleyin veya temizleyin. <br> <br> **NOT:** Standart Windows kısayolu|**'Nu**|
-|Bağlam menüleri|Bir bağlam açın (sağ tıklama) menüsü. <br> <br> **NOT:** Standart Windows kısayolu|**SHIFT**F10 + |
-|Menüler|Kısayol tuşlarını kullanarak bir menü öğesine hızlıca erişin. Komutu etkinleştirmek için **alt** tuşunu ve ardından bir menüdeki altı çizili harfleri seçin. Örneğin, Visual Studio 'da Proje Aç iletişim kutusunu görüntülemek için **alt** + **F** + **O** + **P**'yi seçin.  <br><br> **NOT:** Standart Windows kısayolu|Alt +  **[harf]**|
-|Arama kutusu|Visual Studio 'da arama özelliğini kullanın.|**CTRL** + **Q**|
-|Araç penceresi|Araç kutusu sekmeleri arasında hareket edin.|CTRL + **yukarı ok**<br /><br /> and<br /><br /> CTRL + **aşağı ok**|
+|IDE|Yüksek Karşıtlık açma ve kapatma. <br> <br> **NOT:** Standart Windows klavye kısayolu|**Sol alt**+**Sol SHIFT**PrtScn+|
+|İletişim kutusu|İletişim kutusunda onay kutusu seçeneğini belirleyin veya temizleyin. <br> <br> **NOT:** Standart Windows klavye kısayolu|**'Nu**|
+|Bağlam menüleri|Bir bağlam açın (sağ tıklama) menüsü. <br> <br> **NOT:** Standart Windows klavye kısayolu|**SHIFT**F10+|
+|Menüler|Kısayol tuşlarını kullanarak bir menü öğesine hızlıca erişin. Komutu etkinleştirmek için **alt** tuşunu ve ardından bir menüdeki altı çizili harfleri seçin. Örneğin, Visual Studio 'da Proje Aç iletişim kutusunu görüntülemek için **alt**+**F**+**O**+**P**'yi seçin.  <br><br> **NOT:** Standart Windows klavye kısayolu|Alt +  **[harf]**|
+|Arama kutusu|Visual Studio 'da arama özelliğini kullanın.|**CTRL**+**Q**|
+|Araç penceresi|Araç kutusu sekmeleri arasında hareket edin.|CTRL+**yukarı ok**<br /><br /> and<br /><br /> CTRL+**aşağı ok**|
 |Araç penceresi|Araç kutusundan bir form veya tasarımcıya denetim ekleyin.|**Girin**|
 |Seçenekler iletişim kutusu: > Klavye ortamı|**Kısayol tuşlarına basın** seçeneğinde girilen bir tuş birleşimini silin.|**Geri Al**|
-|Bildirimler araç penceresi|İki klavye kısayol tuşu birleşimini ve diğeri tarafından izlenen bildirimler araç penceresini açın. Ardından, ok tuşlarını kullanarak bir bildirimi seçerek bunu seçin.| **T** +  **&#92;** <br>**CTRL**N + |
+|Bildirimler araç penceresi|İki klavye kısayol tuşu birleşimini ve diğeri tarafından izlenen bildirimler araç penceresini açın. Ardından, ok tuşlarını kullanarak bir bildirimi seçerek bunu seçin.| **CTRL** **&#92;** , **CTRL**N++|
 
 > [!NOTE]
 > İletişim kutuları ve menü komutları gördüğünüz açıklanana Yardım'da, etkin ayarlarınıza ve sürüm bağlı olarak farklı olabilir.
+
+## <a name="access-notifications-by-using-keyboard-shortcuts"></a>Klavye kısayollarını kullanarak bildirimlere erişin
+
+IDE 'de bir bildirim göründüğünde, bu, klavye kısayollarını kullanarak bildirimler penceresine nasıl erişekullanabileceğinizi aşağıda verilmiştir:
+
+1. IDE 'nin herhangi bir yerinden, sırayla aşağıdaki iki klavye kısayoluna basın: **CTRL** **&#92;** ve sonraCTRL+**N**.+
+
+   **Bildirimler** penceresi açılır.
+
+   ![Visual STUDIO IDE 'de bildirimler araç penceresi](media/toast-notification.png "Visual STUDIO IDE 'de bildirimler penceresinin ekran görüntüsü")
+
+1. Bir bildirim seçmek için **sekme** tuşunu ya da ok tuşlarını kullanın.
 
 ## <a name="use-the-sound-applet-to-set-build-and-breakpoint-cues"></a>Derleme ve kesme noktası ipuçlarını ayarlamak için ses uygulamasını kullanın
 
@@ -86,25 +97,33 @@ Visual Studio program olaylarına bir ses atamak için Windows 'daki ses uygulam
 
 1. Windows 10 çalıştıran bir bilgisayardaki **arama** kutusunda, **sistem seslerini Değiştir**yazın.
 
-   ![Windows 10 ' da arama kutusu](media/type-here-to-search.png)
+   ![Windows 10 ' da arama kutusu](media/type-here-to-search.png "Windows 10 ' da arama kutusunun ekran görüntüsü")
 
    (Alternatif olarak, Cortana etkinse, "Hey Cortana" deyin ve "sistem seslerini değiştirme" deyin.
 
-2. **Sistem seslerini Değiştir**' e çift tıklayın.
+1. **Sistem seslerini Değiştir**' e çift tıklayın.
 
-   ![Windows 10 ' da arama sonuçları](media/change-system-sounds.png)
+   ![Windows 10 ' da arama sonuçları](media/change-system-sounds.png "Windows 10 ' da ' sistem seslerini Değiştir ' arama sonuçlarının ekran görüntüsü")
 
-3. **Ses** iletişim kutusunda, **sesler** sekmesine tıklayın. <br><br>
-   Ardından, **Program olayları**' nda, **Microsoft Visual Studio**' ye kaydırın ve seçtiğiniz olaylara uygulamak istediğiniz sesleri seçin.
+1. **Ses** iletişim kutusunda, **sesler** sekmesine tıklayın.
 
-   ![Windows 10 ' da ses uygulamasının sesler sekmesi](media/sound-applet.png)
+1. **Program olayları**' nda, **Microsoft Visual Studio**' ye kaydırın ve seçtiğiniz olaylara uygulamak istediğiniz sesleri seçin.
 
-4. **Tamam**'ı tıklatın.
+   ![Windows 10 ' da ses uygulamasının sesler sekmesi](media/sound-applet.png "Windows 10 ' da ses uygulamasının sesler sekmesi")
+
+1.           **Tamam**'ı tıklatın.
+
+::: moniker range="vs-2017"
+
+> [!TIP]
+> Erişilebilirlik güncelleştirmeleri hakkında daha fazla bilgi edinmek için [Visual Studio 2017 sürüm 15,3](https://devblogs.microsoft.com/visualstudio/accessibility-improvements-in-visual-studio-2017-version-15-3/) blog gönderisine bakın.
+
+::: moniker-end
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 * [Visual Studio'nun erişilebilirlik özellikleri](../../ide/reference/accessibility-features-of-visual-studio.md)
 * [Nasıl yapılır: Visual Studio 'da menüleri ve araç çubuklarını özelleştirme](../../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md)
 * [Visual Studio IDE'yi kişiselleştirme](../../ide/personalizing-the-visual-studio-ide.md)
-* [Microsoft Erişilebilirlik](https://www.microsoft.com/Accessibility)
 * [Erişilebilirlik (Mac için Visual Studio)](/visualstudio/mac/accessibility)
+* [Microsoft Erişilebilirlik](https://www.microsoft.com/Accessibility)

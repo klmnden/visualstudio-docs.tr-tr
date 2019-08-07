@@ -1,5 +1,6 @@
 ---
-title: Blend'de nesnlerin stilini değiştirme
+title: Nesnelerin stilini değiştirme
+titleSuffix: Blend for Visual Studio
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: gewarren
@@ -7,98 +8,98 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 727bf173336a25f380cc938c3252530f86f22ab8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 53a2071e17898fc77aba8a5d51dda77ea2927187
+ms.sourcegitcommit: 90c3187d804ad7544367829d07ed4b47d3f8a72d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62845311"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "68821963"
 ---
-# <a name="modify-the-style-of-objects-in-blend"></a>Blend'de nesnlerin stilini değiştirme
+# <a name="modify-the-style-of-objects-in-blend-for-visual-studio"></a>Visual Studio için Blend içindeki nesnelerin stilini değiştirme
 
-Özellikleri ayarlamak için bir nesne özelleştirmek için en kolay yolu olan **özellikleri** bölmesi.
+Bir nesneyi özelleştirmenin en kolay yolu **Özellikler** bölmesinde özellikleri ayarlamaya yönelik olur.
 
-Ayarları yeniden kullanmak veya ayar gruplarını istiyorsanız, yeniden kullanılabilir bir kaynak oluşturun. Bunun bir *stili*, *şablon*, ya da özel bir renk gibi basit bir şeyden. Ayrıca, bir denetim üzerinde durumuna göre farklı şekilde görünür yapabilirsiniz. Örneğin, kullanıcı tıkladığında bir düğme yeşile döner.
+Ayarları veya ayar gruplarını yeniden kullanmak istiyorsanız, yeniden kullanılabilir bir kaynak oluşturun. Bu bir *Stil*, *şablon*veya özel renk gibi basit bir öğe olabilir. Ayrıca, bir denetimin durumuna göre farklı şekilde görünmesini sağlayabilirsiniz. Örneğin, Kullanıcı üzerini tıklattığında bir düğme yeşile dönüşür.
 
-## <a name="brushes-modify-the-appearance-of-an-object"></a>Fırçalar: Bir nesnenin görünümünü değiştirme
+## <a name="brushes-modify-the-appearance-of-an-object"></a>Larla Nesnenin görünümünü değiştirme
 
-Görünümünü değiştirmek istiyorsanız bir fırça bir nesneye uygulayın.
+Görünümünü değiştirmek istiyorsanız nesneye bir fırça uygulayın.
 
-### <a name="paint-a-repeating-image-or-pattern-on-an-object"></a>Yinelenen bir görüntü veya bir nesne üzerinde deseni boyama
+### <a name="paint-a-repeating-image-or-pattern-on-an-object"></a>Bir nesne üzerinde yinelenen bir görüntüyü veya kalıbı boyama
 
-Yinelenen bir görüntü veya bir nesne üzerinde deseni kullanılarak boyama bir *döşeme Fırçası*.
+*Döşeme fırçası*kullanarak bir nesne üzerinde yinelenen bir görüntüyü veya kalıbı boyayın.
 
-Döşeme Fırçası oluşturmak için oluşturarak başlayın bir *resim fırçası*, *çizim Fırçası*, veya *görsel fırça* kaynak.
+Bir kutucuk fırçası oluşturmak için, bir *görüntü fırçası*, *Çizim Fırçası*veya *görsel fırça* kaynağı oluşturarak başlarsınız.
 
-Resim fırçası bir görüntü kullanarak oluşturun. Aşağıdaki çizimler resim fırçası ve döşemeli resim fırçası çevrilmiş resim fırçası göstermektedir.
+Görüntü kullanarak bir görüntü fırçası oluşturun. Aşağıdaki çizimlerde, görüntü fırçası, görüntü fırçası döşeli ve görüntü fırçasının çevrilmiş olarak gösterildiği gösterilmektedir.
 
-![Resim fırçası](../designers/media/81f84f56-906d-456b-8288-d77da1e01e31.png) ![döşeli mage fırça](../designers/media/d3782ca8-64da-47a4-a095-c6cdd0fa47a2.png) ![Çevrilmiş resim fırçası](../designers/media/38ae3691-f3f1-4a1e-82ca-c7fa164bf56e.png)
+![Görüntü fırçası](../designers/media/81f84f56-906d-456b-8288-d77da1e01e31.png) ![mage fırçası döşeli](../designers/media/d3782ca8-64da-47a4-a095-c6cdd0fa47a2.png) ![Görüntü fırçası çevrilmiş](../designers/media/38ae3691-f3f1-4a1e-82ca-c7fa164bf56e.png)
 
-Çizim Fırçası bir vektör bir yol veya şekil gibi çizim kullanarak oluşturun. Aşağıdaki çizimler çizim Fırçası ve döşemeli çizim Fırçası çevrilmiş çizim Fırçası göstermektedir.
+Yol veya şekil gibi bir vektör çizimi kullanarak bir çizim Fırçası oluşturun. Aşağıdaki çizimler çizim Fırçası, çizim Fırçası döşeli ve çizim fırçasını çevrilmiş olarak gösterir.
 
-![Çizim Fırçası](../designers/media/197666ac-ef57-4c5c-9779-669e991a00a5.png) ![Çizme döşeli fırça](../designers/media/ba09cda3-4cee-40ba-b3d4-edc032158bdc.png) ![Çizim Fırçası çevrilmiş](../designers/media/15bf6021-620c-4490-9eae-086153d3f14f.png)
+![Çizim Fırçası](../designers/media/197666ac-ef57-4c5c-9779-669e991a00a5.png) ![Çizim Fırçası döşeli](../designers/media/ba09cda3-4cee-40ba-b3d4-edc032158bdc.png) ![Çizim Fırçası çevrilmiş](../designers/media/15bf6021-620c-4490-9eae-086153d3f14f.png)
 
-Görsel bir fırçayı bir düğme gibi bir denetim oluşturun. Aşağıdaki çizimler görsel fırça ve döşemeli görsel fırça göstermektedir.
+Düğme gibi bir denetimden görsel fırça oluşturun. Aşağıdaki çizimlerde görsel fırça ve görsel fırça döşeli gösterilmektedir.
 
-![Görsel fırça](../designers/media/fb6c90e0-153c-48fe-b563-e601beac6227.png) ![Döşeli görsel fırça](../designers/media/e261b99f-7d8f-4d91-bc84-19c7beccc255.png)
+![Görsel fırça](../designers/media/fb6c90e0-153c-48fe-b563-e601beac6227.png) ![Görsel fırça döşeli](../designers/media/e261b99f-7d8f-4d91-bc84-19c7beccc255.png)
 
-## <a name="styles-and-templates-create-a-consistent-look-and-feel-across-controls"></a>Stilleri ve şablonları: Denetimler arasında tutarlı bir görünüm oluşturma
+## <a name="styles-and-templates-create-a-consistent-look-and-feel-across-controls"></a>Stiller ve şablonlar: Denetimler arasında tutarlı bir görünüm oluşturma
 
-Görünümünü ve davranışını bir kez tasarlayabilir ve ayrı ayrı tutmak zorunda kalmazsınız, tasarım diğer denetimlere uygulanır.
+Bir denetimin görünümünü ve davranışını bir kez tasarlayabilir ve bu tasarımı farklı denetimlere uygulayabilir, böylece bunları ayrı ayrı tutmak zorunda kalmazsınız.
 
-**Bir stil kullanmalısınız?** : (Örneğin, bir düğme rengi) varsayılan özellikleri ayarlamak istiyorsanız kullanmak bir *stil*. Bile sizin için bir stil uygulamış olduğunuz sonra bir denetim değiştirebilirsiniz.
+**Bir stil kullanıyor musunuz?** : Yalnızca varsayılan özellikleri (örneğin, bir düğmenin rengi) ayarlamak istiyorsanız, bir *Stil*kullanın. Bir stili uyguladıktan sonra bile bir denetimi değiştirebilirsiniz.
 
-**Bir şablonu kullanmalısınız?** : Bir denetimin yapısını değiştirmek istiyorsanız, kullanmak bir *şablon*. Bir grafik veya logosu, bir düğmeye dönüştürme olduğunu düşünün. Bir şablon uyguladığınız sonra bir denetim değiştiremezsiniz.
+**Şablon kullanmanız mı gerekiyor?** : Bir denetimin yapısını değiştirmek istiyorsanız, bir *şablon*kullanın. Bir grafiği veya logoyu bir düğmeye dönüştürmeyi düşünün. Bir şablonu ona uyguladıktan sonra bir denetimi değiştiremezsiniz.
 
-### <a name="create-a-template-or-style"></a>Bir şablon veya stil oluşturma
+### <a name="create-a-template-or-style"></a>Şablon veya stil oluşturma
 
-Bir şablon oluşturmanın iki yolu demektir. Çalışma yüzeyindeki bir denetime herhangi bir nesneye dönüştürebilir veya varolan bir denetimi şablonunuzu temel alabilir.
+Şablon oluşturmanın iki yolu vardır. Çalışma yüzeyinizdeki herhangi bir nesneyi bir denetime dönüştürebilir veya şablonunuzu varolan bir denetime dayandırdırabilirsiniz.
 
-Herhangi bir nesne için bir denetim şablonu dönüştürmek için nesneyi seçin ve ardından **Araçları** menüsünde seçin **denetim haline Dönüştür**.
+Herhangi bir nesneyi bir denetim şablonuna dönüştürmek için, nesneyi seçin ve ardından **Araçlar** menüsünde **Denetim yap**' ı seçin.
 
-Varolan bir denetimi, şablona istiyorsanız, çalışma yüzeyinde bir nesneyi seçin. Ardından, çalışma yüzeyinin üst kısmında içerik haritası düğmeyi seçin, **şablonu Düzen**ve ardından **kopya Düzenle** veya **oluşturma boş**.
+Şablonunuzu varolan bir denetime dayandırmak istiyorsanız çalışma yüzeyinde bir nesne seçin. Sonra, çalışma yüzeyinin üst kısmında, içerik haritası düğmesini seçin, **Şablonu Düzenle**' yi seçin ve ardından **bir kopyayı Düzenle** veya **boş oluştur**' u seçin.
 
-![Düzen şablonu menüsü](../designers/media/5ebdb33f-aad2-4c10-a328-5e8b04c56a36.png)
+![Şablon menüsünü Düzenle](../designers/media/5ebdb33f-aad2-4c10-a328-5e8b04c56a36.png)
 
-Stil oluşturma, nesneyi seçin ve ardından **nesne** menüsünde seçin **stili Düzenle**ve ardından **kopya Düzenle** veya **boş oluşturma**.
+Bir stil oluşturmak için, nesneyi seçin ve ardından **nesne** menüsünde **stili Düzenle**' yi seçin ve ardından **bir kopyayı Düzenle** veya **boş oluştur**' u seçin.
 
-- Seçin **kopya Düzenle** varsayılan stil veya şablon denetimi ile başlatmak için.
+- Varsayılan stille veya denetimin şablonuyla başlamak için **bir kopyayı Düzenle** ' yi seçin.
 
-- Seçin **oluşturma boş** sıfırdan başlatmak için.
+- Sıfırdan başlamak için **boş oluştur** ' a tıklayın.
 
-**Geçerli olanı Düzenle** seçeneği, yalnızca bir stil veya önceden oluşturduğunuz bir şablonu düzenlerseniz görüntülenir. Bir denetim için varsayılan sistem şablonunu yine de kullandığı görünmeyecektir.
+**Geçerli öğeyi Düzenle** seçeneği yalnızca önceden oluşturduğunuz bir stili veya şablonu düzenlediğinizde görüntülenir. Hala varsayılan bir sistem şablonu kullanan bir denetim için görüntülenmez.
 
-İçinde **stil kaynağı oluştur** iletişim kutusu, ya da adını stil veya şablon daha sonra kullanabileceğiniz ya da bu türdeki tüm denetimlere stili veya şablonu uygulayabilirsiniz.
+**Stil kaynağı oluştur** iletişim kutusunda, daha sonra kullanabilmeniz için stili veya şablonu adlandırın ya da stili veya şablonu bu türün tüm denetimlerine uygulayabilirsiniz.
 
-![Stil kaynağı iletişim kutusu oluşturma](../designers/media/4818ee6a-ce60-4b79-91c8-3b1871829eea.png)
+![Stil kaynağı oluştur iletişim kutusu](../designers/media/4818ee6a-ce60-4b79-91c8-3b1871829eea.png)
 
 > [!NOTE]
-> Stilleri veya şablonları her denetim türü için oluşturulamıyor. Bir denetim onları desteklemiyorsa, içerik haritası düğmesi çalışma yüzeyi üzerinde görünmez.
-> Ana belgenizin düzenleme kapsamına dönmek için tıklayın **kapsamına dönmek** ![kapsam simgesini döndürür](../designers/media/55844eb3-ed98-4f20-aa66-a6f5b23eeb2b.png).
+> Her denetim türü için stil veya şablon oluşturamazsınız. Bir denetim bunları desteklemiyorsa, içerik haritası düğmesi çalışma yüzeyi üzerinde görünmez.
+> Ana belgenizin düzenlenme kapsamına dönmek için, kapsamı **Döndür** ![' e tıklayarak kapsam simgesine](../designers/media/55844eb3-ed98-4f20-aa66-a6f5b23eeb2b.png)döndürün.
 
-### <a name="apply-a-style-or-template-to-a-control"></a>Bir denetime stil veya şablon uygulama
+### <a name="apply-a-style-or-template-to-a-control"></a>Denetime stil veya şablon uygulama
 
-Bir nesneye sağ [nesneler ve zaman çizelgesi](../designers/creating-a-ui-by-using-blend-for-visual-studio.md#objects-and-timeline-window) penceresinde seçin **şablonu Düzen**ve ardından **kaynağı Uygula**.
+[Nesneler ve zaman çizelgesi](../designers/creating-a-ui-by-using-blend-for-visual-studio.md#objects-and-timeline-window) penceresinde bir nesneye sağ tıklayın, **Şablonu Düzenle**' yi ve ardından **kaynağı Uygula**' yı seçin.
 
-![Kaynak menüsünde Uygula](../designers/media/dc12debc-7711-47d9-84ce-10322a384397.png)
+![Kaynak menüsünü Uygula](../designers/media/dc12debc-7711-47d9-84ce-10322a384397.png)
 
-### <a name="restore-the-default-style-or-template-of-a-control"></a>Varsayılan stil veya şablon denetiminin geri yükleme
+### <a name="restore-the-default-style-or-template-of-a-control"></a>Bir denetimin varsayılan stilini veya şablonunu geri yükleme
 
-İstediğiniz denetimi seçin ve [özellikleri](../designers/creating-a-ui-by-using-blend-for-visual-studio.md#properties-window) penceresinde bulun **stili** veya **şablon** özelliği. Seçin **Gelişmiş Seçenekler**ve ardından **sıfırlama** kısayol menüsünde.
+Denetimi seçin ve * * Özellikler * * * * penceresinde **Stil** veya **şablon** özelliğini bulun. **Gelişmiş Seçenekler**' i seçin ve ardından kısayol menüsünde **Sıfırla** ' ya tıklayın.
 
-## <a name="visual-states-change-the-appearance-of-a-control-based-on-its-state"></a>Görsel durumlar: Kendi durumunu temel alan bir denetiminin görünüşünü değiştirme
+## <a name="visual-states"></a>Görsel durumlar
 
-Denetimlerin kullanıcı denetimine göre farklı görsel görünümlerini olabilir. Örneğin, bir kullanıcı buna tıkladığında veya bir animasyon çalıştırabileceğiniz yeşile bir düğme yapabilirsiniz. Kısaltır veya geçişleri kullanarak görsel durumlar arasındaki süreyi uzatabilir.
+Görsel durumlar, bir denetimin görünüşünü durumunu temel alarak değiştirmenize olanak sağlar. Denetimlerin kullanıcı etkileşimlerine göre farklı görsel görünümleri olabilir. Örneğin, bir Kullanıcı üzerini tıklattığında bir düğmeyi yeşil hale getirebilirsiniz veya bir animasyon çalıştırabilirsiniz. Geçişleri kullanarak görsel durumlar arasındaki süreyi kısaltın veya uzatın.
 
-![Durum üzerinde fare](../designers/media/a95c671a-5639-40b9-83db-1e6b214330d5.png)
+![Fare durumuna göre](../designers/media/a95c671a-5639-40b9-83db-1e6b214330d5.png)
 
-**Kısa bir video izleyin:** ![Yürüt düğmesi](../designers/media/bldadminconsoleinitialconfigicon.PNG) [WPF denetimleri durumunu yöneten](https://www.youtube.com/watch?v=m0PlkF5i6uw).
+**Kısa bir video izleyin:** ![Oynat düğmesi](../designers/media/bldadminconsoleinitialconfigicon.PNG) [WPF denetimlerinizin durumunu yönetin](https://www.youtube.com/watch?v=m0PlkF5i6uw).
 
-## <a name="resources-create-colors-styles-and-templates-and-reuse-them-later"></a>Kaynaklar: Renkleri, Stiller ve şablonlar oluşturma ve bunları daha sonra yeniden
+## <a name="resources-create-colors-styles-and-templates-and-reuse-them-later"></a>Kaynakların Renkler, stiller ve şablonlar oluşturun ve daha sonra yeniden kullanın
 
-Her şey, projenizdeki bir kaynağa dönüştürebilirsiniz. Farklı yerlerde uygulamanızda yeniden bir nesne bir kaynaktır. Örneğin, bir renk bir kez oluşturun, bir kaynak yapın ve ardından bu renk birkaç nesnelerinde kullanın. Tüm bu nesneleri rengini değiştirmek için renk kaynağı değiştirmeniz yeterlidir.
+Yalnızca projenizde bir şeyi bir kaynağa dönüştürebilirsiniz. Bir kaynak, yalnızca uygulamanızdaki farklı yerlerde yeniden kullanabileceğiniz bir nesnedir. Örneğin, bir kez renk oluşturabilir, bunu kaynak yapabilir ve daha sonra bu rengi çeşitli nesnelerde kullanabilirsiniz. Bu nesnelerin tümünün rengini değiştirmek için, yalnızca renk kaynağını değiştirmeniz yeterlidir.
 
-![Kaynak düğmeye renk Dönüştür](../designers/media/89203705-cf66-46e0-b153-52a23cd744f7.png) ![Renk kaynağı iletişim kutusu oluşturma](../designers/media/6bff8b19-3cd5-41a0-bbf9-ff65532d5aae.png)
+![Rengi kaynağa dönüştür düğmesi](../designers/media/89203705-cf66-46e0-b153-52a23cd744f7.png) ![Renk kaynağı oluştur iletişim kutusu](../designers/media/6bff8b19-3cd5-41a0-bbf9-ff65532d5aae.png)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

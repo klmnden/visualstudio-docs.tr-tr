@@ -1,8 +1,7 @@
 ---
 title: XAML 'yi dinamik yeniden yükleme kullanarak yazma ve hata ayıklama
 description: XAML çalışırken yeniden yükleme veya XAML düzenleme ve devam etme, uygulamaları çalıştırırken XAML kodunuzda değişiklik yapmanıza olanak sağlar
-ms.custom: ''
-ms.date: 02/28/2019
+ms.date: 08/05/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - xaml edit and continue
@@ -12,16 +11,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f1b2428024c30b8f96babf0cab6a56c60f52fa57
-ms.sourcegitcommit: 3e74ec49a54e5c3da7631f4466128cdf4384af6b
+ms.openlocfilehash: 2728f26319b3d395381d60f136fba7d0c20da977
+ms.sourcegitcommit: 90c3187d804ad7544367829d07ed4b47d3f8a72d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "68711219"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "68822148"
 ---
 # <a name="write-and-debug-running-xaml-code-with-xaml-hot-reload-in-visual-studio"></a>Visual Studio 'da XAML etkin yeniden yüklemesine sahip XAML kodunu yazma ve hata ayıklama
 
-Visual Studio XAML Hot reload, uygulamanız çalışırken XAML kodunda değişiklik yapmanıza olanak sağlayarak WPF veya UWP uygulama kullanıcı arabirimini oluşturmanıza yardımcı olur. Bu özellik, çalışan uygulamanın veri bağlamının, kimlik doğrulama durumunun ve tasarım zamanı sırasında benzetim yapmak zor olan diğer gerçek hayklığın avantajıyla XAML kodunu artımlı olarak derleyip test etmenizi sağlar.
+XAML çalışırken yeniden yükleme, uygulamanızın çalışırken XAML kodunda değişiklik yapmanıza izin vererek WPF veya UWP uygulama kullanıcı arabirimi (UI) oluşturmanıza yardımcı olur. Dinamik yeniden yükleme, hem Visual Studio hem de Visual Studio için Blend kullanılabilir. Bu özellik, çalışan uygulamanın veri bağlamının, kimlik doğrulama durumunun ve tasarım zamanı sırasında benzetim yapmak zor olan diğer gerçek hayklığın avantajıyla XAML kodunu artımlı olarak derleyip test etmenizi sağlar.
 
 XAML dinamik yeniden yükleme, özellikle bu senaryolarda yararlı olur:
 
@@ -35,7 +34,7 @@ XAML dinamik yeniden yükleme, özellikle bu senaryolarda yararlı olur:
 |Evrensel Windows uygulamaları (UWP)|Windows 10 ve üzeri, [Windows 10 SDK](https://developer.microsoft.com/windows/downloads/windows-10-sdk) 14393 + |
 
 > [!NOTE]
-> Visual Studio XAML etkin yeniden yüklemesi şu anda yalnızca Visual Studio 'da hata ayıklayıcı ekli olan uygulamanızı çalıştırırken desteklenir (**F5** veya **hata ayıklamayı Başlat**). Bu deneyimi, *Işleme İliştir*' i kullanarak etkinleştiremezsiniz.
+> Visual Studio XAML etkin yeniden yüklemesi şu anda yalnızca Visual Studio 'da uygulamanızı çalıştırırken veya hata ayıklayıcı ekli olarak Visual Studio için Blend desteklenir (**F5** veya **hata ayıklamayı Başlat**). Bu deneyimi, [Işleme İliştir](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)' i kullanarak etkinleştiremezsiniz.
 
 ## <a name="known-limitations"></a>Bilinen sınırlamalar
 
@@ -44,7 +43,7 @@ XAML sık yeniden yükleme 'nin bilinen kısıtlamaları aşağıda verilmiştir
 |Sınırlama|WPF|UWP|Notlar|
 |-|-|-|-|
 |Uygulama çalışırken denetimlere yönelik bağlantı olayları|Desteklenmez|Desteklenmez|Bkz: hata: *Olayın başarısız olduğundan emin olun*|
-|Uygulamanızın sayfa/pencere veya *app. xaml* gibi bir kaynak sözlüğünde kaynak nesneleri oluşturma|Desteklenmez|Desteklenir|Örnek: ```SolidColorBrush``` ```StaticResource```olarak kullanmak için bir kaynak sözlüğüne ekleme.</br>Not: Statik kaynaklar, stil dönüştürücüler ve bir kaynak sözlüğüne yazılan diğer öğeler, XAML etkin yeniden yükleme kullanılırken uygulanabilir/kullanılabilir. Yalnızca kaynağın oluşturulması desteklenmez.</br> Kaynak sözlüğü ```Source``` Özelliği değiştiriliyor.| 
+|Uygulamanızın sayfa/pencere veya *app. xaml* gibi bir kaynak sözlüğünde kaynak nesneleri oluşturma|Desteklenmez|Desteklenir|Örnek: `SolidColorBrush` `StaticResource`olarak kullanmak için bir kaynak sözlüğüne ekleme.</br>Not: Statik kaynaklar, stil dönüştürücüler ve bir kaynak sözlüğüne yazılan diğer öğeler, XAML etkin yeniden yükleme kullanılırken uygulanabilir/kullanılabilir. Yalnızca kaynağın oluşturulması desteklenmez.</br> Kaynak sözlüğü `Source` Özelliği değiştiriliyor.|
 |Uygulama çalışırken projenize yeni denetimler, sınıflar, pencereler veya diğer dosyalar ekleme|Desteklenmez|Desteklenmez|Yok.|
 |NuGet paketlerini yönetme (paket ekleme/kaldırma/güncelleştirme)|Desteklenmez|Desteklenmez|Yok.|
 |{X:Bind} biçimlendirme uzantısını kullanan veri bağlamasını değiştirme|Yok|Visual Studio 2019 ve sonraki sürümlerde desteklenir|Visual Studio 2017 veya önceki sürümlerde desteklenmez|
