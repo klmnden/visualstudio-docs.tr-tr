@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d8dba144740a2a39494323a456cddf90131e35c6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ee39ffbfd2e73a14fd42d574cef92a24784d1ad4
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62545889"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68921665"
 ---
 # <a name="ca1713-events-should-not-have-before-or-after-prefix"></a>CA1713: Olaylar önce ya da sonra önekine sahip olmamalıdır
 
@@ -27,19 +27,19 @@ ms.locfileid: "62545889"
 |-|-|
 |TypeName|EventsShouldNotHaveBeforeOrAfterPrefix|
 |CheckId|CA1713|
-|Kategori|Microsoft.Naming|
+|Kategori|Microsoft. Naming|
 |Yeni Değişiklik|Yeni|
 
 ## <a name="cause"></a>Sebep
- Olay adı, 'Before' veya 'After' ile başlar.
+Bir olayın adı ' before ' veya ' After ' ile başlar.
 
 ## <a name="rule-description"></a>Kural açıklaması
- Olay adları olayı oluşturan eylem açıklamalıdır. Belirli bir sırayla ilgili olayları adlandırmak için şimdiki veya geçmiş zamanı göreceli konumun sıralı eylemlerini belirtmek için kullanın. Olay çifti adlandırma kaynak kapatırken oluştuğunda, örneğin, 'Kapanış' ve 'Kapalı' yerine 'BeforeClose' ve 'AfterClose' adını.
+Olay adları, olayı oluşturan eylemi betimlemelidir. Belirli bir sırayla ilgili olayları adlandırmak için şimdiki veya geçmiş zamanı göreceli konumun sıralı eylemlerini belirtmek için kullanın. Örneğin, bir kaynağı kapatırken oluşan bir çift olayı adlandırırken, ' Beforeckaybetme ' ve ' AfterClose ' yerine ' Closing ' ve ' Closed ' adını yazabilirsiniz.
 
- Adlandırma kuralları, ortak dil çalışma zamanını hedefleyen kitaplıkları için genel bir bakış sağlar. Bu, yeni yazılım kitaplıkları için gereklidir ve kitaplık geliştirme yönetilen kodda uzmanlığına sahip olan kişi tarafından geliştirilmiştir müşterilerinizin size olan güvenini artırır öğrenme eğrisini azaltır.
+Adlandırma kuralları, ortak dil çalışma zamanını hedefleyen kitaplıklar için ortak bir görünüm sağlar. Bu, yeni yazılım kitaplıkları için gerekli olan öğrenme eğrisini azaltır ve müşterinin, kitaplığın yönetilen kod geliştirme konusunda uzmanlığa sahip olan birisi tarafından geliştirildiğini arttırır.
 
-## <a name="how-to-fix-violations"></a>İhlaller nasıl düzeltilir?
- Olay adı ön ekini kaldırın ve mevcut ya da bir fiil, geçmiş şimdiki kullanılacak adını değiştirmeyi göz önünde bulundurun.
+## <a name="how-to-fix-violations"></a>İhlalleri çözme
+Olay adından öneki kaldırın ve bir fiilin var olan veya geçmiş zaman hali kullanacak şekilde adı değiştirmeyi göz önünde bulundurun.
 
-## <a name="when-to-suppress-warnings"></a>Uyarılar bastırıldığında
- Bu kuraldan uyarıyı bastırmayın.
+## <a name="when-to-suppress-warnings"></a>Uyarıların ne zaman bastırılamıyor
+Bu kuraldan uyarıyı bastırmayın.

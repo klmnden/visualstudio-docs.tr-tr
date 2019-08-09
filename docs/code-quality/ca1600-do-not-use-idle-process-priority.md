@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a1774b3feb2da4939420bf75506892aac6dedd72
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c37affc585653807912d00c1cfe365853fd6260b
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62797523"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68921819"
 ---
 # <a name="ca1600-do-not-use-idle-process-priority"></a>CA1600: Boş işlem önceliğini kullanmayın
 
@@ -27,17 +27,17 @@ ms.locfileid: "62797523"
 |-|-|
 |TypeName|DoNotUseIdleProcessPriority|
 |CheckId|CA1600|
-|Kategori|Microsoft.Mobility|
+|Kategori|Microsoft. Mobility|
 |Yeni Değişiklik|Yeni|
 
 ## <a name="cause"></a>Sebep
- Bu kural işlemleri ayarlandığından oluşur `ProcessPriorityClass.Idle`.
+Bu kural, işlem olarak `ProcessPriorityClass.Idle`ayarlandığında oluşur.
 
 ## <a name="rule-description"></a>Kural açıklaması
- İşlem önceliğini Boşta olarak ayarlamayın. Sahip işlemler `System.Diagnostics.ProcessPriorityClass.Idle` Aksi durumda boş olacak ve bu nedenle beklemeyi engeller, CPU dolduracaktır.
+İşlem önceliğini Boşta olarak ayarlamayın. Bu işlem, aksi durumda boşta kaldığında CPU 'yu kaplayacaktırvebunedenlebeklemeyiengeller.`System.Diagnostics.ProcessPriorityClass.Idle`
 
-## <a name="how-to-fix-violations"></a>İhlaller nasıl düzeltilir?
- Ayarlama işlemleri `ProcessPriorityClass.BelowNormal`.
+## <a name="how-to-fix-violations"></a>İhlalleri çözme
+İşlem olarak `ProcessPriorityClass.BelowNormal`ayarlayın.
 
-## <a name="when-to-suppress-warnings"></a>Uyarılar bastırıldığında
- Bu kural yalnızca boş işlem önceliğini gereklidir ve mobility konuları güvenle görmezden gelinebilir atlanması.
+## <a name="when-to-suppress-warnings"></a>Uyarıların ne zaman bastırılamıyor
+Bu kural yalnızca boş işlem önceliği gerekli olduğunda ve hareketlilik konuları güvenli bir şekilde yoksayılarak bastırılır.

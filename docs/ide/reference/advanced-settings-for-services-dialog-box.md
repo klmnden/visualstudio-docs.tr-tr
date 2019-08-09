@@ -12,38 +12,38 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 330f52e1dd72f56c61e2fd77f5150edf4ac30731
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f7f599b4448fe39bf8c0d82d030f5f1173f28699
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62791973"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68919325"
 ---
 # <a name="advanced-settings-for-services-dialog-box"></a>Hizmetler İçin Gelişmiş Ayarlar İletişim Kutusu
-İstemci uygulama hizmetleri için Basitleştirilmiş erişim sağlayan [!INCLUDE[ajax_current_short](../../ide/reference/includes/ajax_current_short_md.md)] oturum açma, roller ve profil hizmetlerinden Windows Forms ve Windows Presentation Foundation (WPF) uygulamaları. Kullanabileceğiniz **Hizmetleri** sayfasını **Proje Tasarımcısı** istemci uygulama hizmetleri yapılandırmak için. Hakkında daha fazla bilgi için **Hizmetleri** sayfasında, bkz: [Hizmetler Sayfası, Proje Tasarımcısı](../../ide/reference/services-page-project-designer.md).
+İstemci uygulama hizmetleri, Windows Forms ve Windows Presentation Foundation [!INCLUDE[ajax_current_short](../../ide/reference/includes/ajax_current_short_md.md)] (WPF) uygulamalarından oturum açma, rol ve profil hizmetlerine Basitleştirilmiş erişim sağlar. İstemci uygulama hizmetlerini yapılandırmak için **Proje tasarımcısında** **Hizmetler** sayfasını kullanabilirsiniz. **Hizmetler** sayfası hakkında daha fazla bilgi için bkz. [Hizmetler sayfası, proje Tasarımcısı](../../ide/reference/services-page-project-designer.md).
 
- Kullanım **Hizmetleri için Gelişmiş ayarları** iletişim kutusunun **Hizmetleri** sayfasını **Proje Tasarımcısı** istemci uygulama hizmetleri için Gelişmiş ayarları yapılandırmak için. Bu ayarları kullanarak, daha az yaygın senaryoları etkinleştirmek için bazı varsayılan hizmet davranışı geçersiz kılabilirsiniz. Daha fazla bilgi için [istemci uygulama hizmetleri](/dotnet/framework/common-client-technologies/client-application-services).
+İstemci uygulama hizmetlerinin gelişmiş ayarlarını yapılandırmak için **Proje Tasarımcısı** 'ndaki **Hizmetler** sayfasının **Gelişmiş ayarlar** iletişim kutusunu kullanın. Bu ayarları kullanarak, daha az yaygın senaryolar sağlamak için bazı varsayılan uygulama hizmeti davranışlarını geçersiz kılabilirsiniz. Daha fazla bilgi için bkz. [istemci uygulama hizmetleri](/dotnet/framework/common-client-technologies/client-application-services).
 
- Erişim için **hizmetler için Gelişmiş ayarları** iletişim kutusunda, içinde bir proje düğümü seçin **Çözüm Gezgini**ve ardından **özellikleri** üzerinde **proje**  menüsü. Zaman **Proje Tasarımcısı** görünen tıklayın **Hizmetleri** sekmesine ve ardından **Gelişmiş** düğmesi. İstemci uygulama Hizmetleri'ı etkinleştirene kadar bu düğmeyi devre dışı bırakılacak.
+**Hizmetler Için Gelişmiş ayarlar** iletişim kutusuna erişmek için **Çözüm Gezgini**' de bir proje düğümü seçin ve ardından **Proje** menüsünde **Özellikler** ' e tıklayın. **Proje Tasarımcısı** göründüğünde, **Hizmetler** sekmesine tıklayın ve ardından **Gelişmiş** düğmesine tıklayın. Bu düğme, istemci uygulama hizmetlerini etkinleştirene kadar devre dışı bırakılır.
 
 ## <a name="task-list"></a>Görev Listesi
 
-- [Nasıl yapılır: İstemci uygulama servislerini yapılandırma](/dotnet/framework/common-client-technologies/how-to-configure-client-application-services)
+- [Nasıl yapılır: Istemci Uygulama Hizmetleri yapılandırma](/dotnet/framework/common-client-technologies/how-to-configure-client-application-services)
 
 ## <a name="uielement-list"></a>UIElement Listesi
 
- **Çevrimdışı oturum açma yerel olarak etkinleştirmek için parola karması Kaydet** şifrelenmiş bir kullanıcının parolasını yerel uygulama çevrimdışı modda olduğunda oturum açmak kullanıcının etkinleştirmek için önbelleğe alınacaktır olup olmadığını belirtir. Bu seçenek varsayılan olarak seçilidir.
+ **Çevrimdışı oturum açmayı etkinleştirmek için parola karmasını yerel olarak kaydet** Kullanıcının, uygulama çevrimdışı moddayken oturum açmasını sağlamak için Kullanıcı parolasının şifreli bir biçiminin yerel olarak önbelleğe alınıp alınmayacağını belirtir. Bu seçenek varsayılan olarak seçilidir.
 
- **Sunucu tanımlama bilgisi süresi her yeniden oturum açmasını gerektiren** uygulamanız rolleri veya profili hizmeti ve sunucu kimlik doğrulaması eriştiğinde daha önceden kimliği doğrulanmış kullanıcılara otomatik olarak yeniden kimlik doğrulaması olup olmadığını belirtir tanımlama bilgisi süresi doldu. Uygulama Hizmetleri erişimini ve açık yeniden kimlik doğrulaması tanımlama bilgisinin zaman aşımına uğradıktan gerektiren için bu seçeneği belirleyin. Bu, kullanım kalmaz sonra uygulamasını çalışır durumda bırakın kullanıcılar süresiz olarak kimliğinin emin olmak genel konumda dağıtılan uygulamalar için yararlıdır. Bu seçenek varsayılan olarak işaretli değildir.
+ **Sunucu tanımlama bilgilerinin süresi dolduğu zaman kullanıcıların yeniden oturum açmasını gerektir** Uygulamanız rollere veya profil hizmetine eriştiğinde ve sunucu kimlik doğrulama tanımlama bilgisinin süresi dolduğunda, önceden kimliği doğrulanmış kullanıcıların otomatik olarak yeniden kimlik doğrulaması yapılıp yapılmayacağını belirtir. Uygulama hizmetlerine erişimi reddetmek ve tanımlama bilgisinin süresi dolduktan sonra açık yeniden kimlik doğrulaması istemek için bu seçeneği belirleyin. Bu, ortak konumlarda dağıtılan uygulamalar için yararlıdır ve bu durumda, uygulamayı kullanımda bırakarak çalıştıran kullanıcıların kimliği doğrulanmamış olarak kalmaz. Bu seçenek varsayılan olarak temizlenir.
 
- **Rol hizmeti önbellek zaman aşımı** istemci rol sağlayıcıyı kullanacak süreyi önbelleğe rol hizmetine erişim yerine rol değerleri belirtir. Rolleri seyrek güncelleştirildiğinde rolleri sık veya daha büyük bir değere güncelleştirildiğinde bu zaman aralığı için küçük bir değere ayarlayın. Varsayılan değer bir gündür.
+ **Rol hizmeti önbellek zaman aşımı** İstemci rolü sağlayıcısının roller hizmetine erişmek yerine önbelleğe alınmış rol değerlerini kullanacağı süreyi belirtir. Roller sık sık güncelleştirildiği zaman zaman aralığını küçük bir değere ayarlayın ve roller seyrek olarak güncelleniyorsa daha büyük bir değere ayarlayın. Varsayılan değer bir gündür.
 
- Çağırdığınızda, önbelleğe alınmış rol değerlerinin veya rol hizmeti rol sağlayıcısı erişen <xref:System.Web.Security.RolePrincipal.IsInRole%2A> yöntemi. Program aracılığıyla önbelleği temizlemek ve uzak hizmete erişmek için bu yöntem zorlamak için çağrı <xref:System.Web.ClientServices.Providers.ClientRoleProvider.ResetCache%2A> yöntemi.
+Rol sağlayıcısı, <xref:System.Web.Security.RolePrincipal.IsInRole%2A> yöntemi çağırdığınızda önbelleğe alınmış rol değerlerine veya rol hizmetine erişir. Önbelleği programlı bir şekilde temizlemek ve bu yöntemin uzak hizmete erişmesini zorlamak için <xref:System.Web.ClientServices.Providers.ClientRoleProvider.ResetCache%2A> yöntemini çağırın.
 
- **Özel bağlantı dizesini kullanmak** istemci hizmeti sağlayıcıları için yerel önbelleği özel bir veri deposu kullanıp kullanmayacağını belirtir. Varsayılan olarak, hizmet sağlayıcıları, önbellek için yerel dosya sistemi kullanır. Bu seçeneğin seçilmesi varsayılan bağlantı dizesi metin kutusunda otomatik olarak doldurur. Varsayılan bağlantı dizesini otomatik olarak oluşturmak ve bir SQL Server Compact Edition veritabanını kullanmak için tutabilirsiniz veya mevcut bir SQL Server veritabanına bir bağlantı dizesi belirtebilirsiniz. Daha fazla bilgi için [nasıl yapılır: İstemci uygulama servislerini yapılandırma](/dotnet/framework/common-client-technologies/how-to-configure-client-application-services). Bu seçenek varsayılan olarak işaretli değildir.
+ **Özel bağlantı dizesi kullan** İstemci hizmet sağlayıcılarının yerel önbellek için özel bir veri deposu kullanıp kullanmayacağını belirtir. Varsayılan olarak, hizmet sağlayıcıları önbellek için yerel dosya sistemini kullanır. Bu seçeneğin belirlenmesi, metin kutusunu otomatik olarak varsayılan bir bağlantı dizesiyle dolduracaktır. Otomatik olarak bir SQL Server Compact Edition veritabanı oluşturmak ve kullanmak için varsayılan bağlantı dizesini tutabilir veya var olan bir SQL Server veritabanına bir bağlantı dizesi belirtebilirsiniz. Daha fazla bilgi için [nasıl yapılır: Istemci Uygulama Hizmetleri](/dotnet/framework/common-client-technologies/how-to-configure-client-application-services)yapılandırın. Bu seçenek varsayılan olarak temizlenir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 - [İstemci Uygulama Servisleri](/dotnet/framework/common-client-technologies/client-application-services)
 - [Hizmetler Sayfası, Proje Tasarımcısı](../../ide/reference/services-page-project-designer.md)
-- [Nasıl yapılır: İstemci uygulama servislerini yapılandırma](/dotnet/framework/common-client-technologies/how-to-configure-client-application-services)
+- [Nasıl yapılır: Istemci Uygulama Hizmetleri yapılandırma](/dotnet/framework/common-client-technologies/how-to-configure-client-application-services)

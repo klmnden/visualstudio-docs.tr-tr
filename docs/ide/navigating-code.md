@@ -18,141 +18,141 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 792b3ccf09faf9983afcd72de9acc0f23540683d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1263b7a0ae65731eb618ffc925ff0f6310be0f4d
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62570152"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68919509"
 ---
-# <a name="navigate-code"></a>Kod gidin
+# <a name="navigate-code"></a>Koda git
 
-Visual Studio Düzenleyicisi'nde koduna gitmek için çeşitli yollar sağlar. Bu konu, kodunuzu gidebilirsiniz farklı yollarını özetler ve daha fazla ayrıntıya konulara bağlantılar sağlar.
+Visual Studio, düzenleyicide kod gezinmek için birçok yol sunar. Bu konu, kodunuzda gezinmek için farklı yollar özetler ve daha fazla ayrıntıya gidecek konuların bağlantılarını sağlar.
 
-## <a name="navigate-backward-and-navigate-forward-commands"></a>Geriye git ve Navigate Forward komutları
+## <a name="navigate-backward-and-navigate-forward-commands"></a>Geriye git ve Ileri git komutları
 
-Kullanabileceğiniz **Navigate Backward** (**Ctrl**+**-**) ve **Navigate Forward** ( **CTRL**+**Shift**+**-**) ekleme noktasını önceki konumlara taşımak ya da daha fazla şey bir döndürmek için araç çubuğundaki düğmeler bir önceki konumdan son konum. Bu düğmeler, ekleme noktasının son 20 konumunu korur. Bu komutlar da kullanılabilir **görünümü** menüsü altında **Navigate Backward** ve **Navigate Forward**.
+Ekleme işlemini taşımak için **geri git** (**CTRL**+ **-** ) ve **İleri** git (**CTRL**+**Shift**+ **-** ) düğmeleri araç çubuğunda kullanılabilir önceki konumlara işaret edin veya önceki bir konumdan daha yeni bir konuma geri dönmek için. Bu düğmeler, ekleme noktasının son 20 konumunu korur. Bu komutlar Ayrıca **Görünüm** menüsünde **geri git** ' ın altında ve **İleri git**' in altında bulunur.
 
 ![İleri ve geri gezinti düğmeleri](../ide/media/vs2017_nav_buttons.png)
 
 ## <a name="navigation-bar"></a>Gezinti çubuğu
 
-Kullanabileceğiniz **gezinti çubuğu** (kod penceresinin üst kısmındaki açılır kutuları) bir kod temeli kodda gidin. Bir tür veya üye ona doğrudan gitmek için seçebilirsiniz. Bir Visual Basic, C# veya C++ kod temeli kodda düzenlerken gezinti çubuğu görünür. Kısmi class içinde geçerli kod dosyası dışında tanımlanan üyeler devre dışı bırakılabilir (bunlar gri renkte görüntülenir).
+Kod temelindeki koda gitmek için **Gezinti çubuğunu** (kod penceresinin en üstündeki açılan kutular) kullanabilirsiniz. Doğrudan buna gitmek için bir tür veya üye seçebilirsiniz. Visual Basic, C#veya C++ kod tabanında kod düzenlediğinizde gezinti çubuğu görüntülenir. Kısmi bir sınıfta, geçerli kod dosyası dışında tanımlanan Üyeler devre dışı bırakılabilir (gri renkte görünürler).
 
- ![Kod gezinti çubuğu](../ide/media/vside_navigation_bar.png)
+![Kod gezinti çubuğu](../ide/media/vside_navigation_bar.png)
 
-Açılan kutu gibi gezinebilirsiniz:
+Açılır kutuların etrafında aşağıdaki gibi gezinebilirsiniz:
 
-- Geçerli dosyaya ait başka bir proje gitmek için soldaki aşağı açılan seçin.
+- Geçerli dosyanın ait olduğu başka bir projeye gitmek için sol taraftaki açılan kutuda seçin.
 
-- Bir sınıf veya türe gitmek için açılan ortadaki seçin.
+- Bir sınıfa veya türe gitmek için ortadaki açılan kutuda seçin.
 
-- Bir yordam veya başka bir sınıfın üyesi doğrudan gitmek için sağ açılan menü seçin.
+- Bir yordama veya bir sınıfın diğer üyesine doğrudan gitmek için sağ açılan kutuda bunu seçin.
 
-- Odağı kod penceresinden Gezinti çubuğuna geçirmek için kısayol tuş bileşimine basın **Ctrl**+**F2**.
+- Odağı kod penceresinden gezinti çubuğuna kaydırmak için **CTRL**+**F2**tuş birleşimine basın.
 
-- Odağı gezinti çubuğunda kutusu kutusu kaydırmak için basın **sekmesini** anahtarı.
+- Odağı gezinti çubuğundaki kutudan kutuya kaydırmak için **Tab** tuşuna basın.
 
-- Odak ve dönüş kodu penceresine sahip bir gezinti çubuğu öğesini seçmek için basın **Enter** anahtarı.
+- Odağa sahip olan ve kod penceresine döndürülen gezinti çubuğu öğesini seçmek için **ENTER** tuşuna basın.
 
-- Odağı gezinti çubuğundan koda hiçbir şey seçmeden dönmek için basın **Esc** anahtarı.
+- Gezinti çubuğundan bir şeyi seçmeden koda odaklanmak için **ESC** tuşuna basın.
 
-Gezinti çubuğunu gizlemek için değiştirin **gezinti çubuğu** seçeneğini **metin düzenleyici tüm diller** ayarları (**Araçları** > **seçenekleri**  >  **Metin düzenleyici** > **tüm diller**), veya tek tek dil ayarlarını değiştirebilirsiniz.
+Gezinti çubuğunu gizlemek için, **metin düzenleyici tüm diller** ayarlarında (**Araçlar** > **Seçenekler** > **metin düzenleyici** > **tüm diller**) **Gezinti çubuğu** seçeneğini değiştirin veya ayrı dillerin ayarlarını değiştirebilirsiniz.
 
 ## <a name="find-all-references"></a>Tüm başvuruları Bul
 
-Çözümde seçilen öğenin tüm başvurularını bulur. Bu, olası yan-büyük bir yeniden düzenleme etkilerini kontrol etmek için ya da "etkin" kod doğrulamak için kullanabilirsiniz. Tuşuna **F8** výsledky mezi atlamak için. Daha fazla bilgi için [kodunuzdaki başvuruları bulma](finding-references.md).
+Çözümdeki seçili öğenin tüm başvurularını bulur. Bunu, büyük bir yeniden düzenleme için olası yan etkileri denetlemek veya "ölü" kodu doğrulamak için kullanabilirsiniz. Sonuçlar arasında geçmek için **F8** tuşuna basın. Daha fazla bilgi için [kodunuzdaki başvuruları bulma](finding-references.md).
 
 Giriş | İşlev
 ------------ | ---
-**Klavye** | Metin imlecinizi yere adını yazın ve ENTER tuşuna içinde **Shift**+**F12**
-**Fare** | Seçin **tüm başvuruları Bul** sağ tıklatma menüsünden
+**Klavye** | Metin imlecinizi bir yere tür adının içine yerleştirin ve **Shift**+**F12** tuşlarına basın
+**Fare** | Sağ tıklama menüsünden **tüm başvuruları bul** ' u seçin
 
 ## <a name="reference-highlighting"></a>Başvuru vurgulama
 
-Kaynak koddaki bir simge tıkladığınızda, o simgenin tüm örnekleri belgede vurgulanır. Vurgulanan simgeler bildirimleri ve başvurular içerebilir ve diğer pek çok simgeyi **tüm başvuruları Bul** döndürür. Bu sınıf, nesneler, değişkenler, yöntemleri ve özellik adlarını içerir. Visual Basic kodu içinde birçok denetim yapıları için anahtar sözcükler ayrıca vurgulanır. Sonraki veya önceki vurgulanan simgeye gitmek için basın **Ctrl**+**Shift**+**aşağı ok** veya **Ctrl** + **Shift**+**yukarı ok**. Vurgulama rengini değiştirebilirsiniz **Araçları** > **seçenekleri** > **ortam** > **yazı tipleri ve Renkleri** > **vurgulanmış başvuru**.
+Kaynak kodunda bir simgeye tıkladığınızda, söz konusu simgenin tüm örnekleri belgede vurgulanır. Vurgulanan semboller, bildirim ve başvuru içerebilir ve **tüm başvuruları** içeren diğer birçok sembol döndürülür. Bunlar sınıfların, nesnelerin, değişkenlerin, yöntemlerin ve özelliklerin adlarını içerir. Visual Basic kodda, birçok denetim yapısı için anahtar sözcükler de vurgulanır. İleri veya önceki vurgulanan simgeye gitmek için **CTRL**+**SHIFT**+**aşağı ok** veya **CTRL**+**SHIFT**+**yukarı ok**tuşlarına basın. **Araç**seçenekleri ortam yazı tipi veRenkler > vurgulanan başvuru bölümünde vurgulama rengini değiştirebilirsiniz. >  >  > 
 
-## <a name="go-to-commands"></a>Git komutları
+## <a name="go-to-commands"></a>Komutlara git
 
-Gitmek için kullanılabilen aşağıdaki komutları sahip **Düzenle** menüsünün altında **Git**:
+Git ' in altındaki **Düzenle** menüsünde bulunan aşağıdaki komutlara gidin:
 
-- **Satıra Git** (**Ctrl**+**G**): Etkin belgedeki belirtilen satır numarasına taşır.
+- **Satıra git** (**CTRL**+**G**): Etkin belgede belirtilen satır numarasına git.
 
-- **Tümüne Git** (**Ctrl**+**T** veya **Ctrl**+**,**): Belirtilen satır, tür, dosya, üye veya sembol taşıyın.
+- **Tümüne git** (**CTRL**+**T** veyaCTRL+ **,** ): Belirtilen satıra, türe, dosyaya, üyeye veya simgeye taşıyın.
 
-- **Dosyaya gidin** (**Ctrl**+**1**, **Ctrl**+**F**): Çözüm belirtilen dosyaya gider.
+- **Dosyaya git** (**CTRL**+**1**,CTRL+**F**): Çözümdeki belirtilen dosyaya taşıyın.
 
-- **Son dosyaya gidin** (**Ctrl**+**1**, **Ctrl**+**R**): Çözümü belirtildiğinde, en son ziyaret edilen dosyasına taşıyın.
+- **Son dosyaya git** (**CTRL**+**1**,CTRL+**R**): Çözümdeki belirtilen, son ziyaret edilen dosyaya taşı.
 
-- **Tür Git** (**Ctrl**+**1**, **Ctrl**+**T**): Çözümde belirtilen türe taşıyın.
+- **Türe git** (**CTRL**+**1**,CTRL+**T**): Çözümdeki belirtilen türe taşıyın.
 
-- **Üye Git** (**Ctrl**+**1**, **Ctrl**+**M**): Belirtilen üye çözümdeki taşıyın.
+- **Üyeye git** (**CTRL**+**1**, **CTRL**+ı): Çözümdeki belirtilen üyeye git.
 
-- **Sembol Git** (**Ctrl**+**1**, **Ctrl**+**S**): Çözüm belirtilen sembolü taşıyın.
+- **Simgeye git** (**CTRL**+**1**,CTRL+**S**): Çözümdeki belirtilen simgeye taşıyın.
 
-Visual Studio 2017 sürüm 15,8 ve daha sonra aşağıdaki **Git** Gezinti komutları de mevcuttur:
+Visual Studio 2017 sürüm 15,8 ve sonraki sürümlerde, aşağıdaki gezinti komutlarına **Git** de kullanılabilir:
 
-- **Dosyadaki sonraki sorun gider** (**Alt**+**PgDn**) ve **dosyadaki önceki sorun Git** (**Alt** + **PgUp**)
+- **Dosyadaki bir sonraki soruna git** (**Alt**+**PgDn**) ve **dosyadaki bir önceki soruna git** (**alt**+**PgUp**)
 
-- **Son konumu düzenlemek için Git** (**Ctrl**+**Shift**+**geri**)
+- **Son düzenleme konumuna git** (**CTRL**+vardiyasıgeri+**Al**)
 
-Bu komutları hakkında daha fazla bilgi bkz [Git komutlarını kullanarak kod bulma](../ide/go-to.md) konu.
+Bu komutlar hakkında daha fazla bilgi Için bkz. [komutları kullanarak kodu bulma](../ide/go-to.md) bölümüne bakın.
 
 ## <a name="go-to-definition"></a>Tanıma Git
 
-Tanıma Git için seçilen öğenin açıklamasını alır. Daha fazla bilgi için [tanıma ve Özet tanım](../ide/go-to-and-peek-definition.md).
+Tanıma git, sizi seçili öğenin tanımına götürür. Daha fazla bilgi için bkz. [Tanıma Git ve açıklama açıklaması](../ide/go-to-and-peek-definition.md).
 
 Giriş | İşlev
 ------------ | ---
-**Klavye** | Metin imlecinizi yere adını yazın ve ENTER tuşuna içinde **F12**
-**Fare** | Tür adına sağ tıklayıp **tanıma** veya basın **Ctrl** ve tür adına tıklayın.
+**Klavye** | Metin imlecinizi bir yere tür adının içine yerleştirin ve **F12** tuşuna basın
+**Fare** | Tür adına sağ tıklayın ve **Tanıma Git** ' i seçin veya **CTRL** tuşuna basın ve tür adına tıklayın
 
 ## <a name="peek-definition"></a>Tanıma göz at
 
-Tanımı görüntüler, Kod düzenleyicisinde, konumunuzu uzağa gitmeden pencerede seçili öğenin tanıma göz at. Daha fazla bilgi için [nasıl yapılır: Görüntüleme ve Özet tanım'ı kullanarak kod düzenleme](../ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md) ve [tanıma ve Özet tanım](../ide/go-to-and-peek-definition.md).
+Göz atma tanımı, seçili öğenin tanımını, kod düzenleyicisindeki geçerli konumunuzla uzaklaşmadan bir pencerede görüntüler. Daha fazla bilgi için [nasıl yapılır: Özeti Açıklama](../ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md) ' yı kullanarak görüntüleyin ve düzenleyin ve tanım [ve bakış tanımına gidin](../ide/go-to-and-peek-definition.md).
 
 Giriş | İşlev
 ------------ | ---
-**Klavye** | Metin imlecinizi yere adını yazın ve ENTER tuşuna içinde **Alt**+**F12**
-**Fare** | Tür adına sağ tıklayıp **Özet tanımı** veya basın **Ctrl** ve türü adına tıklayın (varsa **tanımı Özet Görünümü'nde açın** teslim seçeneği)
+**Klavye** | Metin imlecinizi bir yere tür adının içine yerleştirin ve **alt**+**F12** tuşlarına basın
+**Fare** | Tür adına sağ tıklayın ve bakış **tanımı** ' nı seçin veya **CTRL** tuşuna basın veya tür adına tıklayın ( **göz atma görünümünde aç seçeneğinde açık tanımı** varsa)
 
-## <a name="go-to-implementation"></a>Uygulamaya Git
+## <a name="go-to-implementation"></a>Uygulamaya git
 
-Uygulamaya Git kullanarak, bir taban sınıftan gidin veya tür, uygulamaları için. Birden fazla uygulaması varsa, bunları listelenen görürsünüz **sembol sonuçları Bul** penceresi:
+Uygulamaya git ' i kullanarak, temel bir sınıftan gezinebilirsiniz veya uygulamalarına bir tür ekleyebilirsiniz. Birden çok uygulama varsa, bunları **sembol sonuçları bul** penceresinde listelendiğini göreceksiniz:
 
 Giriş | İşlev
 ------------ | ---
-**Klavye** | Metin imlecinizi yere adını yazın ve ENTER tuşuna içinde **Ctrl**+**F12**
-**Fare** | Tür adına sağ tıklayıp **uygulamaya Git**
+**Klavye** | Metin imlecinizi bir yere tür adının içine yerleştirin ve **CTRL**+**F12** tuşlarına basın
+**Fare** | Tür adına sağ tıklayın ve **uygulamaya git** ' i seçin.
 
 ## <a name="call-hierarchy"></a>Çağrı Hiyerarşisi
 
-Bir yöntemde gelen ve giden çağrıları görüntüleyebileceğiniz [çağrı hiyerarşisi penceresi](../ide/reference/call-hierarchy.md):
+[Çağrı hiyerarşisi penceresindeki](../ide/reference/call-hierarchy.md)bir yönteme ve bir yöntemine yapılan çağrıları görüntüleyebilirsiniz:
 
 Giriş | İşlev
 ------------ | ---
-**Klavye** | Metin imlecinizi yere adını yazın ve ENTER tuşuna içinde **Ctrl**+**K**, **Ctrl**+**T**
-**Fare** | Üye adının üzerine sağ tıklayın ve **çağrı hiyerarşisini görüntüle**
+**Klavye** | Metin imlecinizi bir yere tür adının içine yerleştirin ve **CTRL**+**K**, **CTRL**+**T** tuşlarına basın
+**Fare** | Üye adına sağ tıklayın ve **Çağrı hiyerarşisini görüntüle** ' yi seçin.
 
-## <a name="next-method-and-previous-method-commands-visual-basic"></a>Sonraki önceki yöntem komutları (Visual Basic)
+## <a name="next-method-and-previous-method-commands-visual-basic"></a>Next yöntemi ve önceki yöntem komutları (Visual Basic)
 
-Visual Basic kod dosyalarında bu komutları ekleme noktasını farklı yöntemlere taşımak için kullanın. Seçin **Düzenle** > **sonraki yöntemi** veya **Düzenle** > **önceki yöntem**.
+Visual Basic kod dosyalarında, ekleme noktasını farklı yöntemlere taşımak için bu komutları kullanın. **Sonraki yöntemi** **Düzenle** > veya**önceki yöntemi** **Düzenle** > seçeneğini belirleyin.
 
 ## <a name="structure-visualizer"></a>Yapı Görselleştirici
 
-Kod Düzenleyicisi gösterilmektedir yapı Görselleştirici özelliği *yapı kılavuz çizgileri* -dikey gösteren küme ayraçları içine kod temelinizde eşleşen satırları kesik. Bu mantıksal blokları nerede başlaması görmeyi kolaylaştırır ve son kolaylaştırır.
+Kod düzenleyicisinde yapı görselleştiricisi özelliği, *Yapı Kılavuzu satırları* -kod tabanınızda eşleşen küme ayraçları belirten dikey kesikli çizgiler gösterir. Bu, mantıksal blokların nerede başlayıp bitmekte olduğunu görmeyi kolaylaştırır.
 
 ![Yapı Görselleştirici](../ide/media/vside_structure_visualizer.png)
 
-Yapı kılavuz çizgileri devre dışı bırakmak için Git **Araçları** > **seçenekleri** > **metin düzenleyici** > **genel** temizleyin **yapı kılavuz çizgilerini göster** kutusu.
+Yapı Kılavuzu satırlarını devre dışı bırakmak için, **Araçlar** > **Seçenekler** > **metin Düzenleyicisi** > **genel** ' e gidin ve **yapıyı göster kılavuz çizgileri** kutusunu temizleyin.
 
 ## <a name="enhanced-scroll-bar"></a>Gelişmiş kaydırma çubuğu
 
-Kodunuzun kuş bakışı görünümünü almak için bir kod penceresinde Gelişmiş kaydırma çubuğunu kullanın. İmleç kaydırma çubuğu yukarı ve aşağı taşıdığınızda, eşleme modunda önizlemeler kodun görebilirsiniz. Daha fazla bilgi için [nasıl yapılır: Kaydırma çubuğunu özelleştirerek kodunuzu izleme](../ide/how-to-track-your-code-by-customizing-the-scrollbar.md).
+Kodunuzun bir kuşbakışı görünümünü almak için, bir kod penceresinde gelişmiş kaydırma çubuğunu kullanabilirsiniz. Harita modunda, imleci kaydırma çubuğunu yukarı ve aşağı taşıdığınızda kodun önizlemelerini görebilirsiniz. Daha fazla bilgi için [nasıl yapılır: Kaydırma çubuğunu](../ide/how-to-track-your-code-by-customizing-the-scrollbar.md)özelleştirerek kodunuzu izleyin.
 
 ## <a name="codelens-information"></a>CodeLens bilgileri
 
-Değişiklikleri ve bu değişiklikler, başvurular, hatalar, iş öğeleri, kod incelemeleri ve birim test durumu, Kod Düzenleyicisi'nde CodeLens kullandığınızda kimin yaptığını gibi belirli kod hakkında bilgi bulabilirsiniz. Team Foundation Server ile Visual Studio Enterprise kullandığınızda CodeLens ekran gibi çalışır. Bkz: [kod değişikliklerini ve diğer geçmişi bulma](../ide/find-code-changes-and-other-history-with-codelens.md).
+Kod düzenleyicisinde CodeLens kullandığınızda, değişiklikler ve bu değişiklikleri kimin yaptığını, başvuruları, hataları, iş öğelerini, kod incelemelerini ve birim test durumunu oluşturan belirli kod hakkındaki bilgileri bulabilirsiniz. CodeLens, Team Foundation Server Visual Studio Enterprise kullandığınızda bir başlık görünümü gibi çalışır. Bkz. [kod değişikliklerini ve diğer geçmişi bulma](../ide/find-code-changes-and-other-history-with-codelens.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

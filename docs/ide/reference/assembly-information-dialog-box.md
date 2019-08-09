@@ -12,42 +12,57 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1c5420839d97fb62797d0f739ce62da4d14b340b
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: c36fbacfde97eb42b1feab3e9097a731437cce4e
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66744890"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68870761"
 ---
-# <a name="assembly-information-dialog-box"></a>Derleme Bilgileri İletişim Kutusu
-**Derleme bilgilerini** iletişim kutusu, projenize otomatik olarak oluşturulan AssemblyInfo dosyasında depolanan .NET Framework genel derleme özniteliklerinin değerlerini belirtmek için kullanılır. İçinde **Çözüm Gezgini**, dosya bulunan **Projem** düğümünde [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] (tıklayın **tüm dosyaları göster** görüntülemek için); altında bulunan  **Özellikleri** içinde [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]. Derleme öznitelikleri hakkında daha fazla bilgi için bkz: [öznitelikleri](https://msdn.microsoft.com/Library/ae334cee-d96c-4243-a5e3-06dd7fcaf205).
+# <a name="assembly-information-dialog-box"></a>Derleme Bilgileri iletişim kutusu
 
- Bu iletişim kutusuna erişmek için bir proje düğümü seçin **Çözüm Gezgini**ve ardından **proje** menüsünde tıklatın **özellikleri**. Zaman **Proje Tasarımcısı** görünen tıklayın **uygulama** sekmesi. Üzerinde **uygulama** sayfasında **derleme bilgilerini** düğmesi.
+Derleme bilgileri iletişim kutusu, projeniz ile otomatik olarak oluşturulan AssemblyInfo dosyasında depolanan .NET Framework genel derleme özniteliklerinin değerlerini belirtmek için kullanılır. Çözüm Gezgini, AssemblyInfo dosyası, Visual Basic projeleri için **projem** düğümünden bulunur (görüntülemek için **tüm dosyaları göster** ' e tıklayın). Projeler C# için **Özellikler**altında bulunur. Daha fazla bilgi için bkz. [özniteliklerC#()](/dotnet/csharp/programming-guide/concepts/attributes/index).
 
-## <a name="uielement-list"></a>UIElement Listesi
- **Başlık** bütünleştirilmiş kod bildirimi için bir başlık belirtir. Karşılık gelen <xref:System.Reflection.AssemblyTitleAttribute>.
+Bu iletişim kutusuna erişmek için **Çözüm Gezgini**' de bir proje düğümü seçin ve ardından **Proje** menüsünde **Özellikler**' i seçin. **Uygulama** sayfasında, **derleme bilgileri** düğmesini seçin.
 
- **Açıklama** bütünleştirilmiş kod bildirimi için isteğe bağlı bir açıklama belirtir. Karşılık gelen <xref:System.Reflection.AssemblyDescriptionAttribute>.
+## <a name="uielement-list"></a>UIElement listesi
 
- **Şirket** bütünleştirilmiş kod bildirimi için bir şirket adı belirtir. Karşılık gelen <xref:System.Reflection.AssemblyCompanyAttribute>.
+**Başlığın**\
+Bütünleştirilmiş kod bildirimi için bir başlık belirtir. Öğesine <xref:System.Reflection.AssemblyTitleAttribute>karşılık gelir.
 
- **Ürün** bütünleştirilmiş kod bildirimi için ürün adını belirtir. Karşılık gelen <xref:System.Reflection.AssemblyProductAttribute>.
+**Açıklaması**\
+Derleme bildirimi için isteğe bağlı bir açıklama belirtir. Öğesine <xref:System.Reflection.AssemblyDescriptionAttribute>karşılık gelir.
 
- **Telif Hakkı** telif hakkı bildirimi bütünleştirilmiş kod bildirimi belirtir. Karşılık gelen <xref:System.Reflection.AssemblyCopyrightAttribute>.
+**Şirketlerin**\
+Bütünleştirilmiş kod bildirimi için bir şirket adı belirtir. Öğesine <xref:System.Reflection.AssemblyCompanyAttribute>karşılık gelir.
 
- **Ticari marka** bütünleştirilmiş kod bildirimi bir ticari marka belirtir. Karşılık gelen <xref:System.Reflection.AssemblyTrademarkAttribute>.
+Şirket için varsayılan değeri kayıt defterinde ayarlayabilir veya değiştirebilirsiniz. **Computer\hkey_local_machıne\software\wow6432node\microsoft\windows NT\CurrentVersion** veya **computer\hkey_local_machıne\software\microsoft\windows NT\CurrentVersion altındaki RegisteredOrganization değerini arayın** anahtar, Windows sürümünüze bağlı olarak.
 
- **Derleme sürümü** derleme sürümünü belirtir. Karşılık gelen <xref:System.Reflection.AssemblyVersionAttribute>.
+**Ürünüyle**\
+Derleme bildirimi için bir ürün adı belirtir. Öğesine <xref:System.Reflection.AssemblyProductAttribute>karşılık gelir.
 
- **Sürüm dosyası** derleyiciye Win32 dosya sürümü kaynak için belirli bir sürümünü kullanmak için bir sürüm numarasını belirtir. Karşılık gelen <xref:System.Reflection.AssemblyFileVersionAttribute>.
+**Yaptırımlar**\
+Derleme bildirimi için bir telif hakkı bildirimi belirtir. Öğesine <xref:System.Reflection.AssemblyCopyrightAttribute>karşılık gelir.
 
- **GUID** derleme tanımlayan benzersiz bir GUID. Bir proje oluşturduğunuzda, Visual Studio derleme için bir GUID oluşturur. Karşılık gelen <xref:System.Guid>.
+**Dır**\
+Derleme bildirimi için bir ticari marka belirtir. Öğesine <xref:System.Reflection.AssemblyTrademarkAttribute>karşılık gelir.
 
- **Nötr dil** , derlemenin desteklediği kültür belirtir. Karşılık gelen <xref:System.Resources.NeutralResourcesLanguageAttribute>. Varsayılan değer **(hiçbiri)** .
+**Derleme sürümü**\
+Derlemenin sürümünü belirtir. Öğesine <xref:System.Reflection.AssemblyVersionAttribute>karşılık gelir.
 
- **Derlemeyi COM görünür** bütünleştirilmiş kodundaki türler COM'a olup olmadığını belirtir Karşılık gelen <xref:System.Runtime.InteropServices.ComVisibleAttribute>.
+**Dosya sürümü**\
+Derleyiciye Win32 dosya sürümü kaynağı için belirli bir sürüm kullanmasını yönlendiren bir sürüm numarası belirtir. Öğesine <xref:System.Reflection.AssemblyFileVersionAttribute>karşılık gelir.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+**'INI**\
+Derlemeyi tanımlayan benzersiz bir GUID. Bir proje oluşturduğunuzda, Visual Studio derleme için bir GUID oluşturur. Öğesine <xref:System.Guid>karşılık gelir.
+
+**Nötr dil**\
+Derlemenin desteklediği kültürü belirtir. Öğesine <xref:System.Resources.NeutralResourcesLanguageAttribute>karşılık gelir. Varsayılan değer **(yok)** .
+
+**Derlemeyi COM-görünür yap**\
+Derlemedeki türlerin COM tarafından kullanılabilir olup olmayacağını belirtir. Öğesine <xref:System.Runtime.InteropServices.ComVisibleAttribute>karşılık gelir.
+
+## <a name="see-also"></a>Ayrıca bkz.
 
 - [Uygulama Sayfası, Proje Tasarımcısı (Visual Basic)](../../ide/reference/application-page-project-designer-visual-basic.md)
 - [Öznitelikler](https://msdn.microsoft.com/Library/ae334cee-d96c-4243-a5e3-06dd7fcaf205)

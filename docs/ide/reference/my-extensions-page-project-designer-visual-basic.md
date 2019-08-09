@@ -13,36 +13,36 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d366ed403eba6fbfab4aec22f4542ee5362962f2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1527d3d44d499028c852cb09e489c1b873b11c45
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62540617"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926156"
 ---
 # <a name="my-extensions-page-project-designer-visual-basic"></a>My Extensions Sayfası, Proje Tasarımcısı (Visual Basic)
-Kullanım **My uzantılarını** sayfasının **Proje Tasarımcısı** yönetmek için `My` projenizdeki ad alanı uzantıları. `My` ad alanı uzantılarını etkinleştirme özelleştirmenizi `My` kendi özel üye eklemek için ad alanı. Özel oluşturma hakkında daha fazla bilgi için `My` ad alanı uzantılarını görmek [Visual Basic'te My Namespace genişletme](/dotnet/visual-basic/developing-apps/customizing-extending-my/extending-the-my-namespace).
+Projenizdeki ad alanı uzantılarını yönetmek `My` için **Proje Tasarımcısı** ' nın **uzantılarım** sayfasını kullanın. `My`ad alanı uzantıları, `My` kendi özel üyelerinizi eklemek için ad alanını özelleştirmenizi sağlar. Özel `My` ad alanı uzantıları oluşturma hakkında daha fazla bilgi için bkz. [Visual Basic ad alanını genişletme](/dotnet/visual-basic/developing-apps/customizing-extending-my/extending-the-my-namespace).
 
- Erişim için **My uzantılarını** sayfasında, çift **Projem** proje düğümü için **Çözüm Gezgini**. Zaman **Proje Tasarımcısı** görünen tıklayın **My uzantılarını** sekmesi.
+**Uzantılarım** sayfasına erişmek için, **Çözüm Gezgini**içindeki proje düğümünüz için **projem** ' e çift tıklayın. **Proje Tasarımcısı** göründüğünde **uzantılarım** sekmesine tıklayın.
 
 ## <a name="uielement-list"></a>UIElement Listesi
- Eklemek veya kaldırmak aşağıdaki seçenekleri etkinleştirmeniz `My` projenizdeki ad alanı uzantıları. A `My` ad alanı uzantısı eklenecek kullanılabilir olması için Visual Studio öğesi şablon olarak önce yüklenmelidir. Yayımlama ve yükleme hakkında bilgi için `My` ad alanı uzantılarını görmek [paketleme ve dağıtma özel My uzantılarını](/dotnet/visual-basic/developing-apps/customizing-extending-my/packaging-and-deploying-custom-my-extensions).
+Aşağıdaki seçenekler, projenize ad alanı uzantıları eklemenize veya `My` kaldırmanıza imkan sağlar. `My` Ad alanı uzantısının eklenebilmesi için önce bir Visual Studio öğe şablonu olarak yüklenmesi gerekir. Ad alanı uzantılarını yayımlama ve yükleme `My` hakkında daha fazla bilgi için bkz. [özel uzantılarımı paketleme ve dağıtma](/dotnet/visual-basic/developing-apps/customizing-extending-my/packaging-and-deploying-custom-my-extensions).
 
- **My ad alanı uzantıları**
+ **My Namespace uzantıları**
 
- Bu liste tüm gösterir `My` projede yüklü ad alanı uzantıları.
+Bu liste, projede yüklü `My` olan tüm ad alanı uzantılarını gösterir.
 
  **Uzantı Ekle**
 
- Yüklü bir eklemek için bu düğmeye tıklayın `My` projenize ad alanı uzantısı. Tüm olası listesini `My` ad alanı uzantıları görünür. Seçin `My` tıklatıp projenize eklemek istediğiniz ad alanı uzantısı **Tamam** ekleyin.
+Projenize yüklü `My` bir ad alanı uzantısı eklemek için bu düğmeye tıklayın. Tüm olası `My` ad alanı uzantılarının listesi görüntülenir. Projenize eklemek istediğiniz adalanıuzantısınıseçinveeklemekiçinTamam'ı`My` tıklatın.
 
- **Uzantısını kaldırma**
+ **Uzantıyı kaldır**
 
- Bir veya daha fazla başvurularını seçin **My ad alanı uzantılarını** listeleyin ve ardından kaldırmak için bu düğmeye tıkladığınızda `My` projesinden ad alanı uzantısı.
+**My Namespace Extensions** listesindeki bir veya daha fazla başvuruyu seçin ve ardından bu düğmeye tıklayarak `My` ad alanı uzantısını projeden kaldırın.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-- [Genişletme Visual Basic'te My Namespace](/dotnet/visual-basic/developing-apps/customizing-extending-my/extending-the-my-namespace)
+- [Visual Basic ad alanını genişletme](/dotnet/visual-basic/developing-apps/customizing-extending-my/extending-the-my-namespace)
 - [My Uzantılarını Paketleme ve Dağıtma](/dotnet/visual-basic/developing-apps/customizing-extending-my/packaging-and-deploying-custom-my-extensions)
 - [Visual Basic Uygulama Modelini Genişletme](/dotnet/visual-basic/developing-apps/customizing-extending-my/extending-the-visual-basic-application-model)
 - [My Özelliklerinde Hangi Nesnelerin Kullanılabilir Olduğunu Özelleştirme](/dotnet/visual-basic/developing-apps/customizing-extending-my/customizing-which-objects-are-available-in-my)

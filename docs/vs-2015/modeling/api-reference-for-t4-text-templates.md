@@ -1,5 +1,5 @@
 ---
-title: T4 metin şablonları için API Başvurusu | Microsoft Docs
+title: T4 Metin şablonları için API başvurusu | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -9,22 +9,22 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 07881d247034133c83e64b63f82e5c9e25b42c2e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 00be275fe36fd453fd3bd1f6bcf5c0911f7bb380
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68159063"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68871890"
 ---
 # <a name="api-reference-for-t4-text-templates"></a>T4 Metin Şablonları için API Başvurusu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Metin şablonu API çağırmak ve dönüşümü özelleştirme sağlar [metin şablonlarını](../modeling/code-generation-and-t4-text-templates.md).  
-  
-## <a name="namespaces"></a>Ad Alanları  
-  
-|Ad Alanı|Amaç|  
-|---------------|-------------|  
-|<xref:Microsoft.VisualStudio.TextTemplating>|Metin şablonu dönüştürme işlevine için sınıflar içerir. Metin şablonu dönüştürme motoru, Visual Studio'da tümleşiktir ve sonraki şablon dosyalarını oluşturulmuş metin çıktı dosyalarına dönüştürür.|  
-|<xref:Microsoft.VisualStudio.TextTemplating.Modeling>|Metin dönüştürme kolaylıkları UML modellerini ve erişim gibi etki alanına özgü dillerle ilgili sağlar [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ModelBus.|  
-|<xref:Microsoft.VisualStudio.TextTemplating.VSHost>|Metin şablon oluşturma hizmetine erişim sağlayan [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|
+Metin şablonu oluşturma API 'SI, [metin şablonlarının](../modeling/code-generation-and-t4-text-templates.md)dönüşümünü çağırmanıza ve özelleştirmenize olanak sağlar.
+
+## <a name="namespaces"></a>Ad Alanları
+
+|Ad Alanı|Amaç|
+|---------------|-------------|
+|<xref:Microsoft.VisualStudio.TextTemplating>|Metin şablonu dönüştürme işlevselliği için sınıflar içerir. Metin şablonu dönüştürme altyapısı Visual Studio ile tümleşiktir ve metin şablonu dosyalarını oluşturulan metin çıkış dosyalarına dönüştürür.|
+|[Modelleme](/previous-versions/ee844312(v=vs.140))|, UML modelleriyle ve [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ModelBus erişimi gibi alana özgü dillerle ilgili metin dönüştürme olanakları sağlar.|
+|<xref:Microsoft.VisualStudio.TextTemplating.VSHost>|Uygulamasındaki [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]metin şablonu oluşturma hizmetine erişim sağlar.|

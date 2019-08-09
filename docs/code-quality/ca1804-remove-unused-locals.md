@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: c94f1b2709f3541692a0dfcd2a92559135639c2a
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: bd3e9c56bb02995d9b99b57bb2799ab69b51a42d
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66744588"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68921562"
 ---
 # <a name="ca1804-remove-unused-locals"></a>CA1804: Kullanılmayan yerelleri kaldırın
 
@@ -30,36 +30,36 @@ ms.locfileid: "66744588"
 |-|-|
 |TypeName|RemoveUnusedLocals|
 |CheckId|CA1804|
-|Kategori|Microsoft.Performance|
-|Yeni Değişiklik|Bölünemez|
+|Kategori|Microsoft. Performance|
+|Yeni Değişiklik|Kırılmamış|
 
 ## <a name="cause"></a>Sebep
- Bir yöntem bir yerel değişkeni bildirir ancak dışında değişkeni büyük olasılıkla Atama ifadesinin alıcı olarak kullanmaz. Bu kural tarafından analiz, test edilen derleme, hata ayıklama bilgileri ile oluşturulmalıdır ve ilişkili bir program veritabanı (.pdb) dosyası kullanılabilir olmalıdır.
+Bir yöntem yerel bir değişken bildirir, ancak muhtemelen bir atama ifadesinin alıcısı olarak bu değişkeni kullanmaz. Bu kurala göre analiz için, sınanan derleme hata ayıklama bilgileri ile oluşturulmalıdır ve ilişkili program veritabanı (. pdb) dosyası kullanılabilir olmalıdır.
 
 ## <a name="rule-description"></a>Kural açıklaması
- Kullanılmayan yerel değişkenler ve gereksiz atamaların derleme boyutunu artırır ve performansı düşürür.
+Kullanılmayan yerel değişkenler ve gereksiz atamaların derleme boyutunu artırır ve performansı düşürür.
 
-## <a name="how-to-fix-violations"></a>İhlaller nasıl düzeltilir?
+## <a name="how-to-fix-violations"></a>İhlalleri çözme
 
-Bu kural ihlalini düzeltmek için kaldırın veya yerel değişkenini kullanın.
+Bu kural ihlalini onarmak için yerel değişkeni kaldırın veya kullanın.
 
 > [!NOTE]
-> C# Derleyici kullanılmayan yerel değişkenler kaldırır, `optimize` seçeneği etkinleştirilir.
+> C# Derleyici, `optimize` seçeneği etkinken kullanılmayan yerel değişkenleri kaldırır.
 
-## <a name="when-to-suppress-warnings"></a>Uyarılar bastırıldığında
- Yayılan derleyici değişkeni ise bu kuraldan bir uyarıyı gizler. Performans ve kod bakımı birincil kaygıları değilse de bu kuraldan bir uyarıyı bastırmak için veya kuralı devre dışı bırakmak için güvenli değildir.
+## <a name="when-to-suppress-warnings"></a>Uyarıların ne zaman bastırılamıyor
+Değişken derleyicinin yayıldıysa, bu kuraldan bir uyarı gizleyin. Bu kuraldan bir uyarıyı gizlemek veya performans ve kod Bakımı birincil endişeleriniz değilse kuralı devre dışı bırakmak de güvenlidir.
 
 ## <a name="example"></a>Örnek
- Aşağıdaki örnek, çeşitli kullanılmayan yerel değişkenler gösterir.
+Aşağıdaki örnek, kullanılmamış bazı yerel değişkenleri gösterir.
 
- [!code-vb[FxCop.Performance.UnusedLocals#1](../code-quality/codesnippet/VisualBasic/ca1804-remove-unused-locals_1.vb)]
- [!code-csharp[FxCop.Performance.UnusedLocals#1](../code-quality/codesnippet/CSharp/ca1804-remove-unused-locals_1.cs)]
+[!code-vb[FxCop.Performance.UnusedLocals#1](../code-quality/codesnippet/VisualBasic/ca1804-remove-unused-locals_1.vb)]
+[!code-csharp[FxCop.Performance.UnusedLocals#1](../code-quality/codesnippet/CSharp/ca1804-remove-unused-locals_1.cs)]
 
-## <a name="related-rules"></a>İlgili kuralları
- [CA1809: Aşırı yerel öğelerden Kaçın](../code-quality/ca1809-avoid-excessive-locals.md)
+## <a name="related-rules"></a>İlgili kurallar
+[CA1809 Aşırı Yerellerden kaçının](../code-quality/ca1809-avoid-excessive-locals.md)
 
- [CA1811: Çağrılmayan özel kodlardan kaçının](../code-quality/ca1811-avoid-uncalled-private-code.md)
+[CA1811 Çağrılmadı özel koddan kaçının](../code-quality/ca1811-avoid-uncalled-private-code.md)
 
- [CA1812: Örneklenmemiş iç sınıflardan kaçının](../code-quality/ca1812-avoid-uninstantiated-internal-classes.md)
+[CA1812 Örneklenmemiş iç sınıflardan kaçının](../code-quality/ca1812-avoid-uninstantiated-internal-classes.md)
 
- [CA1801: Kullanılmayan parametreleri gözden geçir](../code-quality/ca1801-review-unused-parameters.md)
+[CA1801 Kullanılmayan parametreleri gözden geçir](../code-quality/ca1801-review-unused-parameters.md)

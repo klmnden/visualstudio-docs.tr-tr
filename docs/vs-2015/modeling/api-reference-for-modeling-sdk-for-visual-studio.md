@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b2cbf516b5ed999623c05e7f68656199363906bf
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 6a290227b120958b5bb3407393dcff33b247b20d
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63408449"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68872017"
 ---
 # <a name="api-reference-for-modeling-sdk-for-visual-studio"></a>Visual Studio için Modelleme SDK'sı için API Başvurusu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,14 +39,16 @@ Visual Studio Görselleştirme ve modelleme SDK'sı, etki alanına özgü diller
 |<xref:Microsoft.VisualStudio.Modeling.Extensibility?displayProperty=fullName>|DSL genişletilebilirlik uygulamak ModelElement için genişletme yöntemleri.|
 |<xref:Microsoft.VisualStudio.Modeling.ExtensionEnablement?displayProperty=fullName>|Genişletilebilirlik öznitelikleri|
 |<xref:Microsoft.VisualStudio.Modeling.Immutability?displayProperty=fullName>|Salt okunur bir modelin parçalarını yapmanızı sağlar.|
-|<xref:Microsoft.VisualStudio.Modeling.Integration?displayProperty=fullName>|Yardımcı olan Modelbus API farklı modelleri tümleştirin.|
-|<xref:Microsoft.VisualStudio.Modeling.Integration.Picker?displayProperty=fullName>|İletişim kutusu, kullanıcıların modelleri ve Modelbus başvuru oluşturmak için öğeleri sağlar.|
-|<xref:Microsoft.VisualStudio.Modeling.Integration.Picker.Hosting?displayProperty=fullName>|Seçici hizmeti.|
-|<xref:Microsoft.VisualStudio.Modeling.Integration.Shell?displayProperty=fullName>|Modelbus bağdaştırıcısı framework [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|
-|<xref:Microsoft.VisualStudio.Modeling.Integration.Shell.Picker?displayProperty=fullName>|Seçici iletişim kutusu, kullanıcıların modelleri Modelbus başvuru oluşturmak için öğeleri gidip olanak sağlar.|
+|[Microsoft. VisualStudio. modelle tümleştirme](/previous-versions/ee904412(v=vs.140))|Yardımcı olan Modelbus API farklı modelleri tümleştirin.|
+|[Microsoft. VisualStudio. modelle Integration. Picker](/previous-versions/ee904394(v=vs.140))|İletişim kutusu, kullanıcıların modelleri ve Modelbus başvuru oluşturmak için öğeleri sağlar.|
+|`Microsoft.VisualStudio.Modeling.Integration.Picker.Hosting`|Seçici hizmeti.|
+|[Microsoft. VisualStudio. modelle Integration. Shell](/previous-versions/ee869435(v=vs.140))|Modelbus bağdaştırıcısı framework [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|
+|[Microsoft. VisualStudio. modelle Integration. Shell. Picker](/previous-versions/ee886769(v=vs.140))|Seçici iletişim kutusu, kullanıcıların modelleri Modelbus başvuru oluşturmak için öğeleri gidip olanak sağlar.|
 |<xref:Microsoft.VisualStudio.Modeling.Shell?displayProperty=fullName>|DSL'ler arasında arabirim ve [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|
 |<xref:Microsoft.VisualStudio.Modeling.Shell.ExtensionEnablement?displayProperty=fullName>|(Bağlam) kısayol menü komutları tanımlamanızı sağlar.|
 |<xref:Microsoft.VisualStudio.Modeling.Validation?displayProperty=fullName>|Doğrulama kısıtlamaları tanımlama olanak tanır.|
 
-## <a name="see-also"></a>Ayrıca Bkz.
- [UML Genişletilebilirlik Modellemesi için API Başvurusu](../modeling/api-reference-for-uml-modeling-extensibility.md) [T4 metin dönüştürmeyi özelleştirme](../modeling/customizing-t4-text-transformation.md)
+## <a name="see-also"></a>Ayrıca bkz.
+
+- [UML Genişletilebilirlik Modellemesi için API Başvurusu](../modeling/api-reference-for-uml-modeling-extensibility.md)
+- [T4 Metin Dönüştürmeyi Özelleştirme](../modeling/customizing-t4-text-transformation.md)

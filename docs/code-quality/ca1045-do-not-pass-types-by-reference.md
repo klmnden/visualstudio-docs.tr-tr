@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d5174d00593b44d51b5628851039b1d0a37753c5
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 6fd0da0f8b04055622b46087ecb9f12b375d9576
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63387488"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68922857"
 ---
 # <a name="ca1045-do-not-pass-types-by-reference"></a>CA1045: Türleri başvuru olarak geçmeyin
 
@@ -31,47 +31,47 @@ ms.locfileid: "63387488"
 |Yeni Değişiklik|Yeni|
 
 ## <a name="cause"></a>Sebep
- Ortak türde ortak veya korumalı bir yöntem olan bir `ref` ilkel tür, bir başvuru türü veya değer türü alan parametresi yerleşik türlerden biri değil.
+Ortak türde ortak veya korumalı bir yöntem, temel bir tür `ref` , bir başvuru türü veya yerleşik türlerden biri olmayan bir değer türü alan bir parametreye sahiptir.
 
 ## <a name="rule-description"></a>Kural açıklaması
- Türleri başvuruya göre geçirme (kullanarak `out` veya `ref`) değer türleri ve başvuru türleri farkı anlama ve işleme birden çok değer yöntemi işaretçileri deneyimiyle gerektirir. Ayrıca, arasındaki farkı `out` ve `ref` parametreleri anlaşılmadı.
+Türlerin başvuruya göre geçirilmesi (veya `out` `ref`kullanılarak) işaretçilerle deneyim gerektirir, değer türlerinin ve başvuru türlerinin nasıl farklı olduğunu ve birden çok dönüş değeri olan yöntemleri işleme. Ayrıca, ve `ref` parametreleri arasındaki `out` fark yaygın olarak anlaşılmaz.
 
- Bir başvuru türü "başvuruya göre" geçirildiğinde, parametre nesnesinin farklı bir örneğine geri dönmek için kullanılacak yöntemi amaçlamaktadır. (Bir başvuru türü başvuruya göre geçirme da çift işaretçisi, bir işaretçi veya çift yöneltme işaretçisi kullanılarak olarak bilinir.) Zaten bir başvuru türü alan bir parametre için varsayılan çağırma kuralı, "değeriyle" geçti kullanarak nesneye bir işaretçi alır. İşaretçi, işaret ettiği, nesnenin değil değere göre geçirilir. Yöntemi, işaretçi, başvuru yeni bir örneğine işaret edecek şekilde değiştiremezsiniz anlamına gelir yazın, ancak işaret ettiği nesnenin içeriğini değiştirebilirsiniz değere göre geçirme. Çoğu uygulama için bu yeterli olur ve istediğiniz davranışı üretir.
+Başvuru türü "başvuruya göre" geçirildiğinde, yöntemi nesnenin farklı bir örneğini döndürmek için parametresini kullanmayı amaçladığı. (Başvuru türü başvuruya göre geçirilmesi, çift işaretçi, işaretçi işaretçisi veya çift yöneltme kullanma olarak da bilinir.) "Değere göre" değeri geçen varsayılan çağırma kuralını kullanma, başvuru türü alan bir parametre zaten nesneye bir işaretçi alır. İşaret ettiği nesne değil, işaretçi değere göre geçirilir. Değere göre geçirme yöntemi, yöntemin, başvuru türünün yeni bir örneğini işaret eden işaretçiyi değiştiremeyeceği, ancak gösterdiği nesnenin içeriğini değiştiremeyeceği anlamına gelir. Çoğu uygulama için bu yeterlidir ve istediğiniz davranışı verir.
 
- Bir yöntem başka bir örneği döndürmelidir, bunu gerçekleştirmek için yöntemin dönüş değerini kullanın. Bkz: <xref:System.String?displayProperty=fullName> sınıfı için çeşitli yöntemler dizeler üzerinde çalışan ve bir dize yeni bir örneğini döndürür. Bu modeli kullanarak, özgün nesneye korunup korunmayacağını karar arayana bırakılır.
+Bir yöntemin farklı bir örnek döndürmesi gerekiyorsa, bunu gerçekleştirmek için yönteminin dönüş değerini kullanın. Dizeler üzerinde çalışan ve bir dizenin yeni bir örneğini döndüren çeşitli yöntemler için sınıfınabakın.<xref:System.String?displayProperty=fullName> Bu modeli kullanarak, özgün nesnenin korunup korunmayacağına karar vermek için çağrı yapana bırakılır.
 
- Dönüş değerleri sıradan bir hale ve yoğun olarak kullanılan, doğru uygulama olsa da `out` ve `ref` Ara tasarım ve kodlama becerilerinde parametrelerine gereksinim duyar. Genel kitle asıl kullanıcılara beklememelidir bilgilendirmelidir tasarım Kütüphane mimarları `out` veya `ref` parametreleri.
+Dönüş değerleri çok fazla ve yoğun olarak kullanıldığından, `out` ve `ref` parametrelerinin doğru uygulaması ara tasarım ve kodlama becerileri gerektirir. Genel bir hedef kitle için tasarlayan kitaplık mimarları, kullanıcıların, veya `out` `ref` parametreleriyle birlikte çalışmasını beklememelidir.
 
 > [!NOTE]
-> Büyük yapılar olan parametreler ile çalışırken, değere göre geçirdiğinizde bu yapıları kopyalamak için gereken ek kaynakları bir performans etkisi neden olabilir. Bu gibi durumlarda kullanmayı düşünebilirsiniz `ref` veya `out` parametreleri.
+> Büyük yapıları olan parametrelerle çalışırken, bu yapıları kopyalamak için gereken ek kaynaklar, değere göre geçirdiğinizde bir performans etkisine neden olabilir. Bu durumlarda, `ref` veya `out` parametrelerini kullanmayı düşünebilirsiniz.
 
-## <a name="how-to-fix-violations"></a>İhlaller nasıl düzeltilir?
- Bir değer türü tarafından neden bu kural ihlalini düzeltmek için yöntemin dönüş değeri olarak nesneyi döndürmek sahip. Yöntemi, birden çok değer döndürmelidir, tek bir örneği değerleri içeren nesneyi döndürmek için yeniden tasarlayın.
+## <a name="how-to-fix-violations"></a>İhlalleri çözme
+Bu kuralın bir değer türünden kaynaklanan ihlalini onarmak için, yönteminin dönüş değeri olarak nesneyi döndürmesini sağlayabilirsiniz. Yöntemin birden çok değer döndürmesi gerekiyorsa, değerleri tutan bir nesnenin tek bir örneğini döndürecek şekilde yeniden tasarlayamalıdır.
 
- Bir başvuru türüne göre neden bu kural ihlalini düzeltmek için istediğiniz davranışı başvurusu yeni bir örneğini döndürülecek olduğundan emin olun. İse, bunu yapmak için yöntemin dönüş değerini kullanmanız gerekir.
+Bir başvuru türü nedeniyle oluşan bu kuralın ihlalini onarmak için, istediğiniz davranışın başvurunun yeni bir örneğini döndürtiğine emin olun. Eğer ise, yöntemi bunu yapmak için dönüş değerini kullanmalıdır.
 
-## <a name="when-to-suppress-warnings"></a>Uyarılar bastırıldığında
- Bu kuraldan bir uyarıyı bastırmak güvenlidir; Ancak, bu tasarım, kullanılabilirlik sorunları neden olabilir.
-
-## <a name="example"></a>Örnek
- Aşağıdaki Kitaplık kullanıcının geri bildirim yanıtlarını oluşturan bir sınıfın iki uygulamaları gösterir. İlk uygulama (`BadRefAndOut`) kitaplığı üç dönüş değerleri yönetme açmaya zorlar. İkinci uygulama (`RedesignedRefAndOut`) bir kapsayıcı sınıfının bir örneğini döndürerek kullanıcı deneyimini basitleştirir (`ReplyData`), verileri tek bir birim olarak yönetir.
-
- [!code-csharp[FxCop.Design.NoRefOrOut#1](../code-quality/codesnippet/CSharp/ca1045-do-not-pass-types-by-reference_1.cs)]
+## <a name="when-to-suppress-warnings"></a>Uyarıların ne zaman bastırılamıyor
+Bu kuraldan bir uyarıyı gizlemek güvenlidir; Ancak, bu tasarım kullanılabilirlik sorunlarına neden olabilir.
 
 ## <a name="example"></a>Örnek
- Aşağıdaki uygulama, kullanıcı deneyimini gösterir. Yeniden tasarlanan kitaplık çağrısı (`UseTheSimplifiedClass` yöntemi) daha basit ve yöntem tarafından döndürülen bilgileri kolayca yönetilebilir. İki yöntem çıkışı aynıdır.
+Aşağıdaki kitaplıkta, kullanıcının geri bildirimlerine yanıtlar üreten bir sınıfın iki uygulaması gösterilmektedir. İlk uygulama (`BadRefAndOut`), kitaplık kullanıcısını üç dönüş değerini yönetmeye zorlar. İkinci uygulama (`RedesignedRefAndOut`), verileri tek bir birim olarak yöneten bir kapsayıcı sınıfının (`ReplyData`) örneğini döndürerek Kullanıcı deneyimini basitleştirir.
 
- [!code-csharp[FxCop.Design.TestNoRefOrOut#1](../code-quality/codesnippet/CSharp/ca1045-do-not-pass-types-by-reference_2.cs)]
-
-## <a name="example"></a>Örnek
- Aşağıdaki örnek kitaplığı gösterir nasıl `ref` parametreleri başvuru türleri için kullanılır ve bu işlevselliği uygulamak için daha iyi bir yolunu gösterir.
-
- [!code-csharp[FxCop.Design.RefByRefNo#1](../code-quality/codesnippet/CSharp/ca1045-do-not-pass-types-by-reference_3.cs)]
+[!code-csharp[FxCop.Design.NoRefOrOut#1](../code-quality/codesnippet/CSharp/ca1045-do-not-pass-types-by-reference_1.cs)]
 
 ## <a name="example"></a>Örnek
- Aşağıdaki uygulama davranışını göstermek için kitaplıkta her yöntemini çağırır.
+Aşağıdaki uygulama, kullanıcının deneyimini gösterir. Yeniden tasarlanan kitaplığa (`UseTheSimplifiedClass` Yöntem) yapılan çağrı daha basittir ve yöntemi tarafından döndürülen bilgiler kolayca yönetilir. İki yöntemden oluşan çıkış aynı.
 
- [!code-csharp[FxCop.Design.TestRefByRefNo#1](../code-quality/codesnippet/CSharp/ca1045-do-not-pass-types-by-reference_4.cs)]
+[!code-csharp[FxCop.Design.TestNoRefOrOut#1](../code-quality/codesnippet/CSharp/ca1045-do-not-pass-types-by-reference_2.cs)]
+
+## <a name="example"></a>Örnek
+Aşağıdaki örnek kitaplık, başvuru türleri `ref` parametrelerinin nasıl kullanıldığını gösterir ve bu işlevselliği uygulamak için daha iyi bir yol gösterir.
+
+[!code-csharp[FxCop.Design.RefByRefNo#1](../code-quality/codesnippet/CSharp/ca1045-do-not-pass-types-by-reference_3.cs)]
+
+## <a name="example"></a>Örnek
+Aşağıdaki uygulama, davranışı göstermek için kitaplıktaki her yöntemi çağırır.
+
+[!code-csharp[FxCop.Design.TestRefByRefNo#1](../code-quality/codesnippet/CSharp/ca1045-do-not-pass-types-by-reference_4.cs)]
 
 Bu örnek aşağıdaki çıktıyı üretir:
 
@@ -86,5 +86,5 @@ Passing by return value:
 12345 ABCDE
 ```
 
-## <a name="related-rules"></a>İlgili kuralları
- [CA1021: Out parametrelerinden kaçının](../code-quality/ca1021-avoid-out-parameters.md)
+## <a name="related-rules"></a>İlgili kurallar
+[CA1021 Out parametrelerinden kaçının](../code-quality/ca1021-avoid-out-parameters.md)

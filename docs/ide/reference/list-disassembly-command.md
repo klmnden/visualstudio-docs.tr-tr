@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 71a1be7841cb25cebafe951419006bb8b635093c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6dc4bddefe0240a8e53babeec1fdce4f83ce5ef1
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62970167"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926219"
 ---
 # <a name="list-disassembly-command"></a>Ayrıştırılmış Kodu Listele Komutu
 Hata ayıklama işlemini başlatır ve hataların nasıl işleneceğini belirtmenizi sağlar.
@@ -32,31 +32,31 @@ Debug.ListDisassembly [/count:number] [/endaddress:expression]
 ```
 
 ## <a name="switches"></a>Anahtarlar
- Her anahtar, formun tamamını veya bir kısa biçim kullanılarak çağrılabilir.
+Her anahtar, tamamı ya da kısa bir form kullanılarak çağrılabilir.
 
- / count: `number` [veya] / c: `number` [veya] /length: `number` [veya] / l: `number`
+/Count: `number` [veya]/c: `number` [veya]/length: `number` [veya]/l:`number`
 
- İsteğe bağlı. Görüntülenecek yönerge sayısı. Varsayılan değer 8'dir.
+İsteğe bağlı. Görüntülenecek yönerge sayısı. Varsayılan değer 8 ' dir.
 
- /endaddress: `expression` [veya] / e: `expression`
+/endadddress: `expression` [veya]/e:`expression`
 
- İsteğe bağlı. Ayrıştırılmış kod durdurmak hangi adresi.
+İsteğe bağlı. Ayrıştırılmış kodun durdurulacağı adres.
 
- /codebytes:`yes` &#124; `no` [veya] /bytes:`yes` &#124; `no` [veya] / b:`yes`&#124;`no`
+/codebytes:`yes` &#124; `no` [veya]/bytes:`yes` &#124; `no` [veya]/b:`yes`&#124;`no`
 
- İsteğe bağlı. Kod baytlarını görüntülenip görüntülenmeyeceğini gösterir. Varsayılan değer `no`.
+İsteğe bağlı. Kod baytlarının görüntülenip görüntülenmeyeceğini gösterir. Varsayılan değer `no`.
 
- / source:`yes` &#124; `no` [veya] / s:`yes`&#124;`no`
+/Source:`yes` &#124; `no` [veya]/s:`yes`&#124;`no`
 
- İsteğe bağlı. Kaynak kodu görüntülenip görüntülenmeyeceğini gösterir. Varsayılan değer `no`.
+İsteğe bağlı. Kaynak kodun görüntülenip görüntülenmeyeceğini gösterir. Varsayılan değer `no`.
 
- /symbolnames:`yes` &#124; `no` [veya] /names:`yes` &#124; `no` [veya] / n:`yes`&#124;`no`
+/symbolnames:`yes` &#124; `no` [veya]/names:`yes` &#124; `no` [veya]/n:`yes`&#124;`no`
 
- İsteğe bağlı. Sembol adları görüntülenip görüntülenmeyeceğini gösterir. Varsayılan değer `yes`.
+İsteğe bağlı. Sembol adlarının görüntülenip görüntülenmeyeceğini gösterir. Varsayılan değer `yes`.
 
- [/linenumbers:`yes`&#124;`no`]
+ [/linenumbers:`yes`]&#124;`no`
 
- İsteğe bağlı. Kaynak koduyla ilişkili satır numaralarını görüntülemesini sağlar. / Source switch değerini içermelidir. `yes` /linenumbers anahtar kullanacak şekilde.
+İsteğe bağlı. Kaynak kodla ilişkili satır numaralarının görüntülenmesine izin vermez. /Linenumbers anahtarını kullanmak `yes` için/Source anahtarının bir değeri olmalıdır.
 
 ## <a name="example"></a>Örnek
 

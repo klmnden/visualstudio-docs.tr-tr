@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9324c33e383029fa6f98a9b890309cc0a11eb95d
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: d3ea71b2a0226036a923395bbc2dfa3d6b4fc58c
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65226264"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68870484"
 ---
 # <a name="using-visual-studio-modelbus-in-a-text-template"></a>Metin Şablonunda Visual Studio ModelBus'ı Kullanma
 
@@ -20,16 +20,16 @@ Visual Studio Modelbus'ı başvurular içeren bir modeli okumak metin şablonlar
 
 - Hedefi olan başvuruları DSL erişim metin şablonları için yapılandırılmış bir ModelBus bağdaştırıcısı olmalıdır. DSL de başka bir koddan erişirseniz, yeniden yapılandırılmış bağdaştırıcısı ek olarak standart ModelBus bağdaştırıcısı gereklidir.
 
-     Bağdaştırıcı Yöneticisi devralmalıdır <xref:Microsoft.VisualStudio.TextTemplating.Modeling.VsTextTemplatingModelingAdapterManager> ve özniteliği olmalıdır `[HostSpecific(HostName)]`.
+     Bağdaştırıcı Yöneticisi [VsTextTemplatingModelingAdapterManager](/previous-versions/ee844317(v=vs.140)) 'dan devralması ve özniteliğe `[HostSpecific(HostName)]`sahip olması gerekir.
 
-- Şablon devralmalıdır <xref:Microsoft.VisualStudio.TextTemplating.Modeling.ModelBusEnabledTextTransformation>.
+- Şablon [ModelBusEnabledTextTransformation](/previous-versions/ee844263(v=vs.140))öğesinden devralması gerekir.
 
 > [!NOTE]
 > ModelBus başvuruları içermez DSL modeli okumak istiyorsanız, DSL projelerinizde oluşturulan yönerge işlemcileri kullanabilirsiniz. Daha fazla bilgi için [metin şablonlarından modellere erişme](../modeling/accessing-models-from-text-templates.md).
 
 Metin şablonları hakkında daha fazla bilgi için bkz. [T4 metin şablonları kullanarak tasarım zamanı kodu oluşturma](../modeling/design-time-code-generation-by-using-t4-text-templates.md).
 
-## <a name="create-a-model-bus-adapter-for-access-from-text-templates"></a>Metin şablonlarından erişim için bir Model veri yolu bağdaştırıcısı oluşturma
+## <a name="create-a-model-bus-adapter-for-access-from-text-templates"></a>Metin şablonlarından erişim için model veri yolu bağdaştırıcısı oluşturma
 
 Metin şablonunda ModelBus başvuru çözmek için ' % s'hedefi DSL uyumlu bir bağdaştırıcı olmalıdır. Metin şablonları, Visual Studio belge Düzenleyicisi'nden ayrı bir AppDomain içinde yürütün ve bu nedenle bağdaştırıcı DTE erişmek yerine modeli yük gerekir.
 
@@ -57,7 +57,7 @@ Metin şablonunda ModelBus başvuru çözmek için ' % s'hedefi DSL uyumlu bir b
 
     4. Her `*.tt` dosya yeni projeyi, ad alanını değiştirme.
 
-    5. Yeni projeye sağ **Çözüm Gezgini** ve ardından **özellikleri**. Özellik Düzenleyicisi'nde oluşturulan derleme ve varsayılan ad alanı adını değiştirin.
+    5. **Çözüm Gezgini** yeni projeye sağ tıklayın ve ardından **Özellikler**' e tıklayın. Özellik Düzenleyicisi'nde oluşturulan derleme ve varsayılan ad alanı adını değiştirin.
 
     6. Her iki bağdaştırıcı başvuruları sahip olacak şekilde DslPackage projede yeni bağdaştırıcı projeye bir başvuru ekleyin.
 
@@ -76,7 +76,7 @@ Metin şablonunda ModelBus başvuru çözmek için ' % s'hedefi DSL uyumlu bir b
 
 4. AdapterManager.tt içinde:
 
-    - AdapterManagerBase bildirimini değiştirin, böylece devraldığı <xref:Microsoft.VisualStudio.TextTemplating.Modeling.VsTextTemplatingModelingAdapterManager>.
+    - ' In [VsTextTemplatingModelingAdapterManager](/previous-versions/ee844317(v=vs.140))öğesinden devralması Için AdapterManagerBase bildirimini değiştirin.
 
          `public partial class <#= dslName =>AdapterManagerBase :`
 
@@ -94,11 +94,11 @@ Metin şablonunda ModelBus başvuru çözmek için ' % s'hedefi DSL uyumlu bir b
 
 5. **Tüm Şablonları dönüştürme** ve çözümü yeniden oluşturun. Derleme hataları gerçekleşmelidir.
 
-## <a name="write-a-text-template-that-can-resolve-modelbus-references"></a>ModelBus başvuruları çözümlemek için metin şablonu yazma
+## <a name="write-a-text-template-that-can-resolve-modelbus-references"></a>ModelBus başvurularını çözebilecek bir metin şablonu yazma
 
 Genellikle, okuyan ve bir "kaynak" DSL dosyaları oluşturan bir şablon ile başlayın. İçinde açıklanan şekilde kaynak model dosyaları okumak için kaynak DSL projesi oluşturulur yönergesi bu şablonu kullanan [metin şablonlarından modellere erişme](../modeling/accessing-models-from-text-templates.md). Ancak, kaynak DSL bir "hedef" DSL ModelBus başvurular içerir. Bu nedenle başvurularını çözümlemek ve hedef DSL erişmek şablon kodunu etkinleştirmek istiyorsunuz. Bu nedenle aşağıdaki adımları izleyerek şablonu uyarlamanız gerekir:
 
-- Şablona temel sınıfını değiştirmek <xref:Microsoft.VisualStudio.TextTemplating.Modeling.ModelBusEnabledTextTransformation>.
+- Şablonun temel sınıfını [ModelBusEnabledTextTransformation](/previous-versions/ee844263(v=vs.140))olarak değiştirin.
 
 - Dahil `hostspecific="true"` şablon yönergesinde.
 
@@ -158,7 +158,7 @@ inherits="Microsoft.VisualStudio.TextTemplating.Modeling.ModelBusEnabledTextTran
 
 - Kullanım `this.ModelBus` ModelBus erişimi elde edilir.
 
-## <a name="walkthrough-testing-a-text-template-that-uses-modelbus"></a>İzlenecek yol: Modelbus'ı kullanan bir metin şablonu test etme
+## <a name="walkthrough-testing-a-text-template-that-uses-modelbus"></a>İzlenecek yol: ModelBus kullanan bir metin şablonunu test etme
  Bu kılavuzda, aşağıdaki adımları izleyin:
 
 1. İki DSL'ler oluşturun. Bir DSL *tüketici*, sahip bir `ModelBusReference` diğer DSL başvurabilir özelliği *sağlayıcısı*.
@@ -179,7 +179,7 @@ inherits="Microsoft.VisualStudio.TextTemplating.Modeling.ModelBusEnabledTextTran
 
 2. DSL tanım diyagramı üst kısımda yer almayan diyagramın boş bir bölümüne sağ tıklayın ve ardından **etkinleştirme Modelbus**.
 
-   Görmüyorsanız **etkinleştirme Modelbus**, indirin ve VMSDK ModelBus uzantıyı yükleyin.
+   **ModelBus 'ı etkinleştir**' i GÖRMÜYORSANıZ, vmsdk ModelBus uzantısını indirip yükleyin.
 
 3. İçinde **Modelbus'ı etkinleştirme** iletişim kutusunda **bu DSL için ModelBus kullanıma**ve ardından **Tamam**.
 
@@ -187,13 +187,13 @@ inherits="Microsoft.VisualStudio.TextTemplating.Modeling.ModelBusEnabledTextTran
 
 Artık ModelBus metin şablonlarını tarafından erişilebilecek bir DSL var. Komutlar, olay işleyicileri veya model dosya Düzenleyicisi AppDomain içinde çalışan tüm kuralları, kod başvuruları çözümlenebilir. Bununla birlikte, metin şablonları ayrı bir AppDomain içinde çalıştırın ve onu düzenlenirken bir model erişemez. Bu DSL ModelBus başvurular bir metin şablonundan erişmek istiyorsanız, ayrı bir ModelBusAdapter olması gerekir.
 
-### <a name="create-a-modelbus-adapter-that-is-configured-for-text-templates"></a>Metin şablonları için yapılandırılmış bir ModelBus bağdaştırıcısı oluştur
+### <a name="create-a-modelbus-adapter-that-is-configured-for-text-templates"></a>Metin şablonları için yapılandırılmış bir ModelBus bağdaştırıcısı oluşturma
 
-1. Dosya Gezgini'nde kopyalayıp içeren klasöre *ModelBusAdapter.csproj*.
+1. Dosya Gezgini 'nde, *ModelBusAdapter. csproj*içeren klasörü kopyalayıp yapıştırın.
 
-    Klasör adı **T4ModelBusAdapter**.
+    Klasörü **T4ModelBusAdapter**olarak adlandırın.
 
-    Proje dosyasını yeniden adlandırma *T4ModelBusAdapter.csproj*.
+    *T4ModelBusAdapter. csproj*proje dosyasını yeniden adlandırın.
 
 2. Çözüm Gezgini'nde T4ModelBusAdapter MBProvider çözüme ekleyin. Çözüm düğümüne sağ tıklayın, fareyle **Ekle**ve ardından **mevcut proje**.
 
@@ -209,11 +209,11 @@ Artık ModelBus metin şablonlarını tarafından erişilebilecek bir DSL var. K
 
     `<MefComponent>|T4ModelBusAdapter|</MefComponent>`
 
-7. İçinde `T4ModelBusAdapter` projesi, bir başvuru ekleyin: **Microsoft.VisualStudio.TextTemplating.Modeling.11.0**
+7. `T4ModelBusAdapter` Projede, öğesine bir başvuru ekleyin: **Microsoft. VisualStudio. Textşablon. model. 11.0**
 
 8. Open T4ModelBusAdapter\AdapterManager.tt:
 
-   1. AdapterManagerBase için temel sınıfını değiştirmek <xref:Microsoft.VisualStudio.TextTemplating.Modeling.VsTextTemplatingModelingAdapterManager>. Bu bölümü dosyasının aşağıdakine benzer.
+   1. AdapterManagerBase Taban sınıfını [VsTextTemplatingModelingAdapterManager](/previous-versions/ee844317(v=vs.140))olarak değiştirin. Bu bölümü dosyasının aşağıdakine benzer.
 
        ```
        namespace <#= CodeGenerationUtilities.GetPackageNamespace(this.Dsl) #>.T4ModelBusAdapters
@@ -247,9 +247,9 @@ Artık ModelBus metin şablonlarını tarafından erişilebilecek bir DSL var. K
 
 9. Tıklayın **tüm Şablonları Dönüştür** başlık çubuğu, Çözüm Gezgini'nde.
 
-10. Tuşuna **F5**.
+10. **F5**tuşuna basın.
 
-11. DSL çalıştığını doğrulayın. Deneysel projeyi `Sample.provider`. Visual Studio'nun deneysel örneği kapatın.
+11. DSL 'nin çalıştığını doğrulayın. Deneysel projeyi `Sample.provider`. Visual Studio'nun deneysel örneği kapatın.
 
     Bu DSL ModelBus başvuruları artık metin şablonlarında ve ayrıca sıradan bir kod çözülebilir.
 
@@ -297,7 +297,7 @@ Artık ModelBus metin şablonlarını tarafından erişilebilecek bir DSL var. K
 
 5. Dosyayı kaydedin. (Henüz Visual Studio'nun deneysel örneğinde kapatmayın.)
 
-   Başka bir modelinde bir öğedeki ModelBus başvuru içeren bir model oluşturdunuz.
+   Başka bir modeldeki bir öğeye ModelBus başvurusu içeren bir model oluşturdunuz.
 
 ### <a name="resolve-a-modelbus-reference-in-a-text-template"></a>Metin şablonunda ModelBus başvuru çözümleyin
 
@@ -357,7 +357,7 @@ Artık ModelBus metin şablonlarını tarafından erişilebilecek bir DSL var. K
 
 1. Visual Studio'nun deneysel örneğinde çalışıyorsa kapatın.
 
-2. Adlı bir dosya ekleyin *MBConsumer\Dsl\Custom.cs* ve içeriği için aşağıdakileri ayarlayın:
+2. *Mbconsumer\dsl\custom.cs* adlı bir dosya ekleyin ve içeriğini şu şekilde ayarlayın:
 
     ```csharp
     namespace Company.MB2Consume
@@ -388,7 +388,7 @@ Artık ModelBus metin şablonlarını tarafından erişilebilecek bir DSL var. K
     }
     ```
 
-3. Tuşuna **Ctrl**+**F5**.
+3. **CTRL**+**F5**tuşuna basın.
 
 4. Visual Studio'nun deneysel örneğinde açın `Debugging\Sample.consume`.
 

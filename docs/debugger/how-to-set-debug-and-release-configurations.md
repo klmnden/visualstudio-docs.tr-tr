@@ -1,5 +1,5 @@
 ---
-title: Ayarlama hata ayıklama ve dağıtım yapılandırmalarını | Microsoft Docs
+title: Hata ayıklama ve yayın yapılandırmasını ayarlama | Microsoft Docs
 ms.date: 10/05/2018
 ms.topic: reference
 f1_keywords:
@@ -31,97 +31,97 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b0bf0da5f15bbb59c2898af0dc0bfec1105cbab0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 75acf0a3a821b4d2561ea14e583e71761b8b476e
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62847663"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68925465"
 ---
-# <a name="set-debug-and-release-configurations-in-visual-studio"></a>Hata ayıklama ayarlayabilir ve yayın yapılandırmaları Visual Studio'da
+# <a name="set-debug-and-release-configurations-in-visual-studio"></a>Visual Studio 'da hata ayıklama ve yayın yapılandırmasını ayarlama
 
-Visual Studio projeleri ayrı sürümü ve hata ayıklama yapılandırması, programınız için. Hata ayıklama sürümünün hata ayıklama ve yayın sürümünü son sürüm dağıtımı oluşturun.
+Visual Studio projeleri, programınız için ayrı sürüm ve hata ayıklama yapılandırmalarına sahiptir. Hata ayıklama için hata ayıklama sürümü ve son sürüm dağıtımı için yayın sürümü oluşturursunuz.
 
-Hata ayıklama yapılandırmasında programınızı tam sembolik hata ayıklama bilgileri ve en iyileştirme olmadan derlenir. Kaynak kodu ve oluşturulan yönergeler arasındaki ilişki daha karmaşık olacağından en iyileştirme hata ayıklama, karmaşık hale getirir.
+Hata ayıklama yapılandırmasında, programınız tam sembolik hata ayıklama bilgileriyle derlenir ve iyileştirme gerektirmez. Kaynak kodu ve oluşturulan yönergeler arasındaki ilişki daha karmaşık olduğundan iyileştirme, hata ayıklamayı karmaşıklaştırır.
 
-Programınızın sürüm yapılandırması simgesel hata ayıklama bilgisi ve tamamen en iyileştirilmiştir. Yönetilen kod ve C++ kodu için hata ayıklama bilgisi .pdb dosyaları oluşturulabilir [derleyici seçeneklerine bağlı olarak](#BKMK_symbols_release) kullanılan. .Pdb dosyaları oluşturmak, daha sonra yayım sürümünüzde hata ayıklama varsa yararlı olabilir.
+Programınızın yayın yapılandırmasında sembolik hata ayıklama bilgisi yoktur ve tam iyileştirilir. Yönetilen kod ve C++ kod için, hata ayıklama bilgileri, kullanılan [derleyici seçeneklerine bağlı olarak](#BKMK_symbols_release) . pdb dosyalarında oluşturulabilir. Daha sonra yayın sürümünüzde hata ayıklaması yapmanız gerekiyorsa. pdb dosyalarının oluşturulması yararlı olabilir.
 
-Derleme yapılandırmaları hakkında daha fazla bilgi için bkz. [anlayın derleme yapılandırmaları](../ide/understanding-build-configurations.md).
+Derleme konfigürasyonları hakkında daha fazla bilgi için bkz. [derleme yapılandırmasını anlama](../ide/understanding-build-configurations.md).
 
-Derleme yapılandırmasını değiştirebilirsiniz **derleme** menüsünde, araç çubuğundan veya projenin özellik sayfalarındaki. Dile özgü proje özellik sayfaları. Aşağıdaki yordam, menü ve araç, yapı yapılandırmasını değiştirme işlemi gösterilmektedir. Farklı dillerde projelerde derleme yapılandırmasını değiştirme hakkında daha fazla bilgi için bkz. [Ayrıca bkz:](#see-also) bölümüne bakın.
+Yapı yapılandırmasını, araç çubuğundan veya projenin özellik sayfalarında **Yapı** menüsünden değiştirebilirsiniz. Proje özellik sayfaları dile özgüdür. Aşağıdaki yordamda, yapı yapılandırmasının menü ve araç çubuğundan nasıl değiştirileceği gösterilmektedir. Farklı dillerdeki projelerde yapı yapılandırmasını değiştirme hakkında daha fazla bilgi için aşağıdaki [Ayrıca bkz](#see-also) . bölümüne bakın.
 
-## <a name="change-the-build-configuration"></a>Derleme yapılandırmasını değiştirin
+## <a name="change-the-build-configuration"></a>Yapı yapılandırmasını değiştirme
 
-Yapı yapılandırmasını ya da değiştirmek için:
+Yapı yapılandırmasını değiştirmek için aşağıdakilerden birini yapın:
 
-* Gelen **derleme** menüsünde **Configuration Manager**, ardından **hata ayıklama** veya **yayın**.
+* **Derleme** menüsünden **Configuration Manager**' yi seçin ve ardından **Hata Ayıkla** veya **Yayınla**' yı seçin.
 
 veya
 
-* Ya da araç çubuğunda **hata ayıklama** veya **yayın** gelen **çözüm yapılandırmaları** listesi.
+* Araç çubuğunda, **çözüm yapılandırması** listesinden **Hata Ayıkla** veya **Yayınla** ' yı seçin.
 
-  ![araç çubukları oluşturma yapılandırma](../debugger/media/toolbarbuildconfiguration.png "ToolbarBuildConfiguration")
+  ![araç çubukları derleme yapılandırması](../debugger/media/toolbarbuildconfiguration.png "Toolbarbuildconfiguration")
 
-## <a name="BKMK_symbols_release"></a>Bir derleme için Sembol (.pdb) dosyalarını oluşturmak (C#, C++, Visual Basic F#)
+## <a name="BKMK_symbols_release"></a>Derleme (C#, C++, Visual Basic, F#) için sembol (. pdb) dosyaları oluşturma
 
-Sembol (.pdb) dosyalarını ve hangi oluşturulacak seçebilirsiniz, hata ayıklama bilgilerini dahil etmek için. Çoğu proje türleri için hata ayıklama için varsayılan olarak, derleyici sembol dosyalarını oluşturur ve proje türüne ve Visual Studio sürümü tarafından diğer varsayılan ayarları farklı sırada yayın oluşturur.
+Sembol (. pdb) dosyalarını ve dahil edilecek hata ayıklama bilgilerini oluşturmayı seçebilirsiniz. Çoğu proje türü için, derleyici varsayılan olarak hata ayıklama ve yayın yapıları için sembol dosyaları üretir, diğer varsayılan ayarlar proje türü ve Visual Studio sürümüne göre farklılık gösterir.
 
 > [!IMPORTANT]
-> Hata ayıklayıcı, yalnızca yürütülebilir dosya oluşturulduğunda, oluşturulan .pdb dosyasıyla tam olarak eşleşen bir yürütülebilir dosya için bir .pdb dosyasını yükler (yani, .pdb özgün olmalı veya özgün .pdb'nin kopyasını olmalıdır). Daha fazla bilgi için [neden Visual Studio gerektiriyor hata ayıklayıcı sembol birlikte oluşturuldukları ikili dosyalarla tam olarak eşleşen dosyaları?](https://blogs.msdn.microsoft.com/jimgries/2007/07/06/why-does-visual-studio-require-debugger-symbol-files-to-exactly-match-the-binary-files-that-they-were-built-with/)
+> Hata ayıklayıcı, yalnızca yürütülebilir dosya oluşturulduğunda, oluşturulan .pdb dosyasıyla tam olarak eşleşen bir yürütülebilir dosya için bir .pdb dosyasını yükler (yani, .pdb özgün olmalı veya özgün .pdb'nin kopyasını olmalıdır). Daha fazla bilgi için bkz. [Visual Studio neden hata ayıklayıcı sembol dosyalarının ile derlendikleri ikili dosyalarla tam olarak eşleşmesi gerekir?](https://blogs.msdn.microsoft.com/jimgries/2007/07/06/why-does-visual-studio-require-debugger-symbol-files-to-exactly-match-the-binary-files-that-they-were-built-with/).
 
-Her proje türü, bu seçenekleri ayarlamak için farklı bir yol olabilir.
+Her proje türünün bu seçenekleri ayarlamanın farklı bir yolu olabilir.
 
-### <a name="generate-symbol-files-for-a-c-aspnet-or-visual-basic-project"></a>Bir C#, ASP.NET veya Visual Basic projesi için Sembol dosyaları oluştur
+### <a name="generate-symbol-files-for-a-c-aspnet-or-visual-basic-project"></a>Bir C#, ASP.NET veya Visual Basic projesi için sembol dosyaları oluşturma
 
-C# veya Visual Basic hata ayıklama yapılandırmaları için proje ayarları hakkında ayrıntılı bilgi için bkz: [hata ayıklama yapılandırması proje ayarları bir C#](../debugger/project-settings-for-csharp-debug-configurations.md) veya [hata ayıklama YapılandırmasıbirVisualBasicprojeayarları](../debugger/project-settings-for-a-visual-basic-debug-configuration.md).
+Veya Visual Basic hata ayıklama yapılandırmalarının proje ayarları hakkında ayrıntılı bilgi için, bkz. hata [ C# ayıklama yapılandırması için proje ayarları](../debugger/project-settings-for-csharp-debug-configurations.md) veya [Visual Basic hata ayıklama yapılandırması için proje ayarları.](../debugger/project-settings-for-a-visual-basic-debug-configuration.md) C#
 
 1. Çözüm Gezgini'nde projeyi seçin.
 
-2. Seçin **özellikleri** simgesi (veya basın **Alt + Enter**).
+2. **Özellikler** simgesini seçin (veya **Alt + Enter**tuşlarına basın).
 
-3. Yan bölmede seçin **derleme** (veya **derleme** Visual Basic'te).
+3. Yan bölmede, **Oluştur** (veya Visual Basic **Derle** ) öğesini seçin.
 
-4. İçinde **yapılandırma** listesinde **hata ayıklama** veya **yayın**.
+4. **Yapılandırma** listesinde **Hata Ayıkla** veya **Yayınla**' yı seçin.
 
-5. Seçin **Gelişmiş** düğme (veya **Gelişmiş derleme seçenekleri** düğme Visual Basic'te).
+5. **Gelişmiş** düğmesini (veya Visual Basic) **Gelişmiş derleme seçenekleri** düğmesini seçin.
 
-6. İçinde **hata ayıklama bilgileri** listesi (veya **hata ayıklama bilgileri üret** Visual Basic'te liste), seçin **tam**, **yalnızca Pdb**, veya **Taşınabilir**.
+6. **Hata ayıklama bilgileri** listesinde (veya Visual Basic **hata ayıklama bilgileri oluştur** ' da), **tam**, **pdb-salt**veya **Taşınabilir**' ı seçin.
 
-   Taşınabilir en son platformlar arası .NET Core için biçimdir. Seçenekler hakkında daha fazla bilgi için bkz. [Gelişmiş derleme Ayarları iletişim kutusu (C#)](../ide/reference/advanced-build-settings-dialog-box-csharp.md).
+   Taşınabilir biçim, .NET Core için en son platformlar arası biçimdir. Seçenekler hakkında daha fazla bilgi için bkz. [Gelişmiş derleme ayarları iletişim kutusuC#()](../ide/reference/advanced-build-settings-dialog-box-csharp.md).
 
-   ![C# derlemeleri için pdb oluşturma](../debugger/media/dbg_project_properties_pdb_csharp.png "GeneratePDBsForCSharp")
+   ![İçindeki C# derlemeler için pdb 'leri oluştur](../debugger/media/dbg_project_properties_pdb_csharp.png "Generatepdbsforcsharp")
 
 7. Projenizi yapılandırın.
 
-   Derleyici sembol dosyaları aynı klasörde yürütülebilir dosyası ya da ana çıkış dosyası oluşturur.
+   Derleyici, sembol dosyalarını çalıştırılabilir veya ana çıktı dosyasıyla aynı klasörde oluşturur.
 
-### <a name="generate-symbol-files-for-a-c-project"></a>Sembol dosyaları için bir C++ projesi oluşturma
+### <a name="generate-symbol-files-for-a-c-project"></a>Bir C++ proje için sembol dosyaları oluşturma
 
 1. Çözüm Gezgini'nde projeyi seçin.
 
-2. Seçin **özellikleri** simgesi (veya basın **Alt + Enter**).
+2. **Özellikler** simgesini seçin (veya **Alt + Enter**tuşlarına basın).
 
-3. İçinde **yapılandırma** listesinde **hata ayıklama** veya **yayın**.
+3. **Yapılandırma** listesinde **Hata Ayıkla** veya **Yayınla**' yı seçin.
 
-4. Yan bölmede seçin **bağlayıcı > hata ayıklama**, ilgili seçenekleri seçin **hata ayıklama bilgisi Oluştur**.
+4. Yan bölmede, **hata ayıklama > bağlayıcı**' yı seçin, ardından **hata ayıklama bilgisi oluştur**seçeneklerini belirleyin.
 
-   C++ hata ayıklama yapılandırmaları için proje ayarları hakkında ayrıntılı bilgi için bkz: [hata ayıklama yapılandırması proje ayarları bir C++](../debugger/project-settings-for-a-cpp-debug-configuration.md).
+   İçindeki C++hata ayıklama yapılandırmalarının proje ayarları hakkında ayrıntılı bilgi için bkz. [ C++ hata ayıklama yapılandırması için proje ayarları](../debugger/project-settings-for-a-cpp-debug-configuration.md).
 
-5. Seçeneklerini yapılandırmak **Program veritabanı dosyaları üretmek**.
+5. **Program veritabanı dosyaları oluştur**seçeneklerini yapılandırın.
 
-   Çoğu C++ projelerinde varsayılan değerdir `$(OutDir)$(TargetName).pdb`, çıktı klasöründe .pdb dosyaları oluşturur.
+   Çoğu C++ projede, varsayılan değer, çıkış klasöründe `$(OutDir)$(TargetName).pdb`. pdb dosyaları üreten ' dır.
 
-   ![C++'ta yapılar için pdb oluşturma](../debugger/media/dbg_project_properties_pdb_cplusplus.png "GeneratePDBsforCPlusPlus")
+   ![İçindeki C++ derlemeler için pdb 'leri oluştur](../debugger/media/dbg_project_properties_pdb_cplusplus.png "Generatepdbsforcplusplus")
 
 6. Projenizi yapılandırın.
 
-   Derleyici sembol dosyaları aynı klasörde yürütülebilir dosyası ya da ana çıkış dosyası oluşturur.
+   Derleyici, sembol dosyalarını çalıştırılabilir veya ana çıktı dosyasıyla aynı klasörde oluşturur.
 
-## <a name="see-also"></a>Ayrıca bkz:
+## <a name="see-also"></a>Ayrıca bkz.
 
-- [Visual Studio hata ayıklayıcısında simge (.pdb) dosyalarını ve kaynak dosyaları belirtin](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)<br/>
+- [Visual Studio hata ayıklayıcısında simge (. pdb) dosyalarını ve kaynak dosyaları belirtme](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)<br/>
 - [Hata ayıklayıcısı ayarları ve hazırlığı](../debugger/debugger-settings-and-preparation.md)<br/>
 - [C++ hata ayıklama yapılandırması proje ayarları](../debugger/project-settings-for-a-cpp-debug-configuration.md)<br/>
-- [C# hata ayıklama yapılandırması proje ayarları](../debugger/project-settings-for-csharp-debug-configurations.md)<br/>
+- [C# Hata ayıklama yapılandırması için proje ayarları](../debugger/project-settings-for-csharp-debug-configurations.md)<br/>
 - [Visual Basic hata ayıklama yapılandırması proje ayarları](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)<br/>
-- [Nasıl yapılır: Yapılandırmaları oluşturma ve düzenleme](../ide/how-to-create-and-edit-configurations.md)
+- [Nasıl yapılır: Yapılandırma oluşturma ve düzenleme](../ide/how-to-create-and-edit-configurations.md)

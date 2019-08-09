@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0c4216b52fa4a23848a82548c36c34592deacc0b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4a45b7061ae9d183ec7ee02a3b733ee9340b3689
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62545465"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68921310"
 ---
 # <a name="ca1901-pinvoke-declarations-should-be-portable"></a>CA1901: P/Invoke bildirimleri taşınabilir olmalıdır
 
@@ -27,27 +27,27 @@ ms.locfileid: "62545465"
 |-|-|
 |TypeName|PInvokeDeclarationsShouldBePortable|
 |CheckId|CA1901|
-|Kategori|Microsoft.Portability|
-|Yeni Değişiklik|P/Invoke derlemenin dışında görünür olup olmadığını - kesiliyor. P/Invoke derlemenin dışında görünür değilse olmayan son -.|
+|Kategori|Microsoft. taşınabilirlik|
+|Yeni Değişiklik|Parçalama-P/Invoke derlemenin dışında görünüyorsa. Bölünmez olmayan-P/Invoke derlemenin dışında görünür değilse.|
 
 ## <a name="cause"></a>Sebep
- Bu kural her parametresinin boyutu ve P/Invoke dönüş değeri değerlendirir ve bunların boyutu, 32-bit ve 64-bit platformlarda, yönetilmeyen kod sıralandığı zaman doğru olduğunu doğrular. Bu kural ihlalini en yaygın bir platforma bağımlı, işaretçi boyutlu değişken gerekli olduğu sabit boyutlu bir tamsayı geçirmektir.
+Bu kural, her parametrenin boyutunu ve bir P/Invoke dönüş değerini değerlendirir ve 32-bit ve 64 bit platformlarındaki yönetilmeyen koda sıralanmış olarak bunların boyutunun doğru olduğunu doğrular. Bu kuralın en yaygın ihlali, platforma bağımlı, işaretçi boyutunda bir değişkenin gerekli olduğu sabit boyutlu bir tamsayıyı iletmektir.
 
 ## <a name="rule-description"></a>Kural açıklaması
- Bu kuralı ihlal aşağıdaki senaryolardan biri gerçekleşir:
+Aşağıdaki senaryolardan biri bu kuralın oluştuğunu ihlal ediyor:
 
-- Olarak yazılmalıdır, parametre ve dönüş değeri bir sabit boyutlu tamsayı olarak yazılan bir `IntPtr`.
+- Dönüş değeri veya parametresi, olarak `IntPtr`yazılması gerektiğinde sabit boyutlu bir tamsayı olarak yazılır.
 
-- Parametre ve dönüş değeri olarak yazılmış bir `IntPtr` zaman yazdığınız sabit boyutlu bir tamsayı olarak.
+- Dönüş değeri veya parametresi, sabit boyutlu bir tamsayı `IntPtr` olarak yazılması gerektiğinde bir olarak yazılır.
 
-## <a name="how-to-fix-violations"></a>İhlaller nasıl düzeltilir?
- Kullanarak, bu ihlali düzeltebilirsiniz `IntPtr` veya `UIntPtr` yerine tanıtıcılarını temsil etmek için `Int32` veya `UInt32`.
+## <a name="how-to-fix-violations"></a>İhlalleri çözme
+`IntPtr` `UIntPtr` Veya yerine`UInt32`tutamaçları temsil etmek için veya kullanarak bu ihlalin düzeltmesini çözebilirsiniz. `Int32`
 
-## <a name="when-to-suppress-warnings"></a>Uyarılar bastırıldığında
- Bu uyarı göndermeme değil.
+## <a name="when-to-suppress-warnings"></a>Uyarıların ne zaman bastırılamıyor
+Bu uyarıyı gizmemelisiniz.
 
 ## <a name="example"></a>Örnek
- Aşağıdaki örnek, bu kural ihlalini gösterir.
+Aşağıdaki örnek, bu kuralın ihlaline neden olduğunu gösterir.
 
 ```csharp
 internal class NativeMethods
@@ -58,7 +58,7 @@ internal class NativeMethods
 }
 ```
 
- Bu örnekte, `nIconIndex` parametresi olarak bildirilmiş bir `IntPtr`, 4 bayt genişliğinde 32-bit bir platforma ve 8 baytlık bir 64-bit platformda geniş olduğu. Görürsünüz izleyen yönetilmeyen bildiriminde `nIconIndex` tüm platformlarda bir 4-bayt işaretsiz tamsayı.
+Bu örnekte, `nIconIndex` parametresi, 32 bitlik bir platformda 4 `IntPtr`bayt genişliğinde olan ve 64 bitlik bir platformda 8 bayt genişliğinde olan bir olarak bildirilmiştir. Aşağıdaki yönetilmeyen bildirimde, tüm platformlarda 4 baytlık işaretsiz bir tamsayı `nIconIndex` olduğunu görebilirsiniz.
 
 ```csharp
 HICON ExtractIcon(HINSTANCE hInst, LPCTSTR lpszExeFileName,
@@ -66,7 +66,7 @@ HICON ExtractIcon(HINSTANCE hInst, LPCTSTR lpszExeFileName,
 ```
 
 ## <a name="example"></a>Örnek
- İhlali gidermek için bildirimi aşağıdaki gibi değiştirin:
+İhlalin giderilmesi için bildirimi aşağıdaki şekilde değiştirin:
 
 ```csharp
 internal class NativeMethods{
@@ -77,4 +77,4 @@ internal class NativeMethods{
 ```
 
 ## <a name="see-also"></a>Ayrıca bkz.
- [Taşınabilirlik Uyarıları](../code-quality/portability-warnings.md)
+[Taşınabilirlik Uyarıları](../code-quality/portability-warnings.md)

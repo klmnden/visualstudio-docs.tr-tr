@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: a01c8ca81ab469d578d58e6195171c2e3b07704b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9c05c0b17bc9866edd7c07874be14578ed4cf884
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62788680"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68922552"
 ---
 # <a name="ca1060-move-pinvokes-to-nativemethods-class"></a>CA1060: P/Invokes'u NativeMethods sınıfına taşıyın
 
@@ -35,70 +35,70 @@ ms.locfileid: "62788680"
 
 ## <a name="cause"></a>Sebep
 
-Bir yöntem, yönetilmeyen kod erişmek için Platform çağırma Hizmetleri kullanır ve birinin üyesi değil **NativeMethods** sınıfları.
+Bir yöntem, yönetilmeyen koda erişmek için platform çağırma hizmetleri 'ni kullanır ve **Nativemethod** sınıflarından birinin üyesi değildir.
 
 ## <a name="rule-description"></a>Kural açıklaması
 
-Platform çağırma yöntemleri kullanarak işaretlenenler gibi <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName> özniteliği veya kullanılarak tanımlanan yöntemleri `Declare` anahtar sözcüğünü [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)], yönetilmeyen koda erişebilirsiniz. Bu yöntemler aşağıdaki sınıflar biri olmalıdır:
+<xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName> Özniteliği kullanılarak işaretlenenler veya içindeki `Declare` [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]anahtar sözcüğü kullanılarak tanımlanan Yöntemler gibi platform çağırma yöntemleri, yönetilmeyen koda erişin. Bu yöntemler aşağıdaki sınıflardan birinde olmalıdır:
 
-- **NativeMethods** -Bu sınıf, yönetilmeyen kod iznini için yığın Yürüyüşü engellemez. (<xref:System.Security.SuppressUnmanagedCodeSecurityAttribute?displayProperty=fullName> bu sınıfa uygulanmadığından.) Yığın ilerlemesi gerçekleştirilecek çünkü her yerde kullanılabilir yöntemler için sınıftır.
+- **NativeMethods** -Bu sınıf, yönetilmeyen kod izni için yığın izlenecek yol göster ' i göstermez. (<xref:System.Security.SuppressUnmanagedCodeSecurityAttribute?displayProperty=fullName> bu sınıfa uygulanmamalıdır.) Bu sınıf, bir yığın yürüme gerçekleştirileceği için her yerde kullanılabilecek yöntemler içindir.
 
-- **SafeNativeMethods** -yığın Yürüyüşü yönetilmeyen kod iznini için bu sınıf bastırır. (<xref:System.Security.SuppressUnmanagedCodeSecurityAttribute?displayProperty=fullName> bu sınıfa uygulanır.) Bu sınıf, herkesin çağırmak güvenlidir yöntemleri içindir. Bu yöntemlerin çağıranlar yöntemleri için herhangi bir çağırıcı zararsız olduğundan kullanım güvenli olduğundan emin olmak için tam bir güvenlik incelemesi gerçekleştirme gerekli değildir.
+- **SafeNativeMethods** -Bu sınıf, yönetilmeyen kod izni için yığın izlenecek yol gösterir. (<xref:System.Security.SuppressUnmanagedCodeSecurityAttribute?displayProperty=fullName> bu sınıfa uygulanır.) Bu sınıf, herkes tarafından çağrı yapmak için güvenli olan yöntemlere yöneliktir. Yöntemler herhangi bir arayan için zararsız olduğundan, kullanımın güvenli olduğundan emin olmak için bu yöntemlerin çağıranları tam güvenlik incelemesi gerçekleştirmek için gerekli değildir.
 
-- **UnsafeNativeMethods** -yığın Yürüyüşü yönetilmeyen kod iznini için bu sınıf bastırır. (<xref:System.Security.SuppressUnmanagedCodeSecurityAttribute?displayProperty=fullName> bu sınıfa uygulanır.) Potansiyel olarak tehlikeli yöntemleri sınıftır. Bu yöntemlerin herhangi bir çağıran hiçbir yığın ilerlemesi gerçekleştirilecek çünkü kullanım güvenli olduğundan emin olmak için tam bir güvenlik incelemesi gerçekleştirmeniz gerekir.
+- **UnsafeNativeMethods** -Bu sınıf, yönetilmeyen kod izni için yığın izlenecek yol gösterir. (<xref:System.Security.SuppressUnmanagedCodeSecurityAttribute?displayProperty=fullName> bu sınıfa uygulanır.) Bu sınıf potansiyel olarak tehlikeli Yöntemler içindir. Bu yöntemlerin herhangi bir çağırıcısı, kullanımın güvenli olduğundan emin olmak için, yığın ilerlemesinin gerçekleştirilmediğinden emin olmak için tam bir güvenlik incelemesi gerçekleştirmelidir.
 
-Bu sınıflar olarak bildirilen `internal` (`Friend`, Visual Basic'te) ve yeni örnekleri oluşturulmasını engellemek için özel bir oluşturucu bildirin. Bu sınıfların yöntemleri olmalıdır `static` ve `internal` (`Shared` ve `Friend` Visual Basic'te).
+Bu sınıflar (`Friend`Visual Basic) `internal` olarak tanımlanır ve yeni örneklerin oluşturulmasını engellemek için özel bir Oluşturucu bildirir. Bu sınıflardaki Yöntemler ve `static` `internal` (`Shared` ve `Friend` Visual Basic) olmalıdır.
 
-## <a name="how-to-fix-violations"></a>İhlaller nasıl düzeltilir?
- Bu kural ihlalini düzeltmek için uygun move yöntemi **NativeMethods** sınıfı. Çoğu uygulama için P/Invoke'lar adlı yeni bir sınıf taşıma **NativeMethods** yeterlidir.
+## <a name="how-to-fix-violations"></a>İhlalleri çözme
+Bu kural ihlalini onarmak için yöntemini uygun **NativeMethods** sınıfına taşıyın. Çoğu uygulama için, P/Invoke 'u **NativeMethods** adlı yeni bir sınıfa taşımak yeterlidir.
 
- Diğer uygulamalarda kullanmak için kitaplıkları geliştiriyorsanız Bununla birlikte, çağrılan diğer iki sınıfları tanımlama dikkate almanız gereken **SafeNativeMethods** ve **UnsafeNativeMethods**. Bu sınıflar benzer **NativeMethods** sınıfı; ancak, bunlar adlı bir özel özniteliği kullanılarak işaretlenir **SuppressUnmanagedCodeSecurityAttribute**. Bu öznitelik uygulandığında, çalışma zamanı tüm çağıranların sahip olduğunuzdan emin olmak için tam bir yığın ilerlemesi gerçekleştirmez **UnmanagedCode** izni. Çalışma zamanı, başlangıçta bu izin için normalde denetler. Denetim yapılmaz, yönetilmeyen bu yöntemlere yapılan çağrılar için performansı büyük ölçüde artırabilir, ayrıca bu yöntemleri çağırmak için izinleri sınırlı olan kod sağlar.
+Ancak, diğer uygulamalarda kullanmak üzere kitaplıklar geliştiriyorsanız, **SafeNativeMethods** ve **UnsafeNativeMethods**adlı iki diğer sınıfı tanımlamayı göz önünde bulundurmanız gerekir. Bu sınıflar, **NativeMethods** sınıfına benzer; Ancak, **SuppressUnmanagedCodeSecurityAttribute**adlı özel bir öznitelik kullanılarak işaretlenir. Bu öznitelik uygulandığında, çalışma zamanı tam bir yığın gerçekleştirmez ve tüm çağıranların **UnmanagedCode** iznine sahip olduğundan emin olun. Çalışma zamanı normalde bu izni başlangıçta denetler. Denetim gerçekleştirilmediğinden, bu yönetilmeyen yöntemlere yapılan çağrıların performansını önemli ölçüde iyileştirebilir. Ayrıca, bu yöntemleri çağırmak için sınırlı izinleri olan kodun de kullanılmasına olanak sağlar.
 
- Ancak, bu öznitelik ile çok dikkatli kullanmanız gerekir. Yanlış uygulanırsa, ciddi güvenlikle ilgili etkileri sahip olabileceği...
+Ancak, bu özniteliği harika bir şekilde kullanmanız gerekir. Yanlış uygulanırsa, ciddi güvenlik etkilerine neden olabilir.
 
- Yöntemleri hakkında daha fazla bilgi için bkz. **NativeMethods** örnek, **SafeNativeMethods** , örnek ve **UnsafeNativeMethods** örnek.
+Yöntemleri uygulama hakkında daha fazla bilgi için bkz. **NativeMethods** örneği, **SafeNativeMethods** example ve **UnsafeNativeMethods** örneği.
 
-## <a name="when-to-suppress-warnings"></a>Uyarılar bastırıldığında
- Bu kuraldan uyarıyı bastırmayın.
+## <a name="when-to-suppress-warnings"></a>Uyarıların ne zaman bastırılamıyor
+Bu kuraldan uyarıyı bastırmayın.
 
 ## <a name="example"></a>Örnek
- Aşağıdaki örnek bu kuralı ihlal eden bir yöntem bildirir. İhlali gidermek için **RemoveDirectory** P/Invoke yalnızca P/Invoke'lar tutmak için tasarlanmış bir uygun sınıf getirilmelidir.
+Aşağıdaki örnek, bu kuralı ihlal eden bir yöntemi bildirir. İhlalin düzeltilmesi için, **RemoveDirectory** p/Invoke yalnızca P/Invoke tutmak üzere tasarlanan uygun bir sınıfa taşınmalıdır.
 
- [!code-vb[FxCop.Design.DllImportNativeMethods#1](../code-quality/codesnippet/VisualBasic/ca1060-move-p-invokes-to-nativemethods-class_1.vb)]
- [!code-csharp[FxCop.Design.DllImportNativeMethods#1](../code-quality/codesnippet/CSharp/ca1060-move-p-invokes-to-nativemethods-class_1.cs)]
+[!code-vb[FxCop.Design.DllImportNativeMethods#1](../code-quality/codesnippet/VisualBasic/ca1060-move-p-invokes-to-nativemethods-class_1.vb)]
+[!code-csharp[FxCop.Design.DllImportNativeMethods#1](../code-quality/codesnippet/CSharp/ca1060-move-p-invokes-to-nativemethods-class_1.cs)]
 
 ## <a name="nativemethods-example"></a>NativeMethods örneği
 
 ### <a name="description"></a>Açıklama
- Çünkü **NativeMethods** sınıfı kullanarak işaretlenmemelidir **SuppressUnmanagedCodeSecurityAttribute**, içine yerleştirdiğiniz P/Invoke'lar gerektirecek **UnmanagedCode** izni. Yerel bilgisayardan çoğu uygulamayı çalıştırabilir ve tam güven ile birlikte çalıştırın, bu genellikle bir sorun değildir çünkü. Yeniden kullanılabilir kitaplıklar geliştiriyorsanız ancak tanımlama dikkate almanız gereken bir **SafeNativeMethods** veya **UnsafeNativeMethods** sınıfı.
+**NativeMethods** sınıfı **SuppressUnmanagedCodeSecurityAttribute**kullanılarak işaretlenmemelidir, çünkü içine yerleştirilen P/Invoke, **UnmanagedCode** izni gerektirir. Çoğu uygulama yerel bilgisayardan çalıştığından ve tam güvenle birlikte çalıştığı için, bu genellikle bir sorun değildir. Ancak, yeniden kullanılabilir kitaplıklar geliştiriyorsanız, bir **SafeNativeMethods** veya **UnsafeNativeMethods** sınıfı tanımlamayı göz önünde bulundurmanız gerekir.
 
- Aşağıdaki örnekte gösterildiği bir **Interaction.Beep** sarmalar yöntemi **MessageBeep** user32.dll işlevden. **MessageBeep** P/Invoke yerleştirildiğini **NativeMethods** sınıfı.
+Aşağıdaki örnek, User32. dll ' den **Messagebip** işlevini sarmalayan bir **Interaction. bip** yöntemi gösterir. **Messagebip** P/Invoke, **NativeMethods** sınıfına konur.
 
 ### <a name="code"></a>Kod
- [!code-csharp[FxCop.Design.NativeMethods#1](../code-quality/codesnippet/CSharp/ca1060-move-p-invokes-to-nativemethods-class_2.cs)]
- [!code-vb[FxCop.Design.NativeMethods#1](../code-quality/codesnippet/VisualBasic/ca1060-move-p-invokes-to-nativemethods-class_2.vb)]
+[!code-csharp[FxCop.Design.NativeMethods#1](../code-quality/codesnippet/CSharp/ca1060-move-p-invokes-to-nativemethods-class_2.cs)]
+[!code-vb[FxCop.Design.NativeMethods#1](../code-quality/codesnippet/VisualBasic/ca1060-move-p-invokes-to-nativemethods-class_2.vb)]
 
 ## <a name="safenativemethods-example"></a>SafeNativeMethods örneği
 
 ### <a name="description"></a>Açıklama
- P/Invoke yöntemleri, güvenli bir şekilde ortaya herhangi bir uygulama ve yan etkileri yok adlı bir sınıfta put **SafeNativeMethods**. İçin isteğe bağlı izinlere sahip değilsiniz ve gelen burada adlı için çok dikkat gerekmez.
+Herhangi bir uygulamaya güvenle açık olabilecek ve herhangi bir yan etkisi olmayan P/Invoke metotları **SafeNativeMethods**adlı bir sınıfa yerleştirilmelidir. İzinleriniz için gereken izinlere sahip değilsiniz ve nereden çağrıldığının üzerine çok dikkat etmeniz gerekmez.
 
- Aşağıdaki örnekte gösterildiği bir **Environment.TickCount** sarmalar özelliği **GetTickCount** kernel32.dll öğesinden işlevi.
+Aşağıdaki örnek, Kernel32. dll ' den **GetTickCount** işlevini sarmalayan bir **Environment. TickCount** özelliğini gösterir.
 
 ### <a name="code"></a>Kod
- [!code-vb[FxCop.Design.NativeMethodsSafe#1](../code-quality/codesnippet/VisualBasic/ca1060-move-p-invokes-to-nativemethods-class_3.vb)]
- [!code-csharp[FxCop.Design.NativeMethodsSafe#1](../code-quality/codesnippet/CSharp/ca1060-move-p-invokes-to-nativemethods-class_3.cs)]
+[!code-vb[FxCop.Design.NativeMethodsSafe#1](../code-quality/codesnippet/VisualBasic/ca1060-move-p-invokes-to-nativemethods-class_3.vb)]
+[!code-csharp[FxCop.Design.NativeMethodsSafe#1](../code-quality/codesnippet/CSharp/ca1060-move-p-invokes-to-nativemethods-class_3.cs)]
 
 ## <a name="unsafenativemethods-example"></a>UnsafeNativeMethods örneği
 
 ### <a name="description"></a>Açıklama
- P/Invoke yöntemleri, güvenli bir şekilde çağrılamaz ve yan etkilere neden olabilecek adlı bir sınıfta put **UnsafeNativeMethods**. Bu yöntemler, bunlar kullanıcıya yanlışlıkla gösterilmez emin olmak için titizlikle denetlenmelidir. Kural [CA2118: SuppressUnmanagedCodeSecurityAttribute kullanımını gözden geçirin](../code-quality/ca2118-review-suppressunmanagedcodesecurityattribute-usage.md) bu konuda yardımcı olabilir. Alternatif olarak, yöntemler yerine talep başka bir iznine sahip olması gereken **UnmanagedCode** kullandığında bunları.
+Güvenli bir şekilde çağrılamayan ve yan etkileri **UnsafeNativeMethods**adlı bir sınıfa yerleştirilecek olan P/Invoke yöntemleri. Bu yöntemlerin kullanıcıya istem dışı olarak gösterilmediğinden emin olmak için dikkatli bir şekilde denetlenmesi gerekir. Kural [CA2118: SuppressUnmanagedCodeSecurityAttribute kullanımını](../code-quality/ca2118-review-suppressunmanagedcodesecurityattribute-usage.md) gözden geçirin bu konuda yardımcı olabilir. Alternatif olarak, yöntemler onları kullandıklarında **UnmanagedCode** yerine talep edilen başka bir izne sahip olmalıdır.
 
- Aşağıdaki örnekte gösterildiği bir **Cursor.Hide** sarmalar yöntemi **sayı değil geçiş** user32.dll işlevden.
+Aşağıdaki örnekte, User32. dll ' den **ShowCursor** işlevini sarmalayan bir **Cursor. Hide** yöntemi gösterilmektedir.
 
 ### <a name="code"></a>Kod
- [!code-vb[FxCop.Design.NativeMethodsUnsafe#1](../code-quality/codesnippet/VisualBasic/ca1060-move-p-invokes-to-nativemethods-class_4.vb)]
- [!code-csharp[FxCop.Design.NativeMethodsUnsafe#1](../code-quality/codesnippet/CSharp/ca1060-move-p-invokes-to-nativemethods-class_4.cs)]
+[!code-vb[FxCop.Design.NativeMethodsUnsafe#1](../code-quality/codesnippet/VisualBasic/ca1060-move-p-invokes-to-nativemethods-class_4.vb)]
+[!code-csharp[FxCop.Design.NativeMethodsUnsafe#1](../code-quality/codesnippet/CSharp/ca1060-move-p-invokes-to-nativemethods-class_4.cs)]
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

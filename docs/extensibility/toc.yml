@@ -488,8 +488,6 @@
       href: how-to-diagnose-ui-delays-caused-by-extensions.md
     - name: VSPackage Sorunlarını Giderme
       href: troubleshooting-vspackages.md
-- name: Kabuk (Tümleşik veya Yalıtılmış)
-  href: 'https://vspartner.com/pages/vsshells'
 - name: Visual Studio Uzantılarını Gönderme
   items:
     - name: Visual Studio Uzantılarını Gönderme

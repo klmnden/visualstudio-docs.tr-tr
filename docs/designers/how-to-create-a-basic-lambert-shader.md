@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl yapılır: Temel Lambert gölgelendiricisi oluşturma'
+title: 'Nasıl yapılır: Temel Lambert Gölgelendiricisi Oluşturma'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: ec5c10fb-9600-4240-8280-d59451ea1d68
@@ -8,47 +8,47 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 595f44403d5dc8062bea86504a74ed0d7e0ee565
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 662409f3655e23589a2416bb15572eb3df41bcb6
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62893968"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68924434"
 ---
 # <a name="how-to-create-a-basic-lambert-shader"></a>Nasıl yapılır: Temel Lambert gölgelendiricisi oluşturma
 
-Bu makalede, gölgelendirici Tasarımcısı ve yönlendirilmiş grafik gölgelendirici dili (DGSL) Klasik Lambert aydınlatma modeli uygulayan aydınlatma gölgelendirici oluşturmak için nasıl kullanılacağını gösterir.
+Bu makalede, klasik Lambert aydınlatma modelini uygulayan bir aydınlatma gölgelendiricisi oluşturmak için Gölgelendirici Tasarımcısının ve yönlendirilmiş Graf gölgelendirici dilinin (DGSL) nasıl kullanılacağı gösterilmektedir.
 
 ## <a name="the-lambert-lighting-model"></a>Lambert aydınlatma modeli
 
-Lambert aydınlatma modeli, çevresel ve tek yönlü ışık 3B görünümde gölge nesnelere içerir. Ortam bileşenleri ışıklar 3B Sahne olarak temel düzeyde sağlar. Yönlü ışık (uzaktaki) kaynaklardan ek aydınlatma yönlü bileşenleri sağlar. Ortam aydınlatma sahnedeki tüm yüzeyleri eşit, bağımsız olarak kendi yönlendirmesini etkiler. Belirli bir yüzeyi için çevresel renk yüzeyi ve renk ve ortam aydınlatması sahnedeki yoğunluğunu bir üründür. Tek yönlü ışık yönü ışık kaynağına göre yüzey yönü göre her yüzeyi sahnedeki farklı etkiler. Bu bir ürün yayınık renk ve surface ve rengini, şiddeti ve yönü ışık kaynaklarına yönünü olur. En büyük katkı doğrudan ışık kaynağına doğru yüzeyleri almak ve doğrudan yerine yüz tanıma yüzey hiçbir katkı alabilirsiniz. Lambert aydınlatma modeli altında nesne üzerinde her nokta için toplam yayınık renk katkısı belirlemek için çevresel bileşeni ve bir veya daha çok yönlü bileşenleri birleştirilir.
+Lambert aydınlatma modeli, 3B sahnede nesneleri gölgelendirmek için çevresel ve yönlü aydınlatma özelliklerini içerir. Çevresel bileşenler 3B sahnede temel bir aydınlatma düzeyi sağlar. Yönlü bileşenler, yönlü (en uzakta) ışık kaynaklarından daha fazla aydınlatma sağlar. Çevresel aydınlatma, kendi yönüne bakılmaksızın sahnenin tüm yüzeylerini eşit olarak etkiler. Belirli bir yüzey için, yüzeyde ortam renginin bir ürünüdür ve sahneye ait çevresel aydınlatma renk ve yoğunluğu vardır. Yönlü aydınlatma, yüzdeki her yüzeyi, ışık kaynağının yönlerine göre yüzey yönüne göre farklı şekilde etkiler. Bu, yüzeyi dağıtma renginin ve yönlerinin yanı sıra ışık kaynaklarının rengi, yoğunluğu ve yönlerinin bir ürünüdür. Işık kaynağına doğrudan ulaşan yüzeyler, doğrudan katkı almamak için en yüksek katkı ve yüzeyleri alır. Lambert aydınlatma modeli altında, ortam bileşeni ve bir veya daha fazla yönlü bileşen, nesne üzerindeki her bir nokta için toplam dağıtma rengi katkısını belirlemede birleştirilir.
 
-Başlamadan önce emin **özellikleri** penceresi ve **araç kutusu** görüntülenir.
+Başlamadan önce, **Özellikler** penceresinin ve **araç kutusunun** görüntülendiğinden emin olun.
 
-1. Birlikte çalışmak bir DGSL gölgelendirici oluşturun. Projenize DGSL gölgelendirici ekleme hakkında daha fazla bilgi için bkz. Başlarken bölümünde [gölgelendirici Tasarımcısı](../designers/shader-designer.md).
+1. Çalışmak için bir DGSL gölgelendiricisi oluşturun. Projenize bir DGSL gölgelendiricisi ekleme hakkında daha fazla bilgi için bkz. [gölgelendirici tasarımcısında](../designers/shader-designer.md)Başlarken bölümü.
 
-2. Bağlantı kesme **nokta rengi** düğümünden **son rengini** düğümü. Seçin **RGB** , terminal **nokta rengi** düğümünü seçip **Bağlantıları Kes**. Bırakın **alfa** terminal bağlı.
+2. **Son renk** düğümündeki **nokta rengi** düğümünün bağlantısını kesin. **Nokta rengi** düğümünün **RGB** terminalini seçin ve ardından **Bağlantıları Kes**' i seçin. **Alfa** terminalini bağlı bırakın.
 
-3. Ekleme bir **Lambert** grafiğe düğüm. İçinde **araç kutusu**altında **yardımcı programı**seçin **Lambert** ve tasarım yüzeyine taşıyın. Lambert düğümü çevresel ve yayınık aydınlatma parametrelere bağlı olarak piksel toplam yayınık renk katkısını hesaplar.
+3. Grafiğe **Lambert** düğümü ekleyin. **Araç kutusu**' nda, **yardımcı program**altında **Lambert** ' yi seçin ve tasarım yüzeyine taşıyın. Lambert düğümü, çevresel ve Dağıtılmış aydınlatma parametrelerine göre pikselin toplam dağıtma rengi katkısını hesaplar.
 
-4. Connect **nokta rengi** düğüme **Lambert** düğümü. İçinde **seçin** modu, taşıma **RGB** , terminal **nokta rengi** düğüme **Yayınık renk** , terminal **Lambert**  düğümü. Bu bağlantı lambert düğümle ilişkilendirilmiş pikselin yayınık rengine sağlar.
+4. **Nokta rengi** düğümünü **Lambert** düğümüne bağlayın. **Seç** modunda, **nokta rengi** düğümünün **RGB** terminalini **Lambert** düğümünün **dağıtma rengi** terminaline taşıyın. Bu bağlantı, pikselin ara değerli dağıtma rengi ile Lambert düğümünü sağlar.
 
-5. Hesaplanan renk değeri son rengi bağlanın. Taşıma **çıkış** , terminal **Lambert** düğüme **RGB** , terminal **son rengini** düğümü.
+5. Hesaplanan renk değerini son renge bağlayın. **Lambert** düğümünün **Çıkış** terminalini **son renk** düğümünün **RGB** terminaline taşıyın.
 
-   Aşağıdaki resimde tamamlanmış gölgelendirici grafiği ve çaydanlık modeline uygulanan gölgelendiricinin önizlemesini gösterir.
+   Aşağıdaki çizimde, tamamlanmış gölgelendirici grafiği ve bir ekip modeline uygulanan gölgelendirici önizlemesi gösterilmektedir.
 
 > [!NOTE]
-> Bu çizimde gösterilen gölgelendirici etkisini daha iyi göstermek için turuncu renk kullanarak belirtilmiş **MaterialDiffuse** Gölgelendirici parametresi. Oyunlarda veya uygulamalarda bu parametre, her nesne için bir benzersiz renk değeri sağlamak için kullanabilirsiniz. Gölgelendiricileri Önizleme bölümünde malzeme parametreleri hakkında daha fazla bilgi için bkz. [gölgelendirici Tasarımcısı](../designers/shader-designer.md).
+> Bu çizimde gölgelendirici etkisini daha iyi göstermek için, gölgelendiricinin **Materialdağıt** parametresi kullanılarak turuncu bir renk belirtilmiştir. Bir oyun veya uygulama, her bir nesne için benzersiz bir renk değeri sağlamak üzere bu parametreyi kullanabilir. Malzeme parametreleri hakkında daha fazla bilgi için bkz. [gölgelendirici tasarımcısında](../designers/shader-designer.md)gölgelendiricilerin önizlemesi bölümü.
 
- ![Gölgelendirici grafiğinin ve etkisini önizlemesidir.](../designers/media/digit-lambert-effect-graph.png)
+![Gölgelendirici Grafiği ve efektinin önizlemesi.](../designers/media/digit-lambert-effect-graph.png)
 
- Belirli şekiller daha iyi önizlemeleri için bazı gölgelendiricileri sağlayabilir. Gölgelendiricileri Önizleme bölümünde gölgelendiricileri gölgelendirici Tasarımcısı'nda önizleme hakkında daha fazla bilgi için bkz. [gölgelendirici Tasarımcısı](../designers/shader-designer.md).
+Bazı biçimler bazı gölgelendiriciler için daha iyi önizleme sağlayabilir. Gölgelendirici tasarımcısında gölgelendiricilerin önizlemesi hakkında daha fazla bilgi için, [gölgelendirici tasarımcısında](../designers/shader-designer.md)gölgelendiricilerin önizlemesi bölümüne bakın.
 
- Aşağıdaki çizim, 3B modeline uygulanan bu belgede açıklanan gölgelendirici gösterir.
+Aşağıdaki çizimde, bu belgede bir 3B modele uygulanan gölgelendirici gösterilmektedir.
 
- ![Lambert aydınlatma bir modele uygulandı.](../designers/media/digit-lambert-effect-result.png)
+![Bir modele uygulanan Lambert aydınlatma.](../designers/media/digit-lambert-effect-result.png)
 
- 3B modele gölgelendirici uygulama hakkında daha fazla bilgi için bkz. [nasıl yapılır: 3B modele gölgelendirici uygulama](../designers/how-to-apply-a-shader-to-a-3-d-model.md).
+Bir 3B modele gölgelendirici uygulama hakkında daha fazla bilgi için bkz [. nasıl yapılır: 3B modele](../designers/how-to-apply-a-shader-to-a-3-d-model.md)gölgelendirici uygulayın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

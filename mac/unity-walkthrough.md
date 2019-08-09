@@ -1,24 +1,24 @@
 ---
-title: Unity ile oyunlar oluşturmaya başlamak, Mac için Visual Studio'da alma
-description: Mac için Visual Studio ve Unity ile çalışmaya başlama
+title: Unity ile oyun oluşturmaya başlama
+description: Unity ve Mac için Visual Studio kullanmaya başlama
 author: asb3993
 ms.author: amburns
 ms.date: 05/20/2019
 ms.topic: article
 ms.technology: vs-ide-general
 ms.assetid: D07FA43B-9D18-4DFA-8343-CD538FAD84DB
-ms.openlocfilehash: 8f14d21468336dba220a76ad8978f136d50f96f1
-ms.sourcegitcommit: cc5fd59e5dc99181601b7db8b28d7f8a83a36bab
+ms.openlocfilehash: dd69156b1397ba6232d9143f54b0de1ef4506ecc
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/11/2019
-ms.locfileid: "66836397"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68873457"
 ---
-# <a name="getting-started-building-games-with-unity-in-visual-studio-for-mac"></a>Unity ile oyunlar oluşturmaya başlamak, Mac için Visual Studio'da alma 
+# <a name="getting-started-building-games-with-unity-in-visual-studio-for-mac"></a>Mac için Visual Studio Unity ile Oyunlar oluşturmaya başlama
 
-Unity oyunlar geliştirmek sağlayan bir oyun altyapısı olan C#. Bu izlenecek yol, Visual Studio Mac ve Visual Studio için Mac için araçları için Unity uzantıyla Unity ortamına birlikte kullanarak hata ayıklama Unity oyunları ve geliştirmeye başlamak nasıl gösterir.
+Unity, içinde C#oyun geliştirmenize olanak sağlayan bir oyun altyapısıdır. Bu izlenecek yol, Unity 'nin yanı sıra Unity uzantısı için Mac için Visual Studio ve Mac için Visual Studio araçları kullanılarak Unity oyunları geliştirmeye ve bunların hata ayıklamaya nasıl başlaleyeceğinizi gösterir.
 
-Visual Studio Unity için Mac araçları için Mac için Visual Studio ile yüklü bir ücretsiz bir uzantıdır Ancak, hata ayıklama özellikleri ve daha iyi IntelliSense desteği dahil olmak üzere Mac için Visual Studio üretkenlik özelliklerinden yararlanmak Unity geliştiricileri etkinleştirir.
+Unity için Mac için Visual Studio Araçları, Mac için Visual Studio yüklenen ücretsiz bir uzantıdır. Unity geliştiricilerinin, mükemmel IntelliSense desteği, hata ayıklama özellikleri ve daha fazlasını içeren Mac için Visual Studio üretkenlik özelliklerinden yararlanmasını sağlar.
 
 ## <a name="objectives"></a>Amaçlar
 
@@ -28,125 +28,125 @@ Visual Studio Unity için Mac araçları için Mac için Visual Studio ile yükl
 ## <a name="prerequisites"></a>Önkoşullar
 
 - Mac için Visual Studio ([https://www.visualstudio.com/vs/mac](https://www.visualstudio.com/vs/visual-studio-mac))
-- Unity 5.6.1 Kişisel sürümü veya üzeri ([https://store.unity.com](https://store.unity.com/), çalıştırılacak unity.com hesabı gerektirir)
+- Unity 5.6.1 Personal Edition veya üzeri ([https://store.unity.com](https://store.unity.com/), çalıştırmak için bir Unity.com hesabı gerekir)
 
-## <a name="intended-audience"></a>Hedef kitle
+## <a name="intended-audience"></a>Hedeflenen hedef kitle
 
-Bu Laboratuvar, alışkın olan geliştiricilerin yönelik C#, ancak deneyime gerekli değildir.
+Bu laboratuvar C#, konusunda bilgili olan geliştiricilere yöneliktir, ancak derin deneyim gerekli değildir.
 
-## <a name="task-1-creating-a-basic-unity-project"></a>Görev 1: Temel bir Unity projesi oluşturma
+## <a name="task-1-creating-a-basic-unity-project"></a>Görev 1: Temel Unity projesi oluşturma
 
-1. Başlatma **Unity**. İstenirse oturum açın.
+1. **Unity**'yi başlatın. İsteniyorsa oturum açın.
 
 2. **Yeni**'yi tıklatın.
 
-    ![Unity yeni düğmesi](media/unity-image1.png)
+    ![Unity 'de yeni düğme](media/unity-image1.png)
 
-3. Ayarlama **proje adı** için **"UnityLab"** seçip **3B**. Tıklayın **proje oluştur**.
+3. **Proje adını** **"unitylab"** olarak ayarlayın ve **3B**' i seçin. Tıklayın **proje oluştur**.
 
-    ![Yeni Proje ekran oluşturma](media/unity-image2.png)
+    ![Yeni Proje ekranı oluştur](media/unity-image2.png)
 
-4. Artık varsayılan Unity arabirimin bakıyorsunuz. Solda, ortada, proje dosyaları bölmesinde denetçisi ve alt ve sağ Hizmetleri gösterilen boş Sahne 3B görünümü ile oyun nesneleri Sahne hiyerarşisi vardır. Elbette, daha için çok daha fazla, ancak birkaç önemli bileşenlerin olanlardır.
+4. Artık varsayılan Unity arabirimine bakıyorsunuz. Sol taraftaki oyun nesneleriyle sahne alanı, ortadaki boş sahnenin 3B görünümü, altta bulunan bir proje dosyaları bölmesi ve sağdaki Inspector ve hizmetler bulunur. Kuşkusuz, bu kadar çok daha fazla önemli bileşen vardır.
 
-    ![boş unity arabirimi](media/unity-image3.png)
+    ![boş Unity arabirimi](media/unity-image3.png)
 
-5. Unity için yeni geliştiriciler için uygulamanızı çalıştıran her şeyi bağlamında mevcut bir **Sahne**. Sahne dosyasını türlerdeki projede geçerli görünüme ve özellikleri için kullanılan kaynaklar hakkında meta veriler içeren bir tek dosyadır. Bir platform için uygulama paketini, sonuçta elde edilen uygulama bir veya daha fazla sahneler yanı sıra, eklediğiniz herhangi bir platforma bağımlı kod koleksiyonu olan yukarı sona erecek. Bir projedeki istenen sayıda Sahne olabilir.
+5. Unity için yeni olan geliştiriciler için, uygulamanızda çalışan her şey bir **sahnenin**bağlamı içinde bulunur. Sahne dosyası, geçerli sahne ve özellikleri için projede kullanılan kaynaklarla ilgili tüm meta veri türlerini içeren tek bir dosyadır. Uygulamanızı bir platform için paketlemeyi yaparken, sonuçta elde edilen uygulama bir veya daha fazla sahnelerin toplanması ve eklediğiniz platforma bağlı herhangi bir kod ile sona acaktır. Bir projede istenen sayıda sahnede sahip olabilirsiniz.
 
-6. Yeni bir Sahne yalnızca bir kamera ve bir Yönlü ışık vardır. Sahne gerektiren bir **kamera** görünür olmasını her şey için ve bir **ses dinleyici** sesli olarak her şey için. Bu bileşenler eklenmiş bir **GameObject**.
+6. Yeni sahneye yalnızca bir kamera ve bir yönlü ışığı vardır. Bir sahne, her şeyin görünür olması için bir **Kamera** ve her şeyin duyulabilir olması Için bir **Ses dinleyicisi** gerektirir. Bu bileşenler bir **Gameobject**'e eklenir.
 
-7. Seçin **ana kamera** nesnesinden **hiyerarşi** bölmesi.
+7. **Hiyerarşi** bölmesinden **ana kamera** nesnesini seçin.
 
-    ![Hiyerarşi bölmesinden test paketini vurgulanmış ana kamera nesnesi](media/unity-image4.png)
+    ![Hiyerarşi bölmesinde vurgulanan ana kamera nesnesi](media/unity-image4.png)
 
-8. Seçin **denetçisi** özelliklerini gözden geçirmek için pencerenin sağ tarafındaki bölmeden. Dönüştürme bilgileri, arka plan, projeksiyon türü, görünüm alanı ve benzeri Kamera özellikleri içerir. Bir ses dinleyici bileşen de aslında kameraya bağlı sanal bir mikrofon Sahne seslerden işler varsayılan olarak eklendi.
+8. Pencerenin sağ tarafındaki **Inspector** bölmesini seçerek özelliklerini gözden geçirin. Kamera Özellikleri, dönüştürme bilgilerini, arka planı, projeksiyon türünü, görünümün alanını vb. içerir. Varsayılan olarak bir ses dinleyicisi bileşeni de eklenmiştir ve bu, temelde, kameraya bağlı bir sanal mikrofondan sahne sesi oluşturur.
 
     ![Inspector bölmesi](media/unity-image5.png)
 
-9. Seçin **Yönlü ışık** nesne. Bu açık sahneye sağlar, böylece gölgelendiricileri gibi bileşenleri nesnelerini işleyin biliyorsunuz.
+9. **Yönlü ışık** nesnesini seçin. Bu, gölgelendiricilerin, nesnelerin nasıl işleneceğini bilmesi için ışık sağlar.
 
-    ![Vurgulanan yönü ışık nesnesi](media/unity-image6.png)
+    ![Yön ışığı nesnesi vurgulanmış](media/unity-image6.png)
 
-10. Kullanım **denetçisi** görmeyi tür, renk, yoğunluğu, gölge türü vb. dahil olmak üzere genel Aydınlatma özellikleri içerir.
+10. Türü, rengi, yoğunluğu, gölge türü vb. dahil olmak üzere ortak aydınlatma özelliklerini içerdiğini görmek için **Inspector** 'ı kullanın.
 
-    ![Özellikler bölmesinde denetçisi bakarak](media/unity-image7.png)
+    ![Inspector bölmesindeki özelliklere bakma](media/unity-image7.png)
 
-11. Unity projeleri, Visual Studio Mac ortaklarınıza için biraz farklı tablonuzu önemlidir. İçinde **proje** sekme ve en altında sağ tıklatın **varlıklar** klasörü ve select **Finder'da Göster**.
+11. Unity 'deki projelerin Mac için Visual Studio karşılıklarından biraz farklı olduğunu göstermek önemlidir. Alttaki **Proje** sekmesinde, **varlıklar** klasörüne sağ tıklayın ve **Finder 'da açığa çıkar**' ı seçin.
 
-    ![Bulucu bağlamı eylemi Göster](media/unity-image8.png)
+    ![Bulucu bağlam eyleminde açığa çıkar](media/unity-image8.png)
 
-12. Projeleri içeren **varlıklar**, **Kitaplığı**, **ProjectSettings**, ve **Temp** aynı klasör görebilirsiniz. Ancak, arabiriminde görünür olan tek hesaptır **varlıklar** klasör. **Kitaplığı** klasör yerel önbelleğe alınan varlıkları; varlıkları için tüm meta veriler tutar. **ProjectSettings** klasör, yapılandırabileceğiniz ayarlar depolar. **Temp** klasör kullanılan Mono ve Unity geçici dosyaları için derleme işlemi sırasında. Mac için Visual Studio'da açarak bir çözüm dosyası de mevcuttur (**UnityLab.sln** burada).
+12. Projeler, görebileceğiniz gibi **varlıkları**, **kitaplığı**, **ProjectSettings**ve **Temp** klasörlerini içerir. Ancak, arabiriminde görünen tek bir tane **varlıklar** klasörüdür. **Kitaplık** klasörü, içeri aktarılan varlıklar için yerel önbelleğidir; varlıklar için tüm meta verileri barındırır. **ProjectSettings** klasörü yapılandırabileceğiniz ayarları depolar. **Temp** klasörü, derleme Işlemi sırasında Mono ve Unity 'den geçici dosyalar için kullanılır. Ayrıca Mac için Visual Studio (**Unitylab. sln** burada) açabileceğiniz bir çözüm dosyası de vardır.
 
-    ![Bulucu varlıkları](media/unity-image9.png)
+    ![Finder 'daki varlıklar](media/unity-image9.png)
 
-13. Kapat **Bulucu** penceresi ve geri dön **Unity**.
+13. **Bulucu** penceresini kapatın ve **Unity**'ye dönün.
 
-14. **Varlıklar** klasörü tüm, varlıkları ve son teknoloji ürünü, kod, ses, vb. içerir. Artık boşsa, ancak her tek dosyayı projenize Getir buraya gelecek. Bu her zaman en üst düzey dizindir **Unity Editor**. Ancak, her zaman ekleme ve Unity arabirimi (veya Mac için Visual Studio) aracılığıyla dosyaları kaldırma ve hiçbir zaman doğrudan dosya sistemi üzerinden.
+14. **Varlıklar** klasörü, tüm varlıklarınızı (sanat, kod, ses vb.) içerir. Artık boştur, ancak projenize getirdiğiniz her bir dosya buraya gelir. Bu, **Unity düzenleyicisinde**her zaman en üst düzey klasördür. Ancak, dosyaları her zaman Unity arabirimi (veya Mac için Visual Studio) aracılığıyla ve dosya sistemi aracılığıyla doğrudan ekleme ve kaldırma.
 
-    ![unity klasöründe varlıklar](media/unity-image10.png)
+    ![Unity 'de varlıklar klasörü](media/unity-image10.png)
 
-15. **GameObject** gibi neredeyse her şeyi modelleri, ışık, parçacık sistemleri vb. dahil olmak üzere bu türünden türetilen Unity geliştirme için önemlidir. Yeni bir **küp** nesneyi sahneye **GameObject > 3B nesneye > Küp** menüsü.
+15. **Oyun nesnesi** , modeller, ışıklar, parçacık sistemleri gibi bu türden türetilen neredeyse her şey, Unity 'de geliştirme için merkezi bir modeldir. **Gameobject > 3D nesne > küp** menüsünü kullanarak sahneye yeni bir **küp** nesnesi ekleyin.
 
-    ![Küp nesne sahnede](media/unity-image11.png)
+    ![Sahnedeki küp nesnesi](media/unity-image11.png)
 
-16. Yeni özelliklerini hızlı bir göz atın **GameObject** ve adı, etiket, katman ve dönüştürme olduğunu görürsünüz. Bu özelliklerin tümü için ortak olan **GameObjects**. Ayrıca, birçok bileşen eklendiği **küp** işlevleri dahil olmak üzere mesh filtre kutusu collider ve işleyici sağlamak için.
+16. Yeni **oyun nesnesinin** özelliklerine hızlıca göz atın ve bir ad, etiket, katman ve dönüşüm olduğunu görün. Bu özellikler tüm **Gameobjects**için ortaktır. Ayrıca, kafes filtresi, Box Collider ve işleyici gibi gerekli işlevleri sağlamak üzere **küpe** birkaç bileşen eklenmiştir.
 
-    ![Oyun nesne özellikleri](media/unity-image12.png)
+    ![oyun nesnesi özellikleri](media/unity-image12.png)
 
-17. Yeniden adlandırma **küp** adına sahip nesne, **"Küp"** varsayılan olarak, için **"İkincisinde"** . Basın emin **Enter** yapılan değişiklik kaydedilemiyor. Bu, bizim basit oyun rakip küpte olacaktır.
+17. **"Cube"** adlı **küp** nesnesini, varsayılan olarak **"rakip"** olarak yeniden adlandırın. Değişikliği kaydetmek için **ENTER** tuşuna bastığınızdan emin olun. Bu, basit oyunumuzdaki rakip kübü olacaktır.
 
-    ![Küp nesnesi yeniden adlandırma özelliği](media/unity-image13.png)
+    ![küp nesnesi özelliği yeniden adlandır](media/unity-image13.png)
 
-18. Başka bir **küp** nesnesi aynı işlemi olarak yukarıdaki kullanarak sahneye ve bu ad **"Player"** .
+18. Yukarıdaki ile aynı işlemi kullanarak sahneye başka bir **küp** nesnesi ekleyin ve bunu **"oynatıcı"** olarak adlandırın.
 
-    ![İkinci küp nesneyi yeniden adlandırma](media/unity-image14.png)
+    ![ikinci küp nesnesini yeniden adlandır](media/unity-image14.png)
 
-19. Etiket için player nesnesine **"Player"** de (bkz **etiketi** aşağı açılır denetimin tam ad alanı altında). Bu rakip betikte player oyun nesneyi bulmak amacıyla kullanacağız.
+19. Player nesnesi **"oynatıcı"** da etiketleyin (yalnızca ad alanı altında **Tag** açılan kutusu denetimine bakın). Bunu, Player oyun nesnesini bulmaya yardımcı olması için rakip betiğiyle kullanacağız.
 
-    ![için player nesnesine etiketleme](media/unity-image15.png)
+    ![oynatıcı nesnesini etiketleme](media/unity-image15.png)
 
-20. İçinde **Sahne** görüntülemek için rakip nesneyi fareyi kullanarak Z ekseni boyunca ayrılmak için player nesnesine taşıyın. Seçip sürükleyerek küp tarafından Z ekseni boyunca hareket kendi **kırmızı** doğru panelinde **mavi** satır. Küp 3B alanda yaşar, ancak yalnızca 2B'de her zaman sürüklenebilir beri sürükleyin, eksen özellikle önemlidir.
+20. **Sahne** görünümünde, fare kullanarak oyuncu nesnesini Z ekseni üzerinde yer alarak rakip nesneden uzağa taşıyın. Küp ' i seçerek ve **mavi** çizgiye doğru **kırmızı** paneline sürükleyerek Z ekseni üzerinde geçiş yapabilirsiniz. Küp 3B alanda bulunduğundan ancak her seferinde yalnızca 2B sürüklenirse, sürüklediğiniz eksen özellikle önemlidir.
 
-    ![Sahne görünümü gösteren küpü](media/unity-image16.png)
+    ![kübü gösteren sahne görünümü](media/unity-image16.png)
 
-21. Aşağı ve sağa doğru ekseni küpe taşıyın. Bu güncelleştirmeleri **Transform.Position** özelliğinde **denetçisi**. Sonraki adımlar laboratuvarda kolaylaştırmak için burada gösterilen benzer şekilde bir konuma sürükleyin emin olun.
+21. Kübü eksen üzerinde aşağı aşağı doğru aşağı taşıyın. Bu, **Inspector**'daki **Transform. Position** özelliğini güncelleştirir. Daha sonraki adımları laboratuvarda daha kolay hale getirmek için burada görüntülendiklere benzer şekilde bir konuma sürüklediğinizden emin olun.
 
-    ![bir küp ekseni boyunca hareket](media/unity-image17.png)
+    ![bir küpü eksen üzerinde taşıma](media/unity-image17.png)
 
-22. Şimdi, böylece player pursues rakip mantıksal sürücü için kod ekleyebilirsiniz. Sağ **varlıklar** klasöründe **proje** paneli ve seçin **Oluştur > C# betik**.
+22. Artık rakip mantığını bir miktar kod ekleyerek oynatıcıyı izlemek için bir kod ekleyebilirsiniz. **Proje** panelindeki **varlıklar** klasörüne sağ tıklayın ve  **C# > betiği oluştur**' u seçin.
 
     ![C#betik bağlamı eylemi](media/unity-image18.png)
 
-23. Yeni ad C# betik **"EnemyAI"** .
+23. C# **"Enemyai"** adlı yeni betiği adlandırın.
 
-    ![C# betiği](media/unity-image19.png)
+    ![C#SCRIPT](media/unity-image19.png)
 
-24. Oyun nesnelerine betikler eklemek için yeni oluşturulan kodun üzerine sürükleyin **ikincisinde** nesnesine **hiyerarşi** bölmesi. Artık bu nesne bu betiğin davranışları kullanacak.
+24. Oyun nesnelerine komut dosyaları eklemek için, yeni oluşturulan betiği **hiyerarşi** bölmesindeki **rakip** nesnesine sürükleyin. Artık bu nesne, bu betikteki davranışları kullanacaktır.
 
-    ![Oyun nesnesine ekleniyor betik gösteren vurgulama](media/unity-image20.png)
+    ![oyun nesnesine betik ekleme gösteren vurgulama](media/unity-image20.png)
 
-25. Seçin **Dosya > Kaydet sahneler** geçerli görünüme kaydetmek için. Adlandırın **"MyScene"** .
+25. Geçerli sahneyi kaydetmek için **dosya > sahneleri kaydet** ' i seçin. **"Mysah"** olarak adlandırın.
 
-## <a name="task-2-working-with-visual-studio-for-mac-tools-for-unity"></a>Görev 2: Unity için Mac araçlar için Visual Studio ile çalışma
+## <a name="task-2-working-with-visual-studio-for-mac-tools-for-unity"></a>Görev 2: Unity için Mac için Visual Studio araçlarıyla çalışma
 
-1. Düzenlemek için en iyi yolu C# kodu Mac için Visual Studio'yu kullanma Mac için Visual Studio, varsayılan işleyici olarak kullanılacak Unity yapılandırabilirsiniz. Seçin **Unity > Tercihler**.
+1. Kodu düzenlemenin C# en iyi yolu Mac için Visual Studio kullanmaktır. Unity 'yi varsayılan işleyicisi olarak Mac için Visual Studio kullanacak şekilde yapılandırabilirsiniz. **Unity > tercihlerini**seçin.
 
-2. Seçin **dış Araçlar** sekmesi. Gelen **dış betik Düzenleyicisi** açılır menüsünde, select **Gözat** seçip **uygulamalar/Visual Studio.app**. Alternatif olarak, zaten varsa bir **Visual Studio** seçeneği, yalnızca seçin.
+2. **Dış araçlar** sekmesini seçin. **Dış betik Düzenleyicisi** açılan menüsünde, **Araştır** ' ı seçin ve **uygulamalar/Visual Studio. app**' i seçin. Alternatif olarak, zaten bir **Visual Studio** seçeneği varsa, bunu seçmeniz yeterlidir.
 
-    ![Dış araçlar sekmede tercihleri](media/unity-image21.png)
+    ![Tercihler 'de Dış Araçlar sekmesi](media/unity-image21.png)
 
-3. Unity kullanacak şekilde yapılandırılmış artık **Mac için Visual Studio** betik düzenlemesi için. Kapat **Unity tercihleri** iletişim.
+3. Unity artık betik düzenlemesi için **Mac için Visual Studio** kullanacak şekilde yapılandırılmıştır. **Unity tercihleri** iletişim kutusunu kapatın.
 
-    ![VisualStudio tercihleri seçildi](media/unity-image22.png)
+    ![Tercihlerinde Visual Studio seçildi](media/unity-image22.png)
 
-4. Çift **EnemyAI.cs** açılır **Mac için Visual Studio**.
+4. **Mac için Visual Studio**açmak için **EnemyAI.cs** öğesine çift tıklayın.
 
-    ![Unity içinde seçili rakip varlık](media/unity-image23.png)
+    ![Unity 'de seçili rakip varlık](media/unity-image23.png)
 
-5. Visual Studio çözümünü oldukça basittir. İçerdiği bir **varlıklar** klasörü (aynı bir **Bulucu**) ve **EnemyAI.cs** daha önce oluşturduğunuz betiği. Daha karmaşık projeler içinde hiyerarşi büyük olasılıkla içinde Unity görmek daha farklı görünecektir.
+5. Visual Studio çözümü basittir. Daha önce oluşturulan bir **varlıklar** klasörü ( **Finder**'dan aynı bir tane) ve **EnemyAI.cs** betiği içerir. Daha karmaşık projelerde hiyerarşi, Unity 'de görenden farklı şekilde görünür.
 
-    ![Mac için Visual Studio'da Çözüm bölmesi](media/unity-image24.png)
+    ![Mac için Visual Studio çözüm paneli](media/unity-image24.png)
 
-6. **EnemyAI.cs** düzenleyicide açık. İlk komut, yalnızca için saplamalar içerir **Başlat** ve **güncelleştirme** yöntemleri.
+6. **EnemyAI.cs** , düzenleyicide açıktır. Başlangıç betiği yalnızca **Start** ve **Update** yöntemleri için saplamalar içerir.
 
 7. İlk rakip kodu aşağıdaki kodla değiştirin.
 
@@ -156,7 +156,7 @@ Bu Laboratuvar, alışkın olan geliştiricilerin yönelik C#, ancak deneyime ge
         public float Speed = 50;
         private Transform _playerTransform;
         private Transform _myTransform;
-        
+
         void Start()
         {
             var player = GameObject.FindGameObjectWithTag("Player");
@@ -186,102 +186,102 @@ Bu Laboratuvar, alışkın olan geliştiricilerin yönelik C#, ancak deneyime ge
     }
     ```
 
-8. Hızlı tanımlanan basit rakip davranışını buraya göz atın. İçinde **Başlat** yöntemi aldığımız player nesnesine bir başvuru (etiketine göre), yanı sıra kendi **dönüştürme**. İçinde **güncelleştirme** her karede çağrılır, yöntem, ikincisinde için player nesnesine taşınır. Mac için Visual Studio'da kod tabanının anlamak daha kolay hale getirmek için renk kodlaması adları ve anahtar sözcükler kullanın
+8. Burada tanımlanan basit rakip davranışına hızlıca göz atın. **Start** yönteminde, Player nesnesine (etiketine göre) ve **dönüşümünü**de bir başvuruya sunuyoruz. Her çerçeve olarak çağrılan **Update** yönteminde, rakip, oynatıcı nesnesine doğru hareket eder. Anahtar sözcükler ve adlar, Mac için Visual Studio kod temelinin anlaşılması daha kolay hale getirmek için renk kodlaması kullanır.
 
-9. Rakip betik değişiklikleri kaydetmek **Mac için Visual Studio**.
+9. **Mac için Visual Studio**, rakip betikteki değişiklikleri kaydedin.
 
-## <a name="task-3-debugging-the-unity-project"></a>Görev 3: Unity proje hata ayıklama
+## <a name="task-3-debugging-the-unity-project"></a>Görev 3: Unity projesinde hata ayıklama
 
-1. Kod ilk satırında bir kesme noktası ayarlamak **Başlat** yöntemi. Düzenleyici kenar imlecin hedef satır veya yerde tuşuna basın ve satır tıkayın **F9**.
+1. **Başlangıç** yöntemindeki kodun ilk satırında bir kesme noktası ayarlayın. Hedef satırdaki Düzenleyici kenar boşluğuna tıklayabilir ya da imleci satıra yerleştirebilir ve **F9**tuşuna basabilirsiniz.
 
-    ![mac için visual Studio'daki kesme noktası ayarlama](media/unity-image25.png)
+    ![Mac için Visual Studio 'da kesme noktası ayarlama](media/unity-image25.png)
 
-2. Tıklayın **hata ayıklamayı Başlat** düğme veya basın **F5**. Bu projeyi oluşturun ve hata ayıklama için Unity'ye İliştir.
+2. **Hata ayıklamayı Başlat** düğmesine tıklayın veya **F5**'e basın. Bu, projeyi oluşturacak ve hata ayıklama için Unity 'ye ekleyecek.
 
-    ![mac için visual Studio'da Başlat düğmesi](media/unity-image26.png)
+    ![Mac için Visual Studio 'da Başlat düğmesi](media/unity-image26.png)
 
-3. Geri dönüp **Unity** tıklatıp **çalıştırmak** oyun Başlat düğmesini.
+3. **Unity** 'ye dönün ve **Çalıştır** düğmesine tıklayarak oyunu başlatın.
 
-    ![Unity Çalıştır düğmesi](media/unity-image27.png)
+    ![Unity 'de Çalıştır düğmesi](media/unity-image27.png)
 
-4. Kesme noktasına isabet ve Visual Studio artık Mac için hata ayıklama araçları kullanabilirsiniz.
+4. Kesme noktası isabet etmelidir ve artık Mac için Visual Studio hata ayıklama araçlarını kullanabilirsiniz.
 
-    ![mac için visual Studio'da isabet kesme noktası](media/unity-image28.png)
+    ![Mac için Visual Studio 'da kesme noktası isabeti](media/unity-image28.png)
 
-5. Gelen **Yereller** paneli, bulun **bu** başvuran bir işaretçi bir **EnemyAI** nesne. Başvuru genişletin ve ilişkili üyeleri gibi göz atabilirsiniz bkz **hızı**.
+5. **Yereller** panelinde, bir **Enemyai** nesnesine başvuran **Bu** işaretçiyi bulun. Başvuruyu genişletin ve **hız**gibi ilişkili üyelere gözatabileceğiniz hakkında bilgi için bkz.
 
-    ![Yerel öğeler paneli mac için visual Studio'da hata ayıklama](media/unity-image29.png)
+    ![Mac için Visual Studio 'da yerel öğeler hata ayıklama paneli](media/unity-image29.png)
 
-6. Kesme noktasından kaldırmak **Başlat** yöntemi olduğu aynı şekilde eklenen göre kenar boşluğunu tıklayarak ya da satır seçip ENTER tuşuna **F9**.
+6. **Başlangıç** yönteminden kesme noktasını, kenar boşluğunda tıklayarak veya satırı seçip **F9**tuşuna basarak kaldırın.
 
-    ![mac için visual Studio'da isabet kesme noktası](media/unity-image30.png)
+    ![Mac için Visual Studio 'da kesme noktası isabeti](media/unity-image30.png)
 
-7. Tuşuna **F10** ilk bulan bir kod satırı üzerinden atlamak için **Player** parametre olarak bir etiket kullanarak oyun nesnesi.
+7. Bir etiketi parametre olarak kullanarak **Player** oyun nesnesini bulan ilk kod satırının üzerine gitmek için **F10** tuşuna basın.
 
-8. Fare imleci üzerine **player** ilişkili üyelerini görüntülemek için kod düzenleyicisi penceresi içinde değişken. Alt özellikleri görüntülemek için katmana bile genişletebilirsiniz.
+8. İlişkili üyelerini görüntülemek için fare imlecini kod Düzenleyicisi penceresindeki **oyuncu** değişkeninin üzerine getirin. Alt özellikleri görüntülemek için de kaplamayı genişletebilirsiniz.
 
-    ![Pencere Düzenleyicisi mac için visual Studio'da hata ayıklama](media/unity-image31.png)
+    ![Mac için Visual Studio Düzenleyicisi 'nde hata ayıklama penceresi](media/unity-image31.png)
 
-9. Basın **F5** veya basın **çalıştırma** yürütmeye devam etmek için düğmeyi. Yaklaşan player küp rakip küp tekrar tekrar görmek için Unity dönün. Görünür değilse, kamera ayarlamanız gerekebilir.
+9. Yürütmeye devam etmek için **F5** tuşuna basın veya **Çalıştır** düğmesine basın. Rakip küpünü Player küpüne sürekli olarak yaklaşımı görmek için Unity 'ye dönün. Kamerayı, görünür değilse ayarlamanız gerekebilir.
 
-    ![Sahne içinde Unity yürütülüyor](media/unity-image32.png)
+    ![Unity 'de sahne oynama](media/unity-image32.png)
 
-10. Dönmek **Mac için Visual Studio** ilk satırında bir kesme noktası ayarlayın **güncelleştirme** yöntemi. Hemen isabet.
+10. **Mac için Visual Studio** 'e dönün ve **Update** yönteminin ilk satırında bir kesme noktası ayarlayın. Hemen isabet edilmelidir.
 
-    ![mac için visual Studio'da bir kesme noktası ayarlama](media/unity-image33.png)
+    ![Mac için Visual Studio 'da bir kesme noktası ayarlama](media/unity-image33.png)
 
-11. Hızı çok daha hızlıdır ve uygulamayı yeniden başlatmadan değişikliğin etkisini test etmek istediğimiz varsayalım. Bulun **hızı** içinde değişken **Otolar** veya **Yereller** penceresi ve olarak değiştirin **"10"** basın **Enter** .
+11. Hızının çok hızlı olduğunu ve uygulamanın yeniden başlatılmasına gerek kalmadan değişikliğin etkisini test etmek istiyoruz. **Hızlı** değişkeni, **oto** veya **Yereller** penceresinde bulun ve ardından **"10"** olarak değiştirin ve **ENTER**tuşuna basın.
 
-    ![Yerel öğeler penceresinde değişkenleri ayarlama](media/unity-image34.png)
+    ![Yereller penceresindeki değişkenleri ayarlama](media/unity-image34.png)
 
-12. Kesme noktası kaldırıp tuşuna **F5** yürütme devam etmek için.
+12. Kesme noktasını kaldırın ve yürütmeyi sürdürmesini sağlamak için **F5** 'e basın.
 
-13. Geri dönüp **Unity** çalışan uygulamayı görüntülemek için. Rakip küp artık özgün hızı beşinci bir taşınıyor.
+13. Çalışan uygulamayı görüntülemek için **Unity** 'ye dönün. Rakip küp, artık özgün hızdan beşinci olarak taşınıyor.
 
-    ![uygulamayı çalıştıran ile unity penceresi](media/unity-image35.png)
+    ![çalışan uygulamayla Unity penceresi](media/unity-image35.png)
 
-14. Unity uygulamasını tıklayarak durdurun **Play** düğmesini tekrar.
+14. **Oynat** düğmesine tekrar tıklayarak Unity uygulamasını durdurun.
 
-    ![unity uygulaması durduruluyor](media/unity-image36.png)
+    ![Unity uygulamasını durdurma](media/unity-image36.png)
 
-15. Geri dönüp **Mac için Visual Studio**. Tıklayarak hata ayıklama oturumunu durdurun **Durdur** düğmesi.
+15. **Mac için Visual Studio**dön. **Durdur** düğmesine tıklayarak hata ayıklama oturumunu durdurun.
 
-    ![Mac için Visual Studio hata ayıklama oturumunda durduruluyor](media/unity-image37.png)
+    ![Mac için Visual Studio hata ayıklama oturumu durduruluyor](media/unity-image37.png)
 
-## <a name="task-4-exploring-unity-features-in-visual-studio-for-mac"></a>Görev 4: Mac için Visual Studio'da Unity özelliklerini keşfetme
+## <a name="task-4-exploring-unity-features-in-visual-studio-for-mac"></a>Görev 4: Mac için Visual Studio Unity özelliklerini keşfetme
 
-1. Mac için Visual Studio Kod Düzenleyicisi içinde Unity belgeleri hızlı erişim sağlar. İmleç üzerinde yere yerleştirinceye **Vector3** içinde Sembol **güncelleştirme** yöntemi ve ENTER tuşuna **⌘ Command + '** .
+1. Mac için Visual Studio, kod Düzenleyicisi içinde Unity belgelerine hızlı erişim sağlar. İmleci **Vector3** simgesine **Update** yönteminde bir yere yerleştirin ve **⌘ Command + '** tuşlarına basın.
 
-    ![Düzenleyici mac için visual Studio'daki yöntemi seçme](media/unity-image38.png)
+    ![Mac için Visual Studio Düzenleyicisi 'nde Yöntem seçme](media/unity-image38.png)
 
-2. Belgelerine yeni bir tarayıcı penceresi açılır **Vector3**. Koşullar karşılanırsa tarayıcı penceresini kapatın.
+2. **Vector3**belgeleri için yeni bir tarayıcı penceresi açılır. Tatmin edildiğinde tarayıcı penceresini kapatın.
 
     ![belgeler için tarayıcı penceresi açılır](media/unity-image39.png)
 
-3. Mac için Visual Studio Unity davranışı sınıfları hızla oluşturmak için bazı Yardımcıları de sağlar. Gelen **Çözüm Gezgini**, sağ **varlıklar** seçip **Ekle > Yeni MonoBehaviour**.
+3. Mac için Visual Studio Ayrıca, hızlı bir şekilde Unity davranış sınıfları oluşturmak için bazı yardımcılar sağlar. **Çözüm Gezgini**, **varlıklar** ' a sağ tıklayın ve **Yeni > monodavranış Ekle**' yi seçin.
 
-    ![Yeni monobehaviour bağlamı eylemi](media/unity-image40.png)
+    ![Yeni monodavranış bağlamı eylemi](media/unity-image40.png)
 
-4. Yeni oluşturulan sınıf için saplamalar sağlar **Başlat** ve **güncelleştirme** yöntemleri. Kapanış ayracı sonra **güncelleştirme** yöntemi, yazmaya başlayın **"onmouseup"** . Visual Studio IntelliSense Hızlı bir şekilde uygulamak için planlıyorsanız metodunda sıfırlar, siz yazarken dikkat edin. Sağlanan otomatik tamamlama listesinden seçin. Bir metot taslağı parametreleri dahil onu doldurur.
+4. Yeni oluşturulan sınıf, **Başlangıç** ve **güncelleştirme** yöntemlerine yönelik saplamalar sağlar. **Güncelleştirme** yönteminin kapanış ayracından sonra **"OnMouseUp"** yazmaya başlayın. Siz yazarken, Visual Studio 'nun IntelliSense 'in uygulamayı planladığınız yöntemde hızlı bir şekilde sıfırlıdığına dikkat edin. Bunu, belirtilen otomatik tamamlama listesinden seçin. Herhangi bir parametre dahil, sizin için bir yöntem saplaması dolduracaktır.
 
-    ![mac için visual Studio IntelliSense](media/unity-image41.png)
+    ![Mac için Visual Studio 'da IntelliSense](media/unity-image41.png)
 
-5. İçinde **OnMouseUp** yöntemi, tür **"temel".** Tüm taban yöntemi çağırmak kullanılabilir görmek için. Farklı aşırı yüklemeler her işlevin IntelliSense çıkma sağ üst köşesinde disk belleği seçeneğini kullanarak da keşfedebilirsiniz.
+5. **OnMouseUp** yönteminin içinde **"Base** " yazın. çağırmak için kullanılabilir olan tüm temel yöntemleri görmek için. IntelliSense açılır menüsü ' nin sağ üst köşesindeki sayfalama seçeneğini kullanarak her bir işlevin farklı aşırı yüklerini de inceleyebilirsiniz.
 
-    ![mac için visual studio içinde aşırı keşfetme](media/unity-image42.png)
+    ![Mac için Visual Studio 'da aşırı yüklemeleri keşfetme](media/unity-image42.png)
 
-6. Mac için Visual Studio kolayca yeni gölgelendiricileri tanımlamanızı sağlar. Gelen **Çözüm Gezgini**, sağ **varlıklar** seçip **Ekle > Yeni gölgelendirici**.
+6. Mac için Visual Studio Ayrıca, kolayca yeni gölgelendiriciler tanımlamanızı sağlar. **Çözüm Gezgini**, **varlıklar** ' a sağ tıklayıp **> Yeni gölgelendirici Ekle**' yi seçin.
 
-    ![mac için visual Studio'da yeni bir gölgelendirici eylemi](media/unity-image43.png)
+    ![Mac için Visual Studio 'da yeni gölgelendirici eylemi](media/unity-image43.png)
 
-7. Tam renk ve yazı tipi işleme okumanız ve anlamanız daha kolay hale getirmek için gölgelendirici dosyası biçimini alır.
+7. Gölgelendirici dosya biçimi, okumayı ve anlamayı kolaylaştırmak için tam renkli ve yazı tipi işleme alır.
 
-    ![Söz dizimi vurgulama](media/unity-image44.png)
+    ![söz dizimi vurgulama](media/unity-image44.png)
 
-8. Geri dönüp **Unity**. Mac için Visual Studio ile aynı proje sistemi çalışır olduğundan, her iki yerde yapılan değişiklikleri otomatik olarak diğer eşitlendiğini görürsünüz. Artık her zaman en uygun aracı görev için kullanacağınız kolaydır.
+8. **Unity**'ye geri dönün. Mac için Visual Studio aynı proje sistemiyle çalıştığından, her iki yerde yapılan değişiklikler otomatik olarak diğer ile eşitlenecek şekilde görürsünüz. Artık görev için en iyi aracı kullanmak kolaydır.
 
-    ![Unity varlık paneli](media/unity-image45.png)
+    ![Unity varlık bölmesi](media/unity-image45.png)
 
 ## <a name="summary"></a>Özet
 
-Bu laboratuvarda, Mac için Visual Studio ve Unity ile oyun oluşturmaya başlamak nasıl öğrendiniz. Bkz: [ https://unity3d.com/learn ](https://unity3d.com/learn) Unity hakkında daha fazla bilgi edinmek için.
+Bu laboratuvarda, Unity ve Mac için Visual Studio bir oyun oluşturmaya nasıl başladığınızı öğrendiniz. Unity [https://unity3d.com/learn](https://unity3d.com/learn) hakkında daha fazla bilgi için bkz.

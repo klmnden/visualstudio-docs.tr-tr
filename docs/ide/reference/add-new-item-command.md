@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2bfede96c889a22b181d46cb85e49147bb2f41aa
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6a73bd7008e0058fe984fcb708c92c2bd983d427
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62792456"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68919365"
 ---
 # <a name="add-new-item-command"></a>Yeni Öğe Ekle Komutu
 Geçerli çözüme .htm, .css, .txt veya frameset gibi yeni bir çözüm öğesi ekler ve onu açar.
@@ -30,31 +30,34 @@ File.AddNewItem [filename] [/t:templatename] [/e:editorname]
 ```
 
 ## <a name="arguments"></a>Arguments
- `filename` İsteğe bağlı. Çözüme eklenecek öğe yolu ve dosya adı.
+`filename`\
+İsteğe bağlı. Çözüme eklenecek öğenin yolu ve dosya adı.
 
 ## <a name="switches"></a>Anahtarlar
- /t: `templatename` İsteğe bağlı. Oluşturulacak dosya türünü belirtir. Hiçbir şablon adı belirtilmezse, varsayılan olarak bir metin dosyası oluşturulur.
+/t`templatename`\
+İsteğe bağlı. Oluşturulacak dosyanın türünü belirtir. Şablon adı verilmezse, varsayılan olarak bir metin dosyası oluşturulur.
 
- / T:`templatename` bağımsız değişken söz dizimi içinde bulunan bilgileri yansıtır **yeni çözüm Öğe Ekle** iletişim kutusu. Dosya türü kategori adı bir ters eğik çizgi dosya türünü ayırmak, ardından tam kategori girmeniz gerekir (`\`) ve tırnak dizenin tamamını kapsayan.
+/T:`templatename` Argument sözdizimi, **yeni çözüm öğesi Ekle** iletişim kutusunda bulunan bilgileri yansıtır. Kategori adını dosya türünden bir ters eğik çizgi (`\`) ile ayırarak ve tüm dizeyi tırnak işaretleri içine alarak, tam kategoriyi ve ardından dosya türünü girmeniz gerekir.
 
- Örneğin, yeni bir metin dosyası oluşturmak için / t: şunları girersiniz`templatename` bağımsız değişken.
+Örneğin, yeni bir metin dosyası oluşturmak için/t:`templatename` Argument için aşağıdakini girersiniz.
 
 ```cmd
 /t:"General\Style Sheet"
 ```
 
- / e: `editorname` İsteğe bağlı. Dosyanın açılmasını Düzenleyicisi adı. Bağımsız değişken belirtildi, ancak hiçbir Düzenleyici adı verilmesi, **birlikte Aç** iletişim kutusu görüntülenir.
+/e`editorname`\
+İsteğe bağlı. Dosyanın açıldığı düzenleyicinin adı. Bağımsız değişken belirtilmişse ancak düzenleyici adı sağlanmadığında, **birlikte Aç** iletişim kutusu görüntülenir.
 
- / E:`editorname` bağımsız değişkeni sözdizimini kullanan Düzenleyicisi adları gibi görünürler **ile iletişim kutusunu açma**tırnak işareti içine alınan.
+/E:`editorname` Argument sözdizimi, **birlikte Aç iletişim kutusunda**göründükleri gibi, tırnak işaretleri içine alınan düzenleyici adlarını kullanır.
 
- Örneğin, bir stil sayfası Kaynak Kod Düzenleyicisi'nde açmak için / e: şunları girersiniz`editorname` bağımsız değişken.
+Örneğin, kaynak kodu düzenleyicisinde bir stil sayfası açmak için/e:`editorname` Argument için aşağıdakini girersiniz.
 
 ```cmd
 /e:"Source Code (text) Editor"
 ```
 
 ## <a name="example"></a>Örnek
- Bu örnek, yeni bir çözüm öğesi MyHTMLpg, geçerli çözüme ekler.
+Bu örnek, geçerli çözüme MyHTMLpg adlı yeni bir çözüm öğesi ekler.
 
 ```cmd
 >File.AddNewItem MyHTMLpg /t:"General\HTML Page"

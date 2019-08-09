@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 61eced11a61b8da92d01d26c0e66ad5d9c49f72d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2dae77bf7783edc165305f9b3ba60969d4f126a8
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62778778"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68922888"
 ---
 # <a name="ca1038-enumerators-should-be-strongly-typed"></a>CA1038: Numaralandırıcıların kesin türü belirtilmiş olmalıdır
 
@@ -31,7 +31,7 @@ ms.locfileid: "62778778"
 |Yeni Değişiklik|Yeni|
 
 ## <a name="cause"></a>Sebep
- Ortak veya korumalı tür uygulayan <xref:System.Collections.IEnumerator?displayProperty=fullName> kesin türü belirtilmiş sürümünü sağlamaz, ancak <xref:System.Collections.IEnumerator.Current%2A?displayProperty=fullName> özelliği. Bu kurala aşağıdaki türlerden türetilmiş türleri şunlardır:
+Ortak veya korumalı bir tür, <xref:System.Collections.IEnumerator?displayProperty=fullName> <xref:System.Collections.IEnumerator.Current%2A?displayProperty=fullName> özelliğinin kesin türü belirtilmiş bir sürümünü uygular ancak sağlamaz. Aşağıdaki türlerden türetilmiş türler bu kuraldan muaf tutulur:
 
 - <xref:System.Collections.CollectionBase?displayProperty=fullName>
 
@@ -40,23 +40,23 @@ ms.locfileid: "62778778"
 - <xref:System.Collections.ReadOnlyCollectionBase?displayProperty=fullName>
 
 ## <a name="rule-description"></a>Kural açıklaması
- Bu kural gerektirir <xref:System.Collections.IEnumerator> de türü kesin belirlenmiş bir sürümünü sağlamak için uygulamaları <xref:System.Collections.IEnumerator.Current%2A> özelliği böylece kullanıcıların arabirim tarafından sağlanan işlevselliği kullandığınızda güçlü tür için dönen değer atama gerekmez. Bu kural, türün uyguladığı varsayar <xref:System.Collections.IEnumerator> değerinden daha güçlü bir türün örneklerinin bir koleksiyonunu içeren <xref:System.Object>.
+Bu kural, <xref:System.Collections.IEnumerator> kullanıcıların, arabirim tarafından sunulan işlevleri kullandıklarında döndürülen değeri güçlü <xref:System.Collections.IEnumerator.Current%2A> türe dönüştürmek için gerekli olmaması için, uygulamaların kesin türü belirtilmiş bir sürümünü de sağlaması gerekir. Bu kural, uygulayan <xref:System.Collections.IEnumerator> türün, daha <xref:System.Object>güçlü olan bir türün örnek koleksiyonunu içerdiğini varsayar.
 
-## <a name="how-to-fix-violations"></a>İhlaller nasıl düzeltilir?
- Bu kural ihlalini düzeltmek için arabirim özelliği açıkça uygulama (olarak bildirin `IEnumerator.Current`). Olarak bildirilen özelliğinin genel bir türü kesin belirlenmiş sürümü ekleme `Current`, ve bu türü kesin belirlenmiş bir nesne döndürür.
+## <a name="how-to-fix-violations"></a>İhlalleri çözme
+Bu kural ihlalini onarmak için Interface özelliğini açıkça uygulayın (olarak `IEnumerator.Current`bildirin). Özelliğin kesin türü belirtilmiş bir sürümünü ekleyin, olarak `Current`ve türü kesin belirlenmiş bir nesne döndürmesini sağlayabilirsiniz.
 
-## <a name="when-to-suppress-warnings"></a>Uyarılar bastırıldığında
- Bir ikili ağaç gibi bir nesne tabanlı koleksiyon ile kullanmak için bir nesne tabanlı Numaralandırıcı uyguladığınızda bu kuraldan bir uyarıyı gizler. Yeni koleksiyon genişleten türler kesin türü belirtilmiş Numaralandırıcı tanımlayın ve kesin türü belirtilmiş özelliği kullanıma sunun.
+## <a name="when-to-suppress-warnings"></a>Uyarıların ne zaman bastırılamıyor
+Bir ikili ağaç gibi nesne tabanlı bir koleksiyonla birlikte kullanmak üzere nesne tabanlı bir Numaralandırıcı uyguladığınızda bu kuraldan bir uyarı gizleyin. Yeni koleksiyonu genişleten türler kesin türü belirtilmiş Numaralandırıcı tanımlar ve kesin türü belirtilmiş özelliği sunar.
 
 ## <a name="example"></a>Örnek
- Aşağıdaki örnek, türü kesin belirlenmiş uygulamak için doğru şekilde gösterir. <xref:System.Collections.IEnumerator> türü.
+Aşağıdaki örnek, türü kesin belirlenmiş <xref:System.Collections.IEnumerator> bir tür uygulamak için doğru yolu gösterir.
 
- [!code-csharp[FxCop.Design.IEnumeratorStrongTypes#1](../code-quality/codesnippet/CSharp/ca1038-enumerators-should-be-strongly-typed_1.cs)]
+[!code-csharp[FxCop.Design.IEnumeratorStrongTypes#1](../code-quality/codesnippet/CSharp/ca1038-enumerators-should-be-strongly-typed_1.cs)]
 
-## <a name="related-rules"></a>İlgili kuralları
- [CA1035: ICollection uygulamalarında türü kesin olarak belirtilmiş üyeler olmalıdır](../code-quality/ca1035-icollection-implementations-have-strongly-typed-members.md)
+## <a name="related-rules"></a>İlgili kurallar
+[CA1035 ICollection uygulamalarında kesin olarak yazılmış Üyeler var](../code-quality/ca1035-icollection-implementations-have-strongly-typed-members.md)
 
- [CA1039: Listeler kesin türdedir](../code-quality/ca1039-lists-are-strongly-typed.md)
+[CA1039 Listelerin türü kesin olarak belirlenmiş](../code-quality/ca1039-lists-are-strongly-typed.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

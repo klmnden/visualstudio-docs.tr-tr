@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8dcecdaa206964e6c8a5aebcadc958fe2c1ee1e5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f162590fafaa263e9cc4233744e5f2ba39c8ce6f
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62946862"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926177"
 ---
 # <a name="list-source-command"></a>Kaynağı Listele Komutu
 Belirtilen kaynak kodu satırlarını görüntüler.
@@ -32,28 +32,28 @@ Debug.ListSource [/Count:number] [/Current] [/File:filename]
 ```
 
 ## <a name="switches"></a>Anahtarlar
- / Sayısı:`number`
+Biriktirme`number`
 
- İsteğe bağlı. Görüntülenecek satır sayısını belirtir.
+İsteğe bağlı. Görüntülenecek satır sayısını belirtir.
 
- / Geçerli
+/Current
 
- İsteğe bağlı. Geçerli satırı gösterir.
+İsteğe bağlı. Geçerli satırı gösterir.
 
- / Dosya:`filename`
+Dosyasýný`filename`
 
- İsteğe bağlı. Gösterilecek dosyasının yolu. Dosya adı belirtilmezse, komut satırı geçerli deyimin için kaynak kodunu gösterir.
+İsteğe bağlı. Gösterilecek dosyanın yolu. Dosya adı belirtilmemişse, komut geçerli deyimin satırı için kaynak kodunu gösterir.
 
- / Çizgi:`number`
+Satırı`number`
 
- İsteğe bağlı. Belirli bir satır numarasına gösterir.
+İsteğe bağlı. Belirli bir satır numarasını gösterir.
 
- / ShowLineNumbers:`yes|no`
+ShowLineNumbers`yes|no`
 
- İsteğe bağlı. Satır numaraları görüntülenip görüntülenmeyeceğini belirtir.
+İsteğe bağlı. Satır numaralarının görüntülenip görüntülenmeyeceğini belirtir.
 
 ## <a name="example"></a>Örnek
- Bu örnekte, kaynak kodu satır numaralarını görünür olan Form1.vb, dosyanın 4 satırından listeler.
+Bu örnek, satır numaraları görünür olan Form1. vb dosyasının 4. satırından kaynak kodu listeler.
 
 ```
 Debug.ListSource /File:"C:\Visual Studio Projects\Form1.vb" /Line:4 /ShowLineNumbers:yes

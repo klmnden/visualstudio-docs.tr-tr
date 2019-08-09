@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 82dd3f226931dfeca2fa0dfad38daa24684fb8da
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9bdc1c97d35b79fec40bbaf8994176cfbb27b8e8
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62789837"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68919226"
 ---
 # <a name="go-to-command"></a>Git Komutu
 İmleci belirtilen satıra taşır.
@@ -30,16 +30,15 @@ Edit.GoTo [linenumber]
 ```
 
 ## <a name="arguments"></a>Arguments
- `linenumber`
-
- İsteğe bağlı. Gitmek için satır sayısını temsil eden bir tamsayı.
+`linenumber`\
+İsteğe bağlı. Gidilecek satırın numarasını temsil eden bir tamsayı.
 
 ## <a name="remarks"></a>Açıklamalar
- Satır numaraları tek başlar. Varsa değerini `linenumber` değerden daha az, ilk satır görüntüler. Varsa değerini `linenumber` son satırın son satır görüntüler sayısından büyüktür.
+Satır numaralandırması bir kerede başlar. Değeri `linenumber` bir değerinden küçükse, ilk satır görüntülenir. Değeri `linenumber` , son satırın sayısından büyükse, son satır görüntülenir.
 
- İçin bir değer `linenumber` belirtilmezse, **satıra Git** iletişim kutusu görüntüler.
+İçin `linenumber` bir değer belirtilmemişse, **satıra git** iletişim kutusu görüntülenir.
 
- Bu komut diğer GoToLn adıdır.
+Bu komutun diğer adı Sayfayln 'dir.
 
 ## <a name="example"></a>Örnek
 

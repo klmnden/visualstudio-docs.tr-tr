@@ -12,71 +12,71 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c439a981573934215ecad8796e7980a5f9c8c2f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 406e8fbb16d3cac4b755b0532f3916fed486e466
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62934938"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68919010"
 ---
 # <a name="services-page-project-designer"></a>Hizmetler Sayfası, Proje Tasarımcısı
 
-İstemci uygulama hizmetleri için Basitleştirilmiş erişim sağlayan [!INCLUDE[ajax_current_short](../../ide/reference/includes/ajax_current_short_md.md)] oturum açma, roller ve profil hizmetlerinden Windows Forms ve Windows Presentation Foundation (WPF) uygulamaları. Kullanabileceğiniz **Hizmetleri** sayfasının **Proje Tasarımcısı** etkinleştirme ve istemci uygulama hizmetleri, projeniz için yapılandırma.
+İstemci uygulama hizmetleri, Windows Forms ve Windows Presentation Foundation [!INCLUDE[ajax_current_short](../../ide/reference/includes/ajax_current_short_md.md)] (WPF) uygulamalarından oturum açma, rol ve profil hizmetlerine Basitleştirilmiş erişim sağlar. Projeniz için istemci uygulama hizmetlerini etkinleştirmek ve yapılandırmak üzere **Proje Tasarımcısı** ' nın **Hizmetler** sayfasını kullanabilirsiniz.
 
-İstemci uygulama hizmetleri ile kullanıcıların kimliğini doğrulama, her kullanıcının atanan rolü veya rolleri belirlemek ve ağ üzerinden paylaşabilirsiniz kullanıcı başına uygulama ayarlarını depolamak için merkezi bir sunucu kullanabilirsiniz. Daha fazla bilgi için [istemci uygulama hizmetleri](/dotnet/framework/common-client-technologies/client-application-services).
+İstemci uygulama hizmetleri ile, kullanıcıların kimliğini doğrulamak, her kullanıcının atanan rolünü veya rollerini tespit etmek ve ağ genelinde paylaşabileceğiniz Kullanıcı başına uygulama ayarlarını depolamak için merkezi bir sunucu kullanabilirsiniz. Daha fazla bilgi için bkz. [istemci uygulama hizmetleri](/dotnet/framework/common-client-technologies/client-application-services).
 
-Erişim için **Hizmetleri** sayfasında, içinde bir proje düğümü seçin **Çözüm Gezgini**ve ardından **özellikleri** üzerinde **proje** menüsü. Zaman **Proje Tasarımcısı** görünen tıklayın **Hizmetleri** sekmesi.
+**Hizmetler** sayfasına erişmek için **Çözüm Gezgini**' de bir proje düğümü seçin ve ardından **Proje** menüsünde **Özellikler** ' e tıklayın. **Proje Tasarımcısı** göründüğünde, **Hizmetler** sekmesine tıklayın.
 
 ## <a name="task-list"></a>Görev Listesi
 
-[Nasıl yapılır: İstemci uygulama servislerini yapılandırma](/dotnet/framework/common-client-technologies/how-to-configure-client-application-services)
+[Nasıl yapılır: Istemci Uygulama Hizmetleri yapılandırma](/dotnet/framework/common-client-technologies/how-to-configure-client-application-services)
 
 ## <a name="uielement-list"></a>UIElement Listesi
 
  **Yapılandırma**
 
- Bu sayfada bu denetim düzenlenemez. Bu denetimin açıklaması için bkz [derleme sayfası, Proje Tasarımcısı (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md) veya [derleme sayfası, Proje Tasarımcısı (C#)](../../ide/reference/build-page-project-designer-csharp.md).
+Bu denetim bu sayfada düzenlenemez. Bu denetimin açıklaması için bkz. [derleme sayfası, proje Tasarımcısı (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md) veya [derleme sayfası, proje Tasarımcısı (C#)](../../ide/reference/build-page-project-designer-csharp.md).
 
- **Platform**
+ **Platformunun**
 
- Bu sayfada bu denetim düzenlenemez. Bu denetimin açıklaması için bkz [derleme sayfası, Proje Tasarımcısı (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md) veya [derleme sayfası, Proje Tasarımcısı (C#)](../../ide/reference/build-page-project-designer-csharp.md).
+Bu denetim bu sayfada düzenlenemez. Bu denetimin açıklaması için bkz. [derleme sayfası, proje Tasarımcısı (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md) veya [derleme sayfası, proje Tasarımcısı (C#)](../../ide/reference/build-page-project-designer-csharp.md).
 
- **İstemci uygulama hizmetlerini etkinleştirmek**
+ **İstemci uygulama hizmetlerini etkinleştir**
 
- İstemci uygulama hizmetlerini etkinleştirmek için bu seçeneği seçin. Servis yerlerini belirtmeniz gerekir **Hizmetleri** sayfasına istemci uygulama hizmetleri kullanın.
+İstemci uygulama hizmetlerini etkinleştirmek için seçin. İstemci uygulama hizmetlerini kullanmak için **Hizmetler** sayfasında hizmet konumları belirtmeniz gerekir.
 
- **Windows kimlik doğrulaması kullan**
+ **Windows kimlik doğrulamasını kullan**
 
- Kimlik doğrulama sağlayıcısı Windows tabanlı kimlik doğrulaması, diğer bir deyişle, Windows işletim sistemi tarafından sağlanan kimlik kullanacağını gösterir.
+Kimlik doğrulama sağlayıcısının Windows tabanlı kimlik doğrulaması (yani, Windows işletim sistemi tarafından sağlanan kimlik) kullanacağını gösterir.
 
  **Forms kimlik doğrulaması kullan**
 
- Kimlik doğrulama sağlayıcısı form kimlik doğrulaması kullandığını gösterir. Başka bir deyişle, uygulamanız için oturum açma kullanıcı arabirimi sağlamanız gerekir. Daha fazla bilgi için [nasıl yapılır: İstemci uygulama hizmetleri ile kullanıcı oturum açma adını](/dotnet/framework/common-client-technologies/how-to-implement-user-login-with-client-application-services).
+Kimlik doğrulama sağlayıcısının form kimlik doğrulaması kullanacağını gösterir. Bu, uygulamanızın oturum açmak için bir kullanıcı arabirimi sağlaması gerektiği anlamına gelir. Daha fazla bilgi için [nasıl yapılır: Istemci Uygulama Hizmetleri](/dotnet/framework/common-client-technologies/how-to-implement-user-login-with-client-application-services)Ile Kullanıcı oturum açma uygulayın.
 
- **Kimlik doğrulama hizmet konumu**
+ **Kimlik doğrulama hizmeti konumu**
 
- Yalnızca form kimlik doğrulaması ile kullanılır. Kimlik doğrulama hizmetinin konumunu belirtir.
+Yalnızca Forms kimlik doğrulaması ile kullanılır. Kimlik doğrulama hizmetinin konumunu belirtir.
 
- **İsteğe bağlı: Kimlik bilgileri sağlayıcısı**
+ **Seçim Kimlik bilgileri sağlayıcısı**
 
- Yalnızca form kimlik doğrulaması ile kullanılır. Gösterir <xref:System.Web.ClientServices.Providers.IClientFormsAuthenticationCredentialsProvider> uygulamanız çağırdığında bir oturum açma iletişim kutusunu görüntülemek için kimlik doğrulama hizmetinin kullanacağı uygulama `static` <xref:System.Web.Security.Membership.ValidateUser%2A?displayProperty=fullName> yöntemi ve geçişleri boş dizeler veya `null` parametre. Bu kutuyu boş bırakırsanız, geçerli kullanıcı adı ve parola geçmelidir <xref:System.Web.Security.Membership.ValidateUser%2A?displayProperty=fullName> yöntemi. Kimlik bilgileri sağlayıcısı bir derleme nitelikli tür adı olarak belirtmeniz gerekir. Daha fazla bilgi için <xref:System.Type.AssemblyQualifiedName%2A?displayProperty=fullName> ve [derleme adları](/dotnet/framework/app-domains/assembly-names). En basit şekliyle, bir derleme nitelikli tür adı, aşağıdaki örneğe benzer: `MyNamespace.MyLoginClass, MyAssembly`
+Yalnızca Forms kimlik doğrulaması ile kullanılır. `null` Uygulamanız yöntemi `static` çağırdığında ve boş dizeler ya da parametreler için bir oturum açma iletişim kutusu göstermek için kimlik doğrulama hizmetinin kullanacağı uygulamayıgösterir.<xref:System.Web.ClientServices.Providers.IClientFormsAuthenticationCredentialsProvider> <xref:System.Web.Security.Membership.ValidateUser%2A?displayProperty=fullName> Bu kutuyu boş bırakırsanız, <xref:System.Web.Security.Membership.ValidateUser%2A?displayProperty=fullName> yönteme geçerli bir Kullanıcı adı ve parola geçirmeniz gerekir. Kimlik bilgileri sağlayıcısını derleme nitelikli bir tür adı olarak belirtmeniz gerekir. Daha fazla bilgi için bkz <xref:System.Type.AssemblyQualifiedName%2A?displayProperty=fullName> . ve [derleme adları](/dotnet/framework/app-domains/assembly-names). En basit biçimde, derleme nitelikli tür adı aşağıdaki örneğe benzer şekilde görünür:`MyNamespace.MyLoginClass, MyAssembly`
 
- **Rol hizmet konumu**
+ **Rol hizmeti konumu**
 
- Rol hizmetinin konumunu belirtir.
+Rol hizmetinin konumunu belirtir.
 
  **Web ayarları hizmet konumu**
 
- Profil (web ayarları) hizmetinin konumunu belirtir.
+Profil (Web ayarları) hizmetinin konumunu belirtir.
 
  **Gelişmiş**
 
- Açılır [Hizmetleri iletişim kutusu için Gelişmiş ayarları](../../ide/reference/advanced-settings-for-services-dialog-box.md), bu varsayılan davranışı geçersiz kılmak için kullanabilirsiniz. Örneğin, bir veritabanı yerine yerel dosya sistemi kullanılarak çevrimdışı depolama belirtmek için bu iletişim kutusunu kullanabilirsiniz. Daha fazla bilgi için [Hizmetleri iletişim kutusu için Gelişmiş ayarları](../../ide/reference/advanced-settings-for-services-dialog-box.md).
+Varsayılan davranışı geçersiz kılmak için kullanabileceğiniz [Hizmetler Için Gelişmiş ayarlar Iletişim kutusunu](../../ide/reference/advanced-settings-for-services-dialog-box.md)açar. Örneğin, bu iletişim kutusunu yerel dosya sistemini kullanmak yerine çevrimdışı depolama için bir veritabanı belirtmek üzere kullanabilirsiniz. Daha fazla bilgi için bkz. [Hizmetler Için Gelişmiş ayarlar Iletişim kutusu](../../ide/reference/advanced-settings-for-services-dialog-box.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 - [İstemci Uygulama Servisleri](/dotnet/framework/common-client-technologies/client-application-services)
 - [Hizmetler İçin Gelişmiş Ayarlar İletişim Kutusu](../../ide/reference/advanced-settings-for-services-dialog-box.md)
-- [Nasıl yapılır: İstemci uygulama servislerini yapılandırma](/dotnet/framework/common-client-technologies/how-to-configure-client-application-services)
+- [Nasıl yapılır: Istemci Uygulama Hizmetleri yapılandırma](/dotnet/framework/common-client-technologies/how-to-configure-client-application-services)
 - [Derleme Sayfası, Proje Tasarımcısı (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md)
 - [Derleme Sayfası, Proje Tasarımcısı (C#)](../../ide/reference/build-page-project-designer-csharp.md)

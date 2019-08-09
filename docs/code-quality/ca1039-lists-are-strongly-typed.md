@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d11afe8a3ea8fcae971461b8e33fc4771b74eb75
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 94b1e8134eb89e4ae78ec0ad6f07fd7406215185
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62778906"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68922837"
 ---
 # <a name="ca1039-lists-are-strongly-typed"></a>CA1039: Listeler kesin türdedir
 
@@ -32,43 +32,43 @@ ms.locfileid: "62778906"
 
 ## <a name="cause"></a>Sebep
 
-Ortak veya korumalı tür uygular <xref:System.Collections.IList?displayProperty=fullName> ancak bir veya daha fazlasını için türü kesin belirlenmiş bir yöntem sağlamaz:
+Ortak veya korumalı tür uygular <xref:System.Collections.IList?displayProperty=fullName> , ancak aşağıdakilerden biri veya birkaçı için kesin olarak belirlenmiş bir yöntem sağlamaz:
 
-- IList.Item
+- IList. Item
 
-- IList.Add
+- IList. Add
 
-- IList.Contains
+- IList. Contains
 
-- IList.IndexOf
+- IList. IndexOf
 
-- IList.Insert
+- IList. Insert
 
-- IList.Remove
+- IList. Remove
 
 ## <a name="rule-description"></a>Kural açıklaması
 
-Bu kural gerektirir <xref:System.Collections.IList> kesin sağlamak için uygulamaları yazılan üyeleri, böylece kullanıcılar bağımsız değişkenleri atamaları gerekli değildir <xref:System.Object?displayProperty=fullName> arabirim tarafından sağlanan işlevselliği kullandığı zaman yazın. <xref:System.Collections.IList> Arabirimi dizin tarafından erişilebilen bir nesne koleksiyonları tarafından uygulanır. Bu kural, türün uyguladığı varsayar <xref:System.Collections.IList> değerinden daha güçlü bir türün örneklerinin bir koleksiyonunu yönetir <xref:System.Object>.
+Bu kural, <xref:System.Collections.IList> kullanıcıların, arabirim tarafından sunulan işlevleri kullanırken bağımsız değişkenleri <xref:System.Object?displayProperty=fullName> türüne dönüştürmeleri gerekmeden, türü kesin belirlenmiş Üyeler sağlamak için uygulamalar gerektirir. Arabirim <xref:System.Collections.IList> , dizin tarafından erişilebilen nesne koleksiyonları tarafından uygulanır. Bu kural, uygulayan <xref:System.Collections.IList> türün, daha <xref:System.Object>güçlü olan bir türün örnek koleksiyonunu yönettiğini varsayar.
 
-<xref:System.Collections.IList> uygulayan <xref:System.Collections.ICollection?displayProperty=fullName> ve <xref:System.Collections.IEnumerable?displayProperty=fullName> arabirimleri. Uygularsanız <xref:System.Collections.IList>, gerekli türü kesin belirlenmiş üyeler için sağlamanız gereken <xref:System.Collections.ICollection>. Koleksiyondaki nesneleri genişletirseniz <xref:System.ValueType?displayProperty=fullName>, türü kesin belirlenmiş bir üye için sağlamanız gereken <xref:System.Collections.IEnumerable.GetEnumerator%2A> performans düşüşünü önlemek için kutulama tarafından neden; koleksiyon nesnelerini bir başvuru türü olduğunda bu zorunlu değildir.
+<xref:System.Collections.IList><xref:System.Collections.ICollection?displayProperty=fullName> ve<xref:System.Collections.IEnumerable?displayProperty=fullName> arabirimlerini uygular. Uygulamasını uygularsanız <xref:System.Collections.ICollection>, için gerekli kesin olarak belirlenmiş üyeleri sağlamanız gerekir. <xref:System.Collections.IList> Koleksiyondaki nesneler genişlemişlerse <xref:System.ValueType?displayProperty=fullName>, kutulamayı neden olan performansın azalmasını önlemek için, için <xref:System.Collections.IEnumerable.GetEnumerator%2A> kesin olarak belirlenmiş bir üye sağlamalısınız; koleksiyonun nesneleri bir başvuru türü olduğunda bu gerekli değildir.
 
-Bu kurala uygun için arabirim üyelerini açıkça InterfaceName.InterfaceMemberName, formun gibi adları kullanarak uygulama <xref:System.Collections.IList.Add%2A>. Açık arabirim üyeleri arabirim tarafından bildirilen veri türlerini kullanın. Arabirim üye adı gibi kullanarak türü kesin belirlenmiş üyeler uygulama `Add`. Türü kesin belirlenmiş üyeler genel olarak bildirmek ve parametreleri bildirmek ve dönüş değerleri koleksiyon tarafından yönetilen sağlam türünde olması. Tanımlayıcı türleri gibi daha zayıf türlerine değiştirin <xref:System.Object> ve <xref:System.Array> arabirim tarafından bildirilir.
+Bu kuralla uyum sağlamak için, ve gibi InterfaceName. InterfaceMemberName <xref:System.Collections.IList.Add%2A>biçimindeki adları kullanarak arabirim üyelerini açıkça uygulayın. Açık arabirim üyeleri, arabirimi tarafından belirtilen veri türlerini kullanır. Arabirim üye adını `Add`(gibi) kullanarak türü kesin belirlenmiş üyeleri uygulayın. Kesin olarak belirlenmiş üyeleri ortak olarak bildirin ve koleksiyon tarafından yönetilen güçlü türde parametreleri ve dönüş değerlerini bildirin. Güçlü türler, <xref:System.Object> ve gibi daha <xref:System.Array> zayıf türler yerine arabirim tarafından bildirilmiştir.
 
-## <a name="how-to-fix-violations"></a>İhlaller nasıl düzeltilir?
- Bu kural ihlalini düzeltmek için açıkça uygulama <xref:System.Collections.IList> üyeleri ve daha önce not aldığınız üyeler için türü kesin belirlenmiş alternatifler sağlar. Doğru uygulayan kodu için <xref:System.Collections.IList> gerekli sağlar ve arabirim türü kesin belirlenmiş üyeler, aşağıdaki örnekte bakın.
+## <a name="how-to-fix-violations"></a>İhlalleri çözme
+Bu kuralın ihlalini onarmak için, üyeleri açık olarak <xref:System.Collections.IList> uygulayın ve daha önce belirtilen Üyeler için kesin olarak belirlenmiş alternatifler sağlayın. <xref:System.Collections.IList> Arabirimi doğru şekilde uygulayan ve gerekli kesin türü belirtilmiş üyeleri sağlayan kod için aşağıdaki örneğe bakın.
 
-## <a name="when-to-suppress-warnings"></a>Uyarılar bastırıldığında
- Yeni nesne tabanlı bir koleksiyon, burada yeni koleksiyon genişleten türler güçlü tür belirlemek bağlantılı liste gibi uyguladığınızda bu kuraldan bir uyarıyı gizler. Bu türler, bu kurala uygun ve türü kesin belirlenmiş üyeler kullanıma sunar.
+## <a name="when-to-suppress-warnings"></a>Uyarıların ne zaman bastırılamıyor
+Bağlantılı liste gibi yeni bir nesne tabanlı koleksiyon uygularken bu kuraldan bir uyarı göstermez, bu, yeni koleksiyonu genişleten türlerin güçlü türü belirlemesine neden olacak. Bu türler bu kurala uymalıdır ve türü kesin belirlenmiş üyeleri kullanıma sunmalıdır.
 
 ## <a name="example"></a>Örnek
- Aşağıdaki örnekte, türü `YourType` genişletir <xref:System.Collections.CollectionBase?displayProperty=fullName>, tüm kesin türde koleksiyonlar gibi. <xref:System.Collections.CollectionBase> Açık uygulamasını sağlar <xref:System.Collections.IList> arabirimi. Bu nedenle, yalnızca türü kesin belirlenmiş üyeler için sağlamanız gereken <xref:System.Collections.IList> ve <xref:System.Collections.ICollection>.
+Aşağıdaki örnekte, türü kesin belirlenmiş tüm `YourType` koleksiyonlar <xref:System.Collections.CollectionBase?displayProperty=fullName>olması gerektiği için tür genişletilir. <xref:System.Collections.CollectionBase>, sizin için <xref:System.Collections.IList> arabirimin açık uygulanmasını sağlar. Bu nedenle, ve <xref:System.Collections.IList> <xref:System.Collections.ICollection>için kesin olarak belirlenmiş üyeleri sağlamanız gerekir.
 
- [!code-csharp[FxCop.Design.IListStrongTypes#1](../code-quality/codesnippet/CSharp/ca1039-lists-are-strongly-typed_1.cs)]
+[!code-csharp[FxCop.Design.IListStrongTypes#1](../code-quality/codesnippet/CSharp/ca1039-lists-are-strongly-typed_1.cs)]
 
-## <a name="related-rules"></a>İlgili kuralları
- [CA1035: ICollection uygulamalarında türü kesin olarak belirtilmiş üyeler olmalıdır](../code-quality/ca1035-icollection-implementations-have-strongly-typed-members.md)
+## <a name="related-rules"></a>İlgili kurallar
+[CA1035 ICollection uygulamalarında kesin olarak yazılmış Üyeler var](../code-quality/ca1035-icollection-implementations-have-strongly-typed-members.md)
 
- [CA1038: Numaralandırıcılar kesin olarak belirtilmelidir](../code-quality/ca1038-enumerators-should-be-strongly-typed.md)
+[CA1038 Numaralandırıcılar kesin bir şekilde yazılmalıdır](../code-quality/ca1038-enumerators-should-be-strongly-typed.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

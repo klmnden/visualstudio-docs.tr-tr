@@ -17,12 +17,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: a13aeeffbc77e4f40ff886c0d890f181697fcc11
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 942a9911d0dadbf5f130344735ca9aa504cb71fd
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62797185"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68921592"
 ---
 # <a name="ca1800-do-not-cast-unnecessarily"></a>CA1800: Gereksiz tür dönüştürmeler yapmayın
 
@@ -30,36 +30,36 @@ ms.locfileid: "62797185"
 |-|-|
 |TypeName|DoNotCastUnnecessarily|
 |CheckId|CA1800|
-|Kategori|Microsoft.Performance|
-|Yeni Değişiklik|Bölünemez|
+|Kategori|Microsoft. Performance|
+|Yeni Değişiklik|Kırılmamış|
 
 ## <a name="cause"></a>Sebep
-Bir yöntem yinelenen atamalardan biri kendi bağımsız değişkenler veya yerel değişkenler üzerinde gerçekleştirir.
+Bir yöntem bağımsız değişkenlerinin veya yerel değişkenlerinin birinde yinelenen yayınları gerçekleştirir.
 
-Tam çözümleme bu kural tarafından test edilen derleme, hata ayıklama bilgileri kullanılarak oluşturulmalıdır ve ilişkili bir program veritabanı (.pdb) dosyası kullanılabilir olmalıdır.
+Bu kurala göre tüm analizler için, sınanan derlemenin hata ayıklama bilgileri kullanılarak oluşturulması gerekir ve ilişkili program veritabanı (. pdb) dosyası kullanılabilir olmalıdır.
 
 ## <a name="rule-description"></a>Kural açıklaması
-Özellikle yayınlar sıkıştırılmış yineleme deyiminde gerçekleştirildiğinde yinelenen yayınların performansını azaltır. Yinelenen açık tür dönüştürme işlemleri için atamanın sonucu yerel bir değişkende depolayın ve yinelenen atama işlemleri yerine yerel değişkenini kullanın.
+Özellikle yayınlar sıkıştırılmış yineleme deyiminde gerçekleştirildiğinde yinelenen yayınların performansını azaltır. Açık yinelenen atama işlemleri için, dönüştürme sonucunu yerel bir değişkende depolayın ve yinelenen atama işlemleri yerine yerel değişkeni kullanın.
 
-C# `is` işleci gerçek atama yapılmadan önce atama başarılı olup olmadığını sınamak için kullanılan test sonucunu göz önünde bulundurun `as` işleci bunun yerine. Bu örtük dönüştürme işlemi tarafından gerçekleştirilen olmadan aynı işlevlere `is` işleci. Ya da C# 7.0 ve daha sonra kullanmak `is` işleciyle [desen eşleştirme](/dotnet/csharp/language-reference/keywords/is#pattern-matching-with-is) tür dönüştürme denetleyin ve tek bir adımda bir değişken ifade türü dönüştürün.
+İşleç, gerçek atama gerçekleştirilmeden önce dönüştürmenin başarılı olup olmadığını test etmek için kullanılıyorsa, bunun yerine `as` işlecin sonucunu test etmeyi düşünün. C# `is` Bu, `is` işleci tarafından gerçekleştirilen örtük atama işlemi olmadan aynı işlevselliği sağlar. Ya da, C# 7,0 ve sonraki sürümlerde, tür `is` dönüştürmeyi denetlemek ve ifadeyi tek bir adımda bu türden bir değişkene dönüştürmek için [model eşleme](/dotnet/csharp/language-reference/keywords/is#pattern-matching-with-is) ile işlecini kullanın.
 
-## <a name="how-to-fix-violations"></a>İhlaller nasıl düzeltilir?
- Bu kural ihlalini düzeltmek için tür dönüştürme işlemlerinin sayısını en aza indirmek için yöntem uygulaması değiştirin.
+## <a name="how-to-fix-violations"></a>İhlalleri çözme
+Bu kural ihlalini onarmak için, Yöntem uygulamasını değiştirerek atama işlemlerinin sayısını en aza indirin.
 
-## <a name="when-to-suppress-warnings"></a>Uyarılar bastırıldığında
- Performans önemli değilse bu kuraldan bir uyarıyı bastırmak için ya da kural tamamen yok saymak için güvenlidir.
+## <a name="when-to-suppress-warnings"></a>Uyarıların ne zaman bastırılamıyor
+Performans sorunu değilse, bu kuraldan bir uyarının veya kuralı tamamen yok saymak güvenlidir.
 
 ## <a name="examples"></a>Örnekler
- Aşağıdaki örnek C# kullanarak kuralı ihlal eden bir yöntemi gösterir `is` işleci. İkinci yöntem değiştirerek kural karşılayan `is` işleci ile bir test sonucunu karşı `as` işleci atama işlemleri her ikisinden birine yinelemesi sayısını azaltır. Ayrıca üçüncü bir yöntem kullanarak kural karşılar `is` ile [desen eşleştirme](/dotnet/csharp/language-reference/keywords/is#pattern-matching-with-is) tür dönüştürme başarılı olabilir, istenen türde bir değişken oluşturmak için.
+Aşağıdaki örnek, C# `is` işlecini kullanarak kuralı ihlal eden bir yöntemi gösterir. İkinci bir yöntem `is` işleci bir test ile değiştirerek, işleci bir test `as` ile değiştirerek, iki ' dan birine yineleme başına dönüştürme işlemi sayısını azaltan kuralını karşılar. Ayrıca, tür dönüştürme başarılı olursa, istenen türde `is` bir değişken oluşturmak için, bir üçüncü Yöntem aynı zamanda, [stili eşleştirme](/dotnet/csharp/language-reference/keywords/is#pattern-matching-with-is) ile kullanarak kuralı karşılar.
 
- [!code-csharp[FxCop.Performance.UnnecessaryCastsAsIs#1](../code-quality/codesnippet/CSharp/ca1800-do-not-cast-unnecessarily_1.cs)]
+[!code-csharp[FxCop.Performance.UnnecessaryCastsAsIs#1](../code-quality/codesnippet/CSharp/ca1800-do-not-cast-unnecessarily_1.cs)]
 
- Aşağıdaki örnek bir yöntemi gösterir `start_Click`, birden çok yinelenen açık Atamalar, kural ve bir yöntem ihlal olan `reset_Click`, hangi karşılayan kural dönüştürme bir yerel değişkende depolayarak.
+Aşağıdaki örnek, bir yöntemi `start_Click`gösterir, bu, kuralı ihlal eden birden çok yinelenen açık oluşturmaya sahiptir ve bir `reset_Click`yöntemi, bir yerel değişkende dönüştürmeyi depolayarak kuralını karşılayan bir yöntemi gösterir.
 
- [!code-vb[FxCop.Performance.UnnecessaryCasts#1](../code-quality/codesnippet/VisualBasic/ca1800-do-not-cast-unnecessarily_2.vb)]
- [!code-csharp[FxCop.Performance.UnnecessaryCasts#1](../code-quality/codesnippet/CSharp/ca1800-do-not-cast-unnecessarily_2.cs)]
+[!code-vb[FxCop.Performance.UnnecessaryCasts#1](../code-quality/codesnippet/VisualBasic/ca1800-do-not-cast-unnecessarily_2.vb)]
+[!code-csharp[FxCop.Performance.UnnecessaryCasts#1](../code-quality/codesnippet/CSharp/ca1800-do-not-cast-unnecessarily_2.cs)]
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [(, C# Başvurusu)](/dotnet/csharp/language-reference/keywords/as)
-- [(C# Başvurusu)](/dotnet/csharp/language-reference/keywords/is)
+- [as (C# başvuru)](/dotnet/csharp/language-reference/keywords/as)
+- [, (C# başvuru)](/dotnet/csharp/language-reference/keywords/is)

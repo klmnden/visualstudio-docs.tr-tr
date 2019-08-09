@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2728f26319b3d395381d60f136fba7d0c20da977
-ms.sourcegitcommit: 90c3187d804ad7544367829d07ed4b47d3f8a72d
+ms.openlocfilehash: 0acacac883153990861385c96eeb3379c464f97f
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "68822148"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68870997"
 ---
 # <a name="write-and-debug-running-xaml-code-with-xaml-hot-reload-in-visual-studio"></a>Visual Studio 'da XAML etkin yeniden yüklemesine sahip XAML kodunu yazma ve hata ayıklama
 
@@ -53,7 +53,7 @@ XAML sık yeniden yükleme 'nin bilinen kısıtlamaları aşağıda verilmiştir
 XAML sık yükleme 'yi kullanırken aşağıdaki hatalarda gelebiliriz.
 
 |Hata iletisi|Açıklama|
-|-|-|-|
+|-|-|
 |Olayın başarısız olduğundan emin olun|Hata, sizin uygulamanız çalışırken desteklenmeyen denetimlerinizin birine bir olay gönderilmeye çalıştığınız anlamına gelir.|
 |XAML Düzenle ve devam et güncelleştirilecek herhangi bir öğe bulamadı.|Etkin yeniden yükleme işleminin uygulamanızda güncelleştiremediğinde XAML 'yi düzenlediğinizde hata oluşur.</br> Bu hata, bazen XAML 'nin kullanıldığı bir görünüme gitmek için çalışan uygulamanız kullanılarak düzeltilebilir.</br> Bazen bu hata, hata ayıklama oturumunu yeniden başlatana kadar belirli bir değişikliğin uygulanmadığı anlamına gelir. |
 |Bu değişiklik, hata ayıklama oturumu sırasında desteklenmez.|Hata, denediğiniz değişikliğin XAML etkin yeniden yükleme tarafından desteklenmediğini gösterir. Hata ayıklama oturumunu durdurun, değişikliği yapın ve hata ayıklama oturumunu yeniden başlatın.|

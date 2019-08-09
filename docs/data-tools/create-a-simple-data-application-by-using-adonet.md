@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4e7f99f646d2a93878ec0a78f75cdc6ae1fb0d1c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 98185eb44bc598d83eddd2690d4a321f8880f014
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62570118"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68925698"
 ---
 # <a name="create-a-simple-data-application-by-using-adonet"></a>ADO.NET kullanarak basit veri uygulaması oluşturma
 
@@ -59,7 +59,7 @@ Bu konu, alışık olduğunuz Visual Studio IDE temel işlevsellikle ve bir Wind
 
 7. T-SQL betiği sorgu düzenleyiciye yapıştırın ve ardından **yürütme** düğmesi.
 
-     Kısa bir süre sonra sorgu işlemi tamamlandıktan ve veritabanı nesnelerini oluşturulur. Veritabanı iki tablo içerir: Müşteri ve sipariş. Bu tablolar başlangıçta herhangi bir veri içermez, ancak oluşturacağınız uygulamayı çalıştırdığınızda veri ekleyebilirsiniz. Veritabanı, dört basit saklı yordamları da içerir.
+     Kısa bir süre sonra sorgu işlemi tamamlandıktan ve veritabanı nesnelerini oluşturulur. Veritabanı iki tablo içerir: Müşteri ve siparişler. Bu tablolar başlangıçta herhangi bir veri içermez, ancak oluşturacağınız uygulamayı çalıştırdığınızda veri ekleyebilirsiniz. Veritabanı, dört basit saklı yordamları da içerir.
 
 ## <a name="create-the-forms-and-add-controls"></a>Formlar oluşturun ve denetimler ekleme
 
@@ -90,9 +90,9 @@ Bu konu, alışık olduğunuz Visual Studio IDE temel işlevsellikle ve bir Wind
 |Düğme|Ad = btnGoToFillOrCancel|
 |Düğme|Ad = btnExit|
 
- **NewCustomer formu**
+**NewCustomer formu**
 
- ![Yeni bir müşteri ekleyin ve sipariş](../data-tools/media/simpleappnewcust.png)
+![Yeni bir müşteri ekleyin ve sipariş](../data-tools/media/simpleappnewcust.png)
 
 |NewCustomer formu için denetimler|Özellikler|
 | - |----------------|
@@ -105,9 +105,9 @@ Bu konu, alışık olduğunuz Visual Studio IDE temel işlevsellikle ve bir Wind
 |Düğme|Ad = btnAddAnotherAccount|
 |Düğme|Ad = btnAddFinish|
 
- **FillOrCancel formu**
+**FillOrCancel formu**
 
- ![dolgu veya sipariş iptal et](../data-tools/media/simpleappcancelfill.png)
+![dolgu veya sipariş iptal et](../data-tools/media/simpleappcancelfill.png)
 
 |FillOrCancel formu için denetimler|Özellikler|
 | - |----------------|
@@ -120,16 +120,16 @@ Bu konu, alışık olduğunuz Visual Studio IDE temel işlevsellikle ve bir Wind
 |Düğme|Ad = btnFinishUpdates|
 
 ## <a name="store-the-connection-string"></a>Bağlantı dizesi Store
- Uygulamanız veritabanına bir bağlantı açmaya çalıştığında, uygulamanızın bağlantı dizesine erişimi olmalıdır. Dizeyi her bir formda el ile girmekten kaçınmak için dizeyi depolamak *App.config* dosya projenizde ve yöntem uygulamanızdaki herhangi bir formdan çağrıldığında dizeyi döndüren bir yöntem oluşturun.
+Uygulamanız veritabanına bir bağlantı açmaya çalıştığında, uygulamanızın bağlantı dizesine erişimi olmalıdır. Dizeyi her bir formda el ile girmekten kaçınmak için dizeyi depolamak *App.config* dosya projenizde ve yöntem uygulamanızdaki herhangi bir formdan çağrıldığında dizeyi döndüren bir yöntem oluşturun.
 
- Sağ tıklayarak bağlantı dizesini bulabilirsiniz **satış** veri bağlantısında **Sunucu Gezgini** seçip **özellikleri**. Bulun **ConnectionString** özelliği, ardından **Ctrl**+**A**, **Ctrl**+**C**  seçip dizesini panoya kopyalayın.
+Sağ tıklayarak bağlantı dizesini bulabilirsiniz **satış** veri bağlantısında **Sunucu Gezgini** seçip **özellikleri**. Bulun **ConnectionString** özelliği, ardından **Ctrl**+**A**, **Ctrl**+**C**  seçip dizesini panoya kopyalayın.
 
 1. Kullanıyorsanız C#, **Çözüm Gezgini**, genişletme **özellikleri** projesi altındaki ve sonra düğümü **Settings.settings** dosya.
     İçinde Visual Basic kullanıyorsanız, **Çözüm Gezgini**, tıklayın **tüm dosyaları göster**, genişletme **Projem** düğümünü ve ardından açın **Settings.settings** dosya.
 
 2. İçinde **adı** sütun girin `connString`.
 
-3. İçinde **türü** listesinden **(bağlantı dizesi)**.
+3. İçinde **türü** listesinden **(bağlantı dizesi)** .
 
 4. İçinde **kapsam** listesinden **uygulama**.
 

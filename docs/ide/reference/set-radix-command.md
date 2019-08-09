@@ -13,15 +13,15 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 70b61dff4ebe7486c2e04e4fd3061cd4110feca1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 13341d8cb6a708f4e10f211bd47b79a75e1b6e2a
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62952041"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926038"
 ---
 # <a name="set-radix-command"></a>Sayı Tabanını Ayarla Komutu
-Tamsayı değerleri görüntülemek için kullanılan sayısal taban döndürür veya ayarlar.
+Tamsayı değerlerini göstermek için kullanılan sayısal temeli ayarlar veya döndürür.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -30,12 +30,12 @@ Debug.SetRadix [10 | 16 | hex | dec]
 ```
 
 ## <a name="arguments"></a>Arguments
- `10` veya `16` veya `hex` veya `dec`
+`10``16` veya veya`hex` veya`dec`
 
- İsteğe bağlı. Ondalık gösterir (10 veya Ara) ya da onaltılık (16 veya onaltılık). Ardından bir bağımsız değişken yoksayılırsa geçerli taban değeri döndürülür.
+İsteğe bağlı. Ondalık (10 veya Dec) ya da onaltılı (16 veya onaltılı) anlamına gelir. Bir bağımsız değişken atlanırsa, geçerli taban değeri döndürülür.
 
 ## <a name="example"></a>Örnek
- Bu örnek, tamsayı değerlerini onaltılık biçimde görüntülemek için ortamı ayarlar.
+Bu örnek, ortamı tamsayı değerlerini onaltılık biçimde görüntüleyecek şekilde ayarlar.
 
 ```cmd
 >Debug.SetRadix hex

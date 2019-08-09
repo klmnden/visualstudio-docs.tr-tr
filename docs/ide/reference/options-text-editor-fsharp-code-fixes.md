@@ -1,5 +1,5 @@
 ---
-title: Seçenekler, metin düzenleyici, F#, kod düzeltmeleri
+title: Seçenekler, metin düzenleyici, F#kod düzeltmeleri
 ms.date: 01/16/2019
 ms.topic: reference
 f1_keywords:
@@ -9,34 +9,34 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: bb9daee86fec058fca68740eaea3b9436e5570d6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a73991702455fab54baf868499634e1a4f5bbf48
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62778547"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68870754"
 ---
-# <a name="options-text-editor-f-code-fixes"></a>Seçenekler, metin düzenleyici, F#, kod düzeltmeleri
+# <a name="options-text-editor--f--code-fixes"></a>Seçenekler: Metin düzenleyici > F# > kod düzeltmeleri
 
-Kullanım **kod düzeltmeleri** seçenekler sayfası, kod hataları belirlemek ve çözümleri sunmak yardımcı olabilecek ayarları belirtmek için. Bu seçenekler sayfası erişmek için kendi seçtikleri **Araçları** > **seçenekleri**ve ardından **metin düzenleyici**  >  **F#**  >  **Kod düzeltme**.
+Kod hatalarını ve teklif çözümlerini belirlemenize yardımcı olabilecek ayarları belirtmek için kod düzeltmeleri seçenekleri sayfasını kullanın. Bu seçenekler sayfasına erişmek için **Araçlar** > **Seçenekler**' i ve ardından **metin düzenleyici** > **F#**  > **kod düzeltmeleri**' ni seçin.
 
-## <a name="code-fixes"></a>Kod düzeltmeleri
+## <a name="code-fixes"></a>Kod Düzeltmeleri
 
-- **(Gereksiz niteleyicileri kaldırma) adları Basitleştir**
+- **Adları basitleştirme (gereksiz niteleyicileri Kaldır)**
 
-   Bu onay kutusu seçili değilse, tam olarak nitelenmiş adlar nitelikleri gerektiği gibi sık kullanılan bir isim uzayı üyesi olmadığınız zamanlarda basitleştirilmiştir.
+  Bu onay kutusu işaretliyse, nitelikler gerekli olmadığında (sık kullanılan ad alanının bir üyesi gibi) tam nitelikli adlar basitleştirilir.
 
-- **Her zaman bir yerde açık deyimler en üst düzeyinde**
+- **Açık deyimleri her zaman en üst düzeyde yerleştir**
 
-   Bu onay kutusu seçili ve açık bir deyim kod yazın, üst düzeyde koyulur.
+  Bu onay kutusu işaretliyse ve koda bir `open` ifade yazarsanız, en üst düzeye konur.
 
-- **Kullanılmayan açık deyimler Kaldır**
+- **Kullanılmayan açık deyimleri kaldır**
 
-   Bu onay kutusu seçili ise, geçerli dosyadaki kullanılmayan açık deyimler kaldırılır.
+  Bu onay kutusu işaretliyse, belgeler kullanılmamış `open` deyimler için analiz edilir ve tüm kullanılmayan `open` deyimleri kaldırma eylemi içeren hızlı bir [eylem](../quick-actions.md) ampul görüntülenir.
 
-- **Kullanılmayan değerleri için düzeltmeler önerir ve analiz edin**
+- **Kullanılmayan değerler için düzeltmeleri çözümle ve önerme**
 
-   Bu onay kutusu seçili ise, araç, kodda kullanılmayan bir değer tanır. Kullanılmayan değerin üzerine gelin, ardından değeri kullanma biçimlerinden önerir.
+  Bu onay kutusu işaretliyse araç, kodda kullanılmayan bir değeri tanır. Daha sonra, kullanılmayan değerin üzerine geldiğinizde, bu değeri kullanabilmeniz için gereken yolları önerir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

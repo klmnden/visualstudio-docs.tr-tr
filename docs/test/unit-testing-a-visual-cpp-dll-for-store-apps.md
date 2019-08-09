@@ -7,34 +7,34 @@ manager: jillfra
 ms.workload:
 - uwp
 author: mikeblome
-ms.openlocfilehash: 723e61f60550230774eb909dfce44d5f91ae7a64
-ms.sourcegitcommit: ab06cde69d862440b4277bcd9bf02e7b50593a1b
+ms.openlocfilehash: 6e0599445ff07227f5075a1a10a8dfdfe50e88f0
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67132188"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68925795"
 ---
 # <a name="how-to-test-a-visual-c-dll"></a>Bir Visual C++ DLL'ye test etme
 
 Bu konuda, C++ için birim testleri Microsoft Test Çerçevesi ile Evrensel Windows Platformu (UWP) uygulamaları için C++ DLL için oluşturma yöntemlerinden biri açıklanmaktadır. RooterLib DLL, belirsiz bellek sınırı teorik, hesaplama bir tahminini verilen bir sayının kare kökünü hesaplayan bir işlevi uygulayarak gösterir. DLL ardından eğlenceli bir kullanıcı gösteren bir UWP uygulamasında eklenebilir matematik ile yapılabilir şeyler.
 
- Bu konuda birim testi geliştirmede ilk adım olarak kullanma işlemini gösterir. Bu yaklaşım önce test ettiğiniz sistemde belirli bir davranış doğrulayan bir test yöntemi yazın ve ardından testin başarılı olması kod yazacaksınız. Aşağıdaki yordamlar sırasına göre değişiklikler yaparak, bu strateji ilk Yazımdan sonra birim testleri yazma ve test etmek istediğiniz kod tersine çevirebilirsiniz.
+Bu konuda birim testi geliştirmede ilk adım olarak kullanma işlemini gösterir. Bu yaklaşım önce test ettiğiniz sistemde belirli bir davranış doğrulayan bir test yöntemi yazın ve ardından testin başarılı olması kod yazacaksınız. Aşağıdaki yordamlar sırasına göre değişiklikler yaparak, bu strateji ilk Yazımdan sonra birim testleri yazma ve test etmek istediğiniz kod tersine çevirebilirsiniz.
 
- Bu konuda ayrıca tek bir Visual Studio çözümü de ayrı projeler için birim testleri ve test etmek istediğiniz DLL oluşturur. Doğrudan DLL projede birim testleri de içerebilir veya ayrı çözümler için birim testleri oluşturabilirsiniz ve. DLL. Bkz: [mevcut C++ uygulamalarına birim testleri ekleme](../test/how-to-use-microsoft-test-framework-for-cpp.md) kullanmak için hangi yapı ilişkin ipuçları için.
+Bu konuda ayrıca tek bir Visual Studio çözümü de ayrı projeler için birim testleri ve test etmek istediğiniz DLL oluşturur. Doğrudan DLL projede birim testleri de içerebilir veya ayrı çözümler için birim testleri oluşturabilirsiniz ve. DLL. Bkz: [mevcut C++ uygulamalarına birim testleri ekleme](../test/how-to-use-microsoft-test-framework-for-cpp.md) kullanmak için hangi yapı ilişkin ipuçları için.
 
 ## <a name="Create_the_solution_and_the_unit_test_project"></a> Çözüm ve birim testi projesi oluşturma
 
 ::: moniker range="vs-2019"
 
-Yeni bir test projesi oluşturarak başlayın. Üzerinde **dosya** menüsünde seçin **yeni** > **proje**. İçinde **yeni bir proje oluşturma** iletişim kutusunda, "test" yazın arama kutusuna ve ardından **dil** için C++. Ardından **birim testi uygulaması (Evrensel Windows)** proje şablonları listesinden.
+Yeni bir test projesi oluşturarak başlayın. Üzerinde **dosya** menüsünde seçin **yeni** > **proje**. **Yeni proje oluştur** iletişim kutusunda, arama kutusuna "test" yazın ve sonra **dili** olarak C++ayarlayın. Ardından **birim testi uygulaması (Evrensel Windows)** proje şablonları listesinden.
 
-   ![Yeni bir UWP test projesi oluşturun](media/vs-2019/cpp-new-uwp-test-project-vs2019.png)
+   ![Yeni bir UWP test projesi oluştur](media/vs-2019/cpp-new-uwp-test-project-vs2019.png)
 
 ::: moniker-end
 
 ::: moniker range="vs-2017"
 
-Yeni bir test projesi oluşturarak başlayın. Üzerinde **dosya** menüsünde seçin **yeni** > **proje**. İçinde **yeni proje** iletişim kutusunda Genişlet **yüklü** > **Visual C++**  ve **Windows Evrensel**. Ardından **birim testi uygulaması (Evrensel Windows)** proje şablonları listesinden.
+Yeni bir test projesi oluşturarak başlayın. Üzerinde **dosya** menüsünde seçin **yeni** > **proje**. **Yeni proje** iletişim kutusunda, **yüklü** >  **C++ görsel** ' i genişletin ve **Windows Evrensel**' i seçin. Ardından **birim testi uygulaması (Evrensel Windows)** proje şablonları listesinden.
 
 ::: moniker-end
 
@@ -81,14 +81,14 @@ Yeni bir test projesi oluşturarak başlayın. Üzerinde **dosya** menüsünde s
 
 ::: moniker range="vs-2019"
 
-İçinde **Çözüm Gezgini**, çözüm adı seçin. Kısayol menüsünden **Ekle**, ardından **yeni proje**. İçinde **yeni bir proje ekleyin** iletişim kutusunda, kümesi **dil** için C++ ve arama kutusuna "DLL" yazın. Sonuç listesinden seçin **birim testi uygulaması (Evrensel Windows - C++/CX)** .
+İçinde **Çözüm Gezgini**, çözüm adı seçin. Kısayol menüsünde, **Ekle**ve ardından **Yeni proje**' yi seçin. **Yeni Proje Ekle** Iletişim kutusunda **dil** ' i ayarlayın C++ ve arama kutusuna "dll" yazın. Sonuçlar listesinden **birim test uygulaması (Evrensel Windows C++-/CX)** öğesini seçin.
 
 ![RooterLib projesi oluşturma](../test/media/vs-2019/cpp-new-uwp-test-project-vs2019.png)
 
 ::: moniker-end
 
 ::: moniker range="vs-2017"
-İçinde **Çözüm Gezgini**, çözüm adı seçin. Kısayol menüsünden **Ekle**, ardından **yeni proje**.
+İçinde **Çözüm Gezgini**, çözüm adı seçin. Kısayol menüsünde, **Ekle**ve ardından **Yeni proje**' yi seçin.
 
 ![RooterLib projesi oluşturma](../test/media/ute_cpp_windows_rooterlib_create.png)
 
@@ -152,9 +152,9 @@ Yeni bir test projesi oluşturarak başlayın. Üzerinde **dosya** menüsünde s
 
 1. RooterLib RooterLibTests projeye ekleyin.
 
-   1. İçinde **Çözüm Gezgini**, seçin **RooterLibTests** proje ve ardından **Ekle** > **başvuru** kısayolunu menüsü.
+   1. **Çözüm Gezgini**, **RooterLibTests** projesini ve ardından kısayol menüsünde**başvuru** **Ekle** > ' yi seçin.
 
-   1. İçinde **Başvuru Ekle** iletişim kutusunda **projeleri**. Ardından **RouterLib** öğesi.
+   1. **Başvuru Ekle** Iletişim kutusunda **Projeler**' i seçin. Ardından **RouterLib** öğesi.
 
 2. RooterLib üstbilgi dosyasına eklenecek *unittest1.cpp*.
 

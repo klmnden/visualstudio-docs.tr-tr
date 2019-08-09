@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 623416e557759ace1ad6403ef8ef977df01da39e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d83da42a029d746899bfaccf5d62f8856a040611
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62545491"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68921112"
 ---
 # <a name="ca2114-method-security-should-be-a-superset-of-type"></a>CA2114: Metot güvenliği türün bir üst kümesi olmalıdır
 
@@ -31,28 +31,28 @@ ms.locfileid: "62545491"
 |Yeni Değişiklik|Yeni|
 
 ## <a name="cause"></a>Sebep
- Bildirim temelli güvenlik türünde yöntemlerinden birine sahip aynı güvenlik eylemi için bildirime dayalı güvenlik ve güvenlik eylem [bağlantı talepleri](/dotnet/framework/misc/link-demands), ve türüne göre kullanıma izinleri izinler kümesini değildir. yöntem tarafından iade.
+Bir tür bildirime dayalı güvenliğe sahiptir ve yöntemlerinden biri aynı güvenlik eylemi için bildirim güvenliğine sahiptir ve güvenlik eylemi [bağlantı taleplerine](/dotnet/framework/misc/link-demands)değildir ve tür tarafından denetlenen izinler, yöntemi tarafından denetlenen izinlerin bir alt kümesi değildir.
 
 ## <a name="rule-description"></a>Kural açıklaması
- Hem yöntem düzeyine hem de tür düzeyine bir bildirim temelli güvenlik aynı eylem için bir yöntem olmamalıdır. İki denetimleri birleştirilmez; yöntem düzeyi isteğe uygulanır. Örneğin, bir tür izin talep ederse `X`, ve yöntemlerinden birini talepleri izni `Y`, kod izni yok `X` metodunu yürütmek için.
+Bir yöntemde aynı eylem için hem Yöntem düzeyinde hem de tür düzeyinde bildirime sahip bir güvenlik bulunmalıdır. İki denetim birleştirilmez; yalnızca Yöntem düzeyi talep uygulanır. Örneğin, bir tür taleplerine izin `X`varsa ve metotlarından biri izin `Y`isterse, kodun yöntemi yürütme izni `X` olması gerekmez.
 
-## <a name="how-to-fix-violations"></a>İhlaller nasıl düzeltilir?
- Her iki eylem gerekli olduğundan emin olmak için kodunuzu gözden geçirin. Her iki eylem gerekiyorsa, yöntem düzeyi eylem tür düzeyindeki güvenlik içerdiğinden emin olun. Örneğin türüne izin talep ederse `X`, ve onun yöntemi de izin talep gerekir `Y`, yöntemi açıkça talep `X` ve `Y`.
+## <a name="how-to-fix-violations"></a>İhlalleri çözme
+Her iki eylemin de gerekli olduğundan emin olmak için kodunuzu gözden geçirin. Her iki eylem de gerekliyse, yöntem düzeyi eyleminin tür düzeyinde belirtilen güvenliği içerdiğinden emin olun. Örneğin, `X`türü için izin talebinde bulunursa ve yöntemi de isteğe bağlı izin `Y`içeriyorsa, yöntemi açık bir şekilde talep `X` etmelidir ve `Y`olmalıdır.
 
-## <a name="when-to-suppress-warnings"></a>Uyarılar bastırıldığında
- Yöntem türü tarafından belirtilen güvenliği gerektirmiyorsa, bu kuraldan bir uyarıyı bastırmak güvenlidir. Ancak, sıradan bir senaryo değildir ve dikkatli bir tasarım incelemesi için bir gereksinimi olduğunu gösteriyor olabilir.
+## <a name="when-to-suppress-warnings"></a>Uyarıların ne zaman bastırılamıyor
+Yöntemin tür tarafından belirtilen güvenliği gerektirmiyorsa, bu kuraldan bir uyarıyı gizlemek güvenlidir. Ancak, bu sıradan bir senaryo değildir ve dikkatli bir tasarım incelemesi gereksinimini gösterebilir.
 
 ## <a name="example-1"></a>Örnek 1
 
-Aşağıdaki örnek, bu kuralın ihlali tehlikeleri göstermek için ortam izinleri kullanır. Bu örnekte, uygulama kodu türü tarafından gerekli izni reddetme önce güvenli türün bir örneğini oluşturur. Tehdit gerçek dünya senaryosunda, uygulama nesnesinin bir örneği elde etmek için başka bir yolu olması gerekir.
+Aşağıdaki örnek, bu kuralı ihlal eden tehlikeleri göstermek için ortam izinlerini kullanır. Bu örnekte, uygulama kodu tür için gereken izni reddetmeden önce güvenli türde bir örnek oluşturur. Gerçek hayatta bir tehdit senaryosunda, uygulamanın bir nesne örneği elde etmek için başka bir yol gerekir.
 
-Aşağıdaki örnekte, kitaplık taleplerini yazma izni bir tür için ve bir yöntem için okuma izni.
+Aşağıdaki örnekte, kitaplık bir yöntem için yazma izni talep ediyor ve bir yöntem için okuma iznine sahip.
 
 [!code-csharp[FxCop.Security.MethodLevelSecurity#1](../code-quality/codesnippet/CSharp/ca2114-method-security-should-be-a-superset-of-type_1.cs)]
 
 ## <a name="example-2"></a>Örnek 2
 
-Aşağıdaki uygulama kodu, güvenlik gereksinimleri karşılamıyor olsa bile yöntemi çağırarak Kitaplığı'nın güvenlik açığı gösterir.
+Aşağıdaki uygulama kodu, tür düzeyi güvenlik gereksinimini karşılamadığında bile yöntemi çağırarak kitaplığın güvenlik açığını gösterir.
 
 [!code-csharp[FxCop.Security.TestMethodLevelSecurity#1](../code-quality/codesnippet/CSharp/ca2114-method-security-should-be-a-superset-of-type_2.cs)]
 

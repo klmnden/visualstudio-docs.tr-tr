@@ -1,32 +1,32 @@
 ---
-title: Bir önizleme yükleyin veya Mac için Visual Studio için güncelleştirme
-description: Önizleme sürümleri, önizlemeleri Mac için Visual Studio 2019'dahil olmak üzere Mac için Visual Studio yükseltildikten ve bunlara erişmek için yönergeleri.
+title: Önizleme veya güncelleştirme yükler
+description: Mac için Visual Studio 2019 önizlemeleri dahil Mac için Visual Studio güncelleştirme ve önizleme yayınlarına erişme yönergeleri.
 author: asb3993
 ms.author: amburns
 ms.date: 04/02/2019
 ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 0E1EF257-9DE4-4653-9DF4-805CE007A1A1
-ms.openlocfilehash: 73852795a693d3003912332d946a4d850e39a018
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
+ms.openlocfilehash: 3de3cd96b74f6f551f9dd2b1c3422710c93cc3c6
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67691452"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68869707"
 ---
-# <a name="install-a-preview-or-update-for-visual-studio-for-mac"></a>Bir önizleme yükleyin veya Mac için Visual Studio için güncelleştirme
+# <a name="install-a-preview-or-update-for-visual-studio-for-mac"></a>Mac için Visual Studio için önizleme veya güncelleştirme yükler
 
-Mac için Visual Studio'nun yeni bir sürüm resmi olarak yayımlanmadan önce önizleme olarak kullanılabilir. Önizleme sürümü, yeni özellikleri denemek ve tam olarak bir üründe dahil önce en son hata düzeltmeleri almak için bir fırsat sağlar.
+Mac için Visual Studio yeni bir sürümü resmi olarak yayınlanmadan önce, önizleme olarak kullanılabilir. Önizleme sürümü, yeni özellikleri denemeye ve en son hata düzeltmelerini ürüne tamamen dahil etmeden önce elde etmenizi sağlar.
 
-Mac için Visual Studio Preview sürümlerinde, bir güncelleştirme olarak yerine ayrı bir indirme aracılığıyla dağıtılır. Mac için Visual Studio sahip iki güncelleştirici kanal açıklandığı [güncelleştirme](update.md) makale: **Kararlı** ve **Önizleme**.
+Mac için Visual Studio için Önizleme sürümleri, ayrı bir indirme yerine bir güncelleştirme olarak dağıtılır. Mac için Visual Studio, [güncelleştirme](update.md) makalesinde açıklandığı gibi iki Güncelleştirici kanala sahiptir: **Kararlı** ve **Önizleme**.
 
-Çoğu Önizleme sürümleri hem de kullanılabilir olacak **Önizleme** kanal, ancak her zaman denetleyin [Preview sürüm notları](/visualstudio/releasenotes/vs2019-mac-preview-relnotes) en doğru bilgi.
+Çoğu önizleme sürümü, her iki **Önizleme** kanalı aracılığıyla da kullanılabilir, ancak en doğru bilgiler için her zaman [Önizleme sürüm notlarını](/visualstudio/releasenotes/vs2019-mac-preview-relnotes) kontrol eder.
 
-Mac için Visual Studio'nun Önizleme yüklemek için aşağıdaki adımları kullanın:
+Mac için Visual Studio önizlemesi 'ni yüklemek için aşağıdaki adımları kullanın:
 
-1. Git **Visual Studio > Güncelleştirmeleri denetle**.
-2. Güncelleştirme kanalı birleşik giriş kutusunda seçin **Önizleme**.
-3. Seçin **anahtar kanal** seçili kanala geçin ve yeni bir güncelleştirme yüklemeyi Başlat düğmesi.
-4. Seçin **yeniden başlat ve güncelleştirmeleri yükle** güncelleştirmeleri yüklemeye başlamak için düğme.
+1. **Güncelleştirmeleri denetlemek > Visual Studio**'ya gidin.
+2. Kanalı Güncelleştir Birleşik giriş kutusunda **Önizleme**' yi seçin.
+3. Seçili kanala geçiş yapmak ve yeni güncelleştirmeleri indirmeye başlamak için **Kanal değiştir** düğmesini seçin.
+4. Güncelleştirmeleri yüklemeye başlamak için **Yeniden Başlat ve güncelleştirmeleri yükleme** düğmesini seçin.
 
-Mac için Visual Studio güncelleştirme hakkında daha fazla bilgi için bkz. [güncelleştirme](update.md) makalesi.
+Mac için Visual Studio güncelleştirme hakkında daha fazla bilgi için [güncelleştirme](update.md) makalesine bakın.

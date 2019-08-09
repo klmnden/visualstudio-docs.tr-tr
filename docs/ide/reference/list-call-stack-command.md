@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 55272f5d30602d03d0f3bb7e2ac16e9a709cafdf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a122b9fbc97816b114ba2ff6274756f9e2093eef
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62970063"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68919159"
 ---
 # <a name="list-call-stack-command"></a>Çağrı Yığınını Listele Komutu
 Geçerli çağrı yığınını görüntüler.
@@ -34,71 +34,73 @@ Debug.ListCallStack [/Count:number] [/ShowTypes:yes|no]
 ```
 
 ## <a name="arguments"></a>Arguments
- `index` İsteğe bağlı. Geçerli yığın çerçevesini ayarlar ve hiçbir çıktı görüntüler.
+
+`index`\
+İsteğe bağlı. Geçerli yığın çerçevesini ayarlar ve çıkış görüntülemez.
 
 ## <a name="switches"></a>Anahtarlar
- Her anahtar, formun tamamını veya bir kısa biçim kullanılarak çağrılabilir.
+Her anahtar, tamamı ya da kısa bir form kullanılarak çağrılabilir.
 
- / Sayısı:`number` [veya] / c:`number`
+/Count:`number` [veya]/c:`number`
 
- İsteğe bağlı. Çağrı yığınlarını görüntülemek için en fazla sayısı. Varsayılan değer büyük/küçük harf sınırsızdır.
+İsteğe bağlı. Görüntülenecek en fazla çağrı yığını sayısı. Varsayılan değer sınırsızdır.
 
- / ShowTypes:`yes` &#124; `no` [veya] / t:`yes`&#124;`no`
+/Showtypes:`yes` &#124; `no` [veya]/t:`yes`&#124;`no`
 
- İsteğe bağlı. Parametre türleri görüntülenip görüntülenmeyeceğini belirtir. Varsayılan değer `yes`.
+İsteğe bağlı. Parametre türlerinin görüntülenip görüntülenmeyeceğini belirtir. Varsayılan değer `yes`.
 
- / ShowNames:`yes` &#124; `no` [veya] / n:`yes`&#124;`no`
+/Shownames:`yes` &#124; `no` [veya]/n:`yes`&#124;`no`
 
- İsteğe bağlı. Parametre adları görüntülenip görüntülenmeyeceğini belirtir. Varsayılan değer `yes`.
+İsteğe bağlı. Parametre adlarının görüntülenip görüntülenmeyeceğini belirtir. Varsayılan değer `yes`.
 
- / ShowValues:`yes` &#124; `no` [veya] / v:`yes`&#124;`no`
+/Showvalues:`yes` &#124; `no` [veya]/v:`yes`&#124;`no`
 
- İsteğe bağlı. Parametre değerlerini görüntülenip görüntülenmeyeceğini belirtir. Varsayılan değer `yes`.
+İsteğe bağlı. Parametre değerlerinin görüntülenip görüntülenmeyeceğini belirtir. Varsayılan değer `yes`.
 
- / ShowModule:`yes` &#124; `no` [veya] / m:`yes`&#124;`no`
+/Showmodule:`yes` &#124; `no` [veya]/m:`yes`&#124;`no`
 
- İsteğe bağlı. Modül adı görüntülenip görüntülenmeyeceğini belirtir. Varsayılan değer `yes`.
+İsteğe bağlı. Modül adının görüntülenip görüntülenmeyeceğini belirtir. Varsayılan değer `yes`.
 
- / ShowLineOffset:`yes` &#124; `no` [veya] / #:`yes`&#124;`no`
+/Showlinekayması:`yes` &#124; `no` [veya]/#:`yes`&#124;`no`
 
- İsteğe bağlı. Satır sapması görüntülenip görüntülenmeyeceğini belirtir. Varsayılan değer `no`.
+İsteğe bağlı. Çizgi kaydırın görüntülenip görüntülenmeyeceğini belirtir. Varsayılan değer `no`.
 
- / ShowByteOffset:`yes` &#124; `no` [veya] / b:`yes`&#124;`no`
+/Showbytekayması:`yes` &#124; `no` [veya]/b:`yes`&#124;`no`
 
- İsteğe bağlı. Bayt uzaklığı görüntülenip görüntülenmeyeceğini belirtir. Varsayılan değer `no`.
+İsteğe bağlı. Bayt kaydırının görüntülenip görüntülenmeyeceğini belirtir. Varsayılan değer `no`.
 
- / ShowLanguage:`yes` &#124; `no` [veya] / l:`yes`&#124;`no`
+/Showlanguage:`yes` &#124; `no` [veya]/l:`yes`&#124;`no`
 
- İsteğe bağlı. Dil görüntülenip görüntülenmeyeceğini belirtir. Varsayılan değer `no`.
+İsteğe bağlı. Dilin görüntülenip görüntülenmeyeceğini belirtir. Varsayılan değer `no`.
 
- / IncludeCallsAcrossThreads:`yes` &#124; `no` [veya] / i:`yes`&#124;`no`
+/Includecallsacrossthreads:`yes` &#124; `no` [veya]/i:`yes`&#124;`no`
 
- İsteğe bağlı. Çağrıları için veya diğer iş parçacıklarından eklenip eklenmeyeceğini belirtir. Varsayılan değer `no`.
+İsteğe bağlı. Diğer iş parçacıklarından veya çağrıların eklenip eklenmeyeceğini belirtir. Varsayılan değer `no`.
 
- /ShowExternalCode:`yes`&#124;`no`
+/ShowExternalCode:`yes`&#124;`no`
 
- İsteğe bağlı. Çağrı yığını için yalnızca kendi kodum görüntülenip görüntülenmeyeceğini belirtir. Tüm kullanıcı olmayan kod, yalnızca kendi kodum kapalı olduğunda görüntülenir. Yalnızca kendi kodum etkin olduğunda, kullanıcı dışı kod olarak görüntülenen `[external]` çağrı yığını çıktı.
+İsteğe bağlı. Callstack için Yalnızca kendi kodum gösterilip gösterilmeyeceğini belirtir. Yalnızca kendi kodum kapalıyken, tüm Kullanıcı dışı kod görüntülenir. Yalnızca kendi kodum açık olduğunda, çağrı yığını çıkışında Kullanıcı olmayan kod görüntülenir `[external]` .
 
- İş parçacığı:`n`
+Zincirinin`n`
 
- İsteğe bağlı. İş parçacığı için çağrı yığınını görüntüler `n`. İş parçacığı belirtilmemişse, geçerli iş parçacığı için çağrı yığınını görüntüler.
+İsteğe bağlı. İş parçacığı `n`için çağrı yığını 'i görüntüler. Hiçbir iş parçacığı belirtilmemişse, geçerli iş parçacığı için çağrı yığınını görüntüler.
 
 ## <a name="remarks"></a>Açıklamalar
- Bu komutun gelecekteki çağrılarına bağımsız değişkenler veya anahtarlarının yapılan değişiklikler uygulanır. Debug.ListCallStackby kendisini dağıttığınız bütün çağrı yığını görüntülenir. Örneğin bir dizin belirtmeniz durumunda
+Bağımsız değişkenlerde veya anahtarlarda yapılan değişiklikler, bu komutun gelecekteki etkinleştirmeleri için geçerlidir. Kendi kendine hata ayıkla. Listcallstackbir sorun varsa, tüm çağrı yığını görüntülenir. Bir dizin belirtirseniz, örneğin
 
 ```cmd
 Debug.ListCallStack 2
 ```
 
- Geçerli yığın çerçevesi (Bu durumda, ikinci çerçevesi) bu çerçevesine ayarlayın daha sonra.
+sonra geçerli yığın çerçevesi bu çerçeveye ayarlanır (Bu örnekte ikinci kare).
 
- Ayrıca, önceden tanımlanmış diğer adının, bu komutu yazabilirsiniz kb. Örneğin, girin
+Bu komutu, önceden tanımlanmış bir diğer ad olan KB kullanarak da yazabilirsiniz. Örneğin,
 
 ```cmd
 kb 2
 ```
 
- Geçerli yığın çerçevesi ikinci çerçeveye ayarlamak için.
+geçerli yığın çerçevesini ikinci çerçeveye ayarlamak için.
 
 ## <a name="example"></a>Örnek
 

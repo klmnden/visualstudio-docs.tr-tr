@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f692218cd051338a6bd4e83a07d985bb52f907e6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 864918b7ce394e9f096c6fa9dea9389957983177
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62546241"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68921772"
 ---
 # <a name="ca1709-identifiers-should-be-cased-correctly"></a>CA1709: Tanımlayıcılar doğru büyük küçük harfe sahip olmalıdır
 
@@ -27,38 +27,43 @@ ms.locfileid: "62546241"
 |-|-|
 |TypeName|IdentifiersShouldBeCasedCorrectly|
 |CheckId|CA1709|
-|Kategori|Microsoft.Naming|
-|Yeni Değişiklik|-Derlemeleri, ad alanları, türler, üyeler ve parametreler oluştuğunda kesiliyor.<br /><br /> Bölünemez - genel tür parametrelerinde tetiklendiğinde.|
+|Kategori|Microsoft. Naming|
+|Yeni Değişiklik|Parçalara ayırma-derlemeler, ad alanları, türler, Üyeler ve parametreler üzerinde tetiklenir.<br /><br /> Genel tür parametrelerinde harekete geçirildiğinde, bölünmez.|
 
 ## <a name="cause"></a>Sebep
- Tanımlayıcı adı sözcüklerden değil.
 
- \- veya -
+Tanımlayıcının adı doğru değil.
 
- İki harfli kısaltması tanımlayıcı adını içeren ve ikinci harf, küçük ise.
+\- veya -
 
- \- veya -
+Bir tanımlayıcının adı iki harfli bir kısaltma içerir ve ikinci harf küçük harftir.
 
- Bir tanımlayıcının adı bir kısaltma üç veya daha fazla büyük harf içeriyor.
+\- veya -
+
+Bir tanımlayıcının adı, üç veya daha fazla büyük harf kısaltması içerir.
 
 ## <a name="rule-description"></a>Kural açıklaması
- Adlandırma kuralları, ortak dil çalışma zamanını hedefleyen kitaplıkları için genel bir bakış sağlar. Bu tutarlılık, yeni yazılım kitaplıkları için gerekli ve kitaplık geliştirme yönetilen kodda uzmanlığına sahip olan kişi tarafından geliştirilmiştir müşterilerinizin size olan güvenini artırır öğrenme eğrisini azaltır.
 
- Kural gereği, parametre adları camel casing ve ad alanı, tür kullanın, ve üye adları Pascal casing. Ortası büyük küçük harfleri adı ilk harfini, küçük harf ve adında kalan bir kelimelerin ilk harfi büyük harf olan. Ortası büyük küçük harfleri adları örnekleri `packetSniffer`, `ioFile`, ve `fatalErrorCode`. Pascal büyük küçük harfleri adı ilk harfi büyük harf olan ve adında kalan bir kelimelerin ilk harfi büyük harf olan. Adları Pascal büyük küçük harfleri örnekler `PacketSniffer`, `IOFile`, ve `FatalErrorCode`.
+Adlandırma kuralları, ortak dil çalışma zamanını hedefleyen kitaplıklar için ortak bir görünüm sağlar. Bu tutarlılık, yeni yazılım kitaplıkları için gerekli olan öğrenme eğrisini azaltır ve bu, kitaplığın yönetilen kod geliştirme konusunda uzmanlığa sahip olan birisi tarafından geliştirildiği müşterinin güvenini artırır.
 
- Bu kural adı büyük/küçük harf üzerinde dayalı sözcükler ayıran ve herhangi iki harfli bir sözcük "İçinde" gibi yaygın iki harfli sözcükleri veya "My" bir listesiyle denetler. Bir eşleşme bulunmazsa, word, bir kısaltma olarak kabul edilir. Ayrıca, bu kural adı bir satır dört büyük harf ya da üç büyük harflerle adın sonuna bir satır içerdiğinde bir kısaltma bulduğu varsayar.
+Kural gereği, parametre adları ortası büyük harfleri, ad alanı, tür ve üye adları, Pascal büyük harfleri kullanır. Bir Camel adı, ilk harf küçük ve ad içindeki kalan sözcüklerin ilk harfi büyük olur. Camel adı örnekleri, `packetSniffer` `ioFile`ve `fatalErrorCode`' dir. Bir Pascal-Kased adında, ilk harf büyük harfli ve ad içindeki kalan sözcüklerin ilk harfi büyük harfle yazılır. Pascal özellikli adların örnekleri, `PacketSniffer` `IOFile`ve `FatalErrorCode`' dir.
 
- Kural gereği, tüm büyük harfleri iki harfli kısaltmalar kullanın ve üç veya daha fazla karakter kısaltmalar kullanın Pascal büyük/küçük harf. Aşağıdaki örnekler, bu adlandırma kuralını kullanır: 'DB', 'CR', 'Cpa' ve 'Ecma'. Aşağıdaki örnekler, kuralı ihlal ediyor: 'GÇ', 'XML' ve 'DoD' olmayan parametre adları, 'xp' ve 'cpl'.
+Bu kural büyük küçük harfe göre adı sözcüklere böler ve iki harfli sözcükleri, "ın" veya "My" gibi yaygın iki harfli sözcüklerin bir listesine karşı denetler. Bir eşleşme bulunmazsa sözcüğün bir kısaltma olduğu varsayılır. Buna ek olarak, bu kural bir satırda dört büyük harf veya adın sonundaki satırdaki üç büyük harften oluşan bir kısaltma bulduğu varsayılır.
 
- Bu kural ihlalini neden özel harfleri 'ID'. 'Id' bir kısaltma değildir, ancak 'kimlik' kısaltmasıdır.
+Kurala göre, iki harfli kısaltmalar tüm büyük harfleri, üç veya daha fazla karakterin kısaltmalardan birini kullanır. Aşağıdaki örnekler bu adlandırma kuralını kullanır: ' DB ', ' CR ', ' CPA ' ve ' ECMA '. Aşağıdaki örnekler, kuralını ihlal ediyor: ' IO ', ' XML ' ve ' DoD ' ve parametre olmayan adlar için, ' XP ' ve ' cpl '.
 
-## <a name="how-to-fix-violations"></a>İhlaller nasıl düzeltilir?
- Böylece bu sözcüklerden adını değiştirin.
+' ID ', bu kuralın ihlaline neden olmak için özeldir. ' ID ' bir kısaltma değil, ancak ' Identification ' için bir kısaltmadır.
 
-## <a name="when-to-suppress-warnings"></a>Uyarılar bastırıldığında
- Adlandırma kurallarınıza varsa veya örneğin, bir şirket veya bir teknoloji adı uygun bir ad tanımlayıcısı temsil ediyorsa Bu uyarının gösterilmemesi güvenlidir.
+## <a name="how-to-fix-violations"></a>İhlalleri çözme
 
- Belirli koşulları kısaltmalar ve kısaltmalar de ekleyebilirsiniz, için Kod Analizi özel sözlük. Bu kural ihlalleri özel sözlükte belirtilen koşulları neden olmaz. Daha fazla bilgi için [nasıl yapılır: Kod çözümleme dizinini özelleştirme](../code-quality/how-to-customize-the-code-analysis-dictionary.md)
+Adı doğru bir şekilde olacak şekilde değiştirin.
 
-## <a name="related-rules"></a>İlgili kuralları
- [CA1708: Tanımlayıcılar örnekten daha fazla farklı olmalıdır](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
+## <a name="when-to-suppress-warnings"></a>Uyarıların ne zaman bastırılamıyor
+
+Kendi adlandırma kurallarınız varsa veya tanımlayıcı uygun bir adı (örneğin, bir şirketin veya bir teknolojinin adı) temsil ediyorsa, bu uyarıyı bastırmak güvenlidir.
+
+Ayrıca, kod analizi özel sözlüğüne belirli hüküm, kısaltmalar ve kısaltmalar ekleyebilirsiniz. Özel sözlükte belirtilen terimler bu kuralın ihlallerine neden olmaz. Daha fazla bilgi için [nasıl yapılır: Kod Analizi sözlüğünü](../code-quality/how-to-customize-the-code-analysis-dictionary.md)özelleştirin.
+
+## <a name="related-rules"></a>İlgili kurallar
+
+[CA1708 Tanımlayıcılar, büyük/küçük harf bakımından farklı olmalıdır](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)

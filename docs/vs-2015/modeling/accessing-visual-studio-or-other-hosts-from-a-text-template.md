@@ -10,12 +10,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d26c168780051d3644d04d209001bf0cc9a551cb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 053e8b09fd2b52683238f1ffe008e5e7d38b3962
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68179077"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68872015"
 ---
 # <a name="accessing-visual-studio-or-other-hosts-from-a-text-template"></a>Metin Şablonundan Visual Studio'ya veya diğer Konaklara Erişme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,8 @@ Metin şablonunda, yöntemleri ve şablon gibi yürüten bir ana bilgisayar tara
  Bu değil önceden işlenmiş metin şablonlarını normal metin şablonları için geçerlidir.
 
 ## <a name="obtaining-access-to-the-host"></a>Konağa erişim elde etme
- Ayarlama `hostspecific="true"` içinde `template` yönergesi. Bu kullanmanıza olanak tanır `this.Host`, türüne sahip <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>. Bu tür, örneğin, dosya adlarını çözümleme ve hataları günlüğe kaydetmek için kullanabileceğiniz üyeleri var.
+
+Ayarlama `hostspecific="true"` içinde `template` yönergesi. Bu, [ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110))türünde `this.Host`bir kullanmanıza olanak sağlar. Bu tür, örneğin, dosya adlarını çözümleme ve hataları günlüğe kaydetmek için kullanabileceğiniz üyeleri var.
 
 ### <a name="resolving-file-names"></a>Dosya adları çözme
  Metin şablonu göreli bir dosyanın tam yolunu bulmak için bunu kullanın. Host.ResolvePath().

@@ -7,24 +7,24 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d5116c2a979a45414046f0058d85ccbf0d179e24
-ms.sourcegitcommit: 9753c7544cec852ca5efd0834e0956d9e53a5734
+ms.openlocfilehash: f351ffefae818beb1f51eaa41fbeea1eab81de16
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67046391"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68919470"
 ---
 # <a name="productivity-tips-for-visual-studio"></a>Visual Studio için üretkenlik ipuçları
 
-Bu makalede ele alınmaktadır ipuçları yazın, kodlarda gezinin ve kodunuzdaki hataları ayıklamanıza yardımcı olan özellikler Visual Studio için daha hızlı ve verimli bir şekilde.
+Bu makalelerde, kodunuzu daha hızlı ve verimli bir şekilde yazmanıza, gezinmenize ve hata ayıklamanıza yardımcı olan Visual Studio özelliklerine yönelik ipuçları ele alınmaktadır.
 
-Kullanışlı klavye kısayolları hakkında daha fazla bilgi için bkz: [üretkenlik kısayolları](../ide/productivity-shortcuts.md). Komut kısayolların tam listesi için bkz. [varsayılan klavye kısayolları](../ide/default-keyboard-shortcuts-in-visual-studio.md).
+Faydalı klavye kısayolları hakkında daha fazla bilgi için bkz. [üretkenlik kısayolları](../ide/productivity-shortcuts.md). Komut kısayollarının tüm listesi için bkz. [varsayılan klavye kısayolları](../ide/default-keyboard-shortcuts-in-visual-studio.md).
 
 ## <a name="write-code"></a>Kod yazma
 
 Aşağıdaki özellikleri kullanarak kod daha hızlı bir şekilde yazın.
 
-- **Kolaylık komutları**. Visual Studio, daha hızlı düzenleme genel görevleri gerçekleştirmenize yardımcı olmak için çeşitli komutlara içerir. Örneğin, bir komutu kopyalayıp yapıştırın kopyalayın ve imleci yeniden konumlandırmak zorunda kalmadan bir kod satırı kolayca yinelenen seçebilirsiniz. Seçin **Düzenle** > **yinelenen** veya basın **Ctrl**+**E**,**V**. Ayrıca bir kolayca genişletin veya seçerek metin seçimi sözleşme **Düzenle** > **Gelişmiş** > **Seçimi Genişlet** veya **Düzenle** > **Gelişmiş** > **anlaşma seçimi**, veya basarak **Shift** + **Alt** + **=** veya **Shift**+**Alt** +  **-** .
+- **Kolaylık komutları**. Visual Studio, daha hızlı düzenleme genel görevleri gerçekleştirmenize yardımcı olmak için çeşitli komutlara içerir. Örneğin, bir kod satırını kopyalamak zorunda kalmadan kolayca çoğaltmak için bir komut seçebilirsiniz, imleci yeniden konumlandırabilirsiniz ve yapıştırın. Seçin **Düzenle** > **yinelenen** veya basın **Ctrl**+**E**,**V**. Ayrıca > ,**Gelişmiş** **Genişlet seçimini** **Düzenle**' yi veya**Gelişmiş** > sözleşmeyiDüzenle'yiseçerekbirmetinseçiminihızlıcagenişletebilirveyasözleşmeniz > gerekir >  **Seçim**yapın veya **SHIFT**+**alt** + veyaSHIFT+alt**tuşlarına-** basın. **=** +
 
 - **IntelliSense kullanın**. Düzenleyiciye kod girerken, gibi üyeleri listeleme, parametre bilgisi, hızlı bilgi, imza Yardım ve tam sözcük IntelliSense bilgisi görüntülenir. Bu özellikler, metnin benzer öğe eşleştirmesi destekler; Örneğin, listesi üyeleri için sonuçları listelerini sadece girdiğiniz karakterlerle başlayan girdileri olmakla kalmayıp herhangi bir yerde karakter bileşimini içeren girdileri içerir. Daha fazla bilgi için [kullanım IntelliSense](../ide/using-intellisense.md).
 
@@ -46,7 +46,7 @@ Aşağıdaki özellikleri kullanarak kod daha hızlı bir şekilde yazın.
 
 ## <a name="navigate-within-your-code"></a>Kodunuzun içinde gezinme
 
- Kodunuzda belirli konumları daha hızlı hareket ettirin ve bulmak için çeşitli teknikler kullanabilirsiniz.
+Kodunuzda belirli konumları daha hızlı hareket ettirin ve bulmak için çeşitli teknikler kullanabilirsiniz.
 
 - **Kod satırlarını yer işareti**. Belirli bir dosyaya kod satırlarını hızla gitmek için yer işaretlerini kullanabilirsiniz.
 
@@ -66,23 +66,23 @@ Komutlar, dosyalar ve Seçenekler, yalnızca geçerli görevinize ilgili bilgile
 
 - **Yalnızca istediğiniz hataları görüntülemek adresine**. Seçerseniz **filtre** düğmesini **hata listesi** araç çubuğu içinde görünen hata sayısını azaltabilirsiniz **hata listesi** penceresi. Yalnızca hataları, düzenleyicide açık olan dosyalardaki yalnızca geçerli dosyadaki hataları veya yalnızca geçerli projedeki hataları görüntüleyebilirsiniz. İçinde arama yapabilirsiniz **hata listesi** belirli hataları bulmak için penceresi.
 
-- **İletişim kutularını, menü komutlarını, seçeneklerini ve bulma**. Arama kutusunda, bulmaya çalıştığınız öğeler için anahtar sözcüklere veya tümceciklere girin. Girerseniz, örneğin, aşağıdaki seçenekler görünür **yeni proje**:
+- **İletişim kutularını, menü komutlarını, seçenekleri ve daha fazlasını bulun**. Arama kutusuna bulmaya çalıştığınız öğeler için anahtar sözcükler veya ifadeler girin. Örneğin, **Yeni proje**girdiğinizde aşağıdaki seçenekler görüntülenir:
 
    ::: moniker range="vs-2017"
 
    !['Yeni project' hızlı başlatma sonuçları](../ide/media/productivity_quicklaunch.png)
 
-   **Hızlı başlatma** bağlantıları ve projeye yeni bir öğe eklemek için yeni bir proje oluşturmak için görüntüler **projeler ve çözümler** sayfasını **seçenekleri** iletişim kutusu, diğerlerinin yanı sıra. Arama Sonuçları ayrıca proje dosyalarını ve araç pencerelerini de içerebilir.
+   **Hızlı başlatma** , yeni bir proje oluşturmak, projeye yeni bir öğe eklemek ve **Seçenekler** Iletişim kutusundaki **Projeler ve çözümler** sayfasına diğerleri arasında bağlantılar görüntüler. Arama sonuçları, proje dosyalarını ve araç pencerelerini de içerebilir.
 
    ::: moniker-end
 
    ::: moniker range=">=vs-2019"
 
-   !['Yeni Proje' için arama sonuçları](../ide/media/vs-2019/productivity-quick-launch-new-project.png)
+   ![' Yeni proje ' için arama sonuçları](../ide/media/vs-2019/productivity-quick-launch-new-project.png)
 
    ::: moniker-end
 
-   Tuşuna **Ctrl**+**Q** doğrudan arama kutusuna gitmek için.
+   Doğrudan arama kutusuna gitmek için **CTRL**+**Q** tuşlarına basın.
 
 ## <a name="debug-code"></a>Kodda hata ayıklama
 
@@ -114,13 +114,13 @@ Başlat menüsünü ya da görev için sabitlerseniz Geliştirici komut istemi v
 
 ::: moniker range="vs-2017"
 
-1. Windows Explorer'da Gözat *%ProgramData%\Microsoft\Windows\Start Menu\Programs\Visual Studio 2017\Visual Stuido*.
+1. Windows Gezgini 'nde *%ProgramData%\Microsoft\Windows\Start Menu\Programs\Visual Studio 2017 \ Visual Studio Araçları*konumuna gidin.
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-1. Windows Explorer'da Gözat *%ProgramData%\Microsoft\Windows\Start Menu\Programs\Visual Studio 2019\Visual Stuido*.
+1. Windows Gezgini 'nde *%ProgramData%\Microsoft\Windows\Start Menu\Programs\Visual Studio 2019 \ Visual Studio Araçları*konumuna gidin.
 
 ::: moniker-end
 
@@ -128,7 +128,7 @@ Başlat menüsünü ya da görev için sabitlerseniz Geliştirici komut istemi v
 
 ## <a name="manage-files-toolbars-and-windows"></a>Dosyaları araç çubuklarını ve windows yönetme
 
-Herhangi bir anda, birden fazla kod dosyasında çalışma ve uygulama geliştirme gibi birçok araç pencereleri arasında taşınması. Aşağıdaki ipuçlarını kullanarak düzenli tutabilirsiniz:
+Herhangi bir anda, birden fazla kod dosyasında çalışma ve uygulama geliştirme gibi birçok araç pencereleri arasında taşınması. Aşağıdaki ipuçlarını kullanarak düzeninizi izleyebilirsiniz:
 
 - **Sık kullandığınız dosyaları düzenleyicide görünür tutma**. İyi kaç dosya düzenleyicide açık olduğundan bağımsız olarak görünür kalır dosyaları sekmenin sol tarafına sabitleyebilirsiniz.
 
@@ -138,7 +138,7 @@ Herhangi bir anda, birden fazla kod dosyasında çalışma ve uygulama geliştir
 
    Ayrıca dosyaları daha kolay başka bir örneğini oluşturarak yönetebilirsiniz **Çözüm Gezgini** ve başka bir monitöre taşıyarak. Başka bir örneğini oluşturmak için **Çözüm Gezgini**, bir kısayol menüsünü açıp **Çözüm Gezgini**ve ardından **Yeni Çözüm Gezgini görünümü**.
 
-- **Visual Studio'da görünen yazı tiplerini özelleştirme**. Yazı tipi, boyutu ve IDE içindeki metin için kullanılan rengi değiştirebilirsiniz. Örneğin, düzenleyici ve araç pencerelerini veya IDE boyunca yazı tipini belirli kod öğelerinin rengini özelleştirebilirsiniz. Daha fazla bilgi için [nasıl yapılır: Yazı tiplerini ve renkleri değiştirme](../ide/how-to-change-fonts-and-colors-in-visual-studio.md) ve [nasıl yapılır: Yazı tipleri ve renkler düzenleyicisinde değişiklik](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md).
+- **Visual Studio'da görünen yazı tiplerini özelleştirme**. Yazı tipi, boyutu ve IDE içindeki metin için kullanılan rengi değiştirebilirsiniz. Örneğin, düzenleyici ve araç pencerelerini veya IDE boyunca yazı tipini belirli kod öğelerinin rengini özelleştirebilirsiniz. Daha fazla bilgi için [nasıl yapılır: Yazı tiplerini ve renkleri](../ide/how-to-change-fonts-and-colors-in-visual-studio.md) değiştirin [ve şunları yapın: Düzenleyicideki](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)yazı tiplerini ve renkleri değiştirin.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -1,5 +1,5 @@
 ---
-title: Metin Şablonundan Visual Studio'ya veya diğer Konaklara Erişme
+title: Metin Şablonundan Visual Studio'ya veya diğer Ana Bilgisayarlara Erişme
 titleSuffix: ''
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -8,14 +8,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a75dc86a45c78f6b57d5a326c8c342eca70b26e0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 26845b3878a89ea52a3f77f9a0a8d23363877edd
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62960469"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68870684"
 ---
-# <a name="access-visual-studio-or-other-hosts-from-a-text-template"></a>Metin Şablonundan Visual Studio’ya veya diğer Konaklara Erişme
+# <a name="access-visual-studio-or-other-hosts-from-a-text-template"></a>Metin şablonundan Visual Studio 'Ya veya diğer konaklara erişme
 
 Metin şablonunda, yöntemleri ve şablonu yürütür ana bilgisayar tarafından gösterilen özelliklerin kullanabilirsiniz. Visual Studio, bir konak örneğidir.
 
@@ -24,7 +24,7 @@ Metin şablonunda, yöntemleri ve şablonu yürütür ana bilgisayar tarafından
 
 ## <a name="obtain-access-to-the-host"></a>Konak erişim sağlamak
 
-Konak erişmek için `hostspecific="true"` içinde `template` yönergesi. Artık `this.Host`, türüne sahip <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>. <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost> Türünün, örneğin, dosya adlarını çözümleme ve hataları günlüğe kaydetmek için kullanabileceğiniz üyeleri vardır.
+Konak erişmek için `hostspecific="true"` içinde `template` yönergesi. Artık [ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110))türünde bir `this.Host`kullanabilirsiniz. [ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110)) türü, dosya adlarını çözümlemek için kullanabileceğiniz üyelere ve örneğin günlük hatalarına sahiptir.
 
 ### <a name="resolve-file-names"></a>Dosya adlarını çözümleme
 

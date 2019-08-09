@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 65bddd599bb544e000ca1d1269b84e53f51843bb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 56e6e7a53f5f8b07d1afc8b68ef641c576524316
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62546078"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68922064"
 ---
 # <a name="ca1405-com-visible-type-base-types-should-be-com-visible"></a>CA1405: COM görünebilir tür taban türler COM görünebilir olmalıdır
 
@@ -30,26 +30,26 @@ ms.locfileid: "62546078"
 |-|-|
 |TypeName|ComVisibleTypeBaseTypesShouldBeComVisible|
 |CheckId|CA1405|
-|Kategori|Microsoft.Interoperability|
-|Yeni Değişiklik|DependsOnFix|
+|Kategori|Microsoft. çalışabilirliği|
+|Yeni Değişiklik|Bağımlıdsondüzelme|
 
 ## <a name="cause"></a>Sebep
- Bileşen Nesne Modeli (COM) görünen bir tür COM görünür olmayan bir türden türetilir.
+Bileşen nesne modeli (COM) görünür türü, COM görünebilir olmayan bir türden türetilir.
 
 ## <a name="rule-description"></a>Kural açıklaması
- COM görünebilir tür üyeleri yeni bir sürümde eklediğinde, geçerli sürümüne bağlanan COM istemcilerini bozmayı önlemek için katı yönergelerimiz tarafından uymanız gerekir. COM görünmez bir türün yeni üye eklediğinde, bu COM sürüm oluşturma kurallarını takip ettiğinizden yok varsayılır. Ancak, bir COM görünür türü COM görünmez türünden türetilen ve bir sınıf arabirimi kullanıma sunan <xref:System.Runtime.InteropServices.ClassInterfaceType?displayProperty=fullName> veya <xref:System.Runtime.InteropServices.ClassInterfaceType> (varsayılan), temel türün tüm genel üyeleri (bunlar özellikle COM görünmez işaretlenmediği sürece, olacak yedekli) COM'a sunulur Temel türün bir sonraki sürümde yeni üye eklerse, sınıf türetilmiş bir türde arayüze herhangi bir COM istemcileri bozulabilir. COM görünebilir türler COM istemcileri bozucu olasılığını azaltmak için yalnızca COM görünebilir türler türetilmelidir.
+COM görünebilir bir tür üyeleri yeni bir sürüme eklediğinde, geçerli sürüme bağlanan COM istemcilerinin kesilmesini önlemek için katı kılavuzlara uymalıdır. COM tarafından görünmeyen bir tür, yeni üyeler eklendiğinde bu COM sürümü oluşturma kurallarını izlemek zorunda değildir. Ancak, com görünebilir bir tür, com görünmeyen türden türetiliyor ve <xref:System.Runtime.InteropServices.ClassInterfaceType?displayProperty=fullName> ya <xref:System.Runtime.InteropServices.ClassInterfaceType> da (varsayılan) bir sınıf arabirimini, temel türün tüm genel üyelerini (özellikle de com görünmez olarak işaretlenmedikleri sürece) COM 'a sunulur. Temel tür sonraki bir sürüme yeni üyeler eklerse, türetilmiş türün sınıf arabirimine bağlanan tüm COM istemcileri kesilebilir. Com tarafından görülebilen türler, com istemcilerinin bölünmesi olasılığını azaltmak için yalnızca COM görünebilir türlerden türetilmelidir.
 
-## <a name="how-to-fix-violations"></a>İhlaller nasıl düzeltilir?
- Bu kural ihlalini düzeltmek için taban türler COM görünebilir veya türetilmiş bir tür COM görünmez yapma.
+## <a name="how-to-fix-violations"></a>İhlalleri çözme
+Bu kural ihlalini onarmak için, temel türlerin COM görünebilir veya türetilmiş türü COM görünmez hale gelir.
 
-## <a name="when-to-suppress-warnings"></a>Uyarılar bastırıldığında
- Bu kuraldan uyarıyı bastırmayın.
+## <a name="when-to-suppress-warnings"></a>Uyarıların ne zaman bastırılamıyor
+Bu kuraldan uyarıyı bastırmayın.
 
 ## <a name="example"></a>Örnek
- Aşağıdaki örnek kuralını ihlal eden bir tür gösterir.
+Aşağıdaki örnek, kuralı ihlal eden bir türü gösterir.
 
- [!code-vb[FxCop.Interoperability.ComBaseTypes#1](../code-quality/codesnippet/VisualBasic/ca1405-com-visible-type-base-types-should-be-com-visible_1.vb)]
- [!code-csharp[FxCop.Interoperability.ComBaseTypes#1](../code-quality/codesnippet/CSharp/ca1405-com-visible-type-base-types-should-be-com-visible_1.cs)]
+[!code-vb[FxCop.Interoperability.ComBaseTypes#1](../code-quality/codesnippet/VisualBasic/ca1405-com-visible-type-base-types-should-be-com-visible_1.vb)]
+[!code-csharp[FxCop.Interoperability.ComBaseTypes#1](../code-quality/codesnippet/CSharp/ca1405-com-visible-type-base-types-should-be-com-visible_1.cs)]
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

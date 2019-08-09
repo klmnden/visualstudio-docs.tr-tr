@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f6d8249503ed775d584c913d685ae35473134be
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 14e2d6f2c753c56d1628d20e921b7dff2aa83471
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62950641"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926016"
 ---
 # <a name="showwebbrowser-command"></a>ShowWebBrowser Komutu
 
@@ -31,24 +31,24 @@ View.ShowWebBrowser URL [/new][/ext]
 ```
 
 ## <a name="arguments"></a>Arguments
- `URL`
+`URL`
 
- Gerekli. Web sitesi için URL (Tekdüzen Kaynak Konum Belirleyicisi).
+Gerekli. Web sitesi için URL (Tekdüzen Kaynak Konum Belirleyicisi).
 
 ## <a name="switches"></a>Anahtarlar
- / Yeni
+/Yeni
 
- İsteğe bağlı. Sayfayı yeni bir web tarayıcısı örneğini görüntüleneceğini belirtir.
+İsteğe bağlı. Sayfanın, Web tarayıcısının yeni bir örneğinde göründüğünü belirtir.
 
- /ext
+/ext
 
- İsteğe bağlı. Sayfa IDE dışında varsayılan web tarayıcısında görüntüleneceğini belirtir.
+İsteğe bağlı. Sayfanın IDE dışında varsayılan Web tarayıcısında göründüğünü belirtir.
 
 ## <a name="remarks"></a>Açıklamalar
- Diğer **ShowWebBrowser** komutu **gidin** veya **nav**.
+**ShowWebBrowser** komutunun diğer adı **Git** veya **Gezinti**' dir.
 
 ## <a name="example"></a>Örnek
- Aşağıdaki örnek, IDE dışında bir web tarayıcısında Microsoft Docs giriş sayfasında gösterilir. Web tarayıcısının bir örneği zaten açıksa kullanılır; Aksi halde yeni bir örneğini başlattınız.
+Aşağıdaki örnek, Microsoft Docs giriş sayfasını IDE dışında bir Web tarayıcısında görüntüler. Web tarayıcısının bir örneği zaten açıksa, kullanılır; Aksi halde yeni bir örnek başlatılır.
 
 ```cmd
 >View.ShowWebBrowser https://docs.microsoft.com /ext

@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f82163b1c377df4c8c7fcbba07672312153dad9b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 16cd44f00db13027d737b6a6b496877075ac6fa9
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62797470"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68922273"
 ---
 # <a name="ca1301-avoid-duplicate-accelerators"></a>CA1301: Yinelenen hızlandırıcılardan kaçının
 
@@ -27,28 +27,28 @@ ms.locfileid: "62797470"
 |-|-|
 |TypeName|AvoidDuplicateAccelerators|
 |CheckId|CA1301|
-|Kategori|Microsoft.Globalization|
-|Yeni Değişiklik|Bölünemez|
+|Kategori|Microsoft. Globalization|
+|Yeni Değişiklik|Kırılmamış|
 
 ## <a name="cause"></a>Sebep
- Bir türü genişleten <xref:System.Windows.Forms.Control?displayProperty=fullName> ve bir kaynak dosyasında depolanan aynı erişim anahtarları olan iki veya daha fazla üst düzey denetimleri içerir.
+Bir tür, <xref:System.Windows.Forms.Control?displayProperty=fullName> bir kaynak dosyasında depolanan özdeş erişim anahtarlarına sahip iki veya daha fazla üst düzey denetimi genişletir ve içerir.
 
 ## <a name="rule-description"></a>Kural açıklaması
 
-Bir Hızlandırıcı olarak da bilinen bir erişim anahtarı kullanarak bir denetimin klavye erişim sağlayan **Alt** anahtarı. Birden çok denetim aynı erişim anahtarı varsa, erişim tuşunun davranışı iyi tanımlı değildir. Kullanıcı erişim anahtarını kullanarak erişim hedeflenen denetimi olmayabilir ve amaçlanan farklı bir denetimin etkin.
+Hızlandırıcı olarak da bilinen bir erişim anahtarı, **alt** tuşunu kullanarak bir denetime klavye erişimi sağlar. Birden çok denetim aynı erişim anahtarına sahip olduğunda, erişim anahtarının davranışı iyi tanımlanmamıştır. Kullanıcı, erişim anahtarını kullanarak amaçlanan denetime erişemeyebilir ve hedeflenen bir denetim etkinleştirilebilir. Bu, bir denetim etkin olabilir.
 
-Geçerli uygulama bu kuralın menü öğelerini yok sayar. Ancak, aynı alt menü öğeleri aynı erişim anahtarlarını sahip olmamalıdır.
+Bu kuralın geçerli uygulanması menü öğelerini yoksayar. Ancak, aynı alt menüdeki menü öğeleri aynı erişim anahtarlarına sahip olmamalıdır.
 
-## <a name="how-to-fix-violations"></a>İhlaller nasıl düzeltilir?
- Bu kural ihlalini düzeltmek için tüm denetimler için benzersiz bir erişim anahtarları tanımlayın.
+## <a name="how-to-fix-violations"></a>İhlalleri çözme
+Bu kuralın ihlalini onarmak için, tüm denetimler için benzersiz erişim anahtarları tanımlayın.
 
-## <a name="when-to-suppress-warnings"></a>Uyarılar bastırıldığında
- Bu kuraldan uyarıyı bastırmayın.
+## <a name="when-to-suppress-warnings"></a>Uyarıların ne zaman bastırılamıyor
+Bu kuraldan uyarıyı bastırmayın.
 
 ## <a name="example"></a>Örnek
- Aşağıdaki örnek, aynı erişim anahtarları olan iki denetim içeren en az bir form gösterir. Anahtarları gösterilmiyor bir kaynak dosyasında depolanır. Değerlerine açıklamalı görünür ancak çıkış `checkBox.Text` satırlar. Yinelenen hızlandırıcılardan davranışını değiştirerek incelenebilir `checkBox.Text` kullanıma açıklamalı karşılıkları satırıyla. Ancak, bu durumda, örnek bir uyarı kuralından oluşturmaz.
+Aşağıdaki örnekte, aynı erişim anahtarlarına sahip iki denetim içeren en az bir form gösterilmektedir. Anahtarlar, gösterilmemiş bir kaynak dosyasında depolanır. Ancak, değerleri, açıklamalı `checkBox.Text` satırlarda görüntülenir. Yinelenen hızlandırıcıların davranışı, `checkBox.Text` satırları açıklamalı çıkış karşılıklarıyla birlikte değiş tokuşu yaparak incelenebilir. Ancak, bu durumda, örnek kuraldan bir uyarı oluşturmaz.
 
- [!code-csharp[FxCop.Globalization.AvoidDuplicateAccels#1](../code-quality/codesnippet/CSharp/ca1301-avoid-duplicate-accelerators_1.cs)]
+[!code-csharp[FxCop.Globalization.AvoidDuplicateAccels#1](../code-quality/codesnippet/CSharp/ca1301-avoid-duplicate-accelerators_1.cs)]
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

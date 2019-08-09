@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f4ac6947f8424c3b9aa7429ee378b4bb89be73ca
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8d1c2f76258be3b0be6409bffd002fd916883ab2
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62545247"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68921546"
 ---
 # <a name="ca1809-avoid-excessive-locals"></a>CA1809: Aşırı yerellerden kaçının
 
@@ -27,20 +27,20 @@ ms.locfileid: "62545247"
 |-|-|
 |TypeName|AvoidExcessiveLocals|
 |CheckId|CA1809|
-|Kategori|Microsoft.Performance|
-|Yeni Değişiklik|Bölünemez|
+|Kategori|Microsoft. Performance|
+|Yeni Değişiklik|Kırılmamış|
 
 ## <a name="cause"></a>Sebep
- Üye bazıları derleyici tarafından oluşturulmuş olabilir, 64'ten fazla yerel değişkenler içerir.
+Bir üye, biri derleyicinin ürettiği 64 taneden fazla yerel değişken içerir.
 
 ## <a name="rule-description"></a>Kural açıklaması
- Olarak adlandırılan bellek yerine işlemci kayıttaki değeri depolamak için yaygın bir performans iyileştirmesidir olduğu *kayıt* değeri. Ortak dil çalışma zamanı enregistration için en fazla 64 yerel değişkenler olarak değerlendirir. Kaydedilme olmayan değişkenler yığına yerleştirilir ve işleme önce bir kayıt taşınması gerekir. Fırsat izin vermek için tüm yerel değişkenlerin kaydedilme alın, 64 yerel değişken sayısını sınırlayın.
+Yaygın bir performans iyileştirmesi, değeri *kayıt* olarak adlandırılan bellek yerine işlemci kaydındaki bir değeri depolmedir. Ortak dil çalışma zamanı, kayıt için 64 yerel değişkene kadar kabul eder. Kayıtlı olmayan değişkenler yığına konur ve düzenlemeden önce bir kayda taşınması gerekir. Tüm yerel değişkenlerin kaydolma ihtimaline izin vermek için yerel değişken sayısını 64 olarak sınırlandırın.
 
-## <a name="how-to-fix-violations"></a>İhlaller nasıl düzeltilir?
- Bu kural ihlalini düzeltmek için en fazla 64 yerel değişken kullanmak için uygulama yeniden düzenleyin.
+## <a name="how-to-fix-violations"></a>İhlalleri çözme
+Bu kural ihlalini onarmak için, uygulamayı 64 ' den fazla yerel değişken kullanmak üzere yeniden düzenleyin.
 
-## <a name="when-to-suppress-warnings"></a>Uyarılar bastırıldığında
- Performans sorunu değilse bu kuraldan bir uyarıyı bastırmak için veya kuralı devre dışı bırakmak için güvenlidir.
+## <a name="when-to-suppress-warnings"></a>Uyarıların ne zaman bastırılamıyor
+Bu kuraldan bir uyarıyı gizlemek veya performans bir sorun değilse kuralı devre dışı bırakmak güvenlidir.
 
-## <a name="related-rules"></a>İlgili kuralları
- [CA1804: Kullanılmayan yerel öğeleri kaldırın](../code-quality/ca1804-remove-unused-locals.md)
+## <a name="related-rules"></a>İlgili kurallar
+[CA1804 Kullanılmayan yerelleri kaldır](../code-quality/ca1804-remove-unused-locals.md)

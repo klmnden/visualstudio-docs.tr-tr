@@ -1,5 +1,5 @@
 ---
-title: Bilgi Hakları Yönetimine ve yönetilen kod uzantıları
+title: Yönetilen kod uzantıları & bilgi hakları yönetimi
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -17,31 +17,31 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ca8f9d77681e3f11312e5e908a58ac2e292f581b
-ms.sourcegitcommit: 13ab9a5ab039b070b9cd9251d0b83dd216477203
+ms.openlocfilehash: 753f3d2da201c67cd86c697eccf7580596a40d6e
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66177742"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68872057"
 ---
-# <a name="information-rights-management-and-managed-code-extensions-overview"></a>Bilgi Hakları Yönetimine ve yönetilen kod uzantılarına genel bakış
-  Microsoft Office Word ve Microsoft Office Excel, yetkisiz kişilerin hassas bilgileri görmesini veya değiştirmesini önlemeye yardımcı olabilecek bir özellik olan Bilgi Hakları Yönetimi (IRM) sağlayın. Bilgi hakları yönetimini nasıl çalıştığı hakkında daha fazla bilgi için belirli Office uygulamasında yardımına bakın.
+# <a name="information-rights-management-and-managed-code-extensions-overview"></a>Bilgi hakları yönetimine ve yönetilen kod uzantılarına genel bakış
+  Microsoft Office Word ve Microsoft Office Excel, yetkisiz kişilerin hassas bilgileri görüntülemesini veya değiştirmesini önlemeye yardımcı olabilecek bilgiler Rights Management (ıRM) sağlar. Bilgilerin nasıl çalıştığı hakkında daha fazla Rights Management bilgi için, bkz. belirli Office uygulamasındaki Yardım.
 
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]
 
-## <a name="run-code-behind-documents-with-restricted-permissions"></a>Belgelerin arkasındaki kod kısıtlı izinlerle çalıştırın
- Çözümünüz bir belge veya varsayılan olarak, IRM kullanan çalışma kitabı içeriyorsa, Word ve Excel çalıştırmak için herhangi bir kod izin vermez. Belgenin yazarı olan veya tam denetim erişimi varsa, böylece çözümünüzün çalışması varsayılan değiştirebilirsiniz. Daha fazla bilgi için [nasıl yapılır: Kodun kısıtlı izinle belgelerin arkasında çalışmasına izin](../vsto/how-to-permit-code-to-run-behind-documents-with-restricted-permissions.md).
+## <a name="run-code-behind-documents-with-restricted-permissions"></a>Kısıtlı izinlerle arka planda kod Çalıştır
+ Çözümünüz ıRM kullanan bir belge veya çalışma kitabı içeriyorsa, varsayılan olarak Word ve Excel hiçbir kodun çalışmasına izin vermez. Belgenin yazarından veya tam denetim erişimine sahipseniz, çözümünüzün çalışması için varsayılan olarak değişiklik yapabilirsiniz. Daha fazla bilgi için [nasıl yapılır: Kodun, kısıtlı izinlerle](../vsto/how-to-permit-code-to-run-behind-documents-with-restricted-permissions.md)belgelerin arkasında çalışmasına izin verme.
 
- IRM kullanımını engeller <xref:Microsoft.VisualStudio.Tools.Applications.Runtime.ServerDocument> almak veya belgede önbelleğe alınmış verileri işlemek için.
+ IRM, belgesinde önbelleğe <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> alınan verileri almak veya işlemek için kullanımını engeller.
 
-## <a name="end-users-to-restrict-permissions-to-documents-that-use-managed-code-extensions"></a>Son kullanıcıların yönetilen kod uzantıları kullanan belgeler için izinleri kısıtla
- Çözümünüzde belge veya çalışma kitabını tam denetim erişimi olan herkes IRM izinlerini kısıtlamak için kullanabilirsiniz. Örneğin, muhasebe departmanındaki bir son kullanıcı otomatik olarak bir çalışma sayfasına bir veritabanındaki verilerle dolduran bir çözümü kullanıyorsa, bu kullanıcı yalnızca kendi kişilere erişimi değiştir ve diğerleri için okuma erişimi izin vermek isteyebilirsiniz. Kullanıcı, kısıtlı izinleri eklediğinde, varsayılan olarak, çalışma arka plan kod çalıştırılamaz ve çalışma verilerle doldurulmaz.
+## <a name="end-users-to-restrict-permissions-to-documents-that-use-managed-code-extensions"></a>Son kullanıcılar yönetilen kod uzantıları kullanan belgelerle ilgili izinleri kısıtlar
+ Çözümünüzde belge veya çalışma kitabına tam denetim erişimi olan herkes, izinleri kısıtlamak için ıRM kullanabilir. Örneğin, muhasebe departmanındaki bir son kullanıcı bir çalışma sayfasını bir veritabanından alınan verilerle otomatik olarak dolduran bir çözüm kullanıyorsa, bu kullanıcı yalnızca departmandaki kişilere ve başkalarına okuma erişimine izin vermek isteyebilir. Kullanıcı kısıtlı izinleri eklediğinde, varsayılan olarak, çalışma sayfasının arkasındaki kod çalıştırılamaz ve çalışma sayfası verilerle doldurulmaz.
 
- Sorunu gidermek için belge veya çalışma kitabını tam denetim erişimi olan nesne modeli programlı erişim izni vermek için varsayılan izin ayarları değiştirmeniz gerekir. Daha fazla bilgi için [nasıl yapılır: Kodun kısıtlı izinle belgelerin arkasında çalışmasına izin](../vsto/how-to-permit-code-to-run-behind-documents-with-restricted-permissions.md).
+ Sorunu gidermek için, belgeye veya çalışma kitabına tam denetim erişimi olan birinin, nesne modeline programlı erişim sağlamak için varsayılan izin ayarlarını değiştirmesi gerekir. Daha fazla bilgi için [nasıl yapılır: Kodun, kısıtlı izinlerle](../vsto/how-to-permit-code-to-run-behind-documents-with-restricted-permissions.md)belgelerin arkasında çalışmasına izin verme.
 
 ## <a name="see-also"></a>Ayrıca bkz.
-- [Belge düzeyi çözümlerde belge koruması](../vsto/document-protection-in-document-level-solutions.md)
+- [Belge düzeyi çözümlerde Belge koruması](../vsto/document-protection-in-document-level-solutions.md)
 - [Office belgelerinde parola koruması](../vsto/password-protection-on-office-documents.md)
-- [Office çözümleri güvenliğini sağlama](../vsto/securing-office-solutions.md)
+- [Güvenli Office çözümleri](../vsto/securing-office-solutions.md)
 - [Office çözümünü dağıtma](../vsto/deploying-an-office-solution.md)
-- [Office çözümleri oluşturma ve tasarlama](../vsto/designing-and-creating-office-solutions.md)
+- [Office çözümleri tasarlama ve oluşturma](../vsto/designing-and-creating-office-solutions.md)

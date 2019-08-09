@@ -11,12 +11,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ea4d559921fc7cf387116d013906891c74a4ed8c
-ms.sourcegitcommit: 90c3187d804ad7544367829d07ed4b47d3f8a72d
+ms.openlocfilehash: 5828fb114a4df559c46dd6ae7f64887ab48e7429
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "68822362"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68919531"
 ---
 # <a name="accessibility-tips-and-tricks-for-visual-studio"></a>Visual Studio için erişilebilirlik ipuçları ve püf noktaları
 
@@ -29,7 +29,7 @@ Ayrıca, kodunuzun hakkındaki yararlı bilgileri göstermek için ek açıklama
 
 ## <a name="save-your-ide-settings"></a>IDE ayarlarınızı kaydetme
 
- Pencere düzeninizi, klavye eşleme düzeninizi ve diğer Tercihlerinizi kaydederek IDE deneyiminizi özelleştirebilirsiniz. Daha fazla bilgi için bkz. [Visual STUDIO IDE 'Yi kişiselleştirme](../../ide/personalizing-the-visual-studio-ide.md).
+Pencere düzeninizi, klavye eşleme düzeninizi ve diğer Tercihlerinizi kaydederek IDE deneyiminizi özelleştirebilirsiniz. Daha fazla bilgi için bkz. [Visual STUDIO IDE 'Yi kişiselleştirme](../../ide/personalizing-the-visual-studio-ide.md).
 
 ## <a name="modify-your-ide-for-high-contrast-viewing"></a>IDE 'nizi yüksek karşıtlıklı görüntüleme için değiştirme
 
@@ -111,7 +111,7 @@ Visual Studio program olaylarına bir ses atamak için Windows 'daki ses uygulam
 
    ![Windows 10 ' da ses uygulamasının sesler sekmesi](media/sound-applet.png "Windows 10 ' da ses uygulamasının sesler sekmesi")
 
-1.           **Tamam**'ı tıklatın.
+1. **Tamam**'ı tıklatın.
 
 ::: moniker range="vs-2017"
 

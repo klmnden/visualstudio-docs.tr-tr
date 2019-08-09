@@ -10,30 +10,30 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e72b279d55cbe11f6232ff1f91c8fee443d9c283
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f054bd91f16bb7621d4beebe7631a49cb406132e
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62969325"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68870481"
 ---
 # <a name="process-text-templates-by-using-a-custom-host"></a>Özel bir Konak kullanarak Metin Şablonlarını İşleme
 
-*Metin şablonu dönüştürme* işlem alır bir *metin şablonu* dosyası olarak girdi ve çıktı olarak bir metin dosyası oluşturur. Metin dönüştürme motorunu, Visual Studio uzantısı, veya Visual Studio'nun yüklü olduğu bir makinede çalışan bir tek başına uygulamasından çağırabilirsiniz. Ancak, sağlamanız gereken bir *metin şablonu oluşturma barındırıcısı*. Bu sınıf, derlemeler ve ekleme dosyaları gibi kaynakları bularak ve çıktı ve hata iletilerini işleme alarak şablonu ortama bağlar.
+*Metin şablonu dönüştürme* işlemi, girdi olarak bir *metin şablonu* dosyası alır ve çıktı olarak bir metin dosyası üretir. Bir Visual Studio uzantısı 'ndan veya Visual Studio 'Nun yüklü olduğu bir makinede çalışan tek başına uygulamadan metin dönüştürme altyapısını çağırabilirsiniz. Ancak, bir *metin şablonu oluşturma Konağı*sağlamanız gerekir. Bu sınıf, derlemeler ve ekleme dosyaları gibi kaynakları bularak ve çıktı ve hata iletilerini işleme alarak şablonu ortama bağlar.
 
 > [!TIP]
-> Bir paket ya da Visual Studio içinde çalışır uzantısı yazıyorsanız, kendi ana bilgisayarınızı yazmak yerine metin şablonu oluşturma hizmetini kullanarak göz önünde bulundurun. Daha fazla bilgi için [bir VS uzantısında metin dönüştürmeyi çağırma](../modeling/invoking-text-transformation-in-a-vs-extension.md).
+> Visual Studio içinde çalışacak bir paket veya uzantı yazıyorsanız, kendi ana bilgisayarınızı yazmak yerine metin şablonu oluşturma hizmetini kullanmayı göz önünde bulundurun. Daha fazla bilgi için bkz. [BIR vs uzantısında metin dönüştürmeyi çağırma](../modeling/invoking-text-transformation-in-a-vs-extension.md).
 
 > [!NOTE]
-> Metin şablonu dönüştürmelerinin sunucu uygulamalarında kullanılması önerilmez. Metin şablonu dönüştürmelerinin tek bir iş parçacığı dışında kullanılması önerilmez. Bunun nedeni, metin şablonu oluşturma motorunun şablonları çevirmek, derlemek ve yürütmek için tek bir AppDomain öğesini yeniden kullanmasıdır. Çevrilen kod, iş parçacığı açısından güvenli olmak üzere tasarlanmamıştır. Altyapı, bir Visual Studio projesinde tasarım zamanında olduğu gibi seri olarak, dosyalarını işlemek için tasarlanmıştır.
+> Metin şablonu dönüştürmelerinin sunucu uygulamalarında kullanılması önerilmez. Metin şablonu dönüştürmelerinin tek bir iş parçacığı dışında kullanılması önerilmez. Bunun nedeni, metin şablonu oluşturma motorunun şablonları çevirmek, derlemek ve yürütmek için tek bir AppDomain öğesini yeniden kullanmasıdır. Çevrilen kod, iş parçacığı açısından güvenli olmak üzere tasarlanmamıştır. Altyapı, bir Visual Studio projesinde tasarım zamanında olduklarından dosyaları seri olarak işleyecek şekilde tasarlanmıştır.
 >
-> Çalışma zamanı uygulamaları için önceden işlenmiş metin şablonlarını kullanmayı: bkz [T4 metin şablonları ile çalışma süresi metni oluşturma](../modeling/run-time-text-generation-with-t4-text-templates.md).
+> Çalışma zamanı uygulamaları için, önceden işlenmiş metin şablonlarını kullanmayı düşünün: bkz. [T4 metin şablonlarıyla çalışma zamanı metin oluşturma](../modeling/run-time-text-generation-with-t4-text-templates.md).
 
-Uygulamanız, derleme zamanında sabitlenmiş bir grup şablon kullanıyorsa, Önceden İşlenmiş Metin Şablonlarının kullanılması daha kolaydır. Uygulamanızı Visual Studio'nun yüklü olduğu değil, bir makine üzerinde çalıştırılacaksa da bu yaklaşımı kullanabilirsiniz. Daha fazla bilgi için [T4 metin şablonları ile çalışma süresi metni oluşturma](../modeling/run-time-text-generation-with-t4-text-templates.md).
+Uygulamanız, derleme zamanında sabitlenmiş bir grup şablon kullanıyorsa, Önceden İşlenmiş Metin Şablonlarının kullanılması daha kolaydır. Uygulamanız, Visual Studio 'Nun yüklü olmadığı bir makinede çalışıyorsa de bu yaklaşımı kullanabilirsiniz. Daha fazla bilgi için bkz. [T4 metin şablonlarıyla çalışma zamanı metin üretimi](../modeling/run-time-text-generation-with-t4-text-templates.md).
 
-## <a name="execute-a-text-template-in-your-application"></a>Uygulamanızda metin şablonu yürütme
+## <a name="execute-a-text-template-in-your-application"></a>Uygulamanızda bir metin şablonu yürütün
 
-Bir metin şablonu yürütmek için ProcessTemplate yöntemini çağırırsınız <xref:Microsoft.VisualStudio.TextTemplating.Engine?displayProperty=fullName>:
+Bir metin şablonunu yürütmek için ProcessTemplate yöntemini <xref:Microsoft.VisualStudio.TextTemplating.Engine?displayProperty=fullName>çağırın:
 
 ```csharp
 using Microsoft.VisualStudio.TextTemplating;
@@ -42,21 +42,21 @@ Engine engine = new Engine();
 string output = engine.ProcessTemplate(templateString, host);
 ```
 
- Uygulamanızın şablonu bularak sağlaması ve çıktı ile işlem yapması gerekir. 
+ Uygulamanızın şablonu bularak sağlaması ve çıktı ile işlem yapması gerekir.
 
- İçinde `host` parametresi uygulayan bir sınıf sağlamanız gerekir <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>. Bu, Motor tarafından geri çağrılır.
+ Parametresinde, ITextTemplatingEngineHost uygulayan bir sınıf sağlamanız gerekir. [](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110)) `host` Bu, Motor tarafından geri çağrılır.
 
  Ana bilgisayar hataları günlüğe kaydedebilmeli, derleme ve ekleme dosyalarına yapılan başvuruları çözümleyebilmeli, şablonun yürütülebileceği bir Uygulama Etki Alanı sağlayabilmeli ve her yönerge için uygun işlemciyi çağırabilmelidir.
 
- <xref:Microsoft.VisualStudio.TextTemplating.Engine?displayProperty=fullName> tanımlanan **Microsoft.VisualStudio.TextTemplating.\*. 0. dll**, ve <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost> tanımlanan **Microsoft.VisualStudio.TextTemplating.Interfaces.\*. 0. dll**.
+ <xref:Microsoft.VisualStudio.TextTemplating.Engine?displayProperty=fullName>, **Microsoft. VisualStudio.\*textşablon oluşturma içinde tanımlanmıştır. 0. dll**ve [ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110)) , **Microsoft. VisualStudio. Textşablon oluşturma. Interfaces içinde tanımlanmıştır.\* 0. dll**.
 
 ## <a name="in-this-section"></a>Bu Bölümde
- [İzlenecek yol: Bir özel metin şablonu konağı oluşturma](../modeling/walkthrough-creating-a-custom-text-template-host.md) Visual Studio'nun dışında metin şablon işlevini kullanılabilmesini özel metin şablonu konağı oluşturma işlemi gösterilmektedir.
+ [İzlenecek yol: Özel metin şablonu ana bilgisayarı](../modeling/walkthrough-creating-a-custom-text-template-host.md) oluşturma, metin şablonu işlevselliğinin Visual Studio dışında kullanılabilir olmasını sağlayan bir özel metin şablonu ana bilgisayarı oluşturmayı gösterir.
 
 ## <a name="reference"></a>Başvuru
- <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>
+ [ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110))
 
 ## <a name="related-sections"></a>İlgili Bölümler
 
-- [Metin şablonu dönüştürme süreci](../modeling/the-text-template-transformation-process.md) metin dönüştürmenin nasıl çalıştığını açıklar ve hangi kısımları özelleştirebilirsiniz.
-- [Özel T4 metin şablonu yönerge işlemcileri oluşturma](../modeling/creating-custom-t4-text-template-directive-processors.md) şablonu yönerge işlemcileri metin genel bir bakış sağlar.
+- Metin [şablonu dönüştürme işlemi](../modeling/the-text-template-transformation-process.md) , metin dönüşümünün nasıl çalıştığını ve hangi parçaları özelleştirebileceğinizi açıklar.
+- [Özel T4 metin şablonu yönerge Işlemcileri oluşturma](../modeling/creating-custom-t4-text-template-directive-processors.md) , metin şablonu yönerge işlemcileri için bir genel bakış sağlar.

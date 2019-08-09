@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b00accdbdb08e4267bbca2b7e5fab8002f539f1d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2c528266c54bbb2f3f0d9420461d700a46b09bd5
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62546485"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68922280"
 ---
 # <a name="ca1309-use-ordinal-stringcomparison"></a>CA1309: Sıralı StringComparison kullanın
 
@@ -27,25 +27,25 @@ ms.locfileid: "62546485"
 |-|-|
 |TypeName|UseOrdinalStringComparison|
 |CheckId|CA1309|
-|Kategori|Microsoft.Globalization|
-|Yeni Değişiklik|Bölünemez|
+|Kategori|Microsoft. Globalization|
+|Yeni Değişiklik|Kırılmamış|
 
 ## <a name="cause"></a>Sebep
 
-Nonlinguistic bir dize karşılaştırma işlemi ayarlı değil <xref:System.StringComparison> ya da parametre **sıra** veya **Ordinalıgnorecase**.
+Dilsel olmayan bir dize karşılaştırma işlemi, <xref:System.StringComparison> parametreyi **Ordinal** veya **OrdinalIgnoreCase**olarak ayarlamayın.
 
 ## <a name="rule-description"></a>Kural açıklaması
- Çoğu dize işlemleri, en önemlisi <xref:System.String.Compare%2A?displayProperty=fullName> ve <xref:System.String.Equals%2A?displayProperty=fullName> yöntemleri artık kabul eden bir aşırı sağlayan bir <xref:System.StringComparison?displayProperty=fullName> numaralandırma değeri olarak bir parametre.
+Çok sayıda dize işlemi, en önemlisi <xref:System.String.Compare%2A?displayProperty=fullName> ve <xref:System.String.Equals%2A?displayProperty=fullName> yöntemleri, artık bir <xref:System.StringComparison?displayProperty=fullName> sabit listesi değerini parametre olarak kabul eden bir aşırı yükleme sağlar.
 
- Belirttiğinizde ya da **StringComparison.Ordinal** veya **Stringcomparison.ordinalıgnorecase**, dilsel olmayan dize karşılaştırması. Diğer bir deyişle, karşılaştırma kararlar verildiğinde doğal dile özgü özellikleri göz ardı edilir. Doğal dil özellikleri yoksayılıyor kararları basit bayt karşılaştırmalarını ve büyük/küçük harf veya kültür tarafından parametre haline getirilen denklik tablolar üzerinde dayalı anlamına gelir. Sonuç olarak, açıkça ya da parametre ayarı tarafından **StringComparison.Ordinal** veya **Stringcomparison.ordinalıgnorecase**, kodunuzu genellikle hız kazandığı doğruluğu artırır ve olur daha güvenilir.
+**StringComparison. Ordinal** ya da **StringComparison. OrdinalIgnoreCase**belirttiğinizde, dize karşılaştırma dil değil. Yani, doğal dile özgü özellikler, karşılaştırma kararları verilirken yok sayılır. Doğal dil özelliklerini yok sayarak, kararlar, kültüre göre parametreli büyük/küçük harf veya denklik tablolarda değil basit bayt karşılaştırmaları temel alır. Sonuç olarak, parametresini **StringComparison. Ordinal** ya da **StringComparison. OrdinalIgnoreCase**olarak ayarlayarak, kodunuz genellikle hızlanır, doğruluk artar ve daha güvenilir hale gelir.
 
-## <a name="how-to-fix-violations"></a>İhlaller nasıl düzeltilir?
- Bu kural ihlalini düzeltmek için dize karşılaştırma yöntemini kabul eden bir aşırı değiştirin <xref:System.StringComparison?displayProperty=fullName> , parametre olarak numaralandırması belirtin **sıra** veya **Ordinalıgnorecase**. Örneğin, değiştirme `String.Compare(str1, str2)` için `String.Compare(str1, str2, StringComparison.Ordinal)`.
+## <a name="how-to-fix-violations"></a>İhlalleri çözme
+Bu kural ihlalini onarmak için, dize karşılaştırma yöntemini bir parametre olarak <xref:System.StringComparison?displayProperty=fullName> numaralandırmayı kabul eden bir aşırı yükleme olarak değiştirin ve **Ordinal** ya da **OrdinalIgnoreCase**belirtin. Örneğin, olarak `String.Compare(str1, str2, StringComparison.Ordinal)`değiştirin `String.Compare(str1, str2)` .
 
-## <a name="when-to-suppress-warnings"></a>Uyarılar bastırıldığında
- Uygulama ve kitaplık yerel sınırlı bir kitle için kullanılacaksa, ya da geçerli kültürü semantiği kullanılmalıdır bu kuraldan bir uyarıyı bastırmak güvenlidir.
+## <a name="when-to-suppress-warnings"></a>Uyarıların ne zaman bastırılamıyor
+Kitaplık veya uygulama sınırlı bir yerel hedef kitle için tasarlanıyorsa veya geçerli kültürün semantiğinin kullanılması gerektiğinde, bu kuraldan bir uyarıyı bastırmak güvenlidir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 - [Genelleştirme Uyarıları](../code-quality/globalization-warnings.md)
-- [CA1307: StringComparison belirtin](../code-quality/ca1307-specify-stringcomparison.md)
+- [CA1307 StringComparison belirt](../code-quality/ca1307-specify-stringcomparison.md)

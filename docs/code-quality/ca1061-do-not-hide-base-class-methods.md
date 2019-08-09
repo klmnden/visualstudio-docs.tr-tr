@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: faa225178a50be080f92a728998e914025c17168
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8f13ac29028472384cfadbf9c397e578f6509670
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62788666"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68922424"
 ---
 # <a name="ca1061-do-not-hide-base-class-methods"></a>CA1061: Temel sınıf metotlarını gizlemeyin
 
@@ -31,18 +31,18 @@ ms.locfileid: "62788666"
 |Yeni Değişiklik|Yeni|
 
 ## <a name="cause"></a>Sebep
- Türetilmiş bir tür bir yöntem aynı ada sahip ve aynı parametre sayısı temel yöntemlerinden biri olarak bildirir; bir veya daha fazla parametre karşılık gelen temel yöntemin parametre temel türüdür; ve karşılık gelen temel yöntemin parametreleri özdeş türleri kalan parametreye sahip.
+Türetilmiş bir tür, aynı ada sahip ve temel yöntemlerinden biri ile aynı sayıda parametreye sahip bir yöntem bildirir; bir veya daha fazla parametre, temel yöntemde karşılık gelen parametrenin temel türüdür; ve kalan parametrelerde, temel yöntemde karşılık gelen parametrelerle özdeş olan türler vardır.
 
 ## <a name="rule-description"></a>Kural açıklaması
- Türetilmiş yöntemin parametre imzası yalnızca türetilmiş türleri ve karşılık gelen temel yöntemin parametre imzası daha zayıf türlerine göre farklı olduğu durumlarda temel türde bir yöntemin türetilmiş türle aynı adlı bir yöntemi tarafından gizlenir.
+Türetilmiş yöntemin parametre imzası yalnızca temel yöntemin parametre imzasında karşılık gelen türlerden daha zayıf olan türlere göre farklılık gösterdiğinde, temel türdeki bir yöntem türetilmiş bir tür içinde aynı adlı bir yöntem tarafından gizlenir.
 
-## <a name="how-to-fix-violations"></a>İhlaller nasıl düzeltilir?
- Bu kural ihlalini düzeltmek için kaldırmak veya metodu yeniden adlandırmak veya parametre imzası yöntem taban yöntemi gizlemez şekilde değiştirin.
+## <a name="how-to-fix-violations"></a>İhlalleri çözme
+Bu kural ihlalini onarmak için yöntemi kaldırın veya yeniden adlandırın ya da yöntemin temel yöntemi gizlemez şekilde parametre imzasını değiştirin.
 
-## <a name="when-to-suppress-warnings"></a>Uyarılar bastırıldığında
- Bu kuraldan uyarıyı bastırmayın.
+## <a name="when-to-suppress-warnings"></a>Uyarıların ne zaman bastırılamıyor
+Bu kuraldan uyarıyı bastırmayın.
 
 ## <a name="example"></a>Örnek
- Aşağıdaki örnek, kuralını ihlal eden bir yöntemi gösterir.
+Aşağıdaki örnek, kuralı ihlal eden bir yöntemi gösterir.
 
- [!code-csharp[FxCop.Design.HideBaseMethod#1](../code-quality/codesnippet/CSharp/ca1061-do-not-hide-base-class-methods_1.cs)]
+[!code-csharp[FxCop.Design.HideBaseMethod#1](../code-quality/codesnippet/CSharp/ca1061-do-not-hide-base-class-methods_1.cs)]

@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b8ab2ce6e9f1260172bf0ffbf0aede9138a5115f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d91e84a817b7b68f56c053d11d69facf753c6efc
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62792629"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68919379"
 ---
 # <a name="add-existing-item-command"></a>Varolan Öğeyi Ekle Komutu
 Geçerli çözüme var olan bir dosya ekler ve onu açar.
@@ -30,22 +30,24 @@ File.AddExistingItem filename [/e:editorname]
 ```
 
 ## <a name="arguments"></a>Arguments
- `filename` Gerekli. Tam yol ve dosya adı, geçerli çözüme eklenecek öğe uzantısına sahip. Dosya yolu veya dosya adı boşluk içeriyorsa, yolun tamamını tırnak içine alın.
+`filename`\
+Gerekli. Geçerli çözüme eklenecek öğenin Uzantısı ile tam yol ve dosya adı. Dosya yolu veya dosya adı boşluk içeriyorsa, tüm yolu tırnak işaretleri içine alın.
 
 ## <a name="switches"></a>Anahtarlar
- / e: `editorname` İsteğe bağlı. Dosyanın açılmasını düzenleyicinin adı. Bağımsız değişken belirtildi, ancak hiçbir Düzenleyici adı verilmesi, **birlikte Aç** iletişim kutusu görüntülenir.
+/e`editorname`\
+İsteğe bağlı. Dosyanın açıldığı düzenleyicinin adı. Bağımsız değişken belirtilmişse ancak düzenleyici adı sağlanmadığında, **birlikte Aç** iletişim kutusu görüntülenir.
 
- / E:`editorname` bağımsız değişkeni sözdizimini kullanan Düzenleyicisi adları gibi görünürler **ile iletişim kutusunu açma**tırnak işareti içine alınan. Örneğin, bir stil sayfası Kaynak Kod Düzenleyicisi'nde açmak için / e: şunları girersiniz`editorname` bağımsız değişken.
+/E:`editorname` Argument sözdizimi, **birlikte Aç iletişim kutusunda**göründükleri gibi, tırnak işaretleri içine alınan düzenleyici adlarını kullanır. Örneğin, kaynak kodu düzenleyicisinde bir stil sayfası açmak için/e:`editorname` Argument için aşağıdakini girersiniz.
 
 ```cmd
 /e:"Source Code (text) Editor"
 ```
 
 ## <a name="remarks"></a>Açıklamalar
- Otomatik Tamamlama, doğru yol ve dosya adı, türü bulmaya çalışır.
+Otomatik tamamlama, yazarken doğru yolu ve dosya adını bulmaya çalışır.
 
 ## <a name="example"></a>Örnek
- Bu örnek dosyayı Form1.frm, geçerli çözüme ekler.
+Bu örnek, Form1. frm dosyasını geçerli çözüme ekler.
 
 ```cmd
 >File.AddExistingItem "C:\public\solution files\Form1.frm"

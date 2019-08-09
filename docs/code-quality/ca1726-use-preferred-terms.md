@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 469025e5856f284f4d8887b351865a0304e4d35c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e4e068fee014d767b7afcdf8183ac6611b299f36
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62797164"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68921585"
 ---
 # <a name="ca1726-use-preferred-terms"></a>CA1726: Tercih edilen terimleri kullanın
 
@@ -26,18 +26,18 @@ ms.locfileid: "62797164"
 |-|-|
 |TypeName|UsePreferredTerms|
 |CheckId|CA1726|
-|Kategori|Microsoft.Naming|
-|Yeni Değişiklik|-Derlemelerini tetiklendiğinde sonu<br /><br /> Tür parametrelerinde tetiklendiğinde bölünemez-|
+|Kategori|Microsoft. Naming|
+|Yeni Değişiklik|Parçalara ayırma-derlemeler üzerinde harekete geçirildiğinde<br /><br /> Tür parametrelerinde harekete geçirildiğinde, bozmasız|
 
 ## <a name="cause"></a>Sebep
 
-Dışarıdan görünen bir tanımlayıcının adı, tercih edilen terim varolduğunda alternatif olarak bir terim içerir. Ya da terimi bayrağı veya bayrak adı içerir.
+Dışarıdan görünen bir tanımlayıcının adı, tercih edilen terim varolduğunda alternatif olarak bir terim içerir. Ya da ad, bayrak ya da bayrakları içerir.
 
 ## <a name="rule-description"></a>Kural açıklaması
 
-Bu kural, bir tanımlayıcı belirteçlere ayrıştırır. Her tek belirteç ve her bir bitişik belirteci çift bileşimi, kural ve özel sözlükler kullanım dışı bölümünde yerleşik koşulları karşılaştırılır. Aşağıdaki tabloda, kural ve kendi tercih edilen alternatif yerleşik koşulları gösterir.
+Bu kural, bir tanımlayıcıyı belirteçlere ayrıştırır. Her bir tek belirteç ve her bitişik çift belirteci birleşimi, kurala ve özel sözlüklerin kullanım dışı bölümüne yerleştirilmiş koşullarla karşılaştırılır. Aşağıdaki tabloda, kuralda yerleşik olan koşullar ve tercih edilen alternatifler gösterilmektedir.
 
-|Eski terimi|Tercih edilen terim|
+|Kullanılmayan dönem|Tercih edilen dönem|
 |-------------------|--------------------|
 |`Arent`|`AreNot`|
 |`Cancelled`|`Canceled`|
@@ -47,7 +47,7 @@ Bu kural, bir tanımlayıcı belirteçlere ayrıştırır. Her tek belirteç ve 
 |`Didnt`|`DidNot`|
 |`Doesnt`|`DoesNot`|
 |`Dont`|`DoNot`|
-|`Flag` veya `Flags`|Hiçbir değişiklik terimi yoktur. Kullanmayın.|
+|`Flag` veya `Flags`|Bir değiştirme dönemi yoktur. Kullanmayın.|
 |`Hadnt`|`HadNot`|
 |`Hasnt`|`HasNot`|
 |`Havent`|`HaveNot`|
@@ -64,11 +64,11 @@ Bu kural, bir tanımlayıcı belirteçlere ayrıştırır. Her tek belirteç ve 
 |`Wouldnt`|`WouldNot`|
 |`Writeable`|`Writable`|
 
-## <a name="how-to-fix-violations"></a>İhlaller nasıl düzeltilir?
- Bu kural ihlalini düzeltmek için tercih edilen alternatif terimiyle terimi değiştirin.
+## <a name="how-to-fix-violations"></a>İhlalleri çözme
+Bu kuralın ihlalini onarmak için terimi tercih edilen alternatif terim ile değiştirin.
 
-## <a name="when-to-suppress-warnings"></a>Uyarılar bastırıldığında
- Yalnızca tanımlayıcı adını kasıtlıdır ve özgün terimi yerine tercih edilen terim özellikle ilgili bu kuraldan bir uyarıyı gizler.
+## <a name="when-to-suppress-warnings"></a>Uyarıların ne zaman bastırılamıyor
+Yalnızca tanımlayıcının adı kasıtlı olarak belirtilmişse ve özellikle de tercih edilen dönem yerine özgün terimiyle ilişkili olduğunda bu kuraldan bir uyarı gizleyin.
 
-## <a name="related-rules"></a>İlgili kuralları
- [Adlandırma Uyarıları](../code-quality/naming-warnings.md)
+## <a name="related-rules"></a>İlgili kurallar
+[Adlandırma Uyarıları](../code-quality/naming-warnings.md)

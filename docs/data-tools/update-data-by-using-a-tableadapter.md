@@ -18,35 +18,35 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: ca5161d0ddb73a72b88f36e85bda9206839aec3d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 61ebcd6c833b55f0769365b89274e35136c914f9
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62565866"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68925342"
 ---
 # <a name="update-data-by-using-a-tableadapter"></a>TableAdapter kullanarak verileri güncelleştirme
 
-Veri kümenizdeki verileri değiştiren ve doğrulanmış sonra güncelleştirilen verileri bir veritabanına geri çağırarak gönderebilirsiniz `Update` yöntemi bir [TableAdapter](../data-tools/create-and-configure-tableadapters.md). `Update` Yöntemi tek bir veri tablosunu güncelleştirir ve göre doğru komutu (INSERT, UPDATE veya DELETE) çalıştıran <xref:System.Data.DataRow.RowState%2A> tablodaki her veri satırının. Bir veri kümesi ilişkili tabloları, Visual Studio güncelleştirmeleri yapmak için kullandığınız bir TableAdapterManager sınıfı oluşturur. TableAdapterManager sınıfı veritabanında tanımlanan yabancı anahtar kısıtlamaları göre doğru sırada güncelleştirmeler yapılmasını sağlar. Verilere bağlı denetimler kullandığınızda, veri bağlama mimarisi tableAdapterManager adlı TableAdapterManager sınıfın üye değişkeni oluşturur.
+Veri kümenizdeki veriler değiştirildikten ve doğrulandıktan sonra, bir `Update` [TableAdapter](../data-tools/create-and-configure-tableadapters.md)metodunu çağırarak güncelleştirilmiş verileri bir veritabanına geri gönderebilirsiniz. Yöntemi, tek bir veri tablosunu güncelleştirir ve tablodaki her bir veri satırının temelinde <xref:System.Data.DataRow.RowState%2A> doğru komutu (INSERT, Update veya delete) çalıştırır. `Update` Bir veri kümesinde ilgili tablolar olduğunda Visual Studio, güncelleştirmeleri yapmak için kullandığınız bir TableAdapterManager sınıfı oluşturur. TableAdapterManager sınıfı, güncelleştirmelerin veritabanında tanımlanan yabancı anahtar kısıtlamalarına göre doğru sırada yapılmasını sağlar. Veriye dayalı denetimleri kullandığınızda, veri bağlama mimarisi tableAdapterManager adlı TableAdapterManager sınıfının bir üye değişkenini oluşturur.
 
 > [!NOTE]
-> Bir veri kümesi içeriği ile bir veri kaynağını güncelleştirmek çalıştığınızda hatalar alabilirsiniz. Hataları önlemek için bağdaştırıcının çağıran kodu koymanızı öneririz `Update` yöntem içinde bir `try` / `catch` blok.
+> Bir veri kaynağını bir veri kümesinin içeriğiyle güncelleştirmeyi denediğinizde, hata alabilirsiniz. Hataları önlemek için, `Update` bağdaştırıcının yöntemini çağıran kodu bir `try` / `catch` blok içinde koymanız önerilir.
 
- Tam bir veri kaynağını güncelleştirme yordamı, iş gereksinimlerinize bağlı olarak farklılık gösterebilir, ancak aşağıdaki adımları içerir:
+Bir veri kaynağını güncelleştirmeye yönelik tam yordam, iş ihtiyaçlarına bağlı olarak farklılık gösterebilir, ancak aşağıdaki adımları içerir:
 
-1. Bağdaştırıcının çağrı `Update` yönteminde bir `try` / `catch` blok.
+1. Bir `Update` bloktabağdaştırıcının`try`yönteminiçağırın. / `catch`
 
-2. Bir özel durum yakalandığında, hataya neden olan veri satırı bulun.
+2. Bir özel durum yakalanmışsa, hataya neden olan veri satırını bulun.
 
-3. Sorun verilerinde mutabakat (program aracılığıyla yapabilirsiniz veya kullanıcıya değiştirilmesi için geçersiz satır sunarak) öğesini ve ardından güncelleştirmeyi yeniden deneyin (<xref:System.Data.DataRow.HasErrors%2A>, <xref:System.Data.DataTable.GetErrors%2A>).
+3. Veri satırındaki sorunu uzlaştırır (veya mümkünse, Kullanıcı tarafından değişiklik için geçersiz satırı sunarak) ve sonra güncelleştirmeyi yeniden deneyin (<xref:System.Data.DataRow.HasErrors%2A>, <xref:System.Data.DataTable.GetErrors%2A>).
 
 ## <a name="save-data-to-a-database"></a>Verileri bir veritabanına kaydetme
 
-Çağrı `Update` TableAdapter bağdaştırıcısının yöntemi. Veritabanına yazılmak için değerleri içeren veri tablosunun adı geçirin.
+`Update` TableAdapter metodunu çağırın. Veritabanına yazılacak değerleri içeren veri tablosunun adını geçirin.
 
-### <a name="to-update-a-database-by-using-a-tableadapter"></a>Bir TableAdapter'ı kullanarak bir veritabanını güncelleştirmek için
+### <a name="to-update-a-database-by-using-a-tableadapter"></a>TableAdapter kullanarak bir veritabanını güncelleştirmek için
 
-- TableAdapter bağdaştırıcısının içine`Update` yönteminde bir `try` / `catch` blok. Aşağıdaki örnek, içeriği güncelleştirmek gösterilmektedir `Customers` tablosundaki `NorthwindDataSet` içinden bir `try` / `catch` blok.
+- TableAdapter`Update` metodunu bir `try` bloktaçevrelemek`catch` . / Aşağıdaki örnek `Customers` , içindeki `NorthwindDataSet` tablosunun içeriğini bir `try` / blokiçindennasılgüncelleşleyeceğinizigösterir`catch` .
 
      [!code-csharp[VbRaddataSaving#9](../data-tools/codesnippet/CSharp/update-data-by-using-a-tableadapter_1.cs)]
      [!code-vb[VbRaddataSaving#9](../data-tools/codesnippet/VisualBasic/update-data-by-using-a-tableadapter_1.vb)]

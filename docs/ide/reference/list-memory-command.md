@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9120b3076dff1620f6ec5b9ff77041126932481a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d6d0b694f9703c6260d95ad03e085fcdf774dc52
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62557105"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68919140"
 ---
 # <a name="list-memory-command"></a>Belleği Listele Komutu
 Belirtilen bellek aralığının içeriklerini görüntüler.
@@ -32,52 +32,52 @@ Debug.ListMemory [/ANSI|Unicode] [/Count:number] [/Format:formattype]
 ```
 
 ## <a name="arguments"></a>Arguments
- `expression`
+`expression`
 
- İsteğe bağlı. Bellek görüntüleme başlayacağı bellek adresi.
+İsteğe bağlı. Belleği görüntülemeye başlamak için gereken bellek adresi.
 
 ## <a name="switches"></a>Anahtarlar
- / ANSI&#124;Unicode
+/ANSI&#124;Unicode
 
- İsteğe bağlı. Bellek, bellek, ANSI veya Unicode bayt için karşılık gelen karakter olarak görüntüler.
+İsteğe bağlı. Belleği, ANSI veya Unicode bellek baytlarına karşılık gelen karakterler olarak görüntüler.
 
- / Sayısı:`number`
+Biriktirme`number`
 
- İsteğe bağlı. Başlangıç belleği görüntülemek için kaç bayt belirler `expression`.
+İsteğe bağlı. ' Den `expression`başlayarak, kaç baytlık bellek gösterileceğini belirler.
 
- / Biçimi:`formattype`
+Formatını`formattype`
 
- İsteğe bağlı. Biçim türü bellek bilgileri görüntülemek için **bellek** penceresi; Mayıs OneByte, TwoBytes, FourBytes, EightBytes olabilir, Float (32-bit) veya çift (64-bit). OneByte kullanılıyorsa `/Unicode` kullanılamıyor.
+İsteğe bağlı. Bellek penceresinde bellek bilgilerini görüntülemek için biçim türü ; OneByte, TwoBytes, on bayt, sekizinci TBytes, float (32-bit) veya Double (64-bit) olabilir. Eğer OneByte kullanılıyorsa `/Unicode` kullanılamaz.
 
- / Onaltılık&#124;imzalı&#124;işaretsiz
+/Hex&#124;imzalı&#124;işaretsiz
 
- İsteğe bağlı. Numaraları görüntüleme biçimini belirtir: olarak işaretli, imzasız veya onaltılık.
+İsteğe bağlı. Sayıları görüntüleme biçimini belirtir: imzalı, işaretsiz veya onaltılı olarak.
 
 ## <a name="remarks"></a>Açıklamalar
- Eksiksiz bir yazmak yerine **Debug.ListMemory** komut tüm anahtarların ile önceden tanımlanmış diğer adlar için belirtilen değerler önceden belirli anahtarları komutu çağırır. Örneğin, girmek yerine:
+Tüm anahtarlarla birlikte bir **hata ayıklama. ListMemory** komutu yazmak yerine, belirtilen değerlere bazı anahtarlar önceden ayarlanmış şekilde, önceden tanımlanmış diğer adlar kullanılarak komutu çağırabilirsiniz. Örneğin, şunu girmek yerine:
 
 ```cmd
 >Debug.ListMemory /Format:float /Count:30 /Unicode
 ```
 
- şunu yazabilirsiniz:
+şunu yazabilirsiniz:
 
 ```cmd
 >df /Count:30 /Unicode
 ```
 
- İşte bir listesi için kullanılabilir diğer adlar, **Debug.ListMemory** komutu:
+**Debug. ListMemory** komutu için kullanılabilir diğer adların listesi aşağıdadır:
 
 |Alias|Komut ve anahtarlar|
 |-----------| - |
 |**d**|Debug.ListMemory|
-|**da**|Debug.ListMemory /Ansi|
-|**DB**|Debug.ListMemory /Format:OneByte|
-|**DC**|Debug.ListMemory /Format:FourBytes /Ansi|
-|**dd**|Debug.ListMemory /Format:FourBytes|
-|**SD**|Debug.ListMemory /Format:Float|
-|**dq**|Debug.ListMemory /Format:EightBytes|
-|**DU**|Debug.ListMemory / Unicode|
+|**kapattığımda**|Debug.ListMemory /Ansi|
+|**veritabanı**|Debug.ListMemory /Format:OneByte|
+|**'ye**|Debug.ListMemory /Format:FourBytes /Ansi|
+|**gg**|Debug.ListMemory /Format:FourBytes|
+|**df**|Debug. ListMemory/Format: float|
+|**DQ**|Debug.ListMemory /Format:EightBytes|
+|**du**|Debug.ListMemory / Unicode|
 
 ## <a name="example"></a>Örnek
 

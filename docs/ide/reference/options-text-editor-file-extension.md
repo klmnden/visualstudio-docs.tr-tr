@@ -15,48 +15,48 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 412a8489c3d7092aa87803f7dd3af5c7495b17a7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 13c79a4cae482990369fc8218bf0b7226ab05942
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62778625"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68919051"
 ---
 # <a name="options-text-editor-file-extension"></a>Seçenekler, Metin Düzenleyici, Dosya Uzantısı
 
-Bu seçenekler iletişim kutusu belirli dosya uzantılarına sahip tüm dosyaların nasıl belirtmenize olanak tanır, Visual Studio tümleşik geliştirme ortamı (IDE) tarafından işlenir. Her **uzantısı** girdiğiniz, bir düzenleme deneyimi seçebilirsiniz. Bu IDE Düzenleyici veya belirli bir türden belgeleri açılacağı Tasarımcısı seçmenize olanak sağlar. Bu seçenekleri görüntülemek için seçin **seçenekleri** gelen **Araçları** menüsünde genişletin **metin düzenleyici** düğüm ve select **dosya uzantısı**.
+Bu seçenekler iletişim kutusu, belirli dosya uzantılarına sahip tüm dosyaların Visual Studio tümleşik geliştirme ortamı (IDE) tarafından nasıl işleneceğini belirtmenizi sağlar. Girdiğiniz her **uzantı** Için bir düzen deneyimi seçebilirsiniz. Bu, belirli bir türdeki belgelerin açılacağı IDE düzenleyicisini veya tasarımcısını seçmenizi sağlar. Bu seçenekleri göstermek için, **Araçlar** menüsünden **Seçenekler** ' i seçin, **metin düzenleyici** düğümünü genişletin ve **Dosya Uzantısı**' nı seçin.
 
-Bir seçenek "ile kodlama" seçtiğinizde, bu belge için bir kodlama düzeni seçmenize olanak sağlar, bu türdeki bir belge açtığınızda bir iletişim kutusu görüntülenir. Bu, farklı platformlarda veya farklı hedef dilde kullanmak için proje belgelerinizi sürümlerini hazırlanma istediğinizde yararlı olabilir.
+"Kodlama ile" seçeneğini belirlediğinizde, bu belgenin bir kodlama şemasını seçmenize olanak tanıyan bir belge açtığınızda bir iletişim kutusu görüntülenir. Bu, proje belgelerinizin sürümlerini farklı platformlarda veya farklı hedef dillerde kullanılmak üzere hazırlıyorsanız yararlı olabilir.
 
 ## <a name="uielement-list"></a>UIElement listesi
 
 **Uzantı**
 
-Dosya uzantısı olan düzenleme deneyimi IDE'de tanımlamak istediğiniz yazın.
+Düzen deneyimini tanımlamak istediğiniz IDE 'de bulunan dosya uzantısını yazın.
 
 **Düzenleyici**
 
- IDE Düzenleyici veya tasarımcı hangi belgelerde bu dosya uzantısı açılır seçin. "İle ncoding" bir seçeneği belirlediğinizde, bir kodlama düzeni seçmenize olanak sağlar böyle bir belge açtığınızda bir iletişim kutusu görüntülenir.
+Bu dosya uzantısına sahip belgelerin açılacağı IDE Düzenleyicisi veya tasarımcı ' yı seçin. Bir "nencoding" seçeneği belirlediğinizde, bir kodlama şeması seçmenize olanak tanıyan bir belge açtığınızda bir iletişim kutusu görüntülenir.
 
 **Add**
 
-Belirtilen içeren bir giriş ekler **uzantısı** ve **düzenleme deneyimi** uzantı listesi.
+Uzantı listesine belirtilen **uzantıyı** ve **Düzen deneyimini** içeren bir giriş ekler.
 
 **Kaldır**
 
-Uzantı listeden seçilen girişi siler.
+Seçili girdiyi uzantı listesinden siler.
 
 **Uzantı listesi**
 
-Bir düzenleme deneyimi belirtilen tüm uzantıları listeler.
+Bir düzen deneyiminin belirtildiği tüm uzantıları listeler.
 
-**Uzantısız dosyaları şuraya Eşle**
+**Uzantısız dosyaları şu şekilde eşleyin**
 
-Uzantısız dosyaları IDE tarafından nasıl işleneceğini belirtmek istiyorsanız bu seçeneği belirleyin.
+Uzantısı olmayan dosyaların IDE tarafından nasıl işleneceğini belirtmek istiyorsanız bu seçeneği belirleyin.
 
 **Uzantısız dosya seçenekleri**
 
-Aynı liste olarak sağlar **Düzenleyicisi**. Dosya uzantıları olmadan belgeleri açılacağı Tasarımcısı ve IDE Düzenleyicisi'ni seçin.
+Düzenleyiciyle aynı listeyi sağlar. Dosya uzantıları olmayan belgelerin açılacağı IDE Düzenleyicisi veya tasarımcı ' yı seçin.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

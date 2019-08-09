@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: bd721edab080de7708ac395e2a7d7e486c504fba
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4f6f40308255e0496b2bcccddf4299e83ea93100
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62546381"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68922048"
 ---
 # <a name="ca1411-com-registration-methods-should-not-be-visible"></a>CA1411: COM kayıt metotları görünebilir olmamalıdır
 
@@ -30,30 +30,30 @@ ms.locfileid: "62546381"
 |-|-|
 |TypeName|ComRegistrationMethodsShouldNotBeVisible|
 |CheckId|CA1411|
-|Kategori|Microsoft.Interoperability|
+|Kategori|Microsoft. çalışabilirliği|
 |Yeni Değişiklik|Yeni|
 
 ## <a name="cause"></a>Sebep
 
-İle işaretlenmiş bir yöntemi <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute?displayProperty=fullName> veya <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute?displayProperty=fullName> özniteliktir dışarıdan görünür.
+Ya da <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute?displayProperty=fullName>özniteliğiyleişaretlenmişbiryöntem dışarıdangörünür.<xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute?displayProperty=fullName>
 
 ## <a name="rule-description"></a>Kural açıklaması
- Bir derlemeyi Bileşen Nesne Modeli (COM) ile kaydettiğinizde, kayıt defterine her derlemenin COM görünür türü için girişler eklenir. İle işaretlenmiş yöntemler <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute> ve <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute> öznitelikleri kayıt ve kayıt silme işlemleri sırasında sırasıyla kaydolmayı/kaydı kaldırmayı için bu tür özel kullanıcı kodu çalıştırmak için çağrılır. Bu kod, bu işlemlerin dışında çağrılmamalıdır.
+Bir derleme bileşen nesne modeli (COM) ile kaydettirilirse, derleme içindeki her bir COM görünebilir türü için kayıt defterine giriş eklenir. <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute> Ve<xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute> öznitelikleri ile işaretlenen Yöntemler, sırasıyla kayıt/kayıt silme işlemlerine özgü Kullanıcı kodunu çalıştırmak için, kayıt ve kayıt silme işlemi sırasında çağrılır. Bu kod bu işlemlerin dışında çağrılmamalıdır.
 
-## <a name="how-to-fix-violations"></a>İhlaller nasıl düzeltilir?
- Bu kural ihlalini düzeltmek için yöntemin erişilebilirliği değiştirme `private` veya `internal` (`Friend` içinde [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]).
+## <a name="how-to-fix-violations"></a>İhlalleri çözme
+Bu kural `private` ihlalini onarmak için, yönteminin erişilebilirliğini veya `internal` (`Friend` içinde [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) olarak değiştirin.
 
-## <a name="when-to-suppress-warnings"></a>Uyarılar bastırıldığında
- Bu kuraldan uyarıyı bastırmayın.
+## <a name="when-to-suppress-warnings"></a>Uyarıların ne zaman bastırılamıyor
+Bu kuraldan uyarıyı bastırmayın.
 
 ## <a name="example"></a>Örnek
- Aşağıdaki örnek, kural ihlal iki yöntem gösterir.
+Aşağıdaki örnek, kuralı ihlal eden iki yöntemi gösterir.
 
- [!code-csharp[FxCop.Interoperability.ComRegistration2#1](../code-quality/codesnippet/CSharp/ca1411-com-registration-methods-should-not-be-visible_1.cs)]
- [!code-vb[FxCop.Interoperability.ComRegistration2#1](../code-quality/codesnippet/VisualBasic/ca1411-com-registration-methods-should-not-be-visible_1.vb)]
+[!code-csharp[FxCop.Interoperability.ComRegistration2#1](../code-quality/codesnippet/CSharp/ca1411-com-registration-methods-should-not-be-visible_1.cs)]
+[!code-vb[FxCop.Interoperability.ComRegistration2#1](../code-quality/codesnippet/VisualBasic/ca1411-com-registration-methods-should-not-be-visible_1.vb)]
 
-## <a name="related-rules"></a>İlgili kuralları
- [CA1410: COM kayıt yöntemleri eşleşmelidir](../code-quality/ca1410-com-registration-methods-should-be-matched.md)
+## <a name="related-rules"></a>İlgili kurallar
+[CA1410 COM kayıt yöntemlerinin eşleşmesi gerekir](../code-quality/ca1410-com-registration-methods-should-be-matched.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

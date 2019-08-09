@@ -1,49 +1,49 @@
 ---
-title: Mac için Visual Studio aboneliği etkinleştir
-description: Bu makalede, aboneliğinizi etkinleştirme ve Mac için Visual Studio özellikleri kilidini açmak için Microsoft hesabınızı kullanmayı açıklar
+title: Aboneliği Etkinleştirme
+description: Bu makalede, Mac için Visual Studio içindeki aboneliğinizi etkinleştirmek ve özellikleri açmak için Microsoft hesabı nasıl kullanılacağı açıklanmaktadır
 author: conceptdev
 ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: 898DFEB8-5757-4CCE-8AD2-8BC7706F5855
-ms.openlocfilehash: 7ead923920275c0d0eb048cb961679da4ce2fc94
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7acef72e3e1768d0250e0dd7ff2b587277d133ec
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62998257"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68872309"
 ---
 # <a name="enable-subscription"></a>Aboneliği Etkinleştirme
 
-Mac için Visual Studio içinden seçim nden tek indirmeyle erişilebilen üç farklı abonelik düzeylerini sağlar:
+Mac için Visual Studio, tek bir indirmenin erişebileceği, bunlardan biri arasından seçim yapabileceğiniz üç farklı abonelik düzeyi sağlar:
 
 * Mac için Visual Studio Enterprise
 * Mac için Visual Studio Professional
 * Mac için Visual Studio Community
 
-Bir aboneliği kullanmaya başlamak için oturum için Visual Studio Mac için adımları izleyerek [Mac için Visual Studio'da oturum açma](signing-in.md) Kılavuzu. Oturum açma hesapları iletişim kutusunda görüntülenen, aboneliğinizin özelliklerini etkinleştirir:
+Bir aboneliği kullanmaya başlamak için Mac için Visual Studio 'de oturum [açma](signing-in.md) kılavuzundaki adımları izleyerek Mac için Visual Studio ' da oturum açın. Oturum açma, hesaplarınız iletişim kutusunda görünen aboneliğinizi etkinleştirir:
 
-![Kullanıcı Lisansı iletişim kutusunu göster](media/user-accounts-login.png)
+![Kullanıcı lisansı iletişim kutusunu göster](media/user-accounts-login.png)
 
-## <a name="update-expired-licenses"></a>Süresi dolan lisansları güncelleştirin
+## <a name="update-expired-licenses"></a>Vadesi geçen lisansları Güncelleştir
 
-Aboneliğinizin süresi dolmuşsa, iki seçeneğiniz vardır:
+Aboneliğinizin süresi dolmuşsa iki seçeneğiniz vardır:
 
-1. Aboneliğinizi yenileyin. Aboneliğinizi göz atarak yenileyebilirsiniz [ https://visualstudio.microsoft.com/vs/pricing/ ](https://visualstudio.microsoft.com/vs/pricing/).
+1. Aboneliğinizi yenileyin. Aboneliğinizi, ' a giderek yenileyebilirsiniz [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/).
 
-2. Başka bir hesap ile etkin bir aboneliğiniz varsa, bunu Visual Studio için Mac için içinde ayrıntılı olarak ekleyebileceğiniz [birden çok kullanıcı hesabı ekleme](signing-in.md) makalesi. Mac için Visual Studio eklediğiniz tüm hesaplarından en iyi lisans algılar.
+2. Etkin bir aboneliğe sahip başka bir hesabınız varsa, [birden çok kullanıcı hesabı ekleme](signing-in.md) makalesinde ayrıntılı olarak Mac için Visual Studio ekleyebilirsiniz. Mac için Visual Studio, eklediğiniz tüm hesaplardan en iyi kullanılabilir lisansı algılar.
 
-## <a name="product-key-usage"></a>Ürün anahtar kullanımı
+## <a name="product-key-usage"></a>Ürün anahtarı kullanımı
 
-Şu anda, Mac için Visual Studio Professional veya Enterprise yetkilendirmeler etkinleştirmek üzere bir ürün anahtarı kullanan bir yolu yoktur Mac için Visual Studio Enterprise Mac ya da Visual Studio Professional için kullanmak için ilgili olmalıdır [abonelik](https://visualstudio.microsoft.com/subscriptions/) ve [açan](signing-in.md) IDE.
+Şu anda, Mac için Visual Studio için Professional veya Enterprise yetkilendirmelerini etkinleştirmek üzere bir ürün anahtarı kullanmanın bir yolu yoktur. Mac için Visual Studio Enterprise veya Mac için Visual Studio Professional kullanmak için, ilgili bir [aboneliğiniz](https://visualstudio.microsoft.com/subscriptions/) olması ve IDE ['de oturum](signing-in.md) açmanız gerekir.
 
-## <a name="offline-activation"></a>Çevrimdışı etkinleştirme
+## <a name="offline-activation"></a>Çevrimdışı Etkinleştirme
 
 > [!NOTE]
-> Çevrimdışı etkinleştirme, Mac için Visual Studio için kullanılabilir değil.
-> Visual Studio 2017 için Mac Professional veya Enterprise aboneliği etkinleştirmek için oturum açarken internet'e bağlı gerekir.
+> Mac için Visual Studio için çevrimdışı etkinleştirme kullanılamıyor.
+> Mac Professional veya kurumsal abonelik için Visual Studio 2017 ' i etkinleştirmek için oturum açarken internet 'e bağlı olmanız gerekir.
 
-İnternet bağlantısı olmadan makineler için Mac için Visual Studio Enterprise 2017 aldıysanız, etkinleştirme, ancak Xamarin Inspector'ı, Xamarin Profiler Mac için Visual Studio'yu kullanmaya devam edebilir ve gömülü bütünleştirilmiş kodlar özellikleri olmayacaktır kullanılabilir.
+İnternet bağlantısı olmayan makinelerde Mac için Visual Studio Enterprise 2017 satın aldıysanız, etkinleştirme olmadan Mac için Visual Studio kullanmaya devam edebilirsiniz, ancak Xamarin Inspector, Xamarin Profiler ve ekli derlemeler özellikleri olmayacaktır kullanılabileceğini.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [(Windows üzerinde) Visual Studio'da oturum açın](/visualstudio/ide/signing-in-to-visual-studio)
+- [Visual Studio 'da oturum açın (Windows üzerinde)](/visualstudio/ide/signing-in-to-visual-studio)

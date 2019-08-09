@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d3dc26964a62c952b9c8d18c710e6163bf8ab08
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e2c7e7efe348526661b9de74b3631e6795608b99
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62796923"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68921344"
 ---
 # <a name="ca1814-prefer-jagged-arrays-over-multidimensional"></a>CA1814: Çok boyutlu diziler yerine basit dizileri tercih edin
 
@@ -30,23 +30,23 @@ ms.locfileid: "62796923"
 |-|-|
 |TypeName|PreferJaggedArraysOverMultidimensional|
 |CheckId|CA1814|
-|Kategori|Microsoft.Performance|
+|Kategori|Microsoft. Performance|
 |Yeni Değişiklik|Yeni|
 
 ## <a name="cause"></a>Sebep
- Üye, çok boyutlu bir dizi bildirilir.
+Bir üye çok boyutlu bir dizi olarak bildirilmiştir.
 
 ## <a name="rule-description"></a>Kural açıklaması
- Basit bir dizi, öğeleri dizi olan bir dizidir. Öğeleri olan diziler bazı veri kümeler için daha az harcanmış önde gelen farklı boyutlarda olabilir.
+Basit bir dizi, öğeleri dizi olan bir dizidir. Öğeleri olan diziler bazı veri kümeler için daha az harcanmış önde gelen farklı boyutlarda olabilir.
 
-## <a name="how-to-fix-violations"></a>İhlaller nasıl düzeltilir?
- Bu kural ihlalini düzeltmek için basit bir dizi çok boyutlu dizi değiştirin.
+## <a name="how-to-fix-violations"></a>İhlalleri çözme
+Bu kural ihlalini onarmak için, çok boyutlu diziyi pürüzlü bir dizi olarak değiştirin.
 
-## <a name="when-to-suppress-warnings"></a>Uyarılar bastırıldığında
- Çok boyutlu dizi alanı boşa değil, bu kuraldan bir uyarıyı gizler.
+## <a name="when-to-suppress-warnings"></a>Uyarıların ne zaman bastırılamıyor
+Çok boyutlu dizi alanı atık olarak içermiyorsa, bu kuraldan bir uyarı gizleyin.
 
 ## <a name="example"></a>Örnek
- Aşağıdaki örnek, basit ve çok boyutlu diziler için bildirimi gösterir.
+Aşağıdaki örnek, pürüzlü ve çok boyutlu diziler için bildirimleri gösterir.
 
- [!code-vb[FxCop.Performance.JaggedArrays#1](../code-quality/codesnippet/VisualBasic/ca1814-prefer-jagged-arrays-over-multidimensional_1.vb)]
- [!code-csharp[FxCop.Performance.JaggedArrays#1](../code-quality/codesnippet/CSharp/ca1814-prefer-jagged-arrays-over-multidimensional_1.cs)]
+[!code-vb[FxCop.Performance.JaggedArrays#1](../code-quality/codesnippet/VisualBasic/ca1814-prefer-jagged-arrays-over-multidimensional_1.vb)]
+[!code-csharp[FxCop.Performance.JaggedArrays#1](../code-quality/codesnippet/CSharp/ca1814-prefer-jagged-arrays-over-multidimensional_1.cs)]

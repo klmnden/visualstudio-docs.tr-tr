@@ -20,38 +20,38 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: 78a8bf94323391d031aaf718f6e3132eb89e1df3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c7ff2551f3a99bf13909f9db3b1659482246e957
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62560382"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68919624"
 ---
 # <a name="annotating-function-behavior"></a>İşlev Davranışını Yorumlama
-Ek açıklama olarak [işlev parametrelerini ve dönüş değerleri](../code-quality/annotating-function-parameters-and-return-values.md), tüm işlev özelliklerinin açıklama ekleyebilirsiniz.
+[İşlev parametrelerine ve dönüş değerlerine](../code-quality/annotating-function-parameters-and-return-values.md)açıklama eklemek için, tüm işlevin özelliklerine ek açıklama ekleyebilirsiniz.
 
 ## <a name="function-annotations"></a>İşlev ek açıklamaları
- Şu ek açıklamaları işlevi bir bütün olarak uygular ve nasıl davranacağını ya da true olması beklenen açıklar.
+Aşağıdaki ek açıklamalar işlev için bir bütün olarak uygulanır ve nasıl davrandığını veya neyin doğru olmasını beklediğini açıklamaktadır.
 
 |Ek Açıklama|Açıklama|
 |----------------|-----------------|
-|`_Called_from_function_class_(name)`|Tek başına duramaz tasarlanmamıştır; Bunun yerine, bir koşul ile kullanılmak üzere olduğu `_When_` ek açıklama. Daha fazla bilgi için [belirtirken ve ek açıklama bir'burada geçerli](../code-quality/specifying-when-and-where-an-annotation-applies.md).<br /><br /> `name` Ayrıca şurada görünür rastgele bir dize parametresi, bir `_Function_class_` bazı işlevlerin bildiriminde ek açıklama.  `_Called_from_function_class_` şu anda analiz ediliyor işlevi kullanılarak eklenmişse sıfır döndürür `_Function_class_` aynı değerine sahip `name`; Aksi takdirde, sıfır döndürür.|
-|`_Check_return_`|Dönüş değeri açıklama ekler ve onu çağıran incelemelisiniz durumları. Void bir bağlamda işlev çağrılırsa denetleyicisi bir hata bildirir.|
-|`_Function_class_(name)`|`name` Parametresi, kullanıcı tarafından belirlenen rastgele bir dize.  Diğer ad alanlarını farklı bir ad alanında bulunmaktadır. Bir işlev, işlev işaretçisi veya — en usefully — bir işlev işaretçisi türü, bir veya daha fazla işlev sınıflarına ait olarak atanabilir.|
-|`_Raises_SEH_exception_`|Her zaman konusu yapılandırılmış özel durum işleyicisi (SEH) özel durum oluşturan bir işlev açıklama ekler `_When_` ve `_On_failure_` koşulları. Daha fazla bilgi için [belirtirken ve ek açıklama bir'burada geçerli](../code-quality/specifying-when-and-where-an-annotation-applies.md).|
-|`_Maybe_raises_SEH_exception_`|İsteğe bağlı olarak bir SEH özel yapılan neden olabilir bir işlev açıklama ekler `_When_` ve `_On_failure_` koşulları.|
-|`_Must_inspect_result_`|Dönüş değeri, parametreler ve genel öğeleri dahil olmak üzere, herhangi bir çıkış değeri açıklama ekler.  Çözümleyici açıklamalı nesnesindeki değeri değil sonradan Denetlenmekte bir hata bildirir. Koşullu ifadede kullanılır, çıkış parametresi atanan veya genel veya bir parametre olarak geçen "Denetleme" içerir.  Dönüş değerleri için `_Must_inspect_result_` gelir `_Check_return_`.|
-|`_Use_decl_annotations_`|Bir işlev tanımı (işlev gövdesi olarak da bilinir), üst bilgisindeki ek açıklamaları listesi yerine kullanılabilir.  Zaman `_Use_decl_annotations_` olan kullanıldığında, ayrıca sahip tanımında mevcut olmaları durumunda ek açıklamalar aynı işlevin bir kapsamdaki üstbilgi görünür kullanılır `_Use_decl_annotations_` ek açıklama.|
+|`_Called_from_function_class_(name)`|Tek başına hedeflenmemiştir; Bunun yerine, `_When_` ek açıklamayla birlikte kullanılacak bir koşul vardır. Daha fazla bilgi için bkz. [bir ek açıklamanın ne zaman ve nereye uygulanacağını belirtme](../code-quality/specifying-when-and-where-an-annotation-applies.md).<br /><br /> Parametresi, bazı işlevlerin bildirimindeki `_Function_class_` ek açıklamada de görünen rastgele bir dizedir. `name`  `_Called_from_function_class_`Şu anda çözümlenmekte olan işleve aynı değere sahip olan ' i kullanarak `_Function_class_` açıklanmışsa sıfır dışında bir `name`değer döndürür; Aksi takdirde, sıfır döndürür.|
+|`_Check_return_`|Bir dönüş değeri ve çağıranın bunu incelemesi gerektiğini belirten bir açıklama. İşlev void bağlamda çağrılırsa, denetleyici bir hata bildirir.|
+|`_Function_class_(name)`|`name` Parametresi, Kullanıcı tarafından atanan rastgele bir dizedir.  Diğer ad alanlarından farklı bir ad alanında bulunur. Bir işlev, işlev işaretçisi veya — en çok usetam — bir işlev işaretçisi türü bir veya daha fazla işlev sınıfına ait olarak belirlenebilir.|
+|`_Raises_SEH_exception_`|Her zaman yapılandırılmış bir özel durum işleyicisi (SEH) özel durumu, konu `_When_` ve `_On_failure_` koşullara tabi olan bir işlevi annotates. Daha fazla bilgi için bkz. [bir ek açıklamanın ne zaman ve nereye uygulanacağını belirtme](../code-quality/specifying-when-and-where-an-annotation-applies.md).|
+|`_Maybe_raises_SEH_exception_`|İsteğe bağlı olarak bir seh özel durumu, konu `_When_` ve `_On_failure_` koşullara tabi olabilecek bir işlevi annotates.|
+|`_Must_inspect_result_`|Dönüş değeri, parametreler ve Globals 'ler dahil olmak üzere herhangi bir çıkış değerini öğretme.  Açıklamalı nesnede bulunan değer daha sonra incelenemediği çözümleyici bir hata bildirir. "Denetleme", bir koşullu ifadede kullanılıp kullanılmadığını, bir çıkış parametresine veya genel 'e atandığını veya bir parametre olarak geçtiğini içerir.  Dönüş değerleri için, `_Must_inspect_result_` şunu `_Check_return_`gösterir.|
+|`_Use_decl_annotations_`|Başlıktaki ek açıklamaların listesi yerine bir işlev tanımında (işlev gövdesi olarak da bilinir) kullanılabilir.  Kullanıldığında, aynı işlev için kapsam içi üst bilgisinde görünen ek açıklamalar, `_Use_decl_annotations_` ek açıklamasına sahip tanımda de mevcuttur gibi kullanılır. `_Use_decl_annotations_`|
 
 ## <a name="successfailure-annotations"></a>Başarı/başarısızlık ek açıklamaları
- Bir işlev başarısız olur ve yaptığında, sonuçları tamamlanmamış veya işlevi başarılı olduğunda sonuçlardan farklılık gösterir.  Aşağıdaki listede ek açıklamalar hata davranışına express için yollar sağlar.  Bu ek açıklamaları kullanmak için başarıyı belirlemek bunları etkinleştirmeniz gerekir; Bu nedenle, bir `_Success_` eklenti gereklidir.  Dikkat `NTSTATUS` ve `HRESULT` zaten bir `_Success_` ; yerleşik ek açıklama ancak kendi belirtirseniz `_Success_` üzerindeki ek açıklama `NTSTATUS` veya `HRESULT`, yerleşik ek açıklama onu geçersiz kılar.
+Bir işlev başarısız olabilir ve ne zaman, işlev başarılı olduğunda sonuçları tamamlanmamış veya sonuçlardan farklı olabilir.  Aşağıdaki listedeki ek açıklamalar başarısızlık davranışını ifade etmenin yollarını sağlar.  Bu ek açıklamaları kullanmak için, bunları başarıyı tespit etmek üzere etkinleştirmeniz gerekir. Bu nedenle, `_Success_` ek açıklama gereklidir.  Ve `NTSTATUS` `_Success_` `HRESULT` `NTSTATUS` içinde yerleşik olarak bulunan bir `_Success_` ek açıklamanın zaten olduğunu fark edin; ancak, veya üzerinde kendi ek açıklamanızı belirtirseniz, yerleşik ek açıklamayı geçersiz kılar. `HRESULT`
 
 |Ek Açıklama|Açıklama|
 |----------------|-----------------|
-|`_Always_(anno_list)`|Eşdeğer `anno_list _On_failure_(anno_list)`; diğer bir deyişle, ek açıklamalar `anno_list` işlev başarılı olup olmadığını uygulayın.|
-|`_On_failure_(anno_list)`|Kullanılacak yalnızca `_Success_` işlev açıklama eklemek için de kullanılır — açıkça veya dolaylı olarak aracılığıyla `_Return_type_success_` bir TypeDef. Zaman `_On_failure_` bir işlevi parametre veya dönüş değeri, her ek açıklaması içinde ek açıklama varsa `anno_list` (Milattan) olarak kodlandıysa yokmuş gibi davranır `_When_(!expr, anno)`burada `expr` gerekli parametresi `_Success_` ek açıklama. Örtük uygulama buna `_Success_` tüm sonrası koşulları için geçerli değildir `_On_failure_`.|
-|`_Return_type_success_(expr)`|Tür tanımı uygulanabilir. Tüm İşlevler, yazın ve açıkça olmadığı döndüren gösterir `_Success_` bunlar varmış gibi ek açıklamalı `_Success_(expr)`. `_Return_type_success_` bir işlev veya bir işlev işaretçisi typedef kullanılamaz.|
-|`_Success_(expr)`|`expr` bir rvalue döndüren bir ifadedir. Zaman `_Success_` ek açıklama bir işlev bildirimi veya tanımı, her ek açıklama var (`anno`) işlev ve sonrası koşulu olarak kodlandıysa gibi davranır `_When_(expr, anno)`. `_Success_` Ek açıklama parametrelerinin değil, bir işlev yalnızca üzerinde kullanılabilir veya dönüş türü. En fazla bir olabilir `_Success_` bir işlev ve üzerindeki ek açıklama içinde olamaz `_When_`, `_At_`, veya `_Group_`. Daha fazla bilgi için [belirtirken ve ek açıklama bir'burada geçerli](../code-quality/specifying-when-and-where-an-annotation-applies.md).|
+|`_Always_(anno_list)`|Eşdeğerdir; diğer bir deyişle, içindeki `anno_list` ek açıklamalar işlevin başarılı olup olmadığını uygular. `anno_list _On_failure_(anno_list)`|
+|`_On_failure_(anno_list)`|Yalnızca `_Success_` , bir typedef `_Return_type_success_` üzerinde açıkça veya örtük olarak işlev üzerine eklemek için de kullanıldığında kullanılır. `_When_(!expr, anno)` `anno_list` `_Success_` `expr` Ek açıklama bir işlev parametresi veya dönüş değeri üzerinde olduğunda, (Anno) içindeki her ek açıklama olarak kodlanmış gibi davranır, burada parametre gerekli ek açıklamanın parametresidir. `_On_failure_` Bu, ' nin `_Success_` tüm koşullar için `_On_failure_`geçerli olmadığı anlamına gelir.|
+|`_Return_type_success_(expr)`|Bir typedef 'e uygulanabilir. Bu türü döndüren ve açıkça sahip `_Success_` olmayan tüm işlevlere sahip `_Success_(expr)`oldukları gibi açıklama eklenmiş olduğunu gösterir. `_Return_type_success_`bir işlevde veya bir işlev işaretçisi typedef üzerinde kullanılamaz.|
+|`_Success_(expr)`|`expr`, rvalue veren bir ifadedir. Ek açıklama bir işlev bildiriminde veya tanımında olduğunda, işlevdeki ve koşul sonrasındaki her ek`anno`açıklama () olarak `_When_(expr, anno)`kodlanmış gibi davranır. `_Success_` Ek `_Success_` açıklama, parametreleri veya dönüş türü üzerinde değil, yalnızca bir işlevde kullanılabilir. Bir işlevde `_Success_` en fazla bir ek açıklama olabilir ve herhangi `_When_`bir, `_At_`veya `_Group_`içinde olamaz. Daha fazla bilgi için bkz. [bir ek açıklamanın ne zaman ve nereye uygulanacağını belirtme](../code-quality/specifying-when-and-where-an-annotation-applies.md).|
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

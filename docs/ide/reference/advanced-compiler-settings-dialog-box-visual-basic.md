@@ -13,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 590e7917cdc37242b6fc73699aa8ce6b3e8ba24f
-ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
+ms.openlocfilehash: 0cb77021818fd77205a598f54a4a64a1929348f2
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68461474"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68919351"
 ---
 # <a name="advanced-compiler-settings-dialog-box-visual-basic"></a>Gelişmiş Derleme Ayarları İletişim Kutusu (Visual Basic)
 
@@ -38,7 +38,7 @@ Projenin Gelişmiş derleme yapılandırma özelliklerini belirtmek için **Proj
 
 ## <a name="optimizations"></a>İyileştirmeleri
 
- Aşağıdaki seçenekler, bir program dosyasını daha küçük hale getirmek, bir programın daha hızlı çalışmasını sağlamak ya da yapı sürecini hızlandırmak için bazı durumlarda en iyileştirmeleri belirler.
+Aşağıdaki seçenekler, bir program dosyasını daha küçük hale getirmek, bir programın daha hızlı çalışmasını sağlamak ya da yapı sürecini hızlandırmak için bazı durumlarda en iyileştirmeleri belirler.
 
 **Tamsayı taşma denetimlerini kaldır**
 
@@ -52,11 +52,11 @@ Derleyici iyileştirmelerini devre dışı bırakmak için bu onay kutusu varsay
 
  **DLL taban adresi**
 
- Bu metin kutusu, varsayılan DLL taban adresini onaltılık biçimde görüntüler. Sınıf kitaplığı ve denetim kitaplığı projelerinde, bu metin kutusunu, DLL oluşturulduğunda kullanılacak temel adresi belirtmek için kullanabilirsiniz.
+Bu metin kutusu, varsayılan DLL taban adresini onaltılık biçimde görüntüler. Sınıf kitaplığı ve denetim kitaplığı projelerinde, bu metin kutusunu, DLL oluşturulduğunda kullanılacak temel adresi belirtmek için kullanabilirsiniz.
 
  **Hata ayıklama bilgileri üret**
 
- Listeden **hiçbiri**, **tam**veya **pdb** 'yi seçin. **None** hiçbir hata ayıklama bilgisinin üretilmediği belirtir. **Tam** hata ayıklama bilgilerinin oluşturulduğunu ve **PDB** 'nin yalnızca pdb hata ayıklama bilgilerinin oluşturulması gerektiğini belirtir. Bu seçenek için varsayılan değer **Full**değeridir.
+Listeden **hiçbiri**, **tam**veya **pdb** 'yi seçin. **None** hiçbir hata ayıklama bilgisinin üretilmediği belirtir. **Tam** hata ayıklama bilgilerinin oluşturulduğunu ve **PDB** 'nin yalnızca pdb hata ayıklama bilgilerinin oluşturulması gerektiğini belirtir. Bu seçenek için varsayılan değer **Full**değeridir.
 
 ## <a name="compilation-constants"></a>Derleme sabitleri
 
@@ -64,15 +64,15 @@ Koşullu derleme sabitleri, tanımlanmış sabitler ortak olduğundan ve projede
 
  **DEBUG sabitini tanımlayın**
 
- Varsayılan olarak, bu onay kutusu seçilidir ve bir hata ayıklama sabiti ayarlanır.
+Varsayılan olarak, bu onay kutusu seçilidir ve bir hata ayıklama sabiti ayarlanır.
 
  **TRACE sabitini tanımlayın**
 
- Varsayılan olarak, bu onay kutusu seçilidir ve bir Izleme sabiti ayarlanır.
+Varsayılan olarak, bu onay kutusu seçilidir ve bir Izleme sabiti ayarlanır.
 
  **Özel sabitler**
 
- Bu metin kutusuna uygulamanız için özel sabitler girin. Bu form kullanılarak girişler virgülle ayrılmalıdır: **Name1 = "değer1", AD2 = "değer2", name3 = "Value3"** .
+Bu metin kutusuna uygulamanız için özel sabitler girin. Bu form kullanılarak girişler virgülle ayrılmalıdır: **Name1 = "değer1", AD2 = "değer2", name3 = "Value3"** .
 
 ## <a name="other-settings"></a>Diğer ayarlar
 

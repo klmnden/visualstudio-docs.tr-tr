@@ -1,5 +1,5 @@
 ---
-title: Araç kutusu öğelerini, WPF bileşenlerini seçme | Microsoft Docs
+title: Araç kutusu öğelerini, WPF bileşenlerini seçin | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -14,68 +14,61 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3f0d674984d916cb59f5938903d1bf1ba7d687bb
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 3f17ac56038c5f6c1d4de026546410ece438e375
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65680337"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68869927"
 ---
 # <a name="choose-toolbox-items-wpf-components"></a>Araç Kutusu Öğelerini, WPF Bileşenlerini Seçme
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Bu sekme, **araç kutusu öğelerini Seç** iletişim kutusu, yerel bilgisayarınızda Windows Presentation Foundation (WPF) kullanılabilir denetimleri bir listesini görüntüler. Bu listeyi görüntülemek için seçin **araç kutusu öğelerini Seç** gelen **Araçları** görüntülenecek menü **araç kutusu öğelerini Seç** iletişim kutusunu ve ardından kendi **WPF Bileşenleri** sekmesi. Listelenen bileşenleri sıralamak için herhangi bir sütun başlığını seçin.  
-  
-- Bir bileşen yanındaki onay kutusunu seçtiğinizde, söz konusu bileşen için bir simge görüntülenir **araç kutusu**.  
-  
+**Araç kutusu öğelerini Seç** iletişim kutusunun bu sekmesi, yerel bilgisayarınızda bulunan WINDOWS PRESENTATION FOUNDATION (WPF) denetimlerinin bir listesini görüntüler. Bu listeyi göstermek için **Araçlar** menüsünden **araç kutusu** öğelerini Seç ' i seçerek **araç kutusu öğelerini Seç** Iletişim kutusunu görüntüleyin ve ardından **WPF bileşenleri** sekmesini seçin. Listelenen bileşenleri sıralamak için herhangi bir sütun başlığını seçin.
+
+- Bir bileşenin yanındaki onay kutusu seçildiğinde, bu bileşen için bir simge **araç kutusunda**görüntülenir.
+
   > [!TIP]
-  > Örneği WPF denetiminin proje belge düzenlenmesi için açıldı eklemek için sürükleyin, **araç kutusu** Tasarım görünümü yüzeyine simgesi. Varsayılan işaretleme ve kod bileşeni için projenize değiştirmek hazır eklenir. Daha fazla bilgi için [nasıl yapılır: Araç kutusu penceresini yönetme](https://msdn.microsoft.com/a022c3fe-298c-4a59-a48f-b050da90ebc2) ve [nasıl yapılır: Araç kutusu sekmeleri işlemek](https://msdn.microsoft.com/21285050-cadd-455a-b1f5-a2289a89c4db).  
-  
-- Bir bileşen yanındaki onay kutusunu temizlendiğinde, karşılık gelen simgeyi kaldırılacak **araç kutusu.**  
-  
+  > Bir WPF denetiminin bir örneğini, düzenlenmek üzere açık bir proje belgesine eklemek için, **araç kutusu** simgesini Tasarım görünümü yüzeyi üzerine sürükleyin. Bileşen için varsayılan biçimlendirme ve kod, değiştirmeniz için hazır olan projenize eklenir. Daha fazla bilgi için [nasıl yapılır: Araç kutusu penceresini](https://msdn.microsoft.com/a022c3fe-298c-4a59-a48f-b050da90ebc2) ve [nasıl yapılacağını yönetin: Araç kutusu sekmelerini](https://msdn.microsoft.com/21285050-cadd-455a-b1f5-a2289a89c4db)işleme.
+
+- Bir bileşenin yanındaki onay kutusu silinirse, ilgili simge **araç kutusundan kaldırılır.**
+
   > [!NOTE]
-  > Bunlar için simgeler görüntülenir olup olmadığını bilgisayarınızda yüklü .NET Framework bileşenlerini sunulmaya **araç kutusu**.  
-  
-  Sütunlarda **WPF bileşenleri** sekmesine aşağıdaki bilgileri içerir:  
-  
-  Ad  
-  WPF denetimleri, girdileri bilgisayarınızın kayıt defterinde mevcut adlarını listeler.  
-  
-  Ad Alanı  
-  Hiyerarşisini görüntüler [NIB: .NET Framework sınıf kitaplığı](https://msdn.microsoft.com/6c4f3a62-6a0f-41f2-9d52-ee0b13686f29) bileşeni yapısını tanımlayan ad. Bilgisayarınızda yüklü her .NET Framework ad alanı içinde kullanılabilir bileşenleri listelemek için bu sütun sıralama.  
-  
-  Derleme adı  
-  Her bileşen için ad alanı içeren bir .NET Framework derlemesinin adını görüntüler. Bilgisayarınızda yüklü her .NET Framework derlemesi içindeki ad alanlarını listelemek için bu sütun sıralama.  
-  
-  Dizin  
-  .NET Framework derlemesinin konumunu görüntüler. Genel Derleme Önbelleği tüm derlemeler için varsayılan konumdur. Genel Derleme Önbelleği hakkında daha fazla bilgi için bkz: [derlemeler ve genel derleme önbelleği ile çalışma](https://msdn.microsoft.com/library/8a18e5c2-d41d-49ef-abcb-7c27e2469433).  
-  
-## <a name="uielement-list"></a>UIElement Listesi  
- **Filtre**  
- Metin kutusunda sağladığınız dizenin göre WPF denetim listesini filtreler. Tüm eşleşmeleri herhangi birinden dört sütun gösterilmektedir.  
-  
- **Temizle**  
- Filtre dizesi temizler.  
-  
- **Göz atma**  
- Açılır **açık** iletişim kutusunda, WPF denetimleri içeren derlemeler gezinmenize olanak tanır. Hangi genel derleme önbelleğinde bulunmayan derlemeler yüklemek için bunu kullanın.  
-  
- **Dil**  
- Seçili WPF denetimi içeren bütünleştirilmiş kodun yerelleştirilmiş dilini gösterir.  
-  
-## <a name="limitations"></a>Sınırlamalar  
- Özel denetim ekleme veya <xref:System.Windows.Controls.UserControl> araç kutusuna aşağıdaki sınırlamalara sahiptir.  
-  
-- Yalnızca güncel proje dışında tanımlanmış özel denetimler için çalışır.  
-  
-- Doğru sürüm için hata ayıklama veya sürüm hata ayıklama çözüm yapılandırması değiştirdiğinizde güncelleştirmez. Başvuru yapılan proje başvurusunun değildir, ancak bunun yerine derleme diskte içindir olmasıdır. Denetim, hata ayıklama'dan sürümüne değiştirdiğinizde geçerli çözümün bir parçası ise, projenizin hata ayıklama sürümü denetimi başvurmak devam eder.  
-  
-  Ayrıca, tasarım zamanı meta verileri özel denetim ve bu meta veriler için uygulanırsa belirtir <xref:Microsoft.Windows.Design.ToolboxBrowsableAttribute> ayarlanır `false`, denetimin araç kutusunda görünmüyor.  
-  
-  Ad alanını ve derlemeyi denetiminizin eşleyerek denetimlerinizi XAML görünümünde doğrudan başvurabilirsiniz. Daha fazla bilgi için [nasıl yapılır: XAML içinde bir Namespace alma](https://msdn.microsoft.com/6cda7c7a-369c-47dd-9c2d-13a35dcf737c).  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Araç kutusu öğelerini Seç iletişim kutusu (Visual Studio)](https://msdn.microsoft.com/bd07835f-18a8-433e-bccc-7141f65263bb)   
- [Araç kutusu](../../ide/reference/toolbox.md)   
- [Nasıl yapılır: Bir üçüncü taraf WPF denetimi bir WPF uygulamasında kullanma](https://msdn.microsoft.com/f4c0b601-3818-4f9f-85e5-77905f3b427f)   
- [WPF Tasarımcısı](https://msdn.microsoft.com/c6c65214-8411-4e16-b254-163ed4099c26)
+  > Bilgisayarınızda yüklü .NET Framework bileşenleri, **araç kutusu**'nda görüntülenip görüntülenmediğini veya bunlara ait simgelerin görüntülenip görüntülenmediğini, kullanılabilir durumda kalır.
+
+  **WPF bileşenleri** sekmesindeki sütunlar aşağıdaki bilgileri içerir:
+
+  Ad, bilgisayarınızın kayıt defterinde bulunan girdilerin bulunduğu WPF denetimlerinin adlarını listeler.
+
+  Ad alanı, bileşenin yapısını tanımlayan [nib: .NET Framework sınıf kitaplığı](https://msdn.microsoft.com/6c4f3a62-6a0f-41f2-9d52-ee0b13686f29) ad alanının hiyerarşisini görüntüler. Bilgisayarınızda yüklü olan her bir .NET Framework ad alanı içindeki kullanılabilir bileşenleri listelemek için bu sütunda sıralama yapın.
+
+  Derleme adı, her bileşen için ad alanını içeren .NET Framework derlemesinin adını görüntüler. Bilgisayarınızda yüklü olan her bir .NET Framework derlemesinde bulunan ad alanlarını listelemek için bu sütunda sıralama yapın.
+
+  Dizin .NET Framework derlemesinin konumunu görüntüler. Tüm derlemeler için varsayılan konum genel derleme önbelleğidir. Genel derleme önbelleği hakkında daha fazla bilgi için bkz. [derlemeler ve genel derleme önbelleği Ile çalışma](https://msdn.microsoft.com/library/8a18e5c2-d41d-49ef-abcb-7c27e2469433).
+
+## <a name="uielement-list"></a>UIElement Listesi
+ **Filtre Uygula** Metin kutusunda sağladığınız dizeye göre WPF denetimleri listesini filtreler. Dört sütundan oluşan tüm eşleşmeler gösterilir.
+
+ **Temizle** Filtre dizesini temizler.
+
+ **Gözatmaya** WPF denetimleri içeren derlemelere gitmenizi sağlayan **Aç** iletişim kutusunu açar. Genel derleme önbelleğinde bulunmayan derlemeleri yüklemek için bunu kullanın.
+
+ **Dil** Seçili WPF denetimini içeren derlemenin yerelleştirilmiş dilini gösterir.
+
+## <a name="limitations"></a>Sınırlamalar
+ Özel bir denetim veya <xref:System.Windows.Controls.UserControl> araç kutusu eklemek aşağıdaki sınırlamalara sahiptir.
+
+- Yalnızca geçerli proje dışında tanımlanan özel denetimler için geçerlidir.
+
+- Çözüm yapılandırmasını hata ayıklamadan Yayınla veya yayından hata ayıklama olarak değiştirdiğinizde doğru şekilde güncelleştirmez. Bunun nedeni, başvurunun bir proje başvurusu olmaması, ancak bunun yerine diskteki derleme içindir. Denetim, geçerli çözümün parçasıysa, hata ayıklamadan yayın olarak değiştirdiğinizde, projeniz denetimin hata ayıklama sürümüne başvurmaya devam eder.
+
+  Ayrıca, tasarım zamanı meta verileri özel denetime uygulanırsa ve bu meta veriler [ToolboxBrowsableAttribute](/previous-versions/visualstudio/visual-studio-2010/bb547991(v=vs.100)) ' nin olarak `false`ayarlandığını belirtiyorsa, Denetim araç kutusunda görünmez.
+
+  Denetimlerinizin ad alanını ve derlemesini eşleyerek doğrudan XAML görünümünde denetimlerine başvurabilirsiniz. Daha fazla bilgi için [nasıl yapılır: Bir ad alanını XAML](https://msdn.microsoft.com/6cda7c7a-369c-47dd-9c2d-13a35dcf737c)'ye aktarın.
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+- [Araç kutusu öğelerini Seç Iletişim kutusu (Visual Studio)](https://msdn.microsoft.com/bd07835f-18a8-433e-bccc-7141f65263bb)
+- [Araç Kutusu](../../ide/reference/toolbox.md)
+- [Nasıl yapılır: WPF uygulamasında bir üçüncü taraf WPF denetimi kullanma](https://msdn.microsoft.com/f4c0b601-3818-4f9f-85e5-77905f3b427f)
+- [WPF Tasarımcısı](https://msdn.microsoft.com/c6c65214-8411-4e16-b254-163ed4099c26)

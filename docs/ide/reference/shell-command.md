@@ -18,15 +18,15 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 98163080c44a46330a4ba792f2ddde680c75b074
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: cb6bfc98d5ef6f7b3d3b6291ea55530325836d56
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62990047"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68918953"
 ---
 # <a name="shell-command"></a>Kabuk Komutu
-Yürütülebilir programlar içinden başlatır [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].
+İçinden [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]çalıştırılabilir programları başlatır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -35,50 +35,50 @@ Tools.Shell [/command] [/output] [/dir:folder] path [args]
 ```
 
 ## <a name="arguments"></a>Arguments
- `path`
+`path`
 
- Gerekli. Yürütülecek dosyayı veya belgeyi açmak için yol ve dosya adı. Belirtilen dosya PATH ortam değişkenine dizinler birinde değilse, bir tam yol gereklidir.
+Gerekli. Yürütülecek dosyanın yolu ve dosya adı ya da açılacak belge. Belirtilen dosya yol ortam değişkeninde dizinlerden birinde değilse tam yol gereklidir.
 
- `args`
+`args`
 
- İsteğe bağlı. Çağrılan programa geçirilecek herhangi bir bağımsız değişken.
+İsteğe bağlı. Çağrılan programa geçirilecek herhangi bir bağımsız değişken.
 
 ## <a name="switches"></a>Anahtarlar
- /CommandWindow [ya da] / Command [ya da] /c [veya] / cmd
+/CommandWindow [veya]/Command [veya]/c [veya]/cmd
 
- İsteğe bağlı. Yürütülebilir dosyası için çıkış görüntülendiğini belirtir **komut** penceresi.
+İsteğe bağlı. Yürütülebilir dosyanın çıktısının **komut** penceresinde görüntülendiğini belirtir.
 
- /dir:`folder` [veya] / d: `folder`
+/dir:`folder` [veya]/d:`folder`
 
- İsteğe bağlı. Programı çalıştırdığınızda ayarlanacak çalışma dizini belirtir.
+İsteğe bağlı. Program çalıştırıldığında ayarlanacak çalışma dizinini belirtir.
 
- / OutputWindow [veya] / Output [ya da] / out [veya] /o
+/OutputWindow [veya]/output [veya]/Out [veya]/o
 
- İsteğe bağlı. Yürütülebilir dosyası için çıkış görüntülendiğini belirtir **çıkış** penceresi.
+İsteğe bağlı. Yürütülebilir dosyanın çıktısının **Çıkış** penceresinde görüntülendiğini belirtir.
 
 ## <a name="remarks"></a>Açıklamalar
- Hemen sonra /dir /o /c anahtarları belirtilmelidir `Tools.Shell`. Hiçbir şey yürütülebilir dosya adı için komut satırı bağımsız değişkenleri geçirilir sonra belirtilen.
+/Dir/o/c anahtarlarının hemen sonra `Tools.Shell`belirtilmesi gerekir. Yürütülebilir dosyanın adından sonra belirtilen her şey, komut satırı bağımsız değişkenleri olarak kendisine geçirilir.
 
- Önceden tanımlanmış bir diğer ad `Shell` yerine kullanılan `Tools.Shell`.
+Önceden tanımlanmış diğer `Shell` ad, yerine kullanılabilir. `Tools.Shell`
 
 > [!CAUTION]
-> Varsa `path` bağımsız değişkeni, dosya adının yanı sıra dizin yolu sağlar, tüm yol adını değişmez değer tırnak içine alın ("" "), aşağıdaki gibi:
+> `path` Bağımsız değişken dizin yolunu ve dosya adını sağlarsa, aşağıdaki gibi tüm yol adını sabit tırnak ("" ") içine almalısınız:
 
 ```cmd
 Tools.Shell """C:\Program Files\SomeFile.exe"""
 ```
 
- Her dizi üç çift tırnak ("" ") tarafından yorumlanır `Shell` işlemci tek çift tırnak işareti karakteri. Bu nedenle, yukarıdaki örnek aşağıdaki yol dizesini gerçekten geçirir `Shell` komutu:
+Her üç çift tırnak ("" ") kümesi, `Shell` işlemci tarafından tek bir çift tırnak karakteri olarak yorumlanır. Bu nedenle, önceki örnek şu yol dizesini `Shell` komutuna geçirir:
 
 ```cmd
 "C:\Program Files\SomeFile.exe"
 ```
 
 > [!CAUTION]
-> Yol dizesi değişmez değer tırnak işaretleri içine almayın varsa ("" "), Windows kadar ilk alanı yalnızca dize bölümünü kullanır. Örneğin, yukarıdaki yol dizesi düzgün alıntılanmadı değil, Windows "Program C:\ kök dizininde bulunan" adlı bir dosya için görünür. C:\Program.exe yürütülebilir dosya kullanılabileceğinden, hatta bir gerçekleşiyorsa kurcalama tarafından yüklü Windows istenen "c:\Program Files\SomeFile.exe" program yerine bu program yürütülmeye çalışıyordu.
+> Yol dizesini değişmez tırnak işaretleri ("" ") içine aldıysanız, Windows yalnızca ilk alana kadar olan dizenin kısmını kullanır. Örneğin, yukarıdaki yol dizesi düzgün şekilde alıntılanmışsa Windows, C:\ dizininde bulunan "program" adlı bir dosya arar. kök dizin. Bir C:\Program.exe yürütülebilir dosyası gerçekten kullanılabilir ise, Windows 'un bu şekilde yüklendiğine karşın, Windows bu programı istenen "c:\Program Files\SomeFile.exe" programının yerine yürütmeye çalışır.
 
 ## <a name="example"></a>Örnek
- Aşağıdaki komut dosyasını kopyalamak için xcopy.exe kullanır `MyText.txt` içine `Text` klasör. Xcopy.exe çıktısı her ikisinde de görüntülenir **komut penceresi** ve **çıkış** penceresi.
+Aşağıdaki komut, dosyayı `MyText.txt` `Text` klasörüne kopyalamak için xcopy. exe ' yi kullanır. Xcopy. exe ' den alınan çıkış, hem **komut penceresinde** hem de **Çıkış** penceresinde görüntülenir.
 
 ```cmd
 >Tools.Shell /o /c xcopy.exe c:\MyText.txt c:\Text\MyText.txt

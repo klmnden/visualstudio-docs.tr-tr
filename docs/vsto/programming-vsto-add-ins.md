@@ -1,5 +1,5 @@
 ---
-title: VSTO eklentilerini programlama
+title: Program VSTO eklentileri
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -32,44 +32,44 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e5de89bdeade136577e05c700ec242a956a03455
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 292852207a595d34f35a433a86f6554b5e68cf9e
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63425842"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68872030"
 ---
-# <a name="program-vsto-add-ins"></a>VSTO eklentilerini programlama
-  Bir VSTO eklentisi oluşturma tarafından bir Microsoft Office uygulamasının genişlettiğinizde, karşı doğrudan kod yazma `ThisAddIn` projenizdeki sınıfı. Bu sınıf, Microsoft Office konak uygulamanın nesne modeline erişme, uygulamanın kullanıcı arabirimini (UI) özelleştirmek ve diğer Office çözümleri için VSTO eklenti içinde nesnelerini kullanıma sunma gibi görevleri gerçekleştirmek için kullanabilirsiniz.
+# <a name="program-vsto-add-ins"></a>Program VSTO eklentileri
+  Bir Microsoft Office uygulamasını bir VSTO eklentisi oluşturarak genişlettiğinizde, doğrudan projenizdeki `ThisAddIn` sınıfa karşı kod yazarsınız. Bu sınıfı, Microsoft Office ana bilgisayar uygulamasının nesne modeline erişim, uygulamanın kullanıcı arabirimini (UI) özelleştirme ve VSTO eklentiinizdeki nesneleri diğer Office çözümlerine sunma gibi görevleri gerçekleştirmek için kullanabilirsiniz.
 
  [!INCLUDE[appliesto_allapp](../vsto/includes/appliesto-allapp-md.md)]
 
- Bazı yönlerini VSTO eklentisi projelerinde kod yazma, Visual Studio'da projelerinin diğer türleri farklıdır. Bu farklılıkların birçoğu şekilde Office nesne modelleri, yönetilen kod için sunulan neden olur. Daha fazla bilgi için [Office çözümlerinde kod yazma](../vsto/writing-code-in-office-solutions.md).
+ VSTO eklenti projelerinde kod yazmanın bazı yönleri, Visual Studio 'daki diğer proje türlerinden farklıdır. Bu farklılıkların birçoğu, Office nesne modellerinin yönetilen koda sunulma yoludur. Daha fazla bilgi için bkz. [Office çözümlerinde kod yazma](../vsto/writing-code-in-office-solutions.md).
 
- Visual Studio'da Office geliştirme araçlarını kullanarak oluşturabileceğiniz VSTO eklentileri ve diğer tür çözümler hakkında genel bilgi için bkz. [Office çözümleri geliştirmesine genel bakış &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).
+ Visual Studio 'da Office geliştirme araçları 'nı kullanarak, VSTO eklentileri ve oluşturabileceğiniz diğer çözüm türleri hakkında genel bilgi için bkz. [Office çözümleri geliştirmeye genel &#40;bakış VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).
 
-## <a name="use-the-thisaddin-class"></a>ThisAddIn sınıfı kullanın
- VSTO eklentisi kod yazmaya başlayabilirsiniz `ThisAddIn` sınıfı. Visual Studio otomatik olarak oluşturduğu bu sınıfta *ThisAddIn.vb* (içinde [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)]) veya *ThisAddIn.cs* (C# ') kod VSTO eklenti projesinde dosyası. [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] Microsoft Office uygulamasının VSTO Eklenti yüklendiğinde otomatik olarak bu sınıfın örneğini sizin için oluşturur.
+## <a name="use-the-thisaddin-class"></a>ThisAddIn sınıfını kullanma
+ `ThisAddIn` Sınıfında VSTO eklenti kodunuzu yazmaya başlayabilirsiniz. Visual Studio bu sınıfı, VSTO eklenti projenizdeki *ThisAddIn. vb* (in [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)]) veya *ThisAddIn.cs* (ın C#) kod dosyasında otomatik olarak oluşturur. Microsoft Office [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] uygulaması VSTO eklentinizi yüklediğinde, bu sınıfı otomatik olarak başlatır.
 
- İki varsayılan olay işleyicileri vardır `ThisAddIn` sınıfı. VSTO Eklenti yüklendiğinde kodu çalıştırmak için kod ekleyin. `ThisAddIn_Startup` olay işleyicisi. VSTO eklentisi kaldırılmadan hemen önce kodu çalıştırmak için kod ekleyin. `ThisAddIn_Shutdown` olay işleyicisi. Bu olay işleyicileri hakkında daha fazla bilgi için bkz. [Office Projelerindeki Olaylar](../vsto/events-in-office-projects.md).
+ `ThisAddIn` Sınıfında iki varsayılan olay işleyicisi vardır. VSTO eklentisi yüklendiğinde kodu çalıştırmak için `ThisAddIn_Startup` olay işleyicisine kod ekleyin. VSTO eklentisi kaldırılmadan hemen önce kodu çalıştırmak için `ThisAddIn_Shutdown` olay işleyicisine kod ekleyin. Bu olay işleyicileri hakkında daha fazla bilgi için bkz. [Office Projelerindeki Olaylar](../vsto/events-in-office-projects.md).
 
 > [!NOTE]
-> Outlook'ta, varsayılan olarak `ThisAddIn_Shutdown` olay işleyicisi için VSTO eklentisi kaldırıldığında her zaman çağrılmaz. Daha fazla bilgi için [Office Projelerindeki Olaylar](../vsto/events-in-office-projects.md).
+> Outlook 'ta, varsayılan `ThisAddIn_Shutdown` olarak, VSTO eklentisi kaldırıldığında olay işleyicisi her zaman çağrılmaz. Daha fazla bilgi için bkz. [Office Projelerindeki Olaylar](../vsto/events-in-office-projects.md).
 
-### <a name="access-the-object-model-of-the-host-application"></a>Konak uygulamanın nesne modeline erişme
- Konak uygulamanın nesne modeli erişmek için `Application` alanını `ThisAddIn` sınıfı. Bu alan, ana uygulamanın geçerli örneğini temsil eden bir nesne döndürür. Aşağıdaki tablo, dönüş değeri türünü listeler `Application` her VSTO eklenti projesinde alan.
+### <a name="access-the-object-model-of-the-host-application"></a>Ana bilgisayar uygulamasının nesne modeline erişin
+ Konak uygulamasının nesne modeline erişmek için, `Application` `ThisAddIn` sınıfının alanını kullanın. Bu alan, ana bilgisayar uygulamasının geçerli örneğini temsil eden bir nesne döndürür. Aşağıdaki tabloda, her VSTO eklenti projesindeki `Application` alan için dönüş değerinin türü listelenmektedir.
 
-|Ana bilgisayar uygulaması|Dönüş değeri türü|
+|Konak uygulaması|Dönüş değeri türü|
 |----------------------|-----------------------|
 |Microsoft Office Excel|<xref:Microsoft.Office.Interop.Excel.Application>|
-|Microsoft Office InfoPath|<xref:Microsoft.Office.Interop.InfoPath.Application>|
-|Microsoft Office Outlook|<xref:Microsoft.Office.Interop.Outlook.Application>|
-|Microsoft Office PowerPoint|<xref:Microsoft.Office.Interop.PowerPoint.Application>|
-|Microsoft Office Project|Microsoft.Office.Interop.MSProject.Application|
-|Microsoft Office Visio|Microsoft.Office.Interop.Visio.Application|
-|Microsoft Office Word|<xref:Microsoft.Office.Interop.Word.Application>|
+|InfoPath Microsoft Office|<xref:Microsoft.Office.Interop.InfoPath.Application>|
+|Outlook 'U Microsoft Office|<xref:Microsoft.Office.Interop.Outlook.Application>|
+|Microsoft Office PowerPoint|[Uygulama](/previous-versions/office/developer/office-2010/ff764034(v=office.14))|
+|Microsoft Office projesi|Microsoft. Office. Interop. MSProject. Application|
+|Microsoft Office Visio|Microsoft. Office. Interop. Visio. Application|
+|Microsoft Office sözcük|<xref:Microsoft.Office.Interop.Word.Application>|
 
- Aşağıdaki kod örneği kullanma işlemini gösterir `Application` alan Microsoft Office Excel için VSTO eklentisi içinde yeni bir çalışma kitabı oluşturun. Bu örnekte çalışmak üzere tasarlanmıştır `ThisAddIn` sınıfı.
+ Aşağıdaki kod örneği, Microsoft Office Excel için bir VSTO `Application` eklentisi içinde yeni bir çalışma kitabı oluşturmak için alanını nasıl kullanacağınızı gösterir. Bu örnek `ThisAddIn` sınıfından çalıştırılmak üzere tasarlanmıştır.
 
 ```vb
 Dim newWorkbook As Excel.Workbook = Me.Application.Workbooks.Add()
@@ -79,7 +79,7 @@ Dim newWorkbook As Excel.Workbook = Me.Application.Workbooks.Add()
 Excel.Workbook newWorkbook = this.Application.Workbooks.Add(System.Type.Missing);
 ```
 
- Dışından aynı şeyi yapmak için `ThisAddIn` sınıfı, kullanın `Globals` nesne erişimi `ThisAddIn` sınıfı. Hakkında daha fazla bilgi için `Globals` nesne, bkz: [Office projelerindeki nesnelere genel erişim](../vsto/global-access-to-objects-in-office-projects.md).
+ `ThisAddIn` Sınıfın dışından aynı şeyi yapmak için, `ThisAddIn` sınıfına erişmek için `Globals` nesnesini kullanın. `Globals` Nesnesi hakkında daha fazla bilgi için bkz. [Office Projelerindeki Nesnelere Genel erişim](../vsto/global-access-to-objects-in-office-projects.md).
 
 ```vb
 Dim newWorkbook As Excel.Workbook = Globals.ThisAddIn.Application.Workbooks.Add()
@@ -89,7 +89,7 @@ Dim newWorkbook As Excel.Workbook = Globals.ThisAddIn.Application.Workbooks.Add(
 Excel.Workbook newWorkbook = Globals.ThisAddIn.Application.Workbooks.Add(System.Type.Missing);
 ```
 
- Belirli Microsoft Office uygulamasının nesne modelleri hakkında daha fazla bilgi için aşağıdaki konulara bakın:
+ Belirli Microsoft Office uygulamalarının nesne modelleri hakkında daha fazla bilgi için aşağıdaki konulara bakın:
 
 - [Excel nesne modeline genel bakış](../vsto/excel-object-model-overview.md)
 
@@ -105,50 +105,50 @@ Excel.Workbook newWorkbook = Globals.ThisAddIn.Application.Workbooks.Add(System.
 
 - [Visio nesne modeline genel bakış](../vsto/visio-object-model-overview.md)
 
-### <a name="AccessingDocuments"></a> Office uygulaması başlatıldığında, bir belgeye erişme
- Tüm [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)] uygulamaları ve hiçbiri başlattığınızda bir belge otomatik olarak açmak [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] uygulamaları, başlattığınızda bir belgeyi açın. Bu nedenle, kod ekleme `ThisAdd-In_Startup` kodu açık bir belge gerektiriyorsa, olay işleyicisi. Bunun yerine, bu kod, bir kullanıcı oluşturur ya da bir belge açılır Office uygulaması oluşturan bir olay ekleyin. Böylece, kodunuzu bir işlem gerçekleştirmeden önce bir belge açık olduğunu garanti edebilir.
+### <a name="AccessingDocuments"></a>Office uygulaması başladığında bir belgeye erişin
+ Tüm [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)] uygulamalar, başlatıldığında bir belgeyi otomatik olarak açmaz ve [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] uygulamayı başlattığınızda herhangi bir belgeyi açmayın. Bu nedenle, kod bir belgenin açık `ThisAdd-In_Startup` olmasını gerektiriyorsa olay işleyicisine kod eklemeyin. Bunun yerine, bir Kullanıcı bir belge oluşturduğunda veya açtığında Office uygulamasının oluşturduğu bir olaya bu kodu ekleyin. Bu şekilde, kodunuzun üzerinde işlem gerçekleştirmeden önce bir belgenin açık olduğunu garanti edebilirsiniz.
 
- Kullanıcı bir belgeyi oluşturur veya var olan bir belgeyi açar aşağıdaki kod örneği bir Word belgesini ile çalışır.
+ Aşağıdaki kod örneği, yalnızca Kullanıcı bir belge oluşturduğunda veya var olan bir belgeyi açtığında Word 'deki bir belge ile birlikte kullanılır.
 
  [!code-csharp[Trin_WordAddIn_Menus#3](../vsto/codesnippet/CSharp/trin_wordaddin_menus.cs/thisaddin.cs#3)]
  [!code-vb[Trin_WordAddIn_Menus#3](../vsto/codesnippet/VisualBasic/trin_wordaddin_menus.vb/thisaddin.vb#3)]
 
 ### <a name="thisaddin-members-to-use-for-other-tasks"></a>Diğer görevler için kullanılacak ThisAddIn üyeleri
- Aşağıdaki tablo diğer ortak görevleri açıklar ve hangi üyelerinin gösterir `ThisAddIn` sınıfı görevleri gerçekleştirmek için kullanabilirsiniz.
+ Aşağıdaki tabloda, diğer ortak görevler açıklanmakta ve bu, hangi `ThisAddIn` sınıf üyelerini görevleri gerçekleştirmek için kullanabileceğiniz gösterilmektedir.
 
-|Görev|Üye kullanmak için|
+|Görev|Kullanılacak üye|
 |----------|-------------------|
-|VSTO eklentisi için VSTO eklentisi yüklendiğinde başlatmak için kodu çalıştırın.|Kodu `ThisAddIn_Startup` yöntemi. İçin varsayılan olay işleyicisini budur <xref:Microsoft.Office.Tools.AddInBase.Startup> olay. Daha fazla bilgi için [Office Projelerindeki Olaylar](../vsto/events-in-office-projects.md).|
-|VSTO eklentisi kaldırılmadan önce VSTO eklentisi tarafından kullanılan kaynakları temizlemek için kodu çalıştırın.|Kodu `ThisAddIn_Shutdown` yöntemi. İçin varsayılan olay işleyicisini budur <xref:Microsoft.Office.Tools.AddInBase.Shutdown> olay. Daha fazla bilgi için [Office Projelerindeki Olaylar](../vsto/events-in-office-projects.md). **Not:**  Outlook'ta, varsayılan olarak `ThisAddIn_Startup` olay işleyicisi için VSTO eklentisi kaldırıldığında her zaman çağrılmaz. Daha fazla bilgi için [Office Projelerindeki Olaylar](../vsto/events-in-office-projects.md).|
-|Bir özel görev bölmesini görüntüler.|Kullanım `CustomTaskPanes` alan. Daha fazla bilgi için [özel görev bölmeleri](../vsto/custom-task-panes.md).|
-|Diğer Microsoft Office çözümleri için VSTO eklenti nesneleri kullanıma sunma.|Geçersiz kılma <xref:Microsoft.Office.Tools.AddInBase.RequestComAddInAutomationService%2A> yöntemi. Daha fazla bilgi için [çağrı kod VSTO eklentileri diğer Office Çözümlerinden](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md).|
-|Bir özellik genişletilebilirlik arabirimi uygulama tarafından Microsoft Office sistemindeki özelleştirin.|Geçersiz kılma <xref:Microsoft.Office.Tools.AddInBase.RequestService%2A> arabirimi uygulayan bir sınıf örneği döndürmek için yöntemi. Daha fazla bilgi için [genişletilebilirlik arabirimlerini kullanarak kullanıcı Arabirimi özelleştirme özellikleri](../vsto/customizing-ui-features-by-using-extensibility-interfaces.md). **Not:**  Şerit kullanıcı arabirimini özelleştirmek için ayrıca kılabilirsiniz <xref:Microsoft.Office.Tools.AddInBase.CreateRibbonExtensibilityObject%2A> yöntemi.|
+|VSTO eklentisi yüklendiğinde VSTO eklentisini başlatmak için kodu çalıştırın.|`ThisAddIn_Startup` Yöntemine kod ekleyin. Bu <xref:Microsoft.Office.Tools.AddInBase.Startup> olay için varsayılan olay işleyicisidir. Daha fazla bilgi için bkz. [Office Projelerindeki Olaylar](../vsto/events-in-office-projects.md).|
+|VSTO eklentisi kaldırılmadan önce VSTO eklentisi tarafından kullanılan kaynakları temizlemek için kodu çalıştırın.|`ThisAddIn_Shutdown` Yöntemine kod ekleyin. Bu <xref:Microsoft.Office.Tools.AddInBase.Shutdown> olay için varsayılan olay işleyicisidir. Daha fazla bilgi için bkz. [Office Projelerindeki Olaylar](../vsto/events-in-office-projects.md). **Not:**  Outlook 'ta, varsayılan `ThisAddIn_Startup` olarak, VSTO eklentisi kaldırıldığında olay işleyicisi her zaman çağrılmaz. Daha fazla bilgi için bkz. [Office Projelerindeki Olaylar](../vsto/events-in-office-projects.md).|
+|Özel bir görev bölmesi görüntüleyin.|`CustomTaskPanes` Alanını kullanın. Daha fazla bilgi için bkz. [özel görev bölmeleri](../vsto/custom-task-panes.md).|
+|VSTO eklentiinizdeki nesneleri diğer Microsoft Office çözümlerine sunun.|Geçersiz kılma <xref:Microsoft.Office.Tools.AddInBase.RequestComAddInAutomationService%2A> yöntemi. Daha fazla bilgi için bkz. [VSTO eklentilerindeki kodu diğer Office Çözümlerinden çağırma](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md).|
+|Genişletilebilirlik arabirimini uygulayarak Microsoft Office sisteminde bir özelliği özelleştirin.|Arabirimini uygulayan bir sınıfın örneğini döndürmek için yönteminigeçersizkılın.<xref:Microsoft.Office.Tools.AddInBase.RequestService%2A> Daha fazla bilgi için bkz. [genişletilebilirlik arabirimlerini kullanarak Kullanıcı arabirimi özelliklerini özelleştirme](../vsto/customizing-ui-features-by-using-extensibility-interfaces.md). **Not:**  Şerit kullanıcı arabirimini özelleştirmek için <xref:Microsoft.Office.Tools.AddInBase.CreateRibbonExtensibilityObject%2A> yöntemini de geçersiz kılabilirsiniz.|
 
-### <a name="understand-the-design-of-the-thisaddin-class"></a>ThisAddIn sınıfı tasarımı anlama
- ' İ hedefleyen projelerde [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)], <xref:Microsoft.Office.Tools.AddIn> bir arabirimdir. `ThisAddIn` Sınıf türetilir <xref:Microsoft.Office.Tools.AddInBase> sınıfı. Bu temel sınıf üyelerine tüm çağrıları için iç uygulaması yönlendirir <xref:Microsoft.Office.Tools.AddIn> arabiriminde [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)].
+### <a name="understand-the-design-of-the-thisaddin-class"></a>ThisAddIn sınıfının tasarımını anlama
+ [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] Öğesini<xref:Microsoft.Office.Tools.AddIn> hedefleyen projelerde bir arabirimdir. Sınıf sınıfından türetilir <xref:Microsoft.Office.Tools.AddInBase>. `ThisAddIn` Bu temel sınıf, <xref:Microsoft.Office.Tools.AddIn> [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]içindeki içindeki arayüzün iç uygulamasına yapılan tüm çağrıları yeniden yönlendirir.
 
- Outlook için VSTO eklentisi projeleri içinde `ThisAddIn` sınıf türetilir `Microsoft.Office.Tools.Outlook.OutlookAddIn` sınıfı .NET Framework 3. 5'i hedefleyen projelerde ve gelen <xref:Microsoft.Office.Tools.Outlook.OutlookAddInBase> hedefleyen projelerde [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]. Temel sınıfların form bölgesini desteklemek için bazı ek işlevsellik sağlar. Form bölgeleri hakkında daha fazla bilgi için bkz. [oluşturma Outlook form bölgeleri](../vsto/creating-outlook-form-regions.md).
+ Outlook için VSTO eklentisi `ThisAddIn` projelerinde, sınıfı, <xref:Microsoft.Office.Tools.Outlook.OutlookAddInBase> .NET Framework 3,5 ' i ve ' `Microsoft.Office.Tools.Outlook.OutlookAddIn` ı hedefleyen projelerdeki [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]' i hedefleyen projelerdeki sınıfından türetilir. Bu temel sınıflar, form bölgelerini desteklemek için bazı ek işlevler sağlar. Form bölgeleri hakkında daha fazla bilgi için bkz. [Outlook form bölgeleri oluşturma](../vsto/creating-outlook-form-regions.md).
 
-## <a name="customize-the-user-interface-of-microsoft-office-applications"></a>Microsoft Office uygulamasının kullanıcı arabirimini özelleştirme
- Bir VSTO eklentisi kullanarak, Microsoft Office UI uygulamalarının programlı bir şekilde özelleştirebilirsiniz. Örneğin, Şerit özelleştirme, bir özel görev bölmesini görüntülemek veya özel form bölgesinin Outlook'ta oluşturun. Daha fazla bilgi için [Office UI özelleştirmesi](../vsto/office-ui-customization.md).
+## <a name="customize-the-user-interface-of-microsoft-office-applications"></a>Microsoft Office uygulamalarının Kullanıcı arabirimini özelleştirme
+ VSTO eklentisini kullanarak Microsoft Office uygulamalarının Kullanıcı arabirimini programlı bir şekilde özelleştirebilirsiniz. Örneğin, şeridi özelleştirebilir, özel bir görev bölmesi görüntüleyebilir veya Outlook 'ta özel bir form bölgesi oluşturabilirsiniz. Daha fazla bilgi için bkz. [OFFICE UI özelleştirmesi](../vsto/office-ui-customization.md).
 
- Visual Studio, tasarımcılar ve özel görev bölmeleri, Şerit özelleştirmeleri ve Outlook form bölgeleri oluşturma için kullanabileceğiniz sınıflar sağlar. Bu tasarımcılar ve sınıflar bu özelliklerini özelleştirme işlemi basitleştirmeye yardım eder. Daha fazla bilgi için [özel görev bölmeleri](../vsto/custom-task-panes.md), [Şerit Tasarımcısı](../vsto/ribbon-designer.md), ve [oluşturma Outlook form bölgeleri](../vsto/creating-outlook-form-regions.md).
+ Visual Studio, özel görev bölmeleri, Şerit özelleştirmeleri ve Outlook form bölgeleri oluşturmak için kullanabileceğiniz tasarımcılar ve sınıflar sağlar. Bu tasarımcılar ve sınıflar, bu özellikleri özelleştirme sürecini basitleştirmeye yardımcı olur. Daha fazla bilgi için bkz. [özel görev bölmeleri](../vsto/custom-task-panes.md), [Şerit Tasarımcısı](../vsto/ribbon-designer.md)ve [Outlook form bölgeleri oluşturma](../vsto/creating-outlook-form-regions.md).
 
- Sınıflar ve tasarımcılar tarafından desteklenmeyen bir yolla bu özelliklerden birini özelleştirmek istiyorsanız, bu özelliklerin uygulayarak özelleştirebilirsiniz bir *genişletilebilirlik arabirimi* VSTO eklenti içinde. Daha fazla bilgi için [genişletilebilirlik arabirimlerini kullanarak kullanıcı Arabirimi özelleştirme özellikleri](../vsto/customizing-ui-features-by-using-extensibility-interfaces.md).
+ Bu özelliklerden birini sınıflar ve tasarımcılar tarafından desteklenmeyen bir şekilde özelleştirmek istiyorsanız, VSTO eklentiinizdeki *genişletilebilirlik arabirimini* uygulayarak da bu özellikleri özelleştirebilirsiniz. Daha fazla bilgi için bkz. [genişletilebilirlik arabirimlerini kullanarak Kullanıcı arabirimi özelliklerini özelleştirme](../vsto/customizing-ui-features-by-using-extensibility-interfaces.md).
 
- Ayrıca, belgeler ve çalışma kitapları davranışını genişleten ana bilgisayar öğeleri oluşturma tarafından kullanıcı Arabirimi, Word belgelerini ve Excel çalışma kitaplarını değiştirebilirsiniz. Bu belgeler ve çalışma sayfalarına yönetilen denetimleri eklemenize olanak sağlar. Daha fazla bilgi için [genişletmek Word belgelerini ve Excel çalışma kitaplarını çalışma zamanında VSTO Add-Ins](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).
+ Ayrıca, belge ve çalışma kitaplarının davranışını genişleten konak öğeleri oluşturarak Word belgelerinin ve Excel çalışma kitaplarının Kullanıcı arabirimini de değiştirebilirsiniz. Bu, belgelere ve çalışma sayfalarına yönetilen denetimler eklemenize olanak sağlar. Daha fazla bilgi için bkz. [çalışma ZAMANıNDA VSTO Eklentilerindeki Word belgelerini ve Excel çalışma kitaplarını genişletme](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).
 
-## <a name="call-code-in-vsto-add-ins-from-other-solutions"></a>VSTO eklentilerinde diğer çözümlerden kod arama
- Diğer Office çözümleri gibi diğer çözümlerle için VSTO eklenti içinde nesneler üzerinden kullanıma sunabilirsiniz. VSTO eklenti diğer çözümleri kullanmayı etkinleştirmek istediğiniz bir hizmet sağlar, bu yöntem kullanışlıdır. Bir web hizmetinden Finansal veriler üzerinde hesaplamalar yapan Microsoft Office Excel için VSTO eklentisi varsa, örneğin, diğer çözümleri bu hesaplamalar çalışma zamanında Excel VSTO eklentisi içinde çağırarak gerçekleştirebilirsiniz.
+## <a name="call-code-in-vsto-add-ins-from-other-solutions"></a>Diğer çözümlerdeki VSTO eklentilerindeki kodu çağırma
+ VSTO eklentiinizdeki nesneleri diğer Office çözümleri de dahil olmak üzere diğer çözümlere kullanıma sunabilirsiniz. Bu, VSTO eklentisinin diğer çözümlerin kullanmasını sağlamak istediğiniz bir hizmet sağlıyorsa yararlı olur. Örneğin, bir Web hizmetinden finans verilerinde hesaplamalar gerçekleştiren Microsoft Office Excel için bir VSTO eklentileriniz varsa, diğer çözümler çalışma zamanında Excel VSTO eklentisini çağırarak bu hesaplamaları gerçekleştirebilir.
 
- Daha fazla bilgi için [çağrı kod VSTO eklentileri diğer Office Çözümlerinden](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md).
+ Daha fazla bilgi için bkz. [VSTO eklentilerindeki kodu diğer Office Çözümlerinden çağırma](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 - [Office çözümleri geliştirme](../vsto/developing-office-solutions.md)
-- [Word belgelerini ve Excel çalışma kitaplarını VSTO eklentileri çalışma zamanında genişletme](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)
-- [VSTO eklentilerinde diğer Office Çözümlerinden kod arama](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md)
-- [İzlenecek yol: Bir VSTO eklenti VBA'dan kod çağırma](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md)
-- [Genişletilebilirlik arabirimlerini kullanarak kullanıcı Arabirimi özelliklerini özelleştirme](../vsto/customizing-ui-features-by-using-extensibility-interfaces.md)
-- [Nasıl yapılır: Visual Studio'da Office projeleri oluşturma](../vsto/how-to-create-office-projects-in-visual-studio.md)
+- [Çalışma zamanında VSTO Eklentilerindeki Word belgelerini ve Excel çalışma kitaplarını genişletme](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)
+- [Diğer Office çözümlerindeki VSTO eklentilerindeki kodu çağırma](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md)
+- [İzlenecek yol: Bir VSTO eklentisinde VBA 'dan kod çağırma](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md)
+- [Genişletilebilirlik arabirimlerini kullanarak Kullanıcı arabirimi özelliklerini özelleştirme](../vsto/customizing-ui-features-by-using-extensibility-interfaces.md)
+- [Nasıl yapılır: Visual Studio 'da Office projeleri oluşturma](../vsto/how-to-create-office-projects-in-visual-studio.md)
 - [VSTO Eklentileri Mimarisi](../vsto/architecture-of-vsto-add-ins.md)
 - [Office çözümlerinde kod yazma](../vsto/writing-code-in-office-solutions.md)

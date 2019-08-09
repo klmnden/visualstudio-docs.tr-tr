@@ -1,5 +1,5 @@
 ---
-title: WPF ve Entity Framework ile WCF veri hizmeti oluşturma
+title: WPF & Entity Framework WCF veri hizmeti oluşturma
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,25 +16,25 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 368d92010da062f2883d63161824e528d5d22c84
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 6ed07e723b2cb423883491d7e6ca3774a12d0824
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66261078"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68925452"
 ---
 # <a name="walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework"></a>İzlenecek yol: WPF ve Entity Framework ile WCF veri hizmeti oluşturma
-Bu izlenecek yol basit bir oluşturma işlemini gösterir [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)] barındırılan bir [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] web uygulamasını ve sonra bir Windows Forms uygulamasından erişebilirsiniz.
+Bu izlenecek yol, bir [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)] [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web uygulamasında barındırılan basit bir oluşturma ve ardından bu uygulamaya Windows Forms bir uygulamadan erişme işlemlerinin nasıl yapılacağını gösterir.
 
-Bu kılavuzda:
+Bu kılavuzda şunları yapabilirsiniz:
 
-- Konak için bir web uygulaması oluşturma bir [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)].
+- Barındırmak için bir Web uygulaması oluşturun [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)].
 
-- Oluşturma bir [!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)] temsil eden `Customers` Northwind veritabanındaki tablo.
+- Northwind veritabanındaki [!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)] `Customers` tabloyu temsil eden bir oluştur.
 
 - Oluşturma bir [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)].
 
-- İstemci uygulaması oluşturma ve bir başvuru ekleyin [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)].
+- Bir istemci uygulaması oluşturun ve öğesine [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)]bir başvuru ekleyin.
 
 - Hizmete veri bağlamayı etkinleştirin ve kullanıcı arabirimini oluşturun.
 
@@ -43,24 +43,24 @@ Bu kılavuzda:
 ## <a name="prerequisites"></a>Önkoşullar
 Bu izlenecek yol, SQL Server Express LocalDB ve Northwind örnek veritabanını kullanır.
 
-1. SQL Server Express LocalDB yoksa,'nden ya da yükleme [SQL Server Express indirme sayfası](https://www.microsoft.com/sql-server/sql-server-editions-express), aracılığıyla veya **Visual Studio yükleyicisi**. İçinde **Visual Studio yükleyicisi**, bir parçası olarak SQL Server Express LocalDB yükleyebilirsiniz **veri depolama ve işleme** iş yükü veya tek bir bileşen olarak.
+1. SQL Server Express LocalDB yoksa, [SQL Server Express indirme sayfasından](https://www.microsoft.com/sql-server/sql-server-editions-express)veya **Visual Studio yükleyicisi**aracılığıyla yükleyin. **Visual Studio yükleyicisi**, SQL Server Express LocalDB 'yi **veri depolama ve işleme** iş yükünün parçası olarak veya ayrı bir bileşen olarak yükleyebilirsiniz.
 
-2. Northwind örnek veritabanı, şu adımları izleyerek yükleyin:
+2. Aşağıdaki adımları izleyerek Northwind örnek veritabanını yüklersiniz:
 
-    1. Visual Studio'da açın **SQL Server Nesne Gezgini** penceresi. (**SQL Server Nesne Gezgini** parçası olarak yüklenen **veri depolama ve işleme** iş yükünü Visual Studio Yükleyicisi'nde.) Genişletin **SQL Server** düğümü. LocalDB Örneğinizde sağ tıklayıp **yeni sorgu**.
+    1. Visual Studio 'da **SQL Server Nesne Gezgini** penceresini açın. (**SQL Server Nesne Gezgini** , Visual Studio yükleyicisi **veri depolama ve işleme** iş yükünün parçası olarak yüklenir.) **SQL Server** düğümünü genişletin. LocalDB örneğinize sağ tıklayıp **Yeni sorgu**' yı seçin.
 
        Sorgu Düzenleyicisi penceresi açılır.
 
-    2. Kopyalama [Northwind Transact-SQL betiği](https://github.com/MicrosoftDocs/visualstudio-docs/blob/master/docs/data-tools/samples/northwind.sql?raw=true) panonuza. Bu T-SQL betiği, sıfırdan Northwind veritabanı oluşturur ve verilerle doldurur.
+    2. [Northwind Transact-SQL betiğini](https://github.com/MicrosoftDocs/visualstudio-docs/blob/master/docs/data-tools/samples/northwind.sql?raw=true) panonuza kopyalayın. Bu T-SQL betiği, Northwind veritabanını sıfırdan oluşturur ve verileri veriyle doldurur.
 
     3. T-SQL betiği sorgu düzenleyiciye yapıştırın ve ardından **yürütme** düğmesi.
 
-       Kısa bir süre sonra sorgu çalışmayı tamamladıktan ve Northwind veritabanı oluşturulur.
+       Kısa bir süre sonra sorgu çalışmayı sonlandırır ve Northwind veritabanı oluşturulur.
 
 ## <a name="creating-the-service"></a>Hizmeti Oluşturma
-Oluşturmak için bir [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)], bir web projesi ekleyecek, oluşturun bir [!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)]ve sonra da modelden hizmeti oluşturun.
+Oluşturmak [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)]için, bir Web projesi ekler, bir [!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)]oluşturup, sonra modelden hizmeti oluşturursunuz.
 
-İlk adımda hizmeti barındırmak için bir web projesi ekleyin.
+İlk adımda, hizmeti barındırmak için bir Web projesi eklersiniz.
 
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 
@@ -68,141 +68,141 @@ Oluşturmak için bir [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_
 
 1. Menü çubuğunda, **dosya** > **yeni** > **proje**.
 
-2. İçinde **yeni proje** iletişim kutusunda **Visual Basic** veya **Visual C#** ve **Web** düğümler ve ardından **ASP. NET Web uygulaması** şablonu.
+2. **Yeni proje** iletişim kutusunda **Visual Basic** veya **Visual C#**  ve **Web** düğümlerini genişletin ve **ASP.NET Web uygulaması** şablonunu seçin.
 
-3. İçinde **adı** metin kutusuna **NorthwindWeb**ve ardından **Tamam** düğmesi.
+3. **Ad** metin kutusuna **NorthwindWeb**yazın ve sonra **Tamam** düğmesini seçin.
 
-4. İçinde **yeni ASP.NET projesi** iletişim kutusundaki **bir şablon seçin** listesinde **boş**ve ardından **Tamam** düğmesi.
+4. **Yeni ASP.NET projesi** iletişim kutusunda, **bir şablon seçin** listesinde **boş**' ı seçin ve ardından **Tamam** düğmesini seçin.
 
-Sonraki adımda oluşturduğunuz bir [!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)] temsil eden `Customers` Northwind veritabanındaki tablo.
+Sonraki adımda, Northwind veritabanındaki [!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)] `Customers` tabloyu temsil eden bir oluşturursunuz.
 
 ### <a name="to-create-the-entity-data-model"></a>Varlık Veri Modeli'ni oluşturmak için
 
 1. Menü çubuğunda, **proje** > **Yeni Öğe Ekle**.
 
-2. İçinde **Yeni Öğe Ekle** iletişim kutusunda **veri** düğümünü seçip **ADO.NET varlık veri modeli** öğesi.
+2. **Yeni öğe Ekle** iletişim kutusunda, **veri** düğümünü seçin ve ardından **ADO.net varlık veri modeli** öğesini seçin.
 
-3. İçinde **adı** metin kutusuna `NorthwindModel`ve ardından **Ekle** düğmesi.
+3. **Ad** metin kutusuna girin `NorthwindModel`ve sonra **Ekle** düğmesini seçin.
 
      Varlık Veri Modeli Sihirbazı görüntülenir.
 
-4. Varlık veri modeli Sihirbazı içinde üzerinde **Choose Model Contents** sayfasında **EF veritabanı Tasarımcısından** öğesi ekleyin ve ardından **sonraki** düğmesi.
+4. Varlık Veri Modeli sihirbazında, **model Içeriğini seçin** sayfasında, **veritabanı öğesinden EF Designer** ' ı seçin ve sonra **İleri** düğmesini seçin.
 
-5. Üzerinde **veri bağlantınızı seçin** sayfasında, aşağıdaki adımlardan birini gerçekleştirin:
+5. **Veri bağlantınızı seçin** sayfasında, aşağıdaki adımlardan birini gerçekleştirin:
 
     - Northwind örnek veritabanıyla kurulan veri bağlantısı aşağı açılan listede kullanılabilir durumdaysa bunu seçin.
 
          -veya-
 
-    - Seçin **yeni bağlantı** yeni bir veri bağlantısı yapılandırmak için düğmeye. Daha fazla bilgi için [yeni bağlantı ekleme](../data-tools/add-new-connections.md).
+    - Yeni bir veri bağlantısı yapılandırmak için **Yeni bağlantı** düğmesini seçin. Daha fazla bilgi için bkz. [yeni bağlantılar ekleme](../data-tools/add-new-connections.md).
 
-6. Veritabanına parola gerekiyorsa seçin **Evet, bağlantı dizesini hassas verileri eklemek** seçenek düğmesini ve ardından **sonraki** düğmesi.
-
-    > [!NOTE]
-    > Bir iletişim kutusu görüntülenirse, seçin **Evet** dosyayı projenize kaydetmek için.
-
-7. Üzerinde **sürümünüzü seçin** sayfasında **Entity Framework 5.0** seçenek düğmesini ve ardından **sonraki** düğmesi.
+6. Veritabanı parola gerektiriyorsa, **Evet ' i seçin, hassas verileri bağlantı dizesi** seçenek düğmesine ekleyin ve sonra **İleri** düğmesini seçin.
 
     > [!NOTE]
-    > WCF hizmetleri ile Entity Framework 6 en son sürümünü kullanmak için WCF Veri Hizmetleri Entity Framework sağlayıcısı NuGet paketini yüklemeniz gerekir. Bkz: [kullanarak WCF Veri Hizmetleri 5.6.0 Entity Framework 6 +](https://devblogs.microsoft.com/odata/using-wcf-data-services-5-6-0-with-entity-framework-6/).
+    > Bir iletişim kutusu görüntülenirse, dosyayı projenize kaydetmek için **Evet** ' i seçin.
 
-8. Üzerinde **veritabanı nesnelerinizi seçin** sayfasında **tabloları** düğümünü **müşteriler** onay kutusunu işaretleyin ve ardından **son** düğmesi.
+7. **Sürümünüzü seçin** sayfasında **Entity Framework 5,0** seçenek düğmesini ve ardından **İleri** düğmesini seçin.
 
-     Varlık modeli diyagramı görüntülenir ve *NorthwindModel.edmx* dosyası projenize eklenir.
+    > [!NOTE]
+    > Entity Framework 6 ' nın en son sürümünü WCF hizmetleriyle kullanabilmek için, WCF Veri Hizmetleri Entity Framework sağlayıcısı NuGet paketini yüklemeniz gerekir. Bkz. [Entity Framework 6 + ile WCF veri Hizmetleri 5.6.0 kullanma](https://devblogs.microsoft.com/odata/using-wcf-data-services-5-6-0-with-entity-framework-6/).
 
-Sonraki adımda, oluşturun ve veri hizmetini test edin.
+8. **Veritabanı nesnelerinizi seçin** sayfasında **Tablolar** düğümünü genişletin, **müşteriler** onay kutusunu seçin ve ardından **son** düğmesini seçin.
+
+     Varlık modeli diyagramı görüntülenir ve projenize bir *NorthwindModel. edmx* dosyası eklenir.
+
+Sonraki adımda, veri hizmetini oluşturup test edersiniz.
 
 ### <a name="to-create-the-data-service"></a>Veri hizmetini oluşturmak için
 
 1. Menü çubuğunda, **proje** > **Yeni Öğe Ekle**.
 
-2. İçinde **Yeni Öğe Ekle** iletişim kutusunda **Web** düğümünü seçip **WCF Data Service 5.6** öğesi.
+2. **Yeni öğe Ekle** Iletişim kutusunda **Web** düğümünü seçin ve ardından **WCF veri hizmeti 5,6** öğesini seçin.
 
-3. İçinde **adı** metin kutusuna `NorthwindCustomers`ve ardından **Ekle** düğmesi.
+3. **Ad** metin kutusuna girin `NorthwindCustomers`ve sonra **Ekle** düğmesini seçin.
 
-     **NorthwindCustomers.svc** dosya görünür **Kod Düzenleyicisi**.
+     **NorthwindCustomers. svc** dosyası **kod düzenleyicisinde**görüntülenir.
 
-4. İçinde **Kod Düzenleyicisi**, ilk bulun `TODO:` açıklama ve kodu aşağıdakiyle değiştirin:
+4. **Kod Düzenleyicisi**'nde, ilk `TODO:` yorumu bulun ve kodu aşağıdaki kodla değiştirin:
 
      [!code-vb[WCFDataServiceWalkthrough#1](../data-tools/codesnippet/VisualBasic/walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework_1.vb)]
      [!code-csharp[WCFDataServiceWalkthrough#1](../data-tools/codesnippet/CSharp/walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework_1.cs)]
 
-5. Açıklamaları değiştirin `InitializeService` olay işleyicisi aşağıdaki kod ile:
+5. `InitializeService` Olay işleyicisindeki açıklamaları şu kodla değiştirin:
 
      [!code-vb[WCFDataServiceWalkthrough#2](../data-tools/codesnippet/VisualBasic/walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework_2.vb)]
      [!code-csharp[WCFDataServiceWalkthrough#2](../data-tools/codesnippet/CSharp/walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework_2.cs)]
 
-6. Menü çubuğunda, **hata ayıklama** > **hata ayıklama olmadan Başlat** hizmeti çalıştırmak için. Bir tarayıcı penceresi açılır ve hizmet için XML Şeması görüntülenir.
+6. Hizmeti çalıştırmak için menü çubuğunda Hata > ayıklama**olmadan Başlat** ' ı seçin. Bir tarayıcı penceresi açılır ve hizmet için XML şeması görüntülenir.
 
-7. İçinde **adresi** çubuğunda girin `Customers` URL'sini sonunda **NorthwindCustomers.svc**ve ardından **Enter** anahtarı.
+7. **Adres** çubuğunda, `Customers` **NorthwindCustomers. svc**URL 'sinin sonuna yazın ve **ENTER** tuşunu seçin.
 
-     Verileri bir XML temsilini `Customers` tablo görünür.
+     `Customers` Tablodaki verilerin bir XML temsili görüntülenir.
 
     > [!NOTE]
-    > Bazı durumlarda, Internet Explorer verileri yanlışlıkla RSS akışı olarak yorumlar. RSS akışlarını görüntüleme seçeneğinin devre dışı bırakıldığından emin olmalısınız. Daha fazla bilgi için [hizmet başvurularında sorun giderme](../data-tools/troubleshooting-service-references.md).
+    > Bazı durumlarda, Internet Explorer verileri yanlışlıkla RSS akışı olarak yorumlar. RSS akışlarını görüntüleme seçeneğinin devre dışı bırakıldığından emin olmalısınız. Daha fazla bilgi için bkz. [hizmet başvurularına sorun giderme](../data-tools/troubleshooting-service-references.md).
 
 8. Tarayıcı penceresini kapatın.
 
-Sonraki adımlarda hizmeti kullanmak üzere bir Windows Forms istemci uygulaması oluşturun.
+Sonraki adımlarda, hizmeti kullanmak için bir Windows Forms istemci uygulaması oluşturacaksınız.
 
 ## <a name="creating-the-client-application"></a>İstemci Uygulamasını Oluşturma
- İstemci uygulamasını oluşturmak için ikinci bir proje ekleyecek, projeye bir hizmet Başvurusu Ekle, bir veri kaynağını yapılandırmak ve hizmetinden verileri görüntülemek için bir kullanıcı arabirimi oluşturma.
+İstemci uygulamasını oluşturmak için ikinci bir proje ekleyin, projeye bir hizmet başvurusu ekleyin, bir veri kaynağı yapılandırın ve hizmetten verileri göstermek için bir kullanıcı arabirimi oluşturun.
 
- İlk adım, bir Windows Forms projesi çözüme ekleyin ve başlangıç projesi olarak ayarlayın.
+İlk adımda, çözüme bir Windows Forms projesi ekler ve bunu başlangıç projesi olarak ayarlarsınız.
 
 ### <a name="to-create-the-client-application"></a>İstemci uygulamasını oluşturmak için
 
-1. Menü çubuğunda, dosya **Ekle** > **yeni proje**.
+1. Menü çubuğunda dosya,**Yeni proje** **Ekle** > öğesini seçin.
 
-2. İçinde **yeni proje** iletişim kutusunda **Visual Basic** veya **Visual C#** düğümünü seçin **Windows** düğümünün seçin **Windows Forms uygulamalarındaki**.
+2. **Yeni proje** iletişim kutusunda, **Visual Basic** veya **görsel C#**  düğümünü genişletin, **Windows** düğümünü seçin ve sonra **Windows Forms uygulama**' yı seçin.
 
-3. İçinde **adı** metin kutusuna `NorthwindClient`ve ardından **Tamam** düğmesi.
+3. **Ad** metin kutusuna girin `NorthwindClient`ve sonra **Tamam** düğmesini seçin.
 
-4. İçinde **Çözüm Gezgini**, seçin **; northwindclient & lt** proje düğümü.
+4. **Çözüm Gezgini**, **NorthwindClient** proje düğümünü seçin.
 
-5. Menü çubuğunda, **proje**, **başlangıç projesi olarak ayarla**.
+5. Menü çubuğunda **Proje**, **Başlangıç projesi olarak ayarla**' yı seçin.
 
-Sonraki adımda, bir hizmet Başvurusu Ekle [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)] web projesinde.
+Bir sonraki adımda, [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)] Web projesindeki öğesine bir hizmet başvurusu eklersiniz.
 
 ### <a name="to-add-a-service-reference"></a>Hizmet başvurusu eklemek için
 
-1. Menü çubuğunda, **proje** > **hizmet Başvurusu Ekle**.
+1. Menü çubuğunda, **Proje** > **hizmet başvurusu Ekle**' yi seçin.
 
-2. İçinde **hizmet Başvurusu Ekle** iletişim kutusunda **bulma** düğmesi.
+2. **Hizmet başvurusu Ekle** Iletişim kutusunda **bul** düğmesini seçin.
 
-     NorthwindCustomers hizmetinin URL'si görünür **adresi** alan.
+     NorthwindCustomers hizmeti URL 'SI, **Adres** alanında görüntülenir.
 
-3. Seçin **Tamam** hizmet başvurusunu eklemek için.
+3. Hizmet başvurusunu eklemek için **Tamam** düğmesini seçin.
 
-Sonraki adımda, hizmete veri bağlamayı etkinleştirmek için bir veri kaynağı yapılandırın.
+Bir sonraki adımda, hizmete veri bağlamayı etkinleştirmek için bir veri kaynağı yapılandırırsınız.
 
 ### <a name="to-enable-data-binding-to-the-service"></a>Hizmete veri bağlamayı etkinleştirmek için
 
-1. Menü çubuğunda, **görünümü** > **diğer Windows** > **veri kaynakları**.
+1. Menü çubuğunda > **diğer Windows** > **veri kaynaklarını** **görüntüle**' yi seçin.
 
    **Veri kaynakları** penceresi açılır.
 
-2. İçinde **veri kaynakları** penceresinde seçin **yeni veri kaynağı Ekle** düğmesi.
+2. **Veri kaynakları** penceresinde **Yeni veri kaynağı Ekle** düğmesini seçin.
 
-3. Üzerinde **bir veri kaynağı türü seçin** sayfasının **veri kaynağı Yapılandırma Sihirbazı**, seçin **nesne**ve ardından **sonraki** düğmesi .
+3. **Veri kaynağı Yapılandırma Sihirbazı**' nın **veri kaynağı türünü seçin** sayfasında, **nesne**' yi seçin ve ardından **İleri** düğmesini seçin.
 
-4. Üzerinde **veri nesnelerini seçin** sayfasında **; northwindclient & lt** düğümünü ve ardından **gt;northwindclient.servicereference1** düğümü.
+4. **Veri nesnelerini seçin** sayfasında, **NorthwindClient** düğümünü genişletin ve ardından **NorthwindClient. ServiceReference1** düğümünü genişletin.
 
-5. Seçin **müşteri** onay kutusunu işaretleyin ve ardından **son** düğmesi.
+5. **Müşteri** onay kutusunu seçin ve ardından **son** düğmesini seçin.
 
-Sonraki adımda, hizmetten alınan verileri görüntüleyen bir kullanıcı arabirimi oluşturun.
+Sonraki adımda, hizmetten gelen verileri görüntüleyen Kullanıcı arabirimini oluşturursunuz.
 
 ### <a name="to-create-the-user-interface"></a>Kullanıcı arabirimini oluşturmak için
 
-1. İçinde **veri kaynakları** penceresinde, kısayol menüsünü açın **müşteriler** düğüm ve **kopyalama**.
+1. **Veri kaynakları** penceresinde, **müşteriler** düğümünün kısayol menüsünü açın ve **Kopyala**' yı seçin.
 
-2. İçinde **Form1.vb** veya **Form1.cs** form tasarımcısında kısayol menüsünü açın ve seçin **Yapıştır**.
+2. **Form1. vb** veya **Form1.cs** form tasarımcısında, kısayol menüsünü açın ve **Yapıştır**' ı seçin.
 
-    A <xref:System.Windows.Forms.DataGridView> denetimi, bir <xref:System.Windows.Forms.BindingSource> bileşeni ve bir <xref:System.Windows.Forms.BindingNavigator> bileşeni formuna eklenir.
+    Bir <xref:System.Windows.Forms.DataGridView> denetim <xref:System.Windows.Forms.BindingNavigator> , bileşen ve bileşen forma eklenir. <xref:System.Windows.Forms.BindingSource>
 
-3. Seçin **CustomersDataGridView** denetimi ve ardından **özellikleri** penceresi kümesi **Dock** özelliğini **dolgu**.
+3. **CustomersDataGridView** denetimini seçin ve ardından **Özellikler** penceresinde **Dock** özelliğini **Fill**olarak ayarlayın.
 
-4. İçinde **Çözüm Gezgini**, kısayol menüsünü açın **Form1** düğüm ve **kodu görüntüle** Kod Düzenleyicisi'ni açın ve aşağıdakileri ekleyin `Imports` veya `Using`deyimini dosyanın üst:
+4. **Çözüm Gezgini**, **Form1** düğümünün kısayol menüsünü açın ve kod düzenleyicisini açmak için **kodu görüntüle** ' yi seçin ve aşağıdaki `Imports` veya `Using` ifadesini dosyanın en üstüne ekleyin:
 
    ```vb
    Imports NorthwindClient.ServiceReference1
@@ -212,7 +212,7 @@ Sonraki adımda, hizmetten alınan verileri görüntüleyen bir kullanıcı arab
    using NorthwindClient.ServiceReference1;
    ```
 
-5. Aşağıdaki kodu ekleyin `Form1_Load` olay işleyicisi:
+5. Aşağıdaki kodu `Form1_Load` olay işleyicisine ekleyin:
 
    ```vb
    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -230,28 +230,28 @@ Sonraki adımda, hizmetten alınan verileri görüntüleyen bir kullanıcı arab
    }
    ```
 
-6. İçinde **Çözüm Gezgini**, kısayol menüsünü açın **NorthwindCustomers.svc** seçin ve dosya **tarayıcıda görüntüle**. Internet Explorer açılır ve hizmet için XML Şeması görüntülenir.
+6. **Çözüm Gezgini**, **NorthwindCustomers. svc** dosyasının kısayol menüsünü açın ve **Tarayıcıda görüntüle '** yi seçin. Internet Explorer açılır ve hizmet için XML şeması görüntülenir.
 
 7. Internet Explorer adres çubuğundan URL'yi kopyalayın.
 
-8. 4. adımda eklediğiniz kodda seçin `http://localhost:53161/NorthwindCustomers.svc/` ve az önce kopyaladığınız URL ile değiştirin.
+8. 4\. adımda eklediğiniz kodda, öğesini seçin `http://localhost:53161/NorthwindCustomers.svc/` ve yeni kopyaladığınız URL ile değiştirin.
 
-9. Menü çubuğunda, **hata ayıklama** > **hata ayıklamayı Başlat** uygulamayı çalıştırın. Müşteri bilgileri gösterilir.
+9. Uygulamayı çalıştırmak için menü çubuğunda **hata** > **ayıklamayı Başlat** ' ı seçin. Müşteri bilgileri gösterilir.
 
-   Artık, NorthwindCustomers hizmetinden müşterilerin listesini görüntüleyen çalışır bir uygulamanız var. Ek veri hizmeti aracılığıyla kullanıma sunmak isterseniz değiştirebileceğiniz [!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)] Northwind veritabanından ek tablolar içerecek şekilde.
+   Artık, NorthwindCustomers hizmetinden müşterilerin listesini görüntüleyen çalışır bir uygulamanız var. Hizmet aracılığıyla ek verileri kullanıma sunmak istiyorsanız, [!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)] öğesini Northwind veritabanından ek tablolar içerecek şekilde değiştirebilirsiniz.
 
-Sonraki isteğe bağlı adımda hizmetin döndürdüğü verileri filtreleme hakkında bilgi edinin.
+Sonraki isteğe bağlı adımda, hizmet tarafından döndürülen verileri nasıl filtreleyeceğinizi öğrenirsiniz.
 
 ## <a name="adding-filtering-capabilities"></a>Filtreleme Yetenekleri Ekleme
- Bu adımda, uygulama verileri müşterinin Şehir bilgisine göre filtrelemek için özelleştirin.
+Bu adımda, verileri müşterinin şehre göre filtrelemek için uygulamayı özelleştirirsiniz.
 
 ### <a name="to-add-filtering-by-city"></a>Şehir bilgisine göre filtreleme eklemek için
 
-1. İçinde **Çözüm Gezgini**, kısayol menüsünü açın **Form1.vb** veya **Form1.cs** düğüm ve **açın**.
+1. **Çözüm Gezgini**, **Form1. vb** veya **Form1.cs** düğümünün kısayol menüsünü açın ve **Aç**' ı seçin.
 
-2. Ekleme bir <xref:System.Windows.Forms.TextBox> denetimi ve bir <xref:System.Windows.Forms.Button> denetimi **araç kutusu** form.
+2. <xref:System.Windows.Forms.TextBox> **Araç kutusundan** forma bir denetim <xref:System.Windows.Forms.Button> ve denetim ekleyin.
 
-3. Kısayol menüsünü açın <xref:System.Windows.Forms.Button> denetim öğesini **kodu görüntüle**ve ardından aşağıdaki kodu ekleyin `Button1_Click` olay işleyicisi:
+3. <xref:System.Windows.Forms.Button> Denetim için kısayol menüsünü açın, **kodu görüntüle**' yi seçin ve `Button1_Click` olay işleyicisine aşağıdaki kodu ekleyin:
 
     ```vb
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
@@ -280,13 +280,13 @@ Sonraki isteğe bağlı adımda hizmetin döndürdüğü verileri filtreleme hak
     }
     ```
 
-4. Önceki kod içinde `http://localhost:53161/NorthwindCustomers.svc` URL'den ile `Form1_Load` olay işleyicisi.
+4. Önceki kodda, `Form1_Load` olay işleyicisindeki `http://localhost:53161/NorthwindCustomers.svc` URL ile değiştirin.
 
-5. Menü çubuğunda, **hata ayıklama** > **hata ayıklamayı Başlat** uygulamayı çalıştırın.
+5. Uygulamayı çalıştırmak için menü çubuğunda **hata** > **ayıklamayı Başlat** ' ı seçin.
 
-6. Metin kutusuna **Londra**ve ardından düğmeyi seçin. Yalnızca Londralı müşteriler görüntülenir.
+6. Metin kutusuna **Londra**yazın ve ardından düğmeyi seçin. Yalnızca Londralı müşteriler görüntülenir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 - [Visual Studio'da Windows Communication Foundation Hizmetleri ve WCF Veri Hizmetleri](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)
-- [Nasıl yapılır: Ekleme, güncelleştirme veya WCF veri hizmeti başvurusunu Kaldır](../data-tools/how-to-add-update-or-remove-a-wcf-data-service-reference.md)
+- [Nasıl yapılır: WCF veri hizmeti başvurusu ekleme, güncelleştirme veya kaldırma](../data-tools/how-to-add-update-or-remove-a-wcf-data-service-reference.md)

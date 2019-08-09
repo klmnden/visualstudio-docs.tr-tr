@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ecf1db06ba3b78c6033b143b55f41cc203441973
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a20feb514b87f2906fd4db32dfb38d3d9b661999
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62779073"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68922824"
 ---
 # <a name="ca1035-icollection-implementations-have-strongly-typed-members"></a>CA1035: ICollection uygulamalarının kesin türde üyeleri vardır
 
@@ -31,30 +31,30 @@ ms.locfileid: "62779073"
 |Yeni Değişiklik|Yeni|
 
 ## <a name="cause"></a>Sebep
- Ortak veya korumalı tür uygulayan <xref:System.Collections.ICollection?displayProperty=fullName> için türü kesin belirlenmiş bir yöntem sağlamaz ancak <xref:System.Collections.ICollection.CopyTo%2A?displayProperty=fullName>. Kesin türü belirtilmiş sürümünü <xref:System.Collections.ICollection.CopyTo%2A> sahip olamaz ve iki parametre kabul etmesi gereken bir <xref:System.Array?displayProperty=fullName> veya bir dizi <xref:System.Object?displayProperty=fullName> ilk parametre olarak.
+Ortak veya korumalı bir tür uygular <xref:System.Collections.ICollection?displayProperty=fullName> , ancak için <xref:System.Collections.ICollection.CopyTo%2A?displayProperty=fullName>kesin olarak belirlenmiş bir yöntem sağlamaz. Türü kesin belirlenmiş olan <xref:System.Collections.ICollection.CopyTo%2A> sürümü iki parametreyi kabul etmelidir ve ilk parametresi <xref:System.Object?displayProperty=fullName> olarak <xref:System.Array?displayProperty=fullName> bir veya dizisine sahip olamaz.
 
 ## <a name="rule-description"></a>Kural açıklaması
- Bu kural gerektirir <xref:System.Collections.ICollection> kesin sağlamak için uygulamaları, böylece kullanıcılar bağımsız değişkenleri atamaları gerekli değildir üyeleri yazılan <xref:System.Object> arabirim tarafından sağlanan işlevselliği kullandığı zaman yazın. Bu kural, türün uyguladığı varsayar <xref:System.Collections.ICollection> yoksa, bu nedenle daha güçlü bir türün örneklerinin bir koleksiyonunu yönetmek için <xref:System.Object>.
+Bu kural, <xref:System.Collections.ICollection> kullanıcıların, arabirim tarafından sunulan işlevleri kullanırken bağımsız değişkenleri <xref:System.Object> türüne dönüştürmeleri gerekmeden, kesin olarak belirlenmiş Üyeler sağlaması için uygulamalar gerektirir. Bu kural, uygulayan türün, daha <xref:System.Collections.ICollection> <xref:System.Object>güçlü bir tür örnek koleksiyonunu yönetmek için bunu uyguladığı varsayılır.
 
- <xref:System.Collections.ICollection> uygulayan <xref:System.Collections.IEnumerable?displayProperty=fullName> arabirimi. Koleksiyondaki nesneleri genişletirseniz <xref:System.ValueType?displayProperty=fullName>, türü kesin belirlenmiş bir üye için sağlamanız gereken <xref:System.Collections.IEnumerable.GetEnumerator%2A> kutulama tarafından neden olan performans düşüklüğü önlemek için. Koleksiyon nesneler bir başvuru türü olmadığında bu gerekli değildir.
+ <xref:System.Collections.ICollection><xref:System.Collections.IEnumerable?displayProperty=fullName> arabirimini uygular. Koleksiyondaki nesneler genişlemişlerse <xref:System.ValueType?displayProperty=fullName>, kutulamaktan kaynaklanan performansı azaltmaktan kaçınmak için, için <xref:System.Collections.IEnumerable.GetEnumerator%2A> kesin olarak belirlenmiş bir üye sağlamalısınız. Koleksiyonun nesneleri bir başvuru türü olduğunda bu gerekli değildir.
 
- Bir arabirim üyesi türü kesin belirlenmiş bir sürümünü uygulamak için arabirim üyelerini açıkça biçiminde adlarını kullanarak uygulama `InterfaceName.InterfaceMemberName`, gibi <xref:System.Collections.ICollection.CopyTo%2A>. Açık arabirim üyeleri arabirim tarafından bildirilen veri türlerini kullanın. Arabirim üye adı gibi kullanarak türü kesin belirlenmiş üyeler uygulama <xref:System.Collections.ICollection.CopyTo%2A>. Türü kesin belirlenmiş üyeler genel olarak bildirmek ve parametreleri bildirmek ve dönüş değerleri koleksiyon tarafından yönetilen sağlam türünde olması. Tanımlayıcı türleri gibi daha zayıf türlerine değiştirin <xref:System.Object> ve <xref:System.Array> arabirim tarafından bildirilir.
+Bir arabirim üyesinin kesin türü belirtilmiş bir sürümünü uygulamak için, formdaki `InterfaceName.InterfaceMemberName` <xref:System.Collections.ICollection.CopyTo%2A>adları kullanarak arabirim üyelerini açıkça uygulayın. Açık arabirim üyeleri, arabirimi tarafından belirtilen veri türlerini kullanır. Arabirim üye adını <xref:System.Collections.ICollection.CopyTo%2A>(gibi) kullanarak türü kesin belirlenmiş üyeleri uygulayın. Kesin olarak belirlenmiş üyeleri ortak olarak bildirin ve koleksiyon tarafından yönetilen güçlü türde parametreleri ve dönüş değerlerini bildirin. Güçlü türler, <xref:System.Object> ve gibi daha <xref:System.Array> zayıf türler yerine arabirim tarafından bildirilmiştir.
 
-## <a name="how-to-fix-violations"></a>İhlaller nasıl düzeltilir?
- Bu kural ihlalini düzeltmek için arabirim üyesini açıkça uygulama (olarak bildirin <xref:System.Collections.ICollection.CopyTo%2A>). Olarak bildirilen genel bir türü kesin belirlenmiş üye ekleme `CopyTo`, ve onu bir türü kesin belirlenmiş diziye ilk parametre olarak geçirmesine sahip.
+## <a name="how-to-fix-violations"></a>İhlalleri çözme
+Bu kural ihlalini onarmak için arabirim üyesini açıkça uygulayın (olarak <xref:System.Collections.ICollection.CopyTo%2A>bildirin). Olarak `CopyTo`belirtilen public türü kesin belirlenmiş üyeyi ekleyin ve ilk parametresi olarak türü kesin belirlenmiş bir diziyi alır.
 
-## <a name="when-to-suppress-warnings"></a>Uyarılar bastırıldığında
- Yeni nesne tabanlı bir koleksiyon, burada yeni koleksiyon genişleten türler güçlü tür belirlemek bir ikili ağaç gibi uygularsanız, bu kuraldan bir uyarıyı gizler. Bu türler, bu kurala uygun ve türü kesin belirlenmiş üyeler kullanıma sunar.
+## <a name="when-to-suppress-warnings"></a>Uyarıların ne zaman bastırılamıyor
+Yeni koleksiyonu genişleten türlerin güçlü türü belirlemesi için bir ikili ağaç gibi yeni bir nesne tabanlı koleksiyon uygularsanız, bu kuraldan bir uyarı gizleyin. Bu türler bu kurala uymalıdır ve türü kesin belirlenmiş üyeleri kullanıma sunmalıdır.
 
 ## <a name="example"></a>Örnek
- Aşağıdaki örnek, uygulama doğru şekilde gösterir. <xref:System.Collections.ICollection>.
+Aşağıdaki örnek, uygulamak <xref:System.Collections.ICollection>için doğru yolu gösterir.
 
- [!code-csharp[FxCop.Design.ICollectionStrongTypes#1](../code-quality/codesnippet/CSharp/ca1035-icollection-implementations-have-strongly-typed-members_1.cs)]
+[!code-csharp[FxCop.Design.ICollectionStrongTypes#1](../code-quality/codesnippet/CSharp/ca1035-icollection-implementations-have-strongly-typed-members_1.cs)]
 
-## <a name="related-rules"></a>İlgili kuralları
- [CA1038: Numaralandırıcılar kesin olarak belirtilmelidir](../code-quality/ca1038-enumerators-should-be-strongly-typed.md)
+## <a name="related-rules"></a>İlgili kurallar
+[CA1038 Numaralandırıcılar kesin bir şekilde yazılmalıdır](../code-quality/ca1038-enumerators-should-be-strongly-typed.md)
 
- [CA1039: Listeler kesin türdedir](../code-quality/ca1039-lists-are-strongly-typed.md)
+[CA1039 Listelerin türü kesin olarak belirlenmiş](../code-quality/ca1039-lists-are-strongly-typed.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

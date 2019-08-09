@@ -15,78 +15,78 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c111c3a3b1c97a75d97baa625438052fbcae5a98
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: bbc53a1582a2a4f76de2ea402544137405f5d9f3
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66746388"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926141"
 ---
 # <a name="references-page-project-designer-visual-basic"></a>Başvurular Sayfası, Proje Tasarımcısı (Visual Basic)
 
-Kullanım **başvuruları** sayfasının **Proje Tasarımcısı** başvuruları ve web başvuruları projenize içeri aktarılan ad alanlarını yönetmek için. Proje başvuruları COM bileşenlerini, XML web Hizmetleri, .NET kitaplıkları veya derlemeleri ve diğer sınıf kitaplıkları için içerebilir. Başvuruları kullanma hakkında daha fazla bilgi için bkz. [bir projedeki başvuruları yönetme](../../ide/managing-references-in-a-project.md).
+Projenizdeki başvuruları, Web başvurularını ve içeri aktarılan ad alanlarını yönetmek için **Proje Tasarımcısı** ' nın **Başvurular** sayfasını kullanın. Projeler COM bileşenleri, XML Web Hizmetleri, .NET kitaplıkları veya derlemeler ya da diğer sınıf kitaplıklarına başvuru içerebilir. Başvuruları kullanma hakkında daha fazla bilgi için bkz. [bir projedeki başvuruları yönetme](../../ide/managing-references-in-a-project.md).
 
-Erişim için **başvuruları** sayfasında, bir proje düğümü seçin (değil **çözüm** düğümü) içinde **Çözüm Gezgini**. Ardından **proje**, **özellikleri** menü çubuğundaki. Proje Tasarımcısı göründüğünde tıklayın **başvuruları** sekmesi.
+**Başvurular** sayfasına erişmek için **Çözüm Gezgini**' de bir proje düğümü ( **çözüm** düğümünü değil) seçin. Ardından, menü çubuğunda **Proje**, **Özellikler** ' i seçin. Proje Tasarımcısı göründüğünde, **Başvurular** sekmesine tıklayın.
 
 ## <a name="uielement-list"></a>UIElement Listesi
 
-Aşağıdaki seçenekler seçin veya projenize başvurular ve içeri aktarılan ad alanlarını kaldırma olanak sağlar.
+Aşağıdaki seçenekler, projenizdeki başvuruları ve içeri aktarılan ad alanlarını seçmenizi veya kaldırmanızı sağlar.
 
 **Başvuru yolları**
 
-Erişim için bu düğmeye tıklayın **başvuru yolları** iletişim kutusu.
+**Başvuru yolları** iletişim kutusuna erişmek için bu düğmeye tıklayın.
 
 > [!NOTE]
-> Proje sistemi bir bütünleştirilmiş kod başvurusu bulduğunda, sistem aşağıdaki sırayla şu konumlarda bakarak başvuru çözer:
+> Proje sistemi bir derleme başvurusu bulduğunda, sistem aşağıdaki konumlara bakarak başvuruyu aşağıdaki sırayla çözümler:
 >
-> 1. Proje klasörü. Proje klasörü dosyaları görünür **Çözüm Gezgini** olduğunda **tüm dosyaları göster** geçerli değildir.
-> 2. İçinde belirtilen klasörler **başvuru yolları** iletişim kutusu.
-> 3. Dosyaları görüntüleme klasörleri **Başvuru Ekle** iletişim kutusu.
-> 4. Projenin obj klasörü. (Bir veya daha fazla derlemeleri projenize bir COM başvurusu eklediğinizde, projenin obj klasöre eklenebilir.)
+> 1. Proje klasörü. **Tüm dosyalar** etkin olmadığında proje klasörü dosyaları **Çözüm Gezgini** görüntülenir.
+> 2. **Başvuru yolları** iletişim kutusunda belirtilen klasörler.
+> 3. **Başvuru Ekle** iletişim kutusunda dosyaları görüntüleyen klasörler.
+> 4. Projenin obj klasörü. (Projenize bir COM başvurusu eklediğinizde, projenin obj klasörüne bir veya daha fazla derleme eklenebilir.)
 
  **Başvurular**
 
- Bu liste, projede kullanılan tüm başvuruları gösterir veya kullanılmayan.
+Bu liste, projede kullanılan veya kullanılmayan tüm başvuruları gösterir.
 
  **Add**
 
- Bir başvuru veya web referansı eklemek için bu düğmeye tıklayın **başvuruları** listesi.
+**Başvurular** listesine bir başvuru veya Web başvurusu eklemek için bu düğmeye tıklayın.
 
- Seçin **başvuru** Başvuru Ekle iletişim kutusunu kullanarak projenize bir başvuru eklemek için.
+Başvuru Ekle iletişim kutusunu kullanarak projenize başvuru eklemek için **başvuru** ' yı seçin.
 
- Seçin **Web başvurusu** projesi kullanarak bir web başvurusu eklemek için **Web başvurusu Ekle'yi** iletişim kutusu.
+Web başvurusu **Ekle** iletişim kutusunu kullanarak projenize Web başvurusu eklemek Için **Web başvurusu** ' nu seçin.
 
  **Kaldır**
 
- Bir veya daha fazla başvurularını seçin **başvuruları** listelemek ve silmek için bu düğmeye tıklayın.
+**Başvurular** listesinde bir veya daha fazla başvuru seçin, sonra silmek için bu düğmeye tıklayın.
 
- **Web başvurusunu güncelleştir**
+ **Web başvurusunu Güncelleştir**
 
- Bir web başvurusu seçin **başvuruları** listelemek ve güncelleştirmek için bu düğmeye tıklayın.
+**Başvurular** listesinde bir Web başvurusu seçin ve güncelleştirmek için bu düğmeye tıklayın.
 
  **İçeri aktarılan ad alanları**
 
- Bu kutusuna kendi ad alanı ve tıklayın **kullanıcı içeri aktarma ekleyin** ad alanları listesine eklenecek.
+Kendi ad alanınızı bu kutuya yazabilir ve **Kullanıcı Içeri aktarma Ekle** ' ye tıklayarak ad alanları listesine ekleyebilirsiniz.
 
- Kullanıcı içeri aktarılan ad alanları için diğer adlar oluşturabilirsiniz. Bunu yapmak için diğer ad ve ad alanı biçiminde girin *diğer*=*ad alanı*. Örneğin uzun ad kullanıyorsanız kullanışlıdır: `Http= MyOrg.ObjectLib.Internet.WebRequestMethods.Http`.
+Kullanıcı tarafından içeri aktarılan ad alanları için diğer adlar oluşturabilirsiniz. Bunu yapmak için, biçim *diğer*=*ad alanındaki*diğer adı ve ad alanını girin. Bu, uzun ad alanları kullanıyorsanız faydalıdır, örneğin: `Http= MyOrg.ObjectLib.Internet.WebRequestMethods.Http`.
 
- **Kullanıcı içeri aktarma ekleyin**
+ **Kullanıcı Içeri aktarma Ekle**
 
- Belirtilen ad alanı eklemek için bu düğmeye tıklayın **içeri aktarılan ad alanlarını** liste kutusuna içeri aktarılan ad alanları. Düğme, yalnızca belirtilen ad alanı zaten listede değilse etkindir.
+**Içeri aktarılan ad alanları** kutusunda belirtilen ad alanını içeri aktarılan ad alanları listesine eklemek için bu düğmeye tıklayın. Düğme, yalnızca belirtilen ad alanı listede yoksa etkindir.
 
- **Ad alanları listesi**
+ **Ad alanı listesi**
 
- Tüm kullanılabilir ad alanlarının bu listede gösterilir. Projenize dahil olan ad alanları için onay kutularını seçilir.
+Bu liste tüm kullanılabilir ad alanlarını gösterir. Projenize dahil olan ad alanları için onay kutuları seçilidir.
 
- **Güncelleştirme kullanıcı içeri aktarma**
+ **Kullanıcı Içeri aktarmayı Güncelleştir**
 
- Ad alanları listesinde bir kullanıcı tarafından belirtilen ad alanı seçin, içinde değiştirmek istediğiniz adı yazın **içeri aktarılan ad alanlarını** kutusuna ve ardından yeni bir ad alanına değiştirmek için bu düğmeye tıklayın. Düğme seçili ad alanı kullanılarak listeye eklenen bir ise etkinleştirilmeden **kullanıcı içeri aktarma eklemek** düğmesi. Ekleyebilirsiniz:
+Ad alanları listesinde Kullanıcı tarafından belirtilen bir ad alanı seçin, **Içeri aktarılan ad alanları** kutusuna değiştirmek istediğiniz adı yazın ve ardından yeni ad alanına geçmek için bu düğmeye tıklayın. Düğme, yalnızca seçilen ad alanı, **Kullanıcı Içeri aktarma Ekle** düğmesini kullanarak listeye eklediğiniz bir ise etkindir. Şunları ekleyebilirsiniz:
 
-- Sınıf veya ad alanları gibi <xref:System.Math?displayProperty=fullName>.
+- Gibi sınıflar veya ad alanları <xref:System.Math?displayProperty=fullName>.
 
-- Diğer adlı alır, gibi `VB=Microsoft.VisualBasic`.
+- Gibi diğer ad almalar `VB=Microsoft.VisualBasic`.
 
-- XML ad alanları gibi `<xmlns:xsl="http://www.w3.org/1999/XSL/Transform">`.
+- Gibi XML ad alanları `<xmlns:xsl="http://www.w3.org/1999/XSL/Transform">`.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 

@@ -11,19 +11,19 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 92e4e5e90e7b808e50f30c3a1d6527cdb7cfb4c2
-ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
+ms.openlocfilehash: 5f01b16971c85a07923783e97f08a8b91512eef6
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/29/2019
-ms.locfileid: "68605824"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68870783"
 ---
 # <a name="how-to-change-text-case-in-the-editor"></a>Nasıl yapılır: Düzenleyicide metin durumunu değiştirme
 
 Seçili metni büyük tümü büyük harf veya küçük harflerle dönüştürülecek menü komutlarını veya klavye kısayollarını kullanabilirsiniz.
 
 > [!NOTE]
-> Gördüğünüz iletişim kutuları ve menü komutları, bu makalede açıklananlardan farklı olarak **genel** geliştirme ayarlarını temel alır. Geliştirme ayarlarınızı değiştirmek için **Araçlar** > **içeri ve dışarı aktarma ayarları**' nı seçin ve ardından **tüm ayarları Sıfırla**' yı seçin.
+> Gördüğünüz iletişim kutuları ve menü komutları, bu makalede açıklananlardan farklı olarak **genel** ortam ayarlarını temel alır. Ortam ayarlarınızı değiştirmek için **Araçlar** > **içeri ve dışarı aktarma ayarları**' nı seçin ve ardından **tüm ayarları Sıfırla**' yı seçin.
 
 ## <a name="to-change-text-case"></a>Metin durumunu değiştirmek için
 
@@ -31,7 +31,7 @@ Seçili metni büyük tümü büyük harf veya küçük harflerle dönüştürü
 
 2. Metni büyük harflere dönüştürmek için**Gelişmiş** > **Oluştur büyük harf** **Düzenle** > ' yi seçin veya **CTRL**+**SHIFT**+**U**tuşlarına basın.
 
-   Metni küçük harfe dönüştürmek için**Gelişmiş** > **yap küçük harf** **Düzenle** > ' yi seçin veya **CTRL**+**U**tuşlarına basın.
+   Metni küçük harfe dönüştürmek için**Gelişmiş** > yap **Düzenle** > **küçük harf** ' i seçin veya **CTRL**+**U**tuşlarına basın. ( C++ Geliştirme iş yükünüz yüklüyse, bu KeyBinding farklı bir komut tarafından kullanılabilir.)
 
 > [!TIP]
 > Bu değişiklikten önce biçimlendirme önceki durumuna geri döndürmek için seçin **geri** gelen **Düzenle** menüsü.

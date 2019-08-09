@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e57607cdfa8790c9b9fd4e692956f7bb823981a
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 7d972198898dd1a4cafa5280c129db38bb3e4982
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66744865"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68921293"
 ---
 # <a name="ca1903-use-only-api-from-targeted-framework"></a>CA1903: Yalnızca hedeflenen çerçeveden API kullanın
 
@@ -27,44 +27,44 @@ ms.locfileid: "66744865"
 |-|-|
 |TypeName|UseOnlyApiFromTargetedFramework|
 |CheckId|CA1903|
-|Kategori|Microsoft.Portability|
-|Yeni Değişiklik|-Bir açıkça görünen üyenin veya türün karşı imza tetiklendiğinde kesiliyor.<br /><br /> Bir yöntemin gövdesinde tetiklendiğinde bölünemez -.|
+|Kategori|Microsoft. taşınabilirlik|
+|Yeni Değişiklik|Parçalama-dışarıdan görünen bir üyenin veya türün imzasına karşı harekete geçirildi.<br /><br /> Bir yöntemin gövdesinde Tetiklenmeyen-bölünmez.|
 
 ## <a name="cause"></a>Sebep
- Bir üyenin veya türün bir üyesi veya hizmet paketi bulunmayan projenin hedeflenen çerçeve ile sunulan türü kullanıyor.
+Üye veya tür, projenin hedeflenen çerçevesine dahil olmayan bir hizmet paketinde tanıtılan bir üye veya tür kullanıyor.
 
 ## <a name="rule-description"></a>Kural açıklaması
- .NET Framework 2.0 Service Pack 1 ve 2, .NET Framework 3.0 Service Pack 1 ve 2 ve .NET Framework 3.5 Service Pack 1'de yeni üyeleri ve türleri dahil edilmişti. Önemli .NET Framework sürümlerini hedefleyen projeler, yeni API'leri yanlışlıkla bu bağımlılıkları alabilir. Bu bağımlılığı önlemek için bu kural herhangi bir yeni üyeler ve varsayılan olarak projenin hedef çerçevesi ile bulunmayan türleri kullanımları tetikler.
+Yeni Üyeler ve türler .NET Framework 2,0 Service Pack 1 ve 2, .NET Framework 3,0 Service Pack 1 ve 2 ve .NET Framework 3,5 Service Pack 1 ' de yer almaktadır. .NET Framework ana sürümlerini hedefleyen projeler, bu yeni API 'lerde istemeden bağımlılıklar alabilir. Bu bağımlılığı engellemek için bu kural, varsayılan olarak projenin hedef çerçevesine dahil olmayan yeni üyelerin ve türlerin kullanımları üzerinde ateşlenir.
 
- **Hedef Framework ve hizmet paketi bağımlılıkları**
+**Hedef Framework ve hizmet paketi bağımlılıkları**
 
 |||
 |-|-|
-|Hedef Framework'ü olduğunda|Kullanımları sürümünde üyeleri üzerinde harekete geçirilir|
-|.NET Framework 2.0|.NET Framework 2.0 SP1, .NET Framework 2.0 SP2|
-|.NET Framework 3.0|.NET Framework 2.0 SP1, .NET Framework 2.0 SP2, .NET Framework 3.0 SP1, .NET Framework 3.0 SP2|
+|Hedef Framework olduğunda|İçinde tanıtılan üyelerin kullanımları ateşlenir|
+|.NET Framework 2.0|.NET Framework 2,0 SP1, .NET Framework 2,0 SP2|
+|.NET Framework 3.0|.NET Framework 2,0 SP1, .NET Framework 2,0 SP2, .NET Framework 3,0 SP1, .NET Framework 3,0 SP2|
 |.NET Framework 3.5|.NET Framework 3.5 SP1|
 |.NET Framework 4|Yok|
 
- Bir projenin hedef Framework'ü değiştirmek için bkz: [nasıl yapılır: .NET sürümü hedefleme](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
+Projenin hedef çerçevesini değiştirmek için bkz [. nasıl yapılır: .NET](../ide/how-to-target-a-version-of-the-dotnet-framework.md)sürümünü hedefleyin.
 
-## <a name="how-to-fix-violations"></a>İhlaller nasıl düzeltilir?
- Hizmet paketi bağımlılığı kaldırmak için yeni üyenin veya türün tüm kullanımları kaldırın. Bu kasıtlı bir bağımlılık ise, uyarı veya bu kuralını devreden çıkar.
+## <a name="how-to-fix-violations"></a>İhlalleri çözme
+Hizmet paketindeki bağımlılığı kaldırmak için, yeni üyenin veya türün tüm kullanımlarını kaldırın. Bu bir bilinçli bağımlılığı ise, uyarıyı gizleyin ya da bu kuralı kapatın.
 
-## <a name="when-to-suppress-warnings"></a>Uyarılar bastırıldığında
- Belirtilen hizmet paketinin bilinçli bağımlı değilse bu kuraldan bir uyarıyı bastırmayın. Bu durumda, uygulamanız bu hizmet paketinin yüklü olmadığı sistemlerde çalıştırmak başarısız olabilir. Bu uyarının gösterilmemesi veya bu kasıtlı bir bağımlılık ise bu kuralı devre dışı bırakabilirsiniz.
-
-## <a name="example"></a>Örnek
- Aşağıdaki örnek, yalnızca .NET 2.0 Service Pack 1'de kullanılabilir olan DateTimeOffset türü kullanan bir sınıfı gösterir. Bu örnek, .NET Framework 2.0 proje özelliklerini hedef çerçeve açılır listede seçilen gerektirir.
-
- [!code-csharp[FxCop.Portability.UseOnlyApiFromTargetedFramework#1](../code-quality/codesnippet/CSharp/ca1903-use-only-api-from-targeted-framework_1.cs)]
+## <a name="when-to-suppress-warnings"></a>Uyarıların ne zaman bastırılamıyor
+Bu kural, belirtilen hizmet paketinde bir bilinçli bağımlılığı değilse bu kuraldan bir uyarıyı bastırmayın. Bu durumda, uygulamanız bu hizmet paketinin yüklü olmadığı sistemlerde çalışmayabilir. Bu bir bilinçli bağımlılığıdır, uyarıyı gizleyin veya bu kuralı kapatın.
 
 ## <a name="example"></a>Örnek
- Aşağıdaki örnek, yukarıda açıklanan ihlali kullanımları DateTimeOffset türü DateTime türü ile değiştirerek düzeltir.
+Aşağıdaki örnek yalnızca .NET 2,0 hizmet paketi 1 ' de bulunan DateTimeOffset türünü kullanan bir sınıfı gösterir. Bu örnek, proje özelliklerindeki hedef Framework aşağı açılan listesinde 2,0 .NET Framework seçilmesini gerektirir.
 
- [!code-csharp[FxCop.Portability.UseOnlyApiFromTargetedFramework2#1](../code-quality/codesnippet/CSharp/ca1903-use-only-api-from-targeted-framework_2.cs)]
+[!code-csharp[FxCop.Portability.UseOnlyApiFromTargetedFramework#1](../code-quality/codesnippet/CSharp/ca1903-use-only-api-from-targeted-framework_1.cs)]
+
+## <a name="example"></a>Örnek
+Aşağıdaki örnek, DateTimeOffset türünün kullanımlarını tarih saat türüyle değiştirerek daha önce açıklanan ihlalin düzeltir.
+
+[!code-csharp[FxCop.Portability.UseOnlyApiFromTargetedFramework2#1](../code-quality/codesnippet/CSharp/ca1903-use-only-api-from-targeted-framework_2.cs)]
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 - [Taşınabilirlik Uyarıları](../code-quality/portability-warnings.md)
-- [Framework hedefleme genel bakış](../ide/visual-studio-multi-targeting-overview.md)
+- [Çerçeve hedefleme genel bakış](../ide/visual-studio-multi-targeting-overview.md)

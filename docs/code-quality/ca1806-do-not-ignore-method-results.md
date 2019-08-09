@@ -16,12 +16,12 @@ dev_langs:
 - CSharp
 - VB
 manager: jillfra
-ms.openlocfilehash: d2a1dd9984601afa34e4aac7fa5ddc24061cf6ae
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2e68fb6b4c40c165a09ae2631a2ad0a64bf52fbc
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62797056"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68921549"
 ---
 # <a name="ca1806-do-not-ignore-method-results"></a>CA1806: Metot sonuçlarını yoksaymayın
 
@@ -29,71 +29,71 @@ ms.locfileid: "62797056"
 |-|-|
 |TypeName|DoNotIgnoreMethodResults|
 |CheckId|CA1806|
-|Kategori|Microsoft.Usage|
-|Yeni Değişiklik|Bozucu olmayan|
+|Kategori|Microsoft. Usage|
+|Yeni Değişiklik|Kırılmamış|
 
 ## <a name="cause"></a>Sebep
 
-Bu uyarı için birkaç olası nedeni vardır:
+Bu uyarının birkaç olası nedeni vardır:
 
-- Yeni bir nesne oluşturulur, ancak hiç kullanılmadı.
+- Yeni bir nesne oluşturulur ancak hiç kullanılmaz.
 
-- Oluşturur ve yeni bir dize döndüren bir yöntem olarak adlandırılır ve yeni bir dize hiçbir zaman kullanılmaz.
+- Yeni bir dize oluşturan ve döndüren bir yöntem çağrılır ve yeni dize hiçbir şekilde kullanılmaz.
 
-- Bir HRESULT ya da hata kodunu döndüren bir COM veya P/Invoke yöntemi hiçbir zaman kullanılmaz. Kural Tanımı
+- Hiçbir zaman kullanılmayan bir HRESULT veya hata kodu döndüren bir COM veya P/Invoke yöntemi. Kural Tanımı
 
-Gereksiz nesne oluşturma ve kullanılmayan nesnenin ilişkili çöp toplama performansını düşürebilir.
+Gereksiz nesne oluşturma ve kullanılmayan nesnenin ilişkili atık toplaması, performansı düşürür.
 
-Dizeleri sabittir ve yöntemleri String.ToUpper gibi bir dize yöntemi çağrılırken dizesinde örneğini değiştirmek yerine yeni bir örneğini döndürür.
+Dizeler sabittir ve String. ToUpper gibi yöntemler, çağıran yöntemde dize örneğini değiştirmek yerine bir dizenin yeni bir örneğini döndürür.
 
-HRESULT ya da hata kodu yoksayılıyor beklenmeyen davranışlara hata koşullarında ya da düşük kaynak koşulları yol açabilir.
+HRESULT veya hata kodu yok sayılıyor, hata koşullarında veya düşük kaynak koşullarında beklenmeyen davranışlara neden olabilir.
 
-## <a name="how-to-fix-violations"></a>İhlaller nasıl düzeltilir?
- Bir yöntemi hiçbir zaman kullanılmaz B nesnesinin yeni bir örneğini oluşturur, örneği bir bağımsız değişken olarak başka yönteme geçirin veya örneği bir değişkene atayın. Nesne oluşturma gereksizse kaldıramazsınız- veya -
+## <a name="how-to-fix-violations"></a>İhlalleri çözme
+A yöntemi, hiç kullanılmamış bir B nesnesinin yeni bir örneğini oluşturursa, örneği bir bağımsız değişken olarak başka bir metoda geçirin veya örneği bir değişkene atayın. Nesne oluşturma gereksiz ise, bunu kaldırın.-veya-
 
- Yöntemi bir B yöntemini çağırır, ancak B yöntemi döndüren yeni dize örneğinde kullanmaz. Örneği bir bağımsız değişken olarak başka yönteme geçirin, örneği bir değişkene atayın. Ya da gereksizse çağrısını kaldırın.
+If yöntemi B yöntemini çağırırsa, ancak B yönteminin döndürdüğü yeni dize örneğini kullanmaz. Örneği bir bağımsız değişken olarak başka bir yönteme geçirin, örneği bir değişkene atayın. Ya da gerekli değilse çağrıyı kaldırın.
 
  -veya-
 
- Yöntem, yöntem A B yöntemini çağırır, ancak HRESULT kullanmaz veya hata kodu döndürür. Sonucu bir koşullu deyimde kullanın, sonucu bir değişkene atayın ya da başka yönteme bağımsız değişken olarak geçirin.
+If yöntemi B yöntemini çağırırsa, ancak yöntemin döndürdüğü HRESULT veya hata kodunu kullanmaz. Sonucu bir koşullu ifadede kullanın, sonucu bir değişkene atayın ya da başka bir yönteme bağımsız değişken olarak geçirin.
 
-## <a name="when-to-suppress-warnings"></a>Uyarılar bastırıldığında
- Nesne oluşturma işlemi bazı amaca hizmet eder sürece bu kuraldan bir uyarıyı bastırmayın.
-
-## <a name="example"></a>Örnek
- Aşağıdaki örnek, çağıran String.Trim sonucunu yoksayar bir sınıfı gösterir.
-
- [!code-csharp[FxCop.Usage.DoNotIgnoreMethodResults3#1](../code-quality/codesnippet/CSharp/ca1806-do-not-ignore-method-results_1.cs)]
- [!code-vb[FxCop.Usage.DoNotIgnoreMethodResults3#1](../code-quality/codesnippet/VisualBasic/ca1806-do-not-ignore-method-results_1.vb)]
- [!code-cpp[FxCop.Usage.DoNotIgnoreMethodResults3#1](../code-quality/codesnippet/CPP/ca1806-do-not-ignore-method-results_1.cpp)]
+## <a name="when-to-suppress-warnings"></a>Uyarıların ne zaman bastırılamıyor
+Nesne oluşturma eylemi bir amaca hizmet etmediği takdirde bu kuraldan bir uyarıyı bastırmayın.
 
 ## <a name="example"></a>Örnek
- Aşağıdaki örnek, önceki ihlali String.Trim sonucu geri çağrıldı değişken atanarak düzeltir.
+Aşağıdaki örnek String. Trim çağırma sonucunu yok sayan bir sınıfı gösterir.
 
- [!code-csharp[FxCop.Usage.DoNotIgnoreMethodResults4#1](../code-quality/codesnippet/CSharp/ca1806-do-not-ignore-method-results_2.cs)]
- [!code-vb[FxCop.Usage.DoNotIgnoreMethodResults4#1](../code-quality/codesnippet/VisualBasic/ca1806-do-not-ignore-method-results_2.vb)]
- [!code-cpp[FxCop.Usage.DoNotIgnoreMethodResults4#1](../code-quality/codesnippet/CPP/ca1806-do-not-ignore-method-results_2.cpp)]
+[!code-csharp[FxCop.Usage.DoNotIgnoreMethodResults3#1](../code-quality/codesnippet/CSharp/ca1806-do-not-ignore-method-results_1.cs)]
+[!code-vb[FxCop.Usage.DoNotIgnoreMethodResults3#1](../code-quality/codesnippet/VisualBasic/ca1806-do-not-ignore-method-results_1.vb)]
+[!code-cpp[FxCop.Usage.DoNotIgnoreMethodResults3#1](../code-quality/codesnippet/CPP/ca1806-do-not-ignore-method-results_1.cpp)]
 
 ## <a name="example"></a>Örnek
- Aşağıdaki örnek, oluşturduğu bir nesne kullanmayan bir yöntemi gösterir.
+Aşağıdaki örnek, dizesinin sonucunu atayarak önceki ihlalin düzeltir. çağrıldığı değişkene geri kırpın.
+
+[!code-csharp[FxCop.Usage.DoNotIgnoreMethodResults4#1](../code-quality/codesnippet/CSharp/ca1806-do-not-ignore-method-results_2.cs)]
+[!code-vb[FxCop.Usage.DoNotIgnoreMethodResults4#1](../code-quality/codesnippet/VisualBasic/ca1806-do-not-ignore-method-results_2.vb)]
+[!code-cpp[FxCop.Usage.DoNotIgnoreMethodResults4#1](../code-quality/codesnippet/CPP/ca1806-do-not-ignore-method-results_2.cpp)]
+
+## <a name="example"></a>Örnek
+Aşağıdaki örnek, oluşturduğu bir nesneyi kullanmayan bir yöntemi gösterir.
 
 > [!NOTE]
-> Visual Basic'te bu ihlal oluşturulamayacak.
+> Bu ihlalin Visual Basic çoğaltılamaz.
 
- [!code-cpp[FxCop.Usage.DoNotIgnoreMethodResults5#1](../code-quality/codesnippet/CPP/ca1806-do-not-ignore-method-results_3.cpp)]
- [!code-csharp[FxCop.Usage.DoNotIgnoreMethodResults5#1](../code-quality/codesnippet/CSharp/ca1806-do-not-ignore-method-results_3.cs)]
+[!code-cpp[FxCop.Usage.DoNotIgnoreMethodResults5#1](../code-quality/codesnippet/CPP/ca1806-do-not-ignore-method-results_3.cpp)]
+[!code-csharp[FxCop.Usage.DoNotIgnoreMethodResults5#1](../code-quality/codesnippet/CSharp/ca1806-do-not-ignore-method-results_3.cs)]
 
 ## <a name="example"></a>Örnek
- Aşağıdaki örnek, bir nesne gereksiz oluşturulmasını kaldırarak önceki ihlali düzeltir.
+Aşağıdaki örnek, bir nesnenin gereksiz şekilde oluşturulmasını kaldırarak önceki ihlalin düzeltir.
 
- [!code-csharp[FxCop.Usage.DoNotIgnoreMethodResults6#1](../code-quality/codesnippet/CSharp/ca1806-do-not-ignore-method-results_4.cs)]
- [!code-cpp[FxCop.Usage.DoNotIgnoreMethodResults6#1](../code-quality/codesnippet/CPP/ca1806-do-not-ignore-method-results_4.cpp)]
+[!code-csharp[FxCop.Usage.DoNotIgnoreMethodResults6#1](../code-quality/codesnippet/CSharp/ca1806-do-not-ignore-method-results_4.cs)]
+[!code-cpp[FxCop.Usage.DoNotIgnoreMethodResults6#1](../code-quality/codesnippet/CPP/ca1806-do-not-ignore-method-results_4.cpp)]
 
 <!-- Examples don't exist for the below... -->
 <!--
 ## Example
- The following example shows a method that ignores the error code that the native method GetShortPathName returns.
+The following example shows a method that ignores the error code that the native method GetShortPathName returns.
 
 ## Example
- The following example fixes the previous violation by checking the error code and throwing an exception when the call fails.
+The following example fixes the previous violation by checking the error code and throwing an exception when the call fails.
 -->
