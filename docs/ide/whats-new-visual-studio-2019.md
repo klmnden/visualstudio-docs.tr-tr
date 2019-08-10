@@ -15,12 +15,12 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: dd4ae23899871644f61f3bb903fc2c4ad7880b53
-ms.sourcegitcommit: 9fc8b144d4ed1c46aba87c0b7e1d24454e0eea9d
+ms.openlocfilehash: 1f4a055f62fe76c701858f82b4778f7a3b19fa0a
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "68493323"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68918784"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Visual Studio 2019’daki yenilikler
 
@@ -65,7 +65,7 @@ Yalnızca **CTRL +** tuşlarına basarak yeniden düzenlemeler çağırın. ve g
 
 [Visual Studio ıntellicode](/visualstudio/intellicode/) yapay zeka (AI) kullanarak yazılım geliştirme çabalarınızı geliştirir. Intellicode,&mdash;her birinin önerilerini oluşturmak için her biri 100 yıldız&mdash;ile 2.000 açık kaynaklı projeler arasında gezinir.
 
- ![Visual Studio 2019 ' de ıntellicode animasyonu](media/vs-2019/IntelliCode.gif)
+![Visual Studio 2019 ' de ıntellicode animasyonu](media/vs-2019/IntelliCode.gif)
 
 Visual Studio ıntellicode 'un üretkenliğinizi artırmaya yardımcı olabilecek birkaç yol aşağıda verilmiştir:
 

@@ -13,15 +13,15 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a6965378151bb44db1024ac4e9a49de618f410dc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0ac779dc902a331a45b600113a11db5364293f74
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62789006"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68925944"
 ---
 # <a name="watch-command"></a>İzle Komutu
-Oluşturur ve belirtilen bir örneğini açar bir **Watch** penceresi. Kullanabileceğiniz bir **Watch** penceresi değişkenleri ve ifadeleri kayıtları, bu değerleri düzenleme ve sonuçları kaydetmek için değerleri hesaplamak için.
+Oluşturur ve belirtilen bir örneğini açar bir **Watch** penceresi. Değişkenler, ifadeler ve yazmaçların değerlerini hesaplamak, bu değerleri düzenlemek ve sonuçları kaydetmek için bir **Gözcü** penceresi kullanabilirsiniz.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -30,12 +30,13 @@ Debug.Watch[index]
 ```
 
 ## <a name="arguments"></a>Arguments
- `index`
 
- Gerekli. İzleme penceresi örneği sayısı.
+`index`\
+Gerekli. İzleme penceresinin örnek numarası.
 
 ## <a name="remarks"></a>Açıklamalar
- `index` Bir tamsayı olmalıdır. Geçerli değerler 1, 2, 3 veya 4 arasındadır.
+
+Bir `index` tamsayı olmalıdır. Geçerli değerler 1, 2, 3 veya 4 ' dir.
 
 ## <a name="example"></a>Örnek
 
@@ -46,7 +47,7 @@ Debug.Watch[index]
 ## <a name="see-also"></a>Ayrıca Bkz.
 
 - [Otomatikler ve Yereller Pencereleri](../../debugger/autos-and-locals-windows.md)
-- [Değişkenleri izleme ve QuickWatch Windows Visual Studio kullanarak bir izleme ayarlayın](../../debugger/watch-and-quickwatch-windows.md)
+- [Visual Studio 'da gözcü ve hızlı gözcü pencerelerini kullanarak değişkenlerde bir Izleme ayarlayın](../../debugger/watch-and-quickwatch-windows.md)
 - [Visual Studio Komutları](../../ide/reference/visual-studio-commands.md)
 - [Komut Penceresi](../../ide/reference/command-window.md)
 - [Bul/Komut Kutusu](../../ide/find-command-box.md)

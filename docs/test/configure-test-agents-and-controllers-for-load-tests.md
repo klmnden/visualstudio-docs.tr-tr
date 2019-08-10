@@ -7,14 +7,14 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 889195101123e98207b0b25f05b0aa24355abc95
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 5c10a624d78c1dc362c9d0e5d7c0e58e24efc3cf
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65461624"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68918364"
 ---
-# <a name="overview-of-test-agents-and-test-controllers-for-running-load-tests"></a>Yük testleri çalıştırmak için test denetleyicileri ve test aracıları genel bakış
+# <a name="overview-of-test-agents-and-test-controllers-for-running-load-tests"></a>Yük testlerini çalıştırmak için Test aracılarına ve test denetleyicilerine genel bakış
 
 Visual Studio benzetilmiş yük kullanarak uygulamanız için fiziksel veya sanal makineler oluşturabilirsiniz. Bu makineler, tek bir test denetleyicisi ve bir veya daha fazla test aracıları ayarlanmalıdır. Test denetleyicisi ve test aracıları tek bir bilgisayar başına oluşturabilirsiniz daha fazla yük oluşturmak için kullanabilirsiniz.
 
@@ -41,17 +41,17 @@ Bu mimari aşağıdaki avantajları sağlar:
 
    **Yerel yapılandırma:**
 
-  - Machine1: Visual Studio, denetleyici, aracı.
+  - Machine1 Visual Studio, denetleyici, aracı.
 
     ![Denetleyici ve Aracı'nı kullanarak yerel makine](./media/load-test-configa.png)
 
     **Tipik Uzaktan yapılandırma:**
 
-  - Machine1 ve 2: Visual Studio (birden çok test eden aynısı kullanabilirsiniz).
+  - Machine1 ve 2: Visual Studio (birden çok Sınayıcılar aynı denetleyiciyi kullanabilir).
 
-  - Makine3: Denetleyici (çok, yüklü aracıları olabilir).
+  - Machine3: Denetleyici (aracıların yüklü olması de olabilir).
 
-  - Machine4-n: Aracı veya MAKİNE3 denetleyiciyle ilişkili tüm aracıları.
+  - Machine4-n: Machine3 üzerinde denetleyicisiyle ilişkili olan aracı veya aracılar.
 
     ![Uzak makinede denetleyicisi ve aracıları kullanma](./media/load-test-configb.png)
 
@@ -69,17 +69,17 @@ Test denetleyicisi testleri çalıştırmak için genel bir mimari sağlar ve y�
 
 Test aracısı, yeni bir test başlatmak için test denetleyicisinden isteklerini dinleyen bir hizmet olarak çalışır. Test aracısını bir istek aldığında, test aracısı hizmeti, testleri çalıştırmak bir işlem başlatır. Her test aracısı, aynı yük testi çalıştırır.
 
- Test aracıları ağırlık yönetici tarafından atanır ve bir test aracısın ağırlığı göre yükleme dağıtılır. Test Aracısı 2 700 sanal kullanıcıların benzetimini yapar ancak örneğin, test aracısı 1, 30 ağırlığa sahip ve test aracısını 2 70 ağırlığa sahip ve yük 1000 kullanıcı ayarlanır, sonra test aracısı 1 300 sanal kullanıcı benzetimini yapar. Bkz: [test denetleyicileri ve test aracıları Visual Studio ile yönetme](../test/manage-test-controllers-and-test-agents.md).
+Test aracıları ağırlık yönetici tarafından atanır ve bir test aracısın ağırlığı göre yükleme dağıtılır. Test Aracısı 2 700 sanal kullanıcıların benzetimini yapar ancak örneğin, test aracısı 1, 30 ağırlığa sahip ve test aracısını 2 70 ağırlığa sahip ve yük 1000 kullanıcı ayarlanır, sonra test aracısı 1 300 sanal kullanıcı benzetimini yapar. Bkz: [test denetleyicileri ve test aracıları Visual Studio ile yönetme](../test/manage-test-controllers-and-test-agents.md).
 
- Test aracısını bir test kümesini ve simülasyon parametreleri kümesini girdi olarak alır. Bir anahtar kavram, testleri nerede çalıştıran bilgisayardan bağımsız olmasıdır.
+Test aracısını bir test kümesini ve simülasyon parametreleri kümesini girdi olarak alır. Bir anahtar kavram, testleri nerede çalıştıran bilgisayardan bağımsız olmasıdır.
 
 ## <a name="test-controller-and-test-agent-connection-points"></a>Test denetleyicisi ve test aracısı bağlantı noktaları
 
 Aşağıdaki çizim, test denetleyicisi, test aracısı ve istemci arasındaki bağlantı noktalarını gösterir. Bunu, bu bağlantı noktalarındaki güvenlik kısıtlamalarını yanı sıra gelen ve giden bağlantılar için hangi bağlantı noktalarının kullanılan açıklar.
 
- ![Test denetleyicisi ve test aracısı bağlantı noktaları ve güvenlik](./media/test-controller-agent-firewall.png)
+![Test denetleyicisi ve test Aracısı bağlantı noktaları ve güvenliği](./media/test-controller-agent-firewall.png)
 
- Daha fazla bilgi için [yapılandırma bağlantı noktaları için test denetleyicileri ve test aracılarını](../test/configure-ports-for-test-controllers-and-test-agents.md).
+Daha fazla bilgi için [yapılandırma bağlantı noktaları için test denetleyicileri ve test aracılarını](../test/configure-ports-for-test-controllers-and-test-agents.md).
 
 ## <a name="test-controller-and-agent-installation-information"></a>Test denetleyicisi ve Aracısı yükleme bilgileri
 

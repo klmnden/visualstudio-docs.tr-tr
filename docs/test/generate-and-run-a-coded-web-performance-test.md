@@ -14,12 +14,12 @@ dev_langs:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a6f1c524b879d5d5476491a8979d86449f3d43c0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 49691b2031d1d935871a73833924e9dc4aa46dcd
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63002504"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68918403"
 ---
 # <a name="generate-and-run-a-coded-web-performance-test"></a>Kodlanmış web performans testi oluşturma
 
@@ -84,17 +84,17 @@ Web performans testleri, web uygulamanızla göz atarak kaydedilir. Testler, bir
 
 ## <a name="qa"></a>SORU- CEVAP
 
-### <a name="q-can-i-run-more-than-one-test-at-a-time"></a>S: Aynı anda birden fazla test çalıştırabilir miyim?
- **Y:** Evet, (bağlam) sağ tıklama menüsünde kullanmak **Çözüm Gezgini**.
+### <a name="q-can-i-run-more-than-one-test-at-a-time"></a>Ç Aynı anda birden fazla test çalıştırabilir miyim?
+**A** Evet, **Çözüm Gezgini**' de sağ tıklama (bağlam) menüsünü kullanın.
 
-### <a name="q-should-i-add-a-data-source-before-or-after-i-generate-a-coded-test"></a>S: Bir veri kaynağı miyim kodlanmış test üretmeden önce veya sonra eklemeniz gerekir?
- **Y:** Eklemek daha kolay bir [veri kaynağı](../test/add-a-data-source-to-a-web-performance-test.md) kodu otomatik olarak sizin için oluşturulacağından Kodlanmış testi oluşturmadan önce.
+### <a name="q-should-i-add-a-data-source-before-or-after-i-generate-a-coded-test"></a>Ç Kodlanmış bir test oluşturmadan önce veya sonra bir veri kaynağı eklemem gerekir mi?
+**A** Kod sizin için otomatik olarak oluşturulduğundan, kodlanmış testi oluşturmadan önce bir [veri kaynağı](../test/add-a-data-source-to-a-web-performance-test.md) eklemek daha kolaydır.
 
- Bir veri kaynağı ile kodlanmış bir test çalıştırdığınızda, aşağıdaki hata iletisini görebilirsiniz:
+Bir veri kaynağı ile kodlanmış bir test çalıştırdığınızda, aşağıdaki hata iletisini görebilirsiniz:
 
- **Test çalıştırılamadı \<Test adı > aracıdaki \<bilgisayar adı >: Nesne başvurusu bir nesnenin örneğine ayarlı değil.**
+**\< Aracı\<bilgisayar adı > > test testi adı çalıştırılamadı: Nesne başvurusu bir nesnenin örneğine ayarlanmadı.**
 
- Bu, karşılık gelen bir DataBindingAttribute olmadan test sınıfı için tanımlanan DataSourceAttribute öğesine sahip olduğundan ortaya çıkabilir. Bu hatayı gidermek için uygun bir DataBindingAttribute ekleyin, silin veya açıklama olarak kodun dışına.
+Bu, karşılık gelen bir DataBindingAttribute olmadan test sınıfı için tanımlanan DataSourceAttribute öğesine sahip olduğundan ortaya çıkabilir. Bu hatayı gidermek için uygun bir DataBindingAttribute ekleyin, silin veya açıklama olarak kodun dışına.
 
-### <a name="q-should-i-add-validation-and-extraction-rules-before-or-after-i-generate-a-coded-test"></a>S: Ben bir kodlanmış test üretmeden önce veya sonra doğrulama ve ayıklama kuralları eklemeliyim?
- **Y:** Kodlanmış testi oluşturmadan önce doğrulama kuralları ve ayıklama kuralları eklemek kolaydır; Ancak, kullanmanızı öneririz [kodlanmış UI testleri](../test/use-ui-automation-to-test-your-code.md) doğrulama amacıyla.
+### <a name="q-should-i-add-validation-and-extraction-rules-before-or-after-i-generate-a-coded-test"></a>Ç Kodlanmış bir test oluşturmadan önce veya sonra doğrulama ve ayıklama kuralları eklemem gerekir mi?
+**A** Kodlanmış testi oluşturmadan önce doğrulama kuralları ve ayıklama kuralları eklemek daha kolaydır; Ancak, doğrulama amaçları için [KODLANMıŞ UI testlerini](../test/use-ui-automation-to-test-your-code.md) kullanmanızı öneririz.

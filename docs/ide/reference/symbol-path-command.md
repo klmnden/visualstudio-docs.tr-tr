@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 23a7a59ca23dc444bcdc714ade2fce5bedb87e8c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3792f3d6f86faf0b58e8cf8f1b76984ba3bd5d80
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62945134"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926005"
 ---
 # <a name="symbol-path-command"></a>Sembol Yolu Komutu
 Hata ayıklayıcının simge araması dizinler listesini ayarlar.
@@ -31,22 +31,22 @@ Debug.SymbolPath pathname1;pathname2;... pathnameN
 ```
 
 ## <a name="arguments"></a>Arguments
- `pathname`
+`pathname`
 
- İsteğe bağlı. Noktalı virgül hata ayıklayıcının simge araması yolları bir listesidir.
+İsteğe bağlı. Hata ayıklayıcının simge araması için bir noktalı virgülle ayrılmış yol listesi.
 
 ## <a name="remarks"></a>Açıklamalar
- Hayır ise `pathname` belirtilirse, komut geçerli simge yollarını listeler.
+Hayır `pathname` belirtilmemişse, komut geçerli sembol yollarını listeler.
 
 ## <a name="example"></a>Örnek
- Bu örnek simge dizinleri listesine iki yol ekler.
+Bu örnek, sembol dizinleri listesine iki yol ekler.
 
 ```
 Debug.SymbolPath C:\Symbol Path 1;C:\Symbol Path 2
 ```
 
 ## <a name="example"></a>Örnek
- Bu örnek, geçerli simge yollarının noktalı virgülle ayrılmış bir liste görüntüler.
+Bu örnek, geçerli sembol yollarının noktalı virgülle ayrılmış bir listesini görüntüler.
 
 ```
 Debug.SymbolPath

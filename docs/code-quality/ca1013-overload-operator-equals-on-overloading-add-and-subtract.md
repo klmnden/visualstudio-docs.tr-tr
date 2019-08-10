@@ -21,12 +21,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 76a3790f57882071bddc90ef78a0ac74dd565514
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8c82e7303ea4016974be04c3d8745cb2011017f0
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62779589"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68923169"
 ---
 # <a name="ca1013-overload-operator-equals-on-overloading-add-and-subtract"></a>CA1013: Toplama ve çıkarmayı aşırı yüklediğinizde eşittir işlecini aşırı yükleyin
 
@@ -35,15 +35,15 @@ ms.locfileid: "62779589"
 |TypeName|OverloadOperatorEqualsOnOverloadingAddAndSubtract|
 |CheckId|CA1013|
 |Kategori|Microsoft.Design|
-|Yeni Değişiklik|Bölünemez|
+|Yeni Değişiklik|Kırılmamış|
 
 ## <a name="cause"></a>Sebep
- Bir genel ya da korumalı tür eşitlik imlecini uygulamadan ekleme ya da çıkarma işleçlerini uygular.
+Bir genel ya da korumalı tür eşitlik imlecini uygulamadan ekleme ya da çıkarma işleçlerini uygular.
 
 ## <a name="rule-description"></a>Kural açıklaması
- Toplama ve çıkarma gibi işlemleri kullanarak bir türün örneklerinin birleştirilebilir, neredeyse her zaman eşitlik tanımlamalıdır `true` bağlı değerlerine sahip iki tüm örnekler için.
+Bir türün örnekleri toplama ve çıkarma gibi işlemler kullanılarak birleştirilebilmesi için `true` , aynı yapısal değerlere sahip olan her iki örnek için her zaman eşitlik tanımlamanız gerekir.
 
- Eşitlik işleci aşırı yüklenmiş bir uygulamada varsayılan eşitlik işlecini kullanamazsınız. Bunun yapılması, yığın taşmasına neden olur. Eşitlik işleci uygulamak için uygulamanızda Object.Equals yöntemi kullanın. Aşağıdaki örnekte bakın.
+Eşitlik işlecinin aşırı yüklenmiş bir uygulamasında varsayılan eşitlik işlecini kullanamazsınız. Bunun yapılması, yığın taşmasına neden olur. Eşitlik işlecini uygulamak için uygulamanızdaki Object. Equals yöntemini kullanın. Aşağıdaki örnekte bakın.
 
 ```vb
 If (Object.ReferenceEquals(left, Nothing)) Then
@@ -59,21 +59,21 @@ if (Object.ReferenceEquals(left, null))
 return left.Equals(right);
 ```
 
-## <a name="how-to-fix-violations"></a>İhlaller nasıl düzeltilir?
- Bu kural ihlalini düzeltmek için matematiksel olarak toplama ve çıkarma işleçleri ile tutarlı olması eşitlik işlecini uygular.
+## <a name="how-to-fix-violations"></a>İhlalleri çözme
+Bu kural ihlalini onarmak için eşitlik işlecini, toplama ve çıkarma işleçleriyle matematik olarak tutarlı olacak şekilde uygulayın.
 
-## <a name="when-to-suppress-warnings"></a>Uyarılar bastırıldığında
- Eşitlik işleci varsayılan uygulama türü için doğru davranışı sağladığında bu kuraldan bir uyarıyı bastırmak güvenlidir.
-
-## <a name="example"></a>Örnek
- Aşağıdaki örnek, bir tür tanımlar (`BadAddableType`), bu kuralı ihlal ediyor. Bu tür test alan değerlerine sahip herhangi iki örnekleri yapmak için eşitlik işlecini uygulamalıdır `true` eşitlik için. Türü `GoodAddableType` düzeltilmiş uygulamasını gösterir. Bu tür da eşitsizlik işleci uygular ve geçersiz kılmalar Not <xref:System.Object.Equals%2A> diğer kurallarını karşılamak için. Tam bir uygulama da uygulamak <xref:System.Object.GetHashCode%2A>.
-
- [!code-csharp[FxCop.Design.AddAndSubtract#1](../code-quality/codesnippet/CSharp/ca1013-overload-operator-equals-on-overloading-add-and-subtract_1.cs)]
+## <a name="when-to-suppress-warnings"></a>Uyarıların ne zaman bastırılamıyor
+Eşitlik işlecinin varsayılan uygulanması tür için doğru davranışı sağlıyorsa, bu kuraldan bir uyarının görüntülenmesini güvenli hale getirir.
 
 ## <a name="example"></a>Örnek
- Aşağıdaki örnek, varsayılan ve doğru davranışı için eşitlik operatörünün göstermek için bu konuda daha önceden tanımlanan türlerin örneklerini kullanarak eşitlik için test eder.
+Aşağıdaki örnek, bu kuralı ihlal eden`BadAddableType`bir türü () tanımlar. Bu tür, eşitlik için aynı alan değerleri test `true` eden iki örnek oluşturmak için eşitlik işlecini uygulamalıdır. Tür `GoodAddableType` , düzeltilen uygulamayı gösterir. Bu türün aynı zamanda eşitsizlik işlecini ve diğer kuralları karşılamak için <xref:System.Object.Equals%2A> geçersiz kılmaları uyguladığını unutmayın. Ayrıca, uygulamanın tamamı de uygulanır <xref:System.Object.GetHashCode%2A>.
 
- [!code-csharp[FxCop.Design.TestAddAndSubtract#1](../code-quality/codesnippet/CSharp/ca1013-overload-operator-equals-on-overloading-add-and-subtract_2.cs)]
+[!code-csharp[FxCop.Design.AddAndSubtract#1](../code-quality/codesnippet/CSharp/ca1013-overload-operator-equals-on-overloading-add-and-subtract_1.cs)]
+
+## <a name="example"></a>Örnek
+Aşağıdaki örnek, eşitlik operatörü için varsayılan ve doğru davranışı göstermek üzere bu konuda daha önce tanımlanan türlerin örneklerini kullanarak eşitlik için test eder.
+
+[!code-csharp[FxCop.Design.TestAddAndSubtract#1](../code-quality/codesnippet/CSharp/ca1013-overload-operator-equals-on-overloading-add-and-subtract_2.cs)]
 
 Bu örnek aşağıdaki çıktıyı üretir:
 

@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 581bc75c22326275dcb3657910f60c2977094037
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fae67f8c1ffa3b4e6d7cc2f0fbbaf670733f9ff4
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62779752"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68923306"
 ---
 # <a name="ca1001-types-that-own-disposable-fields-should-be-disposable"></a>CA1001: Atılabilen alanlara sahip türler atılabilir olmalıdır
 
@@ -31,31 +31,31 @@ ms.locfileid: "62779752"
 |TypeName|TypesThatOwnDisposableFieldsShouldBeDisposable|
 |CheckId|CA1001|
 |Kategori|Microsoft.Design|
-|Yeni Değişiklik|Bölünemez - türü derlemenin dışında görünür değilse.<br /><br /> Derlemenin dışında görünür bir tür ise - kesiliyor.|
+|Yeni Değişiklik|Not-tür, derlemenin dışında görünmüyorsa bölünmez.<br /><br /> Parçalama-tür derleme dışında görünüyorsa.|
 
 ## <a name="cause"></a>Sebep
- Bir sınıfı bildirir ve bir örnek alan uygulayan bir <xref:System.IDisposable?displayProperty=fullName> türü ve sınıf uygulamıyor <xref:System.IDisposable>.
+Bir sınıf, <xref:System.IDisposable?displayProperty=fullName> türü olan bir örnek alanı bildirir ve uygular ve sınıfı uygulamaz <xref:System.IDisposable>.
 
 ## <a name="rule-description"></a>Kural açıklaması
- Arabirimini uygulayan bir sınıf <xref:System.IDisposable> sahip olduğu yönetilmeyen kaynaklarını silmek için arabirim. Bir örnek alan bir <xref:System.IDisposable> türü, alan bir yönetilmeyen kaynağa sahip olduğunu gösterir. Bildiren bir sınıf bir <xref:System.IDisposable> alan dolaylı olarak bir yönetilmeyen kaynağa sahip ve uygulamalıdır <xref:System.IDisposable> arabirimi. Sınıf doğrudan herhangi bir yönetilmeyen kaynağa sahip değilse, bir sonlandırıcı uygulamamalıdır.
+Bir sınıf, <xref:System.IDisposable> sahip olduğu yönetilmeyen kaynakların atılırken arabirimini uygular. <xref:System.IDisposable> Türü olan bir örnek alan, alanın yönetilmeyen bir kaynağa sahip olduğunu gösterir. Bir <xref:System.IDisposable> alanı, yönetilmeyen bir kaynağa dolaylı olarak bildiren ve <xref:System.IDisposable> arabirimini uygulaması gereken bir sınıf. Sınıf, hiçbir yönetilmeyen kaynağa doğrudan sahip değilse, bir Sonlandırıcı uygulamamalıdır.
 
-## <a name="how-to-fix-violations"></a>İhlaller nasıl düzeltilir?
- Bu kural ihlalini düzeltmek için uygulama <xref:System.IDisposable> ve <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> yöntem çağrısının <xref:System.IDisposable.Dispose%2A> alan yöntemi.
+## <a name="how-to-fix-violations"></a>İhlalleri çözme
+Bu kuralın ihlalini onarmak için, <xref:System.IDisposable> <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> yöntemini uygulayın ve öğesinden, alan <xref:System.IDisposable.Dispose%2A> yöntemini çağırın.
 
-## <a name="when-to-suppress-warnings"></a>Uyarılar bastırıldığında
- Bu kuraldan uyarıyı bastırmayın.
+## <a name="when-to-suppress-warnings"></a>Uyarıların ne zaman bastırılamıyor
+Bu kuraldan uyarıyı bastırmayın.
 
 ## <a name="example"></a>Örnek
- Aşağıdaki örnek, kuralını ihlal eden bir sınıf ve kural uygulayarak karşılayan bir sınıfı gösterir <xref:System.IDisposable>. Sınıf doğrudan herhangi bir yönetilmeyen kaynağa sahibi değildir çünkü sınıfı bir sonlandırıcı uygulamıyor.
+Aşağıdaki örnek, kuralını ihlal eden bir sınıfı ve uygulayarak <xref:System.IDisposable>kuralını karşılayan bir sınıfı gösterir. Sınıf, hiçbir yönetilmeyen kaynağa doğrudan sahip olmadığından, sınıf bir Sonlandırıcı uygulamaz.
 
- [!code-vb[FxCop.Design.DisposableFields#1](../code-quality/codesnippet/VisualBasic/ca1001-types-that-own-disposable-fields-should-be-disposable_1.vb)]
- [!code-csharp[FxCop.Design.DisposableFields#1](../code-quality/codesnippet/CSharp/ca1001-types-that-own-disposable-fields-should-be-disposable_1.cs)]
+[!code-vb[FxCop.Design.DisposableFields#1](../code-quality/codesnippet/VisualBasic/ca1001-types-that-own-disposable-fields-should-be-disposable_1.vb)]
+[!code-csharp[FxCop.Design.DisposableFields#1](../code-quality/codesnippet/CSharp/ca1001-types-that-own-disposable-fields-should-be-disposable_1.cs)]
 
-## <a name="related-rules"></a>İlgili kuralları
- [CA2213: Atılabilen alanlar atılmalıdır](../code-quality/ca2213-disposable-fields-should-be-disposed.md)
+## <a name="related-rules"></a>İlgili kurallar
+[CA2213 Atılabilir alanlar atılmalıdır](../code-quality/ca2213-disposable-fields-should-be-disposed.md)
 
- [CA2216: Atılabilir türler sonlandırıcıyı bildirmelidir](../code-quality/ca2216-disposable-types-should-declare-finalizer.md)
+[CA2216 Atılabilir türler sonlandırıcıyı bildirmelidir](../code-quality/ca2216-disposable-types-should-declare-finalizer.md)
 
- [CA2215: Atma yöntemleri taban sınıf atmayı çağırmalıdır](../code-quality/ca2215-dispose-methods-should-call-base-class-dispose.md)
+[CA2215 Dispose yöntemleri taban sınıf atmayı çağırmalıdır](../code-quality/ca2215-dispose-methods-should-call-base-class-dispose.md)
 
- [CA1049: Yerel kaynaklara sahip türler atılabilir olmalıdır](../code-quality/ca1049-types-that-own-native-resources-should-be-disposable.md)
+[CA1049 Yerel kaynaklara sahip türler atılabilir olmalıdır](../code-quality/ca1049-types-that-own-native-resources-should-be-disposable.md)

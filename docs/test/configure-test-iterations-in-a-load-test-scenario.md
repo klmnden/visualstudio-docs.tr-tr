@@ -10,12 +10,12 @@ ms.assetid: ac480fb7-f4f7-47dc-9ae5-98be3aca4fba
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6c3ebadd34988c83dbb688d3864ab88280d7a077
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: cce1da2d3cb20ca7f577c806d0506ffc0b947903
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62783801"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68918283"
 ---
 # <a name="configure-test-iterations-in-a-load-test-scenario"></a>Bir yük testi senaryosunda test yinelemelerini yapılandırma
 
@@ -32,18 +32,18 @@ Belirtebileceğiniz maksimum sayısını değiştirmek için Yük Testi Düzenle
 > [!NOTE]
 > Yük testi senaryosu özelliklerini ve açıklamalarının tam listesi için bkz [yük testi senaryosu özellikleri](../test/load-test-scenario-properties.md).
 
- Sıralı test karışımı için tek seferde tüm testleri Karıştır aracılığıyla bir yineleme olur. Diğer tüm test karışımları için her test yürütme bir yineleme olarak sayılır. Daha fazla bilgi için [karışımı denetimi ile ilgili](../test/edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario.md).
+Sıralı test karışımı için tek seferde tüm testleri Karıştır aracılığıyla bir yineleme olur. Diğer tüm test karışımları için her test yürütme bir yineleme olarak sayılır. Daha fazla bilgi için [karışımı denetimi ile ilgili](../test/edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario.md).
 
- Yük testi süresi tabanlı yük testi ve süresi yineleme sayısı tamamlanmadan önce sona, test yine durdurulur. Yineleme tabanlı test ve test yinelemeleri senaryo yinelemeler önce karşılandığından, test durur. Kullanarak süresi yapılandırılan **çalışma süresi** özelliğinde **özellikleri** penceresi bir çalışma ayarında bir yük testi ile ilişkili.
+Yük testi süresi tabanlı yük testi ve süresi yineleme sayısı tamamlanmadan önce sona, test yine durdurulur. Yineleme tabanlı test ve test yinelemeleri senaryo yinelemeler önce karşılandığından, test durur. Kullanarak süresi yapılandırılan **çalışma süresi** özelliğinde **özellikleri** penceresi bir çalışma ayarında bir yük testi ile ilişkili.
 
- Senaryo yineleme sayısı karşılandığında senaryoyu çalışmayı durdurur, ancak herhangi bir etkin senaryolar çalışmaya devam eder.
+Senaryo yineleme sayısı karşılandığında senaryoyu çalışmayı durdurur, ancak herhangi bir etkin senaryolar çalışmaya devam eder.
 
 > [!NOTE]
 > İlgili bir özellik **benzersiz** hangi ilerler sırayla verileri, satır satır, ancak yalnızca bir kez her kayıt için bir web test verisi kaynağı özelliği. Daha fazla bilgi için [web performans testine veri kaynağı Ekle](../test/add-a-data-source-to-a-web-performance-test.md).
 
- **En yüksek Test Yinelemeleri** özelliği, çeşitli durumlarda kullanışlıdır. Bazı yük test yineleme tabanlı yük test edicileri süre tabanlı test tercih ederken yürütmek tercih eder.
+**En yüksek Test Yinelemeleri** özelliği, çeşitli durumlarda kullanışlıdır. Bazı yük test yineleme tabanlı yük test edicileri süre tabanlı test tercih ederken yürütmek tercih eder.
 
- ![Test Yinelemeleri bir senaryoda belirtme](../test/media/loadtest_prop.png)
+![Test Yinelemeleri bir senaryoda belirtme](../test/media/loadtest_prop.png)
 
 ### <a name="to-specify-the-maximum-test-iterations"></a>En yüksek test yinelemeleri belirtmek için
 

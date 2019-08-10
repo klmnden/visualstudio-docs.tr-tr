@@ -17,12 +17,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a2c95a460f7e3003db5cdec67e5bf142295719a
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
+ms.openlocfilehash: dbe00e53942827c96831889339f82d2f5e4dff7a
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68416933"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68925826"
 ---
 # <a name="understand-build-platforms"></a>Derleme platformlarını anlama
 
@@ -30,9 +30,11 @@ Farklı hedef platformlar için uygulanan farklı çözüm ve proje özellikleri
 
 ## <a name="in-this-section"></a>Bu bölümde
 
- [Nasıl yapılır: Projeleri hedef platformlar](../ide/how-to-configure-projects-to-target-platforms.md) için yapılandırma, bir projenin belirli bir platformu hedefleyecek şekilde nasıl yapılandırılacağını açıklar.
+[Nasıl yapılır: Projeleri hedef platformlar için yapılandırma](../ide/how-to-configure-projects-to-target-platforms.md)\
+Bir projenin belirli bir platformu hedefleyecek şekilde nasıl yapılandırılacağını açıklar.
 
- [Nasıl yapılır: Birden çok platformu](../ide/how-to-configure-projects-to-target-multiple-platforms.md) hedeflemek için projeleri yapılandırma bir projenin birden çok platformu hedefleyecek şekilde nasıl yapılandırılacağını açıklar.
+[Nasıl yapılır: Projeleri birden çok platformu hedefleyecek şekilde yapılandırma](../ide/how-to-configure-projects-to-target-multiple-platforms.md)\
+Birden çok platformu hedeflemek için bir projenin nasıl yapılandırılacağını açıklar.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

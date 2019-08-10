@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 0ea7c0d4b9c1d8edea3c2d96f04114db47f3b0d7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f11a93380f149648ece4ae6d71bc9c2f25df5191
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62779514"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68923113"
 ---
 # <a name="ca1014-mark-assemblies-with-clscompliantattribute"></a>CA1014: Derlemeleri CLSCompliantAttribute ile işaretle
 
@@ -32,28 +32,28 @@ ms.locfileid: "62779514"
 |TypeName|MarkAssembliesWithClsCompliant|
 |CheckId|CA1014|
 |Kategori|Microsoft.Design|
-|Yeni Değişiklik|Bölünemez|
+|Yeni Değişiklik|Kırılmamış|
 
 ## <a name="cause"></a>Sebep
- Bir derleme olmayan <xref:System.CLSCompliantAttribute?displayProperty=fullName> özniteliğinin.
+Bir bütünleştirilmiş koda <xref:System.CLSCompliantAttribute?displayProperty=fullName> uygulanmış özniteliği yok.
 
 ## <a name="rule-description"></a>Kural açıklaması
- Ortak Dil Tanımlaması (CLS) ad kısıtlamalarını, veri türlerini ve karşıt programlama dillerini kullanırsa derlemelerin uyması zorunlu olan kuralları tanımlar. İyi tasarım ilkeleri tüm derlemeler CLS uyumluluğu ile açıkça belirtmek <xref:System.CLSCompliantAttribute>. Öznitelik bir derlemede mevcut değilse derleme uyumlu değil.
+Ortak Dil Tanımlaması (CLS) ad kısıtlamalarını, veri türlerini ve karşıt programlama dillerini kullanırsa derlemelerin uyması zorunlu olan kuralları tanımlar. İyi tasarım, tüm derlemelerin ile birlikte <xref:System.CLSCompliantAttribute>CLS uyumluluğunu açıkça belirtmeyeceğini belirler. Öznitelik bir derlemede yoksa, derleme uyumlu değildir.
 
- Bu türleri içeren veya uyumlu olmayan üyeler için CLS uyumlu bir derleme mümkündür.
+CLS uyumlu bir derlemenin uyumlu olmayan türler veya tür üyeleri içermesi mümkündür.
 
-## <a name="how-to-fix-violations"></a>İhlaller nasıl düzeltilir?
- Bu kural ihlalini düzeltmek için özniteliği derlemeye ekleyin. Tüm derleme uyumsuz olarak işaretleme yerine hangi tür veya tür üyeleri uyumlu olmayan ve bu nedenle bu öğeleri işaretler belirlemeniz gerekir. Mümkünse, olabilecek en büyük hedef kitlesine derlemenizin tüm işlevleri erişebilmesi için uyumlu olmayan üyeler için CLS uyumlu bir alternatif sağlamanız gerekir.
+## <a name="how-to-fix-violations"></a>İhlalleri çözme
+Bu kural ihlalini onarmak için, derlemeye özniteliğini ekleyin. Tüm derlemeyi uyumsuz olarak işaretlemek yerine, hangi tür veya tür üyelerinin uyumlu olduğunu belirlemelisiniz ve bu öğeleri bu öğe olarak işaretleyebilirsiniz. Mümkünse, uyumsuz Üyeler için CLS uyumlu bir alternatif sağlamanız gerekir; böylece, en olası hedef kitle, derlemenizin tüm işlevlerine erişebilir.
 
-## <a name="when-to-suppress-warnings"></a>Uyarılar bastırıldığında
- Bu kuraldan uyarıyı bastırmayın. Derleme uyumlu olmasını istemiyorsanız özniteliğini uygulayın ve değerini ayarlamak `false`.
+## <a name="when-to-suppress-warnings"></a>Uyarıların ne zaman bastırılamıyor
+Bu kuraldan uyarıyı bastırmayın. Derlemenin uyumlu olmasını istemiyorsanız, özniteliğini uygulayın ve değerini olarak `false`ayarlayın.
 
 ## <a name="example"></a>Örnek
- Aşağıdaki örnek, bir derlemeye gösterir <xref:System.CLSCompliantAttribute?displayProperty=fullName> CLS uyumlu bildiren özniteliği uygulandı.
+Aşağıdaki örnek, tarafından CLS uyumlu olduğunu bildiren <xref:System.CLSCompliantAttribute?displayProperty=fullName> özniteliği uygulayan bir derlemeyi gösterir.
 
- [!code-csharp[FxCop.Design.AssembliesCls#1](../code-quality/codesnippet/CSharp/ca1014-mark-assemblies-with-clscompliantattribute_1.cs)]
- [!code-cpp[FxCop.Design.AssembliesCls#1](../code-quality/codesnippet/CPP/ca1014-mark-assemblies-with-clscompliantattribute_1.cpp)]
- [!code-vb[FxCop.Design.AssembliesCls#1](../code-quality/codesnippet/VisualBasic/ca1014-mark-assemblies-with-clscompliantattribute_1.vb)]
+[!code-csharp[FxCop.Design.AssembliesCls#1](../code-quality/codesnippet/CSharp/ca1014-mark-assemblies-with-clscompliantattribute_1.cs)]
+[!code-cpp[FxCop.Design.AssembliesCls#1](../code-quality/codesnippet/CPP/ca1014-mark-assemblies-with-clscompliantattribute_1.cpp)]
+[!code-vb[FxCop.Design.AssembliesCls#1](../code-quality/codesnippet/VisualBasic/ca1014-mark-assemblies-with-clscompliantattribute_1.vb)]
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

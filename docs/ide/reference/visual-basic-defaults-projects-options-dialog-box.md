@@ -14,33 +14,33 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5aedaf5c31eca900ec1730622dfc7ff6f026a61a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7322ee72509a199e3b4168a0b24083fe463e2457
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62789141"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68925957"
 ---
 # <a name="visual-basic-defaults-projects-options-dialog-box"></a>Visual Basic Varsayılanları, Projeler, Seçenekler İletişim Kutusu
-Visual Basic proje seçenekleri için varsayılan ayarları belirtir. Yeni bir proje oluşturulduğunda, belirtilen seçenek deyimleri Kod Düzenleyicisi'nde proje üst bilgi eklenir. Seçenekler, tüm Visual Basic projeleri için geçerlidir.
+Visual Basic proje seçenekleri için varsayılan ayarları belirtir. Yeni bir proje oluşturulduğunda, belirtilen seçenek deyimleri kod düzenleyicisinde proje başlığına eklenecektir. Seçenekler tüm Visual Basic projelerine uygulanır.
 
- Bu iletişim kutusunda, erişim için **Araçları** menüsünde tıklayın **seçenekleri**, genişletin **projeler ve çözümler** klasörünü ve ardından **VB varsayılanları**.
+Bu iletişim kutusuna erişmek için, **Araçlar** menüsünde **Seçenekler**' e tıklayın, **Projeler ve çözümler** klasörünü genişletin ve ardından **vb Varsayılanları**' na tıklayın.
 
- **Seçeneği açık**
+ **Seçenek açık**
 
- Derleyici varsayılanı, değişkenlerin açık bildirimler gerekli olacak şekilde ayarlar. Varsayılan olarak, **Option Explicit** ayarlanır **üzerinde**. Daha fazla bilgi için [/optionexplicit](/dotnet/visual-basic/reference/command-line-compiler/optionexplicit).
+Doğrudan değişken bildirimlerinin gerekli olduğu şekilde derleyici varsayılanını ayarlar. Varsayılan olarak, **explicit seçeneği** açık olarak ayarlanır. Daha fazla bilgi için bkz. [/OptionExplicit](/dotnet/visual-basic/reference/command-line-compiler/optionexplicit).
 
- **Katı tanımlama seçeneği**
+ **Option Strict**
 
- Derleyicinin varsayılan ayarlar, böylece açık bir daraltma dönüştürmelerini gereklidir ve geç bağlama izin verilmiyor. Varsayılan olarak, **Option Strict** ayarlanır **kapalı**. Daha fazla bilgi için [/optionstrict](/dotnet/visual-basic/reference/command-line-compiler/optionstrict).
+Açık daraltma dönüştürmelerini zorunlu ve geç bağlamaya izin verilmediğinden, derleyici varsayılanını varsayılan olarak ayarlar. Varsayılan olarak, **Strict seçeneği** **off**olarak ayarlanır. Daha fazla bilgi için bkz. [/OptionStrict](/dotnet/visual-basic/reference/command-line-compiler/optionstrict).
 
- **Karşılaştırma seçeneği**
+ **Option Compare**
 
- Derleyici varsayılanı dize karşılaştırmaları için ayarlar: ikili dosya (büyük-küçük harfe duyarlı) veya metin (büyük/küçük harfe.) Varsayılan olarak, **Option Compare** ayarlanır **ikili**. Daha fazla bilgi için [/optioncompare](/dotnet/visual-basic/reference/command-line-compiler/optioncompare).
+Dize karşılaştırmaları için derleyici varsayılanını ayarlar: ikili (büyük/küçük harfe duyarlı) veya metin (büyük/küçük harfe duyarsız.) Varsayılan olarak, **Option Compare** **binary**olarak ayarlanır. Daha fazla bilgi için bkz. [/OptionCompare](/dotnet/visual-basic/reference/command-line-compiler/optioncompare).
 
- **Option Infer**
+ **Seçenek çıkarımı**
 
- Yerel tür çıkarımı derleyici varsayılan ayarlar. Varsayılan olarak, **Option Infer** ayarlanır **üzerinde** yeni oluşturulan projelerde ve çok **kapalı** Visual Basic'in önceki sürümlerinde oluşturulan geçirilen projeleri için. Daha fazla bilgi için [/optioninfer](/dotnet/visual-basic/reference/command-line-compiler/optioninfer).
+Yerel tür çıkarımı için varsayılan derleyicisini ayarlar. Varsayılan olarak, **seçenek çıkarımı** yeni oluşturulan projeler için **Açık** olarak ayarlanır ve Visual Basic önceki sürümlerinde oluşturulan geçirilmiş projeler için **devre dışı bırakır** . Daha fazla bilgi için bkz. [/optionfer](/dotnet/visual-basic/reference/command-line-compiler/optioninfer).
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 

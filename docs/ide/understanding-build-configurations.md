@@ -26,12 +26,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 453e27df58e8a12baa3821def6c66fc1391401d3
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
+ms.openlocfilehash: eed19993f5339a2f33521ad1233522a29eb0442b
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68416952"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68918710"
 ---
 # <a name="understand-build-configurations"></a>Derleme yapılandırmalarını anlama
 
@@ -59,18 +59,18 @@ Bir çözüm yapılandırmasındaki **Proje bağlamları** kutusundaki her giri�
 Etkin çözüm yapılandırması, IDE için de bağlam sağlar. Örneğin, bir proje üzerinde çalışıyorsanız ve yapılandırma bir mobil cihaz için derlendiğini belirtiyorsa, **araç kutusu** yalnızca bir mobil cihaz projesinde kullanılabilecek öğeleri görüntüler.
 
 ## <a name="project-configurations"></a>Proje yapılandırması
- Bir projenin hedeflediği yapılandırma ve platform, derlendiklerinde kullanılacak özellikleri belirtmek için birlikte kullanılır. Bir proje, her yapılandırma ve platformun birleşimi için farklı bir özellik tanımları kümesine sahip olabilir. Bir projenin özelliklerini değiştirmek için, özellik sayfalarını kullanabilirsiniz. ( **Çözüm Gezgini**, proje için kısayol menüsünü açın ve ardından **Özellikler**' i seçin.)
+Bir projenin hedeflediği yapılandırma ve platform, derlendiklerinde kullanılacak özellikleri belirtmek için birlikte kullanılır. Bir proje, her yapılandırma ve platformun birleşimi için farklı bir özellik tanımları kümesine sahip olabilir. Bir projenin özelliklerini değiştirmek için, özellik sayfalarını kullanabilirsiniz. ( **Çözüm Gezgini**, proje için kısayol menüsünü açın ve ardından **Özellikler**' i seçin.)
 
- Her proje yapılandırması için gerektiğinde yapılandırmaya bağımlı özellikler tanımlayabilirsiniz. Örneğin, belirli bir yapı için hangi proje öğelerinin ekleneceğini ve hangi çıkış dosyalarının oluşturulacağını, nereye yerleştirileceğini ve bunların nasıl iyileştireedileceğini belirleyebilirsiniz.
+Her proje yapılandırması için gerektiğinde yapılandırmaya bağımlı özellikler tanımlayabilirsiniz. Örneğin, belirli bir yapı için hangi proje öğelerinin ekleneceğini ve hangi çıkış dosyalarının oluşturulacağını, nereye yerleştirileceğini ve bunların nasıl iyileştireedileceğini belirleyebilirsiniz.
 
- Proje konfigürasyonları önemli ölçüde farklılık gösterebilir. Örneğin, bir yapılandırmanın özellikleri, çıkış dosyasının minimum alanı kaplamaya en iyi duruma getirilmiş olduğunu belirtebilir, ancak başka bir yapılandırma yürütülebilir dosyasının en yüksek hızda çalıştığını belirtebilir.
+Proje konfigürasyonları önemli ölçüde farklılık gösterebilir. Örneğin, bir yapılandırmanın özellikleri, çıkış dosyasının minimum alanı kaplamaya en iyi duruma getirilmiş olduğunu belirtebilir, ancak başka bir yapılandırma yürütülebilir dosyasının en yüksek hızda çalıştığını belirtebilir.
 
- Proje konfigürasyonları, bir ekip tarafından paylaşılabilmesi için kullanıcıya göre değil, çözüme göre saklanır.
+Proje konfigürasyonları, bir ekip tarafından paylaşılabilmesi için kullanıcıya göre değil, çözüme göre saklanır.
 
- Proje bağımlılıkları, yapılandırmaya bağımsız olsa da, yalnızca etkin çözüm yapılandırmasında belirtilen projeler oluşturulur.
+Proje bağımlılıkları, yapılandırmaya bağımsız olsa da, yalnızca etkin çözüm yapılandırmasında belirtilen projeler oluşturulur.
 
 ## <a name="how-visual-studio-assigns-project-configurations"></a>Visual Studio proje yapılandırmasını nasıl atar
- Yeni bir çözüm yapılandırması tanımladığınızda ve ayarları var olan bir sunucudan kopyalamazsanız, Visual Studio varsayılan proje yapılandırmalarını atamak için aşağıdaki ölçütleri kullanır. Ölçütler gösterilen sırayla değerlendirilir.
+Yeni bir çözüm yapılandırması tanımladığınızda ve ayarları var olan bir sunucudan kopyalamazsanız, Visual Studio varsayılan proje yapılandırmalarını atamak için aşağıdaki ölçütleri kullanır. Ölçütler gösterilen sırayla değerlendirilir.
 
 1. Projenin, yeni çözüm yapılandırmasının adıyla tam olarak eşleşen bir yapılandırma adı ( *\<> \<platform adı >* ) varsa, bu yapılandırma atanır. Yapılandırma adları büyük/küçük harfe duyarlı değildir.
 
@@ -79,9 +79,9 @@ Etkin çözüm yapılandırması, IDE için de bağlam sağlar. Örneğin, bir p
 3. Hala eşleşme yoksa, projede listelenen ilk yapılandırma atanır.
 
 ## <a name="how-visual-studio-assigns-solution-configurations"></a>Visual Studio 'Nun çözüm yapılandırması nasıl atanır
- Bir proje yapılandırması oluşturduğunuzda ( **Configuration Manager**, bu projenin **yapılandırma** sütunundaki açılan menüden **Yeni** ' yi seçerek) ve **yeni çözüm yapılandırmaları oluştur** onay kutusunu seçin ve görsel Studio, desteklediği her platformda projeyi derlemek için benzer adlı bir çözüm yapılandırması arar. Bazı durumlarda, Visual Studio mevcut çözüm yapılandırmalarının adını değiştirir veya yenilerini tanımlar.
+Bir proje yapılandırması oluşturduğunuzda ( **Configuration Manager**, bu projenin **yapılandırma** sütunundaki açılan menüden **Yeni** ' yi seçerek) ve **yeni çözüm yapılandırmaları oluştur** onay kutusunu seçin ve görsel Studio, desteklediği her platformda projeyi derlemek için benzer adlı bir çözüm yapılandırması arar. Bazı durumlarda, Visual Studio mevcut çözüm yapılandırmalarının adını değiştirir veya yenilerini tanımlar.
 
- Visual Studio, çözüm yapılandırması atamak için aşağıdaki ölçütleri kullanır.
+Visual Studio, çözüm yapılandırması atamak için aşağıdaki ölçütleri kullanır.
 
 - Bir proje yapılandırması bir platform belirtmezse veya yalnızca bir platform belirtirse, adı yeni proje yapılandırmasıyla eşleşen bir çözüm yapılandırması bulundu veya eklendi. Bu çözüm yapılandırmasının varsayılan adı bir platform adı içermez;  *form\<proje yapılandırma adını >* alır.
 

@@ -10,12 +10,12 @@ ms.assetid: 92dff25c-36ee-4135-acdd-315c4962fa11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b02be3e0ed5cb59e57e4aec28b3d7979d77f7652
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: bf305125fceb4c07bb0565fa227e7e88bb90e3a3
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63004076"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68918487"
 ---
 # <a name="fix-non-detectable-dynamic-parameters-in-a-web-performance-test"></a>Web performans testindeki dinamik parametreleri algılayamama sorununu çözme
 
@@ -237,7 +237,7 @@ Hem algılanabilir hem de algılanamaz bir dinamik parametre göstermek için bi
 
      ![Metin parametresi ile değiştirin.](../test/media/web_test_dynamicparameter_addextractionfindreplace2.png)
 
-     Altındaki QueryString parametresi *JScriptQuery.aspx* isteği yeni bağlam parametresi kullanılarak güncelleştirilir:  CustomQueryString = jScriptQueryString___ {{Param0}}.
+     *JScriptQuery. aspx* Isteği altındaki QueryString parametresi, yeni bağlam parametresi kullanılarak güncelleştirilir:  CustomQueryString = jScriptQueryString___ {{Param0}}.
 
      ![Sorgu dizesi için uygulanan parametresi](../test/media/web_test_dynamicparameter_addextractionfindreplace3.png)
 
@@ -249,9 +249,9 @@ Hem algılanabilir hem de algılanamaz bir dinamik parametre göstermek için bi
 
 ## <a name="qa"></a>SORU- CEVAP
 
-### <a name="q-can-i-re-run-dynamic-parameter-detection-if-my-web-app-gets-modified"></a>S: Web Uygulamam değiştirdiyse dinamik parametrelerin algılanması yeniden çalıştırabilir miyim?
+### <a name="q-can-i-re-run-dynamic-parameter-detection-if-my-web-app-gets-modified"></a>Ç Web Uygulamam değiştirilirse dinamik parametre algılamayı yeniden çalıştırabilir miyim?
 
- **Y:** Evet, aşağıdaki yordamı kullanın:
+**A** Evet, aşağıdaki yordamı kullanın:
 
 1. Araç çubuğunda seçin **dinamik parametreleri Web Test Parametrelerine Yükselt** düğmesi.
 
@@ -263,6 +263,6 @@ Hem algılanabilir hem de algılanamaz bir dinamik parametre göstermek için bi
 
 2. Seçin veya otomatik olarak ilişkilendirmek istediğiniz dinamik parametrelerin yanındaki onay kutusunu temizleyin. Varsayılan olarak, tüm dinamik parametreler denetlenir.
 
-### <a name="q-do-i-need-to-configure-visual-studio-to-detect-dynamic-parameters"></a>S: Dinamik parametreleri algılamak için Visual Studio'yu yapılandırma gerekiyor mu?
+### <a name="q-do-i-need-to-configure-visual-studio-to-detect-dynamic-parameters"></a>Ç Dinamik parametreleri algılamak için Visual Studio 'Yu yapılandırmam gerekir mi?
 
- **Y:** Varsayılan Visual Studio, web performans testi kaydettiğinizde dinamik parametreleri algılamak için bir yapılandırmadır. Ancak, varsa Visual Studio seçenekleri dinamik parametreleri algılamamak üzere yapılandırılmışsa veya test edilen web uygulaması ek dinamik parametrelerle değiştirilmişse; Web Performans Test Düzenleyicisi'nden dinamik parametre algılama yine de çalıştırabilirsiniz.
+**A** Varsayılan Visual Studio yapılandırması, bir Web performans testini kaydettiğinizde dinamik parametreleri algılamadır. Ancak, varsa Visual Studio seçenekleri dinamik parametreleri algılamamak üzere yapılandırılmışsa veya test edilen web uygulaması ek dinamik parametrelerle değiştirilmişse; Web Performans Test Düzenleyicisi'nden dinamik parametre algılama yine de çalıştırabilirsiniz.

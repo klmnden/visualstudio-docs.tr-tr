@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4e302c9e8cc74d461dc67237bd62b34097c0aceb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 316aef3b0f1f715857fde8eaf2a6e74b1a49e40f
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62542189"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68920573"
 ---
 # <a name="ca2138-transparent-methods-must-not-call-methods-with-the-suppressunmanagedcodesecurity-attribute"></a>CA2138: Saydam metotlar SuppressUnmanagedCodeSecurity özniteliğine sahip metotları çağırmamalıdır
 
@@ -27,18 +27,18 @@ ms.locfileid: "62542189"
 |Yeni Değişiklik|Yeni|
 
 ## <a name="cause"></a>Sebep
- Saydam güvenlik yöntemi ile işaretlenmiş bir yöntemi çağıran <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute> özniteliği.
+Bir güvenlik saydam yöntemi, <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute> özniteliğiyle işaretlenmiş bir yöntemi çağırır.
 
 ## <a name="rule-description"></a>Kural açıklaması
- Bu kural tetikler P/Invoke'ı kullanarak örneğin, yerel kod içinde doğrudan çağıran herhangi bir saydam yöntemi (platform çağırma) çağırın. İle işaretlenmiş P/Invoke ve COM birlikte çalışma yöntemlerini <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute> özniteliği karşı çağıran Metoda yapılan bir LinkDemand sonuçlanır. Güvenliği saydam kod LinkDemands gerçekleştiremiyor çünkü kod da SuppressUnmanagedCodeSecurity özniteliği ile işaretlenmiş yöntemler veya SuppressUnmanagedCodeSecurity özniteliği ile işaretlenmiş sınıf yöntemlerini çağıramazsınız. Yöntemi başarısız olur ya da isteğe bağlı tam bir talebi karşılamak için dönüştürülür.
+Bu kural, örneğin, bir P/Invoke (Platform Invoke) çağrısını kullanarak doğrudan yerel koda çağıran herhangi bir saydam yöntemi tetikler. <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute> Özniteliği ile işaretlenen P/Invoke ve com birlikte çalışma yöntemleri, çağırma yöntemine karşı gerçekleştirilen bir LinkDemand ile sonuçlanır. Güvenlik saydam kodu Linktaleplerini karşılayamadığından, kod aynı zamanda SuppressUnmanagedCodeSecurity özniteliğiyle işaretlenmiş yöntemleri veya SuppressUnmanagedCodeSecurity özniteliğiyle işaretlenmiş sınıf yöntemlerini çağıramaz. Yöntem başarısız olur veya talep tam talebe dönüştürülür.
 
- Bu kural ihlalleri neden bir <xref:System.MethodAccessException> için talepte bulunur ve Düzey 2 güvenlik saydamlık modeli içindeki <xref:System.Security.Permissions.SecurityPermissionAttribute.UnmanagedCode%2A> düzey 1 saydamlık modeli içindeki.
+Bu kuralın ihlalleri, düzey 2 Güvenlik <xref:System.MethodAccessException> saydamlığı modelinde bir öğesine ve düzey 1 saydamlık modelinde için <xref:System.Security.Permissions.SecurityPermissionAttribute.UnmanagedCode%2A> tam talebe yol açabilir.
 
-## <a name="how-to-fix-violations"></a>İhlaller nasıl düzeltilir?
- Bu kural ihlalini düzeltmek için kaldırmak <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute> özniteliği ve yöntemi işaretlemek <xref:System.Security.SecurityCriticalAttribute> veya <xref:System.Security.SecuritySafeCriticalAttribute> özniteliği.
+## <a name="how-to-fix-violations"></a>İhlalleri çözme
+Bu kural ihlalini onarmak için, <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute> özniteliğini kaldırın ve yöntemi <xref:System.Security.SecurityCriticalAttribute> veya <xref:System.Security.SecuritySafeCriticalAttribute> özniteliğiyle işaretleyin.
 
-## <a name="when-to-suppress-warnings"></a>Uyarılar bastırıldığında
- Bu kuraldan uyarıyı bastırmayın.
+## <a name="when-to-suppress-warnings"></a>Uyarıların ne zaman bastırılamıyor
+Bu kuraldan uyarıyı bastırmayın.
 
 ## <a name="example"></a>Örnek
- [!code-csharp[FxCop.Security.CA2138.TransparentMethodsMustNotCallSuppressUnmanagedCodeSecurityMethods#1](../code-quality/codesnippet/CSharp/ca2138-transparent-methods-must-not-call-methods-with-the-suppressunmanagedcodesecurity-attribute_1.cs)]
+[!code-csharp[FxCop.Security.CA2138.TransparentMethodsMustNotCallSuppressUnmanagedCodeSecurityMethods#1](../code-quality/codesnippet/CSharp/ca2138-transparent-methods-must-not-call-methods-with-the-suppressunmanagedcodesecurity-attribute_1.cs)]

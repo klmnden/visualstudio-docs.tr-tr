@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4520649050e6e4004b2c8864d5c081897852826c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a716da8eb0fb1b741c302ed32408e63a4933567b
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62808372"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68921128"
 ---
 # <a name="ca2004-remove-calls-to-gckeepalive"></a>CA2004: GC.KeepAlive'a çağrıları kaldırın
 
@@ -27,17 +27,17 @@ ms.locfileid: "62808372"
 |-|-|
 |TypeName|RemoveCallsToGCKeepAlive|
 |CheckId|CA2004|
-|Kategori|Microsoft.Reliability|
-|Yeni Değişiklik|Bölünemez|
+|Kategori|Microsoft. güvenilirliği|
+|Yeni Değişiklik|Kırılmamış|
 
 ## <a name="cause"></a>Sebep
- Sınıfları kullanın `SafeHandle` ancak yine de çağrıları içeren `GC.KeepAlive`.
+Sınıflar kullanır `SafeHandle` , ancak yine de `GC.KeepAlive`çağrıları içerir.
 
 ## <a name="rule-description"></a>Kural açıklaması
- İçin dönüştürüyorsanız `SafeHandle` kullanım, tüm çağrıları kaldırın `GC.KeepAlive` (nesne). Bu durumda, sınıflar çağrı yapmamalıdır `GC.KeepAlive`, bir sonlandırıcı olmayan ancak dayanır varsayılarak `SafeHandle` kendileri için işletim sistemini tamamlanması.  Ancak bir çağrıda bırakmanın maliyeti `GC.KeepAlive` ölçülen performans, perception Önemsiz olabilir, çağrı `GC.KeepAlive` gerekli ya da artık mevcut olabilecek bir sorunu kod için daha zor yapar bir ömrü çözmek yeterli korur.
+`SafeHandle` Kullanım alanına dönüştürüyorsanız tüm `GC.KeepAlive` (nesne) çağrılarını kaldırın. Bu durumda, bir sonlandırıcısının olmadığı varsayıldığında `GC.KeepAlive`, ancak işletim sistemi tanıtıcısını tamamlamaya yönelik açık `SafeHandle` olan, bu durumda sınıfların çağrı yapması gerekmez.  Bir çağrıda `GC.KeepAlive` bırakma maliyeti performansa göre ölçülerek göz ardı edilebilir olsa da, bir `GC.KeepAlive` çağrının, artık mevcut olmayan bir yaşam süresi sorununu gidermek için gerekli veya yeterli olduğunu düşünülüyor, kodu daha zor hale getirir korumanız.
 
-## <a name="how-to-fix-violations"></a>İhlaller nasıl düzeltilir?
- Kaldırın `GC.KeepAlive`.
+## <a name="how-to-fix-violations"></a>İhlalleri çözme
+Çağrıları `GC.KeepAlive`kaldırın.
 
-## <a name="when-to-suppress-warnings"></a>Uyarılar bastırıldığında
- Yalnızca dönüştürmek teknik olarak doğru değilse, bu uyarının gösterilmemesi `SafeHandle` sınıfınıza kullanımı.
+## <a name="when-to-suppress-warnings"></a>Uyarıların ne zaman bastırılamıyor
+Bu uyarıyı yalnızca sınıfınızın `SafeHandle` kullanımına dönüştürmek için teknik olarak doğru değilse gizleyebilirsiniz.

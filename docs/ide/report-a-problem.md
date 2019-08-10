@@ -1,6 +1,6 @@
 ---
 title: Sorun bildirin
-description: Sorun raporu genel bir bakış sağlar ve sorun durumları ve tanımları içerir
+description: Sorun bildir aracına genel bir bakış sağlar ve sorun durumları ve tanımlar içerir
 ms.date: 11/15/2018
 ms.custom: seodec18
 ms.topic: conceptual
@@ -9,127 +9,127 @@ ms.author: seiyer
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 840c8af686783a365608c1fe01661569e345add1
-ms.sourcegitcommit: 16bcaca215de75479695738d3c2d703c78c3500e
+ms.openlocfilehash: 519c7f233866bf71bb342d4f740b3e0a90a4ba72
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/21/2019
-ms.locfileid: "67309808"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68925990"
 ---
 # <a name="overview-report-a-problem"></a>Genel bakış: Sorun Bildirme
 
-Sorun raporu sorunları göndermek Visual Studio Geliştirici topluluğu sağlar. Her biri, sorun raporları, sistem tasarımı, etkili sorunlarını belirleyin ve çözün yardımcı olmak için doğrudan ürün ekiplerimiz ile etkileşim kurmak için güçlendirin bizim core'da bir iş öğesi olur. Visual Studio ürün ailesi geliştirmek için zengin tanılama bilgileriyle birlikte gönderilen Geri bildiriminiz önemlidir. Biz aslında, sorunları bildirmek zaman ayırdığınız için teşekkür ederiz.
+Sorun bildir Aracı, Visual Studio geliştirici topluluğunun sorunları göndermesini sağlar. Sorun raporlarınızdan her biri, temel mühendislik sistemimizde bir iş öğesi haline gelir ve bu sorunları belirlememize ve çözmenize yardımcı olmak için doğrudan ürün ekiplerimiz ile birlikte çalışmanıza olanak sağlar. Zengin tanılama bilgileriyle gönderilen geri bildiriminiz, Visual Studio ürün ailesini geliştirmek için kritik öneme sahiptir. Sorunları bildirmek için zaman ayırdığınız için teşekkür ederiz.
 
-Ayrıca, bir sorun daha fazla dikkatine için diğer topluluk üyelerinden geri bildirimi oy verin ve daha hızlı düzeltin yardımcı.
+Buna ek olarak, bir soruna daha fazla dikkat çekici ve sorunu daha hızlı gidermeye yardımcı olması için diğer topluluk üyelerinden geri bildirimde oy verebilirsiniz.
 
 ## <a name="problem-status"></a>Sorun durumu
 
-Sorun bildir sonra gönderimlerinizi kendi yaşam döngüsünde nerede olduğunuza durumları gösterir. Microsoft teams'de Geri bildiriminizi gözden geçirirken, bunlar uygun bir durum ile ayarlayın.  Anlamı ve renk göstergelerini yanı sıra aşağıda listelenen durumları başvuru tarafından sorun raporları ilerlemesini izleyin.
+Bir sorunu bildirdikten sonra, durumlar, Gönderimlerinizin yaşam döngüsünün nerede olduğunu gösterir. Microsoft ekipleri geri bildiriminizi gözden geçirdikten sonra uygun bir durumla ayarlanırlar.  Aşağıda listelenen durumlara ve renk göstergeleriyle birlikte, sorun raporlarınızı ilerleme durumunu izleyin.
 
-![Geliştirici topluluğu üzerinde raporlama sorunu için yeni durum](../ide/media/ProblemStates/New.jpg)
+![Geliştirici topluluğu 'nda sorun raporlama için yeni durum](../ide/media/ProblemStates/New.jpg)
 
-**Yeni** yeni hata veya sorun bildirilir ve herhangi bir işlem üzerinde henüz alınmış gösterir.
-
-- - -
-
-![Geliştirici topluluğu üzerinde raporlama sorun Değerlendirilmiş ili](../ide/media/ProblemStates/Triaged.jpg)
-
-**Değerlendirilmiş** denetimi, çeviri ve ilk yinelemeleri denetleme gibi ilk adımlar tamamlandı olduğunu gösterir. Anahtarınızı, göz önünde bulundurmanız gereken uygun mühendislik ekibine yönlendirilir.
+**Yeni** , hata veya sorunun yeni rapor alındığını ve henüz bir işlem yapıldığını gösterir.
 
 - - -
 
-![Geliştirici topluluğu üzerinde raporlama sorun için göz önünde bulundurarak durumu altında](../ide/media/ProblemStates/UnderConsideration.jpg)
+![Geliştirici topluluğu 'nda sorun raporlama için değerlendirilmemiş durum](../ide/media/ProblemStates/Triaged.jpg)
 
-**İncelenmekte** Microsoft sorununuzu topluluk etkiyi gözden geçirme ve buna göre sıralayacağını belirtir. Topluluk etkisi henüz açık ya da önemli değilse, ki bu durumda sorunu izlemek devam edeceğiz.
-
-- - -
-
-![Geliştirici topluluğu bildirdiği sorunun durumu araştırma altında](../ide/media/ProblemStates/UnderInvestigation.jpg)
-
-**Araştırma altında** mühendisleri sorununuzu bir çözüm bulmak için sorun etkin olarak araştırılmaktadır gösterir.
+**Değerlendirildi** , yineleme için denetleme, çeviri ve ilk denetim gibi ön adımların tamamlandığını gösterir. Bilet, uygun mühendislik ekibine göz önüne yönlendirildi.
 
 - - -
 
-![Geliştirici topluluğu üzerinde raporlama sorunla ilgili daha fazla bilgi durumu gerekir](../ide/media/ProblemStates/NeedMoreInfo.jpg)
+![Geliştirici topluluğu 'nda sorun raporlama için dikkate alınması gereken durum](../ide/media/ProblemStates/UnderConsideration.jpg)
 
-**Daha fazla bilgi gerekiyor** biz araştırmaya İleri gidip gidemeyeceğini emin ediyoruz sizden daha fazla tanılama bilgisi gerektiğini belirtir.  [Daha fazla bilgi gerekiyor isteklerine yanıt öğrenin.](./how-to-report-a-problem-with-visual-studio.md#when-further-information-is-needed-need-more-info)
-
-- - -
-
-![Düzeltildi - Yayınlanmayı bekliyor Geliştirici topluluğu üzerinde raporlama sorun için durum](../ide/media/ProblemStates/FixedPendingRelease.jpg)
-
-**-Release bekleyen sabit** sorunu için düzeltme sunuyoruz ve bir sonraki Önizleme veya sürüm kullanılabilir olacaktır gösterir.  Düzeltme Önizleme aşamasında kullanıma sunulduğunda, sorun, önizleme sürümünü belirtme 'sürümünde düzeltilen' etiketiyle etiketlenir.
+Bu konu **başlığı altında** , Microsoft 'un topluluk üzerindeki sorunu gözden geçirdiğini ve buna göre önceliklendirilecağını belirtir. Topluluk etkisi henüz net değildir veya önemli değilse, bu durumda sorunu izlemeye devam edeceğiz.
 
 - - -
 
-![Kapalı - Geliştirici topluluğu üzerinde raporlama sorun düzeltildi durumu](../ide/media/ProblemStates/ClosedFixed.jpg)
+![Geliştirici topluluğu 'nda sorun raporlama için araştırma durumu altında](../ide/media/ProblemStates/UnderInvestigation.jpg)
 
-**Kapatıldı - düzeltildi** sorunu için düzeltme yayımladık gösterir. Sorunun artık ile etiketlenmiş bir "sürümünde düzeltilen:" yayın sürümünü belirtme etiketi.
-
-- - -
-
-![Kapatıldı - yinelenen Geliştirici topluluğu bildirdiği sorunun durumu](../ide/media/ProblemStates/ClosedDuplicate.jpg)
-
-**Kapatıldı - yinelenen** sorununuzu aracılığıyla başka bir geri bildirim zaten bildirildi gösterir. Burada, özgün sorun raporunda izleyebilirsiniz bağlantıyla sağlarız.
+**Araştırma bölümünde** mühendislerin çözüm bulmak için sorununuzu etkin bir şekilde araştırdığını gösterir.
 
 - - -
 
-![Geliştirici topluluğu üzerinde raporlama sorun önceliği durumunu Kapalı - düşük](../ide/media/ProblemStates/ClosedLowerPriority.jpg)
+![Geliştirici topluluğu 'nda sorun raporlama için daha fazla bilgi gerekiyor](../ide/media/ProblemStates/NeedMoreInfo.jpg)
 
-**Kapalı - düşük öncelik** en iyi değeri Geliştirici topluluğumuz yürütüyoruz her biri, odaklanmak için size yüksek müşteri etkisi olan sorunları önceliklendirin. Şu anda bu sorunu çözmek üzere alamıyoruz olsa da, tüm Geri bildiriminiz önemlidir ve yardımcı olan Visual Studio geliştirmek yararlandığından emin.
-
-- - -
-
-![Kapalı - Geliştirici topluluğu üzerinde raporlama sorun için bir hata durumu değil](../ide/media/ProblemStates/ClosedNotABug.jpg)
-
-**Kapatıldı - hata değil** biz bildirilen işlevler tarafından geçerli tasarım olduğunu saptadıktan gösterir.
+**Daha fazla bilgi gerekiyor** , araştırmaya gidebilmemiz için daha fazla tanılama bilgisine ihtiyacımız olduğunu gösterir.  [Daha fazla bilgi isteği Ihtiyacını nasıl yanıtlayacağınızı öğrenin.](./how-to-report-a-problem-with-visual-studio.md#when-further-information-is-needed-need-more-info)
 
 - - -
 
-![Kapalı - yeterli bilgi durumu sorunun Geliştirici topluluğu üzerinde raporlama](../ide/media/ProblemStates/ClosedNotEnoughInfo.jpg)
+![Geliştirici topluluğu 'nda sorun raporlama için sabit bekleyen yayın durumu](../ide/media/ProblemStates/FixedPendingRelease.jpg)
 
-**Kapalı - yeterli bilgi** biz sizin için bunu araştırmak için yeterli bilgimiz yok gösterir. Geri bildirim gerekli bilgileri kullanılabilir olduktan sonra yeniden gözden geçir mutluluk duyarız.
-
-- - -
-
-![Kapalı - diğer Geliştirici topluluğu üzerinde raporlama sorun için ürün durumu](../ide/media/ProblemStates/ClosedOtherProduct.jpg)
-
-**Kapalı - diğer ürün** biz belirlenen sorununuzu başka bir ürün için geçerli olduğunu gösterir. Bağlantılar için dış ürün ve tüm ilgili Microsoft yorumu bakın.
+**Sabitlenmiş yayın** , sorun için bir düzeltireceğiz olduğunu ve yakında bir önizleme veya sürümde mevcut olacağını gösterir.  Düzeltme bir önizlemede kullanılabilir hale geldiğinde, sorun önizleme sürümünü belirten ' sabitlenmiş ' etiketi ile etiketlenir.
 
 - - -
 
-![Kapatıldı - Geliştirici topluluğu üzerinde raporlama sorun durumu Düzeltilmeyecek](../ide/media/ProblemStates/ClosedWontFix.jpg)
+![Geliştirici topluluğu 'nda sorun raporlama için kapalı durum düzeltildi](../ide/media/ProblemStates/ClosedFixed.jpg)
 
-**Kapatıldı - Düzeltilmeyecek** Biz bu sorun nedeniyle ürün yönü hizalama veya topluluk etkisi olmaması gibi faktörlere sürdürdüğünü olmayan gösterir. Microsoft herhangi bir ek açıklama için yorum bakın.  Bu sorunu çözmek için tüm geri bildirim için önemlidir ve yardımcı olabilirsiniz alamıyoruz olsa da Visual Studio geliştirin.
+**Closed-fixed** , sorun için bir düzeltme yayımladığımızda olduğunu gösterir. Bu sorun artık yayın sürümünü belirten bir "sabitlenmiş:" etiketiyle etiketlenir.
+
+- - -
+
+![Kapatılmış-geliştirici topluluğu 'nda sorun raporlama için yinelenen durum](../ide/media/ProblemStates/ClosedDuplicate.jpg)
+
+**Kapalı-yinelenen** , sorununuzun başka bir geri bildirimde zaten rapor edilmiş olduğunu gösterir. Size özgün sorun raporunu izleyebileceğiniz bağlantıyı sağlıyoruz.
+
+- - -
+
+![Geliştirici topluluğu 'nda sorun raporlama için kapalı-düşük öncelik durumu](../ide/media/ProblemStates/ClosedLowerPriority.jpg)
+
+**Kapalı-düşük öncelik** Geliştirici topluluğumuza her birini en iyi şekilde getirecek şekilde odaklanmak için, en yüksek müşteri etkisi ile ilgili sorunları önceliklendirtik. Bu sorunu şu anda ele alabiliriz, ancak tüm geri bildirimlerinizin değerli olduğundan emin olun ve Visual Studio 'Yu iyileştirmenize yardımcı olun.
+
+- - -
+
+![Closed-geliştirici topluluğundaki sorun raporlaması için hata durumu değil](../ide/media/ProblemStates/ClosedNotABug.jpg)
+
+**Kapalı-hata değil** , bildirilen işlevin geçerli tasarıma göre olduğunu belirlediğimize işaret etti.
+
+- - -
+
+![Kapalı-geliştirici topluluğu 'nda sorun raporlama için yeterli bilgi durumu yok](../ide/media/ProblemStates/ClosedNotEnoughInfo.jpg)
+
+**Kapalı-yeterli bilgi yok** , bunu sizin için araştırmak için yeterli bilgiye sahip olmadığını gösterir. Gerekli bilgiler kullanılabilir olduktan sonra geri bildirimin yeniden dikkate alınması mutlu olacaktır.
+
+- - -
+
+![Kapalı-geliştirici topluluğu 'nda sorun raporlama için diğer ürün durumu](../ide/media/ProblemStates/ClosedOtherProduct.jpg)
+
+**Kapalı-diğer ürün** , sorununuzun başka bir ürün için geçerli olduğunu belirledik. Dış ürün ve ilgili tüm bağlantılar için Microsoft 'un açıklamasına bakın.
+
+- - -
+
+![Kapalı-geliştirici topluluğu 'nda sorun raporlama için durum düzeltilmeyecek](../ide/media/ProblemStates/ClosedWontFix.jpg)
+
+**Kapalı, düzeltilmeyecek** , ürün yönü hizalaması veya topluluk etkisi gibi faktörlerden dolayı bu sorunu giderdiğimiz anlamına gelir. Ek açıklık için Microsoft 'un açıklamasına bakın.  Bu sorunu ele vermemiz mümkün olsa da, tüm geri bildirimlerinizin değerli olduğundan emin olun ve Visual Studio 'Yu iyileştirmenize yardımcı olun.
 
 - - -
 
 ## <a name="faq"></a>SSS
 
-### <a name="how-can-i-increase-the-chance-of-my-problem-getting-resolved-quickly"></a>Sorunumu hızlıca çözülebilmesi alma olasılığını nasıl artırabilirim?
+### <a name="how-can-i-increase-the-chance-of-my-problem-getting-resolved-quickly"></a>Sorunum hızlı bir şekilde çözümlenme olasılığını nasıl artırabilirim?
 
-Arama olduğunuz için rapor sorun zaten bildirilmiş taşınmadığından emin olmak için kullanmanızı öneririz. Sorununuzu eşleşen var olan bir öğeye bulursanız, izleyin ve bu sorun anahtar oy verin.
+Raporlamak üzere olduğunuz sorunun zaten bildirilmediğinden emin olmak için aramayı kullanmanızı öneririz. Sorununuz ile eşleşen bir öğe bulursanız, bu sorun biletini izleyin ve oylayın.
 
- Ekiplerimiz ne karşılaştığınız yeniden oluşturmak için mümkün olan tüm bilgileri sağlar.  Bu bilgiler gerekli yineleme adımları, kod parçalarını, ekran görüntüleri, yineleme Kayıtları, günlük dosyaları ve diğer yapıtları içerir.  İşte [Visual Studio'daki sorun bildirme](./how-to-report-a-problem-with-visual-studio.md).
+Ekiplerimizin karşılaştığınız şeyi yeniden üretmesi için kullanabileceğiniz tüm bilgileri sağlayın.  Bu bilgiler, gerekli yeniden üretme adımları, kod parçaları, ekran görüntüleri, yeniden oluşturma kayıtları, günlük dosyaları ve diğer yapıtları içerir.  [Visual Studio 'da sorun bildirme yöntemi](./how-to-report-a-problem-with-visual-studio.md)aşağıda verilmiştir.
 
-### <a name="how-is-my-feedback-prioritized"></a>Nasıl geri bildirimimi kurtarılmasına öncelik verilir?
+### <a name="how-is-my-feedback-prioritized"></a>Geri Bildirimlerim nasıl önceliklendirilir?
 
-Çok sayıda önemli sorunları müşterilerimizden aldığımız. En iyi değeri her biriniz Geliştirici topluluğumuz taşıyoruz emin olmak için size yüksek topluluk etkisi geri bildirim eylemi öncelik verin.
+Müşterilerimizden çok sayıda değerli sorun alırız. Geliştirici topluluğumuzdaki her birine en iyi değeri getirdiğimiz için, en yüksek topluluk etkisi olan geri bildirimde gerçekleştirilecek eylemi önceliklendirtik.
 
-Sizi kişisel olarak geri bildirimlerinize yanıt açamıyorsanız, tam olarak girdi veriyoruz bildirin. Tüm geri bildirim doğru ekibe alır yararlandığından emin.
+Geri bildiriminiz için kişisel olarak yanıt veremesek, girişinizi tam anlamıyla beğentik. Tüm geri bildirimlerinizi doğru ekibe aldığından emin olun.
 
-Biz, Visual Studio'nun daha iyi kolaylaştırmaya yönelik Yatırımlar zaman gerçek anlamda değer.
+Visual Studio 'Yu daha iyi hale getirmek için yatırım yaptığınız zamana gerçekten değer veriyoruz.
 
-### <a name="what-actions-can-i-take-if-im-not-satisfied-with-the-resolution"></a>Çözünürlükten memnun değilim, hangi eylemlerin ben yararlanabilir miyim?
+### <a name="what-actions-can-i-take-if-im-not-satisfied-with-the-resolution"></a>Çözünürlükten memnun kalmazsam hangi eylemleri yapabilirim?
 
-Karşılaştığınız sorunları tanılayıp en iyi şekilde ekiplerimiz yapın, ancak Bizim önerimiz ile tam olarak memnun olduğunuzda olmayan zamanlar olabilir. Yorum, geribildirim ve tam olarak ne bize bildirin memnun değilseniz ve gereksinimlerinizi karşıladığından emin olmak üzere size en uygun denenir.
+Takımlarımız, karşılaşabileceğiniz sorunları tanılamak ve çözmek için en iyi seçenektir, ancak önerimizde tam olarak memnun olmadığınız zamanlar olabilir. Geri bildirimde bulunun ve tam olarak memnun kalmadıklarınızı bize iletin ve gereksinimlerinizi karşıladığımızdan emin olmak için en iyi şekilde deneyeceğiz.
 
-### <a name="how-will-i-get-notified-of-progress-on-my-feedback"></a>Nasıl ilerleme durumunu bildirimim hakkında bildirim?
+### <a name="how-will-i-get-notified-of-progress-on-my-feedback"></a>Geri bildirimimde ilerleme durumunu nasıl alabilirim?
 
-Microsoft mühendislik ekipleri size geri bildirim anahtar yorum ve bunların ilerleme yaparken, bilet durumunu değiştirme iletişim kurar. Bilet durum değişikliklerini veya yorum gönderildiğinde, gönderilen e-posta bildirimleri izleyin.  Geliştirici topluluğu sitesini profili ve Tercihleri ayarlarını Bildirimlerde sıklığını yönetebilirsiniz.
+Microsoft mühendislik ekipleri, geri bildirim bileti hakkında yorum yaparak ve iş süreci sırasında bilet durumunu değiştirerek sizinle iletişim kurar. Bilet durumu değiştiğinde veya bir yorum gönderildiğinde gönderilen e-posta bildirimlerini izleyin.  Geliştirici topluluğu sitesinde profil ve Tercihler ayarlarındaki bildirimlerin sıklığını yönetebilirsiniz.
 
-### <a name="why-cant-i-add-a-problem-for-visual-studio-ide-on-the-developer-community-website"></a>Neden bir sorun için Visual Studio IDE Geliştirici topluluğu Web sitesinde ekleyemiyorum?
+### <a name="why-cant-i-add-a-problem-for-visual-studio-ide-on-the-developer-community-website"></a>Geliştirici topluluğu Web sitesinde Visual Studio IDE için neden sorun ekleyemiyorum?
 
-Visual Studio aracılığıyla bir sorun bildirme raporda otomatik olarak dahil edilecek tanılama bilgileri sağlar. Bunu mühendislerimize sorun ve bu sorunu çözmek için iş tam olarak anlamak için ihtiyaç duydukları içerik sunan temel bilgilerdir.
+Visual Studio ile ilgili bir sorun bildirmek, tanılama bilgilerinin rapora otomatik olarak eklenmesini sağlar. Mühendislerimizi, sorununuzu tamamen anlamak ve çözmeye çalışmak için ihtiyaç duydukları bağlamı sunan önemli bilgiler.
 
-Visual Studio aracılığıyla bildirdiğinde gibi büyük günlük dosyaları, kilitlenme bilgi, ekran görüntüleri, yineleme kaydı ve bize yardımcı olan diğer yapıtlar, daha kaliteli çözümler daha hızlı sunun, kolayca zengin tanılama bilgileri bizimle paylaşabilirsiniz.
+Visual Studio aracılığıyla rapor ettiğinizde, büyük günlük dosyaları, kilitlenme bilgileri, ekran görüntüleri, yeniden üretme kaydı ve daha yüksek kaliteli çözümler sunmamıza yardımcı olan diğer yapıtlar gibi bizimle zengin tanılama bilgilerini kolayca paylaşabilirsiniz.

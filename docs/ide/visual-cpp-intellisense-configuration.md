@@ -7,12 +7,12 @@ ms.author: mblome
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 605ad454d00387d9a9094a518b4afed279fcc190
-ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
+ms.openlocfilehash: b8d52114e742d5a8176166744a4edc2975f674a3
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68461582"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68925854"
 ---
 # <a name="configure-a-c-project-for-intellisense"></a>IntelliSense için bir C++ projesi yapılandırma
 
@@ -38,7 +38,7 @@ Yapılarınızı Visual Studio IDE dışında çalıştırırsanız, yapıların
 
 ![VC + + Içerme dizinleri](media/vcpp-intellisense-include-paths.png)
 
- **VC_IncludePath**gibi derleme makrolarının geçerli değerlerini görmek Için dizinleri Ekle satırını seçin ve sağdaki aşağı açılan listeye tıklayın. Sonra  **\<> Düzenle** ' yi seçin ve **makrolar** düğmesine tıklayın.
+**VC_IncludePath**gibi derleme makrolarının geçerli değerlerini görmek Için dizinleri Ekle satırını seçin ve sağdaki aşağı açılan listeye tıklayın. Sonra  **\<> Düzenle** ' yi seçin ve **makrolar** düğmesine tıklayın.
 
 ### <a name="makefile-projects"></a>Derleme görevleri dosyası projeleri
 
@@ -74,23 +74,23 @@ Etiket Ayrıştırıcı hataları **hata listesi** penceresinde görüntülenir.
 
 ## <a name="validate-project-settings-with-diagnostic-logging"></a>Tanılama günlüğü ile proje ayarlarını doğrulama
 
-IntelliSense derleyicisinin Içerme ve Önişlemci makroları dahil doğru derleyici seçeneklerini kullanıp kullanmadığını denetlemek için **araçlar > seçenekler > metin düzenleyicisi > C/C++ > Gelişmiş > gibi IntelliSense komut satırlarının tanılama günlüğünü açın Tanılama günlüğü**. Günlüğe kaydetmeyi doğru, **günlük düzeyini** 5 ' e (en ayrıntılı) ve **günlük filtresini** 8 ' e (IntelliSense günlüğü **) ayarlayın.**
+IntelliSense derleyicisinin Içerme ve Önişlemci makroları dahil doğru derleyici seçeneklerini kullanıp kullanmadığını denetlemek için **araçlar > seçenekler > metin düzenleyicisi > C/C++ > Gelişmiş > gibi IntelliSense komut satırlarının tanılama günlüğünü açın Tanılama günlüğü**. Günlüğe kaydetmeyi doğru, **günlük düzeyini** 5 ' e (en ayrıntılı) ve **günlük filtresini** 8 ' e (IntelliSense günlüğü) ayarlayın.
 
 Çıkış Penceresi artık IntelliSense derleyicisine geçirilen komut satırlarını gösterir. Örnek bir çıktı aşağıda verilmiştir:
 
 ```output
- [IntelliSense] Configuration Name: Debug|Win32
- [IntelliSense] Toolset IntelliSense Identifier:
- [IntelliSense] command line options:
- /c
- /I.
- /IC:\Repo\Includes
- /DWIN32
- /DDEBUG
- /D_DEBUG
- /Zc:wchar_t-
- /Zc:forScope
- /Yustdafx.h
+[IntelliSense] Configuration Name: Debug|Win32
+[IntelliSense] Toolset IntelliSense Identifier:
+[IntelliSense] command line options:
+/c
+/I.
+/IC:\Repo\Includes
+/DWIN32
+/DDEBUG
+/D_DEBUG
+/Zc:wchar_t-
+/Zc:forScope
+/Yustdafx.h
 ```
 
 Bu bilgiler, IntelliSense 'in neden yanlış bilgi sağladığını anlamanıza yardımcı olabilir. Örneğin, projenizin Içerme dizini **$ (MyVariable) \ Include**değerini içeriyorsa ve tanılama günlüğünde **/I\ınclude** öğesini içerme yolu olarak gösteriyorsa, **$ (MyVariable)** öğesinin değerlendirilmediği ve son içerme yolundan kaldırıldığı anlamına gelir. .
@@ -110,10 +110,10 @@ Bir IntelliSense derlemesi ikili dosyaları oluşturmaz, ancak yine de başarıs
 Hata iletisi, tasarım zamanı izlemeyi etkinleştirmenizi isteyebilir:
 
 ```output
- error: Designtime build failed for project 'E:\src\MyProject\MyProject.vcxproj',
- configuration 'Debug|x64'. IntelliSense might be unavailable.
- Set environment variable TRACEDESIGNTIME=true and restart
- Visual Studio to investigate.
+error: Designtime build failed for project 'E:\src\MyProject\MyProject.vcxproj',
+configuration 'Debug|x64'. IntelliSense might be unavailable.
+Set environment variable TRACEDESIGNTIME=true and restart
+Visual Studio to investigate.
 ```
 
 TRACEDESIGNTIME ortam değişkenini true olarak ayarlarsanız ve Visual Studio 'Yu yeniden başlatırsanız,% TEMP% dizininde, derleme hatasının tanılanmasına yardımcı olabilecek bir günlük dosyası görürsünüz.

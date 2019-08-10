@@ -1,5 +1,5 @@
 ---
-title: 'Microsoft Fakes: & Kod derleme oluştur; adlandırma kuralları'
+title: 'Microsoft Fakes: & Derleme kodu oluşturun; adlandırma kuralları'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.author: gewarren
@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 554fe9c8d8f30c13f667566a76349e237f5ddb0f
-ms.sourcegitcommit: ba5e072c9fedeff625a1332f22dcf3644d019f51
+ms.openlocfilehash: d9d60db348be719c4fa45243d22ca6b617b72407
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66432295"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68918458"
 ---
 # <a name="code-generation-compilation-and-naming-conventions-in-microsoft-fakes"></a>Microsoft Fakes'te kod oluşturma, derleme ve adlandırma kuralları
 
@@ -110,9 +110,9 @@ Shim/dolgu türlerini ve Koçan türleri üretilen Fakes derlemeye görülebilen
 [assembly: InternalsVisibleTo("FileSystem.Tests")]
 ```
 
- **Kesin adlandırılmış derlemelerin iç türleri**
+**Kesin adlandırılmış derlemelerin iç türleri**
 
- Shimmed derleme kesin şekilde adlandırıldığında ve derlemenin iç türlerine erişmek istediğiniz varsa:
+Shimmed derleme kesin şekilde adlandırıldığında ve derlemenin iç türlerine erişmek istediğiniz varsa:
 
 - Hem test derlemeniz hem de Fakes derlemeniz kesin adlandırılmış olmalıdır.
 
@@ -179,11 +179,11 @@ Birim test projelerinizden proje klasöründeki FakesAssemblies altında yerleş
 
 Bir ekip ortamında, tüm yapı çıkışları tek bir dizin içinde birleştirilir. Birden çok proje Fakes kullanıyorsanız, farklı sürümlerine ait Fakes derlemeler birbirini geçersiz kılma meydana getirebilir. Örneğin TestProject1 fakes *mscorlib.dll* .NET Framework 2.0 ve TestProject2 fakes gelen *mscorlib.dll* .NET Framework 4 için her ikisi için yield bir *mscorlib. Fakes.dll* Fakes derlemesi.
 
- Bu sorunu önlemek için Fakes otomatik olarak sürüm nitelikli Fakes derleme adı proje-olmayan başvurular için eklerken oluşturmalısınız *.fakes* dosyaları. Fakes derleme adı oluştururken bir sürüm nitelikli Fakes derleme adı bir sürüm numarası gömer:
+Bu sorunu önlemek için Fakes otomatik olarak sürüm nitelikli Fakes derleme adı proje-olmayan başvurular için eklerken oluşturmalısınız *.fakes* dosyaları. Fakes derleme adı oluştururken bir sürüm nitelikli Fakes derleme adı bir sürüm numarası gömer:
 
- Bir derleme MyAssembly ve sürüm 1.2.3.4, Fakes derleme adı MyAssembly.1.2.3.4.fakes'dir.
+Bir derleme MyAssembly ve sürüm 1.2.3.4, Fakes derleme adı MyAssembly.1.2.3.4.fakes'dir.
 
- Değiştirebilir veya içindeki derleme öğesinin Version özniteliği düzenleyerek bu sürümü kaldırmanız *.fakes*:
+Değiştirebilir veya içindeki derleme öğesinin Version özniteliği düzenleyerek bu sürümü kaldırmanız *.fakes*:
 
 ```xml
 attribute of the Assembly element in the .fakes:
@@ -197,7 +197,7 @@ attribute of the Assembly element in the .fakes:
 
 ### <a name="shim-type-and-stub-type-naming-conventions"></a>Dolgu ve Koçan türleri adlandırma kuralları yazın
 
- **Ad Alanları**
+**Ad Alanları**
 
 - . Fakes sonekini ad alanına eklenir.
 

@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 46284c37bc40f963253912b4b8b66cd20a871f83
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 416e45337dafd11a00e98b9adda9f16b02139f9c
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62545221"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68921663"
 ---
 # <a name="ca2111-pointers-should-not-be-visible"></a>CA2111: İşaretçiler görünür olmamalıdır
 
@@ -31,28 +31,28 @@ ms.locfileid: "62545221"
 |Yeni Değişiklik|Yeni|
 
 ## <a name="cause"></a>Sebep
- Ortak veya korumalı bir <xref:System.IntPtr?displayProperty=fullName> veya <xref:System.UIntPtr?displayProperty=fullName> alanı salt okunur değildir.
+Ortak veya korumalı <xref:System.IntPtr?displayProperty=fullName> veya <xref:System.UIntPtr?displayProperty=fullName> alan salt okunurdur.
 
 ## <a name="rule-description"></a>Kural açıklaması
- <xref:System.IntPtr> ve <xref:System.UIntPtr> işaretçi türleri, yönetilmeyen bellek erişmek için kullanılır. Bir işaretçi özel, içsel veya salt okunur durumda değilse, kötü amaçlı kod işaretçinin, potansiyel olarak bellekte rastgele konumlara erişmesine izin vermek veya uygulama ya da sistem hatalarına neden değerini değiştirebilirsiniz.
+ <xref:System.IntPtr>ve <xref:System.UIntPtr> yönetilmeyen belleğe erişmek için kullanılan işaretçi türleridir. Bir işaretçi özel, iç veya salt okunurdur değilse, kötü amaçlı kod işaretçinin değerini değiştirebilir, bu da, bellekteki rastgele konumlara erişime izin verebilir veya uygulama ya da sistem arızalarına neden olabilir.
 
- İşaretçi alan içeren tür güvenli erişim yapmak istiyorsanız, bkz. [CA2112: Güvenli türler alanları kullanıma](../code-quality/ca2112-secured-types-should-not-expose-fields.md).
+İşaretçi alanını içeren türe erişimi güvenli hale getirmek istiyorsanız, bkz [. CA2112: Güvenli türler alanları](../code-quality/ca2112-secured-types-should-not-expose-fields.md)kullanıma sunmamalıdır.
 
-## <a name="how-to-fix-violations"></a>İhlaller nasıl düzeltilir?
- İşaretçi salt okunur, iç veya özel hale getirerek güvenli hale getirin.
+## <a name="how-to-fix-violations"></a>İhlalleri çözme
+İşaretçiyi salt okunurdur, iç veya özel yaparak güvenli hale getirin.
 
-## <a name="when-to-suppress-warnings"></a>Uyarılar bastırıldığında
- İşaretçi değeri temel kullanmayın, bu kuraldan bir uyarıyı gizler.
+## <a name="when-to-suppress-warnings"></a>Uyarıların ne zaman bastırılamıyor
+İşaretçinin değerine bağlı değilseniz bu kuraldan bir uyarı gizleyin.
 
 ## <a name="example"></a>Örnek
- Aşağıdaki kod, ihlal ve kural karşılamak işaretçileri gösterir. Özel olmayan işaretçileri de kuralı ihlal bildirimi [CA1051: Görünür örnek alanlarını bildirmeyin](../code-quality/ca1051-do-not-declare-visible-instance-fields.md).
+Aşağıdaki kod, kuralı ihlal eden ve karşılayan işaretçileri gösterir. Özel olmayan işaretçilerin CA1051 kuralını [da ihlal ettiğini unutmayın: Görünür örnek alanlarını](../code-quality/ca1051-do-not-declare-visible-instance-fields.md)bildirmeyin.
 
- [!code-csharp[FxCop.Security.PointersArePrivate#1](../code-quality/codesnippet/CSharp/ca2111-pointers-should-not-be-visible_1.cs)]
+[!code-csharp[FxCop.Security.PointersArePrivate#1](../code-quality/codesnippet/CSharp/ca2111-pointers-should-not-be-visible_1.cs)]
 
-## <a name="related-rules"></a>İlgili kuralları
- [CA2112: Güvenli türler alanları açığa çıkarmamalıdır](../code-quality/ca2112-secured-types-should-not-expose-fields.md)
+## <a name="related-rules"></a>İlgili kurallar
+[CA2112 Güvenli türler alanları kullanıma sunmamalıdır](../code-quality/ca2112-secured-types-should-not-expose-fields.md)
 
- [CA1051: Görünür örnek alanlarını bildirmeyin](../code-quality/ca1051-do-not-declare-visible-instance-fields.md)
+[CA1051 Görünür örnek alanlarını bildirme](../code-quality/ca1051-do-not-declare-visible-instance-fields.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

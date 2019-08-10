@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8239b27cd92f66ae8f74ddb1accd95535bf56f93
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 340d8f0a45506f15cdd9281f7ecda463583c3144
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62542343"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68920819"
 ---
 # <a name="ca2122-do-not-indirectly-expose-methods-with-link-demands"></a>CA2122: Bağlantı talepleri olan metotları dolaylı olarak açığa çıkarmayın
 
@@ -28,29 +28,29 @@ ms.locfileid: "62542343"
 |TypeName|DoNotIndirectlyExposeMethodsWithLinkDemands|
 |CheckId|CA2122|
 |Kategori|Microsoft.Security|
-|Yeni Değişiklik|Bozucu olmayan|
+|Yeni Değişiklik|Kırılmamış|
 
 ## <a name="cause"></a>Sebep
- Ortak veya korumalı bir üyenin bir [bağlantı talepleri](/dotnet/framework/misc/link-demands) ve herhangi bir güvenlik denetimi gerçekleştirmeyen üye tarafından çağrılır.
+Ortak veya korumalı bir üyenin [bağlantı talepleri](/dotnet/framework/misc/link-demands) vardır ve herhangi bir güvenlik denetimi gerçekleştirmediğinden bir üye tarafından çağırılır.
 
 ## <a name="rule-description"></a>Kural açıklaması
- Bağlantı talebi, yalnızca o anki çağırıcı izinlerini denetler. Üye ise `X` hiçbir güvenlik taleplerini çağıranlar ve kod gerekli izne kullanabilirsiniz olmadan bu bağlantı talebi tarafından çağıran korumalı çağrıları yapar `X` korunan üyesine erişmek için.
+Bağlantı talebi, yalnızca o anki çağırıcı izinlerini denetler. Bir üye `X` , arayanlara güvenlik talebi yapıyorsa ve bir bağlantı talebi tarafından korunan kodu çağırırsa, gerekli izni olmayan bir çağıran, korunan üyeye erişmek için kullanabilir `X` .
 
-## <a name="how-to-fix-violations"></a>İhlaller nasıl düzeltilir?
- Güvenlik ekleme [veri ve modelleme](/dotnet/framework/data/index) veya artık bağlantı talebi tarafından korunan üyesine güvenli erişim sağlar, böylece üyesine bağlantısını isteğe bağlı.
+## <a name="how-to-fix-violations"></a>İhlalleri çözme
+Bir güvenlik [verileri ekleyin ve](/dotnet/framework/data/index) isteğe bağlı olarak, bağlantıya talep korumalı üyeye güvenli olmayan erişim sağlamaz.
 
-## <a name="when-to-suppress-warnings"></a>Uyarılar bastırıldığında
- Güvenli bir şekilde bu kuraldan bir uyarıyı bastırmak için kodunuzu işlemleri veya yıkıcı bir şekilde kullanılabilir kaynaklara erişimi çağıranlarını tanımaz emin olmanız gerekir.
+## <a name="when-to-suppress-warnings"></a>Uyarıların ne zaman bastırılamıyor
+Bu kuraldan bir uyarıyı güvenle bastırmak için, kodunuzun çağıranlar için bir bozucu şekilde kullanılabilecek işlemlere veya kaynaklara erişimini vermediğinden emin olmanız gerekir.
 
 ## <a name="example-1"></a>Örnek 1
- Aşağıdaki örnekler, kural ihlal eden bir kitaplık ve kitaplığın zayıflık gösteren bir uygulama gösterir. Örnek kitaplığı birlikte bu kuralı ihlal eden iki yöntem sunar. `EnvironmentSetting` Ortam değişkenlerini sınırsız erişim için bir bağlantı talebi tarafından güvenli yöntemi. `DomainInformation` Yöntemi çağırmadan önce hiçbir güvenlik taleplerini çağıranlarını yapar `EnvironmentSetting`.
+Aşağıdaki örneklerde, kuralı ihlal eden bir kitaplık ve kitaplığın zayıflılığını gösteren bir uygulama gösterilmektedir. Örnek kitaplık, birlikte kuralı ihlal eden iki yöntem sağlar. Yöntemi `EnvironmentSetting` , ortam değişkenlerine sınırsız erişim talebi ile korunmuş olur. `DomainInformation` Yöntemi çağrı`EnvironmentSetting`yapmadan önce arayanlara güvenlik talebi yapmaz.
 
- [!code-csharp[FxCop.Security.UnsecuredDoNotCall#1](../code-quality/codesnippet/CSharp/ca2122-do-not-indirectly-expose-methods-with-link-demands_1.cs)]
+[!code-csharp[FxCop.Security.UnsecuredDoNotCall#1](../code-quality/codesnippet/CSharp/ca2122-do-not-indirectly-expose-methods-with-link-demands_1.cs)]
 
 ## <a name="example-2"></a>Örnek 2
- Aşağıdaki uygulama güvenli olmayan kitaplık üyesini çağırır.
+Aşağıdaki uygulama, güvenli olmayan kitaplık üyesini çağırır.
 
- [!code-csharp[FxCop.Security.TestUnsecuredDoNot1#1](../code-quality/codesnippet/CSharp/ca2122-do-not-indirectly-expose-methods-with-link-demands_2.cs)]
+[!code-csharp[FxCop.Security.TestUnsecuredDoNot1#1](../code-quality/codesnippet/CSharp/ca2122-do-not-indirectly-expose-methods-with-link-demands_2.cs)]
 
 Bu örnek aşağıdaki çıktıyı üretir:
 

@@ -8,34 +8,34 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5ba709e90de580aacda2034eca319a419583dac0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: c2718c08b36ff9ef3ca8ae06f7d511cacb8fa73c
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62783696"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68923664"
 ---
 # <a name="how-to-add-schema-set-search-result-nodes-to-the-workspace"></a>Nasıl yapılır: Şema kümesi arama sonucu düğümlerini çalışma alanına ekleme
 
-Bu konu içinde vurgulanmıştır düğümlerini ekleme işlemi açıklanmaktadır **XML Şeması Gezgini** çalışma alanındaki anahtar sözcük arama sonucu olarak.
+Bu konu, çalışma alanında bir anahtar sözcük aramasının sonucu olarak **XML şema Gezgini** 'nde vurgulanan düğümlerin nasıl ekleneceğini açıklar.
 
 > [!NOTE]
-> Yalnızca genel düğümler eklenebilir [çalışma](../xml-tools/xml-schema-designer-workspace.md).
+> [Çalışma alanına](../xml-tools/xml-schema-designer-workspace.md)yalnızca genel düğümler eklenebilir.
 
- Bu örnekte örnek [satın alma siparişi şeması](../xml-tools/sample-xsd-file-purchase-order-schema.md).
+Bu örnek, örnek [satın alma siparişi şemasını](../xml-tools/sample-xsd-file-purchase-order-schema.md)kullanır.
 
-## <a name="to-add-schema-set-result-nodes"></a>Şema kümesi sonucu düğümlerini eklemek için
+## <a name="to-add-schema-set-result-nodes"></a>Şema kümesi sonuç düğümleri eklemek için
 
-1. Bağlantısındaki [nasıl yapılır: Bir XSD şema dosyası oluşturma ve düzenleme](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md).
+1. Şu adımları [izleyin: XSD şema dosyası](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md)oluşturun ve düzenleyin.
 
-2. "PurchaseOrder" yazın arama metin kutusuna [XML Gezgini](../xml-tools/xml-schema-explorer.md) araç çubuğu ve Ara düğmesine tıklayın.
+2. [XML Explorer](../xml-tools/xml-schema-explorer.md) araç çubuğunun arama metin kutusuna "PurchaseOrder" yazın ve arama düğmesine tıklayın.
 
      ![XML şema Gezgini anahtar sözcük arama](../xml-tools/media/schemaexplorersearch.gif)
 
-     İçindeki arama sonuçlarında vurgulanır **XML Şeması Gezgini** ve dikey kaydırma çubuğu üzerinde işaretleri olarak işaretlendi.
+     Arama sonuçları, **XML şema Gezgini** 'nde vurgulanır ve dikey kaydırma çubuğundaki Tick 'ler tarafından işaretlenir.
 
-3. Arama sonuçlarını tıklayarak çalışma alanına ekleme **çalışma alanına vurgulanmış düğümler Ekle** özet sonuçlar bölmesinde düğmesine.
+3. Özet sonuçlar bölmesinde, **çalışma alanına vurgulanan düğümleri Ekle** düğmesine tıklayarak arama sonuçlarını çalışma alanına ekleyin.
 
      ![XML şema Gezgini arama sonucu](../xml-tools/media/schemaexplorersearchresult.gif)
 
-     `purchaseOrder` Düğüm ve `PurchaseOrderType` düğümünün görünen birbirinin yanına tasarım yüzeyine [graf görünümünü](../xml-tools/graph-view.md). İki düğüm birbiriyle ilişkili olduğundan ( `purchaseOrder` öğesi olduğu `PurchaseOrderType` türü), bir ok, aralarında çizilir.
+     Düğüm ve düğüm, [Grafik görünümünün](../xml-tools/graph-view.md)tasarım yüzeyinde birbirini izleyen bir şekilde görünür. `PurchaseOrderType` `purchaseOrder` İki düğüm ilişkili olduğundan ( `purchaseOrder` öğe `PurchaseOrderType` türünde olduğundan) aralarında bir ok çizilir.

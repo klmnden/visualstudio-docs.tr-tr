@@ -15,12 +15,12 @@ ms.assetid: 969ed346-cf2e-4d48-82b3-edb3e075e1c0
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4a7cd36fcb144eaa098acc30a7da550b1288684a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 011b010eaad5def8943fd18a84da9fefdb01eff5
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62823125"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68918632"
 ---
 # <a name="analyzing-threshold-rule-violations-in-load-tests-using-the-load-test-analyzer"></a>Yük testi çözümleyicisini kullanarak Yük testlerindeki eşik kuralı ihlallerini çözümleme
 
@@ -32,12 +32,12 @@ Herhangi bir ihlal oluştuysa, bir **Eşik ihlallerini** köprü bulunur **Yük 
 
 ## <a name="view-threshold-violations-in-the-table"></a>Eşik ihlallerini Tablo görünümü
 
- Eşik ihlalleri tablosunu ilk 1.000 ihlalleri görüntüler. Aşağıdaki tablo şu sütunları içerir:
+Eşik ihlalleri tablosunu ilk 1.000 ihlalleri görüntüler. Aşağıdaki tablo şu sütunları içerir:
 
 |Sütun|Açıklama|Varsayılan olarak görünür|
 |-|-|-|
 |Zaman|İhlalin gerçekleştiği süre boyunca yük test edin.|Evet|
-|Bilgisayar|İhlalin gerçekleştiği test edilen bilgisayar adı. **Not:**  Bu, üzerinde donanımlarını yük testlerini çalıştırdığınızda önemlidir.|Evet|
+|Bilgisayar|İhlalin gerçekleştiği test edilen bilgisayar adı. **Not:**  Bu, yük testlerini Rig 'ler üzerinde çalıştırdığınızda önemlidir.|Evet|
 |Kategori|İhlalin gerçekleştiği performans sayacı kategorisi.|Evet|
 |Sayaç|İhlalin gerçekleştiği performans sayacının adı.|Evet|
 |Örnek|Performans sayacı örneği üzerinde ihlali oluştu.|Evet|
@@ -46,33 +46,33 @@ Herhangi bir ihlal oluştuysa, bir **Eşik ihlallerini** köprü bulunur **Yük 
 > [!NOTE]
 > Tablo, sütun üst bilgilerini seçerek sıralayabilirsiniz.
 
- Daha fazla bilgi için [yük testi sonuçlarını ve hatalarını Tablo görünümünde çözümlemek](../test/analyze-load-test-results-and-errors-in-the-tables-view.md).
+Daha fazla bilgi için [yük testi sonuçlarını ve hatalarını Tablo görünümünde çözümlemek](../test/analyze-load-test-results-and-errors-in-the-tables-view.md).
 
 ## <a name="view-threshold-violations-in-the-counters-panel"></a>Eşik ihlallerini Sayaçlar panelini görüntüle
 
- Eşik ihlallerini görüntüleyebilirsiniz **sayaçları** panelinde Yük testiniz için performans sayaçları listeler ağaç. Simgeleri **sayaçları** paneli iletişim Eşik ihlalleri. Simgesi aşağıdakilerden biri olabilir:
+Eşik ihlallerini görüntüleyebilirsiniz **sayaçları** panelinde Yük testiniz için performans sayaçları listeler ağaç. Simgeleri **sayaçları** paneli iletişim Eşik ihlalleri. Simgesi aşağıdakilerden biri olabilir:
 
- Simgesi aşağıdakilerden biri olabilir:
+Simgesi aşağıdakilerden biri olabilir:
 
- ![Eşik ihlali yok](../test/media/icon_ltest_1.gif) Eşik ihlali yok.
+![Eşik ihlali yok](../test/media/icon_ltest_1.gif) Eşik ihlali yok.
 
- ![Kritik Eşik ihlalinin son aralığı](../test/media/icon_ltest_2.gif) Son aralıkta bir Kritik Eşik ihlali oluştu.
+![Kritik Eşik ihlalinin son aralığı](../test/media/icon_ltest_2.gif) Son aralıkta bir Kritik Eşik ihlali oluştu.
 
- ![Önceki bir aralıkta bir Kritik Eşik ihlali](../test/media/icon_ltest_3.gif) Önceki bir aralıkta bir Kritik Eşik ihlali oluştu.
+![Önceki bir aralıkta bir Kritik Eşik ihlali](../test/media/icon_ltest_3.gif) Önceki bir aralıkta bir Kritik Eşik ihlali oluştu.
 
- ![Uyarı eşiği ihlalinin son aralığı](../test/media/icon_ltest_4.gif) Uyarı eşiği ihlalinin son aralıkta oluştu.
+![Uyarı eşiği ihlalinin son aralığı](../test/media/icon_ltest_4.gif) Uyarı eşiği ihlalinin son aralıkta oluştu.
 
- ![Uyarı eşiği ihlalinin önceki aralığı](../test/media/icon_ltest_5.gif) Önceki bir aralıkta bir uyarı eşik ihlali oluştu.
+![Uyarı eşiği ihlalinin önceki aralığı](../test/media/icon_ltest_5.gif) Önceki bir aralıkta bir uyarı eşik ihlali oluştu.
 
- İsteğe bağlı olarak, Eşik ihlalleri grafikte de görüntülenebilir. Eşik ihlali gerçekleştiği veri noktasının yanındaki grafik üzerindeki eşik simgesi görünür.
+İsteğe bağlı olarak, Eşik ihlalleri grafikte de görüntülenebilir. Eşik ihlali gerçekleştiği veri noktasının yanındaki grafik üzerindeki eşik simgesi görünür.
 
- Sayaç ağaçta kök düğümü kadar belirli bir sayaç düğümünden eşik ihlali simgesine yayılır. Bu bir ihlali nedeniyle ağaç genişletilmemiş ağaçta görünür olmayabilir sayacı uyarır.
+Sayaç ağaçta kök düğümü kadar belirli bir sayaç düğümünden eşik ihlali simgesine yayılır. Bu bir ihlali nedeniyle ağaç genişletilmemiş ağaçta görünür olmayabilir sayacı uyarır.
 
 ## <a name="view-threshold-violations-on-the-graph"></a>Grafikte Eşik ihlallerini görüntüle
 
- Eşik İhlallerini Grafikte görüntüleyebilirsiniz. Benzer şekilde **sayaçları** paneli, simgeler grafikte Eşik ihlallerini iletişim kurar. Grafikte eşik ihlali gerçekleştiği veri noktasının yanındaki simge görünür. Grafikte görünmeyen bir sayaçta eşik ihlali meydana gelirse, bu grafiğe ondan sürükleyerek ekleyebileceğiniz **sayaçları** grafiğe paneli.
+Eşik İhlallerini Grafikte görüntüleyebilirsiniz. Benzer şekilde **sayaçları** paneli, simgeler grafikte Eşik ihlallerini iletişim kurar. Grafikte eşik ihlali gerçekleştiği veri noktasının yanındaki simge görünür. Grafikte görünmeyen bir sayaçta eşik ihlali meydana gelirse, bu grafiğe ondan sürükleyerek ekleyebileceğiniz **sayaçları** grafiğe paneli.
 
- Daha fazla bilgi için [Çözümle yük testi sonuçlarını grafik görünümünde](../test/analyze-load-test-results-in-the-graphs-view.md).
+Daha fazla bilgi için [Çözümle yük testi sonuçlarını grafik görünümünde](../test/analyze-load-test-results-in-the-graphs-view.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

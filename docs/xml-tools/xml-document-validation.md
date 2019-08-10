@@ -1,5 +1,5 @@
 ---
-title: XML Düzenleyicisi'nde XML belgesi doğrulama
+title: XML düzenleyicisinde XML belgesi doğrulaması
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: abb353bd-6c4a-4978-b03b-a8c245bbfb55
@@ -8,40 +8,40 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 59b8ed5c74d998b47ff4a187b420695eab5be035
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 13574a13aecf7edbc9627e7b8288689206f278c2
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62807731"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926695"
 ---
 # <a name="xml-document-validation"></a>XML belgesini doğrulama
 
-XML Düzenleyicisi'ni XML 1.0 sözdizimi denetler ve siz yazarken veri doğrulaması da gerçekleştirir. Düzenleyici, bir belge türü tanımı (DTD'nin) ya da bir şema kullanarak doğrulayabilirsiniz. Kırmızı dalgalı alt çizgiler, doğru biçimlendirilmiş XML 1.0 hataları vurgulayın. Mavi dalgalı alt çizgiler DTD'nin veya şema doğrulamasını anlamsal hata gösterir. Her bir hata hata listesinde bir ilişkili giriş var. Dalgalı alt çizginin fare duraklatarak, hata iletisi de görüntüleyebilirsiniz.
+XML Düzenleyicisi, XML 1,0 söz dizimini denetler ve ayrıca siz yazarken veri doğrulaması gerçekleştirir. Düzenleyici bir belge türü tanımı (DTD) veya şema kullanarak doğrulayabilir. Kırmızı dalgalı alt çizgiler, XML 1,0 düzgün biçimlendirilmiş hataları vurgular. Mavi dalgalı alt çizgiler, DTD veya şema doğrulamasına göre anlam hataları gösterir. Her hatanın hata listesinde ilişkili bir girişi vardır. Fareyi dalgalı alt çizginin üzerinde duraklatarak hata mesajını da görüntüleyebilirsiniz.
 
- Doğrulama kullanılan şemalar ile eşleştirerek bulundu `targetNamespace` öğenin xmlns bildirimi ile derlenmiş bir şema. Derlenen şemalar bir öncelik sırasına göre listelenen aşağıdaki konumlara yüklenir:
+Doğrulamada kullanılan şemalar, derlenmiş bir şemanın, `targetNamespace` öğenin xmlns bildirimiyle eşleşmesi ile bulunur. Derlenmiş şemalar, öncelik sırasına göre listelenen aşağıdaki konumlardan birinden yüklenir:
 
-- Belirtilen dosya adından **şemaları** belge alanını **özellikleri** penceresi.
+- Belge **özellikleri** penceresinin **şemalar** alanında belirtilen dosya adından.
 
-- Satır içi şema veya DTD'nin.
+- Satır içi şema veya DTD.
 
-- Bir dış DTD'nin veya `xsd:schemaLocation` ve `xsd:noNamespaceSchemaLocation` özniteliği
+- Dış DTD veya `xsd:schemaLocation` and `xsd:noNamespaceSchemaLocation` özniteliği
 
-- Bir "x-schema" XDR Şema ad alanı URI.
+- "X-Schema" XDR şema ad alanı URI 'SI.
 
-Boş hedef ad alanı şema sahip olduğunda şemaları de aşağıdaki ek konumlarda bulunabilir:
+Şema boş olmayan bir hedef ad alanına sahip olduğunda aşağıdaki ek konumlarda şemalar de bulunabilir:
 
-- Şema içeren başka bir düzenleyici penceresi.
+- Şemayı içeren başka bir düzenleyici penceresi.
 
-- Geçerli çözümdeki şema.
+- Geçerli çözümde bir şema.
 
-- Şema önbellek dizini bir şema.
+- Şema önbelleği dizininden bir şema.
 
 ## <a name="xslt-files"></a>XSLT dosyaları
- XSLT dosyası düzenlenirken *xslt.xsd* doğrulama için şema önbelleğinde bulunan dosya kullanılır. Doğrulama hatalarını, Mavi dalgalı çizgiler gösterilir. XSLT derleyici hatalarını, kırmızı dalgalı alt çizgiler gösterilir.
+XSLT dosyasını düzenlediğinizde, şema önbelleğinde bulunan *XSLT. xsd* dosyası doğrulama için kullanılır. Doğrulama hataları mavi dalgalı alt çizgiler olarak gösterilir. XSLT derleyicisindeki hatalar kırmızı dalgalı alt çizgiler olarak gösterilir.
 
-## <a name="xml-schema-xsd-files"></a>XML Şeması (XSD) dosyaları
- Bir XML şema dosyası düzenlenirken *xsdschema.xsd* doğrulama için şema önbelleğinde bulunan dosya kullanılır. Doğrulama hatalarını, Mavi dalgalı çizgiler gösterilir. Derleme hataları de dalgalı kırmızı alt çizgi ile gösterilir.
+## <a name="xml-schema-xsd-files"></a>XML şeması (XSD) dosyaları
+Bir XML şema dosyası düzenlenirken, şema önbelleğinde bulunan *XSDSchema. xsd* dosyası doğrulama için kullanılır. Doğrulama hataları mavi dalgalı alt çizgiler olarak gösterilir. Tüm derleme hataları da kırmızı dalgalı alt çizgilerle gösterilir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

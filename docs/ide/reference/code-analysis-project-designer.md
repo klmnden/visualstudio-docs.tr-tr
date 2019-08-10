@@ -13,54 +13,54 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3271befd714f1b07c357426a931d62a7a854cbec
-ms.sourcegitcommit: da4079f5b6ec884baf3108cbd0519d20cb64c70b
+ms.openlocfilehash: 3c31617def66499e29c4c2fc3e2a1804e7446d9c
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "66745000"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926253"
 ---
 # <a name="code-analysis-project-designer"></a>Kod Çözümlemesi, Proje Tasarımcısı
 
-Kodunuz üzerinde çalıştırmak için iyileştirilmiş kod analizi aracı içerir. Microsoft .NET tasarım yönergeleri ile ortaya konan programlama ve tasarım kuralları ihlalleri gibi araç derlemelerinizi, bilgileri raporlar.
+Kodunuzda çalıştırmayı tercih ettiğiniz kod analizi aracını içerir. Araç, Microsoft .NET tasarım yönergelerinden sonra ayarlanan programlama ve tasarım kuralları ihlalleri gibi derlemeleriniz hakkındaki bilgileri raporlar.
 
 ## <a name="uielement-list"></a>UIElement listesi
 
- Kod Analysis etkinleştir\
- Etkinleştirir veya projeniz için Kod Analizi devre dışı bırakır.
+Kod Analysis etkinleştir\
+Projeniz için kod analizini etkinleştirilir veya devre dışı bırakır.
 
- Tasarım Rules\
- Etkinleştirir veya tasarım kuralları devre dışı bırakır. Ayrıca, etkinleştirme veya devre dışı bireysel kuralları bu girdiyi genişletebilirsiniz.
+Tasarım Rules\
+Tasarım kurallarını etkinleştirilir veya devre dışı bırakır. Ayrıca, tek tek kuralları etkinleştirmek veya devre dışı bırakmak için bu girdiyi genişletebilirsiniz.
 
- Genelleştirme Rules\
- Etkinleştirir veya Genelleştirme kuralları devre dışı bırakır. Ayrıca, etkinleştirme veya devre dışı bireysel kuralları bu girdiyi genişletebilirsiniz.
+Genelleştirme Rules\
+Genelleştirme kurallarını etkinleştirilir veya devre dışı bırakır. Ayrıca, tek tek kuralları etkinleştirmek veya devre dışı bırakmak için bu girdiyi genişletebilirsiniz.
 
- Birlikte çalışabilirlik Rules\
- Etkinleştirir veya birlikte çalışabilirlik kuralları devre dışı bırakır. Ayrıca, etkinleştirme veya devre dışı bireysel kuralları bu girdiyi genişletebilirsiniz.
+Birlikte çalışabilirlik Rules\
+Birlikte çalışabilirlik kurallarını etkinleştirilir veya devre dışı bırakır. Ayrıca, tek tek kuralları etkinleştirmek veya devre dışı bırakmak için bu girdiyi genişletebilirsiniz.
 
- Bakım Rules\
- Etkinleştirir veya bakım kuralları devre dışı bırakır. Ayrıca, etkinleştirme veya devre dışı bireysel kuralları bu girdiyi genişletebilirsiniz.
+Bakım Rules\
+Bakım kurallarını etkinleştirilir veya devre dışı bırakır. Ayrıca, tek tek kuralları etkinleştirmek veya devre dışı bırakmak için bu girdiyi genişletebilirsiniz.
 
- Mobility Rules\
- Etkinleştirir veya taşınabilirlik kuralları devre dışı bırakır. Ayrıca, etkinleştirme veya devre dışı bireysel kuralları bu girdiyi genişletebilirsiniz.
+Mobility Rules\
+Mobility kurallarını etkinleştirilir veya devre dışı bırakır. Ayrıca, tek tek kuralları etkinleştirmek veya devre dışı bırakmak için bu girdiyi genişletebilirsiniz.
 
- Rules adlandırma\
- Etkinleştirir veya adlandırma kuralları devre dışı bırakır. Ayrıca, etkinleştirme veya devre dışı bireysel kuralları bu girdiyi genişletebilirsiniz.
+Rules adlandırma\
+Adlandırma kurallarını etkinleştirilir veya devre dışı bırakır. Ayrıca, tek tek kuralları etkinleştirmek veya devre dışı bırakmak için bu girdiyi genişletebilirsiniz.
 
- Performans Rules\
- Etkinleştirir veya performans kuralları devre dışı bırakır. Ayrıca, etkinleştirme veya devre dışı bireysel kuralları bu girdiyi genişletebilirsiniz.
+Performans Rules\
+Performans kurallarını etkinleştirilir veya devre dışı bırakır. Ayrıca, tek tek kuralları etkinleştirmek veya devre dışı bırakmak için bu girdiyi genişletebilirsiniz.
 
- Taşınabilirlik Rules\
- Etkinleştirir veya taşınabilirlik kuralları devre dışı bırakır. Ayrıca, etkinleştirme veya devre dışı bireysel kuralları bu girdiyi genişletebilirsiniz.
+Taşınabilirlik Rules\
+Taşınabilirlik kurallarını etkinleştirilir veya devre dışı bırakır. Ayrıca, tek tek kuralları etkinleştirmek veya devre dışı bırakmak için bu girdiyi genişletebilirsiniz.
 
- Güvenilirlik Rules\
- Etkinleştirir veya güvenilirlik kuralları devre dışı bırakır. Ayrıca, etkinleştirme veya devre dışı bireysel kuralları bu girdiyi genişletebilirsiniz.
+Güvenilirlik Rules\
+Güvenilirlik kurallarını etkinleştirilir veya devre dışı bırakır. Ayrıca, tek tek kuralları etkinleştirmek veya devre dışı bırakmak için bu girdiyi genişletebilirsiniz.
 
- Güvenlik Rules\
- Etkinleştirir veya güvenlik kuralları devre dışı bırakır. Ayrıca, etkinleştirme veya devre dışı bireysel kuralları bu girdiyi genişletebilirsiniz.
+Güvenlik Rules\
+Güvenlik kurallarını etkinleştirilir veya devre dışı bırakır. Ayrıca, tek tek kuralları etkinleştirmek veya devre dışı bırakmak için bu girdiyi genişletebilirsiniz.
 
- Kullanım Rules\
- Etkinleştirir veya kullanım kuralları devre dışı bırakır. Ayrıca, etkinleştirme veya devre dışı bireysel kuralları bu girdiyi genişletebilirsiniz.
+Kullanım Rules\
+Kullanım kurallarını etkinleştirilir veya devre dışı bırakır. Ayrıca, tek tek kuralları etkinleştirmek veya devre dışı bırakmak için bu girdiyi genişletebilirsiniz.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

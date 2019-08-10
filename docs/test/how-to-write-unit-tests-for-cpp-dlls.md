@@ -7,34 +7,34 @@ manager: markl
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 56608e5c930dc94afbb9e8e7d78a8e95b8e2f88b
-ms.sourcegitcommit: ab06cde69d862440b4277bcd9bf02e7b50593a1b
+ms.openlocfilehash: f9f17b129b0d5d85abacb0723b57703db74bcbea
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67132173"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926663"
 ---
 # <a name="write-unit-tests-for-c-dlls-in-visual-studio"></a>Visual Studio'da C++ DLL'leri için birim testleri yazma
 
- DLL kodu, test etmek istediğiniz işlevleri dışa aktarır, bağlı olarak test etmek için birkaç yolu vardır. Aşağıdaki yöntemlerden birini seçin:
+DLL kodu, test etmek istediğiniz işlevleri dışa aktarır, bağlı olarak test etmek için birkaç yolu vardır. Aşağıdaki yöntemlerden birini seçin:
 
- **Birim testlerini DLL'den dışarı aktarılan işlevleri çağırın:** Bölümünde anlatıldığı gibi ayrı bir test projesi Ekle [C/C++ için birim testleri yazma](writing-unit-tests-for-c-cpp.md). Test projesinde DLL projesinden bir başvuru ekleyin.
+**Birim testleri yalnızca DLL 'den aktarılmış işlevleri çağırır:** [C/C++için yazma birim testlerinde](writing-unit-tests-for-c-cpp.md)açıklandığı şekilde ayrı bir test projesi ekleyin. Test projesinde DLL projesinden bir başvuru ekleyin.
 
- Yordamına gidin [dışarı aktarılan işlevleri DLL projesinden başvurma](#projectRef).
+Yordamına gidin [dışarı aktarılan işlevleri DLL projesinden başvurma](#projectRef).
 
- **DLL bir .exe dosyası olarak derlenmiştir** Ayrı bir test projesi ekleyin. Bu çıkış nesnesi dosyasına bağlayın.
+**DLL, bir. exe dosyası olarak oluşturulmuştur:** Ayrı bir test projesi ekleyin. Bu çıkış nesnesi dosyasına bağlayın.
 
- Yordamına gidin [testleri nesneye veya kitaplık dosyalarına bağlama](#objectRef).
+Yordamına gidin [testleri nesneye veya kitaplık dosyalarına bağlama](#objectRef).
 
- **DLL ve DLL'i verilmez birim testleri çağrı üye olmayan işlevleri statik bir kitaplık olarak derlenebilir:** DLL projesi değiştirin, böylece için derlenmiş bir *.lib* dosya. Test altındaki projeye başvuran ayrı bir test projesi ekleyin.
+**Birim testleri DLL 'den verilmeyen üye olmayan işlevleri çağırır ve DLL statik kitaplık olarak oluşturulabilir:** DLL projesini bir *. lib* dosyasına derlenmek üzere değiştirin. Test altındaki projeye başvuran ayrı bir test projesi ekleyin.
 
- Bu yaklaşım, izin verilen olmayan üyeleri kullanabilirsiniz, ancak testleri ayrı bir projede hala devam testlerinizi avantajına sahiptir.
+Bu yaklaşım, izin verilen olmayan üyeleri kullanabilirsiniz, ancak testleri ayrı bir projede hala devam testlerinizi avantajına sahiptir.
 
- Yordamına gidin [DLL statik bir kitaplığa çevirme](#staticLink).
+Yordamına gidin [DLL statik bir kitaplığa çevirme](#staticLink).
 
- **Birim testleri, dışa aktarılmayan üye olmayan işlevleri çağırmalıdır ve kod bir dinamik bağlantı kitaplığı (DLL) derlenmesi gerekir:** Birim testlerini aynı projede ürün kodu olarak ekleyin.
+**Birim testleri, verilmeyen üye olmayan işlevleri çağırmalıdır ve kodun bir dinamik bağlantı kitaplığı (DLL) olarak oluşturulması gerekir:** Birim testlerini ürün koduyla aynı projeye ekleyin.
 
- Yordamına gidin [aynı projede birim testleri eklemek için](#sameProject).
+Yordamına gidin [aynı projede birim testleri eklemek için](#sameProject).
 
 ## <a name="create-the-tests"></a>Testleri oluşturma
 
@@ -58,17 +58,17 @@ ms.locfileid: "67132173"
 
       ::: moniker range="vs-2019"
 
-      1. Üzerinde **dosya** menüsünde seçin **yeni** > **proje**. İçinde **yeni bir proje ekleyin** iletişim kutusunda, kümesi **dil** için C++ ve "test arama kutusuna" yazın. Ardından **yerel birim testi projesi**.
+      1. Üzerinde **dosya** menüsünde seçin **yeni** > **proje**. **Yeni Proje Ekle** Iletişim kutusunda **dil** ' i ayarlayın C++ ve arama kutusuna "test" yazın. Ardından **yerel birim test projesini**seçin.
 
       ::: moniker-end
 
       ::: moniker range="vs-2017"
 
-      1. Üzerinde **dosya** menüsünde seçin **yeni** > **proje** > **Visual C++**  >  **Test** >  **C++ birim testi projesi**.
+      1. **Dosya** menüsünde **Yeni** > **Proje** görsel>Test **birim testi C++ projesi**' ni seçin. **C++** > >
 
       ::: moniker-end
 
-  1. İçinde **Çözüm Gezgini**test projesine sağ tıklayın ve ardından seçin **Ekle** > **başvuru**.
+  1. **Çözüm Gezgini**' de, test projesine sağ tıklayın ve ardından**başvuru** **Ekle** > ' yi seçin.
 
   1. Seçin **projeleri**ve ardından test edilecek projeyi.
 
@@ -90,13 +90,13 @@ ms.locfileid: "67132173"
 
       ::: moniker range="vs-2019"
 
-      1. Üzerinde **dosya** menüsünde seçin **yeni** > **proje**. İçinde **yeni bir proje ekleyin** iletişim kutusunda, kümesi **dil** için C++ ve "test arama kutusuna" yazın. Ardından **yerel birim testi projesi**.
+      1. Üzerinde **dosya** menüsünde seçin **yeni** > **proje**. **Yeni Proje Ekle** Iletişim kutusunda **dil** ' i ayarlayın C++ ve arama kutusuna "test" yazın. Ardından **yerel birim test projesini**seçin.
 
       ::: moniker-end
-      
+
       ::: moniker range="vs-2017"
 
-      1. Üzerinde **dosya** menüsünde seçin **yeni** > **proje** > **Visual C++**  >  **Test** >  **C++ birim testi projesi**.
+      1. **Dosya** menüsünde **Yeni** > **Proje** görsel>Test **birim testi C++ projesi**' ni seçin. **C++** > >
 
       ::: moniker-end
 
@@ -174,6 +174,6 @@ ms.locfileid: "67132173"
 - [C/C++ için birim testleri yazma](writing-unit-tests-for-c-cpp.md)
 - [Microsoft.VisualStudio.TestTools.CppUnitTestFramework API Reference](../test/microsoft-visualstudio-testtools-cppunittestframework-api-reference.md)
 - [Yerel kodda hata ayıklama](../debugger/debugging-native-code.md)
-- [İzlenecek yol: Bir dinamik bağlantı kitaplığı (C++) oluşturma ve kullanma](/cpp/build/walkthrough-creating-and-using-a-dynamic-link-library-cpp)
+- [İzlenecek yol: Dinamik bağlantı kitaplığı oluşturma ve kullanma (C++)](/cpp/build/walkthrough-creating-and-using-a-dynamic-link-library-cpp)
 - [İçeri ve dışarı aktarma](/cpp/build/importing-and-exporting)
-- [Hızlı Başlangıç: Test Gezgini ile test güdümlü geliştirme](../test/quick-start-test-driven-development-with-test-explorer.md)
+- [Hızlı Başlangıç: Test Gezgini ile test temelli geliştirme](../test/quick-start-test-driven-development-with-test-explorer.md)

@@ -7,80 +7,80 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: ae861814a7219bfca1d6a074316910d459fc9999
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c7087f08743e58426663734295339d9ca6550a0d
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62973194"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926582"
 ---
 # <a name="using-html5-controls-in-coded-ui-tests"></a>Kodlanmış UI testlerinde HTML5 denetimleri kullanma
 
-Kodlanmış UI testleri, Internet Explorer 9 ve Internet Explorer 10 HTML5 denetimleri bazıları için destek içerir.
+Kodlanmış UI testleri, Internet Explorer 9 ve Internet Explorer 10 ' da bulunan HTML5 denetimlerinin bazılarına yönelik destek içerir.
 
 [!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
- **Gereksinimler**
+**Gereksinimler**
 
 - Visual Studio Enterprise
 
 > [!WARNING]
-> Internet Explorer 10 önceki sürümlerinde, kodlanmış UI testleri, Internet Explorer işlemi kıyasla daha yüksek bir ayrıcalık düzeyinde çalıştırmak mümkün oldu. Kodlanmış UI testleri, Internet Explorer 10'da çalıştırırken, kodlanmış UI testi hem de Internet Explorer işlemi aynı ayrıcalık düzeyinde olması gerekir. Internet Explorer 10 daha güvenli bir AppContainer özellikleri nedeniyle budur.
+> Internet Explorer 10 ' dan önceki sürümlerde, kodlanmış UI testlerini Internet Explorer süreciyle karşılaştırıldığında daha yüksek bir ayrıcalık düzeyinde çalıştırmak mümkün oldu. Internet Explorer 10 ' da kodlanmış UI testleri çalıştırılırken, hem kodlanmış UI testi hem de Internet Explorer işlemi aynı ayrıcalık düzeyinde olmalıdır. Bunun nedeni, Internet Explorer 10 ' da daha güvenli AppContainer özellikleri.
 
 > [!WARNING]
-> Internet Explorer 10'da kodlanmış UI testi oluşturursanız, Internet Explorer 9 veya Internet Explorer 8 kullanarak çalışmayabilir. Internet Explorer 10, ses, Video, ProgressBar ve kaydırıcı gibi HTML5 denetimlerini içermesidir budur. Bu HTML5 denetimleri, Internet Explorer 9 veya Internet Explorer 8 tarafından tanınmaz. Benzer şekilde, Internet Explorer 9 kullanarak kodlanmış UI testleri, Internet Explorer 8 tarafından tanınmayacak bazı HTML5 denetimleri de içerebilir.
+> Internet Explorer 10 ' da kodlanmış UI testi oluşturursanız, Internet Explorer 9 veya Internet Explorer 8 kullanılarak çalışmayabilir. Bunun nedeni, Internet Explorer 10 ' un ses, video, ProgressBar ve kaydırıcı gibi HTML5 denetimlerini içermektir. Bu HTML5 denetimleri, Internet Explorer 9 veya Internet Explorer 8 tarafından tanınmaz. Benzer şekilde, Internet Explorer 9 kullanarak kodlanmış UI testleri, Internet Explorer 8 tarafından tanınmayacak bazı HTML5 denetimleri de içerebilir.
 
 ## <a name="audio-control"></a>Ses denetimi
 
-**Ses denetimi:** HTML5 sesi denetim eylemleri doğru şekilde kaydedilir ve kayıttan yürütülebilir.
+**Ses denetimi:** HTML5 ses denetimindeki eylemler doğru şekilde kaydedilir ve kayıttan yürütülür.
 
-![HTML5 sesi denetimi](../test/media/codedui_html5_audio.png)
+![HTML5 ses denetimi](../test/media/codedui_html5_audio.png)
 
-|Eylem|Kaydetme|Oluşturulan kod|
+|Eylem|Yapılmıyor|Oluşturulan kod|
 |-|---------------|-|
-|**Ses kaydını oynatın**<br /><br /> Doğrudan denetim veya denetimin sağ tıklama menüsü.|Play \<adı > ses 00:00:00|HtmlAudio.Play(TimeSpan)|
-|**Ses belirli bir sürede arama**|Arama \<adı > ses 00:01:48|HtmlAudio.Seek(TimeSpan)|
-|**Duraklatma ses**<br /><br /> Doğrudan denetim veya denetimin sağ tıklama menüsü.|Duraklatma \<adı > 00:01:53, ses|HtmlAudio.Pause(TimeSpan)|
-|**Sesi kapa ses**<br /><br /> Doğrudan denetim veya denetimin sağ tıklama menüsü.|Sesi kapa \<adı > ses|HtmlAudio.Mute()|
-|**Ses sesi Aç**<br /><br /> Doğrudan denetim veya denetimin sağ tıklama menüsü.|Sesi Aç \<adı > ses|HtmlAudio.Unmute()|
-|**Ses birimi değiştirin**|Ayarlama hacmi \<adı > ses % 79 arasında değişiyor|HtmlAudio.SetVolume(float)|
+|**Ses çal**<br /><br /> Doğrudan denetimden veya denetimin sağ tıklama menüsünden.|00:00:00 \<'den Ses > oynatma adı|Htmdefdio. Play (TimeSpan)|
+|**Ses içinde belirli bir zamana arama**|> \<İçin ses arama adı 00:01:48|Htmdefdio. Seek (TimeSpan)|
+|**Sesi Duraklat**<br /><br /> Doğrudan denetimden veya denetimin sağ tıklama menüsünden.|00:01:53 \<konumunda > adlı sesi Duraklat|Htmdefdio. Pause (TimeSpan)|
+|**Sesi sustur**<br /><br /> Doğrudan denetimden veya denetimin sağ tıklama menüsünden.|Sessiz \<ad > Ses|Htmdefdio. Mute ()|
+|**Sesi aç**<br /><br /> Doğrudan denetimden veya denetimin sağ tıklama menüsünden.|> \<Sesi aç|Htmdefdio. aç ()|
+|**Ses düzeyini Değiştir**|> Ses \<adı birimini% 79 olarak ayarlayın|Htmdefdio. SetVolume (float)|
 
-Bkz: [HTMLAudioElement](https://developer.mozilla.org/docs/Web/API/HTMLAudioElement) onaylama üzerinde ekleyebileceğiniz özellikler listesi.
+Onaylama ekleyebileceğiniz özelliklerin listesi için bkz. [Htmdefdioelement](https://developer.mozilla.org/docs/Web/API/HTMLAudioElement) .
 
- **Arama özellikleri:** Arama özelliklerini `HtmlAudio` olan `Id`, `Name` ve `Title`.
+**Arama özellikleri:** İçin `HtmlAudio` arama özellikleri ve `Name` `Id` '`Title`dir.
 
- **Filtre özellikleri:** Filtre özelliklerini `HtmlAudio` olan `Src`, `Class`, `ControlDefinition` ve `TagInstance`.
+**Filtre Özellikleri:** İçin `HtmlAudio` filtre özellikleri, `Src` `Class` ve`TagInstance`'dir. `ControlDefinition`
 
 > [!NOTE]
-> Arama ve duraklatma süreyi önemli ölçüde fazla olabilir. Kayıttan yürütme sırasında kodlanmış UI testi belirtilen süre içinde kadar bekleyin `(TimeSpan)` ses duraklatmadan önce. Bazı özel durumda tarafından duraklatma komutunu ulaşmaktan önce belirtilen zaman geçtiyse, bir özel durum oluşturulur.
+> Arama ve duraklatma için zaman miktarı önemli olabilir. Kayıttan yürütme sırasında, kodlanmış UI testi sesi duraklatmadan önce içinde `(TimeSpan)` belirtilen zamana kadar bekler. Bazı özel durumlar tarafından, belirtilen süre duraklatma komutuna vurmadan önce geçmişse, bir özel durum oluşturulur.
 
 ## <a name="video-control"></a>Video denetimi
- **Video denetimi:** HTML5 Video denetimi eylemlerini doğru şekilde kaydedilir ve kayıttan yürütülebilir.
+**Video denetimi:** HTML5 video denetimindeki eylemler doğru şekilde kaydedilir ve kayıttan yürütülür.
 
- ![HTML5 Video denetimi](../test/media/codedui_html5_video.png)
+![HTML5 video denetimi](../test/media/codedui_html5_video.png)
 
-|Eylem|Kaydetme|Oluşturulan kod|
+|Eylem|Yapılmıyor|Oluşturulan kod|
 |-|---------------|-|
-|**Videoyu oynat**<br /><br /> Doğrudan denetim veya denetimin sağ tıklama menüsü.|Play \<adı > Video 00:00:00|HtmlVideo.Play(TimeSpan)|
-|**Belirli bir zaman video arama**|Arama \<adı > Video 00:01:48|HtmlVideo.Seek(TimeSpan)|
-|**Videoyu Duraklat**<br /><br /> Doğrudan denetim veya denetimin sağ tıklama menüsü.|Duraklatma \<adı > 00:01:53, Video|HtmlVideo.Pause(TimeSpan)|
-|**Sesi kapa video**<br /><br /> Doğrudan denetim veya denetimin sağ tıklama menüsü.|Sesi kapa \<adı > Video|HtmlVideo.Mute()|
-|**Video Sesi Aç**<br /><br /> Doğrudan denetim veya denetimin sağ tıklama menüsü.|Sesi Aç \<adı > Video|HtmlVideo.Unmute()|
-|**Video toplu değiştirme**|Ayarlama hacmi \<adı > % 79 arasında değişiyor Video||
+|**Videoyu oynat**<br /><br /> Doğrudan denetimden veya denetimin sağ tıklama menüsünden.|> \<Oynatma adı video 00:00:00|HtmlVideo. Play (TimeSpan)|
+|**Videoda belirli bir zamana arama**|> \<Video ile 00:01:48 arasındaki arama adı|HtmlVideo. Seek (TimeSpan)|
+|**Videoyu Duraklat**<br /><br /> Doğrudan denetimden veya denetimin sağ tıklama menüsünden.|00:01:53 \<adresinde > videoyu Duraklat|HtmlVideo. Pause (TimeSpan)|
+|**Videoyu sustur**<br /><br /> Doğrudan denetimden veya denetimin sağ tıklama menüsünden.|Sessiz \<ad > videosu|HtmlVideo. Mute ()|
+|**Videoyu aç**<br /><br /> Doğrudan denetimden veya denetimin sağ tıklama menüsünden.|Ad \<> videoyu aç|HtmlVideo. aç ()|
+|**Video hacmini değiştirme**|Video > \<adı birimini% 79 olarak ayarlayın||
 
-Bkz: [HTMLVideoElement](https://developer.mozilla.org/docs/Web/HTML/Element/video) onaylama üzerinde ekleyebileceğiniz özellikler listesi.
+Onaylama ekleyebileceğiniz özelliklerin listesi için bkz. [Htmlvideoelement](https://developer.mozilla.org/docs/Web/HTML/Element/video) .
 
- **Arama özellikleri:** Arama özelliklerini `HtmlVideo` olan `Id`, `Name` ve `Title`.
+**Arama özellikleri:** İçin `HtmlVideo` arama özellikleri ve `Name` `Id` '`Title`dir.
 
- **Filtre özellikleri:** Filtre özelliklerini `HtmlVideo` olan `Src`, `Poster`, `Class`, `ControlDefinition` ve `TagInstance`.
+**Filtre Özellikleri:** İçin `HtmlVideo` filtre özellikleri, `Src` `Poster` ,ve`TagInstance`'dir. `Class` `ControlDefinition`
 
 > [!NOTE]
-> Geri veya ileri sarma-30s veya +30s etiketleri kullanarak video, bu uygun zaman aramak için toplanacak.
+> -30s veya + 30s etiketlerini kullanarak videoyu geri sarın veya ileri sardıysanız, bu, uygun zamana göre arama yapmak için toplanır.
 
 ## <a name="progressbar"></a>ProgressBar
- **ProgressBar denetimi:** ProgressBar interactable olmayan bir denetimdir. Onaylamalar ekleyebilirsiniz `Value` ve `Max` bu denetimin özelliklerini. Daha fazla bilgi için [HTMLProgressElement](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/progress).
+**ProgressBar denetimi:** ProgressBar, ınteractable olmayan bir denetimdir. Bu denetimin `Value` ve `Max` özelliklerine onay ekleyebilirsiniz. Daha fazla bilgi için bkz. [HTMLProgressElement](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/progress).
 
- ![HTML5 ProgressBar denetimi](../test/media/codedui_html5_progressbar.png)
+![HTML5 ProgressBar denetimi](../test/media/codedui_html5_progressbar.png)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

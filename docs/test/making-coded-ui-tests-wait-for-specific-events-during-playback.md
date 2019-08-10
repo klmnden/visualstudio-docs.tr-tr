@@ -1,5 +1,5 @@
 ---
-title: Belirli olaylar için kodlanmış UI testlerini bekletme olun
+title: Kodlanmış UI testlerinin belirli olayları beklemesini sağlama
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: gewarren
@@ -7,16 +7,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3e2c83b74c2649681251ffa51f1366c0ce96d677
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 84a8ad1784ce33d30ce1023f0554feeb340b5703
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62788817"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68923642"
 ---
-# <a name="make-coded-ui-tests-wait-for-specific-events-during-playback"></a>Kayıttan yürütme sırasında belirli olaylar için bekleyin, kodlanmış UI testleri yapın
+# <a name="make-coded-ui-tests-wait-for-specific-events-during-playback"></a>Kayıttan yürütme sırasında belirli olaylar için kodlanmış UI testlerinin beklemesini sağlama
 
-Bir kodlanmış UI Testi kayıttan yürütmesinde kaybolur ve benzeri için ilerleme çubuğunu oluşmasına görünmesi için bir pencere gibi belirli olaylar için beklenecek test bildirebilirsiniz. Bunu yapmak için aşağıdaki tabloda açıklandığı gibi uygun UITestControl.WaitForControlXXX() yöntemi kullanın. Bir denetimi kullanarak etkin olmasını bekler bir kodlanmış UI testine ilişkin bir örnek <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlEnabled%2A> yöntemi bkz [izlenecek yol: Oluşturma, düzenleme ve kodlanmış UI testi koruma](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md).
+Kodlanmış bir UI Testi Kayıttan yürütmede, teste bir pencere, ilerleme çubuğunun kaybolması gibi belirli olayların gerçekleşmesini beklemek için teste talimat verebilirsiniz. Bunu yapmak için, aşağıdaki tabloda açıklandığı gibi uygun UITestControl. WaitForControlXXX () metodunu kullanın. <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlEnabled%2A> Yöntemi kullanılarak bir denetimin etkinleştirilmesini bekleyen kodlanmış UI testinin bir örneği için bkz [. İzlenecek yol: Kodlanmış UI testi](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)oluşturma, düzenlememe ve sürdürme.
 
 [!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
@@ -25,37 +25,37 @@ Bir kodlanmış UI Testi kayıttan yürütmesinde kaybolur ve benzeri için iler
 Visual Studio Enterprise
 
 > [!TIP]
-> Kodlanmış UI Test düzenleyicisini kullanarak Eylemler önce gecikmelere de ekleyebilirsiniz. Daha fazla bilgi için [nasıl yapılır: Kodlanmış UI Test düzenleyicisini kullanarak bir UI eyleminden önce gecikme Ekle](editing-coded-ui-tests-using-the-coded-ui-test-editor.md#insert-a-delay-before-a-ui-action).
+> Ayrıca, kodlanmış UI test düzenleyicisini kullanarak eylemlerin önüne gecikme ekleyebilirsiniz. Daha fazla bilgi için [nasıl yapılır: Kodlanmış UI test düzenleyicisini](editing-coded-ui-tests-using-the-coded-ui-test-editor.md#insert-a-delay-before-a-ui-action)kullanarak bir kullanıcı arabirimi eyleminden önce bir gecikme ekleyin.
 
-**UITestControl.WaitForControlXXX() Methods**
+**Uııtemstcontrol. WaitForControlXXX () yöntemleri**
 
 <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlReady%2A>
 
-Denetim için fare ve klavye girdisi kabul etmeye hazır olmasını bekler. Altyapı denetimi, herhangi bir işlem yapmadan önce hazır olmasını beklemek için bu API tüm eylemler için örtük olarak çağırır. Ancak, bazı nadir bulunan bir senaryoda, açık bir çağrı yapmanız gerekebilir.
+Denetimin, fare ve klavye girişini kabul etmeye hazırmasını bekler. Motor herhangi bir işlem yapmadan önce denetimin hazırlanmasını beklemek için tüm eylemler için bu API 'YI örtülü olarak çağırır. Ancak, bazı esoteric senaryosunda açık çağrı yapmanız gerekebilir.
 
 <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlEnabled%2A>
 
-Denetimi Sihirbazı sunucuya çağrıları yaparak bazı zaman uyumsuz doğrulama giriş, etkin olmasını bekler. Beklenecek yöntemi gibi yapabilecekleriniz **sonraki** düğmesi etkin () olacak şekilde Sihirbazı. Bu yöntem bir örnek için bkz [izlenecek yol: Oluşturma, düzenleme ve kodlanmış UI testi koruma](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md).
+Sihirbaz sunucuya çağrılar yaparak girişin zaman uyumsuz doğrulamasını yaparken denetimin etkinleştirilmesini bekler. Örneğin, sihirbazın bir **sonraki** düğmesinin etkinleştirilmesini beklemek için yöntemini () kullanabilirsiniz. Bu yöntemin bir örneği için bkz [. İzlenecek yol: Kodlanmış UI testi](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)oluşturma, düzenlememe ve sürdürme.
 
 <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlExist%2A>
 
-Kullanıcı Arabirimi üzerindeki görüntülenmesini denetim için bekler. Örneğin, uygulamanın doğrulama parametrelerinin tamamladıktan sonra bir hata iletişim kutusu bekliyorsunuz. Doğrulama için geçen süre değişkendir. Hata iletişim kutusunu beklemek için bu yöntemi kullanabilirsiniz.
+Denetimin kullanıcı arabiriminde görünmesini bekler. Örneğin, uygulama parametrelerin doğrulanmasını tamamladıktan sonra bir hata iletişim kutusu bekliyor. Doğrulama için geçen süre değişkendir. Hata iletişim kutusunu beklemek için bu yöntemi kullanabilirsiniz.
 
 <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlNotExist%2A>
 
-Kullanıcı Arabiriminden kayboluyor denetimi için bekler. Örneğin, kaybolmuş ilerleme çubuğunun tamamlanmasını bekleyebilirsiniz.
+Denetimin kullanıcı arabiriminden kaybolması için bekler. Örneğin, ilerleme çubuğunun kaybolmasını bekleyebilirsiniz.
 
 <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlPropertyEqual%2A>
 
-Verilen değer sağlamak için denetimi belirtilen özellik için bekler. Örneğin, durum metni değiştirmek beklemeniz **Bitti**.
+Denetimin belirtilen özelliğinin verilen değere sahip olmasını bekler. Örneğin, durum metninin tamamlanmasını bekleyin.
 
 <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlPropertyNotEqual%2A>
 
-Belirtilen değere tam tersi için denetimin belirtilen özellik için bekler. Örneğin, salt okunur olmaması için düzenleme kutusuna diğer bir deyişle, bekleme düzenlenebilir.
+Denetimin belirtilen özelliğinin belirtilen değerin tersi olmasını bekler. Örneğin, düzenleme kutusunun salt okunurdur, diğer bir deyişle düzenlenebilir olmasını bekleyebilirsiniz.
 
 <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlCondition%2A>
 
-Belirtilen önerme olmasını döndürür bekler `true`. Bu, karmaşık bekleme işlemi (veya koşulları gibi) belirli bir denetim için kullanılabilir. Örneğin, durum metni kadar bekleyebilirsiniz **başarılı** veya **başarısız** aşağıdaki kodda gösterildiği gibi:
+Belirtilen koşulun olarak dönüşmesini `true`bekler. Bu, belirli bir denetimdeki karmaşık bekleme işlemi (veya koşullar gibi) için kullanılabilir. Örneğin, aşağıdaki kodda gösterildiği gibi durum metni **başarılı** veya **başarısız** olana kadar bekleyebilirsiniz:
 
 ```csharp
 
@@ -72,7 +72,7 @@ statusText.WaitForControlCondition(IsStatusDone);
 
  <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForCondition%2A>
 
- Önceki tüm yöntemler, UITestControl, örnek yöntemlerdir. Bu yöntem statik bir yöntemdir. Bu yöntem ayrıca belirtilen bir koşulu olmasını bekler `true` ancak birden çok denetimin (veya koşulları gibi) karmaşık bekleme işlemi için kullanılabilir. Örneğin, durum metni kadar bekleyebilirsiniz **başarılı** veya aşağıdaki kodda gösterildiği gibi bir hata iletisi görünene kadar:
+Önceki tüm yöntemler UITestControl örnek yöntemleridir. Bu yöntem, statik bir yöntemdir. Bu yöntem ayrıca, belirtilen koşulun olmasını `true` bekler, ancak birden fazla denetim üzerinde karmaşık bekleme işlemi (veya koşullar gibi) için kullanılabilir. Örneğin, aşağıdaki kodda gösterildiği gibi, durum metni **başarılı** olana veya bir hata iletisi görünene kadar bekleyebilirsiniz:
 
 ```csharp
 
@@ -88,28 +88,28 @@ private static bool IsStatusDoneOrError(UITestControl[] controls)
 UITestControl.WaitForCondition<UITestControl[]>(new UITestControl[] { statusText, errorDialog }, IsStatusDoneOrError);
 ```
 
- Bu yöntemlerin tümü aşağıdaki davranışa sahip:
+Tüm bu yöntemler aşağıdaki davranışa sahiptir:
 
- Yöntemler, bekleme başarısız olduysa bekleme başarılı false ise true döndürür.
+Bu yöntemler, bekleme başarılı olursa true, bekleme başarısız olursa false döndürür.
 
- Örtük zaman aşımı için bekleme işlemi tarafından belirtilen <xref:Microsoft.VisualStudio.TestTools.UITesting.PlaybackSettings.WaitForReadyTimeout%2A> özelliği. Bu özelliğin varsayılan değeri 60000 (bir dakika) milisaniyedir.
+Bekleme işlemi için örtük zaman aşımı, özelliği tarafından <xref:Microsoft.VisualStudio.TestTools.UITesting.PlaybackSettings.WaitForReadyTimeout%2A> belirtilir. Bu özelliğin varsayılan değeri 60000 milisaniyedir (bir dakika).
 
- Açık zaman aşımı milisaniye içinde gerçekleştirilecek bir aşırı yükleme yöntemleri vardır. Ancak, bekleme işlemi örtülü bir arama denetimi için veya uygulama meşgul olduğunda sonuçları, gerçek bir bekleme süresi belirtilen zaman aşımı değeri fazla olabilir.
+Metotlarda, zaman aşımı süresi (milisaniye) olan bir aşırı yükleme vardır. Ancak, bekleme işlemi denetim için örtük bir aramaya neden olduğunda veya uygulama meşgul olduğunda, gerçek bekleme süresi belirtilen zaman aşımından daha fazla olabilir.
 
- Önceki İşlevler, güçlü ve esnektir ve neredeyse tüm koşulları karşılaması gerekir. Ancak durumda bu yöntem, gereksinimlerinizi karşılamayan ve ya da kod gerekiyorsa bir <xref:Microsoft.VisualStudio.TestTools.UITesting.Playback.Wait%2A>, veya bir <xref:System.Threading.Thread.Sleep%2A> kodunuzda Playback.Wait() Thread.Sleep() API'si yerine kullanmanız önerilir. Bu nedenleri şunlardır:
+Önceki işlevler güçlü ve esnektir ve neredeyse tüm koşulları karşılamalıdır. Bununla birlikte, bu yöntemlerin gereksinimlerinizi karşılamadığı durumlarda ve kodunuzda bir <xref:Microsoft.VisualStudio.TestTools.UITesting.Playback.Wait%2A>veya bir <xref:System.Threading.Thread.Sleep%2A> olarak kod oluşturmanız gerekiyorsa, Thread. Sleep () API yerine playback. Wait () kullanmanız önerilir. Bunun nedenleri şunlardır:
 
- Kullanabileceğiniz <xref:Microsoft.VisualStudio.TestTools.UITesting.PlaybackSettings.ThinkTimeMultiplier%2A>uyku süresi değiştirmek için özellik. Varsayılan olarak, bu değişken 1'dir ancak artırıp kod karşısında bekleme süresini değiştirmek için azaltabilirsiniz. Örneğin, özellikle yavaş ağ veya diğer bir yavaş performans olay üzerinden test ediyorsanız, %1.5 50 ilave tüm konumlarda bekleyin eklemek için bu değişkeni, tek bir yerde (veya hatta yapılandırma dosyasında) değiştirebilirsiniz.
+Uyku süresini değiştirmek için <xref:Microsoft.VisualStudio.TestTools.UITesting.PlaybackSettings.ThinkTimeMultiplier%2A>özelliğini kullanabilirsiniz. Bu değişken varsayılan olarak 1 ' dir, ancak tüm kod üzerinde bekleme süresini değiştirmek için onu artırabilir veya azaltabilirsiniz. Örneğin, yavaş ağ üzerinden özel olarak test ediyorsanız veya başka bir performans durumu varsa, her yerde% 50 ekstra wait eklemek için bu değişkeni tek bir yerde (veya yapılandırma dosyasında bile) 1,5 olarak değiştirebilirsiniz.
 
- Playback.Wait() içten Thread.Sleep() çağırır (sonra hesaplama yukarıda) için-kullanıcı cancel\break işlemi için denetlenirken döngü içinde daha küçük öbekler halinde. Diğer bir deyişle, kayıttan yürütme ise bekleme bitiminden önce iptal Playback.Wait() uyku değil veya özel durum.
+Playback. Wait (), Kullanıcı cancel\break işlemini denetlerken bir for döngüsünde Iş parçacığı. Sleep () öğesini (hesaplamadan sonra) bir for döngüsünde daha küçük parçalara göre dahili olarak çağırır. Diğer bir deyişle oynatma. Wait (), bekleme sonundan önce kayıttan yürütmeyi iptal etmenizi sağlar, ancak işlem özel durum oluşturmaz.
 
 > [!TIP]
-> Kodlanmış UI Test Düzenleyicisi'ni kullanarak kodlanmış UI testlerini kolayca değiştirmenize olanak tanır. Kodlanmış UI Test Düzenleyicisi'ni kullanarak bulun, görüntüleyin ve test yöntemlerinizi düzenleyin. UI eylemlerini ve bunların ilişkili denetimleri UI kontrol haritasında de düzenleyebilirsiniz. Daha fazla bilgi için [düzenleme kodlanmış UI testleri, kodlanmış UI Test düzenleyicisini kullanarak](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md).
+> Kodlanmış UI Testi Düzenleyicisi, kodlanmış UI testlerinizi kolayca değiştirmenize olanak sağlar. Kodlanmış UI test düzenleyicisini kullanarak test yöntemlerinizi bulabilir, görüntüleyebilir ve düzenleyebilirsiniz. UI eylemlerini ve bunlarla ilişkili denetimleri kullanıcı arabirimi denetim eşlemesinde da düzenleyebilirsiniz. Daha fazla bilgi için bkz. [kodlanmış UI test düzenleyicisini kullanarak KODLANMıŞ UI testlerini düzenleme](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 - [UI otomasyonunu kullanarak kodunuzu test etme](../test/use-ui-automation-to-test-your-code.md)
 - [Kodlanmış UI testleri oluşturma](../test/use-ui-automation-to-test-your-code.md)
-- [İzlenecek yol: Oluşturma, düzenleme ve kodlanmış UI testi bakımını yapma](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)
-- [Kodlanmış UI testinin anatomisi](../test/anatomy-of-a-coded-ui-test.md)
+- [İzlenecek yol: Kodlanmış UI testi oluşturma, düzenlememe ve sürdürme](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)
+- [Kodlanmış UI testinin anatomumu](../test/anatomy-of-a-coded-ui-test.md)
 - [Kodlanmış UI testleri ve eylem kayıtları için desteklenen yapılandırmalar ve platformlar](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
-- [Nasıl yapılır: Kodlanmış UI test düzenleyicisini kullanarak bir UI eyleminden önce gecikme Ekle](editing-coded-ui-tests-using-the-coded-ui-test-editor.md#insert-a-delay-before-a-ui-action)
+- [Nasıl yapılır: Kodlanmış UI test düzenleyicisini kullanarak bir kullanıcı arabirimi eyleminden önce bir gecikme ekleyin](editing-coded-ui-tests-using-the-coded-ui-test-editor.md#insert-a-delay-before-a-ui-action)

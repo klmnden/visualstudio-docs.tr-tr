@@ -11,18 +11,18 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8367400df14f9a5e5c846a6df52e1a5fc7b8ec21
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
+ms.openlocfilehash: 620ffa1ea23c2c892e8385bd9e81a07fb640411a
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68416740"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68918907"
 ---
 # <a name="specify-custom-build-events-in-visual-studio"></a>Visual Studio'da özel derleme olayları belirtme
 
 Özel derleme olay belirterek, otomatik olarak komutları bir oluşturma başlamadan önce veya bittikten sonra çalıştırabilirsiniz. Örneğin, çalıştırabileceğiniz bir *.bat* bir oluşturma başlamadan önce dosya veya derleme tamamlandıktan sonra yeni dosyalar bir klasöre kopyalayın. Derleme olayları, yalnızca derlemenin yapı işleminde bu noktaları başarıyla ulaşırsa çalıştırın.
 
- Kullandığınız programlama diline hakkında ayrıntılı bilgi için aşağıdaki konulara bakın:
+Kullandığınız programlama diline hakkında ayrıntılı bilgi için aşağıdaki konulara bakın:
 
 - Visual Basic--[nasıl yapılır: Derleme olaylarını belirtin (Visual Basic)](../ide/how-to-specify-build-events-visual-basic.md).
 
@@ -34,7 +34,7 @@ ms.locfileid: "68416740"
 
 DOS komut aynı söz dizimini derleme olayları izleyin, ancak makroları derleme olayları daha kolay oluşturmak için kullanabilirsiniz. Kullanılabilir makrolar bir listesi için bkz. [derleme öncesi olay/derleme sonrası olay komut satırı iletişim kutusu](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md).
 
- En iyi sonuçlar için ipuçları biçimlendirme adımları izleyin:
+En iyi sonuçlar için ipuçları biçimlendirme adımları izleyin:
 
 - Ekleme bir `call` tüm çalışan olayları oluşturmadan önce deyimi *.bat* dosyaları.
 

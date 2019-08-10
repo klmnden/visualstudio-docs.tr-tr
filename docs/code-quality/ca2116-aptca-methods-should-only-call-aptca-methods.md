@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 03948506d928f7d638b21c1fa4bc0a35818ec09a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f55c48583e47a4602f33d69799d1d86a6c9c3e56
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62545429"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68921153"
 ---
 # <a name="ca2116-aptca-methods-should-only-call-aptca-methods"></a>CA2116: APTCA metotları yalnızca APTCA metotlarını çağırmalıdır
 
@@ -32,42 +32,42 @@ ms.locfileid: "62545429"
 
 ## <a name="cause"></a>Sebep
 
-Bir derlemeye bir yöntemde <xref:System.Security.AllowPartiallyTrustedCallersAttribute?displayProperty=fullName> özniteliği özniteliğine sahip bir derlemede bir yöntemi çağırır.
+<xref:System.Security.AllowPartiallyTrustedCallersAttribute?displayProperty=fullName> Özniteliği olan derlemedeki bir yöntem özniteliği olmayan bir derlemede bir yöntemi çağırır.
 
 ## <a name="rule-description"></a>Kural açıklaması
 
-Varsayılan olarak, ortak veya korumalı yöntem tanımlayıcı ada sahip derlemelerde örtük olarak tarafından korunan bir [bağlantı talepleri](/dotnet/framework/misc/link-demands) tam güven için; yalnızca tam olarak güvenilen Arayanların bir katı adlı derleme erişim sağlayabilir. Tanımlayıcı adlandırılmış derlemeler ile işaretlenen <xref:System.Security.AllowPartiallyTrustedCallersAttribute> özniteliği (APTCA) Bu koruma sahip değil. Öznitelik yalnızca intranet veya internette çalıştırılan kod gibi tam güven derleme üstlenir bağlantı talebi, devre dışı bırakır.
+Varsayılan olarak, tanımlayıcı adlara sahip derlemelerde ortak veya korumalı Yöntemler, tam güven için [bağlantı taleplerine](/dotnet/framework/misc/link-demands) dolaylı olarak korunur; yalnızca tam güvenilir çağıranlar, tanımlayıcı adlı bir derlemeye erişebilir. <xref:System.Security.AllowPartiallyTrustedCallersAttribute> (Aptca) özniteliğiyle işaretlenen tanımlayıcı adlı derlemelerin bu koruması yoktur. Öznitelik, bir intranet veya Internet 'ten çalıştırılan kod gibi, derlemeyi tam güvene sahip olmayan çağıranlar için erişilebilir hale getirerek bağlantı talebini devre dışı bırakır.
 
-APTCA özniteliği tam olarak güvenilen bir derlemede yapılandırıldığında ve derleme, kodu kısmen güvenilmeyen çağrıcılara izin vermeyen başka bir derlemede yürütür, güvenlik yararlanması mümkündür. İki yöntem `M1` ve `M2` aşağıdaki koşullara uyması, zararlı çağıranlar yöntemi kullanabileceğiniz `M1` korur örtük tam güven bağlantı talebi atlamak için `M2`:
+APTCA özniteliği tam olarak güvenilen bir derlemede olduğunda ve derleme kodu, kısmen güvenilen çağıranlara izin verilmeyen başka bir derlemede yürüttüğünde, bir güvenlik açığından yararlanma olasılığı vardır. İki yöntem `M1` ve `M2` aşağıdaki koşulları karşılıyorsa, kötü amaçlı arayanlar, koruduğu `M2`örtük tam `M1` güven bağlantısı talebini atlamak için yöntemini kullanabilir:
 
-- `M1` Genel bir yöntem APTCA özniteliği tam olarak güvenilen bir derlemede bildirilmiş.
+- `M1`, APTCA özniteliğine sahip tam güvenilir bir derlemede bildirildiği ortak bir yöntemdir.
 
-- `M1` bir yöntemi çağıran `M2` dışında `M1`ait derleme.
+- `M1`derleme dışında `M2` `M1`bir yöntemi çağırır.
 
-- `M2`kişinin derleme APTCA özniteliği yok ve bu nedenle, kısmen güvenilen Arayanların tarafınıza sağladığı veya müşteriler yürütülmemesi.
+- `M2`derlemesinin APTCA özniteliği yok ve bu nedenle, kısmen güvenilen çağıranlar adına veya tarafından yürütülmemelidir.
 
-Kısmen güvenilen bir çağıranın `X` yöntemi çağırabilirsiniz `M1`, neden `M1` çağrılacak `M2`. Çünkü `M2` APTCA özniteliği veya onun şu anki çağırıcı sahip değil (`M1`); tam güven için bağlantı talebi karşılamalıdır `M1` tam güvene sahip ve bu nedenle bu denetimi karşılar. Güvenlik riski çünkü `X` korur bağlantı talebi karşılamadığınızı içinde yer almaz `M2` güvenilmeyen çağıranlar öğesinden. Bu nedenle, özniteliğine sahip olmayan yöntemleri APTCA özniteliğine sahip yöntemleri çağırmamalıdır.
+Kısmen güvenilen bir çağıran `X` yöntemi `M1`çağırabilir ve çağrıya `M2`neden `M1` olur. Aptca özniteliğine sahip olmadığı için, hemen çağıranın (`M1`) tam güven için bir bağlantı talebini karşılaması gerekir; `M2` `M1` tam güvene sahiptir ve bu nedenle bu denetimi karşılar. Güvenlik riski `X` , güvenilmeyen çağıranların koruduğu `M2` bağlantı talebini karşılamadığına katılmaz. Bu nedenle, APTCA özniteliğine sahip Yöntemler özniteliği olmayan yöntemleri çağırmamalıdır.
 
-## <a name="how-to-fix-violations"></a>İhlaller nasıl düzeltilir?
- APCTA öznitelik gerekliyse, isteğe bağlı tam güven bütünleştirilmiş koda çağıran yöntemin korumak için kullanın. Tam izinler yönteminizi tarafından sunulan işlevselliği, isteğe bağlıdır. Mümkünse, alttaki işlevsellik kısmen güvenilen arayanlara gösterilmez emin olmak tam güven için talep yöntemi koruyun. Bu mümkün değilse, etkili bir şekilde sunulan işlevlerini koruyan bir izin kümesi seçin.
+## <a name="how-to-fix-violations"></a>İhlalleri çözme
+APCTA özniteliği gerekliyse, tam güven derlemesine çağıran yöntemi korumak için bir talep kullanın. Talep ettiğiniz tam izinler, yönteminiz tarafından sunulan işlevlere bağlıdır. Mümkünse, temel işlevselliğin kısmen güvenilen çağıranlara açık olmamasını sağlamak için yöntemi tam güven için bir talep ile koruyun. Bu mümkün değilse, sunulan işlevleri etkin bir şekilde koruyan bir izin kümesi seçin.
 
-## <a name="when-to-suppress-warnings"></a>Uyarılar bastırıldığında
- Güvenli bir şekilde bu kuraldan bir uyarıyı bastırmak için yönteminizi tarafından kullanıma sunulan işlevselliğini doğrudan veya dolaylı olarak hassas bilgileri, işlemler veya yıkıcı bir şekilde kullanılabilir kaynaklara erişmek bir çağırıcıya izin vermeyen emin emin olmanız gerekir.
+## <a name="when-to-suppress-warnings"></a>Uyarıların ne zaman bastırılamıyor
+Bu kuraldan bir uyarıyı güvenle bastırmak için, yönteminiz tarafından sunulan işlevselliğin doğrudan veya dolaylı olarak, çağıranların bozucu bir şekilde kullanılabilecek gizli bilgilere, işlemlere veya kaynaklara erişmesine izin vermez.
 
 ## <a name="example-1"></a>Örnek 1
- Aşağıdaki örnek, bu kural tarafından algılanan güvenlik açığı göstermek için iki derleme ve test uygulamasını kullanır. İlk derleme APTCA özniteliği yok ve kısmen güvenilen arayanlar için erişilebilir olmamalıdır (tarafından temsil edilen `M2` önceki tartışmada).
+Aşağıdaki örnek, bu kural tarafından algılanan güvenlik açıklarını göstermek için iki derleme ve bir test uygulaması kullanır. İlk derleme aptca özniteliğine sahip değil ve kısmen güvenilen çağıranlar tarafından erişilememelidir (önceki tartışmada tarafından `M2` temsil edilir).
 
- [!code-csharp[FxCop.Security.NoAptca#1](../code-quality/codesnippet/CSharp/ca2116-aptca-methods-should-only-call-aptca-methods_1.cs)]
+[!code-csharp[FxCop.Security.NoAptca#1](../code-quality/codesnippet/CSharp/ca2116-aptca-methods-should-only-call-aptca-methods_1.cs)]
 
 ## <a name="example-2"></a>Örnek 2
- İkinci derleme tam olarak güvenilirdir ve kısmen güvenilen arayanlara izin verir (tarafından temsil edilen `M1` önceki tartışmada).
+İkinci derleme tamamen güvenilirdir ve kısmen güvenilen çağıranlar (önceki tartışmada tarafından `M1` temsil edilir) sağlar.
 
- [!code-csharp[FxCop.Security.YesAptca#1](../code-quality/codesnippet/CSharp/ca2116-aptca-methods-should-only-call-aptca-methods_2.cs)]
+[!code-csharp[FxCop.Security.YesAptca#1](../code-quality/codesnippet/CSharp/ca2116-aptca-methods-should-only-call-aptca-methods_2.cs)]
 
 ## <a name="example-3"></a>Örnek 3
- Test uygulaması (tarafından temsil edilen `X` önceki tartışmada) kısmen güvenilir.
+Test uygulaması (önceki tartışmada `X` tarafından temsil edilir) kısmen güvenilirdir.
 
- [!code-csharp[FxCop.Security.TestAptcaMethods#1](../code-quality/codesnippet/CSharp/ca2116-aptca-methods-should-only-call-aptca-methods_3.cs)]
+[!code-csharp[FxCop.Security.TestAptcaMethods#1](../code-quality/codesnippet/CSharp/ca2116-aptca-methods-should-only-call-aptca-methods_3.cs)]
 
 Bu örnek aşağıdaki çıktıyı üretir:
 
@@ -76,9 +76,9 @@ Demand for full trust:Request failed.
 ClassRequiringFullTrust.DoWork was called.
 ```
 
-## <a name="related-rules"></a>İlgili kuralları
+## <a name="related-rules"></a>İlgili kurallar
 
-- [CA2117: APTCA türleri yalnızca APTCA taban türlerini genişletmelidir](../code-quality/ca2117-aptca-types-should-only-extend-aptca-base-types.md)
+- [CA2117 APTCA türleri yalnızca APTCA taban türlerini genişletmelidir](../code-quality/ca2117-aptca-types-should-only-extend-aptca-base-types.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b3318a9f5bd65c6b9514519936cc52e037e0c215
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 505aa8cdc1371a3bc288772d77b49eb7a50e9830
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62541789"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68920153"
 ---
 # <a name="ca2230-use-params-for-variable-arguments"></a>CA2230: Değişken bağımsız değişkenler için params kullanın
 
@@ -27,27 +27,27 @@ ms.locfileid: "62541789"
 |-|-|
 |TypeName|UseParamsForVariableArguments|
 |CheckId|CA2230|
-|Kategori|Microsoft.Usage|
+|Kategori|Microsoft. Usage|
 |Yeni Değişiklik|Yeni|
 
 ## <a name="cause"></a>Sebep
- Ortak veya korumalı tür kullanan bir ortak veya korumalı yöntem içerir `VarArgs` çağırma kuralı.
+Ortak veya korumalı bir tür, `VarArgs` çağırma kuralını kullanan ortak veya korumalı bir yöntem içerir.
 
 ## <a name="rule-description"></a>Kural açıklaması
- `VarArgs` Çağırma kuralı değişik sayıda parametreyi almayan belirli yöntemi tanımları ile kullanılır. Yöntemini kullanarak `VarArgs` çağırma kuralı, ortak dil belirtimi (CLS) uyumlu değil ve programlama dillerini erişilebilir olmayabilir.
+`VarArgs` Çağırma kuralı, değişken sayıda parametre alan belirli yöntem tanımlarıyla birlikte kullanılır. `VarArgs` Çağırma kuralını kullanan bir yöntem ortak dil belirtimi (CLS) uyumlu değil ve programlama dilleri arasında erişilebilir olmayabilir.
 
- C# ' ta, `VarArgs` çağırma kuralı kullanılan bir yöntemin parametre listesi ile sona erdiğinde `__arglist` anahtar sözcüğü. Visual Basic desteklemiyor `VarArgs` elipsin kullanan yönetilmeyen kod içinde sağlayan kullanımı çağırma kuralı ve Visual C++ `...` gösterimi.
+' C#De, `VarArgs` bir yöntemin parametre `__arglist` listesi anahtar sözcüğüyle sona erdiğinde çağırma kuralı kullanılır. Visual Basic, `VarArgs` çağırma kuralını desteklemez ve görsel C++ yalnızca elips `...` gösterimini kullanan yönetilmeyen kodda kullanılmasına izin verir.
 
-## <a name="how-to-fix-violations"></a>İhlaller nasıl düzeltilir?
- C# ' de bu kural ihlalini düzeltmek için kullanın [params](/dotnet/csharp/language-reference/keywords/params) anahtar sözcüğü yerine `__arglist`.
+## <a name="how-to-fix-violations"></a>İhlalleri çözme
+İçindeki C#bu kuralın ihlalini onarmak için yerine [params](/dotnet/csharp/language-reference/keywords/params) `__arglist`anahtar sözcüğünü kullanın.
 
-## <a name="when-to-suppress-warnings"></a>Uyarılar bastırıldığında
- Bu kuraldan uyarıyı bastırmayın.
+## <a name="when-to-suppress-warnings"></a>Uyarıların ne zaman bastırılamıyor
+Bu kuraldan uyarıyı bastırmayın.
 
 ## <a name="example"></a>Örnek
- Aşağıdaki örnek, iki yöntem, kural ihlal eden diğeri kural karşılayan gösterir.
+Aşağıdaki örnek, biri kuralı ve kuralı karşılayan birini ihlal eden iki yöntemi gösterir.
 
- [!code-csharp[FxCop.Usage.UseParams#1](../code-quality/codesnippet/CSharp/ca2230-use-params-for-variable-arguments_1.cs)]
+[!code-csharp[FxCop.Usage.UseParams#1](../code-quality/codesnippet/CSharp/ca2230-use-params-for-variable-arguments_1.cs)]
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

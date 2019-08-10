@@ -15,46 +15,46 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e95e532e97253fc8ba338e27879d80dd9d664118
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 66d44ff0c2c2406e9ba4508c835deab571b70e44
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62420109"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926489"
 ---
 # <a name="summary-view"></a>Özet görünümü
-Özet görünümü profil oluşturma yürütmesine en pahalı performans işlevleri veya nesneler hakkındaki bilgileri görüntüler. Bu görünümde bir zaman çizelgesi grafiği sağlar ve profil oluşturma yöntemine performans ölçümleri temelinde en pahalı işlevleri veya nesneleri iki veya daha fazla listesini alan. Bu görünümdeki veriler kullanılan profil oluşturma yöntemine bağlıdır (örnekleme, izleme veya eşzamanlılık) ve .NET bellek ayırma olup toplanmadı.
+Özet görünümü, bir profil oluşturma çalıştırmasında en yüksek performanslı işlevler veya nesneler hakkında bilgi görüntüler. Bu görünüm, profil oluşturma yönteminin performans ölçümlerine göre en pahalı işlevlerin veya nesnelerin bir zaman çizelgesi grafiği ve iki veya daha fazla listesini sağlar. Bu görünümdeki veriler, kullanılan profil oluşturma yöntemine (örnekleme, izleme veya eşzamanlılık) ve .NET bellek ayırmasının toplanıp toplanmadığını gösterir.
 
- Eşzamanlılık verileri Özet görünümünü dışındaki tüm Özet görünümleri için profil oluşturma gerçekleşen zaman içinde oluşturulan uygulamanın işlemci (CPU) kullanımı Özet görünümünde zaman çizelgesi grafiği gösterir.
+ Eşzamanlılık verilerinin Özet görünümü dışındaki tüm Özet görünümleri için, Özet görünümündeki zaman çizelgesi grafiğinde profil oluşturma işleminin gerçekleştiği zaman içindeki profili oluşturulmuş uygulamanın işlemci (CPU) kullanımı gösterilir.
 
-- Grafikte zaman kesimini belirtirseniz, o kesimi için verileri yeniden Çözümle veya belirtilen segmente zaman çizelgesi görünen yakınlaştırma. Daha fazla bilgi için [nasıl yapılır: Özet zaman çizelgesinden rapor görünümlerini filtreleme](../profiling/how-to-filter-report-views-from-the-summary-timeline.md)
+- Grafikte bir zaman kesimini belirtirseniz, bu segmentin verilerini yeniden çözümleyebilir veya zaman çizelgesini belirttiğiniz kesime yakınlaştırabilirsiniz. Daha fazla bilgi için [nasıl yapılır: Özet zaman çizelgesinden](../profiling/how-to-filter-report-views-from-the-summary-timeline.md)rapor görünümlerini filtreleyin.
 
-- İşlev için işlev Ayrıntıları görünümünde açmak için bir Özet görünümü listesindeki bir işlev tıklayabilirsiniz. Ayrıca, diğer görünüm seçenekleri işlevi de sağ tıklayabilirsiniz.
+- İşlevin Işlev ayrıntıları görünümünü açmak için Özet Görünüm listesindeki bir işleve tıklayabilirsiniz. Diğer görünüm seçenekleri için de işleve sağ tıklayabilirsiniz.
 
-- Özet görünümü listelerinde görüntülenen öğe sayısını değiştirmek için açın **Araçları** menüsünde **seçenekleri**ve ardından **performans araçları**. Altında **genel ayarlar**, değişiklik **Özet görünümündeki fonksiyonların sayısı** ayarı.
+- Özet Görünüm listelerinde görünen öğelerin sayısını değiştirmek için, **Araçlar** menüsünü açın, **Seçenekler**' in üzerine gelin ve ardından **performans araçları**' na tıklayın. **Genel ayarlar**altında, **Özet Görünüm ayarında işlev sayısını** değiştirin.
 
-## <a name="notifications-links"></a>Bildirimleri bağlantıları
- Bildirim listesinde rapor için görüntüleme seçeneklerini ayarlamak için bağlantıları tıklatabilirsiniz. Zaman Çizelgesi grafiği sağa listesidir.
+## <a name="notifications-links"></a>Bildirimler bağlantıları
+ Raporun görüntüleme seçeneklerini ayarlamak için bildirim listesindeki bağlantılar ' a tıklayabilirsiniz. Liste, zaman çizelgesi grafiğinin sağında bulunur.
 
 |||
 |-|-|
-|**Kullanıcı olmayan kod Göster**<br /><br /> **Yalnızca benim kodumu Göster**|Yerel kod veya izleme metodunu kullanarak toplanan veriyi profil oluşturma için kullanılabilir değil. Yalnızca kullanıcı kodunun verilerini görüntüleme arasında geçiş yapar (**sadece benim kodumu Göster**) ve sistem kod dahil olmak üzere tüm koddan verileri görüntüleme (**Göster kullanıcı olmayan kod**). Varsayılan olarak, veriler, kullanıcı kodu sınırlıdır. Bu ayarı değiştirmek için bkz: [nasıl yapılır: Filtre profil oluşturucu Araçlar raporu görünümlerini'sadece benim kodumu görüntülemek için](../profiling/how-to-filter-profiling-tools-report-views-to-display-just-my-code.md).|
-|**Rehberi görüntüle**|Performans kural uyarılar görüntüler **hata listesi** penceresi. Daha fazla bilgi için [verileri çözümlemek için performans kurallarını kullanma](../profiling/using-performance-rules-to-analyze-data.md)|
+|**Kullanıcı dışı kodu göster**<br /><br /> **Yalnızca kendi kodum göster**|Yerel kod veya izleme yöntemi kullanılarak toplanan profil oluşturma verileri için kullanılamaz. Yalnızca Kullanıcı kodundaki verileri görüntüleme (**yalnızca kendi kodum göster**) ve sistem kodu (**Kullanıcı dışı kodu göster**) dahil olmak üzere tüm koddan verileri görüntüleme arasında geçiş yapar. Varsayılan olarak, veriler Kullanıcı kodu ile sınırlandırılmıştır. Ayarı değiştirmek için bkz [. nasıl yapılır: Profil oluşturma araçları rapor görünümlerini Yalnızca kendi kodum](../profiling/how-to-filter-profiling-tools-report-views-to-display-just-my-code.md)görüntüleyecek şekilde filtreleyin.|
+|**Kılavuzu görüntüle**|**Hata listesi** penceresindeki performans kuralı uyarılarını görüntüler. Daha fazla bilgi için bkz. [verileri çözümlemek için performans kurallarını kullanma](../profiling/using-performance-rules-to-analyze-data.md)|
 
 ## <a name="report"></a>Rapor
- Farklı görünümlerini açmak için ve karşılaştırmak, Kaydet veya raporu filtrelemek için rapor listesi bağlantılar tıklayabilirsiniz. Zaman Çizelgesi grafiği sağa listesidir.
+ Farklı görünümleri açmak ve raporu karşılaştırmak, kaydetmek veya filtrelemek için rapor listesindeki bağlantılar ' a tıklayabilirsiniz. Liste, zaman çizelgesi grafiğinin sağında bulunur.
 
 | | |
 |----------------------------| - |
-| **Kırpılmış çağrı ağacını Göster** | Çağrı ağacı Görünümü'nde en pahalı yürütme yollarını görüntüler. Daha fazla bilgi için [çağrı ağacı görünümü](../profiling/call-tree-view.md). |
-| **Etkin satırları göster** | Araçlar yöntemini kullanarak toplanan veriyi profil oluşturma için kullanılamaz. Satırlar görünümünde en pahalı kaynak kodu satırlarını görüntüler. Daha fazla bilgi için [satırlar görünümü](../profiling/lines-view.md). |
-| **Raporları Karşılaştır** | Görüntüler **seçin analiz dosyaları karşılaştırma** geçerli dosyayı karşılaştırmak için başka bir profil oluşturma veri dosyasını belirtebileceğiniz iletişim kutusu. Daha fazla bilgi için [performans veri dosyalarını karşılaştırma](../profiling/comparing-performance-data-files.md). |
-| **Rapor verilerini dışarı aktar** | Görüntüler **dışarı aktarma raporu** virgülle ayrılmış değer (.csv) veya .xml dosyaları olarak kaydetmek için bir veya daha fazla rapor görünümlerini belirtebileceğiniz iletişim kutusu. Daha fazla bilgi için [nasıl yapılır: Dışarı aktarma profil oluşturma araçları raporları](/previous-versions/visualstudio/visual-studio-2010/ms182394\(v\=vs.100\)). |
-| **Analiz edilen Raporu Kaydet** | Geçerli profil oluşturma veri dosyasını arabirimdeki daha hızlı açılır .vsps dosyası olarak kaydeder [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Daha fazla bilgi için [nasıl yapılır: Profil oluşturma veri dosyaları kaydetme analiz](/previous-versions/visualstudio/visual-studio-2010/bb763106\(v\=vs.100\)). |
-| **Rapor verilerini Filtrele** | Verileri rapor görünümünde sınırlandırmak için ölçüt belirleyebileceğiniz profil oluşturma rapor filtresi bölmesi görüntülenir. Daha fazla bilgi için [performans raporu Görünüm Filtresi](../profiling/performance-report-view-filter.md) |
+| **Kırpılmış çağrı ağacını göster** | Çağrı ağacı görünümünde en pahalı yürütme yollarını görüntüler. Daha fazla bilgi için bkz. [çağrı ağacı görünümü](../profiling/call-tree-view.md). |
+| **Etkin çizgileri göster** | , İzleme yöntemi kullanılarak toplanan profil oluşturma verileri için kullanılamaz. Satırlar görünümünde en pahalı kaynak kodu satırlarını görüntüler. Daha fazla bilgi için bkz. [çizgiler görünümü](../profiling/lines-view.md). |
+| **Raporları Karşılaştır** | Geçerli dosyayla karşılaştırmak için başka bir profil oluşturma veri dosyası belirtebileceğiniz, **karşılaştırma için analiz dosyalarını Seç** iletişim kutusunu görüntüler. Daha fazla bilgi için bkz. [performans veri dosyalarını karşılaştırma](../profiling/comparing-performance-data-files.md). |
+| **Rapor verilerini dışarı aktar** | Virgülle ayrılmış değer (. csv) veya. xml dosyaları olarak kaydedilecek bir veya daha fazla rapor görünümü belirtebileceğiniz **raporu dışarı aktar** iletişim kutusunu görüntüler. Daha fazla bilgi için [nasıl yapılır: Profil oluşturma araçları raporlarını](/previous-versions/visualstudio/visual-studio-2010/ms182394\(v\=vs.100\))dışarı aktarın. |
+| **Çözümlenen raporu Kaydet** | Geçerli profil oluşturma veri dosyasını, için [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]arabiriminde daha hızlı açılan bir. vsps dosyası olarak kaydeder. Daha fazla bilgi için [nasıl yapılır: Çözümlenen profil oluşturma veri dosyalarını](/previous-versions/visualstudio/visual-studio-2010/bb763106\(v\=vs.100\))kaydedin. |
+| **Rapor verilerini filtrele** | Rapor görünümündeki verileri kısıtlamak için ölçüt belirtebileceğiniz profil oluşturma rapor filtresi bölmesini görüntüler. Daha fazla bilgi için bkz. [performans rapor görünümü filtresi](../profiling/performance-report-view-filter.md) |
 | **Tam ekrana geç** | Rapor görünümü için tam ekran moduna geçiş yapar. |
 
 ## <a name="see-also"></a>Ayrıca bkz.
-- [Özet görünümü - örnekleme verileri](../profiling/summary-view-sampling-data.md)
-- [Özet görünümü - izleme verileri](../profiling/summary-view-instrumentation-data.md)
-- [Özet görünümü - .NET bellek verileri](../profiling/summary-view-dotnet-memory-data.md)
+- [Özet görünümü-örnekleme verileri](../profiling/summary-view-sampling-data.md)
+- [Özet görünümü-izleme verileri](../profiling/summary-view-instrumentation-data.md)
+- [Özet görünümü-.NET bellek verileri](../profiling/summary-view-dotnet-memory-data.md)

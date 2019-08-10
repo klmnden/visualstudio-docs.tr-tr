@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: c3c5d2df6be4fef281d91794b5b71bfa0c3e653f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a98ec47688f289fadba66401aca9fcee7b602cdc
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62779681"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68923563"
 ---
 # <a name="ca1009-declare-event-handlers-correctly"></a>CA1009: Olay işleyicileri doğru olarak bildirin
 
@@ -35,31 +35,31 @@ ms.locfileid: "62779681"
 |Yeni Değişiklik|Yeni|
 
 ## <a name="cause"></a>Sebep
- Ortak veya korumalı bir olay işleme bir temsilci türü veya parametre adları, doğru imzaya sahip değil.
+Ortak veya korumalı bir olayı işleyen bir temsilcinin doğru imza, dönüş türü veya parametre adı yoktur.
 
 ## <a name="rule-description"></a>Kural açıklaması
- Olay işleyicisi yöntemleri iki parametre alır. İlk türünde <xref:System.Object?displayProperty=fullName> ve 'sender' olarak adlandırılır. Bu olayda oluşan nesnedir. İkinci parametre türüdür <xref:System.EventArgs?displayProperty=fullName> ve 'e' olarak adlandırılır. Bu olay ile ilişkilendirilmiş olan verilerdir. Örneğin, olay verileri, genellikle her bir dosya açıldığında olay tetiklenir, dosya adını içerir.
+Olay işleyicisi yöntemleri iki parametre alır. İlki türdür <xref:System.Object?displayProperty=fullName> ve ' sender ' olarak adlandırılmıştır. Bu olayda oluşan nesnedir. İkinci parametre türündedir <xref:System.EventArgs?displayProperty=fullName> ve ' e ' olarak adlandırılmıştır. Bu olay ile ilişkilendirilmiş olan verilerdir. Örneğin, bir dosya her açıldığında olay ortaya çıktığında, olay verileri genellikle dosyanın adını içerir.
 
- Olay işleyicisi yöntemleri bir değer döndürmemelidir. C# programlama diliyle, bu dönüş türü tarafından belirtilen `void`. Bir olay işleyicisi, birden çok nesne içinde birden çok yöntem çağırabilirsiniz. Yöntem bir değer döndürmek için izin verilirse, birden çok değer, her olay için ortaya çıkabilecek ve yalnızca son yöntemi çağrıldı değerini kullanılabilir olur.
+Olay işleyicisi yöntemleri bir değer döndürmemelidir. C# Programlama dilinde bu, dönüş türü `void`tarafından belirtilir. Bir olay işleyicisi, birden çok nesnede birden çok yöntemi çağırabilir. Yöntemlerin bir değer döndürmesine izin veriliyorsa, her olay için birden çok dönüş değeri oluşur ve yalnızca çağrılan son metodun değeri kullanılabilir olur.
 
-## <a name="how-to-fix-violations"></a>İhlaller nasıl düzeltilir?
- Bu kural ihlalini düzeltmek için imza, dönüş türü veya temsilcinin parametre adları düzeltin. Ayrıntılar için aşağıdaki örneğe bakın.
+## <a name="how-to-fix-violations"></a>İhlalleri çözme
+Bu kural ihlalini düzeltmek için, temsilcinin imzasını, dönüş türünü veya parametre adlarını düzeltin. Ayrıntılar için aşağıdaki örneğe bakın.
 
-## <a name="when-to-suppress-warnings"></a>Uyarılar bastırıldığında
- Bu kuraldan uyarıyı bastırmayın.
+## <a name="when-to-suppress-warnings"></a>Uyarıların ne zaman bastırılamıyor
+Bu kuraldan uyarıyı bastırmayın.
 
 ## <a name="example"></a>Örnek
- Aşağıdaki örnek, olayları işlemek için uygun olan bir temsilci gösterir. Bu olay işleyicisi tarafından çağrılan yöntemler tasarım yönergeleri ile ortaya belirtilen imzaya uymanız. `AlarmEventHandler` metot temsilcisinin tür adıdır. `AlarmEventArgs` Olay verileri için bir temel sınıftan türetilen <xref:System.EventArgs>, ve alarm olay verilerini tutar.
+Aşağıdaki örnek, olayları işlemeye uygun bir temsilciyi gösterir. Bu olay işleyicisi tarafından çağrılabilen Yöntemler, tasarım yönergelerine göre belirtilen imzaya uyum sağlayabilir. `AlarmEventHandler`temsilcinin tür adıdır. `AlarmEventArgs`<xref:System.EventArgs>, olay verileri için temel sınıftan türetilir ve uyarı olay verilerini barındırır.
 
- [!code-cpp[FxCop.Design.EventsTwoParams#1](../code-quality/codesnippet/CPP/ca1009-declare-event-handlers-correctly_1.cpp)]
- [!code-csharp[FxCop.Design.EventsTwoParams#1](../code-quality/codesnippet/CSharp/ca1009-declare-event-handlers-correctly_1.cs)]
- [!code-vb[FxCop.Design.EventsTwoParams#1](../code-quality/codesnippet/VisualBasic/ca1009-declare-event-handlers-correctly_1.vb)]
+[!code-cpp[FxCop.Design.EventsTwoParams#1](../code-quality/codesnippet/CPP/ca1009-declare-event-handlers-correctly_1.cpp)]
+[!code-csharp[FxCop.Design.EventsTwoParams#1](../code-quality/codesnippet/CSharp/ca1009-declare-event-handlers-correctly_1.cs)]
+[!code-vb[FxCop.Design.EventsTwoParams#1](../code-quality/codesnippet/VisualBasic/ca1009-declare-event-handlers-correctly_1.vb)]
 
-## <a name="related-rules"></a>İlgili kuralları
- [CA2109: Görünen olay işleyicileri gözden geçirin](../code-quality/ca2109-review-visible-event-handlers.md)
+## <a name="related-rules"></a>İlgili kurallar
+[CA2109 Görünür olay işleyicilerini gözden geçirme](../code-quality/ca2109-review-visible-event-handlers.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 - <xref:System.EventArgs?displayProperty=fullName>
 - <xref:System.Object?displayProperty=fullName>
-- [Olaylar oluşturma ve işleme](/dotnet/standard/events/index)
+- [Olayları işleme ve oluşturma](/dotnet/standard/events/index)

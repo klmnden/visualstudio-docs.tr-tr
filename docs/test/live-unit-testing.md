@@ -9,12 +9,12 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2cbde88ee12118f9f59271f897e81ec18c24eb4e
-ms.sourcegitcommit: 044bb54cb4552c8f4651feb11d62e52726117e75
+ms.openlocfilehash: bfe1affaad05d2c20a27fb0e315fc1d3b263f22b
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68662057"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68923745"
 ---
 # <a name="live-unit-testing-with-visual-studio"></a>Visual Studio ile Live Unit Testing
 
@@ -151,7 +151,7 @@ Live Unit Testing otomatik olarak çalıştırarak test sonuçları güncelleşt
 
 Çözümünüzü 10 veya daha fazla proje, Live Unit Testing Başlat ve kalıcı veri sahip veya seçtiğinizde **Test** > **Live Unit Testing**  >  **Temiz sıfırlama** en üst düzey bir Visual Studio menüsünde, Visual Studio seçeneği büyük projeler testlerinde çok sayıda dinamik yürütme performansı ciddi bir şekilde etkileyebilir uyarmak için aşağıdaki iletişim kutusunu görüntüler. Seçerseniz **Tamam**, Live Unit Testing, Çözümdeki tüm testleri yürütür. Seçerseniz **iptal**, yürütülecek testleri seçebilirsiniz. Aşağıdaki bölümde, bunun nasıl yapılacağı hakkında daha fazla bilgi için bkz. [dahil etme ve dışlama projelerin test ve test yöntemleri](#include-and-exclude-test-projects-and-test-methods).
 
- ![Büyük projeleri için Live Unit Testing iletişim](media/lut-large-project.png)
+![Büyük projeleri için Live Unit Testing iletişim](media/lut-large-project.png)
 
 ## <a name="include-and-exclude-test-projects-and-test-methods"></a>Test projeleri hariç içerir ve test yöntemleri
 

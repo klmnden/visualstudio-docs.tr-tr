@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: de5ab1fac368f1da1ceea39df19b198a22d999c1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ee5b1d92a6c7a813eea6efb409d3c2a22f68547c
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62808295"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68921118"
 ---
 # <a name="ca2109-review-visible-event-handlers"></a>CA2109: Görünen olay işleyicilerini gözden geçirin
 
@@ -31,35 +31,35 @@ ms.locfileid: "62808295"
 |Yeni Değişiklik|Yeni|
 
 ## <a name="cause"></a>Sebep
- Ortak veya korunan olay işleme yöntemi algılandı.
+Ortak veya korunan olay işleme yöntemi algılandı.
 
 ## <a name="rule-description"></a>Kural açıklaması
- Dışarıdan görünen bir olay işleme yöntem gözden geçirme gerektiren bir güvenlik sorunu gösterir.
+Dışarıdan görünür bir olay işleme yöntemi, gözden geçirme gerektiren bir güvenlik sorunu gösterir.
 
-Olay işleme yöntemleri sürece açığa çıkarmamak kesinlikle gerekli. İmzalar işleyici ve olay eşleştiği sürece herhangi bir olay için bir olay işleyicisi kullanıma sunulan bir yöntemi çağıran bir temsilci türü eklenebilir. Olaylar, büyük olasılıkla herhangi bir kod tarafından oluşturulan ve yanıt olarak bir düğmeye tıklanması gibi kullanıcı eylemlerini yüksek derecede Güvenilen Sistem kodu tarafından sık gerçekleştirilen. Güvenlik denetimi, bir olay işleme yöntemine ekleyerek, kod yöntemi çağıran bir olay işleyicisi kaydetmesinin engellemez.
+Kesinlikle gerekli olmadığı takdirde olay işleme yöntemlerini açığa çıkarın. İşleyici ve olay imzaları eşleştiği sürece, sunulan yöntemi çağıran bir temsilci türü olan bir olay işleyicisi, herhangi bir olaya eklenebilir. Olaylar büyük olasılıkla herhangi bir kod tarafından oluşturulabilir ve bir düğmeye tıklanması gibi kullanıcı eylemlerine yanıt olarak yüksek düzeyde güvenilen sistem kodu tarafından sık ortaya çıkar. Bir olay işleme yöntemine güvenlik denetimi eklemek kodun yöntemi çağıran bir olay işleyicisini kaydetmesini engellemez.
 
- İsteğe bağlı bir olay işleyicisi tarafından çağrılan bir yöntem güvenilir bir şekilde koruyamaz. Güvenlik talepleri Yardım çağrı yığınında çağıranlar inceleyerek güvenilmeyen çağrı yapanlardan kod koruma. Olay işleyicinin yöntemleri çalıştırdığınızda bir olay için bir olay işleyicisi ekler kod çağrı yığınındaki mutlaka mevcut değil. Bu nedenle, olay işleyicisi yöntemi çağrıldığında çağrı yığınını çağıranlar yalnızca yüksek oranda güvenilir. Bu, başarılı olması için olay işleyicisi yöntemi tarafından yapılan talepleri neden olur. Ayrıca, yöntem çağrıldığında talep edilen izni onaylanan. Bu nedenlerle, olay işleme yöntemi gözden geçirdikten sonra riskini bu kural ihlalini düzeltmek için değil yalnızca belirlenebilir. Kodunuzu gözden geçirirken, aşağıdaki konuları göz önünde bulundurun:
+Talep bir olay işleyicisi tarafından çağrılan bir yöntemi güvenilir bir şekilde koruyamaz. Güvenlik talepleri, Çağrı yığınındaki çağıranları inceleyerek güvenilmeyen çağıranlardan kod korumanıza yardımcı olur. Olay işleyicisinin bir olaya bir olay işleyicisi ekleyen kod, olay işleyicisinin yöntemleri çalıştırıldığında çağrı yığınında mevcut değildir. Bu nedenle, çağrı yığınında olay işleyicisi yöntemi çağrıldığında yalnızca son derece güvenilen çağıranlar olabilir. Bu, olay işleyicisi yöntemi tarafından yapılan taleplerin başarılı olmasına neden olur. Ayrıca, yöntem çağrıldığında, talep edilen izin belirtilebilir. Bu nedenlerden dolayı, bu kural ihlalini düzeltmeyen risk yalnızca olay işleme yöntemi gözden geçirildikten sonra değerlendirilebiliyor. Kodunuzu gözden geçirdikten sonra aşağıdaki sorunları göz önünde bulundurun:
 
-- Olayı işleyicinizi tehlikeli ya da açıklardan izinleri bırakmışsa veya yönetilmeyen kod iznini gizleme gibi herhangi bir işlem gerçekleştirir?
+- Olay işleyiciniz, izinleri tamamlamak veya yönetilmeyen kod iznini gizleme gibi tehlikeli veya açıktan yararlanmayan işlemleri gerçekleştirmesini ister misiniz?
 
-- İle herhangi bir zamanda yalnızca yüksek oranda çalışması için kodunuzu gelen ve giden güvenlik tehditlerini nelerdir yığında çağıranlar güvenilen?
+- Yalnızca yığında son derece güvenilen çağıranlar ile herhangi bir zamanda çalıştırabildiğinden, kodunuza yönelik güvenlik tehditleri nelerdir?
 
-## <a name="how-to-fix-violations"></a>İhlaller nasıl düzeltilir?
- Bu kural ihlalini düzeltmek için yöntemin gözden geçirin ve aşağıdakileri değerlendirin:
+## <a name="how-to-fix-violations"></a>İhlalleri çözme
+Bu kural ihlalini onarmak için, yöntemini gözden geçirin ve aşağıdakileri değerlendirin:
 
-- Olay işleme yöntemi genel olmayan yapabilirsiniz?
+- Olay işleme yöntemini genel olmayan hale getirebilirsiniz musunuz?
 
-- Olay işleyicisi tehlikeli tüm işlevsellik taşıyabilir miyim?
+- Tüm tehlikeli işlevleri olay işleyicisinden dışarı taşıyabilir miyim?
 
-- Bir güvenlik talebi uygulanmaz, bu diğer herhangi bir biçimde gerçekleştirilebilir?
+- Bir güvenlik talebi belirtilmişse, bu başka bir şekilde gerçekleştirilebilir mi?
 
-## <a name="when-to-suppress-warnings"></a>Uyarılar bastırıldığında
- Kodunuzu bir güvenlik tehdidi yol açmaz emin olmak için dikkatli bir güvenlik incelemesinden sonra yalnızca uyarı bu kuraldan gösterme.
+## <a name="when-to-suppress-warnings"></a>Uyarıların ne zaman bastırılamıyor
+Kodunuzun bir güvenlik tehdidi oluşturmadığından emin olmak için dikkatli bir güvenlik incelemesinin ardından bu kuraldan bir uyarı gizleyin.
 
 ## <a name="example"></a>Örnek
- Aşağıdaki kod, kötü amaçlı kod tarafından kötüye bir olay işleme yöntemi gösterir.
+Aşağıdaki kod kötü amaçlı kod tarafından kötüye kullanılabilecek bir olay işleme yöntemi gösterir.
 
- [!code-csharp[FxCop.Security.EventSecLib#1](../code-quality/codesnippet/CSharp/ca2109-review-visible-event-handlers_1.cs)]
+[!code-csharp[FxCop.Security.EventSecLib#1](../code-quality/codesnippet/CSharp/ca2109-review-visible-event-handlers_1.cs)]
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

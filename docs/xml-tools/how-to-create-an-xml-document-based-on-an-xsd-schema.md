@@ -8,44 +8,44 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d4ba0106a1494c7e7e8d56c3e902a3436f657712
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7739f33bad62667fdc7be8704237ebdd3932739c
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62783349"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68918560"
 ---
 # <a name="how-to-create-an-xml-document-based-on-an-xsd-schema"></a>Nasıl yapılır: XSD şemasını temel alan XML belgesi oluşturma
 
-**Örnek XML oluşturmak** özelliği XML Şeması (XSD) dosyanız tabanlı bir örnek XML dosyası oluşturur.
+**Örnek XML oluştur** ÖZELLIĞI, XML ŞEMASı (xsd) dosyanızı temel alan örnek bir XML dosyası oluşturur.
 
- Aşağıdaki senaryolar için bu seçeneği kullanabilirsiniz:
+Bu seçeneği aşağıdaki senaryolar için kullanabilirsiniz:
 
-- Çeşitli yapılar, şema kullanımını anlamak için.
+- Şemanızda çeşitli yapıların kullanımını anlamak için.
 
-- Şema ne yaptığını onaylamak için bunu gerçekleştirmesi amaçlanmıştır.
+- Şemanın yapması amaçlanan şeyi doğrulamak için.
 
-**Örnek XML oluşturmak** özelliği yalnızca genel öğeler üzerinde kullanılabilir ve geçerli bir XML şema kümesi gerektirir.
+**Örnek XML oluştur** özelliği yalnızca genel öğelerde kullanılabilir ve geçerlI bir XML şema kümesi gerektirir.
 
-Bu özellik, genellikle geçerli XML belgeleri oluşturur. Şema, bir veya daha fazlasını içeriyor, ancak örnek geçerli olmayabilir:
+Bu özellik genellikle geçerli XML belgeleri oluşturur. Ancak, şema aşağıdakilerden birini veya birkaçını içeriyorsa, örnek geçerli olmayabilir:
 
-- `xs:key`, `xs:keyref`, Ve `xs:unique` kimlik kısıtlamaları.
+- `xs:key` ,`xs:keyref`Ve kimlik`xs:unique` kısıtlamaları.
 
-- `xs:pattern` modeller.
+- `xs:pattern`lerle.
 
-- Numaralandırmalar `xs:QName` türü.
+- `xs:QName` Türün Numaralandırmalar.
 
-- `xs:ENTITY`, `xs:ENTITIES`, ve `xs:NOTATION` türleri.
+- `xs:ENTITY`, `xs:ENTITIES` ve`xs:NOTATION` türleri.
 
-Ayrıca, `xs:base64Binary` içeriği yalnızca numaralandırma türü için şema oluşursa oluşturulur.
+Ayrıca, içeriğin yalnızca `xs:base64Binary` bu tür için şemada numaralandırmalar oluşması durumunda üretilecek olduğunu unutmayın.
 
-## <a name="to-generate-an-xml-instance-document-based-on-the-xsd-file"></a>XSD dosyasını temel alan bir XML örneği belge oluşturmak için
+## <a name="to-generate-an-xml-instance-document-based-on-the-xsd-file"></a>XSD dosyasını temel alan bir XML örnek belgesi oluşturmak için
 
-1. Bağlantısındaki [nasıl yapılır: Bir XSD şema dosyası oluşturma ve düzenleme](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md).
+1. Şu adımları [izleyin: XSD şema dosyası](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md)oluşturun ve düzenleyin.
 
-2. İçinde [XML Şeması Gezgini](../xml-tools/xml-schema-explorer.md), sağ `PurchaseOrder` genel öğesi. Seçin **örnek XML oluşturmak**.
+2. [XML şeması Gezgini](../xml-tools/xml-schema-explorer.md)' nde, `PurchaseOrder` Genel öğesine sağ tıklayın. **Örnek XML oluştur**' u seçin.
 
-     Bu seçenek, PurchaseOrder seçtiğinizde. *xml* aşağıdaki örnek XML içeriği dosyasıyla oluşturulur ve XML Düzenleyicisi'nde açılır:
+     Bu seçeneği belirlediğinizde, PurchaseOrder. Aşağıdaki örnek XML içeriğine sahip *XML* dosyası oluşturulacak ve XML düzenleyicisinde açılacak:
 
     ```xml
     <?xml version="1.0" encoding="utf-8"?>

@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3e4e7aa59d273242bd8b97fd4f2777b7edcb5990
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: de64e0271370a3cdcc6f0963dbf06925621b9b65
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62806673"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68920183"
 ---
 # <a name="ca2223-members-should-differ-by-more-than-return-type"></a>CA2223: Üyeler dönüş türünden daha fazla farklı olmalıdır
 
@@ -27,23 +27,23 @@ ms.locfileid: "62806673"
 |-|-|
 |TypeName|MembersShouldDifferByMoreThanReturnType|
 |CheckId|CA2223|
-|Kategori|Microsoft.Usage|
+|Kategori|Microsoft. Usage|
 |Yeni Değişiklik|Yeni|
 
 ## <a name="cause"></a>Sebep
- İki ortak veya korumalı üyeler dönüş türü dışında aynı imzalara sahip olduğunu.
+İki ortak veya korumalı üyenin, dönüş türü dışında aynı imzaları vardır.
 
 ## <a name="rule-description"></a>Kural açıklaması
- Ortak dil çalışma zamanı aynı üyeler arasında ayrım yapmak için dönüş türleri kullanımına izin verse de, bu özellik ortak dil belirtimi ne de, bir .NET programlama dillerinin ortak özelliğidir. Üyeler yalnızca dönüş türüne göre farklı olduğunda, geliştiricilerin ve geliştirme araçları doğru bunları ayırt değil.
+Ortak dil çalışma zamanı, başka türlü özdeş Üyeler arasında ayrım yapmak için dönüş türlerinin kullanılmasına izin veriyorsa, bu özellik ortak dil belirtiminde değildir ve .NET programlama dillerinin ortak bir özelliğidir. Üyeler yalnızca dönüş türüne göre farklılık gösterdiği zaman, geliştiriciler ve geliştirme araçları aralarında doğru ayırt edilmeyebilir.
 
-## <a name="how-to-fix-violations"></a>İhlaller nasıl düzeltilir?
- Bu kural ihlalini düzeltmek için böylece yalnızca, adları ve/veya parametre türleri dayalı olarak benzersizdirler veya üyeleri gösterme üyelerin tasarım değiştirin.
+## <a name="how-to-fix-violations"></a>İhlalleri çözme
+Bu kural ihlalini onarmak için üyelerin tasarımını, yalnızca adlarına ve parametre türlerine göre benzersiz olacak şekilde değiştirin ya da üyeleri açığa çıkarın.
 
-## <a name="when-to-suppress-warnings"></a>Uyarılar bastırıldığında
- Bu kuraldan uyarıyı bastırmayın.
+## <a name="when-to-suppress-warnings"></a>Uyarıların ne zaman bastırılamıyor
+Bu kuraldan uyarıyı bastırmayın.
 
 ## <a name="example"></a>Örnek
- Aşağıdaki örnekte, bu kuralı ihlal eden bir tür Microsoft Ara dilini (MSIL) gösterir. Bu kural C# veya Visual Basic kullanarak ihlal olamaz dikkat edin.
+Aşağıdaki örnekte, Microsoft ara dili (MSIL), bu kuralı ihlal eden bir türü gösterir. Bu kuralın veya Visual Basic kullanılarak C# ihlal edilemez olduğunu unutmayın.
 
 ```
 .namespace UsageLibrary

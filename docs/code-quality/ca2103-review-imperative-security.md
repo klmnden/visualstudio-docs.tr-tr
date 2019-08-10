@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2417266da44c4af38e37eb8e0f67ac13a5a7823e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7acbb9d0127dd2ddb6668e72db8fa88124ec2b3c
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62808246"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68921423"
 ---
 # <a name="ca2103-review-imperative-security"></a>CA2103: Kesin temelli güvenliği gözden geçirin
 
@@ -31,18 +31,18 @@ ms.locfileid: "62808246"
 |Yeni Değişiklik|Yeni|
 
 ## <a name="cause"></a>Sebep
- Bir yöntem zorunlu güvenliği kullanır ve durum bilgileri veya dönüş değerlerini kullanarak izin oluşturursa, izin talebi etkin durumdayken değişebilir.
+Bir yöntem zorunlu güvenliği kullanır ve durum bilgileri veya dönüş değerlerini kullanarak izin oluşturursa, izin talebi etkin durumdayken değişebilir.
 
 ## <a name="rule-description"></a>Kural açıklaması
- Kesinlik temelli güvenlik izinleri ve güvenlik eylemleri bildirime dayalı güvenlik öznitelikleri, Eylemler ve izinler meta verileri depolamak için kullandığı karşılaştırıldığında kod yürütülürken belirtmek için yönetilen nesneleri kullanır. Kesinlik temelli güvenlik çok esnektir çünkü bir izin nesnesi durumunu ayarlamak ve çalışma zamanına kadar kullanılabilir olmayan bilgileri kullanarak güvenlik eylemleri seçin. İle birlikte esneklik eylemin yürürlükte olduğu sürece, bir izin durumu değil kalan belirlemek için kullandığınız çalışma zamanı bilgileri değişmeden riskini ortaya çıktı.
+Zorunlu güvenlik, kod yürütme sırasında izinleri ve güvenlik eylemlerini belirtmek için yönetilen nesneleri kullanır ve meta verilerde izinleri ve eylemleri depolamak için öznitelikler kullanır. Zorunlu güvenlik, bir izin nesnesinin durumunu ayarlayabilmeniz ve çalışma zamanına kadar kullanılamayan bilgileri kullanarak güvenlik eylemleri seçeceğinden çok esnektir. Bu esneklikle birlikte, bir iznin durumunu belirlemede kullandığınız çalışma zamanı bilgilerinin, eylem yürürlükte olduğu sürece değişmeden kalmayacağı riski vardır.
 
- Bildirime dayanan güvenliği mümkün olduğunca kullanın. Bildirim temelli talepleri anlamak kolaydır.
+Bildirime dayanan güvenliği mümkün olduğunca kullanın. Bildirim temelli taleplerin anlaşılması daha kolay.
 
-## <a name="how-to-fix-violations"></a>İhlaller nasıl düzeltilir?
- Kesinlik temelli güvenlik taleplerini izin durumu izni kullanılmakta olduğu sürece, değiştirebileceğiniz hakkında bilgi kullanmayan emin olmak için gözden geçirin.
+## <a name="how-to-fix-violations"></a>İhlalleri çözme
+İzin durumunun kullanıldığı sürece değişebilir bilgilere dayanmadığından emin olmak için, zorunlu güvenlik taleplerini gözden geçirin.
 
-## <a name="when-to-suppress-warnings"></a>Uyarılar bastırıldığında
- Değişen veri iznini kullanmayan varsa bu kuraldan bir uyarıyı bastırmak güvenlidir. Ancak, bildirim temelli eşdeğerine kesinlik temelli talep değiştirmek iyidir.
+## <a name="when-to-suppress-warnings"></a>Uyarıların ne zaman bastırılamıyor
+İzin değişen verilere bağlı değilse, bu kuraldan bir uyarı bastırması güvenlidir. Ancak, zorunlu talebin bildirime dayalı eşdeğerini değiştirmek daha iyidir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

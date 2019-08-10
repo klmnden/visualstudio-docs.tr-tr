@@ -8,12 +8,12 @@ ms.assetid: de10dabb-02ed-403b-9e6f-0b735524988c
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3755a0ebc0227a62a2a23bc15d88d4d008ab733e
-ms.sourcegitcommit: 044bb54cb4552c8f4651feb11d62e52726117e75
+ms.openlocfilehash: 4d50303596cec88bd5463b2ad1df713991c8932c
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68662066"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68923670"
 ---
 # <a name="load-test-run-settings-properties"></a>Yük testi çalıştırma ayarları özellikleri
 
@@ -45,7 +45,7 @@ Daha fazla bilgi için bkz. [Yük testi çalıştırma ayarlarını yapılandır
 |**Tamamlanan testler için günlük sıklığını Kaydet**|Test günlüğünün yazılacağı sıklığı belirtir. Bu sayı, her girilen test sayısının bir tanesi test günlüğüne kaydedilecek anlamına gelir. Örneğin, on değerini girerken, onuncu, Twentieth, thtieth ve bu gibi bir test günlüğüne yazılacağını belirtir. Değerin 0 olarak ayarlanması, hiçbir test günlüğünün kaydedileceğini belirtir.|
 |**Test hatasında Günlüğü Kaydet**|Yük testinde bir test başarısız olursa test günlüklerinin kaydedilip kaydedilmediğini belirleyen bir Boole değeri. Varsayılan, `True` değeridir.<br /><br /> Daha fazla bilgi için [nasıl yapılır: Test başarısızlıklarının test günlüklerine kaydedilip kaydedilmediğini belirtin](../test/how-to-specify-if-test-failures-are-saved-to-test-logs.md)|
 
- Daha fazla bilgi için bkz. [Yük testi günlük ayarlarını değiştirme](../test/modify-load-test-logging-settings.md).
+Daha fazla bilgi için bkz. [Yük testi günlük ayarlarını değiştirme](../test/modify-load-test-logging-settings.md).
 
 ## <a name="results-properties"></a>Sonuçlar özellikleri
 
@@ -70,7 +70,7 @@ Daha fazla bilgi için bkz. [Yük testi çalıştırma ayarlarını yapılandır
 |**Test yinelemeleri**|Yük testi tamamlanmadan önce çalıştırılacak bireysel testlerin toplam sayısını belirtir. Bu özellik yalnızca "test yinelemeleri kullan" `True`özelliği olduğunda geçerlidir.|
 |**Test Yinelemeleri Kullan**|Test Yinelemeleri Kullan ise `True`, yük testi içinde tamamlanan bireysel testlerin sayısı "test yinelemeleri" özelliği tarafından belirtilen sayıya ulaşırsa, yük testi çalışır. Bu durumda, ısınma süresi, çalıştırma süresi ve seyrek erişimli süre olan zaman tabanlı ayarlar yoksayılır. "Test yinelemeleri kullan" ise `False`, tüm zamanlama ayarları uygulanır ve "test yinelemeleri" yok sayılır.|
 
- Daha fazla bilgi için [nasıl yapılır: Çalışma ayarında](../test/how-to-specify-the-number-of-test-iterations-in-a-load-test.md)test yinelemesi sayısını belirtin.
+Daha fazla bilgi için [nasıl yapılır: Çalışma ayarında](../test/how-to-specify-the-number-of-test-iterations-in-a-load-test.md)test yinelemesi sayısını belirtin.
 
 ## <a name="timing-properties"></a>Zamanlama özellikleri
 

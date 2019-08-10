@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1c35a15e9ce1468edd2882396192a27a3fcc2c86
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c75c7c240f694b18caacefc0f9b1ee07f54faf36
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62796811"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68920794"
 ---
 # <a name="ca2124-wrap-vulnerable-finally-clauses-in-outer-try"></a>CA2124: Savunmasız sonunda yan tümcelerini dış deneme içine sarmalayın
 
@@ -28,28 +28,28 @@ ms.locfileid: "62796811"
 |TypeName|WrapVulnerableFinallyClausesInOuterTry|
 |CheckId|CA2124|
 |Kategori|Microsoft.Security|
-|Yeni Değişiklik|Bozucu olmayan|
+|Yeni Değişiklik|Kırılmamış|
 
 ## <a name="cause"></a>Sebep
- 1.0 ve 1.1 .NET Framework sürümlerinde, bir ortak veya korumalı yöntem içerir bir `try` / `catch` / `finally` blok. `finally` Blok güvenlik durumunu sıfırlamak için görünür ve sınırlanan değil bir `finally` blok.
+.NET Framework 1,0 ve 1,1 sürümlerinde, genel veya korumalı bir `try` Yöntem bir / `catch` / `finally` blok içerir. Blok güvenlik durumunu sıfırlayıp bir `finally` blok içine alınmaz. `finally`
 
 ## <a name="rule-description"></a>Kural açıklaması
- Bu kural bulur `try` / `finally` sürümleri 1.0 ve 1.1 kötü amaçlı bir özel durum filtreleri çağrı yığınında mevcut savunmasız olabilecek .NET Framework'ün hedefleyen kodda engeller. Kimliğe bürünme gibi hassas işlemler try bloğunda oluşur ve bir özel durum, filtre önce yürütebilir `finally` blok. Kimliğe bürünme örneği için bu filtrenin bürünülen kullanıcıyla yürütmesine anlamına gelir. Şu anda yalnızca Visual Basic'te implementable filtrelerdir.
+Bu kural, `try` çağrı yığınında mevcut olan kötü amaçlı özel durum filtrelerinde savunmasız olabilecek .NET Framework 1,0 ve 1,1 sürümlerini hedefleyen koddaki blokları bulur / `finally` . Kimliğe bürünme gibi hassas işlemler try bloğunda gerçekleşirse ve bir özel durum oluşturulursa, filtre `finally` bloğundan önce yürütülür. Kimliğe bürünme örneği için bu, filtrenin kimliğine bürünülen kullanıcı olarak yürütüleceği anlamına gelir. Filtreler Şu anda yalnızca Visual Basic ' de uygulardır.
 
 > [!NOTE]
-> 2.0 ve .NET Framework'ün sonraki sürümlerinde, çalışma zamanı otomatik olarak koruyan bir `try` / `catch` /  `finally` sıfırlama doğrudan yöntemi içinde ortaya çıkarsa kötü amaçlı bir özel durum filtrelerden engelleme, özel durum bloğu içerir.
+> .NET Framework 2,0 sürümlerinde ve sonrasında, sıfırlama doğrudan yöntem içinde gerçekleşirse, çalışma zamanı `try` kötü amaçlı durum filtrelerinden bir /  / `catch` `finally` bloğu otomatik olarak korur. özel durum bloğunu içerir.
 
-## <a name="how-to-fix-violations"></a>İhlaller nasıl düzeltilir?
- Sarmalanmış halden yerleştirin `try` / `finally` bir dış try bloğu içinde. Aşağıdaki ikinci örneğe bakın. Bu zorlar `finally` filtre kodundan önce yürütülecek.
+## <a name="how-to-fix-violations"></a>İhlalleri çözme
+Sarmalanmamış `try` / bir dıştrybloğunayerleştirin.`finally` Aşağıdaki ikinci örneğe bakın. Bu, `finally` kodu filtre kodundan önce yürütmeye zorlar.
 
-## <a name="when-to-suppress-warnings"></a>Uyarılar bastırıldığında
- Bu kuraldan uyarıyı bastırmayın.
+## <a name="when-to-suppress-warnings"></a>Uyarıların ne zaman bastırılamıyor
+Bu kuraldan uyarıyı bastırmayın.
 
 ## <a name="pseudo-code-example"></a>Sözde kod örneği
 
 ### <a name="description"></a>Açıklama
 
-Bu kural tarafından algılanan düzeni aşağıdaki sözde kod göstermektedir.
+Aşağıdaki sözde kod, bu kural tarafından algılanan kalıbı gösterir.
 
 ```csharp
 try {
@@ -63,7 +63,7 @@ finally {
 }
 ```
 
-Aşağıdaki sözde kod kodunuzu koruyun ve bu kural karşılamak için kullanabileceğiniz desenini gösterir.
+Aşağıdaki sözde kod, kodunuzu korumak ve bu kuralı karşılamak için kullanabileceğiniz bir model gösterir.
 
 ```csharp
 try {

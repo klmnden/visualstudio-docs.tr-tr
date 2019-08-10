@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: c33db7e5237b8e31011689edb725c8ae0e905522
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 77909627385a7aa2e41f87c23ec41dc8ac0e1a5e
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62806783"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68920356"
 ---
 # <a name="ca2211-non-constant-fields-should-not-be-visible"></a>CA2211: Sabit olmayan alanlar görünür olmamalıdır
 
@@ -30,23 +30,23 @@ ms.locfileid: "62806783"
 |-|-|
 |TypeName|NonConstantFieldsShouldNotBeVisible|
 |CheckId|CA2211|
-|Kategori|Microsoft.Usage|
+|Kategori|Microsoft. Usage|
 |Yeni Değişiklik|Yeni|
 
 ## <a name="cause"></a>Sebep
- Ne de salt okunur bir ortak veya korumalı statik alan sabit değil.
+Ortak veya korumalı bir statik alan sabit değildir ve salt okunurdur.
 
 ## <a name="rule-description"></a>Kural açıklaması
- Ne sabitler, ne de salt okunur olan statik alanlar güvenli iş parçacığı değildir. Böyle bir alana erişim dikkatli bir şekilde denetlenebilir ve sınıf nesnesi erişimi eşitlemek için Gelişmiş programlama tekniklerini gerektirir. Bu zor becerileri öğrenin ve ana ve böyle bir nesnenin test kendine özgü zorlukları paylaşılmamasını olduğundan statik alanları en iyi değişmez verileri depolamak için kullanılır. Bu kural, kitaplıkları için geçerlidir; uygulamaların herhangi bir alan kullanıma sunmamalıdır.
+Ne sabitler, ne de salt okunur olan statik alanlar güvenli iş parçacığı değildir. Bu tür bir alana erişimin dikkatle denetlenmesi ve sınıf nesnesine erişimin eşitlenmesi için gelişmiş programlama teknikleri olması gerekir. Bunlar öğrenmek ve ana öğe hakkında zor beceriler olduğundan, bu tür bir nesnenin test edilmesi, kendi zorluk sergilediğinin yanı sıra, değişmeyen verileri depolamak için en iyi şekilde kullanılır. Bu kural kitaplıklar için geçerlidir; uygulamalar herhangi bir alanı kullanıma sunmamalıdır.
 
-## <a name="how-to-fix-violations"></a>İhlaller nasıl düzeltilir?
- Bu kural ihlalini düzeltmek için statik alan sabit veya salt okunur yapın. Bu mümkün değilse, temel alan iş parçacığı açısından güvenli erişimi yöneten bir iş parçacığı açısından güvenli özelliği gibi alternatif bir mekanizma kullanılacak türünü yeniden tasarlayın. Kilit çakışması ve kilitlenmeler gibi sorunları kitaplığı davranışı ve performansı etkileyebilir farkında olun.
+## <a name="how-to-fix-violations"></a>İhlalleri çözme
+Bu kuralın ihlalini onarmak için statik alanı sabit veya salt okunurdur yapın. Bu mümkün değilse, temel alana iş parçacığı açısından güvenli erişimi yöneten iş parçacığı güvenli özelliği gibi alternatif bir mekanizma kullanmak için türü yeniden tasarlayabiliriz. Kilit çakışması ve kilitlenmeleri gibi sorunların, kitaplığın performansını ve davranışını etkileyebileceğini fark edebilirsiniz.
 
-## <a name="when-to-suppress-warnings"></a>Uyarılar bastırıldığında
- Bir uygulama geliştiriyorsanız bu kuraldan bir uyarıyı bastırmak ve bu nedenle statik alanı içeren tür erişimi üzerinde tam denetime sahip güvenlidir. Kitaplık tasarımcılar bu kuraldan bir uyarıyı bastırmak değil; Sabit olmayan statik alanlar kullanarak doğru şekilde kullanmak için geliştiricilere yönelik zor kitaplığı kullanarak yapabilirsiniz.
+## <a name="when-to-suppress-warnings"></a>Uyarıların ne zaman bastırılamıyor
+Bir uygulama geliştiriyorsanız bu kuraldan bir uyarıyı gizlemek güvenlidir ve bu nedenle statik alanı içeren türe erişim üzerinde tam denetime sahip olursunuz. Kitaplık tasarımcıları bu kuraldan bir uyarı göstermemelidir; sabit olmayan statik alanları kullanmak, geliştiricilerin doğru bir şekilde kullanması için kitaplık kullanımını zorlaştırır.
 
 ## <a name="example"></a>Örnek
- Aşağıdaki örnek bu kuralı ihlal eden bir tür gösterir.
+Aşağıdaki örnek, bu kuralı ihlal eden bir türü gösterir.
 
- [!code-vb[FxCop.Usage.AvoidStaticNonConstants#1](../code-quality/codesnippet/VisualBasic/ca2211-non-constant-fields-should-not-be-visible_1.vb)]
- [!code-csharp[FxCop.Usage.AvoidStaticNonConstants#1](../code-quality/codesnippet/CSharp/ca2211-non-constant-fields-should-not-be-visible_1.cs)]
+[!code-vb[FxCop.Usage.AvoidStaticNonConstants#1](../code-quality/codesnippet/VisualBasic/ca2211-non-constant-fields-should-not-be-visible_1.vb)]
+[!code-csharp[FxCop.Usage.AvoidStaticNonConstants#1](../code-quality/codesnippet/CSharp/ca2211-non-constant-fields-should-not-be-visible_1.cs)]

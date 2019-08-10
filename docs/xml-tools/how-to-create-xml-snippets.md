@@ -8,46 +8,46 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 99ad13fd3c8c1c2efeeec28794e10a91d9dd0db1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5d5ba351c20328829c05168d846fb7bffad7c11d
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62948845"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926501"
 ---
 # <a name="how-to-create-xml-snippets"></a>Nasıl yapılır: XML kod parçacıklarını oluşturma
 
-XML Düzenleyicisi'ni yeni kod parçacıkları oluşturmak için kullanılabilir. "Kod parçacığı" adlı bir XML kod parçacığı Düzenleyici içeren yeni kod parçacıkları oluşturmak için diğer bir deyişle bir ortak kod parçacığı.
+XML Düzenleyicisi, yeni XML parçacıkları oluşturmak için kullanılabilir. Düzenleyici, yeni XML parçacıkları oluşturmak için ortak bir kod parçacığı olan "kod parçacığı" adlı bir XML kod parçacığı içerir.
 
 ## <a name="to-create-a-new-xml-snippet"></a>Yeni bir XML kod parçacığı oluşturmak için
 
- Yeni bir XML kodu oluşturmak için kod parçacığı yeni bir XML dosyası oluşturun ve kullanın **parçacık Ekle** özelliği.
+Yeni bir XML kod parçacığı oluşturmak için yeni bir XML dosyası oluşturun ve **kod parçacığı Ekle** özelliğini kullanın.
 
-1. Üzerinde **dosya** menüsünde tıklatın **yeni** ve ardından **dosya**.
+1. **Dosya** menüsünde **Yeni** ' ye ve ardından **Dosya**' ya tıklayın.
 
-2. Tıklayın **XML dosyası** ve ardından **açık**.
+2. **XML dosyası** ' na ve sonra **Aç**' a tıklayın.
 
-3. Düzenleyici bölmesine sağ tıklayıp **parçacık Ekle**.
+3. Düzenleyici bölmesine sağ tıklayın ve **kod parçacığı Ekle**' yi seçin.
 
-4. Seçin **kod parçacığı** tuşuna basın ve liste **Enter**.
+4. Listeden **kod parçacığı** öğesini seçin ve **ENTER**tuşuna basın.
 
-5. Yeni kod parçacığını değişiklikleri yapın.
+5. Yeni kod parçacığında herhangi bir değişiklik yapın.
 
-6. Gelen **dosya** menüsünü seçin **Kaydet XMLFile.xml**.
+6. **Dosya** menüsünden **xmlfile. xml dosyasını Kaydet**' i seçin.
 
-     **Dosyayı farklı Kaydet** iletişim kutusu görüntülenir.
+     **Dosyayı farklı kaydet** iletişim kutusu görüntülenir.
 
-7. Yeni kod parçacığı için bir ad girin ve seçin **kod parçacığı dosyaları** gelen **farklı kaydetme türü** açılır pencere.
+7. Yeni kod parçacığının adını girin ve **farklı kaydet türü** açılan penceresinden **kod parçacığı dosyalarını** seçin.
 
-8. Kullanım **kaydetmek** açılır listede dosya konumunu değiştirmek için *My Documents\Visual Studio 2005\Code Snippets\XML\My XML kod parçacıklarını* klasörünü ve ardından ENTER tuşuna **Kaydet**.
+8. Dosya konumunu, *My Studio 2005 \ Code SNIPPETS\XML\MY XML parçacıkları* klasörü olarak değiştirmek için Kaydet açılan listesini kullanın ve ardından **Kaydet** **'** e basın.
 
 ## <a name="snippet-description"></a>Kod parçacığı açıklaması
 
- Bu bölümde Demirbaş kod parçacığında temel öğelerinden bazıları açıklanmaktadır. XML kod parçacıkları tarafından kullanılan şema öğeleri hakkında daha fazla bilgi için bkz: [kod parçacıkları şema başvurusu](../ide/code-snippets-schema-reference.md).
+Bu bölümde ortak kod parçacığında bazı önemli öğeler açıklanmaktadır. XML parçacıkları tarafından kullanılan şema öğeleri hakkında daha fazla bilgi için bkz. [kod parçacıkları şema başvurusu](../ide/code-snippets-schema-reference.md).
 
-### <a name="snippettype-element"></a>SnippetType öğesi
+### <a name="snippettype-element"></a>SnippetType Öğesi
 
- Düzenleyici iki kod parçacığı türlerini destekler:
+Düzenleyici iki kod parçacığı türünü destekler:
 
 ```xml
 <SnippetTypes>
@@ -56,16 +56,16 @@ XML Düzenleyicisi'ni yeni kod parçacıkları oluşturmak için kullanılabilir
 </SnippetTypes>
 ```
 
- `Expansion` Türü çağırdığınızda, kod parçacığı görünüp görünmeyeceğini belirler **parçacık Ekle** komutu. `SurroundsWith` Türü çağırdığınızda, kod parçacığı görünüp görünmeyeceğini belirler **Surrounds ile** komutu.
+Tür parçacığı Ekle komutunu çağırdığınızda kod parçacığının görünüp görünmeyeceğini belirler. `Expansion` Türü, komut **ile çevrelerle** çağırdığınızda parçacığın görünüp görünmeyeceğini belirler. `SurroundsWith`
 
 ### <a name="code-element"></a>Kod öğesi
 
- `Code` Öğesi, kod parçacığında çağrıldığında eklenecek XML metni tanımlar.
+`Code` Öğesi, kod parçacığı çağrıldığında eklenecek XML metnini tanımlar.
 
 > [!NOTE]
-> XML kod parçacığı metin içinde alınmalıdır bir `<![CDATA[...]]>` bölümü.
+> XML kod parçacığı metni bir `<![CDATA[...]]>` bölümü içine alınmalıdır.
 
- Aşağıdaki `Code` Demirbaş kod parçacığı tarafından oluşturulan öğesi.
+Ortak parçacığı tarafından oluşturulan `Code` öğe aşağıda verilmiştir.
 
 ```xml
 <Code Language="XML">
@@ -75,15 +75,15 @@ XML Düzenleyicisi'ni yeni kod parçacıkları oluşturmak için kullanılabilir
 </Code>
 ```
 
- `Code` Öğesi üç değişkenler içerir.
+`Code` Öğesi üç değişken içerir.
 
-- $name$ kullanıcı tanımlı değişkendir. Oluşturur bir `name` "adı" için varsayılan olarak düzenlenebilir bir değere sahip öğe. Kullanıcı tanımlı değişkenler, kullanılarak tanımlanır `Literal` öğesi.
+- $name $ Kullanıcı tanımlı değişkendir. Varsayılan olarak " `name` Name" olan düzenlenebilir bir değere sahip bir öğesi oluşturur. Kullanıcı tanımlı değişkenler `Literal` öğesi kullanılarak tanımlanır.
 
-- Seçili $$ önceden tanımlanmış bir değişkendir. Bu kod parçacığı çağırmadan önce XML Düzenleyicisi'nde seçili metni temsil eder. Bu değişken yerleşimini seçili metin, seçimi çevreleyen kod parçacığında nerede görüneceğini belirler.
+- $selected $ önceden tanımlanmış bir değişkendir. Kod parçacığını çağırmadan önce XML düzenleyicisinde seçilen metni temsil eder. Bu değişkenin yerleştirilmesi, seçilen metnin, bu seçimi çevreleyen kod parçacığında nerede göründüğünü belirler.
 
-- $end$ önceden tanımlanmış bir değişkendir. Kullanıcının bastığında **Enter** kod parçacığı alanları düzenleme işlemini tamamlamak için bu değişkeni şapka (^) burada taşınır belirler.
+- $end $ önceden tanımlanmış bir değişkendir. Kod parçacığı alanlarını Düzenlemeden sonra Kullanıcı ENTER tuşuna bastığında bu değişken, **giriş** işaretinin (^) nereye taşındığını belirler.
 
-  Yukarıdaki `Code` öğe aşağıdaki XML metni ekler:
+  Yukarıdaki `Code` öğe aşağıdaki XML metnini ekler:
 
 ```xml
 <test>
@@ -91,11 +91,11 @@ XML Düzenleyicisi'ni yeni kod parçacıkları oluşturmak için kullanılabilir
 </test>
 ```
 
- Name öğesi değeri, düzenlenebilir bir bölge işaretlenir.
+Name öğesinin değeri düzenlenebilir bir bölge olarak işaretlenir.
 
 ### <a name="literal-element"></a>Literal öğesi
 
- `Literal` Öğesi dosyasına eklendikten sonra özelleştirilebilir yerine konacak metin tanımlamak için kullanılır. Örneğin, değişmez değer dizeleri, sayısal değerler ve bazı değişken adları değişmez değer olarak bildirilebilir. Herhangi bir sayıda değişmez değerleri, XML kod parçacığı içinde tanımlayabilirsiniz ve kod parçacığı içinde birden çok kez den başvurabilir. Aşağıdaki örneğidir bir `Literal` varsayılan değeri olan "name" $name$ değişken tanımlayan öğe
+`Literal` Öğesi, dosyaya eklendikten sonra özelleştirilebilecek değiştirme metnini belirlemek için kullanılır. Örneğin, değişmez dizeler, sayısal değerler ve bazı değişken adları değişmez değer olarak bildirilemez. XML kod parçacığınızdan herhangi bir sayıda sabit değer tanımlayabilir ve kod parçacığının içinden birden çok kez başvurabilirsiniz. Aşağıda, varsayılan değeri "Name" `Literal` olan $Name $ değişkenini tanımlayan bir öğe örneği verilmiştir.
 
 ```xml
 <Literal>
@@ -104,7 +104,7 @@ XML Düzenleyicisi'ni yeni kod parçacıkları oluşturmak için kullanılabilir
 </Literal
 ```
 
- Değişmez değerleri, işleve de başvurabilir. XML Düzenleyicisi adlı işlevi içerir **LookupPrefix**. **LookupPrefix** işlevi bu kod parçacığı çağrılır ve varsa, ad alanı için tanımlanan ad alanı öneki döndürür ve iki nokta üst üste (:) içeren XML belgesindeki konumdan belirtilen ad alanı URI arar ad. Aşağıdaki örneğidir bir `Literal` kullanan öğesi **LookupPrefix** işlevi.
+Değişmez değerler, işlevlere da başvurabilir. XML Düzenleyicisi **LookupPrefix**adlı bir işlev içerir. **LookupPrefix** işlevi, bu kod PARÇACıĞıNıN çağrıldığı XML belgesindeki konumdan verilen ad alanı URI 'sini arar ve bu ad alanı için tanımlanan ad alanı önekini (varsa) döndürür ve iki nokta üst üste ekler (:) Bu adda. Aşağıda `Literal` **LookupPrefix** işlevini kullanan bir öğe örneği verilmiştir.
 
 ```xml
 <Literal Editable="false">
@@ -113,7 +113,7 @@ XML Düzenleyicisi'ni yeni kod parçacıkları oluşturmak için kullanılabilir
 </Literal>
 ```
 
- $Prefix$ değişken sonra XML kod parçacığı başka bir yerde kullanılabilir.
+$Prefix $ değişkeni daha sonra XML kod parçacığındaki başka bir yerde kullanılabilir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

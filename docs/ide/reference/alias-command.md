@@ -16,18 +16,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0072bbd770a6d4fa675010048f2d067eb0961d62
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 396db6e08da211a801361328416d97622ee3eac8
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62791853"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926334"
 ---
 # <a name="alias-command"></a>Diğer Ad Komutu
-Tam komut, tam komut ve bağımsız değişkenler için yeni bir diğer ad veya başka bir diğer ad oluşturur.
+Tüm komut, komut ve bağımsız değişkenler ya da başka bir diğer ad için yeni bir diğer ad oluşturur.
 
 > [!TIP]
-> Yazarak `>alias` herhangi bir bağımsız değişken görüntüler olmadan geçerli diğer adlar ve tanımlarının listesi.
+> Bağımsız `>alias` değişken olmadan yazmak, diğer adların ve tanımlarının geçerli listesini görüntüler.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -36,36 +36,40 @@ Tools.Alias [/delete] [/reset] [aliasname] [aliasstring]
 ```
 
 ## <a name="arguments"></a>Arguments
- `aliasname` İsteğe bağlı. Yeni diğer adı. İçin herhangi bir değer sağlanmazsa `aliasname`, geçerli diğer adlar ve tanımlarının bir listesi görüntülenir.
+`aliasname`\
+İsteğe bağlı. Yeni diğer ad için ad. İçin `aliasname`hiçbir değer sağlanmazsa, geçerli diğer adların ve tanımlarının bir listesi görüntülenir.
 
- `aliasstring` İsteğe bağlı. Tam komu adı veya mevcut bir diğer ad ve bir diğer ad olarak oluşturmak istediğiniz herhangi bir parametre. İçin herhangi bir değer sağlanmazsa `aliasstring`, belirtilen diğer ad görüntüler için diğer ad ve diğer ad dizesi.
+`aliasstring`\
+İsteğe bağlı. Tüm komut adı veya var olan diğer ad ve diğer ad olarak oluşturmak istediğiniz parametreler. İçin `aliasstring`değer sağlanmazsa, belirtilen diğer ad için diğer ad ve diğer ad dizesi görüntülenir.
 
 ## <a name="switches"></a>Anahtarlar
- / DELETE veya/DEL veya /d isteğe bağlı. Otomatik tamamlamadan kaldırarak belirtilen diğer adları siler.
+/DELETE veya/del&lt ya da/d\
+İsteğe bağlı. Belirtilen diğer adı siler ve otomatik tamamlamayı kaldırır.
 
- / İsteğe bağlı sıfırlayın. Önceden tanımlanmış diğer adlar listesini özgün ayarlarına sıfırlar. Diğer bir deyişle, önceden tanımlanmış tüm diğer adları geri yükler ve kullanıcı tarafından tanımlanan tüm diğer adları kaldırır.
+/Reset süpürmeden
+İsteğe bağlı. Önceden tanımlanmış diğer adların listesini orijinal ayarlarına sıfırlar. Diğer bir deyişle, önceden tanımlanmış tüm diğer adları geri yükler ve Kullanıcı tanımlı tüm diğer adları kaldırır.
 
 ## <a name="remarks"></a>Açıklamalar
- Diğer adlar komutları temsil ettiğinden, komut satırının başında bulunmaları gerekir.
+Diğer adlar komutları temsil ettiğinden, bunlar komut satırının başlangıcında bulunmalıdır.
 
- Bu komut yayınlanırken, diğer adlardan sonra değil komutun hemen sonrasına anahtarları içermelidir, aksi takdirde anahtar diğer ad dizesinin bir parçası olarak dahil edilir.
+Bu komutu verirken, diğer adlarla değil, anahtardan hemen sonra gelen anahtarları eklemeniz gerekir, aksi takdirde anahtar, diğer ad dizesinin bir parçası olarak dahil edilir.
 
- `/reset` Anahtarı diğer adlar geri yüklenmeden önce bir onay ister. İn bir kısa biçimi yoktur `/reset`.
+Bu `/reset` anahtar, diğer adlar geri yüklenmeden önce onay ister. İçin kısa bir `/reset`biçim yoktur.
 
 ## <a name="examples"></a>Örnekler
- Bu örnek, yeni bir diğer ad oluşturur `upper`, tam komut Edit.MakeUpperCase için.
+Bu örnek, tüm komut Edit. `upper`makebüyük komutu için yeni bir diğer ad oluşturur.
 
 ```cmd
 >Tools.Alias upper Edit.MakeUpperCase
 ```
 
- Bu örnek, diğer adını siler `upper`.
+Bu örnek, diğer adı siler `upper`,.
 
 ```cmd
 >Tools.alias /delete upper
 ```
 
- Bu örnek, tüm geçerli diğer adlar ve açıklamalarının bir listesini görüntüler.
+Bu örnek, tüm geçerli diğer adlar ve tanımlar listesini görüntüler.
 
 ```cmd
 >Tools.Alias

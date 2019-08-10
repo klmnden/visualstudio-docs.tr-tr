@@ -11,12 +11,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2051ac669c52480d62ee0d0a79c5a165bff502fc
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
+ms.openlocfilehash: 46ad996f7c3b1eeff4a3eb928442879f0b7275aa
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68416600"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68925879"
 ---
 # <a name="step-6-name-your-button-controls"></a>6\. Adım: Düğme denetimlerinizi adlandırma
 Formunuz üzerinde yalnızca bir <xref:System.Windows.Forms.PictureBox> tane vardır. Bunu eklediğinizde, IDE otomatik olarak **PictureBox1**olarak adlandırılır. Yalnızca **CheckBox1**adlı bir <xref:System.Windows.Forms.CheckBox>tane vardır. Yakında bazı kodlar yazacaksınız ve bu kod CheckBox ve PictureBox öğesine başvuracaktır. Bu denetimlerden yalnızca biri olduğundan, kodunuzda **PictureBox1** veya **CheckBox1** gördüğünüz zaman ne anlama geldiğini bilirsiniz.
@@ -24,21 +24,21 @@ Formunuz üzerinde yalnızca bir <xref:System.Windows.Forms.PictureBox> tane var
 > [!NOTE]
 > Visual Basic, herhangi bir denetim adının varsayılan ilk harfi ilk tepdir, bu nedenle adlar **PictureBox1**, **CheckBox1**vb. olur.
 
- Formunuzda dört düğme vardır ve bunları **button1**, **button2**, **BUTTON3**ve **Button4**olarak adlandırılan IDE. Yalnızca geçerli adlarına bakarak, hangi düğmenin **kapatma** düğmesi olduğunu ve hangilerinin **resim göster** düğmesi olduğunu bilemezsiniz. Bu nedenle, düğme denetimlerinizi daha bilgilendirici adlar yararlı olur.
+Formunuzda dört düğme vardır ve bunları **button1**, **button2**, **BUTTON3**ve **Button4**olarak adlandırılan IDE. Yalnızca geçerli adlarına bakarak, hangi düğmenin **kapatma** düğmesi olduğunu ve hangilerinin **resim göster** düğmesi olduğunu bilemezsiniz. Bu nedenle, düğme denetimlerinizi daha bilgilendirici adlar yararlı olur.
 
- ![video](../data-tools/media/playvideo.gif)bağlantısı bu konunun video sürümü için bkz [. öğretici 1: Visual Basic-video 3](http://go.microsoft.com/fwlink/?LinkId=205213) veya [öğretici 1 ' de bir resim Görüntüleyicisi oluşturun: Video 3 C# ](http://go.microsoft.com/fwlink/?LinkId=205202)' te bir resim Görüntüleyicisi oluşturun. Bu videolar, Visual Studio 'nun önceki bir sürümünü kullanır, bu nedenle bazı menü komutlarında ve diğer kullanıcı arabirimi öğelerinde küçük farklılıklar vardır. Ancak, kavramlar ve yordamlar Visual Studio 'nun geçerli sürümünde benzer şekilde çalışır.
+![video](../data-tools/media/playvideo.gif)bağlantısı bu konunun video sürümü için bkz [. öğretici 1: Visual Basic-video 3](http://go.microsoft.com/fwlink/?LinkId=205213) veya [öğretici 1 ' de bir resim Görüntüleyicisi oluşturun: Video 3 C# ](http://go.microsoft.com/fwlink/?LinkId=205202)' te bir resim Görüntüleyicisi oluşturun. Bu videolar, Visual Studio 'nun önceki bir sürümünü kullanır, bu nedenle bazı menü komutlarında ve diğer kullanıcı arabirimi öğelerinde küçük farklılıklar vardır. Ancak, kavramlar ve yordamlar Visual Studio 'nun geçerli sürümünde benzer şekilde çalışır.
 
 ## <a name="to-name-your-button-controls"></a>Düğme denetimlerinizi adlandırmak için
 
 1. Formda, **Kapat** düğmesini seçin. (Tüm düğmeler seçiliyse, seçimi iptal etmek için **ESC** tuşunu seçin.) **(Ad)** özelliğini görene kadar **Özellikler** penceresinde kaydırma yapın. ( **(Ad)** özelliği, Özellikler alfabetik olduğunda üst kısımdaki bir yakındır.) Aşağıdaki resimde gösterildiği gibi, adı **CloseButton**olarak değiştirin.
 
-     ![CloseButton **adı ile** CloseButton](../ide/media/express_setnameproperty.png)
+     ![CloseButton adı ile CloseButton](../ide/media/express_setnameproperty.png)
 ad**özellikleri** penceresiyle Özellikler penceresi
 
     > [!NOTE]
     > Düğme adını **CloseButton**olarak değiştirmeyi denerseniz, kapat ve düğme arasında bir boşluk ile IDE bir hata iletisi görüntüler: "Özellik değeri geçerli değil." Denetim adlarında boşluklara (ve diğer birkaç karaktere) izin verilmez.
 
-2. Diğer üç düğmeyi backgroundButton,  **clearButton**ve **showButton**olarak yeniden adlandırın. **Özellikler** penceresinde denetim Seçicisi açılan listesini seçerek adları doğrulayabilirsiniz. Yeni düğme adları görüntülenir.
+2. Diğer üç düğmeyi backgroundButton, **clearButton**ve **showButton**olarak yeniden adlandırın. **Özellikler** penceresinde denetim Seçicisi açılan listesini seçerek adları doğrulayabilirsiniz. Yeni düğme adları görüntülenir.
 
 3. Formdaki **resim göster** düğmesine çift tıklayın. Alternatif olarak, formda **bir resim göster** düğmesini seçin ve ardından **ENTER** tuşunu seçin. Bunu yaptığınızda IDE, **Form1.cs** adlı ana pencerede ek bir sekme açar (Visual Basic kullanıyorsanız**Form1. vb** ). Bu sekme, aşağıdaki resimde gösterildiği gibi, formun arkasındaki kod dosyasını gösterir.
 

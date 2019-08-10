@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 36ae392173a18796c53100599fbf5f5fb5997beb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e1b56001f5a083317911edde9282b66758deb1b6
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62796864"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68920726"
 ---
 # <a name="ca2147-transparent-methods-may-not-use-security-asserts"></a>CA2147: Saydam metotlar güvenlik onay deyimlerini kullanmamalıdır
 
@@ -32,34 +32,34 @@ ms.locfileid: "62796864"
 |Yeni Değişiklik|Yeni|
 
 ## <a name="cause"></a>Sebep
- Olarak işaretlenmiş kod <xref:System.Security.SecurityTransparentAttribute> onay için yeterli izinlerin verilmiş olmasını garanti etmez.
+Olarak <xref:System.Security.SecurityTransparentAttribute> işaretlenen koda, onay için yeterli izin verilmez.
 
 ## <a name="rule-description"></a>Kural açıklaması
- Bu kural, tüm yöntemler ve türleri ya da % 100 saydam veya karma saydam/kritik öneme sahiptir ve bildirim temelli veya kesinlik temelli kullanımı bayrakları bir derleme çözümler <xref:System.Security.CodeAccessPermission.Assert%2A>.
+Bu kural,% 100 saydam veya karışık/kritik bir derlemede bulunan tüm yöntemleri ve türleri analiz eder ve bildirim temelli ya da kesinlik kullanımını <xref:System.Security.CodeAccessPermission.Assert%2A>işaretler.
 
- Çalışma zamanında, çağrıları <xref:System.Security.CodeAccessPermission.Assert%2A> saydam koddan neden olacak bir <xref:System.InvalidOperationException> oluşturulması için. Bu, hem de % 100 saydam derlemeleri ve ayrıca burada bir yöntem veya tür saydam olarak bildirilmiş ancak bildirim temelli veya kesinlik temelli bir onay içerir saydam/kritik karma derlemelerdeki ortaya çıkabilir.
+Çalışma zamanında, saydam koddan yapılan <xref:System.Security.CodeAccessPermission.Assert%2A> tüm çağrılar bir <xref:System.InvalidOperationException> oluşturulmasına neden olur. Bu, hem% 100 saydam derlemede hem de bir yöntem ya da türün saydam olarak bildirildiği, ancak bildirime dayalı veya zorunlu bir onay içeren karışık saydam/kritik derlemelerde meydana gelebilir.
 
- Adlı bir özellik .NET Framework 2.0 sunulan *saydamlık*. Her bir yöntem, alanlar, arabirimler, sınıflar ve türleri, saydam veya kritik olabilir.
+.NET Framework 2,0, *Saydamlık*adlı bir özellik sunmuştur. Tek tek Yöntemler, alanlar, arabirimler, sınıflar ve türler saydam ya da kritik olabilir.
 
- Saydam kod güvenlik ayrıcalıklarını izin verilmiyor. Bu nedenle, tüm izinleri verilir veya bu talep kodlardan otomatik olarak çağıran ya da konak uygulama etki alanına geçirilir. İndirmeyi örnekler Asserts LinkDemands, SuppressUnmanagedCode, ve `unsafe` kod.
+Saydam kodun güvenlik ayrıcalıklarını yükseltmesine izin verilmiyor. Bu nedenle, verilen veya talep edilen tüm izinler otomatik olarak kod aracılığıyla arayan veya ana bilgisayar uygulama etki alanına geçirilir. Yükseltme örnekleri, onaylar, linktaleplerini, SuppressUnmanagedCode ve `unsafe` Code içerir.
 
-## <a name="how-to-fix-violations"></a>İhlaller nasıl düzeltilir?
- Sorunu çözmek için ya da onay ile çağıran kodu işaretlemek <xref:System.Security.SecurityCriticalAttribute>, onay Kaldır.
+## <a name="how-to-fix-violations"></a>İhlalleri çözme
+Sorunu çözmek için, onayı <xref:System.Security.SecurityCriticalAttribute>çağıran kodu işaretleyin ya da onayı kaldırın.
 
-## <a name="when-to-suppress-warnings"></a>Uyarılar bastırıldığında
- Bu kural bir iletiden bastırmayın.
-
-## <a name="example"></a>Örnek
- Bu kod başarısız olur `SecurityTestClass` saydam olduğunda `Assert` yöntem bir <xref:System.InvalidOperationException>.
-
- [!code-csharp[FxCop.Security.CA2147.TransparentMethodsMustNotUseSecurityAsserts#1](../code-quality/codesnippet/CSharp/ca2147-transparent-methods-may-not-use-security-asserts_1.cs)]
+## <a name="when-to-suppress-warnings"></a>Uyarıların ne zaman bastırılamıyor
+Bu kuraldan bir ileti bastırmayın.
 
 ## <a name="example"></a>Örnek
- Kod incelemesi SecurityTransparentMethod yöntemi aşağıdaki örnekte bir seçenektir ve yöntem yükseltme için güvenli olarak kabul edilir, SecurityTransparentMethod güvenli-kritik ile işaretleyin. Bu, ayrıntılı, tam ve hatasız güvenlik denetim yöntemi hiçbir çağrı Assert altındaki yöntemin içindeki ortaya çıkarmayı birlikte gerçekleştirilmelidir gerektirir:
+Bu kod, saydam ise `SecurityTestClass` , `Assert` Yöntem bir <xref:System.InvalidOperationException>oluşturduğunda başarısız olur.
 
- [!code-csharp[FxCop.Security.SecurityTransparentCode2#1](../code-quality/codesnippet/CSharp/ca2147-transparent-methods-may-not-use-security-asserts_2.cs)]
+[!code-csharp[FxCop.Security.CA2147.TransparentMethodsMustNotUseSecurityAsserts#1](../code-quality/codesnippet/CSharp/ca2147-transparent-methods-may-not-use-security-asserts_1.cs)]
 
- Başka bir seçenek Assert koddan kaldırın ve herhangi bir sonraki dosya Itanium tabanlı sistemler için g/ç izni taleplerin akışı SecurityTransparentMethod ötesinde çağırana izin oluşturmaktır. Bu, güvenlik denetimleri sağlar. İzin istekleri çağıran ve/veya bir uygulama etki alanı akış çünkü bu durumda, hiçbir güvenlik denetimi, gereklidir. İzin istekleri yakından barındırma ortamı ve kod kaynağı izin verir, güvenlik ilkesi aracılığıyla denetlenir.
+## <a name="example"></a>Örnek
+Bir seçenek, aşağıdaki örnekteki SecurityTransparentMethod yöntemini gözden geçirmeniz ve yöntemin yükseltme için güvenli olarak kabul edilmesi durumunda, güvenli-kritik ile SecurityTransparentMethod Mark. Bunun yapılması, yöntem üzerinde ayrıntılı, tam ve hata içermeyen bir güvenlik denetiminin, onay altındaki yöntemde gerçekleşen tüm çağrı aşımlarını birlikte gerçekleştirilmesi gerekir:
+
+[!code-csharp[FxCop.Security.SecurityTransparentCode2#1](../code-quality/codesnippet/CSharp/ca2147-transparent-methods-may-not-use-security-asserts_2.cs)]
+
+Diğer bir seçenek de koddan yapılan onayı kaldırmak ve sonraki dosya g/ç izin taleplerini, SecurityTransparentMethod ' nin çağıranına dışına akmasını sağlar. Bu, güvenlik denetimlerini mümkün bir şekilde sunar. Bu durumda, izin talepleri arayan ve/veya uygulama etki alanına akacağından, güvenlik denetimi gerekmez. İzin talepleri, güvenlik ilkesi, barındırma ortamı ve kod kaynağı izin onayları aracılığıyla yakından denetlenir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
- [Güvenlik Uyarıları](../code-quality/security-warnings.md)
+[Güvenlik Uyarıları](../code-quality/security-warnings.md)

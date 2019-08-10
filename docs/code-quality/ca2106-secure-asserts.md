@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c8d80c4e9a21c29ce7b34a3998e241b11713f355
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: df19d31abe88c6d12bafc933ba740badb832eb16
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62545706"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68921067"
 ---
 # <a name="ca2106-secure-asserts"></a>CA2106: Onay deyimlerinin güvenliğini sağlayın
 
@@ -31,16 +31,16 @@ ms.locfileid: "62545706"
 |Yeni Değişiklik|Yeni|
 
 ## <a name="cause"></a>Sebep
- Bir yöntem bir izinleri bildiren ve çağıran üzerinde herhangi bir güvenlik denetimi gerçekleştirir.
+Bir yöntem, bir izni onaylar ve arayan üzerinde güvenlik denetimi gerçekleştirmesiz.
 
 ## <a name="rule-description"></a>Kural açıklaması
- Güvenlik denetimleri yapmadan herhangi bir güvenlik izni ileri sürmek, kodunuzdaki güvenlik zayıflıklarını yararlanılabilir bırakır. Bir güvenlik izni onaylanan güvenlik yığın ilerlemesi sona erer. Çağıran tüm denetimleri yapmadan bir izin onaylama işlemi ise çağıranın dolaylı olarak kod izinlerinizi kullanarak yürütebilir. Assert zararlı bir biçimde kullanılamaz eminseniz izin verilen güvenlik denetimleri olmadan onaylar. Assert çağırmanızı kod zararsız ise ya da kullanıcıların çağırdığınız koda rastgele bilgi geçemezse zararsızdır.
+Güvenlik denetimleri yapmadan herhangi bir güvenlik izni ileri sürmek, kodunuzdaki güvenlik zayıflıklarını yararlanılabilir bırakır. Güvenlik yığını, bir güvenlik izni belirtildiğine göre ilerleme gösterir. Arayan üzerinde herhangi bir denetim gerçekleştirmeksizin bir izin belirtirseniz, çağıran, izinlerinizi kullanarak kodu dolaylı olarak yürütebilir. Onayın zararlı bir şekilde kullanılmadığından emin olduğunuzda güvenlik denetimleri olmadan onay için izin verilmez. Çağırdığınız kodun zararsız olması veya kullanıcıların çağırdığınız koda rastgele bilgiler geçiremezse bir onaylama işlemi zararsız olur.
 
-## <a name="how-to-fix-violations"></a>İhlaller nasıl düzeltilir?
- Bu kural ihlalini düzeltmek için yöntemi veya metodu bildirim türünün için bir güvenlik talebi ekleyin.
+## <a name="how-to-fix-violations"></a>İhlalleri çözme
+Bu kural ihlalini onarmak için yönteme veya bildirim türüne bir güvenlik talebi ekleyin.
 
-## <a name="when-to-suppress-warnings"></a>Uyarılar bastırıldığında
- Bu kuraldan bir uyarıyı dikkatli bir güvenlik incelemesinden sonra yalnızca gösterme.
+## <a name="when-to-suppress-warnings"></a>Uyarıların ne zaman bastırılamıyor
+Bu kuraldan bir uyarıyı yalnızca dikkatli bir güvenlik incelemesi sonrasında gizleyin.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

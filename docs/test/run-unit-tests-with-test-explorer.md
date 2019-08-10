@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 11ebe64bf1e3034230a9697fef0c072fc89ef282
-ms.sourcegitcommit: 3e74ec49a54e5c3da7631f4466128cdf4384af6b
+ms.openlocfilehash: 7a3839a28ce0c37c5ccf43ca1f8ddba1ecd52365
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "68711385"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68918179"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Test Gezgini ile birim testleri çalıştırma
 
@@ -143,7 +143,7 @@ Test Gezgini, testlerinizi bir hiyerarşiye gruplandırmanıza olanak tanır. Va
 
 ![Test Gezgini 'nde kategoriye göre grup testleri](../test/media/vs-2019/test-explorer-groupby-162.png)
 
-Hiyerarşi ve gruplama düzeylerini tanımlayabilir ve sonra tercih ettiğiniz sırada grupla seçeneklerini belirleyerek **sınıfa** **göre gruplandırabilirsiniz** .
+Hiyerarşi ve gruplama düzeylerini tanımlayabilir ve sonra tercih ettiğiniz sırada grupla seçeneklerini belirleyerek **sınıfa** göre gruplandırabilirsiniz.
 
 ![Duruma göre Gruplandır ve sonra sınıfı](../test/media/vs-2019/test-explorer-groupby-state-16-2.png)
 ::: moniker-end
@@ -169,7 +169,7 @@ Hiyerarşi ve gruplama düzeylerini tanımlayabilir ve sonra tercih ettiğiniz s
 |**Sınıfı**|Testleri içerilen sınıfa göre gruplandırır.|
 ::: moniker-end
 
-### <a name="group-by-traits"></a>Nitelikleri göre Gruplandır
+### <a name="traits"></a>Lerdir
 
 Bir nitelik genellikle kategori adı/değer çiftidir, ancak tek bir kategori de olabilir. Nitelikler, birim test çerçevesi tarafından test yöntemi olarak tanımlanan yöntemlere atanabilir. Bir birim test çerçevesi, nitelik kategorilerini tanımlayabilir. Kendi Kategori ad/değer çiftlerinizi tanımlamak için nitelik kategorilerine değerler ekleyebilirsiniz. Nitelik kategorilerini ve değerlerini belirten sözdizimi, birim test çerçevesi tarafından tanımlanır.
 
@@ -187,7 +187,7 @@ Yönetilen uygulamalar için Microsoft birim testi çerçevesinde, bir <xref:Mic
 
 **İçin Microsoft birim testi çerçevesindeki niteliklerC++**
 
- [Için C++Microsoft birim testi çerçevesini kullanma ](how-to-use-microsoft-test-framework-for-cpp.md)konusuna bakın.
+[Için C++Microsoft birim testi çerçevesini kullanma ](how-to-use-microsoft-test-framework-for-cpp.md)konusuna bakın.
 
 ## <a name="create-custom-playlists"></a>Özel çalma listeleri oluşturma
 
@@ -215,7 +215,7 @@ Yeni bir test Gezgini sekmesinde çalma listesi açılır. Bu çalma listesini b
 
 ![Çalma listesi ayrı test Gezgini sekmesinde açılıyor](../test/media/vs-2019/test-explorer-playlist-tab-16-2.png)
 
-**Bir çalma listesine test eklemek için**, test Gezgini 'nde bir veya daha fazla test seçin. Sağ tıklayın ve**Yeni**çalma listesine **Ekle** > ' yi seçin. 
+**Bir çalma listesine test eklemek için**, test Gezgini 'nde bir veya daha fazla test seçin. Sağ tıklayın ve**Yeni**çalma listesine **Ekle** > ' yi seçin.
 
 **Bir çalma listesi açmak için**, Visual Studio araç çubuğunda çalma listesi simgesini seçin ve menüden önceden kaydedilmiş bir çalma listesi dosyası seçin.
 ::: moniker-end
@@ -229,7 +229,7 @@ Yeni bir test Gezgini sekmesinde çalma listesi açılır. Bu çalma listesini b
 
 ### <a name="filter-sort-and-rearrange-test-columns"></a>Test sütunlarını filtreleme, sıralama ve yeniden düzenleme
 
-Sütunlar filtrelenebilir, sıralanabilir ve yeniden düzenlenebilir. 
+Sütunlar filtrelenebilir, sıralanabilir ve yeniden düzenlenebilir.
 * Belirli nitelikleri filtrelemek için nitelikler sütununun en üstündeki filtre simgesine tıklayın.
 
   ![Sütun filtresi](../test/media/vs-2019/test-explorer-filter-column-16-2.png)
@@ -302,7 +302,7 @@ Bir test yönteminin neden çok fazla zaman aldığını tanılamak için test G
 
 ### <a name="analyze-unit-test-code-coverage"></a>Birim testi kod kapsamını analiz etme
 
-Visual Studio kod kapsamı aracını kullanarak, gerçekten birim testleriniz tarafından test edilen ürün kodunuzun miktarını belirleyebilirsiniz. Kod kapsamı Seçili testler ya da bir çözümdeki tüm testleri çalıştırabilirsiniz.
+Visual Studio Enterprise sürümünde kullanılabilir olan Visual Studio kod kapsamı aracını kullanarak birim testleriniz tarafından test edilen ürün kodu miktarını belirleyebilirsiniz. Kod kapsamı Seçili testler ya da bir çözümdeki tüm testleri çalıştırabilirsiniz.
 
 Bir çözümde test yöntemleri için kod kapsamını çalıştırmak için:
 
@@ -331,6 +331,8 @@ Testler test **Gezgini**'nden çalıştırılabilir ve test üzerindeki kod düz
 |-|------------------------|
 |TestExplorer.DebugAllTestsInContext|**CTRL** **R,** CTRL T++|
 |TestExplorer.RunAllTestsInContext|**CTRL**+**R**, **T**|
+|TestExplorer.RunAllTests|**CTRL**+**R**, **A**|
+|TestExplorer.RepeatLastRun|**CTRL**+**R**, **L**|
 
 > [!NOTE]
 > Testler yalnızca soyut sınıflarda tanımlandığından ve örneklenmemiş olduğundan, bir testi soyut bir sınıfta çalıştıramazsınız. Testleri soyut sınıflarda çalıştırmak için soyut sınıftan türeten bir sınıf oluşturun.
