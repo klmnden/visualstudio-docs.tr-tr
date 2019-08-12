@@ -1,5 +1,5 @@
 ---
-title: MSBuild araç takımı (ToolsVersion) | Microsoft Docs
+title: MSBuild Araç Takımı (araçları sürümü) | Microsoft Docs
 ms.date: 01/31/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,20 +13,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b7da41b1b82299bd32d1af805ea6226690e79115
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: f87513a8124b728568f78bee9efdf48fb35a5301
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66747391"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926382"
 ---
 # <a name="msbuild-toolset-toolsversion"></a>MSBuild Araç Takımı (ToolsVersion)
 
-MSBuild, bir uygulama oluşturmak için bir araç takımı görevleri, hedefler ve araçları kullanır. MSBuild araç takımı genellikle içerir bir *microsoft.common.tasks* dosyası bir *microsoft.common.targets* dosya ve derleyiciler gibi *csc.exe* ve  *Vbc.exe*. Çoğu araç takımları, .NET Framework'ün birden fazla sürümü ve birden fazla sistemi platformu uygulamaları derlemek için kullanılabilir. Ancak, MSBuild 2.0 araç takımı, yalnızca .NET Framework 2.0 hedeflemek için kullanılabilir.
+MSBuild bir uygulama oluşturmak için bir görev, hedef ve araç araç kümesi kullanır. Genellikle, bir MSBuild Araç Takımı *Microsoft. Common. Tasks* dosyasını, *Microsoft. Common. targets* dosyasını ve *CSC. exe* ve *Vbc. exe*gibi derleyicileri içerir. Çoğu araç kümesi, .NET Framework birden fazla sürümüne ve birden fazla sistem platformuna uygulama derlemek için kullanılabilir. Ancak, MSBuild 2,0 araç takımı yalnızca .NET Framework 2,0 ' i hedeflemek için kullanılabilir.
 
-## <a name="toolsversion-attribute"></a>ToolsVersion özniteliği
+## <a name="toolsversion-attribute"></a>Araçları sürüm özniteliği
 ::: moniker range=">=vs-2019"
- Araç kümesinde belirtin `ToolsVersion` özniteliği [proje](../msbuild/project-element-msbuild.md) proje dosyasındaki öğesi. Aşağıdaki örnek proje MSBuild "Geçerli" araç setini kullanarak oluşturulması gerektiğini belirtir.
+ Proje dosyasındaki `ToolsVersion` [Proje](../msbuild/project-element-msbuild.md) öğesindeki özniteliğinde araç takımını belirtin. Aşağıdaki örnek, projenin MSBuild "Current" araç takımı kullanılarak oluşturulması gerektiğini belirtir.
 
 ```xml
 <Project ToolsVersion="Current" ... </Project>
@@ -35,7 +35,7 @@ MSBuild, bir uygulama oluşturmak için bir araç takımı görevleri, hedefler 
 ::: moniker-end
 
 ::: moniker range="vs-2017"
- Araç kümesinde belirtin `ToolsVersion` özniteliği [proje](../msbuild/project-element-msbuild.md) proje dosyasındaki öğesi. Aşağıdaki örnek proje MSBuild 15.0 araç setini kullanarak oluşturulması gerektiğini belirtir.
+ Proje dosyasındaki `ToolsVersion` [Proje](../msbuild/project-element-msbuild.md) öğesindeki özniteliğinde araç takımını belirtin. Aşağıdaki örnek, projenin MSBuild 15,0 araç kümesi kullanılarak oluşturulması gerektiğini belirtir.
 
 ```xml
 <Project ToolsVersion="15.0" ... </Project>
@@ -44,94 +44,94 @@ MSBuild, bir uygulama oluşturmak için bir araç takımı görevleri, hedefler 
 ::: moniker-end
 
 > [!NOTE]
-> Bazı proje türü kullanım `sdk` özniteliği yerine `ToolsVersion`. Daha fazla bilgi için [paketler, meta verileri ve çerçeveleri](/dotnet/core/packages) ve [csproj eklemeler biçimlendirmek için .NET Core](/dotnet/core/tools/csproj).
+> Bazı proje türleri `sdk` `ToolsVersion`yerine özniteliğini kullanır. Daha fazla bilgi için bkz. [.NET Core için csproj biçimine](/dotnet/core/tools/csproj)yönelik [paketler, meta veriler ve çerçeveler](/dotnet/core/packages) ve eklemeler.
 
-## <a name="how-the-toolsversion-attribute-works"></a>ToolsVersion özniteliği nasıl çalışır?
+## <a name="how-the-toolsversion-attribute-works"></a>Araçları sürüm özniteliği nasıl kullanılır?
 
- Visual Studio'da bir proje oluşturun veya mevcut bir projeyi yükseltmesine adlı bir öznitelik `ToolsVersion` otomatik olarak eklenir projeye dosya ve değerine karşılık gelen Visual Studio sürümü dahildir MSBuild'ın sürümü için. Daha fazla bilgi için [genel bakışı hedefleyen Framework](../ide/visual-studio-multi-targeting-overview.md).
+ Visual Studio 'da bir proje oluşturduğunuzda veya mevcut bir projeyi yükselttiğinizde, adlı `ToolsVersion` bir öznitelik proje dosyasına otomatik olarak eklenir ve değeri Visual Studio sürümüne dahil olan MSBuild sürümüne karşılık gelir. Daha fazla bilgi için bkz. [Çerçeve hedefleme genel bakış](../ide/visual-studio-multi-targeting-overview.md).
 
- Olduğunda bir `ToolsVersion` değer proje dosyasında tanımlanan, MSBuild, proje için kullanılabilir araç takımı özelliklerin değerlerini belirlemek için bu değeri kullanır. Bir araç takımı özelliği `$(MSBuildToolsPath)`, .NET Framework Araçları yolunu belirtir. Yalnızca bu araç takımı özelliği (veya `$(MSBuildBinPath)`), gerekli değildir.
+ Bir proje `ToolsVersion` dosyasında bir değer tanımlandığında, MSBuild bu değeri, projenin kullanabildiği araç kümesi özelliklerinin değerlerini belirlemekte kullanır. Bir araç takımı özelliği `$(MSBuildToolsPath)`, .NET Framework araçlarının yolunu belirtir. Yalnızca bu araç takımı özelliği ( `$(MSBuildBinPath)`veya) gereklidir.
 
- Visual Studio 2013'te başlayarak, MSBuild araç takımı sürümü Visual Studio sürüm numarası ile aynı olur. Varsayılan olarak bu araç, Visual Studio içinden ve proje dosyasında belirtilen araç takımının sürüm ne olursa olsun komut satırında MSBuild.  Bu davranış - ToolsVersion bayrağı kullanılarak geçersiz kılınabilir. Daha fazla bilgi için [geçersiz kılma ToolsVersion ayarlarını](../msbuild/overriding-toolsversion-settings.md).
+ Visual Studio 2013 başlayarak, MSBuild Araç Takımı sürümü Visual Studio sürüm numarasıyla aynıdır. MSBuild, proje dosyasında belirtilen araç kümesi sürümünden bağımsız olarak Visual Studio içinde ve komut satırında bu araç takımını varsayılan olarak belirler.  Bu davranış,-, sürüm bayrağı kullanılarak geçersiz kılınabilir. Daha fazla bilgi için bkz. [araçları sürüm ayarlarını geçersiz kılma](../msbuild/overriding-toolsversion-settings.md).
 
- Aşağıdaki örnekte, MSBuild bulur *Microsoft.CSharp.targets* kullanarak dosya `MSBuildToolsPath` ayrılmış özelliği.
+ Aşağıdaki örnekte, MSBuild, `MSBuildToolsPath` ayrılmış özelliğini kullanarak *Microsoft. CSharp. targets* dosyasını bulur.
 
 ```xml
 <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 ```
 
- Değerini değiştirebilirsiniz `MSBuildToolsPath` özel bir araç kümesi tanımlayarak. Daha fazla bilgi için [standart ve özel araç takımı yapılandırmaları](../msbuild/standard-and-custom-toolset-configurations.md)
+ Değerini `MSBuildToolsPath` özel bir araç kümesi tanımlayarak değiştirebilirsiniz. Daha fazla bilgi için bkz. [Standart ve özel araç takımı yapılandırması](../msbuild/standard-and-custom-toolset-configurations.md).
 
- Komut satırında bir çözüm derleyin ve belirtin, bir `ToolsVersion` için *msbuild.exe*, tüm projeleri ve proje proje bağımlılıklarını göre yerleşik olan `ToolsVersion`bile çözümde her proje kendi belirtir `ToolsVersion`. Tanımlamak için `ToolsVersion` proje bazında değeri için bkz: [geçersiz kılma ToolsVersion ayarlarını](../msbuild/overriding-toolsversion-settings.md).
+ Komut satırında bir çözüm oluşturduğunuzda ve `ToolsVersion` *MSBuild. exe*için bir belirleme belirttiğinizde, çözümdeki her proje kendi kendine `ToolsVersion` belirtsebiletümprojelerveproje-projebağımlılıklarıbunagöreoluşturulur `ToolsVersion`. `ToolsVersion` Değeri proje başına olarak tanımlamak için bkz. [araçları sürüm ayarlarını geçersiz kılma](../msbuild/overriding-toolsversion-settings.md).
 
- `ToolsVersion` Özniteliği proje geçişi için de kullanılır. Visual Studio 2010'da Visual Studio 2008 proje açarsanız, örneğin, proje dosyası ToolsVersion içerecek şekilde güncelleştirilmiştir = "4.0". Ardından Visual Studio 2008'de bu projeyi açmaya çalışırsanız, yükseltilen tanımıyor `ToolsVersion` ve bu nedenle, öznitelik 3.5 hala ayarlanmış olsa projeyi oluşturur.
+ Özniteliği `ToolsVersion` , proje geçişi için de kullanılır. Örneğin, Visual Studio 2010 ' de bir Visual Studio 2008 projesi açarsanız proje dosyası, araçları sürümü = "4.0" olarak güncelleştirilir. Daha sonra bu projeyi Visual Studio 2008 ' de açmaya çalışırsanız bu, yükseltilen `ToolsVersion` öğesini tanımaz ve bu nedenle projeyi özniteliği hala 3,5 olarak ayarlanmış gibi oluşturur.
 
- Visual Studio 2010 ve Visual Studio 2012 bir ToolsVersion 4. 0'ı kullanın. Visual Studio 2013'ün bir ToolsVersion 12.0 birini kullanır. ToolsVersion 14.0 Visual Studio 2015 ve Visual Studio 2017 15.0 ToolsVersion kullanır. Çoğu durumda, birden fazla değişiklik yapmadan Visual Studio sürümlerinde projeyi açabilirsiniz. Visual Studio, her zaman doğru araç takımı kullanır, ancak kullanılan sürümü proje dosyasında sürüm eşleşmiyorsa size bildirilir. Hemen hemen tüm durumlarda, bu uyarı araç takımları çoğu zaman uyumlu olarak zararsızdır.
+ Visual Studio 2010 ve Visual Studio 2012, 4,0 için bir araçları sürümü kullanır. Visual Studio 2013, 12,0 'in bir araçları sürümünü kullanır. Visual Studio 2015, araçları sürüm 14,0 ' nı kullanır ve Visual Studio 2017, araçları sürüm 15,0 kullanır. Birçok durumda, Visual Studio 'nun birden çok sürümünde değişiklik yapmadan projeyi açabilirsiniz. Visual Studio daima doğru araç takımını kullanır, ancak kullanılan sürüm proje dosyasındaki sürümle eşleşmezse size bildirilir. Neredeyse her durumda, araç kümeleri çoğu durumda uyumlu olduğu için bu uyarı zararsız olur.
 
- Bu konunun ilerleyen bölümlerinde açıklanan Sub-takımları, MSBuild araçları kullanmak için hangi kümesi yapının çalıştırıldığı bağlama göre otomatik olarak değiştirmek izin verin. Örneğin, Visual Studio 2012'de, Visual Studio 2010'da, açıkça proje dosyasını değiştirmek zorunda kalmadan çalıştırıldığında çalıştırıldığında MSBuild daha yeni bir araç kümesi kullanır.
+ Bu konunun ilerleyen kısımlarında açıklanan alt araç kümeleri, MSBuild 'in çalıştırıldığı bağlama göre kullanılacak araç kümesini otomatik olarak değiştirmesine izin verir. Örneğin, MSBuild, proje dosyasını açıkça değiştirmek zorunda kalmadan Visual Studio 2012 ' de çalıştırıl2010 masından daha yeni bir araç kümesi kullanır.
 
-## <a name="toolset-implementation"></a>Araç takımını uygulama
+## <a name="toolset-implementation"></a>Araç takımı uygulama
 
- Bir araç takımı, çeşitli araçlar, hedefler ve araç takımı ' yapan görev yollarını seçerek uygulayın. MSBuild tanımlayan araç takımı araçlarında aşağıdaki kaynaklardan gelir:
+ Araç takımını oluşturan çeşitli araçların, hedeflerin ve görevlerin yollarını seçerek bir araç takımı uygulayın. MSBuild 'in tanımladığı araç takımı içindeki Araçlar aşağıdaki kaynaklardan gelir:
 
-- .NET Framework klasör.
+- .NET Framework klasörü.
 
 - Ek yönetilen araçlar.
 
-  Yönetilen araçlarda *ResGen.exe* ve *TlbImp.exe*.
+  Yönetilen Araçlar *Resgen. exe* ve *Tlbimp. exe*' yi içerir.
 
-MSBuild araç takımı erişmek için iki yol sunar:
+MSBuild, araç seti 'ne erişmenin iki yolunu sağlar:
 
-- Araç özelliklerini kullanarak
+- Araç kümesi özelliklerini kullanarak
 
-- Kullanarak <xref:Microsoft.Build.Utilities.ToolLocationHelper> yöntemleri
+- Yöntemleri kullanarak <xref:Microsoft.Build.Utilities.ToolLocationHelper>
 
-Araç Özellikleri araçları yollarını belirtin. Visual Studio 2017'den başlayarak, MSBuild artık sabit bir konum vardır. Varsayılan olarak bulunur *MSBuild\15.0\Bin* klasörüyle ilgili Visual Studio yükleme konumu. Önceki sürümlerde, MSBuild değerini kullanır. `ToolsVersion` araç özelliklerini ayarlamak için kayıt defteri anahtarı bilgileri sonra kullanır ve karşılık gelen kayıt defteri anahtarını bulmak için proje dosyasında özniteliği. Örneğin, varsa `ToolsVersion` değerine sahip `12.0`, MSBuild araç takımı özelliklerini bu kayıt defteri anahtarı göre ayarlar: **HKLM\Software\Microsoft\MSBuild\ToolsVersions\12.0**.
+Araç kümesi özellikleri araçların yollarını belirtir. Visual Studio 2017 ' den başlayarak MSBuild artık sabit bir konuma sahip değildir. Varsayılan olarak, Visual Studio yükleme konumuna göre *Msbuild\15.0\Bin* klasöründe bulunur. Daha önceki sürümlerde MSBuild, karşılık gelen kayıt defteri anahtarını `ToolsVersion` bulmak için proje dosyasındaki özniteliğin değerini kullanır ve ardından araç kümesi özelliklerini ayarlamak için kayıt defteri anahtarındaki bilgileri kullanır. Örneğin, değeri `12.0`varsa `ToolsVersion` MSBuild, araç kümesi özelliklerini bu kayıt defteri anahtarına göre ayarlar: **Hklm\software\microsoft\msbuild\tools\versions\12.0**.
 
- Araç özellikleri şunlardır:
+ Araç kümesi özellikleri şunlardır:
 
-- `MSBuildToolsPath` MSBuild ikili dosyalarının yolunu belirtir.
+- `MSBuildToolsPath`MSBuild ikili dosyalarının yolunu belirtir.
 
-- `SDK40ToolsPath` MSBuild için ek yönetilen araçları yolunu belirtir (Bu 4.0 veya 4.5 olabilir) 4.x.
+- `SDK40ToolsPath`MSBuild 4. x için ek yönetilen araçların yolunu belirtir (4,0 veya 4,5 olabilir).
 
-- `SDK35ToolsPath` MSBuild 3.5 için ek yönetilen araçları yolunu belirtir.
+- `SDK35ToolsPath`MSBuild 3,5 için ek yönetilen araçların yolunu belirtir.
 
-Alternatif olarak, araç takımı program aracılığıyla yöntemleri çağırarak belirleyebilirsiniz <xref:Microsoft.Build.Utilities.ToolLocationHelper> sınıfı. Sınıfı, bu yöntem içerir:
+Alternatif olarak, <xref:Microsoft.Build.Utilities.ToolLocationHelper> sınıfının yöntemlerini çağırarak araç takımını programlı bir şekilde belirleyebilirsiniz. Sınıfı şu yöntemleri içerir:
 
-- <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToDotNetFramework%2A> .NET Framework klasörünün yolunu döndürür.
+- <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToDotNetFramework%2A>.NET Framework klasörünün yolunu döndürür.
 
-- <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToDotNetFrameworkFile%2A> .NET Framework klasöründe bir dosya yolunu döndürür.
+- <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToDotNetFrameworkFile%2A>.NET Framework klasöründeki bir dosyanın yolunu döndürür.
 
-- <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToDotNetFrameworkSdk%2A> Yönetilen Araçları klasörünün yolunu döndürür.
+- <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToDotNetFrameworkSdk%2A>yönetilen araçlar klasörünün yolunu döndürür.
 
-- <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToDotNetFrameworkSdkFile%2A> genellikle yönetilen Araçlar klasöründe bulunan bir dosyanın yolunu döndürür.
+- <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToDotNetFrameworkSdkFile%2A>genellikle yönetilen Araçlar klasöründe bulunan bir dosyanın yolunu döndürür.
 
-- <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToBuildTools%2A> derleme araçları yolunu döndürür.
+- [Getpathtobuildtools](/previous-versions/visualstudio/visual-studio-2013/dn251121(v=vs.121)) , derleme araçlarının yolunu döndürür.
 
-### <a name="sub-toolsets"></a>Alt araç takımları
+### <a name="sub-toolsets"></a>Alt araç kümeleri
 
- MSBuild 15.0 önceki sürümler için MSBuild olan temel araçları yolunu belirtmek için bir kayıt defteri anahtarını kullanır. Bir alt anahtar varsa, MSBuild ek araçlarını içeren bir alt-araç yolu belirlemek için kullanır. Bu durumda, araç takımını hem anahtarlarında tanımlanan özellik tanımları birleştirerek tanımlanır.
+ MSBuild 15,0 ' den önceki sürümler için, temel araçların yolunu belirtmek üzere bir kayıt defteri anahtarı kullanır. Anahtarın bir alt anahtarı varsa, MSBuild bunu ek araçlar içeren bir alt araç takımının yolunu belirtmek için kullanır. Bu durumda, araç takımı her iki anahtar içinde tanımlanmış özellik tanımlarını birleştirerek tanımlanır.
 
 > [!NOTE]
-> Araç takımı özellik adları çakışıyorsa, alt anahtar yolunu tanımlanan değerin kök anahtar yolu için tanımlanan değer geçersiz kılar.
+> Araç kümesi özellik adları çakışıyorsa, alt anahtar yolu için tanımlanan değer kök anahtar yolu için tanımlanan değeri geçersiz kılar.
 
- Alt araç takımları varken etkin hale `VisualStudioVersion` özellik oluşturun. Bu özellik, bu değerlerden birini alabilir:
+ Alt araç kümeleri `VisualStudioVersion` Build özelliğinin varlığı içinde etkin hale gelir. Bu özellik şu değerlerden birini alabilir:
 
-- "10.0".NET Framework 4 alt araç belirtir
+- "10,0" .NET Framework 4 alt araç takımını belirtir
 
-- "11.0".NET Framework 4.5 alt araç belirtir
+- "11,0" .NET Framework 4,5 alt araç takımını belirtir
 
-- "12.0".NET Framework 4.5.1 alt araç belirtir
+- "12,0" .NET Framework 4.5.1 alt araç takımını belirtir
 
-Alt-takımları 10.0 ve 11.0 ToolsVersion 4.0 ile kullanılmalıdır. Sonraki sürümlerde, alt araç kümesi sürümünü ve ToolsVersion eşleşmesi gerekir.
+10,0 ve 11,0 alt araç kümeleri, Araçlar sürüm 4,0 ile kullanılmalıdır. Sonraki sürümlerde alt araç takımı sürümü ve araçları sürümü eşleşmelidir.
 
-Bir derleme sırasında MSBuild otomatik olarak belirleyen ve ayarlar için varsayılan bir değer `VisualStudioVersion` zaten tanımlanmışsa özelliği.
+Bir derleme sırasında, MSBuild, zaten tanımlanmamışsa `VisualStudioVersion` özellik için varsayılan değeri otomatik olarak belirler ve ayarlar.
 
-MSBuild için aşırı yüklemeler sağlar `ToolLocationHelper` ekleme yöntemleri bir `VisualStudioVersion` numaralandırılmış bir parametre değeri
+MSBuild, `ToolLocationHelper` bir parametre olarak `VisualStudioVersion` Numaralandırılmış değer ekleyen yöntemler için aşırı yüklemeler sağlar
 
-Alt araç takımları .NET Framework 4. 5 ' kullanılmaya başlanmıştır.
+.NET Framework 4,5 ' de alt araç kümeleri tanıtılmıştı.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [Standart ve özel araç takımı yapılandırmaları](../msbuild/standard-and-custom-toolset-configurations.md)
+- [Standart ve özel araç takımı yapılandırması](../msbuild/standard-and-custom-toolset-configurations.md)
 - [Çoklu Sürüm Desteği](../msbuild/msbuild-multitargeting-overview.md)
