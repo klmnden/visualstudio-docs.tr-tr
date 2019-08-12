@@ -4,7 +4,7 @@
   items:
     - name: Genel Bakış
       href: overview.md
-    - name: Hızlı başlangıç
+    - name: Hızlı Başlangıç
       expanded: true
       items:
         - name: Kapsayıcı içinde ASP.NET Core uygulaması
@@ -18,7 +18,7 @@
           href: tutorial-multicontainer.md
         - name: Visual Studio’da Kubernetes
           href: tutorial-kubernetes-tools.md
-    - name: Nasıl Yapılır?
+    - name: Nasıl yapılır
       items:
         - name: Yerel Docker kapsayıcısındaki uygulamada hata ayıklama
           href: edit-and-refresh.md
@@ -26,6 +26,8 @@
           href: hosting-web-apps-in-docker.md
         - name: Azure App Service'e dağıtma
           href: deploy-app-service.md
+        - name: Docker Hub’a dağıtma
+          href: deploy-docker-hub.md
         - name: Kapsayıcıları görüntüleme ve tanılama
           href: view-and-diagnose-containers.md
         - name: Kapsayıcı Araçları’nı yapılandırma
