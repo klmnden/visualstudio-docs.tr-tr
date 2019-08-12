@@ -1,74 +1,80 @@
 ---
-title: Visual Studio Genişleticileri İzleyici başına tanıma desteği
+title: Visual Studio Extender 'lar için monitör başına tanıma desteği
 titleSuffix: ''
-description: Her İzleyici-tanıma Visual Studio 2019 içinde kullanılabilir yeni genişletici desteği hakkında bilgi edinin.
+description: Visual Studio 2019 ' de, ekran tanıma için sunulan yeni genişletici desteği hakkında bilgi edinin.
 ms.date: 04/10/2019
 helpviewer_keywords:
 - Visual Studio, PMA, per-monitor-awareness, extenders, Windows Forms
 - Per-Monitor Awareness support for extenders
-ms.assetid: ''
 author: rub8n
 ms.author: rurios
 manager: anthc
-ms.prod: visual-studio-windows
 monikerRange: vs-2019
-ms.technology: vs-ide-general
-ms.topic: reference
-ms.workload:
-- multiple
-ms.openlocfilehash: 44938c5753491521702867398a514f770cf831fb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.topic: conceptual
+dev_langs:
+- CSharp
+- CPP
+ms.openlocfilehash: 2686248a087650f6170b72c8ef9b3a77e2ba275c
+ms.sourcegitcommit: 6f3cf7a1bfc81a61f9a603461a1c34fd2221f100
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62793645"
+ms.lasthandoff: 08/12/2019
+ms.locfileid: "68957347"
 ---
-# <a name="per-monitor-awareness-support-for-visual-studio-extenders"></a>Visual Studio Genişleticileri İzleyici başına tanıma desteği
-Visual Studio 2019 önceki sürümler, Sistem İzleyici başına DPI kullanan (PMA) yerine uyumlu olarak DPI tanıma bağlamları vardı. Düzeyi düşürülmüş bir görselde sonuçlanan sistem tanıma çalışan farklı ölçek Etkenler veya uzaktan değerlerine sahip farklı bir ekranı yapılandırmaları ile makinelere örneğin (farklı işlemek Visual Studio sahip olduğunda (örneğin bulanık yazı tipleri veya simgeler) deneyimi Windows) ölçeklendirme.
+# <a name="per-monitor-awareness-support-for-visual-studio-extenders"></a>Visual Studio Extender 'lar için monitör başına tanıma desteği
 
-Ortamı, bir tek sistem tanımlı yapılandırması yerine Visual Studio hizmetin barındırıldığı görünen yapılandırmasına göre işlemek için izin verme desteklediğinde, Visual Studio 2019 DPI tanıma bağlamında PMA ayarlanır. Sonuçta PMA modu desteği yüzey alanlarda her zaman NET bir UI içine çevirme.
+Visual Studio 2019 ' den önceki sürümlerde, DPı tanıma bağlamı, ekran başına DPı kullanan (PMA) değil, sistem tarafından uyumlu olarak ayarlanmıştır. Sistem tanıma 'da çalışmak, Visual Studio 'Nun farklı ölçek faktörlerine sahip izleyiciler genelinde veya farklı görüntü yapılandırmalarına sahip makinelere uzak olarak işlenmesi gerektiğinde (örneğin, farklı Windows ölçeklendirme).
 
-Başvurmak [Windows üzerinde yüksek DPI Masaüstü uygulama geliştirme](https://docs.microsoft.com/windows/desktop/hidpi/high-dpi-desktop-application-development-on-windows) hüküm ve genel senaryo hakkında daha fazla bilgi için bu belgede ele.
+Visual Studio 2019 ' in DPı tanıma bağlamı, ortam tarafından desteklendiği zaman PMA olarak ayarlanmıştır, Visual Studio 'nun tek sistem tanımlı yapılandırma yerine barındırıldığı görüntü yapılandırmasına göre işlenmesine izin verir. Sonuç olarak PMA modunu destekleyen yüzey alanları için her zaman net bir kullanıcı arabirimine çevriliyor.
+
+Bu belgede ele alınan hüküm ve genel senaryo hakkında daha fazla bilgi için [Windows belgelerindeki yüksek DPI masaüstü uygulaması geliştirmesi](/windows/desktop/hidpi/high-dpi-desktop-application-development-on-windows) bölümüne bakın.
 
 ## <a name="quickstart"></a>Hızlı başlangıç
-- Visual Studio PMA modunda çalıştığından emin olun (bkz **etkinleştirme PMA**)
 
-- Uzantı çalışır, bir dizi ortak senaryolar arasında doğru doğrulamak (bkz **uzantılarınızı PMA sorunlarıyla ilgili test**)
+- Visual Studio 'Nun PMA modunda çalıştığından emin olun (bkz. **PMA 'Yı etkinleştirme**)
 
-- Bir sorunla karşılaşmanız halinde, bu sorunları tanılayıp bu belgede ele alınan stratejileri/önerileri kullanabilirsiniz. Ayrıca yeni eklemeniz gerekir [Microsoft.VisualStudio.DpiAwareness](https://www.nuget.org/packages/Microsoft.VisualStudio.DpiAwareness/) NuGet paketini projenize gerekli API'lerine erişmek için.
+- Uzantınızın yaygın senaryolar kümesi boyunca doğru şekilde çalışıp çalışmadığını doğrulayın (bkz. **PMA sorunları için uzantılarınızı test etme**)
 
-## <a name="enabling-pma"></a>PMA etkinleştirme
-Visual Studio'da PMA etkinleştirmek için aşağıdaki gereksinimlerin karşılanması gerekir:
-1) Windows 10 Nisan 2018 Güncelleştirmesi (v1803 RS4) veya üzeri
-2) .NET framework 4.8 RTM veya üzeri
-3) Visual Studio 2019 ile ["Farklı piksel densities ekranlar için Optimize işleme"](https://docs.microsoft.com/visualstudio/ide/reference/general-environment-options-dialog-box?view=vs-2019) seçeneği etkin
+- Sorunları bulursanız, bu belgede açıklanan stratejileri/önerileri kullanarak bu sorunları tanılayabilir ve giderebilirsiniz. Ayrıca, gerekli API 'lere erişmek için yeni [Microsoft. VisualStudio. Dpitanıma](https://www.nuget.org/packages/Microsoft.VisualStudio.DpiAwareness/) NuGet paketini projenize eklemeniz gerekir.
 
-Bu gereksinimlerin karşılanıp karşılanmadığından sonra Visual Studio süreci boyunca PMA modu otomatik olarak etkinleştirir.
+## <a name="enable-pma"></a>PMA 'yı etkinleştir
+
+Visual Studio 'da PMA 'yı etkinleştirmek için aşağıdaki gereksinimlerin karşılanması gerekir:
+
+- Windows 10 Nisan 2018 Güncelleştirmesi (v1803, RS4) veya üzeri
+- .NET Framework 4,8 RTM veya üzeri
+- Visual Studio 2019 ["farklı piksel eğilimi olan ekranlar Için optimize et"](../../ide/reference/general-environment-options-dialog-box.md) seçeneği etkin
+
+Bu gereksinimler karşılandığında, Visual Studio işlem genelinde PMA modunu otomatik olarak sunar.
 
 > [!NOTE]
-> Visual Studio 2019 güncelleştirme #1 olduğunda, Windows Forms içerik (örneğin, özellik tarayıcısı) vs'de PMA destekleyecektir.
+> Visual Studio 'daki Windows Forms içerik (örneğin, özellik tarayıcısı) yalnızca Visual Studio 2019 sürüm 16,1 veya sonraki bir sürüme sahip olduğunuzda PMA 'yı destekler.
 
-## <a name="testing-your-extensions-for-pma-issues"></a>Uzantılarınızı PMA sorunlar için test etme
+## <a name="test-your-extensions-for-pma-issues"></a>PMA sorunları için uzantılarınızı test etme
 
-Visual Studio resmi olarak WPF, Windows Forms, Win32 ve HTML/JS UI çerçeveleri destekler. Visual Studio PMA moduna geçirdiğinizde, her bir kullanıcı Arabirimi yığında farklı davranır. Bu nedenle, UI Çerçevesi'ne olursa olsun tüm kullanıcı Arabirimi PMA modu ile uyumlu olduğundan emin olmak için bir test geçişi gerçekleştirilir önerilir.
+Visual Studio resmi olarak WPF, Windows Forms, Win32 ve HTML/JS Kullanıcı arabirimi çerçevelerini destekler. Visual Studio PMA moduna yerleştirilince, her UI yığını farklı davranır. Bu nedenle, UI çerçevesi ne olursa olsun, tüm Kullanıcı arabiriminin PMA moduyla uyumlu olduğundan emin olmak için bir test geçişinin gerçekleştirilmesi önerilir.
 
-Aşağıdaki senaryoları doğrulamak önerilir:
+Aşağıdaki yaygın senaryoları doğrulamanız önerilir:
 
-1. Uygulamanın çalışmasını * durumdayken ölçek faktörü tek bir izleme ortamı değiştirme
-    - Bu senaryoda kullanıcı arabirimini dinamik olarak Windows DPI değiştirilmesi yanıt verdiğini test yardımcı olur.
+- Uygulama çalışırken tek bir izleyici ortamının ölçek faktörünü değiştirme.
 
-2. Yerleştirme/burada birincil siteye bağlı bir izleyici ayarlanır ve uygulama çalışırken bir farklı ölçek faktörü dizüstü daha eklenen monitör sahip bir dizüstü desteklemiyor.
-    - Bu senaryo DPI değişiklik yanı sıra görüntüler dinamik olarak işleme eklendi veya kaldırılmasını kullanıcı Arabirimi ekranı için yanıt verdiğini test yardımcı olur.
+  Bu senaryo, bu kullanıcı arabiriminin dinamik Windows DPı değişikliğine yanıt verdiğini test etmenize yardımcı olur.
 
-3. Birden çok monitör farklı ölçek faktörleri sahip olmak ve bunlar arasında uygulama taşıma.
-    - Bu senaryo için görüntü DPI değişikliği UI yanıt verdiğini test yardımcı olur.
+- Eklenmiş bir izleyicinin birincil olarak ayarlandığı ve ekli izleyicinin, uygulama çalışırken dizüstü bilgisayar üzerinde farklı bir ölçek faktörü olduğu bir dizüstü bilgisayarı sabitleme/çıkarma.
+
+  Bu senaryo, Kullanıcı arabiriminin görüntüleme DPı değişikliğine yanıt verdiğini ve işleme dinamik olarak eklenmekte veya kaldırılmasına neden olduğunu test etmenize yardımcı olur.
+
+- Farklı ölçek faktörlerine sahip birden çok monitöre sahip olma ve uygulamayı bunlar arasında taşıma.
+
+  Bu senaryo, Kullanıcı arabiriminin görüntüleme DPı değişikliğine yanıt verdiğini sınamaya yardımcı olur
     
-4. Uzak bir makine yerel ve uzak makineler için birincil İzleyici farklı ölçek Etkenler olduğunda.
-    - Bu senaryoda kullanıcı arabirimini dinamik olarak Windows DPI değiştirilmesi yanıt verdiğini test yardımcı olur.
+- Yerel ve uzak makinelerin birincil izleyici için farklı ölçek faktörleri olduğunda bir makineye uzaktan iletişim kurarak.
 
-Kod mi yararlanır olup, kullanıcı Arabirimi sorunlar yaşayabilirsiniz için iyi bir başlangıç sınama olduğu *Microsoft.VisualStudio.Utilities.Dpi.DpiHelper*, *Microsoft.VisualStudio.PlatformUI.DpiHelper*, veya *VsUI::CDpiHelper* sınıfları. Bu eski DpiHelper sınıfları yalnızca sistem DPI tanıma destekler ve işlem PMA olduğunda her zaman doğru şekilde çalışmaz.
+  Bu senaryo, bu kullanıcı arabiriminin dinamik Windows DPı değişikliğine yanıt verdiğini test etmenize yardımcı olur.
 
-Bu DpiHelpers tipik kullanımını şöyle görünecektir:
+Kodunuzun *Microsoft. VisualStudio. Utilities. DPI. DpiHelper*, *Microsoft. VisualStudio. PlatformUI. DpiHelper*veya *Vsui:: cdpihelper* sınıflarını kullanıp kullanmadığını, Kullanıcı arabiriminde sorun olup olmadığı konusunda iyi bir ön test. Bu eski DpiHelper sınıfları yalnızca sistem DPı tanımayı destekler ve işlem PMA olduğunda her zaman düzgün çalışmaz.
+
+Bu Dpiyardımcıları 'nın tipik kullanımları şöyle görünür:
 
 ```cs
 Point screenTopRight = logicalBounds.TopRight.LogicalToDeviceUnits();
@@ -83,81 +89,86 @@ POINT screenIntTopRight = new POINT
 IntPtr monitor = MonitorFromPoint(screenIntTopRight, MONITOR_DEFAULTTONEARST);
 ```
 
-Önceki örnekte, böylece doğru İzleyici işaretçi geri döndürmek için cihaz koordinatları bekliyor MonitorFromPoint yerel yönteme geçirilen pencerenin mantıksal sınırları temsil eden bir dikdörtgen cihaz birimlerine dönüştürülür.
+Önceki örnekte, bir pencerenin mantıksal sınırlarını temsil eden bir dikdörtgen cihaz birimlerine dönüştürülüp, doğru bir izleyici işaretçisini geri dönebilmek için cihaz koordinatları bekleyen MonitorFromPoint yerel yöntemine geçirilebilir.
 
-### <a name="classes-of-issues"></a>Sorunların sınıfları
-Visual Studio için PMA modu etkin olduğunda, kullanıcı Arabirimi sorunları birkaç yaygın şekilde çoğaltabilirsiniz. Bu konular hakkında en değilse, Visual Studio'nun desteklenen UI çerçeveleri hiçbirinde oluşabilir. Kullanıcı arabiriminin bir parça içinde karma mod DPI senaryolarında ölçeklendirme barındırıldığında ek olarak, bu sorunları da oluşabilir (Windows için başvuru [belgeleri](https://docs.microsoft.com/windows/desktop/hidpi/high-dpi-desktop-application-development-on-windows) daha fazla bilgi için). 
+### <a name="classes-of-issues"></a>Sorun sınıfları
+PMA modu Visual Studio için etkinleştirildiğinde, Kullanıcı arabirimi sorunları birkaç ortak şekilde çoğaltabilir. Çoğu, bu sorunların çoğu, Visual Studio 'nun desteklenen kullanıcı arabirimi çerçevelerinden herhangi birinde meydana gelebilir. Ayrıca, bu sorunlar, bir kullanıcı arabirimi karma mod DPı ölçeklendirme senaryolarında barındırıldığı zaman da gerçekleşebilir (daha fazla bilgi için Windows [belgelerine](/windows/desktop/hidpi/high-dpi-desktop-application-development-on-windows) bakın). 
 
 #### <a name="win32-window-creation"></a>Win32 pencere oluşturma
-Windows CreateWindow() veya CreateWindowEx() oluştururken, yaygın bir düzen pencere (0,0) koordinatlarda oluşturmaktır (birincil ekranın sol üst köşesinde), ardından son konumuna taşıyın. Ancak, bir DPI tetiklemek pencerenin neden olabilir, böylece ileti veya diğer UI iletilerini veya olaylar yeniden Tetikle ve sonunda istenmeyen davranışlara veya işleme neden, olay değiştirildi.
+CreateWindow () veya CreateWindowEx () ile Windows oluştururken, yaygın bir model pencerenin koordinatlara (0, 0) (birincil görüntünün üst/sol köşesi) oluşturulması ve ardından son konumuna taşınması olur. Ancak, bunun yapılması pencerenin bir DPı değiştirilmiş ileti veya olayı tetiklemesine neden olabilir. Bu, diğer kullanıcı arabirimi iletilerini veya olaylarını yeniden yönlendirebilir ve sonunda istenmeyen davranışa veya işlemeye yol açabilir.
 
-#### <a name="wpf-element-placement"></a>WPF öğesi yerleştirme
-Öğeleri bir birincil olmayan DPI üzerinde olduğunda eski Microsoft.VisualStudio.Utilities.Dpi.DpiHelper kullanarak WPF öğeleri taşırken, sol üst koordinat doğru şekilde hesaplanmış olabilir değil.
+#### <a name="wpf-element-placement"></a>WPF öğe yerleşimi
+Eski Microsoft. VisualStudio. Utilities. DPI. DpiHelper kullanarak WPF öğelerini taşırken, öğeler birincil olmayan bir DPı üzerinde olduğunda sol üst Koordinatlar doğru hesaplanmayabilir.
 
-#### <a name="serialization-of-ui-element-sizes-or-positions"></a>Kullanıcı Arabirimi öğesi boyutları veya konumlarını serileştirilmesi
-Hangi konumunda depolanmış değerinden farklı bir DPI bağlama sırasında kullanıcı Arabirimi boyut ve konum (cihaz birimleri kaydettiyseniz) geri yüklendiğinde, konumlandırılır ve boyutu yanlış. Devralınmış bir DPI ilişki cihaz birimlerine sahip olur.
+#### <a name="serialization-of-ui-element-sizes-or-positions"></a>UI öğesi boyutları veya konumlarını serileştirme
+Kullanıcı arabirimi boyutu veya konumu (cihaz birimi olarak kaydedildiğinde), farklı bir DPı bağlamında depolandıktan sonra geri yüklenirse, bu değer yanlış olarak konumlandırılır ve boyutlandırılıp boyutlandırılacaktır. Bu durum cihaz birimlerinin devralınan bir DPı ilişkisine sahip olması nedeniyle oluşur.
 
-#### <a name="incorrect-scaling"></a>Yanlış ölçeklendirme
-Birincil DPI üzerinde oluşturulan UI öğeleri, ancak farklı DPI bir ekran için taşınmış, yeniden ölçeklendirmek yok ve bu nedenle, çok büyük veya çok küçük olan yukarı içeriklerini sona erer doğru bir şekilde ölçeklendirilir.
+#### <a name="incorrect-scaling"></a>Hatalı ölçeklendirme
+Birincil DPı üzerinde oluşturulan kullanıcı arabirimi öğeleri doğru şekilde ölçeklendirecektir, ancak farklı bir DPı ile bir görüntülemeye taşındığında, yeniden ölçeklendirmez ve içerikleri çok büyük veya çok küçük olur.
 
-#### <a name="incorrect-bounding"></a>Yanlış sınırlayıcı
-Benzer şekilde, birincil olmayan DPI olarak takıldığında, yeni sınırları doğru şekilde hesaplanacak olmaz ancak ölçeklendirme sorunu için kullanıcı Arabirimi öğeleri doğru birincil DPI bağlamları kendi sınır hesaplar. Bu nedenle, içerik penceresi çok küçük veya çok büyük boşluk veya kırpma sonuçları barındırma UI ile karşılaştırıldığında olur.
+#### <a name="incorrect-bounding"></a>Yanlış sınırlama
+Ölçeklendirme sorununa benzer şekilde, UI öğeleri birincil DPı bağlamında sınırlarını doğru hesaplar, ancak birincil olmayan bir DPı 'ye taşındığında, yeni sınırları doğru bir şekilde hesaplamaz. Bu nedenle, içerik penceresi çok küçük veya çok büyük olduğundan barındırma Kullanıcı arabirimine kıyasla boş alan veya kırpma ile sonuçlanır.
 
-#### <a name="drag--drop"></a>Sürükle & bırak
-Zaman içinde karma mod DPI senaryolarında (farklı DPI tanıma modda işleme örneğin farklı kullanıcı Arabirimi öğeleri), sürükle ve bırak koordinatları, yanlış'kurmak son bırakma konumu sonuçta elde edilen işlemi.
+#### <a name="drag--drop"></a>& Bırakmayı sürükleyin
+Karma mod DPı senaryolarında her seferinde (örneğin, farklı DPı tanıma modlarında farklı kullanıcı arabirimi öğeleri oluşturma), sürükle ve bırak koordinatları hatalı hesaplanarak, son bırakma konumu yanlış olur.
 
-#### <a name="out-of-process-ui"></a>İşlem dışı kullanıcı Arabirimi
-İşlem dışı bazı kullanıcı Arabirimi oluşturulur ve dış oluşturma işlemi, Visual Studio daha farklı bir DPI tanıma modda ise, bunu herhangi bir önceki işleme sorunlarını ortaya çıkarabilir.
+#### <a name="out-of-process-ui"></a>İşlem dışı Kullanıcı arabirimi
+Bazı Kullanıcı arabirimi işlem dışı oluşturulur ve dış işlem oluşturma işlemi Visual Studio 'dan farklı bir DPı tanıma modundaysa, bu, önceki işleme sorunlarından herhangi birini ortaya çıkarabilir.
 
-#### <a name="windows-forms-controls-images-or-layouts-rendered-incorrectly"></a>Windows Forms denetimleri, görüntüleri veya yanlış işlenen düzenleri
-Tüm Windows Formları içeriği PMA modunu destekler. Sonuç olarak, yanlış düzenleri sorun işleme veya ölçeklendirme görebilirsiniz. Olası bir çözüm "Sistem tanıma" DpiAwarenessContext Windows Forms içeriğinde açıkça işlemek için bu durumda, (başvurmak [bir denetimi ile belirli bir DpiAwarenessContext zorlama](#forcing-a-control-into-a-specific-dpiawarenesscontext)).
+#### <a name="windows-forms-controls-images-or-layouts-rendered-incorrectly"></a>Yanlış işlenen denetim, resim veya Düzen Windows Forms
+Tüm Windows Forms içeriği PMA modunu desteklemez. Sonuç olarak, işleme sorunu yanlış düzenler veya ölçeklendirmeyle karşılaşabilirsiniz. Bu durumda olası bir çözüm, "sistem durumunu algılayan" DpiAwarenessContext ( [bir denetimi belirli bir DpiAwarenessContext 'e zorlamak](#force-a-control-into-a-specific-dpiawarenesscontext)için bkz.) içeriği açık bir şekilde Windows Forms işlemeye yönelik bir çözümdür.
 
-#### <a name="windows-forms-controls-or-windows-not-displaying"></a>Windows Forms denetimleri veya windows görünmüyor
-Bu sorunun temel nedeni bir denetim veya farklı bir DpiAwarenessContext ile bir pencere için bir DpiAwarenessContext penceresiyle yeniden üst öğe yap göndermeye çalışan geliştiricilere biridir.
+#### <a name="windows-forms-controls-or-windows-not-displaying"></a>Windows Forms denetimleri veya pencereleri gösterme
+Bu sorunun başlıca nedenlerinden biri, bir denetimi veya pencereyi farklı bir DpiAwarenessContext olan bir pencereye bir DpiAwarenessContext ile yeniden üst üste oluşturmaya çalışan geliştiricilerdir.
 
-Aşağıdaki resim Göster geçerli **varsayılan** windows üst öğe oluşturma, Windows işletim sistemi kısıtlamaları:
+Aşağıdaki görüntüler Windows 'un üst sürümündeki geçerli **varsayılan** Windows işletim sistemi kısıtlamalarını göstermektedir:
 
-![Ekran görüntüsü doğru ana öğe davranışı](../../extensibility/ux-guidelines/media/PMA-parenting-behavior.PNG)
+![Doğru olma davranışının ekran görüntüsü](media/PMA-parenting-behavior.PNG)
 
 > [!Note]
-> İş parçacığı barındırma davranışı ayarlayarak bu davranışı değiştirebilirsiniz (bkz [DpiHostinBehaviour](https://docs.microsoft.com/windows/desktop/api/windef/ne-windef-dpi_hosting_behavior)).
+> Iş parçacığı barındırma davranışını ayarlayarak bu davranışı değiştirebilirsiniz ( [Dpi_Hosting_Behavior sabit](/windows/desktop/api/windef/ne-windef-dpi_hosting_behavior)listesine bakın).
 
-Sonuç olarak, desteklenmeyen modları arasında üst-alt ilişkisi başarısız olur ve denetim veya penceresi beklenen şekilde çizilebilir değil.
+Sonuç olarak, desteklenmeyen modlar arasında üst-alt ilişkisi ayarlarsanız, başarısız olur ve denetim ya da pencere beklendiği gibi işlenmeyebilir.
 
-### <a name="diagnosing-issues"></a>Sorunları tanılama
-PMA ilişkili sorunları tanımlamak için kullanıldığında dikkate alınması gereken birçok faktör vardır: 
+### <a name="diagnose-issues"></a>Sorunları tanılama
 
-1. Kullanıcı Arabirimi veya mantıksal beklediğiniz API yoksa veya cihaz değerleri.
-    - WPF kullanıcı Arabirimi ve API'ler genellikle mantıksal değerleri kullanılır (ama her zaman kullanılmaz)
-    - Win32 UI ve API'ler genellikle cihaz değerleri kullanın
+PMA ile ilgili sorunları tanımlarken göz önünde bulundurmanız gereken birçok etken vardır: 
 
-2. Burada değerlerin nereden geldiğini?
-    - Diğer kullanıcı Arabirimi veya API değerlerini alma, cihaz geçirme veya mantıksal değer olur.
-    - Birden fazla kaynaktan değerleri almaya, hepsi kullanın/aynı türde değerler bekliyorsunuz veya dönüştürmeler karışık ve eşleşmesi gerekiyor mu?
+- UI veya API mantıksal veya cihaz değerlerini bekliyor mu?
+    - WPF Kullanıcı arabirimi ve API 'Ler genellikle mantıksal değerleri kullanır (ancak her zaman kullanılmaz)
+    - Win32 Kullanıcı arabirimi ve API 'Ler genellikle cihaz değerlerini kullanır
 
-3. UI sabitleri kullanımda ve hangi biçimindedir, bunlar misiniz?
+- Değerler nereden geliyor?
+    - Diğer kullanıcı arabiriminden veya API 'den değerler alıyorsanız, cihazı veya mantıksal değerleri geçirmektir.
+    - Birden çok kaynaktan değer alıyorsanız, tümünün aynı değer türlerinin veya do dönüştürmelerin karışık ve eşleştirilmiş olması gerekir.
 
-4. İş parçacığı değerleri için doğru DPI bağlamı, alıyor?
-    - Genellikle kod yollarını karma DPI barındırmayı etkinleştirmek için değişiklikleri doğru bağlamda koymanız gerekir, ancak ana ileti döngüsü veya olay akışı dışında çalışmanın yanlış DPI bağlamda paralellikle çalışabilir.
+- UI sabitleri kullanımda ve hangi formda bulunur?
 
-5. Değerleri DPI bağlam sınırlarını aşan?
-    - Sürükle ve bırak koordinatları DPI bağlamları burada çapraz ortak bir durumda olur. Penceresi doğru şeyleri yapacakları dener, ancak bazı durumlarda, eşleşen bağlam sınırlarını emin olmak için dönüştürme işi yapmak kullanıcı Arabirimi konak gerekebilir.
+- İş parçacığı, aldığı değerler için doğru DPı bağlamında mı?
+
+  Karma DPı barındırmasına imkan tanımak için yapılan değişiklikler genellikle kod yollarını doğru bağlamda yerleştirmelidir, ancak ana ileti döngüsünün dışında yapılan iş veya olay akışı yanlış DPı bağlamında çalıştırılabilir.
+
+- Değerler çapraz DPı bağlamı sınırları olarak mı yapılsın?
+
+  Sürükleme & bırakma, koordinatların çapraz DPı bağlamlarına sahip olduğu yaygın bir durumdur. Pencere, doğru şeyi gerçekleştirmeye çalışır, ancak bazı durumlarda, eşleme bağlamı sınırlarını sağlamak için konak Kullanıcı arabiriminin dönüştürme işi yapması gerekebilir.
 
 ### <a name="pma-nuget-package"></a>PMA NuGet paketi
-Yeni DpiAwarness kitaplıkları bulunabilir [Microsoft.VisualStudio.DpiAwareness](https://www.nuget.org/packages/Microsoft.VisualStudio.DpiAwareness/) NuGet paketi.
+Yeni DpiAwarness kitaplıkları [Microsoft. VisualStudio. Dpitanıma](https://www.nuget.org/packages/Microsoft.VisualStudio.DpiAwareness/) NuGet paketinde bulunabilir.
 
-### <a name="recommended-tools"></a>Önerilen Araçlar
-Aşağıdaki araçlar, Visual Studio tarafından desteklenen farklı kullanıcı Arabirimi yığınları bazıları arasında PMA ile ilgili sorunlar hata ayıklama yardımcı olabilir.
+### <a name="recommended-tools"></a>Önerilen araçlar
+Aşağıdaki araçlar, Visual Studio tarafından desteklenen bazı farklı UI yığınları genelinde PMA ile ilgili sorunların hatalarını ayıklamanıza yardımcı olabilir.
 
 #### <a name="snoop"></a>Gözetleme
-Gözetleme yerleşik Visual Studio XAML araçlar yoksa bazı fazladan işlevsellik olan bir XAML hata ayıklama aracıdır. Ayrıca, gözetleme etkin bir şekilde görüntüleyin ve onun bir WPF UI ince ayar yapmak için Visual Studio hata ayıklama gerekmez. Gözetleme PMA sorunları tanılamak için yararlı olabilir başlıca iki yolu olduğunu doğrulamak için mantıksal yerleştirme koordinatları veya boyut sınırları ve doğrulamak için kullanıcı Arabirimi doğru DPI vardır.
+Gözetleme, yerleşik Visual Studio XAML araçlarının sahip olmadığı bazı ek işlevlere sahip bir XAML hata ayıklama aracıdır. Ayrıca, gözetleme, WPF Kullanıcı arabirimini görüntüleyebilmek ve ince ayar için Visual Studio 'Yu etkin bir şekilde hata ayıklamalıdır. İki ana yol gözetleme, mantıksal yerleştirme koordinatlarını veya boyut sınırlarını doğrulamak ve Kullanıcı arabiriminin doğru DPı 'sini doğrulamak için, PMA sorunlarını tanılamak için yararlı olabilir.
  
 #### <a name="visual-studio-xaml-tools"></a>Visual Studio XAML araçları
-Gözetleme gibi Visual Studio'da XAML Araçlar PMA sorunları tanılamanıza yardımcı olabilir. Büyük olasılıkla sorunlu bulunduktan sonra kesme noktaları ayarlayın ve hata ayıklama pencerelerinde yanı sıra Canlı görsel ağaç pencerenin UI sınırları ve geçerli DPI incelemek için kullanın.
+Gözetle benzer şekilde, Visual Studio 'daki XAML araçları PMA sorunlarını tanılamanıza yardımcı olabilir. Büyük olasılıkla, Kullanıcı arabirimi sınırlarını ve geçerli DPı 'yi incelemek için kesme noktaları ayarlayabilir, canlı görsel ağaç penceresini ve hata ayıklama pencerelerini de kullanabilirsiniz.
 
-## <a name="strategies-for-fixing-pma-issues"></a>PMA sorunlarını giderme stratejileri
-### <a name="replacing-dpihelper-calls"></a>DpiHelper çağrıları değiştirme
-Çoğu durumda, kullanıcı Arabirimi sorunlarını giderme PMA modunda boils eski yönetilen kodda çağrısına değiştirmek için *Microsoft.VisualStudio.Utilities.Dpi.DpiHelper* ve *Microsoft.VisualStudio.PlatformUI.DpiHelper*sınıflarıyla yeni çağrıları *Microsoft.VisualStudio.Utilities.DpiAwareness* yardımcı sınıfı. 
+## <a name="strategies-for-fixing-pma-issues"></a>PMA sorunlarını düzeltme stratejileri
+
+### <a name="replace-dpihelper-calls"></a>DpiHelper çağrılarını değiştirme
+
+Çoğu durumda, Yönetilen koddaki çağrıları eski *Microsoft. VisualStudio. Utilities. DPI. DpiHelper* ve *Microsoft. VisualStudio. Platformui. DpiHelper* sınıflarına, yeni  *Microsoft. VisualStudio. Utilities. Dpiconversionhelper* sınıfı. 
 
 ```cs
 // Remove this kind of use:
@@ -167,7 +178,7 @@ Point deviceTopLeft = new Point(window.Left, window.Top).LogicalToDeviceUnits();
 Point deviceTopLeft = window.LogicalToDevicePoint(new Point(window.Left, window.Top));
 ```
 
-Yerel kod için eski değiştirilmesini çağrıları gerektirdiği *VsUI::CDpiHelper* sınıfı ile yeni çağrıları *VsUI::CDpiAwareness* sınıfı. 
+Yerel kod için, eski Vsui:: CDpiHelper sınıfına yapılan çağrıları yeni *Vsuı:: cdpitanıma* sınıfına yapılan çağrılarla değiştirme kuyruğa alınır. 
 
 ```cpp
 // Remove this kind of use:
@@ -181,28 +192,26 @@ VsUI::CDpiAwareness::LogicalToDeviceUnitsX(m_hwnd, &cx);
 VsUI::CDpiAwareness::LogicalToDeviceUnitsY(m_hwnd, &cy);
 ```
 
-DpiHelper sınıfları, ek bir giriş parametresi ancak gereksinim duyduğunuz kadar yeni DpiAwareness ve CDpiAwareness sınıfları aynı birim dönüştürme sağla: dönüştürme işlemi için bir başvuru olarak kullanmak için kullanıcı Arabirimi öğesi. Görüntü ölçeklendirme Yardımcıları yeni DpiAwareness/CDpiAwareness Yardımcıları yok dikkat edin önemlidir ve gerekirse [Imageservice](https://docs.microsoft.com/visualstudio/extensibility/image-service-and-catalog?view=vs-2019) bunun yerine kullanılmalıdır.
+Yeni Dpitanıma ve Cdpitanıma sınıfları, DpiHelper sınıflarıyla aynı birim dönüştürme yardımcıları sunar ancak ek bir giriş parametresi gerektirir: dönüştürme işlemi için başvuru olarak kullanılacak kullanıcı arabirimi öğesi. Görüntü ölçeklendirme yardımcılarını yeni Dpitanıma/Cdpitanıma yardımcılarını yok ve gerekirse [ımageservice](../image-service-and-catalog.md) 'in kullanılması gerektiğini unutmayın.
 
-Yönetilen DpiAwareness sınıfı Yardımcıları WPF görseller, Windows Forms denetimleri ve Win32 Cwnd'lerden ve HMONITORs (hem de IntPtrs biçiminde), yerel CDpiAwareness sınıfı teklifler HWND ve HMONITOR Yardımcıları sırasında sunar.
+Yönetilen Dpitanıma sınıfı, WPF görselleri, Windows Forms denetimleri ve Win32 HWNDs ve Hmonitor (her ikisi de ıntptrs biçiminde) için yardımcılar sunarak, yerel Cdpitanıma sınıfı HWND ve HMONITOR yardımcıları sunar.
 
-### <a name="windows-forms-dialogs-windows-or-controls-displayed-in-the-wrong-dpiawarenesscontext"></a>Windows Forms iletişim kutuları, windows veya yanlış DpiAwarenessContext içinde görüntülenen denetimleri
-Hatta bir başarılı ana öğe farklı DpiAwarenessContexts (nedeniyle Windows varsayılan davranış) ile Windows sonra kullanıcılar ile farklı DpiAwarenessContexts ölçeklendirme windows sorunları farklı ölçeklendirme yine de görebilirsiniz. Sonuç olarak, kullanıcılar hizalama/bulanık metni veya görüntü sorunları kullanıcı arabiriminde.
+### <a name="windows-forms-dialogs-windows-or-controls-displayed-in-the-wrong-dpiawarenesscontext"></a>Yanlış DpiAwarenessContext gösterildiği gibi iletişimler, pencereler veya denetimler Windows Forms
+Farklı DpiAwarenessContexts (Windows varsayılan davranışı nedeniyle) başarılı bir şekilde Windows 'un başarılı bir şekilde uygulandıktan sonra bile, kullanıcılar farklı DpiAwarenessContexts ölçeklendirmeye sahip pencereler olarak ölçeklendirme sorunlarını yine de görebilir. Sonuç olarak, kullanıcılar Kullanıcı arabiriminde hizalama/bulanık metin veya görüntü sorunları görebilir.
 
-Uygulama tüm windows ve denetimler için doğru DpiAwarenessContext kapsamını ayarlamak için kullanılan çözümüdür.
+Çözüm, uygulamadaki tüm pencereler ve denetimler için doğru DpiAwarenessContext kapsamını ayarlamaya yöneliktir.
 
-### <a name="top-level-mixed-mode-tlmm-dialogs"></a>Üst düzey karma mod (TLMM) iletişim kutuları
-Kalıcı iletişim kutuları gibi üst düzey pencerelere oluştururken, pencerenin (ve tanıtıcısını) önce doğru durumda iş parçacığı oluşturuluyor emin olmak önemlidir. İş parçacığı tarafından sistem tanıma içine yerel CDpiScope Yardımcısını kullanarak dahil edilebilir veya DpiAwareness.EnterDpiScope yardımcı yönetilebilir. (TLMM WPF olmayan iletişim kutuları/Windows'da genelde kullanılmalıdır.)
+### <a name="top-level-mixed-mode-tlmm-dialogs"></a>Üst düzey karışık mod (TLMM) iletişim kutuları
+Kalıcı iletişim kutuları gibi üst düzey pencereler oluştururken, iş parçacığının pencere (ve tanıtıcısı) oluşturulmadan önce doğru durumda olduğundan emin olmak önemlidir. İş parçacığı, yerel olarak CDpiScope yardımcısını veya yönetilen bir Dpitıp. EnterDpiScope Yardımcısı kullanılarak sistem tanıma içine alınabilir. (TLMM genellikle WPF olmayan iletişim kutularında/Windows 'da kullanılmalıdır.)
 
-### <a name="child-level-mixed-mode-clmm"></a>Alt düzey karma mod (CLMM)
-Varsayılan olarak, alt öğe pencerelerini bir üst oluşturduysanız, geçerli iş parçacığı DPI tanıma bağlamı veya sahip bir üst oluşturulduğunda üst öğenin DPI tanıma bağlamı alır. Bir alt, üst farklı bir DPI tanıma bağlama oluşturmak için iş parçacığının istenen DPI tanıma bağlamına dahil edilebilir. Ardından alt üst oluşturulabilir ve el ile üst penceresine öğelerinin yeniden üst öğesi.
+### <a name="child-level-mixed-mode-clmm"></a>Alt düzey karışık mod (CLMM)
+Varsayılan olarak, alt pencereler, üst öğe olmadan oluşturulmuşsa geçerli iş parçacığı DPı tanıma bağlamını veya bir üst ile oluşturulduğunda üst öğenin DPı tanıma bağlamını alır. Üst öğesinden farklı bir DPı tanıma bağlamı olan bir alt öğe oluşturmak için, iş parçacığı istenen DPı tanıma bağlamına yerleştirilebilir. Ardından alt öğe bir üst pencere olmadan oluşturulabilir ve üst pencereye el ile yeniden ana öğe eklenebilir.
 
 #### <a name="clmm-issues"></a>CLMM sorunları
-Ana ileti döngüsü veya olay zinciri kapsamında gerçekleşen UI hesaplama yapacaklarımızın sonuna doğru DPI tanıma bağlamı zaten çalıştırıyor olmalıdır. Ancak, gibi (boşta kalma süresi görev sırasında veya kullanıcı Arabirimi iş parçacığı kapalı, ardından geçerli DPI tanıma bağlamı için kullanıcı Arabirimi misplacement başta veya sorunları yanlış boyutlandırma yanlış olabilir. koordinat veya boyutlandırma hesaplamalar ana bu iş akışları dışında yapılması durumunda İş parçacığının doğru kullanıcı Arabiriminde alternatifin iş genel sorunu giderir.
+Ana mesajlaşma döngüsünün veya olay zincirinin bir parçası olarak gerçekleşen UI hesaplama işinin çoğu doğru DPı tanıma bağlamında çalışıyor olmalıdır. Ancak, bu ana iş akışlarının dışında (boş kalma süresi görevi sırasında veya Kullanıcı arabirimi iş parçacığı dışında), koordinat veya boyutlandırma hesaplamaları yapıldığında, geçerli DPı tanıma bağlamı, UI yanlış yerleştirme veya hatalı boyutlandırma sorunları için yanlış önde gelebilir. İş parçacığını UI çalışması için doğru duruma getirmek genellikle sorunu düzeltir.
  
-#### <a name="opting-out-of-clmm"></a>CLMM dışında seçim yapma
-Tam PMA desteklemek için bir WPF olmayan araç penceresi geçiriliyorsa CLMM dışında bırakmak gerekir. Bunu yapmak için yeni bir arabirim uygulanması gerekir: IVsDpiAware.
-
-C#:
+#### <a name="opt-out-of-clmm"></a>CLMM 'yi devre dışı
+WPF olmayan bir araç penceresi, PMA 'yı tam olarak desteklemek için geçiriliyorsa, CLMM 'nin devre dışı olması gerekir. Bunu yapmak için yeni bir arabirim uygulanması gerekir: Isdpiaware.
 
 ```cs
 [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
@@ -212,8 +221,6 @@ public interface IVsDpiAeware
     uint Mode {get;}
 }
 ```
- 
-C++:
 
 ```cpp
 IVsDpiAware : public IUnknown
@@ -223,9 +230,9 @@ IVsDpiAware : public IUnknown
 };
 ```
 
-Yönetilen diller için türetilen sınıfta bu arabirimi uygulayan için en iyi yeri olan *Microsoft.VisualStudio.Shell.ToolWindowPane*. İçin C++, uygulayan aynı sınıf bu arabirim uygulamak için en iyi yeri olan *Ivswindowpane* vsshell.h öğesinden.
+Yönetilen diller için, bu arabirimi uygulamak için en iyi yer, *Microsoft. VisualStudio. Shell. ToolWindowPane*' dan türetilen sınıfta bulunur. İçin C++, bu arabirimi uygulamak için en iyi yer, vsshell. h öğesinden *IVsWindowPane* 'ı uygulayan sınıfta bulunur.
 
-Bir __VSDPIMODE arabirimde modu özelliği tarafından döndürülen değer olduğunu (ve içinde bir uint dönüştürme yönetilen):
+Arabirim üzerinde Mode özelliği tarafından döndürülen değer bir __VSDPIMODE (ve yönetilen bir uint öğesine atama):
 
 ```cs
 enum __VSDPIMODE
@@ -236,17 +243,16 @@ enum __VSDPIMODE
 }
 ```
 
-- Araç penceresi 96 DPI işlemesi gerektiğini farkında anlamına gelir, Windows için tüm diğer monitörlerde ölçeklendirme işler. Biraz bulanık olan içeriği sonuç.
-- Araç penceresi için birincil DPI işlemesi gerektiğini sistem DPI sms_ınbox_manager. Herhangi bir eşleşen DPI ekranıyla NET görünür ancak DPI farklı veya oturum sırasında değiştirir, Windows ölçeklendirme işleyecek ve biraz bulanık olacaktır.
-- PerMonitor araç penceresi tüm ekranlarda tüm Dpı'larda işlemesi gerektiğini ve her DPI değişiklikleri anlamına gelir.
+- Duyarsız, araç penceresinin 96 DPı 'yı işlemesi gereken anlamına gelir; Windows, diğer tüm Dplar için ölçeklendirmeyi işleymelidir. İçeriğin biraz bulanık olmasıyla sonuçlanır.
+- Sistem, araç penceresinin birincil görüntü DPı 'sı için DPı 'yi işlemesi gereken anlamına gelir. Eşleşen DPı içeren herhangi bir ekran net görünür, ancak DPı farklılık gösterebilir veya oturum sırasında değişirse, Windows ölçeklendirmeyi işler ve biraz bulanık olur.
+- PerMonitor, araç penceresinin tüm ekranlarda tüm Dpın ve DPı değiştiği her zaman işlenmesi gerektiği anlamına gelir.
 
 > [!NOTE]
-> Visual Studio yalnızca PerMonitorV2 tanıma destekler, böylece PerMonitor sabit listesi değeri DPI_AWARENESS_CONTEXT_PER_MONITOR_AWARE_V2 Windows değerine çevirir.
+> Visual Studio yalnızca PerMonitorV2 tanımayı destekler; bu nedenle, PerMonitor Enum değeri DPI_AWARENESS_CONTEXT_PER_MONITOR_AWARE_V2 Windows değerine çevrilir.
 
-#### <a name="forcing-a-control-into-a-specific-dpiawarenesscontext"></a>Bir denetimi ile belirli bir DpiAwarenessContext zorlama
-PMA modunu destekleyecek şekilde güncelleştirilmesini değil eski kullanıcı Arabirimi Visual Studio PMA modunda çalışırken çalışmak için ince yine de gerekebilir. Bir düzeltme, kullanıcı Arabirimi içinde doğru DpiAwarenessContext oluşturulduğundan emin olmayı içerir. Kullanıcı Arabirimi içinde belirli bir DpiAwarenessContext zorlamak için aşağıdaki kodu DPI kapsamıyla girebilirsiniz:
+#### <a name="force-a-control-into-a-specific-dpiawarenesscontext"></a>Belirli bir DpiAwarenessContext denetimi zorla
 
-C#:
+PMA modunu desteklemek için güncelleştirilmemiş eski Kullanıcı arabirimi, Visual Studio PMA modunda çalışırken çalışmaya devam edebilir. Bu tür bir çözüm, Kullanıcı arabiriminin sağ DpiAwarenessContext oluşturulduğundan emin olmanızı içerir. Kullanıcı arabiriminizi belirli bir DpiAwarenessContext 'e zorlamak için aşağıdaki kodla bir DPı kapsamı girebilirsiniz:
 
 ```cs
 using (DpiAwareness.EnterDpiScope(DpiAwarenessContext.SystemAware))
@@ -255,8 +261,6 @@ using (DpiAwareness.EnterDpiScope(DpiAwarenessContext.SystemAware))
     form.ShowDialog();
 }
 ```
-
-C++:
 
 ```cpp
 void MyClass::ShowDialog()
@@ -267,13 +271,14 @@ void MyClass::ShowDialog()
 ```
 
 > [!NOTE]
-> DpiAwarenessContext zorlama yalnızca WPF UI ve üst düzey WPF iletişim kutuları üzerinde çalışır. WPF kullanıcı Arabirimi oluşturma içeriği WPF UI ağacına eklenir hemen sonra araç pencerelerini veya tasarımcıları, içinde barındırılması için olduğunda, geçerli işlemin DpiAwarenessContext dönüştürülür.
+> DpiAwarenessContext zorlamak, yalnızca WPF olmayan kullanıcı arabiriminde ve en üst düzey WPF iletişim kutularında işe yarar. Araç pencereleri veya tasarımcıları içinde barındırılacak olan WPF Kullanıcı arabirimi oluştururken, içerik WPF Kullanıcı arabirimi ağacına eklenir, geçerli işlem DpiAwarenessContext dönüştürülür.
 
 ## <a name="known-issues"></a>Bilinen sorunlar
+
 ### <a name="windows-forms"></a>Windows Forms
 
-Yeni Karma mod senaryolar için en iyi duruma getirmek için Windows Forms, üst açıkça ayarlanmadı her nasıl denetimleri ve windows oluşturur değiştirildi. Daha önce açık bir üst olmadan denetimlere bir iç "park penceresi" geçici bir üst denetim ya da oluşturulan penceresi olarak kullanılır. 
+Yeni karma mod senaryolarını iyileştirmek için Windows Forms, üst öğesi açıkça ayarlanmamışsa denetim ve pencere oluşturma şeklini değiştirdi. Daha önce, açık bir üst öğe olmayan denetimler, oluşturulan denetim veya pencere için geçici bir üst öğe olarak iç "Park penceresi" kullandı. 
 
-.NET 4.8 önce tek bir "park kendi DpiAwarenessContext geçerli iş parçacığı DPI tanıma bağlamdan pencerenin oluşturma zamanında aldığı pencere" vardı. Denetimin işleyicisi oluşturulduğunda ve son/beklenen üst uygulama geliştiricisi tarafından yeniden üst herhangi bir ana öğesiz denetimi park penceresi olarak aynı DpiAwarenessContext devralır. Son ana pencereyi daha yüksek bir DpiAwarenessContext "park penceresi" sahipse, bu zamanlama tabanlı hatalarına neden.
+.NET 4,8 ' den önce, Windows 'un oluşturulma tarihinde geçerli iş parçacığı DPı tanıma bağlamından DpiAwarenessContext alan tek bir "Park etme penceresi" vardı. Herhangi bir üst üste olmayan denetim, denetimin tanıtıcısı oluşturulduğunda Park penceresiyle aynı DpiAwarenessContext devralır ve uygulama geliştiricisi tarafından son/beklenen üst öğeye yeniden eklenir. "Park penceresi" son üst pencereden daha yüksek bir DpiAwarenessContext içeriyorsa, bu durum zamanlama tabanlı hatalara neden olur.
 
-.NET 4.8'den itibaren artık karşılaşılan her DpiAwarenessContext bir "park penceresi" yoktur. Diğer bir önemli fark, denetimi oluşturulduğunda tanıtıcı oluşturulmadığında, denetim için kullanılan DpiAwarenessContext önbelleğe ' dir. Bu genel uç davranışını aynıdır, ancak tutarlı bir sorunu zamanlama tabanlı bir sorunla kullanılan ne kapatabilirsiniz anlamına gelir. Ayrıca uygulama geliştiricisinin daha kesin bir davranış, kullanıcı Arabirimi kodları yazmaya ve doğru bir şekilde kapsam için tanır.
+.NET 4,8 itibariyle, artık karşılaşılan her DpiAwarenessContext için bir "Park süresi" vardır. Diğer önemli fark, denetim için kullanılan DpiAwarenessContext, tanıtıcı oluşturulduğunda değil, Denetim oluşturulduğunda önbelleğe alınır. Bu, genel bitiş davranışının aynı olduğu anlamına gelir, ancak zamanlama tabanlı bir sorun için kullanılan öğeleri tutarlı bir soruna dönüştürebilirsiniz. Ayrıca, uygulama geliştiricisinin Kullanıcı arabirimi kodunu yazmak ve doğru kapsamı belirlemek için daha belirleyici bir davranış sağlar.

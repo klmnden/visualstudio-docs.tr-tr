@@ -1,78 +1,78 @@
 ---
-title: Mac için Visual Studio'yu kaldırın
-description: Mac ve ilgili araçlar için Visual Studio kaldırma yönergeleri.
+title: Mac için Visual Studio kaldır
+description: Mac için Visual Studio ve ilgili araçları kaldırmaya yönelik yönergeler.
 author: asb3993
 ms.author: amburns
 ms.date: 05/06/2018
 ms.technology: vs-ide-install
 ms.assetid: 4EB95F75-BC2E-4982-9564-2975805712D8
-ms.openlocfilehash: 65f5dedce42d6f2391c23bc82e37a5228bfe7242
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
+ms.openlocfilehash: 1ce74098cc8e6e4fa6856d94b7b8d99d96a1f3ab
+ms.sourcegitcommit: 6f3cf7a1bfc81a61f9a603461a1c34fd2221f100
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67691899"
+ms.lasthandoff: 08/12/2019
+ms.locfileid: "68957418"
 ---
-# <a name="uninstalling-visual-studio-for-mac"></a>Mac için Visual Studio'yu kaldırma
+# <a name="uninstalling-visual-studio-for-mac"></a>Mac için Visual Studio kaldırılıyor
 
-İlgili bölüme gidilerek ayrı ayrı her bir bileşende Visual Studio için Mac kaldırmak için bu kılavuzu kullanabilirsiniz veya sağlanan betikleri kullanabilir [kaldırma betiği](#uninstall-script) her şeyi kaldırmak için bölümü.
+İlgili bölüme giderek Mac için Visual Studio her bileşeni tek tek kaldırmak için bu Kılavuzu kullanabilirsiniz veya [kaldırma betiği](#uninstall-script) bölümünde sunulan betikleri kullanarak her şeyi kaldırabilirsiniz.
 
-Xamarin Studio makinenizde yüklü vardı, ayrıca yönergeleri gerekebilir [kullanıcının Xamarin kaldırma](/xamarin/cross-platform/get-started/installation/uninstalling-xamarin#uninstall-xamarin-studio-on-mac) Kılavuzu, aşağıdaki adımları yanı sıra.
+Makinenizde daha önce Xamarin Studio yüklüyse, aşağıdaki adımlara ek olarak [Xamarin 'in kaldırma](/xamarin/cross-platform/get-started/installation/uninstalling-xamarin#uninstall-xamarin-studio-on-mac) kılavuzundaki yönergeleri de izlemeniz gerekebilir.
 
 > [!NOTE]
-> Bu bilgiler yalnızca Visual Studio 2019 veya 2017 için Mac makinenizde kaldırır. Visual Studio Code kaldırmak için bkz: [bu sorunu](https://github.com/Microsoft/vscode/issues/52151) Ayrıntılar için.
+> Bu bilgiler, yalnızca makinenizden Mac için Visual Studio 2019 veya 2017 ' i kaldırır. Visual Studio Code kaldırmak için, Ayrıntılar için [Bu soruna](https://github.com/Microsoft/vscode/issues/52151) bakın.
 
-## <a name="uninstall-script"></a>Betik kaldırma
+## <a name="uninstall-script"></a>Betiği kaldır
 
-Mac için Visual Studio'yu kaldırmak için kullanılan iki komut dosyası ve makineniz için tüm bileşenler vardır:
+Makinenize yönelik Mac için Visual Studio ve tüm bileşenleri kaldırmak için kullanılabilecek iki betik vardır:
 
 - [Visual Studio ve Xamarin betiği](#visual-studio-for-mac-and-xamarin-script)
-- [.NET core komut dosyası](#net-core-script)
+- [.NET Core betiği](#net-core-script)
 
-Aşağıdaki bölümlerde, indirme ve betikleri kullanarak bilgi sağlar.
+Aşağıdaki bölümler, betikleri indirme ve kullanmayla ilgili bilgiler sağlar.
 
-### <a name="visual-studio-for-mac-and-xamarin-script"></a>Betik, Mac ve Xamarin için Visual Studio
+### <a name="visual-studio-for-mac-and-xamarin-script"></a>Mac için Visual Studio ve Xamarin betiği
 
-Visual Studio yüklemesini kaldırabilir ve Xamarin bileşenleri bir Git kullanarak [betik kaldırma](https://raw.githubusercontent.com/MicrosoftDocs/visualstudio-docs/master/mac/resources/uninstall-vsmac.sh).
+[Kaldırma betiğini](https://raw.githubusercontent.com/MicrosoftDocs/visualstudio-docs/master/mac/resources/uninstall-vsmac.sh)kullanarak Visual Studio ve Xamarin bileşenlerini tek bir şekilde kaldırabilirsiniz.
 
-Makalede bulabilirsiniz komutların çoğu bu kaldırma betiğini içerir. Komut dosyası üç ana atlamalar vardır ve olası dış bağımlılıklar nedeniyle dahil edilmez. Bu kaldırmak için ilgili aşağıdaki bölüme atlayın ve bunları el ile kaldırın:
+Bu kaldırma betiği, makalede bulacağınız komutların çoğunu içerir. Betikten üç ana izin vardır ve olası dış bağımlılıklar nedeniyle dahil değildir. Bunu kaldırmak için aşağıdaki ilgili bölüme atlayın ve bunları el ile kaldırın:
 
-- **[Mono kaldırma](#uninstall-mono-sdk-mdk)**
-- **[Android AVD kaldırma](#uninstall-android-avd)**
-- **[Android SDK ve Java SDK kaldırma](#uninstall-android-sdk-and-java-sdk)**
+- **[Mono kaldırılıyor](#uninstall-mono-sdk-mdk)**
+- **[Android AVD 'yi kaldırma](#uninstall-android-avd)**
+- **[Android SDK ve Java SDK 'sını kaldırma](#uninstall-android-sdk-and-java-sdk)**
 
 Betiği çalıştırmak için aşağıdaki adımları uygulayın:
 
-1. Sağ tıklatın ve betik **Kaydet** mac'inizde dosyayı kaydetmek için
-2. Terminali açın ve komut dosyasını indirdiğiniz için çalışma dizinini değiştirin:
+1. Dosyayı Mac 'e kaydetmek için komut dosyasına sağ tıklayın ve **farklı kaydet** ' i seçin.
+2. Terminali açın ve çalışma dizinini betiğin indirildiği yere değiştirin:
 
     ```bash
     cd /location/of/file
     ```
 
-3. Yürütülebilir kod ve çalışma ile **sudo**:
+3. Betiği çalıştırılabilir yapın ve **sudo**ile çalıştırın:
 
     ```bash
     chmod +x ./uninstall-vsmac.sh
     sudo ./uninstall-vsmac.sh
     ```
 
-4. Son olarak, kaldırma betiğini silin.
+4. Son olarak, kaldırma betiğini silin ve Mac için Visual Studio Dock 'tan kaldırın (varsa).
 
-### <a name="net-core-script"></a>.NET core komut dosyası
+### <a name="net-core-script"></a>.NET Core betiği
 
-.NET Core için kaldırma betiğini bulunan [dotnet CLI depo](https://raw.githubusercontent.com/dotnet/cli/master/scripts/obtain/uninstall/dotnet-uninstall-pkgs.sh)
+.NET Core için kaldırma betiği [DotNet CLI](https://raw.githubusercontent.com/dotnet/cli/master/scripts/obtain/uninstall/dotnet-uninstall-pkgs.sh) deposunda bulunur
 
 Betiği çalıştırmak için aşağıdaki adımları uygulayın:
 
-1. Sağ tıklatın ve betik **Kaydet** mac'inizde dosyayı kaydetmek için
-2. Terminali açın ve komut dosyasını indirdiğiniz için çalışma dizinini değiştirin:
+1. Dosyayı Mac 'e kaydetmek için komut dosyasına sağ tıklayın ve **farklı kaydet** ' i seçin.
+2. Terminali açın ve çalışma dizinini betiğin indirildiği yere değiştirin:
 
     ```bash
     cd /location/of/file
     ```
 
-3. Yürütülebilir kod ve çalışma ile **sudo**:
+3. Betiği çalıştırılabilir yapın ve **sudo**ile çalıştırın:
 
     ```bash
     chmod +x ./dotnet-uninstall-pkgs.sh
@@ -81,15 +81,15 @@ Betiği çalıştırmak için aşağıdaki adımları uygulayın:
 
 4. Son olarak, .NET Core kaldırma betiğini silin.
 
-## <a name="uninstall-visual-studio-for-mac"></a>Mac için Visual Studio'yu kaldırın
+## <a name="uninstall-visual-studio-for-mac"></a>Mac için Visual Studio kaldır
 
-Visual Studio'yu bir Mac bilgisayardan kaldırmak ilk adımı bulmaktır **Visual Studio.app** içinde **/Applications** dizin sürükleyin **çöp kutusu**. Alternatif olarak, sağ tıklayın ve **çöp kutusuna Taşı** aşağıdaki görüntüde gösterildiği gibi:
+Bir Mac 'ten Visual Studio 'Yu kaldırmanın ilk adımı,/Apps dizinindeki **Visual Studio. app** ' i bullemektir ve **çöp kutusuna**sürüklemektir. Alternatif olarak, sağ tıklayın ve aşağıdaki görüntüde gösterildiği gibi **çöp kutusuna taşı** ' yı seçin:
 
-![Visual Studio uygulamaya çöp Taşı](media/uninstall-image1.png)
+![Visual Studio uygulamasını çöp kutusuna taşıma](media/uninstall-image1.png)
 
-Olabilir yine de dosya sisteminde Xamarin için ilgili diğer dosyaları rağmen bu uygulama paketi grubu silme, Mac için Visual Studio kaldırır.
+Bu uygulama paketinin silinmesi, Xamarin ile ilgili başka dosyalar da dosya sisteminde hala mevcut olsa bile Mac için Visual Studio kaldırır.
 
-Mac için Visual Studio'nun tüm izlemeleri kaldırmak için terminalde aşağıdaki komutları çalıştırın:
+Tüm Mac için Visual Studio izlemelerini kaldırmak için terminalde aşağıdaki komutları çalıştırın:
 
 ```bash
 sudo rm -rf "/Applications/Visual Studio.app"
@@ -104,21 +104,21 @@ rm -rf ~/Library/Application\ Support/VisualStudio/7.0/LocalInstall/Addins/
 rm -rf ~/Library/Application\ Support/VisualStudio/8.0/LocalInstall/Addins/
 ```
 
-Çeşitli Xamarin dosya ve klasörleri içeren aşağıdaki dizine kaldırmak isteyebilirsiniz. Bunu yapmadan önce bu dizin imzalama anahtarı Android içerdiğini farkında olmalıdır. Daha fazla bilgi için bölümüne başvurun  **[kaldırma Android SDK ve Java SDK'sı](#uninstall-android-sdk-and-java-sdk)** :
+Ayrıca, çeşitli Xamarin dosyalarını ve klasörlerini içeren aşağıdaki dizini kaldırmak isteyebilirsiniz. Ancak, bunu yapmadan önce bu dizinin Android imzalama anahtarlarını içerdiğini bilmeniz gerekir. Daha fazla bilgi için **[Android SDK ve Java SDK 'Sını kaldırma](#uninstall-android-sdk-and-java-sdk)** bölümüne bakın:
 
 ```bash
 rm -rf ~/Library/Developer/Xamarin
 ```
 
-## <a name="uninstall-mono-sdk-mdk"></a>Mono SDK'sı (MDK) kaldırma
+## <a name="uninstall-mono-sdk-mdk"></a>Mono SDK 'sını Kaldır (MDK)
 
-Mono, Microsoft .NET Framework'ün açık kaynak uygulamasıdır ve tüm Xamarin Products—Xamarin.iOS, Xamarin.Android ve Xamarin.Mac bu platformlarda geliştirme C# ' ta izin vermek için kullanılır.
+Mono, Microsoft 'un .NET Framework açık kaynaklı bir uygulamasıdır ve ' de C#bu platformların geliştirilmesine izin vermek için Xamarin. IOS, Xamarin. Android ve Xamarin. Mac tüm Xamarin ürünleri tarafından kullanılır.
 
 > [!WARNING]
-> Mono, Unity gibi kullanan diğer uygulamalar Visual Studio dışında Mac için vardır.
-> Başka bir bağımlılık üzerinde Mono kaldırmadan önce emin olun.
+> Mac için Visual Studio dışında, Unity gibi mono kullanan başka uygulamalar da vardır.
+> Kaldırmadan önce mono üzerinde başka bağımlılıklar olmadığından emin olun.
 
-Mono Framework bir makineden kaldırmak için terminalde aşağıdaki komutları çalıştırın:
+Mono çerçevesini bir makineden kaldırmak için terminalde aşağıdaki komutları çalıştırın:
 
 ```bash
 sudo rm -rf /Library/Frameworks/Mono.framework
@@ -126,11 +126,11 @@ sudo pkgutil --forget com.xamarin.mono-MDK.pkg
 sudo rm -rf /etc/paths.d/mono-commands
 ```
 
-## <a name="uninstall-xamarinandroid"></a>Xamarin.Android kaldırma
+## <a name="uninstall-xamarinandroid"></a>Xamarin. Android 'i kaldır
 
-Xamarin.Android, Java SDK'sı ve Android SDK gibi kullanımını ve yükleme için gerekli öğeler vardır.
+Android SDK ve Java SDK gibi Xamarin. Android ' in yüklenmesi ve kullanılması için gereken sayıda öğe vardır.
 
-Xamarin.Android kaldırmak için aşağıdaki komutları kullanın:
+Xamarin. Android ' i kaldırmak için aşağıdaki komutları kullanın:
 
 ```bash
 sudo rm -rf /Developer/MonoDroid
@@ -139,37 +139,37 @@ sudo pkgutil --forget com.xamarin.android.pkg
 sudo rm -rf /Library/Frameworks/Xamarin.Android.framework
 ```
 
-### <a name="uninstall-android-sdk-and-java-sdk"></a>Android SDK ve Java SDK kaldırma
+### <a name="uninstall-android-sdk-and-java-sdk"></a>Android SDK ve Java SDK 'sını kaldırma
 
-Android SDK'sı, Android uygulamalarının geliştirilmesini için gereklidir. Android SDK'sı tüm parçalarını tamamen kaldırmak için dosyayı bulun **~/Library/Developer/Xamarin/** ve taşımak **çöp**.
-
-> [!WARNING]
-> Mac için Visual Studio tarafından oluşturulan Android İmzalama anahtarları bulunan farkında olmalıdır `~/Library/Developer/Xamarin/Keystore`. Deponuzu tutmak istiyorsanız, bu dizin kaldırmayı önlemek veya bunları uygun şekilde yedeklemek emin olun.
-
-Bunu zaten Mac OS X bir parçası olarak önceden paketlenmiş olarak Java SDK (JDK) kaldırılması, gerekmez / macOS.
-
-### <a name="uninstall-android-avd"></a>Android AVD kaldırma
+Android uygulamalarının geliştirilmesi için Android SDK gereklidir. Android SDK tüm parçalarını tamamen kaldırmak için, dosyayı **~/Library/Developer/Xamarin/** adresinde bulun ve **çöp kutusuna**taşıyın.
 
 > [!WARNING]
-> Ayrıca Android AVD ve Android projeleri Android Studio'da ayırmak bu dizin neden Studio.Removing gibi ek bu android bileşenlerini kullanan diğer uygulamalar Visual Studio dışında Mac için vardır.
+> Mac için Visual Studio tarafından oluşturulan Android imzalama anahtarlarının içinde `~/Library/Developer/Xamarin/Keystore`bulunduğunu bilmelisiniz. Bunları uygun şekilde yedeklediğinizden emin olun veya keystore 'u tutmak istiyorsanız bu dizini kaldırmaktan kaçının.
 
-Herhangi bir ek Android ve Android AVDs kaldırmak için bileşenleri aşağıdaki komutu kullanın:
+Java SDK (JDK) Mac OS X/macOS 'un bir parçası olarak önceden paketlendiğinden kaldırılması gerekmez.
+
+### <a name="uninstall-android-avd"></a>Android AVD 'yi kaldır
+
+> [!WARNING]
+> Mac için Visual Studio dışında, Android AVD ve Android Studio gibi bu ek Android bileşenleri de kullanan başka uygulamalar vardır. bu dizini kaldırmak, projelerin Android Studio kesintiye neden olabilir.
+
+Android AVDs ve ek Android bileşenleri kaldırmak için aşağıdaki komutu kullanın:
 
 ```bash
 rm -rf ~/.android
 ```
 
-Kaldırmak için yalnızca Android AVDs aşağıdaki komutu kullanın:
+Yalnızca Android AVDs 'yi kaldırmak için aşağıdaki komutu kullanın:
 
 ```bash
 rm -rf ~/.android/avd
 ```
 
-## <a name="uninstall-xamarinios"></a>Xamarin.iOS kaldırma
+## <a name="uninstall-xamarinios"></a>Xamarin. iOS 'ı kaldır
 
-Xamarin.iOS sağlayan iOS kullanarak uygulama geliştirme C# veya F# Mac için Visual Studio ile
+Xamarin. iOS Mac için Visual Studio kullanarak C# veya F# ile iOS uygulama geliştirmeye olanak sağlar.
 
-Tüm Xamarin.iOS dosyaları dosya sisteminden kaldırmak için terminalde aşağıdaki komutları kullanın:
+Tüm Xamarin. iOS dosyalarını bir dosya sisteminden kaldırmak için terminalde aşağıdaki komutları kullanın:
 
 ```bash
 rm -rf ~/Library/MonoTouch
@@ -180,39 +180,39 @@ sudo pkgutil --forget com.xamarin.xamarin-ios-build-host.pkg
 sudo pkgutil --forget com.xamarin.xamarin.ios.pkg
 ```
 
-## <a name="uninstall-xamarinmac"></a>Xamarin.Mac kaldırma
+## <a name="uninstall-xamarinmac"></a>Xamarin. Mac 'i kaldır
 
-Xamarin.Mac makinenizden Mac Cihazınızda lisans ve ürün sırasıyla yok etmek aşağıdaki iki komutu kullanılarak kaldırılabilir:
+Xamarin. Mac, aşağıdaki iki komut kullanılarak makinenizden kaldırılabilir ve bu şekilde Mac 'Inizden ürün ve lisans sağlayabilirsiniz:
 
 ```bash
 sudo rm -rf /Library/Frameworks/Xamarin.Mac.framework
 rm -rf ~/Library/Xamarin.Mac
 ```
 
-## <a name="uninstall-workbooks-and-inspector"></a>Çalışma kitapları ve denetçisi kaldırma
+## <a name="uninstall-workbooks-and-inspector"></a>Çalışma kitaplarını ve Inspector 'ı kaldırma
 
-1\.2.2 ile başlayarak, Xamarin Workbooks & Denetçisi terminalden çalıştırılarak kaldırılabilir:
+1\.2.2 ile başlayarak, Xamarin Workbooks & denetçisi çalıştırılarak bir terminalden kaldırılabilir:
 
 ```bash
 sudo /Library/Frameworks/Xamarin.Interactive.framework/Versions/Current/uninstall
 ```
 
-Eski sürümler için aşağıdaki yapılar kaldırmanız gerekir:
+Eski sürümler için aşağıdaki yapıtları el ile kaldırmanız gerekir:
 
-* Çalışma kitapları uygulamaya Sil `"/Applications/Xamarin Workbooks.app"`
-* Inspector uygulamaya Sil `"Applications/Xamarin Inspector.app"`
-* Add-INS Sil: `"~/Library/Application Support/XamarinStudio-6.0/LocalInstall/Addins/Xamarin.Interactive"` ve `"~/Library/Application Support/XamarinStudio-6.0/LocalInstall/Addins/Xamarin.Inspector"`
-* Inspector silin ve destek dosyaları burada: `/Library/Frameworks/Xamarin.Interactive.framework` ve `/Library/Frameworks/Xamarin.Inspector.framework`
+* Çalışma kitapları uygulamasını şurada silin:`"/Applications/Xamarin Workbooks.app"`
+* Inspector uygulamasını şurada Sil:`"Applications/Xamarin Inspector.app"`
+* Eklentileri silin: `"~/Library/Application Support/XamarinStudio-6.0/LocalInstall/Addins/Xamarin.Interactive"` ve`"~/Library/Application Support/XamarinStudio-6.0/LocalInstall/Addins/Xamarin.Inspector"`
+* Inspector ve destekleyici dosyaları şurada silin: `/Library/Frameworks/Xamarin.Interactive.framework` ve`/Library/Frameworks/Xamarin.Inspector.framework`
 
-## <a name="uninstall-the-xamarin-profiler"></a>Xamarin Profiler'ı kaldırma
+## <a name="uninstall-the-xamarin-profiler"></a>Xamarin Profiler kaldırın
 
 ```bash
 sudo rm -rf "/Applications/Xamarin Profiler.app"
 ```
 
-## <a name="uninstall-the-visual-studio-installer"></a>Visual Studio yükleyicisini Kaldır
+## <a name="uninstall-the-visual-studio-installer"></a>Visual Studio Yükleyicisi kaldırın
 
-Xamarin için evrensel Yükleyicisi'nin tüm izlemeleri kaldırmak için aşağıdaki komutları kullanın:
+Xamarin Universal yükleyicisinin tüm izlemelerini kaldırmak için aşağıdaki komutları kullanın:
 
 ```bash
 rm -rf ~/Library/Caches/XamarinInstaller/
@@ -223,17 +223,23 @@ rm -rf ~/Library/Preferences/Xamarin/
 rm -rf "~/Library/Preferences/Visual Studio/"
 ```
 
-## <a name="uninstall-visual-studio-2019-for-mac-preview"></a>Mac Preview için Visual Studio 2019'ı kaldırma
+* * * 
 
-Visual Studio 2019 Mac Önizleme için ayrı bir önizleme olarak, Visual Studio 2017 için Mac yükleme yan yana çalışmaya devam etmenize imkan sağlar başlatıldı.
 
-Mac için Visual Studio 2019 piyasaya Sürüldü, artık Visual Studio 2019 Mac önizleme uygulama için güvenli bir şekilde kaldırabilirsiniz.
 
-Önizleme uygulama paketi grubunu kaldırmak için **Visual Studio (Önizleme)** gelen, **uygulamaları** klasörü ve tıklatın **çöp kutusuna Taşı**, aşağıda gösterildiği gibi Görüntü:
 
-![Finder'da "Çöp kutusuna Taşı" seçeneğini belirleyerek](media/uninstall-remove-vspreview.png)
 
-Ayrıca, aşağıdaki komutla Önizleme plist dosyası kaldırabilirsiniz:
+## <a name="uninstall-visual-studio-2019-for-mac-preview"></a>Mac için Visual Studio 2019 Preview sürümünü kaldırın
+
+Mac için Visual Studio 2019 Preview önizlemesi ayrı bir önizleme olarak başlatıldığından, Mac için Visual Studio 2017 ' i yan yana yüklemeye devam edebilmenizi sağlar.
+
+Mac için Visual Studio 2019 artık kullanıma sunuldığına göre artık Mac için Visual Studio 2019 Önizleme uygulamasını güvenle kaldırabilirsiniz.
+
+Önizleme uygulaması paketini kaldırmak için, **uygulamalar** klasörünüzdeki **Visual Studio 'yu (Önizleme)** seçin ve aşağıdaki görüntüde gösterildiği gibi **çöp kutusuna taşı**' ya tıklayın:
+
+![Finder 'da "çöp kutusuna taşı" seçeneği seçiliyor](media/uninstall-remove-vspreview.png)
+
+Önizleme plist dosyasını aşağıdaki komutla de kaldırabilirsiniz:
 
 ```bash
 rm -rf ~/Library/Preferences/com.microsoft.visual-studio-preview.plist
@@ -241,4 +247,4 @@ rm -rf ~/Library/Preferences/com.microsoft.visual-studio-preview.plist
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [(Windows üzerinde) Visual Studio'yu kaldırın](/visualstudio/install/uninstall-visual-studio)
+- [Visual Studio 'Yu Kaldır (Windows üzerinde)](/visualstudio/install/uninstall-visual-studio)
