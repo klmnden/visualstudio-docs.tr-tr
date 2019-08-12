@@ -1,209 +1,209 @@
 ---
-title: ASP.NET Core Mac için Visual Studio'da uygulama oluşturma
-description: Bu makalede, yeni proje oluşturma ve yükleme dahil olmak üzere Mac için Visual Studio'da ASP.NET ile başlamak açıklar.
+title: ASP.NET Core uygulamalar oluşturma
+description: Bu makalede, yükleme ve yeni bir proje oluşturma dahil olmak üzere Mac için Visual Studio ' de ASP.NET ile çalışmaya başlama açıklanmaktadır.
 author: sayedihashimi
 ms.author: sayedha
 ms.date: 05/30/2019
 ms.assetid: 771C2F8E-46BC-4280-AFE8-ED9D5C7790CE
-ms.openlocfilehash: f0a2e8433877b3eb61228a886280707f3b4a37fe
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
+ms.openlocfilehash: 345111144e0e209d91d34e53fefcd7d1207d9a8a
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67693135"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68872897"
 ---
-# <a name="building-aspnet-core-applications-in-visual-studio-for-mac"></a>ASP.NET Core Mac için Visual Studio'da uygulama oluşturma 
+# <a name="building-aspnet-core-applications-in-visual-studio-for-mac"></a>Mac için Visual Studio ASP.NET Core uygulamalar oluşturma
 
-ASP.NET Core modern bulut tabanlı İnternet'e bağlı uygulamalar, web uygulamaları ve Hizmetleri, IOT uygulamaları ve mobil arka uçları gibi oluşturmaya yönelik açık kaynaklı ve platformlar arası bir çerçevedir. ASP.NET Core uygulamaları çalışabileceği [.NET Core](https://www.microsoft.com/net/core/platform) veya .NET Framework çalışma zamanları. Bu buluta dağıtılan uygulamalar için en iyi duruma getirilmiş geliştirme framework sağlamak üzere tasarlanmış veya şirket içinde çalıştırın. Çözümlerinizi oluşturulurken esneklik korumak için çok az ek yük, modüler bileşenlerden oluşur. Geliştirin ve Windows, Mac ve Linux'ta ASP.NET Core uygulamaları platformlar arası çalıştırın. ASP.NET Core, açık kaynak konumunda [GitHub](https://github.com/aspnet/home).
+ASP.NET Core, Web uygulamaları ve Hizmetleri, IoT uygulamaları ve mobil arka uçlar gibi modern bulut tabanlı Internet 'e bağlı uygulamalar oluşturmaya yönelik açık kaynaklı ve platformlar arası bir çerçevedir. ASP.NET Core uygulamalar, [.NET Core](https://www.microsoft.com/net/core/platform) veya .NET Framework çalışma zamanları üzerinde çalışabilir. Buluta dağıtılan veya şirket içinde çalışan uygulamalar için iyileştirilmiş bir geliştirme çerçevesi sağlamak üzere tasarlanmıştır. En az ek yük olan modüler bileşenlerden oluşur, bu nedenle çözümlerinizi oluştururken esnekliği koruyabilirsiniz. Windows, Mac ve Linux 'ta ASP.NET Core uygulamalarınızı platformlar arası geliştirebilir ve çalıştırabilirsiniz. [GitHub](https://github.com/aspnet/home)'da açık kaynak ASP.NET Core.
 
-Bu laboratuvarda oluşturacak ve Mac için Visual Studio ile bir ASP.NET Core uygulaması keşfedin
+Bu laboratuvarda, Mac için Visual Studio bir ASP.NET Core uygulaması oluşturacaksınız ve keşfedecaksınız.
 
 ## <a name="objectives"></a>Amaçlar
 
 > [!div class="checklist"]
-> * Bir ASP.NET Core web uygulaması oluşturma
-> * ASP.NET Core barındırma, yapılandırma ve ara yazılım modeli keşfedin
-> * Bir ASP.NET Core web uygulamasında hata ayıklama
+> * ASP.NET Core Web uygulaması oluşturma
+> * Barındırma, yapılandırma ve ara yazılım modelini ASP.NET Core keşfet
+> * ASP.NET Core Web uygulamasında hata ayıklama
 
 ## <a name="prerequisites"></a>Önkoşullar
 
 - [Mac için Visual Studio](https://www.visualstudio.com/vs/visual-studio-mac)
 
-## <a name="intended-audience"></a>Hedef kitle
+## <a name="intended-audience"></a>Hedeflenen hedef kitle
 
-Bu Laboratuvar, alışkın olan geliştiricilerin yönelik C#, ancak deneyime gerekli değildir.
+Bu laboratuvar C#, konusunda bilgili olan geliştiricilere yöneliktir, ancak derin deneyim gerekli değildir.
 
 ## <a name="task-1-creating-a-new-aspnet-core-application"></a>Görev 1: Yeni bir ASP.NET Core uygulaması oluşturma
 
-1. Başlatma **Mac için Visual Studio**.
+1. **Mac için Visual Studio**başlatın.
 
-2. Seçin **Dosya > Yeni Çözüm**.
+2. **Yeni çözüm > dosya**' yı seçin.
 
-3. Seçin **.NET Core > Uygulama** kategorisi ve **ASP.NET Core Web uygulaması (C#)** şablonu. **İleri**'ye tıklayın.
+3. **.NET Core > uygulama** kategorisini ve **ASP.NET Core Web uygulaması (C#)** şablonunu seçin.           **İleri**'ye tıklayın.
 
     ![](media/netcore-image1.png)
 
-4. Bir ad girin **"CoreLab"** tıklatıp **Oluştur** projeyi oluşturmak için. Bu, tamamlanması biraz zaman alır.
+4. Bir **"CoreLab"** adı girin ve projeyi oluşturmak için **Oluştur** ' a tıklayın. İşlemin tamamlanması biraz zaman alır.
 
     ![](media/netcore-image2.png)
 
-## <a name="task-2-touring-the-solution"></a>Görev 2: Çözüm hiç yapmadığı bir şey
+## <a name="task-2-touring-the-solution"></a>Görev 2: Çözümü gezi edin
 
-1. Varsayılan şablonu adlı tek bir ASP.NET Core projesi ile bir çözüm oluşturacak **CoreLab**. İçeriğini göstermek için proje düğümünü genişletin.
+1. Varsayılan şablon, **CoreLab**adlı tek bir ASP.NET Core projesi ile bir çözüm oluşturacaktır. İçeriğini göstermek için proje düğümünü genişletin.
 
     ![](media/netcore-image3.png)
 
-2. Bu proje, sorumluluk veri (modeller), sunu (görünümleri) ve işlev (denetleyiciler) arasında NET bir bölme sağlamak için model-view-controller (MVC) paradigma izler. Açık **HomeController.cs** dosya **denetleyicileri** klasör.
+2. Bu proje, veriler (modeller), sunum (görünümler) ve işlevsellik (denetleyiciler) arasındaki sorumlulukların açık bir bölümünü sağlamak için Model-View-Controller (MVC) paradigmasını izler. **HomeController.cs** dosyasını **denetleyiciler** klasöründen açın.
 
     ![](media/netcore-image4.png)
 
-3. **HomeController** sınıfı tarafından kuralı tutamaçları ile başlayan tüm gelen istekleri **/Home**. **Dizin** yöntemi istekleri kök dizin işler (gibi `http://site.com/Home`) ve diğer yöntemleri, adlandırılmış yol kuralı üzerinde gibi tabanlı istekleri işleyen **About()** istekleri işleme `http://site.com/Home/About`. Elbette, bu tüm yapılandırılabilir. Bir dikkat çeken bir şey olduğunu **HomeController** yeni bir proje varsayılan denetleyicisidir, böylece sitenin kök dizinine istekleri (`http://site.com`) çıkacak **İNDİS()** ,  **HomeController** olduğu, istekleri gibi `http://site.com/Home` veya `http://site.com/Home/Index`.
+3. **HomeController** sınıfı-kural- **/Home**ile başlayan tüm gelen istekleri işler. **Dizin** yöntemi, istekleri dizinin köküne (gibi `http://site.com/Home`) işler ve diğer yöntemler, isteklerini `http://site.com/Home/About`() ile işleme istekleri gibi kurala göre adlandırılmış yollarına göre işler. Kuşkusuz, bu tüm yapılandırılabilir. Tek bir önemli, **HomeController** 'ın yeni bir projede varsayılan denetleyici olması, bu nedenle sitenin köküne yönelik isteklerin (`http://site.com`), `http://site.com/Home` `http://site.com/Home/Index`.
 
     ![](media/netcore-image5.png)
 
-4. Proje de sahip bir **görünümleri** her denetleyici için harita diğer klasörler içeren klasörü (biri yanı sıra **paylaşılan** görünümleri. Örneğin, görünüm CSHTML dosyası (HTML uzantı) için **/Home/About** yolu konumunda olacak **Views/Home/About.cshtml**. Bu dosyayı açın.
+4. Proje ayrıca, her denetleyiciyle eşlenen diğer klasörleri içeren bir **Görünümler** klasörüne sahiptir (aynı zamanda, **paylaşılan** görünümler için bir de). Örneğin, **/Home/about** yolu IÇIN görünüm cshtml dosyası (html uzantısı), **views/Home/about. cshtml**yolunda olacaktır. Bu dosyayı açın.
 
     ![](media/netcore-image6.png)
 
-5. Bu CSHTML dosyasını birleşimi standart etiketleri ve satır içi C# dayalı HTML oluşturmak için Razor sözdizimini kullanır. Bu konuda daha fazla bilgi [çevrimiçi belgeleri](https://docs.microsoft.com/aspnet/web-pages/overview/getting-started/introducing-razor-syntax-c).
+5. Bu CSHTML dosyası, standart etiketlerin ve satır içi C#bir BIRLEŞIMINE göre HTML işlemek için Razor söz dizimi kullanır. [Çevrimiçi belgelerde](https://docs.microsoft.com/aspnet/web-pages/overview/getting-started/introducing-razor-syntax-c)bunun hakkında daha fazla bilgi edinebilirsiniz.
 
     ![](media/netcore-image7.png)
 
-6. Çözüm ayrıca içeren bir **wwwroot** , web siteniz için kök klasör. Statik içerik, CSS, görüntü ve JavaScript kitaplıkları gibi doğrudan site dağıtıldığında olması istersiniz yollarında koyabilirsiniz.
+6. Çözüm, Web sitenizin kökü olacak bir **Wwwroot** klasörü de içerir. CSS, görüntüler ve JavaScript kitaplıkları gibi statik site içeriğini, site dağıtıldığında olmasını istediğiniz yollarla koyabilirsiniz.
 
     ![](media/netcore-image8.png)
 
-7. Proje, paketleri ve uygulama çalışma zamanında yönetmek için hizmet yapılandırma dosyalarının birçok vardır. Örneğin, varsayılan uygulama [yapılandırma](https://docs.microsoft.com/aspnet/core/fundamentals/configuration) depolanan **appsettings.json**. Ancak, tüm/bazı ortam başına temelinde, bu ayarları gibi sağlayarak kılabilirsiniz bir **appsettings. Development.JSON** dosya **geliştirme** ortam.
+7. Ayrıca, çalışma zamanında projeyi, paketleri ve uygulamayı yönetmeye yönelik bir dizi yapılandırma dosyası da vardır. Örneğin, varsayılan uygulama [yapılandırması](https://docs.microsoft.com/aspnet/core/fundamentals/configuration) **appSettings. JSON**' da depolanır. Bununla birlikte, bu ayarların bir kısmını/tümünü, bir appSettings sağlayarak gibi ortam başına temelinde geçersiz kılabilirsiniz **.**  **Geliştirme** ortamı için Development. JSON dosyası.
 
     ![](media/netcore-image9.png)
 
-## <a name="task-3-understanding-how-the-application-is-hosted"></a>Görev 3: Uygulamayı nasıl barındırılıyor anlama
+## <a name="task-3-understanding-how-the-application-is-hosted"></a>Görev 3: Uygulamanın nasıl barındırıldığını anlama
 
-1. Gelen **Çözüm Gezgini**açın **Program.cs**. Uygulamanızın çalışacağı önyükleyici budur.
+1. **Çözüm Gezgini**, **program.cs**açın. Bu, uygulamanızı çalıştıracak olan önyükleyici.
 
     ![](media/netcore-image10.png)
 
-2. Yalnızca iki satırlık bir kod burada olsa da, önemli. Şimdi bunları parçalara ayırın. İlk olarak, yeni bir **WebHostBuilder** oluşturulur. ASP.NET Core uygulamaları, yürütülecek bir konak gerektirir. Bir konak uygulamalıdır **IWebHost** koleksiyonları özellikler ve hizmetler sunan, arabirimi ve **Başlat** yöntemi. Ana bilgisayar genellikle örneği kullanılarak oluşturulan bir **WebHostBuilder**, oluşturur ve döndürür bir **WebHost** örneği. **WebHost** isteklerini işleyecek sunucunun başvuruyor.
+2. Burada yalnızca iki satır kod olmakla kalmaz, çok önemli. Şimdi bunları bozalım. İlk olarak yeni bir **Webhostbuilder** oluşturulur. ASP.NET Core uygulamalar, çalıştırılacağı bir konak gerektirir. Bir konağın, özellik ve hizmet koleksiyonlarını ve bir **Başlangıç** yöntemini kullanıma sunan **ıwebhost** arabirimini uygulaması gerekir. Konak genellikle bir **Web Hostbuilder**örneği kullanılarak oluşturulur ve bu örnek, bir **Webhost** örneği oluşturur ve döndürür. **Webhost** , istekleri işleyecek sunucuya başvuracaktır.
 
     ![](media/netcore-image11.png)
 
-3. Sırada **WebHostBuilder** sorumlu oluşturduğunuz ana sunucu uygulaması için önyükleme için uygulayan bir sunucuda verdiğiniz gerektirir **IServer**. Varsayılan olarak,  **[Kestrel](https://docs.microsoft.com/aspnet/core/fundamentals/servers/kestrel)** , ASP.NET Core platformlar arası web sunucusuna bağlı **libuv**, platformlar arası bir zaman uyumsuz g/ç kitaplığı olduğu.
+3. **Webhostbuilder** , uygulama için sunucuyu önyükleyen Konağı oluşturmaktan sorumludur. Bu, **Iver**'i uygulayan bir sunucu sağlamanızı gerektirir. Bu, varsayılan olarak, **[](https://docs.microsoft.com/aspnet/core/fundamentals/servers/kestrel)** platformlar arası zaman uyumsuz g/ç kitaplığı olan **libuv**tabanlı ASP.NET Core yönelik platformlar arası Web sunucusudur.
 
     ![](media/netcore-image12.png)
 
-4. Ardından, sunucunun içerik kök ayarlanır. Bu, burada MVC görünümü dosyaları gibi içerik dosyaları için Aranan belirler. Varsayılan içerik kök uygulama çalıştırıldığı klasördür.
+4. Daha sonra, sunucunun içerik kökü ayarlanır. Bu, MVC görünüm dosyaları gibi içerik dosyalarını nerede arayacağını belirler. Varsayılan içerik kökü, uygulamanın çalıştırıldığı klasördür.
 
     ![](media/netcore-image13.png)
 
-5. Internet Information Services (IIS) web sunucusu ile uygulama çalışmanız gerekiyorsa **UseIISIntegration** yöntemi konak oluşturmanın bir parçası olarak çağrılabilir. Bu bir sunucu gibi yapılandırmaz **UseKestrel** yapar. IIS, ASP.NET Core ile kullanmak için her ikisini de belirtmelisiniz **UseKestrel** ve **UseIISIntegration**. **Kestrel'i** bir proxy'nin arkasındayken çalıştırılmak üzere tasarlanmıştır ve doğrudan internet'e yönelik dağıtılmamalıdır. **UseIISIntegration** IIS olan makineler üzerinde çalışan IIS'ye yalnızca ilgili ters proxy sunucusu, ancak onun olarak belirtir. Windows uygulamanızı dağıtmak, onu bırakın. Aksi takdirde zararı olmaz.
+5. Uygulamanın Internet Information Services (IIS) Web sunucusu ile çalışması gerekiyorsa, konak oluşturmanın bir parçası olarak **Useiisıntegration** yöntemi çağrılmalıdır. Bu, **UseKestrel** gibi bir sunucu yapılandırmaz. IIS 'yi ASP.NET Core kullanmak için, hem **UseKestrel** hem de **useiisıntegration**' i belirtmeniz gerekir. **Kestrel** , bir proxy 'nin arkasında çalışacak şekilde tasarlanmıştır ve doğrudan internet 'e yönelik olarak dağıtılmamalıdır. **Useiisıntegration** , IIS 'yi ters ara sunucu olarak belirtir, ancak yalnızca IIS 'e sahip makinelerde çalışırken ilgilidir. Uygulamanızı Windows 'a dağıtırsanız, içinde bırakın. Aksi takdirde, tersi olmaz.
 
     ![](media/netcore-image14.png)
 
-6. Önyükleme uygulama ayarlarının yüklenmesini ayırmak için temiz bir uygulamadır. Kolayca Bunu yapmak için **UseStartup** belirtmek için çağırılır **başlangıç** sınıfı, yükleme ayarlarını ve ara yazılım ardışık düzende HTTP ekleme gibi diğer başlangıç görevleri için çağrılabilir. Birden çok olabilir **UseStartup** gerektiğinde her bir önceki ayarların üzerine yazılacağını beklentisiyle çağırır.
+6. Bu, ayarların yüklenmesini uygulama önyüklemesinden ayırmak için bir temizleyici uygulamadır. Bunu kolayca yapmak için, **Başlangıç** sınıfının, ayarlar ve http işlem hattına ara yazılım ekleme gibi diğer başlangıç görevlerinin çağrılması için çağrılabilmesi Için, **usestartup** çağrılır. Beklenmekte olan birden çok **Usestartup** çağrısı olabilir. Bu, her birinin gerektiğinde önceki ayarların üzerine yazılmasına neden olur.
 
     ![](media/netcore-image15.png)
 
-7. Oluşturmanın son adımı **IWebHost** çağırmaktır **yapı**.
+7. **Iwebhost** 'yi oluşturmanın son adımı **derlemeyi**çağırmakdır.
 
     ![](media/netcore-image16.png)
 
-8. Sırada **IWebHost** engelleyici olmayan uygulamak için gerekli sınıfların **Başlat**, ASP.NET Core projeleri sahip olarak adlandırılan bir genişletme yöntemi **çalıştırmak** sonuna geldik  **Başlangıç** kod engelleme ile el ile yöntemi hemen çıkmasını önlemek zorunda kalmazsınız.
+8. **Iwebhost** sınıfları, engelleyici olmayan **Başlangıç**uygulamasını uygulamak için gerekli olsa da, ASP.NET Core projelerin, engelleme kodu ile **başlayan** bir genişletme yöntemi vardır; bu nedenle, yöntemi el ile engellemeniz gerekmez hemen çıkılıyor.
 
     ![](media/netcore-image17.png)
 
-## <a name="task-4-running-and-debugging-the-application"></a>Görev 4: Çalıştıran ve uygulamada hata ayıklama
+## <a name="task-4-running-and-debugging-the-application"></a>Görev 4: Uygulamayı çalıştırma ve hata ayıklama
 
-1. İçinde **Çözüm Gezgini**, sağ **CoreLab** proje düğümünü seçip alt **seçenekleri**.
+1. **Çözüm Gezgini**, **CoreLab** proje düğümüne sağ tıklayın ve **Seçenekler**' i seçin.
 
     ![](media/netcore-image18.png)
 
-2. **Proje seçenekleri** iletişim nasıl uygulama yerleşik çalıştırın ve ayarlamak için ihtiyacınız olan her şeyi içerir. Seçin **Çalıştır > yapılandırmaları > Varsayılan** sol panelde düğümünden.
+2. **Proje seçenekleri** iletişim kutusu, uygulamanın nasıl oluşturulduğunu ve çalıştırılacağını ayarlamak için ihtiyacınız olan her şeyi içerir. Sol paneldeki **> yapılandırma > varsayılan düğümünü Çalıştır** ' ı seçin.
 
-3. Denetleme **harici konsol üzerinde Çalıştır** kaldırın **konsol çıkışını duraklatmak**. Normalde şirket içinde barındırılan bir uygulamanın konsol görünür olmaması, ancak bunun yerine sonuçlarını günlüğe kaydedersiniz **çıkış** paneli. Normal geliştirme sırasında yapmanız gerekmez, ancak bu Laboratuvarın amacı doğrultusunda, bu da ayrı bir pencerede göstereceğiz.
+3. **Dış konsolda Çalıştır** ' ı işaretleyin ve **konsol çıkışını Duraklat**' işaretini kaldırın. Genellikle şirket içinde barındırılan uygulamanın Konsolu görünür olmaz, bunun yerine sonuçları **Çıkış** paneline kaydeder. Bu laboratuvarın amaçları doğrultusunda, normal geliştirme sırasında bunu yapmanıza gerek olmasa da, bunu ayrı bir pencerede de göstereceğiz.
 
-4. **Tamam**'ı tıklatın.
+4.           **Tamam**'ı tıklatın.
 
     ![](media/netcore-image19.png)
 
-5. Tuşuna **F5** oluşturun ve uygulamayı çalıştırın. Alternatif olarak, seçebileceğiniz **çalıştırın > hata ayıklamayı Başlat**.
+5. Uygulamayı derlemek ve çalıştırmak için **F5** tuşuna basın. Alternatif olarak, **hata ayıklamayı başlatmak > Çalıştır**' ı seçebilirsiniz.
 
-6. İki windows, Mac için Visual Studio başlatılır. Şirket içinde barındırılan bir sunucu uygulaması bir görünüm sağlar bir konsol penceresi davranıştır.
+6. Mac için Visual Studio iki pencere başlatacaktır. Birincisi, size şirket içinde barındırılan sunucu uygulamasına bir görünüm sağlayan bir konsol penceresidir.
 
     ![](media/netcore-image20.png)
 
-7. Siteyi sınamak için tipik tarayıcı penceresini saniyedir. Tarayıcı bilir kadar bu uygulama herhangi bir yerde barındırılabilir. Tıklayın **hakkında** söz konusu sayfaya gidin.
+7. İkincisi, siteyi test eden tipik bir tarayıcı penceresidir. Tarayıcının bildiği kadar, bu uygulama herhangi bir yerde barındırılabilir. Bu sayfaya gitmek için **hakkında** ' ya tıklayın.
 
     ![](media/netcore-image21.png)
 
-8. Başka şeylerin yanında sayfası hakkında denetleyicisi ayarlamak metin işler.
+8. Diğer şeyler arasında, hakkında sayfası denetleyicide bazı metin kümesini işler.
 
     ![](media/netcore-image22.png)
 
-9. Tutun hem windows açın ve Mac için Visual Studio'ya geri dönün Açık **Controllers/HomeController.cs** zaten açık değilse.
+9. Her iki Windows açık tutun ve Mac için Visual Studio döndürün. Açık değilse, **denetleyicileri/HomeController. cs** ' i açın.
 
     ![](media/netcore-image23.png)
 
-10. İlk satırında bir kesme noktası ayarlamak **hakkında** yöntemi. Kenar boşluğunu tıklayarak veya imleci satır ve tuşlarına basarak ayarlamaya bunu yapabilirsiniz **F9**. Bu satırı bazı veri kümelerine **ViewData** CSHTML sayfa işlenir koleksiyonu **Views/Home/About.cshtml**.
+10. **About** yönteminin ilk satırında bir kesme noktası ayarlayın. Bunu, kenar boşluğuna tıklayarak veya imleci satır üzerinde ayarlayıp **F9**tuşuna basarak yapabilirsiniz. Bu satır, **views/Home/about. cshtml**konumundaki cshtml sayfasında Işlenen **ViewData** koleksiyonundaki bazı verileri ayarlar.
 
     ![](media/netcore-image24.png)
 
-11. Tarayıcı ve yenileme için iade hakkında sayfası. Bu Mac için Visual Studio'da kesme noktası tetikler
+11. Tarayıcıya dönün ve hakkında sayfasını yenileyin. Bu, Mac için Visual Studio kesme noktasını tetikler.
 
-12. Fare üzerindeyken **ViewData** üye onun verilerini görüntüleyebilirsiniz. İç içe geçmiş verileri görmek için alt üyeleri daha da genişletebilirsiniz.
+12. Verilerini görüntülemek için **ViewData** üyesinin üzerinde fare. Ayrıca, iç içe geçmiş verileri görmek için alt üyelerini genişletebilirsiniz.
 
     ![](media/netcore-image25.png)
 
-13. Uygulama kesme noktası eklemek için kullanılan yöntemin aynısını kullanarak kaldırın.
+13. Uygulama kesme noktasını, eklemek için kullandığınız yöntemi kullanarak kaldırın.
 
-14. Açık **Views/Home/About.cshtml**.
+14. **Görünümler/giriş/about. cshtml**dosyasını açın.
 
-15. Metni Değiştir **"ek"** için **"değiştirildi"** ve dosyayı kaydedin.
+15. **"Ek"** metnini **"değiştirildi"** olarak değiştirin ve dosyayı kaydedin.
 
     ![](media/netcore-image26.png)
 
-16. Tuşuna **devam** yürütmeye devam etmek için düğmeyi.
+16. Yürütmeye devam etmek için **devam** düğmesine basın.
 
     ![](media/netcore-image27.png)
 
-17. Güncelleştirilen metin görmek için tarayıcı penceresine dönün. Bu değişiklik, herhangi bir zamanda yapılabilir ve hata ayıklayıcı bir kesme noktası mutlaka gerektiren kaydetmedi. Hemen yansıtılmasını değişiklik görmüyorsanız, tarayıcıyı yenileyin.
+17. Güncelleştirilmiş metni görmek için tarayıcı penceresine dönün. Bu değişiklik herhangi bir zamanda yapılabilir ve bir hata ayıklayıcı kesme noktası gerektirmeyebilir. Değişikliğin hemen yansıtıldığını görmüyorsanız Tarayıcıyı yenileyin.
 
     ![](media/netcore-image28.png)
 
-18. Test tarayıcı penceresi ve uygulama konsolunu kapatın. Bu işlem de hata ayıklamayı durdurur.
+18. Test tarayıcısı penceresini ve uygulama konsolu 'nu kapatın. Bu, hata ayıklamayı da durdurur.
 
-## <a name="task-5-application-startup-configuration"></a>Görev 5: Uygulama başlangıç yapılandırması
+## <a name="task-5-application-startup-configuration"></a>5\. görev: Uygulama başlangıç yapılandırması
 
-1. Gelen **Çözüm Gezgini**açın **Startup.cs**. Roslyn derleyici, proje bağımlılıkları eksiksiz bir görünümünü oluşturmak ve arka planda NuGet paketleri geri gibi bazı kırmızı dalgalı çizgiler başlangıçta görebilirsiniz.
+1. **Çözüm Gezgini**, **Startup.cs**açın. NuGet paketleri arka planda geri yüklendiği ve Roslyn derleyicisi proje bağımlılıklarının tamamen bir resmini oluşturmakta olduğu için başlangıçta bazı Red dalgalı çizgiler fark edebilirsiniz.
 
     ![](media/netcore-image29.png)
 
-2. Bulun **başlangıç** yöntemi. Bu bölümde, uygulama için başlangıç yapılandırmasını tanımlar ve kümelenmesini. Bu konuyu biraz açalım.
+2. **Başlangıç** yöntemini bulun. Bu bölüm, uygulamanın ilk yapılandırmasını tanımlar ve özellikle paketlenmiştir. Şimdi bunu kesintiye uğratır.
 
     ![](media/netcore-image30.png)
 
-3. Yöntem başlatarak başlangıcıdır bir **ConfigurationBuilder** ve kendi temel yolu ayarlama.
+3. Yöntem, **Configurationbuilder** başlatılarak ve temel yolu ayarlanarak başlatılır.
 
     ![](media/netcore-image31.png)
 
-4. Ardından, gerekli bir yükler **appsettings.json** dosya.
+4. Ardından, gerekli bir **appSettings. JSON** dosyası yükler.
 
     ![](media/netcore-image32.png)
 
-5. Bundan sonra bir ortama özgü yük çalışır **appsettings.json** dosyasını mevcut ayarları geçersiz kılarsınız. Örneğin, bir sağlanan budur **appsettings. Development.JSON** belirli bu ortam için kullanılan dosya. Daha fazla bilgi için ASP.NET Core hakkında yapılandırması, kullanıma [docs](https://docs.microsoft.com/aspnet/core/fundamentals/configuration).
+5. Bundan sonra, var olan ayarları geçersiz kılacak ortama özgü bir **appSettings. JSON** dosyası yüklemeye çalışır. Örneğin, bu bir belirtilen appSettings 'dir **.** Bu belirli ortam için kullanılan Development. JSON dosyası. ASP.NET Core yapılandırma hakkında daha fazla bilgi edinmek için [belgelere](https://docs.microsoft.com/aspnet/core/fundamentals/configuration)bakın.
 
     ![](media/netcore-image34.png)
 
-6. Son olarak, ortam değişkenlerini yapılandırma oluşturucuya eklenir ve yapılandırma oluşturulur ve kullanım için ayarlayın.
+6. Son olarak, ortam değişkenleri Yapılandırma oluşturucusuna eklenir ve yapılandırma oluşturulup kullanım için ayarlanır.
 
     ![](media/netcore-image35.png)
 
-## <a name="task-6-inserting-application-middleware"></a>6\. Görev: Uygulama ara yazılım ekleme
+## <a name="task-6-inserting-application-middleware"></a>Görev 6: Uygulama ara yazılımı ekleniyor
 
-1. Bulun **yapılandırma** yönteminde **başlangıç** sınıfı. HTTP ardışık düzende eklenen ve sunucuya her isteği işlemek için kullanılan tüm ara yazılım yapılandırıldığı budur. Bu yöntem yalnızca bir kez yöntemleri içeriğini çağırıldıktan (gibi **UseStaticFiles**) her bir istek üzerinde çalıştırılabilir.
+1. **Başlangıç** sınıfında **Configure** metodunu bulun. Bunun nedeni, HTTP işlem hattına eklenebilmesi ve sunucuya her isteği işlemek için kullanılması için tüm ara yazılımlar yapılandırılır. Bu yöntem yalnızca bir kez çağrıldığında, yöntemlerin içerikleri ( **Usestaticfiles**gibi) her istekte yürütülebilir.
 
     ![](media/netcore-image36.png)
 
-2. Ayrıca, işlem hattının bir parçası yürütülecek ek ara yazılım ekleyebilirsiniz. Sonra aşağıdaki kodu ekleyin **uygulama. UseStaticFiles** otomatik olarak eklemek için bir **X Test** her giden yanıt üst bilgisi. IntelliSense, kod yazdığınız sırada tamamlama yardımcı olur.
+2. Ayrıca, işlem hattının bir parçası olarak yürütülecek ek ara yazılım ekleyebilirsiniz. Uygulamadan sonra aşağıdaki kodu ekleyin **.** Her giden yanıta otomatik olarak bir **X-test** üst bilgisi eklemek Için usestaticfiles. IntelliSense, siz yazarken kodu tamamlamaya yardımcı olur.
 
     ```csharp
     app.Use(async (context, next) =>
@@ -213,34 +213,34 @@ Bu Laboratuvar, alışkın olan geliştiricilerin yönelik C#, ancak deneyime ge
     });
     ```
 
-3. Tuşuna **F5** oluşturup projeyi çalıştırın.
+3. Projeyi derlemek ve çalıştırmak için **F5** tuşuna basın.
 
-4. Eklenen doğrulamak için üstbilgileri incelemek için tarayıcı kullanabiliriz. Safari için aşağıdaki yönergeleri verilmiştir, ancak aynı yapabilirsiniz [Chrome](https://stackoverflow.com/questions/4423061/view-http-headers-in-google-chrome) veya [Firefox](https://stackoverflow.com/questions/33974595/in-firefox-how-do-i-see-http-request-headers-where-in-web-console).
+4. Eklenen üstbilgileri denetlemek için tarayıcıyı kullanabiliriz. Aşağıdaki yönergeler Safari 'ye yöneliktir, ancak [Chrome](https://stackoverflow.com/questions/4423061/view-http-headers-in-google-chrome) veya [Firefox](https://stackoverflow.com/questions/33974595/in-firefox-how-do-i-see-http-request-headers-where-in-web-console)'ta aynı şekilde yapabilirsiniz.
 
-5. Tarayıcı site yüklendikten sonra Seç **Safari > Tercihler**.
+5. Tarayıcı siteyi yükledikten sonra **Safari > tercihleri**' ni seçin.
 
-6. Üzerinde **Gelişmiş** sekmesinde, onay **Göster geliştirme menüsünü menü çubuğunda** ve iletişim kutusunu kapatın.
+6. **Gelişmiş** sekmesinde, **menü çubuğunda geliştir menüsünü göster** ' i işaretleyin ve iletişim kutusunu kapatın.
 
     ![](media/netcore-image37.png)
 
-7. Seçin **geliştirme > Göster sayfası kaynakları**.
+7. **Geliştirme > sayfa kaynaklarını göster**' i seçin.
 
-8. Yeni açılan geliştirici araçları, izlemek ve içeriği ve trafiği çözümleyin tarayıcı penceresini yenileyin.
+8. Yeni açılan Geliştirici araçlarının trafiği ve içeriği izleyip çözümleyebilmesi için tarayıcı penceresini yenileyin.
 
-9. Sunucu tarafından işlenen localhost HTML sayfası, varsayılan olarak seçili öğe olacaktır.
+9. Sunucu tarafından oluşturulan localhost HTML sayfası, varsayılan olarak seçilen öğe olur.
 
     ![](media/netcore-image38.png)
 
-10. Genişletin **ayrıntıları kenar**.
+10. **Ayrıntılar kenar çubuğunu**genişletin.
 
     ![](media/netcore-image39.png)
 
-11. Kodda daha önce eklediğiniz yanıt üst bilgisini görmek için kenar alt kısmına kaydırın.
+11. Daha önce koda eklenen yanıt üst bilgisini görmek için kenar çubuğunun en altına kaydırın.
 
     ![](media/netcore-image40.png)
 
-12. Tarayıcı penceresi ve koşullar karşılanırsa konsolunu kapatın.
+12. Tatmin edildiğinde tarayıcı penceresini ve konsolunu kapatın.
 
 ## <a name="summary"></a>Özet
 
-Bu laboratuvarda, Mac için Visual Studio ile ASP.NET Core uygulamaları geliştirmeye başlamak nasıl öğrendiniz. İsterseniz daha eksiksiz bir film veritabanı uygulaması geliştirmeye keşfetmek için bkz: [ASP.NET Core MVC ile çalışmaya başlama](https://docs.microsoft.com/aspnet/core/tutorials/first-mvc-app/start-mvc) öğretici.
+Bu laboratuvarda, Mac için Visual Studio ASP.NET Core uygulamaları geliştirmeye nasıl başladığınızı öğrendiniz. Daha kapsamlı bir film veritabanı uygulaması geliştirmeyi araştırmak isterseniz, [ASP.NET Core MVC ile çalışmaya başlama](https://docs.microsoft.com/aspnet/core/tutorials/first-mvc-app/start-mvc) öğreticisine bakın.
