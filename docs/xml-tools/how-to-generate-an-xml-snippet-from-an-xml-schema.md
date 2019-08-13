@@ -8,22 +8,22 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e3795bbe8a200b868687cdb8da053bc078b7f14c
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: cb5b10e142c1dd62625a48c39c3860d49e8942cb
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67825758"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926824"
 ---
 # <a name="how-to-generate-an-xml-snippet-from-an-xml-schema"></a>Nasıl yapılır: XML şemasından XML kod parçacığı oluşturma
 
-XML Düzenleyicisi'ni XML Şeması Tanım Dili (XSD) şemasından XML kod parçacıklarını oluşturma özelliğine sahiptir. Örneğin, öğe adı yanındaki konumlandırılmış olsa bir XML dosyasına yazma gibi basabilirsiniz **sekmesini** öğenin o öğe için şema bilgileri üretilen XML verileri ile doldurmak için.
+XML Düzenleyicisi bir XML şeması tanım dili (XSD) şemasından XML parçacıkları oluşturma özelliğine sahiptir. Örneğin, bir XML dosyası yazarken, öğe adının yanına konumlarken, öğeyi ilgili öğenin şema bilgilerinde oluşturulan XML verileriyle doldurmak için **Tab** tuşuna basabilirsiniz.
 
-Bu özellik yalnızca öğeleri üzerinde kullanılabilir. Ayrıca, aşağıdaki kurallar geçerlidir:
+Bu özellik yalnızca öğelerde kullanılabilir. Aşağıdaki kurallar da geçerlidir:
 
-- Öğesi, bir ilişkili şema türü olması gerekir; diğer bir deyişle, öğe ilişkili bazı şemaya göre geçerli olmalıdır. Şema türü soyut olamaz ve türü gerekli öznitelikler içermelidir ve/veya alt öğeleri gereklidir.
+- Öğesi ilişkili bir şema türüne sahip olmalıdır; diğer bir deyişle, öğe ilişkili şemaya göre geçerli olmalıdır. Şema türü soyut olamaz ve tür gereken öznitelikleri ve/veya gerekli alt öğeleri içermelidir.
 
-- Geçerli öğe düzenleyicide özniteliklere boş olmalıdır. Örneğin, tüm geçerli aşağıda verilmiştir
+- Düzenleyicideki geçerli öğe, hiçbir öznitelik olmadan boş olmalıdır. Örneğin, aşağıdakiler geçerlidir
 
   - `<Account`
 
@@ -31,68 +31,68 @@ Bu özellik yalnızca öğeleri üzerinde kullanılabilir. Ayrıca, aşağıdaki
 
   - `<Account></Account>`
 
-- İmleç hemen öğe adı sağa bulunmalıdır.
+- İmleç, öğe adının hemen sağına yerleştirilmelidir.
 
-Oluşturulan kod parçacığı, tüm gerekli öznitelikler ve öğeler içerir. Varsa `minOccurs` biri, gerekli en az o öğenin örnek sayısı en çok 100 örnek kod parçacığında dahil edilenlerden daha büyüktür. Herhangi bir sabit değerlerini sabit değerleri kod parçacığında şema sonucu bulunamadı. `xsd:any` ve `xsd:anyAttribute` öğeleri göz ardı edilir ve hiçbir ek kod parçacığı yapılardan neden.
+Oluşturulan kod parçacığı tüm gerekli öznitelikleri ve öğeleri içerir. `minOccurs` Birden büyükse, en fazla 100 örneğe kadar, o öğenin gereken minimum örnek sayısı kod parçacığına dahil edilir. Şemada bulunan sabit değerler, kod parçacığında sabit değerlerle sonuçlanır. `xsd:any`ve `xsd:anyAttribute` öğeleri yok sayılır ve ek kod parçacığı yapıları gerektirmez.
 
-Varsayılan değerleri oluşturulur ve düzenlenebilir değerleri Not. Şema varsayılan değeri belirtiyorsa, bu varsayılan değer kullanılır. Ancak, şema varsayılan değer boş bir dize ise, düzenleyici varsayılan değerleri aşağıdaki şekilde oluşturur:
+Varsayılan değerler oluşturulur ve düzenlenebilir değerler olarak belirtilmiştir. Şema varsayılan bir değer belirtiyorsa, bu varsayılan değer kullanılır. Ancak, şema varsayılan değeri boş bir dize ise, düzenleyici varsayılan değerleri aşağıdaki şekilde oluşturur:
 
-- Şema türü herhangi bir sabit listesi modelleri, doğrudan veya dolaylı olarak herhangi bir birleşim tipinin üye yoluyla içeriyorsa şema nesne modeli içinde bulunan ilk numaralandırılmış değer varsayılan olarak kullanılır.
+- Şema türü herhangi bir numaralandırma modeli içeriyorsa, doğrudan veya dolaylı olarak bir birleşim türü üye aracılığıyla, şema nesne modelinde bulunan ilk Numaralandırılmış değer varsayılan olarak kullanılır.
 
-- Şema türü atomik bir tür ise, düzenleyici atomik türü alır ve atomik tür adını ekler. Türetilen bir basit türü için temel bir basit türü kullanır. Atomik türü için listeyi türdür `itemType`. Atomik türü bir birleşimin atomik ilk türüdür `memberType`.
+- Şema türü Atomik bir tür ise, düzenleyici Atomik türü alır ve atomik tür adını ekler. Türetilmiş basit bir tür için temel basit türü kullanır. Bir liste türü için atomik tür ' dir `itemType`. Bir birleşim için atomik tür, birinconun `memberType`atomik türüdür.
 
 ## <a name="example"></a>Örnek
 
- Bu bölümdeki adımları XML Düzenleyicisi şema tarafından oluşturulan XML kod parçacığı özelliğini nasıl kullanacağınızı gösterir.
+Bu bölümdeki adımlarda, XML düzenleyicisinin şema tarafından oluşturulan XML kod parçacığı özelliğinin nasıl kullanılacağı gösterilmektedir.
 
 > [!NOTE]
-> Bu yordamlar başlatmadan önce şema dosyasını yerel bilgisayarınıza kaydedin.
+> Bu yordamları başlatmadan önce, şema dosyasını yerel bilgisayarınıza kaydedin.
 
-### <a name="to-create-a-new-xml-file-and-associate-it-with-an-xml-schema"></a>Yeni bir XML dosyası oluşturun ve bir XML şeması ile ilişkilendirmek için
+### <a name="to-create-a-new-xml-file-and-associate-it-with-an-xml-schema"></a>Yeni bir XML dosyası oluşturmak ve bir XML şeması ile ilişkilendirmek için
 
-1. Üzerinde **dosya** menüsünde **yeni**, tıklatıp **dosya**.
+1. **Dosya** menüsünde, **Yeni**' nin üzerine gelin ve **Dosya**' ya tıklayın.
 
-2. Seçin **XML dosyası** içinde **şablonları** bölmesi ve tıklatın **açık**.
+2. **Şablonlar** bölmesinde **XML dosyası** ' nı seçin ve **Aç**' a tıklayın.
 
-     Yeni bir dosya düzenleyicide açılır. Varsayılan XML bildirimi dosyasını içeren `<?xml version="1.0" encoding="utf-8">`.
+     Düzenleyicide yeni bir dosya açılır. Dosya varsayılan bir XML bildirimi `<?xml version="1.0" encoding="utf-8">`içerir.
 
-3. Belge Özellikler penceresinde, Gözat düğmesine tıklayın ( **...** ) üzerinde **şemaları** alan.
+3. Belge Özellikleri penceresinde, **şemalar** alanındaki ( **...** ) düğmesine tıklayın.
 
-     **XSD şemaları** iletişim kutusu görüntülenir.
+     **Xsd şemaları** iletişim kutusu görüntülenir.
 
 4.           **Ekle**'yi tıklatın.
 
-     **Açık XSD şeması** iletişim kutusu görüntülenir.
+     **XSD şeması aç** iletişim kutusu görüntülenir.
 
-5. Şema dosyası seçin ve tıklayın **açık**.
+5. Şema dosyasını seçin ve **Aç**' a tıklayın.
 
-6.           **Tamam**'ı tıklatın.
+6. **Tamam**'ı tıklatın.
 
-     XML Şeması sunulmuştur XML belge ile ilişkilendirilmiş.
+     XML şeması artık XML belgesiyle ilişkili.
 
-### <a name="to-generate-an-xml-snippet"></a>XML kod parçacığı oluşturmak için
+### <a name="to-generate-an-xml-snippet"></a>XML parçacığı oluşturmak için
 
-1. Tür `<` Düzenleyicisi bölmesinde.
+1. Düzenleyici `<` bölmesine yazın.
 
-2. Üye listesi, mümkün olan öğeleri görüntüler:
+2. Üyeler listesi olası öğeleri görüntüler:
 
-     **!--** açıklama eklemek için.
+     yorum eklemek için **!--** .
 
-     **! DOCTYPE** belge türü eklemek için.
+     **!** Belge türü eklemek IÇIN DOCTYPE.
 
-     **?** bir işlem yönergesi eklemek için.
+     **?** bir işleme yönergesi eklemek için.
 
-     **İlgili kişi** kök öğe eklemek için.
+     Kök öğeyi eklemek için **Iletişim kurun** .
 
-3. Seçin **kişi** tuşuna basın ve üye listesi **Enter**.
+3. Üye listesinden **kişi** ' yi seçin ve **ENTER**tuşuna basın.
 
-     Düzenleyici başlangıç etiketi ekler `<Contact` ve imleci öğe adından sonra konumlandırır.
+     Düzenleyici başlangıç etiketini `<Contact` ekler ve imleci öğe adından sonra konumlandırır.
 
-4. Tuşuna **sekmesini** XML verileri oluşturmak için `Contact` öğesi üzerinde şema bilgilerini temel.
+4. Şema bilgilerine göre `Contact` öğesi için XML verisi oluşturmak için Tab tuşuna basın.
 
 ## <a name="input"></a>Giriş
 
- Aşağıdaki şema dosyası izlenecek yol tarafından kullanılır.
+Aşağıdaki şema dosyası, izlenecek yol tarafından kullanılır.
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
@@ -141,7 +141,7 @@ Varsayılan değerleri oluşturulur ve düzenlenebilir değerleri Not. Şema var
 
 ### <a name="output"></a>Çıkış
 
- İle ilişkili şema bilgilere dayanarak oluşturulan XML verileri aşağıdadır `Contact` öğesi. İşaretli öğeleri olarak `bold` düzenlenebilir XML kod parçacığı alanlarını belirleyin.
+Aşağıda `Contact` öğesiyle ilişkili şema bilgilerine göre oluşturulan XML verileri verilmiştir. XML kod parçacığında `bold` düzenlenebilir alanları belirleyin olarak işaretlenen öğeler.
 
 ```xml
 <Contact>
