@@ -34,5 +34,5 @@ Visual Studio abonelikleri yönetim portalı, çeşitli ölçütlere göre belir
    > ![Abone listesinden filtreyi temizle](media/clear-filter.png)
 
 ## <a name="next-steps"></a>Sonraki adımlar
-- Bir abonenin nasıl bulunacağını öğrenmiş olduğunuza göre, aboneliğini nasıl düzenleyeceğinizi [](edit-license.md) öğrenin.
+- Bir abonenin nasıl bulunacağını öğrenmiş olduğunuza göre, aboneliğini nasıl düzenleyeceğinizi [Düzenle](edit-license.md) öğrenin.
 - Yönetim portalını kullanma konusunda yardıma mı ihtiyacınız var?  [Visual Studio yönetim ve abonelikler desteğiyle](https://visualstudio.microsoft.com/support/support-overview-vs)iletişim kurun.
