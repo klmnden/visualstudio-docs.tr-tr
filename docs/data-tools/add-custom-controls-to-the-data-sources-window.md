@@ -15,82 +15,81 @@ ms.assetid: 8c43e7d2-ba94-4d9b-96de-3aa971955afd
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.workload:
-- data-storage
-ms.openlocfilehash: defc1605d15fcc9ce616212b48faa7674abc87e8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b81bd3237f3eb2aa9a4c096ddfeae2c7bcd08c09
+ms.sourcegitcommit: 6b0503ed8d25454d6e39a8e606910b3fa58cf1d2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62824674"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "68980548"
 ---
 # <a name="add-custom-controls-to-the-data-sources-window"></a>Veri kaynakları penceresine özel denetimler ekleme
 
-Bir öğeyi sürüklediğinizde **veri kaynakları** penceresinde bir veriye bağlı denetim oluşturmak için bir tasarım yüzeyine, oluşturduğunuz denetim türünü seçebilirsiniz. Penceresinde her öğenin, aralarından seçim yapabileceğiniz denetimleri görüntüleyen bir açılır liste vardır. Her bir öğeyle ilişkili denetimler kümesini öğesinin veri türüne göre belirlenir. Oluşturmak istediğiniz Denetim listede görünmüyorsa, denetim listesine eklemek için bu konudaki yönergeleri takip edebilirsiniz.
+Veriye dayalı bir denetim oluşturmak için veri kaynakları penceresinden tasarım yüzeyine bir öğe sürüklediğinizde, oluşturduğunuz denetim türünü seçebilirsiniz. Penceredeki her öğe, aralarından seçim yapabileceğiniz denetimleri görüntüleyen bir açılan liste içerir. Her öğeyle ilişkili denetimlerin kümesi, öğenin veri türüne göre belirlenir. Oluşturmak istediğiniz denetim listede görünmüyorsa, denetimi listeye eklemek için bu konudaki yönergeleri izleyebilirsiniz...
 
-Öğeleri oluşturmak için verilere bağlı denetimler seçme hakkında daha fazla bilgi için **veri kaynakları** penceresinde görmek [veri kaynakları penceresinden sürüklendiğinde oluşturulacak denetimi ayarlama](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).
+Veri kaynakları penceresinde öğeler için oluşturmak üzere veri bağlantılı denetimleri seçme hakkında daha fazla bilgi için, bkz. [veri kaynakları penceresinden sürüklerken oluşturulacak denetimi ayarlama](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).
 
-## <a name="customize-the-bindable-controls-list"></a>Bağlanabilir denetimleri listesini özelleştirme
+## <a name="customize-the-bindable-controls-list"></a>Bağlanabilir denetimler listesini özelleştirme
 
-Ekleme veya öğe mevcut denetimlerin listesinin denetimleri kaldırma için **veri kaynakları** aşağıdaki adımları uygulayın, bir özel veri türüne sahip bir pencere.
+Veri kaynakları penceresinde belirli bir veri türüne sahip öğeler için kullanılabilir denetimler listesine denetim eklemek veya kaldırmak için aşağıdaki adımları gerçekleştirin.
 
-### <a name="to-select-the-controls-to-be-listed-for-a-data-type"></a>Bir veri türü için listelenen denetimleri seçin
+### <a name="to-select-the-controls-to-be-listed-for-a-data-type"></a>Bir veri türü için listelenecek denetimleri seçmek için
 
-1. WPF Tasarımcısı ya da Windows Form Tasarımcısı açık olduğundan emin olun.
+1. WPF Tasarımcısı veya Windows Form Tasarımcısı açık olduğundan emin olun.
 
-2. İçinde **veri kaynakları** penceresinde, pencereye eklenen bir veri kaynağının bir parçası olan bir öğeye tıklayın ve açılan menü öğesi için'a tıklayın.
+2. **Veri kaynakları** penceresinde, pencereye eklediğiniz bir veri kaynağının parçası olan bir öğeye tıklayın ve sonra öğenin açılan menüsüne tıklayın.
 
    > [!TIP]
-   > Varsa **veri kaynakları** penceresi açık değilse, seçerek açın **görünümü** > **diğer Windows** > **veri kaynakları**.
+   > Veri kaynakları penceresi açık değilse,**diğer Windows** > **veri kaynaklarını** **görüntüle** > ' yi seçerek açın.
 
-3. Aşağı açılan menüden **Özelleştir**. Aşağıdaki iletişim kutularından birini açar:
+3. Açılan menüde, **Özelleştir**' e tıklayın. Aşağıdaki iletişim kutularından biri açılır:
 
-    - Varsa **Windows Form Tasarımcısı** açıkken **veri UI özelleştirmesi** sayfasının **seçenekleri** iletişim kutusu açılır.
+    - **Windows Form Tasarımcısı** açıksa, **Seçenekler** Iletişim kutusunun **veri UI özelleştirmesi** sayfası açılır. Daha fazla bilgi için bkz. [veri Kullanıcı arabirimi özelleştirme seçenekleri iletişim kutusu](../ide/reference/options-windows-forms-designer-data-ui-customization.md).
 
-    - Varsa **WPF Tasarımcısı** açıkken **denetim bağlamayı Özelleştir** iletişim kutusu açılır.
+    - **WPF Tasarımcısı** açıksa, **denetimi bağlamayı Özelleştir** iletişim kutusu açılır.
 
-4. İletişim kutusunda veri türünden **veri türü** aşağı açılan listesi.
+4. İletişim kutusunda, **veri türü** aşağı açılan listesinden bir veri türü seçin.
 
-    - Bir tablo veya nesne için denetim listesini özelleştirmek için işaretleyin **[listesi]**.
+    - Bir tablo veya nesne için denetim listesini özelleştirmek için **[Liste]** öğesini seçin.
 
-    - Bir tablo sütunu ya da bir nesnenin bir özellik için denetim listesini özelleştirmek için temel alınan veri deposunda sütun veya özelliğin veri türünü seçin.
+    - Bir tablonun sütunu veya bir nesnenin bir özelliği için denetim listesini özelleştirmek için, temel alınan veri deposundaki sütunun veya özelliğin veri türünü seçin.
 
-    - Kullanıcı tanımlı şekillere sahip veri nesneleri görüntülemek için denetimler listesini özelleştirmek için işaretleyin **[diğer]**. Örneğin, **[diğer]** uygulamanızın belirli bir nesnenin birden fazla özellik verileri görüntüleyen özel bir denetim varsa.
+    - Denetim listesini Kullanıcı tanımlı şekillere sahip veri nesnelerini görüntüleyecek şekilde özelleştirmek için **[diğer]** seçeneğini belirleyin. Örneğin, uygulamanızda belirli bir nesnenin birden fazla özelliğinden verileri görüntüleyen özel bir denetim varsa **[diğer]** seçeneğini belirleyin.
 
-5. İçinde **ilişkili denetimler** kutusuna, seçilen veri türü için kullanılabilir olmasını istediğiniz her bir denetim seçin veya listeden kaldırmak istediğiniz herhangi bir denetim seçimini temizleyin.
+5. **İlişkili denetimler** kutusunda, seçili veri türü için kullanılabilir olmasını istediğiniz her bir denetimi seçin veya listeden kaldırmak istediğiniz denetimlerin seçimini kaldırın.
 
     > [!NOTE]
-    > Olarak seçmek istediğiniz denetim belirmiyorsa **ilişkili denetimler** kutusunda denetim listesine eklemeniz gerekir. Daha fazla bilgi için [Ekle ilişkili denetimler](#add-associated-controls).
+    > Seçmek istediğiniz denetim **ilişkili denetimler** kutusunda görünmezse, denetimi listeye eklemeniz gerekir. Daha fazla bilgi için bkz. [ilişkili denetimler ekleme](#add-associated-controls).
 
-6. **Tamam**'ı tıklatın.
+6.           **Tamam**'ı tıklatın.
 
-7. İçinde **veri kaynakları** penceresinde, bir veri öğesi yalnızca bir veya daha fazla denetim ilişkili yazın ve açılan menü öğesi için'a tıklayın.
+7. **Veri kaynakları** penceresinde, yalnızca bir veya daha fazla denetimi ilişkilendirdiğiniz veri türünün bir öğesine tıklayın ve sonra öğenin açılan menüsüne tıklayın.
 
-     Denetimler, seçtiğiniz **ilişkili denetimler** kutusu öğenin açılan menüde artık görünür.
+     **İlişkili denetimler** kutusunda seçtiğiniz denetimler artık öğenin açılan menüsünde görüntülenir.
 
-## <a name="add-associated-controls"></a>İlişkili denetimler ekleme
+## <a name="add-associated-controls"></a>İlişkili denetimleri Ekle
 
-Denetim bir veri türü ile ilişkilendirmek istediğiniz, ancak denetimin görünmez **ilişkili denetimler** kutusunda denetim listesine eklemeniz gerekir. Denetim geçerli çözümde veya başvurulan bir derlemede yer almalıdır. Bu da kullanılabilir olmalıdır **araç kutusu** ve denetimin veri bağlamanın davranışını belirten bir özniteliği vardır.
+Bir denetimi veri türüyle ilişkilendirmek istiyorsanız, ancak denetim **ilişkili denetimler** kutusunda görünmüyorsa, denetimi listeye eklemeniz gerekir. Denetim geçerli çözümde veya başvurulan bir derlemede bulunmalıdır. Ayrıca, **araç kutusunda** da kullanılabilir olmalıdır ve denetimin veri bağlama davranışını belirten bir özniteliği olmalıdır.
 
-### <a name="to-add-controls-to-the-list-of-associated-controls"></a>İlişkili denetimler listesine denetimler ekleme
+İlişkili denetimler listesine denetim eklemek için:
 
-1. Eklemek istediğiniz denetime **araç kutusu** sağ tıklanarak **araç kutusu** seçerek **öğelerini Seç**.
+1. Araç kutusuna sağ tıklayıp **öğeleri seç**' i seçerek Istediğiniz denetimi **araç kutusuna** ekleyin.
 
-     Denetimi aşağıdaki öznitelikleri birine sahip olmalıdır.
+     Denetim aşağıdaki özniteliklerden birine sahip olmalıdır:
 
     |Öznitelik|Açıklama|
     |---------------|-----------------|
-    |<xref:System.ComponentModel.DefaultBindingPropertyAttribute>|Gibi bir tek sütun (veya özellik) verileri görüntüleyen basit denetimler Bu öznitelikte uygulayan bir <xref:System.Windows.Forms.TextBox>.|
-    |<xref:System.ComponentModel.ComplexBindingPropertiesAttribute>|Bu özniteliği veri listeleri (veya tablo) görüntüleyen denetimler gibi uygulama bir <xref:System.Windows.Forms.DataGridView>.|
-    |<xref:System.ComponentModel.LookupBindingPropertiesAttribute>|Bu özniteliği veri ancak tek bir sütun veya özelliği sunmak için ihtiyaç listeleri (veya tablo) görüntüleyen denetimler gibi uygulama bir <xref:System.Windows.Forms.ComboBox>.|
+    |<xref:System.ComponentModel.DefaultBindingPropertyAttribute>|Bu özniteliği, <xref:System.Windows.Forms.TextBox>gibi verilerin tek bir sütununu (veya özelliğini) görüntüleyen basit denetimlerde uygulayın.|
+    |<xref:System.ComponentModel.ComplexBindingPropertiesAttribute>|Bu özniteliği, <xref:System.Windows.Forms.DataGridView>gibi verilerin listesini (veya tabloları) görüntüleyen denetimlerde uygulayın.|
+    |<xref:System.ComponentModel.LookupBindingPropertiesAttribute>|Bu özniteliği, verilerin listelerini (veya tablolarını) görüntüleyen denetimlerde uygulayın, ancak aynı zamanda tek bir sütun veya bir <xref:System.Windows.Forms.ComboBox>özelliği (örneğin,) sunmalıdır.|
 
-2. Windows Forms üzerindeki **seçenekleri** açık iletişim kutusunu **veri UI özelleştirmesi** sayfası. Ya da WPF için açık **denetim bağlamayı Özelleştir** iletişim kutusu. Daha fazla bilgi için [bir veri türü için bağlanabilir denetim listesini özelleştirmek](#customize-the-bindable-controls-list).
+2. Windows Forms için, **Seçenekler** Iletişim kutusunda **veri UI özelleştirmesi** sayfasını açın. Ya da WPF için **Denetim Bağlamayı Özelleştir** iletişim kutusunu açın. Daha fazla bilgi için bkz. [veri türü için bağlanabilir denetim listesini özelleştirme](#customize-the-bindable-controls-list).
 
-3. İçinde **ilişkili denetimler** kutusunda, az önce eklediğiniz denetimin **araç kutusu** artık görünmelidir.
+3. **İlişkili denetimler** kutusunda, **araç** kutusuna yeni eklediğiniz denetim artık görünmelidir.
 
     > [!NOTE]
-    > Geçerli çözüm içindeki ya da başvurulan bir derlemede bulunan denetimler yalnızca ilişkili denetimler listesine eklenebilir. (Denetimler de veri bağlama özniteliklerinden biri önceki tabloda uygulamanız gerekir.) Veri bulunmayan özel bir denetim bağlamak için **veri kaynakları** penceresinde denetimi **araç kutusu** tasarım yüzeyi ve gelen bağlamak için öğeyi sürükleyin **veri Kaynakları** içerisindeyse denetimdeki penceresi.
+    > Yalnızca geçerli çözüm içinde veya başvurulan bir derlemede bulunan denetimler, ilişkili denetimler listesine eklenebilir. (Denetimler de önceki tablodaki veri bağlama özniteliklerinden birini uygulamalıdır.) Veri kaynakları penceresinde kullanılamayan özel bir denetime veri bağlamak için, denetimi **araç kutusundan** tasarım yüzeyine sürükleyin ve ardından **veri kaynakları** penceresinden denetime bağlamak için öğeyi sürükleyin.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 - [Visual Studio'da verilere denetimler bağlama](../data-tools/bind-controls-to-data-in-visual-studio.md)
+- [Veri Kullanıcı arabirimi özelleştirme seçenekleri iletişim kutusu](../ide/reference/options-windows-forms-designer-data-ui-customization.md)

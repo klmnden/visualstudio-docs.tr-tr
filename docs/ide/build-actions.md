@@ -8,12 +8,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 061a3cce8d1d29b57c02de4506a809994bf12910
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
+ms.openlocfilehash: eac31e0fe12d703e11d286b629e7e690f641f4e3
+ms.sourcegitcommit: 6b0503ed8d25454d6e39a8e606910b3fa58cf1d2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68416504"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "68981100"
 ---
 # <a name="build-actions"></a>Derleme eylemleri
 
@@ -30,13 +30,29 @@ Bir dosyaya yönelik derleme eylemini ayarlamak için, **Çözüm Gezgini** dosy
 
 ## <a name="build-action-values"></a>Derleme eylemi değerleri
 
-Ve Visual Basic proje dosyaları için C# bazı derleme eylemleri şunlardır:
+Ve Visual Basic proje dosyaları için C# daha yaygın derleme eylemlerinden bazıları şunlardır:
 
-* **Hiçbiri** -dosya, herhangi bir şekilde derleme kapsamında değildir. Bu değer, örneğin "Benioku" dosyaları gibi belge dosyaları için kullanılabilir.
-* **Derle** -dosya derleyiciye kaynak dosya olarak geçirilir.
-* **İçerik** - **içerik** olarak işaretlenen bir dosya, çağırarak <xref:System.Windows.Application.GetContentStream%2A?displayProperty=nameWithType>bir akış olarak alınabilir. ASP.NET projelerinde, bu dosyalar, dağıtıldığı sırada sitenin bir parçası olarak dahil edilir.
-* **Gömülü kaynak** -dosya, derlemeye gömülebilen bir kaynak olarak derleyiciye geçirilir. Derlemeden dosyayı okumak <xref:System.Reflection.Assembly.GetManifestResourceStream%2A?displayProperty=fullName> için öğesini çağırabilirsiniz.
-* **AdditionalFiles** -girdi olarak C# veya Visual Basic derleyicisine geçirilen kaynak olmayan bir metin dosyası. Bu derleme eylemi, genellikle kod kalitesini doğrulamak üzere bir proje tarafından başvurulan [çözümleyiciler](../code-quality/roslyn-analyzers-overview.md) için giriş sağlamak üzere kullanılır. Daha fazla bilgi için bkz. [ek dosyaları kullanma](https://github.com/dotnet/roslyn/blob/master/docs/analyzers/Using%20Additional%20Files.md).
+|Derleme eylemi | Proje türleri | Açıklama |
+|-|-|
+| **AdditionalFiles** | C#, Visual Basic | Giriş olarak C# veya Visual Basic derleyicisine geçirilen kaynak olmayan bir metin dosyası. Bu derleme eylemi, genellikle kod kalitesini doğrulamak üzere bir proje tarafından başvurulan [çözümleyiciler](../code-quality/roslyn-analyzers-overview.md) için giriş sağlamak üzere kullanılır. Daha fazla bilgi için bkz. [ek dosyaları kullanma](https://github.com/dotnet/roslyn/blob/master/docs/analyzers/Using%20Additional%20Files.md).|
+| **ApplicationDefinition** | WPF | Uygulamanızı tanımlayan dosya. İlk kez bir proje oluşturduğunuzda, bu *app. xaml*' dir. |
+| **CodeAnalysisDictionary** | .NET | Yazım denetimi için kod analizi tarafından kullanılan özel bir sözcük sözlüğü. Bkz [. nasıl yapılır: Kod Analizi sözlüğünü özelleştirme](../code-quality/how-to-customize-the-code-analysis-dictionary.md)|
+| **Se** | kaydedilmemiş | Dosya derleyiciye kaynak dosya olarak geçirilir.|
+| **İçeriği** | .NET | **İçerik** olarak işaretlenen bir dosya, çağırarak <xref:System.Windows.Application.GetContentStream%2A?displayProperty=nameWithType>akış olarak alınabilir. ASP.NET projelerinde, bu dosyalar, dağıtıldığı sırada sitenin bir parçası olarak dahil edilir.|
+| **DesignData** | WPF | Kullanıcı denetimlerinin tasarım zamanında, kukla türler ve örnek verilerle görüntülenmesini sağlamak için XAML ViewModel dosyaları için kullanılır. |
+| **DesignDataWithDesignTimeCreateable** | WPF | **Designdata**gibi, ancak gerçek türler.  |
+| **Gömülü kaynak** | .NET | Dosya, derlemeye gömülebilen bir kaynak olarak derleyiciye geçirilir. Derlemeden dosyayı okumak <xref:System.Reflection.Assembly.GetManifestResourceStream%2A?displayProperty=fullName> için öğesini çağırabilirsiniz.|
+| **EntityDeploy** | .NET | EF yapıtlarının dağıtımını belirten Entity Framework (EF). edmx dosyaları için. |
+| **Fakes** | .NET | Microsoft Fakes test çerçevesi için kullanılır. Bkz. [Microsoft Fakes kullanarak test edilen kodu yalıtma](../test/isolating-code-under-test-with-microsoft-fakes.md) |
+| **Yok.** | kaydedilmemiş | Dosya, herhangi bir şekilde derleme kapsamında değildir. Bu değer, örneğin "Benioku" dosyaları gibi belge dosyaları için kullanılabilir.|
+| **Sayfa** | WPF | Çalışma zamanında daha hızlı yükleme yapmak için bir XAML dosyasını bir binary. BAML dosyasına derleyin. |
+| **Kaynak** | WPF | Dosyayı *. g. resources*uzantısına sahip bir derleme bildirimi kaynak dosyasına katıştırmayı belirtir. |
+| **Gölgeli** | .NET | Her satırda bir tane olmak üzere oluşturulan derleme dosya adlarının listesini içeren bir. accessor dosyası için kullanılır. Listedeki her derleme için, yalnızca orijinallere benzeyen, ancak özel yöntemler `ClassName_Accessor` yerine ortak yöntemlerle ortak sınıflar oluşturun. Birim testi için kullanılır. |
+| **Giriş Ekranı** | WPF | Uygulama başlatıldığında çalışma zamanında görüntülenecek bir resim dosyasını belirtir. |
+| **XamlAppDef** | Windows Workflow Foundation | Derlemeyi, gömülü iş akışıyla bir derlemede iş akışı XAML dosyası oluşturmak için yönlendirir. |
+
+> [!NOTE]
+> Ek derleme eylemleri belirli proje türleri için tarafından tanımlanabilir, bu nedenle derleme eylemlerinin listesi proje türüne bağlıdır ve değerler bu listede yer alan görünebilir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
