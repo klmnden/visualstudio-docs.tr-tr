@@ -239,7 +239,7 @@ Bir güncelleştirmeyi denetleyebilir ve ardından menü çubuğunu veya Visual 
 
 1. **Kullanılabilir güncelleştirme** Iletişim kutusunda **Güncelleştir**' i seçin.
 
-     ![' Güncelleştirme indirilmiş ve yüklenmeye hazırlanıyor ' iletişim kutusunda Güncelleştir düğmesini seçin](media/vs-2019/update-visual-studio-community-from-ide.png "' Güncelleştirme indirilmiş ve yüklenmeye hazırlanıyor ' iletişim kutusunda Güncelleştir düğmesini seçin")
+     ![Güncelleştirme indirilmiş ve yüklenmeye hazırlanıyor ' iletişim kutusunda Güncelleştir düğmesini seçin](media/vs-2019/update-visual-studio-community-from-ide.png "Güncelleştirme indirilmiş ve yüklenmeye hazırlanıyor ' iletişim kutusunda Güncelleştir düğmesini seçin")
 
    Visual Studio güncelleştirmeleri, kapanır ve sonra yeniden açılır.
 
