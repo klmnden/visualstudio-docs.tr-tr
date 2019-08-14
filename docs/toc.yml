@@ -996,6 +996,12 @@
                       href: ide/reference/options-text-editor-xml-formatting.md
                     - name: Çeşitli
                       href: ide/reference/options-text-editor-xml-miscellaneous.md
+            - name: Windows Form Tasarımcısı
+              items:
+                - name: Genel
+                  href: ide/reference/options-windows-forms-designer.md
+                - name: Veri Kullanıcı Arabirimi Özelleştirmesi
+                  href: ide/reference/options-windows-forms-designer-data-ui-customization.md
             - name: XAML Tasarımcısı
               href: ide/reference/xaml-designer.md
         - name: Çıktı penceresi
