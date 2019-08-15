@@ -2,24 +2,22 @@
 title: Visual Studio derleme numaraları ve yayın tarihleri
 titleSuffix: ''
 description: Visual Studio için yayınlanmış sürümlerin ve derleme numaralarının listesi, tarihe göre sıralanır.
-keywords: ''
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.date: 08/06/2019
+ms.date: 08/14/2019
 ms.topic: reference
-helpviewer_keywords: ''
 ms.custom: seodec18
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 4f07b8c0fc5317f6646868ad61ba61e42754a79c
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: 9da89a2964dc5c4f33d4a0619a1b93c901054d3b
+ms.sourcegitcommit: ab2c49ce72ccf44b27b5c8852466d15a910453a6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68870720"
+ms.lasthandoff: 08/14/2019
+ms.locfileid: "69024534"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Visual Studio derleme numaraları ve yayın tarihleri
 
@@ -31,6 +29,9 @@ Aşağıdaki tabloda, Visual Studio 2019 için derleme numaraları ve sürüm ta
 
 | **Sürüm**| **Kanal** | **Yayın tarihi** | **Derleme sürümü** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 16.2.2 | Sürüm | 13 Ağustos 2019 | 16.2.29209.62 |
+| 16.3.0 | Önizleme 2 | 13 Ağustos 2019 | 16.3.29209.152 |
+| 16.0.7 | Sürüm | 13 Ağustos 2019 | 16.0.28803.571 |
 | 16.2.1 | Sürüm | 6 Ağustos 2019 | 16.2.29201.188 |
 | 16.2.0 | Sürüm | 24 Temmuz 2019 | 16.2.29123.88 |
 | 16.3.0 | Önizleme 1 | 24 Temmuz 2019 | 16.3.29123.89 |
@@ -89,6 +90,8 @@ Aşağıdaki tabloda, Visual Studio 2017 için derleme numaraları ve yayın tar
 
 | **Sürüm**| **Kanal** | **Yayın tarihi** | **Derleme sürümü** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 15.9.15 | Sürüm | 13 Ağustos 2019 | 15.9.28307.812 |
+| 15.0.26 | Sürüm | 13 Ağustos 2019 | 15.0.26228.96 |
 | 15.9.14 | Sürüm | 9 Temmuz 2019 | 15.9.28307.770 |
 | 15.0.25 | Sürüm | 9 Temmuz 2019 | 15.0.26228.92 |
 | 15.9.13 | Sürüm | 11 Haziran 2019 | 15.9.28307.718 |
