@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl yapılır: Çalışma sayfalarını program aracılığıyla yazdırma'
+title: 'Nasıl yapılır: Program aracılığıyla yazdırma çalışma sayfaları'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,57 +14,59 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 76315f6cde5bc54385e217a8f234389a7f45e621
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 764723d0749cd82739d8e67ee71104f41a0f9065
+ms.sourcegitcommit: 5b34052a1c7d86179d7898ed532babb2d9dad4a3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62955930"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69490589"
 ---
-# <a name="how-to-programmatically-print-worksheets"></a>Nasıl yapılır: Çalışma sayfalarını program aracılığıyla yazdırma
-  Çalışma kitabındaki yazdırabilir.
+# <a name="how-to-programmatically-print-worksheets"></a>Nasıl yapılır: Program aracılığıyla yazdırma çalışma sayfaları
 
- [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
+Çalışma kitabındaki tüm çalışma sayfalarını yazdırabilirsiniz.
 
-## <a name="print-a-worksheet-in-a-document-level-customization"></a>Belge düzeyi özelleştirmesindeki bir çalışma sayfası yazdır
+[!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
 
-### <a name="to-print-a-worksheet"></a>Bir çalışma sayfasını yazdırmak için
+## <a name="print-a-worksheet-in-a-document-level-customization"></a>Belge düzeyi özelleştirmesindeki çalışma sayfasını yazdırma
 
-1. Çağrı <xref:Microsoft.Office.Tools.Excel.Worksheet.PrintOut%2A> yöntemi `Sheet1`iki kopya isteyin ve yazdırmadan önce belgenin önizlemesini yapın.
+### <a name="to-print-a-worksheet"></a>Çalışma sayfası yazdırmak için
+
+1. `PrintOut` Yönteminiçağırın,ikikopyaisteyinve`Sheet1`yazdırmadan önce belgeyi önizleyin.
 
     [!code-csharp[Trin_VstcoreExcelAutomation#22](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#22)]
     [!code-vb[Trin_VstcoreExcelAutomation#22](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#22)]
 
-   <xref:Microsoft.Office.Tools.Excel.Worksheet.PrintPreview%2A> Yöntemi içinde belirtilen nesneyi görüntülemek etkinleştirir **Baskı Önizleme** penceresi. Aşağıdaki kod, sahip olduğunuzu varsayar. bir <xref:Microsoft.Office.Tools.Excel.Worksheet> konak öğesi adlı `Sheet1`.
+   Yöntemi <xref:Microsoft.Office.Tools.Excel.Worksheet.PrintPreview%2A> , belirtilen nesneyi **Baskı Önizleme** penceresinde görüntülemenizi sağlar. Aşağıdaki kod, adlı <xref:Microsoft.Office.Tools.Excel.Worksheet> `Sheet1`bir konak öğesine sahip olduğunuzu varsayar.
 
-### <a name="to-preview-a-page-before-printing"></a>Bir sayfanın yazdırmadan önce önizlemesini görüntülemek için
+### <a name="to-preview-a-page-before-printing"></a>Yazdırmadan önce bir sayfayı önizlemek için
 
-1. Çağrı <xref:Microsoft.Office.Tools.Excel.Worksheet.PrintPreview%2A> çalışma sayfasının yöntemi.
+1. Çalışma sayfasının <xref:Microsoft.Office.Tools.Excel.Worksheet.PrintPreview%2A> yöntemini çağırın.
 
      [!code-csharp[Trin_VstcoreExcelAutomation#23](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#23)]
      [!code-vb[Trin_VstcoreExcelAutomation#23](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#23)]
 
-## <a name="print-a-worksheet-in-a-vsto-add-in"></a>Bir VSTO eklentisi, bir çalışma sayfası yazdır
+## <a name="print-a-worksheet-in-a-vsto-add-in"></a>Bir VSTO eklentisinin çalışma sayfasını yazdırma
 
-### <a name="to-print-a-worksheet"></a>Bir çalışma sayfasını yazdırmak için
+### <a name="to-print-a-worksheet"></a>Çalışma sayfası yazdırmak için
 
-1. Çağrı <xref:Microsoft.Office.Interop.Excel._Worksheet.PrintOut%2A> yöntemi etkin çalışma sayfasının iki kopya isteyin ve yazdırmadan önce belgenin önizlemesini yapın.
+1. Etkin çalışma sayfasının yöntemini çağırın, iki kopya isteyin ve yazdırmadan önce belgeyi önizleyin. <xref:Microsoft.Office.Interop.Excel._Worksheet.PrintOut%2A>
 
     [!code-csharp[Trin_VstcoreExcelAutomationAddIn#14](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#14)]
     [!code-vb[Trin_VstcoreExcelAutomationAddIn#14](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#14)]
 
-   <xref:Microsoft.Office.Interop.Excel._Worksheet.PrintPreview%2A> Yöntemi içinde belirtilen nesneyi görüntülemek etkinleştirir **Baskı Önizleme** penceresi.
+   Yöntemi <xref:Microsoft.Office.Interop.Excel._Worksheet.PrintPreview%2A> , belirtilen nesneyi **Baskı Önizleme** penceresinde görüntülemenizi sağlar.
 
-### <a name="to-preview-a-page-before-printing"></a>Bir sayfanın yazdırmadan önce önizlemesini görüntülemek için
+### <a name="to-preview-a-page-before-printing"></a>Yazdırmadan önce bir sayfayı önizlemek için
 
-1. Çağrı <xref:Microsoft.Office.Interop.Excel._Worksheet.PrintPreview%2A> etkin çalışma sayfasının yöntemi.
+1. Etkin çalışma sayfasının yöntemini çağırın. <xref:Microsoft.Office.Interop.Excel._Worksheet.PrintPreview%2A>
 
      [!code-csharp[Trin_VstcoreExcelAutomationAddIn#15](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#15)]
      [!code-vb[Trin_VstcoreExcelAutomationAddIn#15](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#15)]
 
 ## <a name="see-also"></a>Ayrıca bkz.
-- [Çalışma sayfaları ile çalışma](../vsto/working-with-worksheets.md)
-- [Nasıl yapılır: Program aracılığıyla çalışma sayfaları Yazımı denetleme](../vsto/how-to-programmatically-check-spelling-in-worksheets.md)
+
+- [Çalışma sayfalarıyla çalışma](../vsto/working-with-worksheets.md)
+- [Nasıl yapılır: Çalışma sayfalarında program aracılığıyla yazımı denetleme](../vsto/how-to-programmatically-check-spelling-in-worksheets.md)
 - [Çalışma sayfası konak öğesi](../vsto/worksheet-host-item.md)
-- [Office projelerindeki nesnelere genel erişim](../vsto/global-access-to-objects-in-office-projects.md)
+- [Office Projelerindeki Nesnelere Genel erişim](../vsto/global-access-to-objects-in-office-projects.md)
 - [Office çözümlerinde isteğe bağlı parametreler](../vsto/optional-parameters-in-office-solutions.md)

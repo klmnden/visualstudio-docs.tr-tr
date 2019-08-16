@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 8749cd7757796a1b716b1ac9db086d3155f94694
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 5bd7fa0bcff67573e61d40a2172e17620910a421
+ms.sourcegitcommit: 5b34052a1c7d86179d7898ed532babb2d9dad4a3
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62965567"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69490624"
 ---
 # <a name="customize-code-coverage-analysis"></a>Kod kapsamı analizini özelleştirme
 
@@ -30,18 +30,38 @@ Kod kapsamını özelleştirmek için aşağıdaki adımları izleyin:
 
 1. Çalıştırma ayarları dosyasını çözümünüze ekleyin. İçinde **Çözüm Gezgini**, çözümünüzün kısayol menüsünde **Ekle** > **yeni öğe**seçip **XML dosyası**. Dosyayı gibi bir adla kaydetme *CodeCoverage.runsettings*.
 
-1. İçerik bu makalenin sonunda örnek dosyası ekleyin ve sonra gereksinimleriniz için aşağıdaki bölümlerde açıklandığı şekilde özelleştirin.
+2. İçerik bu makalenin sonunda örnek dosyası ekleyin ve sonra gereksinimleriniz için aşağıdaki bölümlerde açıklandığı şekilde özelleştirin.
 
-1. Çalışma ayarları dosyası seçilecek **Test** menüsünde seçin **Test ayarları** > **Test ayarları dosyasını Seç**. Testleri komut satırından veya derleme iş akışında çalıştırmak için çalıştırma ayarları dosyasını belirtmek için bkz: [kullanarak birim testlerini yapılandırma bir *.runsettings* dosya](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md#specify-a-run-settings-file).
+::: moniker range="vs-2017"
+
+3. Çalışma ayarları dosyası seçilecek **Test** menüsünde seçin **Test ayarları** > **Test ayarları dosyasını Seç**. Testleri komut satırından veya derleme iş akışında çalıştırmak için çalıştırma ayarları dosyasını belirtmek için bkz: [kullanarak birim testlerini yapılandırma bir *.runsettings* dosya](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md#specify-a-run-settings-file).
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+3. Çalışma ayarları dosyasını seçmek için, **Test Gezgini**' nde, **Ayarlar** düğmesini seçin ve ardından **ayarlar dosyası seç**' i seçin. Testleri komut satırından veya derleme iş akışında çalıştırmak için çalıştırma ayarları dosyasını belirtmek için bkz: [kullanarak birim testlerini yapılandırma bir *.runsettings* dosya](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md#specify-a-run-settings-file).
+
+::: moniker-end
 
    Seçtiğinizde, **kod kapsamı analizi**, yapılandırma bilgilerini çalışma ayarları dosyasından okunur.
 
    > [!TIP]
    > Testleri çalıştırmak veya kodunuzu güncelleştirdiğinizde önceki kod kapsamı sonuçlarını ve kod renklendirme otomatik olarak gizli değildir.
 
-Özel ayarlar kapatın ve açın, seçimini kaldırın veya dosyayı seçin **Test** > **Test ayarları** menüsü.
+::: moniker range="vs-2017"
+
+Özel ayarları kapatmak ve açmak için **Test** > **testi ayarları** menüsünde dosya seçimini kaldırın veya seçin.
 
 ![Özel ayarlar dosya ile test ayarları menüsü](../test/media/codecoverage-settingsfile.png)
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+Özel ayarları kapatmak ve açmak için, **Test Gezgini**'ndeki **Ayarlar** menüsünde dosyayı seçimden kaldırın veya seçin.
+
+::: moniker-end
 
 ### <a name="specify-symbol-search-paths"></a>Sembol arama yollarını belirtin
 
@@ -89,7 +109,7 @@ Varsa **INCLUDE** kod kapsamı işleme yüklenen ve tüm derlemeleri içerir son
 
 Dahil ve hariç düğümler normal ifadeler kullanır. Daha fazla bilgi için [Visual Studio'da normal ifadeler kullanma](../ide/using-regular-expressions-in-visual-studio.md). Normal ifadeler joker karakterler ile aynı değildir. Özellikle:
 
-- **. \\** * herhangi bir karakter dizesi ile eşleşir
+- **. herhangi\***  bir karakter dizesiyle eşleşir
 
 - **\\.** eşleşen bir nokta ".")
 

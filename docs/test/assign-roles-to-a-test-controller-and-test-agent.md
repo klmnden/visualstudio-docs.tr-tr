@@ -1,5 +1,5 @@
 ---
-title: Test denetleyicisi ve Aracısı rolleri otomatikleştirilmiş testler için test etme
+title: Otomatikleştirilmiş testler için test denetleyicisi ve test aracısı rolleri
 ms.date: 10/20/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,97 +12,104 @@ ms.assetid: 57ed43ae-4e67-4139-8aec-3e9fceb0a745
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: eb62e668d7077e1be96ff7a282628b76b426898f
-ms.sourcegitcommit: 13ab9a5ab039b070b9cd9251d0b83dd216477203
+ms.openlocfilehash: dc7936041746872fdf30ce3159506d93c378376d
+ms.sourcegitcommit: 5b34052a1c7d86179d7898ed532babb2d9dad4a3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66177800"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69490596"
 ---
-# <a name="assign-roles-to-a-test-controller-and-test-agent"></a>Bir test denetleyicisi ve test aracısına roller atama
+# <a name="assign-roles-to-a-test-controller-and-test-agent"></a>Bir test denetleyicisine ve test aracısına roller atama
 
-Bu yönerge, oluşturmak ve Visual Studio kullanarak birçok makine üstünden sınamayı dağıtmak için bir test denetleyicisi ve test aracısı'nı kullanan bir test ayarı yapılandırmak nasıl gösterir. Ayrıca, bu yönerge test ayarına tanılama ve veri bağdaştırıcılarının ekleneceğini gösterir.
+Bu makalede, Visual Studio kullanarak çeşitli makinelerde test dağıtmak için test denetleyicisi ve test Aracısı kullanan bir test ayarı oluşturma ve yapılandırma gösterilmektedir. Ayrıca, test ayarına tanılama ve veri bağdaştırıcılarının nasıl ekleneceğini gösterir.
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="prerequisites"></a>Önkoşullar
 
-- Birim testleri veya kodlanmış UI testleri test ayarıyla çalıştırmak için oluşturun.
+- Test ayarıyla çalıştırmak için birim testleri veya kodlanmış UI testleri oluşturun.
 
-- Bir test denetleyicisi ve test aracılarını yükleyin. Bir test denetleyicisi yüklemek ve test aracıları hakkında daha fazla bilgi için bkz: [yüklemek ve test denetleyicisilerinin](../test/lab-management/install-configure-test-agents.md).
+- Test denetleyicisi ve test aracıları yükler. Test denetleyicisi ve test aracılarının nasıl yükleneceği hakkında bilgi için bkz. [test aracılarını yüklemek ve yapılandırmak](../test/lab-management/install-configure-test-agents.md).
 
-## <a name="to-create-and-configure-a-test-setting"></a>Oluşturma ve bir test ayarı yapılandırmak için
+## <a name="to-create-and-configure-a-test-setting"></a>Bir test ayarı oluşturmak ve yapılandırmak için
 
-1. İçinde **Çözüm Gezgini**, sağ **çözüm öğeleri** işaret **Ekle**ve ardından **yeni öğe**.
+1. **Çözüm Gezgini**, **Çözüm öğeleri** ' ne sağ tıklayın, **Ekle**' nin üzerine gelin ve sonra **Yeni öğe**' yi seçin.
 
      **Yeni Öğe Ekle** iletişim kutusu görünür.
 
 2. İçinde **yüklü şablonlar** bölmesinde seçin **Test ayarları**.
 
-3. İçinde **adı** kutusuna **TestSettingDistributedTestWalkthrough**.
+3. **Ad** kutusuna **TestSettingDistributedTestWalkthrough**yazın.
 
 4. Seçin **ekleme**.
 
-     Yeni test *TestSettingDistributedTestWalkthrough.testsettings* dosya görünür **Çözüm Gezgini**altında **çözüm öğeleri** klasör.
+     Yeni test *TestSettingDistributedTestWalkthrough. testsettings* dosyası **Çözüm öğeleri** klasörü altında **Çözüm Gezgini**görüntülenir.
 
      **Test ayarları** iletişim kutusu görüntülenir. **Genel** sayfası seçili.
 
      Şimdi, düzenleme ve test ayarları değerlerini kaydedin.
 
-    > [!NOTE]
-    > Oluşturduğunuz her test ayarları için bir seçenek olarak listelendiğini **Etkin Test ayarlarını seçin** ve **Test Ayarlarını Düzenle** seçeneklerinden **Test** menüsü.
-
 5. Altında **adı**, test ayarları adını yazın.
 
-6. Altında **açıklama**, türü **Dağıtılmış test ayarları**.
+6. **Açıklama**' nın altında, **Dağıtılmış test ayarları**yazın.
 
-7. Bırakın **varsayılan adlandırma düzeni** seçili.
+7. **Varsayılan adlandırma şemasını** seçili bırakın.
 
-## <a name="to-assign-roles-to-a-test-controller-and-test-agents"></a>Bir test denetleyicisi ve test aracılarına roller atamak için
+## <a name="to-assign-roles-to-a-test-controller-and-test-agents"></a>Bir test denetleyicisine ve Test aracılarına roller atamak için
 
 1. Seçin **rolleri**.
 
      **Rolleri** sayfası görüntülenir.
 
-2. Testinizi uzaktan çalıştırmak için kullanın **Test yürütme yöntemi** aşağı açılan listesinden **uzaktan yürütme**.
+2. Testinizi uzaktan çalıştırmak için **test yürütme yöntemi** açılan listesini kullanın ve **Uzaktan yürütme**' yi seçin.
 
-3. İçinde **denetleyicisi** aşağı açılan listesinde, bilgisayar adını yazın [test denetleyicinizin](../test/lab-management/install-configure-test-agents.md).
+3. **Denetleyici** açılan listesinde, [Test denetleyicinizin](../test/lab-management/install-configure-test-agents.md)bilgisayar adını yazın.
 
     > [!NOTE]
-    > Bu ilk kez denetleyici eklediğiniz ise, aşağı açılan listesinde hiçbir denetleyicisi vardır. Liste diğer test ayarlarında belirttiğiniz önceki denetleyiciler tarafından doldurulur.
+    > İlk kez bir denetleyici ekliyorsanız, açılan listede hiçbir denetleyici listelenmez. Liste diğer test ayarlarında belirttiğiniz önceki denetleyiciler tarafından doldurulur.
 
-4. Altında **rolleri**, seçin **Ekle**.
+4. **Roller**altında **Ekle**' yi seçin.
 
-5. Altındaki vurgulanmış satıra **adı** sütununa, **Dağıtılmış test**.
+5. **Ad** sütununun altındaki vurgulanmış satıra **Dağıtılmış test**yazın.
 
-## <a name="to-assign-a-diagnostic-and-data-adapter-to-your-test-setting"></a>Test ayarınıza tanılama ve veri bağdaştırıcısı atamak için
+## <a name="to-assign-a-diagnostic-and-data-adapter-to-your-test-setting"></a>Test ayarınıza bir tanılama ve veri bağdaştırıcısı atamak için
 
 1. Seçin **veri ve tanılama**.
 
      **Veri ve tanılama** sayfası görüntülenir.
 
-2. Altında **rol**, doğrulayın **Dağıtılmış test** rolü seçilir.
+2. **Rol**altında, **Dağıtılmış test** rolünün seçili olduğunu doğrulayın.
 
-3. Altında **select rol için veri ve tanılama**seçin **IntelliTrace** ve **sistem bilgileri** bağdaştırıcıları.
+3. **Rol Seç Için veri ve tanılama**altında **IntelliTrace** ve **sistem bilgi** bağdaştırıcılarını seçin.
 
-     Bu bağdaştırıcılar ve bir test ayarında kullanabileceğiniz diğer bağdaştırıcılar hakkında daha fazla bilgi için bkz. [birim testlerini yapılandırma](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md).
+     Bir test ayarında kullanabileceğiniz bu bağdaştırıcılar ve diğer bağdaştırıcılar hakkında daha fazla bilgi için bkz. [birim testlerini yapılandırma](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md).
 
-4. Seçin **konakları**.
+4. **Konaklar**' ı seçin.
 
-5. (İsteğe bağlı) Makinenizde Microsoft Windows 64-bit sürümünde çalışıyorsa ve test kullanarak derlenmiş **herhangi bir CPU** yapılandırmasını **Testi 32 bit veya 64 bit işlem içinde çalıştırmak** aşağı açılan listesinden **64-bit makine üzerindeki 64 bit işlem içinde testler**.
+5. Seçim Makineniz Microsoft Windows 'un 64 bitlik bir sürümü altında çalışıyorsa ve **herhangi BIR CPU** yapılandırmasını kullanarak testinizi derlediğiniz takdirde, test için **32 bit veya 64 bit işlem Çalıştır** açılan listesini kullanın ve **64-bit 64 işleminde Testleri Çalıştır ' ı seçin. makine**.
 
     > [!TIP]
-    > Maksimum esneklik için test projelerinizi derlemelisiniz **herhangi bir CPU** yapılandırma. Daha sonra hem 32-bit hem de 64 bit aracıların çalıştırabilirsiniz. İle test projelerini derlemek için herhangi bir avantaj sağlamaz **64-bit** yapılandırma.
+    > En yüksek esneklik için, test projelerinizi **herhangi BIR CPU** yapılandırmasıyla derlemeniz gerekir. Daha sonra hem 32-bit hem de 64 bit aracıların çalıştırabilirsiniz. **64 bitlik** yapılandırma ile test projelerini derlemek avantajsız değildir.
 
-6. Yeni test ayarlarını kaydetmek için seçin **Uygula**.
+6. Yeni test ayarlarını kaydetmek için **Uygula**' yı seçin.
 
 7. Seçin **Kapat**.
 
-8. Test menüsünde **Etkin Test ayarlarını seçin** seçip **TestSettingDistributedTestWalkthrough.testsettings**.
+::: moniker range="vs-2017"
 
-9. Testinizi her zamanki şekilde çalıştırın.
+8. Test menüsünde **Test ayarları dosyası seç** ' i seçin ve ardından *TestSettingDistributedTestWalkthrough. testsettings*öğesini seçin.
 
-     Test denetleyicisi birim testleri ve kodlanmış UI testlerini işlerken, test denetleyicisi testleri 100 gruplara böler ve bunları bir test aracısı makineye gönderir. Örneğin, 250 birim testiniz ve üç test aracınız varsa, ilk 100 birim testi agent1'e gönderilir, sonraki 100 birim testi agent2 gönderilir ve kalan 50 birim testleri ise Aracı3'e gönderilir.
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+8. **Test Gezgini**' nde, **Ayarlar** düğmesini seçin ve ardından **ayarlar dosyası seç**' i seçin. *TestSettingDistributedTestWalkthrough. testsettings* dosyasına gidin ve seçin.
+
+::: moniker-end
+
+9. Testinizi her zamanki gibi çalıştırın.
+
+     Test denetleyicisi birim testleri ve kodlanmış UI testlerini işlediğinde, test denetleyicisi testleri 100 gruplarına böler ve bunları bir test aracısı makinesine gönderir. Örneğin, 250 birim testiniz ve üç test aracınız varsa, ilk 100 birim testleri agent1 'e gönderilir, sonraki 100 birim testleri agent2 'e gönderilir ve kalan 50 birim testleri agent3 'e gönderilir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

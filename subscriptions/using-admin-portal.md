@@ -3,32 +3,25 @@ title: Abonelikler yönetim portalını kullanmaya başlama | Visual Studio Mark
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/24/2019
+ms.date: 08/07/2019
 ms.topic: conceptual
 description: Abonelik yönetim portalı ile kuruluşunuzun Visual Studio aboneliklerini yönetmeye nasıl başlaleyeceğinizi öğrenin.
-ms.openlocfilehash: f3b11a0a0977fff8a6c89f565adffb1cac49e2ad
-ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
+ms.openlocfilehash: 6ee33bfaf47452a1213cd5def206e47aee790fc3
+ms.sourcegitcommit: 5b34052a1c7d86179d7898ed532babb2d9dad4a3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/29/2019
-ms.locfileid: "68605720"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69490700"
 ---
-# <a name="get-started-with-the-visual-studio-subscriptions-administration-portal"></a>Visual Studio abonelikleri yönetim portalını kullanmaya başlama
-Visual Studio abonelikleri yönetim portalını kullanırken bunu aklınızda bulundurun:
+# <a name="overview-of-the-visual-studio-subscriptions-administration-portal"></a>Visual Studio abonelikleri yönetim portalına genel bakış
+Visual Studio abonelikleri yönetim portalı, kuruluşunuzun aboneliklerini tek bir yerde yönetmeye yönelik araçlar sağlar. 
+
+## <a name="important-considerations"></a>Önemli konular
+Visual Studio abonelikleri yönetim portalını kullanırken bu noktaları göz önünde bulundurun:
 - **Visual Studio abonelikleri Kullanıcı başına lisanslanır.** Her abone, yazılımı geliştirme ve test için gereken sayıda bilgisayar üzerinde kullanabilir.
 - Her abone için, kuruluşunuzun satın aldığı Visual Studio aboneliğine karşılık gelen **yalnızca bir abonelik düzeyi atayın**. Birden fazla abonelik düzeyi atanmış abonelere sahipseniz, ayarlarını yalnızca bir tane olacak şekilde düzenleyin.
 - Abonelik yükseltildiğinde ("adım yukarı" lisans satın alındıktan sonra) veya daha düşük bir düzeyde yenileniyorsa **, abonenin abonelik düzeyinin güncellenmesi gerekir** .
 - **Abonelikler arasında abonelikleri paylaşmayın.** Abonelikler adlandırılmış bireylere atanmalıdır.  Takımlara abonelikler atamaya izin verilmez.  Abonelik avantajlarının tamamını veya bir kısmını (geliştirme ve test için yazılım, Microsoft Azure, e-öğrenme vb.) kullanan herkese bir abonelik atamanız gerekir.
-
-## <a name="access-to-the-portal"></a>Portala erişim
-Kuruluşunuzun anlaşmasıyla ilgili birincil veya bildirimler varsa, toplu lisans sözleşmenizin kurulması sırasında portala otomatik olarak erişim sağlanır. Sistem tarafından tetiklenen bir hoş geldiniz e-postası alırsınız ve portalda oturum açmak için kullanılacak e-posta adresini gösterir. Oturum açtıktan sonra otomatik olarak süper yönetici olarak ayarlanır ve abonelikleri ve diğer yöneticileri yönetmeye başlayabilirsiniz. 
-
-## <a name="administrator-roles"></a>Yönetici rolleri
-Toplu lisanslama müşterileri için yeni Visual Studio abonelikleri yönetim portalında mevcut olan iki farklı rol vardır. Bu roller birincil/bildirimler Iletişim rolü ve VLSC 'deki abonelik Yöneticisi rolü gibidir.
-
-**Süper Yöneticiler:** İlk kez bir kuruluş ayarladıktan sonra, birincil veya bildirimler Ilgili kişisi varsayılan olarak bir süper yönetici haline gelir. Birincil veya bildirimler Ilgili kişisi, ek süper Yöneticiler veya Yöneticiler atamayı seçebilir. Süper yönetici, diğer yöneticileri ve aboneler ekleyebilir ve kaldırabilir. Sistemde ikiden fazla süper yönetici varsa, bir süper yönetici, güvenlikle ilgili olarak, son iki ' i de silebilir.
-
-**Yönetim** Yönetici yalnızca süper yönetici tarafından ayarlanabilir. Bir yönetici, süper yöneticinin onlara atadığı anlaşmalarda aboneleri yönetebilir.
 
 ## <a name="the-subscribers-page"></a>Aboneler sayfası
 Abonelikler atadıktan sonra, aboneler sekmesi aşağıdakiler dahil olmak üzere abonelere ilişkin ayrıntılı bilgiler sağlar:
@@ -51,6 +44,12 @@ Bu sayfanın sol tarafında, her sözleşme için kuruluşunuzda satın alınan,
 Görüntülemekte olduğunuz anlaşma hakkında daha fazla bilgi için Ayrıntılar sekmesini seçin. Anlaşma Durumu, satın alma hesabı, kuruluş ayrıntıları, süper yönetici ve diğer ilgili bilgileri gösterir.
 > [!div class="mx-imgBorder"]
 > ![Visual Studio abonelikleri yönetim portalı ayrıntıları sayfası](_img/using-admin-portal/details-page.png)
+
+## <a name="resources"></a>Kaynaklar
+- [Visual Studio lisanslama teknik incelemesi](https://aka.ms/vslicensing)
+- [Abonelik seçeneklerini ve fiyatlandırmalarını karşılaştırma](https://visualstudio.microsoft.com/vs/pricing)
+- [Visual Studio IDE özelliklerini karşılaştırma](https://visualstudio.microsoft.com/vs/compare)
+- [Visual Studio Yönetim ve Abonelik Desteği](https://visualstudio.microsoft.com/support/support-overview-vs)
 
 ## <a name="next-steps"></a>Sonraki adımlar
 Yöneticiler için sorumluluklar hakkında daha fazla bilgi edinin:
