@@ -1,7 +1,7 @@
 # [Visual Studio abonelikleri](index.md)
 ## [Yenilikler](whats-new-in-subscriptions.md)
 ## Abonelikler
-### Abonelikleri satın alma
+### Abonelik satın alma
 #### [Perakende](https://visualstudio.microsoft.com/vs/pricing)
 #### Bulut 
 ##### [Genel bakış](vscloud-overview.md)
@@ -10,9 +10,9 @@
 #### [GitHub Enterprise ile Visual Studio](access-github.md)
 #### Microsoft İş Ortağı Ağı
 ##### [İş ortakları için abonelikler](program-mpn.md)
-##### [MPN için Abonelikleri Yönetme](manage-mpn-subscriptions.md)
+##### [MPN için abonelikleri yönetme](manage-mpn-subscriptions.md)
 #### [Startup’lar için Microsoft](program-startups.md)
-### Oturum açma 
+### Oturum aç 
 #### [Perakende abonelikleri etkinleştirme](activate-store-subscriptions.md)
 #### [Microsoft Hesaplarıyla oturum açma](sign-in-msa.md)
 #### [İş veya okul hesaplarıyla oturum açma](sign-in-work.md)
@@ -21,7 +21,7 @@
 #### [Oturum açma sorunları](sign-in-issues.md)
 #### [Abone verilerinin anonimleştirilmesi](anonymization.md)
 ### [Abonelikler portalına genel bakış](using-the-subscriber-portal.md)
-### [Abonelikleri yönetme](manage-vs-subscriptions.md)
+### [Aboneliklerinizi yönetme](manage-vs-subscriptions.md)
 ### Yararları
 #### Araçlar
 ##### [Azure kredisi](vs-azure.md)
