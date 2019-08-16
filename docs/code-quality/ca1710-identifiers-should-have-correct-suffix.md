@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 154d7d36c949ac361f938aa7d8608251c2a9adee
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: 93fd892baaf54d79c3a2387b8961a2f4c1bb2cdb
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65841920"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69547317"
 ---
 # <a name="ca1710-identifiers-should-have-correct-suffix"></a>CA1710: Tanımlayıcılar doğru soneke sahip olmalıdır
 
@@ -27,87 +27,87 @@ ms.locfileid: "65841920"
 |-|-|
 |TypeName|IdentifiersShouldHaveCorrectSuffix|
 |CheckId|CA1710|
-|Kategori|Microsoft.Naming|
+|Kategori|Microsoft. Naming|
 |Yeni Değişiklik|Yeni|
 
 ## <a name="cause"></a>Sebep
 
-Tanımlayıcının doğru son ekine sahip değil.
+Tanımlayıcı, doğru sonekine sahip değil.
 
-Varsayılan olarak, bu kural yalnızca dışarıdan görünen tanımlayıcıları görünüyor, ancak bu [yapılandırılabilir](#configurability).
+Bu kural varsayılan olarak yalnızca dışarıdan görünen tanımlayıcılara bakar, ancak bu [yapılandırılabilir](#configurability).
 
 ## <a name="rule-description"></a>Kural açıklaması
 
-Kural gereği, belirli temel türleri genişleten veya bazı arabirimleri ya da bu türlerden türetilmiş türleri uygulayan tür adları, temel tür veya arayüzden son eke sahiptir.
+Kural gereği, belirli temel türleri genişleten veya belirli arabirimleri ya da bu türlerden türetilmiş türleri uygulayan türlerin adları, temel tür veya arabirimle ilişkili bir soneke sahiptir.
 
-Adlandırma kuralları, ortak dil çalışma zamanını hedefleyen kitaplıkları için genel bir bakış sağlar. Bu, yeni yazılım kitaplıkları için gereklidir ve kitaplık geliştirme yönetilen kodda uzmanlığına sahip olan kişi tarafından geliştirilmiştir müşterilerinizin size olan güvenini artırır öğrenme eğrisini azaltır.
+Adlandırma kuralları, ortak dil çalışma zamanını hedefleyen kitaplıklar için ortak bir görünüm sağlar. Bu, yeni yazılım kitaplıkları için gerekli olan öğrenme eğrisini azaltır ve müşterinin, kitaplığın yönetilen kod geliştirme konusunda uzmanlığa sahip olan birisi tarafından geliştirildiğini arttırır.
 
-Aşağıdaki tabloda, sonekleri ilişkilendirdiğiniz arabirimleri ve temel türleri listeler.
+Aşağıdaki tabloda, ilişkili sonekleri olan temel türler ve arabirimler listelenmektedir.
 
-|Temel tür arabirimi|Son eki|
+|Temel tür/arabirim|Önekini|
 |--------------------------|------------|
 |<xref:System.Attribute?displayProperty=fullName>|Öznitelik|
 |<xref:System.EventArgs?displayProperty=fullName>|EventArgs|
 |<xref:System.Exception?displayProperty=fullName>|Özel Durum|
 |<xref:System.Collections.ICollection?displayProperty=fullName>|Koleksiyon|
-|<xref:System.Collections.IDictionary?displayProperty=fullName>|Sözlük|
+|<xref:System.Collections.IDictionary?displayProperty=fullName>|Sözlüğünü|
 |<xref:System.Collections.IEnumerable?displayProperty=fullName>|Koleksiyon|
 |<xref:System.Collections.Queue?displayProperty=fullName>|Koleksiyon veya kuyruk|
-|<xref:System.Collections.Stack?displayProperty=fullName>|Koleksiyon veya yığını|
+|<xref:System.Collections.Stack?displayProperty=fullName>|Koleksiyon veya yığın|
 |<xref:System.Collections.Generic.ICollection%601?displayProperty=fullName>|Koleksiyon|
-|<xref:System.Collections.Generic.IDictionary%602?displayProperty=fullName>|Sözlük|
+|<xref:System.Collections.Generic.IDictionary%602?displayProperty=fullName>|Sözlüğünü|
 |<xref:System.Data.DataSet?displayProperty=fullName>|DataSet|
-|<xref:System.Data.DataTable?displayProperty=fullName>|Koleksiyon ya da DataTable|
+|<xref:System.Data.DataTable?displayProperty=fullName>|Koleksiyon veya DataTable|
 |<xref:System.IO.Stream?displayProperty=fullName>|Akış|
 |<xref:System.Security.IPermission?displayProperty=fullName>|İzin|
 |<xref:System.Security.Policy.IMembershipCondition?displayProperty=fullName>|Koşul|
-|Bir olay işletici temsilcisi.|EventHandler|
+|Bir olay işleyicisi temsilcisi.|Çalışılıyor|
 
-Türleri uygulayan <xref:System.Collections.ICollection> ve sözlük, yığın ve kuyruk, izin verilen türde hedeflenen kullanım hakkında anlamlı bilgiler sağlayan adları gibi veri yapısı, genelleştirilmiş bir tür.
+Bir sözlük, yığın veya kuyruk gibi Genelleştirilmiş bir veri yapısı türü veolantürler,türünamaçlanankullanımıhakkındaanlamlıbilgilersağlayanadlaraizinverilir.<xref:System.Collections.ICollection>
 
-Türleri uygulayan <xref:System.Collections.ICollection> ve belirli öğeleri koleksiyonu 'Collection' sözcüğü ile biten olur. Örneğin, bir koleksiyonunu <xref:System.Collections.Queue> nesneleri, 'QueueCollection' adına sahip. Bir koleksiyonun üyelerini kullanarak numaralandırılabilir 'Collection' soneki belirtir `foreach` (`For Each` içinde [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) deyimi.
+Ve belirli öğelerin <xref:System.Collections.ICollection> bir koleksiyonunu uygulayan türler, ' Collection ' kelimesiyle biten adlara sahiptir. Örneğin, bir <xref:System.Collections.Queue> nesne koleksiyonu ' QueueCollection ' adına sahip olur. ' Collection ' soneki, koleksiyon üyelerinin `foreach` (`For Each` ın [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) ifadesinde numaralandırılacağını belirtir.
 
-Türleri uygulayan <xref:System.Collections.IDictionary> bile türü de uygular, word 'Sözlüğü' ile biten adlarında <xref:System.Collections.IEnumerable> veya <xref:System.Collections.ICollection>. Aşağıdaki iki sabit listesi modelleri arasında ayrım yapmak kullanıcılar 'Collection' ve 'Sözlüğü' soneki adlandırma kurallarını etkinleştirin.
+Uygulayan <xref:System.Collections.IDictionary> türler, türü de veya <xref:System.Collections.ICollection>uyguluyor <xref:System.Collections.IEnumerable> olsa da, ' Dictionary ' kelimesiyle biten adlara sahiptir. ' Collection ' ve ' Dictionary ' sonek adlandırma kuralları, kullanıcıların aşağıdaki iki numaralandırma deseni arasında ayrım kurmasını sağlar.
 
-Bu numaralandırma düzeni 'Collection' soneki türleriyle izleyin.
+' Collection ' sonekine sahip türler bu numaralandırma düzenlerini izler.
 
 ```
 foreach(SomeType x in SomeCollection) { }
 ```
 
-Bu numaralandırma düzeni 'Sözlüğü' soneki türleriyle izleyin.
+' Dictionary ' sonekine sahip türler bu numaralandırma düzenlerini izler.
 
 ```
 foreach(SomeType x in SomeDictionary.Values) { }
 ```
 
-A <xref:System.Data.DataSet> nesnesi bir koleksiyonunu içerir <xref:System.Data.DataTable> koleksiyonları oluşan nesneler <xref:System.Data.DataColumn?displayProperty=fullName> ve <xref:System.Data.DataRow?displayProperty=fullName> nesneleri, diğerlerinin yanı sıra. Bu koleksiyonlardaki uygulamak <xref:System.Collections.ICollection> temel aracılığıyla <xref:System.Data.InternalDataCollectionBase?displayProperty=fullName> sınıfı.
+Bir <xref:System.Data.DataSet> nesnesi, <xref:System.Data.DataColumn?displayProperty=fullName> ve <xref:System.Data.DataTable> nesneleri<xref:System.Data.DataRow?displayProperty=fullName> koleksiyonlarından oluşan nesneler koleksiyonundan oluşur. Bu koleksiyonlar, <xref:System.Collections.ICollection> temel <xref:System.Data.InternalDataCollectionBase?displayProperty=fullName> sınıf aracılığıyla uygulanır.
 
-## <a name="how-to-fix-violations"></a>İhlaller nasıl düzeltilir?
+## <a name="how-to-fix-violations"></a>İhlalleri çözme
 
-Böylece, doğru terimiyle olark türü yeniden adlandırın.
+Doğru terimle soncak olması için türü yeniden adlandırın.
 
-## <a name="when-to-suppress-warnings"></a>Uyarılar bastırıldığında
+## <a name="when-to-suppress-warnings"></a>Uyarıların ne zaman bastırılamıyor
 
-Tür, genişletilmiş veya çeşitli öğeleri bir rastgele kümesini tutacak genelleştirilmiş bir veri yapısı ise 'Collection' soneki kullanmak için bir uyarıyı bastırmak güvenlidir. Bu durumda, uygulama, performans veya veri yapısının diğer özellikleri hakkında anlamlı bilgiler sağlayan bir ad (örneğin, BinaryTree) mantıklı olabilir. Sonek türü kullanarak numaralandırılabilecek belirttiğinden türü (örneğin, StringCollection) belirli bir türün koleksiyonu temsil ettiği durumlarda, bu kuraldan bir uyarıyı bastırmayın bir `foreach` deyimi.
+Tür genişletilebilen veya rastgele bir dizi farklı öğeyi tutan genelleştirilmiş bir veri yapısı ise, ' koleksiyon ' sonekini kullanmak için bir uyarının görüntülenmesini güvenlidir. Bu durumda, uygulama, performans veya veri yapısının diğer özellikleri hakkında anlamlı bilgiler sağlayan bir ad (örneğin, BinaryTree) oluşabilir. Türün belirli bir türün (örneğin, StringCollection) bir koleksiyonunu temsil ettiği durumlarda, sonek türün bir `foreach` bildirim kullanılarak numaralandırılacağını gösterdiği için bu kuraldan bir uyarıyı bastırmayın.
 
-Diğer sonekleri için bu kuraldan bir uyarıyı bastırmayın. Sonek hedeflenen kullanım tür adından yetkisiz değiştirmeye karşı korumalı olmasını sağlar.
+Diğer sonekler için, bu kuraldan bir uyarıyı bastırmayın. Son ek, hedeflenen kullanımın tür adından önlenebilir olmasını sağlar.
 
-## <a name="configurability"></a>Etkiler ve yapılandırma
+## <a name="configurability"></a>Yapılandırılabilirlik
 
-Bu kuraldan çalıştırıyorsanız [FxCop Çözümleyicileri](install-fxcop-analyzers.md) (ve statik kod analizi üzerinden değil), hangi parçalarının yapılandırabilirsiniz, bu kuralı çalıştırmak için kod tabanı, kendi erişilebilirliği temel. Örneğin, kural yalnızca genel olmayan API yüzeyi karşı çalışması gerektiğini belirtmek için projenizi bir .editorconfig dosyasında şu anahtar-değer çifti ekleyin:
+Bu kuralı [FxCop çözümleyicilerinin](install-fxcop-analyzers.md) (eski analizler olmadan) çalıştırıyorsanız, kod tabanınızın hangi bölümlerinin bu kuralı çalıştırmak için erişilebilirliğini temel alarak yapılandırabilirsiniz. Örneğin, kuralın yalnızca genel olmayan API yüzeyine karşı çalışması gerektiğini belirtmek için, aşağıdaki anahtar-değer çiftini projenizdeki bir. editorconfig dosyasına ekleyin:
 
 ```ini
 dotnet_code_quality.ca1710.api_surface = private, internal
 ```
 
-Bu kategoride (adlandırma), bu seçenek yalnızca bu kural, tüm kuralları veya tüm kuralları yapılandırabilirsiniz. Daha fazla bilgi için [yapılandırma FxCop Çözümleyicileri](configure-fxcop-analyzers.md).
+Bu seçeneği yalnızca bu kural için, tüm kurallar için veya bu kategorideki tüm kurallar (adlandırma) için yapılandırabilirsiniz. Daha fazla bilgi için bkz. [FxCop çözümleyicileri yapılandırma](configure-fxcop-analyzers.md).
 
-## <a name="related-rules"></a>İlgili kuralları
+## <a name="related-rules"></a>İlgili kurallar
 
-[CA1711: Tanımlayıcılar yanlış sonek içermemelidir](../code-quality/ca1711-identifiers-should-not-have-incorrect-suffix.md)
+[CA1711 Tanımlayıcılar yanlış sonek içermemelidir](../code-quality/ca1711-identifiers-should-not-have-incorrect-suffix.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 - [Öznitelikler](/dotnet/standard/design-guidelines/attributes)
-- [Olaylar oluşturma ve işleme](/dotnet/standard/events/index)
+- [Olayları işleme ve oluşturma](/dotnet/standard/events/index)

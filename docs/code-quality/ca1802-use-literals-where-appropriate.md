@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: dfa50fc6007c2313191b430e9ed5445e7fd72a88
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: c6512f02d13c2eeb441f5b374c4785deffe22a22
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65841559"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69547059"
 ---
 # <a name="ca1802-use-literals-where-appropriate"></a>CA1802: Uygun yerlerde sabitleri kullanın
 
@@ -30,44 +30,44 @@ ms.locfileid: "65841559"
 |-|-|
 |TypeName|UseLiteralsWhereAppropriate|
 |CheckId|CA1802|
-|Kategori|Microsoft.Performance|
-|Yeni Değişiklik|Bölünemez|
+|Kategori|Microsoft. Performance|
+|Yeni Değişiklik|Kırılmamış|
 
 ## <a name="cause"></a>Sebep
 
-Bir alana bildirilen `static` ve `readonly` (`Shared` ve `ReadOnly` Visual Basic'te) ve derleme zamanında hesaplanabilen bir değer ile başlatılır.
+Bir alan, `static` ve `readonly` (`Shared` ve `ReadOnly` Visual Basic) olarak tanımlanır ve derleme zamanında oluşturulabilir bir değer ile başlatılır.
 
-Varsayılan olarak, bu kural yalnızca dışarıdan görünen alanları görünüyor, ancak bu [yapılandırılabilir](#configurability).
+Bu kural varsayılan olarak yalnızca dışarıdan görünür alanlara bakar, ancak bu [yapılandırılabilir](#configurability).
 
 ## <a name="rule-description"></a>Kural açıklaması
 
-Değerini bir `static readonly` bildirim türü statik Oluşturucusu çağrıldığında, alanı çalışma zamanında hesaplanır. Varsa `static readonly` alan bildirildiği ve derleyici alanı başlatmak için bir statik Oluşturucu yayan bir statik Oluşturucu açıkça bildirilmedi başlatılır.
+Bildirim türü için statik `static readonly` Oluşturucu çağrıldığında bir alanın değeri çalışma zamanında hesaplanır. `static readonly` Alan bildirildiği zaman başlatılır ve statik bir oluşturucu açıkça bildirilmemiş ise, derleyici alanı başlatmak için statik bir Oluşturucu yayar.
 
-Değerini bir `const` alan derleme zamanında hesaplanır ve için karşılaştırıldığında çalışma zamanı performansını artıran meta verilerde depolanan bir `static readonly` alan.
+Bir `const` alanın değeri, derleme zamanında hesaplanır ve meta verilerde depolanır, bu da bir `static readonly` alanla karşılaştırıldığında çalışma zamanı performansını artırır.
 
-Hedeflenen alana atanan değer derleme zamanında hesaplanabilir olduğundan, bildirime değiştirme bir `const` çalışma zamanında derleme zaman yerine değeri hesaplanan alanın.
+Hedeflenen alana atanan değer derleme zamanında oluşturulabilir olduğundan, değeri çalışma zamanı yerine derleme zamanında hesaplanabilmesi için bildirimi bir `const` alanla değiştirin.
 
-## <a name="how-to-fix-violations"></a>İhlaller nasıl düzeltilir?
+## <a name="how-to-fix-violations"></a>İhlalleri çözme
 
-Bu kural ihlalini düzeltmek için yerine `static` ve `readonly` değiştiricilerini `const` değiştiricisi.
+Bu kuralın ihlalini onarmak için, `static` ve `readonly` değiştiricilerini `const` değiştiriciyle değiştirin.
 
-## <a name="when-to-suppress-warnings"></a>Uyarılar bastırıldığında
+## <a name="when-to-suppress-warnings"></a>Uyarıların ne zaman bastırılamıyor
 
-Performans bir sorun değilse bu kuraldan bir uyarıyı bastırmak veya kuralı devre dışı bırakmak güvenlidir.
+Bu kuraldan bir uyarıyı gizlemek veya performans sorun değilse kuralı devre dışı bırakmak güvenlidir.
 
-## <a name="configurability"></a>Etkiler ve yapılandırma
+## <a name="configurability"></a>Yapılandırılabilirlik
 
-Bu kuraldan çalıştırıyorsanız [FxCop Çözümleyicileri](install-fxcop-analyzers.md) (ve statik kod analizi üzerinden değil), hangi parçalarının yapılandırabilirsiniz, bu kuralı çalıştırmak için kod tabanı, kendi erişilebilirliği temel. Örneğin, kural yalnızca genel olmayan API yüzeyi karşı çalışması gerektiğini belirtmek için projenizi bir .editorconfig dosyasında şu anahtar-değer çifti ekleyin:
+Bu kuralı [FxCop çözümleyicilerinin](install-fxcop-analyzers.md) (eski analizler olmadan) çalıştırıyorsanız, kod tabanınızın hangi bölümlerinin bu kuralı çalıştırmak için erişilebilirliğini temel alarak yapılandırabilirsiniz. Örneğin, kuralın yalnızca genel olmayan API yüzeyine karşı çalışması gerektiğini belirtmek için, aşağıdaki anahtar-değer çiftini projenizdeki bir. editorconfig dosyasına ekleyin:
 
 ```ini
 dotnet_code_quality.ca1802.api_surface = private, internal
 ```
 
-Bu kategoride (performans), bu seçenek yalnızca bu kural, tüm kuralları veya tüm kuralları yapılandırabilirsiniz. Daha fazla bilgi için [yapılandırma FxCop Çözümleyicileri](configure-fxcop-analyzers.md).
+Bu seçeneği yalnızca bu kural için, tüm kurallar için veya bu kategorideki tüm kurallar (performans) için yapılandırabilirsiniz. Daha fazla bilgi için bkz. [FxCop çözümleyicileri yapılandırma](configure-fxcop-analyzers.md).
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, bir tür gösterir `UseReadOnly`, kuralı ve bir tür ihlal `UseConstant`, bu kural karşılar.
+Aşağıdaki örnek, kuralı ve `UseReadOnly` `UseConstant`kuralını karşılayan bir türü ihlal eden bir türü gösterir.
 
 [!code-vb[FxCop.Performance.UseLiterals#1](../code-quality/codesnippet/VisualBasic/ca1802-use-literals-where-appropriate_1.vb)]
 [!code-csharp[FxCop.Performance.UseLiterals#1](../code-quality/codesnippet/CSharp/ca1802-use-literals-where-appropriate_1.cs)]

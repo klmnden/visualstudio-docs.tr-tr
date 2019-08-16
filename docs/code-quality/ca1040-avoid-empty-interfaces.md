@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 25e798dac05213d8f66fe7ba3c7a737a71f6030e
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: 491923cb46100e9239b889024ade00022318b6cd
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65842234"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69547697"
 ---
 # <a name="ca1040-avoid-empty-interfaces"></a>CA1040: Boş arabirimlerden kaçının
 
@@ -36,37 +36,37 @@ ms.locfileid: "65842234"
 
 ## <a name="cause"></a>Sebep
 
-Arabirim herhangi bir üye bildirmek veya iki veya daha fazla diğer arabirimleri de uygulamak desteklemez.
+Arabirim hiçbir üye bildirmiyor veya iki ya da daha fazla arabirim uygulayamaz.
 
-Varsayılan olarak, bu kural dışarıdan görünebilir arabirimler yalnızca görünür, ancak bu [yapılandırılabilir](#configurability).
+Bu kural varsayılan olarak yalnızca dışarıdan görünen arabirimlere bakar, ancak bu [yapılandırılabilir](#configurability).
 
 ## <a name="rule-description"></a>Kural açıklaması
 
-Arayüzler bir davranış veya kullanım sözleşmesi sağlayan üyeleri tanımlar. Arabirim tarafından tanımlanan fonksiyonellik herhangi bir tür tarafından türün kalıtım hiyerarşisinde nerede belirdiği önemsenmeksizin devralınabilir. Tür arabirimin üyeleri için uygulamaları sağlayarak bir arayüz uygular. Boş bir arabirim herhangi bir üye tanımlamıyor. Bu nedenle, uygulanabilir bir sözleşme tanımlamaz.
+Arayüzler bir davranış veya kullanım sözleşmesi sağlayan üyeleri tanımlar. Arabirim tarafından tanımlanan fonksiyonellik herhangi bir tür tarafından türün kalıtım hiyerarşisinde nerede belirdiği önemsenmeksizin devralınabilir. Tür arabirimin üyeleri için uygulamaları sağlayarak bir arayüz uygular. Boş bir arabirim hiçbir üye tanımlamaz. Bu nedenle, uygulanabilecek bir sözleşme tanımlamaz.
 
-Tasarımınızı boş içeriyorsa türleri arabirimleri uygulayan beklenir, büyük olasılıkla bir işaretçi veya bir grup türleri tanımlamak için bir yol olarak bir arabirim kullanıyorsunuz. Bu kimliği, çalışma zamanında meydana gelir, bunu gerçekleştirmek için doğru şekilde özel bir öznitelik kullanmaktır. Hedef türlerini tanımlamak için varlığı veya öznitelik olmaması veya öznitelik özelliklerini kullanın. Ardından derleme zamanında kimliği olmalıdır, boş bir arabirim kullanmak için kabul edilebilir.
+Tasarımınızda, türlerin uygulanması beklenen boş arabirimler varsa, büyük olasılıkla bir ara birim veya bir tür grubunu tanımlamak için bir yol kullanıyorsunuz. Bu kimlik çalışma zamanında gerçekleşecektir, bunu gerçekleştirmenin doğru yolu özel bir öznitelik kullanmaktır. Hedef türlerini tanımlamak için özniteliğin varlığını veya yokluğunu veya özniteliğin özelliklerini kullanın. Kimlik derleme zamanında gerçekleşmelidir, boş bir arabirim kullanılması kabul edilebilir.
 
-## <a name="how-to-fix-violations"></a>İhlaller nasıl düzeltilir?
+## <a name="how-to-fix-violations"></a>İhlalleri çözme
 
-Arabirimi Kaldır veya üyeleri ekleyin. Boş arabirim türleri kümesi etiketlemek için kullanılıyorsa, arabirim özel bir öznitelik ile değiştirin.
+Arabirimi kaldırın veya ona üye ekleyin. Boş arabirim bir tür kümesini etiketlemek için kullanılıyorsa, arabirimini özel bir öznitelik ile değiştirin.
 
-## <a name="when-to-suppress-warnings"></a>Uyarılar bastırıldığında
+## <a name="when-to-suppress-warnings"></a>Uyarıların ne zaman bastırılamıyor
 
-Arabirimi, derleme zamanında türleri kümesini tanımlamak için kullanıldığında, bu kuraldan bir uyarıyı bastırmak güvenlidir.
+Arabirim, derleme zamanında bir tür kümesini tanımlamak için kullanıldığında, bu kuraldan bir uyarının bastırmasının güvenli hale gelir.
 
-## <a name="configurability"></a>Etkiler ve yapılandırma
+## <a name="configurability"></a>Yapılandırılabilirlik
 
-Bu kuraldan çalıştırıyorsanız [FxCop Çözümleyicileri](install-fxcop-analyzers.md) (ve statik kod analizi üzerinden değil), hangi parçalarının yapılandırabilirsiniz, bu kuralı çalıştırmak için kod tabanı, kendi erişilebilirliği temel. Örneğin, kural yalnızca genel olmayan API yüzeyi karşı çalışması gerektiğini belirtmek için projenizi bir .editorconfig dosyasında şu anahtar-değer çifti ekleyin:
+Bu kuralı [FxCop çözümleyicilerinin](install-fxcop-analyzers.md) (eski analizler olmadan) çalıştırıyorsanız, kod tabanınızın hangi bölümlerinin bu kuralı çalıştırmak için erişilebilirliğini temel alarak yapılandırabilirsiniz. Örneğin, kuralın yalnızca genel olmayan API yüzeyine karşı çalışması gerektiğini belirtmek için, aşağıdaki anahtar-değer çiftini projenizdeki bir. editorconfig dosyasına ekleyin:
 
 ```ini
 dotnet_code_quality.ca1040.api_surface = private, internal
 ```
 
-Bu kategoride (tasarımı), bu seçenek yalnızca bu kural, tüm kuralları veya tüm kuralları yapılandırabilirsiniz. Daha fazla bilgi için [yapılandırma FxCop Çözümleyicileri](configure-fxcop-analyzers.md).
+Bu seçeneği yalnızca bu kural için, tüm kurallar için veya bu kategorideki tüm kurallar (tasarım) için yapılandırabilirsiniz. Daha fazla bilgi için bkz. [FxCop çözümleyicileri yapılandırma](configure-fxcop-analyzers.md).
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, boş bir arabirim gösterir.
+Aşağıdaki örnekte boş bir arabirim gösterilmektedir.
 
 [!code-csharp[FxCop.Design.InterfacesNotEmpty#1](../code-quality/codesnippet/CSharp/ca1040-avoid-empty-interfaces_1.cs)]
 [!code-cpp[FxCop.Design.InterfacesNotEmpty#1](../code-quality/codesnippet/CPP/ca1040-avoid-empty-interfaces_1.cpp)]

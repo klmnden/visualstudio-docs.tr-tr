@@ -9,23 +9,23 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 0152ae9f76ea1318f717c41a70d3d46351c9021a
-ms.sourcegitcommit: 2bbcba305fd0f8800fd3d9aa16f7647ee27f3a4b
+ms.openlocfilehash: 09d5fb41648a2cd2dbd844bfb0fa426fa704042f
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/17/2019
-ms.locfileid: "68300616"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69551152"
 ---
 # <a name="configure-fxcop-analyzers"></a>FxCop çözümleyicileri yapılandırma
 
-[FxCop çözümleyicileri](install-fxcop-analyzers.md) , statik kod analizinden en önemli "FxCop" kurallarından oluşur ve Roslyn çözümleyicilerine dönüştürülür. FxCop kod Çözümleyicileri 'ni iki şekilde yapılandırabilirsiniz:
+[FxCop çözümleyicileri](install-fxcop-analyzers.md) , eski analizler tarafından .net Compiler platform tabanlı kod Çözümleyicileri ' ne dönüştürülmüş en önemli "FxCop" kurallarından oluşur. FxCop kod Çözümleyicileri 'ni iki şekilde yapılandırabilirsiniz:
 
 - Kural [kümesiyle](#fxcop-analyzer-rule-sets), kuralı etkinleştirmenizi veya devre dışı bırakmanızı ve tek tek kural ihlalleri için önem derecesini ayarlamanıza imkan tanır.
 
 - Bir [. editorconfig dosyası](#editorconfig-file)aracılığıyla [Microsoft. CodeAnalysis. fxcopçözümleyiciler](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers) NuGet paketinin 2.6.3 sürümünden başlayarak. [Yapılandırılabilir seçenekler](fxcop-analyzer-options.md) , kod tabanınızın hangi bölümlerinin çözümlenmesini daraltmanızı sağlar.
 
 > [!TIP]
-> FxCop statik kod analizi ile FxCop çözümleyicileri arasındaki farklar hakkında daha fazla bilgi için bkz. [FxCop ÇÖZÜMLEYICILERI SSS](fxcop-analyzers-faq.md).
+> Eski analiz ve FxCop çözümleyicileri arasındaki farklar hakkında daha fazla bilgi için bkz. [FxCop ÇÖZÜMLEYICILERI SSS](fxcop-analyzers-faq.md).
 
 ## <a name="fxcop-analyzer-rule-sets"></a>FxCop Çözümleyicisi kural kümeleri
 
@@ -42,7 +42,7 @@ FxCop Çözümleyicisi NuGet paketi aşağıdaki kural kategorileri için önced
 - güvenlik
 - kullanım
 
-Daha fazla bilgi için bkz. [Roslyn Çözümleyicileri Için kural kümeleri](analyzer-rule-sets.md).
+Daha fazla bilgi için bkz. [kod Çözümleyicileri Için kural kümeleri](analyzer-rule-sets.md).
 
 ## <a name="editorconfig-file"></a>EditorConfig dosyası
 
@@ -90,7 +90,7 @@ Belirli bir proje için. editorconfig tabanlı çözümleyici yapılandırmasın
 4. Projeyi yeniden yükleyin.
 
 > [!NOTE]
-> Eski FxCop kurallarını (Statik kod analizi FxCop) bir. editorconfig dosyası kullanarak yapılandıramazsınız.
+> Eski FxCop kurallarını bir. editorconfig dosyası kullanarak yapılandıramazsınız.
 
 ## <a name="option-scopes"></a>Seçenek kapsamları
 

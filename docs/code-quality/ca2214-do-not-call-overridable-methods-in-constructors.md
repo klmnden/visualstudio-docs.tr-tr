@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e05e6925085b27de3001c8ff62d8a3c6e69a88f
-ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
+ms.openlocfilehash: a59346cb70269d4d2b405279fc9ea5573a879b1e
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66401309"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69547013"
 ---
 # <a name="ca2214-do-not-call-overridable-methods-in-constructors"></a>CA2214: Geçersiz kılınabilir metotları oluşturucular içinde çağırmayın
 
@@ -30,31 +30,31 @@ ms.locfileid: "66401309"
 |-|-|
 |TypeName|DoNotCallOverridableMethodsInConstructors|
 |CheckId|CA2214|
-|Kategori|Microsoft.Usage|
-|Yeni Değişiklik|Bozucu olmayan|
+|Kategori|Microsoft. Usage|
+|Yeni Değişiklik|Kırılmamış|
 
 ## <a name="cause"></a>Sebep
 
-Mühürlenmemiş bir tür Oluşturucu, sınıfta tanımlanan sanal bir yöntemi çağırır.
+Korumasız bir türün Oluşturucusu sınıfında tanımlanmış sanal bir yöntemi çağırır.
 
 ## <a name="rule-description"></a>Kural açıklaması
 
-Sanal bir yöntem çağrıldığında yöntem gerçek tür çalışma zamanına kadar seçilmedi. Bir kurucu sanal bir yöntemi çağırdığında, yapıcı yöntemini çağıran örneği için değil yürütüldü mümkündür.
+Bir sanal yöntem çağrıldığında, yöntemi yürüten gerçek tür çalışma zamanına kadar seçili değildir. Bir Oluşturucu sanal bir yöntemi çağırdığında, yöntemi çağıran örnek için olan oluşturucunun yürütülmemiş olması mümkündür.
 
 > [!NOTE]
-> Bu kural ikili analizi uygulaması, farklı bir tanılama iletisi sahip " **\[oluşturucu adı] sınıf tarafından tanımlanan sanal bir yönteme bir çağrı sonuçlanır bir çağrı zinciri içeriyor. İstenmeyen sonuçları için aşağıdaki çağrı yığınını gözden**". [FxCop Çözümleyicileri](install-fxcop-analyzers.md) uygulamanızda bu kural, bir tanılama iletisi "**geçersiz kılınabilir yöntemleri oluşturucular içinde çağırmayın**".
+> Bu kuralın eski analiz uygulamasının farklı bir tanılama iletisi " **\[Oluşturucu adı], sınıf tarafından tanımlanan bir sanal yönteme çağrı ile sonuçlanan bir çağrı zinciri içeriyor. İstenmeyen sonuçlar**için aşağıdaki çağrı yığınını gözden geçirin. Bu kuralın [FxCop çözümleyicileri](install-fxcop-analyzers.md) uygulamasının "**kurucularda geçersiz kılınabilir yöntemleri çağırma**" tanılama iletisi vardır.
 
-## <a name="how-to-fix-violations"></a>İhlaller nasıl düzeltilir?
+## <a name="how-to-fix-violations"></a>İhlalleri çözme
 
-Bu kural ihlalini düzeltmek için türün sanal yöntemleri türün oluşturucular içinde çağırmayın.
+Bu kuralın ihlalini onarmak için, türün oluşturucularının içinden bir türün sanal yöntemlerini çağırmayın.
 
-## <a name="when-to-suppress-warnings"></a>Uyarılar bastırıldığında
+## <a name="when-to-suppress-warnings"></a>Uyarıların ne zaman bastırılamıyor
 
-Bu kuraldan uyarıyı bastırmayın. Sanal yöntem çağrısı ortadan kaldırmak için oluşturucu yeniden tasarlanması gerekir.
+Bu kuraldan uyarıyı bastırmayın. Sanal yöntem çağrısını ortadan kaldırmak için oluşturucunun yeniden tasarlanması gerekir.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, bu kuralın ihlali etkisini gösterir. Test uygulama örneği oluşturur `DerivedType`, onun temel sınıfından neden olur (`BadlyConstructedType`) yürütmek için oluşturucu. `BadlyConstructedType`ın Oluşturucusu yanlış sanal yöntemini çağırır `DoSomething`. Çıktıda gösterildiği gibi `DerivedType.DoSomething()` önce yürütür `DerivedType`'s Oluşturucusu yürütür.
+Aşağıdaki örnek, bu kuralı ihlal eden etkisini gösterir. Test uygulaması `DerivedType`, kendi temel sınıf (`BadlyConstructedType`) oluşturucusunun yürütülmesine neden olan bir örneği oluşturur. `BadlyConstructedType`oluşturucusunun sanal yöntemi `DoSomething`yanlış bir şekilde çağırır. Çıktıda gösterildiği gibi, `DerivedType.DoSomething()` Oluşturucu yürütmeden önce `DerivedType`yürütülür.
 
 [!code-csharp[FxCop.Usage.CtorVirtual#1](../code-quality/codesnippet/CSharp/ca2214-do-not-call-overridable-methods-in-constructors_1.cs)]
 [!code-vb[FxCop.Usage.CtorVirtual#1](../code-quality/codesnippet/VisualBasic/ca2214-do-not-call-overridable-methods-in-constructors_1.vb)]

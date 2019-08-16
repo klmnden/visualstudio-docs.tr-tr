@@ -1,5 +1,5 @@
 ---
-title: EditorConfig Çözümleyicileri karşılaştırması
+title: EditorConfig ve çözümleyiciler
 ms.date: 03/11/2019
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,53 +9,53 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bec9296f15c48cf3b327c78cd0ce7d57adafa002
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 53bd2139d5b81ed743cdfd92fe76cb575dcc6487
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62571478"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69547896"
 ---
-# <a name="analyzers-faq"></a>Çözümleyiciler hakkında SSS
+# <a name="code-analysis-faq"></a>Kod Analizi hakkında SSS
 
-Bu sayfa, Visual Studio'da Roslyn Çözümleyicileri hakkında bazı sık sorulan soruların yanıtlarını içerir.
+Bu sayfa, Visual Studio 'da .NET Compiler Platform tabanlı kod analizi hakkında sık sorulan bazı soruların yanıtlarını içerir.
 
-## <a name="roslyn-analyzers-versus-editorconfig"></a>Roslyn çözümleyicilerini .editorconfig karşılaştırması
+## <a name="code-analysis-versus-editorconfig"></a>Kod Analizi ve EditorConfig karşılaştırması
 
-**Q**: Kod stili için Roslyn Çözümleyicileri veya .editorconfig kullanmalıyım?
+**S**: Kod stilini denetlemek için kod analizini veya EditorConfig 'i kullanmalıdır mi?
 
-**A**: Roslyn Çözümleyicileri ve .editorconfig dosyalarını elle yakından çalışır. Kod stilleri tanımladığınızda [.editorconfig dosyasındaki](../ide/editorconfig-code-style-settings-reference.md) veya [metin düzenleyici seçenekleri](../ide/code-styles-and-quick-actions.md) sayfasında, Visual Studio'da yerleşik olarak bulunan Roslyn Çözümleyicileri gerçekten yapılandırmakta olduğunuz. EditorConfig dosyaları da bazı üçüncü taraf Çözümleyicisi paketleri gibi yapılandırmak için kullanılabilir [FxCop Çözümleyicileri](configure-fxcop-analyzers.md).
+Y: Kod Analizi ve. editorconfig dosyaları el ile çalışır. [Bir. editorconfig dosyasında](../ide/editorconfig-code-style-settings-reference.md) veya [metin düzenleyici seçenekleri](../ide/code-styles-and-code-cleanup.md) sayfasında kod stilleri tanımladığınızda aslında Visual Studio 'da yerleşik olarak bulunan kod Çözümleyicileri yapılandırılırsınız. EditorConfig dosyaları, [FxCop çözümleyicileri](configure-fxcop-analyzers.md)gibi bazı üçüncü taraf çözümleyici paketlerini yapılandırmak için de kullanılabilir.
 
-## <a name="editorconfig-versus-rule-sets"></a>EditorConfig kural kümelerinin karşılaştırması
+## <a name="editorconfig-versus-rule-sets"></a>EditorConfig ve kural kümeleri
 
-**Q**: Ben bir kural kümesi veya .editorconfig dosyasındaki kullanarak my Çözümleyicileri yapılandırmamız gerekir mi?
+**S**: Bir kural kümesi veya. editorconfig dosyası kullanarak çözümleyiciler yapılandırmam gerekir mi?
 
-**A**: Kural kümeleri ve .editorconfig dosyalarını Çözümleyicileri yapılandırmak için birbirini dışlayan yolları açıklanmıştır. Bunlar bir arada bulunabilir. [Kural kümeleri](analyzer-rule-sets.md) etkinleştirmek ve kuralları devre dışı bırakılır ve bunların önem derecesinin sağlar. EditorConfig dosyaları kurallarını yapılandırmak için başka yollar sunar. .Editorconfig dosyalarını FxCop Çözümleyicileri için izin [analiz etmek için kod türlerini tanımlamak](fxcop-analyzer-options.md). .Editorconfig dosyalarını Visual Studio'da yerleşik olarak bulunan Çözümleyicileri için izin [tercih edilen kod stillerini tanımlamak](../ide/editorconfig-code-style-settings-reference.md) bir kod temeli için.
+Y: Kural kümeleri ve. editorconfig dosyaları, Çözümleyicileri yapılandırmanın birbirini dışlamalı yollarıdır. Bunlar arada bulunabilir. [Kural kümeleri](analyzer-rule-sets.md) kuralları etkinleştirip devre dışı bırakmanızı ve bunların önem derecesini ayarlamanıza olanak sağlar. EditorConfig dosyaları, kuralları yapılandırmak için başka yollar sunar. FxCop çözümleyicileri için. editorconfig dosyaları [hangi kod türlerini analiz edeceğinizi tanımlamanızı](fxcop-analyzer-options.md)sağlar. Visual Studio 'da yerleşik olan çözümleyiciler için. editorconfig dosyaları bir kod temeli için [tercih edilen kod stillerini tanımlamanıza](../ide/editorconfig-code-style-settings-reference.md) olanak sağlar.
 
-Kural kümeleri ve .editorconfig dosyalarını ek olarak, bazı üçüncü taraf Çözümleyicileri metin dosyaları olarak işaretlenmiş kullanılarak yapılandırılan [ek dosyalar](../ide/build-actions.md#build-action-values) için C# ve VB derleyicileri.
+Kural kümelerine ve. editorconfig dosyalarına ek olarak, bazı üçüncü taraf çözümleyiciler, C# ve vb derleyicileri için [ek dosyalar](../ide/build-actions.md#build-action-values) olarak işaretlenen metin dosyaları kullanılarak yapılandırılır.
 
 > [!NOTE]
-> Kural kümeleri olabilir ancak EditorConfig dosyaları statik kod analizi kurallarını yapılandırmak için kullanılamaz.
+> EditorConfig dosyaları eski Analizi yapılandırmak için kullanılamaz, ancak kural kümeleri olabilir.
 
-## <a name="analyzers-in-ci-builds"></a>CI yapılarında çözümleyiciler
+## <a name="code-analysis-in-ci-builds"></a>CI Derlemeleriyle kod analizi
 
-**Q**: Çözümleyiciler içinde sürekli tümleştirme (CI) derlemeleri çalışır?
+**S**: .NET Compiler Platform tabanlı kod analizi sürekli tümleştirme (CI) Derlemeleriyle çalışıyor mu?
 
-**A**: Evet. Bir NuGet paketinden yüklenen Çözümleyicileri bu kurallardır [derleme zorunlu](roslyn-analyzers-overview.md#build-errors)CI derleme sırasında dahil. Hem CI derlemeleri saygı kural yapılandırmasında kullanılan Çözümleyicileri [kural kümeleri](analyzer-rule-sets.md) ve [.editorconfig dosyalarını](configure-fxcop-analyzers.md). Şu anda, Visual Studio'da yerleşik olarak bulunan kod Çözümleyicileri bir NuGet paketi olarak kullanılabilir değil ve bu nedenle bu kuralları bir CI yapı içinde uygulanabilir değildir.
+Y: Evet. Bir NuGet paketinden yüklenen çözümleyiciler için, bu kurallar bir CI derlemesi de dahil olmak üzere [derleme zamanında zorlanır](roslyn-analyzers-overview.md#build-errors). CI 'de kullanılan çözümleyiciler, kural [kümelerinden](analyzer-rule-sets.md) ve [. editorconfig dosyalarından](configure-fxcop-analyzers.md)gelen kural yapılandırmasına göre oluşturulur. Şu anda, Visual Studio 'da yerleşik olarak bulunan kod Çözümleyicileri bir NuGet paketi olarak kullanılamaz ve bu nedenle bu kurallar bir CI derlemesinde öngörülenebilir değildir.
 
-## <a name="ide-analyzers-versus-stylecop"></a>IDE Çözümleyicileri StyleCop karşılaştırması
+## <a name="ide-analyzers-versus-stylecop"></a>IDE Çözümleyicileri ve StyleCop karşılaştırması
 
-**Q**: Visual Studio IDE, kod Çözümleyicileri ve StyleCop Çözümleyicileri arasındaki fark nedir?
+**S**: Visual Studio IDE kod Çözümleyicileri ve StyleCop Çözümleyicileri arasındaki fark nedir?
 
-**A**: Visual Studio IDE, her iki kod stili ve kalite sorunları için yerleşik Çözümleyicileri içerir. Bu kurallar yardımcı sunulan ve sürdürülebilirliği kodunuzu geliştirmek gibi yeni dil özellikleri kullanın. IDE Çözümleyicileri sürekli güncelleştirilen her Visual Studio sürümü ile.
+Y: Visual Studio IDE, hem kod stili hem de kalite sorunlarına yönelik yerleşik çözümleyiciler içerir. Bu kurallar, sunulan yeni dil özelliklerini kullanmanıza ve kodunuzun bakımlılığını iyileştirmenize yardımcı olur. IDE Çözümleyicileri her bir Visual Studio sürümüyle sürekli olarak güncelleştirilir.
 
-[StyleCop Çözümleyicileri](https://github.com/DotNetAnalyzers/StyleCopAnalyzers) olan kod stili tutarlılık denetimi bir NuGet paketi olarak yüklenen üçüncü taraf Çözümleyicileri. Genel olarak, StyleCop kurallar, kişisel bir kod için temel bir stil başka bir öneren olmadan Tercihler olanak sağlar.
+[StyleCop Çözümleyicileri](https://github.com/DotNetAnalyzers/StyleCopAnalyzers) , kodunuzda stil tutarlılığını denetleyen bir NuGet paketi olarak yüklenen üçüncü taraf Çözümleyicileri. Genel olarak, StyleCop kuralları bir kod tabanı için kişisel tercihlerinizi, başka bir stil önermeksizin ayarlamanıza olanak sağlar.
 
-## <a name="analyzers-versus-static-code-analysis"></a>Statik kod analizi ve çözümleyiciler
+## <a name="code-analyzers-versus-legacy-analysis"></a>Kod Çözümleyicileri ve eski analizler
 
-**Q**: Çözümleyicileri ve statik kod analizi arasındaki fark nedir?
+**S**: Eski analiz ve .NET Compiler Platform tabanlı kod analizi arasındaki fark nedir?
 
-**A**: Statik kod analizi, derleme tamamlandıktan sonra ikili dosyaları analiz eder, oysa Çözümleyicileri gerçek zamanlı ve derleme sırasında kaynak kodu analiz edin. Daha fazla bilgi için [Roslyn Çözümleyicileri statik kod analizi karşılaştırması](roslyn-analyzers-overview.md#roslyn-analyzers-vs-static-code-analysis) ve [FxCop Çözümleyicileri SSS](fxcop-analyzers-faq.md).
+Y: .net Compiler platform tabanlı kod analizi, kaynak kodu gerçek zamanlı ve derleme sırasında analiz ederken, eski analiz derleme tamamlandıktan sonra ikili dosyaları analiz eder. Daha fazla bilgi için, bkz. [.net Compiler platform tabanlı analizler, eski analizler](roslyn-analyzers-overview.md#net-compiler-platform-based-analysis-versus-legacy-analysis) ve [FxCop çözümleyicileri hakkında SSS](fxcop-analyzers-faq.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

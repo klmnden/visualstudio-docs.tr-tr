@@ -1,6 +1,6 @@
 ---
 title: Outlook çözümleri
-ms.date: 02/02/2017
+ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,58 +18,57 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4150751cbb8de64fc237335bc26407f932276075
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 3b27f874766853fb5239c96ec178233935484d1b
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442387"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69551480"
 ---
 # <a name="outlook-solutions"></a>Outlook çözümleri
-  Visual Studio, Microsoft Office Outlook için VSTO eklentileri oluşturmak için kullanabileceğiniz proje şablonları sağlar. VSTO eklentileri, Outlook otomatikleştirmek, Outlook özellikleri genişletmek veya Outlook kullanıcı arabirimini (UI) özelleştirmek için kullanabilirsiniz. VSTO eklentileri hakkında daha fazla bilgi için bkz. [mimarisi, VSTO eklentileri](../vsto/architecture-of-vsto-add-ins.md).
+  Visual Studio, Outlook Microsoft Office için VSTO eklentileri oluşturmak için kullanabileceğiniz proje şablonları sağlar. Outlook 'U otomatikleştirmek, Outlook özelliklerini genişletmek veya Outlook Kullanıcı arabirimini (UI) özelleştirmek için VSTO Eklentilerini kullanabilirsiniz. VSTO eklentileri hakkında daha fazla bilgi için bkz. [VSTO eklentileri mimarisi](../vsto/architecture-of-vsto-add-ins.md).
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 
-> [!NOTE]
-> Office deneyiminiz boyunca genişleten çözümleri geliştirme yapmakla mı ilgileniyorsunuz [birden çok platform](https://dev.office.com/add-in-availability)? Yeni kontrol [Office eklentilerini modeli](https://dev.office.com/docs/add-ins/overview/office-add-ins). Office eklentileri, VSTO eklentileri ve çözümlerle karşılaştırıldığında küçük ayak izine sahip ve neredeyse tüm web teknolojisi, HTML5, JavaScript, CSS3 ve XML gibi programlama kullanarak oluşturabilirsiniz.
+[!include[Add-ins note](includes/addinsnote.md)]
 
-## <a name="create-an-outlook-vsto-add-in-project"></a>Bir Outlook VSTO eklenti projesinde oluşturma
- Outlook projeleri kullanarak oluşturma **Outlook eklentisi** proje şablonunda **yeni proje** iletişim kutusu. Bu şablon, gerekli bütünleştirilmiş kod başvuruları ve proje dosyaları içerir.
+## <a name="create-an-outlook-vsto-add-in-project"></a>Outlook VSTO eklentisi projesi oluşturma
+ **Yeni proje** Iletişim kutusundaki **Outlook eklentisi** proje şablonunu kullanarak Outlook projeleri oluşturun. Bu şablon gerekli derleme başvurularını ve proje dosyalarını içerir.
 
- Bir VSTO Eklenti projesinin nasıl oluşturulacağı hakkında daha fazla bilgi için bkz. [nasıl yapılır: Visual Studio'da Office projeleri oluşturma](../vsto/how-to-create-office-projects-in-visual-studio.md). Proje şablonları hakkında daha fazla bilgi için bkz. [Office proje şablonlarına genel bakış](../vsto/office-project-templates-overview.md).
+ VSTO eklenti projesi oluşturma hakkında daha fazla bilgi için bkz [. nasıl yapılır: Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)'da Office projeleri oluşturun. Proje şablonları hakkında daha fazla bilgi için bkz. [Office proje şablonlarına genel bakış](../vsto/office-project-templates-overview.md).
 
-## <a name="outlook-vsto-add-in-programming-model"></a>Outlook VSTO eklenti programlama modeli
- Bir Outlook VSTO eklenti projesi oluşturduğunuzda, Visual Studio isimli bir sınıf oluşturur. `ThisAddIn`, çözümünüzün temeli. Bu sınıf kodunuzu yazmanız için bir başlangıç noktası sağlar ve ayrıca Outlook için VSTO eklenti nesne modeli sunar.
+## <a name="outlook-vsto-add-in-programming-model"></a>Outlook VSTO eklentisi programlama modeli
+ Outlook VSTO eklentisi projesi oluşturduğunuzda, Visual Studio çözümünüzün temeli olan adlı `ThisAddIn`bir sınıf oluşturur. Bu sınıf, kodunuzu yazmak için bir başlangıç noktası sağlar ve Outlook 'un nesne modelini VSTO eklentinize de sunar.
 
- Hakkında daha fazla bilgi için `ThisAddIn` sınıfı ve bir VSTO eklenti, kullanabileceğiniz diğer özellikler bkz [Program VSTO eklentileri](../vsto/programming-vsto-add-ins.md).
+ VSTO eklentilerinde kullanabileceğiniz `ThisAddIn` sınıf ve diğer özellikler hakkında daha fazla bilgi için bkz. [Program VSTO eklentileri](../vsto/programming-vsto-add-ins.md).
 
-## <a name="automate-outlook-by-using-the-outlook-object-model"></a>Outlook nesne modelini kullanarak Outlook otomatikleştirin
- Outlook nesne modeli, Outlook otomatikleştirmek için kullanabileceğiniz birçok türü ortaya çıkarır. Bu türler ortak görevleri gerçekleştirmek için kod yazmanıza olanak sağlar:
+## <a name="automate-outlook-by-using-the-outlook-object-model"></a>Outlook nesne modelini kullanarak Outlook 'U otomatikleştirme
+ Outlook nesne modeli, Outlook 'U otomatikleştirmek için kullanabileceğiniz birçok türü kullanıma sunar. Bu türler ortak görevleri gerçekleştirmek için kod yazmanıza olanak sağlar:
 
-- Program aracılığıyla oluşturun ve e-posta iletisi gönderin.
+- Program aracılığıyla e-posta iletileri oluşturma ve gönderme.
 
-- Yeni toplantı istekleri gönderme.
+- Yeni Toplantı istekleri gönderin.
 
-- Outlook klasörleri öğeleri arayın.
+- Outlook klasörlerinde öğeleri arayın.
 
-  Daha fazla bilgi için [Outlook nesne modeline genel bakış](../vsto/outlook-object-model-overview.md).
+  Daha fazla bilgi için bkz. [Outlook nesne modeline genel bakış](../vsto/outlook-object-model-overview.md).
 
-## <a name="customize-the-user-interface-of-an-outlook-application"></a>Bir Outlook uygulamasının kullanıcı arabirimini özelleştirme
+## <a name="customize-the-user-interface-of-an-outlook-application"></a>Outlook uygulamasının Kullanıcı arabirimini özelleştirme
 
 |Görev|Daha fazla bilgi için|
 |----------|--------------------------|
-|Outlook Inspector Şeride özel sekmeler ekleme|[Şerite Genel Bakış](../vsto/ribbon-overview.md)|
-|Outlook Inspector yerleşik bir sekmede özel gruplar ekleyin.|[Nasıl yapılır: Yerleşik bir sekmeyi özelleştirme](../vsto/how-to-customize-a-built-in-tab.md)|
-|Outlook Inspector görüntülenen özel görev bölmesi ekleme|[Özel görev bölmeleri](../vsto/custom-task-panes.md).|
-|Mevcut Outlook Form genişletir veya form bölgesi ekleme.|[Outlook form bölgeleri oluşturma](../vsto/creating-outlook-form-regions.md)|
+|Outlook denetçisinin Şeritine özel sekmeler ekleyin.|[Şerite Genel Bakış](../vsto/ribbon-overview.md)|
+|Outlook Inspector 'daki yerleşik bir sekmeye özel gruplar ekleyin.|[Nasıl yapılır: Yerleşik bir sekmeyi özelleştirme](../vsto/how-to-customize-a-built-in-tab.md)|
+|Outlook denetçisinde görünen özel bir görev bölmesi ekleme|[Özel görev bölmeleri](../vsto/custom-task-panes.md).|
+|Varolan Outlook formlarını genişleten veya değiştiren bir form bölgesi ekleyin.|[Outlook form bölgeleri oluşturma](../vsto/creating-outlook-form-regions.md)|
 
- Outlook UI ve diğer Microsoft Office uygulamaları özelleştirme hakkında daha fazla bilgi için bkz. [Office UI özelleştirmesi](../vsto/office-ui-customization.md).
+ Outlook ve diğer Microsoft Office uygulamalarının Kullanıcı arabirimini özelleştirme hakkında daha fazla bilgi için bkz. [OFFICE UI özelleştirmesi](../vsto/office-ui-customization.md).
 
 ## <a name="related-topics"></a>İlgili konular
 
 |Başlık|Açıklama|
 |-----------|-----------------|
-|[Outlook nesne modeline genel bakış](../vsto/outlook-object-model-overview.md)|Outlook nesne modeli tarafından sağlanan nesneler genel bir bakış sağlar.|
-|[Outlook form bölgeleri oluşturma](../vsto/creating-outlook-form-regions.md)|Tasarlamak, geliştirmek ve hata ayıklama form bölgeleri kolaylaştıracak Visual Studio tarafından sağlanan araçları açıklar.|
-|[İzlenecek yol: İlk VSTO eklentinizi Outlook için oluşturma](../vsto/walkthrough-creating-your-first-vsto-add-in-for-outlook.md)|Microsoft Office Outlook için VSTO eklentisi oluşturma işlemi gösterilmektedir.|
-|[Outlook 2010 Office geliştirme](http://go.microsoft.com/fwlink/?LinkId=199013)|Burada makaleler bulun ve başvuru belgeleri (Visual Studio kullanarak Office geliştirmeye özgü olmayan) Outlook çözümleri geliştirme hakkında MSDN Kitaplığı'nın alan.|
+|[Outlook nesne modeline genel bakış](../vsto/outlook-object-model-overview.md)|Outlook nesne modeli tarafından sağlanan nesnelere genel bakış sağlar.|
+|[Outlook form bölgeleri oluşturma](../vsto/creating-outlook-form-regions.md)|Form bölgelerini tasarlamanıza, geliştirmenize ve hata ayıklamanıza daha kolay hale getirerek Visual Studio tarafından sunulan araçları açıklar.|
+|[İzlenecek yol: Outlook için ilk VSTO eklentisini oluşturma](../vsto/walkthrough-creating-your-first-vsto-add-in-for-outlook.md)|Outlook Microsoft Office için bir VSTO eklentisi oluşturmayı gösterir.|
+|[Office geliştirmede Outlook 2010](http://go.microsoft.com/fwlink/?LinkId=199013)|MSDN Kitaplığı 'nın, Outlook çözümlerini geliştirme (Visual Studio kullanarak Office geliştirmeye özgü değil) hakkında makaleler ve başvuru belgeleri bulabileceğiniz alanı.|

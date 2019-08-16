@@ -18,12 +18,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: be29a8eff4e36df04721e8f946b9b2b0ebae3145
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3f1ddb1f1d39255c14e03d114891145c8f2dece5
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62945020"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69551181"
 ---
 # <a name="set-defaults-for-enterprise-deployments-of-visual-studio"></a>Visual Studio kuruluş dağıtımları için varsayılanları ayarlama
 
@@ -52,13 +52,14 @@ Aşağıdaki kayıt defteri değerlerini ayarlayabilirsiniz:
 
 | **Ad** | **Türü** | **Default** | **Açıklama** |
 | -------- | -------- | ----------- | --------------- |
-| `CachePath` | `REG_SZ` veya `REG_EXPAND_SZ` | %ProgramData%\Microsoft\VisualStudio\Packages | Burada paket bildirimlerini dizini ve isteğe bağlı, yükü depolanır. Daha fazla bilgi için [devre dışı bırakın veya paket önbelleğini taşıma](disable-or-move-the-package-cache.md) sayfası. |
-| `KeepDownloadedPayloads` | `REG_DWORD` | 1. | Hatta yüklendikten sonra paket yüklerini tutun. Değer dilediğiniz zaman değiştirebilirsiniz. İlkeyi devre dışı bırakma örneği onarmak veya değiştirmek için herhangi bir önbelleğe alınan paket yüklerini kaldırır. Daha fazla bilgi için [devre dışı bırakın veya paket önbelleğini taşıma](disable-or-move-the-package-cache.md) sayfası. |
-| `SharedInstallationPath` | `REG_SZ` veya `REG_EXPAND_SZ` | % ProgramFiles (x86) %\Microsoft Visual Studio\Shared | Visual Studio örneklerini sürümleri arasında paylaşılan bazı paketler yüklendiği dizin. Değer, istediğiniz zaman değiştirebilirsiniz, ancak yalnızca gelecekteki yükler etkiler. Eski konumuna yüklü herhangi bir ürün değil taşınmalıdır veya düzgün çalışmayabilir. |
+| `CachePath` | `REG_SZ` veya `REG_EXPAND_SZ` | %ProgramData%\Microsoft\VisualStudio\Packages | Burada paket bildirimlerini dizini ve isteğe bağlı, yükü depolanır. Daha fazla bilgi için bkz. [paket önbelleğini devre dışı bırakma veya taşıma](disable-or-move-the-package-cache.md) sayfası. |
+| `KeepDownloadedPayloads` | `REG_DWORD` | 1\. | Hatta yüklendikten sonra paket yüklerini tutun. Değer dilediğiniz zaman değiştirebilirsiniz. İlkeyi devre dışı bırakma örneği onarmak veya değiştirmek için herhangi bir önbelleğe alınan paket yüklerini kaldırır. Daha fazla bilgi için bkz. [paket önbelleğini devre dışı bırakma veya taşıma](disable-or-move-the-package-cache.md) sayfası. |
+| `SharedInstallationPath` | `REG_SZ` veya `REG_EXPAND_SZ` | % ProgramFiles (x86) %\Microsoft Visual Studio\Shared | Visual Studio örneklerini sürümleri arasında paylaşılan bazı paketler yüklendiği dizin. Değeri dilediğiniz zaman değiştirebilirsiniz, ancak gelecekteki yüklemeleri etkiler. Eski konuma yüklenmiş olan tüm ürünler taşınmamalıdır veya düzgün çalışmayabilir. |
+| `BackgroundDownloadDisabled` |`REG_DWORD` | 1\. | Kurulumun tüm yüklü Visual Studio ürünleri için güncelleştirmeleri otomatik olarak indirmasını engelleyin. Değer dilediğiniz zaman değiştirebilirsiniz. |
 
 > [!IMPORTANT]
-> Değiştirirseniz `CachePath` kayıt defteri ilke tüm yüklemeleri sonra mevcut paket önbelleğini yeni konuma taşı ve onu güvenli olduğundan emin olmanız gerekir böylece `SYSTEM` ve `Administrators` alan ve tam denetim `Everyone` okuma erişimi olduğundan.
-> Mevcut önbellek veya onu güvenli hale getirme taşımak için hata gelecekteki yüklemeler sorunlara neden olabilir.
+> Herhangi bir yüklemeden sonra `CachePath` kayıt defteri ilkesini değiştirirseniz, mevcut paket önbelleğini yeni konuma taşımanız ve tam denetime `Administrators` `Everyone` sahip olmak ve okuma erişimi olması için güvenli `SYSTEM` olduğundan emin olmanız gerekir.
+> Mevcut önbelleğin taşınamaması veya güvenliğinin sağlanması gelecekteki yüklemelerde sorunlara neden olabilir.
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 

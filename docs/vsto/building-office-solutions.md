@@ -1,6 +1,6 @@
 ---
-title: Office çözümleri oluşturun
-ms.date: 02/02/2017
+title: Office çözümleri oluşturma
+ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -26,89 +26,88 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e103b07b82d587ac00e2ff53e9ed7ea344267a85
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 3f89e20b710584c678c035f4d85034e90bb11323
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440333"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69551851"
 ---
-# <a name="build-office-solutions"></a>Office çözümleri oluşturun
-  Genel olarak, derleme ve hata ayıklama Office projeleri derleme ve Windows Forms gibi Visual Studio'da proje türlerinde hata ayıklama ile aynı olur. Bu bölümdeki konular, mevcut farkları açıklamaktadır. Uygulamaları oluşturma hakkında genel bilgi için bkz. [derlemek ve oluşturmak Visual Studio'da](../ide/compiling-and-building-in-visual-studio.md).
+# <a name="build-office-solutions"></a>Office çözümleri oluşturma
+  Genel olarak, Office projelerinin oluşturulması ve hata ayıklaması, Visual Studio 'da Windows Forms gibi diğer proje türlerini derleme ve hata ayıklama ile aynıdır. Bu bölümdeki konular, var olan farkları açıklamaktadır. Uygulamaları oluşturma hakkında genel bilgi için bkz. [Visual Studio 'Da derleme ve derleme](../ide/compiling-and-building-in-visual-studio.md).
 
-> [!NOTE]
-> Office deneyiminiz boyunca genişleten çözümleri geliştirme yapmakla mı ilgileniyorsunuz [birden çok platform](https://dev.office.com/add-in-availability)? Yeni kontrol [Office eklentilerini modeli](https://dev.office.com/docs/add-ins/overview/office-add-ins). Office eklentileri, VSTO eklentileri ve çözümlerle karşılaştırıldığında küçük ayak izine sahip ve neredeyse tüm web teknolojisi, HTML5, JavaScript, CSS3 ve XML gibi programlama kullanarak oluşturabilirsiniz.
+[!include[Add-ins note](includes/addinsnote.md)]
 
 ## <a name="project-output-for-office-projects"></a>Office projeleri için proje çıktısı
- Office projeleri çıkış konumu *projectname*\bin\release veya *projectname*\bin\debug. Bir dağıtım dizinine oluşturulamıyor.
+ Office projelerinin çıkış konumu *ProjectName*\bin\Release veya *ProjectName*\bin\debug' dir. Dağıtım dizinine derlenemez.
 
 ### <a name="document-level-projects"></a>Belge düzeyi projeleri
- Belge düzeyi projesi oluşturduğunuzda proje çıktısına aşağıdakiler dahildir:
+ Belge düzeyinde bir proje oluşturduğunuzda, aşağıdaki öğeler proje çıktısına dahil edilir:
 
-- Proje belgenin bir kopyasını.
+- Proje belgesinin bir kopyası.
 
-- Sahip başvurulmuş tüm Derlemelerle ve proje derlemesi kendi **Yereli Kopyala** özelliğini **true**.
+- Proje derlemesi ve **Copy Local** özelliği **true**olarak ayarlanmış olan tüm başvurulan derlemeler.
 
-- Dosya adı uzantısına sahip uygulama bildirimini *.manifest*. Daha fazla bilgi için [Office çözümleri için uygulama bildirimleri](../vsto/application-manifests-for-office-solutions.md).
+- Dosya adı uzantısı *. manifest*olan uygulama bildirimi. Daha fazla bilgi için bkz. [Office çözümleri Için uygulama bildirimleri](../vsto/application-manifests-for-office-solutions.md).
 
-- Dosya adı uzantısına sahip olan dağıtım bildirimi *.vsto*. Daha fazla bilgi için [Office çözümleri için dağıtım bildirimleri](../vsto/deployment-manifests-for-office-solutions.md).
+- *. VSTO*dosya adı uzantısına sahip dağıtım bildirimi. Daha fazla bilgi için bkz. [Office çözümleri Için dağıtım bildirimleri](../vsto/deployment-manifests-for-office-solutions.md).
 
-- Bir program veritabanı (*PDB*) dosyası.
+- Program veritabanı (*pdb*) dosyası.
 
 > [!NOTE]
-> Yerel bilgisayar yerine bir uzak konuma bir belge düzeyi çözüm oluşturuyorsanız, tam yolunu uygulamanın Güven Merkezi'ndeki güvenilen konumlar listesine ekleyin. Daha fazla bilgi için bkz belgelere güven verme adlı bölüme [güvenli Office çözümleri](../vsto/securing-office-solutions.md).
+> Yerel bilgisayar yerine uzak bir konuma belge düzeyinde bir çözüm oluşturursanız, uygulamanın güven merkezindeki güvenilir konumlar listesine tam yolu ekleyin. Daha fazla bilgi için [güvenli Office çözümlerinde](../vsto/securing-office-solutions.md)belgelere güven verme adlı bölüme bakın.
 
 ### <a name="application-level-projects"></a>Uygulama düzeyi projeleri
- Bir VSTO eklenti projesi oluşturduğunuzda, proje çıktısına aşağıdakiler dahildir:
+ Bir VSTO eklenti projesi oluşturduğunuzda, aşağıdaki öğeler proje çıktısına dahil edilir:
 
-- Sahip başvurulmuş tüm Derlemelerle ve proje derlemesi kendi **Yereli Kopyala** özelliğini **true**.
+- Proje derlemesi ve **Copy Local** özelliği **true**olarak ayarlanmış olan tüm başvurulan derlemeler.
 
-- Dosya adı uzantısına sahip uygulama bildirimini *.manifest*. Daha fazla bilgi için [Office çözümleri için uygulama bildirimleri](../vsto/application-manifests-for-office-solutions.md).
+- Dosya adı uzantısı *. manifest*olan uygulama bildirimi. Daha fazla bilgi için bkz. [Office çözümleri Için uygulama bildirimleri](../vsto/application-manifests-for-office-solutions.md).
 
-- Dosya adı uzantısına sahip olan dağıtım bildirimi *.vsto*. Daha fazla bilgi için [Office çözümleri için dağıtım bildirimleri](../vsto/deployment-manifests-for-office-solutions.md).
+- *. VSTO*dosya adı uzantısına sahip dağıtım bildirimi. Daha fazla bilgi için bkz. [Office çözümleri Için dağıtım bildirimleri](../vsto/deployment-manifests-for-office-solutions.md).
 
-- Bir program veritabanı (*PDB*) dosyası proje derlemesi için.
+- Proje derlemesi için bir program veritabanı (*pdb*) dosyası.
 
-  VSTO eklentisi projeleri için derleme işlemi, ayrıca geliştirme bilgisayarında VSTO eklenti yüklemek için gerekli kayıt defteri girdileri kümesini oluşturur. Daha fazla bilgi için [VSTO eklentileri için kayıt defteri girdileri](../vsto/registry-entries-for-vsto-add-ins.md).
+  VSTO eklentisi projeleri için derleme işlemi, Ayrıca, VSTO eklentisini yüklemek için gereken geliştirme bilgisayarında bir kayıt defteri girişi kümesi oluşturur. Daha fazla bilgi için bkz. [VSTO eklentileri Için kayıt defteri girişleri](../vsto/registry-entries-for-vsto-add-ins.md).
 
-  Form bölgeleri içeren bir Outlook VSTO eklentisi projesi oluşturun, derleme işlemi aşağıdaki ek bilgileri kayıt defterine ekler:
+  Form bölgelerini içeren bir Outlook VSTO eklentisi projesi oluşturursanız, yapı işlemi kayıt defterine aşağıdaki ek bilgileri ekler:
 
-- Bir veya daha fazla form bölgeleri ile ilişkili her ileti sınıfı için bir anahtar.
+- Bir veya daha fazla form bölgesi ile ilişkili her ileti sınıfı için bir anahtar.
 
-- Her form bölgesi ve Outlook VSTO eklentisi adını temsil eden bir ilişkili değer için bir giriş.
+- Her form bölgesi için bir giriş ve Outlook VSTO eklentisinin adını temsil eden ilişkili bir değer.
 
-  Outlook form bölgeleri yüklemek için bu bilgiler gerekiyor.
+  Outlook 'un form bölgelerini yüklemesi için bu bilgiye ihtiyacı vardır.
 
 ## <a name="referenced-assemblies"></a>Başvurulan derlemeler
- Office çözümleri oluşturma projenizden (sınıf kitaplığı projeleri dahil) derlemelere başvurabilir. Her başvurulan derleme adında bir özelliğe sahiptir **Yereli Kopyala**. **Yerele Kopyala** derleme çıktı dizinine kopyalanır belirtir. Varsayılan olarak ayarlanmış **true**. Olan her başvurulan derleme **Yereli Kopyala** kümesine **true** çıkış dizinine kopyalanır.
+ Derlemelere (sınıf kitaplığı projeleri dahil), yapı Office çözümleri projenizden başvurabilirsiniz. Her Başvurulmuş derleme **Yerel kopyalama**adlı bir özelliğe sahiptir. Yereli **Kopyala** , derlemenin çıkış dizinine kopyalanıp kopyalanmadığını gösterir. Varsayılan olarak **true**değerine ayarlanır. Yereli **Kopyala** ayarı **true** olan her Başvurulmuş derleme çıkış dizinine kopyalanır.
 
-## <a name="security-during-the-build-process"></a>Derleme işlemi sırasında güvenlik
- Visual Studio, derleme işlemi sırasında çözüme güven kazandırmak için geliştirme bilgisayarında güvenlik ayarlarını otomatik olarak yapılandırır. Bu çözümün, hata ayıklarken çalışmasına olanak sağlar.
+## <a name="security-during-the-build-process"></a>Oluşturma işlemi sırasında güvenlik
+ Visual Studio, yapı işlemi sırasında çözüme güven sağlamak için geliştirme bilgisayarındaki güvenlik ayarlarını otomatik olarak yapılandırır. Bu, çözümün hata ayıklarken çalışmasına izin verir.
 
- Office projeleri, yayımcı doğrulamak için sertifikaları kullanır. Visual Studio otomatik olarak Office çözümleri tanımlamak için geçici bir sertifika oluşturur ve geliştirme bilgisayarında geçici sertifikasına güvenmek için yapılandırır.
+ Office projeleri yayımcıyı doğrulamak için sertifikaları kullanır. Visual Studio, Office çözümlerini tanımlamak için otomatik olarak geçici bir sertifika oluşturur ve geliştirme bilgisayarını geçici sertifikaya güvenecek şekilde yapılandırır.
 
- Daha fazla bilgi için [güvenli Office çözümleri](../vsto/securing-office-solutions.md).
+ Daha fazla bilgi için bkz. [güvenli Office çözümleri](../vsto/securing-office-solutions.md).
 
 ### <a name="network-projects"></a>Ağ projeleri
- Bir ağ paylaşımında derleme veya belge konumu ise yerel (kullanıcı düzeyinde) güvenlik ilkesi güncelleştirmesi çözümün çalışmasına izin vermek için yeterli değil. Bir yönetici, derlemeler ve çözüm çalışmadan önce bir ağ paylaşımında olan belgeler için tam güven makine düzeyinde vermeniz gerekir. Güvenlik İlkesi ayarlama hakkında daha fazla bilgi için bkz. [güvenli Office çözümleri](../vsto/securing-office-solutions.md).
+ Derleme veya belge konumu bir ağ paylaşımındaysa, yerel (Kullanıcı düzeyi) güvenlik ilkesi güncelleştirmesi çözümün çalışmasına izin vermek için yeterli değildir. Bir yönetici, çözüm çalıştırılmadan önce bir ağ paylaşımındaki derlemeler ve belgeler için makine düzeyinde tam güven vermelidir. Güvenlik ilkesini ayarlama hakkında daha fazla bilgi için bkz. [Secure Office Solutions](../vsto/securing-office-solutions.md).
 
- Belge düzeyinde projeler için belgenin tam konumunu Office güvenilir klasörler listesine eklemelisiniz. Daha fazla bilgi için [belgelere güven verme](../vsto/granting-trust-to-documents.md).
+ Belge düzeyi projeleri için, belgenin tam konumunu da Office güvenilir klasörler listesine eklemeniz gerekir. Daha fazla bilgi için bkz. [belgelere güven verme](../vsto/granting-trust-to-documents.md).
 
-## <a name="change-the-platform-target"></a>Platform hedefi Değiştir
- Varsayılan olarak, Office projeleri için platform hedefi olan **herhangi bir CPU**. Genellikle, bu ayar değiştirmemesi gerekir. İle oluşturulmuş office çözümlerini **herhangi bir CPU** Microsoft 32-bit ve 64 bit sürümlerde çalıştırma ayarı platform hedefi [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] veya [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)].
+## <a name="change-the-platform-target"></a>Platform hedefini değiştirme
+ Varsayılan olarak, Office projeleri için platform hedefi **herhangi BIR CPU**olur. Genellikle, bu ayarı değiştirmemelisiniz. **Herhangi bir CPU** platformu hedefi ayarıyla oluşturulan Office çözümleri, Microsoft [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)]'un 32 bit ve 64 bit sürümlerinde çalışır.
 
- Yalnızca 64 bit sürümlerinde Microsoft çalıştıracak bir çözüm oluşturuyorsanız, platform hedefi x64 ayarlamalısınız [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] veya [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)], ve çözümünüzü yerel 64 bit API'lerini çağırır. Platform hedefi ayarlarını değiştirme hakkında daha fazla bilgi için bkz. [nasıl yapılır: Projeleri hedef platformlar için yapılandırma](../ide/how-to-configure-projects-to-target-platforms.md).
+ Platform hedefini yalnızca Microsoft [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)]'un 64-bit sürümlerinde çalışacak bir çözüm oluşturuyorsanız ve çözümünüz yerel 64 bit API 'leri çağırdığında x64 olarak ayarlamanız gerekir. Platform hedefi ayarını değiştirme hakkında daha fazla bilgi için bkz [. nasıl yapılır: Projeleri hedef platformları](../ide/how-to-configure-projects-to-target-platforms.md)için yapılandırın.
 
- Platform hedefi x64 ayarlarsanız, çözüm Windows ya da Office 32-bit sürümlerinde çalışmaz. X64 platform hedefi bir 64 bit işlem içinde çalıştırmak için bir çözüm gerektirir.
+ Platform hedefini x64 olarak ayarlarsanız, çözüm 32 bitlik Windows veya Office sürümlerinde çalışmaz. X64 platformu hedefi, çözümün 64 bitlik bir işlemde çalıştırılmasını gerektirir.
 
-## <a name="use-the-clean-command"></a>Temizle komutunu kullanın
- Yerleşik proje dosyalarını Geliştirme bilgisayarınızdan kaldırmak için kullanabileceğiniz **temiz** komutunu **derleme** menüde [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. **Temiz** komut yapı çıkış konumunu tüm dosyaları siler. İçin uygulama düzeyi projelere **temiz** komutu, yapı işlemi tarafından oluşturulan kayıt defteri girdilerini de kaldırır.
+## <a name="use-the-clean-command"></a>Temizle komutunu kullanma
+ Oluşturulan proje dosyalarını geliştirme bilgisayarından kaldırmak için içindeki [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] **derleme** menüsündeki **Temizle** komutunu kullanabilirsiniz. **Clean** komutu derleme çıkış konumundaki tüm dosyaları siler. Uygulama düzeyi projeleri için, **Temizleme** komutu yapı işlemi tarafından oluşturulan kayıt defteri girişlerini de kaldırır.
 
 ## <a name="related-topics"></a>İlgili konular
 
 |Başlık|Açıklama|
 |-----------|-----------------|
-|[Office projelerinde hata ayıklama](../vsto/debugging-office-projects.md)|Office projeleriyle ilgili sorunları gösterir.|
+|[Office projelerinde hata ayıklama](../vsto/debugging-office-projects.md)|Office projelerinde hata ayıklama ile ilgili sorunları gösterir.|
 |[İzlenecek yol: Excel için ilk belge düzeyi özelleştirmeyi oluşturma](../vsto/walkthrough-creating-your-first-document-level-customization-for-excel.md)|Excel için temel bir belge düzeyi özelleştirmeyi oluşturma işlemini gösterir.|
-|[Nasıl yapılır: Bir VSTO devre dışı bırakılmış eklentiyi yeniden etkinleştirme](../vsto/how-to-re-enable-a-vsto-add-in-that-has-been-disabled.md)|Bir VSTO sabit veya geçici devre dışı bırakılmış eklentiyi yeniden etkinleştirmek açıklar.|
-|[Office çözümleri oluşturma ve tasarlama](../vsto/designing-and-creating-office-solutions.md)|Çözümünüzdeki derlemelerin rolü ve Office çözümleri oluşturma hakkında bilgi için bağlantılar sağlar.|
+|[Nasıl yapılır: Devre dışı bırakılmış bir VSTO eklentisini yeniden etkinleştirme](../vsto/how-to-re-enable-a-vsto-add-in-that-has-been-disabled.md)|Kalıcı veya geçici devre dışı bırakılmış bir VSTO eklentisinin yeniden nasıl etkinleştirileceğini açıklar.|
+|[Office çözümleri tasarlama ve oluşturma](../vsto/designing-and-creating-office-solutions.md)|Office çözümleri oluşturma ve çözümünüzde derlemelerin rolü hakkında bilgi için bağlantılar sağlar.|

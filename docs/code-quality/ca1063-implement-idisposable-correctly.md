@@ -16,12 +16,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 932805f938e9d96cd944230fcc8aa82a4710da31
-ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
+ms.openlocfilehash: 837659ca24eb66995626668185500db7bc32bbd7
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66820629"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69547379"
 ---
 # <a name="ca1063-implement-idisposable-correctly"></a>CA1063: IDisposable'ı doğru uygulayın
 
@@ -30,75 +30,75 @@ ms.locfileid: "66820629"
 |TypeName|ImplementIDisposableCorrectly|
 |CheckId|CA1063|
 |Kategori|Microsoft.Design|
-|Yeni Değişiklik|Bölünemez|
+|Yeni Değişiklik|Kırılmamış|
 
 ## <a name="cause"></a>Sebep
 
-<xref:System.IDisposable?displayProperty=nameWithType> Arabirimi düzgün uygulanmadı. Olası nedenler:
+<xref:System.IDisposable?displayProperty=nameWithType> Arabirim doğru bir şekilde uygulanmadı. Bunun olası nedenleri şunlardır:
 
-- <xref:System.IDisposable> sınıfta reimplemented.
+- <xref:System.IDisposable>, sınıfında yeniden uygulanır.
 
-- Sonlandırma reoverridden.
+- `Finalize`yeniden geçersiz kılındı.
 
-- Dispose() is overridden.
+- `Dispose()`geçersiz kılındı.
 
-- Dispose() yöntemini public değil [korumalı](/dotnet/csharp/language-reference/keywords/sealed), veya adlandırılmış **Dispose**.
+- Yöntem ortak, korumalı veya adlandırılmış **Dispose**değil. [](/dotnet/csharp/language-reference/keywords/sealed) `Dispose()`
 
-- Dispose(bool) korumalı, sanal veya korumasız değil.
+- `Dispose(bool)`korunmaz, sanal veya korumasız değildir.
 
-- Korumasız türlerinde Dispose(true) Dispose() çağırmalıdır.
+- Korumasız türlerde, `Dispose()` `Dispose(true)`çağrılmalıdır.
 
-- Mühürlenmemiş türler için her ikisi de Dispose(bool) veya temel sınıf Sonlandırıcı Finalize uygulama çağırmaz.
+- Korumasız türler için, `Finalize` uygulama ya da her ikisini `Dispose(bool)` veya temel sınıf sonlandırıcısını çağırmaz.
 
-Bu düzenleri herhangi birinin ihlali CA1063 uyarı tetikler.
+Bu desenlerden herhangi birinin ihlali, uyarı CA1063 tetikler.
 
-Bildirir ve uygulayan her tür <xref:System.IDisposable> arabirimi sağlamalıdır kendi `protected virtual void Dispose(bool)` yöntemi. `Dispose()` çağırmalıdır `Dispose(true)`, ve sonlandırıcı çağırmalıdır `Dispose(false)`. Bildirir ve uygulayan bir tür oluşturursanız <xref:System.IDisposable> arabirimi tanımlamalıdır `Dispose(bool)` ve adlandırın. Daha fazla bilgi için [(.NET Kılavuzu) yönetilmeyen kaynakları Temizleme](/dotnet/standard/garbage-collection/unmanaged) ve [Dispose deseni](/dotnet/standard/design-guidelines/dispose-pattern).
+<xref:System.IDisposable> Arabirimini bildiren ve uygulayan her korumasız tür kendi `protected virtual void Dispose(bool)` metodunu sağlamalıdır. `Dispose()`çağrılmalıdır ve sonlandırıcının çağırmalıdır `Dispose(false)`. `Dispose(true)` <xref:System.IDisposable> Arabirimini bildiren ve uygulayan korumasız bir tür oluşturursanız, onu tanımlamanız `Dispose(bool)` ve çağırmanız gerekir. Daha fazla bilgi için bkz. [yönetilmeyen kaynakları temizleme (.net Kılavuzu)](/dotnet/standard/garbage-collection/unmanaged) ve [Dispose model](/dotnet/standard/design-guidelines/dispose-pattern).
 
-Varsayılan olarak, bu kural yalnızca dışarıdan görülebilen türler görünür, ancak bu [yapılandırılabilir](#configurability).
+Bu kural varsayılan olarak yalnızca dışarıdan görünür türlere bakar, ancak bu [yapılandırılabilir](#configurability).
 
 ## <a name="rule-description"></a>Kural açıklaması
 
-Tüm <xref:System.IDisposable> türleri uygulayan [Dispose deseni](/dotnet/standard/design-guidelines/dispose-pattern) doğru.
+Tüm <xref:System.IDisposable> türler [Dispose modelini](/dotnet/standard/design-guidelines/dispose-pattern) doğru uygulamalıdır.
 
-## <a name="how-to-fix-violations"></a>İhlaller nasıl düzeltilir?
+## <a name="how-to-fix-violations"></a>İhlalleri çözme
 
-Kesip kodunuzu inceleyebilir ve aşağıdaki çözümlerden birini, bu ihlali düzeltir belirleyin:
+Kodunuzu inceleyin ve aşağıdaki çözümlerden hangisinin bu ihlalin düzelceğini saptayın:
 
-- Kaldırma <xref:System.IDisposable> türünüz uygulanır ve temel sınıfın Dispose uygulamasını geçersiz kılın arabirimleri listesinden.
+- Türü <xref:System.IDisposable> tarafından uygulanan arabirimlerin listesinden kaldırın ve bunun yerine temel sınıf Dispose uygulamasını geçersiz kılın.
 
-- Sonlandırıcıyı, türünden kaldırın, Dispose (bool disposing) yöntemini geçersiz kılın ve sonlandırma mantığını 'disposing ' değerinin false olduğu kod yoluna koyun.
+- Bu sonlandırıcıyı türden kaldırın, Dispose (bool disposing) öğesini geçersiz kılın ve sonlandırma mantığını ' disposing ' değeri false olan kod yoluna koyun.
 
-- Dispose (bool disposing) yöntemini geçersiz kılın ve atma mantığını 'disposing ' değerinin true olduğu kod yoluna koyun.
+- Dispose (bool disposing) öğesini geçersiz kılın ve Dispose mantığını ' disposing ' in true olduğu kod yoluna koyun.
 
-- Dispose() genel olarak bildirildiğinden emin olun ve [korumalı](/dotnet/csharp/language-reference/keywords/sealed).
+- Dispose () public ve [Sealed](/dotnet/csharp/language-reference/keywords/sealed)olarak bildirildiği için emin olun.
 
-- Yeniden adlandırmak için dispose yöntemini **Dispose** ve genel olarak bildirildiğinden emin olun ve [korumalı](/dotnet/csharp/language-reference/keywords/sealed).
+- Dispose yönteminizi **Dispose** olarak yeniden adlandırın ve Public ve [Sealed](/dotnet/csharp/language-reference/keywords/sealed)olarak bildirildiği şekilde ayarlandığından emin olun.
 
-- Emin Dispose(bool) korumalı olarak bildirilir, virtual ve unsealed olun.
+- Dispose (bool) korumalı, sanal ve korumasız olarak bildirildiği için emin olun.
 
-- Dispose() ve böylece onu Dispose(true) yöntemini, değiştirme, daha sonra çağırır <xref:System.GC.SuppressFinalize%2A> geçerli nesne örneğinde (`this`, veya `Me` Visual Basic'te) ve ardından döndürür.
+- Dispose () öğesini, Dispose (true) yöntemini çağıracak şekilde değiştirin, sonra <xref:System.GC.SuppressFinalize%2A> geçerli nesne örneğinde (`this`veya `Me` Visual Basic) çağırır ve sonra döndürür.
 
-- Dispose(false) yöntemini çağıracak ve sonra döndürür, sonlandırıcı değiştirin.
+- Sonlandırıcıyı, Dispose (false) yöntemini çağıracak ve ardından döndüren bir şekilde değiştirin.
 
-- Bildirir ve uygulayan bir tür oluşturursanız <xref:System.IDisposable> emin olun, arabirim uygulamasını <xref:System.IDisposable> Bu bölümde daha önce açıklanan deseni izler.
+- <xref:System.IDisposable> Arabirimini bildiren ve uygulayan korumasız bir tür oluşturursanız, uygulamasının <xref:System.IDisposable> uygulamanın bu bölümde daha önce açıklanan modele uyduğundan emin olun.
 
-## <a name="when-to-suppress-warnings"></a>Uyarılar bastırıldığında
+## <a name="when-to-suppress-warnings"></a>Uyarıların ne zaman bastırılamıyor
 
 Bu kuraldan uyarıyı bastırmayın.
 
-## <a name="configurability"></a>Etkiler ve yapılandırma
+## <a name="configurability"></a>Yapılandırılabilirlik
 
-Bu kuraldan çalıştırıyorsanız [FxCop Çözümleyicileri](install-fxcop-analyzers.md) (ve statik kod analizi üzerinden değil), hangi parçalarının yapılandırabilirsiniz, bu kuralı çalıştırmak için kod tabanı, kendi erişilebilirliği temel. Örneğin, kural yalnızca genel olmayan API yüzeyi karşı çalışması gerektiğini belirtmek için projenizi bir .editorconfig dosyasında şu anahtar-değer çifti ekleyin:
+Bu kuralı [FxCop çözümleyicilerinin](install-fxcop-analyzers.md) (eski analizler olmadan) çalıştırıyorsanız, kod tabanınızın hangi bölümlerinin bu kuralı çalıştırmak için erişilebilirliğini temel alarak yapılandırabilirsiniz. Örneğin, kuralın yalnızca genel olmayan API yüzeyine karşı çalışması gerektiğini belirtmek için, aşağıdaki anahtar-değer çiftini projenizdeki bir. editorconfig dosyasına ekleyin:
 
 ```ini
 dotnet_code_quality.ca1063.api_surface = private, internal
 ```
 
-Bu kategoride (tasarımı), bu seçenek yalnızca bu kural, tüm kuralları veya tüm kuralları yapılandırabilirsiniz. Daha fazla bilgi için [yapılandırma FxCop Çözümleyicileri](configure-fxcop-analyzers.md).
+Bu seçeneği yalnızca bu kural için, tüm kurallar için veya bu kategorideki tüm kurallar (tasarım) için yapılandırabilirsiniz. Daha fazla bilgi için bkz. [FxCop çözümleyicileri yapılandırma](configure-fxcop-analyzers.md).
 
 ## <a name="pseudo-code-example"></a>Sözde kod örneği
 
-Aşağıdaki sözde kod Dispose(bool) yönetilen kullanan bir sınıf içinde nasıl uygulanması gerekir ve yerel kaynaklara genel bir örnek sağlar.
+Aşağıdaki sözde kod, Dispose (bool) ' ın yönetilen ve yerel kaynakları kullanan bir sınıfta nasıl uygulanması gerektiği hakkında genel bir örnek sağlar.
 
 ```csharp
 public class Resource : IDisposable
@@ -146,5 +146,5 @@ public class Resource : IDisposable
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [Dispose deseni (Çerçeve tasarım yönergeleri)](/dotnet/standard/design-guidelines/dispose-pattern)
-- [(.NET Kılavuzu) yönetilmeyen kaynakları temizleme](/dotnet/standard/garbage-collection/unmanaged)
+- [Dispose kriteri (çerçeve tasarım yönergeleri)](/dotnet/standard/design-guidelines/dispose-pattern)
+- [Yönetilmeyen kaynakları temizleme (.NET Kılavuzu)](/dotnet/standard/garbage-collection/unmanaged)

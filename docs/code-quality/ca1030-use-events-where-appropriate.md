@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f9a3d2ef30018c7fe57f1e7d728ba1dd152f56f5
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: ad0659241e75c862b3d82c64a7e8b2ad3ccada21
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66714287"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69547670"
 ---
 # <a name="ca1030-use-events-where-appropriate"></a>CA1030: Uygun yerlerde olayları kullanın
 
@@ -28,39 +28,39 @@ ms.locfileid: "66714287"
 |TypeName|UseEventsWhereAppropriate|
 |CheckId|CA1030|
 |Kategori|Microsoft.Design|
-|Yeni Değişiklik|Bölünemez|
+|Yeni Değişiklik|Kırılmamış|
 
 ## <a name="cause"></a>Sebep
 
-Bir yöntem adı aşağıdakilerden biri ile başlar:
+Bir yöntem adı aşağıdakilerden biriyle başlar:
 
-- Eklenti fiyatı
+- Eklenti
 - RemoveOn
 - Ateş
-- artırma
+- Yükseltmek
 
-Varsayılan olarak, bu kural yalnızca dışarıdan görünen bir yöntem ele alınmakta, ancak bu [yapılandırılabilir](#configurability).
+Bu kural varsayılan olarak yalnızca dışarıdan görünen yöntemlere bakar, ancak bu [yapılandırılabilir](#configurability).
 
 ## <a name="rule-description"></a>Kural açıklaması
 
-Bu kural, normalde olaylar için kullanılan adlara sahip yöntemleri algılar. Olayları gözlemci ya da Yayımla-abone ol tasarım desenini izler; Bunlar, bir nesnede bir durum değişikliği diğer nesnelere iletileceği olduğunda kullanılır. Yanıt olarak açıkça tanımlanmış bir durum değişikliği bir yöntem çağrıldığında, bir olay işleyicisi tarafından yöntemin çağrılması gerekir. Yöntemi direkt olarak çağırmak yerine olayları yükselterek çağıran nesneler.
+Bu kural, normalde olaylar için kullanılan adlara sahip yöntemleri algılar. Olaylar gözlemci veya yayımla-abone ol tasarım modelini izler; bir nesnedeki durum değişikliği diğer nesnelere iletilmesi gerektiğinde kullanılırlar. Bir yöntem açıkça tanımlanmış bir durum değişikliğine yanıt olarak çağrılırsa, yöntemi bir olay işleyicisi tarafından çağrılmalıdır. Yöntemi direkt olarak çağırmak yerine olayları yükselterek çağıran nesneler.
 
-Olayların bazı genel örnekleri burada bir düğmeye tıklanması gibi bir kullanıcı eylemi yürütmek için kod kesiminin neden olan kullanıcı arabirimi uygulamalarında bulunur. .NET olay modeli için kullanıcı arabirimleri sınırlı değildir. Bir veya daha fazla nesneye durum değişikliklerini iletişim kurması gereken herhangi bir yere kullanılmalıdır.
+Bazı yaygın olay örnekleri, bir düğmeye tıklanması gibi bir kullanıcı eyleminin bir kod segmentinin yürütülmesine neden olduğu kullanıcı arabirimi uygulamalarında bulunur. .NET olay modeli, Kullanıcı arabirimleriyle sınırlı değildir. Durum değişikliklerini bir veya daha fazla nesnede iletmelisiniz her yerde kullanılmalıdır.
 
-## <a name="how-to-fix-violations"></a>İhlaller nasıl düzeltilir?
+## <a name="how-to-fix-violations"></a>İhlalleri çözme
 
-Bir nesnenin durumu değiştiğinde yöntemi çağrılırsa, .NET olay modelini kullanmak için tasarım değiştirmeyi göz önünde bulundurun.
+Bir nesnenin durumu değiştiğinde yöntemi çağrılırsa, tasarımı .NET olay modelini kullanacak şekilde değiştirmeyi göz önünde bulundurun.
 
-## <a name="when-to-suppress-warnings"></a>Uyarılar bastırıldığında
+## <a name="when-to-suppress-warnings"></a>Uyarıların ne zaman bastırılamıyor
 
-Yöntemi .NET olay modeliyle çalışmazsa bu kuraldan bir uyarıyı gizler.
+Yöntem .NET olay modeliyle çalışmazsa bu kuraldan bir uyarı gizleyin.
 
-## <a name="configurability"></a>Etkiler ve yapılandırma
+## <a name="configurability"></a>Yapılandırılabilirlik
 
-Bu kuraldan çalıştırıyorsanız [FxCop Çözümleyicileri](install-fxcop-analyzers.md) (ve statik kod analizi üzerinden değil), hangi parçalarının yapılandırabilirsiniz, bu kuralı çalıştırmak için kod tabanı, kendi erişilebilirliği temel. Örneğin, kural yalnızca genel olmayan API yüzeyi karşı çalışması gerektiğini belirtmek için projenizi bir .editorconfig dosyasında şu anahtar-değer çifti ekleyin:
+Bu kuralı [FxCop çözümleyicilerinin](install-fxcop-analyzers.md) (eski analizler olmadan) çalıştırıyorsanız, kod tabanınızın hangi bölümlerinin bu kuralı çalıştırmak için erişilebilirliğini temel alarak yapılandırabilirsiniz. Örneğin, kuralın yalnızca genel olmayan API yüzeyine karşı çalışması gerektiğini belirtmek için, aşağıdaki anahtar-değer çiftini projenizdeki bir. editorconfig dosyasına ekleyin:
 
 ```ini
 dotnet_code_quality.ca1030.api_surface = private, internal
 ```
 
-Bu kategoride (tasarımı), bu seçenek yalnızca bu kural, tüm kuralları veya tüm kuralları yapılandırabilirsiniz. Daha fazla bilgi için [yapılandırma FxCop Çözümleyicileri](configure-fxcop-analyzers.md).
+Bu seçeneği yalnızca bu kural için, tüm kurallar için veya bu kategorideki tüm kurallar (tasarım) için yapılandırabilirsiniz. Daha fazla bilgi için bkz. [FxCop çözümleyicileri yapılandırma](configure-fxcop-analyzers.md).

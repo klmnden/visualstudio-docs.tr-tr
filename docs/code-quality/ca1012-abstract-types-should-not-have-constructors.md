@@ -16,58 +16,58 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: f4023c993a153a64070bfb5e975a6d0f326b65d3
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: d8cc63e95792d64fc82dc3ad4af022dc5e9c292b
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65842457"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69547821"
 ---
 # <a name="ca1012-abstract-types-should-not-have-constructors"></a>CA1012: Soyut türlerin oluşturucuları olmamalıdır
 
 |||
 |-|-|
-|TypeName|AbstractTypesShouldNotHaveConstructors|
+|TypeName|Soyut Cttypesshouldnothaveoluşturucular|
 |CheckId|CA1012|
 |Kategori|Microsoft.Design|
-|Yeni Değişiklik|Bölünemez|
+|Yeni Değişiklik|Kırılmamış|
 
 ## <a name="cause"></a>Sebep
 
-Bir türü soyuttur ve bir oluşturucusu vardır.
+Bir tür soyut ve oluşturucuya sahiptir.
 
-Varsayılan olarak, bu kural yalnızca dışarıdan görülebilen türler görünür, ancak bu [yapılandırılabilir](#configurability).
+Bu kural varsayılan olarak yalnızca dışarıdan görünür türlere bakar, ancak bu [yapılandırılabilir](#configurability).
 
 ## <a name="rule-description"></a>Kural açıklaması
 
-Soyut türler üzerindeki kurucular yalnızca türetilen türler tarafından çağrılabilir. Bir türün örneklerinin genel oluşturucular oluşturabilir ve bir soyut tür örneği oluşturulamıyor çünkü ortak yapıcıya sahip, soyut bir tür yanlış şekilde tasarlanmıştır.
+Soyut türler üzerindeki kurucular yalnızca türetilen türler tarafından çağrılabilir. Ortak oluşturucular bir türün örneklerini oluşturduğundan ve soyut bir türün örneklerini oluşturamadığı için, ortak Oluşturucusu olan bir soyut tür yanlış tasarlanmıştır.
 
-## <a name="how-to-fix-violations"></a>İhlaller nasıl düzeltilir?
+## <a name="how-to-fix-violations"></a>İhlalleri çözme
 
-Bu kural ihlalini düzeltmek için korumalı Oluşturucu olun veya türü soyut olarak bildirmeyin.
+Bu kural ihlalini onarmak için, oluşturucuyu korumalı yapın veya türü soyut olarak bildirmeyin.
 
-## <a name="when-to-suppress-warnings"></a>Uyarılar bastırıldığında
+## <a name="when-to-suppress-warnings"></a>Uyarıların ne zaman bastırılamıyor
 
-Bu kuraldan uyarıyı bastırmayın. Soyut tür, genel bir oluşturucusu vardır.
+Bu kuraldan uyarıyı bastırmayın. Soyut türün ortak bir Oluşturucusu vardır.
 
-## <a name="configurability"></a>Etkiler ve yapılandırma
+## <a name="configurability"></a>Yapılandırılabilirlik
 
-Bu kuraldan çalıştırıyorsanız [FxCop Çözümleyicileri](install-fxcop-analyzers.md) (ve statik kod analizi üzerinden değil), hangi parçalarının yapılandırabilirsiniz, bu kuralı çalıştırmak için kod tabanı, kendi erişilebilirliği temel. Örneğin, kural yalnızca genel olmayan API yüzeyi karşı çalışması gerektiğini belirtmek için projenizi bir .editorconfig dosyasında şu anahtar-değer çifti ekleyin:
+Bu kuralı [FxCop çözümleyicilerinin](install-fxcop-analyzers.md) (eski analizler olmadan) çalıştırıyorsanız, kod tabanınızın hangi bölümlerinin bu kuralı çalıştırmak için erişilebilirliğini temel alarak yapılandırabilirsiniz. Örneğin, kuralın yalnızca genel olmayan API yüzeyine karşı çalışması gerektiğini belirtmek için, aşağıdaki anahtar-değer çiftini projenizdeki bir. editorconfig dosyasına ekleyin:
 
 ```ini
 dotnet_code_quality.ca1012.api_surface = private, internal
 ```
 
-Bu kategoride (tasarımı), bu seçenek yalnızca bu kural, tüm kuralları veya tüm kuralları yapılandırabilirsiniz. Daha fazla bilgi için [yapılandırma FxCop Çözümleyicileri](configure-fxcop-analyzers.md).
+Bu seçeneği yalnızca bu kural için, tüm kurallar için veya bu kategorideki tüm kurallar (tasarım) için yapılandırabilirsiniz. Daha fazla bilgi için bkz. [FxCop çözümleyicileri yapılandırma](configure-fxcop-analyzers.md).
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki kod parçacığını bu kuralı ihlal soyut bir tür içeriyor.
+Aşağıdaki kod parçacığı, bu kuralı ihlal eden soyut bir tür içeriyor.
 
 [!code-vb[FxCop.Design.AbstractTypeBad#1](../code-quality/codesnippet/VisualBasic/ca1012-abstract-types-should-not-have-constructors_1.vb)]
 [!code-csharp[FxCop.Design.AbstractTypeBad#1](../code-quality/codesnippet/CSharp/ca1012-abstract-types-should-not-have-constructors_1.cs)]
 
-Aşağıdaki kod parçacığı oluşturucudan erişilebilirliğini değiştirerek önceki ihlali düzeltmeleri `public` için `protected`.
+Aşağıdaki kod parçacığı, oluşturucusunun `public` erişilebilirliğini ile `protected`değiştirerek önceki ihlalin konumunu düzeltir.
 
 [!code-csharp[FxCop.Design.AbstractTypeGood#1](../code-quality/codesnippet/CSharp/ca1012-abstract-types-should-not-have-constructors_2.cs)]
 [!code-vb[FxCop.Design.AbstractTypeGood#1](../code-quality/codesnippet/VisualBasic/ca1012-abstract-types-should-not-have-constructors_2.vb)]

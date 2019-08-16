@@ -1,7 +1,7 @@
 ---
-title: Visual Studio'da Office çözümleri mimarisi
+title: Visual Studio 'da Office çözümlerinin mimarisi
 titleSuffix: ''
-ms.date: 02/02/2017
+ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,55 +15,54 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 187548a8510b3075c476a1309d1897eb60a647c2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0842cab03ba92568b0b672e2b8d257af4b6aa490
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62939930"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69551868"
 ---
-# <a name="architecture-of-office-solutions-in-visual-studio"></a>Visual Studio'da Office çözümleri mimarisi
-  Bu bölümdeki konular, Visual Studio'da Office geliştirme araçları kullanılarak oluşturulmuş çözümleri nasıl çalıştığı hakkında bilgi sağlar.
+# <a name="architecture-of-office-solutions-in-visual-studio"></a>Visual Studio 'da Office çözümlerinin mimarisi
+  Bu bölümdeki konularda, Visual Studio 'da Office geliştirici araçları kullanılarak oluşturulan çözümlerin nasıl oluşturulduğu hakkında bilgi sağlanmaktadır.
 
-> [!NOTE]
-> Office deneyiminiz boyunca genişleten çözümleri geliştirme yapmakla mı ilgileniyorsunuz [birden çok platform](https://dev.office.com/add-in-availability)? Yeni kontrol [Office eklentilerini modeli](https://dev.office.com/docs/add-ins/overview/office-add-ins). Office eklentileri, VSTO eklentileri ve çözümlerle karşılaştırıldığında küçük ayak izine sahip ve neredeyse tüm web teknolojisi, HTML5, JavaScript, CSS3 ve XML gibi programlama kullanarak oluşturabilirsiniz.
+[!include[Add-ins note](includes/addinsnote.md)]
 
 ## <a name="in-this-section"></a>Bu bölümde
 
-[Belge düzeyi özelleştirmeler mimarisi](../vsto/architecture-of-document-level-customizations.md)
+[Belge düzeyi özelleştirmelerinin mimarisi](../vsto/architecture-of-document-level-customizations.md)
 
-Belge düzeyi özelleştirmelerinin ve nasıl, farklı Geliştirici ve son kullanıcı tarafından algılanır açıklar.
+Belge düzeyi özelleştirmelerinin nasıl çalıştığını ve geliştirici ve son kullanıcı tarafından nasıl farklı bir şekilde nasıl algılanır açıklar.
 
 [VSTO Eklentileri Mimarisi](../vsto/architecture-of-vsto-add-ins.md)
 
-VSTO eklentileri bileşenlerini ve uygulamalar tarafından nasıl yüklendiğini açıklar.
+VSTO eklentilerinin bileşenlerini ve uygulamalar tarafından nasıl yüklendiğini açıklar.
 
-[Office çalışma zamanı genel bakış için Visual Studio Araçları](../vsto/visual-studio-tools-for-office-runtime-overview.md)
+[Office çalışma zamanına genel bakış için Visual Studio Araçları](../vsto/visual-studio-tools-for-office-runtime-overview.md)
 
-Office çözümleri için kullanılan çalışma zamanı farklı sürümlerini açıklar.
+Office çözümleri için kullanılan çalışma zamanının farklı sürümlerini açıklar.
 
 [VSTO eklentileri için kayıt defteri girişleri](../vsto/registry-entries-for-vsto-add-ins.md)
 
-Gerekli kayıt defteri anahtarlarını bulmak ve VSTO Eklentileri yüklemek için son kullanıcı bilgisayarlarında açıklar.
+VSTO Eklentilerini bulup yüklemek için son kullanıcı bilgisayarlarında gereken kayıt defteri anahtarlarını açıklar.
 
 [Özel belge özelliklerine genel bakış](../vsto/custom-document-properties-overview.md)
 
-Belge düzeyi özelleştirmeleri özel belge özelliklerinin nasıl çalıştığını açıklar.
+Belge düzeyi özelleştirmelerde özel belge özelliklerinin nasıl çalıştığını açıklar.
 
 ## <a name="related-sections"></a>İlgili bölümler
 
-[Office çözümleri geliştirmesine genel bakış &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)
+[Office çözümleri geliştirmesine genel &#40;bakış VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)
 
-İş çözümleri geliştirmek için Microsoft Office bir platformu olarak kullanmaya giriş bilgileri sağlar.
+İş çözümleri geliştirmeye yönelik bir platform olarak Microsoft Office kullanımı için bir giriş sağlar.
 
-[Başlama &#40;Visual Studio'da Office geliştirme&#41;](../vsto/getting-started-office-development-in-visual-studio.md)
+[Visual Studio &#40;'da Office geliştirme ile çalışmaya başlama&#41;](../vsto/getting-started-office-development-in-visual-studio.md)
 
-Office çözümleri, çözümler oluşturmaya başlamak nasıl ve ne Visual Studio Office Geliştirici Araçları'nın önceki sürümlerinde bu yana değişti oluşturmak için bir geliştirme bilgisayarı yapılandırma hakkında bilgi için bağlantılar sağlar.
+Office çözümleri oluşturmak için bir geliştirme bilgisayarı yapılandırma, çözüm oluşturmaya başlama ve Visual Studio 'da Office Geliştirici araçlarının önceki sürümlerinden bu yana nelerin değiştiğini gösteren bilgilere bağlantılar sağlar.
 
-[Office çözümleri oluşturma ve tasarlama](../vsto/designing-and-creating-office-solutions.md)
+[Office çözümleri tasarlama ve oluşturma](../vsto/designing-and-creating-office-solutions.md)
 
-Office çözümleri oluşturma hakkında daha fazla bilgi için bağlantılar sağlar.
+Office çözümleri oluşturma hakkında bilgi için bağlantılar sağlar.
 
-[Genel başvuru &#40;Visual Studio'da Office geliştirme&#41;](../vsto/general-reference-office-development-in-visual-studio.md)
+[Visual Studio &#40;'da Genel başvuru Office geliştirme&#41;](../vsto/general-reference-office-development-in-visual-studio.md)
 
-Office projeleri ve API'ler için Office projeleri, uygulama ve dağıtım bildirimlerini arabirimi öğelerinde kullanıcı hakkındaki bilgilere bağlantılar sağlar [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)].
+Office projelerindeki Kullanıcı arabirimi öğeleri, Office projeleri için uygulama ve dağıtım bildirimleri ve içindeki [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]API 'ler hakkında bilgi bağlantıları sağlar.

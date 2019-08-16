@@ -11,12 +11,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 3364010ad9470d4431e6407e40b6a6b1cc96476a
-ms.sourcegitcommit: 0f5f7955076238742f2071d286ad8e896f3a6cad
+ms.openlocfilehash: 2ceedf18b936c0b1e8553ceb3bb1fdbc75035dfa
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "68483727"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69551446"
 ---
 # <a name="common-quick-actions"></a>Yaygın Hızlı Eylemler
 
@@ -159,7 +159,7 @@ public MyMethod()
 
 ### <a name="remove-type-from-default-value-expression"></a>Türü varsayılan değer ifadesinden kaldır
 
-Bu hızlı eylem değer türünü varsayılan değer ifadesinden kaldırır ve derleyici ifadenin türünü çıkardığında [varsayılan değişmez](/dotnet/csharp/programming-guide/statements-expressions-operators/default-value-expressions#default-literal-and-type-inference) değeri kullanır.
+Bu hızlı eylem değer türünü varsayılan değer ifadesinden kaldırır ve derleyici ifadenin türünü çıkardığında [varsayılan değişmez](/dotnet/csharp/language-reference/operators/default#default-literal) değeri kullanır.
 
 ```csharp
 // Before

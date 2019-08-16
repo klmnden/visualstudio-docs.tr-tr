@@ -1,6 +1,6 @@
 ---
-title: 'Nasıl yapılır: Şeritte Geliştirici sekmesini gösterme'
-ms.date: 02/02/2017
+title: 'Nasıl yapılır: Şeritte Geliştirici sekmesini göster'
+ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -13,56 +13,58 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6a9a11f42acae44c441aca8cb06a1a363fea5a73
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 7b6641cca4ef2288452b2f6959482b311a5b07a4
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63418851"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69551779"
 ---
-# <a name="how-to-show-the-developer-tab-on-the-ribbon"></a>Nasıl yapılır: Şeritte Geliştirici sekmesini gösterme
-  Erişim için **Geliştirici** sekmesini bir Office uygulamasının Şerit üzerinde varsayılan olarak görünmez sekmenin gösterileceği şekilde yapılandırmanız gerekir. Örneğin, eklemek istediğiniz sekmenin Göster gerekir bir <xref:Microsoft.Office.Tools.Word.GroupContentControl> Word için belge düzeyi özelleştirmeyi için.
+# <a name="how-to-show-the-developer-tab-on-the-ribbon"></a>Nasıl yapılır: Şeritte Geliştirici sekmesini göster
+  Bir Office uygulamasının şeridinde **Geliştirici** sekmesine erişmek için, varsayılan olarak görünmediğinden bu sekmeyi gösterecek şekilde yapılandırmanız gerekir. Örneğin, Word için belge düzeyi özelleştirmeye eklemek <xref:Microsoft.Office.Tools.Word.GroupContentControl> istiyorsanız bu sekmeyi göstermeli.
 
 > [!NOTE]
-> Bu kılavuz, Office 2010 veya yalnızca sonraki uygulamalar için geçerlidir. Bu sekmeyi 2007 Microsoft Office System'da göstermek istiyorsanız, bu konunun aşağıdaki sürümü görmek [nasıl yapılır: Şeritte Geliştirici sekmesini gösterme](https://web.archive.org/web/20140303033431/msdn.microsoft.com/library/bb608625(v=vs.90).aspx
-).
+> Bu kılavuz yalnızca Office 2010 veya üzeri uygulamalar için geçerlidir. Bu sekmeyi 2007 Microsoft Office sisteminde göstermek istiyorsanız, bu konunun [aşağıdaki sürümüne bakın: Şeritte](https://web.archive.org/web/20140303033431/msdn.microsoft.com/library/bb608625(v=vs.90).aspx
+)Geliştirici sekmesini görüntüleyin.
 
  [!INCLUDE[appliesto_ribbon](../vsto/includes/appliesto-ribbon-md.md)]
 
 > [!NOTE]
-> Erişim yok bir **Geliştirici** sekmesi.
+> Access bir **Geliştirici** sekmesine sahip değildir.
+
+[!include[Add-ins note](includes/addinsnote.md)]
 
 ## <a name="to-show-the-developer-tab"></a>Geliştirici sekmesini göstermek için
 
-1. Bu konu tarafından desteklenen Office uygulamalarından herhangi birini başlatın. Bkz: **geçerlidir:** bu konunun önceki kısımlarında Not.
+1. Bu konu tarafından desteklenen Office uygulamalarından herhangi birini başlatın. Bu konunun önceki kısımlarında bulunan **:** Note bölümüne bakın.
 
-2. Üzerinde **dosya** sekmesini, **seçenekleri** düğmesi.
+2. **Dosya** sekmesinde **Seçenekler** düğmesini seçin.
 
-     Aşağıdaki şekil gösterir **dosya** sekmesi ve **seçenekleri** Office 2010'daki düğmesi.
+     Aşağıdaki şekilde Office 2010 ' deki **Dosya** sekmesi ve **Seçenekler** düğmesi gösterilmektedir.
 
-     ![Dosya seçme, Outlook 2010'daki Seçenekler](../vsto/media/vsto-office-file-tab.png "dosyası seçme, Outlook 2010'da seçenekleri")
+     ![Dosya seçme, Outlook 2010 seçenekleri](../vsto/media/vsto-office-file-tab.png "Dosya seçme, Outlook 2010 seçenekleri")
 
-     Aşağıdaki şekil gösterir **dosya** Office 2013'te sekmesi.
+     Aşağıdaki şekilde Office 2013 ' deki **Dosya** sekmesi gösterilmektedir.
 
-     ![Outlook 2013'te dosya sekmesi](../vsto/media/vsto-office2013-filetab.png "Outlook 2013'te dosya sekmesi")
+     ![Outlook 2013 dosya sekmesi](../vsto/media/vsto-office2013-filetab.png "Outlook 2013 dosya sekmesi")
 
-     Aşağıdaki şekil gösterir **seçenekleri** Office 2013'teki düğmesi.
+     Aşağıdaki şekilde Office 2013 ' deki **Seçenekler** düğmesi gösterilmektedir.
 
-     ![Outlook 2013 Preview'teki Seçenekler düğmesi](../vsto/media/vsto-office2013-optionsbutton.png "Outlook 2013 Preview'teki Seçenekler düğmesi")
+     ![Outlook 2013 Preview 'Daki Seçenekler düğmesi](../vsto/media/vsto-office2013-optionsbutton.png "Outlook 2013 Preview 'Daki Seçenekler düğmesi")
 
-3. İçinde _ApplicationName_**seçenekleri** iletişim kutusunda **Şeridi Özelleştir** düğmesi.
+3. _ApplicationName_**seçenekleri** Iletişim kutusunda, **Şeridi Özelleştir** düğmesini seçin.
 
-     Aşağıdaki şekil gösterir **seçenekleri** iletişim kutusu ve **Şeridi Özelleştir** Excel 2010'daki düğmesi. Bu düğmenin konumu bu konunun üstündeki "Aşağıdakilere Uygulanır" bölümünde listelenen tüm diğer uygulamalarda benzerdir.
+     Aşağıdaki şekilde, Excel 2010 ' de **Seçenekler** iletişim kutusu ve **Şeridi Özelleştir** düğmesi gösterilmektedir. Bu düğmenin konumu, bu konunun en üstündeki "uygulandığı öğe" bölümünde listelenen tüm diğer uygulamalarda benzerdir.
 
      ![Şeridi Özelleştir düğmesi](../vsto/media/vsto-office2010-customizeribbonbutton.png "Şeridi Özelleştir düğmesi")
 
-4. Ana sekmeler listesinde seçin **Geliştirici** onay kutusu.
+4. Ana sekmeler listesinde, **Geliştirici** onay kutusunu seçin.
 
-     Aşağıdaki şekil gösterir **Geliştirici** Word 2010 onay kutusuna ve [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)]. Bu onay kutusunun konumu bu konunun üstündeki "Aşağıdakilere Uygulanır" bölümünde listelenen tüm diğer uygulamalarda benzerdir.
+     Aşağıdaki şekilde, Word 2010 ve [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)]içindeki Geliştirici onay kutusu gösterilmektedir. Bu onay kutusunun konumu, bu konunun en üstündeki "uygulandığı öğe" bölümünde listelenen tüm diğer uygulamalarda benzerdir.
 
-     ![Word Seçenekleri iletişim kutusunda Geliştirici onay kutusu](../vsto/media/vsto-office2010-developercheckbox.png "Geliştirici onay kutusuna Word Seçenekleri iletişim kutusu")
+     ![Word Seçenekleri iletişim kutusunda Geliştirici onay kutusu](../vsto/media/vsto-office2010-developercheckbox.png "Word Seçenekleri iletişim kutusunda Geliştirici onay kutusu")
 
-5. Seçin **Tamam** kapatmak için düğme **seçenekleri** iletişim kutusu.
+5. **Seçenekler** iletişim kutusunu kapatmak için **Tamam** düğmesini seçin.
 
 ## <a name="see-also"></a>Ayrıca bkz.
-- [Office kullanıcı arabirimini özelleştirme](../vsto/office-ui-customization.md)
+- [Office UI özelleştirmesi](../vsto/office-ui-customization.md)

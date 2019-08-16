@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: ca9c4681cc19917ef965a4c8577e9559d71dd4be
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: 2a793f0a359cadc58c262861ee0495f92188d0b7
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65841961"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69547185"
 ---
 # <a name="ca1715-identifiers-should-have-correct-prefix"></a>CA1715: Tanımlayıcılar doğru ön eke sahip olmalıdır
 
@@ -31,36 +31,36 @@ ms.locfileid: "65841961"
 |-|-|
 |TypeName|IdentifiersShouldHaveCorrectPrefix|
 |CheckId|CA1715|
-|Kategori|Microsoft.Naming|
-|Yeni Değişiklik|-Arabirimlerde tetiklendiğinde kesiliyor.<br /><br /> Bölünemez - genel tür parametrelerinde oluştuğunda.|
+|Kategori|Microsoft. Naming|
+|Yeni Değişiklik|Arabirimler üzerinde harekete geçirildiğinde.<br /><br /> Genel tür parametrelerinde ortaya çıkarılmayan-bölünmez.|
 
 ## <a name="cause"></a>Sebep
 
-Bir arabirimin adını bir büyük harf 'ı' başlamıyor.
+Bir arabirimin adı büyük harfle ' ı ' ile başlamıyor.
 
 -veya-
 
-Adı bir [genel tür parametresi](/dotnet/csharp/programming-guide/generics/generic-type-parameters) bir türün veya yöntemin bir büyük harf ile 'T başlamıyor '.
+Bir tür veya yöntemde [genel tür parametresinin](/dotnet/csharp/programming-guide/generics/generic-type-parameters) adı, büyük harfle başlamamış.
 
-Varsayılan olarak, bu kural yalnızca dışarıdan görünebilir arabirimler, türleri ve yöntemleri görünüyor, ancak bu [yapılandırılabilir](#configurability).
+Bu kural varsayılan olarak yalnızca dışarıdan görünen arabirimlere, türlere ve yöntemlere bakar, ancak bu [yapılandırılabilir](#configurability).
 
 ## <a name="rule-description"></a>Kural açıklaması
 
-Kural gereği, programlama öğelerinin adlarını belirli bir önek ile başlayın.
+Kurala göre, belirli programlama öğelerinin adları belirli bir önekle başlar.
 
-Arabirim adına 'I' başka bir büyük harf tarafından izlenen büyük harf ile başlamalıdır. Bu kural ihlalleri için arabirim adına 'MyInterface' ve 'IsolatedInterface' gibi bildirir.
+Arabirim adları büyük bir ' I ' ve ardından başka bir büyük harfle başlamalıdır. Bu kural, ' MyInterface ' ve ' IsolatedInterface ' gibi arabirim adları için ihlalleri raporlar.
 
-Genel tür parametresi adlarına başlamalıdır bir büyük harf ile 'T' ve isteğe bağlı olarak başka bir büyük harf tarafından izlenebilir. Bu kural ihlalleri için 'V' ve 'Type' gibi genel tür parametre adları bildirir.
+Genel tür parametre adları, büyük harfle başlamalıdır ve isteğe bağlı olarak başka bir büyük harf gelmelidir. Bu kural, ' V ' ve ' Type ' gibi genel tür parametresi adları için ihlalleri raporlar.
 
-Adlandırma kuralları, ortak dil çalışma zamanını hedefleyen kitaplıkları için genel bir bakış sağlar. Bu, yeni yazılım kitaplıkları için gereklidir ve kitaplık geliştirme yönetilen kodda uzmanlığına sahip olan kişi tarafından geliştirilmiştir müşterilerinizin size olan güvenini artırır öğrenme eğrisini azaltır.
+Adlandırma kuralları, ortak dil çalışma zamanını hedefleyen kitaplıklar için ortak bir görünüm sağlar. Bu, yeni yazılım kitaplıkları için gerekli olan öğrenme eğrisini azaltır ve müşterinin, kitaplığın yönetilen kod geliştirme konusunda uzmanlığa sahip olan birisi tarafından geliştirildiğini arttırır.
 
-## <a name="configurability"></a>Etkiler ve yapılandırma
+## <a name="configurability"></a>Yapılandırılabilirlik
 
-Bu kuraldan çalıştırıyorsanız [FxCop Çözümleyicileri](install-fxcop-analyzers.md) (ve statik kod analizi üzerinden değil), bu kural, kodun hangi kısımlarının çözümler yapılandırabilirsiniz. Daha fazla bilgi için [yapılandırma FxCop Çözümleyicileri](configure-fxcop-analyzers.md).
+Bu kuralı [FxCop çözümleyicilerinin](install-fxcop-analyzers.md) (eski analizler olmadan) çalıştırıyorsanız, kodunuzun hangi bölümlerinin bu kurala göre analiz edilebilir. Daha fazla bilgi için bkz. [FxCop çözümleyicileri yapılandırma](configure-fxcop-analyzers.md).
 
-### <a name="single-character-type-parameters"></a>Tek karakterli tür parametreleri
+### <a name="single-character-type-parameters"></a>Tek karakterlik tür parametreleri
 
-Bu kuralın tek karakterli tür parametreleri hariç gerekip gerekmediğini yapılandırabilirsiniz. Örneğin, belirtmek için bu kural *barındırmamalıdır* tek karakterli tür parametreleri çözümlemek, projenize bir .editorconfig dosyasında şu anahtar-değer çiftleri birini ekleyin:
+Tek karakterli tür parametrelerinin bu kuraldan dışlanıp dışlanmayacağını yapılandırabilirsiniz. Örneğin, bu kuralın tek karakterlik tür parametrelerini çözümlemenin *gerekip gerekmediğini* belirtmek için, aşağıdaki anahtar-değer çiftlerinden birini projenizdeki bir. editorconfig dosyasına ekleyin:
 
 ```ini
 # Package version 2.9.0 and later
@@ -71,54 +71,54 @@ dotnet_code_quality.CA2007.allow_single_letter_type_parameters = true
 ```
 
 > [!NOTE]
-> Bu kural adlı bir tür parametresi için hiçbir zaman tetikler `T`, örneğin, `Collection<T>`.
+> Bu kural, örneğin, `T` `Collection<T>`adlı bir tür parametresi için hiçbir şekilde tetiklenmez.
 
 ### <a name="api-surface"></a>API yüzeyi
 
-Hangi parçalarının yapılandırabilirsiniz, bu kuralı çalıştırmak için kod tabanı, kendi erişilebilirliği temel. Örneğin, kural yalnızca genel olmayan API yüzeyi karşı çalışması gerektiğini belirtmek için projenizi bir .editorconfig dosyasında şu anahtar-değer çifti ekleyin:
+Kod tabanınızın hangi bölümlerinin bu kuralı çalıştırmak için erişilebilirliğini temel alarak yapılandırabilirsiniz. Örneğin, kuralın yalnızca genel olmayan API yüzeyine karşı çalışması gerektiğini belirtmek için, aşağıdaki anahtar-değer çiftini projenizdeki bir. editorconfig dosyasına ekleyin:
 
 ```ini
 dotnet_code_quality.ca1715.api_surface = private, internal
 ```
 
-Bu kategoride (adlandırma), bu seçenek yalnızca bu kural, tüm kuralları veya tüm kuralları yapılandırabilirsiniz.
+Bu seçeneği yalnızca bu kural için, tüm kurallar için veya bu kategorideki tüm kurallar (adlandırma) için yapılandırabilirsiniz.
 
-## <a name="how-to-fix-violations"></a>İhlaller nasıl düzeltilir?
+## <a name="how-to-fix-violations"></a>İhlalleri çözme
 
-Tanımlayıcı doğru önek yeniden adlandırın.
+Tanımlayıcıyı doğru önek olacak şekilde yeniden adlandırın.
 
-## <a name="when-to-suppress-warnings"></a>Uyarılar bastırıldığında
+## <a name="when-to-suppress-warnings"></a>Uyarıların ne zaman bastırılamıyor
 
 Bu kuraldan uyarıyı bastırmayın.
 
-## <a name="interface-naming-example"></a>Adlandırma örnek arabirimi
+## <a name="interface-naming-example"></a>Arabirim adlandırma örneği
 
-Aşağıdaki kod parçacığı yanlış adlandırılmış bir arabirimi gösterir:
+Aşağıdaki kod parçacığında yanlış adlı bir arabirim gösterilmektedir:
 
 [!code-cpp[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix#1](../code-quality/codesnippet/CPP/ca1715-identifiers-should-have-correct-prefix_1.cpp)]
 [!code-vb[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix#1](../code-quality/codesnippet/VisualBasic/ca1715-identifiers-should-have-correct-prefix_1.vb)]
 [!code-csharp[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix#1](../code-quality/codesnippet/CSharp/ca1715-identifiers-should-have-correct-prefix_1.cs)]
 
-Aşağıdaki kod parçacığı, arabirimi 'I' koyarak önceki ihlali giderir:
+Aşağıdaki kod parçacığı, ' I ' arabirimine önek ekleyerek önceki ihlalin düzeltiğine sahiptir:
 
 [!code-csharp[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix2#1](../code-quality/codesnippet/CSharp/ca1715-identifiers-should-have-correct-prefix_2.cs)]
 [!code-cpp[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix2#1](../code-quality/codesnippet/CPP/ca1715-identifiers-should-have-correct-prefix_2.cpp)]
 [!code-vb[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix2#1](../code-quality/codesnippet/VisualBasic/ca1715-identifiers-should-have-correct-prefix_2.vb)]
 
-## <a name="type-parameter-naming-example"></a>Tür parametresi adlandırma örneği
+## <a name="type-parameter-naming-example"></a>Tür parametre adlandırma örneği
 
-Aşağıdaki kod parçacığı bir yanlış adlandırılmış genel tür parametresi gösterilmektedir:
+Aşağıdaki kod parçacığında yanlış adlandırılan genel tür parametresi gösterilmektedir:
 
 [!code-cpp[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix3#1](../code-quality/codesnippet/CPP/ca1715-identifiers-should-have-correct-prefix_3.cpp)]
 [!code-vb[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix3#1](../code-quality/codesnippet/VisualBasic/ca1715-identifiers-should-have-correct-prefix_3.vb)]
 [!code-csharp[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix3#1](../code-quality/codesnippet/CSharp/ca1715-identifiers-should-have-correct-prefix_3.cs)]
 
-Aşağıdaki kod parçacığı önceki ihlali 'T genel tür parametre ekleyerek düzeltmeleri ':
+Aşağıdaki kod parçacığı, genel tür parametresine 'T ' i önek olarak ekleyerek önceki ihlalin düzeltir:
 
 [!code-cpp[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix4#1](../code-quality/codesnippet/CPP/ca1715-identifiers-should-have-correct-prefix_4.cpp)]
 [!code-csharp[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix4#1](../code-quality/codesnippet/CSharp/ca1715-identifiers-should-have-correct-prefix_4.cs)]
 [!code-vb[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix4#1](../code-quality/codesnippet/VisualBasic/ca1715-identifiers-should-have-correct-prefix_4.vb)]
 
-## <a name="related-rules"></a>İlgili kuralları
+## <a name="related-rules"></a>İlgili kurallar
 
-- [CA1722: Tanımlayıcıların önekleri yanlış olmamalıdır](../code-quality/ca1722-identifiers-should-not-have-incorrect-prefix.md)
+- [CA1722 Tanımlayıcılar yanlış önek içermemelidir](../code-quality/ca1722-identifiers-should-not-have-incorrect-prefix.md)

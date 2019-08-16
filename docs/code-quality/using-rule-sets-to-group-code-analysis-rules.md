@@ -11,26 +11,26 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c95b442835289265d197b6806c6d87fa051f2c1b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: bae627e08faed01ab0efc8e64373ff86ed5c877e
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62825090"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69548030"
 ---
-# <a name="use-rule-sets-to-group-code-analysis-rules"></a>Kural Kod Analizi kurallarını gruplandırmak için kümeleri kullanma
+# <a name="use-rule-sets-to-group-code-analysis-rules"></a>Kod analizi kurallarını gruplandırmak için kural kümeleri kullanma
 
-Visual Studio'da Kod Analizi yapılandırdığınızda, yerleşik bir listeden seçebilirsiniz *kural kümeleri*. Bir kural kümesi, hedeflenen sorunlar ve bu proje için belirli koşullar belirleyen kod analizi kuralları gruplandırmasıdır. Örneğin, kod genel kullanıma açık API'leri taramak için tasarlanmış bir kural kümesi uygulayabilirsiniz. Tüm kullanılabilir kurallarını içeren bir kural kümesi de uygulayabilirsiniz.
+Visual Studio 'da Kod analizini yapılandırdığınızda, yerleşik *kural kümeleri*listesinden seçim yapabilirsiniz. Kural kümesi, hedeflenen sorunları ve bu proje için belirli koşulları belirleyen kod analizi kurallarının bir gruplandırmasıdır. Örneğin, genel kullanıma açık API 'Ler için kodu taramak üzere tasarlanan bir kural kümesi uygulayabilirsiniz. Tüm kullanılabilir kuralları içeren bir kural kümesi de uygulayabilirsiniz.
 
-Bir kural uyarılar veya hatalar olarak görüntülenecek kümesi ekleyerek veya silerek kural veya kural önem dereceleri değiştirerek özelleştirebilirsiniz **hata listesi**. Özel kural kümeleri belirli geliştirme ortamınızı gereksinimini karşılayabilir. Bir kural kümesi özelleştirdiğinizde, kural kümesi Düzenleyici'sini arama ve filtreleme süreçte yardımcı olacak araçlar sağlar.
+Kural ekleyerek veya silerek veya **hata listesi**kural kümesi özellikleri ' ni uyarı veya hata olarak görünecek şekilde değiştirerek bir kural kümesini özelleştirebilirsiniz. Özelleştirilmiş kural kümeleri, belirli bir geliştirme ortamınız gereksinimini karşılayamıyor. Bir kural kümesini özelleştirdiğinizde, kural kümesi Düzenleyicisi, işlem sırasında size yardımcı olmak için arama ve filtreleme araçları sağlar.
 
-Kural kümeleri için kullanılabilir [yönetilen kodu statik analizini](how-to-configure-code-analysis-for-a-managed-code-project.md), [C++ Kod Analizi](using-rule-sets-to-specify-the-cpp-rules-to-run.md), ve [Roslyn Çözümleyicileri](analyzer-rule-sets.md).
+Kural kümeleri, [yönetilen kod analizi](analyzer-rule-sets.md), [yönetilen kodun eski Analizi](how-to-configure-code-analysis-for-a-managed-code-project.md)ve [ C++ kod analizi](using-rule-sets-to-specify-the-cpp-rules-to-run.md)için kullanılabilir.
 
 ## <a name="rule-set-format"></a>Kural kümesi biçimi
 
-XML biçiminde kural kümesi belirtilen bir *.ruleset* dosya. Kuralları, bir kimliği oluşur ve bir *eylem*, çözümleyici kimliği ve ad alanı dosyasındaki göre gruplandırılır.
+Bir kural kümesi bir *. RuleSet* dosyasında XML biçiminde belirtilir. Bir KIMLIK ve bir *eylemden*oluşan kurallar, DOSYADAKI çözümleyici kimliğine ve ad alanına göre gruplandırılır.
 
-İçeriği bir *.ruleset* dosya bu XML'e benzer görünür:
+Bir *. RuleSet* dosyasının IÇERIĞI bu XML 'e benzer şekilde görünür:
 
 ```xml
 <RuleSet Name="Rules for Hello World project" Description="These rules focus on critical issues for the Hello World app." ToolsVersion="10.0">
@@ -54,11 +54,11 @@ XML biçiminde kural kümesi belirtilen bir *.ruleset* dosya. Kuralları, bir ki
 ```
 
 > [!TIP]
-> Kolaydır [bir kural kümesini Düzenle](../code-quality/working-in-the-code-analysis-rule-set-editor.md) grafik **kural kümesi Düzenleyicisi** el ile daha.
+> Grafik **kural kümesi düzenleyicisinde** el ile olandan [bir kural kümesini düzenlemek](../code-quality/working-in-the-code-analysis-rule-set-editor.md) daha kolay.
 
-## <a name="specify-a-rule-set-for-a-project"></a>Bir kural kümesi için bir proje belirtin
+## <a name="specify-a-rule-set-for-a-project"></a>Bir proje için kural kümesi belirtme
 
-Kural için bir proje tarafından belirtilen kümesi **CodeAnalysisRuleSet** Visual Studio Proje dosyasındaki özellik. Örneğin:
+Bir projenin kural kümesi, Visual Studio proje dosyasındaki **CodeAnalysisRuleSet** özelliği tarafından belirtilir. Örneğin:
 
 ```xml
 <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">

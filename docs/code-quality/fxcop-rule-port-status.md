@@ -10,16 +10,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2e635f2cbbeda67c4fbed760eb7e57dfcf140d15
-ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
+ms.openlocfilehash: d6d891001bbb46e01049c2c8d71bb25372bb8c29
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/29/2019
-ms.locfileid: "68604875"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69551064"
 ---
 # <a name="fxcop-rule-port-status"></a>FxCop kural bağlantı noktası durumu
 
-Daha önce Visual Studio 'nun önceki bir sürümünde statik Kod analizini kullandıysanız, bu kurallardan hangilerinin geçerli uygulamada [FxCop çözümleyicileri](install-fxcop-analyzers.md)olarak kullanılabildiğini merak ediyor olabilirsiniz. Bu sayfada, bir yuva yapılan kuralların yanı sıra, bağlantı noktası ile ilgili planlar olup olmadığı listelenmiştir.
+Daha önce Visual Studio 'da statik Kod analizini kullandıysanız, bu kurallardan hangilerinin geçerli uygulamada [FxCop çözümleyicileri](install-fxcop-analyzers.md)olarak kullanılabildiğini merak ediyor olabilirsiniz. Bu sayfada, bir yuva yapılan kuralların yanı sıra, bağlantı noktası ile ilgili planlar olup olmadığı listelenmiştir.
 
 ## <a name="ported-rules"></a>Taşınan kurallar
 
@@ -204,11 +204,11 @@ CA9999 | Çözümleyici sürümü uyumsuzluğu
 
 ## <a name="unported-rules"></a>Bağlantı edilmemiş kurallar
 
-[FxCop çözümleyicilerine](install-fxcop-analyzers.md) eklenmemiş kuralların kümesi, henüz bir [yandan hala bir](#rules-that-may-be-ported)yandan da kaldırılmayan ve bu öğelerden çıkılmamış olan kurallardan [oluşur.](#deprecated-rules)
+[FxCop çözümleyicilerine](install-fxcop-analyzers.md) eklenmemiş kuralların kümesi, henüz bir yandan hala bir yandan da kaldırılmayan ve bu öğelerden [](#rules-that-may-be-ported)çıkılmamış olan kurallardan oluşur. [](#deprecated-rules)
 
 ### <a name="rules-that-may-be-ported"></a>Bağlantı halinde olabilecek kurallar
 
-Aşağıdaki FxCop statik kod analizi kuralları henüz çözümleyiciler olarak uygulanmadı, ancak yine de olabilir. Bunun nedeni, bir engelleme teknik nedeni veya kuralın daha düşük öncelikli olması olabilir. Her kuralın taşıma durumu hakkında daha fazla bilgi için, **izleme sorunu** sütunundaki bağlantıya tıklayın.
+Aşağıdaki FxCop eski analiz kuralları henüz çözümleyiciler olarak uygulanmadı, ancak yine de olabilir. Bunun nedeni, bir engelleme teknik nedeni veya kuralın daha düşük öncelikli olması olabilir. Her kuralın taşıma durumu hakkında daha fazla bilgi için, **izleme sorunu** sütunundaki bağlantıya tıklayın.
 
 Kural Kimliği | Sorun izleniyor
 --- | ---
@@ -271,7 +271,7 @@ Kural Kimliği | Sorun izleniyor
 
 ### <a name="deprecated-rules"></a>Kullanım dışı kurallar
 
-Aşağıdaki FxCop statik kod analizi kuralları kullanım dışıdır ve çözümleyiciler olarak uygulanmaz. Daha fazla bilgi için, [Roslyn-çözümleyiciler GitHub sorunları sayfasında](https://github.com/dotnet/roslyn-analyzers/issues?utf8=%E2%9C%93&q=is:issue+label:FxCop-Port)kural kimliğine göre arama yapabilirsiniz (örneğin, **CA1009**).
+Aşağıdaki FxCop eski analiz kuralları kullanım dışıdır ve çözümleyiciler olarak uygulanmaz. Daha fazla bilgi için, [Roslyn-çözümleyiciler GitHub sorunları sayfasında](https://github.com/dotnet/roslyn-analyzers/issues?utf8=%E2%9C%93&q=is:issue+label:FxCop-Port)kural kimliğine göre arama yapabilirsiniz (örneğin, **CA1009**).
 
 - [CA1009](ca1009-declare-event-handlers-correctly.md)
 - [CA1020](ca1020-avoid-namespaces-with-few-types.md)

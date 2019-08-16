@@ -1,5 +1,5 @@
 ---
-title: Çözümleyici kural önem derecesi ve gizleme
+title: Çözümleyici kuralı önem derecesi ve gizleme
 ms.date: 03/26/2019
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,168 +11,168 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: d4b5ad6ca824e6c7091c6c508b51c2d51501b2fd
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 6362d3f14065aaf9661e85266753642e4201ca48
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67821523"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69548043"
 ---
-# <a name="use-roslyn-analyzers"></a>Roslyn çözümleyicilerini kullanın
+# <a name="use-code-analyzers"></a>Kod Çözümleyicileri kullanma
 
-.NET derleyici Platformu ("Roslyn") çözümleyicisi kuralları veya *tanılama*, siz yazarken, C# veya Visual Basic kodunu çözümlemek. Her tanı projeniz için geçersiz kılınabilir bir varsayılan önem derecesi ve gizleme durumu vardır. Bu makale, kural kümeleri kullanma ve gizleme ihlalleri, ayar kural önem derecesi kapsar.
+.NET Compiler Platform ("Roslyn") kod Çözümleyicileri, siz yazarken C# veya Visual Basic kodunuzu analiz eder. Her bir *Tanılama* veya kuralın, projeniz için üzerine yazılabilir bir varsayılan önem derecesi ve gizleme durumu vardır. Bu makalede kural önem derecesini ayarlama, kural kümelerini kullanma ve ihlalleri gizleme ele alınmaktadır.
 
-## <a name="analyzers-in-solution-explorer"></a>Çözüm Gezgini'nde çözümleyiciler
+## <a name="analyzers-in-solution-explorer"></a>Çözüm Gezgini çözümleyiciler
 
-Çözümleyici tanılamadan özelleştirmesini çoğunu yapabileceğiniz **Çözüm Gezgini**. Varsa, [çözümleyicilerini yükleme](../code-quality/install-roslyn-analyzers.md) bir NuGet paketi olarak bir **Çözümleyicileri** düğümü altında görünür **başvuruları** veya **bağımlılıkları** düğümü **Çözüm Gezgini**. Genişletirseniz **Çözümleyicileri**ve çözümleyici bütünleştirilmiş kodlarının birini genişletin, derlemedeki tüm tanılama görürsünüz.
+**Çözüm Gezgini**'den çözümleyici tanılamayı özelleştirmenin çoğunu yapabilirsiniz. Çözümleyiciler bir NuGet paketi olarak [yüklüyorsanız](../code-quality/install-roslyn-analyzers.md) , **Çözüm Gezgini**içindeki **Başvurular** veya **Bağımlılıklar** düğümü altında bir **çözümleyiciler** düğümü görüntülenir. **Çözümleyicileri**genişlettikten sonra çözümleyici derlemelerinden birini genişletirseniz, derlemede tüm tanılamayı görürsünüz.
 
-![Çözüm Gezgininde çözümleyiciler](media/analyzers-expanded-in-solution-explorer.png)
+![Çözüm Gezgini içinde düğüm Çözümleyicileri](media/analyzers-expanded-in-solution-explorer.png)
 
-Varsayılan önem derecesi ve açıklama dahil olmak üzere, bir tanılama özelliklerini görüntüleyebilirsiniz **özellikleri** penceresi. Özelliklerini görüntülemek için kuralı sağ tıklatın ve **özellikleri**, kuralı seçin ve sonra basın **Alt**+**Enter**.
+**Özellikler** penceresinde, açıklaması ve varsayılan önem derecesi dahil olmak üzere bir tanı özelliklerini görüntüleyebilirsiniz. Özellikleri görüntülemek için kurala sağ tıklayın ve **Özellikler**' i seçin veya kuralı seçin ve ardından **alt**+**ENTER**tuşuna basın.
 
-![Özellikler penceresindeki tanılama özellikleri](media/analyzer-diagnostic-properties.png)
+![Özellikler penceresi tanılama özellikleri](media/analyzer-diagnostic-properties.png)
 
-Bir tanılama için çevrimiçi belgeleri görmek için tanı üzerinde sağ tıklayıp **Yardımı Görüntüle**.
+Bir Tanılamanın çevrimiçi belgelerini görmek için, tanılamayı sağ tıklatın ve **Yardımı görüntüle**' yi seçin.
 
-Her tanı yanındaki simge **Çözüm Gezgini** kural Düzenleyicisi'nde açtığınızda kümesi içinde gördüğünüz simgeler karşılık gelir:
+**Çözüm Gezgini** içindeki her bir Tanılamanın yanındaki simgeler, düzenleyicide açtığınızda kural kümesinde gördüğünüz simgelere karşılık gelir:
 
-- bir daire içinde "i" belirten bir [önem derecesi](#rule-severity) , **bilgileri**
-- "!" bir üçgen gösteren bir [önem derecesi](#rule-severity) , **Uyarısı**
-- bir daire "x" belirten bir [önem derecesi](#rule-severity) , **hata**
-- açık renkli arka plan üzerinde bir daire içinde "i" belirten bir [önem derecesi](#rule-severity) , **gizli**
-- aşağıyı gösteren ok bir daire içinde tanılama bastırılır gösterir
+- bir daire içindeki "i", **bilgi** [önem derecesini](#rule-severity) gösterir
+- Bir üçgendeki "!", **uyarının** [önem derecesini](#rule-severity) gösterir
+- bir daire içindeki "x", **hatanın** [önem derecesini](#rule-severity) gösterir
+- açık renkli bir arka plandaki daire içindeki "i", **gizlenen** [önem derecesini](#rule-severity) gösterir
+- bir daire içindeki aşağı açılan ok, Tanılamanın bastırılmadığını belirtir
 
-![Çözüm Gezgini'nde tanılama simgeleri](media/diagnostics-icons-solution-explorer.png)
+![Çözüm Gezgini tanılama simgeleri](media/diagnostics-icons-solution-explorer.png)
 
 ## <a name="rule-sets"></a>Kural kümeleri
 
-A [kural kümesi](../code-quality/using-rule-sets-to-group-code-analysis-rules.md) bireysel tanılama için önem derecesi ve gizleme durumunu depolayan bir XML dosyasıdır.
+[Kural kümesi](../code-quality/using-rule-sets-to-group-code-analysis-rules.md) , bireysel Tanılama için önem derecesini ve gizleme durumunu DEPOLAYAN bir XML dosyasıdır.
 
 > [!NOTE]
-> Kural kümeleri (ikili) statik kod analizi ve Roslyn Çözümleyicileri kurallar içerebilir.
+> Kural kümeleri, hem eski analizler hem de kod çözümleyicilerinin kurallarını içerebilir.
 
-Etkin kural kural kümesi Düzenleyicisi'nde kümesi düzenlemek için sağ **başvuruları** > **Çözümleyicileri** düğümünde **Çözüm Gezgini** seçip**Etkin kural kümesini açmak**. Bu kural kümesini düzenlediğiniz ilk kez ise, Visual Studio varsayılan kural kümesi dosyası kopyasını getirir, bu adlar  *\<projectname > .ruleset*ve projenize ekler. Ayrıca bu özel kuralın etkin kural projeniz için kümesi olur.
+Kural kümesi düzenleyicisinde etkin kural kümesini düzenlemek için, **Çözüm Gezgini** içindeki **başvuru** > **Çözümleyicileri** düğümüne sağ tıklayın ve **etkin kural kümesini aç**' ı seçin. Kural kümesini ilk kez düzenliyorsanız, Visual Studio varsayılan kural kümesi dosyasının bir kopyasını oluşturur, onu  *\<ProjectName >. RuleSet*olarak adlandırır ve projenize ekler. Bu özel kural kümesi, projeniz için etkin kural kümesi de olur.
 
-Etkin kural için bir proje kümesini değiştirmek için gidin **Kod Analizi** bir projenin özelliklerini sekmesi. Kural kümesi altındaki listeden seçin **bu kural kümesini Çalıştır**. Kural kümesini açmak için seçmeniz **açın**.
+Bir projenin etkin kural kümesini değiştirmek için projenin özelliklerinin **Kod Analizi** sekmesine gidin. **Bu kural kümesini Çalıştır**' ın altındaki listeden kural kümesini seçin. Kural kümesini açmak için **Aç**' ı seçin.
 
 > [!NOTE]
-> Kural kümeleri için .NET core ve .NET Standard projelerine menü komutlarını desteklemez **Çözüm Gezgini**, örneğin, **açık etkin kural kümesi**. .NET Core veya .NET Standard projesi için el ile bir varsayılan olmayan kural belirtmek için [ekleme **CodeAnalysisRuleSet** özelliği](using-rule-sets-to-group-code-analysis-rules.md#specify-a-rule-set-for-a-project) proje dosyasına. Kural kümesi Visual Studio Düzenleyicisi kullanıcı Arabirimi kural kümesi içindeki kurallarda yine de yapılandırabilirsiniz.
+> .NET Core ve .NET Standard projeleri, **Çözüm Gezgini**kural kümeleri için menü komutlarını desteklemez, örneğin, **etkin kural kümesi açın**. .NET Core veya .NET Standard projesi için varsayılan olmayan bir kural kümesi belirtmek için, [ **CodeAnalysisRuleSet** özelliğini](using-rule-sets-to-group-code-analysis-rules.md#specify-a-rule-set-for-a-project) proje dosyasına el ile ekleyin. Kuralları, Visual Studio kural kümesi Düzenleyicisi Kullanıcı arabirimindeki kural kümesi içinde yine yapılandırabilirsiniz.
 
 ## <a name="rule-severity"></a>Kural önem derecesi
 
-Önem derecesi Çözümleyicisi kuralları yapılandırabilirsiniz veya *tanılama*ise, [çözümleyicilerini yükleme](../code-quality/install-roslyn-analyzers.md) bir NuGet paketi olarak. Aşağıdaki tablo önem derecesi seçenekleri tanılama için gösterir:
+Çözümleyiciler bir NuGet paketi olarak [yüklüyorsanız](../code-quality/install-roslyn-analyzers.md) , çözümleyici kurallarının önem derecesini veya *tanılamayı*yapılandırabilirsiniz. Aşağıdaki tabloda, Tanılama için önem derecesi seçenekleri gösterilmektedir:
 
 |Önem Derecesi|Derleme zamanı davranışı|Düzenleyici davranışı|
 |-|-|-|
-|Hata|İhlalleri görünür olarak *hataları* içinde **hata listesi** ve komut satırı derleme çıkışı ve derlemeler başarısız olmasına neden olur.|Kod sorunlu altı çizili bir kırmızı dalgalı ve kaydırma çubuğundaki küçük kırmızı kutu olarak işaretlenmiş.|
-|Uyarı|İhlalleri görünür olarak *uyarıları* içinde **hata listesi** ve komut satırı derleme çıkışı, ancak derleme başarısız olmasına neden olmaz.|Sorunlu kod içeren bir yeşil dalgalı ve kaydırma çubuğundaki küçük yeşil kutu işaretli altı çizili olduğundan.|
-|Bilgi|İhlalleri görünür olarak *iletileri* içinde **hata listesi**ve hiçbir komut satırı derleme çıktı.|Kod sorunlu altı çizili ile dalgalı ve kaydırma çubuğundaki gri küçük Kutu işaretli bir gri olur.|
-|Hidden|Non-kullanıcıya görünür.|Non-kullanıcıya görünür. Tanılama için IDE tanılama altyapısı, ancak bildirilir.|
+|Hata|İhlaller **hata listesi** ve komut satırı derleme çıkışında *hata* olarak görünür ve yapıların başarısız olmasına neden olur.|Sorunlu kodun kırmızı renkli bir dalgalı çizili ve kaydırma çubuğundaki küçük kırmızı bir kutu tarafından işaretlenmiş olması gerekir.|
+|Uyarı|İhlaller **hata listesi** ve komut satırı derleme çıkışında *Uyarı* olarak görünür, ancak derlemelerin başarısız olmasına neden olmaz.|Sorunlu kodun yeşil dalgalı çizili ile altı çizilir ve kaydırma çubuğunda küçük yeşil bir kutu ile işaretlenir.|
+|Bilgi|İhlaller, komut satırı derleme çıktısında değil, **hata listesi** *iletiler* olarak görünür.|Sorunlu kodun gri dalgalı olarak altı çizilir ve kaydırma çubuğundaki küçük bir gri kutusuyla işaretlenir.|
+|Hidden|Kullanıcıya görünür değil.|Kullanıcıya görünür değil. Ancak tanılama, IDE tanılama altyapısına bildirilir.|
 |Yok.|Tamamen gizlendi.|Tamamen gizlendi.|
 
-Ayrıca, "bir uyarı kuralının önem derecesi olarak ayarlayıp sıfırlayabilirsiniz" **varsayılan**. Her tanılama görülebilir bir varsayılan önem derecesine sahip **özellikleri** penceresi.
+Ayrıca, **varsayılan**olarak ayarlayarak kuralın önem derecesini "sıfırlayabilirsiniz". Her tanı için, **Özellikler** penceresinde görünebileceğini varsayılan bir önem derecesi vardır.
 
-Aşağıdaki ekran görüntüsünde, Kod düzenleyicisinde, üç farklı önem dereceleri ile üç farklı tanılama ihlallerini gösterir. Dalgalı yanı sıra küçük kaydırma çubuğunun sağ taraftaki kutuya rengini dikkat edin.
+Aşağıdaki ekran görüntüsünde, üç farklı önem taşıyan kod düzenleyicisinde üç farklı tanı ihlali gösterilmektedir. Sağ taraftaki kaydırma çubuğundaki küçük kutunun yanı sıra dalgalı renge dikkat edin.
 
-![Kod Düzenleyicisi'nde hata, uyarı ve bilgi ihlali](media/diagnostics-severity-colors.png)
+![Kod düzenleyicisinde hata, uyarı ve bilgi ihlali](media/diagnostics-severity-colors.png)
 
-Aşağıdaki ekran görüntüsünde görünürler aynı üç ihlallerini gösterir **hata listesi**:
+Aşağıdaki ekran görüntüsünde **hata listesi**göründükleri üç ihlal gösterilmektedir:
 
-![Hata listesinde hata, uyarı ve bilgi ihlali](media/diagnostics-severities-in-error-list.png)
+![Hata Listesi hata, uyarı ve bilgi ihlali](media/diagnostics-severities-in-error-list.png)
 
-Bir kuraldan önemi değiştirebilirsiniz **Çözüm Gezgini**, veya içinde  *\<projectname > .ruleset* kuraldaöneminideğiştirdiktensonraçözümedosyası **Çözüm Gezgini**.
+Bir kuralın **Çözüm Gezgini**önem derecesini veya **Çözüm Gezgini**bir kuralın önem derecesini değiştirdikten sonra çözüme eklenen  *\<ProjectName >. RuleSet* dosyası dahilinde değiştirebilirsiniz.
 
-![Çözüm Gezgini'nde kural kümesi dosyası](media/ruleset-in-solution-explorer.png)
+![Çözüm Gezgini kural kümesi dosyası](media/ruleset-in-solution-explorer.png)
 
-### <a name="set-rule-severity-from-solution-explorer"></a>Çözüm Gezgini'nden kural önem derecesini belirleme
+### <a name="set-rule-severity-from-solution-explorer"></a>Kural önem derecesini Çözüm Gezgini ayarla
 
-1. İçinde **Çözüm Gezgini**, genişletme **başvuruları** > **Çözümleyicileri** (**bağımlılıkları**  >  **Çözümleyicileri** .NET Core projeleri için).
+1. **Çözüm Gezgini**, **başvuru** > **Çözümleyicileri** ' ni genişletin (.NET Core projeleri için**Bağımlılıklar** > **Çözümleyicileri** ).
 
-1. Önem derecesi için ayarlamak istediğiniz kuralı içeren derleme genişletin.
+1. Önem derecesini ayarlamak istediğiniz kuralı içeren derlemeyi genişletin.
 
-1. Sağ tıklatın ve kural **kural kümesi önem derecesini ayarlayın**. Açılan menüde, önem derecesi seçeneklerden birini seçin.
+1. Kurala sağ tıklayın ve **kural kümesi önem derecesi ayarla**' yı seçin. Giriş menüsünde, önem derecesi seçeneklerinden birini seçin.
 
-   Kural önem derecesi etkin kural kümesi dosyasına kaydedilir.
+   Kuralın önem derecesi, etkin kural kümesi dosyasına kaydedilir.
 
-### <a name="set-rule-severity-in-the-rule-set-file"></a>Kural kümesi dosyası içindeki kural önem derecesini belirleme
+### <a name="set-rule-severity-in-the-rule-set-file"></a>Kural önem derecesini kural kümesi dosyasında ayarla
 
-1. Açık [kural kümesi](analyzer-rule-sets.md) içinde çift tıklayarak dosyayı **Çözüm Gezgini**u seçerek **açık etkin kural kümesi** sağ tıklama menüsünde **çözümleyiciler** düğümünü veya seçerek **açık** üzerinde **Kod Analizi** projenin özellik sayfası.
+1. [Kural kümesi](analyzer-rule-sets.md) dosyasını **Çözüm Gezgini**açın, **çözümleyiciler** düğümünün sağ tıklama menüsünde **etkin kural kümesini aç** ' ı seçin ya da için **Kod Analizi** Özellik sayfasında **Aç** ' ı seçin. Proje.
 
-1. Kuralı, derlemeyi içeren genişleterek göz atın.
+1. İçeren derlemeyi genişleterek kurala gidin.
 
-1. İçinde **eylem** sütununda açılan listesini açmak için bir değer seçin ve listeden istediğiniz önem derecesini seçin.
+1. **Eylem** sütununda, bir açılan listeyi açmak için değeri seçin ve listeden istenen önem derecesini seçin.
 
-   ![Kural kümesi dosyası düzenleyicide Aç](media/ruleset-file-in-editor.png)
+   ![Düzenleyicide kural kümesi dosyası aç](media/ruleset-file-in-editor.png)
 
-## <a name="suppress-violations"></a>İhlallerini gösterme
+## <a name="suppress-violations"></a>İhlalleri gösterme
 
-Kural ihlallerinin bastırmak için birden çok yolu vardır:
+Kural ihlallerini bastırmak için birden çok yol vardır:
 
-- Gelen **Çözümle** menüsü
+- **Çözümle** menüsünden
 
-  Seçin **Çözümle** > **kod analizini Çalıştır ve etkin sorunlar bastır** tüm geçerli ihlal gizlemek için menü çubuğunda. Bu bazen "taban çizgisi oluşturma" adlandırılır.
+  Geçerli ihlallerin tümünü bastırmak için,**Kod analizini Çalıştır ve menü çubuğunda etkin sorunları Gizle** ' yi seçin. >  Bu bazen "taban çizgisi" olarak adlandırılır.
 
-- Gelen **Çözüm Gezgini**
+- **Çözüm Gezgini** 'den
 
-  Bir ihlali bastırmak için **Çözüm Gezgini**, kural önem derecesi kümesine **hiçbiri**.
+  **Çözüm Gezgini**ihlalin bir ihlaline karşı gizlemek için kuralın önem derecesini **none**olarak ayarlayın.
 
-- Gelen **kural kümesi Düzenleyicisi**
+- **Kural kümesi düzenleyicisinden**
 
-  Kural kümesi Düzenleyici'den bir ihlali bastırmak için adının yanındaki kutuyu'seçeneğinin işaretini kaldırın veya ayarlayın **eylem** için **hiçbiri**.
+  Kural kümesi düzenleyicisinden bir ihlalin görünmemesi için, adının yanındaki kutunun işaretini kaldırın veya **eylemi** **none**olarak ayarlayın.
 
-- Gelen **Kod Düzenleyicisi**
+- **Kod düzenleyicisinden**
 
-  Kod düzenleyicisinden ihlal bastırmak için tuşuna basın ve ihlali ile kod satırının imleci yerleştirin. **Ctrl**+ **.** açmak için **hızlı Eylemler** menüsü. Seçin **CAXXXX bastır** > **kaynak/gizleme dosyasında**.
+  Kod düzenleyicisinden bir ihlalin görüntülenmesini engellemek için, imleci kod satırına ihlale yerleştirin ve **CTRL**+tuşuna basın **.** **hızlı eylemler** menüsünü açmak için. **Kaynak/gizleme dosyasında** **caxxxx** > 'i Gizle ' yi seçin.
 
-  ![Hızlı Eylemler menüsünden tanılama Gizle](media/suppress-diagnostic-from-editor.png)
+  ![Hızlı Eylemler menüsünden tanılamayı gösterme](media/suppress-diagnostic-from-editor.png)
 
-- Gelen **hata listesi**
+- **Hata listesi**
 
-  Bir veya daha çok tanılamadan gizleyebilirsiniz **hata listesi** bastırmak için istediklerinizi seçerek ve ardından sağ tıklayarak ve seçerek **bastır** > **içinde Source/In Gizleme dosyası**.
+  Görüntülenmesini istediklerinizi seçerek **hata listesi** bir veya daha fazla tanılamayı bastırın ve sonra sağ tıklayıp**kaynak/gizleme dosyasında** **Gizle** > ' yi seçebilirsiniz.
 
-  - Varsa, bastır **içinde kaynak**, **Değişiklikleri Önizle** iletişim kutusu açılır ve önizlemesini C# [#pragma Uyarısı](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-pragma-warning) veya Visual Basic [#Disable Uyarı](/dotnet/visual-basic/language-reference/directives/directives) kaynak koduna eklenen yönergesi.
+  - **Kaynakta**bastırdığınızda, **Değişiklikleri Önizle** iletişim kutusu açılır ve kaynak koda eklenen C# [#pragma uyarının](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-pragma-warning) veya Visual Basic [#Disable uyarı](/dotnet/visual-basic/language-reference/directives/directives) yönergesinin önizlemesini gösterir.
 
-    ![#Pragma uyarısı kod dosyasına ekleme Önizleme](media/pragma-warning-preview.png)
+    ![Kod dosyasında #pragma uyarı ekleme önizlemesi](media/pragma-warning-preview.png)
 
-  - Seçerseniz **gizleme dosyası içinde**, **Değişiklikleri Önizle** iletişim kutusu açılır ve önizlemesini <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> özniteliği genel dosyasına eklenir.
+  - **Gizleme dosyasını**seçerseniz, **Değişiklikleri Önizle** iletişim kutusu açılır ve genel gizlemeleri dosyasına eklenen <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> özniteliğin önizlemesini gösterir.
 
-    ![SuppressMessage özniteliğini gizleme dosyasına ekleme Önizleme](media/preview-changes-in-suppression-file.png)
+    ![Gizleme dosyasına SuppressMessage özniteliği ekleme önizlemesi](media/preview-changes-in-suppression-file.png)
 
-  İçinde **Değişiklikleri Önizle** iletişim kutusunda **Uygula**.
+  **Değişiklikleri Önizle** Iletişim kutusunda **Uygula**' yı seçin.
 
   > [!NOTE]
-  > Görmüyorsanız **bastır** menü seçeneğini **Çözüm Gezgini**, ihlalin büyük olasılıkla derleme ve değil Canlı analysis geliyor. **Hata listesi** Tanılama veya ihlalleri, hem Canlı kod analizi ve yapı kuralı görüntüler. Derleme tanılama eski olduğundan, ve ihlali gidermek için kodu düzenlenmiş, ancak henüz yeniden, örneğin, bu Tanılama'ya başlatmayı önleyemez **hata listesi**. Canlı analysis veya IntelliSense, tanılama her zaman geçerli kaynaklarıyla güncel olduğundan ve gelen gizlenebilir **hata listesi**. Dışlanacak *derleme* seçiminizden tanılama geçiş **hata listesi** kaynak filtresinden **derleme + IntelliSense** için **IntelliSense yalnızca**. Ardından daha önce açıklandığı gibi yarayan istediğiniz Tanılama'yı seçin.
+  > **Çözüm Gezgini**' de **gizleme** menüsü seçeneğini görmüyorsanız, ihlalin büyük olasılıkla canlı Analize değil derlemeden geliyor. **Hata listesi** , hem canlı kod analizinden hem de derlemeden tanılama veya kural ihlalleri görüntüler. Derleme tanılaması eski olduğundan, örneğin, ihlalin giderilmesi için kodu düzenlediyseniz, ancak yeniden oluşturmadıysanız, **hata listesi**bu tanılamayı gizlenemez. Canlı Analize veya IntelliSense 'e yönelik Tanılamalar, geçerli kaynaklarla her zaman güncel değildir ve **hata listesi**gizlenmiş olabilir. *Oluşturma* tanılamayı seçiminizden dışlamak için, **hata listesi** kaynak filtresini **derleme + IntelliSense** 'den **yalnızca IntelliSense**'e geçirin. Daha sonra, gizlemek istediğiniz tanılamayı seçin ve daha önce açıklandığı gibi devam edin.
   >
-  > ![Visual Studio hata listesi kaynak filtresi](media/error-list-filter.png)
+  > ![Visual Studio 'da Hata Listesi kaynak filtresi](media/error-list-filter.png)
 
 ## <a name="command-line-usage"></a>Komut satırı kullanımı
 
-Komut satırında projenizi yapılandırdığınızda, aşağıdaki koşullar karşılandığında kural ihlalleri oluşturma çıktısında görüntülenir:
+Projenizi komut satırında oluşturduğunuzda, aşağıdaki koşullar karşılanıyorsa, yapı çıkışında kural ihlalleri görüntülenir:
 
-- Çözümleyiciler, bir VSIX uzantısı değil de, bir Nuget paketi olarak yüklenir.
+- Çözümleyiciler VSıX uzantısı olarak değil, bir NuGet paketi olarak yüklenir.
 
-- Bir veya daha fazla kural projenin kodda ihlal.
+- Projenin kodunda bir veya daha fazla kural ihlal edildi.
 
-- [Önem derecesi](#rule-severity) ihlal edilen kuralını ayarlandığından **uyarı**, bu durumda ihlalleri, derleme başarısız olmasına neden olmaz veya **hata**, bu durumda ihlalleri derleme başarısız olmasına neden.
+- Bir ihlal kuralının [önem derecesi](#rule-severity) , **Uyarı**olarak ayarlanır; Bu durumda ihlallerin başarısız olmasına neden olmaz veya **hata**, bu durum ihlallerinin başarısız olmasına neden olur.
 
-Kural ihlallerinin gösterilip gösterilmeyeceğini yapı çıkış ayrıntı etkilemez. Bile **sessiz** ayrıntı düzeyi, kural ihlalleri oluşturma çıktısında görüntülenir.
+Yapı çıkışının ayrıntı düzeyi, kural ihlallerinin gösterilip gösterilmeyeceğini etkilemez. **Sessiz** ayrıntı düzeyine sahip olsa bile, yapı çıkışında kural ihlalleri görüntülenir.
 
 > [!TIP]
-> Statik Kod Analizi ile komut satırı çalıştırma için alışkın değilseniz *FxCopCmd.exe* veya msbuild ile **RunCodeAnalysis** bayrak, Roslyn çözümleyicileriyle Bunu yapmak nasıl aşağıda verilmiştir.
+> Bir komut satırından, *FxCopCmd. exe* Ile veya **RunCodeAnalysis** bayrağıyla MSBuild aracılığıyla eski analizler çalıştırmaya alışkın değilseniz, bu işlemi kod Çözümleyicileri ile nasıl yapacağıdır.
 
-Msbuild kullanarak proje oluşturduğunuzda komut satırında Çözümleyicisi ihlalleri görmek için şunun gibi bir komut çalıştırın:
+MSBuild kullanarak projenizi oluştururken komut satırında çözümleyici ihlallerini görmek için şöyle bir komut çalıştırın:
 
 ```cmd
 msbuild myproject.csproj /target:rebuild /verbosity:minimal
 ```
 
-Aşağıdaki görüntüde Çözümleyicisi Kuralı ihlali içeren bir proje oluşturma komut satırı derleme çıktı gösterilmektedir:
+Aşağıdaki görüntüde, bir çözümleyici kuralı ihlali içeren bir proje derlemeden komut satırı derleme çıkışı gösterilmektedir:
 
-![MSBuild çıkışıyla kuralı ihlali](media/command-line-build-analyzers.png)
+![Kural ihlali ile MSBuild çıkışı](media/command-line-build-analyzers.png)
 
-## <a name="dependent-projects"></a>Bağımlı projeleri
+## <a name="dependent-projects"></a>Bağımlı projeler
 
-NuGet Çözümleyicileri, sahip olan bir projeyi bir başvuru eklerken bir .NET Core projesinde bu Çözümleyicileri otomatik olarak bağımlı projenin çok eklenir. Örneğin bağımlı proje bir birim test projesi ise, bu davranışı devre dışı bırakmak için NuGet paketini private olarak işaretlemek *.csproj* veya *.vbproj* ayarlayarakbaşvurulanprojenindosya**PrivateAssets** özniteliği:
+Bir .NET Core projesinde, NuGet Çözümleyicileri olan bir projeye başvuru eklerseniz, bu çözümleyiciler otomatik olarak bağımlı projeye de eklenir. Bu davranışı devre dışı bırakmak için örneğin, bağımlı proje bir birim testi projem ise, **Privatevarlıkların** özniteliğini ayarlayarak, başvurulan projenin *. csproj* veya *. vbproj* dosyasında NuGet paketini özel olarak işaretleyin:
 
 ```xml
 <PackageReference Include="Microsoft.CodeAnalysis.FxCopAnalyzers" Version="2.9.0" PrivateAssets="all" />
@@ -180,7 +180,7 @@ NuGet Çözümleyicileri, sahip olan bir projeyi bir başvuru eklerken bir .NET 
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [Roslyn çözümleyicilerini Visual Studio'da genel bakış](../code-quality/roslyn-analyzers-overview.md)
-- [Roslyn Çözümleyicisi hata bildirme](https://github.com/dotnet/roslyn-analyzers/issues)
-- [Kural kümeleri kullanma](../code-quality/using-rule-sets-to-group-code-analysis-rules.md)
-- [Kod çözümleme uyarılarını bastırma](../code-quality/in-source-suppression-overview.md)
+- [Visual Studio 'da kod Çözümleyicileri 'ne genel bakış](../code-quality/roslyn-analyzers-overview.md)
+- [Kod Çözümleyicisi hatası gönderme](https://github.com/dotnet/roslyn-analyzers/issues)
+- [Kural kümelerini kullanma](../code-quality/using-rule-sets-to-group-code-analysis-rules.md)
+- [Kod Analizi uyarılarını gösterme](../code-quality/in-source-suppression-overview.md)

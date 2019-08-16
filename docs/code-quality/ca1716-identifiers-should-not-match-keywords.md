@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 47bbb39cadb6a092f71ebd7b3907f34fcc2782ce
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: 9a51ac9509cf891c05166d46e4b72b862c0dc723
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65842045"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69547073"
 ---
 # <a name="ca1716-identifiers-should-not-match-keywords"></a>CA1716: Tanımlayıcılar anahtar sözcükler ile eşleşmemelidir
 
@@ -27,41 +27,41 @@ ms.locfileid: "65842045"
 |-|-|
 |TypeName|IdentifiersShouldNotMatchKeywords|
 |CheckId|CA1716|
-|Kategori|Microsoft.Naming|
+|Kategori|Microsoft. Naming|
 |Yeni Değişiklik|Yeni|
 
 ## <a name="cause"></a>Sebep
 
-Bir ad, tür adı veya sanal ya da ayrılmış bir anahtar sözcük bir programlama dilinde arabirim üyesiyle eşleşiyor.
+Bir ad alanı, tür veya sanal ya da arabirim üyesinin adı, bir programlama dilinde ayrılmış bir anahtar sözcükle eşleşir.
 
-Varsayılan olarak, bu kural yalnızca dışarıdan görünen ad alanlarını, türleri ve üyeleri görünüyor, ancak bu [yapılandırılabilir](#configurability).
+Bu kural varsayılan olarak yalnızca dışarıdan görünen ad alanları, türler ve Üyeler ' e bakar, ancak bu [yapılandırılabilir](#configurability).
 
 ## <a name="rule-description"></a>Kural açıklaması
 
-Tanımlayıcı ad alanları, türler, için ve sanal ve arabirim üyeleri olmayan ortak dil çalışma zamanını hedefleyen diller tarafından tanımlanan anahtar sözcükleri eşleşmelidir. Kullanılan dil ve anahtar sözcüğü bağlı olarak, derleyici hataları ve belirsizlikler kitaplığı kullanmak zorlaştırabilir.
+Ad alanları, türler ve sanal ve arabirim üyelerinin tanımlayıcıları, ortak dil çalışma zamanını hedefleyen diller tarafından tanımlanan anahtar sözcüklerle eşleşmemelidir. Kullanılan dile ve anahtar sözcüğüne bağlı olarak, derleyici hataları ve belirsizlikleri, kitaplığı kullanmayı zorlaştırır.
 
-Bu kural, anahtar sözcükleri şu dillerde karşı denetler:
+Bu kural aşağıdaki dillerdeki anahtar sözcüklere karşı denetler:
 
 - Visual Basic
 - C#
 - C++/CLI
 
-Visual Basic anahtar sözcükleri için kullanılan büyük küçük harf duyarsız karşılaştırma ve büyük küçük harfe duyarlı karşılaştırma diğer diller için kullanılır.
+Büyük/küçük harfe duyarsız karşılaştırma, Visual Basic anahtar kelimeleri için kullanılır ve diğer diller için büyük/küçük harfe duyarlı karşılaştırma kullanılır.
 
-## <a name="how-to-fix-violations"></a>İhlaller nasıl düzeltilir?
+## <a name="how-to-fix-violations"></a>İhlalleri çözme
 
-Anahtar sözcükler listesinde görünmeyen bir adı seçin.
+Anahtar sözcük listesinde görünmeyen bir ad seçin.
 
-## <a name="when-to-suppress-warnings"></a>Uyarılar bastırıldığında
+## <a name="when-to-suppress-warnings"></a>Uyarıların ne zaman bastırılamıyor
 
-Tanımlayıcı kullanıcılara API'nin karıştırır olmaz ve kitaplığı. NET'te tüm kullanılabilir diller kullanılamaz eminseniz, bu kuraldan bir uyarıyı gösterilmemesini sağlayabilirsiniz.
+Tanımlayıcının API kullanıcılarını karıştırmadığına ve kitaplığın .NET 'teki tüm kullanılabilir dillerde kullanılabilir olduğunu ikna ediyorsanız, bu kuraldan bir uyarıyı gizleyebilirsiniz.
 
-## <a name="configurability"></a>Etkiler ve yapılandırma
+## <a name="configurability"></a>Yapılandırılabilirlik
 
-Bu kuraldan çalıştırıyorsanız [FxCop Çözümleyicileri](install-fxcop-analyzers.md) (ve statik kod analizi üzerinden değil), hangi parçalarının yapılandırabilirsiniz, bu kuralı çalıştırmak için kod tabanı, kendi erişilebilirliği temel. Örneğin, kural yalnızca genel olmayan API yüzeyi karşı çalışması gerektiğini belirtmek için projenizi bir .editorconfig dosyasında şu anahtar-değer çifti ekleyin:
+Bu kuralı [FxCop çözümleyicilerinin](install-fxcop-analyzers.md) (eski analizler olmadan) çalıştırıyorsanız, kod tabanınızın hangi bölümlerinin bu kuralı çalıştırmak için erişilebilirliğini temel alarak yapılandırabilirsiniz. Örneğin, kuralın yalnızca genel olmayan API yüzeyine karşı çalışması gerektiğini belirtmek için, aşağıdaki anahtar-değer çiftini projenizdeki bir. editorconfig dosyasına ekleyin:
 
 ```ini
 dotnet_code_quality.ca1716.api_surface = private, internal
 ```
 
-Bu kategoride (adlandırma), bu seçenek yalnızca bu kural, tüm kuralları veya tüm kuralları yapılandırabilirsiniz. Daha fazla bilgi için [yapılandırma FxCop Çözümleyicileri](configure-fxcop-analyzers.md).
+Bu seçeneği yalnızca bu kural için, tüm kurallar için veya bu kategorideki tüm kurallar (adlandırma) için yapılandırabilirsiniz. Daha fazla bilgi için bkz. [FxCop çözümleyicileri yapılandırma](configure-fxcop-analyzers.md).

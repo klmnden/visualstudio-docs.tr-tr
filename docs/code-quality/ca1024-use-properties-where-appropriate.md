@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: bfedb55c0dcdb1077faea03bca56488ab3da1525
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: 2763d7dd167ad0027509c44b8f9d43523f03976b
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65842463"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69547786"
 ---
 # <a name="ca1024-use-properties-where-appropriate"></a>CA1024: Uygun yerlerde özellikleri kullanın
 
@@ -35,57 +35,57 @@ ms.locfileid: "65842463"
 
 ## <a name="cause"></a>Sebep
 
-Bir yöntem ile başlayan bir ada sahip `Get`hiçbir parametre almaz ve dizi olmayan bir değer döndürür.
+Bir yöntemin ile `Get`başlayan bir adı vardır, hiçbir parametre kullanmaz ve dizi olmayan bir değer döndürür.
 
-Varsayılan olarak, bu kural yalnızca ortak ve korunan yöntem ele alınmakta, ancak bu [yapılandırılabilir](#configurability).
+Varsayılan olarak, bu kural yalnızca ortak ve korumalı yöntemlere bakar, ancak bu [yapılandırılabilir](#configurability).
 
 ## <a name="rule-description"></a>Kural açıklaması
 
-Çoğu durumda veri özelliklerini temsil eder ve yöntemleri eylemleri gerçekleştirebilirsiniz. Özellikler, bunları kullanmayı kolaylaştırır alanları gibi erişilir. Bir yöntem, Bu koşullardan biri varsa özellik olmak için iyi bir adaydır:
+Çoğu durumda, özellikler verileri ve yöntemleri eylemler gerçekleştirir. Özellikler, alanları gibi erişilir, bu da daha kolay kullanılmasını sağlar. Bu koşullardan biri mevcutsa, bir özellik olmak için bir yöntem iyi bir adaydır:
 
-- Hiçbir bağımsız değişkeni alır ve bir nesnenin durum bilgilerini döndürür.
+- Bağımsız değişken almaz ve bir nesnenin durum bilgilerini döndürür.
 
-- Bir nesnenin durumu kısmı ayarlamak için tek bir bağımsız değişken kabul eder.
+- Bir nesnenin durumunun bir bölümünü ayarlamak için tek bir bağımsız değişkeni kabul eder.
 
-Özellikleri, alanları ise olarak hareket etmesi gerektiğini; yöntem çözemezseniz, bir özelliğe değiştirilmemelidir. Aşağıdaki durumlarda özelliklerini daha iyi yöntemler şunlardır:
+Özellikler alanlar gibi davranmalıdır; yöntemi değilse, bir özelliğe değiştirilmemelidir. Yöntemler aşağıdaki durumlarda özelliklerden daha iyidir:
 
-- Yöntem, zaman alıcı bir işlem gerçekleştirir. Yöntemi, perceivably ayarlamak veya bir alanın değerini almak için gereken süreden daha yavaştır.
+- Yöntemi zaman alan bir işlem gerçekleştirir. Yöntemi, bir alanın değerini ayarlamak ya da almak için gereken zamandan daha yavaştır perceivably.
 
-- Bir dönüştürme yöntemi gerçekleştirir. Bir alana erişim depoladığı verilerin dönüştürülmüş bir sürümünü döndürmez.
+- Yöntemi bir dönüştürme gerçekleştirir. Bir alana erişmek, depoladığı verilerin dönüştürülmüş bir sürümünü döndürmez.
 
-- Get yöntemi gözlemlenebilir bir yan etkisi vardır. Bir alanın değerini alma yan etkileri üretmez.
+- Get yönteminin bir observable yan etkisi vardır. Bir alanın değerini almak hiçbir yan efekt oluşturmaz.
 
-- Yürütme sırası önemlidir. Bir alanın değerini ayarlama, diğer işlemleri oluşması bağımlı kalmayacak.
+- Yürütmenin sırası önemlidir. Bir alanın değerini ayarlamak, diğer işlemlerin oluşumuna bağlı değildir.
 
-- Yöntemi, art arda iki kez çağırmak farklı sonuçlar oluşturur.
+- Yöntemi art arda iki kez çağırmak farklı sonuçlar oluşturur.
 
-- Yöntem statik olsa da arayan tarafından değiştirilebilen bir nesne döndürür. Bir alanın değerini alma alanı tarafından depolanan verileri değiştirmek çağıranın izin vermez.
+- Yöntemi statiktir, ancak çağıran tarafından değiştirilebilen bir nesne döndürür. Bir alanın değerini almak, çağıranın alan tarafından depolanan verileri değiştirmesine izin vermez.
 
-- Yöntemi, bir dizi döndürür.
+- Yöntemi bir dizi döndürür.
 
-## <a name="how-to-fix-violations"></a>İhlaller nasıl düzeltilir?
+## <a name="how-to-fix-violations"></a>İhlalleri çözme
 
-Bu kural ihlalini düzeltmek için yöntem bir özelliğini değiştirin.
+Bu kuralın ihlalini onarmak için, yöntemini bir özelliği olarak değiştirin.
 
-## <a name="when-to-suppress-warnings"></a>Uyarılar bastırıldığında
+## <a name="when-to-suppress-warnings"></a>Uyarıların ne zaman bastırılamıyor
 
-Yöntem en az bir tanesi yukarıda listelenen ölçütlerini karşılıyorsa bu kuraldan bir uyarıyı gizler.
+Yöntem daha önce listelenen ölçütlerden en az birini karşılıyorsa, bu kuraldan bir uyarı gizleyin.
 
-## <a name="configurability"></a>Etkiler ve yapılandırma
+## <a name="configurability"></a>Yapılandırılabilirlik
 
-Bu kuraldan çalıştırıyorsanız [FxCop Çözümleyicileri](install-fxcop-analyzers.md) (ve statik kod analizi üzerinden değil), hangi parçalarının yapılandırabilirsiniz, bu kuralı çalıştırmak için kod tabanı, kendi erişilebilirliği temel. Örneğin, kural yalnızca genel olmayan API yüzeyi karşı çalışması gerektiğini belirtmek için projenizi bir .editorconfig dosyasında şu anahtar-değer çifti ekleyin:
+Bu kuralı [FxCop çözümleyicilerinin](install-fxcop-analyzers.md) (eski analizler olmadan) çalıştırıyorsanız, kod tabanınızın hangi bölümlerinin bu kuralı çalıştırmak için erişilebilirliğini temel alarak yapılandırabilirsiniz. Örneğin, kuralın yalnızca genel olmayan API yüzeyine karşı çalışması gerektiğini belirtmek için, aşağıdaki anahtar-değer çiftini projenizdeki bir. editorconfig dosyasına ekleyin:
 
 ```ini
 dotnet_code_quality.ca1024.api_surface = private, internal
 ```
 
-Bu kategoride (tasarımı), bu seçenek yalnızca bu kural, tüm kuralları veya tüm kuralları yapılandırabilirsiniz. Daha fazla bilgi için [yapılandırma FxCop Çözümleyicileri](configure-fxcop-analyzers.md).
+Bu seçeneği yalnızca bu kural için, tüm kurallar için veya bu kategorideki tüm kurallar (tasarım) için yapılandırabilirsiniz. Daha fazla bilgi için bkz. [FxCop çözümleyicileri yapılandırma](configure-fxcop-analyzers.md).
 
-## <a name="control-property-expansion-in-the-debugger"></a>Hata ayıklayıcı denetim özelliği genişletme
+## <a name="control-property-expansion-in-the-debugger"></a>Hata ayıklayıcıda denetim özelliği genişletmesi
 
-Hata ayıklayıcıyı autoexpand istemediğiniz programcılar kaçının bir özelliğini kullanarak bir neden olduğundan bu. Örneğin, özellik, büyük nesne ayırma veya P/Invoke çağırma gerektirebilir, ancak gözlemlenebilir bir yan etkileri gerçekten olmayabilir.
+Programcıların bir özelliği kullanmaktan kaçınmasının nedeni, hata ayıklayıcının onu denklemeyi istememesinden kaynaklanır. Örneğin, özelliği büyük bir nesne ayırmayı veya bir P/Invoke çağırmayı içerebilir, ancak aslında herhangi bir observable yan etkisi olmayabilir.
 
-Hata ayıklayıcı autoexpanding özelliklerinden uygulayarak engelleyebilir <xref:System.Diagnostics.DebuggerBrowsableAttribute?displayProperty=fullName>. Aşağıdaki örnek, bir örnek özelliğine uygulanan bu özniteliği gösterir.
+Hata ayıklayıcının, özellikleri uygulayarak <xref:System.Diagnostics.DebuggerBrowsableAttribute?displayProperty=fullName>, özellikleri genişletmeyi önleyebilirsiniz. Aşağıdaki örnek, bir örnek özelliğine uygulanan bu özniteliği gösterir.
 
 ```vb
 Imports System
@@ -135,6 +135,6 @@ namespace Microsoft.Samples
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, özelliklerine dönüştürülmesi gerektiğini ve alanlar gibi davranırlar yoksa değil çünkü, birkaç gereken çeşitli yöntemler içerir.
+Aşağıdaki örnek, Özellikler ' e dönüştürülmesi gereken çeşitli yöntemler ve bunlar gibi davranmamaları nedeniyle olmaması gereken birkaç yöntem içerir.
 
 [!code-csharp[FxCop.Design.MethodsProperties#1](../code-quality/codesnippet/CSharp/ca1024-use-properties-where-appropriate_1.cs)]

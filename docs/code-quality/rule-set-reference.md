@@ -9,21 +9,21 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eeb6f4842bab5586cdea1db8ae2d2dd914c88b3c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d746756bdbb6af5fa9d8758ffb984907e371b119
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62825370"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69550823"
 ---
-# <a name="code-analysis-rule-set-reference"></a>Kod çözümleme kural kümesi başvurusu
+# <a name="code-analysis-rule-set-reference"></a>Kod analizi kural kümesi başvurusu
 
-Statik kod analizi yönetilen kod projeleri için Visual Studio içinde yapılandırdığınızda, yerleşik bir listeden seçebilirsiniz *kural kümeleri*. Ya da bu yerleşik kural kümelerinden birini kullanabilir veya yapabilecekleriniz [bir kural kümesi özelleştirme](../code-quality/how-to-create-a-custom-rule-set.md) proje gereksinimlerinizi karşılayacak şekilde.
+Visual Studio 'da yönetilen kod projeleri için eski analizler yapılandırdığınızda, yerleşik *kural kümeleri*listesinden seçim yapabilirsiniz. Ya da bu yerleşik kural kümelerinden birini kullanabilir veya yapabilecekleriniz [bir kural kümesi özelleştirme](../code-quality/how-to-create-a-custom-rule-set.md) proje gereksinimlerinizi karşılayacak şekilde.
 
 Bu bölümdeki konular, yerleşik kuralı açıklayın kümeleri ve kurallar (veya uyarılar) içerirler.
 
 > [!NOTE]
-> Statik kod analizi kural kümesi bu bölümdeki ilgilidir. Roslyn Çözümleyicisi paketleri için kullanılabilir olan kural kümeleri hakkında daha fazla bilgi için bkz. [kural kümeleri kullanma Roslyn çözümleyicileriyle](analyzer-rule-sets.md).
+> Bu bölümdeki kural kümeleri eski Analize aittir. Kod Çözümleyicisi paketleri için kullanılabilen kural kümeleri hakkında daha fazla bilgi için bkz. [kural kümelerini kod Çözümleyicileri Ile kullanma](analyzer-rule-sets.md).
 
 - [Tüm Kurallar kural kümesi](all-rules-rule-set.md)
 - [Yönetilen kod için Temel Doğruluk Kuralları kural kümesi](basic-correctness-rules-rule-set-for-managed-code.md)

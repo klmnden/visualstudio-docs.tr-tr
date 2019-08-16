@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e6a9b03ce2552e50ebfca8f9e6e2823dee794c20
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: 2f427bcdf4ec4e88dcc2842699d738dae7e8e09d
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65841771"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69546909"
 ---
 # <a name="ca2225-operator-overloads-have-named-alternates"></a>CA2225: İşleç aşırı yüklemeleri adlandırılmış alternatiflere sahiptir
 
@@ -27,94 +27,94 @@ ms.locfileid: "65841771"
 |-|-|
 |TypeName|OperatorOverloadsHaveNamedAlternates|
 |CheckId|CA2225|
-|Kategori|Microsoft.Usage|
-|Yeni Değişiklik|Bozucu olmayan|
+|Kategori|Microsoft. Usage|
+|Yeni Değişiklik|Kırılmamış|
 
 ## <a name="cause"></a>Sebep
 
-Operatör aşırı yüklemesi algılandı ve beklenen adlandırılmış Alternatif yöntem bulunamadı.
+Bir işleç aşırı yüklemesi algılandı ve beklenen adlandırılmış alternatif yöntem bulunamadı.
 
-Varsayılan olarak, bu kural yalnızca dışarıdan görülebilen türler görünür, ancak bu [yapılandırılabilir](#configurability).
+Bu kural varsayılan olarak yalnızca dışarıdan görünür türlere bakar, ancak bu [yapılandırılabilir](#configurability).
 
 ## <a name="rule-description"></a>Kural açıklaması
 
-İşleç aşırı yüklemesi hesaplamaları için bir türü temsil etmek için semboller kullanımına izin verir. Örneğin, eklenmesi için (+) artı simgesini aşırı bir türü genellikle 'Ekle' adlı alternatif bir üye yoktur. Adlandırılmış alternatif üye işleci ile aynı işlevlere erişim sağlar ve aşırı yüklenmiş operatörlere destek olmayan dilleri içinde program geliştiriciler için sağlanır.
+İşleç aşırı yüklemesi, bir tür için hesaplamaları göstermek üzere simgelerin kullanılmasına izin verir. Örneğin, ek için artı simgesini (+) aşırı yükleyen bir tür, genellikle ' Add ' adlı alternatif bir üyeye sahip olur. Adlandırılmış alternatif üye, işleçle aynı işlevselliğe erişim sağlar ve aşırı yüklenmiş işleçleri desteklemeyen dillerde programlayan geliştiriciler için sağlanır.
 
-Bu kural aşağıdaki tabloda listelenen işleçlerden inceler.
+Bu kural, aşağıdaki tabloda listelenen işleçleri inceler.
 
-|C#|Visual Basic|C++|Diğer adı|
+|C#|Visual Basic|C++|Alternatif ad|
 |---------|------------------|-----------|--------------------|
 |+ (ikili)|+|+ (ikili)|Ekle|
 |+=|+=|+=|Ekle|
-|&|And|&|BitwiseAnd|
-|&=|Ve =|&=|BitwiseAnd|
-|&#124;|Or|&#124;|BitwiseOr|
-|&#124;=|Veya =|&#124;=|BitwiseOr|
+|&|And|&|Bitwiseve|
+|&=|Ve =|&=|Bitwiseve|
+|&#124;|Or|&#124;|Bitwiseveya|
+|&#124;=|Or =|&#124;=|Bitwiseveya|
 |--|Yok|--|Azaltma|
-|/|/|/|Bölme|
-|/=|/=|/=|Bölme|
+|/|/|/|Sayısına|
+|/=|/=|/=|Sayısına|
 |==|=|==|Eşittir|
-|^|Xor|^|Xor|
-|^=|Xor =|^=|Xor|
+|^|XOR|^|XOR|
+|^=|XOR =|^=|XOR|
 |>|>|>|{1&gt;Karşılaştır&lt;1}|
 |>=|>=|>=|{1&gt;Karşılaştır&lt;1}|
-|++|Yok|++|Artırma|
+|++|Yok|++|Ilamadı|
 |<>|!=|Eşittir|
-|<<|<<|<<|LeftShift|
-|<<=|<<=|<<=|LeftShift|
+|<<|<<|<<|Leftshıft|
+|<<=|<<=|<<=|Leftshıft|
 |<|<|<|{1&gt;Karşılaştır&lt;1}|
 |<=|<=|\<=|{1&gt;Karşılaştır&lt;1}|
 |&&|Yok|&&|LogicalAnd|
 |&#124;&#124;|Yok|&#124;&#124;|LogicalOr|
 |!|Yok|!|LogicalNot|
-|%|Mod|%|Mod veya kalan|
+|%|Mod|%|Mod veya geri kalanı|
 |%=|Yok|%=|Mod|
-|* (ikili)|*|*|Çarp|
-|*=|Yok|*=|Çarp|
-|~|değil|~|OnesComplement|
-|>>|>>|>>|RightShift|
-=|Yok|>>=|RightShift|
+|* (ikili)|*|*|Bilirsiniz|
+|*=|Yok|*=|Bilirsiniz|
+|~|değil|~|Onestamamlayıcısı|
+|>>|>>|>>|Sağa kaydırma|
+=|Yok|>>=|Sağa kaydırma|
 |-(ikili)|-(ikili)|-(ikili)|Çıkarma|
 |-=|Yok|-=|Çıkarma|
 |true|IsTrue|Yok|IsTrue (özellik)|
-|-(tekli)|Yok|-|negate|
-|+ (tekli)|Yok|+|artı|
+|-(birli)|Yok|-|Negate|
+|+ (birli)|Yok|+|Artı|
 |false|IsFalse|False|IsTrue (özellik)|
 
-Yok == seçtiğiniz dilde aşırı yüklenemez.
+Seçili dilde N/A = = aşırı yüklenemez.
 
-Kural türü örtük ve açık dönüştürme işleçleri de denetler (`SomeType`) adlı yöntemleri için işaretleyerek `ToSomeType` ve `FromSomeType`.
+Kural Ayrıca, ve`SomeType` `ToSomeType` `FromSomeType`adlı yöntemleri denetleyerek bir tür () içinde örtük ve açık tür dönüştürme işleçlerini da kontrol eder.
 
-İkili İşleç aşırı C# ' ta karşılık gelen bir atama işleci varsa, aynı zamanda örtük olarak aşırı yüklenmiş olur.
+' C#De, bir ikili işleç aşırı yüklendiğinde, varsa karşılık gelen atama işleci de dolaylı olarak aşırı yüklenmiştir.
 
-## <a name="how-to-fix-violations"></a>İhlaller nasıl düzeltilir?
+## <a name="how-to-fix-violations"></a>İhlalleri çözme
 
-Bu kural ihlalini düzeltmek için alternatif yöntem için işleç uygulayın; önerilen alternatif adını kullanarak adlandırın.
+Bu kuralın ihlalini onarmak için, işleci için alternatif yöntemi uygulayın; Önerilen alternatif adı kullanarak adlandırın.
 
-## <a name="when-to-suppress-warnings"></a>Uyarılar bastırıldığında
+## <a name="when-to-suppress-warnings"></a>Uyarıların ne zaman bastırılamıyor
 
-Paylaşılan bir kitaplık uyguluyorsanız, bu kuraldan bir uyarıyı bastırmayın. Uygulamalar bu kuraldan bir uyarıyı yok sayabilirsiniz.
+Paylaşılan bir kitaplık uygulamadıysanız bu kuraldan bir uyarıyı bastırmayın. Uygulamalar bu kuraldan bir uyarıyı yok sayabilir.
 
-## <a name="configurability"></a>Etkiler ve yapılandırma
+## <a name="configurability"></a>Yapılandırılabilirlik
 
-Bu kuraldan çalıştırıyorsanız [FxCop Çözümleyicileri](install-fxcop-analyzers.md) (ve statik kod analizi üzerinden değil), hangi parçalarının yapılandırabilirsiniz, bu kuralı çalıştırmak için kod tabanı, kendi erişilebilirliği temel. Örneğin, kural yalnızca genel olmayan API yüzeyi karşı çalışması gerektiğini belirtmek için projenizi bir .editorconfig dosyasında şu anahtar-değer çifti ekleyin:
+Bu kuralı [FxCop çözümleyicilerinin](install-fxcop-analyzers.md) (eski analizler olmadan) çalıştırıyorsanız, kod tabanınızın hangi bölümlerinin bu kuralı çalıştırmak için erişilebilirliğini temel alarak yapılandırabilirsiniz. Örneğin, kuralın yalnızca genel olmayan API yüzeyine karşı çalışması gerektiğini belirtmek için, aşağıdaki anahtar-değer çiftini projenizdeki bir. editorconfig dosyasına ekleyin:
 
 ```ini
 dotnet_code_quality.ca2225.api_surface = private, internal
 ```
 
-Bu kategoride (kullanım), bu seçenek yalnızca bu kural, tüm kuralları veya tüm kuralları yapılandırabilirsiniz. Daha fazla bilgi için [yapılandırma FxCop Çözümleyicileri](configure-fxcop-analyzers.md).
+Bu seçeneği yalnızca bu kural için, tüm kurallar için veya bu kategorideki tüm kurallar (kullanım) için yapılandırabilirsiniz. Daha fazla bilgi için bkz. [FxCop çözümleyicileri yapılandırma](configure-fxcop-analyzers.md).
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek bu kuralı ihlal eden bir yapı tanımlar. Örnek düzeltmek için bir genel ekleme `Add(int x, int y)` yapısına yöntemi.
+Aşağıdaki örnek, bu kuralı ihlal eden bir yapıyı tanımlar. Örneği düzeltmek için, yapıya ortak `Add(int x, int y)` bir yöntem ekleyin.
 
 [!code-csharp[FxCop.Usage.OperatorOverloadsHaveNamedAlternates#1](../code-quality/codesnippet/CSharp/ca2225-operator-overloads-have-named-alternates_1.cs)]
 
-## <a name="related-rules"></a>İlgili kuralları
+## <a name="related-rules"></a>İlgili kurallar
 
-- [CA1046: Başvuru türlerinde eşittir işleçlerini aşırı yüklemeyin](../code-quality/ca1046-do-not-overload-operator-equals-on-reference-types.md)
-- [CA2226: İşleçler simetrik aşırı yüklemelere sahip olmalıdır](../code-quality/ca2226-operators-should-have-symmetrical-overloads.md)
-- [CA2224: Eşittir işlecini aşırı yüklemesi üzerinde geçersiz kılma değerine eşittir](../code-quality/ca2224-override-equals-on-overloading-operator-equals.md)
-- [CA2218: Gethashcode'u eşittir geçersiz kılmada geçersiz kıl](../code-quality/ca2218-override-gethashcode-on-overriding-equals.md)
-- [CA2231: Eşittir işlecini ValueType.equals'ı geçersiz kılarak üzerinde](../code-quality/ca2231-overload-operator-equals-on-overriding-valuetype-equals.md)
+- [CA1046 Eşittir işlecini başvuru türlerinde aşırı yüklemeyin](../code-quality/ca1046-do-not-overload-operator-equals-on-reference-types.md)
+- [CA2226 İşleçler, simetrik aşırı yüklemeleri içermelidir](../code-quality/ca2226-operators-should-have-symmetrical-overloads.md)
+- [CA2224 Aşırı yükleme işlecinin eşittir ile eşittir geçersiz kıl](../code-quality/ca2224-override-equals-on-overloading-operator-equals.md)
+- [CA2218 Geçersiz kılma için GetHashCode geçersiz kılma](../code-quality/ca2218-override-gethashcode-on-overriding-equals.md)
+- [CA2231 ValueType. Equals geçersiz kılınırken aşırı yükleme işleci Equals](../code-quality/ca2231-overload-operator-equals-on-overriding-valuetype-equals.md)

@@ -1,6 +1,6 @@
 ---
-title: Yönetilmeyen API Başvurusu (Visual Studio'da Office Geliştirme)
-ms.date: 02/02/2017
+title: Yönetilmeyen API başvurusu (Visual Studio 'da Office geliştirme)
+ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -13,22 +13,21 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 238ed42d48903d2d0ef26384245cff80785a8ebb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 00db78359154dbda600fb4b58103bc04e89d16b2
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62978243"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69551330"
 ---
-# <a name="unmanaged-api-reference-office-development-in-visual-studio"></a>Yönetilmeyen API Başvurusu (Visual Studio'da Office Geliştirme)
+# <a name="unmanaged-api-reference-office-development-in-visual-studio"></a>Yönetilmeyen API başvurusu (Visual Studio 'da Office geliştirme)
 
-2007 Microsoft Office sistemi ile başlayarak, Office uygulamalarının kullandığı [Imanagedaddin arabirimi](../vsto/imanagedaddin-interface.md) arabirimi ile birlikte sağlanan bir VSTO eklentisi yükleyici bileşeni çağırmak için [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]. Bu bileşen yük yönetilen VSTO eklentileri yardımcı olmak için kullanılır. Bu arabirimi uygulayan kendi VSTO eklenti yükleyici bileşeni oluşturabilirsiniz.
+Office uygulamaları, 2007 Microsoft Office sistemi ile başlayarak, [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]ile bırlıkte bulunan bir VSTO eklentisi yükleyici bileşenini çağırmak için [IManagedAddin arabirimi](../vsto/imanagedaddin-interface.md) arabirimini kullanır. Bu bileşen, yük tarafından yönetilen VSTO eklentilerine yardımcı olmak için kullanılır. Bu arabirimi uygulayarak, kendi VSTO eklenti yükleyici bileşeninizi oluşturabilirsiniz.
 
-> [!NOTE]
-> Office deneyiminiz boyunca genişleten çözümleri geliştirme yapmakla mı ilgileniyorsunuz [birden çok platform](https://dev.office.com/add-in-availability)? Yeni kontrol [Office eklentilerini modeli](https://dev.office.com/docs/add-ins/overview/office-add-ins). Office eklentileri, VSTO eklentileri ve çözümlerle karşılaştırıldığında küçük ayak izine sahip ve neredeyse tüm web teknolojisi, HTML5, JavaScript, CSS3 ve XML gibi programlama kullanarak oluşturabilirsiniz.
+[!include[Add-ins note](includes/addinsnote.md)]
 
 ## <a name="in-this-section"></a>Bu bölümde
 
-[Imanagedaddin arabirimi](../vsto/imanagedaddin-interface.md)
+[IManagedAddin arabirimi](../vsto/imanagedaddin-interface.md)
 
-VSTO eklentilerinde Office uygulamalarında yükleme ve kaldırma için uygulayabileceğiniz bir COM arabirimi yönetilen.
+Office uygulamalarında yönetilen VSTO Eklentilerini yüklemek ve kaldırmak için uygulayabileceğiniz bir COM arabirimi.

@@ -1,8 +1,8 @@
 ---
-title: 'Nasıl yapılır: Office çalışma zamanı yeniden dağıtılabilir için Visual Studio Araçları yükleme'
+title: "Nasıl yapılır: Office çalışma zamanı yeniden dağıtılabilir için Visual Studio Araçları 'i yükler"
 titleSuffix: ''
 ms.custom: seodec18
-ms.date: 02/02/2017
+ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,45 +15,47 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 41b6ec5c91fe9dc16a07703358ee0bb951efb490
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 5d9bb53fbdc3d6766dab47c654f0a43ad902b2f3
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63412595"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69551829"
 ---
-# <a name="how-to-install-the-visual-studio-tools-for-office-runtime-redistributable"></a>Nasıl yapılır: Office çalışma zamanı yeniden dağıtılabilir için Visual Studio Araçları yükleme
-  Office çalışma zamanı için Visual Studio 2010 Araçları, Microsoft Office geliştirici araçları kullanarak oluşturulan çözümleri çalıştıran her bilgisayara yüklenmelidir [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Yükleme sırasında çalışma zamanı otomatik olarak yüklenen [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]ve Microsoft Office. Daha fazla bilgi için [Office çalışma zamanı yükleme senaryoları için Visual Studio Araçları](../vsto/visual-studio-tools-for-office-runtime-installation-scenarios.md).
+# <a name="how-to-install-the-visual-studio-tools-for-office-runtime-redistributable"></a>Nasıl yapılır: Office çalışma zamanı yeniden dağıtılabilir için Visual Studio Araçları 'i yükler
+  Office çalışma zamanı için Visual Studio 2010 araçları, ' de [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Microsoft Office geliştirici araçları kullanılarak oluşturulan çözümler çalıştıran her bilgisayara yüklenmelidir. Çalışma zamanı, yüklediğinizde [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]ve Microsoft Office otomatik olarak yüklenir. Daha fazla bilgi için bkz. [Office çalışma zamanı yükleme senaryoları için Visual Studio Araçları](../vsto/visual-studio-tools-for-office-runtime-installation-scenarios.md).
 
- Aşağıdaki durumlarda aşağıdaki el ile yükleme yönergeleri takip etmeniz gerekebilir:
+[!include[Add-ins note](includes/addinsnote.md)]
 
-- Yüklemeniz gereken [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] bir sunucuda. Örneğin, kullanmak istediğiniz <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> bir sunucuda belge düzeyi çözümlerde yönetmek için sınıf.
+ Aşağıdaki durumlarda el ile yükleme yönergelerini izlemeniz gerekebilir:
 
-- Çalışma zamanı yüklü Office çözümleri için diğer tüm Önkoşullar zaten olan bir bilgisayara yüklemeniz gerekir.
+- [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] ' Nı bir sunucusuna yüklemeniz gerekir. Örneğin, bir sunucudaki belge düzeyi çözümlerini yönetmek <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> için sınıfını kullanmak istiyorsunuz.
+
+- Çalışma zamanını, Office çözümlerinin tüm diğer önkoşullarının zaten yüklü olduğu bir bilgisayara yüklemeniz gerekir.
 
     > [!NOTE]
-    > .NET Framework'ü yüklemek için yönetici geliştirme bilgisayarında olmalıdır ve [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)].
+    > .NET Framework ve ' [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]ü yüklemek için geliştirme bilgisayarında bir yönetici olmanız gerekir.
 
-## <a name="to-install-the-visual-studio-tools-for-office-runtime"></a>Office çalışma zamanı için Visual Studio Araçları'nı yüklemek için
+## <a name="to-install-the-visual-studio-tools-for-office-runtime"></a>Office çalışma zamanı Visual Studio Araçları yüklemek için
 
-1. Yükleme [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] veya üzeri.
+1. [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] Veya sonraki sürümünü yükler.
 
-    - İndirmek için [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)], bkz: [Microsoft .NET Framework 4 (Web Yükleyicisi)](http://go.microsoft.com/fwlink/?LinkId=178957).
+    - İndirmek [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]için, bkz. [Microsoft .NET Framework 4 (Web Yükleyicisi)](http://go.microsoft.com/fwlink/?LinkId=178957).
 
-    - İndirmek için [!INCLUDE[net_client_v40_long](../vsto/includes/net-client-v40-long-md.md)], bkz: [Microsoft .NET Framework 4 istemci profili (Web Yükleyicisi)](http://go.microsoft.com/fwlink/?LinkId=178958).
+    - İndirmek [!INCLUDE[net_client_v40_long](../vsto/includes/net-client-v40-long-md.md)]için, bkz. [Microsoft .NET Framework 4 istemci profili (Web Yükleyicisi)](http://go.microsoft.com/fwlink/?LinkId=178958).
 
-    - İndirmek için [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)], bkz: [Microsoft .NET Framework 4.5](http://www.microsoft.com/download/details.aspx?id=30653).
+    - İndirmek [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]için, bkz. [Microsoft .NET Framework 4,5](http://www.microsoft.com/download/details.aspx?id=30653).
 
-2. Çalıştırma *vstor_redist.exe* yüklemek için [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)].
+2. Yüklemek[!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]için *vstor_redist. exe dosyasını* çalıştırın.
 
-     Bu kurulum dosyalarından indirebileceğiniz [Office çalışma zamanı için Visual Studio 2010 Araçları](http://go.microsoft.com/fwlink/?LinkId=140384). Önkoşulları [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] .NET Framework için önkoşulları eşleşmesi.
+     Bu kurulum dosyalarını, [Office çalışma zamanı Için Visual Studio 2010 araçlarından](http://go.microsoft.com/fwlink/?LinkId=140384)indirebilirsiniz. İçin önkoşulları, .NET Framework [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] önkoşulları ile eşleşir.
 
-     [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] Dil paketlerini içerir. Windows yüklemesini İngilizce dışında bir dile ayarlanırsa, Windows için kullandığınız aynı dilde çalışma zamanı iletilerini görüntüleyebilirsiniz. Benzer şekilde, son kullanıcılar [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] ve çözümlerinizi aynı dilde Windows çalışma zamanı mesajlarını görünür ayarlanan İngilizce dışında bir dil için Windows yüklemeleri üzerinde çalıştırın. Bazı durumlarda, ek dil paketlerini gerekebilir. Örneğin, birden fazla dil ayarı Windows kopyanızı kullanıyorsa ya da devre dışı zaten yükledikten sonra başka bir dile geçiş yapmak ek dil paketlerini gerekebilir [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]. Dil paketlerinin bulabilirsiniz [Microsoft Visual Studio 2010 Araçları için Microsoft Office sistemi (sürüm 4.0 çalışma zamanı) dil paketi](http://go.microsoft.com/fwlink/?LinkId=140386).
+     , [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] Dil paketlerini içerir. Windows yüklemeniz Ingilizce dışında bir dile ayarlandıysa, çalışma zamanı iletilerini Windows için kullandığınız dilde görüntüleyebilirsiniz. Benzer şekilde, son kullanıcılar ürününü yüklerse [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] ve sonra, İngilizce dışındaki bir dile ayarlanmış Windows yüklemelerinde çözümlerinizi çalıştırırsanız, çalışma zamanı iletileri Windows ile aynı dilde görünür. Bazı durumlarda, ek dil paketlerine ihtiyacınız bulunabilir. Örneğin, Windows kopyanız birden fazla dil ayarı kullanıyorsa veya daha önce [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]yükledikten sonra başka bir dile geçiş yaparsanız, ek dil paketlerine ihtiyaç duyabilirsiniz. Dil paketlerini [Microsoft Office sistemi (sürüm 4,0 çalışma zamanı) dil paketi için Microsoft Visual Studio 2010 araçlarında](http://go.microsoft.com/fwlink/?LinkId=140386)bulabilirsiniz.
 
 ## <a name="see-also"></a>Ayrıca bkz.
-- [Başlama &#40;Visual Studio'da Office geliştirme&#41;](../vsto/getting-started-office-development-in-visual-studio.md)
-- [Office çözümleri geliştirmek için bilgisayarı yapılandırma](../vsto/configuring-a-computer-to-develop-office-solutions.md)
-- [Nasıl yapılır: Office çözümleri geliştirmek için bilgisayarı yapılandırma](../vsto/how-to-configure-a-computer-to-develop-office-solutions.md)
-- [Nasıl yapılır: Office birincil birlikte çalışma derlemelerini yükleme](../vsto/how-to-install-office-primary-interop-assemblies.md)
-- [ServerDocument sınıfını kullanarak bir sunucu üzerinde belgeleri yönetme](../vsto/managing-documents-on-a-server-by-using-the-serverdocument-class.md)
+- [Visual Studio &#40;'da Office geliştirme ile çalışmaya başlama&#41;](../vsto/getting-started-office-development-in-visual-studio.md)
+- [Office çözümleri geliştirmek için bir bilgisayarı yapılandırma](../vsto/configuring-a-computer-to-develop-office-solutions.md)
+- [Nasıl yapılır: Office çözümleri geliştirmek için bir bilgisayarı yapılandırma](../vsto/how-to-configure-a-computer-to-develop-office-solutions.md)
+- [Nasıl yapılır: Office birincil birlikte çalışma derlemelerini yükler](../vsto/how-to-install-office-primary-interop-assemblies.md)
+- [ServerDocument sınıfını kullanarak bir sunucudaki belgeleri yönetme](../vsto/managing-documents-on-a-server-by-using-the-serverdocument-class.md)
 - [Office çözümünü dağıtma](../vsto/deploying-an-office-solution.md)

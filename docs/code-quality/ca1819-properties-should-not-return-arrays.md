@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 2824be0ecc29965abb68519aaa8eb8a83af8e688
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: 9fd738b0c16ede4f71c001036546c335d8ca7186
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65841377"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69547037"
 ---
 # <a name="ca1819-properties-should-not-return-arrays"></a>CA1819: Özellikler diziler döndürmemelidir
 
@@ -30,76 +30,76 @@ ms.locfileid: "65841377"
 |-|-|
 |TypeName|PropertiesShouldNotReturnArrays|
 |CheckId|CA1819|
-|Kategori|Microsoft.Performance|
+|Kategori|Microsoft. Performance|
 |Yeni Değişiklik|Yeni|
 
 ## <a name="cause"></a>Sebep
 
-Bir özellik, bir dizi döndürür.
+Bir özellik bir dizi döndürür.
 
-Varsayılan olarak, bu kural yalnızca dışarıdan görünen özellikler ve türler görünür, ancak bu [yapılandırılabilir](#configurability).
+Varsayılan olarak, bu kural yalnızca dışarıdan görünür özellikler ve türlere bakar, ancak bu [yapılandırılabilir](#configurability).
 
 ## <a name="rule-description"></a>Kural açıklaması
 
-Özellik salt okunur olsa bile özellikleri tarafından döndürülen dizi yazma korumalı değildir. Dizi değiştirilmeye kanıt tutulacak özellik dizisinin bir kopyasını döndürmelidir. Genellikle, kullanıcıların böyle bir özellik çağırma performansı olumsuz etkilerini anlamak olmaz. Özellikle, bunlar bir dizinlenmiş özellik olarak özelliğini kullanabilirsiniz.
+Özellik salt okunurdur olsa bile, Özellikler tarafından döndürülen diziler yazma korumalı değildir. Dizi değiştirilmeye kanıt tutulacak özellik dizisinin bir kopyasını döndürmelidir. Genellikle, kullanıcılar bu tür bir özelliği çağırmanın olumsuz performans etkilerine ilişkin etkileri anlamaz. Özellikle, özelliği dizini oluşturulmuş bir özellik olarak kullanabilir.
 
-## <a name="how-to-fix-violations"></a>İhlaller nasıl düzeltilir?
+## <a name="how-to-fix-violations"></a>İhlalleri çözme
 
-Bu kural ihlalini düzeltmek için özelliği bir yöntem yapın veya özelliği bir koleksiyon döndürecek şekilde değiştirin.
+Bu kural ihlalini onarmak için, özelliği bir yöntem yapın veya özelliği bir koleksiyon döndürecek şekilde değiştirin.
 
-## <a name="when-to-suppress-warnings"></a>Uyarılar bastırıldığında
+## <a name="when-to-suppress-warnings"></a>Uyarıların ne zaman bastırılamıyor
 
-Türetilen bir özniteliğin bir özellik için oluşturulan bir uyarıyı bastırmak <xref:System.Attribute> sınıfı. Öznitelikler, dizi döndüren özellikler içerebilir, ancak koleksiyon döndüren özellikler içeremez.
+<xref:System.Attribute> Sınıfından türetilmiş bir özniteliğin özelliği için oluşturulan bir uyarıyı gizleyebilirsiniz. Öznitelikler, diziler döndüren özellikler içerebilir, ancak koleksiyonlar döndüren Özellikler içeremez.
 
-Özelliğin parçası ise uyarıyı gözardı edebileceğini bir [veri aktarım nesnesini (DTO)](/previous-versions/msp-n-p/ff649585(v=pandp.10)) sınıfı.
+Özellik [veri aktarımı nesne (DTO)](/previous-versions/msp-n-p/ff649585(v=pandp.10)) sınıfının bir parçasıysa, bu uyarıyı gizleyebilirsiniz.
 
 Aksi takdirde, bu kuraldan bir uyarıyı bastırmayın.
 
-## <a name="configurability"></a>Etkiler ve yapılandırma
+## <a name="configurability"></a>Yapılandırılabilirlik
 
-Bu kuraldan çalıştırıyorsanız [FxCop Çözümleyicileri](install-fxcop-analyzers.md) (ve statik kod analizi üzerinden değil), hangi parçalarının yapılandırabilirsiniz, bu kuralı çalıştırmak için kod tabanı, kendi erişilebilirliği temel. Örneğin, kural yalnızca genel olmayan API yüzeyi karşı çalışması gerektiğini belirtmek için projenizi bir .editorconfig dosyasında şu anahtar-değer çifti ekleyin:
+Bu kuralı [FxCop çözümleyicilerinin](install-fxcop-analyzers.md) (eski analizler olmadan) çalıştırıyorsanız, kod tabanınızın hangi bölümlerinin bu kuralı çalıştırmak için erişilebilirliğini temel alarak yapılandırabilirsiniz. Örneğin, kuralın yalnızca genel olmayan API yüzeyine karşı çalışması gerektiğini belirtmek için, aşağıdaki anahtar-değer çiftini projenizdeki bir. editorconfig dosyasına ekleyin:
 
 ```ini
 dotnet_code_quality.ca1819.api_surface = private, internal
 ```
 
-Bu kategoride (performans), bu seçenek yalnızca bu kural, tüm kuralları veya tüm kuralları yapılandırabilirsiniz. Daha fazla bilgi için [yapılandırma FxCop Çözümleyicileri](configure-fxcop-analyzers.md).
+Bu seçeneği yalnızca bu kural için, tüm kurallar için veya bu kategorideki tüm kurallar (performans) için yapılandırabilirsiniz. Daha fazla bilgi için bkz. [FxCop çözümleyicileri yapılandırma](configure-fxcop-analyzers.md).
 
 ## <a name="example-violation"></a>Örnek ihlali
 
-Aşağıdaki örnek bu kuralı ihlal eden bir özellik gösterilmektedir:
+Aşağıdaki örnek, bu kuralı ihlal eden bir özelliği gösterir:
 
 [!code-csharp[FxCop.Performance.PropertyArrayViolation#1](../code-quality/codesnippet/CSharp/ca1819-properties-should-not-return-arrays_1.cs)]
 [!code-vb[FxCop.Performance.PropertyArrayViolation#1](../code-quality/codesnippet/VisualBasic/ca1819-properties-should-not-return-arrays_1.vb)]
 
-Bu kural ihlalini düzeltmek için özelliği bir yöntem yapın veya özelliği bir dizi yerine bir koleksiyon döndürecek şekilde değiştirin.
+Bu kural ihlalini onarmak için, özelliği bir metodu yapın ya da özelliği bir dizi yerine bir koleksiyon döndürecek şekilde değiştirin.
 
-### <a name="change-the-property-to-a-method"></a>Özelliği bir yönteme değiştirme
+### <a name="change-the-property-to-a-method"></a>Özelliği bir yöntem olarak değiştirin
 
-Aşağıdaki örnek, bir yönteme özelliğini değiştirerek ihlali giderir:
+Aşağıdaki örnek, özelliğini bir yöntemi ile değiştirerek ihlalin düzeltir:
 
 [!code-vb[FxCop.Performance.PropertyArrayFixedMethod#1](../code-quality/codesnippet/VisualBasic/ca1819-properties-should-not-return-arrays_2.vb)]
 [!code-csharp[FxCop.Performance.PropertyArrayFixedMethod#1](../code-quality/codesnippet/CSharp/ca1819-properties-should-not-return-arrays_2.cs)]
 
 ### <a name="change-the-property-to-return-a-collection"></a>Özelliği bir koleksiyon döndürecek şekilde değiştirin
 
-Aşağıdaki örnek, döndürülecek özelliği değiştirilerek ihlali giderir bir <xref:System.Collections.ObjectModel.ReadOnlyCollection%601?displayProperty=fullName>:
+Aşağıdaki örnek, özelliği bir <xref:System.Collections.ObjectModel.ReadOnlyCollection%601?displayProperty=fullName>döndürecek şekilde değiştirerek ihlalini düzeltir:
 
 [!code-csharp[FxCop.Performance.PropertyArrayFixedCollection#1](../code-quality/codesnippet/CSharp/ca1819-properties-should-not-return-arrays_3.cs)]
 [!code-vb[FxCop.Performance.PropertyArrayFixedCollection#1](../code-quality/codesnippet/VisualBasic/ca1819-properties-should-not-return-arrays_3.vb)]
 
-## <a name="allow-users-to-modify-a-property"></a>Kullanıcıların bir özellik değiştirmesine izin ver
+## <a name="allow-users-to-modify-a-property"></a>Kullanıcıların bir özelliği değiştirmesine izin ver
 
-Bir özelliği değiştirmek tüketici sınıfı izin vermek isteyebilirsiniz. Aşağıdaki örnek bu kuralı ihlal eden bir okuma/yazma özelliği gösterir:
+Sınıfın tüketicisi bir özelliği değiştirmesine izin vermek isteyebilirsiniz. Aşağıdaki örnek, bu kuralı ihlal eden bir okuma/yazma özelliği gösterir:
 
 [!code-csharp[FxCop.Performance.PropertyModifyViolation#1](../code-quality/codesnippet/CSharp/ca1819-properties-should-not-return-arrays_4.cs)]
 [!code-vb[FxCop.Performance.PropertyModifyViolation#1](../code-quality/codesnippet/VisualBasic/ca1819-properties-should-not-return-arrays_4.vb)]
 
-Aşağıdaki örnek, döndürülecek özelliği değiştirilerek ihlali giderir bir <xref:System.Collections.ObjectModel.Collection%601?displayProperty=fullName>:
+Aşağıdaki örnek, özelliği bir <xref:System.Collections.ObjectModel.Collection%601?displayProperty=fullName>döndürecek şekilde değiştirerek ihlalini düzeltir:
 
 [!code-vb[FxCop.Performance.PropertyModifyFixed#1](../code-quality/codesnippet/VisualBasic/ca1819-properties-should-not-return-arrays_5.vb)]
 [!code-csharp[FxCop.Performance.PropertyModifyFixed#1](../code-quality/codesnippet/CSharp/ca1819-properties-should-not-return-arrays_5.cs)]
 
-## <a name="related-rules"></a>İlgili kuralları
+## <a name="related-rules"></a>İlgili kurallar
 
-- [CA1024: Uygun yerlerde özellikler kullan](../code-quality/ca1024-use-properties-where-appropriate.md)
+- [CA1024 Uygun yerlerde özellikleri kullanın](../code-quality/ca1024-use-properties-where-appropriate.md)

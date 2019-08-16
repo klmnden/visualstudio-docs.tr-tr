@@ -11,92 +11,92 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 1afeb6f75648ce2ab1687fa9262ab28b658b0d70
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 284f33d9d7af885958ed13101e1449edc5c8f2be
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62820834"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69551092"
 ---
-# <a name="install-net-compiler-platform-analyzers"></a>.NET derleyici platformu çözümleyicilerini yükleme
+# <a name="install-net-compiler-platform-code-analyzers"></a>.NET Compiler Platform kodu Çözümleyicileri yüklemesi
 
-Visual Studio .NET derleyici platformu çekirdek kümesini içerir (*Roslyn*) çözümleyici. Bu çözümleyici her zaman açıktır. NuGet paketleri olarak veya Visual Studio uzantıları olarak ek Çözümleyicileri yükleyebileceğiniz *VSIX* dosyaları.
+Visual Studio temel bir .NET Compiler Platform (*Roslyn*) Çözümleyicileri kümesi içerir. Bu çözümleyiciler her zaman açıktır. NuGet paketleri olarak ya da *VSIX* dosyalarında Visual Studio uzantıları olarak ek çözümleyiciler yükleyebilirsiniz.
 
-## <a name="to-install-nuget-analyzer-packages"></a>NuGet Çözümleyicisi paketleri yüklemek için
+## <a name="to-install-nuget-analyzer-packages"></a>NuGet çözümleyici paketlerini yüklemek için
 
-1. Üzerinde www.nuget.org yüklemek istediğiniz Çözümleyicisi paket bulun.
+1. Www.nuget.org üzerine yüklemek istediğiniz çözümleyici paketini bulun.
 
-   Örneğin, isteyebileceğiniz [Microsoft FxCop Çözümleyicileri yükleme](install-fxcop-analyzers.md#to-install-fxcop-analyzers-as-a-nuget-package) kodunuzu diğerlerinin yanı sıra güvenlik ve performans sorunları için denetlenecek. Ya da yükleme [StyleCopAnalyzers](https://www.nuget.org/packages/stylecop.analyzers/) kod stili sorunları aramak için.
+   Örneğin, kodunuzu güvenlik ve performans sorunlarıyla ilgili olarak denetlemek için [Microsoft FxCop çözümleyicileri 'ni yüklemek](install-fxcop-analyzers.md#to-install-fxcop-analyzers-as-a-nuget-package) isteyebilirsiniz. Veya kod tabanınızdaki stil sorunlarını aramak için [Stylecopçözümleyicileri](https://www.nuget.org/packages/stylecop.analyzers/) ' ni de yükleyemezsiniz.
 
-2. Visual Studio kullanarak kullanarak paketi yükleyin [Paket Yöneticisi Konsolu](/nuget/quickstart/install-and-use-a-package-in-visual-studio#package-manager-console) veya [Paket Yöneticisi UI](/nuget/quickstart/install-and-use-a-package-in-visual-studio#package-manager-console).
+2. Paketi, paket [Yöneticisi konsolunu](/nuget/quickstart/install-and-use-a-package-in-visual-studio#package-manager-console) veya [Paket Yöneticisi Kullanıcı arabirimini](/nuget/quickstart/install-and-use-a-package-in-visual-studio#package-manager-console)kullanarak Visual Studio 'ya yükler.
 
    > [!NOTE]
-   > Her bir çözümleyici paket www.nuget.org sayfa yapıştırmak için komutu gösterir **Paket Yöneticisi Konsolu**. Metni panoya kopyalamak için kullanışlı bir düğme bile yoktur.
+   > Her çözümleyici paketi için www.nuget.org sayfasında, **Paket Yöneticisi konsoluna**yapıştırmanın komutu gösterilmektedir. Metni panoya kopyalamak için kullanışlı bir düğme de vardır.
 
-   Çözümleyici bütünleştirilmiş kodlarının yüklenir ve görünür **Çözüm Gezgini** altında **başvuruları** > **Çözümleyicileri**.
+   Çözümleyici derlemeleri yüklenir ve **başvuru** > **Çözümleyicileri**altında **Çözüm Gezgini** görüntülenir.
 
-## <a name="to-install-vsix-analyzers"></a>VSIX Çözümleyicileri yüklemek için
+## <a name="to-install-vsix-analyzers"></a>VSıX Çözümleyicileri yüklemek için
 
 ::: moniker range="vs-2017"
 
-1. Visual Studio'da **Araçları** > **Uzantılar ve güncelleştirmeler**.
+1. Visual Studio 'da **Araçlar** > **Uzantılar ve güncelleştirmeler**' i seçin.
 
    **Uzantılar ve güncelleştirmeler** iletişim kutusu açılır.
 
    > [!NOTE]
-   > Alternatif olarak, bulmak ve doğrudan Çözümleyicisi uzantısını indirin [Visual Studio Market](https://marketplace.visualstudio.com).
+   > Alternatif olarak, çözümleyici uzantısını doğrudan [Visual Studio Market](https://marketplace.visualstudio.com)bulabilir ve indirebilirsiniz.
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-1. Visual Studio'da **uzantıları** > **uzantıları yönetme**.
+1. Visual Studio 'da **Uzantılar** > **Yönet uzantılar**' ı seçin.
 
-   **Uzantıları yönetme** iletişim kutusu açılır.
+   **Uzantıları Yönet** iletişim kutusu açılır.
 
    > [!NOTE]
-   > Alternatif olarak, bulmak ve doğrudan Çözümleyicisi uzantısını indirin [Visual Studio Market](https://marketplace.visualstudio.com).
+   > Alternatif olarak, çözümleyici uzantısını doğrudan [Visual Studio Market](https://marketplace.visualstudio.com)bulabilir ve indirebilirsiniz.
 
 ::: moniker-end
 
-2. Genişletin **çevrimiçi** sol bölmesi ve ardından **Visual Studio Market**.
+2. Sol bölmedeki **çevrimiçi** ' i genişletin ve ardından **Visual Studio Market**' yi seçin.
 
-3. Arama kutusuna, yüklemek istediğiniz Çözümleyicisi uzantısının adını yazın. Örneğin, isteyebileceğiniz [Microsoft FxCop Çözümleyicileri yükleme](install-fxcop-analyzers.md#to-install-fxcop-analyzers-as-a-vsix) kodunuzu diğerlerinin yanı sıra güvenlik ve performans sorunları için denetlenecek.
+3. Arama kutusuna, yüklemek istediğiniz çözümleyici uzantısının adını yazın. Örneğin, kodunuzu güvenlik ve performans sorunlarıyla ilgili olarak denetlemek için [Microsoft FxCop çözümleyicileri 'ni yüklemek](install-fxcop-analyzers.md#to-install-fxcop-analyzers-as-a-vsix) isteyebilirsiniz.
 
-4. Seçin **indirme**.
+4. **İndir**' i seçin.
 
-   Uzantı yüklenir.
+   Uzantı indirilir.
 
-5. Seçin **Tamam** iletişim kutusunu kapatın ve ardından başlatmak için Visual Studio'nun tüm örneklerini kapatın **VSIX yükleyicisi**.
+5. İletişim kutusunu kapatmak için **Tamam** ' ı seçin ve ardından **VSIX yükleyicisini**başlatmak için Visual Studio 'nun tüm örneklerini kapatın.
 
    **VSIX yükleyicisi** iletişim kutusu açılır.
 
-   ![Microsoft Kod Analizi için VSIX yükleyicisi](media/vsix-installer-code-analysis.png)
+   ![Microsoft kod analizi için VSıX yükleyicisi](media/vsix-installer-code-analysis.png)
 
-6. Seçin **Değiştir** yüklemeyi başlatmak için.
+6. Yüklemeyi başlatmak için **Değiştir** ' i seçin.
 
-7. Bir veya iki dakika sonra yükleme işlemini tamamlar. Seçin **Kapat**.
+7. Bir dakikadan veya ikinin ardından yükleme tamamlanır. **Kapat**' ı seçin.
 
-8. Visual Studio'yu yeniden açın.
+8. Visual Studio 'Yu yeniden açın.
 
 ::: moniker range="vs-2017"
 
-Seçeneğini yüklü olup olmadığını ' uzantısı denetlemek istiyorsanız **Araçları** > **Uzantılar ve güncelleştirmeler**. İçinde **Uzantılar ve güncelleştirmeler** iletişim kutusunda, **yüklü** solda, kategori ve uzantısı adına göre arayın.
+Uzantının yüklü olup olmadığını denetlemek isterseniz, **Araçlar** > **Uzantılar ve güncelleştirmeler**' i seçin. **Uzantılar ve güncelleştirmeler** iletişim kutusunda, sol taraftaki **yüklü** kategoriyi seçin ve ardından uzantıyı ada göre arayın.
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-Seçeneğini yüklü olup olmadığını ' uzantısı denetlemek istiyorsanız **uzantıları** > **uzantıları yönetme**. İçinde **uzantıları yönetme** iletişim kutusunda **yüklü** solda, kategori ve sonra uzantıyı adıyla Ara.
+Uzantının yüklü olup olmadığını denetlemek isterseniz, **uzantıları** > **Yönet uzantılar**' ı seçin. **Uzantıları Yönet** iletişim kutusunda, sol taraftaki **yüklü** kategoriyi seçin ve uzantıyı ada göre arayın.
 
 ::: moniker-end
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
 > [!div class="nextstepaction"]
-> [Roslyn çözümleyicilerini Visual Studio'da kullanın](../code-quality/use-roslyn-analyzers.md)
+> [Visual Studio 'da kod Çözümleyicileri kullanma](../code-quality/use-roslyn-analyzers.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [Roslyn çözümleyicilerini Visual Studio'da genel bakış](../code-quality/roslyn-analyzers-overview.md)
-- [FxCop Çözümleyicileri yükleyin](../code-quality/install-fxcop-analyzers.md)
+- [Visual Studio 'da kod Çözümleyicileri 'ne genel bakış](../code-quality/roslyn-analyzers-overview.md)
+- [FxCop çözümleyicileri 'ni yükler](../code-quality/install-fxcop-analyzers.md)

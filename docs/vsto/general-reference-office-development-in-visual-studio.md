@@ -1,8 +1,8 @@
 ---
-title: Genel başvuru (Visual Studio'da Office Geliştirme)
+title: Genel başvuru (Visual Studio 'da Office geliştirme)
 titleSuffix: ''
 ms.custom: seodec18
-ms.date: 02/02/2017
+ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -14,49 +14,48 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2f1370dc0eb159b3f566e6ddcba6e1317cfb441a
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 8e8b8dee20b67338bbe1c8c78ebe1d8bcc730175
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63427953"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69551510"
 ---
-# <a name="general-reference-office-development-in-visual-studio"></a>Genel başvuru (Visual Studio'da Office Geliştirme)
-  Bu bölüm, Visual Studio'da Microsoft Office projeleri hakkında teknik ayrıntılar içerir.
+# <a name="general-reference-office-development-in-visual-studio"></a>Genel başvuru (Visual Studio 'da Office geliştirme)
+  Bu bölüm, Visual Studio 'da Microsoft Office projelerle ilgili teknik ayrıntıları içerir.
 
-> [!NOTE]
-> Office deneyiminiz boyunca genişleten çözümleri geliştirme yapmakla mı ilgileniyorsunuz [birden çok platform](https://dev.office.com/add-in-availability)? Yeni kontrol [Office eklentilerini modeli](https://dev.office.com/docs/add-ins/overview/office-add-ins). Office eklentileri, VSTO eklentileri ve çözümlerle karşılaştırıldığında küçük ayak izine sahip ve neredeyse tüm web teknolojisi, HTML5, JavaScript, CSS3 ve XML gibi programlama kullanarak oluşturabilirsiniz.
+[!include[Add-ins note](includes/addinsnote.md)]
 
 ## <a name="in-this-section"></a>Bu bölümde
 - [Office birincil birlikte çalışma derlemeleri](../vsto/office-primary-interop-assemblies.md)
 
- Office ile birlikte yüklenebilir ve her kısa bir açıklamasını sağlar. birincil birlikte çalışma derlemelerini listeler.
+ Office ile yüklenebilecek kullanılabilir birincil birlikte çalışma derlemelerini listeler ve her biri için kısa bir açıklama sağlar.
 
 - [Office çözümleri için uygulama bildirimleri](../vsto/application-manifests-for-office-solutions.md)
 
- Uygulama bildiriminin Office çözümlerini nasıl kullanıldığını açıklar.
+ Uygulama bildirimlerinin Office çözümlerinde nasıl kullanıldığını açıklar.
 
 - [Office çözümleri için dağıtım bildirimleri](../vsto/deployment-manifests-for-office-solutions.md)
 
- Dağıtım bildirimleri kullanılan Office çözümlerini nasıl birleştirileceğini açıklar.
+ Dağıtım bildirimlerinin Office çözümlerini nasıl kullandığını açıklar.
 
-- [Kullanıcı arabirimi başvurusu &#40;Visual Studio'da Office geliştirme&#41;](../vsto/user-interface-reference-office-development-in-visual-studio.md)
+- [Visual Studio 'da &#40;Kullanıcı arabirimi başvurusu Office geliştirme&#41;](../vsto/user-interface-reference-office-development-in-visual-studio.md)
 
- Çeşitli iletişim kutuları, windows ve diğer kullanıcı arabirimleri üzerinde görünen seçenekleri açıklayan konulara listeler.
+ Çeşitli iletişim kutularında, Windows 'da ve diğer kullanıcı arabirimlerinde görünen seçenekleri açıklayan konuları listeler.
 
-- [Hata iletileri &#40;Visual Studio'da Office geliştirme&#41;](../vsto/error-messages-office-development-in-visual-studio.md)
+- [Visual Studio &#40;'da Office geliştirme hata iletileri&#41;](../vsto/error-messages-office-development-in-visual-studio.md)
 
- Office projeleri için hata iletileri açıklayan konuların listeler.
+ Office projelerinin hata iletilerini açıklayan konuları listeler.
 
 ## <a name="related-sections"></a>İlgili bölümler
-- [Başlama &#40;Visual Studio'da Office geliştirme&#41;](../vsto/getting-started-office-development-in-visual-studio.md)
+- [Visual Studio &#40;'da Office geliştirme ile çalışmaya başlama&#41;](../vsto/getting-started-office-development-in-visual-studio.md)
 
- Kurulum, proje şablonları, Office birincil birlikte çalışma derlemelerini ve Office geliştirme yenilikler hakkında bilgi için bağlantılar sağlar.
+ Kurulum, proje şablonları, Office birincil birlikte çalışma derlemeleri ve Office geliştirmede yenilikler hakkında bilgi için bağlantılar sağlar.
 
 - [Office geliştirme örnekleri ve izlenecek yollar](../vsto/office-development-samples-and-walkthroughs.md)
 
- Kod örnekleri ve söz dizimi, yapısı ve Office çözümleri oluşturmak için kullanılan teknikleri öğrenin ve denemeler yardımcı Visual Studio'da Office projeleri oluşturmak için adım adım izlenecek yolları açıklanmaktadır.
+ Visual Studio 'da Office projeleri oluşturmaya yönelik kod örneklerini ve adım adım yönergeleri açıklar. Bu, Office çözümlerini oluşturmak için kullanılan söz dizimi, yapı ve teknikleri öğrenmenize ve bunlarla denemeler yapmanıza yardımcı olabilir.
 
-- [Office çözümleri oluşturma ve tasarlama](../vsto/designing-and-creating-office-solutions.md)
+- [Office çözümleri tasarlama ve oluşturma](../vsto/designing-and-creating-office-solutions.md)
 
  Visual Studio kullanarak Office projeleri oluşturmaya başlama hakkında bilgi için bağlantılar sağlar.

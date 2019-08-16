@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d08644ede6b9b28496cff585624ea37858afd49
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: 2a4e04e1afdbecdc9c333ea43a52bff3123d448a
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65842297"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69547627"
 ---
 # <a name="ca1036-override-methods-on-comparable-types"></a>CA1036: Karşılaştırılabilir türlerde metotları geçersiz kıl
 
@@ -28,28 +28,28 @@ ms.locfileid: "65842297"
 |TypeName|OverrideMethodsOnComparableTypes|
 |CheckId|CA1036|
 |Kategori|Microsoft.Design|
-|Yeni Değişiklik|Bölünemez|
+|Yeni Değişiklik|Kırılmamış|
 
 ## <a name="cause"></a>Sebep
 
-Bir türün uyguladığı <xref:System.IComparable?displayProperty=fullName> arabirim ve geçersiz <xref:System.Object.Equals%2A?displayProperty=fullName> veya dile özgü işleci eşitlik, eşitsizlik durumu olabilir, daha az aşırı değil-daha küçük veya büyük-daha. Türü arabiriminin bir uygulamasını devralırsa kuralı ihlal raporlamaz.
+Bir tür, <xref:System.IComparable?displayProperty=fullName> arabirimini uygular ve <xref:System.Object.Equals%2A?displayProperty=fullName> eşitlik, eşitsizlik, küçüktür veya büyüktür için dile özgü işleci aşırı yüklemez veya aşırı yüklemez. Tür, arabirimin yalnızca bir uygulamasını devralırsa kural bir ihlal raporlamaz.
 
-Varsayılan olarak, bu kural yalnızca genel ve korumalı türler görünür, ancak bu [yapılandırılabilir](#configurability).
+Varsayılan olarak, bu kural yalnızca ortak ve korumalı türlere bakar, ancak bu [yapılandırılabilir](#configurability).
 
 ## <a name="rule-description"></a>Kural açıklaması
 
-Özel sıralama düzenini tanımlamak türleri uygulayan <xref:System.IComparable> arabirimi. <xref:System.IComparable.CompareTo%2A> Yöntem türü iki örneği için doğru sıralama düzenini belirten bir tamsayı değeri döndürür. Bu kural, bir sıralama düzeni kümesi türlerini tanımlar. Gelir bir sıralama düzeni ayarı olağan anlamını eşitlik, eşitsizlik durumu olabilir, daha az-daha küçük ve büyük-daha geçerli değildir. Bir uygulamasını sağlaması zaman <xref:System.IComparable>, genellikle gerekir ayrıca geçersiz <xref:System.Object.Equals%2A> ile tutarlı olan değerler döndürür, böylece <xref:System.IComparable.CompareTo%2A>. Kılarsanız <xref:System.Object.Equals%2A> ve Kodladığınız İşleç aşırı yüklemeleri destekler bir dilde tutarlı işleçleri de sağlamalıdır <xref:System.Object.Equals%2A>.
+Özel bir sıralama düzeni tanımlayan türler <xref:System.IComparable> arabirimini uygular. <xref:System.IComparable.CompareTo%2A> Yöntemi, türün iki örneği için doğru sıralama düzenini gösteren bir tamsayı değeri döndürür. Bu kural bir sıralama düzeni belirleyen türleri tanımlar. Bir sıralama düzeni ayarlamak, eşitlik, eşitsizlik, daha az ve daha büyük bir deyişle bunun uygulanmayacağı anlamına gelir. Uygulamasının bir uygulamasını <xref:System.IComparable>sağladığınızda, ile <xref:System.IComparable.CompareTo%2A>tutarlı değerler döndürmesi için genellikle geçersiz <xref:System.Object.Equals%2A> kılmanız gerekir. ' İ geçersiz <xref:System.Object.Equals%2A> kılar ve işleç aşırı yüklerini destekleyen bir dilde kodlama yapıyorsanız, ile <xref:System.Object.Equals%2A>tutarlı işleçler sağlamanız gerekir.
 
-## <a name="how-to-fix-violations"></a>İhlaller nasıl düzeltilir?
+## <a name="how-to-fix-violations"></a>İhlalleri çözme
 
-Bu kural ihlalini düzeltmek için geçersiz kılın <xref:System.Object.Equals%2A>. İşleç aşırı yüklemesi programlama dilini destekler, aşağıdaki işleçleri sağlayın:
+Bu kural ihlalini onarmak için geçersiz kılın <xref:System.Object.Equals%2A>. Programlama diliniz işleç aşırı yüklemesini destekliyorsa, aşağıdaki işleçleri sağlayın:
 
 - op_Equality
 - op_Inequality
 - op_LessThan
 - op_GreaterThan
 
-C# içinde bu işleçler temsil etmek için kullanılan belirteçleri aşağıda belirtilmiştir:
+' C#De, bu işleçleri temsil etmek için kullanılan belirteçler aşağıdaki gibidir:
 
 ```csharp
 ==
@@ -58,27 +58,27 @@ C# içinde bu işleçler temsil etmek için kullanılan belirteçleri aşağıda
 >
 ```
 
-## <a name="when-to-suppress-warnings"></a>Uyarılar bastırıldığında
+## <a name="when-to-suppress-warnings"></a>Uyarıların ne zaman bastırılamıyor
 
-Visual Basic ile olduğu gibi İşleç aşırı yüklemesi, işleçler ve programlama dilini eksik ihlali neden olduğu CA1036 desteklemiyor kuraldan bir uyarıyı bastırmak güvenlidir. İşleçler uygulama, uygulama bağlamında anlamsız olduğunu belirlerseniz, ayrıca op_Equality farklı eşitlik operatörleri başlatıldığında bu kuraldan bir uyarıyı bastırmak güvenlidir. Ancak, her zaman op_Equality geçersiz kılmalıdır ve kılarsanız == işleci <xref:System.Object.Equals%2A?displayProperty=nameWithType>.
+İhlalin eksik işleçlerden kaynaklanmış olması ve programlama diliniz, Visual Basic olduğu gibi, işleç aşırı yüklemesini desteklemediğine ilişkin bir uyarı CA1036. İşleçleri uygulamanın uygulama içeriğiniz üzerinde anlamlı olmadığını belirlerseniz, op_Equality dışındaki eşitlik işleçlerinde tetiklendiğinde bu kuraldan bir uyarının görüntülenmesini de güvenlidir. Ancak, geçersiz kıldıysanız <xref:System.Object.Equals%2A?displayProperty=nameWithType>op_Equality ve = = işlecini her zaman geçersiz kılmanız gerekir.
 
-## <a name="configurability"></a>Etkiler ve yapılandırma
+## <a name="configurability"></a>Yapılandırılabilirlik
 
-Bu kuraldan çalıştırıyorsanız [FxCop Çözümleyicileri](install-fxcop-analyzers.md) (ve statik kod analizi üzerinden değil), hangi parçalarının yapılandırabilirsiniz, bu kuralı çalıştırmak için kod tabanı, kendi erişilebilirliği temel. Örneğin, kural yalnızca genel olmayan API yüzeyi karşı çalışması gerektiğini belirtmek için projenizi bir .editorconfig dosyasında şu anahtar-değer çifti ekleyin:
+Bu kuralı [FxCop çözümleyicilerinin](install-fxcop-analyzers.md) (eski analizler olmadan) çalıştırıyorsanız, kod tabanınızın hangi bölümlerinin bu kuralı çalıştırmak için erişilebilirliğini temel alarak yapılandırabilirsiniz. Örneğin, kuralın yalnızca genel olmayan API yüzeyine karşı çalışması gerektiğini belirtmek için, aşağıdaki anahtar-değer çiftini projenizdeki bir. editorconfig dosyasına ekleyin:
 
 ```ini
 dotnet_code_quality.ca1036.api_surface = private, internal
 ```
 
-Bu kategoride (tasarımı), bu seçenek yalnızca bu kural, tüm kuralları veya tüm kuralları yapılandırabilirsiniz. Daha fazla bilgi için [yapılandırma FxCop Çözümleyicileri](configure-fxcop-analyzers.md).
+Bu seçeneği yalnızca bu kural için, tüm kurallar için veya bu kategorideki tüm kurallar (tasarım) için yapılandırabilirsiniz. Daha fazla bilgi için bkz. [FxCop çözümleyicileri yapılandırma](configure-fxcop-analyzers.md).
 
 ## <a name="examples"></a>Örnekler
 
-Aşağıdaki kodu doğru uygulayan bir tür içeren <xref:System.IComparable>. Kod açıklamaları için ilgili çeşitli kuralları karşılayan yöntemleri tanımlamak <xref:System.Object.Equals%2A> ve <xref:System.IComparable> arabirimi.
+Aşağıdaki kod doğru şekilde uygulayan <xref:System.IComparable>bir tür içerir. Kod açıklamaları, <xref:System.Object.Equals%2A> <xref:System.IComparable> ve arabirimiyle ilgili çeşitli kuralları karşılayan yöntemleri belirler.
 
 [!code-csharp[FxCop.Design.IComparable#1](../code-quality/codesnippet/CSharp/ca1036-override-methods-on-comparable-types_1.cs)]
 
-Aşağıdaki uygulama kodu davranışını testleri <xref:System.IComparable> daha önce gösterilen uygulama.
+Aşağıdaki uygulama kodu, daha önce gösterilen uygulamanın davranışını <xref:System.IComparable> sınar.
 
 [!code-csharp[FxCop.Design.TestIComparable#1](../code-quality/codesnippet/CSharp/ca1036-override-methods-on-comparable-types_2.cs)]
 

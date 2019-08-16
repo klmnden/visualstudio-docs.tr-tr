@@ -1,6 +1,6 @@
 ---
 title: Office geliştirme örnekleri ve izlenecek yollar
-ms.date: 02/02/2017
+ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -20,40 +20,39 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5ba918ef2d2bdbc35f7e46b6b8553037d3e5d281
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: a9a8e71395190647fa7a908949a186c511b24610
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63447108"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69551676"
 ---
 # <a name="office-development-samples-and-walkthroughs"></a>Office geliştirme örnekleri ve izlenecek yollar
-  Bu bölümde, örnek uygulamalar, örnek kod ve söz dizimi, yapısı ve Microsoft Office çözümleri oluşturmak için kullanılan teknikleri gösteren adım adım talimatları içerir.
+  Bu bölüm örnek uygulamalar, örnek kod ve Microsoft Office çözümleri oluşturmak için kullanılan sözdizimi, yapı ve teknikleri gösteren adım adım yönergeler içerir.
 
- Örnek kod yönerge amaçlıdır ve değişiklik olmadan dağıtılan çözümleri kullanılmamalıdır. Özellikle, güvenlik büyük dikkate almanız gerekir.
+ Örnek kod, yönerge amaçlarıyla yöneliktir ve dağıtılan çözümlerinde değişiklik yapılmadan kullanılmamalıdır. Özellikle, güvenliğin daha fazla dikkate alınması gerekir.
 
- Uygulamalarının güvenliğini sağlama hakkında daha fazla bilgi için bkz: [güvenli Office çözümleri](../vsto/securing-office-solutions.md).
+ Uygulamaların güvenliğini sağlama hakkında daha fazla bilgi için bkz. [Secure Office Solutions](../vsto/securing-office-solutions.md).
 
-> [!NOTE]
-> Office deneyiminiz boyunca genişleten çözümleri geliştirme yapmakla mı ilgileniyorsunuz [birden çok platform](https://dev.office.com/add-in-availability)? Yeni kontrol [Office eklentilerini modeli](https://dev.office.com/docs/add-ins/overview/office-add-ins). Office eklentileri, VSTO eklentileri ve çözümlerle karşılaştırıldığında küçük ayak izine sahip ve neredeyse tüm web teknolojisi, HTML5, JavaScript, CSS3 ve XML gibi programlama kullanarak oluşturabilirsiniz.
+[!include[Add-ins note](includes/addinsnote.md)]
 
 ## <a name="in-this-section"></a>Bu bölümde
 
 |Konu|Açıklama|
 |-----------|-----------------|
-|[Office geliştirme örnekleri](../vsto/office-development-samples.md)|Visual Studio'da Office ve SharePoint geliştirme kullanımını gösteren örnek uygulamalar için bağlantılar sağlar.|
-|[Word'ü kullanarak izlenecek yollar](../vsto/walkthroughs-using-word.md)|Visual Studio'da Office geliştirme araçları bir giriş sağlaması ve nasıl Word Office iş uygulamalarınızla tümleştirebilirsiniz açıklanmasına yardımcı adım adım kılavuzları listeler.|
-|[Excel kullanarak izlenecek yollar](../vsto/walkthroughs-using-excel.md)|Visual Studio'da Office geliştirme araçları bir giriş sağlaması ve nasıl Excel Office iş uygulamalarınızla tümleştirebilirsiniz açıklanmasına yardımcı adım adım kılavuzları listeler.|
-|[Office çözümlerindeki verilerde izlenecek yol](../vsto/data-in-office-solutions-walkthroughs.md)|Çözümlerinizi verilerle nasıl çalışılacağını gösteren adım adım kılavuzları listeler.|
-|[Office kullanıcı Arabirimi özelleştirmesinde izlenecek yollar](../vsto/office-ui-customization-walkthroughs.md)|Microsoft Office uygulamasının kullanıcı arabirimini (UI) nasıl özelleştirebileceğinizi adım adım kılavuzlar listeler.|
-|[Güvenlik ve dağıtım izlenecek yollar](../vsto/security-and-deployment-walkthroughs.md)|Nasıl çözümünüzün çalışmasına izin veren güvenlik ilkesini ayarlayabilirsiniz ve çözümünüzü nasıl dağıtabileceğiniz gösteren adım adım kılavuzlar listeler.|
+|[Office geliştirme örnekleri](../vsto/office-development-samples.md)|Visual Studio 'da Office ve SharePoint geliştirme kullanımını gösteren örnek uygulamalara bağlantılar sağlar.|
+|[Word kullanarak izlenecek yollar](../vsto/walkthroughs-using-word.md)|Visual Studio 'da Office geliştirme araçlarına giriş sağlayan ve Word 'Ü Office Business Applications nasıl tümleştirebileceğinizi göstermeye yardımcı olan adım adım kılavuzların listesini görüntüler.|
+|[Excel kullanarak izlenecek yollar](../vsto/walkthroughs-using-excel.md)|Visual Studio 'da Office geliştirme araçlarına giriş sağlayan ve Excel 'i Office Business Applications nasıl tümleştiribileceğinizi göstermeye yardımcı olan adım adım kılavuzlarla ilgili adımları listeler.|
+|[Office çözümlerinde verilere ilişkin izlenecek yollar](../vsto/data-in-office-solutions-walkthroughs.md)|Çözümlerinizde verilerle çalışmayı gösteren adım adım kılavuzlarla birlikte listelenir.|
+|[Office UI özelleştirmesi izlenecek yollar](../vsto/office-ui-customization-walkthroughs.md)|Microsoft Office uygulamalarının Kullanıcı arabirimini (UI) nasıl özelleştirebileceğinizi gösteren adım adım kılavuzlar listelenir.|
+|[Güvenlik ve dağıtım talimatları](../vsto/security-and-deployment-walkthroughs.md)|Çözümünüzün çalışmasına izin vermek için güvenlik ilkesini nasıl ayarlayabileceğinizi ve çözümünüzü nasıl dağıtabileceğinizi gösteren adım adım kılavuzlar listelenir.|
 
 ## <a name="related-sections"></a>İlgili Bölümler
 
 |Konu|Açıklama|
 |-----------|-----------------|
-|[Başlama &#40;Visual Studio'da Office geliştirme&#41;](../vsto/getting-started-office-development-in-visual-studio.md)|Kurulum, proje şablonları, Office birincil birlikte çalışma derlemelerini ve Office geliştirme yenilikler hakkında bilgi için bağlantılar sağlar.|
-|[Visual Studio'da Office çözümleri mimarisi](../vsto/architecture-of-office-solutions-in-visual-studio.md)|Yönetilen kod Office çözümleri iş Geliştirici ve son kullanıcı perspektifinden açıklar ve yönetilen kodun çalıştığını Office belge ve uygulamalar ile ilgili bilgiler içerir.|
-|[Office programlarındaki ortak görevler](../vsto/common-tasks-in-office-programming.md)|Visual Studio'da Office geliştirme ile programlama hakkında sık sorulan sorular listeler ve ortak sorunları çözebilecek konulara bağlantılar sağlar.|
-|[Office çözümleri oluşturma ve tasarlama](../vsto/designing-and-creating-office-solutions.md)|Çözümünüzün derlemeleri rolünü ve Microsoft Office çözümleri oluşturma hakkında bilgi için bağlantılar sağlar.|
-|[Eylemler bölmesine genel bakış](../vsto/actions-pane-overview.md)|Eylemler bölmesinde adlı belge düzeyi görev bölmesinde genel bir bakış sağlar.|
+|[Visual Studio &#40;'da Office geliştirme ile çalışmaya başlama&#41;](../vsto/getting-started-office-development-in-visual-studio.md)|Kurulum, proje şablonları, Office birincil birlikte çalışma derlemeleri ve Office geliştirmede yenilikler hakkında bilgi için bağlantılar sağlar.|
+|[Visual Studio 'da Office çözümlerinin mimarisi](../vsto/architecture-of-office-solutions-in-visual-studio.md)|Yönetilen kod Office çözümlerinin, geliştiricinin ve son kullanıcının perspektifinden nasıl çalıştığını açıklar ve yönetilen kodun Office belgeleri ve uygulamalarıyla nasıl çalıştığı hakkında bilgi içerir.|
+|[Office programlamada ortak görevler](../vsto/common-tasks-in-office-programming.md)|Visual Studio 'da Office geliştirme ile programlama hakkında sık sorulan soruları listeler ve yaygın sorunları çözmeye yardımcı olabilecek konuların bağlantılarını sağlar.|
+|[Office çözümleri tasarlama ve oluşturma](../vsto/designing-and-creating-office-solutions.md)|Microsoft Office çözümlerin nasıl oluşturulacağı ve çözümünüzde derlemelerin rolü hakkında bilgilere bağlantılar sağlar.|
+|[Eylemler bölmesine genel bakış](../vsto/actions-pane-overview.md)|Eylemler bölmesi olarak adlandırılan belge düzeyi görev bölmesine genel bir bakış sağlar.|

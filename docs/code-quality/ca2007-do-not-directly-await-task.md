@@ -12,47 +12,47 @@ ms.author: gewarren
 manager: jillfra
 dev_langs:
 - CSharp
-ms.openlocfilehash: 3f35e450f17a671b800d003b94ceb5ebc2321c90
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: 0d3ab899ad660c637492a4c3d229779481184e95
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65841419"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69546996"
 ---
 # <a name="ca2007-do-not-directly-await-a-task"></a>CA2007: Doğrudan bir Görevi beklemeyin
 
 |||
 |-|-|
-|TypeName|DoNotDirectlyAwaitATaskAnalyzer|
+|TypeName|Donotdirectlyawa, Taskanalyzer|
 |CheckId|CA2007|
-|Kategori|Microsoft.Reliability|
-|Yeni Değişiklik|Bölünemez|
+|Kategori|Microsoft. güvenilirliği|
+|Yeni Değişiklik|Kırılmamış|
 
 ## <a name="cause"></a>Sebep
 
-Zaman uyumsuz bir yöntem [bekler](/dotnet/csharp/language-reference/keywords/await) bir <xref:System.Threading.Tasks.Task> doğrudan.
+Zaman uyumsuz bir [](/dotnet/csharp/language-reference/keywords/await) Yöntem <xref:System.Threading.Tasks.Task> doğrudan bekler.
 
 ## <a name="rule-description"></a>Kural açıklaması
 
-Zaman zaman uyumsuz bir yöntem bekler bir <xref:System.Threading.Tasks.Task> doğrudan, devamlılık görevi oluşturan aynı iş parçacığında oluşur. Bu davranış, performans açısından pahalı olabilir ve kullanıcı Arabirimi iş parçacığında bir kilitlenmeye neden olabilir. Arama göz önünde bulundurun <xref:System.Threading.Tasks.Task.ConfigureAwait(System.Boolean)?displayProperty=nameWithType> amacınız devamlılık için sinyal.
+Zaman uyumsuz bir yöntem <xref:System.Threading.Tasks.Task> doğrudan bekler, görevi oluşturan aynı iş parçacığında devamlılık oluşur. Bu davranış, performans açısından maliyetli olabilir ve Kullanıcı arabirimi iş parçacığında kilitlenmeye neden olabilir. Devamlılığını <xref:System.Threading.Tasks.Task.ConfigureAwait(System.Boolean)?displayProperty=nameWithType> sağlamak için çağırmayı düşünün.
 
-Bu kural ile sunulan [FxCop Çözümleyicileri](install-fxcop-analyzers.md) ve "eski" (statik kod çözümleme)'içinde yok FxCop.
+Bu kural [FxCop çözümleyicileri](install-fxcop-analyzers.md) ile tanıtılmıştı ve eski FxCop analizinde yok.
 
-## <a name="how-to-fix-violations"></a>İhlaller nasıl düzeltilir?
+## <a name="how-to-fix-violations"></a>İhlalleri çözme
 
-İhlallerini düzeltmek için çağrı <xref:System.Threading.Tasks.Task.ConfigureAwait%2A> beklenen üzerinde <xref:System.Threading.Tasks.Task>. Geçirebilirsiniz `true` veya `false` için `continueOnCapturedContext` parametresi.
+İhlalleri onarmak için, bekletildi <xref:System.Threading.Tasks.Task.ConfigureAwait%2A> <xref:System.Threading.Tasks.Task>üzerinde çağrı yapın. Parametresi için `true` `false` veya ' i geçirebilirsiniz. `continueOnCapturedContext`
 
-- Çağırma `ConfigureAwait(true)` görevi açıkça çağırma olarak aynı davranışa sahip <xref:System.Threading.Tasks.Task.ConfigureAwait%2A>. Açıkça bu yöntemi çağırarak kasıtlı olarak devamlılığın özgün eşitleme kapsamının üzerinde gerçekleştirmek istediğiniz okuyuculara izin vererek.
+- Görevde `ConfigureAwait(true)` çağırmak, açıkça çağrılmayan <xref:System.Threading.Tasks.Task.ConfigureAwait%2A>aynı davranışa sahiptir. Bu yöntemi açık bir şekilde çağırarak, okuyucuların özgün eşitleme bağlamında devamlılığını bilerek gerçekleştirmek istediğinizi öğrenmiş olursunuz.
 
-- Çağrı `ConfigureAwait(false)` görevi iş parçacığı havuzu devamlılıklarının zamanlamak için böylece kullanıcı Arabirimi iş parçacığında bir kilitlenme önleme. Geçirme `false` uygulama bağımsız kitaplıkları için iyi bir seçenektir.
+- İş `ConfigureAwait(false)` parçacığı havuzunda devamlılıkları zamanlamak için görevde çağrı yapın, böylece kullanıcı arabirimi iş parçacığında kilitlenmelerden kaçının. Geçirme `false` , uygulamayla bağımsız kitaplıklar için iyi bir seçenektir.
 
-## <a name="when-to-suppress-warnings"></a>Uyarılar bastırıldığında
+## <a name="when-to-suppress-warnings"></a>Uyarıların ne zaman bastırılamıyor
 
-Tüketici bir grafik kullanıcı arabirimi (GUI) uygulaması değil veya tüketici sahip değil biliyorsanız, bu uyarının gösterilmemesi bir <xref:System.Threading.SynchronizationContext>.
+Tüketicinin bir grafik kullanıcı arabirimi (GUI) uygulaması olmadığını veya tüketicinin bir <xref:System.Threading.SynchronizationContext>öğesine sahip olmadığını biliyorsanız, bu uyarıyı gizleyebilirsiniz.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki kod parçacığı, uyarıyı üretir:
+Aşağıdaki kod parçacığı uyarı oluşturur:
 
 ```csharp
 public async Task Execute()
@@ -62,7 +62,7 @@ public async Task Execute()
 }
 ```
 
-İhlali gidermek için çağrı <xref:System.Threading.Tasks.Task.ConfigureAwait%2A> beklenen üzerinde <xref:System.Threading.Tasks.Task>:
+<xref:System.Threading.Tasks.Task.ConfigureAwait%2A> İhlalin<xref:System.Threading.Tasks.Task>giderilmesi için, beklenen:
 
 ```csharp
 public async Task Execute()
@@ -72,9 +72,9 @@ public async Task Execute()
 }
 ```
 
-## <a name="configurability"></a>Etkiler ve yapılandırma
+## <a name="configurability"></a>Yapılandırılabilirlik
 
-Bu kuraldan bir değer döndürmez zaman uyumsuz yöntemler hariç tutmak isteyip istemediğinizi yapılandırabilirsiniz. Bu tür yöntemler tutmak için projenizin bir .editorconfig dosyasında şu anahtar-değer çifti ekleyin:
+Bu kuraldan bir değer döndürmeyen zaman uyumsuz yöntemleri dışlamak isteyip istemediğiniz yapılandırabilirsiniz. Bu tür yöntemleri dışlamak için, aşağıdaki anahtar-değer çiftini projenizdeki bir. editorconfig dosyasına ekleyin:
 
 ```ini
 # Package version 2.9.0 and later
@@ -84,15 +84,15 @@ dotnet_code_quality.CA2007.exclude_async_void_methods = true
 dotnet_code_quality.CA2007.skip_async_void_methods = true
 ```
 
-Ayrıca, hangi derleme türleri bu kuralın uygulanacağı çıktı yapılandırabilirsiniz. Örneğin, yalnızca bu kural bir konsol uygulaması veya dinamik olarak bağlı bir kitaplığı (diğer bir deyişle, olmayan bir kullanıcı Arabirimi uygulaması) oluşturan koda uygulamak için projenizin bir .editorconfig dosyasında şu anahtar-değer çifti ekleyin:
+Ayrıca, bu kuralın hangi çıkış derleme türlerini uygulanacağını de yapılandırabilirsiniz. Örneğin, bu kuralı yalnızca bir konsol uygulaması veya dinamik olarak bağlı bir kitaplık (yani, bir UI uygulaması değil) üreten koda uygulamak için, aşağıdaki anahtar-değer çiftini projenizdeki bir. editorconfig dosyasına ekleyin:
 
 ```ini
 dotnet_code_quality.CA2007.output_kind = ConsoleApplication, DynamicallyLinkedLibrary
 ```
 
-Daha fazla bilgi için [yapılandırma FxCop Çözümleyicileri](configure-fxcop-analyzers.md).
+Daha fazla bilgi için bkz. [FxCop çözümleyicileri yapılandırma](configure-fxcop-analyzers.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [Ben bir görevle ConfigureAwait(false) await?](https://github.com/Microsoft/vs-threading/blob/master/doc/cookbook_vs.md#should-i-await-a-task-with-configureawaitfalse)
-- [Visual Studio'da FxCop Çözümleyicileri yükleyin](install-fxcop-analyzers.md)
+- [ConfigureAwait (false) ile bir görevi beklemem gerekir mi?](https://github.com/Microsoft/vs-threading/blob/master/doc/cookbook_vs.md#should-i-await-a-task-with-configureawaitfalse)
+- [Visual Studio 'da FxCop çözümleyicileri 'ni yükler](install-fxcop-analyzers.md)
