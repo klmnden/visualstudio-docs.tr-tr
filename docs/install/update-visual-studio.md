@@ -158,7 +158,7 @@ Bir bildirim yoksaymayı seçerseniz, Visual Studio göstermeyi durdurur. Yoksay
 
    Seçin **güncelleştirme** güncelleştirmeleri yüklemek için düğme.
 
-     ![Visual Studio yükleyicisi kullanarak Visual Studio 2017] ' i güncelleştirin (media/update-visual-studio.png "Visual Studio yükleyicisi kullanarak Visual Studio 'Yu güncelleştirme")
+     ![Visual Studio yükleyicisi kullanarak Visual Studio 2017](media/update-visual-studio.png "i güncelleştirin Visual Studio yükleyicisi kullanarak Visual Studio 'Yu güncelleştirme")
 
 ::: moniker-end
 
