@@ -1,10 +1,10 @@
 - name: Kod analizi belgeleri
   href: index.md
-- name: Yönetilen kod için kod analizi
+- name: Yönetilen kodu analiz etme
   items:
     - name: Genel Bakış
       href: code-analysis-for-managed-code-overview.md
-    - name: Roslyn çözümleyicileri (kaynak analizi)
+    - name: Kod analizi
       items:
         - name: Genel Bakış
           displayName: 'roslyn analyzers, source analysis'
@@ -17,32 +17,32 @@
           href: how-to-enable-and-disable-full-solution-analysis-for-managed-code.md
         - name: SSS
           href: analyzers-faq.md
-    - name: İkili çözümleyicileri (statik kod analizi)
+    - name: Eski analiz
       items:
         - name: Genel Bakış
           displayName: 'static code analysis, binary analysis'
           href: static-code-analysis-for-managed-code-overview.md
-        - name: Statik kod analizi kılavuzu
+        - name: Eski analiz kılavuzu
           href: walkthrough-analyzing-managed-code-for-code-defects.md
         - name: Geçiş
           href: fxcop-analyzers.yml
-        - name: Kod analizini el ile çalıştırma
+        - name: Eski analizi el ile çalıştırma
           href: how-to-run-code-analysis-manually-for-managed-code.md
         - name: Yapılandırma
           items:
-            - name: İkili çözümleyicileri için kod analizini yapılandırma
+            - name: Eski analizi yapılandırma
               href: how-to-configure-code-analysis-for-a-managed-code-project.md
-            - name: Otomatik kod analizini etkinleştirme
+            - name: Otomatik eski kod analizini etkinleştirme
               href: how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md
-            - name: Kod analizi sözlüğünü özelleştirme
+            - name: Eski kod analizi sözlüğünü özelleştirme
               href: how-to-customize-the-code-analysis-dictionary.md
         - name: Gizleme
           items:
-            - name: Üretilen kod için statik kod analizi uyarılarını gizleme
+            - name: Üretilen kod için eski analiz uyarılarını gizleme
               href: how-to-suppress-code-analysis-warnings-for-generated-code.md
-        - name: Kod analizi uygulama hataları
+        - name: Eski analiz uygulama hataları
           items:
-            - name: Kod analizi ilke hataları
+            - name: Eski analiz ilke hataları
               href: code-analysis-policy-errors.md
             - name: Genel Bakış
               href: code-analysis-application-errors.md
@@ -104,7 +104,7 @@
           items:
             - name: İade ilkeleri oluşturma veya güncelleştirme
               href: how-to-create-or-update-standard-code-analysis-check-in-policies.md
-            - name: Kod analizi iade ilkeleri uygulama
+            - name: Eski analiz iade ilkelerini uygulama
               href: implementing-custom-code-analysis-check-in-policies-for-managed-code.md
             - name: Bakımı yapılabilir kodu zorlama
               href: how-to-enforce-maintainable-code-with-a-code-analysis-check-in-policy.md
@@ -127,7 +127,7 @@
               href: fxcop-analyzer-options.md
         - name: SSS
           href: fxcop-analyzers-faq.md
-    - name: Statik analizden FxCop çözümleyicilerine geçiş
+    - name: Eski analizden FxCop çözümleyicilerine geçiş
       items:
         - name: Genel Bakış
           href: fxcop-analyzers.yml
@@ -698,6 +698,10 @@
                   href: ca5378.md
                 - name: 'CA5386: SecurityProtocolType değerini sabit kodlamaktan kaçının'
                   href: ca5386.md
+                - name: 'CA5397: Kullanım dışı SslProtocols değerlerini kullanmayın'
+                  href: ca5397.md
+                - name: 'CA5398: Sabit kodlanmış SslProtocols değerlerini kullanmaktan kaçının'
+                  href: ca5398.md
             - name: Kullanım uyarıları
               items:
                 - name: Genel Bakış
@@ -791,7 +795,7 @@
                   href: ca2243-attribute-string-literals-should-parse-correctly.md
             - name: Otomatik özelliği askıya alma
               href: automatic-feature-suspension.md
-- name: C/C++ için kod analizi
+- name: C/C++ kodunu analiz etme
   items:
     - name: Genel Bakış
       displayName: C++ code analysis
