@@ -7,14 +7,14 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8280a60f1d265336d427079bdef6612b42ed4330
-ms.sourcegitcommit: 6b0503ed8d25454d6e39a8e606910b3fa58cf1d2
+ms.openlocfilehash: 0df8b7ec5955f472d716af2850d2ab0b776c6552
+ms.sourcegitcommit: b83fefa8177c5554cbe2c59c4d102cbc534f7cc6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "68984195"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "69585337"
 ---
-# <a name="windows-forms-designer-overview"></a>Windows Form Tasarımcısı genel bakış
+# <a name="windows-forms-designer-overview"></a>Windows Form Tasarımcısı’na genel bakış
 
 Visual Studio 'daki Windows Form Tasarımcısı, Windows Forms tabanlı uygulamalar oluşturmak için hızlı bir geliştirme çözümü sağlar. Windows Form Tasarımcısı, forma kolayca denetim eklemenizi, bunları düzenlemenizi ve olayları için kod yazmanızı sağlar. Windows Forms hakkında daha fazla bilgi için bkz. [Windows Forms genel bakış](/dotnet/framework/winforms/windows-forms-overview).
 
@@ -39,7 +39,7 @@ Tasarımcı kullanarak şunları yapabilirsiniz:
 
 - [Windows Forms genel bakış](/dotnet/framework/winforms/windows-forms-overview)
 - [Windows Forms denetimleri](/dotnet/framework/winforms/controls/)
-- [Windows Forms denetimleri için erişilebilirlik](/dotnet/framework/winforms/controls/providing-accessibility-information-for-controls-on-a-windows-form)
 - [Windows Forms Kullanıcı girişi](/dotnet/framework/winforms/user-input-in-windows-forms)
 - [Windows Forms veri bağlama](/dotnet/framework/winforms/windows-forms-data-binding)
 - [Windows Forms uygulamalarını geliştirin](/dotnet/framework/winforms/advanced/)
+- <xref:System.Windows.Forms?displayProperty=fullName>API başvurusu

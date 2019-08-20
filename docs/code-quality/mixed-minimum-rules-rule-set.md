@@ -8,15 +8,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3a7bf9830e71abef04348307af4d841e7029afc4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7a83a9619084feb3346f5fe421530227a2cca7f9
+ms.sourcegitcommit: b83fefa8177c5554cbe2c59c4d102cbc534f7cc6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62820605"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "69585301"
 ---
 # <a name="mixed-minimum-rules-rule-set"></a>Karışık Minimum Kurallar kural kümesi
-Microsoft karışık Minimum kurallar potansiyel güvenlik boşluklarını ve Uygulama Kilitlenmesi gibi Common Language Runtime destekleyen C++ projelerinizin en kritik sorunlara odaklanır. Common Language Runtime destekleyen C++ projeleriniz için oluşturduğunuz herhangi bir özel kural kümesi bu kural kümesini içermelidir.
+
+Microsoft Mixed minimum kuralları, olası güvenlik delikleri ve uygulama kilitlenmeleri C++ dahil olmak üzere ortak dil çalışma zamanını destekleyen projelerde en kritik sorunlara odaklanmaktadır.
+
+Bu kuralı, ortak dil çalışma zamanını destekleyen C++ projeleriniz için oluşturduğunuz herhangi bir özel kural kümesine ekleyin.
 
 |Kural|Açıklama|
 |----------|-----------------|
@@ -68,7 +71,7 @@ Microsoft karışık Minimum kurallar potansiyel güvenlik boşluklarını ve Uy
 |[C6518](../code-quality/c6518.md)|Yazılabilir olmayan arabellekte yazılabilir boyut|
 |[C6522](../code-quality/c6522.md)|Geçersiz boyut dize türü|
 |[C6525](../code-quality/c6525.md)|Geçersiz boyutta dize ulaşılamayan konumu|
-|[C6527](../code-quality/c6527.md)|Geçersiz ek açıklama: 'NeedsRelease' özelliği void türünün değerleri üzerinde kullanılamaz|
+|[C6527](../code-quality/c6527.md)|Geçersiz ek açıklama: ' Gereksiz Srelease ' özelliği void türünün değerleri üzerinde kullanılamaz|
 |[C6530](../code-quality/c6530.md)|Biçim dizesi stili tanınmıyor|
 |[C6540](../code-quality/c6540.md)|Bu işlev üzerindeki öznitelik ek açıklamaları kullanımı tüm, var olan __declspec ek açıklamalarını geçersiz kılar|
 |[C6551](../code-quality/c6551.md)|Geçersiz boyut belirtimi: ifade ayrıştırılamıyor|
@@ -83,13 +86,13 @@ Microsoft karışık Minimum kurallar potansiyel güvenlik boşluklarını ve Uy
 |[C28182](../code-quality/c28182.md)|NULL işaretçisinin başvurusunun kaldırılması. Başka bir işaretçi yaptığınız gibi işaretçi aynı NULL değerini içeriyor.|
 |[C28202](../code-quality/c28202.md)|Statik olmayan üyeye geçersiz başvuru|
 |[C28203](../code-quality/c28203.md)|Sınıf üyesine belirsiz başvuru.|
-|[C28205](../code-quality/c28205.md)|\_Başarı\_ veya \_üzerinde\_hatası\_ geçersiz bir bağlamda kullanılan|
+|[C28205](../code-quality/c28205.md)|\_Hatalı\_ bir bağlamda\_kullanılan\_ başarılı veya \_hatalı|
 |[C28206](../code-quality/c28206.md)|İşlenen noktaları sol, '->' kullanın|
 |[C28207](../code-quality/c28207.md)|Sol işlenen bir struct, Kullan '.'|
 |[C28210](../code-quality/c28210.md)|Ek açıklamalar __on_failure bağlamının açık bağlam içinde olmamalıdır|
 |[C28211](../code-quality/c28211.md)|Statik bağlam adı SAL_context için bekleniyor|
 |[C28212](../code-quality/c28212.md)|Ek açıklaması için beklenen işaretçi ifadesi|
-|[C28213](../code-quality/c28213.md)|\_Kullanım\_decl\_ek açıklamaları\_ ek açıklaması, değiştirilmeden önceki bildirime başvuru için kullanılmalıdır.|
+|[C28213](../code-quality/c28213.md)|Decl \_\_ekaçıklamalarını\_ kullan ek açıklaması, önceki bir bildirime göre başvurulmadan başvurmak için kullanılmalıdır.\_|
 |[C28214](../code-quality/c28214.md)|Öznitelik parametre adları p1... olmalıdır p9|
 |[C28215](../code-quality/c28215.md)|Typefix zaten typefix'e sahip bir parametreye uygulanamaz|
 |[C28216](../code-quality/c28216.md)|CheckReturn ek açıklaması yalnızca belirli işlev parametresi için koşul sonralarına uygulanır.|
@@ -131,7 +134,7 @@ Microsoft karışık Minimum kurallar potansiyel güvenlik boşluklarını ve Uy
 |[C28267](../code-quality/c28267.md)|Açıklamalarda bir söz dizimi hatası, ek açıklama işlevi bulunamadı.|
 |[C28272](../code-quality/c28272.md)|İşlev için ek açıklama, incelerken parametresi işlev bildirimiyle tutarsız|
 |[C28273](../code-quality/c28273.md)|İşlev için ipuçları işlev bildirimiyle tutarsız|
-|[C28275](../code-quality/c28275.md)|Parametre \_makrosu\_değer\_ null|
+|[C28275](../code-quality/c28275.md)|\_Makro\_değeriparametresi\_ null|
 |[C28279](../code-quality/c28279.md)|Simge için bir 'begin' bir 'end'olmadan ' bulundu|
 |[C28280](../code-quality/c28280.md)|Sembol için bir 'end' eşleşmeyen bir 'begin' bulundu|
 |[C28282](../code-quality/c28282.md)|Biçim dizeleri önkoşullarda olmalıdır|
@@ -139,7 +142,7 @@ Microsoft karışık Minimum kurallar potansiyel güvenlik boşluklarını ve Uy
 |[C28286](../code-quality/c28286.md)|İşlevi, sonunun yakınında sözdizimi hatası|
 |[C28287](../code-quality/c28287.md)|İşlev için söz dizimi hatası, \_adresindeki\_() ek açıklama (tanınmayan parametre adı)|
 |[C28288](../code-quality/c28288.md)|İşlev için söz dizimi hatası, \_adresindeki\_() ek açıklama (geçersiz parametre adı)|
-|[C28289](../code-quality/c28289.md)|İşlevi için: ReadableTo veya WritableTo parametre olarak bir limit-spec'e sahip değildi|
+|[C28289](../code-quality/c28289.md)|İşlev için: ReadableTo veya WritableTo parametre olarak bir limit-spec ' e sahip değil|
 |[C28290](../code-quality/c28290.md)|işlevi için ek açıklama gerçek parametre sayısından daha fazla External içeriyor|
 |[C28291](../code-quality/c28291.md)|POST null/notnull deref düzeyi 0 işlevi için anlamsız olur.|
 |[C28300](../code-quality/c28300.md)|İşleci için uyumsuz olan türlerde ifade işlenenleri|

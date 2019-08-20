@@ -10,18 +10,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c0be66559802188503c3b8f8c1c2cf2955dbd8a
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 68410fd43f182873c27e3d5fed742bed7ba8a4ed
+ms.sourcegitcommit: b83fefa8177c5554cbe2c59c4d102cbc534f7cc6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69547947"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "69585139"
 ---
 # <a name="rule-sets-for-analyzer-packages"></a>Çözümleyici paketleri için kural kümeleri
 
 Önceden tanımlanmış kural kümeleri, bazı NuGet çözümleyici paketlerine dahildir. Örneğin, [Microsoft. CodeAnalysis. Fxcopçözümleyiciler](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/) NuGet çözümleyici paketine (sürüm 2.6.2 Critical ' den başlayarak) dahil edilen kural kümeleri, güvenlik, adlandırma veya performans gibi kategorilerine göre kuralları etkinleştirir veya devre dışı bırakır. Kural kümelerinin kullanılması, yalnızca belirli bir kural kategorisiyle ilgili olan kural ihlallerini hızlıca görmeyi kolaylaştırır.
 
-Eski "FxCop" analizinden .NET Compiler Platform tabanlı kod çözümlemesine geçiş yapıyorsanız, bu kural kümeleri, daha önce kullandığınız kural yapılandırmalarının aynısını kullanmaya devam edebilmeniz için izin sağlar.
+Eski "FxCop" analizinden .NET Compiler Platform tabanlı kod çözümlemesine geçiş yapıyorsanız, bu kural kümeleri, [daha önce kullandığınız](rule-set-reference.md)şekilde benzer kural yapılandırmalarının kullanılmasına devam etmeyi sağlar.
 
 ## <a name="use-analyzer-package-rule-sets"></a>Çözümleyici paketi kural kümelerini kullanma
 
@@ -58,7 +58,7 @@ Bir kuralı .NET Framework projelerinde analiz için etkin kural kümesini ayarl
 
 Ayrıca, paketteki her bir kural kategorisi için performans veya güvenlik gibi iki kural kümesi vardır. Bir kural kümesi kategori için tüm kurallara izin verir ve bir kural kümesi, kategorideki her bir kural için varsayılan önem derecesini ve etkinleştirme ayarlarını kabul eder.
 
-[Microsoft. CodeAnalysis. Fxcopçözümleyiciler](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/) NuGet Çözümleyicisi paketi, eski analizler için kullanılabilir kural kümeleriyle eşleşen aşağıdaki kategorilerin kural kümelerini içerir:
+[Microsoft. CodeAnalysis. Fxcopçözümleyiciler](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/) NuGet Çözümleyicisi paketi aşağıdaki kategorilerin kural kümelerini içerir:
 
 - tasarlama
 - belgeler

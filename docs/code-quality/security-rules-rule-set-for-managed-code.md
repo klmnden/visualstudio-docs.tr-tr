@@ -8,15 +8,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 72182607369094781050b94b1003398479dfe2cb
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 1131f9cf0e77fd4fe68e4bc5c033491aa6dd34e1
+ms.sourcegitcommit: b83fefa8177c5554cbe2c59c4d102cbc534f7cc6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65459143"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "69585196"
 ---
 # <a name="security-rules-rule-set-for-managed-code"></a>Yönetilen kod için Güvenlik Kuralları kural kümesi
-Microsoft Güvenlik kuralları kural raporlanan olası güvenlik sorunlarını sayısı en üst düzeye çıkarmak için kümesi içermelidir.
+
+Bildirilen olası güvenlik sorunlarının sayısını en üst düzeye çıkarmak için eski kod analizi için Microsoft güvenlik kuralları kural kümesini kullanın.
 
 |Kural|Açıklama|
 |----------|-----------------|
@@ -33,7 +34,7 @@ Microsoft Güvenlik kuralları kural raporlanan olası güvenlik sorunlarını s
 |[CA2112](../code-quality/ca2112-secured-types-should-not-expose-fields.md)|Güvenli türler alanları açığa çıkarmamalıdır|
 |[CA2114](../code-quality/ca2114-method-security-should-be-a-superset-of-type.md)|Metot güvenliği türün bir üst kümesi olmalıdır|
 |[CA2115](../code-quality/ca2115-call-gc-keepalive-when-using-native-resources.md)|Yerel kaynaklar kullanırken GC.KeepAlive'ı çağırın|
-|[CA2116](../code-quality/ca2116-aptca-methods-should-only-call-aptca-methods.md)|APTCA metotları yalnızca APTCA metotlarını çağırmalıdır|
+|[CA2116Ç](../code-quality/ca2116-aptca-methods-should-only-call-aptca-methods.md)|APTCA metotları yalnızca APTCA metotlarını çağırmalıdır|
 |[CA2117](../code-quality/ca2117-aptca-types-should-only-extend-aptca-base-types.md)|APTCA türleri yalnızca APTCA taban türlerini genişletmelidir|
 |[CA2118](../code-quality/ca2118-review-suppressunmanagedcodesecurityattribute-usage.md)|SuppressUnmanagedCodeSecurityAttribute kullanımını gözden geçirin|
 |[CA2119](../code-quality/ca2119-seal-methods-that-satisfy-private-interfaces.md)|Özel arabirimleri karşılayan metotları mühürleyin|
@@ -54,7 +55,7 @@ Microsoft Güvenlik kuralları kural raporlanan olası güvenlik sorunlarını s
 |[CA2138](../code-quality/ca2138-transparent-methods-must-not-call-methods-with-the-suppressunmanagedcodesecurity-attribute.md)|Saydam metotlar SuppressUnmanagedCodeSecurity özniteliğine sahip metotları çağırmamalıdır|
 |[CA2139](../code-quality/ca2139-transparent-methods-may-not-use-the-handleprocesscorruptingexceptions-attribute.md)|Saydam metotlar HandleProcessCorruptingExceptions özniteliğini kullanamaz|
 |[CA2140](../code-quality/ca2140-transparent-code-must-not-reference-security-critical-items.md)|Saydam kod güvenlik kritik nesnelerine başvurmamalıdır|
-|[CA2141](../code-quality/ca2141-transparent-methods-must-not-satisfy-linkdemands.md)|Saydam yöntemleri LinkDemands karşılamalıdır değil|
+|[CA2141](../code-quality/ca2141-transparent-methods-must-not-satisfy-linkdemands.md)|Saydam yöntemler bağlantı taleplerini karşılamamalıdır|
 |[CA2142](../code-quality/ca2142-transparent-code-should-not-be-protected-with-linkdemands.md)|Saydam kod LinkDemands ile korunmamalıdır|
 |[CA2143](../code-quality/ca2143-transparent-methods-should-not-use-security-demands.md)|Saydam metotlar güvenlik taleplerini kullanmamalıdır|
 |[CA2144](../code-quality/ca2144-transparent-code-should-not-load-assemblies-from-byte-arrays.md)|Saydam kod derlemeleri bayt dizilerinden yüklememelidir|
@@ -66,13 +67,13 @@ Microsoft Güvenlik kuralları kural raporlanan olası güvenlik sorunlarını s
 |[CA2300](ca2300-do-not-use-insecure-deserializer-binaryformatter.md)|Güvenli olmayan seri durumdan çıkarıcı BinaryFormatter kullanmayın|
 |[CA2301](ca2301-do-not-call-binaryformatter-deserialize-without-first-setting-binaryformatter-binder.md)|İlk olarak BinaryFormatter.Binder öğesini ayarlamadan önce BinaryFormatter.Deserialize çağırmayın|
 |[CA2302](ca2302-ensure-binaryformatter-binder-is-set-before-calling-binaryformatter-deserialize.md)|BinaryFormatter.Deserialize çağırmadan önce BinaryFormatter.Binder öğesinin ayarlandığından emin olun|
-|[CA2305](ca2305-do-not-use-insecure-deserializer-losformatter.md)|Güvenli olmayan seri durumdan çıkarıcının LosFormatter kullanmayın|
-|[CA2310](ca2310-do-not-use-insecure-deserializer-netdatacontractserializer.md)|Güvenli olmayan seri durumdan çıkarıcının NetDataContractSerializer kullanmayın|
-|[CA2311](ca2311-do-not-deserialize-without-first-setting-netdatacontractserializer-binder.md)|İlk ayarlamadan NetDataContractSerializer.Binder seri durumdan değil|
-|[CA2312](ca2312-ensure-netdatacontractserializer-binder-is-set-before-deserializing.md)|Seri durumdan çıkarılırken önce NetDataContractSerializer.Binder ayarlandığından emin olun|
-|[CA2315](ca2315-do-not-use-insecure-deserializer-objectstateformatter.md)|Güvenli olmayan seri durumdan çıkarıcının ObjectStateFormatter'ın kullanmayın|
-|[CA2321](ca2321.md)|Bir SimpleTypeResolver kullanarak JavaScriptSerializer ile seri durumdan değil|
-|[CA2322](ca2322.md)|JavaScriptSerializer SimpleTypeResolver ile seri durumdan çıkarılırken önce başlatılmadı emin olun.|
+|[CA2305](ca2305-do-not-use-insecure-deserializer-losformatter.md)|Güvenli olmayan seri kaldırıcı LosFormatter kullanmayın|
+|[CA2310](ca2310-do-not-use-insecure-deserializer-netdatacontractserializer.md)|Güvenli olmayan seri kaldırıcı NetDataContractSerializer kullanmayın|
+|[CA2311](ca2311-do-not-deserialize-without-first-setting-netdatacontractserializer-binder.md)|İlk olarak NetDataContractSerializer.Binder öğesini ayarlamadan seri durumdan çıkarmayın|
+|[CA2312](ca2312-ensure-netdatacontractserializer-binder-is-set-before-deserializing.md)|Seri durumdan çıkarmadan önce NetDataContractSerializer.Binder öğesinin ayarlandığından emin olun|
+|[CA2315](ca2315-do-not-use-insecure-deserializer-objectstateformatter.md)|Güvenli olmayan seri kaldırıcı ObjectStateFormatter kullanmayın|
+|[CA2321](ca2321.md)|SimpleTypeResolver kullanarak JavaScriptSerializer ile seri durumdan çıkarmayın|
+|[CA2322](ca2322.md)|Seri durumdan çıkarmadan önce SimpleTypeResolver ile JavaScriptSerializer’ın başlatılmadığından emin olun|
 |[CA3001](../code-quality/ca3001-review-code-for-sql-injection-vulnerabilities.md)|SQL ekleme güvenlik açıkları için inceleme kodu|
 |[CA3002](../code-quality/ca3002-review-code-for-xss-vulnerabilities.md)|XSS güvenlik açıkları için inceleme kodu|
 |[CA3003](../code-quality/ca3003-review-code-for-file-path-injection-vulnerabilities.md)|Dosya yolu ekleme güvenlik açıkları için inceleme kodu|

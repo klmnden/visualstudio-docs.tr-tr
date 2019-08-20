@@ -8,17 +8,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 62d11a73d8e8e4510269f73cfb83d946b6ff864b
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 9ec1bdaf421e3976872a3460dc22fecd24b4386b
+ms.sourcegitcommit: b83fefa8177c5554cbe2c59c4d102cbc534f7cc6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68923991"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "69585117"
 ---
 # <a name="extended-correctness-rules-rule-set-for-managed-code"></a>Yönetilen kod için Genişletilmiş Doğruluk Kuralları kural kümesi
+
 Microsoft genişletilmiş doğruluk kuralları kural kümesi, kod analizi tarafından bildirilen mantık ve çerçeve kullanım hatalarını en üst düzeye çıkarır. Ek vurgu, COM birlikte çalışabilirlik ve mobil uygulamalar gibi belirli senaryolara yerleştirilir. Bu senaryolardan biri projeniz için geçerliyse veya projenizde ek sorunlar bulmak için bu kural kümesini dahil etmeyi göz önünde bulundurmanız gerekir.
 
-Microsoft genişletilmiş doğruluk kuralları kural kümesi, Microsoft temel doğruluk kuralları kural kümesindeki kuralları içerir. Temel doğruluk kuralları, Microsoft 'un en düşük Önerilen Kurallar kural kümesindeki kuralları içerir. Daha fazla bilgi için bkz. yönetilen kod için [Temel Doğruluk Kuralları kural kümesi](../code-quality/basic-correctness-rules-rule-set-for-managed-code.md) ve yönetilen [kod Için Yönetilen Önerilen Kurallar kural kümesi](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md)
+Microsoft genişletilmiş doğruluk kuralları kural kümesi, [yönetilen önerilen kurallar](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md) kural kümesindeki kuralları Içeren [temel doğruluk kuralları](../code-quality/basic-correctness-rules-rule-set-for-managed-code.md) kural kümesindeki kuralları içerir.
 
 Aşağıdaki tabloda, Microsoft genişletilmiş doğruluk kuralları kural kümesindeki tüm kurallar açıklanmaktadır.
 

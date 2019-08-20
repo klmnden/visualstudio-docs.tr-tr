@@ -7,25 +7,27 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1a63abd92ae7791bbed107862a736cbd5fc5c649
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5195d42783efc6e9aeb0230b29e801acaeef094a
+ms.sourcegitcommit: b83fefa8177c5554cbe2c59c4d102cbc534f7cc6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62820356"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "69585231"
 ---
 # <a name="native-recommended-rules-rule-set"></a>Yerel Önerilen Kurallar kural kümesi
 
-Yerel önerilen kurallar potansiyel güvenlik boşluklarını ve Uygulama Kilitlenmesi gibi yerel kodda en önemli ve en yaygın sorunlara odaklanır. Doğal projeleriniz için oluşturduğunuz herhangi bir özel kural kümesi bu kural kümesini içermelidir.
+Yerel olarak önerilen kurallar, olası güvenlik delikleri ve uygulama kilitlenmeleri dahil olmak üzere yerel koddaki en kritik ve yaygın sorunlara odaklanmaktadır. Bu kural kümesi, [yerel minimum kurallar](native-minimum-rules-rule-set.md) kural kümesindeki tüm kuralları içerir.
+
+Bu kuralı, yerel projeler için oluşturduğunuz herhangi bir özel kural kümesine ekleyin.
 
 |Kural|Açıklama|
 |----------|-----------------|
 |[C6001](../code-quality/c6001.md)|Başlatılmamış belleği kullanma|
 |[C6011](../code-quality/c6011.md)|Boş işaretçiye başvuruluyor|
 |[C6029](../code-quality/c6029.md)|Denetlenmemiş değer kullanımı|
-|[C6031](../code-quality/c6031.md)|Dönüş değeri yok sayıldı|
+|[C6031](../code-quality/c6031.md)|Dönüş değeri yoksayıldı|
 |[C6053](../code-quality/c6053.md)|Çağrıdan Sıfırla sonlandırma|
-|[C6054](../code-quality/c6054.md)|Sıfırla sonlandırma eksik|
+|[C6054](../code-quality/c6054.md)|Sıfır sonlandırma eksik|
 |[C6059](../code-quality/c6059.md)|Bozuk birleştirme|
 |[C6063](../code-quality/c6063.md)|Biçimlendirme işlevinde dize bağımsız değişkeni eksiktir|
 |[C6064](../code-quality/c6064.md)|Biçimlendirme işlevinde eksik tamsayı değişkeni|
@@ -34,27 +36,27 @@ Yerel önerilen kurallar potansiyel güvenlik boşluklarını ve Uygulama Kilitl
 |[C6101](../code-quality/c6101.md)|Başlatılmamış bellek döndürülüyor|
 |[C6200](../code-quality/c6200.md)|Dizin arabelleği üst sınırını aşıyor|
 |[C6201](../code-quality/c6201.md)|Dizin, yığın arabelleği üst sınırını aşıyor|
-|[C6214](../code-quality/c6214.md)|HRESULT'tan BOOL'a geçersiz dönüştürme|
-|[C6215](../code-quality/c6215.md)|BOOL'dan HRESULT'a geçersiz dönüştürme|
-|[C6216](../code-quality/c6216.md)|Geçersiz dönüştürme BOOL'dan HRESULT'a derleyicinin eklediği|
-|[C6217](../code-quality/c6217.md)|NOT ile geçersiz HRESULT testi|
-|[C6220](../code-quality/c6220.md)|-1 geçersiz HRESULT karşılaştırması|
-|[C6226](../code-quality/c6226.md)|-1 İçin'geçersiz HRESULT ataması|
-|[C6230](../code-quality/c6230.md)|Boolean olarak geçersiz HRESULT kullanın|
-|[C6235](../code-quality/c6235.md)|Sıfır olmayan sabit ile mantıksal- veya|
-|[C6236](../code-quality/c6236.md)|Mantıksal- veya sıfır olmayan sabit değer|
-|[C6237](../code-quality/c6237.md)|Sıfır ile mantıksal- ve yan etkilerini yitirir|
-|[C6242](../code-quality/c6242.md)|Yerel geriye doğru izleme zorlandı|
-|[C6248](../code-quality/c6248.md)|Null DACL oluşturuluyor|
-|[C6250](../code-quality/c6250.md)|Yayınlanmamış adres tanımlayıcıları|
-|[C6255](../code-quality/c6255.md)|Alloca'nın korumasız kullanımı|
-|[C6258](../code-quality/c6258.md)|Kullanarak, iş parçacığı sonlandırma|
-|[C6259](../code-quality/c6259.md)|Kullanılmayan bit düzeyinde kod- ya da sınırlı anahtar|
+|[C6214](../code-quality/c6214.md)|HRESULT Ile BOOL arasında geçersiz atama|
+|[C6215](../code-quality/c6215.md)|Geçersiz tür BOOL olarak HRESULT|
+|[C6216](../code-quality/c6216.md)|Geçersiz derleyici ile ekli atama BOOL 'A dönüştürüldü|
+|[C6217](../code-quality/c6217.md)|NOT Ile geçersiz HRESULT testi|
+|[C6220](../code-quality/c6220.md)|-1 Ile geçersiz HRESULT karşılaştırması|
+|[C6226](../code-quality/c6226.md)|-1 Için geçersiz HRESULT ataması|
+|[C6230](../code-quality/c6230.md)|Boole olarak geçersiz HRESULT kullanımı|
+|[C6235](../code-quality/c6235.md)|Mantıksal or Ile sıfır olmayan sabit|
+|[C6236](../code-quality/c6236.md)|Sıfır olmayan sabit Ile mantıksal or|
+|[C6237](../code-quality/c6237.md)|Mantıksal-ve yan etkileri olan sıfır|
+|[C6242](../code-quality/c6242.md)|Yerel geriye doğru Izleme zorlandı|
+|[C6248](../code-quality/c6248.md)|NULL DACL oluşturuluyor|
+|[C6250](../code-quality/c6250.md)|Yayımlanverilmemiş adres tanımlayıcıları|
+|[C6255](../code-quality/c6255.md)|Korumasız alloca kullanımı|
+|[C6258](../code-quality/c6258.md)|Sonlandırma Iş parçacığını kullanma|
+|[C6259](../code-quality/c6259.md)|Bit düzeyinde veya sınırlı anahtarda ölü kod|
 |[C6260](../code-quality/c6260.md)|Bayt aritmetiği kullanımı|
 |[C6262](../code-quality/c6262.md)|Aşırı yığın kullanımı|
 |[C6263](../code-quality/c6263.md)|Döngüde alloca kullanma|
-|[C6268](../code-quality/c6268.md)|Tür dönüştürmede parantez eksik|
-|[C6269](../code-quality/c6269.md)|İşaretçiye yoksayıldı|
+|[C6268](../code-quality/c6268.md)|Dönüştürmede parantez eksik|
+|[C6269](../code-quality/c6269.md)|İşaretçi başvurusu yoksayıldı|
 |[C6270](../code-quality/c6270.md)|Biçimlendirme işlevinde kayan bağımsız değişken eksik|
 |[C6271](../code-quality/c6271.md)|Biçimlendirme işlevinde fazladan değişken|
 |[C6272](../code-quality/c6272.md)|Biçimlendirme işlevinde kayan nokta olmayan değişken|
@@ -62,47 +64,47 @@ Yerel önerilen kurallar potansiyel güvenlik boşluklarını ve Uygulama Kilitl
 |[C6274](../code-quality/c6274.md)|Biçimlendirme işlevinde karakter olmayan değişken|
 |[C6276](../code-quality/c6276.md)|Geçersiz dize dönüştürmesi|
 |[C6277](../code-quality/c6277.md)|Geçersiz CreateProcess çağrısı|
-|[C6278](../code-quality/c6278.md)|Dizi için New, skaler için Delete uyuşmazlığı|
-|[C6279](../code-quality/c6279.md)|Skaler yeni dizi için Delete uyuşmazlığı|
-|[C6280](../code-quality/c6280.md)|Bellek ayırma-ayırma kaldırma uyuşmazlığı|
-|[C6281](../code-quality/c6281.md)|Bit düzeyinde ilişki önceliği|
-|[C6282](../code-quality/c6282.md)|Atama testin yerini alıyor|
-|[C6283](../code-quality/c6283.md)|Temel dizi için New, skaler için Delete uyuşmazlığı|
+|[C6278](../code-quality/c6278.md)|Dizi-yeni skaler-silme uyumsuzluğu|
+|[C6279](../code-quality/c6279.md)|Skaler-yeni dizi-silme uyumsuzluğu|
+|[C6280](../code-quality/c6280.md)|Bellek ayırma-ayırmayı kaldırma uyumsuzluğu|
+|[C6281](../code-quality/c6281.md)|Bit düzeyinde Ilişki önceliği|
+|[C6282](../code-quality/c6282.md)|Atama testin yerini alır|
+|[C6283](../code-quality/c6283.md)|İlkel dizi-yeni skaler-silme uyumsuzluğu|
 |[C6284](../code-quality/c6284.md)|Biçimlendirme işlevinde geçersiz nesne değişkeni|
-|[C6285](../code-quality/c6285.md)|Mantıksal- veya sabitleri|
-|[C6286](../code-quality/c6286.md)|Sıfır olmayan mantıksal- veya yan etkileri kaybetme|
-|[C6287](../code-quality/c6287.md)|Gereksiz Test|
-|[C6288](../code-quality/c6288.md)|Mantıksal üzerinde karşılıklı içerme- ve false'tur|
-|[C6289](../code-quality/c6289.md)|Karşılıklı dışlama mantıksal- veya geçerlidir|
+|[C6285](../code-quality/c6285.md)|Sabitler mantıksal or|
+|[C6286](../code-quality/c6286.md)|Sıfır olmayan mantıksal veya kayıp yan etkileri|
+|[C6287](../code-quality/c6287.md)|Gereksiz test|
+|[C6288](../code-quality/c6288.md)|Mantıksal and üzerinde karşılıklı Içerme yanlış|
+|[C6289](../code-quality/c6289.md)|Mantıksal or üzerinde karşılıklı dışlama doğru|
 |[C6290](../code-quality/c6290.md)|Mantıksal Not bit düzeyinde- ve önceliği|
 |[C6291](../code-quality/c6291.md)|Mantıksal Not bit düzeyinde- veya önceliği|
-|[C6292](../code-quality/c6292.md)|Döngü en fazla sıfırdan sayar|
-|[C6293](../code-quality/c6293.md)|Döngü en küçük değerden aşağı sayıyor|
-|[C6294](../code-quality/c6294.md)|Döngü gövdesi hiçbir zaman çalıştırılmadı|
+|[C6292](../code-quality/c6292.md)|Döngü en yüksek değerinden yukarı sayılır|
+|[C6293](../code-quality/c6293.md)|Döngü en küçük değerden aşağı doğru sayılır|
+|[C6294](../code-quality/c6294.md)|Döngü gövdesi hiç yürütülmedi|
 |[C6295](../code-quality/c6295.md)|Sonsuz döngü|
-|[C6296](../code-quality/c6296.md)|Döngü yalnızca bir kez yürütülür|
-|[C6297](../code-quality/c6297.md)|Shift sonucu daha büyük boyutlara yeniden atama|
-|[C6299](../code-quality/c6299.md)|Bit alanı ile Boole karşılaştırması|
+|[C6296](../code-quality/c6296.md)|Döngü yalnızca bir kez yürütüldü|
+|[C6297](../code-quality/c6297.md)|SHIFT 'e daha büyük boyuta dönüştürme sonucu|
+|[C6299](../code-quality/c6299.md)|Bit alanını Boole karşılaştırmaya göre|
 |[C6302](../code-quality/c6302.md)|Biçimlendirme işlevinde geçersiz karakter dizesi değişkeni|
 |[C6303](../code-quality/c6303.md)|Biçimlendirme işlevinde geçersiz geniş karakter dizesi değişkeni|
 |[C6305](../code-quality/c6305.md)|Eşleşmeyen boyut ve sayı kullanımı|
 |[C6306](../code-quality/c6306.md)|Geçersiz değişken bağımsız değişken işlev çağrısı|
 |[C6308](../code-quality/c6308.md)|Realloc sızıntısı|
 |[C6310](../code-quality/c6310.md)|Geçersiz özel durum filtre sabiti|
-|[C6312](../code-quality/c6312.md)|Özel durum döngü yürütmeye devam ediyor|
-|[C6314](../code-quality/c6314.md)|Bitwise- veya önceliği|
-|[C6317](../code-quality/c6317.md)|Not Not Tamlayanı|
-|[C6318](../code-quality/c6318.md)|Özel durum aramaya devam ediyor|
-|[C6319](../code-quality/c6319.md)|Virgül tarafından yok sayıldı|
+|[C6312](../code-quality/c6312.md)|Özel durum yürütme döngüsüne devam et|
+|[C6314](../code-quality/c6314.md)|Bit düzeyinde OR önceliği|
+|[C6317](../code-quality/c6317.md)|Tamamlayıcı değil|
+|[C6318](../code-quality/c6318.md)|Özel durum aramaya devam et|
+|[C6319](../code-quality/c6319.md)|Virgülle yoksayıldı|
 |[C6324](../code-quality/c6324.md)|Dize karşılaştırma yerine dize kopyalama|
 |[C6328](../code-quality/c6328.md)|Olası bağımsız değişken uyumsuzluğu|
 |[C6331](../code-quality/c6331.md)|VirtualFree geçersiz bayrakları|
 |[C6332](../code-quality/c6332.md)|VirtualFree geçersiz parametresi|
 |[C6333](../code-quality/c6333.md)|VirtualFree geçersiz boyutu|
-|[C6335](../code-quality/c6335.md)|Sızan işlem tanıtıcısı|
-|[C6381](../code-quality/c6381.md)|Kapatma bilgisi eksik|
-|[C6383](../code-quality/c6383.md)|Öğe-Count Byte-Count arabellek taşması|
-|[C6384](../code-quality/c6384.md)|İşaretçi boyutunda bölme|
+|[C6335](../code-quality/c6335.md)|Sızan Işlem tanıtıcısı|
+|[C6381](../code-quality/c6381.md)|Kapatılmış bilgiler eksik|
+|[C6383](../code-quality/c6383.md)|Öğe-sayım bayt sayısı arabellek taşması|
+|[C6384](../code-quality/c6384.md)|İşaretçi boyutu bölümü|
 |[C6385](../code-quality/c6385.md)|Okuma taşması|
 |[C6386](../code-quality/c6386.md)|Yazma taşması|
 |[C6387](../code-quality/c6387.md)|Geçersiz parametre değeri|
@@ -125,7 +127,7 @@ Yerel önerilen kurallar potansiyel güvenlik boşluklarını ve Uygulama Kilitl
 |[C6518](../code-quality/c6518.md)|Yazılabilir olmayan arabellekte yazılabilir boyut|
 |[C6522](../code-quality/c6522.md)|Geçersiz boyut dize türü|
 |[C6525](../code-quality/c6525.md)|Geçersiz boyutta dize ulaşılamayan konumu|
-|[C6527](../code-quality/c6527.md)|Geçersiz ek açıklama: 'NeedsRelease' özelliği void türünün değerleri üzerinde kullanılamaz|
+|[C6527](../code-quality/c6527.md)|Geçersiz ek açıklama: ' Gereksiz Srelease ' özelliği void türünün değerleri üzerinde kullanılamaz|
 |[C6530](../code-quality/c6530.md)|Biçim dizesi stili tanınmıyor|
 |[C6540](../code-quality/c6540.md)|Bu işlev üzerindeki öznitelik ek açıklamaları kullanımı tüm, var olan __declspec ek açıklamalarını geçersiz kılar|
 |[C6551](../code-quality/c6551.md)|Geçersiz boyut belirtimi: ifade ayrıştırılamıyor|
@@ -138,46 +140,46 @@ Yerel önerilen kurallar potansiyel güvenlik boşluklarını ve Uygulama Kilitl
 |[C6706](../code-quality/c6706.md)|Ek açıklama için beklenmeyen ek açıklama hatası|
 |[C6995](../code-quality/c6995.md)|XML günlük dosyası kaydedilemedi|
 |[C26100](../code-quality/c26100.md)|Yarış durumu|
-|[C26101](../code-quality/c26101.md)|Kenetlenmiş işlem düzgün bir şekilde başarısız|
-|[C26110](../code-quality/c26110.md)|Kilidi tutamıyor|
-|[C26111](../code-quality/c26111.md)|Kilidi bırakamıyor|
-|[C26112](../code-quality/c26112.md)|Çağıran hiçbir kilidi tutamıyor|
+|[C26101](../code-quality/c26101.md)|Kenetlenmiş işlem düzgün şekilde kullanılamıyor|
+|[C26110](../code-quality/c26110.md)|Çağıran kilidi tutamıyor|
+|[C26111](../code-quality/c26111.md)|Çağıran kilidi serbest bırakamıyor|
+|[C26112](../code-quality/c26112.md)|Çağıran herhangi bir kilit tutamaz|
 |[C26115](../code-quality/c26115.md)|Kilit bırakılamıyor|
-|[C26116](../code-quality/c26116.md)|Alınamıyor veya kilit|
+|[C26116](../code-quality/c26116.md)|Kilit alınamıyor veya beklet|
 |[C26117](../code-quality/c26117.md)|Tutulmayan kilit bırakılıyor|
-|[C26140](../code-quality/c26140.md)|Eşzamanlılık SAL ek açıklama hatası|
+|[C26140](../code-quality/c26140.md)|Eşzamanlılık SAL ek açıklaması hatası|
 |[C26441](../code-quality/c26441.md)|NO_UNNAMED_GUARDS|
 |[C26444](../code-quality/c26444.md)|NO_UNNAMED_RAII_OBJECTS|
 |[C26498](../code-quality/c26498.md)|USE_CONSTEXPR_FOR_FUNCTIONCALL|
 |[C28020](../code-quality/c28020.md)|İfade bu çağrıda doğru değil|
 |[C28021](../code-quality/c28021.md)|Not eklenen parametrenin bir işaretçi olmalıdır|
-|[C28022](../code-quality/c28022.md)|Bu işlev üzerindeki işlev sınıfları, bunu tanımlamak için kullanılan typedef üzerindeki işlev sınıf eşleşmiyor.|
-|[C28023](../code-quality/c28023.md)|Atanan veya geçirilen işlev olmalıdır bir \_işlevi\_sınıfı\_ en az bir sınıf için ek açıklama|
-|[C28024](../code-quality/c28024.md)|Atanan işlev işaretçisi işlev sınıfları listesinde bulunmayan işlev sınıfı ile açıklanıyor.|
-|[C28039](../code-quality/c28039.md)|Gerçek parametre türü, tam olarak eşleşmelidir|
-|[C28112](../code-quality/c28112.md)|Bir birbirine kenetlenmiş işlev aracılığıyla erişilen bir değişkene her zaman bir birbirine kenetlenmiş işlevi erişilmelidir.|
-|[C28113](../code-quality/c28113.md)|Yerel bir değişkene bir birbirine kenetlenmiş işlev aracılığıyla erişiliyor|
-|[C28125](../code-quality/c28125.md)|İşlev gelen bir try / except bloğu içinden çağrılmalıdır|
-|[C28137](../code-quality/c28137.md)|Değişken bağımsız değişken bunun yerine (literal) sabiti olmalıdır|
-|[C28138](../code-quality/c28138.md)|Sabit bağımsız değişkeni, bunun yerine değişken olmalıdır|
+|[C28022](../code-quality/c28022.md)|Bu işlevdeki işlev sınıfı (es), kendisini tanımlamak için kullanılan typedef üzerindeki işlev sınıfları ile eşleşmiyor.|
+|[C28023](../code-quality/c28023.md)|Atanan veya geçirilen işlev, en az bir sınıf \_(\_es\_ ) için bir işlev sınıfı ek açıklamasına sahip olmalıdır|
+|[C28024](../code-quality/c28024.md)|Atanmakta olan işlev işaretçisine işlev sınıfı (es) listesinde bulunmayan işlev sınıfıyla açıklama eklenir.|
+|[C28039](../code-quality/c28039.md)|Gerçek parametre türü, türle tam olarak eşleşmelidir|
+|[C28112](../code-quality/c28112.md)|Birbirine kenetlenmiş bir işlev aracılığıyla erişilen bir değişkene, her zaman birbirine kenetlenmiş bir işlev aracılığıyla erişilmesi gerekir.|
+|[C28113](../code-quality/c28113.md)|Birbirine kenetlenmiş bir işlev aracılığıyla yerel bir değişkene erişme|
+|[C28125](../code-quality/c28125.md)|İşlev bir try/except bloğu içinden çağrılmalıdır|
+|[C28137](../code-quality/c28137.md)|Değişken bağımsız değişkeni bunun yerine bir (sabit değer) sabit olmalıdır|
+|[C28138](../code-quality/c28138.md)|Sabit bağımsız değişken bunun yerine değişken olmalıdır|
 |[C28159](../code-quality/c28159.md)|Bunun yerine başka bir işlev kullanmayı düşünün.|
 |[C28160](../code-quality/c28160.md)|Hata ek açıklaması|
-|[C28163](../code-quality/c28163.md)|İşlev asla çağrılmamalıdır bir try / except bloğu içinden|
-|[C28164](../code-quality/c28164.md)|Bağımsız değişken bekliyor (olmayan bir işaretçi işaretçisi) bir nesneye bir işaretçi bir işleve geçirilir|
+|[C28163](../code-quality/c28163.md)|İşlev bir try/except bloğunun içinden asla çağrılmamalıdır|
+|[C28164](../code-quality/c28164.md)|Bağımsız değişken bir nesneye işaretçi bekleyen bir işleve geçiriliyor (bir işaretçiye işaretçi değil)|
 |[C28182](../code-quality/c28182.md)|NULL işaretçisinin başvurusunun kaldırılması. Başka bir işaretçi yaptığınız gibi işaretçi aynı NULL değerini içeriyor.|
-|[C28183](../code-quality/c28183.md)|Bağımsız değişken bir değer olabilir ve işaretçide bulunan değerin bir kopyası bulunur|
-|[C28193](../code-quality/c28193.md)|Değişken, incelenmesi gereken bir değeri tutar|
-|[C28196](../code-quality/c28196.md)|Gereksinim karşılanmıyor. (İfade true olarak değerlendirilmiyor.)|
+|[C28183](../code-quality/c28183.md)|Bağımsız değişken bir değer olabilir ve İşaretçisinde bulunan değerin bir kopyasıdır|
+|[C28193](../code-quality/c28193.md)|Değişken incelenmesi gereken bir değer tutuyor|
+|[C28196](../code-quality/c28196.md)|Gereksinim karşılanmıyor. (İfade true olarak değerlendirilmez.)|
 |[C28202](../code-quality/c28202.md)|Statik olmayan üyeye geçersiz başvuru|
 |[C28203](../code-quality/c28203.md)|Sınıf üyesine belirsiz başvuru.|
-|[C28205](../code-quality/c28205.md)|\_Başarı\_ veya \_üzerinde\_hatası\_ geçersiz bir bağlamda kullanılan|
+|[C28205](../code-quality/c28205.md)|\_Hatalı\_ bir bağlamda\_kullanılan\_ başarılı veya \_hatalı|
 |[C28206](../code-quality/c28206.md)|İşlenen noktaları sol, '->' kullanın|
 |[C28207](../code-quality/c28207.md)|Sol işlenen bir struct, Kullan '.'|
-|[C28209](../code-quality/c28209.md)|Sembol bildiriminin çakışan bir bildirimi var|
+|[C28209](../code-quality/c28209.md)|Sembol bildiriminin çakışan bir bildirimi vardır|
 |[C28210](../code-quality/c28210.md)|Ek açıklamalar __on_failure bağlamının açık bağlam içinde olmamalıdır|
 |[C28211](../code-quality/c28211.md)|Statik bağlam adı SAL_context için bekleniyor|
 |[C28212](../code-quality/c28212.md)|Ek açıklaması için beklenen işaretçi ifadesi|
-|[C28213](../code-quality/c28213.md)|\_Kullanım\_decl\_ek açıklamaları\_ ek açıklaması, değiştirilmeden önceki bildirime başvuru için kullanılmalıdır.|
+|[C28213](../code-quality/c28213.md)|Decl \_\_ekaçıklamalarını\_ kullan ek açıklaması, önceki bir bildirime göre başvurulmadan başvurmak için kullanılmalıdır.\_|
 |[C28214](../code-quality/c28214.md)|Öznitelik parametre adları p1... olmalıdır p9|
 |[C28215](../code-quality/c28215.md)|Typefix zaten typefix'e sahip bir parametreye uygulanamaz|
 |[C28216](../code-quality/c28216.md)|CheckReturn ek açıklaması yalnızca belirli işlev parametresi için koşul sonralarına uygulanır.|
@@ -207,7 +209,7 @@ Yerel önerilen kurallar potansiyel güvenlik boşluklarını ve Uygulama Kilitl
 |[C28240](../code-quality/c28240.md)|Parametre üzerindeki ek açıklama param2 ancak param1 yok|
 |[C28241](../code-quality/c28241.md)|Parametre üzerindeki işlev için ek açıklama tanınmıyor|
 |[C28243](../code-quality/c28243.md)|Daha fazla parametre üzerindeki işlev gerektirir asıl türün izin verdiğinden başvuru|
-|[C28244](../code-quality/c28244.md)|İşlevi için ek açıklama bir ayrıştırılamayan parametre/dış ek açıklamaya sahip|
+|[C28244](../code-quality/c28244.md)|İşlev için ek açıklama, ayrıştırılamayan bir parametre/dış ek açıklamaya sahiptir|
 |[C28245](../code-quality/c28245.md)|İşlevi için ek açıklama 'this' bir olmayan üye işlev üzerinde açıklama ekler|
 |[C28246](../code-quality/c28246.md)|İşlev için parametre ek açıklama, parametre türü eşleşmiyor.|
 |[C28250](../code-quality/c28250.md)|İşlev için tutarsız ek açıklama: önceki örnek hatalı.|
@@ -220,7 +222,7 @@ Yerel önerilen kurallar potansiyel güvenlik boşluklarını ve Uygulama Kilitl
 |[C28267](../code-quality/c28267.md)|Açıklamalarda bir söz dizimi hatası, ek açıklama işlevi bulunamadı.|
 |[C28272](../code-quality/c28272.md)|İşlev için ek açıklama, incelerken parametresi işlev bildirimiyle tutarsız|
 |[C28273](../code-quality/c28273.md)|İşlev için ipuçları işlev bildirimiyle tutarsız|
-|[C28275](../code-quality/c28275.md)|Parametre \_makrosu\_değer\_ null|
+|[C28275](../code-quality/c28275.md)|\_Makro\_değeriparametresi\_ null|
 |[C28279](../code-quality/c28279.md)|Simge için bir 'begin' bir 'end'olmadan ' bulundu|
 |[C28280](../code-quality/c28280.md)|Sembol için bir 'end' eşleşmeyen bir 'begin' bulundu|
 |[C28282](../code-quality/c28282.md)|Biçim dizeleri önkoşullarda olmalıdır|
@@ -228,7 +230,7 @@ Yerel önerilen kurallar potansiyel güvenlik boşluklarını ve Uygulama Kilitl
 |[C28286](../code-quality/c28286.md)|İşlevi, sonunun yakınında sözdizimi hatası|
 |[C28287](../code-quality/c28287.md)|İşlev için söz dizimi hatası, \_adresindeki\_() ek açıklama (tanınmayan parametre adı)|
 |[C28288](../code-quality/c28288.md)|İşlev için söz dizimi hatası, \_adresindeki\_() ek açıklama (geçersiz parametre adı)|
-|[C28289](../code-quality/c28289.md)|İşlevi için: ReadableTo veya WritableTo parametre olarak bir limit-spec'e sahip değildi|
+|[C28289](../code-quality/c28289.md)|İşlev için: ReadableTo veya WritableTo parametre olarak bir limit-spec ' e sahip değil|
 |[C28290](../code-quality/c28290.md)|işlevi için ek açıklama gerçek parametre sayısından daha fazla External içeriyor|
 |[C28291](../code-quality/c28291.md)|POST null/notnull deref düzeyi 0 işlevi için anlamsız olur.|
 |[C28300](../code-quality/c28300.md)|İşleci için uyumsuz olan türlerde ifade işlenenleri|
@@ -237,7 +239,7 @@ Yerel önerilen kurallar potansiyel güvenlik boşluklarını ve Uygulama Kilitl
 |[C28303](../code-quality/c28303.md)|Belirsiz \_Deref\_ üzerindeki ek açıklama işleci bulundu.|
 |[C28304](../code-quality/c28304.md)|Yanlış yerleştirilmiş bir \_Notref\_ belirtece uygulanan işleci bulundu.|
 |[C28305](../code-quality/c28305.md)|Bir belirteç ayrıştırılırken bir hata Keşfedildi.|
-|[C28306](../code-quality/c28306.md)|Parametre üzerindeki ek açıklama eskimiş durumda|
-|[C28307](../code-quality/c28307.md)|Parametre üzerindeki ek açıklama eskimiş durumda|
+|[C28306](../code-quality/c28306.md)|Parametresindeki ek açıklama kullanımdan görünmez|
+|[C28307](../code-quality/c28307.md)|Parametresindeki ek açıklama kullanımdan görünmez|
 |[C28350](../code-quality/c28350.md)|Ek açıklama koşullu olarak uygun olmayan bir durumu betimliyor.|
 |[C28351](../code-quality/c28351.md)|Ek açıklama bir dinamik değerin (değişkenin) koşulda burada kullanılamaz açıklar.|

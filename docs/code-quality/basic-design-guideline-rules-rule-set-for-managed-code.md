@@ -8,17 +8,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 92b0d6b96adf75acc0b695466dca342f8dca59fa
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: d51796f7575e3dd5766655661927dfd520935c02
+ms.sourcegitcommit: b83fefa8177c5554cbe2c59c4d102cbc534f7cc6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68919534"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "69585089"
 ---
 # <a name="basic-design-guideline-rules-rule-set-for-managed-code"></a>Yönetilen kod için Temel Tasarım Yönerge Kuralları kural kümesi
+
 Kodunuzun anlaşılması ve kullanılması daha kolay hale getirilmesi üzerine odaklanmak için Microsoft temel tasarım kılavuzu kuralları kural kümesini kullanabilirsiniz. Projeniz kitaplık kodu içeriyorsa veya bakımı kolay olan kod için en iyi yöntemleri zorlamak istiyorsanız bu kural kümesini dahil etmelisiniz.
 
-Temel tasarım kılavuzu kuralları, Microsoft minimum recommeded Rules kural kümesindeki tüm kuralları içerir. Minimum kuralların listesi için bkz. yönetilen [kod Için Yönetilen Önerilen Kurallar kural kümesi](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md).
+Temel tasarım kılavuz kuralları, [yönetilen önerilen kurallar](managed-recommended-rules-rule-set-for-managed-code.md) kural kümesindeki tüm kuralları içerir.
 
 Aşağıdaki tabloda, Microsoft temel tasarım kılavuzu kuralları kural kümesindeki tüm kurallar açıklanmaktadır.
 

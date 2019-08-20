@@ -8,20 +8,20 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: cf5b486e8298b6438b774481a839c0f6433cdbed
-ms.sourcegitcommit: 92a04c57ac0a49f304fa2ea5043436f30068c3cd
+ms.openlocfilehash: b2270caa0cf7db230fa030cb620d51f1677d9dec
+ms.sourcegitcommit: b83fefa8177c5554cbe2c59c4d102cbc534f7cc6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/21/2019
-ms.locfileid: "65975897"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "69585070"
 ---
 # <a name="extended-design-guidelines-rules-rule-set-for-managed-code"></a>Yönetilen kod için Genişletilmiş Tasarım Yönerge Kuralları kural kümesi
 
-Microsoft genişletilmiş tasarım yönerge kuralları kural kümesi bildirilir ve yaşatılabilirlik en üst düzeye çıkarmak için temel tasarım yönerge kuralları genişletir. Kuralları adlandırma üzerinde fazladan Vurgu yerleştirilir. Bu kural projeniz Kütüphane kodu içeriyorsa, ya da sürdürmek kolayca kod yazmak için en yüksek standartları zorlamak istiyorsanız kümesi dahil olmak üzere düşünmelisiniz.
+Microsoft genişletilmiş tasarım kılavuzu kuralları kural kümesi, bildirilen kullanılabilirliği ve bakım sorunlarını en üst düzeye çıkarmak için temel tasarım kılavuzu kuralları ' nı genişletir. Ek vurgu, adlandırma yönergelerine göre yerleştirilir. Projeniz kitaplık kodu içeriyorsa veya bakımı kolay olan kod yazmak için en yüksek standartları zorlamak istiyorsanız bu kural kümesini dahil etmeyi göz önünde bulundurmanız gerekir.
 
-Genişletilmiş tasarım yönerge kuralları tüm Microsoft temel tasarım yönerge kuralları içerir. Temel tasarım yönerge kuralları tüm Microsoft en az önerilen kurallar içerir. Daha fazla bilgi için [yönetilen kod için temel tasarım yönerge kuralları kural kümesi](../code-quality/basic-design-guideline-rules-rule-set-for-managed-code.md) ve [yönetilen kod için yönetilen önerilen kurallar kural kümesi](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md)
+Genişletilmiş tasarım kılavuzu kuralları, [yönetilen önerilen kurallar](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md) kural kümesindeki kuralları Içeren, [temel tasarım kılavuz kuralları](../code-quality/basic-design-guideline-rules-rule-set-for-managed-code.md) kural kümesindeki tüm kuralları içerir.
 
-Aşağıdaki tabloda Microsoft genişletilmiş tasarım yönerge kuralları kural kümesindeki tüm kurallar açıklanmaktadır.
+Aşağıdaki tabloda, Microsoft genişletilmiş tasarım kılavuzu kuralları kural kümesindeki tüm kurallar açıklanmaktadır.
 
 |Kural|Açıklama|
 |----------|-----------------|
@@ -52,7 +52,7 @@ Aşağıdaki tabloda Microsoft genişletilmiş tasarım yönerge kuralları kura
 |[CA2111](../code-quality/ca2111-pointers-should-not-be-visible.md)|İşaretçiler görünür olmamalıdır|
 |[CA2112](../code-quality/ca2112-secured-types-should-not-expose-fields.md)|Güvenli türler alanları açığa çıkarmamalıdır|
 |[CA2114](../code-quality/ca2114-method-security-should-be-a-superset-of-type.md)|Metot güvenliği türün bir üst kümesi olmalıdır|
-|[CA2116](../code-quality/ca2116-aptca-methods-should-only-call-aptca-methods.md)|APTCA metotları yalnızca APTCA metotlarını çağırmalıdır|
+|[CA2116Ç](../code-quality/ca2116-aptca-methods-should-only-call-aptca-methods.md)|APTCA metotları yalnızca APTCA metotlarını çağırmalıdır|
 |[CA2117](../code-quality/ca2117-aptca-types-should-only-extend-aptca-base-types.md)|APTCA türleri yalnızca APTCA taban türlerini genişletmelidir|
 |[CA2122](../code-quality/ca2122-do-not-indirectly-expose-methods-with-link-demands.md)|Bağlantı talepleri olan metotları dolaylı olarak açığa çıkarmayın|
 |[CA2123](../code-quality/ca2123-override-link-demands-should-be-identical-to-base.md)|Geçersiz kılan bağlantı talepleri taban ile özdeş olmalıdır|
@@ -65,7 +65,7 @@ Aşağıdaki tabloda Microsoft genişletilmiş tasarım yönerge kuralları kura
 |[CA2137](../code-quality/ca2137-transparent-methods-must-contain-only-verifiable-il.md)|Saydam metotlar yalnızca doğrulanabilir IL içermelidir|
 |[CA2138](../code-quality/ca2138-transparent-methods-must-not-call-methods-with-the-suppressunmanagedcodesecurity-attribute.md)|Saydam metotlar SuppressUnmanagedCodeSecurity özniteliğine sahip metotları çağırmamalıdır|
 |[CA2140](../code-quality/ca2140-transparent-code-must-not-reference-security-critical-items.md)|Saydam kod güvenlik kritik nesnelerine başvurmamalıdır|
-|[CA2141](../code-quality/ca2141-transparent-methods-must-not-satisfy-linkdemands.md)|Saydam yöntemleri LinkDemands karşılamalıdır değil|
+|[CA2141](../code-quality/ca2141-transparent-methods-must-not-satisfy-linkdemands.md)|Saydam yöntemler bağlantı taleplerini karşılamamalıdır|
 |[CA2146](../code-quality/ca2146-types-must-be-at-least-as-critical-as-their-base-types-and-interfaces.md)|Türler en az kendi taban türleri ve arabirimleri kadar kritik olmalıdır|
 |[CA2147](../code-quality/ca2147-transparent-methods-may-not-use-security-asserts.md)|Saydam metotlar güvenlik onay deyimlerini kullanmamalıdır|
 |[CA2149](../code-quality/ca2149-transparent-methods-must-not-call-into-native-code.md)|Saydam metotlar yerel kod içine çağırmamalıdır|
@@ -192,7 +192,7 @@ Aşağıdaki tabloda Microsoft genişletilmiş tasarım yönerge kuralları kura
 |[CA1717](../code-quality/ca1717-only-flagsattribute-enums-should-have-plural-names.md)|Yalnızca FlagsAttribute sabit listeleri çoğul adlara sahip olmalıdır|
 |[CA1719](../code-quality/ca1719-parameter-names-should-not-match-member-names.md)|Parametre adları üye adları ile eşleşmemelidir|
 |[CA1720](../code-quality/ca1720-identifiers-should-not-contain-type-names.md)|Tanımlayıcılar tür adları içermemelidir|
-|[CA1721 TÜR](../code-quality/ca1721-property-names-should-not-match-get-methods.md)|Özellik adları get metotları ile eşleşmemelidir|
+|[CA1721](../code-quality/ca1721-property-names-should-not-match-get-methods.md)|Özellik adları get metotları ile eşleşmemelidir|
 |[CA1722](../code-quality/ca1722-identifiers-should-not-have-incorrect-prefix.md)|Tanımlayıcılar yanlış ön ek içermemelidir|
 |[CA1724](../code-quality/ca1724-type-names-should-not-match-namespaces.md)|Tür adları ad alanları ile eşleşmemelidir|
 |[CA1725](../code-quality/ca1725-parameter-names-should-match-base-declaration.md)|Parametre adları temel bildirimle eşleşmemelidir|

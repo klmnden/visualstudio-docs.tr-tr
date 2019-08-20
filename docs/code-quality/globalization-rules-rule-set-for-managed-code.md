@@ -8,21 +8,22 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 28199eb9fa09e2096939ffa8e678eb9812a61b1f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ffba6b69e1f67b369f3d99c1b54a88448df8a41b
+ms.sourcegitcommit: b83fefa8177c5554cbe2c59c4d102cbc534f7cc6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62816406"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "69584988"
 ---
 # <a name="globalization-rules-rule-set-for-managed-code"></a>Yönetilen kod için Genelleştirme Kuralları kural kümesi
-Microsoft Genelleştirme kuralları kural veri uygulamanızın farklı dil, yerel ayarlar ve kültürler düzgün görüntülenmesini engelleyen sorunlara odaklanmak için kümesi kullanabilirsiniz. Bu kural, uygulama Eğer, yerelleştirilmiş ise, kümesi veya her ikisini de içermelidir.
+
+Uygulamanızdaki verilerin farklı dillerde, yerel ayarlarda ve kültürlerde doğru görünmesini engelleyebilecek sorunlara odaklanmak için Microsoft Genelleştirme kuralları kural kümesini kullanın. Uygulamanız yerelleştirilmiş, Genelleştirilmiş veya her ikisi de varsa, bu kural kümesini eklemeniz gerekir.
 
 |Kural|Açıklama|
 |----------|-----------------|
 |[CA1300](../code-quality/ca1300-specify-messageboxoptions.md)|MessageBoxOptions belirt|
 |[CA1301](../code-quality/ca1301-avoid-duplicate-accelerators.md)|Yinelenen hızlandırıcılardan kaçının|
-|[CA1302](../code-quality/ca1302-do-not-hardcode-locale-specific-strings.md)|Yerel özel dizeleri doğrudan programın içine gömmeyin|
+|[CA1302](../code-quality/ca1302-do-not-hardcode-locale-specific-strings.md)|Yerel ayara özgü dizeler vermeyin|
 |[CA1303](../code-quality/ca1303-do-not-pass-literals-as-localized-parameters.md)|Harfleri yerelleştirilmiş parametreler olarak göndermeyin|
 |[CA1304](../code-quality/ca1304-specify-cultureinfo.md)|CultureInfo belirt|
 |[CA1305](../code-quality/ca1305-specify-iformatprovider.md)|IFormatProvider belirt|

@@ -8,15 +8,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: ce48ece2801096b2b657df41bcaa0a744e67bd45
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: a76d1c5d2268c0119fc6822167537b500371cdb5
+ms.sourcegitcommit: b83fefa8177c5554cbe2c59c4d102cbc534f7cc6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68919564"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "69585005"
 ---
 # <a name="basic-correctness-rules-rule-set-for-managed-code"></a>Yönetilen kod için Temel Doğruluk Kuralları kural kümesi
-Temel Doğruluk Kuralları kural kümesi, çerçeve API 'Leri kullanımındaki mantık hatalarına ve yaygın hatalara odaklanır. Temel doğruluk kuralları, önerilen en düşük Kurallar kural kümesindeki kuralları içerir. Daha fazla bilgi için, bkz. yönetilen [kod Için Yönetilen Önerilen Kurallar kural kümesi](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md) , önerilen en düşük kuralların raporun rapor listesini genişletmek için bu kural kümesini içermelidir.
+
+Temel Doğruluk Kuralları kural kümesi, çerçeve API 'Leri kullanımındaki mantık hatalarına ve yaygın hatalara odaklanır. Temel doğruluk kuralları, [yönetilen önerilen kurallar](managed-recommended-rules-rule-set-for-managed-code.md) kural kümesindeki kuralları içerir.
 
 Aşağıdaki tabloda, Microsoft temel doğruluk kuralları kural kümesindeki tüm kurallar açıklanmaktadır.
 
