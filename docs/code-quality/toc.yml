@@ -162,31 +162,31 @@
           items:
             - name: Genel Bakış
               href: rule-set-reference.md
-            - name: Tüm Kurallar kural kümesi
+            - name: Tüm Kurallar
               href: all-rules-rule-set.md
-            - name: Yönetilen kod için Temel Doğruluk Kuralları kural kümesi
+            - name: Temel Doğruluk Kuralları
               href: basic-correctness-rules-rule-set-for-managed-code.md
-            - name: Yönetilen kod için Temel Tasarım Yönerge Kuralları kural kümesi
+            - name: Temel Tasarım Kılavuzu Kuralları
               href: basic-design-guideline-rules-rule-set-for-managed-code.md
-            - name: Yönetilen kod için Genişletilmiş Doğruluk Kuralları kural kümesi
+            - name: Genişletilmiş Doğruluk Kuralları
               href: extended-correctness-rules-rule-set-for-managed-code.md
-            - name: Yönetilen kod için Genişletilmiş Tasarım Yönerge Kuralları kural kümesi
+            - name: Genişletilmiş Tasarım Kılavuzu Kuralları
               href: extended-design-guidelines-rules-rule-set-for-managed-code.md
-            - name: Yönetilen kod için Genelleştirme Kuralları kural kümesi
+            - name: Genelleştirme Kuralları
               href: globalization-rules-rule-set-for-managed-code.md
-            - name: Yönetilen kod için Yönetilen Minimum Kurallar kural kümesi
+            - name: Yönetilen Minimum Kurallar
               href: managed-minimum-rules-rule-set-for-managed-code.md
-            - name: Yönetilen kod için Yönetilen Önerilen Kurallar kural kümesi
+            - name: Yönetilen Önerilen Kurallar
               href: managed-recommended-rules-rule-set-for-managed-code.md
-            - name: Karışık Minimum Kurallar kural kümesi
+            - name: Karışık Minimum Kurallar
               href: mixed-minimum-rules-rule-set.md
-            - name: Karışık Önerilen Kurallar kural kümesi
+            - name: Karışık Önerilen Kurallar
               href: mixed-recommended-rules-rule-set.md
-            - name: Yerel Minimum Kurallar kural kümesi
+            - name: Yerel Minimum Kurallar
               href: native-minimum-rules-rule-set.md
-            - name: Yerel Önerilen Kurallar kural kümesi
+            - name: Yerel Önerilen Kurallar
               href: native-recommended-rules-rule-set.md
-            - name: Yönetilen kod için Güvenlik Kuralları kural kümesi
+            - name: Güvenlik Kuralları
               href: security-rules-rule-set-for-managed-code.md
         - name: Uyarıları gizleme
           href: in-source-suppression-overview.md

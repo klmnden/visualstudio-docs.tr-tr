@@ -414,6 +414,8 @@
                       href: ide/reference/use-block-body-lambda.md
                     - name: 'Kullanılmayan değer atamaları, değişkenler ve parametreler'
                       href: ide/reference/unused-values-parameters.md
+                    - name: Çağrı zincirlerini sarmalama ve hizalama
+                      href: ide/reference/wrap-and-align-call-chains.md
                     - name: 'Parametreleri sarmalama, girintileme ve hizalama'
                       href: ide/reference/wrap-align-indent-parameters.md
                 - name: 'İzlenecek yol: Kullanımdan kod oluşturma'
