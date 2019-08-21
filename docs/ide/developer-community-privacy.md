@@ -10,69 +10,67 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 942ae41322d6a08bc8de0c450577f2eccb45772a
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 86578a300da8ea1cdb739db4d1c02505a6d97180
+ms.sourcegitcommit: 9e5e8b6e9a3b6614723e71cc23bb434fe4218c9c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67823366"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "69634861"
 ---
 # <a name="developer-community-data-privacy"></a>Geliştirici Topluluğu veri gizliliği
 
-Varsayılan olarak, tüm bilgiler, sorun raporları hakkında [Geliştirici topluluğu](https://developercommunity.visualstudio.com/), herhangi bir yorum ve yanıtları dahil olmak üzere, genel olarak görülebilir. Sorunları, çözümler ve diğer kullanıcıların bulunan geçici çözümleri görmek tüm topluluğuna izin verdiğinden, bu yararlıdır. Ancak, veri veya kimlik gizliliğini endişeleriniz varsa seçeneğiniz vardır.
+Varsayılan olarak, herhangi bir yorum ve yanıt dahil olmak üzere [Geliştirici topluluğu](https://developercommunity.visualstudio.com/)'nda sorunlu tüm bilgiler herkese açık bir şekilde görünür. Tüm topluluğun diğer kullanıcıların bulduğu sorunları, çözümleri ve geçici çözümleri görmesini sağladığından bu faydalıdır. Bununla birlikte, verilerinizin veya kimliğinizin gizliliğiyle ilgili endişeniz varsa seçenekleriniz vardır.
 
 ## <a name="identity-privacy"></a>Kimlik gizliliği
 
-Kimliğinizi göstermeden hakkında endişeleriniz varsa [yeni bir Microsoft hesabı oluşturma](https://signup.live.com/) ilgili tüm ayrıntıları açıklamaz. Raporunuzu oluşturmak için bu hesabı kullanın.
+Kimliğinizi açığa çıkardıysanız, sizin hakkındaki ayrıntıları açıklamayan [Yeni bir Microsoft hesabı oluşturun](https://signup.live.com/) . Raporunuzu oluşturmak için bu hesabı kullanın.
 
 ## <a name="data-privacy"></a>Veri gizliliği
 
-Veri gizliliği hakkında endişeleriniz varsa, özel bir başlık ya da her zaman genel ilk rapor içeriği tutmak istediğiniz herhangi bir şey yerleştirmeyin. Bunun yerine, rapor oluşturma ve ardından ayrıntılar özel olarak ayrı bir açıklama için göndereceğiz unutmayın. Sorun raporu oluşturduktan sonra yanıtları ve eklerini kimlerin görebileceğini belirtebilirsiniz:
+Veri gizliliğiyle ilgilenmeniz durumunda, her zaman genel olan ilk raporun başlığında veya içeriğinde özel tutmak istediğiniz herhangi bir şeyi yerleştirmeyin. Bunun yerine, raporu oluşturun ve ayrı bir açıklamada ayrıntıları özel olarak gönderebileceğinizi unutmayın. Sorun raporu oluşturulduktan sonra, kimlerin yanıt ve ekleri görebileceğini belirtebilirsiniz:
 
-1. Oluşturduğunuz bir raporda seçin **açıklama ekleme** özel bir sorunun açıklamasını oluşturmak için.
+1. Oluşturduğunuz raporda, sorunun özel bir açıklamasını oluşturmak için **Açıklama Ekle** ' yi seçin.
 
-2. Yanıt Düzenleyicisi'nde, aşağıdaki denetim kullanmak **Gönder** ve **iptal** yanıtınız hedef kitlesini belirtmek için düğmeler. Seçin **Moderatörler ve özgün posteri Viewable** Microsoft çalışanları ve kendiniz için görünürlük sınırlamak için.
+2. Yanıt Düzenleyicisi 'nde Yanıtla ilgili hedef kitlelerinizi belirtmek için **Gönder** ve **iptal** düğmeleri altındaki denetimi kullanın. Microsoft çalışanları ve kendi kendinize yönelik görünürlüğü sınırlamak için **, moderatör ve orijinal poster** seçeneklerini belirleyin.
 
-   ![Geliştirici topluluğu denetimde gizlilik](media/developer-community-privacy-control.png)
+   ![Geliştirici topluluğu 'nda gizlilik denetimi](media/developer-community-privacy-control.png)
 
-   Yalnızca belirttiğiniz kişiler, açıklamayı ve tüm görüntüleri, bağlantılar veya kod içine dahil görebilirsiniz. Bus'dan yorum altında özgün açıklamayı olarak aynı görünürlük vardır. Yanıtları gizlilik denetimi kısıtlı görünürlük durumunu doğru şekilde göstermiyor olsa bile bu geçerlidir.
+   Yalnızca belirttiğiniz kişiler, yorumu ve içine eklediğiniz tüm görüntüleri, bağlantıları veya kodu görebilir. Yorum altındaki tüm yanıtlar özgün açıklamayla aynı görünürlüğe sahiptir. Yanıtlardaki gizlilik denetimi kısıtlanmış görünürlük durumunu doğru şekilde göstermese de bu durum geçerlidir.
 
-3. Açıklama ve tüm diğer bilgileri, görüntüleri ve dosya ekleri, yineleme için gereken ekleyin. Seçin **Gönder** özel olarak bu bilgileri göndermek düğmesi.
+3. Yeniden oluşturma için gereken açıklama ve diğer bilgileri, görüntüleri ve dosya eklerini ekleyin. Bu bilgileri özel olarak göndermek için **Gönder** düğmesini seçin.
 
    > [!NOTE]
-   > Ekli dosya çubuğunda bir 2 GB'lık sınırı ve en fazla 10 dosya yok. Daha büyük bir dosya karşıya yükleme gerekiyorsa, yeni bir sorun raporu gönderme veya bir Microsoft çalışanı özel bir yorum gelen istek bir karşıya yükleme URL'si.
+   > Ekli dosyalarda 2 GB 'lik bir sınır ve en fazla 10 dosya vardır. Daha büyük bir dosyayı karşıya yüklemeniz gerekiyorsa, yeni bir sorun raporu gönderebilir veya bir Microsoft çalışanınızdan özel bir yorum için karşıya yükleme URL 'SI isteyebilirsiniz.
 
-Gizliliğinizi korumak ve hassas bilgiler genel görünümü dışında tutmak için Microsoft ile tüm etkileşimler yanıtlara görünürlük sınırlı bir yorum altında tutmak için dikkatli olun. Diğer açıklamaları yanıtlar hassas bilgilerin yanlışlıkla açığa neden olabilir.
+Gizliliğinizi korumak ve hassas bilgileri genel görünümden korumak için, Microsoft ile tüm etkileşimleri, görünürlük kısıtlı bir yorum altında yanıt verecek şekilde saklayın. Diğer açıklamalara yanıt vermek, hassas bilgileri yanlışlıkla açıklayabilmeniz için yol açabilir.
 
 ## <a name="data-we-collect"></a>Topladığımız veriler
 
-Varsa **sorun bildir** başlatılan Visual Studio Yükleyicisi'nden en son kurulum günlüğü'nü toplarız.
+Visual Studio Yükleyicisi **bir sorun bildir** , en son Kurulum günlüğünü topladık.
 
-Varsa **sorun bildir** başlatılan bir veya daha fazla aşağıdaki veri türlerini topladığımız Visual Studio'dan:
+Visual Studio 'dan **bir sorun rapor** başlatılmışsa, aşağıdaki veri türlerinden bir veya daha fazlasını topladık:
 
-- Olay günlüğü girişlerinden Watson ve .NET
+- Watson ve .NET girdileri olay günlüğünden
 
 - Visual Studio bellek içi etkinlik günlüğü dosyası
 
-- PerfWatson dosyaları, Watson toplama etkinse, gelen *VSFeedbackPerfWatsonData* klasörü
+- Eğer Watson koleksiyonu etkinse PerfWatson dosyaları
 
-- LiveShare günlük dosyaları, varsa, gelen *VSFeedbackVSRTCLogs* klasörü
+- Varsa, Livesuntekler günlük dosyaları
 
-- Xamarin günlük dosyaları, varsa, gelen *%LOCALAPPDATA%\Xamarin\Logs*
+- Varsa Xamarin günlük dosyaları
 
-- Varsa, Nuget günlük dosyaları, gelen *%TEMP%\NuGetScratch\nuget-dg\nugetSpec.dg*
+- Varsa NuGet günlük dosyaları
 
-- Varsa web hata ayıklayıcı günlük dosyaları:
+- Varsa, Web hata ayıklayıcısı günlük dosyaları
 
-  - *%Temp%\vscode-Chrome-Debug.txt*
+- Varsa hizmet merkezi günlükleri ve MEF hata günlükleri
 
-  - *%TEMP%\vscode-node-debug2.txt*
+- Varsa Python günlükleri
 
-  - *%Temp%\vscode-Edge-Debug.txt*
+- Bir ekran görüntüsü, eklemeyi tercih ederseniz
 
-- Bir ekran dahil seçeneğini belirlerseniz,
-
-- Veri içeren bir kayıt eklemek isterseniz kaydı:
+- Verileri kaydetme, aşağıdakileri içeren bir kayıt eklemeyi tercih ederseniz:
 
   - Sorunu yeniden oluşturma adımları
 
@@ -81,9 +79,9 @@ Varsa **sorun bildir** başlatılan bir veya daha fazla aşağıdaki veri türle
   - Döküm dosyası
 
   > [!NOTE]
-  > Raporu göndermeden önce göndermek istemediğiniz veri kaydını silebilirsiniz.
+  > Raporu göndermeden önce göndermek istemediğiniz kayıt verilerini silebilirsiniz.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [Visual Studio ile ilgili bir sorun bildirme](how-to-report-a-problem-with-visual-studio.md)
-- [C++ sorun rapor veri gizliliği](/cpp/how-to-report-a-problem-with-the-visual-cpp-toolset#reports-and-privacy)
+- [Visual Studio ile ilgili sorun bildirme](how-to-report-a-problem-with-visual-studio.md)
+- [C++sorun raporu veri gizliliği](/cpp/how-to-report-a-problem-with-the-visual-cpp-toolset#reports-and-privacy)

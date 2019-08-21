@@ -1,6 +1,6 @@
 ---
 title: 'Nasıl yapılır: Projeleri hedef platformlar için yapılandırma'
-ms.date: 11/04/2016
+ms.date: 08/16/2019
 ms.technology: vs-ide-compile
 ms.topic: conceptual
 helpviewer_keywords:
@@ -18,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: faef9f55a88385953a121574f761193cc8c11ea9
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
+ms.openlocfilehash: 5d31d3a4f2e42981df646f9c38e13ee9b5f21122
+ms.sourcegitcommit: 9e5e8b6e9a3b6614723e71cc23bb434fe4218c9c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68416829"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "69634916"
 ---
 # <a name="how-to-configure-projects-to-target-platforms"></a>Nasıl yapılır: Projeleri hedef platformlar için yapılandırma
 
@@ -64,9 +64,60 @@ Bu görevin gerçekleştirilmesi, kullanmakta olduğunuz programlama diline gör
 
 - Projeler [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] için bkz. [/clr (ortak dil çalışma zamanı derlemesi)](/cpp/build/reference/clr-common-language-runtime-compilation).
 
+## <a name="manually-editing-the-project-file"></a>Proje dosyasını el ile Düzenle
+
+Bazen, bazı özel yapılandırma için proje dosyasını el ile düzenlemeniz gerekir. Örneğin, aşağıdaki örnekte olduğu gibi, iki farklı platformda farklı bir başvuru gibi IDE 'de belirtime koşullarınız vardır.
+
+### <a name="example-referencing-x86-and-x64-assemblies-and-dlls"></a>Örnek: X86 ve x64 derlemelerine ve DLL 'Lerine başvurma
+
+Hem x86 hem de x64 sürümlerine sahip bir .NET bütünleştirilmiş kodu veya DLL 'SI olabilir. Projenizi bu başvuruları kullanacak şekilde ayarlamak için, önce başvuruyu ekleyin ve ardından proje dosyasını açın ve sonra hem yapılandırmaya hem de hedef platforma başvuran bir koşula `ItemGroup` sahip bir koşul ekleyerek düzenleyin.  Örneğin, başvurduğunuz ikilinin ClassLibrary1 olduğunu ve hata ayıklama ve sürüm yapılandırmalarının yanı sıra x86 ve x64 sürümleri için farklı yollar bulunduğunu varsayalım.  Ardından, aşağıdaki gibi `ItemGroup` , tüm ayar birleşimleriyle dört öğe kullanın:
+
+```xml
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <Platforms>AnyCPU;x64;x86</Platforms>
+  </PropertyGroup>
+
+  <ItemGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <Reference Include="ClassLibrary1">
+      <HintPath>..\..\ClassLibrary1\ClassLibrary1\bin\x64\Debug\netstandard2.0\ClassLibrary1.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x64'">
+    <Reference Include="ClassLibrary1">
+      <HintPath>..\..\ClassLibrary1\ClassLibrary1\bin\x64\Release\netstandard2.0\ClassLibrary1.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <Reference Include="ClassLibrary1">
+      <HintPath>..\..\ClassLibrary1\ClassLibrary1\bin\x86\Debug\netstandard2.0\ClassLibrary1.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  
+  <ItemGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86'">
+    <Reference Include="ClassLibrary1">
+      <HintPath>..\..\ClassLibrary1\ClassLibrary1\bin\x86\Release\netstandard2.0\ClassLibrary1.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>
+```
+
+::: moniker range="vs-2017"
+> [!NOTE]
+> Visual Studio 2017 ' de proje dosyasını düzenlemeden önce projeyi kaldırmanız gerekir. Projeyi kaldırmak için proje düğümüne sağ tıklayın ve **Projeyi Kaldır**' ı seçin. Düzenlemeler tamamlandığında, değişiklikleri kaydedin ve proje düğümüne sağ tıklayıp **projeyi yeniden yükle**' yi seçerek projeyi yeniden yükleyin.
+::: moniker-end
+
+Proje dosyası hakkında daha fazla bilgi için bkz. [MSBuild proje dosyası şema başvurusu](/visualstudio/msbuild/msbuild-project-file-schema-reference).
+
 ## <a name="see-also"></a>Ayrıca bkz.
 
 - [Derleme platformlarını anlama](../ide/understanding-build-platforms.md)
 - [/Platform (C# derleyici seçenekleri)](/dotnet/csharp/language-reference/compiler-options/platform-compiler-option)
 - [64 bitlik uygulamalar](/dotnet/framework/64-bit-apps)
 - [Visual Studio IDE 64 bit desteği](../ide/visual-studio-ide-64-bit-support.md)
+- [Proje dosyasını anlama](/aspnet/web-forms/overview/deployment/web-deployment-in-the-enterprise/understanding-the-project-file)
