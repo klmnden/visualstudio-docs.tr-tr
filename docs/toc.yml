@@ -350,8 +350,6 @@
                     - name: Genel Bakış
                       displayName: refactoring
                       href: ide/refactoring-in-visual-studio.md
-                    - name: Tüm parametreler için null denetimleri ekleme
-                      href: ide/reference/add-null-checks-for-all-parameters.md
                     - name: Metot imzasını değiştirme
                       href: ide/reference/change-method-signature.md
                     - name: Anonim türü sınıfa dönüştürme
