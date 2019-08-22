@@ -658,6 +658,16 @@
                   href: ca2321.md
                 - name: 'CA2322: Seri durumdan çıkarmadan önce SimpleTypeResolver ile JavaScriptSerializer’ın başlatılmadığından emin olun'
                   href: ca2322.md
+                - name: 'CA2326: None dışında bir TypeNameHandling değeri kullanmayın'
+                  href: ca2326.md
+                - name: 'CA2327: Güvenli olmayan JsonSerializerSettings kullanmayın'
+                  href: ca2327.md
+                - name: 'CA2328: JsonSerializerSettings’in güvenli olduğundan emin olun'
+                  href: ca2328.md
+                - name: 'CA2329: Güvenli olmayan bir yapılandırma kullanarak JsonSerializer ile seri durumdan çıkarma işlemi yapmayın'
+                  href: ca2329.md
+                - name: 'CA2330: Seri durumdan çıkarılırken JsonSerializer’ın güvenli bir yapılandırmaya sahip olmasını sağlayın'
+                  href: ca2330.md
                 - name: 'CA3001: SQL ekleme güvenlik açıkları için inceleme kodu'
                   href: ca3001-review-code-for-sql-injection-vulnerabilities.md
                 - name: 'CA3002: XSS güvenlik açıkları için inceleme kodu'
@@ -800,7 +810,7 @@
     - name: Genel Bakış
       displayName: C++ code analysis
       href: code-analysis-for-c-cpp-overview.md
-    - name: Hızlı başlangıç
+    - name: Hızlı Başlangıç
       href: quick-start-code-analysis-for-c-cpp.md
     - name: C/C++ kodunda hata olup olmadığını analiz etme
       href: walkthrough-analyzing-c-cpp-code-for-defects.md
