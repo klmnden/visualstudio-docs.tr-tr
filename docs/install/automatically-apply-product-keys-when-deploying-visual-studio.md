@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 3f1cdc3d8516271cd397c1d22118ca21a92f78cd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: dabaf63e205d3e76432767743e323c90ed389846
+ms.sourcegitcommit: 673b9364fc9a96b027662dcb4cf5d61cab60ef11
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62974221"
+ms.lasthandoff: 08/21/2019
+ms.locfileid: "69891302"
 ---
 # <a name="automatically-apply-product-keys-when-deploying-visual-studio"></a>Visual Studio’yu dağıtırken ürün anahtarlarını otomatik olarak uygulama
 
@@ -33,7 +33,7 @@ Visual Studio yüklü bir sürümü ile bir ürün anahtarı kullanarak etkinle�
 
 ::: moniker range="vs-2019"
 
-Visual Studio yüklü bir sürümü ile bir ürün anahtarı kullanarak etkinleştirebilirsiniz `StorePID.exe` yardımcı programı hedef makinelerde sessiz modda. `StorePID.exe` Visual Studio 2019 şu varsayılan konumda ile yükleyen bir hizmet programıdır: <br> `C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE`
+Visual Studio yüklü bir sürümü ile bir ürün anahtarı kullanarak etkinleştirebilirsiniz `StorePID.exe` yardımcı programı hedef makinelerde sessiz modda. `StorePID.exe`, aşağıdaki varsayılan konumda Visual Studio 2019 ile yüklenen bir yardımcı programdır: <br> `C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE`
 
 ::: moniker-end
 
@@ -58,7 +58,7 @@ Aşağıdaki örnek, Visual Studio 2017 bir MPC 08860 biri olan bir kuruluş iç
 
 ::: moniker range="vs-2019"
 
-Aşağıdaki örnek, Visual Studio 2019 bir MPC 09260 biri olan bir kuruluş için lisans uygulamak için bir komut satırı gösterir. bir ürün anahtarı `AAAAA-BBBBB-CCCCC-DDDDDD-EEEEEE`, varsayılan yükleme konumu varsayar:
+Aşağıdaki örnek, MPC/09260, ürün anahtarı `AAAAA-BBBBB-CCCCC-DDDDDD-EEEEEE`ve varsayılan yükleme konumunu varsayan Visual Studio 2019 Enterprise lisansını uygulamak için bir komut satırı gösterir:
 
 ```cmd
 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\StorePID.exe" AAAAA-BBBBB-CCCCC-DDDDDD-EEEEEE 09260
@@ -92,7 +92,7 @@ Varsa `StorePID.exe` başarıyla döndürür ürün anahtarı geçerli bir `%ERR
 | Hata                     | Kod |
 |---------------------------|------|
 | `PID_ACTION_SUCCESS`      | 0    |
-| `PID_ACTION_NOTINSTALLED` | 1.    |
+| `PID_ACTION_NOTINSTALLED` | 1\.    |
 | `PID_ACTION_INVALID`      | 2    |
 | `PID_ACTION_EXPIRED`      | 3    |
 | `PID_ACTION_INUSE`        | 4    |
@@ -100,6 +100,9 @@ Varsa `StorePID.exe` başarıyla döndürür ürün anahtarı geçerli bir `%ERR
 | `PID_ACTION_NOUPGRADE`    | 6    |
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
+
+> [!NOTE]
+> Sanal örneklerde sorun giderme için, *C:\Program Files (x86) \Microsoft Visual Studio \<Version\>\Common7\IDE\DDConfigCA.exe*çalıştırın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

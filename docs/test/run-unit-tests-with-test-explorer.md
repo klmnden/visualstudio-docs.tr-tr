@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a3839a28ce0c37c5ccf43ca1f8ddba1ecd52365
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: d18f510b3b30207079b644e540d8b5db22609f97
+ms.sourcegitcommit: 673b9364fc9a96b027662dcb4cf5d61cab60ef11
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68918179"
+ms.lasthandoff: 08/21/2019
+ms.locfileid: "69891329"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Test Gezgini ile birim testleri çalıştırma
 
@@ -96,7 +96,7 @@ Her yerel derlemeden sonra birim testlerinizi çalıştırmak için, test Gezgin
 
 ## <a name="view-test-results"></a>Test sonuçlarını görüntüle
 
-Test Gezgini çalıştırma, yazma ve testlerinizi yeniden çalıştırın gibi sonuçları gruplarında görüntüler. **başarısız testler**, **başarılı testler**, **Atlanan testler** ve **çalıştırma Testleri**. Test Gezgini görüntüler altındaki ayrıntılar bölmesi test özeti çalıştırın.
+Test Gezgini çalıştırma, yazma ve testlerinizi yeniden çalıştırın gibi sonuçları gruplarında görüntüler. **başarısız testler**, **başarılı testler**, **Atlanan testler** ve **çalıştırma Testleri**. Test Gezgini 'nin alt veya tarafındaki Ayrıntılar bölmesi, Test çalıştırmasının bir özetini görüntüler.
 
 ### <a name="view-test-details"></a>Test ayrıntılarını görüntüle
 
@@ -181,7 +181,7 @@ Yönetilen uygulamalar için Microsoft birim testi çerçevesinde, bir <xref:Mic
 |-|-----------------|
 |<xref:Microsoft.VisualStudio.TestTools.UnitTesting.OwnerAttribute>|Sahip kategorisi, birim test çerçevesi tarafından tanımlanır ve sahibin dize değerini sağlamanızı gerektirir.|
 |<xref:Microsoft.VisualStudio.TestTools.UnitTesting.PriorityAttribute>|Öncelik kategorisi, birim test çerçevesi tarafından tanımlanır ve öncelik için bir tamsayı değeri sağlamanızı gerektirir.|
-|<xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute>|TestCategory özniteliği değer olmadan bir kategori sağlamanıza olanak sağlar. TestCategory özniteliği tarafından tanımlanan bir kategori de bir TestProperty özniteliği kategorisi olabilir.|
+|<xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute>|TestCategory özniteliği değer olmadan bir kategori sağlamanıza olanak sağlar.|
 |<xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute>|TestProperty özniteliği nitelik kategori/değer çiftini tanımlamanızı sağlar.|
 
 
@@ -215,7 +215,7 @@ Yeni bir test Gezgini sekmesinde çalma listesi açılır. Bu çalma listesini b
 
 ![Çalma listesi ayrı test Gezgini sekmesinde açılıyor](../test/media/vs-2019/test-explorer-playlist-tab-16-2.png)
 
-**Bir çalma listesine test eklemek için**, test Gezgini 'nde bir veya daha fazla test seçin. Sağ tıklayın ve**Yeni**çalma listesine **Ekle** > ' yi seçin.
+**Bir çalma listesi oluşturmak için**, test Gezgini 'nde bir veya daha fazla test seçin. Sağ tıklayın ve**Yeni**çalma listesine **Ekle** > ' yi seçin.
 
 **Bir çalma listesi açmak için**, Visual Studio araç çubuğunda çalma listesi simgesini seçin ve menüden önceden kaydedilmiş bir çalma listesi dosyası seçin.
 ::: moniker-end
@@ -236,7 +236,7 @@ Sütunlar filtrelenebilir, sıralanabilir ve yeniden düzenlenebilir.
 
 * Sütunların sırasını değiştirmek için, bir sütun başlığına tıklayın ve sola veya sağa sürükleyin.
 
-* Bir sütunu sıralamak için sütun başlığına tıklayın. Tüm sütunlar sıralanmayabilir.
+* Bir sütunu sıralamak için sütun başlığına tıklayın. Tüm sütunlar sıralanmayabilir. Ayrıca, **SHIFT** tuşunu basılı tutarak ve ek bir sütun başlığına tıklayarak ikincil bir sütuna göre sıralama yapabilirsiniz.
 
   ![Sütun sıralaması](../test/media/vs-2019/test-explorer-sort-column-16-2.png)
 ::: moniker-end
@@ -253,7 +253,7 @@ Farklı ölçütlere göre filtrelemek için:
 
 2. Yeni bir ölçüt seçin.
 
-3. Tırnak işaretleri arasında filtre değeri girin.
+3. Tırnak işaretleri arasında filtre değeri girin. Dizeyi içeren bir eşleşme yerine tam eşleşme aramak istiyorsanız, iki nokta (:) yerine bir eşittir işareti (=) kullanın.
 
 ::: moniker range="vs-2017"
 ![Test Gezgini 'nde testleri filtrele](../test/media/ute_filtertestlist.png)
@@ -265,15 +265,28 @@ Farklı ölçütlere göre filtrelemek için:
 > [!NOTE]
 > Aramalar büyük/küçük harfe duyarlıdır ve belirtilen dizeyle ölçüt değerinin herhangi bir bölümüyle eşleşir.
 
+::: moniker range="vs-2017"
 |Leyicisini|Açıklama|
 |-|-----------------|
 |**Nitelik**|Hem nitelik kategorisini hem de eşleşme değerlerini arar. Nitelik kategorilerini ve değerlerini belirten sözdizimi, birim test çerçevesi tarafından tanımlanır.|
 |**Project**|Test projesi adlarını eşleşmeler için arar.|
 |**Hata Iletisi**|Eşleşmeler için başarısız Onaylamalar tarafından döndürülen Kullanıcı tanımlı hata iletilerini arar.|
 |**Dosya yolu**|Test kaynak dosyalarının tam dosya adını eşleşmeler için arar.|
-|**Tam nitelikli ad**|Test ad alanlarının, sınıfların ve yöntemlerin tam dosya adını eşleşmeler için arar.|
+|**Tam nitelikli ad**|Test ad alanları, sınıflar ve yöntemlerin tam adını eşleşmeler için arar.|
 |**Output**|Standart çıkış (STDOUT) veya standart hata (stderr) ile yazılan Kullanıcı tanımlı hata iletilerini arar. Çıkış mesajlarını belirten sözdizimi, birim test çerçevesi tarafından tanımlanır.|
 |**Sonucu**|Test Gezgini kategori adlarını eşleşmeler için arar: **Başarısız testler**, **Atlanan testler**, **başarılı testler**.|
+::: moniker-end
+::: moniker range=">=vs-2019"
+|Leyicisini|Açıklama|
+|-|-----------------|
+|**State**|Test Gezgini kategori adlarını eşleşmeler için arar: **Başarısız testler**, **Atlanan testler**, **başarılı testler**.|
+|**Lerdir**|Hem nitelik kategorisini hem de eşleşme değerlerini arar. Nitelik kategorilerini ve değerlerini belirten sözdizimi, birim test çerçevesi tarafından tanımlanır.|
+|**Tam nitelikli ad**|Test ad alanları, sınıflar ve yöntemlerin tam adını eşleşmeler için arar.|
+|**Project**|Test projesi adlarını eşleşmeler için arar.|
+|**Hedef Çerçeve**|Test Gezgini kategori adlarını eşleşmeler için arar: **Başarısız testler**, **Atlanan testler**, **başarılı testler**.|
+|**Namespace**|Test ad alanlarını eşleşmeler için arar.|
+|**Sınıfı**|Test sınıfları adlarını eşleşmeler için arar.|
+::: moniker-end
 
 Bir filtrenin sonuçlarının bir alt kümesini dışlamak için aşağıdaki sözdizimini kullanın:
 

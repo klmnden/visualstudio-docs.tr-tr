@@ -13,51 +13,51 @@ ms.workload:
 f1_keywords:
 - CA2301
 - DoNotCallBinaryFormatterDeserializeWithoutFirstSettingBinaryFormatterBinder
-ms.openlocfilehash: d9ac57ae00631088dacd9a23c502ba7693d5a903
-ms.sourcegitcommit: db30651dc0ce4d0b274479b23a6bd102a5559098
+ms.openlocfilehash: 0291aa4d8130cfdc9b919e0c8430e56ef0f95296
+ms.sourcegitcommit: 673b9364fc9a96b027662dcb4cf5d61cab60ef11
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65083910"
+ms.lasthandoff: 08/21/2019
+ms.locfileid: "69891187"
 ---
 # <a name="ca2301-do-not-call-binaryformatterdeserialize-without-first-setting-binaryformatterbinder"></a>CA2301: İlk olarak BinaryFormatter.Binder öğesini ayarlamadan önce BinaryFormatter.Deserialize çağırmayın
 
 |||
 |-|-|
-|TypeName|DoNotCallBinaryFormatterDeserializeWithoutFirstSettingBinaryFormatterBinder|
+|TypeName|Donotcallbinaryformatterdeserializewithoutfirstsettingbinaryformatterciltçi|
 |CheckId|CA2301|
 |Kategori|Microsoft.Security|
-|Yeni Değişiklik|Bozucu olmayan|
+|Yeni Değişiklik|Kırılmamış|
 
 ## <a name="cause"></a>Sebep
 
-A <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter?displayProperty=nameWithType> seri durumundan çıkarma yöntemi çağrılan veya başvurulan olmadan <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Binder> özellik kümesi.
+Bir <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter?displayProperty=nameWithType> seri kaldırma yöntemi, <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Binder> özellik kümesi olmadan çağrıldı veya başvuruluyor.
 
 ## <a name="rule-description"></a>Kural açıklaması
 
 [!INCLUDE[insecure-deserializers-description](includes/insecure-deserializers-description-md.md)]
 
-Bu kural bulur <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter?displayProperty=nameWithType> yöntem çağrıları veya başvuruları seri durumdan çıkarma olduğunda <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter> yok, <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Binder> ayarlayın. İle herhangi bir seri durumundan çıkarma engellemek istiyorsanız <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter> bakılmaksızın <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Binder> özelliği, bu kuralı devre dışı bırak ve [CA2302](ca2302-ensure-binaryformatter-binder-is-set-before-calling-binaryformatter-deserialize.md)ve kuralı etkinleştirmek [CA2300](ca2300-do-not-use-insecure-deserializer-binaryformatter.md).
+Bu kural <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter?displayProperty=nameWithType> <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Binder> , kümesi olmadığında, kaldırmayöntemiçağrılarınıveyabaşvurularınıbulur.<xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter> <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Binder> Özelliği <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter> ne olursa olsun, serisini kaldırmak istiyorsanız, bu kuralı ve [CA2302](ca2302-ensure-binaryformatter-binder-is-set-before-calling-binaryformatter-deserialize.md)' ı devre dışı bırakın ve [CA2300](ca2300-do-not-use-insecure-deserializer-binaryformatter.md)kuralını etkinleştirin.
 
-## <a name="how-to-fix-violations"></a>İhlaller nasıl düzeltilir?
+## <a name="how-to-fix-violations"></a>İhlalleri çözme
 
-- Mümkünse, bunun yerine, güvenli bir serileştirici kullanın ve **serisini kaldırmak için rastgele bir tür belirtmek bir saldırgan izin verme**. Bazı güvenli seri hale getiricileri genişletme şunlardır:
+- Mümkünse, bunun yerine güvenli bir serileştirici kullanın ve **bir saldırganın seri durumdan çıkarmak için rastgele bir tür belirtmesini sağlayın**. Bazı güvenli serileştiriciler şunları içerir:
   - <xref:System.Runtime.Serialization.DataContractSerializer?displayProperty=nameWithType>
   - <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer?displayProperty=nameWithType>
-  - <xref:System.Web.Script.Serialization.JavaScriptSerializer?displayProperty=nameWithType> -Hiçbir zaman kullanmayın <xref:System.Web.Script.Serialization.SimpleTypeResolver?displayProperty=nameWithType>. Tür çözümleyici kullanmanız gerekirse, seri durumdan çıkarılmış türü beklenen bir listeye kısıtlayın.
+  - <xref:System.Web.Script.Serialization.JavaScriptSerializer?displayProperty=nameWithType>-Hiçbir şekilde <xref:System.Web.Script.Serialization.SimpleTypeResolver?displayProperty=nameWithType>kullanmayın. Bir tür Çözümleyicisi kullanmanız gerekiyorsa, serisi kaldırılan türleri beklenen bir listeyle kısıtlayın.
   - <xref:System.Xml.Serialization.XmlSerializer?displayProperty=nameWithType>
-  - Newtonsoft Json.NET - TypeNameHandling.None kullanın. Başka bir değer için TypeNameHandling kullanmanız gerekirse, seri durumdan çıkarılmış türü özel ISerializationBinder beklenen bir listesiyle kısıtlayın.
+  - Newtonsoft Json.NET-TypeNameHandling. None kullanın. TypeNameHandling için başka bir değer kullanmanız gerekiyorsa, serisi kaldırılan türleri özel bir ISerializationBinder ile beklenen bir listeyle kısıtlayın.
   - Protokol arabellekleri
-- Seri hale getirilmiş veri artıklığının olun. Serileştirme sonra serileştirilmiş veriler şifreli olarak oturum açın. Seri durumundan çıkarma önce şifreleme imzası doğrulayın. İfşa gelen şifreleme anahtarını ve anahtar devirlerini için tasarım koruyun.
-- Seri durumdan çıkarılmış türlerini kısıtlayın. Özel bir uygulama <xref:System.Runtime.Serialization.SerializationBinder?displayProperty=nameWithType>. İle seri durumdan çıkarılırken önce <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter>ayarlayın <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Binder> özelliği özel örneğine <xref:System.Runtime.Serialization.SerializationBinder>. Geçersiz kılınan içinde <xref:System.Runtime.Serialization.SerializationBinder.BindToType%2A> türü beklenmedik bir durumsa yöntemi bir özel durum oluşturur.
+- Seri hale getirilen verileri prova yapın. Serileştirmeden sonra, serileştirilmiş verileri şifreli olarak imzalayın. Seri durumdan önce, şifreleme imzasını doğrulayın. Şifreleme anahtarını, önemli döndürmeler için açıklanmasını ve tasarıma karşı koruyun.
+- Seri durumdan çıkarılan türleri kısıtla. Özel <xref:System.Runtime.Serialization.SerializationBinder?displayProperty=nameWithType>bir uygulama uygulayın. İle <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter>seri durumdan kaldırmadan önce, <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Binder> özelliği özel <xref:System.Runtime.Serialization.SerializationBinder>bir örneğine ayarlayın. Geçersiz kılınan <xref:System.Runtime.Serialization.SerializationBinder.BindToType%2A> yöntemde, tür beklenmiyorsa, serisini durdurmak için bir özel durum oluşturur.
 
-## <a name="when-to-suppress-warnings"></a>Uyarılar bastırıldığında
+## <a name="when-to-suppress-warnings"></a>Uyarıların ne zaman bastırılamıyor
 
 [!INCLUDE[insecure-deserializers-common-safe-to-suppress](includes/insecure-deserializers-common-safe-to-suppress-md.md)]
 
 ## <a name="pseudo-code-examples"></a>Sözde kod örnekleri
 
-### <a name="violation"></a>İhlali
+### <a name="violation"></a>Edildiği
 
 ```csharp
 using System;
@@ -226,8 +226,8 @@ Public Class ExampleClass
 End Class
 ```
 
-## <a name="related-rules"></a>İlgili kuralları
+## <a name="related-rules"></a>İlgili kurallar
 
-[CA2300: Güvenli olmayan seri durumdan çıkarıcının BinaryFormatter kullanmayın](ca2300-do-not-use-insecure-deserializer-binaryformatter.md)
+[CA2300: Güvenli olmayan seri hale getirici BinaryFormatter kullanma](ca2300-do-not-use-insecure-deserializer-binaryformatter.md)
 
-[CA2302: BinaryFormatter.Binder BinaryFormatter.Deserialize çağırmadan önce ayarlandığından emin olun](ca2302-ensure-binaryformatter-binder-is-set-before-calling-binaryformatter-deserialize.md)
+[CA2302: BinaryFormatter. bağlayıcı, BinaryFormatter çağrılmadan önce ayarlanmış olduğundan emin olun. serisini kaldırma](ca2302-ensure-binaryformatter-binder-is-set-before-calling-binaryformatter-deserialize.md)

@@ -1,5 +1,5 @@
 ---
-title: 'CA2311: İlk ayarlamadan NetDataContractSerializer.Binder seri durumdan değil'
+title: 'CA2311: İlk olarak NetDataContractSerializer.Binder öğesini ayarlamadan seri durumdan çıkarmayın'
 ms.date: 05/01/2019
 ms.topic: reference
 author: dotpaul
@@ -13,51 +13,51 @@ ms.workload:
 f1_keywords:
 - CA2311
 - DoNotDeserializeWithoutFirstSettingNetDataContractSerializerBinder
-ms.openlocfilehash: aec95d4bbd2d9bc498f9688c5601591d480d7f3b
-ms.sourcegitcommit: db30651dc0ce4d0b274479b23a6bd102a5559098
+ms.openlocfilehash: 2ec13d78e364940fa9c210cf0792e810c8f0f341
+ms.sourcegitcommit: 673b9364fc9a96b027662dcb4cf5d61cab60ef11
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65135562"
+ms.lasthandoff: 08/21/2019
+ms.locfileid: "69891172"
 ---
-# <a name="ca2311-do-not-deserialize-without-first-setting-netdatacontractserializerbinder"></a>CA2311: İlk ayarlamadan NetDataContractSerializer.Binder seri durumdan değil
+# <a name="ca2311-do-not-deserialize-without-first-setting-netdatacontractserializerbinder"></a>CA2311: İlk olarak NetDataContractSerializer.Binder öğesini ayarlamadan seri durumdan çıkarmayın
 
 |||
 |-|-|
 |TypeName|DoNotDeserializeWithoutFirstSettingNetDataContractSerializerBinder|
 |CheckId|CA2311|
 |Kategori|Microsoft.Security|
-|Yeni Değişiklik|Bozucu olmayan|
+|Yeni Değişiklik|Kırılmamış|
 
 ## <a name="cause"></a>Sebep
 
-A <xref:System.Runtime.Serialization.NetDataContractSerializer?displayProperty=nameWithType> seri durumundan çıkarma yöntemi çağrılan veya başvurulan olmadan <xref:System.Runtime.Serialization.NetDataContractSerializer.Binder> özellik kümesi.
+Bir <xref:System.Runtime.Serialization.NetDataContractSerializer?displayProperty=nameWithType> seri kaldırma yöntemi, <xref:System.Runtime.Serialization.NetDataContractSerializer.Binder> özellik kümesi olmadan çağrıldı veya başvuruluyor.
 
 ## <a name="rule-description"></a>Kural açıklaması
 
 [!INCLUDE[insecure-deserializers-description](includes/insecure-deserializers-description-md.md)]
 
-Bu kural bulur <xref:System.Runtime.Serialization.NetDataContractSerializer?displayProperty=nameWithType> yöntem çağrıları veya başvuruları seri durumdan çıkarma olduğunda <xref:System.Runtime.Serialization.NetDataContractSerializer> yok, <xref:System.Runtime.Serialization.NetDataContractSerializer.Binder> ayarlayın. İle herhangi bir seri durumundan çıkarma engellemek istiyorsanız <xref:System.Runtime.Serialization.NetDataContractSerializer> bakılmaksızın <xref:System.Runtime.Serialization.NetDataContractSerializer.Binder> özelliği, bu kuralı devre dışı bırak ve [CA2312](ca2312-ensure-netdatacontractserializer-binder-is-set-before-deserializing.md)ve kuralı etkinleştirmek [CA2310](ca2310-do-not-use-insecure-deserializer-netdatacontractserializer.md).
+Bu kural <xref:System.Runtime.Serialization.NetDataContractSerializer?displayProperty=nameWithType> <xref:System.Runtime.Serialization.NetDataContractSerializer.Binder> , kümesi olmadığında, kaldırmayöntemiçağrılarınıveyabaşvurularınıbulur.<xref:System.Runtime.Serialization.NetDataContractSerializer> <xref:System.Runtime.Serialization.NetDataContractSerializer.Binder> Özelliği <xref:System.Runtime.Serialization.NetDataContractSerializer> ne olursa olsun, serisini kaldırmak istiyorsanız, bu kuralı ve [CA2312](ca2312-ensure-netdatacontractserializer-binder-is-set-before-deserializing.md)' ı devre dışı bırakın ve [CA2310](ca2310-do-not-use-insecure-deserializer-netdatacontractserializer.md)kuralını etkinleştirin.
 
-## <a name="how-to-fix-violations"></a>İhlaller nasıl düzeltilir?
+## <a name="how-to-fix-violations"></a>İhlalleri çözme
 
-- Mümkünse, bunun yerine, güvenli bir serileştirici kullanın ve **serisini kaldırmak için rastgele bir tür belirtmek bir saldırgan izin verme**. Bazı güvenli seri hale getiricileri genişletme şunlardır:
+- Mümkünse, bunun yerine güvenli bir serileştirici kullanın ve **bir saldırganın seri durumdan çıkarmak için rastgele bir tür belirtmesini sağlayın**. Bazı güvenli serileştiriciler şunları içerir:
   - <xref:System.Runtime.Serialization.DataContractSerializer?displayProperty=nameWithType>
   - <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer?displayProperty=nameWithType>
-  - <xref:System.Web.Script.Serialization.JavaScriptSerializer?displayProperty=nameWithType> -Hiçbir zaman kullanmayın <xref:System.Web.Script.Serialization.SimpleTypeResolver?displayProperty=nameWithType>. Tür çözümleyici kullanmanız gerekirse, seri durumdan çıkarılmış türü beklenen bir listeye kısıtlayın.
+  - <xref:System.Web.Script.Serialization.JavaScriptSerializer?displayProperty=nameWithType>-Hiçbir şekilde <xref:System.Web.Script.Serialization.SimpleTypeResolver?displayProperty=nameWithType>kullanmayın. Bir tür Çözümleyicisi kullanmanız gerekiyorsa, serisi kaldırılan türleri beklenen bir listeyle kısıtlayın.
   - <xref:System.Xml.Serialization.XmlSerializer?displayProperty=nameWithType>
-  - Newtonsoft Json.NET - TypeNameHandling.None kullanın. Başka bir değer için TypeNameHandling kullanmanız gerekirse, seri durumdan çıkarılmış türü özel ISerializationBinder beklenen bir listesiyle kısıtlayın.
+  - Newtonsoft Json.NET-TypeNameHandling. None kullanın. TypeNameHandling için başka bir değer kullanmanız gerekiyorsa, serisi kaldırılan türleri özel bir ISerializationBinder ile beklenen bir listeyle kısıtlayın.
   - Protokol arabellekleri
-- Seri hale getirilmiş veri artıklığının olun. Serileştirme sonra serileştirilmiş veriler şifreli olarak oturum açın. Seri durumundan çıkarma önce şifreleme imzası doğrulayın. İfşa gelen şifreleme anahtarını ve anahtar devirlerini için tasarım koruyun.
-- Seri durumdan çıkarılmış türlerini kısıtlayın. Özel bir uygulama <xref:System.Runtime.Serialization.SerializationBinder?displayProperty=nameWithType>. İle seri durumdan çıkarılırken önce <xref:System.Runtime.Serialization.NetDataContractSerializer>ayarlayın <xref:System.Runtime.Serialization.NetDataContractSerializer.Binder> özelliği özel örneğine <xref:System.Runtime.Serialization.SerializationBinder>. Geçersiz kılınan içinde <xref:System.Runtime.Serialization.SerializationBinder.BindToType%2A> türü beklenmedik bir durumsa yöntemi bir özel durum oluşturur.
+- Seri hale getirilen verileri prova yapın. Serileştirmeden sonra, serileştirilmiş verileri şifreli olarak imzalayın. Seri durumdan önce, şifreleme imzasını doğrulayın. Şifreleme anahtarını, önemli döndürmeler için açıklanmasını ve tasarıma karşı koruyun.
+- Seri durumdan çıkarılan türleri kısıtla. Özel <xref:System.Runtime.Serialization.SerializationBinder?displayProperty=nameWithType>bir uygulama uygulayın. İle <xref:System.Runtime.Serialization.NetDataContractSerializer>seri durumdan kaldırmadan önce, <xref:System.Runtime.Serialization.NetDataContractSerializer.Binder> özelliği özel <xref:System.Runtime.Serialization.SerializationBinder>bir örneğine ayarlayın. Geçersiz kılınan <xref:System.Runtime.Serialization.SerializationBinder.BindToType%2A> yöntemde, tür beklenmiyorsa, serisini durdurmak için bir özel durum oluşturur.
 
-## <a name="when-to-suppress-warnings"></a>Uyarılar bastırıldığında
+## <a name="when-to-suppress-warnings"></a>Uyarıların ne zaman bastırılamıyor
 
 [!INCLUDE[insecure-deserializers-common-safe-to-suppress](includes/insecure-deserializers-common-safe-to-suppress-md.md)]
 
 ## <a name="pseudo-code-examples"></a>Sözde kod örnekleri
 
-### <a name="violation"></a>İhlali
+### <a name="violation"></a>Edildiği
 
 ```csharp
 using System;
@@ -260,8 +260,8 @@ Public Class ExampleClass
 End Class
 ```
 
-## <a name="related-rules"></a>İlgili kuralları
+## <a name="related-rules"></a>İlgili kurallar
 
-[CA2310: Güvenli olmayan seri durumdan çıkarıcının NetDataContractSerializer kullanmayın](ca2310-do-not-use-insecure-deserializer-netdatacontractserializer.md)
+[CA2310: Güvenli olmayan seri hale getirici kullanmayan NetDataContractSerializer kullanma](ca2310-do-not-use-insecure-deserializer-netdatacontractserializer.md)
 
-[CA2312: Seri durumdan çıkarılırken önce NetDataContractSerializer.Binder ayarlandığından emin olun](ca2312-ensure-netdatacontractserializer-binder-is-set-before-deserializing.md)
+[CA2312: NetDataContractSerializer. Ciltçi serisini kaldırmada önce ayarlandığından emin olun](ca2312-ensure-netdatacontractserializer-binder-is-set-before-deserializing.md)

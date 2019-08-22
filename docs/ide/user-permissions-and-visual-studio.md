@@ -12,49 +12,50 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1d012c0902aa82eb057f9d69c0b85b13262e847a
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: 97ecddfa317eb522a8ce29a53482df5581912dad
+ms.sourcegitcommit: 673b9364fc9a96b027662dcb4cf5d61cab60ef11
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66747634"
+ms.lasthandoff: 08/21/2019
+ms.locfileid: "69891241"
 ---
 # <a name="user-permissions-and-visual-studio"></a>Kullanıcı izinleri ve Visual Studio
 
-Güvenlik nedenleriyle, Visual Studio normal kullanıcı mümkün olduğunca olarak çalıştırmanız gerekir.
+Güvenlik nedenleriyle, mümkün olduğunda Visual Studio 'Yu normal bir kullanıcı olarak çalıştırmanız gerekir.
 
 > [!WARNING]
 > Ayrıca güvenilir bir kişi ya da güvenilir bir konumdan gelmeyen herhangi bir Visual Studio çözümüyle derleme, başlatma veya hata ayıklama yapmadığınızdan emin olmalısınız.
 
-Normal bir kullanıcı olarak Visual Studio IDE içinde hemen her şeyi yapabilirsiniz. Aşağıdaki görevleri tamamlamak için yönetici izinlerine ihtiyacınız vardır:
+Visual Studio IDE 'deki neredeyse her şeyi normal kullanıcı olarak yapabilirsiniz. Aşağıdaki görevleri gerçekleştirmek için yönetici izinlerine sahip olmanız gerekir:
 
 |Alan|Görev|Daha fazla bilgi için|
 |----------|----------| - |
-|Yükleme|Visual Studio'yu yükleyin.|[Visual Studio'yu yükleyin](../install/install-visual-studio.md)|
-||Yüklemek, güncelleştirmek veya yerel Yardım içeriğini kaldırın.|[Yerel Yardım içeriği yükleme ve yönetme](../help-viewer/install-manage-local-content.md)|
-|Araç Kutusu|Klasik COM denetimleri ekleme **araç kutusu**.|[Araç Kutusu](../ide/reference/toolbox.md)|
-|Oluşturma|Bir bileşeni kayıt ettiren oluşturma sonrası olayları kullanın.|[Özel derleme adımları anlayın ve derleme olayları](/cpp/build/understanding-custom-build-steps-and-build-events)|
-||C++ projeleri oluşturduğunuzda kayıt adımı içerir.||
-|Hata Ayıklama|Yükseltilmiş izinlerle çalışan uygulamalarda hata ayıklama.|[Hata ayıklayıcısı ayarları ve hazırlığı](../debugger/debugger-settings-and-preparation.md)|
-||Hesap, ASP.NET Web siteleri gibi farklı bir kullanıcı altında çalışan uygulamalarda hata ayıklama.|[ASP.NET ve AJAX uygulamalarında hata ayıklama](../debugger/how-to-enable-debugging-for-aspnet-applications.md)|
-||XAML tarayıcı uygulamaları (XBAP) için bölgede hata ayıklama|[WPF Konağı (PresentationHost.exe)](/dotnet/framework/wpf/app-development/wpf-host-presentationhost-exe)|
-||İçin Microsoft Azure bulut hizmeti projelerinde hata ayıklamak için öykünücü kullanma.|[Bir bulut hizmetinde Visual Studio'da hata ayıklama](/azure/vs-azure-tools-debug-cloud-services-virtual-machines)|
-||Uzaktan hata ayıklama için bir güvenlik duvarını yapılandırın.|[Uzaktan hata ayıklama](../debugger/remote-debugging.md)|
-|Performans araçları|Uygulama profili oluşturma.|[Performans profili oluşturma Başlangıç Kılavuzu](../profiling/beginners-guide-to-performance-profiling.md)|
-|Dağıtım|Internet Information Services (IIS) için yerel bir bilgisayardaki bir web uygulaması dağıtın.|[Visual Studio kullanarak ASP.NET web uygulaması dağıtma](/aspnet/web-forms/overview/older-versions-getting-started/deployment-to-a-hosting-provider/)|
+|Yükleme|Visual Studio 'Yu yükler.|[Visual Studio'yu yükleyin](../install/install-visual-studio.md)|
+||Yerel Yardım içeriğini yükler, güncelleştirir veya kaldırır.|[Yerel Yardım içeriğini yükleyip yönetme](../help-viewer/install-manage-local-content.md)|
+|Araç Kutusu|**Araç kutusuna**klasik com denetimleri ekleyin.|[Araç Kutusu](../ide/reference/toolbox.md)|
+|Oluşturma|Bir bileşeni kaydeden oluşturma sonrası olayları kullanın.|[Özel derleme adımlarını ve derleme olaylarını anlama](/cpp/build/understanding-custom-build-steps-and-build-events)|
+||C++ Proje oluştururken bir kayıt adımı ekleyin.||
+|Hata Ayıklama|Yükseltilmiş izinlerle çalışan uygulamalarda hata ayıklayın.|[Hata ayıklayıcısı ayarları ve hazırlığı](../debugger/debugger-settings-and-preparation.md)|
+||ASP.NET Web siteleri gibi farklı bir kullanıcı hesabı altında çalışan uygulamalarda hata ayıklayın.|[ASP.NET ve AJAX uygulamalarında hata ayıklama](../debugger/how-to-enable-debugging-for-aspnet-applications.md)|
+||XAML tarayıcı uygulamaları (XBAP) için bölgede hata ayıklama.|[WPF konağı (PresentationHost. exe)](/dotnet/framework/wpf/app-development/wpf-host-presentationhost-exe)|
+||Microsoft Azure için bulut hizmeti projelerinde hata ayıklamak için öykünücüyü kullanın.|[Visual Studio 'da bir bulut hizmetinde hata ayıklama](/azure/vs-azure-tools-debug-cloud-services-virtual-machines)|
+||Uzaktan hata ayıklama için bir güvenlik duvarı yapılandırın.|[Uzaktan hata ayıklama](../debugger/remote-debugging.md)|
+|Performans araçları|Yükseltilmiş bir uygulamaya iliştirme.|[Performans profili oluşturma için yeni başlayanlar kılavuzu](../profiling/beginners-guide-to-performance-profiling.md)|
+||GPU Profiler 'ı kullanın.|[GPU profili oluşturma](../profiling/gpu-usage.md)|
+|Dağıtım|Bir Web uygulamasını yerel bir bilgisayarda Internet Information Services (IIS) uygulamasına dağıtın.|[Visual Studio kullanarak bir ASP.NET Web uygulaması dağıtma](/aspnet/web-forms/overview/older-versions-getting-started/deployment-to-a-hosting-provider/)|
 
-## <a name="run-visual-studio-as-an-administrator"></a>Visual Studio'yu yönetici olarak çalıştırın
+## <a name="run-visual-studio-as-an-administrator"></a>Visual Studio 'Yu yönetici olarak çalıştırma
 
-Visual Studio'yu yönetici olarak çalıştırmanız gerekir IDE açmak için şu adımları izleyin:
+Visual Studio 'Yu yönetici olarak çalıştırmanız gerekiyorsa IDE 'yi açmak için aşağıdaki adımları izleyin:
 
 > [!NOTE]
-> Bu yönergeler, Windows 10 için içindir. Bunlar diğer Windows sürümleri için benzerdir.
+> Bu yönergeler Windows 10 içindir. Bunlar, diğer Windows sürümlerine benzerdir.
 
 ::: moniker range="vs-2017"
 
-1. Açık **Başlat** menü ve Visual Studio 2017 gidin.
+1. **Başlat** menüsünü açın ve Visual Studio 2017 ' a kaydırın.
 
-1. Sağ tıklayın veya bağlam menüsünde **Visual Studio 2017**seçin **daha fazla** > **yönetici olarak çalıştır**.
+1. **Visual Studio 2017**' nin sağ tıklama veya bağlam menüsünden **daha fazla** > **Çalıştır yönetici**' yi seçin.
 
    Visual Studio başladığında **(Yönetici)** başlık çubuğundaki ürün adının görünür.
 
@@ -62,17 +63,17 @@ Visual Studio'yu yönetici olarak çalıştırmanız gerekir IDE açmak için ş
 
 ::: moniker range=">=vs-2019"
 
-1. Açık **Başlat** menü ve Visual Studio 2019 gidin.
+1. **Başlat** menüsünü açın ve Visual Studio 2019 ' a kaydırın.
 
-1. Sağ tıklayın veya bağlam menüsünde **Visual Studio 2019**seçin **daha fazla** > **yönetici olarak çalıştır**.
+1. **Visual Studio 2019**' nin sağ tıklama veya bağlam menüsünden **daha fazla** > **Çalıştır yönetici**' yi seçin.
 
    Visual Studio başladığında **(Yönetici)** başlık çubuğundaki ürün adının görünür.
 
 ::: moniker-end
 
-Uygulama kısayolunu her zaman yönetim izinleriyle çalıştırmak için de değiştirebilirsiniz.
+Ayrıca, uygulama kısayolunu her zaman yönetici izinleriyle çalışacak şekilde değiştirebilirsiniz.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [Taşıma, geçirme ve Visual Studio projelerini yükseltme](../porting/port-migrate-and-upgrade-visual-studio-projects.md)
+- [Visual Studio projelerini bağlantı noktası, geçirme ve yükseltme](../porting/port-migrate-and-upgrade-visual-studio-projects.md)
 - [Visual Studio'yu yükleyin](../install/install-visual-studio.md)

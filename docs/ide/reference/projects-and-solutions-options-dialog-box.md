@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 37d31f76a448933bb3809cd609ebd355c8e0a04b
-ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
+ms.openlocfilehash: 8b71d7040df5f971f320b9bb9999f9cacd0425e7
+ms.sourcegitcommit: 673b9364fc9a96b027662dcb4cf5d61cab60ef11
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/29/2019
-ms.locfileid: "68605958"
+ms.lasthandoff: 08/21/2019
+ms.locfileid: "69891296"
 ---
 # <a name="options-dialog-box-projects-and-solutions--general"></a>Seçenekler iletişim kutusu: Projeler ve çözümler \> genel
 
@@ -38,7 +38,7 @@ Seçildiğinde, **Çözüm Gezgini** otomatik olarak açılır ve etkin öğe se
 
 Seçildiğinde, derleme yapılandırma seçenekleri **Proje özellik sayfaları** iletişim kutusunda ve **Çözüm Özellik sayfaları** iletişim kutusunda görünür. Temizlenme sırasında, derleme yapılandırma seçenekleri **Proje özellik sayfaları** iletişim kutusunda ve bir yapılandırma ya da iki yapılandırma içeren Visual Basic ve C# projeler için **Çözüm Özellik sayfaları** iletişim kutusu üzerinde görünmez Hata Ayıkla ve serbest bırak. Bir projede Kullanıcı tanımlı bir yapılandırma varsa, derleme yapılandırma seçenekleri gösterilir.
 
-Bu seçilmediğinde, derleme için derleme **çözümü**, **çözümü yeniden derleme**ve  **çözümü Temizleme**gibi komutlar, sürüm yapılandırmasında ve başlatma gibi **hata ayıklama** menüsündeki komutlarda gerçekleştirilir.  **Hata ayıklama ve hata** ayıklama **olmadan başlatma**, hata ayıklama yapılandırmasında gerçekleştirilir.
+Bu seçilmediğinde, derleme için derleme **çözümü**, **çözümü yeniden derleme**ve **çözümü Temizleme**gibi komutlar, sürüm yapılandırmasında ve başlatma gibi **hata ayıklama** menüsündeki komutlarda gerçekleştirilir.Hata ayıklama ve hata ayıklama **olmadan başlatma**, hata ayıklama yapılandırmasında gerçekleştirilir.
 
 ## <a name="always-show-solution"></a>Çözümü her zaman göster
 
@@ -70,11 +70,28 @@ Seçildiğinde, dosya konumları **Çözüm Gezgini**eylemler tarafından deği�
 
 ## <a name="reopen-documents-on-solution-load"></a>Çözüm yükünden belgeleri yeniden aç
 
-**Visual Studio 2017 sürüm 15,8 ' de tanıtılan**
-
 Seçildiğinde, çözüm açıldığında kalan bir önceki sefer açık olan belgeler otomatik olarak açılır.
 
 Belirli dosya veya tasarımcı türlerini yeniden açmak çözüm yükünü geciktirebilirler. Çözümün önceki bağlamını geri yüklemek istemiyorsanız [çözüm yükleme performansını artırmak](../../ide/visual-studio-performance-tips-and-tricks.md#disable-automatic-file-restore) için bu seçeneğin işaretini kaldırın.
+
+::: moniker range=">=vs-2019"
+
+## <a name="restore-solution-explorer-project-hierarchy-state-on-solution-load"></a>Çözüm yükünden Çözüm Gezgini proje hiyerarşisi durumunu geri yükle
+
+Seçildiğinde, Çözüm Gezgini düğümlerin durumunu, çözümün en son açılışında genişletilmekte veya daraltılıp daraltıldıklarından bağımsız olarak geri yükler. Büyük çözümler için çözüm yükleme süresini azaltmak üzere bu seçeneği devre dışı bırakın.
+
+Bu seçeneği devre dışı bırakırsanız, Çözüm Gezgini ' deki etkin belgeye gitmek için kolay bir yol **Çözüm Gezgini** araç çubuğunda **etkin belge ile Eşitle** ' yi seçmektir.
+
+![Çözüm Gezgini etkin belge ile Eşitle](media/sync-active-document.png)
+
+## <a name="open-sdk-style-project-files-with-double-click-or-the-enter-key"></a>Çift tıklama veya ENTER tuşu ile SDK stili proje dosyaları açın
+
+Bu seçenek belirlendiğinde ve Çözüm Gezgini içindeki bir proje düğümüne çift tıkladığınızda veya proje düğümünü seçip **ENTER**tuşuna bastığınızda proje dosyası (örneğin, \*. csproj dosyası) düzenleyicide XML olarak açılır. Bu, proje XML dosyasını Öncelikle projeyi kaldırmaya ve sonra düzenleme için proje dosyasını açmaya gerek kalmadan düzenlemenin kolay bir yoludur.
+
+> [!TIP]
+> Seçimi kaldırıldığında, Çözüm Gezgini bir proje düğümüne çift tıklayarak veya onu seçip **ENTER** tuşuna basarak yalnızca düğümü genişletme veya daraltma etkisi vardır.
+
+::: moniker-end
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

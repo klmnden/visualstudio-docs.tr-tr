@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e439ab3ca22fdb26992164c3927269a0f58a1f3b
-ms.sourcegitcommit: 5b34052a1c7d86179d7898ed532babb2d9dad4a3
+ms.openlocfilehash: 5060b2a3b532de26d78eca4ce16661768748bbd7
+ms.sourcegitcommit: 673b9364fc9a96b027662dcb4cf5d61cab60ef11
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69490711"
+ms.lasthandoff: 08/21/2019
+ms.locfileid: "69891351"
 ---
 # <a name="unit-test-basics"></a>Birim testi temel bilgileri
 
@@ -209,7 +209,7 @@ Microsoft birim testi çerçevelerini hakkında daha fazla bilgi için aşağıd
 
 ## <a name="set-timeouts-for-unit-tests"></a>Birim testleri için zaman aşımını ayarlayın
 
-Bir bireysel test yönteminde bir zaman aşımı ayarlamak için:
+MSTest çerçevesini kullanıyorsanız, tek bir test yönteminde bir zaman aşımı ayarlamak <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TimeoutAttribute> için kullanabilirsiniz:
 
 ```csharp
 [TestMethod]
