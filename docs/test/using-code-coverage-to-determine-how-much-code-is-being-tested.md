@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a25fbffa21a7caeab1cf5910e1da95d7fba09e5
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
+ms.openlocfilehash: f6aa9cb62bc0ae956a85acd75d1a9615a2283133
+ms.sourcegitcommit: f42b5318c5c93e2b5ecff44f408fab8bcdfb193d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68416452"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "69976772"
 ---
 # <a name="use-code-coverage-to-determine-how-much-code-is-being-tested"></a>Kod kapsamını kullanarak ne kadar kodun test edildiğini belirleme
 
@@ -36,7 +36,12 @@ Kod kapsamı özelliği yalnızca Visual Studio Enterprise sürümünde kullanı
 
 ## <a name="to-analyze-code-coverage-on-unit-tests-in-test-explorer"></a>Test Gezgini'ndeki birim testlerinde kod kapsamını analiz etmek için
 
+::: moniker range="vs-2017"
 1. **Test** menüsünde, **kod kapsamını analiz et**' i seçin.
+::: moniker-end
+::: moniker range=">=vs-2019"
+1. **Test Gezgini**'nde **Çalıştır** menüsünden **kod kapsamını çözümle** ' yi seçin.
+::: moniker-end
 
 2. Hangi satırların çalıştırıldığını görmek için kod kapsamı renklendirmesini göster simgesi ![](../test/media/codecoverage-showcoloringicon.png) **kod kapsamı renklendirmesini göster**' i seçin.
 

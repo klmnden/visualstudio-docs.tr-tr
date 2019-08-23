@@ -1,18 +1,18 @@
 ---
 title: Kod Kapsamı Çözümlemeyi Özelleştirme
-ms.date: 11/04/2016
+ms.date: 08/21/2019
 ms.topic: conceptual
 ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 5bd7fa0bcff67573e61d40a2172e17620910a421
-ms.sourcegitcommit: 5b34052a1c7d86179d7898ed532babb2d9dad4a3
+ms.openlocfilehash: e78487628a7604245d59f44220b91be73249e7fb
+ms.sourcegitcommit: f42b5318c5c93e2b5ecff44f408fab8bcdfb193d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69490624"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "69976768"
 ---
 # <a name="customize-code-coverage-analysis"></a>Kod kapsamı analizini özelleştirme
 
@@ -34,26 +34,26 @@ Kod kapsamını özelleştirmek için aşağıdaki adımları izleyin:
 
 ::: moniker range="vs-2017"
 
-3. Çalışma ayarları dosyası seçilecek **Test** menüsünde seçin **Test ayarları** > **Test ayarları dosyasını Seç**. Testleri komut satırından veya derleme iş akışında çalıştırmak için çalıştırma ayarları dosyasını belirtmek için bkz: [kullanarak birim testlerini yapılandırma bir *.runsettings* dosya](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md#specify-a-run-settings-file).
+3. Çalışma ayarları dosyası seçilecek **Test** menüsünde seçin **Test ayarları** > **Test ayarları dosyasını Seç**. Komut satırından testleri çalıştırmak için bir çalıştırma ayarları dosyası belirtmek için bkz. [birim testlerini yapılandırma](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md#command-line).
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-3. Çalışma ayarları dosyasını seçmek için, **Test Gezgini**' nde, **Ayarlar** düğmesini seçin ve ardından **ayarlar dosyası seç**' i seçin. Testleri komut satırından veya derleme iş akışında çalıştırmak için çalıştırma ayarları dosyasını belirtmek için bkz: [kullanarak birim testlerini yapılandırma bir *.runsettings* dosya](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md#specify-a-run-settings-file).
+3. Çalışma ayarları dosyasını seçmek için, **Test Gezgini**' nde, **Ayarlar** düğmesini seçin ve ardından **ayarlar dosyası seç**' i seçin. Komut satırından testleri çalıştırmak için bir çalıştırma ayarları dosyası belirtmek için bkz. [birim testlerini yapılandırma](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md#command-line).
 
 ::: moniker-end
 
    Seçtiğinizde, **kod kapsamı analizi**, yapılandırma bilgilerini çalışma ayarları dosyasından okunur.
 
    > [!TIP]
-   > Testleri çalıştırmak veya kodunuzu güncelleştirdiğinizde önceki kod kapsamı sonuçlarını ve kod renklendirme otomatik olarak gizli değildir.
+   > Testleri çalıştırdığınızda veya kodunuzu güncelleştirdiğinizde önceki kod kapsamı sonuçları ve kod renklendirme otomatik olarak gizlenmez.
 
 ::: moniker range="vs-2017"
 
 Özel ayarları kapatmak ve açmak için **Test** > **testi ayarları** menüsünde dosya seçimini kaldırın veya seçin.
 
-![Özel ayarlar dosya ile test ayarları menüsü](../test/media/codecoverage-settingsfile.png)
+![Visual Studio 2017 'de özel ayarlar dosyası ile test ayarları menüsü](../test/media/codecoverage-settingsfile.png)
 
 ::: moniker-end
 
@@ -65,7 +65,7 @@ Kod kapsamını özelleştirmek için aşağıdaki adımları izleyin:
 
 ### <a name="specify-symbol-search-paths"></a>Sembol arama yollarını belirtin
 
-Kod kapsamı sembol dosyalarını gerektirir ( *.pdb* dosyaları) derlemeler için. Çözümünüz tarafından oluşturulmuş derlemeler için simge dosyaları genellikle ikili dosyaların yanı sıra varsa ve kod kapsamı otomatik olarak çalışır. Ancak bazı durumlarda, kod kapsamı çözümlemenizde başvurulmuş derlemeleri eklemek isteyebilirsiniz. Bu gibi durumlarda *.pdb* dosyaları ikili bitişik olmayabilir ve sembol arama yolu belirtebilirsiniz *.runsettings* dosya.
+Kod kapsamı sembol dosyalarını gerektirir ( *.pdb* dosyaları) derlemeler için. Çözümünüz tarafından oluşturulan derlemeler için, sembol dosyaları genellikle ikili dosyalarla birlikte bulunur ve kod kapsamı otomatik olarak işe yarar. Bazı durumlarda, kod kapsamı analizinizdeki başvurulan derlemeleri dahil etmek isteyebilirsiniz. Bu gibi durumlarda *.pdb* dosyaları ikili bitişik olmayabilir ve sembol arama yolu belirtebilirsiniz *.runsettings* dosya.
 
 ```xml
 <SymbolSearchPaths>
@@ -90,7 +90,7 @@ Belirtilen derleme kod kapsamını çözümleme dışı bırakabilirsiniz. Örne
 </ModulePaths>
 ```
 
-Alternatif olarak, hangi derlemelerin dahil edileceğini belirtebilirsiniz. Bu yaklaşımın daha fazla derlemeleri çözümü eklediğinizde dezavantajı vardır, listeye eklemeyi unutmamalısınız:
+Alternatif olarak, hangi derlemelerin dahil edileceğini belirtebilirsiniz. Bu yaklaşım çözüme daha fazla derleme eklediğinizde, bunları listeye eklemeyi unutmamanız gerekir:
 
 ```xml
 <ModulePaths>
@@ -101,17 +101,15 @@ Alternatif olarak, hangi derlemelerin dahil edileceğini belirtebilirsiniz. Bu y
 </ModulePaths>
 ```
 
-Varsa **INCLUDE** kod kapsamı işleme yüklenen ve tüm derlemeleri içerir sonra boştur *.pdb* dosyaları bulunabilir. Kod kapsamı yan tümcesinde eşleşen öğeleri içermez bir **hariç** listesi.
-
-**Dahil** önce işlenen **hariç**.
+**Ekleme** boşsa, kod kapsamı işleme, yüklenmiş ve *. pdb* dosyalarının bulunduğu tüm derlemeleri içerir. Kod kapsamı yan tümcesinde eşleşen öğeleri içermez bir **hariç** listesi. **Dahil** önce işlenen **hariç**.
 
 ### <a name="regular-expressions"></a>Normal ifadeler
 
-Dahil ve hariç düğümler normal ifadeler kullanır. Daha fazla bilgi için [Visual Studio'da normal ifadeler kullanma](../ide/using-regular-expressions-in-visual-studio.md). Normal ifadeler joker karakterler ile aynı değildir. Özellikle:
+Dahil etme ve hariç tutma düğümleri, joker karakterlerle aynı olmayan normal ifadeler kullanır. Daha fazla bilgi için [Visual Studio'da normal ifadeler kullanma](../ide/using-regular-expressions-in-visual-studio.md). Bazı örnekler şunlardır:
 
 - **. herhangi\***  bir karakter dizesiyle eşleşir
 
-- **\\.** eşleşen bir nokta ".")
+- **\\.** bir noktayla eşleşir "."
 
 - **\\( \\)** eşleşen parantez "(")
 
@@ -153,7 +151,10 @@ Tüm eşlemeler büyük/küçük harf duyarsızdır.
 
 - **Kaynak** -bunlar tanımlandığı kaynak dosyasının yolu adıyla eşleşen öğeler.
 
-- **Öznitelik** -belirli bir özniteliği bağlı öğeleri ile eşleşir. Özniteliğin tam adını belirtin ve adın sonunda "öznitelik" dahil.
+- **Öznitelik** -belirli bir özniteliği bağlı öğeleri ile eşleşir. Özniteliğin tam adını belirtin, örneğin `<Attribute>^System\.Diagnostics\.DebuggerHiddenAttribute$</Attribute>`.
+
+  > [!TIP]
+  > <xref:System.Runtime.CompilerServices.CompilerGeneratedAttribute> Özniteliğini hariç tutdıysanız,,, ve otomatik uygulanan özellikler gibi dil `async`özelliklerini `await` `yield return`kullanan kod, kod kapsamı analizinden hariç tutulur. Gerçekten üretilen kodu hariç tutmak için, yalnızca <xref:System.CodeDom.Compiler.GeneratedCodeAttribute> özniteliğini hariç tutun.
 
 - **İşlev** -yordamları, işlevleri veya yöntemleri tam adıyla eşleştirir. Normal ifade bir işlev adı ile eşleşmesi için ad alanı, sınıf adı, yöntem adı ve parametre listesine dahil olmak üzere, işlevinin tam adı eşleşmelidir. Örneğin:
 
@@ -243,9 +244,8 @@ Included items must then not match any entries in the exclude list to remain inc
                 <!-- Don't forget "Attribute" at the end of the name -->
                 <Attribute>^System\.Diagnostics\.DebuggerHiddenAttribute$</Attribute>
                 <Attribute>^System\.Diagnostics\.DebuggerNonUserCodeAttribute$</Attribute>
-                <Attribute>^System\.Runtime\.CompilerServices.CompilerGeneratedAttribute$</Attribute>
-                <Attribute>^System\.CodeDom\.Compiler.GeneratedCodeAttribute$</Attribute>
-                <Attribute>^System\.Diagnostics\.CodeAnalysis.ExcludeFromCodeCoverageAttribute$</Attribute>
+                <Attribute>^System\.CodeDom\.Compiler\.GeneratedCodeAttribute$</Attribute>
+                <Attribute>^System\.Diagnostics\.CodeAnalysis\.ExcludeFromCodeCoverageAttribute$</Attribute>
               </Exclude>
             </Attributes>
 

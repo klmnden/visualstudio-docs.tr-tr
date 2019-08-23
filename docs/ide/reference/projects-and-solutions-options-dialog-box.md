@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8b71d7040df5f971f320b9bb9999f9cacd0425e7
-ms.sourcegitcommit: 673b9364fc9a96b027662dcb4cf5d61cab60ef11
+ms.openlocfilehash: 31d829a668a2c9690333315c30904623187fe51d
+ms.sourcegitcommit: f42b5318c5c93e2b5ecff44f408fab8bcdfb193d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/21/2019
-ms.locfileid: "69891296"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "69976755"
 ---
 # <a name="options-dialog-box-projects-and-solutions--general"></a>Seçenekler iletişim kutusu: Projeler ve çözümler \> genel
 
@@ -78,18 +78,21 @@ Belirli dosya veya tasarımcı türlerini yeniden açmak çözüm yükünü geci
 
 ## <a name="restore-solution-explorer-project-hierarchy-state-on-solution-load"></a>Çözüm yükünden Çözüm Gezgini proje hiyerarşisi durumunu geri yükle
 
-Seçildiğinde, Çözüm Gezgini düğümlerin durumunu, çözümün en son açılışında genişletilmekte veya daraltılıp daraltıldıklarından bağımsız olarak geri yükler. Büyük çözümler için çözüm yükleme süresini azaltmak üzere bu seçeneği devre dışı bırakın.
+Seçildiğinde, Çözüm Gezgini düğümlerin durumunu, çözümün en son açılışında genişletilmekte veya daraltılıp daraltıldıklarından bağımsız olarak geri yükler. Büyük çözümler için çözüm yükleme süresini azaltmak üzere bu seçeneğin seçimini kaldırın.
 
-Bu seçeneği devre dışı bırakırsanız, Çözüm Gezgini ' deki etkin belgeye gitmek için kolay bir yol **Çözüm Gezgini** araç çubuğunda **etkin belge ile Eşitle** ' yi seçmektir.
-
-![Çözüm Gezgini etkin belge ile Eşitle](media/sync-active-document.png)
+> [!TIP]
+> Bu seçeneği devre dışı bırakırsanız, Çözüm Gezgini ' deki etkin belgeye gitmek için kolay bir yol **Çözüm Gezgini** araç çubuğunda **etkin belge ile Eşitle** ' yi seçmektir.
+>
+> ![Çözüm Gezgini etkin belge ile Eşitle](media/sync-active-document.png)
 
 ## <a name="open-sdk-style-project-files-with-double-click-or-the-enter-key"></a>Çift tıklama veya ENTER tuşu ile SDK stili proje dosyaları açın
 
-Bu seçenek belirlendiğinde ve Çözüm Gezgini içindeki bir proje düğümüne çift tıkladığınızda veya proje düğümünü seçip **ENTER**tuşuna bastığınızda proje dosyası (örneğin, \*. csproj dosyası) düzenleyicide XML olarak açılır. Bu, proje XML dosyasını Öncelikle projeyi kaldırmaya ve sonra düzenleme için proje dosyasını açmaya gerek kalmadan düzenlemenin kolay bir yoludur.
+Bu seçenek belirlendiğinde ve Çözüm Gezgini bir SDK stili proje düğümüne çift tıkladığınızda veya seçin ve ardından **ENTER**tuşuna basarsanız proje dosyası (örneğin, \*. csproj dosyası) düzenleyicide XML olarak açılır. Seçimi kaldırıldığında, Çözüm Gezgini bir SDK stili proje düğümüne çift tıklayarak veya onu seçip **ENTER** tuşuna basarak yalnızca düğümü genişletme veya daraltma etkisi vardır.
+
+Bu seçenek seçilmezse ve bir SDK stili proje dosyasını düzenlemek istiyorsanız, Çözüm Gezgini ' de proje düğümüne sağ tıklayın ve **Proje dosyasını Düzenle**' yi seçin. Diğer proje türleri için öncelikle projeyi Visual Studio 'da düzenlemeden önce kaldırmanız gerekir.
 
 > [!TIP]
-> Seçimi kaldırıldığında, Çözüm Gezgini bir proje düğümüne çift tıklayarak veya onu seçip **ENTER** tuşuna basarak yalnızca düğümü genişletme veya daraltma etkisi vardır.
+> *SDK stili bir proje*veya [Proje SDK](../../msbuild/how-to-use-project-sdk.md)'sı, MSBuild 15,0 ile tanıtılan daha yeni, daha kolay bir proje dosyası biçimine sahiptir. SDK stili bir proje, `Sdk` `Project` öğe üzerinde bir özniteliği içerir, örneğin `<Project Sdk="Microsoft.NET.Sdk">`. Visual Studio şablonlarından yeni bir .NET Core projesi oluşturduğunuzda Visual Studio bir SDK stili proje oluşturur, örneğin.
 
 ::: moniker-end
 

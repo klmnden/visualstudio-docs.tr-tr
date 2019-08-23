@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 01ccad0c1cdcde27d1d43b832ce7e4ca4da7b716
-ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
+ms.openlocfilehash: 5c3456ab48822873fb51ad8614ff9a6dd5f07598
+ms.sourcegitcommit: f42b5318c5c93e2b5ecff44f408fab8bcdfb193d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68461598"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "69976706"
 ---
 # <a name="how-to-sign-application-and-deployment-manifests"></a>Nasıl yapılır: Uygulama ve dağıtım bildirimlerini imzalama
 
@@ -47,7 +47,7 @@ Anahtar dosyaları oluşturma hakkında daha fazla bilgi için [bkz. nasıl yap�
      **Sertifika seç** iletişim kutusu görünür ve Windows sertifika deposunun içeriğini görüntüler.
 
     > [!TIP]
-    > **Sertifika özelliklerini görüntülemek için buraya tıklayın**' a tıklarsanız, **sertifika ayrıntıları** iletişim kutusu görüntülenir. Bu iletişim kutusu sertifikayla ilgili ayrıntılı bilgileri içerir ve ek seçenekleri içerir. Ek Yardım bilgilerini görüntülemek için **Sertifikalar** ' a tıklayabilirsiniz.
+    > **Sertifika özelliklerini görüntülemek için buraya tıklayın**' a tıklarsanız, **sertifika ayrıntıları** iletişim kutusu görüntülenir. Bu iletişim kutusu, sertifika ve ek seçenekler hakkında ayrıntılı bilgi içerir. Ek Yardım bilgilerini görüntülemek için **Sertifikalar** ' a tıklayın.
 
 3. Bildirimleri imzalamak için kullanmak istediğiniz sertifikayı seçin.
 
@@ -66,9 +66,12 @@ Anahtar dosyaları oluşturma hakkında daha fazla bilgi için [bkz. nasıl yap�
     > [!NOTE]
     > Bu seçenek yalnızca *. pfx* uzantılı dosyaları destekler. Başka bir biçimde anahtar dosyası veya sertifikanız varsa, bunu Windows sertifika depolama alanında depolayın ve önceki yordamda açıklanan sertifikayı seçin. Seçilen sertifikanın amacı, kod imzalama içermelidir.
 
-     **Dosyayı açmak için parola girin** iletişim kutusu görüntülenir. ( *. Pfx* dosyası zaten Windows sertifika deponuzda depolanıyorsa veya parola korumalı değilse, parola girmeniz istenmez.)
+     **Dosyayı açmak için parola girin** iletişim kutusu görüntülenir. ( *. Pfx* dosyası zaten Windows sertifika deponuzda depolanıyorsa veya parola korumalı değilse, bir parola girmeniz istenmez.)
 
-4. Anahtar dosyasına erişmek için parolayı girin ve **ENTER**'a basın.
+4. Anahtar dosyasına erişmek için parolayı girin ve ardından **ENTER**' u seçin.
+
+> [!NOTE]
+> *. Pfx* dosyası, sertifika zincirleme bilgilerini içeremez. Varsa, aşağıdaki içeri aktarma hatası oluşur: **Şifre çözme için sertifika ve özel anahtar bulunamıyor**.
 
 ## <a name="sign-using-a-test-certificate"></a>Test sertifikası kullanarak imzala
 
