@@ -1,5 +1,5 @@
 ---
-title: Genişletme ve aracı Windows özelleştirme | Microsoft Docs
+title: Araç pencerelerini genişletme ve özelleştirme | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,40 +11,42 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c0eafb5a95151d6c3a805ad4d51c847f2fbe269d
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: af7cd4d7207251a3c0bd4268401b1e534929a483
+ms.sourcegitcommit: c90a998716b3dfa614dedc61a1bea515364efbec
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66341135"
+ms.lasthandoff: 08/23/2019
+ms.locfileid: "70000887"
 ---
-# <a name="extend-and-customize-tool-windows"></a>Genişletme ve özelleştirme araç pencereleri
-Visual Studio, windows, örneğin araç pencereleri, belge pencereleri ve iletişim windows birkaç farklı türde sağlar. Gibi diğer windows **özellikleri** penceresinde **çıkış** penceresinde ve **görev listesi** penceresinde araç pencereleri türleridir.
+# <a name="extend-and-customize-tool-windows"></a>Araç pencerelerini genişletme ve özelleştirme
+Visual Studio, araç pencereleri, belge pencereleri ve iletişim kutusu pencereleri gibi birçok farklı pencere türü sağlar. **Özellikler** penceresi, **çıkış** penceresi ve **görev listesi** penceresi gibi diğer pencereler araç pencerelerinin türleridir.
 
 ## <a name="tool-windows"></a>Araç pencereleri
- Visual Studio araç pencereleri, dosya tabanlı olmayan salt okunur genellikle dizisidir. Bu konuda, dosyaları okuma-yazma modunda görüntüleme belge windows, farklı. **Araç kutusu**, **Çözüm Gezgini**, **özellikleri** penceresinde ve **Web tarayıcısı** araç pencereleri örnekleridir.
+ Visual Studio araç pencereleri genellikle dosya tabanlı olmayan salt okunurdur. Bu, dosyaları okuma-yazma modunda görüntüleyen belge pencerelerini birbirinden farklıdır. **Araç kutusu**, **Çözüm Gezgini**, **Özellikler** penceresi ve **Web tarayıcısı** , araç pencerelerinin örnekleridir.
 
- Basit bir araç penceresi oluşturma konusunda bilgi edinmek için bkz: [araç penceresi ekleme](../extensibility/adding-a-tool-window.md).
+ Basit bir araç penceresi oluşturmayı öğrenmek için bkz. [araç penceresi ekleme](../extensibility/adding-a-tool-window.md).
 
- Araç penceresi ile Visual Studio'yu kayıt ettirmek için bkz: [araç penceresi kaydetme](../extensibility/registering-a-tool-window.md).
+ Bir araç penceresini Visual Studio ile kaydetmek için bkz. [bir araç penceresi kaydetme](../extensibility/registering-a-tool-window.md).
 
- Aracı windows Tek Örnekli varsayılan olarak, araç penceresi yalnızca bir örneğini anlamına gelir açık bir anda olabilir. Tek Örnekli araç penceresi açıldıktan sonra IDE kapatılana kadar açık kalır. Tek Örnekli araç penceresini kapattığınızda, yalnızca görünürlüğü değiştirir. Pencerenin birden çok örneği aynı anda açık olacak şekilde çok örnekli araç pencerelerini de oluşturabilirsiniz. Bkz: [çok örnekli araç penceresi oluşturma](../extensibility/creating-a-multi-instance-tool-window.md) daha fazla bilgi için.
+ Araç pencereleri, varsayılan olarak tek örnekli, yani araç penceresinin yalnızca bir örneğinin aynı anda açık olması anlamına gelir. Tek örnekli bir araç penceresi açıldıktan sonra, IDE kapatılıncaya kadar açık kalır. Tek örnekli bir araç penceresini kapattığınızda yalnızca görünürlük değişir. Aynı zamanda birden çok örnekli araç penceresi de oluşturabilirsiniz. bu şekilde pencerenin birden çok örneği aynı anda açılabilir. Daha fazla bilgi için bkz. [çok örnekli araç penceresi oluşturma](../extensibility/creating-a-multi-instance-tool-window.md) .
 
- Araç pencereleri olabilir *dinamik*, ilgili kullanıcı Arabirimi bağlamları geçerli olduğunda görünür olmalarını anlamına gelir. IDE'de pencereleri gösterip otomatik görünürlük kullanımını azaltabilirsiniz. Daha fazla bilgi için [dinamik araç penceresini açma](../extensibility/opening-a-dynamic-tool-window.md).
+ Araç pencereleri *dinamik*olabilir, yani ilgili Kullanıcı arabirimi bağlamları her geçerliyse görünür hale gelir. Otomatik görünürlük kullanımı IDE 'deki Windows 'un dağınıklığını azaltabilir. Daha fazla bilgi için bkz. [dinamik araç penceresi açma](../extensibility/opening-a-dynamic-tool-window.md).
 
- Araç pencereleri, yerleşik, kayan ve sekmeli belge çerçevede olabilir. Araç pencere çerçevesi IDE tarafından sağlanır ve boyut, konum, yerleştirme durumu ve kalıcı diğer özellikleri denetlemek için kullanılır. Araç penceresi bölmesi içeriğini görüntüler. Varsayılan boyut ve konum yalnızca araç penceresi ilk açıldığında uygulanır. Bundan sonra araç penceresi durumu kalıcı hale getirilir.
+ Araç pencereleri belge çerçevesinde yerleştirilebilir, kayan veya sekmeli olabilir. Araç penceresi çerçevesi IDE tarafından sağlanır ve boyut, konum, yerleştirme durumu ve diğer kalıcı özellikleri denetlemek için kullanılır. Araç penceresi bölmesi içeriği görüntüler. Varsayılan boyut ve konum yalnızca araç penceresi ilk açıldığında geçerlidir; araç penceresi durumu kalıcı olduktan sonra.
 
- Araç pencere bölmeleri, WPF kullanıcı denetimleri barındırmak ve araç çubukları destekler. Geçersiz kılabilirsiniz <xref:Microsoft.VisualStudio.Shell.WindowPane.Window%2A> özelliği denetimden tanıtıcısını döndürür.
+ Araç penceresi bölmeleri, WPF Kullanıcı denetimleri ve destek araç çubuklarını barındırabilir. Barındırılan denetimin tanıtıcısını döndürmek <xref:Microsoft.VisualStudio.Shell.WindowPane.Window%2A> için özelliği geçersiz kılabilirsiniz.
 
- Araç pencereleri için birçok farklı özelliği ekleyebilirsiniz. Örneğin, bir araç çubuğu ekleyebilirsiniz: [Araç penceresine araç çubuğu eklemek](../extensibility/adding-a-toolbar-to-a-tool-window.md) veya bir kısayol menüsü: [Araç penceresine kısayol menüsü ekleme](../extensibility/adding-a-shortcut-menu-in-a-tool-window.md). Araç penceresi içinde öğeleri aramasına izin veren bir arama denetimi ekleyebilirsiniz: [Araç penceresine arama ekleme](../extensibility/adding-search-to-a-tool-window.md).
+ Araç pencerelerini birçok farklı özellik ekleyebilirsiniz. Örneğin, bir araç çubuğu ekleyebilirsiniz: [Araç penceresine veya kısayol menüsüne bir araç çubuğu ekleyin](../extensibility/adding-a-toolbar-to-a-tool-window.md) : [Araç penceresine kısayol menüsü ekleyin](../extensibility/adding-a-shortcut-menu-in-a-tool-window.md). Araç pencerenizin içindeki öğeleri aramanıza izin veren bir arama denetimi ekleyebilirsiniz: [Bir araç penceresine arama ekleyin](../extensibility/adding-search-to-a-tool-window.md).
 
- Araç penceresi olaylarına abone olabilirsiniz: [Bir olaya abone](../extensibility/subscribing-to-an-event.md).
+ Araç penceresi olaylarına abone olabilirsiniz: [Bir olaya abone olun](../extensibility/subscribing-to-an-event.md).
 
-## <a name="extend-existing-tool-windows"></a>Mevcut araç pencerelerini genişletme
- Bilgi, araç penceresi hakkında yeni bir ekleyebileceğiniz **seçenekleri** sayfası ve yeni bir ayar **özellikleri** sayfasında, yazma **görev listesi** ve **çıkış**  windows. Daha fazla bilgi için [özellikleri, görev listesi, çıktı ve Seçenekler pencerelerini genişletme](../extensibility/extending-the-properties-task-list-output-and-options-windows.md) ve [özellikleri, görev listesi, çıktı ve Seçenekler pencerelerini genişletme](../extensibility/extending-the-properties-task-list-output-and-options-windows.md).
+## <a name="extend-existing-tool-windows"></a>Var olan araç pencerelerini Genişlet
+ Araç pencereniz hakkındaki bilgileri yeni bir **Seçenekler** sayfasına ve **Özellikler** sayfasında yeni bir ayara, **görev listesi** ve **Çıkış** pencerelerini yazmanız için ekleyebilirsiniz. Daha fazla bilgi için bkz. [Özellikleri, görev listesi, çıktıyı ve seçenekler pencerelerini genişletme](../extensibility/extending-the-properties-task-list-output-and-options-windows.md).
 
 ## <a name="modal-dialog-boxes"></a>Kalıcı iletişim kutuları
- Visual Studio Uzantısı'nda bunları türetilerek kalıcı iletişim kutuları oluşturmalısınız <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow?displayProperty=fullName>, bunları ve diğer UI kontrol sağlar. Daha fazla bilgi için [oluşturma ve yönetme kalıcı iletişim kutuları](../extensibility/creating-and-managing-modal-dialog-boxes.md).
+ Bir Visual Studio uzantısında, bunları ' dan <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow?displayProperty=fullName>türeterek kalıcı iletişim kutuları oluşturmanız gerekir, bu da bunları ve Kullanıcı arabiriminin geri kalanını denetlemenize olanak tanır. Daha fazla bilgi için bkz. [kalıcı iletişim kutuları oluşturma ve yönetme](../extensibility/creating-and-managing-modal-dialog-boxes.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
-- [Araç penceresi içeren bir uzantı oluşturma](../extensibility/creating-an-extension-with-a-tool-window.md)
+- [Araç penceresi ile uzantı oluşturma](../extensibility/creating-an-extension-with-a-tool-window.md)
+- [Projeleri genişletme](../extensibility/extending-projects.md)
+- [Çözümleri genişletme](../extensibility/extending-solutions.md)
