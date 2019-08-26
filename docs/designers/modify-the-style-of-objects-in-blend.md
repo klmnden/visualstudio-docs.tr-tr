@@ -85,7 +85,7 @@ Bir stil oluşturmak için, nesneyi seçin ve ardından **nesne** menüsünde **
 
 ### <a name="restore-the-default-style-or-template-of-a-control"></a>Bir denetimin varsayılan stilini veya şablonunu geri yükleme
 
-Denetimi seçin ve * * Özellikler * * * * penceresinde **Stil** veya **şablon** özelliğini bulun. **Gelişmiş Seçenekler**' i seçin ve ardından kısayol menüsünde **Sıfırla** ' ya tıklayın.
+Denetimi seçin ve **Özellikler** **penceresinde **Stil** veya **şablon** özelliğini bulun. **Gelişmiş Seçenekler**' i seçin ve ardından kısayol menüsünde **Sıfırla** ' ya tıklayın.
 
 ## <a name="visual-states"></a>Görsel durumlar
 
