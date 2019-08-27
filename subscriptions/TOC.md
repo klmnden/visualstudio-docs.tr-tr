@@ -4,7 +4,7 @@
 ### Abonelik satın alma
 #### [Perakende](https://visualstudio.microsoft.com/vs/pricing)
 #### Bulut 
-##### [Genel bakış](vscloud-overview.md)
+##### [Genel Bakış](vscloud-overview.md)
 ##### [Faturalandırma hakkında SSS](vscloud-billing-faq.md)
 ##### [CSP’ler için satın alma](vscloud-csp.md)
 #### [GitHub Enterprise ile Visual Studio](access-github.md)
@@ -22,7 +22,8 @@
 #### [Abone verilerinin anonimleştirilmesi](anonymization.md)
 ### [Abonelikler portalına genel bakış](using-the-subscriber-portal.md)
 ### [Aboneliklerinizi yönetme](manage-vs-subscriptions.md)
-### Yararları
+### [Abonelik yöneticinize başvurma](contact-my-admin.md)
+### Avantajlar
 #### Araçlar
 ##### [Azure kredisi](vs-azure.md)
 ##### [Azure DevOps](vs-azure-devops.md)
@@ -58,17 +59,22 @@
 #### [Anahtar bulma ve isteme](find-keys.md)
 #### [İnternet tanıtımları](internet-demos.md)
 ## Yöneticiler
-### [Yönetici sorumlulukları](admin-responsibilities.md)
+### Yönetici sorumlulukları
+#### [Yönetici sorumlulukları](admin-responsibilities.md)
 #### [Ön üretim envanteri](admin-inventory.md)
 #### [Büyük takımları ve dışarıdan yüklenicileri yönetme](manage-teams.md)
 #### [Kullanıcı atamalarını izleme ve siparişleri işleme](assignments-orders.md)
-### Kuruluşunuzu ekleme
-#### [Açık ve Açık Lisans Geçişi](open-migration.md)
+### Yönetici portalına erişme
+#### [Toplu Lisans](volume-license.md)
 #### [MPSA](mpsa.md)
 #### [Bulut abonelikleri](cloud-admin.md)
-#### [Video ekleme](https://youtu.be/plSu6fpi7UI)
+#### [Müşteriler için iş ortaklarını yönetme](open-migration.md)
+#### [Video öğretici: Yönetici portalına erişme](https://youtu.be/plSu6fpi7UI)
 ### Yönetici portalını kullanma
-#### [Genel bakış](using-admin-portal.md)
+#### [Süper yöneticiler ve yöneticiler](admin-roles.md)
+#### [Anlaşma tercihlerini belirleme](admin-prefs.md)
+#### [Genel Bakış](using-admin-portal.md)
+#### [Video öğretici: Yönetici portalını kullanma](https://www.youtube.com/watch?v=XG-E-IDjA-w&list=PLReL099Y5nReJhZ6o8CQFPSBgzGCHX99_&index=3&t=0s)
 #### Abonelikleri atama
 ##### [Tek kullanıcı ekleme](assign-license.md)
 ##### [Birden çok kullanıcı ekleme](assign-license-bulk.md)
@@ -81,7 +87,7 @@
 #### [Süresi dolan abonelikler](handle-expired-license.md)
 #### [Diğer adları kullanan aboneler](aliasing.md)
 #### [Kişisel e-posta ile oturum açan aboneler](personal-email-sign-ins.md)
-### [GitHub Enterprise ile Visual Studio’yu Yönetme](assign-github.md)
+#### [GitHub Enterprise ile Visual Studio’yu Yönetme](assign-github.md)
 ## Kaynaklar
 ### [Visual Studio lisanslama teknik incelemesi](https://aka.ms/vslicensing)
 ### [Abonelik seçeneklerini ve fiyatlandırmalarını karşılaştırma](https://visualstudio.microsoft.com/vs/pricing)
