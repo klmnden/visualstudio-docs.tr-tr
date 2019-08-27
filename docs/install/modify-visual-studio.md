@@ -3,7 +3,7 @@ title: Visual Studio’yu değiştirme
 titleSuffix: ''
 description: Visual Studio, adım adım değiştirme hakkında bilgi edinin.
 ms.custom: H1Hack27Feb2017,seodec18
-ms.date: 07/31/2019
+ms.date: 08/23/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - modify Visual Studio
@@ -18,12 +18,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 593af04805870fcbd505d4004d9984d2a806f7a3
-ms.sourcegitcommit: c90a998716b3dfa614dedc61a1bea515364efbec
+ms.openlocfilehash: a97db7e6b81eb9e807902d1b9bd0ea8ee6efa55e
+ms.sourcegitcommit: 0bd63f3bc429ae059b9df6e45c6b8dcae6152940
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/23/2019
-ms.locfileid: "70000925"
+ms.lasthandoff: 08/26/2019
+ms.locfileid: "70026486"
 ---
 # <a name="modify-visual-studio-by-adding-or-removing-workloads-and-components"></a>İş yüklerini ve bileşenleri ekleyerek veya kaldırarak Visual Studio 'Yu değiştirme
 
@@ -41,15 +41,17 @@ Sadece biz bunu daha da kolaylaştırdık gerçekleştirmek istediğiniz görevl
 
 İşte nasıl.
 
-## <a name="modify-workloads"></a>İş yüklerini değiştirme
-
- İş yükleri, kullanmakta olduğunuz programlama dili veya platformu için gereken özellikleri içerir. Bunu yapmak istediğiniz zaman, istediğiniz iş destekler, böylece Visual Studio değiştirmek için iş yüklerini kullanın.
-
 >[!IMPORTANT]
 >Yüklemek, güncelleştirmek veya Visual Studio değiştirmek için yönetici izinleri olan bir hesapla oturum açmalısınız. Daha fazla bilgi için bkz. [Kullanıcı izinleri ve Visual Studio](../ide/user-permissions-and-visual-studio.md).
 
->[!TIP]
-> Aşağıdaki yordamda bir internet bağlantınız olduğunu varsaymaktadır. Daha önce oluşturulan ve Visual Studio 'nun [çevrimdışı yüklemesinin](create-an-offline-installation-of-visual-studio.md) nasıl değiştirileceği hakkında daha fazla bilgi için bkz. [ağ tabanlı Visual Studio dağıtımları için güncelleştirmeleri denetleme](controlling-updates-to-visual-studio-deployments.md) sayfası.
+## <a name="modify-workloads"></a>İş yüklerini değiştirme
+
+ [Iş yükleri](https://visualstudio.microsoft.com/vs/visual-studio-workloads/) , kullanmakta olduğunuz programlama dili veya platformu için gereken özellikleri içerir. Bunu yapmak istediğiniz zaman, istediğiniz iş destekler, böylece Visual Studio değiştirmek için iş yüklerini kullanın.
+
+>[!NOTE]
+> Aşağıdaki yordamda bir internet bağlantınız olduğunu varsaymaktadır.
+>
+> Daha önce oluşturulmuş bir Visual Studio [yüklemesinin](create-an-offline-installation-of-visual-studio.md) nasıl değiştirileceği hakkında daha fazla bilgi için bkz. [Visual Studio 'nun ağ tabanlı yüklemesini güncelleştirme](update-a-network-installation-of-visual-studio.md) sayfası ve [ağ tabanlı Visual Studio için denetim güncelleştirmeleri dağıtımlar](controlling-updates-to-visual-studio-deployments.md) sayfası.
 
 ::: moniker range="vs-2017"
 
@@ -59,7 +61,7 @@ Sadece biz bunu daha da kolaylaştırdık gerçekleştirmek istediğiniz görevl
 
      ![Visual Studio yükleyicisi](media/vs2017-locate-the-visual-studio-installer.PNG "Microsoft Visual Studio yükleyicisi bulunamıyor")
 
-     >[!NOTE]
+     >[!TIP]
      >Bazı bilgisayarlarda, Visual Studio yükleyicisi harfi altında listelenebilir **"M"** olarak **Microsoft Visual Studio yükleyicisi**.<br/><br/> Alternatif olarak, Visual Studio yükleyicisi şu konumda bulabilirsiniz: `C:\Program Files (x86)\Microsoft Visual Studio\Installer\vs_installer.exe`
 
 1. ' A tıklayın veya yükleyiciyi başlatmak için dokunun ve ardından **Değiştir**.
@@ -117,15 +119,16 @@ Sadece biz bunu daha da kolaylaştırdık gerçekleştirmek istediğiniz görevl
 
 ## <a name="modify-individual-components"></a>Tek tek bileşenler değiştirme
 
-Visual Studio yüklemenizi özelleştirmek için iş yüklerini yüklemek istemiyorsanız, Visual Studio Yükleyicisi **bireysel bileşenler** sekmesini seçin, istediğiniz öğeleri seçin ve ardından istemleri izleyin.
+Visual Studio yüklemenizi özelleştirmek için [iş yüklerini](https://visualstudio.microsoft.com/vs/visual-studio-workloads/) yüklemek istemiyorsanız, Visual Studio yükleyicisi **bireysel bileşenler** sekmesini seçin, istediğiniz öğeleri seçin ve ardından istemleri izleyin.
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
+* [Visual Studio iş yükleri hakkında daha fazla bilgi edinin](https://visualstudio.microsoft.com/vs/visual-studio-workloads/)
+* [Visual Studio iş yükünün & bileşen kimliklerinin listesi](workload-and-component-ids.md)
 * [Visual Studio’yu güncelleştirme](update-visual-studio.md)
 * [Visual Studio’nun ağ tabanlı yüklemesini güncelleştirme](update-a-network-installation-of-visual-studio.md)
 * [Bakım temeliyle Visual Studio 'Yu güncelleştirme](update-servicing-baseline.md)
 * [Ağ tabanlı Visual Studio dağıtımlarına yönelik güncelleştirmeleri denetleme](controlling-updates-to-visual-studio-deployments.md)
-* [İş yükü & bileşen kimlikleri](workload-and-component-ids.md)
 * [Visual Studio'yu kaldırma](uninstall-visual-studio.md)
