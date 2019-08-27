@@ -31,6 +31,7 @@
 # Kaynak Düzenleyicisi
 ## [Düzenleyici Özellikleri](source-editor.md)
 ## [Yeniden Düzenleme](refactoring.md)
+## [IntelliSense](intellisense.md)
 ## [Açıklamalar](comments.md)
 ## [Düzenleyici Davranışı](editor-behavior.md)
 ## [Görev Açıklamaları](task-comments.md)
