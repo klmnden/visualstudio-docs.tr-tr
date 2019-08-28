@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6362d3f14065aaf9661e85266753642e4201ca48
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 5c5af5c98be92e52c356e0f20eaf437f66878690
+ms.sourcegitcommit: 8a699df154464387f327691dce507d7c3d0e2aab
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69548043"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "70060437"
 ---
 # <a name="use-code-analyzers"></a>Kod Çözümleyicileri kullanma
 
@@ -62,6 +62,18 @@ Bir projenin etkin kural kümesini değiştirmek için projenin özelliklerinin 
 
 Çözümleyiciler bir NuGet paketi olarak [yüklüyorsanız](../code-quality/install-roslyn-analyzers.md) , çözümleyici kurallarının önem derecesini veya *tanılamayı*yapılandırabilirsiniz. Aşağıdaki tabloda, Tanılama için önem derecesi seçenekleri gösterilmektedir:
 
+
+::: moniker range="vs-2019"
+|Önem Derecesi|Derleme zamanı davranışı|Düzenleyici davranışı|
+|-|-|-|
+|Hata|İhlaller **hata listesi** ve komut satırı derleme çıkışında *hata* olarak görünür ve yapıların başarısız olmasına neden olur.|Sorunlu kodun kırmızı renkli bir dalgalı çizili ve kaydırma çubuğundaki küçük kırmızı bir kutu tarafından işaretlenmiş olması gerekir.|
+|Uyarı|İhlaller **hata listesi** ve komut satırı derleme çıkışında *Uyarı* olarak görünür, ancak derlemelerin başarısız olmasına neden olmaz.|Sorunlu kodun yeşil dalgalı çizili ile altı çizilir ve kaydırma çubuğunda küçük yeşil bir kutu ile işaretlenir.|
+|Öneri|İhlaller, komut satırı derleme çıktısında değil, **hata listesi** *iletiler* olarak görünür.|Sorunlu kodun gri dalgalı olarak altı çizilir ve kaydırma çubuğundaki küçük bir gri kutusuyla işaretlenir.|
+|Katılımı|Kullanıcıya görünür değil.|Kullanıcıya görünür değil. Ancak tanılama, IDE tanılama altyapısına bildirilir.|
+|Yok.|Tamamen gizlendi.|Tamamen gizlendi.|
+::: moniker-end
+
+::: moniker range="< vs-2019"
 |Önem Derecesi|Derleme zamanı davranışı|Düzenleyici davranışı|
 |-|-|-|
 |Hata|İhlaller **hata listesi** ve komut satırı derleme çıkışında *hata* olarak görünür ve yapıların başarısız olmasına neden olur.|Sorunlu kodun kırmızı renkli bir dalgalı çizili ve kaydırma çubuğundaki küçük kırmızı bir kutu tarafından işaretlenmiş olması gerekir.|
@@ -69,6 +81,7 @@ Bir projenin etkin kural kümesini değiştirmek için projenin özelliklerinin 
 |Bilgi|İhlaller, komut satırı derleme çıktısında değil, **hata listesi** *iletiler* olarak görünür.|Sorunlu kodun gri dalgalı olarak altı çizilir ve kaydırma çubuğundaki küçük bir gri kutusuyla işaretlenir.|
 |Hidden|Kullanıcıya görünür değil.|Kullanıcıya görünür değil. Ancak tanılama, IDE tanılama altyapısına bildirilir.|
 |Yok.|Tamamen gizlendi.|Tamamen gizlendi.|
+::: moniker-end
 
 Ayrıca, **varsayılan**olarak ayarlayarak kuralın önem derecesini "sıfırlayabilirsiniz". Her tanı için, **Özellikler** penceresinde görünebileceğini varsayılan bir önem derecesi vardır.
 
