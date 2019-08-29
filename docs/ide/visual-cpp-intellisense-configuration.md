@@ -7,12 +7,12 @@ ms.author: mblome
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b8d52114e742d5a8176166744a4edc2975f674a3
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 5c95990eb875c52a66cd0efa5579c9d39eab5469
+ms.sourcegitcommit: 3cda0d58c5cf1985122b8977b33a171c7359f324
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68925854"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "70154911"
 ---
 # <a name="configure-a-c-project-for-intellisense"></a>IntelliSense için bir C++ projesi yapılandırma
 
@@ -48,7 +48,7 @@ NMake proje şablonunu temel alan derleme görevleri dosyası projeleri için so
 
 ### <a name="open-folder-projects"></a>Klasör projelerini aç
 
-CMake projeleri için, CMakeLists. txt dosyasındaki tüm yapılandırmalarda #include yollarının doğru belirtildiğinden emin olun. Diğer proje türleri için CppProperties. JSON dosyası gerekebilir. Daha fazla bilgi için bkz. [CppProperties. JSON Ile IntelliSense 'ı yapılandırma](/cpp/build/open-folder-projects-cpp#configure-intellisense-and-browsing-hints-with-cpppropertiesjson). Yolun, dosyada tanımlanan her yapılandırma için doğru olduğundan emin olun.
+CMake projeleri için, CMakeLists. txt dosyasındaki tüm yapılandırmalarda #include yollarının doğru belirtildiğinden emin olun. Diğer proje türleri için CppProperties. JSON dosyası gerekebilir. Daha fazla bilgi için bkz. [CppProperties. JSON Ile IntelliSense 'ı yapılandırma](/cpp/build/open-folder-projects-cpp#configure-code-navigation-with-cpppropertiesjson). Yolun, dosyada tanımlanan her yapılandırma için doğru olduğundan emin olun.
 
 CppProperties. json dosyasında bir sözdizimi hatası varsa, etkilenen dosyalardaki IntelliSense yanlış olur. Visual Studio Çıkış Penceresi hatayı görüntüler.
 

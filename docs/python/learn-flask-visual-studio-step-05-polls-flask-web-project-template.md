@@ -11,16 +11,16 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 734a192a00ee0c509ed16e71a8629837155888ae
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c540dfef9d2d46bb621432b3e37438e0b6b07298
+ms.sourcegitcommit: 3cda0d58c5cf1985122b8977b33a171c7359f324
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62957064"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "70154891"
 ---
-# <a name="step-5-use-the-polls-flask-web-project-template"></a>5. Adım: Polls – Flask Web projesi şablonunu kullanma
+# <a name="step-5-use-the-polls-flask-web-project-template"></a>5\. Adım: Flask Web projesi şablonunu yoklayıp kullanın
 
-**Önceki adım sayısı: [Tam bir Flask Web projesi şablonunu kullanma](learn-flask-visual-studio-step-04-full-flask-project-template.md)**
+**Önceki adım: [Tam Flask Web projesi şablonunu kullanın](learn-flask-visual-studio-step-04-full-flask-project-template.md)**
 
 Visual Studio'nun "Flask Web projesi" şablonu anladım artık "Yoklamalar Flask Web üzerinde aynı kod tabanının yapılar projesi", üçüncü Flask şablonu bakabilirsiniz.
 
@@ -34,7 +34,7 @@ Bu adımda şunların nasıl yapılır:
 
 Visual Studio kullanarak uygulamanın aynısını üretir, ancak Jade uzantı Jinja şablon oluşturma altyapısı için kullanır. "Windows Flask/Jade polls – Webový projekt" şablonu da sağlar. Ayrıntılar için bkz [adım 4 - Flask/Jade Web projesi şablonu](learn-flask-visual-studio-step-04-full-flask-project-template.md#the-flaskjade-web-project-template).
 
-## <a name="step-5-1-create-the-project"></a>5-1. adım: Projeyi oluşturma
+## <a name="step-5-1-create-the-project"></a>Adım 5-1: Projeyi oluşturma
 
 1. Visual Studio'da Git **Çözüm Gezgini**, sağ **LearningFlask** daha önce Bu öğretici ve seçme içinde oluşturulan çözüm **Ekle**  >   **Yeni proje**. (Alternatif olarak, yeni bir çözüm kullanmak istiyorsanız, seçin **dosya** > **yeni** > **proje** yerine.)
 
@@ -74,7 +74,7 @@ Visual Studio kullanarak uygulamanın aynısını üretir, ancak Jade uzantı Ji
 
 Önce belirtildiği gibi. neleri kadarını "Yoklamalar Flask Web projesi" şablonu (ve "Windows Flask/Jade polls – Webový projekt" şablonu) oluşturulmuş bir projeyi Visual Studio'daki diğer proje şablonları incelediniz, bilgi sahibi olmanız gerekir. Ek adımlar bu makalede daha önemli değişiklikler ve eklemeler, veri modelleri ve ek görünümler özetler.
 
-## <a name="step-5-2-understand-the-data-models"></a>5-2. adım: Veri modellerini anlama
+## <a name="step-5-2-understand-the-data-models"></a>Adım 5-2: Veri modellerini anlama
 
 Uygulama için veri modellerini yoklama ve tanımlanan seçim adlı Python sınıflardır *modelleri /\_\_init\_\_.py*. Bir yoklama seçim örneklerinin bir koleksiyonunu temsil kullanılabilir yanıtları soru temsil eder. Bir yoklama sayısı (herhangi bir seçim için) oy ve görünümleri oluşturmak için kullanılan istatistiklerini hesaplamak için bir yöntem de tutar:
 
@@ -110,7 +110,7 @@ class Choice(object):
 
 Bu veri modelleri sonraki adımda açıklanan veri depolarını yedekleme farklı türleriyle çalışmak uygulamanın görünüm sağlayan genel özetlerdir.
 
-## <a name="step-5-3-understand-the-backing-data-stores"></a>5-3. adım: Yedekleme veri depoları anlama
+## <a name="step-5-3-understand-the-backing-data-stores"></a>Adım 5-3: Veri depolarını yedeklemeyi anlama
 
 "Windows Flask polls – Webový projekt" şablonu ile oluşturulan uygulama, bellek, Azure tablo depolama veya Mongo DB veritabanına bir veri deposuna karşı çalıştırabilirsiniz.
 
@@ -232,11 +232,11 @@ def seed():
 
 Bu işlem tamamlandıktan sonra `redirect('/')` deyiminde `seed` yöntemi giriş sayfasına götürür. Çünkü `repository.get_polls` artık koşullu etiketleri bir veri nesnesi döndürür *templates\index.html* artık yoklamalar içeren bir tablo oluşturur.
 
-### <a name="question-how-does-one-add-new-polls-to-the-app"></a>Soru: Nasıl bir uygulama için yeni yoklamalar katar?
+### <a name="question-how-does-one-add-new-polls-to-the-app"></a>Unuza Uygulamaya yeni bir yoklamaları nasıl ekler?
 
-Yanıt: Proje şablonu aracılığıyla sağlanan uygulama ekleme veya düzenleme yoklamalar için bir özellik içermiyor. Değiştirebileceğiniz *models\samples.json* yeni başlatma verilerini oluşturmak için ancak bunun yapılması veri deposunu sıfırlama anlamına. Düzenleme özellikleri uygulamak için genişletmek gereken `Repository` sınıf arabirimi gerekli oluşturmak için yöntemleri ile `Choice` ve `Poll` örnekleri, bu yöntemleri kullanan ek sayfalarında sonra bir kullanıcı Arabirimi uygulayın.
+Yanıtınıza Proje şablonu aracılığıyla belirtilen uygulama, yoklamaları ekleme veya düzenlemeyle ilgili bir tesis içermez. Değiştirebileceğiniz *models\samples.json* yeni başlatma verilerini oluşturmak için ancak bunun yapılması veri deposunu sıfırlama anlamına. Düzenleme özellikleri uygulamak için genişletmek gereken `Repository` sınıf arabirimi gerekli oluşturmak için yöntemleri ile `Choice` ve `Poll` örnekleri, bu yöntemleri kullanan ek sayfalarında sonra bir kullanıcı Arabirimi uygulayın.
 
-## <a name="step-5-4-understand-the-poll-detail-and-results-views"></a>5-4. adım: Yoklama sonuçları ve ayrıntı görünümleri anlayın
+## <a name="step-5-4-understand-the-poll-detail-and-results-views"></a>Adım 5-4: Yoklama ayrıntılarını ve sonuçlar görünümlerini anlayın
 
 Çoğu "Yoklamalar Flask Web projesi" ve "Windows Flask/Jade polls – Webový projekt" şablonları tarafından üretilen görünümlerini hakkında ve iletişim için görünümleri gibi sayfa, "Flask Web projesi" (veya "Webový projekt Flask/Jade") şablonu tarafından oluşturulan görünümler, çalıştığınız oldukça benzer ile Bu öğreticide daha önce. Önceki bölümde ayrıca başlatma düğmesini veya yoklamalar listesini göstermek için giriş sayfasına nasıl uygulandığını öğrendiniz.
 
@@ -346,7 +346,7 @@ def results(key):
 ## <a name="next-steps"></a>Sonraki adımlar
 
 > [!Note]
-> Visual Studio çözümünüzü kaynak denetimine Bu öğretici boyunca yürüten, artık başka bir işleme yapmak için iyi bir zamandır. Çözümünüzü öğretici kaynak kodu github'da eşleşmesi gerekir: [Microsoft/python-örnek-vs-learning-flask](https://github.com/Microsoft/python-sample-vs-learning-flask).
+> Visual Studio çözümünüzü kaynak denetimine Bu öğretici boyunca yürüten, artık başka bir işleme yapmak için iyi bir zamandır. Çözümünüz GitHub 'daki öğretici kaynak kodu ile eşleşmelidir: [Microsoft/Python-Örnek-vs-Learning-Flask](https://github.com/Microsoft/python-sample-vs-learning-flask).
 
 Artık Visual Studio'da "Boş Flask Web projesi", "[/Jade] Flask Web projesi" ve "Windows Flask [/Jade] polls – Webový projekt" şablonları tamamen incelediniz. Flask kullanarak şablonları, görünümleri ve yönlendirme gibi tüm temellerini öğrendiğinize göre ve yedekleme veri deposu kullanmayı gördünüz. Artık bir web uygulaması tüm görünümleri ve gereksinim modelleri kendi kullanmaya başlamak mümkün olması gerekir.
 
@@ -354,6 +354,6 @@ Bir web uygulaması geliştirme bilgisayarınızda çalışan uygulamayı müşt
 
 - Web uygulamasını Azure App Service gibi bir üretim sunucusuna dağıtın. Bkz: [Azure App Service'e yayımlama](publishing-python-web-applications-to-azure-from-visual-studio.md).
 
-- PostgreSQL, MySQL ve SQL Server'ın (her biri Azure üzerinde barındırılabilir) gibi başka bir üretim düzeyinde veri deposunu kullanan bir depo uygulaması ekleyin. Ayrıca [Python için Azure SDK'sı](/python/azure/?view=azure-python) Cosmos DB yanı sıra tablo ve BLOB'ları gibi Azure depolama hizmetleriyle çalışmaya.
+- PostgreSQL, MySQL ve SQL Server'ın (her biri Azure üzerinde barındırılabilir) gibi başka bir üretim düzeyinde veri deposunu kullanan bir depo uygulaması ekleyin. Ayrıca [Python için Azure SDK'sı](/azure/python/) Cosmos DB yanı sıra tablo ve BLOB'ları gibi Azure depolama hizmetleriyle çalışmaya.
 
-- Azure DevOps gibi bir hizmette bir sürekli tümleştirme/sürekli dağıtım işlem hattı ayarlayın. Kaynak denetimi (aracılığıyla Azure depoları veya GitHub ya da başka bir yerde) ile çalışma ek olarak, otomatik olarak yayın için bir önkoşul olarak birim testlerinizi çalıştırmak için bir Azure DevOps projesi yapılandırabilir ve ayrıca işlem hattı için bir hazırlık sunucusu dağıtmak için yapılandırma üretim ortamına dağıtmadan önce ek sınar. Ayrıca, Azure DevOps çözümlerini App Insights gibi izleme ile tümleşir ve Çevik planlama araçları ile tüm döngüyü kapatır. Daha fazla bilgi için [Azure DevOps projeleri ile Python için CI/CD işlem hattı oluşturma](/azure/devops-project/azure-devops-project-python?view=vsts) ve ayrıca genel [Azure DevOps belgeleri](/azure/devops/?view=vsts).
+- Azure DevOps gibi bir hizmette bir sürekli tümleştirme/sürekli dağıtım işlem hattı ayarlayın. Kaynak denetimi (aracılığıyla Azure depoları veya GitHub ya da başka bir yerde) ile çalışma ek olarak, otomatik olarak yayın için bir önkoşul olarak birim testlerinizi çalıştırmak için bir Azure DevOps projesi yapılandırabilir ve ayrıca işlem hattı için bir hazırlık sunucusu dağıtmak için yapılandırma üretim ortamına dağıtmadan önce ek sınar. Ayrıca, Azure DevOps çözümlerini App Insights gibi izleme ile tümleşir ve Çevik planlama araçları ile tüm döngüyü kapatır. Daha fazla bilgi için bkz. [Python için BIR CI/CD işlem hattı oluşturma Azure DevOps Projeleri](/azure/devops-project/azure-devops-project-python?view=vsts) ve ayrıca genel [Azure DevOps belgeleri](/azure/devops/?view=vsts).

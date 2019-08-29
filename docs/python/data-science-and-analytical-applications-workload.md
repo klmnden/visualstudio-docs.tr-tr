@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 20ebd6def9fcac2336ca13118300737b66142812
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 44906d70be05891fe52096adec2f61f2261b5db5
+ms.sourcegitcommit: 3cda0d58c5cf1985122b8977b33a171c7359f324
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68926389"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "70154887"
 ---
 # <a name="install-data-science-support-in-visual-studio"></a>Visual Studio 'da veri bilimi desteğini yükler
 
@@ -106,7 +106,7 @@ Daha fazla bilgi için:
 
 Veri bilimi ve analitik uygulamalar iş yükündeki yeniliklere ek olarak, Azure Notebooks hizmeti ve Python için Azure SDK, veri bilimi için de yardımcı olur.
 
-Python için Azure SDK, Windows, Mac ve Linux üzerinde çalışan uygulamalardan Microsoft Azure hizmetlerini kolayca kullanmanıza ve yönetmenize olanak sağlar. Daha fazla bilgi için bkz. [Python Için Azure SDK](../python/azure-sdk-for-python.md).
+Python için Azure SDK, Windows, Mac ve Linux üzerinde çalışan uygulamalardan Microsoft Azure hizmetlerini kolayca kullanmanıza ve yönetmenize olanak sağlar. Daha fazla bilgi için bkz. [Python Için Azure SDK](/azure/python/).
 
 Azure Notebooks (Şu anda önizlemede), Microsoft Azure bulutta çalışan jupi not defterlerine ücretsiz çevrimiçi erişim sağlar. Hizmet, Python, R ve F# ' de çalışmaya başlamanızı sağlamak için örnek not defterlerini içerir. [Notebooks.Azure.com](https://notebooks.azure.com/)adresini ziyaret edin.
 

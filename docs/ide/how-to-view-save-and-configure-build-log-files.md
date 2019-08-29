@@ -1,6 +1,6 @@
 ---
 title: 'Nasıl yapılır: Derleme günlüğü dosyalarını görüntüleme, kaydetme ve yapılandırma | Microsoft Docs'
-ms.date: 11/04/2016
+ms.date: 08/28/2019
 ms.technology: vs-ide-compile
 ms.topic: conceptual
 ms.assetid: 75d38b76-26d6-4f43-bbe7-cbacd7cc81e7
@@ -9,12 +9,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0dc172723005b6781a63b3a3956b12152d73bb0f
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
+ms.openlocfilehash: 1fe1932930c869e3d4d3d74eb641da068e1cffec
+ms.sourcegitcommit: 3cda0d58c5cf1985122b8977b33a171c7359f324
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68415589"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "70154807"
 ---
 # <a name="how-to-view-save-and-configure-build-log-files"></a>Nasıl yapılır: Derleme günlüğü dosyalarını görüntüleme, kaydetme ve yapılandırma
 
@@ -34,13 +34,15 @@ MSBuild kullanarak herhangi bir tür proje oluşturuyorsanız, derleme hakkında
 
 ## <a name="to-create-a-build-log-file-for-a-managed-code-project"></a>Yönetilen kod projesi için bir yapı günlük dosyası oluşturmak için
 
-1. Menü çubuğunda Build**Build Solution**öğesini **seçin.**  > 
+1. Menü çubuğunda Build**Build Solution**öğesini > seçin.
 
 2. **Çıkış** penceresinde, metinde herhangi bir yere tıklayın.
 
 3. **CTRL**+**S**tuşuna basın.
 
    Visual Studio, derleme çıktısının kaydedileceği bir konum ister.
+
+Ayrıca, `-fileLogger` (`-fl`) komut satırı seçeneğini kullanarak doğrudan komut satırından MSBuild 'i çalıştırarak da Günlükler oluşturabilirsiniz. Bkz. [MSBuild ile derleme günlükleri alma](../msbuild/obtaining-build-logs-with-msbuild.md).
 
 ## <a name="to-change-the-amount-of-information-included-in-the-build-log"></a>Yapı günlüğünde bulunan bilgi miktarını değiştirmek için
 
@@ -63,8 +65,11 @@ MSBuild kullanarak herhangi bir tür proje oluşturuyorsanız, derleme hakkında
     > [!IMPORTANT]
     > Değişikliklerinizin **Çıkış** penceresinde (tüm projeler) ve  *\<ProjectName >. txt* dosyasında (C++ yalnızca projeler) etkili olması için projeyi yeniden oluşturmanız gerekir.
 
+## <a name="use-binary-logs-to-make-it-easier-to-browse-large-log-files"></a>Büyük günlük dosyalarına gözatmaya daha kolay hale getirmek için ikili günlükleri kullanın
+
+İkili Günlükler, büyük günlüklerde bilgi bulmayı kolaylaştıran daha zengin bir günlük tarama deneyimine sahip olmanızı sağlayan, .NET projeleri için isteğe bağlı bir özelliktir. İkili günlükleri kullanmak için, [Proje sistemi araçları](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.ProjectSystemTools)'nı yükler. Daha fazla bilgi için bkz [https://msbuildlog.com](https://msbuildlog.com) . ve [ikili günlük](https://github.com/microsoft/msbuild/blob/master/documentation/wiki/Binary-Log.md)
+
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [Derleme günlüklerini al](../msbuild/obtaining-build-logs-with-msbuild.md)
 - [Visual Studio 'da projeler ve çözümler oluşturma ve Temizleme](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)
 - [Derleme ve oluşturma](../ide/compiling-and-building-in-visual-studio.md)

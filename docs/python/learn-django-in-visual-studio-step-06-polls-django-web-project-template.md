@@ -11,16 +11,16 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 93771033dd83ae988340ed355066992990f22f50
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 31f125c11bb364f2650384d8d5894f7f48a9bd3e
+ms.sourcegitcommit: 3cda0d58c5cf1985122b8977b33a171c7359f324
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62961868"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "70154927"
 ---
-# <a name="step-6-use-the-polls-django-web-project-template"></a>6. Adım: Yoklamalar Django Web projesi şablonu kullanın
+# <a name="step-6-use-the-polls-django-web-project-template"></a>6\. Adım: Docgo Web proje şablonunu Yoklat ' i kullanın
 
-**Önceki adım sayısı: [Django kullanıcıların kimlik doğrulaması](learn-django-in-visual-studio-step-05-django-authentication.md)**
+**Önceki adım: [Docgo 'da kullanıcıların kimliğini doğrulama](learn-django-in-visual-studio-step-05-django-authentication.md)**
 
 Visual Studio'nun "Django Web projesi" şablonu anladım şimdi üçüncü Django şablon "Yoklamalar Django Web aynı kod temeli üzerinde ve bir veritabanı ile çalışmaya gösterir projesi" bakabilirsiniz.
 
@@ -35,7 +35,7 @@ Bu adımda şunların nasıl yapılır:
 
 Bu şablonu kullanılarak oluşturulan bir projeyi izleyerek elde edecekleriniz için benzer [ilk Django uygulamanızı yazma](https://docs.djangoproject.com/en/2.0/intro/tutorial01/) Django belgeleri, öğretici. Web uygulaması yoklamalar görüntülemek ve bunları, anketler yoluyla yönetebileceğiniz bir özel yönetim arabirimini birlikte oylamak kişiler olanak sağlayan bir genel sitesi oluşur. Bu, "Django Web projesi" şablon olarak aynı kimlik doğrulama sistemini kullanır ve aşağıdaki bölümlerdeki Django modelleri olarak keşfedilen uygulama tarafından daha fazla veritabanının kullanılmasını sağlar.
 
-## <a name="step-6-1-create-the-project-and-initialize-the-database"></a>6-1. adım: Projeyi oluşturmak ve veritabanı başlatma
+## <a name="step-6-1-create-the-project-and-initialize-the-database"></a>Adım 6-1: Projeyi oluşturma ve veritabanını başlatma
 
 1. Visual Studio'da Git **Çözüm Gezgini**, sağ **LearningDjango** daha önce Bu öğretici ve seçme içinde oluşturulan çözüm **Ekle**  >   **Yeni proje**. (Alternatif olarak, yeni bir çözüm kullanmak istiyorsanız, seçin **dosya** > **yeni** > **proje** yerine.)
 
@@ -67,7 +67,7 @@ Bu şablonu kullanılarak oluşturulan bir projeyi izleyerek elde edecekleriniz 
 
 Önce belirtildiği gibi. neleri kadarını "Yoklamalar Django Web projesi" şablondan oluşturulmuş bir projeyi Visual Studio'daki diğer proje şablonları incelediniz, bilgi sahibi olmanız gerekir. Ek adımlar bu makalede daha önemli değişiklikler ve eklemeler, veri modelleri ve ek görünümler özetler.
 
-### <a name="question-what-does-the-django-migrate-command-do"></a>Soru: Django geçişi komut ne yapar?
+### <a name="question-what-does-the-django-migrate-command-do"></a>Unuza Docgo geçişi komutu ne yapar?
 
 Yanıt: **Django geçişi** komut özellikle çalıştırmaları `manage.py migrate` komut dosyalarını çalıştırır komutu, içinde *uygulama/geçişler* çalıştırmak daha önce yapmadıysanız klasör. Bu durumda, komutu çalıştırır *0001_initial.py* veritabanında gerekli şema ayarlamak için bu klasördeki betiği.
 
@@ -75,7 +75,7 @@ Geçiş betiği tarafından oluşturulan `manage.py makemigrations` uygulamanın
 
 Bu makalenin devamındaki 6-3. adımda bir geçiş ile çalışır.
 
-## <a name="step-6-2-understand-data-models"></a>6-2. adım: Veri modelini anlama
+## <a name="step-6-2-understand-data-models"></a>Adım 6-2: Veri modellerini anlama
 
 Yoklama ve tercih ettiğiniz adlı uygulama için model tanımlı *app/models.py*. Her türeyen bir Python sınıfıdır `django.db.models.Model` ve yöntemlerini kullanan `models` gibi sınıf `CharField` ve `IntegerField` veritabanı sütunlara eşlemek modelinde alanlarını tanımlamak için.
 
@@ -158,11 +158,11 @@ Etkisini görmek için hiçbir anketler, ilk görmek için uygulamayı çalışt
 
 ![Kapsanan veritabanı içeren yoklamalar Django Web projesi uygulama](media/django/step06-app-with-seeded-database.png)
 
-### <a name="question-is-it-possible-to-initialize-the-database-using-the-django-administrative-utility"></a>Soru: Veritabanı'nı başlatmak mümkün, Django yönetim yardımcı programı kullanıyor mu?
+### <a name="question-is-it-possible-to-initialize-the-database-using-the-django-administrative-utility"></a>Unuza Docgo yönetim yardımcı programını kullanarak veritabanını başlatmak mümkün mü?
 
-Yanıt: Evet, kullanabileceğiniz [django yönetim loaddata komut](https://docs.djangoproject.com/en/1.9/ref/django-admin/#loaddata) uygulamasında dengeli dağıtım sayfası olarak aynı görevi başarmak için. Tam web uygulaması üzerinde çalışırken, bir birleşimi iki yöntemden birini kullanabilirsiniz: bir veritabanı komut satırından başlatmak ve ardından çekirdek sayfada herhangi bir rastgele JSON göndermek bir API'ye burada yerine bağlı olan sabit kodlanmış bir dosya Dönüştür.
+Yanıtınıza Evet, [docgo-admin LoadData komutunu](https://docs.djangoproject.com/en/1.9/ref/django-admin/#loaddata) kullanarak uygulamadaki dengeli dağıtım sayfasıyla aynı görevi gerçekleştirebilirsiniz. Tam web uygulaması üzerinde çalışırken, bir birleşimi iki yöntemden birini kullanabilirsiniz: bir veritabanı komut satırından başlatmak ve ardından çekirdek sayfada herhangi bir rastgele JSON göndermek bir API'ye burada yerine bağlı olan sabit kodlanmış bir dosya Dönüştür.
 
-## <a name="step-6-3-use-migrations"></a>6-3. adım: Geçişleri kullanma
+## <a name="step-6-3-use-migrations"></a>Adım 6-3: Geçişleri kullanma
 
 Çalıştırdığınızda `manage.py makemigrations` (Visual Studio'da bağlam menüsünü kullanarak) komut projesi oluşturduktan sonra dosyayı Django oluşturan *app/migrations/0001_initial.py* dosya. Bu dosya, ilk veritabanı tablolarını oluşturan bir betik içerir.
 
@@ -183,30 +183,30 @@ Bir model değiştirme etkisini görmek için aşağıdaki adımları deneyin:
     ```
 
 1. Dosyayı kaydedin ve ardından sağ **DjangoPolls** projesi **Çözüm Gezgini** seçip **Python** > **Django geçiş yapın**  komutu.
-1. Seçin **proje** > **tüm dosyaları göster** yeni oluşturulan betikte görmek için komutu **geçişler** adı ile başlayan klasör  **002_auto_**. Dosya ve seçin, sağ tıklama **projeye dahil et**. Ardından seçebilirsiniz **proje** > **tüm dosyaları göster** yeniden orijinal görünüme geri yüklemek için. (Ayrıntılar için aşağıda ikinci soru bu adımı bakın.)
+1. Seçin **proje** > **tüm dosyaları göster** yeni oluşturulan betikte görmek için komutu **geçişler** adı ile başlayan klasör  **002_auto_** . Dosya ve seçin, sağ tıklama **projeye dahil et**. Ardından seçebilirsiniz **proje** > **tüm dosyaları göster** yeniden orijinal görünüme geri yüklemek için. (Ayrıntılar için aşağıda ikinci soru bu adımı bakın.)
 1. İsterseniz, Django önceki modeli durumundan yeni durum değişikliği nasıl komutlar incelemek için bu dosyayı açın.
 1. Visual Studio projeyi tekrar sağ tıklayıp **Python** > **Django geçişi** veritabanına değişiklikleri uygulamak için.
 1. İstenirse, veritabanı değişikliği onaylamak için uygun bir görüntüleyicisinde açın.
 
 Genel olarak, Django'nın taşıma özelliğini, hiçbir zaman veritabanı şemanızı el ile yönetmeniz, anlamına gelir. Yalnızca değişiklik modellerinize, geçiş betikleri oluşturmak ve bunları Taşı komutu ile uygulayabilirsiniz.
 
-### <a name="question-what-happens-if-i-forget-to-run-the-migrate-command-after-making-changes-to-models"></a>Soru: Modelleri için değişiklikleri yaptıktan sonra Taşı komutunu çalıştırma unutursanız ne olur?
+### <a name="question-what-happens-if-i-forget-to-run-the-migrate-command-after-making-changes-to-models"></a>Unuza Modellerinizde değişiklik yaptıktan sonra Migrate komutunu çalıştırmayı unutursam ne olur?
 
-Yanıt: Model veritabanında nedir eşleşmiyorsa, Django, uygun özel durumlar ile çalışma zamanında başarısız olur. Örneğin, önceki bölümde gösterilenle model değişikliği geçirmek, parantezi unutsanız bile bir hata görürsünüz **sütun yok: app_poll.author**:
+Yanıtınıza Modeller veritabanındaki verilerle eşleşmezse, uygun özel durumlarla birlikte çalışma zamanında Docgo başarısız olur. Örneğin, önceki bölümde gösterilenle model değişikliği geçirmek, parantezi unutsanız bile bir hata görürsünüz **sütun yok: app_poll.author**:
 
 ![Ne zaman model değişikliği geçişi yapılmamış gösterilen hata](media/django/step06-exception-when-forgetting-to-migrate.png)biçimindeki telefon numarasıdır.
 
-### <a name="question-why-doesnt-solution-explorer-show-newly-generated-scripts-after-running-django-make-migrations"></a>Soru: Django olun geçişleri çalıştırdıktan sonra Çözüm Gezgini yeni oluşturulan Göster komut neden olmaz mı?
+### <a name="question-why-doesnt-solution-explorer-show-newly-generated-scripts-after-running-django-make-migrations"></a>Unuza Docgo geçişi gerçekleştirdikten sonra neden yeni oluşturulan betikler Çözüm Gezgini gösterilmiyor?
 
-Yanıt: Yeni oluşturulan komut dosyalarını mevcut olsa da *uygulama/geçişler* klasör uygulanır çalıştırırken **Django geçişi** komutu, bunlar görünmez otomatik **Çözüm Gezgini**  çünkü bunlar Visual Studio projesine eklendiniz değil. Onları görünür yapmak için önce seçin **proje** > **tüm dosyaları göster** menü komutu ya da aşağıdaki görüntüde gösterilen araç çubuğu düğmesi. Bu komut neden **Çözüm Gezgini** projeye eklemediniz öğeleri için bir noktalı anahat simgesini kullanarak proje klasöründen tüm dosyaları göster. Seçin ve eklemek istediğiniz dosyaların sağ **projeye dahil et**, hangi de içeren bunları sonraki işlemenizin ile kaynak denetimi.
+Yanıtınıza Yeni oluşturulan betikler *uygulama/geçiş* klasöründe bulunmasına rağmen **Docgo geçişi** komutu çalıştırılırken uygulandığından, Visual Studio 'ya eklenmemiş olduklarından **Çözüm Gezgini** otomatik olarak görünmez Proje. Onları görünür yapmak için önce seçin **proje** > **tüm dosyaları göster** menü komutu ya da aşağıdaki görüntüde gösterilen araç çubuğu düğmesi. Bu komut neden **Çözüm Gezgini** projeye eklemediniz öğeleri için bir noktalı anahat simgesini kullanarak proje klasöründen tüm dosyaları göster. Seçin ve eklemek istediğiniz dosyaların sağ **projeye dahil et**, hangi de içeren bunları sonraki işlemenizin ile kaynak denetimi.
 
 ![Çözüm Gezgini'nde proje komutu dahil](media/django/step06-include-migrations-script-in-project.png)
 
-### <a name="question-can-i-see-what-migrations-would-be-applied-before-running-the-migrate-command"></a>Soru: Taşı komutunu çalıştırmadan önce hangi geçişleri uygulanacak görebilir miyim?
+### <a name="question-can-i-see-what-migrations-would-be-applied-before-running-the-migrate-command"></a>Unuza Geçirme komutunu çalıştırmadan önce hangi geçişlerin uygulanacağını görebilir miyim?
 
-Yanıt: Evet, kullan [django yönetim showmigrations komut](https://docs.djangoproject.com/en/2.0/ref/django-admin/#showmigrations).
+Yanıtınıza Evet, [docgo-admin showgeçişleri komutunu](https://docs.djangoproject.com/en/2.0/ref/django-admin/#showmigrations)kullanın.
 
-## <a name="step-6-4-understand-the-views-and-page-templates-created-by-the-project-template"></a>6-4. adım: Proje şablonu tarafından oluşturulan şablonların ve görünümleri anlayın
+## <a name="step-6-4-understand-the-views-and-page-templates-created-by-the-project-template"></a>Adım 6-4: Proje şablonu tarafından oluşturulan görünümleri ve sayfa şablonlarını anlayın
 
 Çoğu "Yoklamalar Django Web projesi" şablonu tarafından oluşturulan görünümlerini hakkında ve iletişim için görünümleri gibi sayfaları, "Django Web projesi" şablonu ile oluşturulan görünümleri, çalıştığınız ile Bu öğreticide daha önce çok benzerdir. Nedir uygulama giriş sayfası olarak bazı modelleri, kullanın yapmasıdır Yoklamalarda oy ve yoklama sonuçları görüntülemek için sayfa eklendi.
 
@@ -321,7 +321,7 @@ def vote(request, poll_id):
 
 Burada, görünüm kendi karşılık gelen bir şablonu diğer sayfalar gibi yok. Bunun yerine, 404 (birisi "oy/1a2b3c" gibi bir URL girer ihtimale) yoklama yoksa gösteren seçili yoklama doğrular. Ardından, oylayan seçimi yoklama için geçerli olduğundan emin olur. Aksi takdirde, `except` blok yalnızca bir hata iletisi ile yeniden Ayrıntılar sayfasını işler. Seçimi geçerliyse, görünüm oyu hesaplar ve sonuçları sayfasına yönlendirir.
 
-## <a name="step-6-5-create-a-custom-administration-interface"></a>6-5. adım: Bir özel yönetim arabirimi oluşturma
+## <a name="step-6-5-create-a-custom-administration-interface"></a>Adım 6-5: Özel bir yönetim arabirimi oluşturma
 
 Son "Yoklamalar Django Web projesi" şablonu varsayılan Django yönetim arabirimini, 6-1. adım altında bu makalede daha önce gösterildiği gibi özel uzantılara parçalarıdır. Kullanıcı ve Grup Yönetimi, ancak hiçbir şey için daha fazla varsayılan arabirimi sağlar. Polls – proje şablonu de yoklamalar yönetmenize olanak tanıyan özellikler ekler.
 
@@ -362,7 +362,7 @@ Gördüğünüz gibi `PollAdmin` sınıf türetilir `django.contrib.admin.ModelA
 ## <a name="next-steps"></a>Sonraki adımlar
 
 > [!Note]
-> Visual Studio çözümünüzü kaynak denetimine Bu öğretici boyunca yürüten, artık başka bir işleme yapmak için iyi bir zamandır. Çözümünüzü öğretici kaynak kodu github'da eşleşmesi gerekir: [Microsoft/python-örnek-vs-learning-django](https://github.com/Microsoft/python-sample-vs-learning-django).
+> Visual Studio çözümünüzü kaynak denetimine Bu öğretici boyunca yürüten, artık başka bir işleme yapmak için iyi bir zamandır. Çözümünüz GitHub 'daki öğretici kaynak kodu ile eşleşmelidir: [Microsoft/Python-Örnek-vs-Learning-docgo](https://github.com/Microsoft/python-sample-vs-learning-django).
 
 Artık Visual Studio'da "Boş Django Web projesi", "Django Web projesi" ve "Yoklamalar Django Web projesi" şablonları tamamen incelediniz. Django görünümleri ve şablonlar kullanma gibi tüm temellerini öğrendiğinize göre ve yönlendirme, kimlik doğrulaması ve veritabanı modelleri kullanarak denedikten. Artık tüm görünümleri ve gereksinim modelleri ile kendi web uygulaması oluşturma olanağına olmalıdır.
 
@@ -374,6 +374,6 @@ Bir web uygulaması geliştirme bilgisayarınızda çalışan uygulamayı müşt
 
 - Birim testleri yazmak *tests.py*; Visual Studio Proje şablonları için başlangıç noktası sağlar ve daha fazla bilgi bulunabilir [ilk Django uygulamanız bölüm 5 - test yazıyor](https://docs.djangoproject.com/en/2.0/intro/tutorial05/) ve [Django içinde test](https://docs.djangoproject.com/en/2.0/topics/testing/) Django belgelerinde.
 
-- Uygulama, PostgreSQL, MySQL ve SQL Server'ın (her biri Azure üzerinde barındırılabilir) gibi bir üretim düzeyinde veri deposuna SQLite değiştirin. Üzerinde açıklandığı [SQLite kullanıldığı durumlar](https://www.sqlite.org/whentouse.html) (sqlite.org) SQLite düşük ile 100 bin isabet sayısı günde en fazla orta düzeyde trafiğe sahip siteler için düzgün çalışır, ancak daha yüksek birimleri için önerilmez. Ayrıca tek bir bilgisayara limited, bu nedenle onu kullanılamaz Yük Dengeleme ve coğrafi çoğaltma gibi herhangi bir çok sunuculu senaryo. Diğer veritabanlarını Django'nın desteği hakkında daha fazla bilgi için bkz: [Veritabanı Kurulumu](https://docs.djangoproject.com/en/2.0/intro/tutorial02/#database-setup). Ayrıca [Python için Azure SDK'sı](/python/azure/?view=azure-python) tablo ve BLOB'ları gibi Azure depolama hizmetleriyle çalışmaya.
+- Uygulama, PostgreSQL, MySQL ve SQL Server'ın (her biri Azure üzerinde barındırılabilir) gibi bir üretim düzeyinde veri deposuna SQLite değiştirin. Üzerinde açıklandığı [SQLite kullanıldığı durumlar](https://www.sqlite.org/whentouse.html) (sqlite.org) SQLite düşük ile 100 bin isabet sayısı günde en fazla orta düzeyde trafiğe sahip siteler için düzgün çalışır, ancak daha yüksek birimleri için önerilmez. Ayrıca tek bir bilgisayara limited, bu nedenle onu kullanılamaz Yük Dengeleme ve coğrafi çoğaltma gibi herhangi bir çok sunuculu senaryo. Diğer veritabanlarını Django'nın desteği hakkında daha fazla bilgi için bkz: [Veritabanı Kurulumu](https://docs.djangoproject.com/en/2.0/intro/tutorial02/#database-setup). Ayrıca [Python için Azure SDK'sı](/azure/python/) tablo ve BLOB'ları gibi Azure depolama hizmetleriyle çalışmaya.
 
 - Azure DevOps gibi bir hizmette bir sürekli tümleştirme/sürekli dağıtım işlem hattı ayarlayın. Kaynak denetimi (aracılığıyla Azure depoları veya GitHub ya da başka bir yerde) ile çalışma ek olarak, otomatik olarak yayın için bir önkoşul olarak birim testlerinizi çalıştırmak için bir Azure DevOps projesi yapılandırabilir ve ayrıca işlem hattı için bir hazırlık sunucusu dağıtmak için yapılandırma üretim ortamına dağıtmadan önce ek sınar. Ayrıca, Azure DevOps çözümlerini App Insights gibi izleme ile tümleşir ve Çevik planlama araçları ile tüm döngüyü kapatır. Daha fazla bilgi için [Azure DevOps projesi ile CI/CD işlem hattı oluşturma için Python](/azure/devops-project/azure-devops-project-python?view=vsts) ve ayrıca genel [Azure DevOps belgeleri](/azure/devops/?view=vsts).
