@@ -1,46 +1,47 @@
 ---
 title: Projeler ve Çözümler
-description: Bu belge, Mac için projeler ve çözümler Visual Studio'da genel bir bakış sağlar
+description: Bu belge Mac için Visual Studio içindeki projelere ve çözümlere genel bir bakış sağlar.
+ms.topic: overview
 author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 05/23/2019
 ms.assetid: 8254505D-D96E-48BD-8A5E-CF6A917897EA
-ms.openlocfilehash: b66a1dfbe0569c501d05b34425e198f1501438ca
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
+ms.openlocfilehash: 92e7a47f7ea2b931c0b923d10e115843d315d024
+ms.sourcegitcommit: cf8c0fef2b9690595e99ce3802586cdd55fd37c2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67691282"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "70107815"
 ---
-# <a name="projects-and-solutions-in-visual-studio-for-mac"></a>Projeler ve çözümler Mac için Visual Studio
+# <a name="projects-and-solutions-in-visual-studio-for-mac"></a>Mac için Visual Studio projeler ve çözümler
 
-Bu makalede bir bakış sunulmaktadır *proje* ve *çözüm* Mac için Visual Studio'da kavramları
+Bu makalede, Mac için Visual Studio *Proje* ve *çözüm* kavramlarıyla bir genel bakış sunulmaktadır.
 
 > [!NOTE] 
-> Bu konu, Mac için Visual Studio için geçerlidir. Windows üzerinde Visual Studio için bkz: [projeler ve çözümler Visual Studio'da](/visualstudio/ide/solutions-and-projects-in-visual-studio).
+> Bu konu Mac için Visual Studio için geçerlidir. Windows üzerinde Visual Studio için bkz. [Visual Studio 'Da projeler ve çözümler](/visualstudio/ide/solutions-and-projects-in-visual-studio).
 
 ## <a name="projects"></a>Projeler
 
-Yeni uygulama, Web sitesi, vb. Mac için Visual Studio'da oluştururken, bir proje başlatın. Proje, yürütülebilir dosya, kitaplık veya Web sitesi derlemek için gerekli olan gerekli tüm dosyaları (kaynak kodu, resimler, veri dosyaları, vb.) içeriyor.
+Mac için Visual Studio yeni bir uygulama, Web sitesi, vb. oluştururken bir proje ile başlar. Proje çalıştırılabilir, kitaplık veya Web sitesini derlemek için gereken tüm dosyaları (kaynak kodu, görüntüler, veri dosyaları vb.) içerir.
 
-Bir proje dosyası tarafından tanımlanır (örneğin, `.csproj` için C# projeler) dosyaları ve derleme ayarları gibi projeye özgü ayarları için dosya ve klasör hiyerarşisi, yolları tanımlayan xml içeriyor.
+Proje, dosya ve klasör hiyerarşisini tanımlayan XML içeren bir dosya `.csproj` ( C# Örneğin, projeler için), dosya yolları ve derleme ayarları gibi projeye özel ayarlar tarafından tanımlanır.
 
-Bir proje, Mac için Visual Studio tarafından yüklendiğinde çözüm panelinde klasör ve dosyaları projenizde görüntülemek için proje dosyasını kullanır. Derleme sırasında MSBuild yürütülebilir dosyayı oluşturmak için proje dosyasından ayarlarını okur.
+Mac için Visual Studio tarafından bir proje yüklendiğinde Çözüm Bölmesi, projenizdeki dosyaları ve klasörleri göstermek için proje dosyasını kullanır. Derleme sırasında MSBuild, çalıştırılabilir dosyayı oluşturmak için proje dosyasındaki ayarları okur.
 
 ## <a name="solutions"></a>Çözümler
 
-A *çözüm* ilgili daha fazla proje ya da bu grupları birlikte bir kapsayıcıdır. Çözüm bir metin dosyası tarafından açıklanan (uzantı `.sln`) kendi benzersiz biçimde; bunu el ile düzenlenmesi kullanılmaya yönelik değildir.
+Bir *çözüm* , bir veya daha fazla ilgili projeyi birlikte gruplandıran bir kapsayıcıdır. Çözümler, kendi benzersiz biçimiyle bir metin dosyası ( `.sln`uzantı) tarafından tanımlanır; el ile düzenlenmesi amaçlanmamıştır.
 
-## <a name="managing-projects-in-the-solution-pad"></a>Çözüm panelinde projeleri yönetme
+## <a name="managing-projects-in-the-solution-pad"></a>Çözüm Bölmesi projeleri yönetme
 
-Bir proje oluşturulacak veya yüklenecek sonra çözüm bölmesi, proje veya çözüm ve içerdiği dosyaları görüntülemek ve yönetmek için kullanabilirsiniz. Aşağıdaki çizimde, iki proje içeren bir .NET Core çözümü ile çözüm bölmesi gösterir:
+Proje oluşturulduktan veya yüklendikten sonra proje veya çözümü ve içinde bulunan dosyaları görüntülemek ve yönetmek için Çözüm Bölmesi kullanabilirsiniz. Aşağıdaki çizimde, iki proje içeren bir .NET Core çözümüne sahip Çözüm Bölmesi gösterilmektedir:
 
-![Örnek çözüm birden çok proje ile](media/solution-example.png)
+![Birden çok projeyle örnek çözüm](media/solution-example.png)
 
-Proje veya çözüm adına çift tıklayarak veya sağ tıklayıp seçme hem proje ve çözüm özelliklerini yönetme **seçenekleri**.
+Proje veya çözüm adına çift tıklayarak ya da sağ tıklayıp **Seçenekler**' i seçerek hem projelerin hem de çözümlerin özelliklerini yönetebilirsiniz.
 
-Bu seçenekler hakkında daha fazla bilgi sağlanır [yönetme çözüm ve proje özelliklerini](managing-solutions-and-project-properties.md) makalesi.
+Bu seçenekler hakkında daha fazla bilgi, [çözümleri ve proje özelliklerini yönetme](managing-solutions-and-project-properties.md) makalesinde sunulmaktadır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [Çözümler ve projeler Visual Studio'da (Windows)](/visualstudio/ide/solutions-and-projects-in-visual-studio)
+- [Visual Studio 'da çözümler ve projeler (Windows)](/visualstudio/ide/solutions-and-projects-in-visual-studio)
