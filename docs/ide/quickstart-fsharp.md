@@ -1,6 +1,6 @@
 ---
-title: 'Hızlı Başlangıç: Bir ASP.NET Core web hizmetini oluşturunF#'
-description: Visual Studio ile bir ASP.NET Core web hizmeti oluşturmayı öğrenin F#, adım adım.
+title: 'Hızlı Başlangıç: İçinde bir ASP.NET Core Web hizmeti oluşturunF#'
+description: Visual Studio 'da F#, adım adım ' da bir ASP.NET Core Web hizmeti oluşturmayı öğrenin.
 ms.date: 08/24/2018
 ms.topic: quickstart
 author: cartermp
@@ -11,16 +11,16 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: c24803f3817aa8461f9445e390fe44853d2d27c5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 990106f7f3ca97ae38a20170ca6ed2e1d699d4e4
+ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62953354"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70180317"
 ---
-# <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-service-in-f"></a>Hızlı Başlangıç: F içinde ilk ASP.NET Core web hizmetinizi oluşturmak için Visual Studio\#
+# <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-service-in-f"></a>Hızlı Başlangıç: İlk ASP.NET Core Web hizmetinizi F 'de oluşturmak için Visual Studio 'Yu kullanma\#
 
-5-10 dakika giriş bölümünde F# Visual Studio'da oluşturacağınız bir F# ASP.NET Core web uygulaması.
+Visual Studio 'da bu 5-10 dakikalık F# bir giriş için bir F# ASP.NET Core Web uygulaması oluşturacaksınız.
 
 ::: moniker range="vs-2017"
 
@@ -30,27 +30,27 @@ Visual Studio henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://v
 
 ::: moniker range="vs-2019"
 
-Visual Studio henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) ücretsiz yüklemek için sayfa.
+Visual Studio henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://visualstudio.microsoft.com/downloads) ücretsiz yüklemek için sayfa.
 
 ::: moniker-end
 
 ## <a name="create-a-project"></a>Proje oluşturma
 
-İlk olarak, bir ASP.NET Core Web API projesi oluşturacaksınız. Proje türü şablonu dosyalarıyla bile herhangi bir şey ekledik önce işlevsel bir web hizmeti olarak oluşturan gelir!
+İlk olarak, bir ASP.NET Core Web API projesi oluşturacaksınız. Proje türü, hatta herhangi bir şey eklemeden önce işlevsel bir Web hizmetini oluşturan şablon dosyaları ile birlikte gelir!
 
 ::: moniker range="vs-2017"
 
 1. Visual Studio'yu açın.
 
-2. Üstteki menü çubuğundan seçin **dosya** > **yeni** > **proje**.
+2. Üstteki menü çubuğundan **Dosya** > **Yeni** > **Proje**' yi seçin.
 
-3. İçinde **yeni proje** iletişim kutusunda, sol bölmede, **Visual F#** , ardından **Web**. Orta bölmede seçin **ASP.NET Core Web uygulaması**, ardından **Tamam**.
+3. **Yeni proje** iletişim kutusunda, sol bölmede, **görsel F#** ' i genişletin ve ardından **Web**' i seçin. Orta bölmede **ASP.NET Core Web uygulaması**' nı seçin ve ardından **Tamam**' ı seçin.
 
-     Görmüyorsanız **.NET Core** projesinin şablon kategorisi **açık Visual Studio yükleyicisi** sol bölmede bağlantı. Visual Studio Yükleyicisi'ni başlatır. Seçin **ASP.NET ve web geliştirme** iş yükü, ardından **Değiştir**.
+     Görmüyorsanız **.NET Core** projesinin şablon kategorisi **açık Visual Studio yükleyicisi** sol bölmede bağlantı. Visual Studio Yükleyicisi'ni başlatır. **ASP.net ve Web geliştirme** iş yükünü seçin ve ardından **Değiştir**' i seçin.
 
      ![ASP.NET iş yükü VS yükleyicisi](../ide/media/quickstart-aspnet-workload.png)
 
-4. buna **yeni ASP.NET Core Web uygulaması** iletişim kutusunda **ASP.NET Core 2.1** üstteki açılan menüden. (Görmüyorsanız **ASP.NET Core 2.1** listesinde izleyerek yükleyin **indirme** iletişim kutusunun üst kısmındaki sarı çubuk gözükeceğini bağlantıyı.) Seçin **Tamam**.
+**yeni ASP.NET Core Web uygulaması** iletişim kutusunu 4.ın üst açılan menüden **ASP.NET Core 2,1** ' i seçin. (Listede **ASP.NET Core 2,1** görmüyorsanız, iletişim kutusunun üst kısmına yakın bir sarı çubukta görünmesi gereken **indirme** bağlantısını izleyerek yükleyin.) **Tamam**’ı seçin.
 
 ::: moniker-end
 
@@ -58,23 +58,23 @@ Visual Studio henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://v
 
 1. Visual Studio'yu açın.
 
-2. Pencerenin başlangıç seçin **yeni bir proje oluşturma**.
+2. Başlangıç penceresinde **Yeni proje oluştur**' u seçin.
 
-3. Üzerinde **yeni bir proje oluşturma** sayfasında **f # web** Ara kutusuna ve ardından **ASP.NET Core Web uygulaması** proje şablonu. Seçin **sonraki**.
+3. **Yeni proje oluştur** sayfasında, ara kutusuna **f # Web** yazın ve ardından **ASP.NET Core Web uygulaması** proje şablonu ' nu seçin. Seçin **sonraki**.
 
-4. Üzerinde **yeni projenizi yapılandırın** sayfasında, bir ad girin ve ardından **Oluştur**.
+4. **Yeni projenizi yapılandırın** sayfasında, bir ad girin ve ardından **Oluştur**' u seçin.
 
-5. Üzerinde **yeni bir ASP.NET Core Web uygulaması oluşturma** sayfasında **ASP.NET Core 2.1** üstteki açılan menüden seçin **Oluştur**.
+5. **Yeni bir ASP.NET Core Web uygulaması oluştur** sayfasında, üst açılan menüden **ASP.NET Core 2,1** ' i seçin ve ardından **Oluştur**' u seçin.
 
 ::: moniker-end
 
 ## <a name="explore-the-ide"></a>IDE'yi keşfedin
 
-1. İçinde **Çözüm Gezgini** araç genişletin **denetleyicileri** klasörü seçin **ValuesController.fs** Düzenleyicisi'nde açın.
+1. **Çözüm Gezgini** araç çubuğunda, **denetleyiciler** klasörünü genişletin ve ardından, düzenleyicide açmak için **valuescontroller. FS** ' yi seçin.
 
-   ![Çözüm Gezgini denetleyicileri klasörle genişletilmiş içinde F# Web API projesi](../ide/media/hello-world-fs-sln-explorer.png)
+   ![F# Web API projesinde genişletilmiş denetleyiciler klasörüyle Çözüm Gezgini](../ide/media/hello-world-fs-sln-explorer.png)
 
-2. Ardından, değişiklik `Get()` aşağıdaki üyesinin:
+2. Sonra, `Get()` üyeyi aşağıdakiler olacak şekilde değiştirin:
 
    ```fsharp
    [<HttpGet>]
@@ -83,25 +83,25 @@ Visual Studio henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://v
        ActionResult<string[]>(values)
    ```
 
-Kod basittir. Bir F# değerleri dizisi bağlı `values` adlandırın ve ardından ASP.NET Core MVC çerçevesi geçirilen bir `ActionResult`. ASP.NET Core REST sizin için üstlenir.
+Kod basittir. Bir F# değerler dizisi `values` ada bağlanır ve sonra ASP.NET Core MVC çerçevesine bir `ActionResult`olarak geçirilir. ASP.NET Core, geri kalanını sizin yerinize gerçekleştirir.
 
-Şu şekilde düzenleyicide görünmelidir:
+Düzenleyicide şöyle görünmelidir:
 
-![Değiştirilen Get member](../ide/media/hello-world-fs-get-member.png)
+![Değiştirilen üye Al](../ide/media/hello-world-fs-get-member.png)
 
 ## <a name="run-the-application"></a>Uygulamayı çalıştırma
 
-1. Tuşuna **Ctrl**+**F5** uygulamayı çalıştırın ve bir web tarayıcısında açın.
+1. Uygulamayı çalıştırmak ve bir Web tarayıcısında açmak için **CTRL**+**F5** tuşuna basın.
 
-2. Sayfaya gitmek `/api/values` route, ancak kullanmıyorsa, girin `https://localhost:44396/api/values` tarayıcınıza.
+2. Sayfa `/api/values` yola gitmelidir, ancak yoksa tarayıcınıza girin `https://localhost:44396/api/values` .
 
-Web tarayıcısı artık daha önce yazdığınız eşleşen JSON görüntüler.
+Web tarayıcısı artık daha önce yazdıklarınız ile eşleşen JSON 'ı görüntüleyecek.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-Bu hızlı başlangıcı tamamladığınızda Tebrikler! Hakkında biraz öğrendiğiniz umuyoruz F#, ASP.NET Core ve Visual Studio IDE. Ortak bir sunucu üzerinde çalışan uygulamayı görmek için aşağıdaki düğmeyi seçin.
+Bu hızlı başlangıcı tamamladığınızda Tebrikler! ASP.NET Core, ve Visual Studio IDE hakkında biraz F#bilgi edindiniz. Uygulamayı ortak bir sunucuda çalıştırmayı görmek için aşağıdaki düğmeyi seçin.
 
 > [!div class="nextstepaction"]
 > [Uygulamayı Azure App Service'e dağıtma](../deployment/quickstart-deploy-to-azure.md)
 
-Hakkında daha fazla bilgi edinmek için F#, resmi denetleyin [ F# Kılavuzu](/dotnet/fsharp/index).
+Hakkında F#daha fazla bilgi edinmek için resmi [ F# kılavuza](/dotnet/fsharp/index)göz atın.

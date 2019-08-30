@@ -9,12 +9,12 @@ ms.assetid: 2ada376d-f168-455d-9643-6acb535360c1
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c22d9327deb0c04790a3adfc809d9ae5da483916
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e6fad5424e74c8a65ea8ce889412b834cda6a790
+ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62835123"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70180152"
 ---
 # <a name="add-a-data-source-to-a-web-performance-test"></a>Web performans testine veri kaynağı ekleme
 
@@ -66,7 +66,7 @@ Aynı teste farklı değerler örneğin sağlamak için parametreleri formunuza 
 
 ::: moniker range="vs-2019"
 
-1. Visual Studio Enterprise yoksa, buradan indirebilirsiniz [Visual Studio indirmeleri](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) sayfası.
+1. Visual Studio Enterprise yoksa, buradan indirebilirsiniz [Visual Studio indirmeleri](https://visualstudio.microsoft.com/downloads) sayfası.
 
 2. SQL veritabanı oluşturun.
 
@@ -156,9 +156,9 @@ Aynı teste farklı değerler örneğin sağlamak için parametreleri formunuza 
 
 ## <a name="q--a"></a>Soru - Yanıt
 
-### <a name="q-what-databases-can-i-use-as-a-data-source"></a>S: Veri kaynağı olarak hangi veritabanlarını kullanabilirim?
+### <a name="q-what-databases-can-i-use-as-a-data-source"></a>Ç Veri kaynağı olarak hangi veritabanlarını kullanabilirim?
 
-**Y:** Aşağıdakileri kullanabilirsiniz:
+**A** Aşağıdakileri kullanabilirsiniz:
 
 - Microsoft SQL Azure.
 
@@ -172,9 +172,9 @@ Aynı teste farklı değerler örneğin sağlamak için parametreleri formunuza 
 
 - Oracle 7.3, 8i, 9i veya 10g.
 
-### <a name="q-how-do-i-use-a-comma-separated-value-csv-text-file-as-a-data-source"></a>S: Bir virgülle ayrılmış değer (CSV) metin dosyası veri kaynağı olarak nasıl kullanabilirim?
+### <a name="q-how-do-i-use-a-comma-separated-value-csv-text-file-as-a-data-source"></a>Ç Nasıl yaparım?, veri kaynağı olarak virgülle ayrılmış değer (CSV) metin dosyası mı kullanıyorsunuz?
 
-**Y:** İşte nasıl:
+**A** Şöyle:
 
 1. Projelerinizin veritabanı yapılarını düzenlemek ve bir öğe eklemek için bir klasör oluşturun.
 
@@ -196,9 +196,9 @@ Aynı teste farklı değerler örneğin sağlamak için parametreleri formunuza 
 
      ![Bir ad girin ve CSV dosyası seçin](../test/media/web_test_databinding_adddatasourcedialog.png)
 
-### <a name="q-what-if-my-existing-csv-file-does-not-contain-column-headers"></a>S: Ne var olan CSV dosyam sütun üstbilgilerini içermiyorsa?
+### <a name="q-what-if-my-existing-csv-file-does-not-contain-column-headers"></a>Ç Mevcut CSV dosyamın sütun başlıkları yoksa ne olacak?
 
-**Y:** Sütun başlıkları ekleyemezseniz CSV dosyasını veritabanı olarak değerlendirmek için şema açıklama dosyası kullanabilirsiniz.
+**A** Sütun üst bilgileri ekleyemez, CSV dosyasını veritabanı olarak değerlendirmek için bir şema açıklaması dosyası kullanabilirsiniz.
 
 1. Adlı yeni bir metin dosyası ekleyin *schema.ini*.
 
@@ -247,9 +247,9 @@ Aynı teste farklı değerler örneğin sağlamak için parametreleri formunuza 
 
      ![Test etmek için eklenen veri kaynağı](../test/media/web_test_databinding_adddatasourcecolortext7.png)
 
-### <a name="q-how-do-i-use-an-xml-file-as-a-data-source"></a>S: Bir XML dosyası veri kaynağı olarak nasıl kullanabilirim?
+### <a name="q-how-do-i-use-an-xml-file-as-a-data-source"></a>Ç Bir XML dosyasını veri kaynağı olarak kullanmak Nasıl yaparım? mı?
 
-**Y:** Evet.
+**A** Evet.
 
 1. Projelerinizin veritabanı yapılarını düzenlemek ve bir öğe eklemek için bir klasör oluşturun.
 
@@ -279,9 +279,9 @@ Aynı teste farklı değerler örneğin sağlamak için parametreleri formunuza 
 
      ![Bir ad girin ve XML dosyası seçin](../test/media/web_test_databinding_adddatasourcedialogxml.png)
 
-### <a name="q-can-i-add-data-binding-to-a-web-service-request-that-uses-soap"></a>S: SOAP kullanan bir web hizmeti isteğine veri bağlama ekleyebilir miyim?
+### <a name="q-can-i-add-data-binding-to-a-web-service-request-that-uses-soap"></a>Ç SOAP kullanan bir Web hizmeti isteğine veri bağlama ekleyebilir miyim?
 
-**Y:** Evet, SOAP XML el ile değiştirmeniz gerekir.
+**A** Evet, SOAP XML 'i el ile değiştirmeniz gerekir.
 
 1. İstek ağacında ve Özellikler penceresinde web hizmeti isteğini seçin, dize gövdesi özelliğinden üç noktayı (...) seçin.
 

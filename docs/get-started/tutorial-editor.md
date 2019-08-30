@@ -1,5 +1,5 @@
 ---
-title: Kod Düzenleyicisi'nde düzenlemeye giriş
+title: Kod düzenleyicisinde düzenleme için giriş
 ms.date: 11/30/2017
 ms.technology: vs-ide-general
 ms.custom: get-started
@@ -11,12 +11,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 913a5a08dc467ea23d22c2a08a23abfe70b9a736
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b6741b40925f5d9914152d396be4686d166bf222
+ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62943934"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70180206"
 ---
 # <a name="learn-to-use-the-code-editor"></a>Kod Düzenleyicisi'ni kullanmayı öğrenin
 
@@ -32,7 +32,7 @@ Visual Studio Kod düzenleyicisinde 10 dakikalık giriş, Visual Studio yazma, g
 ::: moniker range="vs-2019"
 
 > [!TIP]
-> Visual Studio henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) ücretsiz yüklemek için sayfa.
+> Visual Studio henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://visualstudio.microsoft.com/downloads) ücretsiz yüklemek için sayfa.
 
 ::: moniker-end
 
@@ -50,11 +50,11 @@ Yeni bir dosya oluşturarak ve bazı kodlar eklemeden başlatın.
 
 ::: moniker range=">=vs-2019"
 
-1. Visual Studio'yu açın. Tuşuna **Esc** veya **kod olmadan devam** geliştirme ortamı'nı açmak için başlangıç penceresinde.
+1. Visual Studio'yu açın. Geliştirme ortamını açmak için **ESC** tuşuna basın veya başlangıç penceresinde **kod olmadan devam et** ' e tıklayın.
 
 ::: moniker-end
 
-2. Gelen **dosya** menü çubuğunda menüsünde **yeni** > **dosya**.
+2. Menü çubuğundaki **Dosya** menüsünde **Yeni** > **Dosya**' yı seçin.
 
 3. İçinde **yeni dosya** iletişim kutusunun **genel** kategorisi seçin **Visual C# sınıfı**ve ardından **açık**.
 
@@ -66,7 +66,7 @@ Yeni bir dosya oluşturarak ve bazı kodlar eklemeden başlatın.
 
 Visual Studio sağlar yararlı *kod parçacıkları* kod bloklarında kullanılan yaygın olarak hızla ve kolayca oluşturmak için kullanabilirsiniz. [Kod parçacıkları](../ide/code-snippets.md) C#, Visual Basic ve C++ gibi farklı programlama dili için kullanılabilir. C# ekleyelim `void Main` bizim dosyasına kod parçacığı.
 
-1. İmlecinizi son kapanış ayracı kısalarak **}** dosyasında ve karakterlerini `svm`. (`svm` anlamına gelen `static void Main`; [Main()](/dotnet/csharp/programming-guide/main-and-command-args/) yöntemdir için giriş noktası C# uygulamaların.)
+1. İmlecinizi, dosyadaki son kapanış küme ayracı üzerine yerleştirin ve karakterleri `svm`yazın. (`svm` C# için `static void Main`temsil eder; [Main ()](/dotnet/csharp/programming-guide/main-and-command-args/) yöntemi uygulamalar için giriş noktasıdır.)
 
    Hakkında bilgi ile bir açılır iletişim kutusu görünür `svm` kod parçacığı.
 

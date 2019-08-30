@@ -12,12 +12,12 @@ manager: jillfra
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: fae6be8932731e5589dbc27f5084bcbc509680c1
-ms.sourcegitcommit: 9fc8b144d4ed1c46aba87c0b7e1d24454e0eea9d
+ms.openlocfilehash: 6944c930ba6357fffeebba417a32cd167bd4debd
+ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "68493311"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70179829"
 ---
 # <a name="debug-live-aspnet-azure-apps-using-the-snapshot-debugger"></a>Snapshot Debugger'ı kullanarak canlı ASP.NET Azure uygulamalarında hata ayıklama
 
@@ -37,7 +37,7 @@ Bu öğreticide şunları yapacaksınız:
 * Snapshot Debugger, **Azure geliştirme iş yükü**Ile yalnızca Visual Studio 2017 Enterprise sürüm 15,5 veya üzeri sürümlerde kullanılabilir. ( **Tek tek bileşenler** sekmesinde, **hata ayıklama ve test** > **anlık görüntü hata ayıklayıcısı**altında bulabilirsiniz.)
 
    ::: moniker range=">=vs-2019"
-   Henüz yüklenmemişse, [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019)' i yükleme. Önceki bir Visual Studio yüklemesinden güncelleştirme yapıyorsanız, Visual Studio Yükleyicisi çalıştırın ve **ASP.net ve Web geliştirme iş**yükünde Snapshot Debugger bileşenini denetleyin.
+   Henüz yüklenmemişse, [Visual Studio 2019](https://visualstudio.microsoft.com/downloads)' i yükleme. Önceki bir Visual Studio yüklemesinden güncelleştirme yapıyorsanız, Visual Studio Yükleyicisi çalıştırın ve **ASP.net ve Web geliştirme iş**yükünde Snapshot Debugger bileşenini denetleyin.
    ::: moniker-end
    ::: moniker range="<=vs-2017"
    Henüz yüklü değilse, yükleme [Visual Studio 2017 Enterprise sürüm 15.5](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) veya üzeri. Önceki bir Visual Studio 2017 yüklemesinden güncelleştirme yapıyorsanız, Visual Studio Yükleyicisi çalıştırın ve **ASP.net ve Web geliştirme iş**yükünde Snapshot Debugger bileşenini kontrol edin.

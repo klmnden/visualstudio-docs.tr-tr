@@ -28,12 +28,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8641a677ae36ad5a3c1f0f4344fc5c12b8798d7d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 061204de382e95349e141e3321aa033fcf9ccdbc
+ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445145"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70180078"
 ---
 # <a name="map-methods-on-the-call-stack-while-debugging-in-visual-studio"></a>Visual Studio'da hata ayıklarken çağrı yığınında eşleştirme yöntemleri
 
@@ -51,7 +51,7 @@ Hata ayıklarken çağrı yığınını görsel olarak izlemek için bir kod Har
 
 ::: moniker range="vs-2019"
 
-- [Visual Studio Enterprise](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019)
+- [Visual Studio Enterprise](https://visualstudio.microsoft.com/downloads)
 
 ::: moniker-end
 
@@ -59,7 +59,7 @@ Hata ayıklarken çağrı yığınını görsel olarak izlemek için bir kod Har
 
   Bkz.
 
-- [Video: (Kanal 9) kod Haritası hata ayıklayıcı Tümleştirmesi ile görsel olarak hata ayıklama](http://go.microsoft.com/fwlink/?LinkId=293418)
+- [Video Kod Haritası hata ayıklayıcısı tümleştirmesiyle görsel hata ayıkla (Channel 9)](http://go.microsoft.com/fwlink/?LinkId=293418)
 
 - [Çağrı yığınını eşleme](#MapStack)
 
@@ -77,9 +77,9 @@ Hata ayıklarken çağrı yığınını görsel olarak izlemek için bir kod Har
 
 ## <a name="MapStack"></a> Çağrı yığınını eşleme
 
-1. Hata ayıklama başlatılamıyor. (Klavye: **F5**)
+1. Hata ayıklama başlatılamıyor. Klavyenizdeki **F5**)
 
-2. Uygulamanız Kesme moduna girdiğinde ya da bir işleve sonra seçin **kod Haritası**. (Klavye: **CTRL** + **Shift** + **`**)
+2. Uygulamanız Kesme moduna girdiğinde ya da bir işleve sonra seçin **kod Haritası**. Klavyenizdeki **CTRL** + **SHIFT**) +  **`**
 
      ![Çağrı yığınını eşleme başlatmak için kod Haritası'nı seçin](../debugger/media/debuggermap_choosecodemap.png)
 
@@ -105,7 +105,7 @@ Hata ayıklarken çağrı yığınını görsel olarak izlemek için bir kod Har
 
  Artık bir harita - ne sonraki kendinizi? C# veya Visual Basic ile çalışıyorsanız, alanlar, özellikler ve kodda neler olduğunu izlemek için diğer yöntemler gibi öğeleri ekleyin.
 
- Kod tanımını görmek için bir yöntemi çift tıklayın ya da yöntem için kısayol menüsünü kullanın. (Klavye: Tuşuna basın ve harita yöntemi seçin **F12**)
+ Kod tanımını görmek için bir yöntemi çift tıklayın ya da yöntem için kısayol menüsünü kullanın. Klavyenizdeki Haritada yöntemi seçin ve **F12**tuşuna basın)
 
  ![Kod haritasında bir yöntem için kod tanımı gidin](../debugger/media/debuggermap_gotocodedefinition.png)
 
@@ -156,7 +156,7 @@ Hata ayıklarken çağrı yığınını görsel olarak izlemek için bir kod Har
 
    Haritanın değiştirilmesi kodu herhangi bir şekilde etkilemez. Haritadaki herhangi bir şeyi rahatça yeniden adlandırabilir, taşıyabilir veya kaldırabilirsiniz.
 
-- **Bu ileti ne anlama gelir: "Diyagram kodu daha eski bir sürümünü temel alıyor olabilir"?**
+- **Bu iletinin anlamı: "Diyagram, kodun eski bir sürümünü temel alabilir mi?**
 
    Kod, haritayı son güncelleştirmenizden sonra değişmiş olabilir. Örneğin, harita üzerindeki bir çağrı artık kodda bulunmayabilir. İletiyi kapatın ve haritayı yeniden güncelleştirmeden önce çözümü yeniden oluşturmayı deneyin.
 
@@ -178,7 +178,7 @@ Hata ayıklarken çağrı yığınını görsel olarak izlemek için bir kod Har
 
 - **Eşlemeyi otomatik olarak yeni çağrı yığınları eklemesini nasıl durdururum?**
 
-   Seçin ![düğmesi &#45; Show çağrı yığınını kod haritasında otomatik olarak](../debugger/media/debuggermap_automaticupdateicon.gif) harita araç çubuğunda. Geçerli çağrı yığınını eşlemeye el ile eklemek için basın **Ctrl** + **Shift** + **`**.
+   Seçin ![düğmesi &#45; Show çağrı yığınını kod haritasında otomatik olarak](../debugger/media/debuggermap_automaticupdateicon.gif) harita araç çubuğunda. Geçerli çağrı yığınını eşlemeye el ile eklemek için basın **Ctrl** + **Shift** +  **`** .
 
    Eşleme, hata ayıklarken eşlemede varolan çağrı yığınlarını vurgulamaya devam edecektir.
 

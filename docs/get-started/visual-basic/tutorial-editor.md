@@ -1,6 +1,6 @@
 ---
-title: Visual Basic geliştiricileri için düzenleme giriş
-description: Visual Studio Kod düzenleyicisinde bu 10 dakikalık bir giriş, Visual Studio yazma, gezinme ve Visual Basic kodu daha kolay anlama yapar yollardan bazılarını gösterir.
+title: Visual Basic geliştiricileri için düzenlemelere giriş
+description: Visual Studio 'da kod düzenleyicisine bu 10 dakikalık bir giriş, Visual Studio 'Nun Visual Basic kodu yazma, gezinme ve anlama işlemlerini daha kolay hale getiren bazı yolları gösterir.
 ms.custom: seodec18, get-started
 ms.date: 11/20/2018
 ms.technology: vs-ide-general
@@ -12,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: e2f5043b5c9690c668c12da7b902fdff5228f1e5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5ebbe6ac8ef8e6a6de99159fa8dd5169a9dcac06
+ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62972264"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70180400"
 ---
 # <a name="learn-to-use-the-code-editor"></a>Kod Düzenleyicisi'ni kullanmayı öğrenin
 
@@ -33,14 +33,14 @@ Visual Studio Kod düzenleyicisinde 10 dakikalık giriş, Visual Studio yazma, g
 ::: moniker range="vs-2019"
 
 > [!TIP]
-> Visual Studio henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) ücretsiz yüklemek için sayfa.
+> Visual Studio henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://visualstudio.microsoft.com/downloads) ücretsiz yüklemek için sayfa.
 
 ::: moniker-end
 
-Bu makalede, zaten Visual Basic ile ilgili bilgi sahibi olduğunuz kabul edilmektedir. Siz değilseniz, öğreticiye bakın gibi öneririz [Visual Studio'daki Visual Basic ile çalışmaya başlama](../../get-started/visual-basic/tutorial-console.md) ilk.
+Bu makalede, Visual Basic zaten bildiğiniz varsayılmaktadır. Bu durumda, ilk olarak [Visual Studio 'da Visual Basic kullanmaya başlama](../../get-started/visual-basic/tutorial-console.md) gibi bir öğreticiye bakmanız önerilir.
 
 > [!TIP]
-> Bu makaleyi izlemek için Visual Basic ayarları için Visual Studio seçili olduğundan emin olun. Tümleşik geliştirme ortamı (IDE) için ayarları seçme hakkında daha fazla bilgi için bkz: [ortam ayarlarını Seç](visual-studio-ide.md#select-environment-settings).
+> Bu makaleyle birlikte izlemek için, Visual Studio için Visual Basic ayarlarını seçtiğinizden emin olun. Tümleşik geliştirme ortamı (IDE) için ayarları seçme hakkında daha fazla bilgi için bkz. [ortam ayarlarını seçme](visual-studio-ide.md#select-environment-settings).
 
 ## <a name="create-a-new-code-file"></a>Yeni bir kod dosyası oluşturma
 
@@ -54,45 +54,45 @@ Yeni bir dosya oluşturarak ve bazı kodlar eklemeden başlatın.
 
 ::: moniker range=">=vs-2019"
 
-1. Visual Studio'yu açın. Tuşuna **Esc** veya **kod olmadan devam** geliştirme ortamı'nı açmak için başlangıç penceresinde.
+1. Visual Studio'yu açın. Geliştirme ortamını açmak için **ESC** tuşuna basın veya başlangıç penceresinde **kod olmadan devam et** ' e tıklayın.
 
 ::: moniker-end
 
-2. Gelen **dosya** menü çubuğunda menüsünde **yeni dosya**.
+2. Menü çubuğundaki **Dosya** menüsünde **yeni dosya**' yı seçin.
 
-3. İçinde **yeni dosya** iletişim kutusunun **genel** kategorisi seçin **Visual Basic sınıfı**ve ardından **açık**.
+3. **Yeni dosya** iletişim kutusunda, **genel** kategori altında **Visual Basic sınıf**' ı seçin ve sonra **Aç**' ı seçin.
 
-   Visual Basic sınıfı çatısında önizlememiz ile düzenleyicideki yeni bir dosya açar. (Zaten bazı Kod Düzenleyicisi sunar, söz dizimi vurgulama gibi avantajları elde etmek için tam Visual Studio projesi oluşturmanız gerekmez fark. İhtiyacınız olan bir kod dosyası!)
+   Düzenleyicide Visual Basic sınıfının iskeçiyle yeni bir dosya açılır. (Sözdizimi vurgulama gibi kod düzenleyicisinin sunduğu avantajlardan bazılarını kazanmak için tam bir Visual Studio projesi oluşturmanız gerekmediğine zaten dikkat edebilirsiniz. Tüm ihtiyacınız olan bir kod dosyasıdır!)
 
-   ![Visual Studio'da Visual Basic kod dosyası](media/tutorial-editor.png)
+   ![Visual Studio 'da kod dosyası Visual Basic](media/tutorial-editor.png)
 
 ## <a name="use-code-snippets"></a>Kod parçacıkları kullanma
 
-Visual Studio sağlar yararlı *kod parçacıkları* kod bloklarında kullanılan yaygın olarak hızla ve kolayca oluşturmak için kullanabilirsiniz. [Kod parçacıkları](../../ide/code-snippets.md) Visual Basic dahil olmak üzere farklı programlama dili için kullanılabilir C#ve C++. Visual Basic ekleyelim **alt** bizim dosyasına kod parçacığı.
+Visual Studio sağlar yararlı *kod parçacıkları* kod bloklarında kullanılan yaygın olarak hızla ve kolayca oluşturmak için kullanabilirsiniz. [Kod parçacıkları](../../ide/code-snippets.md) Visual Basic, C#ve C++gibi farklı programlama dilleri için kullanılabilir. Visual Basic **alt** kod parçacığını dosyanıza ekleyelim.
 
-1. İmlecinizi diyor satırın yukarısında `End Class`ve türü **alt**.
+1. İmlecinizi, belirten `End Class`çizginin üzerine getirin ve **Sub**yazın.
 
-   Hakkında bilgi ile bir açılır iletişim kutusu görünür `Sub` anahtar sözcüğü ve nasıl ekleneceğini **alt** kod parçacığı.
+   `Sub` Anahtar sözcüğü ve **alt** kod parçacığını ekleme hakkında bilgi içeren bir açılır iletişim kutusu görüntülenir.
 
    ![Visual Studio'da kod parçacığı için IntelliSense](media/tutorial-intellisense-snippet.png)
 
 1. Tuşuna **sekmesini** iki kez kod parçacığını eklemek için.
 
-   Alt yordam anahat `MySub()` dosyasına eklenir.
+   Alt yordamın `MySub()` ana hattı dosyaya eklenir.
 
-Kullanılabilir kod parçacıkları farklı programlama dili için farklılık gösterir. Visual Basic için kullanılabilir kod parçacıkları seçerek bakabilirsiniz **Düzenle** > **IntelliSense** > **parçacık Ekle** (veya tuşlarınabasın **CTRL**+**K**, **Ctrl**+**X**). Visual Basic için kod parçacıkları için aşağıdaki kategorilerde kullanılabilir:
+Kullanılabilir kod parçacıkları farklı programlama dili için farklılık gösterir. **IntelliSense**+ + >  'i Düzenle kod parçacığı Ekle ' yi seçerek Visual Basic için kullanılabilir kod parçacıklarına bakabilirsiniz (ya da CTRL K, CTRL tuşlarına basın). >  **X**). Visual Basic için, kod parçacıkları aşağıdaki kategoriler için kullanılabilir:
 
-![Visual Basic kod parçacığı listesi](media/tutorial-code-snippet-list.png)
+![Kod parçacığı listesini Visual Basic](media/tutorial-code-snippet-list.png)
 
-Bir dosya bir metin dosyasına yazma, okuma bir kayıt defteri değeri, bir SQL sorgusu yürütme, oluşturma bilgisayarda varsa belirlemek için kod parçacıkları olan bir [her biri için... Sonraki deyimi](/dotnet/visual-basic/language-reference/statements/for-each-next-statement)ve çok daha fazlası.
+Bilgisayarda bir dosyanın var olup olmadığını belirlemek, bir metin dosyasına yazmak, bir kayıt defteri değeri okumak, SQL sorgusu yürütmek, her biri Için bir oluşturmak için kod parçacıkları vardır.. [. Sonraki bildiri](/dotnet/visual-basic/language-reference/statements/for-each-next-statement)ve çok daha fazlası.
 
 ## <a name="comment-out-code"></a>Kodu açıklama
 
-Visual Studio menü çubuğunda altında düğmelerden araç çubuğunda, kodu daha üretken olmanıza yardımcı olabilir. Örneğin, IntelliSense tamamlanma moduna geç, artırmak veya satır girintisini Azalt veya kodu açıklama derlemeye istemediğiniz. ([IntelliSense](../../ide/using-intellisense.md) yöntemleri, diğerlerinin arasında eşleşen bir listesini görüntüleyen bir kodlama yardımcısıdır.) Bu bölümde, biz bazı kodu açıklama.
+Visual Studio menü çubuğunda altında düğmelerden araç çubuğunda, kodu daha üretken olmanıza yardımcı olabilir. Örneğin, IntelliSense tamamlama modunu değiştirebilir, bir satır girintisini artırabilir veya azaltabilir ya da derlemek istemediğiniz kodu açıklama olarak ayarlayabilirsiniz. ([IntelliSense](../../ide/using-intellisense.md) , farklı şeyler arasından eşleşen yöntemlerin bir listesini görüntüleyen bir kodlama yardımıdır.) Bu bölümde, biz bazı kodu açıklama.
 
 ![Düzenleyici araç çubuğu düğmeleri](media/tutorial-editor-toolbar.png)
 
-1. Aşağıdaki kodu yapıştırın `MySub()` yordamı gövdesi.
+1. Aşağıdaki kodu `MySub()` yordam gövdesine yapıştırın.
 
    ```vb
    ' _words is a string array that we'll sort alphabetically
@@ -116,15 +116,15 @@ Visual Studio menü çubuğunda altında düğmelerden araç çubuğunda, kodu d
                Select word
    ```
 
-1. Değil kullandığımız `morewords` dizi, ancak kullanabilir, daha sonra tamamen silmek istemediğiniz şekilde. Bunun yerine, şimdi bu satırları açıklama satırı yapar. Tüm tanımını seçin `morewords` için kapanış küme ayracı ve ardından **Seçilen satırdan yorum** araç çubuğunda. Klavyeyi kullanmak isterseniz, basın **Ctrl**+**K**, **Ctrl**+**C**.
+1. `morewords` Diziyi kullanmıyoruz, ancak bunu daha sonra tamamen silmek istemdiğimiz için kullanabiliriz. Bunun yerine, şimdi bu satırları açıklama satırı yapar. Kapanış küme ayracı `morewords` için tüm tanımı seçin ve ardından araç çubuğundaki **Seçili çizgiler** düğmesini seçin. Klavyeyi kullanmak isterseniz, basın **Ctrl**+**K**, **Ctrl**+**C**.
 
    ![Açıklama düğmesi](media/tutorial-comment-out.png)
 
-   Visual Basic açıklama karakterini `'` kodu açıklama eklemek için seçili her satırın başına eklenir.
+   Visual Basic açıklama karakteri `'` , kodu açıklama eklemek için seçili her satırın başına eklenir.
 
 ## <a name="collapse-code-blocks"></a>Kod bloğu Daralt
 
-İlginizi çeken bölümleri odaklanmak için kod bölümlerini daraltabilirsiniz. Uygulama, şimdi Daralt `_words` bir kod satırı için bir dizi. Küçük bir gri kutu içine eksi işaretiyle yazan satırı kenar boşluğunda seçin `Dim _words = New String() {`. Veya, klavye kullanıcısıysanız, herhangi bir dizi tanımı ve ENTER tuşuna imleci **Ctrl**+**M**, **Ctrl**+**M** .
+Yalnızca ilginizi çeken parçalara odaklanmak için kod bölümlerini daraltabilirsiniz. Pratikte, `_words` diziyi tek bir kod satırına darallayalım. Görüntülenen satırın kenar boşluğunda eksi işareti olan küçük gri kutusunu seçin `Dim _words = New String() {`. Ya da bir klavye kullanıcısı kullanıyorsanız, imleci dizi tanımında herhangi bir yere yerleştirin ve **CTRL**+**m**, **CTRL**+**m**tuşlarına basın.
 
 ![Anahat oluşturma Daralt düğmesi](media/tutorial-collapse.png)
 
@@ -134,7 +134,7 @@ Visual Studio menü çubuğunda altında düğmelerden araç çubuğunda, kodu d
 
 Visual Studio Düzenleyicisi, bir tür, yöntem vb. tanımını incelemek kolaylaştırır. Örneğin seçerek tanımını içeren dosyayı gitmek için bir yolu olan **Tanıma Git** herhangi bir sembol başvurulur. İçinde çalışmakta olduğunuz odağınızı uzağa dosya hareket etmediği bir bile daha hızlı yolu [Özet tanım](../../ide/go-to-and-peek-definition.md#peek-definition). Şimdi tanımda Özet `String` türü.
 
-1. Word sağ `String` ve **Özet tanım** içerik menüsünde. Veya basın **Alt**+**F12**.
+1. Sözcüğe `String` sağ tıklayın ve içerik menüsünden **Açıklama Özeti** ' ni seçin. Veya basın **Alt**+**F12**.
 
    Tanımını bir açılır pencere görünür `String` sınıfı. Açılır pencere veya hatta göz at peeked kodun başka bir tür tanımı içinde gezinebilirsiniz.
 
@@ -170,17 +170,17 @@ Visual Studio Düzenleyicisi, bir tür, yöntem vb. tanımını incelemek kolayl
 
 Hiç kimse ilk kez kod sağ alır ve bir değişkeni veya yöntemin adını değiştirmeniz gerekebilir şeyleri biridir. Visual Studio'nun deneyelim [yeniden düzenleme](../../ide/refactoring-in-visual-studio.md) yeniden adlandırmak için işlevselliği `_words` değişkenini `words`.
 
-1. İmlecinizi tanımı `_words` değişkeni ve **Yeniden Adlandır** sağ tıklayın veya bağlam menüsünde.
+1. İmlecinizi `_words` değişkeninin tanımına yerleştirin ve sağ tıklama ya da bağlam menüsünden **Yeniden Adlandır** ' ı seçin.
 
    Bir açılır pencere **Yeniden Adlandır** iletişim kutusunun en üstünde görünür sağında Düzenleyici.
 
-1. Değişkeniyle `_words` halen seçiliyken, istediğiniz adı yazın **sözcükleri**. Dikkat başvuru `words` sorguda da otomatik olarak yeniden adlandırıldı. Basmadan önce **Enter** veya **Uygula**seçin **açıklamaları dahil** onay kutusu **Yeniden Adlandır** açılan kutusu.
+1. Değişken `_words` seçili durumdayken, istenen **sözcüklerin**adını yazın. Dikkat başvuru `words` sorguda da otomatik olarak yeniden adlandırıldı. **ENTER** tuşuna bastıktan veya **Uygula**' ya tıklamadan önce, **Yeniden Adlandır** açılan kutusunda **açıklamaları dahil et** onay kutusunu seçin.
 
    ![Yeniden Adlandır iletişim kutusu](media/tutorial-rename.png)
 
-1. Tuşuna **Enter** veya **Uygula**.
+1. **ENTER** tuşuna basın veya **Uygula**' ya tıklayın.
 
-   Her iki oluşumlarını `words` başvuru yanı sıra adlandırılır `words` içinde kod açıklaması.
+   Her iki tekrarın `words` her ikisi de yeniden adlandırılır ve kod açıklamasında `words` başvurusu.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

@@ -1,5 +1,5 @@
 ---
-title: Oluşturma bir Windows Forms uygulaması Visual Basic ile
+title: Visual Basic Windows Forms uygulama oluşturma
 description: Visual Basic, adım adım ile Visual Studio'da bir Windows Forms uygulaması oluşturmayı öğrenin.
 ms.date: 03/23/2019
 ms.topic: tutorial
@@ -13,12 +13,12 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 4619a56bfe052a1fb191af8edfd1cef8b376617b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c031a047a0331eea0f8397a303d2b5cb0af650e6
+ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62976819"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70180139"
 ---
 # <a name="create-a-windows-forms-app-in-visual-studio-with-visual-basic"></a>Bir Windows oluşturma Visual Basic ile Visual Studio'da Forms uygulaması
 
@@ -32,10 +32,10 @@ Visual Studio henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://v
 
 ::: moniker range="vs-2019"
 
-Visual Studio henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) ücretsiz yüklemek için sayfa.
+Visual Studio henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://visualstudio.microsoft.com/downloads) ücretsiz yüklemek için sayfa.
 
 > [!NOTE]
-> Bu öğreticideki ekran görüntüleri bazıları, koyu tema kullanın. Koyu tema kullanmayan ancak öğrenmek istiyorsanız [Düzenleyicisi ve Visual Studio IDE'yi kişiselleştirme](../ide/quickstart-personalize-the-ide.md) öğrenmek için sayfa nasıl.
+> Bu öğreticideki ekran görüntülerinin bazıları koyu temayı kullanır. Koyu tema kullanmayan ancak öğrenmek istiyorsanız [Düzenleyicisi ve Visual Studio IDE'yi kişiselleştirme](../ide/quickstart-personalize-the-ide.md) öğrenmek için sayfa nasıl.
 
 ::: moniker-end
 
@@ -47,9 +47,9 @@ Visual Studio henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://v
 
 1. Visual Studio 2017'yi açın.
 
-2. Üstteki menü çubuğundan seçin **dosya** > **yeni** > **proje**.
+2. Üstteki menü çubuğundan **Dosya** > **Yeni** > **Proje**' yi seçin.
 
-3. İçinde **yeni proje** iletişim kutusunun sol bölmesinde, **Visual Basic**ve ardından **Windows Masaüstü**. Orta bölmede seçin **Windows Forms uygulaması (.NET Framework)**. Dosya adı `HelloWorld`.
+3. İçinde **yeni proje** iletişim kutusunun sol bölmesinde, **Visual Basic**ve ardından **Windows Masaüstü**. Orta bölmede seçin **Windows Forms uygulaması (.NET Framework)** . Dosya adı `HelloWorld`.
 
      Görmüyorsanız **Windows Forms uygulaması (.NET Framework)** proje şablonu, / İptal **yeni proje** iletişim kutusu ve üst menü çubuğundan seçin **Araçları**  >  **Araçları ve özellikleri Al**. Visual Studio Yükleyicisi'ni başlatır. Seçin **.NET masaüstü geliştirme** iş yükü, ardından **Değiştir**.
 
@@ -59,34 +59,34 @@ Visual Studio henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://v
 
 ::: moniker range="vs-2019"
 
-1. Open Visual Studio 2019.
+1. Visual Studio 2019 ' i açın.
 
-1. Pencerenin başlangıç seçin **yeni bir proje oluşturma**.
+1. Başlangıç penceresinde **Yeni proje oluştur**' u seçin.
 
-   !['Yeni Proje oluştur' penceresini görüntüleyin](../get-started/media/vs-2019/create-new-project-dark-theme.png)
+   ![' Yeni proje oluştur ' penceresini görüntüleyin](../get-started/media/vs-2019/create-new-project-dark-theme.png)
 
-1. Üzerinde **yeni bir proje oluşturma** penceresinde girin veya yazın *Windows Forms* arama kutusuna. Ardından, **Visual Basic** dilden listeleyin ve ardından **Windows** Platform listesinde. 
+1. **Yeni proje oluştur** penceresinde, arama kutusuna *Windows Forms* girin veya yazın. Ardından, dil listesinden **Visual Basic** ' yi seçin ve ardından platform listesinden **Windows** ' u seçin. 
 
-   Tüm dil ve platform filtreleri uyguladıktan sonra seçin **Windows Forms uygulaması (.NET Framework)** şablonu seçip **sonraki**.
+   Dil ve platform filtrelerini uyguladıktan sonra **Windows Forms App (.NET Framework)** şablonunu seçin ve ardından **İleri**' yi seçin.
 
-   ![Windows Forms uygulaması (.NET Framework) Visual Basic şablonu seçin](../get-started/visual-basic/media/vs-2019/vb-create-new-project-search-winforms-filtered.png)
+   ![Windows Forms uygulaması için Visual Basic şablonu seçin (.NET Framework)](../get-started/visual-basic/media/vs-2019/vb-create-new-project-search-winforms-filtered.png)
 
    > [!NOTE]
-   > Görmüyorsanız, **Windows Forms uygulaması (.NET Framework)** şablon yükleyebileceğiniz buradan **yeni bir proje oluşturma** penceresi. İçinde **aradığınızı bulamadınız?** message öğesini **daha fazla araçları ve özellikleri yükleme** bağlantı.
+   > **Windows Forms App (.NET Framework)** şablonunu görmüyorsanız, **Yeni proje oluştur** penceresinden yükleyebilirsiniz. **Aradığınızı bulamıyor musunuz?** iletisi için **daha fazla araç ve özellik yüklemeyi** seçin bağlantısına tıklayın.
    >
-   > !['Daha fazla araçları ve özellikleri yükleme' bağlantı 'Yeni Proje oluştur' penceresinde 'aradığınızı bulma yok' iletisi](../get-started/media/vs-2019/not-finding-what-looking-for.png) 
+   > ![' Yeni proje oluştur ' penceresindeki ' daha fazla araç ve özellik yüklemesi ' ' ne aradığınızı bulma ' iletisi bağlantısı](../get-started/media/vs-2019/not-finding-what-looking-for.png) 
    > 
-   > Ardından, Visual Studio yükleyicisinde seçin seçin **.NET Masaüstü geliştirmesinden** iş yükü.
+   > Sonra, Visual Studio Yükleyicisi **.net masaüstü geliştirme** Iş yükünü seçin.
    > 
    > ![Visual Studio Yükleyicisi'nde .NET core iş yükü](../ide/media/install-dot-net-desktop-env.png)
    >
-   > Bundan sonra seçin **Değiştir** Visual Studio Yükleyicisi'nde düğmesi. Çalışmanızı kaydetmek için istenebilir; Bu durumda, bunu yapın. Ardından, **devam** iş yükünü yüklemek için. Ardından, 2. adım bu dönün "[proje oluşturma](#create-a-project)" yordamı.
+   > Bundan sonra Visual Studio Yükleyicisi **Değiştir** düğmesini seçin. İşinizi kaydetmeniz istenebilir; Öyleyse, bunu yapın. Sonra, iş yükünü yüklemek için **devam** ' ı seçin. Ardından, bu "[Proje oluşturma](#create-a-project)" yordamında 2. adıma geri dönün.
 
-1. İçinde **yeni projenizi yapılandırın** penceresinde yazın veya girin *HelloWorld* içinde **proje adı** kutusu. Ardından, **Oluştur**.
+1. **Yeni projeyi yapılandırın** penceresinde, **Proje adı** kutusuna *HelloWorld* yazın veya girin. Ardından **Oluştur**' u seçin.
 
-   !['yeni projenizi yapılandırın' penceresinde 'HelloWorld' projenizi adlandırın](../get-started/visual-basic/media/vs-2019/vb-name-your-winform-project-helloworld.png)
+   ![' yeni projenizi yapılandırın ' penceresinde, projenizi ' HelloWorld ' olarak adlandırın](../get-started/visual-basic/media/vs-2019/vb-name-your-winform-project-helloworld.png)
 
-   Yeni projeniz Visual Studio açılır.
+   Visual Studio yeni projenizi açar.
 
 ::: moniker-end
 
@@ -100,7 +100,7 @@ Visual Basic projesi şablonu seçin ve dosyanızın adı sonra Visual Studio si
 
      ![Araç araç kutusu penceresini açmak için tıklayın](../ide/media/vb-toolbox-toolwindow.png)
 
-     (Görmüyorsanız **araç kutusu** çıkış seçeneği tuşlarına basarak açabilirsiniz **Ctrl**+**Alt**+**X**.)
+     ( **Araç kutusu** açılır seçeneğini görmüyorsanız, **CTRL**+**alt**+**X**tuşlarına basarak açabilirsiniz.)
 
 2. Tıklayın **PIN** simgesini yerleştirmek için **araç kutusu** penceresi.
 
@@ -110,7 +110,7 @@ Visual Basic projesi şablonu seçin ve dosyanızın adı sonra Visual Studio si
 
      ![Forma bir düğme ekleyin](../ide/media/vb-add-a-button-to-form1.png)
 
-4. İçinde **Görünüm** bölüm (veya **yazı tipleri** bölümünde), **özellikleri** penceresinde, tür `Click this`ve tuşuna **Enter**.
+4. **Özellikler** `Click this`penceresinin **Görünüm** bölümünde (veya **Fonts** bölümünde), yazın ve ardından **ENTER**tuşuna basın.
 
      ![Düğmeyi form üzerinde metin ekleme](../ide/media/vb-button-control-text.png)
 
@@ -134,7 +134,7 @@ Bir eylem oluşturmak için bir düğme denetimi ekledik, metni göndermek için
 
       (Alternatif olarak, genişletebilirsiniz **Form1.vb** içinde **Çözüm Gezgini**ve ardından **Form1**.)
 
-2. İçinde **Form1.vb** penceresi, arasında **Private Sub** satır ve **End Sub** satır (veya arasında **Public Class Form1** satır ve  **End Class** satır), aşağıdaki kodu yazın.
+2. **Form1. vb** penceresinde, **özel alt** çizgi ile **bitiş alt** çizgisi arasında (veya **ortak sınıf Form1** çizgisi ile **bitiş sınıfı** satırı arasında) aşağıdaki kodu yazın.
 
      ![Forma kod ekleyin](../ide/media/vb-add-code-to-the-form.png)
 
@@ -146,7 +146,7 @@ Bir eylem oluşturmak için bir düğme denetimi ekledik, metni göndermek için
 
    Birden fazla işlem gerçekleşir. Visual Studio IDE'de **tanılama araçları** penceresi açılır ve bir **çıkış** penceresi açılır, çok. Ancak IDE dışında bir **Form1** iletişim kutusu görüntülenir. Dahil edilir, **tıklatın** düğme ve metin bildiren **Label1**.
 
-2. Tıklayın **tıklatın** düğmesine **Form1** iletişim kutusu. Dikkat **Label1** metin değişiklikleri **Merhaba Dünya!**.
+2. Tıklayın **tıklatın** düğmesine **Form1** iletişim kutusu. Dikkat **Label1** metin değişiklikleri **Merhaba Dünya!** .
 
     ![Label1 metin içeren bir Form1 iletişim kutusu ](../ide/media/vb-form1-dialog-hello-world.png)
 
@@ -154,5 +154,5 @@ Bu hızlı başlangıcı tamamladığınızda Tebrikler! Visual Basic ve Visual 
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-* [Hızlı Başlangıç: Visual Basic ile Visual Studio'da konsol uygulaması oluşturma](quickstart-visual-basic-console.md)
+* [Hızlı Başlangıç: Visual Basic ile Visual Studio 'da bir konsol uygulaması oluşturma](quickstart-visual-basic-console.md)
 * [Visual Basic IntelliSense hakkında daha fazla bilgi edinin](visual-basic-specific-intellisense.md)

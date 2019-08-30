@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c9d776c061982b60640944737b27cda927f79e59
-ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
+ms.openlocfilehash: 677dddbde5e90117dc19acfaf54a941c304ae7f1
+ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "67033161"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70180062"
 ---
 # <a name="first-look-at-the-visual-studio-ide"></a>Visual Studio IDE’ye ilk bakış
 
@@ -27,7 +27,7 @@ Visual Studio henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://v
 
 ::: moniker range="vs-2019"
 
-Visual Studio henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) ücretsiz yüklemek için sayfa.
+Visual Studio henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://visualstudio.microsoft.com/downloads) ücretsiz yüklemek için sayfa.
 
 ::: moniker-end
 
@@ -35,15 +35,15 @@ Visual Studio henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://v
 
 ## <a name="start-window"></a>Başlangıç penceresi
 
-Visual Studio'yu başlattıktan sonra gördüğünüz ilk şey bir başlangıç penceredir. Başlangıç penceresi "kodu daha hızlı" yardımcı olmak için tasarlanmıştır. Bu, kapatın veya kullanıma alma kodu, varolan bir projeyi veya çözümü açın, yeni bir proje oluşturun veya yalnızca bazı kod dosyaları içeren klasör Aç için seçenek vardır.
+Visual Studio 'Yu başlattıktan sonra ilk olarak göreceğiniz şey başlangıç penceresidir. Başlangıç penceresi, "koda ulaşmak" için daha hızlı yardımcı olacak şekilde tasarlanmıştır. Kodu kapatma veya kullanıma alma, var olan bir projeyi veya çözümü açma, yeni bir proje oluşturma veya yalnızca bazı kod dosyalarını içeren bir klasörü açma seçeneklerine sahiptir.
 
-[![Visual Studio 2019 başlangıç penceresi](media/vs-2019/start-window.png)](media/vs-2019/start-window.png)
+[![Visual Studio 2019 ' de başlangıç penceresi](media/vs-2019/start-window.png)](media/vs-2019/start-window.png)
 
-Visual Studio kullanıyorsanız ilk kez varsa, son kullanılan projeler listesi boş olur.
+Visual Studio 'Yu ilk kez kullanıyorsanız, son projeler listeniz boş olur.
 
-İle çalışıyorsanız dayalı MSBuild dışındaki kod tabanlarında, kullanacağınız **yerel bir klasöre açın** kodunuzu Visual Studio'da açmak için seçeneği. Daha fazla bilgi için [kod Visual Studio'da projeler veya çözümler olmadan geliştirme](develop-javascript-code-without-solutions-projects.md). Aksi takdirde, yeni bir proje oluşturun veya GitHub ya da Azure DevOps gibi bir kaynak sağlayıcısı bir projeden kopyalayın.
+MSBuild tabanlı olmayan kod tabanlarında çalışıyorsanız, Visual Studio 'da kodunuzu açmak için **yerel klasör aç** seçeneğini kullanacaksınız. Daha fazla bilgi için [kod Visual Studio'da projeler veya çözümler olmadan geliştirme](develop-javascript-code-without-solutions-projects.md). Aksi takdirde, yeni bir proje oluşturabilir veya GitHub ya da Azure DevOps gibi bir kaynak sağlayıcıdan proje kopyalayabilirsiniz.
 
-**Kod olmadan devam** seçeneği yalnızca belirli bir proje veya yüklenen kod olmadan Visual Studio geliştirme ortamını açar. Katılmak için bu seçeneği belirleyebilirsiniz bir [Live Share](/visualstudio/liveshare/) oturuma veya hata ayıklama için bir işleme iliştirin. Ayrıca basabilirsiniz **Esc** başlangıç pencereyi kapatın ve IDE açın.
+**Kod olmadan devam et** seçeneği, Visual Studio geliştirme ortamını belirli bir proje veya kod yüklenmeden yalnızca açar. Bir [live share](/visualstudio/liveshare/) oturumuna katmak veya hata ayıklama için bir işleme iliştirmek üzere bu seçeneği belirleyebilirsiniz. Başlangıç penceresini kapatmak ve IDE 'yi açmak için **ESC** tuşuna da basabilirsiniz.
 
 ::: moniker-end
 
@@ -67,30 +67,30 @@ Visual Studio'nun özellikleri keşfetmeye devam etmek için yeni bir proje olu�
 
 ::: moniker range=">=vs-2019"
 
-1. Pencerenin başlangıç seçin **yeni bir proje oluşturma**, arama kutusuna yazın, sonra da **javascript** içeren kendi adı veya dil türü "JavaScript'te" Bu proje türleri listesini filtrelemek için.
+1. Başlangıç penceresinde, **Yeni proje oluştur**' u seçin ve ardından Proje türleri listesini ad veya dil türünde "JavaScript" içeren olanlarla filtrelemek için **JavaScript** 'teki arama kutusuna yazın.
 
-   Visual Studio, çeşitli yardımcı olacak proje şablonları, hızlı bir şekilde kodlama başlama sağlar. (TypeScript geliştiricisiyseniz, alternatif olarak, o dilde bir proje oluşturmak çekinmeyin. Biz göz atan kullanıcı Arabirimi için tüm programlama dillerinde benzer.)
+   Visual Studio, çeşitli yardımcı olacak proje şablonları, hızlı bir şekilde kodlama başlama sağlar. (Alternatif olarak, bir TypeScript geliştiricisiyseniz bu dilde bir proje oluşturmayı ücretsiz olarak kullanabilirsiniz. Biz göz atan kullanıcı Arabirimi için tüm programlama dillerinde benzer.)
 
-   ![Visual Studio Başlangıç penceresinde proje şablonlarında Ara](media/vs-2019/create-new-project.png)
+   ![Visual Studio başlangıç penceresinde proje şablonları ara](media/vs-2019/create-new-project.png)
 
-1. Seçin bir **boş Node.js Web uygulaması** proje şablonu ve tıklatın **sonraki**.
+1. Boş bir **Node. js web uygulaması** projesi şablonu seçin ve **İleri**' ye tıklayın.
 
-1. İçinde **yeni projenizi yapılandırın** görüntülenen iletişim kutusunda varsayılan proje adını kabul edin ve **Oluştur**.
+1. Görüntülenen **yeni projeyi Yapılandır** iletişim kutusunda, varsayılan proje adını kabul edin ve **Oluştur**' u seçin.
 
 ::: moniker-end
 
 ::: moniker range="vs-2017"
 
-1. Üzerinde **başlangıç sayfası**, arama kutusuna altında **yeni proje**, yazın **javascript** adında "javascript" içeren bu proje türleri listesini filtrelemek için veya Dil türü.
+1. **Başlangıç sayfasında**, **Yeni proje**altındaki arama kutusuna, proje türleri listesini ad veya dil türlerine "JavaScript" içeren olanlarla filtrelemek için **JavaScript** yazın.
 
    ![Visual Studio Başlangıç sayfasında Proje şablonlarında Ara](media/start-page-search-templates.png)
 
-   Visual Studio, çeşitli yardımcı olacak proje şablonları, hızlı bir şekilde kodlama başlama sağlar. Seçin bir **boş Node.js Web uygulaması** proje şablonu. (TypeScript geliştiricisiyseniz, alternatif olarak, o dilde bir proje oluşturmak çekinmeyin. Biz göz atan kullanıcı Arabirimi için tüm programlama dillerinde benzer.)
+   Visual Studio, çeşitli yardımcı olacak proje şablonları, hızlı bir şekilde kodlama başlama sağlar. Boş bir **Node. js web uygulaması** proje şablonu seçin. (Alternatif olarak, bir TypeScript geliştiricisiyseniz bu dilde bir proje oluşturmayı ücretsiz olarak kullanabilirsiniz. Biz göz atan kullanıcı Arabirimi için tüm programlama dillerinde benzer.)
 
 1. İçinde **yeni proje** görüntülenen iletişim kutusunda varsayılan proje adını kabul edin ve **Tamam**.
 ::: moniker-end
 
-   Proje oluşturulur ve bir dosya adlı *server.cs* açılır **Düzenleyicisi** penceresi. **Düzenleyicisi** dosyaların içeriğini gösterir ve Visual Studio kodlama iş çoğunu burada gerçekleştirirsiniz.
+   Proje oluşturulur ve **Düzenleyici** penceresinde *Server.cs* adlı bir dosya açılır. **Düzenleyicisi** dosyaların içeriğini gösterir ve Visual Studio kodlama iş çoğunu burada gerçekleştirirsiniz.
 
    ![Visual Studio Düzenleyicisi](media/editor.png)
 
@@ -124,17 +124,17 @@ Açalım **hata listesi** penceresini seçerek **görünümü** menüsü, ardın
 
 ## <a name="search-box"></a>Arama kutusu
 
-Arama kutusuna kadar her şeyi Visual Studio'da düzgün için hızlı ve kolay bir yoludur. Yapmak istediğiniz ilgili metin girebilir ve onu metne ait seçenekler listesini göstereceğiz. Örneğin, tam olarak ne yapı yapıyor ek bilgileri görüntülemek için derleme çıkışın ayrıntı düzeyini artırmak istediğiniz düşünün. İşte, nasıl yapabilir:
+Arama kutusu, Visual Studio 'da oldukça çok şey yapmanın hızlı ve kolay bir yoludur. Yapmak istediğiniz ilgili metin girebilir ve onu metne ait seçenekler listesini göstereceğiz. Örneğin, tam olarak ne yapı yapıyor ek bilgileri görüntülemek için derleme çıkışın ayrıntı düzeyini artırmak istediğiniz düşünün. İşte, nasıl yapabilir:
 
-1. Tür **ayrıntı** kartındaki arama kutusuna. Görüntülenen sonuçlardan seçin **projeler ve çözümler--> derleme ve çalıştırma** altında **seçenekleri** kategorisi.
+1. Arama kutusuna **ayrıntı düzeyi** yazın. Görüntülenen sonuçlardan seçin **projeler ve çözümler--> derleme ve çalıştırma** altında **seçenekleri** kategorisi.
 
-   ![Visual Studio'da arama kutusu](media/quickstart-IDE-quick-launch.png)
+   ![Visual Studio 'da arama kutusu](media/quickstart-IDE-quick-launch.png)
 
    **Seçenekleri** iletişim kutusu açılır **derleme ve çalıştırma** seçenekler sayfası.
 
 1. Altında **MSBuild proje oluşturması çıkış ayrıntısı**, seçin **Normal**ve ardından **Tamam**.
 
-1. Sağ tıklayarak projeyi yeniden derleyin **NodejsWebApp1** projesi **Çözüm Gezgini** seçip **yeniden** bağlam menüsünden.
+1. **Çözüm Gezgini** ' de **NodejsWebApp1** projesine sağ tıklayıp bağlam menüsünden **yeniden oluştur** ' u seçerek projeyi yeniden derleyin.
 
    Bu süre **çıkış** penceresi, hangi dosyalar dahil olmak üzere nerede kopyalanan yapı işleminden daha ayrıntılı günlük kaydı gösterir.
 
@@ -142,7 +142,7 @@ Arama kutusuna kadar her şeyi Visual Studio'da düzgün için hızlı ve kolay 
 
 ## <a name="send-feedback-menu"></a>Menü geri bildirim gönder
 
-Visual Studio kullanıyorsanız ya da ürünün iyileştirilmesine ilişkin önerileriniz varsa, kullanabileceğiniz herhangi bir sorunu karşılaşmamalıdırlar **geri bildirim gönder** Visual Studio penceresinin üst kısmındaki menü.
+Visual Studio kullanırken herhangi bir sorunla karşılaşmanız gerekir ya da ürünü geliştirme hakkında önerileriniz varsa, Visual Studio penceresinin en üstündeki **geri bildirim gönder** menüsünü kullanabilirsiniz.
 
 ![Visual Studio'da menü geri bildirim gönder](../ide/media/quickstart-ide-send-feedback.png)
 

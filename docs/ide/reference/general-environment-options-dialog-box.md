@@ -20,12 +20,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c4024209ac0c1b2766b67984710b8349c6d66d91
-ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
+ms.openlocfilehash: eb1dbbcc4adf8305aad119ac8a4cb223e0f89902
+ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/29/2019
-ms.locfileid: "68605448"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70180277"
 ---
 # <a name="options-dialog-box-environment--general"></a>Seçenekler iletişim kutusu: Genel \> ortam
 
@@ -62,7 +62,7 @@ Visual Studio 'Nun ayarlamayı otomatik olarak ayarlama veya ayarlamayı açık 
 ::: moniker range="vs-2017"
 
 > [!TIP]
-> Windows 10 ' **un, bulanık olmadıkları Için Windows 'un uygulamaları düzeltmesine Izin verdiğini**belirten bir ayarı vardır. Visual Studio, monitörünüzde bulanık görünürse, **Bu ayarın etkinleştirilmesi** önerilir. [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019)' a yükseltmeyi göz önünde bulundurun. Bu, büyük ölçüde geliştirilmiş görüntüleme netliği olan, her/inç bir uygulama için ekran başına nokta olarak geliştirilmiştir.
+> Windows 10 ' **un, bulanık olmadıkları Için Windows 'un uygulamaları düzeltmesine Izin verdiğini**belirten bir ayarı vardır. Visual Studio, monitörünüzde bulanık görünürse, bu ayarın etkinleştirilmesi önerilir. [Visual Studio 2019](https://visualstudio.microsoft.com/downloads)' a yükseltmeyi göz önünde bulundurun. Bu, büyük ölçüde geliştirilmiş görüntüleme netliği olan, her/inç bir uygulama için ekran başına nokta olarak geliştirilmiştir.
 
 ::: moniker-end
 

@@ -1,6 +1,6 @@
 ---
-title: Düzenleme için giriş C# geliştiriciler
-description: Visual Studio Kod düzenleyicisinde bu 10 dakikalık bir giriş Visual Studio yazma, gezinme ve anlama yapar yollardan bazılarını gösterir C# kodu daha kolay.
+title: Geliştiriciler için C# düzenlemelere giriş
+description: Visual Studio 'da kod düzenleyicisine bu 10 dakikalık bir giriş, Visual Studio 'Nun kodu yazma, gezinme ve daha kolay şekilde anlama C# yaptığı bazı yolları gösterir.
 ms.custom: seodec18, get-started
 ms.date: 11/20/2018
 ms.technology: vs-ide-general
@@ -12,12 +12,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5abd287533f2489346b41cdbae5526ed946aa746
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 517437bb1042d052520019c10899173cbc0bf988
+ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62971075"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70180257"
 ---
 # <a name="learn-to-use-the-code-editor"></a>Kod Düzenleyicisi'ni kullanmayı öğrenin
 
@@ -33,14 +33,14 @@ Visual Studio Kod düzenleyicisinde 10 dakikalık giriş, Visual Studio yazma, g
 ::: moniker range="vs-2019"
 
 > [!TIP]
-> Visual Studio henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) ücretsiz yüklemek için sayfa.
+> Visual Studio henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://visualstudio.microsoft.com/downloads) ücretsiz yüklemek için sayfa.
 
 ::: moniker-end
 
-Bu makalede, zaten alışık olduğunuz varsayılır C#. Siz değilseniz, öğreticiye bakın gibi öneririz [kullanmaya başlama C# ve Visual Studio'da ASP.NET Core](tutorial-aspnet-core.md) ilk.
+Bu makalede zaten bildiğiniz varsayılmaktadır C#. Bu durumda, ilk olarak [Visual Studio 'da kullanmaya C# başlama ve ASP.NET Core](tutorial-aspnet-core.md) gibi bir öğreticiye bakmanız önerilir.
 
 > [!TIP]
-> Bu makaleyi izlemek için olduğundan emin olun C# Visual Studio için seçili ayarlar. Tümleşik geliştirme ortamı (IDE) için ayarları seçme hakkında daha fazla bilgi için bkz: [ortam ayarlarını Seç](visual-studio-ide.md#select-environment-settings).
+> Bu makaleyle birlikte izlemek için, Visual Studio için C# ayarların seçili olduğundan emin olun. Tümleşik geliştirme ortamı (IDE) için ayarları seçme hakkında daha fazla bilgi için bkz. [ortam ayarlarını seçme](visual-studio-ide.md#select-environment-settings).
 
 ## <a name="create-a-new-code-file"></a>Yeni bir kod dosyası oluşturma
 
@@ -54,11 +54,11 @@ Yeni bir dosya oluşturarak ve bazı kodlar eklemeden başlatın.
 
 ::: moniker range=">=vs-2019"
 
-1. Visual Studio'yu açın. Tuşuna **Esc** veya **kod olmadan devam** geliştirme ortamı'nı açmak için başlangıç penceresinde.
+1. Visual Studio'yu açın. Geliştirme ortamını açmak için **ESC** tuşuna basın veya başlangıç penceresinde **kod olmadan devam et** ' e tıklayın.
 
 ::: moniker-end
 
-2. Gelen **dosya** menü çubuğunda menüsünde **yeni** > **dosya**.
+2. Menü çubuğundaki **Dosya** menüsünde **Yeni** > **Dosya**' yı seçin.
 
 3. İçinde **yeni dosya** iletişim kutusunun **genel** kategorisi seçin **Visual C# sınıfı**ve ardından **açık**.
 
@@ -132,7 +132,7 @@ Boş görmesini istemediğiniz [Oluşturucusu](/dotnet/csharp/programming-guide/
 
 ## <a name="view-symbol-definitions"></a>Sembol tanımlarını görüntüleme
 
-Visual Studio Düzenleyicisi, bir tür, yöntem vb. tanımını incelemek kolaylaştırır. Örneğin seçerek tanımını içeren dosyayı gitmek için bir yolu olan **Tanıma Git** ya basarak **F12** herhangi bir sembole başvurulduğunda. İçinde çalışmakta olduğunuz odağınızı uzağa dosya hareket etmediği bir bile daha hızlı yolu [Özet tanım](../../ide/go-to-and-peek-definition.md#peek-definition). Şimdi tanımda Özet `string` türü.
+Visual Studio Düzenleyicisi, bir tür, yöntem vb. tanımını incelemek kolaylaştırır. Bir yol, tanımı içeren dosyaya gitmeniz, örneğin **Tanıma Git** ' i seçerek veya sembolün başvurduğu her yerde **F12** tuşuna basarak. İçinde çalışmakta olduğunuz odağınızı uzağa dosya hareket etmediği bir bile daha hızlı yolu [Özet tanım](../../ide/go-to-and-peek-definition.md#peek-definition). Şimdi tanımda Özet `string` türü.
 
 1. Tüm oluşması sağ `string` ve **Özet tanım** içerik menüsünde. Veya basın **Alt**+**F12**.
 

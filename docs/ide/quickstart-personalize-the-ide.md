@@ -7,16 +7,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eccbc834f4038ec18c2f84244488b81a59ecbfbf
-ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
+ms.openlocfilehash: 2e955c58be8d0df466ad102c95b0d1a8007588dc
+ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/10/2019
-ms.locfileid: "65531568"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70180045"
 ---
-# <a name="personalize-the-visual-studio-ide-and-editor"></a>Düzenleyici ve Visual Studio IDE'yi kişiselleştirme
+# <a name="personalize-the-visual-studio-ide-and-editor"></a>Visual Studio IDE ve düzenleyicisini kişiselleştirin
 
-5-10 dakika olan Bu öğreticide, size Visual Studio renk teması koyu tema seçerek özelleştireceksiniz. Biz de iki farklı türde metin düzenleyicisinde metin renklerini özelleştireceksiniz.
+Bu 5-10 dakikalık öğreticide, koyu temayı seçerek Visual Studio Color temasını özelleştireceğiz. Biz de iki farklı türde metin düzenleyicisinde metin renklerini özelleştireceksiniz.
 
 ::: moniker range="vs-2017"
 
@@ -26,34 +26,34 @@ Visual Studio henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://v
 
 ::: moniker range=">=vs-2019"
 
-Visual Studio henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) ücretsiz yüklemek için sayfa.
+Visual Studio henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://visualstudio.microsoft.com/downloads) ücretsiz yüklemek için sayfa.
 
 ::: moniker-end
 
 ## <a name="set-the-color-theme"></a>Renk teması ayarlayabilir
 
-Visual Studio'nun kullanıcı arabirimi için varsayılan renk teması adlı **mavi**. Kendisine değiştirelim **koyu**.
+Visual Studio 'nun Kullanıcı arabirimine yönelik varsayılan renk teması **mavi**olarak adlandırılır. Kendisine değiştirelim **koyu**.
 
 1. Menü çubuğunda, olan menüleri satırının gibi **dosya** ve **Düzenle**, seçin **Araçları** > **seçenekleri**.
 
 1. Üzerinde **ortam** > **genel** seçenekler sayfası, değişiklik **renk teması** seçimi **koyu**seçin **Tamam**.
 
-   Tüm Visual Studio geliştirme ortamı (IDE) için renk teması değişiklikleri **koyu**.
+   Tüm Visual Studio geliştirme ortamı (IDE) için renk teması **koyu**olarak değişir.
 
    ::: moniker range="vs-2017"
 
-   ![Visual Studio 2017'de koyu tema](media/quickstart-personalize-dark-theme.png)
+   ![Koyu temalı Visual Studio 2017](media/quickstart-personalize-dark-theme.png)
 
    ::: moniker-end
 
    ::: moniker range="vs-2019"
 
-   ![Visual Studio 2019 koyu temada](media/vs-2019/dark-theme.png)
+   ![Koyu temalı Visual Studio 2019](media/vs-2019/dark-theme.png)
 
    ::: moniker-end
 
 > [!TIP]
-> Yükleyerek ek önceden tanımlı Temalar yükleyebilirsiniz **Visual Studio Color Theme Editor** gelen [Visual Studio Market](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.VisualStudio2017ColorThemeEditor). Bu aracı yükledikten sonra ek renk temaları görünür **renk teması** aşağı açılan listesi.
+> [Visual Studio Market](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.VisualStudio2017ColorThemeEditor) **Visual Studio Color teması düzenleyicisini** yükleyerek önceden tanımlanmış ek temalar yükleyebilirsiniz. Bu aracı yükledikten sonra ek renk temaları görünür **renk teması** aşağı açılan listesi.
 
 ## <a name="change-text-color"></a>Metin rengini değiştirme
 
