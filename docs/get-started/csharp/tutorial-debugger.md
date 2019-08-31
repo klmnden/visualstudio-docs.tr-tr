@@ -1,5 +1,5 @@
 ---
-title: 'Öğretici: Hata ayıklama C# kod'
+title: 'Öğretici: Hata C# ayıklama kodu'
 description: Kodu adımlayın Visual Studio hata ayıklayıcısını başlatın ve veri İnceleme hakkında bilgi edinin.
 ms.custom: debug-experiment, seodec18, get-started
 ms.date: 11/27/2018
@@ -15,16 +15,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e1cceda95ba4329ad20419cd6ea11187d20d3a6b
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 98238aeee0662f61e8edc3b1f155dafd09e2301a
+ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65682577"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70180456"
 ---
-# <a name="tutorial-learn-to-debug-c-code-using-visual-studio"></a>Öğretici: Hata ayıklamayı öğrenin C# kullanarak Visual Studio code
+# <a name="tutorial-learn-to-debug-c-code-using-visual-studio"></a>Öğretici: Visual Studio kullanarak C# kod hata ayıklamayı öğrenin
 
-Bu makalede, Visual Studio hata ayıklayıcı adım adım kılavuzda özelliklerini tanıtır. Hata ayıklayıcısı özellikleri daha üst düzey bir görünümünü istiyorsanız bkz [hata ayıklayıcıya ilk bakış](../../debugger/debugger-feature-tour.md). Olduğunda, *uygulamanızda hata ayıklama*, hata ayıklayıcısı ekli, uygulamanızın çalıştığını genellikle anlamına gelir. Bunu yaptığınızda, hata ayıklayıcı, kodunuzun ne yaptığını görmek için birçok yol sağlar. çalışırken. Kodunuzda adım adım ve değişkenlerinde depolanan değerleri bakmak, gözcüler ayarlayabilirsiniz değerleri değiştiğinde görmek için değişkenlerini kodunuzun yürütme yolunu inceleyin, bir dal kod çalıştırma, vb. olup olmadığını. Bu, kodda hata ayıklamak için girişimde ilk kez ise, okumak isteyebilirsiniz [yeni başlayanlar için hata ayıklama](../../debugger/debugging-absolute-beginners.md) bu makalede geçmeden önce.
+Bu makalede, Visual Studio hata ayıklayıcı adım adım kılavuzda özelliklerini tanıtır. Hata ayıklayıcı özelliklerinin daha üst düzey bir görünümünü istiyorsanız, bkz. [hata ayıklayıcıya ilk bakış](../../debugger/debugger-feature-tour.md). Olduğunda, *uygulamanızda hata ayıklama*, hata ayıklayıcısı ekli, uygulamanızın çalıştığını genellikle anlamına gelir. Bunu yaptığınızda, hata ayıklayıcı, kodunuzun ne yaptığını görmek için birçok yol sağlar. çalışırken. Kodunuzda adım adım ve değişkenlerinde depolanan değerleri bakmak, gözcüler ayarlayabilirsiniz değerleri değiştiğinde görmek için değişkenlerini kodunuzun yürütme yolunu inceleyin, bir dal kod çalıştırma, vb. olup olmadığını. Bu, kodda hata ayıklamak için girişimde ilk kez ise, okumak isteyebilirsiniz [yeni başlayanlar için hata ayıklama](../../debugger/debugging-absolute-beginners.md) bu makalede geçmeden önce.
 
 Tanıtım uygulamasını olmasına rağmen C#, özelliklerin çoğunu Visual Basic, C++ için uygun F#, Python, JavaScript ve Visual Studio tarafından desteklenen diğer dillerde (F# Düzenle ve devam et desteklemez. F#ve JavaScript desteği **Otolar** pencere). Ekran görüntüleri C# ' de var.
 
@@ -40,7 +40,7 @@ Bu öğreticide şunları yapacaksınız:
 
 ::: moniker range=">=vs-2019"
 
-Visual Studio 2019 yüklü olması gerekir ve **.NET Masaüstü geliştirmesinden** iş yükü.
+Visual Studio 2019 yüklü ve **.net masaüstü geliştirme** iş yüküne sahip olmanız gerekir.
 
 ::: moniker-end
 ::: moniker range="vs-2017"
@@ -57,24 +57,24 @@ Visual Studio henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://v
 
 ::: moniker range="vs-2019"
 
-Visual Studio henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) ücretsiz yüklemek için sayfa.
+Visual Studio henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://visualstudio.microsoft.com/downloads) ücretsiz yüklemek için sayfa.
 
 ::: moniker-end
 
-İş yükünü yükleyin, ancak Visual Studio zaten gerekiyorsa, Git **Araçları** > **araçları ve özellikleri Al...** , Visual Studio yükleyicisi açılır. Visual Studio Yükleyicisi'ni başlatır. Seçin **.NET masaüstü geliştirme** iş yükü, ardından **Değiştir**.
+İş yükünü yüklemeniz gerekir, ancak zaten Visual Studio 'ya sahipseniz **Araçlar** > **ve Özellikler al.** .. ' a giderek Visual Studio yükleyicisi açılır. Visual Studio Yükleyicisi'ni başlatır. Seçin **.NET masaüstü geliştirme** iş yükü, ardından **Değiştir**.
 
 ## <a name="create-a-project"></a>Proje oluşturma
 
 1. Visual Studio'yu açın.
 
     ::: moniker range=">=vs-2019"
-    Tuşuna **Esc** başlangıç penceresini kapatın. Tür **Ctrl + Q** arama kutusunu açmak için şunu yazın **konsol**, seçin **şablonları**, ardından **oluştur yeni konsol uygulaması (.NET Framework) projesi**. Görüntülenen iletişim kutusunda gibi bir ad yazın **get-başlatıldı-hata ayıklama**ve ardından **Oluştur**.
+    Başlangıç penceresini kapatmak için **ESC** tuşuna basın. **CTRL + Q** yazarak arama kutusunu açın, **konsol**yazın, **Şablonlar**' ı seçin ve ardından **Yeni konsol uygulaması (.NET Framework) projesi oluştur**' u seçin. Görüntülenen iletişim kutusunda, **Get-Started-hata ayıklama**gibi bir ad yazın ve ardından **Oluştur**' u seçin.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    Üstteki menü çubuğundan seçin **dosya** > **yeni** > **proje**. Sol bölmesinde **yeni proje** iletişim kutusunun **Visual C#** , seçin **Windows Masaüstü**seçip Ortadaki bölmeden **konsol uygulaması (. NET Framework)**. Gibi bir ad yazın **get-başlatıldı-hata ayıklama** tıklatıp **Tamam**.
+    Üstteki menü çubuğundan seçin **dosya** > **yeni** > **proje**. **Yeni proje** iletişim kutusunun sol bölmesinde, **görsel C#** altında **Windows Masaüstü**' nün ardından orta bölmedeki **konsol uygulaması (.NET Framework)** seçeneğini belirleyin. Ardından, **Get-Started-hata ayıklama** gibi bir ad yazın ve **Tamam**' a tıklayın.
     ::: moniker-end
 
-    Görmüyorsanız **konsol uygulaması (.NET Framework)** proje şablonu, Git **Araçları** > **araçları ve özellikleri Al...** , Visual Studio yükleyicisi açılır. Seçin **.NET masaüstü geliştirme** iş yükü, ardından **Değiştir**.
+    **Konsol uygulaması (.NET Framework)** proje şablonunu görmüyorsanız Araçlar**ve Özellikler al.** .. ' a giderek Visual Studio yükleyicisi açan **Araçlar** > ' a gidin. Seçin **.NET masaüstü geliştirme** iş yükü, ardından **Değiştir**.
 
     Visual Studio projesi oluşturur.
 
@@ -212,7 +212,7 @@ Visual Studio henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://v
 
     Kesme noktaları güvenilir hata ayıklama en temel hem de temel özelliğidir. Bir kesme noktası değişkenlerin değerleri veya bellek davranışını göz olabilmesi için Visual Studio çalışan kodunuzu nereye askıya almanız ya da bir dal kod getting run olup olmadığını gösterir.
 
-2. Tuşuna **F5** veya **hata ayıklamayı Başlat** düğmesi ![hata ayıklamayı Başlat](../../debugger/media/dbg-tour-start-debugging.png "hata ayıklamayı Başlat"), uygulama başlatılır ve hata ayıklayıcı çalışan satırına kodu kesme noktası ayarladığınız yerdir.
+2. **F5** tuşuna basın veya **hata** ayıklamayı Başlat ![](../../debugger/media/dbg-tour-start-debugging.png "")düğmesine basın hata ayıklamayı başlatın, uygulama başlar ve hata ayıklayıcı, kesme noktasını ayarladığınız kod satırına çalışır.
 
     ![Ayarlayın ve bir kesme noktası isabet](../csharp/media/get-started-set-breakpoint.gif)
 
@@ -236,11 +236,11 @@ Almak için en iyi yolu olduğundan bu çoğunlukla, klavye kısayollarını Bur
 
      ![Step Over kodu F10 kullanın](../csharp/media/get-started-step-over.png "F10 adımla")
 
-     Hata ayıklayıcı içine girmez şu bildirim `Draw` temel sınıf yöntemini (`Shape`). **F10** işlevleri veya yöntemleri (kod hala çalışır), uygulama kodunuzda içine Adımlama olmadan, hata ayıklayıcı ilerler. Tuşuna basarak **F10** üzerinde `base.Draw` yöntem çağrısının (yerine **F11**), biz uygulama kodunu üzerinden atlandı `base.Draw` (biz İlgilenmiyor, şu anda hangi olabilir).
+     Hata ayıklayıcı içine girmez şu bildirim `Draw` temel sınıf yöntemini (`Shape`). **F10** işlevleri veya yöntemleri (kod hala çalışır), uygulama kodunuzda içine Adımlama olmadan, hata ayıklayıcı ilerler. `base.Draw` Yöntem çağrısında **F10** tuşuna basarak ( **F11**yerine), için `base.Draw` uygulama kodu atlandık (Bu, şu anda ilgilenmiyor olabilir).
 
 ## <a name="navigate-code-using-run-to-click"></a>Tıkla Çalıştır'ı kullanarak kod gidin
 
-1. Kod Düzenleyicisi'nde, ekranı aşağı kaydırın ve üzerine `Console.WriteLine` yönteminde `Triangle` sınıfı yeşil kadar **tıklanan satıra kadar Çalıştır** düğmesi ![tıklanan satıra kadar Çalıştır](../../debugger/media/dbg-tour-run-to-click.png "RunToClick")soldaki bölmede görünür. "Yürütmeyi buraya Çalıştır" düğmesi için araç ipucu gösterilmektedir.
+1. Kod Düzenleyicisi'nde, ekranı aşağı kaydırın ve üzerine `Console.WriteLine` yönteminde `Triangle` sınıfı yeşil kadar **tıklanan satıra kadar Çalıştır** düğmesi ![tıklanan satıra kadar Çalıştır](../../debugger/media/dbg-tour-run-to-click.png "RunToClick")soldaki bölmede görünür. Düğme araç ipucu "yürütmeyi buraya kadar Çalıştır" gösterir.
 
      ![Tıkla Çalıştır kullanın özellik](../csharp/media/get-started-run-to-click.png "tıklanan satıra kadar Çalıştır")
 
@@ -341,7 +341,7 @@ Değişkenleri incelemek özellik hata ayıklayıcının en kullanışlı özell
 
     Bir satır kod, kaynak koda bakmaktır gitmek için çift tıklayın ve hata ayıklayıcı tarafından denetlenmekte olan geçerli kapsamını da değişiklikler. Bu eylem, hata ayıklayıcı ilerleyin değil.
 
-    Sağ tıklama menülerden kullanabilirsiniz **çağrı yığını** başka şeyler için pencere. Örneğin, belirtilen işlevlere kesme noktaları ekleme, hata ayıklayıcıyı kullanarak ilerleyin **imlece kadar Çalıştır**ve kaynak kodunu inceleyin. Daha fazla bilgi için [nasıl yapılır: Çağrı yığınını incelemek](../../debugger/how-to-use-the-call-stack-window.md).
+    Sağ tıklama menülerden kullanabilirsiniz **çağrı yığını** başka şeyler için pencere. Örneğin, belirtilen işlevlere kesme noktaları ekleme, hata ayıklayıcıyı kullanarak ilerleyin **imlece kadar Çalıştır**ve kaynak kodunu inceleyin. Daha fazla bilgi için [nasıl yapılır: Çağrı yığınını](../../debugger/how-to-use-the-call-stack-window.md)inceleyin.
 
 ## <a name="change-the-execution-flow"></a>Yürütme akışı değiştirme
 

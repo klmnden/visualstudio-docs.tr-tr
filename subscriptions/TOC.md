@@ -4,7 +4,7 @@
 ### Abonelik satın alma
 #### [Perakende](https://visualstudio.microsoft.com/vs/pricing)
 #### Bulut 
-##### [Genel Bakış](vscloud-overview.md)
+##### [Genel bakış](vscloud-overview.md)
 ##### [Faturalandırma hakkında SSS](vscloud-billing-faq.md)
 ##### [CSP’ler için satın alma](vscloud-csp.md)
 #### [GitHub Enterprise ile Visual Studio](access-github.md)
@@ -23,7 +23,7 @@
 ### [Abonelikler portalına genel bakış](using-the-subscriber-portal.md)
 ### [Aboneliklerinizi yönetme](manage-vs-subscriptions.md)
 ### [Abonelik yöneticinize başvurma](contact-my-admin.md)
-### Avantajlar
+### Yararları
 #### Araçlar
 ##### [Azure kredisi](vs-azure.md)
 ##### [Azure DevOps](vs-azure-devops.md)
@@ -45,7 +45,6 @@
 ##### [MSDN Magazine aboneliği](vs-msdn.md)
 ##### [Pluralsight](vs-pluralsight.md)
 #### Destek 
-##### [Azure Danışmanı Sohbeti](vs-azure-advisory-chat.md)
 ##### [Azure Topluluğu](vs-azure-community.md)
 ##### [Concierge Desteği](vs-concierge-chat.md)
 ##### [Teknik Destek](vs-tech-support.md)
@@ -73,7 +72,7 @@
 ### Yönetici portalını kullanma
 #### [Süper yöneticiler ve yöneticiler](admin-roles.md)
 #### [Anlaşma tercihlerini belirleme](admin-prefs.md)
-#### [Genel Bakış](using-admin-portal.md)
+#### [Genel bakış](using-admin-portal.md)
 #### [Video öğretici: Yönetici portalını kullanma](https://www.youtube.com/watch?v=XG-E-IDjA-w&list=PLReL099Y5nReJhZ6o8CQFPSBgzGCHX99_&index=3&t=0s)
 #### Abonelikleri atama
 ##### [Tek kullanıcı ekleme](assign-license.md)
