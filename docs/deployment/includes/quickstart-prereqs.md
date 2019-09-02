@@ -1,30 +1,30 @@
 ---
-ms.openlocfilehash: 983e25e65600a4174c305557b2a58e20b91f63f1
-ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
+ms.openlocfilehash: 034d4c1e528ff33343b6da1dab3a2de96a0228fc
+ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "68143611"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70197196"
 ---
 ## <a name="prerequisites"></a>Önkoşullar
 
 ::: moniker range=">=vs-2019"
 
-* [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) tercih ettiğiniz dil uygun iş yükleri ile yüklü:
-  * ASP.NET: **ASP.NET ve web geliştirme**
+* [Visual Studio 2019](https://visualstudio.microsoft.com/downloads) , tercih ettiğiniz dilde uygun iş yükleriyle yüklendi:
+  * ASP.NET: **ASP.NET ve Web geliştirme**
   * Python: **Python geliştirme**
-  * Node.js: **Node.js geliştirme**
+  * Node.js: **Node. js geliştirme**
 ::: moniker-end
 ::: moniker range="vs-2017"
-* [Visual Studio 2017](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) tercih ettiğiniz dil uygun iş yükleri ile yüklü:
-  * ASP.NET: **ASP.NET ve web geliştirme**
+* [Visual Studio 2017](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) , tercih ettiğiniz dilde uygun iş yükleriyle yüklendi:
+  * ASP.NET: **ASP.NET ve Web geliştirme**
   * Python: **Python geliştirme**
-  * Node.js: **Node.js geliştirme**
+  * Node.js: **Node. js geliştirme**
 ::: moniker-end
 
-* Bir ASP.NET, ASP.NET Core, Python veya Node.js projesi. Bir proje zaten yoksa, aşağıdaki seçeneklerden birini seçin:
-  * ASP.NET Core: İzleyin [hızlı başlangıç: İlk ASP.NET Core web uygulamanızı oluşturmak için Visual Studio'yu kullanın](../../ide/quickstart-aspnet-core.md), veya **dosya** > **yeni proje**seçin **Visual C#**   >  **.NET core**, ardından **ASP.NET Core Web uygulaması**. Sorulduğunda, **Web uygulaması (Model-View-Controller)** şablonu olduğundan emin olun **kimlik doğrulaması yok** seçili ve ardından **Tamam**.
-  * Python: İzleyin [hızlı başlangıç: Visual Studio kullanarak ilk Python web uygulamanızı oluşturma](../../ide/quickstart-python.md), veya **dosya** > **yeni proje**seçin **Python**, seçip**Flask Web projesi**.
-  * Node.js: İzleyin [hızlı başlangıç: İlk Node.js uygulamanızı oluşturmak için Visual Studio'yu kullanın](../../ide/quickstart-nodejs.md), veya **dosya** > **yeni proje**seçin **JavaScript**, seçip**Boş Node.js Web uygulaması**.
+* Bir ASP.NET, ASP.NET Core, Python veya Node. js projesi. Zaten bir projeniz yoksa aşağıdan bir seçenek belirleyin:
+  * ASP.NET Core: Hızlı [başlangıcı izleyin: Visual Studio 'yu kullanarak ilk ASP.NET Core Web](../../ide/quickstart-aspnet-core.md)uygulamanızı oluşturun veya **Dosya** > **Yeni proje**' yi kullanın, **Visual C#**   > .NET Core ' u seçin, sonra **ASP.NET Core Web uygulaması ' nı seçin.** . İstendiğinde, **Web uygulaması (Model-View-Controller)** şablonunu seçin, **kimlik doğrulaması** olmadığından emin olun ve ardından **Tamam**' ı seçin.
+  * Python: Hızlı [başlangıcı izleyin: Visual Studio](../../ide/quickstart-python.md)'yu kullanarak ilk Python web uygulamanızı oluşturun veya **Dosya** > **Yeni proje**' yi kullanın, **Python**' ı seçin ve ardından **Flask Web projesi**' ni seçin.
+  * Node.js: Hızlı [başlangıcı izleyin: Visual](../../ide/quickstart-nodejs.md)Studio 'yu kullanarak ilk Node. js uygulamanızı oluşturun veya **Dosya** > **Yeni proje**' yi kullanın, **JavaScript**' i seçin, sonra **boş Node. js web uygulaması**' nı seçin.
 
-* Kullanarak projeyi oluşturduğunuzdan emin olun **Yapı > Çözümü Derle** dağıtım adımları izleyerek önce menü komutu.
+* Dağıtım adımlarını takip etmeden önce **build > Build Solution** menü komutunu kullanarak projeyi derlediğinizden emin olun.

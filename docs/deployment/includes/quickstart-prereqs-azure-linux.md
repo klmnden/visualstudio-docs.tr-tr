@@ -1,25 +1,25 @@
 ---
-ms.openlocfilehash: 29aedc73173de34723f0db846a26c82cbde64f41
-ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
+ms.openlocfilehash: 6c2065eee7663b627623bf7c68a4a94027c9be57
+ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "68143630"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70197195"
 ---
 ## <a name="prerequisites"></a>Önkoşullar
 
 ::: moniker range=">=vs-2019"
 
-* [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) tercih ettiğiniz dil uygun iş yükleri ile yüklü:
-  * ASP.NET: **ASP.NET ve web geliştirme**
+* [Visual Studio 2019](https://visualstudio.microsoft.com/downloads) , tercih ettiğiniz dilde uygun iş yükleriyle yüklendi:
+  * ASP.NET: **ASP.NET ve Web geliştirme**
 ::: moniker-end
 ::: moniker range="vs-2017"
-* [Visual Studio 2017](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) tercih ettiğiniz dil uygun iş yükleri ile yüklü:
-  * ASP.NET: **ASP.NET ve web geliştirme**
+* [Visual Studio 2017](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) , tercih ettiğiniz dilde uygun iş yükleriyle yüklendi:
+  * ASP.NET: **ASP.NET ve Web geliştirme**
 ::: moniker-end
 
-* Azure aboneliği. Abonelik, zaten yoksa [ücretsiz olarak kaydolun](https://azure.microsoft.com/free/dotnet/), içeren 200 ABD Doları değerinde kredi 30 gün ve popüler ücretsiz Hizmetleri 12 ay için.
+* Azure aboneliği. Aboneliğiniz yoksa [ücretsiz kaydolun](https://azure.microsoft.com/free/dotnet/)ve 30 gün boyunca kredi olarak $200, popüler ücretsiz hizmet için 12 ay.
 
-* Bir ASP.NET Core projesi. Zaten yoksa, izleyin [hızlı başlangıç: İlk ASP.NET Core web uygulamanızı oluşturmak için Visual Studio'yu kullanın](../../ide/quickstart-aspnet-core.md), veya **dosya** > **yeni proje**seçin **Visual C#**   >  **.NET core**, ardından **ASP.NET Core Web uygulaması**. Sorulduğunda, **Web uygulaması (Model-View-Controller)** şablonu olduğundan emin olun **kimlik doğrulaması yok** seçili ve ardından **Tamam**.
+* Bir ASP.NET Core projesi. Henüz bir tane yoksa hızlı başlangıç ' i [izleyin: Visual Studio 'yu kullanarak ilk ASP.NET Core Web](../../ide/quickstart-aspnet-core.md)uygulamanızı oluşturun veya **Dosya** > **Yeni proje**' yi kullanın, **Visual C#**   > .NET Core ' u seçin, sonra **ASP.NET Core Web uygulaması ' nı seçin.** . İstendiğinde, **Web uygulaması (Model-View-Controller)** şablonunu seçin, **kimlik doğrulaması** olmadığından emin olun ve ardından **Tamam**' ı seçin.
 
-* Kullanarak projeyi oluşturduğunuzdan emin olun **Yapı > Çözümü Derle** dağıtım adımları izleyerek önce menü komutu.
+* Dağıtım adımlarını takip etmeden önce **build > Build Solution** menü komutunu kullanarak projeyi derlediğinizden emin olun.

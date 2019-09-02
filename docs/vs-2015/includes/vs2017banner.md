@@ -7,12 +7,12 @@ ms.author: ghogen
 ms.date: 11/15/2016
 ms.topic: include
 manager: jillfra
-ms.openlocfilehash: d16cdc30788ad8b05f5e794241be2f4b3fc5dba6
-ms.sourcegitcommit: 3e74ec49a54e5c3da7631f4466128cdf4384af6b
+ms.openlocfilehash: d71f84899bc3d49b11c5e28c1298364505f63367
+ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "68141856"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70197193"
 ---
 > [!Note]
-> Bu makale, Visual Studio 2015 için geçerlidir. En son Visual Studio belgelerini arıyorsanız sol üstteki sürüm seçiciyi kullanın. Visual Studio 2019 ' a yükseltmeniz önerilir. [Buraya indirin](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019)
+> Bu makale, Visual Studio 2015 için geçerlidir. En son Visual Studio belgelerini arıyorsanız sol üstteki sürüm seçiciyi kullanın. Visual Studio 2019 ' a yükseltmeniz önerilir. [Buraya indirin](https://visualstudio.microsoft.com/downloads)
