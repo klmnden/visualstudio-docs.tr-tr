@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e35641371ebac33c7a89426290927b6045bc4e3e
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 8db5921b7f4ce4722389ca10765f079db10bf04a
+ms.sourcegitcommit: fe212f8960d7882a1b0fdae9e22f008996aacf3c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68924073"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70222694"
 ---
 # <a name="code-snippets-schema-reference"></a>Kod parçacıkları şema başvurusu
 
@@ -108,7 +108,7 @@ Bir metin değeri gereklidir. Bu metin, kod parçacığı kod dosyasına eklendi
 
 Kod öğesi için kullanılabilen üç öznitelik vardır:
 
--  - Kod parçacığının dilini belirten Language _ özniteliği. Değer aşağıdakilerden biri olabilir:
+-  - Kod parçacığının dilini belirten Language_Required_ özniteliği. Değer aşağıdakilerden biri olabilir:
 
    |Değer|Açıklama|
    |-----|-----------|
@@ -121,7 +121,7 @@ Kod öğesi için kullanılabilen üç öznitelik vardır:
    |`SQL`|Bir SQL kod parçacığını tanımlar.|
    |`HTML`|Bir HTML kod parçacığını tanımlar.|
 
-- Kod parçacığının içerdiği kod türünü belirten _ öznitelik ve kod parçacığının derlenmesi için bir kod parçacığı eklenmesi gereken konum. -  Değer aşağıdakilerden biri olabilir:
+-  - Kod parçacığının içerdiği kod türünü belirten_isteğe bağlı_ öznitelik türü. Değer aşağıdakilerden biri olabilir:
 
    |Değer|Açıklama|
    |-----|-----------|
@@ -131,7 +131,7 @@ Kod öğesi için kullanılabilen üç öznitelik vardır:
    |`file`|Kod parçacığının eksiksiz bir kod dosyası olduğunu belirtir. Bu kod parçacıkları tek başına bir kod dosyasının içine veya bir ad alanının içine eklenebilir.|
    |`any`|Kod parçacığının istenen yere eklenebileceğini belirtir. Bu etiket, açıklamalar gibi içeriğe bağımlı kod parçacıkları için kullanılır.|
 
--  - Koddaki değişmez değerleri ve nesneleri anlatmak için kullanılan sınırlayıcıyı belirten sınırlayıcı _ öznitelik. Varsayılan olarak, sınırlayıcı olur `$`.
+-  - Koddaki değişmez değerleri ve nesneleri anlatmak için kullanılan sınırlayıcıyı belirten sınırlayıcı_isteğe bağlı_ öznitelik. Varsayılan olarak, sınırlayıcı olur `$`.
 
 ### <a name="parent-element"></a>Üst öğe
 

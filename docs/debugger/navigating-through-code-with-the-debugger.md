@@ -15,16 +15,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5c5a57c41753c8689e83da2a6f8473fa643a657f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e07e2612e01453115cf4cd6120d92bfd5b0168bd
+ms.sourcegitcommit: fe212f8960d7882a1b0fdae9e22f008996aacf3c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62905878"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70222647"
 ---
 # <a name="navigate-through-code-with-the-visual-studio-debugger"></a>Visual Studio hata ayıklayıcısı ile kodda gidin
 
-Visual Studio hata ayıklayıcı bir uygulamanın durumunu inceleyebilir ve kendi yürütme akışını göstermek için kod gezinmenize yardımcı olabilir. Hızlı bir şekilde incelemek istediğiniz kodu almak için klavye kısayolları, hata ayıklama komutları, kesme noktaları ve diğer özellikleri kullanabilirsiniz. Hata ayıklayıcı Gezinti komutlarını ve kısayolları konusunda daha hızlı ve kolay bulmak ve uygulama sorunları gidermek yapar.  Bu, kodda hata ayıklamak için girişimde ilk kez ise, okumak isteyebilirsiniz [yeni başlayanlar için hata ayıklama](../debugger/debugging-absolute-beginners.md) ve [hata ayıklama teknikleri ve araçları](../debugger/write-better-code-with-visual-studio.md) bu makalede geçmeden önce.
+Visual Studio hata ayıklayıcı bir uygulamanın durumunu inceleyebilir ve kendi yürütme akışını göstermek için kod gezinmenize yardımcı olabilir. Hızlı bir şekilde incelemek istediğiniz kodu almak için klavye kısayolları, hata ayıklama komutları, kesme noktaları ve diğer özellikleri kullanabilirsiniz. Hata ayıklayıcı Gezinti komutlarını ve kısayolları konusunda daha hızlı ve kolay bulmak ve uygulama sorunları gidermek yapar.  Kodu ilk kez ayıklamaya çalıştığınızda, bu makaleye geçmeden önce mutlak yeni başlayanlar ve [hata ayıklama teknikleri ve araçları](../debugger/write-better-code-with-visual-studio.md) [için hata ayıklamayı](../debugger/debugging-absolute-beginners.md) okumak isteyebilirsiniz.
 
 ## <a name="basic-debugging"></a>Temel hata ayıklama
 
@@ -40,7 +40,7 @@ En çok hata ayıklayıcı, windows gibi **modülleri** ve **Watch** windows, ya
 
 Kesme modunda İşlevler, değişkenler, uygulama yürütmesi askıya alınır ve nesneler bellekte kalır. Öğelerin konumlarını ve durumlarını ihlalleri ya da hatalar arayabilirsiniz inceleyebilirsiniz. Bazı proje türleri için kesme modundayken uygulamada ayarlamalar yapabilirsiniz. Bu özellikleri gösteren bir video için bkz [hata ayıklayıcı ile çalışmaya başlama](https://www.youtube.com/watch?v=FtGCi5j30YU&list=PLReL099Y5nRfw6VNvzMkv0sabT2crbSpK&index=6).
 
-Kaynak veya sembol yok kodda kesme durumunda (*.pdb*) hata ayıklayıcı yüklenen dosyaları, görüntüler bir **kaynak dosyaları bulunamadı** veya **semboller bulunamadı** yardımcı olabilecek sayfası bulun ve dosyaları yükleyin. Bkz: [belirtin, sembol (.pdb) ve kaynak dosyaları](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md). Sembol veya kaynak dosyalarına yüklenemiyorsa, yine de derleme ayıklayabilirsiniz **ayrıştırılmış kodu** penceresi.
+Kaynak veya sembol yok kodda kesme durumunda ( *.pdb*) hata ayıklayıcı yüklenen dosyaları, görüntüler bir **kaynak dosyaları bulunamadı** veya **semboller bulunamadı** yardımcı olabilecek sayfası bulun ve dosyaları yükleyin. Bkz: [belirtin, sembol (.pdb) ve kaynak dosyaları](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md). Sembol veya kaynak dosyalarına yüklenemiyorsa, yine de derleme ayıklayabilirsiniz **ayrıştırılmış kodu** penceresi.
 
 Her zaman başında bir uygulamayı yeniden başlatarak hata ayıklamayı Başlat gerekmez. Tuşlarına da basabilirsiniz **F11** için [kod içine Adımlama](#BKMK_Step_into__over__or_out_of_the_code), basın **F10** için [kodu Adımlama](#BKMK_Step_over_Step_out), veya [belirli bir konuma yeniden çalıştırın veya işlev](#BKMK_Break_into_code_by_using_breakpoints_or_Break_All).
 
@@ -133,7 +133,7 @@ Hata ayıklayıcısında duraklatıldıktan karşın, bir kaynak kodu deyiminde 
 ![Tıklanan satıra kadar Çalıştır](../debugger/media/dbg-run-to-click.png "tıklanan satıra kadar Çalıştır")
 
 > [!NOTE]
-> **Tıklanan satıra kadar Çalıştır** başlayarak kullanılabilir [!include[vs_dev15](../misc/includes/vs_dev15_md.md)].
+> **' İ tıklama '** de [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]başlangıç için çalıştırın.
 
 ### <a name="manually-break-into-code"></a>El ile break into code
 
@@ -186,5 +186,5 @@ Microsoft simgeleri yüklemek için bkz: [sembol konumlarını yapılandırma ve
 
 ## <a name="see-also"></a>Ayrıca bkz.
 - [Hata ayıklıyor?](../debugger/what-is-debugging.md)
-- [DDebugging teknikleri ve araçları](../debugger/write-better-code-with-visual-studio.md)
+- [Hata ayıklama teknikleri ve araçları](../debugger/write-better-code-with-visual-studio.md)
 - [Hata ayıklama ilk bakış](../debugger/debugger-feature-tour.md)

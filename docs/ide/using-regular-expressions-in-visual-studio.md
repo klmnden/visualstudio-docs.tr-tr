@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c4e461fd69e048e406fbe062ff297da9baab3696
-ms.sourcegitcommit: 8562a337cc9f674c756a4a0b2c7e288ebd61b51e
+ms.openlocfilehash: 755554b73fc80df151550f36e1846e07db70bcd8
+ms.sourcegitcommit: fe212f8960d7882a1b0fdae9e22f008996aacf3c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68345752"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70222737"
 ---
 # <a name="use-regular-expressions-in-visual-studio"></a>Visual Studio'da normal ifadeler kullanma
 
@@ -48,7 +48,7 @@ Aşağıdaki tabloda bazı normal ifade karakterleri, işleçler, yapılar ve mo
 |Yakalama ve parantez içinde yer alan ifadesi örtük olarak numaralandır|()|`([a-z])X\1` "aXa" ve "bXb" ancak değil "aXb" ile eşleşir. "\1", ilk ifade grubu "[a-z]" anlamına gelir. Daha fazla bilgi için bkz. [yakalama grupları ve değiştirme desenleri](#capture-groups-and-replacement-patterns). |
 |Eşlemeyi geçersiz kıl|(?!abc)|`real(?!ity)` "gerçek" bir "realty" ve "really" eşleşir ancak değil içinde "gerçeklik." Ayrıca ikinci "real" (ancak değil ilk "real") "realityreal" içinde bulur.|
 |Belirli bir karakter kümesinde olmayan herhangi bir karakterle eşleştirin. Daha fazla bilgi için bkz. [negatif karakter grubu](/dotnet/standard/base-types/character-classes-in-regular-expressions#negative-character-group-).|[^ abc]|`be[^n-t]` "önce", "behind", "beh" içinde "bef" ile eşleşir ve "BEh" "below", ancak "beneath".|
-|Simgeden önceki veya bir ifadeden sonraki ifadeyle Eşleştir|&#124;|`(sponge\|mud) bath` "sponge bath" ve "mud bath" ile eşleşir|
+|Simgeden önceki veya bir ifadeden sonraki ifadeyle Eşleştir|&#124;|`(sponge|mud) bath` "sponge bath" ve "mud bath" ile eşleşir|
 |Ters eğik çizgiden sonraki [karakteri kaçış](/dotnet/standard/base-types/character-escapes-in-regular-expressions)| \\ |`\^` bir karakterle eşleşir ^.|
 |Önceki karakterin veya grubun oluşum sayısını belirtin. Daha fazla bilgi için bkz. [tam n kez eşleşme](/dotnet/standard/base-types/quantifiers-in-regular-expressions#match-exactly-n-times-n).|{n}, burada ' n ' oluşum sayısıdır|`x(ab){2}x` "xababx" ile eşleşir ve `x(ab){2,3}x` "xababx" ve "xabababx ile eşleşir" ancak değil "xababababx" ile eşleşir.|
 |[Unicode kategorisindeki metni eşleştirin](/dotnet/standard/base-types/character-classes-in-regular-expressions#unicode-category-or-unicode-block-p). Unicode karakter sınıfları hakkında daha fazla bilgi için bkz. [Unicode standart 5,2 karakter özellikleri](http://www.unicode.org/versions/Unicode5.2.0/ch04.pdf).|\p{X}, "X" değerinin Unicode numarası olduğu.|`\p{Lu}` "T" ve "Thomas Doe" içinde "D" ile eşleşir.|

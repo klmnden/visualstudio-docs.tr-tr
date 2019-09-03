@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f494674acdf8b272029ad02a762897b379212ae4
-ms.sourcegitcommit: 9cfd3ef6c65f671a26322320818212a1ed5955fe
+ms.openlocfilehash: cf78e17d4d804c94392da045a90c98869319d185
+ms.sourcegitcommit: fe212f8960d7882a1b0fdae9e22f008996aacf3c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68533359"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70222619"
 ---
 # <a name="first-look-at-deployment-in-visual-studio"></a>Visual Studio 'da dağıtıma ilk bakış
 
@@ -96,6 +96,13 @@ Visual Studio 'dan Microsoft Store dağıtım için uygulama paketleri oluştura
 - **Windows Masaüstü**: Visual Studio 2017 sürüm 15,4 ' den başlayarak masaüstü Köprüsü 'Nü kullanarak Microsoft Store dağıtabilirsiniz. Bunu yapmak için, bir Windows uygulama paketleme projesi oluşturarak başlayın. Daha fazla bilgi için bkz. [Microsoft Store için bir masaüstü uygulaması paketleme (Masaüstü Köprüsü)](/windows/uwp/porting/desktop-to-uwp-packaging-dot-net).
 
     ![Masaüstü Köprüsü](../deployment/media/feature-tour-desktop-bridge.png)
+
+## <a name="deploy-net-packages-to-nugetorg"></a>NuGet.org 'e .NET paketleri dağıtma
+
+Paketlenmiş kodu, derlenen kodu içeren "paketlere" (dll olarak) ve bu paketleri kullanan projelerde gereken diğer içeriklere birlikte dağıtmak için, Visual Studio 'Yu kullanarak, son dağıtım komutunu vermek üzere NuGet paketini ve bir CLı aracını oluşturabilirsiniz.
+
+- [.NET Standard paketi oluşturma ve yayımlama](/nuget/quickstart/create-and-publish-a-package-using-visual-studio)
+- [.NET Framework paketi oluşturma ve yayımlama](/nuget/quickstart/create-and-publish-a-package-using-visual-studio-net-framework)
 
 ## <a name="deploy-to-a-device-uwp"></a>Cihaza dağıtma (UWP)
 

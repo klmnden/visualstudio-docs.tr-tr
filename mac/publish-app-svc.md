@@ -1,7 +1,6 @@
 ---
 title: Azure App Service’e yayımlama
 ms.date: 04/02/2019
-ms.topic: quickstart
 helpviewer_keywords:
 - deployment, website
 ms.assetid: 8524a4c5-97a9-41ac-a2a0-034efb9bfc57
@@ -12,63 +11,63 @@ ms.prod: visual-studio-mac
 ms.custom: video
 ms.workload:
 - azure
-ms.openlocfilehash: c6aa04ceb08daeb303ae6c421fe34465a9ebcda4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e4ce4273b72a57a2b9456974a108809dcd73b4e0
+ms.sourcegitcommit: fe212f8960d7882a1b0fdae9e22f008996aacf3c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62939436"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70222725"
 ---
-# <a name="publish-a-web-app-to-azure-app-service-using-visual-studio-for-mac"></a>Mac için Visual Studio kullanarak Azure App Service'e bir Web uygulaması yayımlama
+# <a name="publish-a-web-app-to-azure-app-service-using-visual-studio-for-mac"></a>Mac için Visual Studio kullanarak Azure App Service bir Web uygulaması yayımlama
 
-Azure App Service'e ASP.NET Core uygulamaları yayımlamak için Yayımla Aracı'nı kullanabilirsiniz.
+Azure App Service için ASP.NET Core uygulamaları yayımlamak üzere Yayımla aracını kullanabilirsiniz.
 
 ## <a name="prerequisites"></a>Önkoşullar
 
-- [Mac için Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs4mac2019) etkin ASP.NET Core ile yüklü.
-- Bir Azure aboneliği. Bir abonelik zaten yoksa [ücretsiz olarak kaydolun](https://azure.microsoft.com/free/dotnet/), içeren 200 ABD Doları değerinde kredi 30 gün ve popüler ücretsiz Hizmetleri 12 ay için.
-- Bir ASP.NET Core projesi. Bir proje zaten yoksa, şunları yapabilirsiniz [yeni bir tane oluşturun](~/create-new-projects.md).
+- ASP.NET Core etkinken [Mac Için Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs4mac2019) yüklendi.
+- Bir Azure aboneliği. Henüz bir aboneliğiniz yoksa [ücretsiz kaydolun](https://azure.microsoft.com/free/dotnet/)ve 30 gün boyunca kredi olarak $200, popüler ücretsiz hizmet için 12 ay.
+- Bir ASP.NET Core projesi. Zaten bir projeniz yoksa [Yeni bir tane oluşturabilirsiniz](~/create-new-projects.md).
 
 ## <a name="publish-to-azure-app-service"></a>Azure App Service’e yayımlama
 
- 1. Çözüm panelinde projeye sağ tıklayıp seçin **Yayımla**.
+ 1. Çözüm Bölmesi projeye sağ tıklayın ve **Yayımla**' yı seçin.
 
     ![Yayımla bağlam menüsü](media/publish-context-menu.png)
 
- 2. Bu proje daha önce Azure App Service'e yayımladıysanız, yayımlama profilini menüsünde görürsünüz. Yayımlama işlemini başlatmak için bu yayımlama profilini seçin.
+ 2. Bu projeyi daha önce Azure App Service yayımladıysanız, menüden Yayımla profilini görürsünüz. Yayımlama işlemini başlatmak için bu profili Yayımla ' yı seçin.
 
- 3. Bu proje App Service'e ilk kez yayımlamak için seçin **azure'a yayımlama**
+ 3. Bu projeyi ilk kez App Service yayımlamak için **Azure 'Da Yayımla** ' yı seçin.
 
-    ![App Service bağlam azura'a Yayımla bağlam menüsü](media/publish-to-azure-context-menu.png)
+    ![App Service bağlam menüsünde Yayımla](media/publish-to-azure-context-menu.png)
 
- 4. **Azure App Service'e yayımlama** iletişim kutusu açılır ve var olan tüm uygulama hizmetleri gösterilir. Var olan bir uygulama hizmetinde yayımlamak için App Service listeden seçin ve ardından **Yayımla**.
+ 4. **Azure App Service Yayımla** iletişim kutusu görünür ve var olan tüm uygulama hizmetleri gösterilir. Mevcut bir App Service yayımlamak için, listeden App Service seçin ve ardından **Yayımla**' ya tıklayın.
 
-    ![Yayımlama için Azure App Service iletişim kutusu](media/publish-to-app-service-dialog.png)
+    ![Azure App Service 'de Yayımla iletişim kutusu](media/publish-to-app-service-dialog.png)
 
- 5. Yeni bir App Service'ı oluşturmak için tıklayın **yeni** düğmesi.
+ 5. Yeni bir App Service oluşturmak için **Yeni** düğmesine tıklayın.
 
-    ![App Service iletişim yayımlama](media/publish-to-app-service-dialog-new-selected.png)
+    ![App Service 'de Yayımla Iletişim kutusu](media/publish-to-app-service-dialog-new-selected.png)
 
- 6. **Yeni App Service** iletişim kutusu görüntülenir. Bu iletişim kutusunda, yeni uygulama hizmetiniz için ayarları yapılandırabilirsiniz.
+ 6. **Yeni App Service** iletişim kutusu görüntülenir. Bu iletişim kutusunda, yeni App Service ayarlarını yapılandırabilirsiniz.
 
     ![Yeni App Service iletişim kutusu](media/publish-new-app-service.png)
 
-    Burada özelleştirme dikkate alınması gereken birkaç seçenek vardır. App Service adı proje adı için varsayılan. Adı kullanılabilir değilse bir uyarı işareti giriş alanı sağ tarafında görünür. Adı bir URL'de kullanılacak geçerli olması gerekir, Web sitesinin URL'sini App Service adı kullanılır.
+    Burada özelleştirmeyi göz önünde bulundurmanız gereken birkaç seçenek vardır. App Service adı, varsayılan olarak proje adı olacaktır. Ad yoksa, giriş alanının sağ tarafında bir uyarı işareti görüntülenir. App Service adı, Web sitenizin URL 'sinde kullanılır, bu nedenle ad bir URL 'de kullanılmak üzere geçerli olmalıdır.
 
-    App Service kullanarak ilişkili olduğu abonelik değiştirebilirsiniz **abonelik** açılır.
+    App Service abonelik açılan listesini kullanarak ilişkilendirilecektir.
 
-    Mevcut bir seçebileceğiniz **kaynak grubu** veya açılan listeyi kullanarak ile yeni bir tane oluşturabilirsiniz **+** düğmesi.
+    Açılır menüyü kullanarak var olan bir **kaynak grubunu** seçebilirsiniz veya **+** düğmeyle yeni bir tane oluşturabilirsiniz.
 
-    App Service planı için varolan bir tanesini seçin veya seçerek yeni bir tane oluşturun **özel** radyo düğmesi.
+    App Service planı için, var olan bir seçim seçin veya **özel** radyo düğmesini seçerek yeni bir tane oluşturun.
 
-    Yeni App service'inizi oluşturmak ve bunu projenize yayımlamak için **Oluştur**.
+    Yeni App Service oluşturup projenizi yayımlamak için **Oluştur**' a tıklayın.
 
-    ' I tıklattıktan sonra **Oluştur** **yeni App Service** iletişim bölümü kapatılmış ve App Service oluşturma başlatıldığını belirten şu iletiyi görmeniz gerekir.
+    **Oluştur** ' a tıkladıktan sonra **Yeni App Service** iletişim kutusu kapatılır ve App Service oluşturmanın başlatıldığını belirten aşağıdaki iletiyi görmeniz gerekir.
 
-      ![App Service iletisi oluşturun](media/publish-create-app-service-message.png)
+      ![App Service Iletisi oluştur](media/publish-create-app-service-message.png)
 
-    ' I tıklattıktan sonra **Tamam** ileti kapatılır ve projeniz üzerinde çalışmaya devam edebilirsiniz. Durum çubuğu üstünde IDE ile yayımlama işleminin durumunu izleyebilirsiniz. Web uygulamanızı başarıyla yayımlandığında, sitenin varsayılan tarayıcınızda açılır.
+    **Tamam** ' a tıkladıktan sonra ileti kapatılır ve projenizde çalışmaya devam edebilirsiniz. Yayımla işleminin durumunu IDE 'nin en üstündeki durum çubuğuyla izleyebilirsiniz. Web uygulamanız başarıyla yayımlandıktan sonra, site varsayılan tarayıcınızla açılır.
 
-## <a name="related-video"></a>İlgili Video
+## <a name="related-video"></a>İlgili video
 
 > [!Video https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Visual-Studio-for-Mac-Publish-to-Azure/player]

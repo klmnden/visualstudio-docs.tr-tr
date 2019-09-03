@@ -1,19 +1,19 @@
 ### YamlMime:Hub
 title: Visual Studio Belgeleri
-summary: Uygulamaları, hizmetleri ve araçları, platformlar ve cihazlar için tercih ettiğiniz dilde geliştirmek için Visual Studio kullanmayı öğrenirsiniz.
+summary: Platformlarınızın ve cihazlarınızın tercih ettiğiniz dilde uygulamaları, hizmetleri ve araçları geliştirmek için Visual Studio 'Yu nasıl kullanacağınızı öğrenin.
 brand: visual-studio
 metadata:
   title: Visual Studio belgeleri | Microsoft Docs
   titleSuffix: ''
-  description: Uygulamalarınıza, hizmetlerinize ve herhangi bir platform veya cihaz için tercih ettiğiniz dilde araçları geliştirmek için Visual Studio kullanmayı öğrenirsiniz.
+  description: Herhangi bir platform veya cihaz için seçtiğiniz dilde uygulama, hizmet ve araç geliştirmek için Visual Studio 'Yu nasıl kullanacağınızı öğrenin.
   ms.topic: hub-page
   monikerRange: '>=vs-2017'
-  ms.openlocfilehash: b24bc5b3e1427a6f3675398e05a639b45c376571
-  ms.sourcegitcommit: d2b234e0a4a875c3cba09321cdf246842670d872
+  ms.openlocfilehash: 22c6d731d3c7bfaefb6ee0d89d7bae088d86c035
+  ms.sourcegitcommit: fe212f8960d7882a1b0fdae9e22f008996aacf3c
   ms.translationtype: MT
   ms.contentlocale: tr-TR
-  ms.lasthandoff: 07/01/2019
-  ms.locfileid: "67493709"
+  ms.lasthandoff: 09/03/2019
+  ms.locfileid: "70222667"
 highlightedContent:
   items:
   - title: Kurulum ve yükleme
@@ -33,10 +33,10 @@ conceptualContent:
   items:
   - title: Visual Studio kullanmayı öğrenin
     links:
-    - text: Kılavuzlu Turu Başlat
+    - text: Kılavuzlu tura başla
       url: ide/visual-studio-ide.md
       itemType: overview
-    - text: Açık kod deposundan
+    - text: Depodan kod açma
       url: get-started/tutorial-open-project-from-repo.md
       itemType: tutorial
     - text: Kodu yazma ve düzenleme
@@ -51,10 +51,10 @@ conceptualContent:
     - text: Kodunuzu test etme
       itemType: tutorial
       url: test/getting-started-with-unit-testing.md
-    - text: Verilere yerel olarak veya bulutta
+    - text: Verilere yerel olarak veya bulutta erişin
       itemType: tutorial
       url: data-tools/create-a-sql-database-by-using-a-designer.md
-  - title: Bir öğreticiyi izleyin
+  - title: Öğreticiyi izleyin
     links:
     - text: C#
       url: /visualstudio/get-started/csharp
@@ -85,7 +85,7 @@ conceptualContent:
     - text: Mobil uygulama
       itemType: overview
       url: /visualstudio/cross-platform/cross-platform-mobile-development-in-visual-studio
-    - text: Unity oyununuzu
+    - text: Unity oyunu
       itemType: tutorial
       url: /visualstudio/cross-platform/getting-started-with-visual-studio-tools-for-unity
     - text: ASP.NET Core Web uygulaması
@@ -132,10 +132,10 @@ additionalContent:
       summary: Araştırma ve kodunuzda hataları düzeltin.
       url: debugger/index.md
     - title: Test
-      summary: Projeler üzerinde testleri çalıştırın.
+      summary: Projeleriniz üzerinde testler çalıştırın.
       url: test/improve-code-quality.md
     - title: Dağıt
-      summary: Web dağıtımı, InstallShield ve sürekli tümleştirme ve daha fazlasını kullanarak uygulamalarınızı paylaşın.
+      summary: Web Dağıtımı, InstallShield, NuGet, sürekli tümleştirme ve daha fazlasını kullanarak uygulamalarınızı ve kodunuzu paylaşabilirsiniz.
       url: deployment/index.md
     - title: Sürüm Denetimi
       summary: Gibi Git ve TFVC sürüm denetim teknolojilerini kullanarak kod paylaşın.
@@ -143,19 +143,19 @@ additionalContent:
     - title: DevOps
       summary: Sürekli olarak Derle ve uygulamalarınızı bulutta bırakın ve Çevik uygulamak Azure DevOps hizmetleriyle yöntemler.
       url: /azure/devops
-    - title: Ölçü performans
+    - title: Ölçüm performansı
       summary: Performans sorunlarını belirleme ve tanılama araçları ile kod performansını iyileştirin.
       url: profiling/index.md
     - title: Genişletme
       summary: Geliştirme deneyiminizi iyileştirmek için Visual Studio IDE kendi işlevselliği ekleyin.
       url: extensibility/index.md
     - title: Veri
-      summary: Herhangi bir veritabanı veya hizmet ve her yerden bağlanma veri uygulamaları oluşturma&#8212;yerel veya bulut.
+      summary: Herhangi bir veritabanına veya hizmete ve herhangi bir yere (yerel veya bulut) bağlanan veri uygulamaları oluşturun.
       url: data-tools/accessing-data-in-visual-studio.md
     - title: İşbirliği
       summary: Paylaşma, düzenleme ve işbirliğine dayalı, gerçek zamanlı bir ortamda kodunda hata ayıklayın.
       url: /visualstudio/liveshare/
-    - title: Kapsayıcılar ile geliştirin
+    - title: Kapsayıcılarla geliştirme
       summary: Kapsayıcılar, modüler bileşenleri yalıtmak ve ölçeklenebilirliği artırmak için kullanın.
       url: containers/index.yml
   - title: İş yükleri
@@ -174,7 +174,7 @@ additionalContent:
         url: data-tools/index.md
       - text: Veri bilimi
         url: python/data-science-and-analytical-applications-workload.md
-      - text: Office/Sharepoint geliştirme
+      - text: Office/SharePoint geliştirme
         url: https://developer.microsoft.com/office/docs
     - title: Windows
       links:
@@ -186,18 +186,18 @@ additionalContent:
         url: /cpp/windows/desktop-applications-visual-cpp
     - title: Mobil ve oyun
       links:
-      - text: .NET (Xamarin) ile Mobil Geliştirme
+      - text: .NET ile mobil geliştirme (Xamarin)
         url: /xamarin/
       - text: Unity ile oyun geliştirme
         url: cross-platform/visual-studio-tools-for-unity.md
       - text: JavaScript ile Mobil Geliştirme
         url: /visualstudio/cross-platform/tools-for-cordova/?view=toolsforcordova-2017
-        note: (Visual Studio 2017 and 2015 only)
+        note: (Yalnızca Visual Studio 2017 ve 2015)
       - text: C++ ile Mobil Geliştirme
         url: /visualstudio/cross-platform/
       - text: C++ ile oyun geliştirme
         url: /windows/uwp/gaming/e2e
-    - title: Diğer araç takımları
+    - title: Diğer araç kümeleri
       links:
       - text: Visual Studio uzantısı geliştirme
         url: extensibility/index.md
@@ -205,4 +205,4 @@ additionalContent:
         url: /cpp/linux/
       - text: .NET core platformlar arası geliştirme
         url: /dotnet/core/
-  footer: '[Bloglar](https://devblogs.microsoft.com/visualstudio/) - [Twitter](https://twitter.com/VisualStudio) - [yığın taşması](https://stackoverflow.com/questions/tagged/visual-studio) - [sorun rapor etme](ide/talk-to-us.md)  -  [Geliştirici topluluğu](https://developercommunity.visualstudio.com/spaces/8/index.html)'
+  footer: '[Blog](https://devblogs.microsoft.com/visualstudio/)[](https://twitter.com/VisualStudio)[](https://stackoverflow.com/questions/tagged/visual-studio)[](https://developercommunity.visualstudio.com/spaces/8/index.html) [](ide/talk-to-us.md)Twitter Stack Overflow sorun raporlamaGeliştiricitopluluğu -  -  -  - '

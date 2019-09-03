@@ -1,7 +1,6 @@
 ---
-title: Bir klasöre yayımlayın
+title: Bir klasöre yayımlama
 ms.date: 01/22/2019
-ms.topic: quickstart
 helpviewer_keywords:
 - deployment, website
 ms.assetid: e963fb4b-6d32-4d45-86bb-ef7e4d3028b0
@@ -9,52 +8,52 @@ author: sayedihashimi
 ms.author: sayedha
 manager: unniravindranathan
 ms.prod: visual-studio-mac
-ms.openlocfilehash: 9fbcdb0bd9b9bab2afc69a8896cc00bedb98998b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ff8635db2b472ee3dd79e9082de9d9cc6bd555cb
+ms.sourcegitcommit: fe212f8960d7882a1b0fdae9e22f008996aacf3c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62991504"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70222683"
 ---
-# <a name="publish-a-web-app-to-a-folder-using-visual-studio-for-mac"></a>Mac için Visual Studio kullanarak bir klasör için bir Web uygulaması yayımlama
+# <a name="publish-a-web-app-to-a-folder-using-visual-studio-for-mac"></a>Mac için Visual Studio kullanarak bir Web uygulamasını bir klasöre yayımlama
 
-ASP.NET Core uygulamaları için bir klasör yayımlamak için Yayımla Aracı'nı kullanabilirsiniz.
+Yayımla aracını bir klasöre ASP.NET Core uygulamalar yayımlamak için kullanabilirsiniz.
 
 ## <a name="prerequisites"></a>Önkoşullar
 
-- [Mac için Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs4mac2017) etkin ASP.NET Core ile yüklü.
-- Bir ASP.NET Core projesi. Bir proje zaten yoksa, şunları yapabilirsiniz [yeni bir tane oluşturun](https://docs.microsoft.com/visualstudio/mac/create-new-projects?view=vsmac-2017).
+- ASP.NET Core etkinken [Mac Için Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs4mac2017) yüklendi.
+- Bir ASP.NET Core projesi. Zaten bir projeniz yoksa [Yeni bir tane oluşturabilirsiniz](https://docs.microsoft.com/visualstudio/mac/create-new-projects?view=vsmac-2017).
 
 ## <a name="publish-to-folder"></a>Klasöre Yayımlama
 
-Mac için Visual Studio kullanarak ASP.NET Core projeleriniz Yayımla Aracı'nı kullanarak bir klasöre yayımlayabilirsiniz. Bir klasöre yayımlamadan sonra farklı bir ortama almak için web sunucunuza dosyaları aktarabilirsiniz. Yayımlamak için bir klasör için şu adımları izleyin.
+Mac için Visual Studio kullanarak ASP.NET Core projelerinizi Yayımla aracını kullanarak bir klasöre yayımlayabilirsiniz. Bir klasöre yayımladıktan sonra, farklı bir ortama ulaşmak için dosyaları Web sunucunuza aktarabilirsiniz. Bir klasöre yayımlamak için aşağıdaki adımları izleyin.
 
- 1. Çözüm panelinde projeye sağ tıklayıp seçin **Yayımla**.
+ 1. Çözüm Bölmesi projeye sağ tıklayın ve **Yayımla**' yı seçin.
 
     ![Yayımla bağlam menüsü](media/publish-context-menu.png)
 
- 2. Daha önce bu proje yayımladıysanız, yayımlama profilini menüsünde görürsünüz. Yayımlama işlemini başlatmak için bu yayımlama profilini seçin.
+ 2. Bu projeyi daha önce yayımladıysanız, menüde Yayımla profilini görürsünüz. Yayımlama işlemini başlatmak için bu profili Yayımla ' yı seçin.
 
- 3. Bu proje için ilk kez bir klasöre yayımlamak için seçin **klasörüne Yayımla**
+ 3. Bu projeyi ilk kez bir klasöre yayımlamak için, **klasöre Yayımla** ' yı seçin.
 
-    ![Klasör içeriği azura'a Yayımla bağlam menüsü](media/publish-to-folder-context-menu.png)
+    ![Klasöre Yayımla bağlam menüsü](media/publish-to-folder-context-menu.png)
 
- 4. **Yayımlama klasörüne** iletişim kutusu görüntülenir. Bu iletişim kutusunda, projeyi burada yayımlanacak klasörü özelleştirebilirsiniz. Kullanabileceğiniz **Gözat** Bunu yapmak için düğme ya da bir yolda yapıştırın.
+ 4. **Klasöre Yayımla** iletişim kutusu görüntülenir. Bu iletişim kutusunda projenin yayımlanacağı klasörü özelleştirebilirsiniz. Bunu yapmak için, **Araştır** düğmesini veya bir yolu yapıştırmak için kullanabilirsiniz.
 
- 5. ' I tıklattıktan sonra **Yayımla** birkaç şey olur. Önce bir yayımlama profili oluşturulur. Bir yayımlama profili yayımlama işlemi sırasında bir projeye içeri aktarılan bir MSBuild dosyasıdır. Bu yayımlama işlemi sırasında kullanılan özellikler içerir. Bu dosyalar depolanan `Properties/PublishProfiles` ve uzantı `.pubxml`. Ardından, yayımlama işlemi başlatıldı. Mac için Visual Studio durum çubuğunda izleyerek ilerleme durumunu izleyebilirsiniz.
+ 5. **Yayımla** ' ya tıkladıktan sonra birkaç şey meydana gelir. İlk olarak bir yayımlama profili oluşturulur. Yayımlama profili, yayımlama işlemi sırasında projeye içeri aktarılan bir MSBuild dosyasıdır. Yayımlama işlemi sırasında kullanılan özellikleri içerir. Bu dosyalar içinde `Properties/PublishProfiles` depolanır ve uzantısına `.pubxml`sahiptir. Sonra yayımlama işlemi başlatılır. Mac için Visual Studio ' de durum çubuğunu izleyerek ilerlemeyi izleyebilirsiniz.
 
-    ![IDE durum çubuğu yayımlama durumu](media/publish-to-folder-status-bar.png)
+    ![Yayımlama durumuyla IDE durum çubuğu](media/publish-to-folder-status-bar.png)
 
- 6. Yayımlama başarıyla tamamlandıktan sonra yayımlama klasörü için bir Bulucu penceresi açılır. Bir yayımlama profili oluşturulduktan sonra Yayımla bağlam menüsü görüntülenir.
+ 6. Yayımlama başarıyla tamamlandığında, bir bulucu penceresi Yayımla klasörüne açılır. Şimdi bir yayımlama profili oluşturuldığına göre, Yayımla bağlam menüsünde görüntülenecektir.
 
-    ![Bağlam menüsü klasörüne profil ile yayımlama](media/publish-context-menu-with-folder-profile.png)
+    ![Bağlam menüsünü klasör profiliyle Yayımla](media/publish-context-menu-with-folder-profile.png)
 
- 7. Projenin aynı ayarlarla yeniden yayımlamak için Yayımla bağlam menüsü profile tıklayabilirsiniz.
+ 7. Projeyi aynı ayarlarla yeniden yayımlamak için Yayımla bağlam menüsünde profile tıklayabilirsiniz.
 
-## <a name="customize-publish-options"></a>Özelleştirme seçenekleri Yayımla
+## <a name="customize-publish-options"></a>Yayımlama seçeneklerini özelleştirin
 
-(Bu Yayımla bağlam menüsü görüntülenir) yayımlama profili adını değiştirmek için yayımlama profili dosyasını yeniden adlandırın. Dosya uzantısı değil değiştirdiğinizden emin olun (`.puxbml`).
+Yayımlama profilinin adını değiştirmek için (Yayımla bağlam menüsünde görüntülenir), yayımlama profili dosyasını yeniden adlandırın. Dosyanın (`.puxbml`) uzantısını değiştirmediğinden emin olun.
 
-Yayımlama klasörü yolu değiştirmek için yayımlama profilini açın ve düzenleyin `publishUrl` değeri.
+Yayımlama klasörü yolunu değiştirmek için yayımlama profilini açın ve `publishUrl` değeri düzenleyin.
 
-Kullanılan derleme yapılandırmasını değiştirmek için `LastUsedBuildConfiguration` yayımlama profili özelliği.
+Kullanılan yapı yapılandırmasını değiştirmek için yayımlama profilindeki `LastUsedBuildConfiguration` özelliği değiştirin.
