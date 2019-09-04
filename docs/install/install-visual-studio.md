@@ -20,24 +20,24 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 4833c6e8e1391028fbb034ff96967450d006356a
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: ac40a7e7d62417d2d89302304501fb2b3ecd34f4
+ms.sourcegitcommit: 9c07ae6fb18204ea080c8248994a683fa12e5c82
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66263717"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "70293713"
 ---
 # <a name="install-visual-studio"></a>Visual Studio'yu yükleme
 
 ::: moniker range="vs-2019"
 
-Hoş Geldiniz Visual Studio 2019! Bu sürümde, seçin ve yalnızca gereksinim duyduğunuz özellikleri yüklemek kolaydır. Ve kendi kapladığı alan alt nedeniyle, hızlı ve sistemi daha az etkileyerek yükler.
+Visual Studio 2019 'e hoş geldiniz! Bu sürümde, yalnızca ihtiyacınız olan özellikleri seçmek ve yüklemek çok kolay. En düşük minimum kaplama nedeniyle, hızlı bir şekilde ve daha az sistem etkisinden yüklenir.
 
 ::: moniker-end
 
 ::: moniker range="vs-2017"
 
-Visual Studio'yu yüklemek için yeni bir yolunu Hoş Geldiniz! Bu sürümde, seçin ve yalnızca gereksinim duyduğunuz özellikleri yüklemek için daha kolay bir şekilde kolaylaştırdık. Daha hızlı ve daha önce hiç olmadığı kadar sistemi daha az etkileyerek yükler, böylece biz de Visual Studio'nun minimum ayak kısalttık.
+Visual Studio'yu yüklemek için yeni bir yolunu Hoş Geldiniz! Bu sürümde, yalnızca ihtiyacınız olan özellikleri seçip yüklemenizi daha kolay hale geçirdik. Daha hızlı ve daha önce hiç olmadığı kadar sistemi daha az etkileyerek yükler, böylece biz de Visual Studio'nun minimum ayak kısalttık.
 
 ::: moniker-end
 
@@ -58,7 +58,7 @@ Else bu sürümdeki yenilikler hakkında daha fazla bilgi edinmek istiyorsunuz? 
 
 Yüklenmeye hazır? Biz, bunu, adım adım konusunda rehberlik edelim.
 
-## <a name="step-1---make-sure-your-computer-is-ready-for-visual-studio"></a>1. adım: bilgisayarınızın Visual Studio'ya hazır olduğundan emin olun
+## <a name="step-1---make-sure-your-computer-is-ready-for-visual-studio"></a>1\. adım: bilgisayarınızın Visual Studio'ya hazır olduğundan emin olun
 
 Visual Studio yükleme başlamadan önce:
 
@@ -76,7 +76,7 @@ Visual Studio yükleme başlamadan önce:
 
 ::: moniker range="vs-2019"
 
-1. Denetleme [sistem gereksinimleri](/visualstudio/releases/2019/system-requirements). Bu gereksinimleri bilgisayarınıza Visual Studio 2019 destekleyip desteklemediğini bilmenize yardımcı olur.
+1. Denetleme [sistem gereksinimleri](/visualstudio/releases/2019/system-requirements). Bu gereksinimler, bilgisayarınızın Visual Studio 2019 ' i destekleyip desteklemediğini bilmenizi sağlamaya yardımcı olur.
 
 1. En son Windows güncelleştirmelerini uygulayın. Bu güncelleştirmeler, bilgisayarınızda Visual Studio için en son güvenlik güncelleştirmelerini hem gerekli sistem bileşenlerine sahip olun.
 
@@ -94,31 +94,31 @@ Visual Studio 2017 ile yan yana Visual Studio'nun önceki sürümlerini çalış
 
 ::: moniker range="vs-2019"
 
-Visual Studio 2019 ile yan yana Visual Studio'nun önceki sürümleri çalıştıran hakkında sorular için bkz [Visual Studio 2019 Platform hedefleme ve Uyumluluk](/visualstudio/releases/2019/compatibility/) sayfası.
+Visual Studio 'nun önceki sürümlerini Visual Studio 2019 ile yan yana çalıştırma hakkında sorularınız için [Visual studio 2019 Platform hedefleme ve uyumluluk](/visualstudio/releases/2019/compatibility/) sayfasına bakın.
 
 ::: moniker-end
 
 ## <a name="step-2---download-visual-studio"></a>Adım 2 - Visual Studio indirme
 
-Ardından, Visual Studio önyükleyicisi dosyasını indirin. Bunu yapmak için aşağıdaki düğmeyi seçin, seçmek istediğiniz Visual Studio sürümünü **Kaydet**ve ardından **Klasör Aç**.
+Ardından, Visual Studio önyükleyicisi dosyasını indirin. Bunu yapmak için, aşağıdaki düğmeyi seçin, istediğiniz Visual Studio sürümünü seçin, **Kaydet**' i seçin ve sonra **klasörü aç**' ı seçin.
 
 ::: moniker range="vs-2017"
 
  > [!div class="button"]
- > [Visual Studio'yu indirin](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)
+ > [Visual Studio 'Yu indirin](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
  > [!div class="button"]
- > [Visual Studio'yu indirin](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2019)
+ > [Visual Studio 'Yu indirin](https://visualstudio.microsoft.com/downloads)
 
 ::: moniker-end
 
-## <a name="step-3---install-the-visual-studio-installer"></a>3. adım - Visual Studio Yükleyicisi'ni yükleme
+## <a name="step-3---install-the-visual-studio-installer"></a>3\. adım - Visual Studio Yükleyicisi'ni yükleme
 
-Visual Studio Yükleyicisi'ni yüklemek için önyükleyici dosyasını çalıştırın. Yeni Basit yükleyicinin hem yüklemek ve Visual Studio'yu özelleştirme için gereken her şeyi içerir.
+Visual Studio Yükleyicisi yüklemek için önyükleyici dosyasını çalıştırın. Bu yeni basit yükleyici, Visual Studio 'Yu yüklemek ve özelleştirmek için ihtiyacınız olan her şeyi içerir.
 
 1. Öğesinden, **indirir** klasöründe eşleşen veya benzer bir aşağıdaki dosyalar önyükleyici çift tıklayın:
 
@@ -126,13 +126,13 @@ Visual Studio Yükleyicisi'ni yüklemek için önyükleyici dosyasını çalış
    * **vs_professional.exe** Visual Studio Professional
    * **vs_enterprise.exe** için Visual Studio Enterprise
 
-   Bir kullanıcı hesabı denetimi bildirim alırsanız seçin **Evet**.
+   Bir kullanıcı hesabı denetimi bildirimi alırsanız **Evet**' i seçin.
 
 2. Microsoft onaylamak için isteriz [lisans koşulları](https://visualstudio.microsoft.com/license-terms/) ve Microsoft [gizlilik bildirimi](https://privacy.microsoft.com/privacystatement). Seçin **devam**.
 
    ![Lisans koşullarını ve gizlilik bildirimini](media/privacy-and-license-terms.png "Microsoft lisans koşulları ve gizlilik bildirimi")
 
-## <a name="step-4---choose-workloads"></a>4. adım - iş yüklerini seçme
+## <a name="step-4---choose-workloads"></a>4\. adım-iş yüklerini seçin
 
 Yükleyici yüklendikten sonra bu özellik kümeleri seçerek yüklemenizi özelleştirmek için kullanabilirsiniz — veya iş yükleriniz — istediğiniz. İşte nasıl.
 
@@ -140,11 +140,11 @@ Yükleyici yüklendikten sonra bu özellik kümeleri seçerek yüklemenizi özel
 
 1. Bulmak istediğiniz iş yükünü **Visual Studio'yu** ekran.
 
-   ![Visual Studio 2017: Bir iş yükünü yükleyin](../install/media/vs-installer-installing-workloads.png)
+   ![Visual Studio 2017: İş yükü yüklemesi](../install/media/vs-installer-installing-workloads.png)
 
      Örneğin, ".NET masaüstü geliştirme" iş yükünü seçin. Bu, temel kod düzenleme açın ve projeye gerek kalmadan herhangi bir klasörden kodu düzenleme olanağı 20'den dil için destek içerir ve tümleşik kaynak kod denetimi varsayılan çekirdek Düzenleyicisi ile birlikte gelir.
 
-1. Workload(s) seçtikten sonra seçmek istediğiniz **yükleme**.
+1. İstediğiniz iş yüklerini seçtikten sonra, **yükler**' i seçin.
 
     Ardından, durum ekranları, Visual Studio yüklemenizin ilerleme durumunu gösteren görünür.
 
@@ -154,22 +154,22 @@ Yükleyici yüklendikten sonra bu özellik kümeleri seçerek yüklemenizi özel
 
 1. Yeni iş yükleri ve bileşenler yüklendikten sonra seçin **başlatma**.
 
-   ![Visual Studio 2019 : Bir iş yükünü yükleyin](../install/media/vs-2019/vs-installer-workloads.png)
+   ![Visual Studio 2019 : İş yükü yüklemesi](../install/media/vs-2019/vs-installer-workloads.png)
 
-     Örneğin, "ASP.NET ve web geliştirme" iş yükünü seçin. Bu, temel kod düzenleme açın ve projeye gerek kalmadan herhangi bir klasörden kodu düzenleme olanağı 20'den dil için destek içerir ve tümleşik kaynak kod denetimi varsayılan çekirdek Düzenleyicisi ile birlikte gelir.
+     Örneğin, "ASP.NET ve Web geliştirme" iş yükünü seçin. Bu, temel kod düzenleme açın ve projeye gerek kalmadan herhangi bir klasörden kodu düzenleme olanağı 20'den dil için destek içerir ve tümleşik kaynak kod denetimi varsayılan çekirdek Düzenleyicisi ile birlikte gelir.
 
-1. Workload(s) seçtikten sonra seçmek istediğiniz **yükleme**.
+1. İstediğiniz iş yüklerini seçtikten sonra, **yükler**' i seçin.
 
     Ardından, durum ekranları, Visual Studio yüklemenizin ilerleme durumunu gösteren görünür.
 
  ::: moniker-end
 
 > [!TIP]
-> Yüklemeden sonra herhangi bir zamanda iş yükleri veya başlangıçta yüklenmedi bileşenleri yükleyebilirsiniz. Visual Studio'nun varsa **Araçları** > **araçları ve özellikleri Al...**  Visual Studio yükleyicisi açılır. Veya açık **Visual Studio yükleyicisi** Başlat menüsünden. Burada, iş yükleri veya yüklemek istediğiniz bileşenleri seçebilirsiniz. Ardından, **Değiştir**.
+> Yüklemeden sonra herhangi bir zamanda iş yükleri veya başlangıçta yüklenmedi bileşenleri yükleyebilirsiniz. Visual Studio'nun varsa **Araçları** > **araçları ve özellikleri Al...**  Visual Studio yükleyicisi açılır. Veya açık **Visual Studio yükleyicisi** Başlat menüsünden. Buradan, yüklemek istediğiniz iş yüklerini veya bileşenleri seçebilirsiniz. Ardından **Değiştir**' i seçin.
 
-## <a name="step-5---choose-individual-components-optional"></a>5. adım - (isteğe bağlı) bileşenleri tek tek seçme
+## <a name="step-5---choose-individual-components-optional"></a>5\. adım-tek tek bileşenleri seçin (Isteğe bağlı)
 
-Visual Studio yüklemenizi özelleştirmek için iş yüklerini özelliğini kullanmak istemediğiniz ya da bir iş yükü yükler çok daha fazla bileşen eklemek istediğiniz, yükleme veya tek tek bileşenleri ekleyerek bunu yapabilirsiniz **bağımsızbileşenler** sekmesi. Neleri istediğiniz ve daha sonra izleyin seçin yönergeleri.
+Visual Studio yüklemenizi özelleştirmek için Iş yükleri özelliğini kullanmak istemiyorsanız veya bir iş yükü yüklemesinden daha fazla bileşen eklemek istiyorsanız **, tek tek bileşenler sekmesinden tek** tek bileşenleri yükleyerek veya ekleyerek yapabilirsiniz. İstediğinizi seçin ve ardından istemleri izleyin.
 
 ::: moniker range="vs-2017"
 
@@ -179,13 +179,13 @@ Visual Studio yüklemenizi özelleştirmek için iş yüklerini özelliğini kul
 
 ::: moniker range="vs-2019"
 
-  ![Visual Studio 2019 - tek tek bileşenleri yükle](media/vs-2019/vs-installer-individual-components.png "tek tek bileşenler Visual Studio'yu yükleyin")
+  ![Visual Studio 2019-ayrı bileşenleri yükler](media/vs-2019/vs-installer-individual-components.png "Visual Studio bireysel bileşenlerini yükler")
 
 ::: moniker-end
 
-## <a name="step-6---install-language-packs-optional"></a>6. adım - yükleme dil paketleri (isteğe bağlı)
+## <a name="step-6---install-language-packs-optional"></a>6\. adım - yükleme dil paketleri (isteğe bağlı)
 
-Varsayılan olarak, yükleyici programı ilk kez çalıştığında işletim sisteminin dilini eşleştirmeye çalışır. Visual Studio bir dilde yüklemek için seçin **dil paketlerini** sekmesinde Visual Studio Yükleyicisi'nden ve ardından yönergeleri izleyin.
+Varsayılan olarak, yükleyici programı ilk kez çalıştığında işletim sisteminin dilini eşleştirmeye çalışır. Visual Studio 'Yu seçtiğiniz bir dilde yüklemek için Visual Studio Yükleyicisi **dil paketleri** sekmesini seçin ve ardından istemleri izleyin.
 
 ::: moniker range="vs-2017"
 
@@ -195,7 +195,7 @@ Varsayılan olarak, yükleyici programı ilk kez çalıştığında işletim sis
 
 ::: moniker range="vs-2019"
 
-  ![Visual Studio 2019 - yükleme dil paketlerini](media/vs-2019/vs-installer-language-packs.png "Visual Studio'yu yükleyin dil paketleri")
+  ![Visual Studio 2019-dil paketlerini yükler](media/vs-2019/vs-installer-language-packs.png "Visual Studio dil paketlerini yükler")
 
 ::: moniker-end
 
@@ -203,56 +203,56 @@ Varsayılan olarak, yükleyici programı ilk kez çalıştığında işletim sis
 
 Varsayılan dilini değiştirme başka bir komut satırından yükleyiciyi çalıştırarak yoludur. Örneğin, aşağıdaki komutu kullanarak İngilizce olarak çalıştırmak için yükleyici zorlayabilirsiniz: `vs_installer.exe --locale en-US`. Yükleyici, sonraki açışınızda çalıştırdığınızda bu ayar hatırlanır. Aşağıdaki Dil belirteçler yükleyici destekler: zh-cn, zh-tw, cs-cz, en-us, es-es, fr-fr, de-de, it-IT, ja-jp, ko-kr, pl-pl, pt-br, ru-ru ve tr-tr.
 
-## <a name="step-7---select-the-installation-location-optional"></a>7. adım - (isteğe bağlı) yükleme konumunu seçin
+## <a name="step-7---select-the-installation-location-optional"></a>7\. adım-yükleme konumunu seçin (Isteğe bağlı)
 
 ::: moniker range="vs-2017"
 
-**15.7 sürümündeki yeni**: Artık, Visual Studio yükleme ayak izini sistem sürücünüzde azaltabilir. İndirme önbelleğini, paylaşılan bileşenler, SDK'ları ve araçları farklı sürücülere taşıma ve Visual Studio en hızlı çalışan sürücüde korumak seçebilirsiniz.
+**15,7 sürümündeki yenilikler**: Artık, sistem sürücünüzdeki Visual Studio 'nun yükleme ayak izini azaltabilirsiniz. İndirme önbelleğini, paylaşılan bileşenler, SDK'ları ve araçları farklı sürücülere taşıma ve Visual Studio en hızlı çalışan sürücüde korumak seçebilirsiniz.
 
-  ![Visual Studio 2017 - değişiklik yükleme konumlarını](media/installation-options-by-location.png "yükleme konumunu değiştirme")
+  ![Visual Studio 2017-yükleme konumlarını değiştirme](media/installation-options-by-location.png "Yükleme konumunu değiştirme")
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
-Visual Studio yükleme ayak izini sistem sürücünüzde azaltabilir. İndirme önbelleğini, paylaşılan bileşenler, SDK'ları ve araçları farklı sürücülere taşıma ve Visual Studio en hızlı çalışan sürücüde korumak seçebilirsiniz.
+Visual Studio 'nun yükleme ayak izini sistem sürücünüzde azaltabilirsiniz. İndirme önbelleğini, paylaşılan bileşenler, SDK'ları ve araçları farklı sürücülere taşıma ve Visual Studio en hızlı çalışan sürücüde korumak seçebilirsiniz.
 
-  ![Visual Studio 2019 - Select yükleme konumlarını](media/vs-2019/vs-installer-installation-locations.png "yükleme konumunu seçin")
+  ![Visual Studio 2019-yükleme konumlarını seçme](media/vs-2019/vs-installer-installation-locations.png "Yükleme konumunu seçin")
 
 ::: moniker-end
 
 > [!IMPORTANT]
-> Yalnızca Visual Studio ilk kez yüklediğinizde, farklı bir sürücü seçebilirsiniz. Yüklemiş olduğunuz ve sürücüleri değiştirmek istiyorsanız, Visual Studio'yu kaldırın ve yeniden yükleyin.
+> Yalnızca Visual Studio 'Yu ilk kez yüklediğinizde, farklı bir sürücü seçebilirsiniz. Zaten yüklediyseniz ve sürücüleri değiştirmek istiyorsanız, Visual Studio 'Yu kaldırmalı ve ardından yeniden yüklemeniz gerekir.
 
-Daha fazla bilgi için [seçin yükleme konumlarını](change-installation-locations.md) sayfası.
+Daha fazla bilgi için bkz. [yükleme konumlarını seçme](change-installation-locations.md) sayfası.
 
-## <a name="step-8---start-developing"></a>8. adım - geliştirmeye başlayın
+## <a name="step-8---start-developing"></a>8\. adım - geliştirmeye başlayın
 
 ::: moniker range="vs-2017"
 
-1. Visual Studio yüklemesi tamamlandıktan sonra seçin **başlatma** Visual Studio ile geliştirmeye başlamak için düğme.
+1. Visual Studio yüklemesi tamamlandıktan sonra, Visual Studio ile geliştirmeye başlamak için **Başlat** düğmesini seçin.
 
-2. Seçin **dosya**ve ardından **yeni proje**.
+2. **Dosya**' yı ve ardından **Yeni proje**' yi seçin.
 
 3. Bir proje türü seçin.
 
-   Örneğin, [bir C++ uygulaması derleme](../ide/getting-started-with-cpp-in-visual-studio.md), seçin **yüklü**, genişletme **Visual C++** ve ardından oluşturmak istediğiniz C++ proje türünü seçin.
+   Örneğin, [bir C++ uygulama oluşturmak](../ide/getting-started-with-cpp-in-visual-studio.md)için, **yüklendi**, **görsel C++** ' i seçin ve ardından derlemek istediğiniz C++ proje türünü seçin.
 
-   İçin [yapı bir C# uygulama](../get-started/csharp/tutorial-console.md), seçin **yüklü**, genişletme **Visual C#** ve ardından C# proje derlemek istediğiniz türü.
+   [Bir C# uygulama oluşturmak](../get-started/csharp/tutorial-console.md)için, **yüklü**, **görsel C#** ' i seçin ve ardından derlemek istediğiniz C# proje türünü seçin.
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
-1. Visual Studio yüklemesi tamamlandıktan sonra seçin **başlatma** Visual Studio ile geliştirmeye başlamak için düğme.
+1. Visual Studio yüklemesi tamamlandıktan sonra, Visual Studio ile geliştirmeye başlamak için **Başlat** düğmesini seçin.
 
-1. Pencerenin başlangıç seçin **yeni bir proje oluşturma**.
+1. Başlangıç penceresinde **Yeni proje oluştur**' u seçin.
 
-1. Arama kutusuna, kullanılabilir şablonların listesini görmek için oluşturmak istediğiniz uygulamanın türüne girin. Şablonlar listesinde, yükleme sırasında seçtiğiniz workload(s) bağlıdır. Farklı şablonları görmek için farklı iş yüklerini seçin.
+1. Arama kutusuna, kullanılabilir şablonların listesini görmek için oluşturmak istediğiniz uygulamanın türünü girin. Şablon listesi, yükleme sırasında seçtiğiniz iş yüküne bağlıdır. Farklı şablonları görmek için farklı iş yükleri seçin.
 
-   Kullanarak aramanızı belirli bir programlama dili için filtreleyebilirsiniz **dil** aşağı açılan listesi. Kullanarak filtreleyebilirsiniz **Platform** listesi ve **proje türü** çok listesi. 
+   Ayrıca, **dil** açılan listesini kullanarak, aramanızı belirli bir programlama diline göre filtreleyebilirsiniz. **Platform** listesini ve **Proje türü** listesini kullanarak filtre uygulayabilirsiniz. 
 
-1. Yeni projeniz Visual Studio açar ve kodu hazırsınız!
+1. Visual Studio yeni projenizi açar ve kodlamaya hazırsınız!
 
 ::: moniker-end
 

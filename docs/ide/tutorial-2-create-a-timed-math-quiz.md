@@ -1,52 +1,56 @@
 ---
-title: 'Öğretici 2: Zamanlı matematik testi oluşturma'
+title: 'Öğretici 2: Süreli matematik testi oluşturma'
 ms.date: 11/04/2016
-ms.topic: conceptual
 ms.assetid: d7165d08-ace3-457d-b57d-fb8f80760a6f
+ms.topic: tutorial
+ms.technology: vs-ide-general
+ms.devlang:
+- csharp
+- vb
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ececa58d04ea7cfebe6178faae724038e353f06
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c0c7f3695be87f6cb4081b3aa02fc7a129869a4c
+ms.sourcegitcommit: 9c07ae6fb18204ea080c8248994a683fa12e5c82
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62821636"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "70293690"
 ---
-# <a name="tutorial-2-create-a-timed-math-quiz"></a>Öğretici 2: Zamanlı matematik testi oluşturma
+# <a name="tutorial-2-create-a-timed-math-quiz"></a>Öğretici 2: Süreli matematik testi oluşturma
 
-Bu öğreticide, sınava giren belirli bir süre içinde dört rastgele aritmetik sorusuna yanıtlamalısınız bir test oluşturun. Aşağıdakilerin nasıl yapıldığını öğreneceksiniz:
+Bu öğreticide, bir sınavın belirli bir süre içinde dört rastgele aritmetik sorunu yanıtlaması gereken bir test oluşturacaksınız. Aşağıdakilerin nasıl yapıldığını öğreneceksiniz:
 
-- Kullanarak rastgele sayılar üretin <xref:System.Random> sınıfı.
+- <xref:System.Random> Sınıfını kullanarak rastgele sayılar üretin.
 
-- Kullanarak belirli bir zamanda oluşacak olayları tetikleme bir <xref:System.Windows.Forms.Timer> denetimi.
+- Olayları bir <xref:System.Windows.Forms.Timer> denetim kullanarak belirli bir zamanda gerçekleşecek şekilde tetikleyin.
 
-- Kullanarak program akışını denetleme `if else` deyimleri.
+- Deyimlerini kullanarak `if else` program akışını denetleme.
 
-- Kodda temel aritmetik işlemleri gerçekleştirin.
+- Kodda temel aritmetik işlemler gerçekleştirin.
 
-İşiniz bittiğinde, sınav aşağıdaki resim gibi dışında sayıların farklı görünecektir:
+Bitirdiğinizde, test, farklı sayılar dışında aşağıdaki resme benzer şekilde görünür:
 
-![Dört Sorulu matematik sınavı](../ide/media/express_finishedquiz.png)
+![Dört problemle matematik sınavından](../ide/media/express_finishedquiz.png)
 
 ## <a name="tutorial-links"></a>Öğretici bağlantıları
 
-Sınavın tamamlanmış bir sürümünü indirmek için bkz [tam matematik sınavı öğretici örneği](https://code.msdn.microsoft.com/Complete-Math-Quiz-8581813c).
+Sınavın tamamlanmış bir sürümünü indirmek için bkz. [tüm matematik testi öğreticisi örneği](https://code.msdn.microsoft.com/Complete-Math-Quiz-8581813c).
 
 > [!NOTE]
-> Bu öğreticide hem Visual C# ve Visual Basic ele alınmaktadır; bu nedenle kullandığınız programlama diline özgü bilgilere odaklanın.
+> Bu öğreticide hem görsel C# hem de Visual Basic ele alınmaktadır, bu nedenle kullandığınız programlama diline özgü bilgilere odaklanırsınız.
 
 ## <a name="related-topics"></a>İlgili konular
 
 |Başlık|Açıklama|
 |-----------|-----------------|
-|[1. Adım: Proje oluşturma ve formunuza etiketler ekleme](../ide/step-1-create-a-project-and-add-labels-to-your-form.md)|Başlangıç projesi oluşturma özelliklerini değiştirme ve ekleme `Label` kontrol eder.|
-|[2. Adım: Rasgele bir toplama problemi oluşturma](../ide/step-2-create-a-random-addition-problem.md)|Bir toplama problemi oluşturma ve kullanma `Random` sınıfını kullanarak rastgele sayılar üretin.|
-|[3. Adım: Bir geri sayım Zamanlayıcısı ekleme](../ide/step-3-add-a-countdown-timer.md)|Sınav zamanlanabilir geri sayım Zamanlayıcısı ekleyin.|
-|[4. Adım: CheckTheAnswer() yöntemi ekleme](../ide/step-4-add-the-checktheanswer-parens-method.md)|Sınava sorun için doğru yanıtı girilen olup olmadığını denetlemek için bir yöntem ekleyin.|
-|[5. Adım: ENTER NumericUpDown denetimleri için olay işleyicileri ekleme](../ide/step-5-add-enter-event-handlers-for-the-numericupdown-controls.md)|Sınav olması daha kolay hale getirmek olay işleyicileri ekleyin.|
-|[6. Adım: Çıkarma problemi ekleme](../ide/step-6-add-a-subtraction-problem.md)|Rastgele sayılar üreten, Zamanlayıcı kullanan ve doğru yanıtları denetleyen bir çıkarma sorusu ekleyin.|
-|[7. Adım: Çarpma ve bölme soruları ekleyin](../ide/step-7-add-multiplication-and-division-problems.md)|Rastgele sayılar üretin, Zamanlayıcı kullanan ve doğru yanıtları denetleyen çarpma ve bölme soruları ekleyin.|
+|[1. Adım: Formunuza bir proje oluşturun ve Etiketler ekleyin](../ide/step-1-create-a-project-and-add-labels-to-your-form.md)|Projeyi oluşturarak, özellikleri değiştirerek ve denetimler ekleyerek `Label` başlayın.|
+|[2. Adım: Rastgele bir ek sorun oluşturma](../ide/step-2-create-a-random-addition-problem.md)|Ek bir sorun oluşturun ve rastgele sayılar oluşturmak `Random` için sınıfını kullanın.|
+|[3. Adım: Geri sayım ekleme süreölçeri](../ide/step-3-add-a-countdown-timer.md)|Sınavın zaman aşımına uğraabilmesi için bir geri sayım Zamanlayıcısı ekleyin.|
+|[4. Adım: CheckTheAnswer () yöntemini ekleyin](../ide/step-4-add-the-checktheanswer-parens-method.md)|Sınavın sorun için doğru bir yanıt girmediğini denetlemek için bir yöntem ekleyin.|
+|[5. Adım: NumericUpDown denetimleri için Enter Olay işleyicileri ekleme](../ide/step-5-add-enter-event-handlers-for-the-numericupdown-controls.md)|Sınavını daha kolay hale getirmek için olay işleyicileri ekleyin.|
+|[6. Adım: Çıkarma sorunu ekleme](../ide/step-6-add-a-subtraction-problem.md)|Rastgele sayılar üreten, Zamanlayıcı kullanan ve doğru yanıtları denetleyen bir çıkarma sorunu ekleyin.|
+|[7. Adım: Çarpma ve bölme sorunları ekleme](../ide/step-7-add-multiplication-and-division-problems.md)|Rastgele sayılar üreten çarpma ve bölme sorunları ekleyin, zamanlayıcıyı kullanın ve doğru yanıtları denetleyin.|
 |[8. Adım: Testi özelleştirme](../ide/step-8-customize-the-quiz.md)|Renkleri değiştirme ve ipucu ekleme gibi diğer özellikleri deneyin.|

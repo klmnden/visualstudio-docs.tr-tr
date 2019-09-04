@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 09d5fb41648a2cd2dbd844bfb0fa426fa704042f
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 68c175a55c9e60e870a5466a831aaae50d62dced
+ms.sourcegitcommit: 9c07ae6fb18204ea080c8248994a683fa12e5c82
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69551152"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "70293443"
 ---
 # <a name="configure-fxcop-analyzers"></a>FxCop çözümleyicileri yapılandırma
 
@@ -46,7 +46,10 @@ Daha fazla bilgi için bkz. [kod Çözümleyicileri Için kural kümeleri](analy
 
 ## <a name="editorconfig-file"></a>EditorConfig dosyası
 
-Bir [. editorconfig](https://editorconfig.org) dosyasına anahtar-değer çiftleri ekleyerek çözümleyici kurallarını yapılandırabilirsiniz. Bir yapılandırma dosyası [bir projeye özgü](#per-project-configuration) olabilir veya iki ya da daha fazla proje arasında [paylaşılabilir](#shared-configuration) .
+Bir [. editorconfig](https://editorconfig.org) dosyasına anahtar-değer çiftleri ekleyerek FxCop Çözümleyicisi kurallarını yapılandırabilirsiniz. Bir yapılandırma dosyası [bir projeye özgü](#per-project-configuration) olabilir veya iki ya da daha fazla proje arasında [paylaşılabilir](#shared-configuration) .
+
+> [!NOTE]
+> Eski FxCop kurallarını bir. editorconfig dosyası kullanarak yapılandıramazsınız.
 
 ### <a name="per-project-configuration"></a>Proje başına yapılandırma
 
@@ -61,7 +64,7 @@ Belirli bir proje için. editorconfig tabanlı çözümleyici yapılandırmasın
 
 ### <a name="shared-configuration"></a>Paylaşılan yapılandırma
 
-İki veya daha fazla proje arasında çözümleyici yapılandırması için bir. editorconfig dosyası paylaşabilirsiniz, ancak bazı ek adımlar gerektirir.
+FxCop Çözümleyicisi yapılandırması için bir. editorconfig dosyasını iki veya daha fazla proje arasında paylaşabilirsiniz, ancak bazı ek adımlar gerektirir.
 
 1. *. Editorconfig* dosyasını ortak bir konuma kaydedin.
 
@@ -90,7 +93,7 @@ Belirli bir proje için. editorconfig tabanlı çözümleyici yapılandırmasın
 4. Projeyi yeniden yükleyin.
 
 > [!NOTE]
-> Eski FxCop kurallarını bir. editorconfig dosyası kullanarak yapılandıramazsınız.
+> Burada açıklanan EditorConfig dosyasının rastgele paylaşılan konumu, yalnızca FxCop çözümleyicileri yapılandırmak için geçerlidir. Girintileme ve kod stili gibi diğer ayarlar için, EditorConfig dosyasının her zaman proje klasörüne veya bir üst klasöre yerleştirilmesi gerekir.
 
 ## <a name="option-scopes"></a>Seçenek kapsamları
 
