@@ -57,7 +57,6 @@
 
 # Sürüm Denetimi
 ## [Genel bakış](version-control.md)
-## [TF Sürüm Denetimi](tf-version-control.md)
 ## [Git Deposu Ayarlama](set-up-git-repository.md)
 ## [Git ile çalışma](working-with-git.md)
 ## [Subversion Deposu Ayarlama](set-up-subversion-repository.md)
@@ -100,6 +99,7 @@
 ## [Günlükler ve Özel Durumlar](troubleshooting.md)
 ## [Visual Studio Müşteri Deneyimi Geliştirme Programı](visual-studio-experience-improvement-program.md)
 ## [Sorun Bildirin](report-a-problem.md)
+## [Sorun giderme: Mac için Visual Studio, Team Foundation Sürüm Denetimi’ni destekler mi?](tf-version-control.md)
 ## [Sorun giderme: Neden tüm şablonları göremiyorum?](troubleshooting-no-templates.md)
 ## [Sorun giderme: Güncelleştirici, bilgileri alırken hatalarla karşılaşıyor](updater-troubleshooting.md)
 
