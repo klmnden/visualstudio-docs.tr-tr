@@ -13,12 +13,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 author: gewarren
-ms.openlocfilehash: 2c7a81eefc48626a57d15f99579e151390b52fb9
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 4b9e30d70aa90645d05d3bf7b530056feec752ca
+ms.sourcegitcommit: 9f11537a721e69879a612979a1aca98f40bb4d4d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68926798"
+ms.lasthandoff: 09/05/2019
+ms.locfileid: "70383714"
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>İzlenecek yol: Yönetilen kod için birim testleri oluşturma ve çalıştırma
 
@@ -163,7 +163,7 @@ Artık test edebilirsiniz yöntemleri olan bir projeniz var. Bu makalede, testle
 
 3. Projeyi **BankTests**olarak adlandırın.
 
-4.           **Oluştur**'a tıklayın.
+4. **Oluştur**'a tıklayın.
 
    **BankTests** projesi **Banka** çözümüne eklenir.
 
@@ -301,7 +301,7 @@ Bir test yönteminin aşağıdaki gereksinimleri karşılaması gerekir:
 
 Test sonucu, hatayı açıklayan bir ileti içerir. `AreEqual` Yöntemi için, ileti beklendiğini ve gerçekten alındığını gösterir. Bakiyenin azalmasını bekliyorduk, ancak bunun yerine çekme miktarı artar.
 
-Birim testi bir hatayı kapsamıyor: geri al 'ın miktarı, kaldırılması gereken Hesap bakiyesine *eklenir* .
+Birim testi bir hatayı kapsamıyor: geri al 'ın miktarı, *kaldırılması gereken hesap*bakiyesine *eklenir* .
 
 ### <a name="correct-the-bug"></a>Hatayı düzeltin
 
@@ -429,7 +429,7 @@ public void Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange()
 
 ### <a name="retest-rewrite-and-reanalyze"></a>Yeniden test etme, yeniden yazma ve yeniden çözümleme
 
-Test edilen yöntemde bir hata olduğunu varsayın ve `Debit` yöntemin, özel durum ile doğru iletiyi <xref:System.ArgumentOutOfRangeException> hiçbir şekilde bir daha belirtmediğini hiçbir şekilde oluşturmadığını unutmayın. Şu anda, test yöntemi bu durumu işlemez. `debitAmount` Değer geçerliyse (yani, bakiyesinden daha küçüktür, ancak sıfırdan büyük), hiçbir özel durum yakalanmaz, bu nedenle onaylama hiçbir şekilde tetiklemeye devam eder. Henüz, test yöntemi geçer. Hiçbir özel durum atılmadığı takdirde test yönteminin başarısız olmasını istediğiniz için bu iyi değildir.
+Test edilen yöntemde bir hata olduğunu varsayın ve `Debit` yöntemin, özel durum ile doğru iletiyi <xref:System.ArgumentOutOfRangeException> hiçbir şekilde bir daha belirtmediğini hiçbir şekilde oluşturmadığını unutmayın. Şu anda, test yöntemi bu durumu işlemez. `debitAmount` Değer geçerliyse (yani, bakiyesinden daha küçüktür ve sıfırdan büyükse), hiçbir özel durum yakalanmaz, bu nedenle onay hiçbir şekilde tetiklemeye devam eder. Henüz, test yöntemi geçer. Hiçbir özel durum atılmadığı takdirde test yönteminin başarısız olmasını istediğiniz için bu iyi değildir.
 
 Bu, test yöntemindeki bir hatadır. Sorunu çözmek için, bir özel durumun <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.Fail%2A> oluşturulduğu durumu işlemek üzere test yönteminin sonuna bir onay ekleyin.
 
