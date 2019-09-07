@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: fbecfb7e74b38bb935414e701618cef361bf0506
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
+ms.openlocfilehash: 2f2ff06cc920568b8c344fef42d01408d3134fd8
+ms.sourcegitcommit: dae5dfd626277b58ebd7b21a75757f683f1eacc5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70180017"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70739299"
 ---
 # <a name="troubleshoot-visual-studio-installation-and-upgrade-issues"></a>Visual Studio yükleme ve yükseltme sorunlarını giderme
 
@@ -29,9 +29,9 @@ ms.locfileid: "70180017"
 
 Bu sorun giderme kılavuzu çoğu yükleme sorunları çözmelisiniz adım adım yönergeler içerir.
 
-## <a name="how-to-troubleshoot-an-online-installation"></a>Bir çevrimiçi yükleme sorunlarını giderme
+## <a name="troubleshoot-an-online-installation"></a>Çevrimiçi yükleme sorunlarını giderme
 
-Aşağıdaki adımları, tipik bir çevrimiçi yükleme için en iyi duruma getirilir. Çevrimdışı yükleme etkileyen bir sorun için lütfen bkz [çevrimdışı yükleme sorunlarını giderme](#how-to-troubleshoot-an-offline-installation).
+Aşağıdaki adımları, tipik bir çevrimiçi yükleme için en iyi duruma getirilir. Çevrimdışı yükleme etkileyen bir sorun için lütfen bkz [çevrimdışı yükleme sorunlarını giderme](#troubleshoot-an-offline-installation).
 
 ### <a name="step-1---check-whether-this-problem-is-a-known-issue"></a>1\. adım - bu sorunun bilinen bir sorun olup olmadığını denetleyin
 
@@ -82,7 +82,7 @@ Bozuk dosyalarla ilgili olanlar gibi bazı durumlarda olay olarak denetlenmesi s
 
 ::: moniker range="vs-2017"
 
-1. Uygulamanızın Kurulum günlükleri toplayın. Bkz: [Visual Studio yükleme günlüklerini almak nasıl](#how-to-get-visual-studio-installation-logs) Ayrıntılar için.
+1. Uygulamanızın Kurulum günlükleri toplayın. Bkz: [Visual Studio yükleme günlüklerini almak nasıl](#get-installation-logs) Ayrıntılar için.
 2. Visual Studio Yükleyicisi'ni açın ve ardından **sorun bildir** Visual Studio geri bildirim aracını açın.
 ![Geri bildirim aracını açmak için geri bildirim sağlamak düğmesine sekme](media/report-a-problem.png)
 3. Sorun raporunuza bir başlık verin ve ilgili ayrıntıları sağlayın. Tıklayın **sonraki** gitmek için **ekleri** bölümüne ve ardından oluşturulan günlük dosyasını ekleyin (dosya altındadır genellikle `%TEMP%\vslogs.zip`).
@@ -92,7 +92,7 @@ Bozuk dosyalarla ilgili olanlar gibi bazı durumlarda olay olarak denetlenmesi s
 
 ::: moniker range="vs-2019"
 
-1. Uygulamanızın Kurulum günlükleri toplayın. Bkz: [Visual Studio yükleme günlüklerini almak nasıl](#how-to-get-visual-studio-installation-logs) Ayrıntılar için.
+1. Uygulamanızın Kurulum günlükleri toplayın. Bkz: [Visual Studio yükleme günlüklerini almak nasıl](#get-installation-logs) Ayrıntılar için.
 2. Visual Studio Yükleyicisi'ni açın ve ardından **sorun bildir** Visual Studio geri bildirim aracını açın.
 ![Geri bildirim aracını açmak için geri bildirim sağlamak düğmesine sekme](media/vs-2019/vs-installer-report-problem.png)
 3. Sorun raporunuza bir başlık verin ve ilgili ayrıntıları sağlayın. Tıklayın **sonraki** gitmek için **ekleri** bölümüne ve ardından oluşturulan günlük dosyasını ekleyin (dosya altındadır genellikle `%TEMP%\vslogs.zip`).
@@ -112,7 +112,7 @@ Son çare yapabilecekleriniz [Visual Studio kaldırmak](remove-visual-studio.md)
 
 Önceki adımlardan hiçbiri başarılı bir şekilde yardımcı, yükleme veya yükseltme Visual Studio, kullanarak bizimle iletişime geçin bizim [ **canlı sohbet** ](https://visualstudio.microsoft.com/vs/support/#talktous) seçeneği (yalnızca İngilizce) daha fazla yardım için destek.
 
-## <a name="how-to-troubleshoot-an-offline-installation"></a>Çevrimdışı yükleme sorunlarını giderme
+## <a name="troubleshoot-an-offline-installation"></a>Çevrimdışı yükleme sorunlarını giderme
 
 Bilinen sorunlar ve geçici yerel bir düzenden yükleme sırasında yardımcı olabilecek bazı çözümler tablosu aşağıdadır.
 
@@ -121,7 +121,7 @@ Bilinen sorunlar ve geçici yerel bir düzenden yükleme sırasında yardımcı 
 | Kullanıcılar dosyalara erişimi yoktur. | izinleri (ACL) | Bunlar diğer kullanıcılara Okuma yetkisi vermek için izinleri (ACL) ayarlayın sağlayın *önce* çevrimdışı yükleme paylaşın. |
 | Yeni iş yükleri, bileşenleri ve dil yüklenemedi.  | `--layout`  | Kısmi bir düzenden yükleme ve daha önce iş yükleri, bileşenler veya indirilmedi diller, kısmi düzeni'ni seçin, internet erişimi olduğundan emin olun. |
 
-## <a name="how-to-get-visual-studio-installation-logs"></a>Visual Studio yükleme günlüklerini alma
+## <a name="get-installation-logs"></a>Yükleme günlüklerini al
 
 Kurulum günlükleri, çoğu yükleme sorunlarını gidermek için gereklidir. Ne zaman gönderdiğiniz bir sorun kullanarak [sorun bildir](../ide/how-to-report-a-problem-with-visual-studio.md) Visual Studio Yükleyicisi ', bu günlükleri otomatik olarak, rapora dahil edilir.
 

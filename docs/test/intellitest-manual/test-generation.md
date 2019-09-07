@@ -1,5 +1,5 @@
 ---
-title: Test oluşturma | Microsoft Intellitest Geliştirici Test aracı
+title: Test üretimi | Microsoft IntelliTest geliştirici test aracı
 ms.date: 05/02/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,22 +9,22 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: ee6b01e2c154ddebf71f5ae2511ccfe693506db6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: eb567327950604fac1895ead24b776aefe434548
+ms.sourcegitcommit: dae5dfd626277b58ebd7b21a75757f683f1eacc5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62812837"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70739287"
 ---
 # <a name="test-generation"></a>Test oluşturma
 
-Geleneksel birim testi bir test birkaç şey oluşur:
+Geleneksel birim testinde bir test birkaç şeyin oluşur:
 
-* A [dizisi yöntem çağrıları](test-generation.md#test-generators)
-* Bağımsız değişkenler ile yöntem de çağrıldığında; bağımsız değişkenler [test girişleri](input-generation.md)
-* Amaçlanan bir davranış belirten bir dizi tarafından test edilen uygulamanın doğrulama [onaylar](#assumptions-and-assertions)
+* [Yöntem çağrıları dizisi](test-generation.md#test-generators)
+* Yöntemlerin çağrıldığı bağımsız değişkenler; bağımsız değişkenler [Test girişlerdir](input-generation.md)
+* Bir [onaylama](#assumptions-and-assertions) kümesi belirterek, sınanan uygulamanın amaçlanan davranışının doğrulanması
 
-Bir örnek test yapısı şöyledir:
+Aşağıda örnek bir test yapısı verilmiştir:
 
 ```csharp
 [Test]
@@ -41,23 +41,23 @@ void MyTest() {
 }
 ```
 
-Intellitest ilgili bağımsız değişken değerlerini otomatik olarak genellikle daha fazla genel belirleyebilir [parametreli birim testleri](#parameterized-unit-testing), bir dizi yöntem çağrıları ve onaylar sağlayın.
+IntelliTest, genellikle daha genel [parametreli birim testleri](#parameterized-unit-testing)için ilgili bağımsız değişken değerlerini otomatik olarak belirleyebilir ve bu da yöntem çağrılarının ve onayların sırasını sağlar.
 
 <a name="test-generators"></a>
 ## <a name="test-generators"></a>Test oluşturucuları
 
-Intellitest, test çalışmaları yürütmek için test edilen uygulama yöntemlerinin bir dizi seçerek ve ardından türetilmiş verilerinde onaylar denetlenirken yöntemleri için girişler oluşturma oluşturur.
+IntelliTest, çalıştırılacak test altında uygulamanın Yöntem sırasını seçerek ve ardından türetilmiş veriler üzerinde onayları denetlerken yöntemler için girişler oluşturarak test çalışmaları oluşturur.
 
-A [parametreli birim testine](#parameterized-unit-testing) doğrudan bir dizi yöntem çağrıları, gövdesinde durumları.
+[Parametreli birim testi](#parameterized-unit-testing) , gövdesinde bir dizi yöntem çağrısı olduğunu doğrudan belirtir.
 
-Nesneleri oluşturmak Intellitest gerektiğinde, Oluşturucular ve Fabrika yöntemleri çağrıları dizisi gerektiği gibi otomatik olarak eklenir.
+IntelliTest 'in nesne oluşturulması gerektiğinde, oluşturuculara ve fabrika yöntemlerine yapılan çağrılar otomatik olarak gerektikçe sıraya eklenir.
 
 <a name="parameterized-unit-testing"></a>
 ## <a name="parameterized-unit-testing"></a>Parametreli birim testi
 
-*Parametreleştirilmiş birim testleri* (PUTs) olan parametre testleri. Geleneksel birim testleri, farklı olarak genellikle olan yöntemleri kapalı, herhangi bir dizi parametrenin PUTs yararlanın. Bu basit mi? Evet - Burada, Intellitest dener [girişlerinin (küçük) kümesi oluşturma](input-generation.md) , [tam olarak karşılamak](input-generation.md#dynamic-code-coverage) kodu test çalıştırmasından erişilebilir.
+*Parametreli birim testleri* (Koyar) parametre alma sınamalardır. Genellikle kapalı Yöntemler olan geleneksel birim testlerin aksine, her bir parametre kümesini alır. Bu basit midir? Evet-buradan, IntelliTest, testten erişilebilen kodu [tamamen kapsayan](input-generation.md#dynamic-code-coverage) [girişlerin (minimal) bir kümesini oluşturmaya](input-generation.md) çalışır.
 
-PUTs kullanılarak tanımlanır [PexMethod](attribute-glossary.md#pexmethod) MSTest (veya NUnit, xUnit) benzer bir biçimde özel öznitelik. PUTs olan örnek yöntemleri ile etiketlenmiş sınıflardaki mantıksal olarak gruplanmış [PexClass](attribute-glossary.md#pexclass). Aşağıdaki örnek, depolanan basit bir PUT gösterir **MyPexTest** sınıfı:
+Koyar, MSTest (veya NUnit, xUnit) ile benzer bir biçimde [PexMethod](attribute-glossary.md#pexmethod) özel özniteliği kullanılarak tanımlanır. Koyar, [PexClass](attribute-glossary.md#pexclass)ile etiketlenmiş sınıflarda mantıksal olarak gruplanmış örnek yöntemlerdir. Aşağıdaki örnek **Mypextest** sınıfında saklanan basıt bir put öğesini göstermektedir:
 
 ```csharp
 [PexMethod]
@@ -69,7 +69,7 @@ void ReplaceFirstChar(string target, char c) {
 }
 ```
 
-Burada **ReplaceFirstChar** yerini alan bir dizenin ilk karakteri bir yöntemdir:
+Burada **Replacefirstchar** bir dizenin ilk karakterinin yerini alan bir yöntemdir:
 
 ```csharp
 class StringHelper {
@@ -81,7 +81,7 @@ class StringHelper {
 }
 ```
 
-Bu testin Intellitest otomatik olarak yapabilirsiniz [girdiler](input-generation.md) kapsayan çok sayıda test edilmiş kod yürütme yollarını PUT için. Her işlem, bir farklı yürütme yolunu alır "seri" birim testi kapsayan giriş:
+Bu testten, IntelliTest, test edilmiş kodun birçok yürütme yolunu içeren bir PUT için otomatik olarak [giriş](input-generation.md) oluşturabilir. Farklı bir yürütme yolunu kaplayan her giriş, birim testi olarak "serileştirilmiş" alır:
 
 ```csharp
 [TestMethod, ExpectedException(typeof(ArgumentNullException))]
@@ -98,7 +98,7 @@ void ReplaceFirstChar10() {
 <a name="generic-parameterized"></a>
 ## <a name="generic-parameterized-unit-testing"></a>Genel parametreli birim testi
 
-Parametreli birim testleri, genel yöntemlerin olabilir. Bu durumda, kullanıcı yöntemi kullanarak örneği oluşturmak için kullanılan türler belirtmelidir [PexGenericArguments](attribute-glossary.md#pexgenericarguments).
+Parametreli birim testleri genel yöntemler olabilir. Bu durumda, kullanıcının [Pexgenericarguments](attribute-glossary.md#pexgenericarguments)kullanarak yöntemi örneğini oluşturmak için kullanılan türleri belirtmesi gerekir.
 
 ```csharp
 [PexClass]
@@ -112,39 +112,39 @@ public partial class ListTest {
 ```
 
 <a name="allowing-exceptions"></a>
-## <a name="allowing-exceptions"></a>Özel durumlara izin vermek
+## <a name="allowing-exceptions"></a>Özel durumlara izin verme
 
-Intellitest, beklenen özel durumlar önceliklendirme özel durumları ve beklenmeyen özel durum yardımcı olmak için çok sayıda doğrulama öznitelikleri sağlar.
+IntelliTest, özel durumların beklenen özel durumlara ve beklenmeyen özel durumlara yönelik önceliklendirme sağlamak için çok sayıda doğrulama özniteliği sağlar
 
-Beklenen özel durumlar oluşturmaya uygun ek negatif test çalışmalarıyla gibi **ExpectedException (typeof (*xxx*))**, başarısız olan test çalışmalarını beklenmeyen özel durum oluşturur.
+Beklenen özel durumlar, **ExpectedException (typeof (*XXX*))** gibi uygun ek açıklamayla negatif test çalışmaları oluşturur, ancak beklenmeyen özel durumlar başarısız test çalışmaları oluşturur.
 
 ```csharp
 [PexMethod, PexAllowedException(typeof(ArgumentNullException))]
 void SomeTest() {...}
 ```
 
-Doğrulayıcıları şunlardır:
+Doğrulayıcılar şunlardır:
 
-* [PexAllowedException](attribute-glossary.md#pexallowedexception): bir belirli özel durum türü yerden sağlar
-* [PexAllowedExceptionFromAssembly](attribute-glossary.md#pexallowedexceptionfromassembly): belirtilen bir derlemeden bir belirli özel durum türü sağlar
-* [PexAllowedExceptionFromType](attribute-glossary.md#pexallowedexceptionfromtype): Belirtilen türden bir belirli özel durum türü sağlar
-* [PexAllowedExceptionFromTypeUnderTest](attribute-glossary.md#pexallowedexceptionfromtypeundertest): test edilen türünden bir belirli özel durum türü sağlar.
+* [Pexallowedexception](attribute-glossary.md#pexallowedexception): belirli bir özel durum türünün her yerden izin verir
+* [Pexallowedexceptionfromassembly](attribute-glossary.md#pexallowedexceptionfromassembly): belirtilen derlemeden belirli bir özel durum türüne izin verir
+* [Pexallowedexceptionfromtype](attribute-glossary.md#pexallowedexceptionfromtype): belirtilen türden belirli bir özel durum türüne izin verir
+* [Pexallowedexceptionfromtypeundertest](attribute-glossary.md#pexallowedexceptionfromtypeundertest): test altındaki türden belirli bir özel durum türüne izin verir
 
 <a name="internal-types"></a>
-## <a name="testing-internal-types"></a>İç test türleri
+## <a name="testing-internal-types"></a>İç türleri test etme
 
-"Intellitest bunları görebilirsiniz sürece iç türleri sınayabilirsiniz". Türlerini görmek Intellitest için aşağıdaki öznitelik Visual Studio Intellitest sihirbazları tarafından ürün veya test projenize eklenir:
+IntelliTest, onları görebileceğiniz sürece "test" iç türlerini "test edebilir". Türü görmek için IntelliTest için aşağıdaki öznitelik, Visual Studio IntelliTest sihirbazları tarafından ürün veya test projenize eklenir:
 
 ```csharp
-[assembly: InternalsVisibleTo("Microsoft.Pex, PublicKey=002400000480000094000000060200000024000052534131000400000100010007d1fa57c4aed9f0a32e84aa0faefd0de9e8fd6aec8f87fb03766c834c99921eb23be79ad9d5dcc1dd9ad236132102900b723cf980957fc4e177108fc607774f29e8320e92ea05ece4e821c0a5efe8f1645c4c0c93c1ab99285d622caa652c1dfad63d745d6f2de5f17e5eaf0fc4963d261c8a12436518206dc093344d5ad293
+[assembly: InternalsVisibleTo("Microsoft.Pex, PublicKey=002400000480000094000000060200000024000052534131000400000100010007d1fa57c4aed9f0a32e84aa0faefd0de9e8fd6aec8f87fb03766c834c99921eb23be79ad9d5dcc1dd9ad236132102900b723cf980957fc4e177108fc607774f29e8320e92ea05ece4e821c0a5efe8f1645c4c0c93c1ab99285d622caa652c1dfad63d745d6f2de5f17e5eaf0fc4963d261c8a12436518206dc093344d5ad293")]
 ```
 
 <a name="assumptions-and-assertions"></a>
-## <a name="assumptions-and-assertions"></a>Varsayımlar ve onaylar
+## <a name="assumptions-and-assertions"></a>Varsayımlar ve Onaylamalar
 
-Kullanıcılar kullanabilir varsayımlar ve Onaylamalar express [önkoşulları](#precondition) (tahminler) ve [koşul sonralarına](#postcondition) (onaylar) testlerini hakkında. Intellitest parametre değerlerini bir dizi oluşturur ve "kod keşfediyor", bir varsayım test ihlal ediyor. Bu durum oluştuğunda, bu yol için bir test oluşturmaz ancak sessizce yoksayar.
+Kullanıcılar, testleri hakkında ön koşullar (varsayımlar) ve [Sonkoşulları](#postcondition) [(onaylar](#precondition) ) için varsayımlar ve onaylamaları kullanabilir. IntelliTest bir dizi parametre değeri oluşturduğunda ve kodu "araştırır", testin bir varsayımını ihlal edebilir. Söz konusu olduğunda, bu yol için bir test oluşturmaz, ancak sessizce yoksayacaktır.
 
-Onaylardır iyi bilinen bir kavram normal birim test çerçeveleri, Intellitest zaten "yerleşik anlaması için" **Assert** her desteklenen test çerçevesi tarafından sağlanan sınıfları. Ancak, çoğu çerçeveleri sağlamadığı bir **varsay** sınıfı. Bu durumda, Intellitest sağlar [PexAssume](static-helper-classes.md#pexassume) sınıfı. Var olan bir test çerçevesi kullanmak istemiyorsanız, Intellitest de sahip [PexAssert](static-helper-classes.md#pexassert) sınıfı.
+Onaylar normal birim testi çerçevelerinizdeki iyi bilinen bir kavramdır. bu nedenle IntelliTest, desteklenen her test çerçevesi tarafından sunulan yerleşik **onay sınıflarını zaten** "anladı". Ancak, çoğu Framework bir **varsay** sınıfı sağlamaz. Bu durumda, IntelliTest [Pexvarsay](static-helper-classes.md#pexassume) sınıfını sağlar. Mevcut bir test çerçevesini kullanmak istemiyorsanız, IntelliTest [Pexonaylama](static-helper-classes.md#pexassert) sınıfına de sahiptir.
 
 ```csharp
 [PexMethod]
@@ -156,7 +156,7 @@ public void Test1(object o) {
 }
 ```
 
-Özellikle, nullness olmayan varsayımına özel bir öznitelik kodlanmış olmalıdır:
+Özellikle, boş olmayan varsayımına özel bir öznitelik olarak kodlanabilen:
 
 ```csharp
 [PexMethod]
@@ -168,39 +168,39 @@ public void Test2([PexAssumeNotNull] object o)
 ```
 
 <a name="precondition"></a>
-## <a name="precondition"></a>Önkoşulu
+## <a name="precondition"></a>Koşul
 
-Bir yöntemin bir önkoşulu yöntemi başarılı koşullar ifade eder.
+Bir yöntemin önkoşulunu yöntemin başarılı olacağı koşulları ifade eder.
 
-Parametreleri ve nesne durumu denetleme ve atma önkoşuluna zorlanan genellikle bir **ArgumentException** veya **InvalidOperationException** bunu ihlal edilirse.
+Genellikle, önkoşul, parametreleri ve nesne durumunu denetleyerek ve ihlal edilirse bir **ArgumentException** veya **InvalidOperationException** oluşturarak zorlanır.
 
-Intellitest, önkoşulu olarak bir [parametreli birim testine](#parameterized-unit-testing) ile ifade [PexAssume](static-helper-classes.md#pexassume).
+IntelliTest 'de, [parametreli birim testinin](#parameterized-unit-testing) bir önkoşulu, [pexvarsay](static-helper-classes.md#pexassume)ile ifade edilir.
 
 <a name="postcondition"></a>
-## <a name="postcondition"></a>Sonkoşul
+## <a name="postcondition"></a>Mediğine
 
-Bir yöntemin Sonkoşul kendi önkoşulları başlangıçta geçerli olduğu varsayılırsa yöntem yürütme sırasında ve sonrasında tutmak zorunda koşullarına ifade eder.
+Bir yöntemin sonkoşulu, bir yöntemin yürütülmesi sırasında ve sonrasında saklanması gereken koşulları ifade eder ve bu durum, önkoşullarının başlangıçta geçerli olduğunu varsayar.
 
-Genellikle, Sonkoşul çağrıları olarak zorunlu kılınmıştır **Assert** yöntemleri.
+Genellikle, Sonkoşul **onaylama** yöntemlerine yapılan çağrılar tarafından zorlanır.
 
-Intellitest, Sonkoşul biri ile bir [parametreli birim testine](#parameterized-unit-testing) ile ifade [PexAssert](static-helper-classes.md#pexassert).
+IntelliTest ile, [parametreli birim testinin](#parameterized-unit-testing) bir sonkoşulu [pexonaylama](static-helper-classes.md#pexassert)ile ifade edilir.
 
 <a name="test-failures"></a>
-## <a name="test-failures"></a>Test hataları
-Oluşturulan bir test çalışması başarısız olduğunda?
+## <a name="test-failures"></a>Test arızaları
+Oluşturulan test çalışması ne zaman başarısız olur?
 
-1. İçinde sonlanmamasına varsa [yol sınırları yapılandırılmış](exploration-bounds.md), sürece hata olarak kabul [TestExcludePathBoundsExceeded](exploration-bounds.md#testexcludepathboundsexceeded) seçeneği ayarlanır
+1. [Yapılandırılmış yol sınırları](exploration-bounds.md)içinde Sonlanmamışsa, [Testexcludepathboundsexceılsınıo](exploration-bounds.md#testexcludepathboundsexceeded) seçeneği ayarlanmamışsa hata olarak kabul edilir
 
-1. Test oluşturursa bir **PexAssumeFailedException**, başarılı. Ancak, bunu genellikle sürece filtre [TestEmissionFilter](exploration-bounds.md#testemissionfilter) ayarlanır **tüm**
+1. Test bir **PexAssumeFailedException**oluşturursa başarılı olur. Ancak, [Testemissionfilter](exploration-bounds.md#testemissionfilter) **Tümü** olarak ayarlanmadığı takdirde genellikle filtrelenir.
 
-1. Test ihlal ediyorsa bir [onaylama](#assumptions-and-assertions); Örneğin, başarısız bir birim testi çerçevesi bir onaylama ihlali özel özel durum atma
+1. Test bir [onaylama işlemi](#assumptions-and-assertions)ihlal ederse; Örneğin, bir birim testi çerçevesinin bir onaylama ihlali özel durumu oluşturarak başarısız olur
 
-Yukarıdakilerin hiçbiri karar oluşturmak, bir özel durum oluşturmaz ve yalnızca, test başarılı olur. Onaylama ihlalleri, tıpkı özel durumlar olarak kabul edilir.
+Yukarıdakilerden hiçbiri bir karar üretmezse, ve yalnızca bir özel durum oluşturmuyorsa test başarılı olur. Onaylama ihlalleri özel durumlarla aynı şekilde işlenir.
 
 <a name="setup-teardown"></a>
-## <a name="setup-and-tear-down"></a>Kurulum ve kapatabilirsiniz
+## <a name="setup-and-tear-down"></a>Kurulum ve koparma
 
-Parçası olarak test çerçeveleri ile tümleştirme, algılama ve çalışan Intellitest destekler, Kurulum ve ayırma yöntemleri.
+Test çerçeveleri ile tümleştirmenin bir parçası olarak, IntelliTest, kurulum ve ayırma yöntemlerini algılayıp çalıştırmayı destekler.
 
 **Örnek**
 
@@ -235,11 +235,11 @@ namespace MyTests
 ```
 
 <a name="further-reading"></a>
-## <a name="further-reading"></a>Daha fazla bilgi
+## <a name="further-reading"></a>Daha fazla okuma
 
-* [Test kodu bağlama](https://devblogs.microsoft.com/devops/smart-unit-tests-test-to-code-binding-test-case-management/)
-* [Hepsini yönetmek için bir test](https://devblogs.microsoft.com/devops/intellitest-one-test-to-rule-them-all/)
+* [Kod bağlamaya test](https://devblogs.microsoft.com/devops/smart-unit-tests-test-to-code-binding-test-case-management/)
+* [Tümünü kurala göre bir test](https://devblogs.microsoft.com/devops/intellitest-one-test-to-rule-them-all/)
 
-## <a name="got-feedback"></a>Geri bildirim var mı?
+## <a name="got-feedback"></a>Geri bildirim alındı mı?
 
-Fikirlerinizi gönderin ve özellik istekleri [Geliştirici topluluğu](https://developercommunity.visualstudio.com/content/idea/post.html?space=8).
+Fikirlerinizi ve özellik isteklerinizi [Geliştirici topluluğu](https://developercommunity.visualstudio.com/content/idea/post.html?space=8)' na gönderin.
