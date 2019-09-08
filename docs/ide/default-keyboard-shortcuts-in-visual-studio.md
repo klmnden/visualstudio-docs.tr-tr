@@ -13,38 +13,38 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 32335f010db2d030d64ae1319f3cc893526a30e0
-ms.sourcegitcommit: d4920babfc3d24a3fe1d4bf446ed3fe73b344467
+ms.openlocfilehash: f6da512f6322bed074b8009d45e569626afcd996
+ms.sourcegitcommit: 0f44ec8ba0263056ad04d2d0dc904ad4206ce8fc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "67160048"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70766040"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Visual Studio'daki klavye kısayolları
 
-Çeşitli erişebileceğiniz [komutları](reference/visual-studio-commands.md) ve Visual Studio'da uygun klavye kısayolunu seçerek pencereleri. Bu sayfa için varsayılan komut kısayolları listeler **genel** profil, hangi Visual Studio yüklü olduğunda seçmiş olabilirsiniz. Seçtiğiniz profilden bağımsız olarak yapabilecekleriniz [kısayol tanımlamak](identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md) açarak bir komutun **seçenekleri** genişletme iletişim kutusu, **ortam** düğümünü ve ardından **Klavye**. Ayrıca, verilen komutlardan herhangi birine farklı bir kısayol atayarak kısayollarınızı özelleştirebilirsiniz.
+Uygun klavye kısayolunu seçerek Visual Studio 'daki çeşitli [komutlara](reference/visual-studio-commands.md) ve Windows 'a erişebilirsiniz. Bu sayfada, **genel** profil için varsayılan komut kısayolları listelenir. Bu, Visual Studio 'yu yüklediğinizde seçmiş olabileceğiniz bir uygulamadır. Seçtiğiniz profil ne olduğuna bakılmaksızın, **Seçenekler** iletişim kutusunu açıp **ortam** düğümünü genişleterek ve ardından **klavye**' yi seçerek bir komutun [kısayolunu belirleyebilirsiniz](identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md) . Ayrıca, verilen komutlardan herhangi birine farklı bir kısayol atayarak kısayollarınızı özelleştirebilirsiniz.
 
-Ortak klavye kısayollarının ve diğer üretkenlik bilgilerinin bir listesi için bkz:
+Yaygın klavye kısayollarının ve diğer üretkenlik bilgilerinin bir listesi için bkz.:
 
 - [Sık kullanılan komutlar için klavye kısayolları](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md)
 - [Klavye ipuçları](../ide/productivity-shortcuts.md)
 - [Üretkenlik ipuçları](../ide/productivity-features.md).
 
-Visual Studio'da erişilebilirlik hakkında daha fazla bilgi için bkz. [erişilebilirlik ipuçları ve püf noktaları](../ide/reference/accessibility-tips-and-tricks.md) ve [nasıl yapılır: Yalnızca klavyeyi kullanma](../ide/reference/how-to-use-the-keyboard-exclusively.md).
+Visual Studio 'da erişilebilirlik hakkında daha fazla bilgi için bkz. [erişilebilirlik ipuçları ve püf noktaları](../ide/reference/accessibility-tips-and-tricks.md) ve [nasıl yapılır: Klavyeyi özel](../ide/reference/how-to-use-the-keyboard-exclusively.md)olarak kullanın.
 
 |||||
 |-|-|-|-|
 |[Analiz edin](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_analyze)|[Düzenle](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_edit)|[Project](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_project)|[Test](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_test)|
 |[Mimari](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_architecture)|[Düzenleyici bağlam menüleri](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_editorContext)|[Proje ve çözüm bağlam menüleri](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_projectContext)|[Test Gezgini](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_testexplorerGLOBAL)|
 |[Derleme](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_build)|[Dosya](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_file)|[Yeniden düzenleme](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_refactor)|[Araçlar](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_tools)|
-|[Sınıf Görünümü Bağlam menüleri](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_classview)|[Yardım](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_help)|[Çözüm Gezgini](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_solutionexplorerGLOBAL)|[Görünümü](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_view)|
+|[Bağlam menülerini Sınıf Görünümü](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_classview)|[Yardım](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_help)|[Çözüm Gezgini](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_solutionexplorerGLOBAL)|[Görünümü](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_view)|
 |[Hata ayıklama](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_debug)|[Yük testi](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_loadtest)|[Takım](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_team)|[Pencere](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_window)|
 |[Hata ayıklayıcı bağlam menüleri](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_debugger)|[Diğer bağlam menüleri](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_otherContext)|[Team Foundation bağlam menüleri](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_TFcontext)|[Azure](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_windowsazure)|
 |[Tanılama Merkezi](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_diagnostics)||||
 
-## <a name="global-shortcuts"></a>Genel kısayolları
+## <a name="global-shortcuts"></a>Genel kısayollar
 
-Bu klavye kısayollarını olan *genel*, herhangi bir Visual Studio penceresi odağa sahip olduğunda, bunları kullanabileceğiniz anlamına gelir.
+Bu klavye kısayolları *geneldir*. Bu, herhangi bir Visual Studio penceresi odağa sahip olduğunda bunları kullanabileceğiniz anlamına gelir.
 
 ### <a name="bkmk_analyze"></a> Analiz edin
 
@@ -63,7 +63,7 @@ Bu klavye kısayollarını olan *genel*, herhangi bir Visual Studio penceresi od
 
 |Komutlar|Klavye kısayolları|
 |--------------| - |
-|Build.BuildSelection|**CTRL + B** (Visual Studio 2019)|
+|Build. BuildSelection|**CTRL + B** (Visual Studio 2019)|
 |Build.BuildSolution|**Ctrl + Shift + B**|
 |Build.Cancel|**Ctrl + Break**|
 |Build.Compile|**CTRL + F7**|
@@ -90,7 +90,7 @@ Bu klavye kısayollarını olan *genel*, herhangi bir Visual Studio penceresi od
 |Debug.DOMExplorer|**Ctrl + Alt + V, D**|
 |Debug.EnableBreakpoint|**CTRL + F9**|
 |Debug.Exceptions|**Ctrl + Alt + E**|
-|Debug.FunctionBreakpoint|**CTRL + K, B** (Visual Studio 2019)<br />**CTRL**+**B** (Visual Studio 2017)|
+|Debug. FunctionBreakpoint|**CTRL + K, B** (Visual Studio 2019)<br />CTRL+**B** (Visual Studio 2017)|
 |Debug.GoToPreviousCallorIntelliTraceEvent|**Ctrl + Shift + F11**|
 |Debug.Graphics.StartDiagnostics|**Alt + F5**|
 |Debug.Immediate|**Ctrl + Alt + ı**|
@@ -114,7 +114,7 @@ Bu klavye kısayollarını olan *genel*, herhangi bir Visual Studio penceresi od
 |Debug.ParallelWatch3|**CTRL + SHIFT + D, 3**|
 |Debug.ParallelWatch4|**CTRL + SHIFT + D, 4**|
 |Debug.Processes|**Ctrl + Alt + Z**|
-|Debug.QuickWatch|**SHIFT + F9** veya **Ctrl + Alt + Q**|
+|Debug.QuickWatch|**SHIFT + F9** ya da **Ctrl + Alt + Q**|
 |Debug.RefreshWindowsapp|**Ctrl + Shift + R**|
 |Debug.Registers|**Ctrl + Alt + G**|
 |Debug.Restart|**Ctrl + Shift + F5**|
@@ -130,8 +130,8 @@ Bu klavye kısayollarını olan *genel*, herhangi bir Visual Studio penceresi od
 |Debug.StepIntoSpecific|**Shift + Alt + F11**|
 |Debug.StepOut|**Shift+F11**|
 |Debug.StepOutCurrentProcess|**CTRL + SHIFT + Alt + F11**|
-|Debug.StepOver|**F10** (hata ayıklama sırasında: Bir adım üzerinde eylem gerçekleştirir)|
-|Debug.StepOver|**F10** (değil hata ayıklama sırasında: Hata ayıklamasını başlatır ve kullanıcı kodu ilk satırında durdurur)|
+|Debug.StepOver|**F10** (Hata ayıklanırken: Eylem üzerinde bir adım gerçekleştirir)|
+|Debug.StepOver|**F10** (Hata ayıklanırken: Hata ayıklamayı başlatır ve kullanıcı kodunun ilk satırında duraklar)|
 |Debug.StepOverCurrentProcess|**Ctrl + Alt + F10**|
 |Debug.StopDebugging|**Shift + F5**|
 |Debug.StopPerformanceAnalysis|**Shift + Alt + F2**|
@@ -166,7 +166,7 @@ Bu klavye kısayollarını olan *genel*, herhangi bir Visual Studio penceresi od
 |Edit.Cut|**CTRL + X**<br /><br /> veya<br /><br /> **Shift + Delete**|
 |Edit.CycleClipboardRing|**Ctrl + Shift + V**<br /><br /> veya<br /><br /> **Ctrl + Shift + bileşenleri**|
 |Edit.Delete|**Delete**|
-|Düzen.Çoğalt|**CTRL + D**|
+|Düzenle. Yinele|**CTRL + D**|
 |Edit.Find|**CTRL + F**|
 |Edit.FindAllReferences|**Shift+F12**|
 |Edit.FindinFiles|**CTRL + SHIFT + F**|
@@ -176,12 +176,12 @@ Bu klavye kısayollarını olan *genel*, herhangi bir Visual Studio penceresi od
 |Edit.FindPreviousSelected|**Ctrl + Shift + F3**|
 |Edit.GenerateMethod|**CTRL + K, Ctrl + M**|
 |Edit.GoTo|**CTRL + G**|
-|Edit.GoToAll|**CTRL +** veya **Ctrl + T**|
+|. Sayfayall Düzenle|**CTRL +** ya da **CTRL + T**|
 |Edit.GoToDeclaration|**Ctrl+F12**|
 |Edit.GoToDefinition|**F12**|
-|Edit.GoToMember|**CTRL + 1, Ctrl + M** veya **Ctrl + 1, M** veya **Alt +\\**|
-|Edit.GoToNextLocation|**F8** (sonraki hata hata listesini veya çıktı penceresinde)|
-|Edit.GoToPrevLocation|**Shift + F8** (hata listesini veya çıktı penceresinde önceki hata)|
+|. Sayfaymember 'ı Düzenle|**CTRL + 1, CTRL + a** ya da **CTRL + 1,** ı ya da **alt +\\**|
+|Edit.GoToNextLocation|**F8** (Hata Listesi veya çıkış penceresinde bir sonraki hata)|
+|Edit.GoToPrevLocation|**SHIFT + F8** (Hata Listesi veya çıkış penceresinde önceki hata)|
 |Edit.InsertSnippet|**CTRL + K, Ctrl + X**|
 |Edit.MoveControlDown|**CTRL + AŞAĞI OK**|
 |Edit.MoveControlDownGrid|**Aşağı ok**|
@@ -193,7 +193,7 @@ Bu klavye kısayollarını olan *genel*, herhangi bir Visual Studio penceresi od
 |Edit.MoveControlUpGrid|**Yukarı Ok**|
 |Edit.NextBookmark|**CTRL + K, Ctrl + N**|
 |Edit.NextBookmarkInFolder|**Ctrl + Shift + K, Ctrl + Shift + N**|
-|Edit.OpenFile|**Ctrl + Shift + G** (dosya adı imlecin altındaki açılır)|
+|Edit.OpenFile|**CTRL + SHIFT + G** (Dosya adını imleç altında açar)|
 |Edit.Paste|**CTRL + V**<br /><br /> veya<br /><br /> **Shift + bileşenleri**|
 |Edit.PreviousBookmark|**CTRL + K, Ctrl + P**|
 |Edit.PreviousBookmarkInFolder|**Ctrl + Shift + K, Ctrl + Shift + P**|
@@ -341,9 +341,13 @@ Bu klavye kısayollarını olan *genel*, herhangi bir Visual Studio penceresi od
 |--------------| - |
 |TestExplorer.DebugAllTests|**CTRL + R, Ctrl + A**|
 |TestExplorer.DebugAllTestsInContext|**CTRL + R, Ctrl + T**|
+|TestExplorer. DebugLastRun|**CTRL + R, D**|
 |TestExplorer.RepeatLastRun|**CTRL + R, L**|
 |TestExplorer.RunAllTests|**CTRL + R, A**|
 |TestExplorer.RunAllTestsInContext|**CTRL + R, T**|
+|TestExplorer. ShowTestExplorer|**CTRL + E, T**|
+|LiveUnitTesting. OpenTab|**CTRL + E, L**|
+|Test. CodeCoverageResults|**Ctrl + E, C**|
 
 ### <a name="bkmk_tools"></a> Araçları
 
@@ -359,7 +363,7 @@ Bu klavye kısayollarını olan *genel*, herhangi bir Visual Studio penceresi od
 |--------------| - |
 |View.AllWindows|**Shift + Alt + M**|
 |View.ArchitectureExplorer|**CTRL +\\, Ctrl + R**|
-|View.Backward|**Alt + sol ok** (işlevlerden farklı View.NavigateBackward Metin Düzenleyicisi'nde)|
+|View.Backward|**Alt + sol ok** (Metin düzenleyicisinde View. Navigategeri 'den farklı işlevler)|
 |View.BookmarkWindow|**CTRL + K, Ctrl + W**|
 |View.BrowseNext|**CTRL + SHIFT + 1**|
 |View.BrowsePrevious|**CTRL + SHIFT + 2**|
@@ -374,7 +378,7 @@ Bu klavye kısayollarını olan *genel*, herhangi bir Visual Studio penceresi od
 |View.ErrorList|**CTRL +\\, E**<br /><br /> veya<br /><br /> **CTRL +\\, Ctrl + E**|
 |View.F#Interactive|**Ctrl + Alt + F**|
 |View.FindSymbolResults|**Ctrl + Alt + F12**|
-|View.Forward|**Alt + sağ ok** (işlevlerden farklı View.NavigateForward Metin Düzenleyicisi'nde)|
+|View.Forward|**Alt + sağ ok**  (Metin düzenleyicisinde View. NavigateForward öğesinden farklı işlevler)|
 |View.ForwardBrowseContext|**CTRL + SHIFT + 7**|
 |View.FullScreen|**Shift + Alt + Enter**|
 |View.NavigateBackward|**CTRL +-**|
@@ -384,7 +388,7 @@ Bu klavye kısayollarını olan *genel*, herhangi bir Visual Studio penceresi od
 |View.ObjectBrowser|**Ctrl + Alt + J**|
 |View.ObjectBrowserGoToSearchCombo|**CTRL + K, Ctrl + R**|
 |View.Output|**Ctrl + Alt + O** (harf ' O')|
-|View.PopBrowseContext|**CTRL + SHIFT + 8** (C++ yalnızca)|
+|View. PopBrowseContext|**CTRL + SHIFT + 8** (C++ yalnızca)|
 |View.PropertiesWindow|**F4**|
 |View.PropertyPages|**Shift + F4**|
 |View.ResourceView|**CTRL + SHIFT + E**|
@@ -401,6 +405,7 @@ Bu klavye kısayollarını olan *genel*, herhangi bir Visual Studio penceresi od
 |View.WebBrowser|**Ctrl + Alt + R**|
 |View.ZoomIn|**CTRL + SHIFT +.**|
 |View.ZoomOut|**CTRL + SHIFT +,**|
+|TestExplorer. ShowTestExplorer|**CTRL + E, T**|
 
 ### <a name="bkmk_window"></a> Pencere
 
@@ -789,7 +794,7 @@ Bu klavye kısayollarını olan *genel*, herhangi bir Visual Studio penceresi od
 | Edit.CollapseCurrentRegion | **CTRL + M, Ctrl + S** |
 | Edit.CollapseTag | **CTRL + M, Ctrl + T** |
 | Edit.CollapseToDefinitions | **CTRL + M, Ctrl + O** (harf ' O') |
-| Edit.ContractSelection | **Shift + Alt +-** (olmayanC++ yalnızca) |
+| . ContractSelection öğesini Düzenle | **SHIFT + alt +-** (C++ salt olmayan) |
 | Edit.CommentSelection | **CTRL + K, Ctrl + C** |
 | Edit.CompleteWord | **Ctrl + Ara çubuğu**<br /><br /> veya<br /><br /> **Alt + sağ ok** |
 | Edit.CopyParameterTip | **Ctrl + Shift + Alt + C** |
@@ -802,20 +807,20 @@ Bu klavye kısayollarını olan *genel*, herhangi bir Visual Studio penceresi od
 | Edit.DocumentStartExtend | **CTRL + SHIFT + Home** |
 | Edit.ExpandAllOutlining | **CTRL + M, Ctrl + X** |
 | Edit.ExpandCurrentRegion | **CTRL + M, Ctrl + E** |
-| Edit.ExpandSelection | **Shift + Alt +=** (olmayanC++ yalnızca) |
-| Edit.ExpandSelectiontoContainingBlock | **Shift + Alt +]** |
+| . ExpandSelection öğesini Düzenle | **SHIFT + alt + =** (C++ salt olmayan) |
+| . ExpandSelectiontoContainingBlock öğesini Düzenle | **SHIFT + alt +]** |
 | Edit.FormatDocument | **CTRL + K, Ctrl + D** |
 | Edit.FormatSelection | **CTRL + K, Ctrl + F** |
-| Edit.GotoAll | **Ctrl+T**<br /><br /> veya<br /><br /> **CTRL +** |
+| . Sayfayall Düzenle | **Ctrl+T**<br /><br /> veya<br /><br /> **CTRL +** |
 | Edit.GotoBrace | **CTRL +]** |
 | Edit.GotoBraceExtend | **CTRL + SHIFT +]** |
-| Edit.GotoRecent | **CTRL + T, R** |
-| Edit.GotoNextIssueinFile | **Alt + PgDn** |
-| Edit.GotoPreviousIssueinFile | **Alt + PgUp** |
+| Düzenle. Sayfayson | **CTRL + T, R** |
+| Düzenle. GotoNextIssueinFile | **Alt + PgDn** |
+| Düzenle. GotoPreviousIssueinFile | **Alt + PgUp** |
 | Edit.HideSelection | **CTRL + M, Ctrl + H** |
 | Edit.IncreaseFilterLevel | **Alt +.** |
 | Edit.IncrementalSearch | **CTRL + ı** |
-| Edit.InsertCaretsatAllMatching | **Shift + Alt +;** |
+| Edit. ınsertcaretsatalleþleþen | **SHIFT + alt +;** |
 | Edit.InsertNextMatchingCaret | **Shift + Alt +.** |
 | Edit.InsertTab | **sekmesi** |
 | Edit.LineCut | **CTRL + L** |
@@ -860,7 +865,7 @@ Bu klavye kısayollarını olan *genel*, herhangi bir Visual Studio penceresi od
 | Edit.SelectionCancel | **Kaçış** |
 | Edit.SelectToLastGoBack | **CTRL +=** |
 | Edit.ShowCodeLensMenu | **CTRL + K, Ctrl +\`** |
-| Edit.ShowNavigateMenu | **Alt +\`** |
+| Edit. ShowNavigateMenu | **Alt +\`** |
 | Edit.StopHidingCurrent | **CTRL + M, Ctrl + U** |
 | Edit.StopOutlining | **CTRL + M, Ctrl + P** |
 | Edit.SwapAnchor | **CTRL + K, Ctrl + A** |

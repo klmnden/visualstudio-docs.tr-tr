@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c5dd8a4b2d0b32a8c52f75dee6fd765a7ea6ec9a
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 455ab619f293981c5ebd3afba6336c63f2fe7f49
+ms.sourcegitcommit: 0f44ec8ba0263056ad04d2d0dc904ad4206ce8fc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69547560"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70766064"
 ---
 # <a name="ca1051-do-not-declare-visible-instance-fields"></a>CA1051: Görünür örnek alanlarını bildirmeyin
 
@@ -38,9 +38,11 @@ Bu kural varsayılan olarak yalnızca dışarıdan görünür türlere bakar, an
 
 ## <a name="rule-description"></a>Kural açıklaması
 
-Bir alanın birincil kullanım alanının uygulama ayrıntısı olması gerekir. Alanlar, `internal` veya özellikleri kullanılarak sunulmalıdır. `private` Bir alana erişmek için bir özelliğe erişmek kolaydır ve bir özelliğin erişimcilerinin kodu, önemli değişikliklere bildirmeden tür özellikleri genişleyebilir. Yalnızca bir özel veya iç alanın değerini döndüren Özellikler bir alana erişim için en iyi duruma getirilir; çok az performans kazancı, Özellikler üzerinde dışarıdan görünür alanların kullanımıyla ilişkilendirilmiştir.
+Bir alanın birincil kullanım alanının uygulama ayrıntısı olması gerekir. Alanlar, `internal` veya özellikleri kullanılarak sunulmalıdır. `private` Bir alana erişmek için bir özelliğe erişmek kolaydır ve bir özelliğin erişimcilerinin kodu, önemli değişikliklere bildirmeden tür özellikleri genişleyebilir.
 
-Dışarıdan görünür `public`, `protected`, `protected internal` `Public`, ve(`Protected`Visual Basic) erişilebilirlik düzeylerinebaşvurur.`Protected Friend`
+Yalnızca bir özel veya iç alanın değerini döndüren Özellikler bir alana erişim için en iyi duruma getirilir; Özellikler yerine dışarıdan görünür alanları kullanmanın performans artışı en az düzeydedir. *Dışarıdan görünür* `public`, ,,`protected internal` ve(`Public`VisualBasic)erişilebilirlik düzeylerine başvurur. `Protected` `protected` `Protected Friend`
+
+Ayrıca, ortak alanlar [bağlantı taleplerine](/dotnet/framework/misc/link-demands)karşı korunamaz. Daha fazla bilgi için bkz [. CA2112: Güvenli türler alanları](../code-quality/ca2112-secured-types-should-not-expose-fields.md)kullanıma sunmamalıdır. (Bağlantı talepleri .NET Core uygulamaları için geçerli değildir.)
 
 ## <a name="how-to-fix-violations"></a>İhlalleri çözme
 
@@ -48,7 +50,12 @@ Bu kural ihlalini onarmak için, alanı `private` oluşturun veya `internal` dı
 
 ## <a name="when-to-suppress-warnings"></a>Uyarıların ne zaman bastırılamıyor
 
-Bu kuraldan uyarıyı bastırmayın. Dışarıdan görünen alanlar, özelliklerde kullanılamayan avantajlar sağlamaz. Ayrıca, ortak alanlar [bağlantı taleplerine](/dotnet/framework/misc/link-demands)karşı korunamaz. Bkz [. CA2112: Güvenli türler alanları](../code-quality/ca2112-secured-types-should-not-expose-fields.md)kullanıma sunmamalıdır.
+Yalnızca tüketicilerin alana doğrudan erişim ihtiyacı olduğundan eminseniz bu uyarıyı gizleyin. Birçok uygulama için, sunulan alanlar, özellikler üzerinden performans veya bakım açısından avantaj sağlamaz.
+
+Tüketicilerin aşağıdaki durumlarda alan erişimine ihtiyacı olabilir:
+
+- ASP.NET Web Forms içerik denetimleri
+- Hedef platform, WPF ve UWP için `ref` Model-View-ViewModel (MVVM) çerçeveleri gibi alanları değiştirmek için ' ı kullanyaptığında
 
 ## <a name="configurability"></a>Yapılandırılabilirlik
 

@@ -10,12 +10,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 90035e99c13484bd1b49e59350489ed1090b5f4e
-ms.sourcegitcommit: 673b9364fc9a96b027662dcb4cf5d61cab60ef11
+ms.openlocfilehash: 2fbc9d95a6e334c3dcd788c4b686a222c417b0df
+ms.sourcegitcommit: 0f44ec8ba0263056ad04d2d0dc904ad4206ce8fc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/21/2019
-ms.locfileid: "69891263"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70766107"
 ---
 # <a name="template-parameters"></a>Şablon parametreleri
 
@@ -61,7 +61,7 @@ Aşağıdaki tabloda, herhangi bir şablon tarafından kullanılabilecek ayrılm
 |safeitemrootname|`safeitemname`Aynı.|
 |safeprojectname|Proje oluşturulduğunda Kullanıcı tarafından belirtilen ad ve tüm güvenli olmayan karakterler ve boşluklar kaldırıldı.|
 |zaman|GG/AA/YYYY biçiminde geçerli saati 00:00:00.|
-|SpecificSolutionName|Çözüm adı. "Çözüm dizini oluşturma" işaretlendiğinde `SpecificSolutionName` çözüm adına sahip. "Çözüm dizini oluşturma" işaretli olduğunda `SpecificSolutionName` boştur.|
+|Belirtilmedisolutionname|Çözüm adı. "Çözüm dizini oluşturma" işaretlendiğinde `specifiedSolutionName` çözüm adına sahip. "Çözüm dizini oluşturma" işaretli olduğunda `specifiedSolutionName` boştur.|
 |USERDOMAIN|Geçerli kullanıcı etki alanı.|
 |Kullanıcı adı|Geçerli kullanıcı adı.|
 |webnamespace|Geçerli Web sitesinin adı. Bu parametre, web formu şablonda benzersiz sınıf isimleri güvence altına almak için kullanılır. Web sitesi web sunucusunun kök dizininde ise, bu şablon parametresi web sunucusunun kök dizinine çözümler.|

@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f9a0714082e0fce744fe74eaa4e4aefee5a41867
-ms.sourcegitcommit: 01c3c9dcade5d913bde2c7efa8c931a7b04e6cd0
+ms.openlocfilehash: a73ce207d8efb0c6309ba52648c7231f89bc7984
+ms.sourcegitcommit: 0f44ec8ba0263056ad04d2d0dc904ad4206ce8fc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/25/2019
-ms.locfileid: "67365375"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70766052"
 ---
 # <a name="ca1801-review-unused-parameters"></a>CA1801: Kullanılmayan parametreleri gözden geçirin
 
@@ -28,55 +28,57 @@ ms.locfileid: "67365375"
 |-|-|
 |TypeName|ReviewUnusedParameters|
 |CheckId|CA1801|
-|Kategori|Microsoft.Usage|
-|Yeni Değişiklik|Üyesi yaptığınız değişiklikler ne olursa olsun derlemenin dışında görünür değilse olmayan son -.<br /><br /> Üye kendi gövdesi içindeki bir parametre kullanmak için değiştirmeniz halinde olmayan en son -.<br /><br /> -Parametresini kaldırın ve derlemenin dışında görünür olup olmadığını kesiliyor.|
+|Kategori|Microsoft. Usage|
+|Yeni Değişiklik|Parçalara ayırma, yaptığınız değişiklikten bağımsız olarak, üyenin derleme dışında görünür olmaması.<br /><br /> Parçalama-üyeyi, gövdesi içinde parametresini kullanacak şekilde değiştirirseniz.<br /><br /> Parçalama-parametreyi kaldırırsanız ve derleme dışında görünür hale gelir.|
 
 ## <a name="cause"></a>Sebep
 
-Yöntem imzası yöntemin gövdesinde kullanılmayan bir parametre içerir.
+Yöntem imzası, metot gövdesinde kullanılmayan bir parametre içerir.
 
-Bu kural, yöntemleri aşağıdaki türde incelemez:
+Bu kural aşağıdaki tür yöntemleri incelemez:
 
-- Temsilci tarafından başvurulan yöntemleri.
+- Bir temsilci tarafından başvurulan Yöntemler.
 
-- Olay işleyicileri kullanılan yöntemleri.
+- Olay işleyicileri olarak kullanılan yöntemler.
 
-- Yöntemleri ile bildirilmiş `abstract` (`MustOverride` Visual Basic) değiştirici.
+- `abstract` (`MustOverride` Visual Basic) değiştiricisiyle belirtilen Yöntemler.
 
-- Yöntemleri ile bildirilmiş `virtual` (`Overridable` Visual Basic) değiştirici.
+- `virtual` (`Overridable` Visual Basic) değiştiricisiyle belirtilen Yöntemler.
 
-- Yöntemleri ile bildirilmiş `override` (`Overrides` Visual Basic) değiştirici.
+- `override` (`Overrides` Visual Basic) değiştiricisiyle belirtilen Yöntemler.
 
-- Yöntemleri ile bildirilmiş `extern` (`Declare` deyimi Visual Basic) değiştirici.
+- `extern` (`Declare` Visual Basic) değiştiricisiyle belirtilen Yöntemler.
+
+[FxCop çözümleyicileri](install-fxcop-analyzers.md)kullanıyorsanız, bu kural [atma](/dotnet/csharp/discards) simgesiyle adlandırılan parametrelere bayrak eklemez, `_` `_1`Örneğin,, ve `_2`. Bu, imza gereksinimleri için gerekli olan parametrelerde (örneğin, temsilci olarak kullanılan bir yöntem, özel özniteliklere sahip bir parametre) veya bir Framework tarafından çalışma zamanında değeri örtük olarak erişilen ancak içinde başvurulmayan bir parametreyle uyarı gürültüsünü azaltır. kodudur.
 
 ## <a name="rule-description"></a>Kural açıklaması
 
-Parametreleri onlara erişmek için hata doğruluk hiçbir olduğundan emin olmak için yöntemin gövdesinde kullanılmayan sanal olmayan yöntemlerde gözden geçirin. Kullanılmayan parametreler Bakım ve performans ücret yansıtılmaz.
+Yöntem gövdesinde kullanılmayan sanal olmayan metotlarda bulunan parametreleri gözden geçirin ve bunlara erişmek için hata etrafında yanlışlık bulunmadığından emin olun. Kullanılmayan parametreler bakım ve performans maliyetleri doğurur.
 
-Bazen bu kuralın ihlalini yöntemi bir uygulama hatasını işaret edebilir. Örneğin, bir parametre yöntemin gövdesinde kullanılmış. Parametre geriye dönük uyumluluk nedeniyle zorundaysa bu kuralın uyarılarını gizle.
+Bazen, bu kuralın ihlali yöntemdeki bir uygulama hatasına işaret edebilir. Örneğin, parametresi metot gövdesinde kullanılmış olmalıdır. Geriye dönük uyumluluk nedeniyle parametrenin mevcut olması gerekiyorsa, bu kuralın uyarılarını gizleyin.
 
-## <a name="how-to-fix-violations"></a>İhlaller nasıl düzeltilir?
+## <a name="how-to-fix-violations"></a>İhlalleri çözme
 
-Bu kural ihlalini düzeltmek için kullanılmayan (önemli bir değişiklik) parametreyi kaldırın veya yöntem gövdesi (bir hataya neden olmayan değişiklik) parametresini kullanın.
+Bu kural ihlalini onarmak için kullanılmayan parametreyi (bir son değişiklik) kaldırın ya da yöntemi gövdesinde (kırılmamış değişiklik) parametreyi kullanın.
 
-## <a name="when-to-suppress-warnings"></a>Uyarılar bastırıldığında
+## <a name="when-to-suppress-warnings"></a>Uyarıların ne zaman bastırılamıyor
 
-Bu kuraldan bir uyarıyı bastırmak güvenlidir:
+Bu kuraldan bir uyarıyı gizlemek güvenlidir:
 
-- Daha önce sevk edilen kod düzeltme bir değişiklik olur.
+- Daha önce sevk edilen kodda, düzeltilmesi gereken bir değişiklik olacaktır.
 
-- İçin `this` özel bir genişletme yöntemi için parametre <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert?displayProperty=nameWithType>. İşlevler <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert> erişimi gerekmez. Bu nedenle sınıfı statik olduğundan `this` yöntem gövdesini parametresi.
+- `this` İçin<xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert?displayProperty=nameWithType>özel bir genişletme yönteminde parametresi için. <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert> Sınıfındaki işlevler statiktir, bu nedenle Yöntem gövdesindeki `this` parametreye erişmeniz gerekmez.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, iki yöntem gösterir. Bir yöntem kuralı ihlal etmektedir ve kural başka bir yöntem karşılar.
+Aşağıdaki örnekte iki yöntem gösterilmektedir. Bir yöntem kuralı çiğneniyor ve diğer yöntem kuralı karşılar.
 
 [!code-csharp[FxCop.Usage.ReviewUnusedParameters#1](../code-quality/codesnippet/CSharp/ca1801-review-unused-parameters_1.cs)]
 
-## <a name="related-rules"></a>İlgili kuralları
+## <a name="related-rules"></a>İlgili kurallar
 
-[CA1811: Çağrılmayan özel kodlardan kaçının](../code-quality/ca1811-avoid-uncalled-private-code.md)
+[CA1811 Çağrılmadı özel koddan kaçının](../code-quality/ca1811-avoid-uncalled-private-code.md)
 
-[CA1812: Örneklenmemiş iç sınıflardan kaçının](../code-quality/ca1812-avoid-uninstantiated-internal-classes.md)
+[CA1812 Örneklenmemiş iç sınıflardan kaçının](../code-quality/ca1812-avoid-uninstantiated-internal-classes.md)
 
-[CA1804: Kullanılmayan yerel öğeleri kaldırın](../code-quality/ca1804-remove-unused-locals.md)
+[CA1804 Kullanılmayan yerelleri kaldır](../code-quality/ca1804-remove-unused-locals.md)
