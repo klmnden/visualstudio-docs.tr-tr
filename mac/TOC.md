@@ -106,7 +106,7 @@
 # [Sürüm Notları](https://docs.microsoft.com/visualstudio/releasenotes/vs2019-mac-relnotes)
 # [Önizleme Sürüm Notları](https://docs.microsoft.com/visualstudio/releasenotes/vs2019-mac-preview-relnotes)
 # Örnekler
-## [Öne Çıkan Örnekler](samples.yml)
+## [Öne Çıkan Örnekler](samples/index.yml)
 ## [Tüm ASP.NET Core Örnekleri](https://docs.microsoft.com/samples/browse/?products=aspnet-core)
 ## [Tüm .NET Core Örnekleri](https://docs.microsoft.com/samples/browse/?products=dotnet-core)
 ## [Tüm Xamarin.Forms Örnekleri](https://docs.microsoft.com/xamarin/xamarin-forms/samples/)
