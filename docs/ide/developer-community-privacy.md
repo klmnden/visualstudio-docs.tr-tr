@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 86578a300da8ea1cdb739db4d1c02505a6d97180
-ms.sourcegitcommit: 9e5e8b6e9a3b6614723e71cc23bb434fe4218c9c
+ms.openlocfilehash: 447a06d64691af1d77a634179631ce7822b6d43d
+ms.sourcegitcommit: 78e2637e4fbfadd4509b55276816b64f5c24c606
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/20/2019
-ms.locfileid: "69634861"
+ms.lasthandoff: 09/10/2019
+ms.locfileid: "70864694"
 ---
 # <a name="developer-community-data-privacy"></a>Geliştirici Topluluğu veri gizliliği
 
@@ -68,8 +68,14 @@ Visual Studio 'dan **bir sorun rapor** başlatılmışsa, aşağıdaki veri tür
 
 - Varsa Python günlükleri
 
-- Bir ekran görüntüsü, eklemeyi tercih ederseniz
+- Varsa Windows Forms günlükleri
 
+> [!NOTE]
+> Günlük dosyaları yalnızca, dahil oldukları sorun raporunu göndererek izin sağladığınızda Microsoft 'a gönderilir. ' Sorun bildir ' penceresinin ' Özet ' adımında hangi dosyaların ekleneceğini görebilirsiniz (Bu notta yer alan ekran görüntüsüne bakın). Toplanan Günlükler% Temp% klasöründe depolanır ve her yükleme işleminden sonra düzenli olarak temizlenir. Sorun raporunuza bir günlük eklemek istemiyorsanız, raporu göndermeden önce dosyayı% Temp% klasöründen silin.  
+  > ![Sorun bildirme-toplanan günlüklerin Özeti](media/report-a-problem-logs-collected.png)
+
+- Bir ekran görüntüsü, eklemeyi tercih ederseniz
+  
 - Verileri kaydetme, aşağıdakileri içeren bir kayıt eklemeyi tercih ederseniz:
 
   - Sorunu yeniden oluşturma adımları
