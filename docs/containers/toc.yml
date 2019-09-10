@@ -4,7 +4,7 @@
   items:
     - name: Genel Bakış
       href: overview.md
-    - name: Hızlı Başlangıç
+    - name: Hızlı başlangıç
       expanded: true
       items:
         - name: Kapsayıcı içinde ASP.NET Core uygulaması
@@ -18,7 +18,7 @@
           href: tutorial-multicontainer.md
         - name: Visual Studio’da Kubernetes
           href: tutorial-kubernetes-tools.md
-    - name: Nasıl yapılır
+    - name: Nasıl Yapılır?
       items:
         - name: Yerel Docker kapsayıcısındaki uygulamada hata ayıklama
           href: edit-and-refresh.md
@@ -42,3 +42,7 @@
       items:
         - name: Kapsayıcı projeleri için MSBuild özellikleri
           href: container-msbuild-properties.md
+        - name: Docker Compose projelerine yönelik ayarlar
+          href: docker-compose-properties.md
+        - name: Başlatma ayarları
+          href: container-launch-settings.md
