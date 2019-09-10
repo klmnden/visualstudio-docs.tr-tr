@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6c14f48c3f6fc5b3b4cbdf9dfb5d36919de6884f
-ms.sourcegitcommit: 9c07ae6fb18204ea080c8248994a683fa12e5c82
+ms.openlocfilehash: 1506f4303cf5344c4035642cfdd3e42c98396b02
+ms.sourcegitcommit: bd4e45f1697a8fbfdbc0a7c6b531c8f7b9fb8a48
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "70293539"
+ms.lasthandoff: 09/09/2019
+ms.locfileid: "70808780"
 ---
 # <a name="tutorial-1-create-a-picture-viewer"></a>Öğretici 1: Resim görüntüleyici oluşturma
 
@@ -52,7 +52,7 @@ Bitirdiğinizde, programınız aşağıdaki görüntüye benzer görünmelidir:
 |Başlık|Açıklama|
 |-----------|-----------------|
 |[1. Adım: Windows Forms uygulama projesi oluşturma](../ide/step-1-create-a-windows-forms-application-project.md)|Windows Forms bir uygulama projesi oluşturarak başlayın.|
-|[2. Adım: Programınızı çalıştırma](../ide/step-2-run-your-program.md)|Önceki adımda oluşturduğunuz Windows Forms uygulama programını çalıştırın.|
+|[2. Adım: Uygulamanızı çalıştırma](../ide/step-2-run-your-program.md)|Önceki adımda oluşturduğunuz Windows Forms uygulama programını çalıştırın.|
 |[3. Adım: Form özelliklerinizi ayarlama](../ide/step-3-set-your-form-properties.md)|**Özellikler** penceresini kullanarak formunuzun görünme şeklini değiştirin.|
 |[4. Adım: TableLayoutPanel denetimi ile formunuzu düzenleme](../ide/step-4-lay-out-your-form-with-a-tablelayoutpanel-control.md)|Formunuza bir `TableLayoutPanel` denetim ekleyin.|
 |[5. Adım: Formunuza denetimler ekleme](../ide/step-5-add-controls-to-your-form.md)|Formunuza `PictureBox` Denetim`CheckBox` ve denetim gibi denetimler ekleyin. Formunuza düğmeler ekleyin.|
