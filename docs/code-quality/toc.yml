@@ -692,6 +692,8 @@
                   href: ca3011-review-code-for-dll-injection-vulnerabilities.md
                 - name: 'CA3012: Normal ifade ekleme güvenlik açıkları için inceleme kodu'
                   href: ca3012-review-code-for-regex-injection-vulnerabilities.md
+                - name: 'CA3061: URL ile şema eklemeyin'
+                  href: ca3061.md
                 - name: 'CA3075: Güvensiz DTD İşleme'
                   href: ca3075-insecure-dtd-processing.md
                 - name: 'CA3076: Güvensiz XSLT Betiği Yürütme'
@@ -702,12 +704,30 @@
                   href: ca3147-mark-verb-handlers-with-validateantiforgerytoken.md
                 - name: 'CA5361: Güçlü Şifrelemenin SChannel Kullanımını Devre Dışı Bırakma'
                   href: ca5361.md
+                - name: 'CA5363: İstek doğrulamayı devre dışı bırakmayın'
+                  href: ca5363.md
                 - name: 'CA5364: Kullanım Dışı Güvenlik Protokollerini Kullanmayın'
                   href: ca5364.md
+                - name: 'CA5369: Seri durumdan çıkarma için XmlReader kullanma'
+                  href: ca5369.md
+                - name: 'CA5370: Okuyucuyu doğrulamak için XmlReader kullanma'
+                  href: ca5370.md
+                - name: 'CA5371: Şema okuma için XmlReader kullanma'
+                  href: ca5371.md
+                - name: 'CA5372: XPathDocument için XmlReader kullanma'
+                  href: ca5372.md
+                - name: 'CA5373: Eski anahtar türetme işlevini kullanmayın'
+                  href: ca5373.md
                 - name: 'CA5378: ServicePointManagerSecurityProtocols''u Devre Dışı Bırakma'
                   href: ca5378.md
+                - name: 'CA5380: Kök depoya sertifika eklemeyin'
+                  href: ca5380.md
+                - name: 'CA5381: Sertifikaların kök depoya eklenmemiş olduğundan emin olun'
+                  href: ca5381.md
                 - name: 'CA5386: SecurityProtocolType değerini sabit kodlamaktan kaçının'
                   href: ca5386.md
+                - name: 'CA5389: Hedef dosya sistemi yoluna arşiv öğesinin yolunu eklemeyin'
+                  href: ca5389.md
                 - name: 'CA5397: Kullanım dışı SslProtocols değerlerini kullanmayın'
                   href: ca5397.md
                 - name: 'CA5398: Sabit kodlanmış SslProtocols değerlerini kullanmaktan kaçının'
@@ -810,7 +830,7 @@
     - name: Genel Bakış
       displayName: C++ code analysis
       href: code-analysis-for-c-cpp-overview.md
-    - name: Hızlı Başlangıç
+    - name: Hızlı başlangıç
       href: quick-start-code-analysis-for-c-cpp.md
     - name: C/C++ kodunda hata olup olmadığını analiz etme
       href: walkthrough-analyzing-c-cpp-code-for-defects.md
