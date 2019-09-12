@@ -46,7 +46,7 @@ Tools.Alias [/delete] [/reset] [aliasname] [aliasstring]
 /DELETE veya/del&lt ya da/d\
 İsteğe bağlı. Belirtilen diğer adı siler ve otomatik tamamlamayı kaldırır.
 
-/Reset süpürmeden
+/Reset süpürmeden\
 İsteğe bağlı. Önceden tanımlanmış diğer adların listesini orijinal ayarlarına sıfırlar. Diğer bir deyişle, önceden tanımlanmış tüm diğer adları geri yükler ve Kullanıcı tanımlı tüm diğer adları kaldırır.
 
 ## <a name="remarks"></a>Açıklamalar

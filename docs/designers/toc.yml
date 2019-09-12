@@ -118,7 +118,7 @@
               href: ../ide/tutorial-1-create-a-picture-viewer.md
             - name: '1. Adım: Windows Forms Uygulaması projesi oluşturma'
               href: ../ide/step-1-create-a-windows-forms-application-project.md
-            - name: '2. Adım: Programınızı çalıştırma'
+            - name: '2. Adım: Uygulamanızı çalıştırma'
               href: ../ide/step-2-run-your-program.md
             - name: '3. Adım: Form özelliklerinizi ayarlama'
               href: ../ide/step-3-set-your-form-properties.md
@@ -136,7 +136,7 @@
               href: ../ide/step-9-review-comment-and-test-your-code.md
             - name: '10. Adım: Ek düğmeler ve onay kutusu için kod yazma'
               href: ../ide/step-10-write-code-for-additional-buttons-and-a-check-box.md
-            - name: '11. Adım: Programınızı çalıştırma ve diğer özellikleri deneme'
+            - name: '11. Adım: Uygulamanızı çalıştırma ve diğer özellikleri deneme'
               href: ../ide/step-11-run-your-program-and-try-other-features.md
         - name: 'Öğretici 2: Zamanlı matematik testi oluşturma (C#)'
           items:

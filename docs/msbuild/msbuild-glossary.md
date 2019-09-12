@@ -21,52 +21,52 @@ Bu terimler Microsoft Build Engine (MSBuild) ve bileşenlerini tanımlamakta kul
 
 ## <a name="glossary"></a>Sözlük
 
-AssemblyFoldersEx
+AssemblyFoldersEx\
 Üçüncü taraf satıcıların, tasarım zamanı çözümlemenin başvuru derlemelerini bulmak için nerede görünebileceği, desteklediği her bir sürüm için yolları depolayacağı bir kayıt defteri konumu.
 
 işlem
 Toplu işleme öğeleri, öğe meta verileri temelinde *toplu*iş olarak bilinen farklı kategorilere bölmek ve sonra her toplu işi kullanarak bir kez hedef veya görev çalıştırmak anlamına gelir. Toplu işleme, for--Loop yapısının MSBuild eşdeğeridir. Daha fazla bilgi için bkz. [toplu](../msbuild/msbuild-batching.md)işlem.
 
-Yapı kapsamı \
+Yapı kapsamı\
 Yapı kapsamı, bir proje için ve çok projeli bir derlemede oluşturulan herhangi bir alt proje için görünebilir olan genel bir özellik gibi bir MSBuild nesnesini tanımlar.
 
-alt proje \
+alt proje\
 Bkz. *Proje, alt*.
 
 koşul
 Birçok MSBuild öğesi koşullu olarak tanımlanabilir; diğer bir deyişle, `Condition` özniteliği öğesinde görüntülenir. Koşul olarak `true`değerlendirilmediği takdirde koşullu öğelerin içeriği yoksayılır. Daha fazla bilgi için bkz. [koşullar](../msbuild/msbuild-conditions.md).
 
-Tanım, öğe \
+Tanım, öğe\
 *Öğe tanımına*bakın.
 
-öğeyi yay \
+öğeyi yay\
 Bir yapılandırmanın yürütme aşamasında, öğeleri `Output` `ItemName` özniteliği olan alt öğeleri olan görevler tarafından oluşturulabilir veya değiştirilebilir. Görev, yeni öğeleri "yayma" olarak kabul edilir.
 
-özelliği göster \
+özelliği göster\
 Bir yapı yürütme aşamasında özellikler, `Output` `PropertyName` özniteliği olan alt öğeleri olan görevler tarafından oluşturulabilir veya değiştirilebilir. Görev, yeni özelliği "yayma" olarak kabul edilir.
 
-değerlendirme aşaması \
+değerlendirme aşaması\
 Değerlendirme, proje derlemesinin ilk aşamasıdır. Tüm özellikler ve öğeler, projede göründükleri sırayla değerlendirilir. İçeri aktarılan projeler, projede karşılaştığı şekilde değerlendirilir. Hedefler ve görevler, yürütme aşamasına kadar çalışmaz ve bildirildikleri ya da yayma işlemleri değerlendirme sırasında yok sayılır.
 
-yürütme aşaması \
+yürütme aşaması\
 Yürütme, proje derlemesinin ikinci aşamasıdır. Seçilen hedefler oluşturulur ve görevler çalıştırılır. Özellikler ve öğeler, değerlendirme değerleriyle karşılaştırıldığında oluşturulabilir veya değiştirilebilir.
 
-işlev, özellik \
+işlev, özellik\
 Bkz. *Özellik işlevi*.
 
-işlev, öğe \
+işlev, öğe\
 Bkz. öğe işlevi.
 
 maddesinin
 Öğeler, derleme sistemine giriş ve öğe adlarına göre öğe türlerine göre gruplandırılır. Öğeler genellikle dosyaları temsil eder. Öğeler ait oldukları öğe türüne göre adlandırıldıklarından, hüküm *öğesi* ve *öğe değeri* birbirlerinin yerine kullanılabilir. Daha fazla bilgi için bkz. [öğeler](../msbuild/msbuild-items.md).
 
-öğe tanımı \
+öğe tanımı\
 Öğe tanımı grupları herhangi bir öğe türüne varsayılan meta veri ekleyen öğe tanımlarını içerir. İyi bilinen meta veriler gibi, varsayılan meta veriler belirtilen öğe türünün tüm öğeleriyle ilişkilendirilir. Varsayılan meta veriler, bir öğe tanımında açıkça geçersiz kılınabilir. Daha fazla bilgi için bkz. [öğe tanımları](../msbuild/item-definitions.md).
 
-öğe işlevi \
+öğe işlevi\
 Öğe işlevleri, projedeki öğeler hakkında bilgi alır. Bu işlevler ayrı () öğeleri almayı basitleştirir ve öğeler aracılığıyla döngüden daha hızlıdır. Öğe yollarını ve dizeleri işlemek için işlevler vardır. Daha fazla bilgi için bkz. [öğe işlevleri](../msbuild/item-functions.md).
 
-öğe meta verileri \
+öğe meta verileri\
 Bkz. *meta veriler, öğe*.
 
 öğe türü \
