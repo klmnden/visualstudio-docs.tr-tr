@@ -108,11 +108,11 @@ Dolaşım uzantısı Yöneticisi yüklediğiniz tüm uzantıları izler, ancak d
 
 Dolaşım uzantısı yöneticisini kullandığınızda, listenizde üç simge türü vardır:
 
-* ![Dolaşıma açıldı simgesi](media/vs2017ide-roamedicon.png) ** _** : Bu dolaşım listesinin bir parçası olan, ancak makinenizde yüklü olmayan bir uzantı.
+* ![Dolaşıma açıldı simgesi](media/vs2017ide-roamedicon.png) **_dolaşılıydı_** : Bu dolaşım listesinin bir parçası olan, ancak makinenizde yüklü olmayan bir uzantı.
   (Bunları, **İndir** düğmesini kullanarak yükleyebilirsiniz.)
-* ![& Yüklenen ** _** simgesi](media/vs2017ide-roamedinstalledicon.png) dolaşılıydı: Bu dolaşım listesinin parçası olan ve geliştirme ortamınıza yüklenen tüm uzantılar.
+* ![& Yüklenen **_& yüklü_** simgesi](media/vs2017ide-roamedinstalledicon.png) dolaşılıydı: Bu dolaşım listesinin parçası olan ve geliştirme ortamınıza yüklenen tüm uzantılar.
   (Dolaşımda istemediğinize karar verirseniz, bunu **dolaşımı durdur** düğmesini kullanarak kaldırabilirsiniz.)
-* ![Yüklü simge](media/vs2017ide-installedicon.png) ** _** : Bu ortamda yüklü olan, ancak dolaşım listenizin bir parçası olmayan tüm uzantılar.
+* ![Yüklü simge](media/vs2017ide-installedicon.png) **_yüklendi_** : Bu ortamda yüklü olan, ancak dolaşım listenizin bir parçası olmayan tüm uzantılar.
   ( **Dolaşım Başlat** düğmesini kullanarak dolaşım listesine uzantı ekleyebilirsiniz.)
 
 Oturum açtığınız sırada yüklediğiniz herhangi bir uzantı, **& yüklenirken**listenize eklenir. Daha sonra uzantı, dolaşım listenizin bir parçası haline gelir ve bu, size herhangi bir makineden erişmenizi sağlar.
