@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1a160d28a3953196a53673b64ae7d9ef9974a731
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 00d64b060b340302107ddffaf1d69cad802a283b
+ms.sourcegitcommit: b60a00ac3165364ee0e53f7f6faef8e9fe59ec4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66747443"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70913282"
 ---
 # <a name="visual-studio-integration-msbuild"></a>Visual Studio tümleştirmesi (MSBuild)
 Visual Studio ana [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] yönetilen projeleri yüklemek ve derlemek için. Çünkü [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] projesi, neredeyse her her proje için sorumlu [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] biçimi başarıyla kullanılabilir [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]projeyi farklı bir araç ile yazılmış olsa ve özelleştirilmiş bir yapı işlemi olsa bile.
@@ -165,7 +165,7 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 
   - `OriginalItemSpec`, başvurunun Asıl öğe belirtimini içeren.
 
-  - `ResolvedFrom`, bu .NET Framework dizininden çözümlenirse "{TargetFrameworkDirectory}" ayarlayın.
+  - `ResolvedFrom`, .NET Framework dizininden çözümlenmişse "{TargetFrameworkDirectory}" olarak ayarlanır.
 
 - COM başvuruları:
 
@@ -176,17 +176,17 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
    Proje sistemi bir hedefi iyi bilinen adıyla çağırır `ResolveNativeReferences`. Bu hedef, öğe türü adı öğeleriyle üretmelidir `NativeReferenceFile`. Öğeleri geçtiğini, meta verilerin adlı yeni bir ek girdi öğelerinin tüm meta verilerine olmalıdır `OriginalItemSpec`, başvurunun Asıl öğe belirtimini içeren.
 
 ## <a name="performance-shortcuts"></a>Performans kısayolları
- Visual Studio UI'de hata ayıklamayı başlatırsanız (F5 tuşunu seçerek veya seçerek **hata ayıklama** > **hata ayıklamayı Başlat** menü çubuğundaki), yapı işlemi hızlı bir güncelleştirme kontrolü geliştirmek için kullanır. performans. Burada özelleştirilmiş yapıların dahili hale gelen dosyalar oluşturma bazı durumlarda, hızlı güncelleştirme kontrolü değiştirilen dosyaları düzgün tanımlamaz. Daha kapsamlı güncelleme kontrolleri gereken projeleri hızlı denetimi ortam değişkenini ayarlayarak devre dışı kapatabilir `DISABLEFASTUPTODATECHECK=1`. Alternatif olarak, proje bu projeye ya da projenin içe aktardığı bir dosya bir MSBuild özelliği olarak ayarlayabilirsiniz.
+ Hata ayıklamayı başlatmak için Visual Studio IDE 'yi kullanırsanız (F5 tuşunu seçerek veya menü çubuğunda Hata**ayıklamayı Başlat**  > ' **ı seçerek** > ) veya projenizi oluşturmak için ( **Örneğin, derleme** **çözümünü** oluşturun ), yapı işlemi performansı artırmak için hızlı bir güncelleştirme denetimi kullanır. Burada özelleştirilmiş yapıların dahili hale gelen dosyalar oluşturma bazı durumlarda, hızlı güncelleştirme kontrolü değiştirilen dosyaları düzgün tanımlamaz. Daha kapsamlı güncelleme kontrolleri gereken projeleri hızlı denetimi ortam değişkenini ayarlayarak devre dışı kapatabilir `DISABLEFASTUPTODATECHECK=1`. Alternatif olarak, proje bu projeye ya da projenin içe aktardığı bir dosya bir MSBuild özelliği olarak ayarlayabilirsiniz.
 
  Visual Studio'daki normal yapılarda, hızlı güncelleştirme denetimleri geçerli değildir ve bir komut isteminde derlemenin çağırdığınız gibi Proje derlenir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 - [Nasıl yapılır: Visual Studio derleme işlemini genişletme](../msbuild/how-to-extend-the-visual-studio-build-process.md)
-- [IDE içinden derleme Başlat](../msbuild/starting-a-build-from-within-the-ide.md)
-- [.NET Framework uzantılarını kaydetme](../msbuild/registering-extensions-of-the-dotnet-framework.md)
+- [IDE içinden derleme başlatma](../msbuild/starting-a-build-from-within-the-ide.md)
+- [.NET Framework uzantılarını Kaydet](../msbuild/registering-extensions-of-the-dotnet-framework.md)
 - [MSBuild kavramları](../msbuild/msbuild-concepts.md)
-- [Öğe unsuru (MSBuild)](../msbuild/item-element-msbuild.md)
-- [Özellik öğesi (MSBuild)](../msbuild/property-element-msbuild.md)
-- [Hedef öğe (MSBuild)](../msbuild/target-element-msbuild.md)
-- [CSC görevi](../msbuild/csc-task.md)
+- [Item öğesi (MSBuild)](../msbuild/item-element-msbuild.md)
+- [Property öğesi (MSBuild)](../msbuild/property-element-msbuild.md)
+- [Target öğesi (MSBuild)](../msbuild/target-element-msbuild.md)
+- [Csc görevi](../msbuild/csc-task.md)
 - [Vbc görevi](../msbuild/vbc-task.md)

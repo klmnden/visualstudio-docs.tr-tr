@@ -14,26 +14,29 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d22bf8af86605d414d933d16cd5dd7f8d24a6154
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ba701d123e739bc2dfa24ff798aef5338c51f532
+ms.sourcegitcommit: b60a00ac3165364ee0e53f7f6faef8e9fe59ec4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62946153"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70913175"
 ---
 # <a name="how-to-extend-the-visual-studio-build-process"></a>Nasıl yapılır: Visual Studio derleme işlemini genişletme
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Yapı işlemi bir dizi tarafından tanımlanan [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] *.targets* proje dosyanıza aktarmış dosyaları. Dosyaları, bunlardan alınan *Microsoft.Common.targets*, yapı işleminde bazı noktalarda özel görevleri çalıştırmanıza olanak tanır şekilde genişletilebilir. Bu makalede genişletmek için kullanabileceğiniz iki yöntem anlatılmaktadır [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] derleme işlemi:
 
-- Tanımlanan belirli önceden tanımlanmış hedefleri geçersiz kılma *Microsoft.Common.targets*.
+- Ortak hedeflerde tanımlanan belirli önceden tanımlanmış hedefleri geçersiz kılma (*Microsoft. Common. targets* veya içeri aktardığı dosyalar).
 
-- Tanımlanan "DependsOn" özelliklerini geçersiz kılma *Microsoft.Common.targets*.
+- Ortak hedeflerde tanımlanan "Bağımlıdson" özelliklerini geçersiz kılma.
 
 ## <a name="override-predefined-targets"></a>Önceden tanımlanmış hedefleri geçersiz kılma
-*Microsoft.Common.targets* dosyası önce ve sonra yapı işleminin ana hedeflerin bazıları çağrılan bir dizi önceden tanımlanmış boş hedef içeriyor. Örneğin, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] çağrıları `BeforeBuild` ana önce hedef `CoreBuild` hedef ve `AfterBuild` sonra hedef `CoreBuild` hedef. Varsayılan olarak, boş hedef *Microsoft.Common.targets* hiçbir şey yapma, ancak içe aktaran bir proje dosyasında istediğiniz hedefler tanımlayarak kendi varsayılan davranışı geçersiz kılabilirsiniz *Microsoft.Common.targets*. Kullanabileceğiniz önceden tanımlanmış hedefleri geçersiz kılma [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] yapı işlemi hakkında daha fazla denetime size görevleri.
+Ortak hedefler, yapı işlemindeki ana hedeflerden önce ve sonra çağrılan bir dizi önceden tanımlanmış boş hedef kümesi içerir. Örneğin, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] çağrıları `BeforeBuild` ana önce hedef `CoreBuild` hedef ve `AfterBuild` sonra hedef `CoreBuild` hedef. Varsayılan olarak, ortak hedeflerde boş hedefler hiçbir şey yapmaz, ancak ortak hedefleri içeri aktaran bir proje dosyasında istediğiniz hedefleri tanımlayarak varsayılan davranışlarını geçersiz kılabilirsiniz. Kullanabileceğiniz önceden tanımlanmış hedefleri geçersiz kılma [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] yapı işlemi hakkında daha fazla denetime size görevleri.
+
+> [!NOTE]
+> SDK stili projelerin, *Proje dosyasının son satırından sonra*hedeflerin örtük bir şekilde içe aktarılması vardır. Diğer bir deyişle, içeri aktarmaların [nasıl yapılır: MSBuild proje SDK](how-to-use-project-sdk.md)'larını kullanın.
 
 #### <a name="to-override-a-predefined-target"></a>Önceden tanımlanmış bir hedefi geçersiz kılmak için
 
-1. Önceden tanımlanmış bir hedef belirleyin *Microsoft.Common.targets* geçersiz kılmak istediğiniz. Güvenli bir şekilde geçersiz kılabilirsiniz hedeflerin tam listesi için aşağıdaki tabloya bakın.
+1. Geçersiz kılmak istediğiniz ortak hedeflerde önceden tanımlanmış bir hedef belirler. Güvenli bir şekilde geçersiz kılabilirsiniz hedeflerin tam listesi için aşağıdaki tabloya bakın.
 
 2. Hemen önce hedef veya hedefleri, proje dosyasının sonunda tanımlamak `</Project>` etiketi. Örneğin:
 
@@ -51,12 +54,12 @@ ms.locfileid: "62946153"
 
 3. Proje dosyası oluşturun.
 
-Aşağıdaki tabloda tüm hedeflerin gösterir *Microsoft.Common.targets* , güvenli bir şekilde geçersiz kılabilirsiniz.
+Aşağıdaki tabloda, güvenle geçersiz kılabileceğiniz ortak hedeflerin tüm hedefleri gösterilmektedir.
 
 |Hedef adı|Açıklama|
 |-----------------|-----------------|
 |`BeforeCompile`, `AfterCompile`|Bu hedefler birinde eklenen görevler önce veya çekirdek derleme tamamlandıktan sonra çalışır. Çoğu özelleştirmeleri, bu iki hedefi birinde gerçekleştirilir.|
-|`BeforeBuild`, `AfterBuild`|Bu hedefler birinde eklenen görevler önce veya sonra yapı diğer her şey çalışır. **Not:**  `BeforeBuild` Ve `AfterBuild` hedefleri sonunda öncesi ve derleme sonrası olayları proje dosyanıza kolayca eklemenize olanak sağlayan, çoğu proje dosyaları, açıklamalar içinde zaten tanımlanmıştır.|
+|`BeforeBuild`, `AfterBuild`|Bu hedefler birinde eklenen görevler önce veya sonra yapı diğer her şey çalışır. **Not:**  `BeforeBuild` Ve`AfterBuild` hedefleri çoğu proje dosyasının sonundaki açıklamalarda zaten tanımlanmıştır. Bu, proje dosyanıza kolayca ve oluşturma sonrası olayları kolayca eklemenize olanak tanır.|
 |`BeforeRebuild`, `AfterRebuild`|Bu hedefler önce çalıştırması biriyle eklenen veya çekirdek sonra işlevi yeniden görevleri çağrılır. Hedef yürütme sırası *Microsoft.Common.targets* olduğu: `BeforeRebuild`, `Clean`, `Build`, ardından `AfterRebuild`.|
 |`BeforeClean`, `AfterClean`|Önce bu hedefler birinde eklenen görevleri çalıştırmak veya çekirdek sonra temiz işlevi çağrılır.|
 |`BeforePublish`, `AfterPublish`|Bu hedefler önce çalıştırması biriyle eklenen veya sonra çekirdek işlevselliğini yayımlama görevleri çağrılır.|
@@ -66,7 +69,7 @@ Aşağıdaki tabloda tüm hedeflerin gösterir *Microsoft.Common.targets* , güv
 ## <a name="override-dependson-properties"></a>DependsOn özelliklerini geçersiz kıl
 Önceden tanımlanmış hedefleri geçersiz kılma derleme işlemini genişletme için kolay bir yol olduğunu ancak, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] hedefleri tanımını ardışık olarak değerlendirir projenizi hedefleri geçersiz kılmasını içeri aktarır. başka bir proje önlemek için bir yolu yoktur, zaten silmiş. Bunu, örneğin, son `AfterBuild` sonra diğer tüm projeleri içe aktarılmış, yapı sırasında kullanılan bir proje dosyasında tanımlanmış hedefi.
 
-Kullanılan DependsOn özelliklerini geçersiz kılarak hedefleri istenmeyen geçersiz kılmaları karşı önleyebilirsiniz `DependsOnTargets` boyunca öznitelikleri *Microsoft.Common.targets* dosya. Örneğin, `Build` hedefi içeren bir `DependsOnTargets` öznitelik değerini `"$(BuildDependsOn)"`. Göz önünde bulundurun:
+Ortak hedeflerin tamamında `DependsOnTargets` özniteliklerde kullanılan bağımlılson özelliklerini geçersiz kılarak, hedefe yönelik istenmeyen geçersiz kılmalara karşı koruma sağlayabilirsiniz. Örneğin, `Build` hedefi içeren bir `DependsOnTargets` öznitelik değerini `"$(BuildDependsOn)"`. Göz önünde bulundurun:
 
 ```xml
 <Target Name="Build" DependsOnTargets="$(BuildDependsOn)"/>
@@ -107,7 +110,7 @@ Proje dosyalarını içeri aktaran projeler, yaptığınız özelleştirmelerin 
 
 #### <a name="to-override-a-dependson-property"></a>DependsOn özelliği geçersiz kılmak için
 
-1. Önceden tanımlanmış bir DependsOn özelliği tanımlamak *Microsoft.Common.targets* geçersiz kılmak istediğiniz. Yaygın olarak geçersiz kılınan DependsOn özelliklerinin bir listesi için aşağıdaki tabloya bakın.
+1. Geçersiz kılmak istediğiniz ortak hedeflerde önceden tanımlanmış bir Bağımlıdson özelliğini belirler. Yaygın olarak geçersiz kılınan DependsOn özelliklerinin bir listesi için aşağıdaki tabloya bakın.
 
 2. Özellik veya özellikleri, proje dosyasının sonunda başka bir örneğini tanımlar. Özgün özelliği, örneğin `$(BuildDependsOn)`, yeni özellik de.
 

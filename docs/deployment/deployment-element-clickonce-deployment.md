@@ -21,15 +21,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 90168dd760ba5619e2d50c864f54122b01ed66fa
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 988ce0859ab24377395cc4077f9e6fa42e0487a5
+ms.sourcegitcommit: 4dfe098ac0df294aad63e6b384d6575980798ca3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62928936"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70887862"
 ---
 # <a name="ltdeploymentgt-element-clickonce-deployment"></a>&lt;Dağıtım&gt; öğesi (ClickOnce dağıtımı)
-Güncelleştirmeler ve sistem maruz kalma riskinizi dağıtımı için kullanılan öznitelikleri tanımlar.
+Güncelleştirmelerin dağıtımı için kullanılan öznitelikleri ve sistemde pozlandırmayı tanımlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -58,57 +58,57 @@ Güncelleştirmeler ve sistem maruz kalma riskinizi dağıtımı için kullanıl
 ```
 
 ## <a name="elements-and-attributes"></a>Öğeler ve öznitelikler
- `deployment` Öğesi gereklidir ve içinde `urn:schemas-microsoft-com:asm.v1` ad alanı. Öğe, aşağıdaki özniteliklere sahiptir.
+ Öğesi gereklidir ve `urn:schemas-microsoft-com:asm.v2` ad alanında bulunur. `deployment` Öğesi aşağıdaki özniteliklere sahiptir.
 
 | Öznitelik | Açıklama |
 |--------------------------| - |
-| `install` | Gerekli. Bu uygulamayı Windows üzerinde bir varlığı tanımlar olup olmadığını belirtir **Başlat** menü ve Denetim Masası'nda **Program Ekle veya Kaldır** uygulama. Geçerli değerler `true` ve `false`. Varsa `false`, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] ağdan bu uygulamanın en son sürümü her zaman çalışır ve algılamayacak `subscription` öğesi. |
-| `minimumRequiredVersion` | İsteğe bağlı. İstemci üzerinde çalışabilen bu uygulamanın en düşük sürümü belirtir. Sürüm numarası uygulamanın dağıtım bildiriminde sağlanan sürüm numarasından daha küçükse, uygulama çalışmaz. Sürüm numaraları biçiminde belirtilmelidir `N.N.N.N`burada `N` işaretsiz bir tamsayıdır. Varsa `install` özniteliği `false`, `minimumRequiredVersion` ayarlanmamalıdır. |
-| `mapFileExtensions` | İsteğe bağlı. Varsayılan olarak `false`. Varsa `true`, Dağıtımdaki tüm dosyaları .deploy uzantısını olmalıdır. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Bu Web sunucusundan indirir hemen sonra bu uzantı bu dosyalardan çıkarır. Uygulamanızı kullanarak yayımlarsanız [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], bu uzantıyı tüm dosyalar için otomatik olarak ekler. İçindeki tüm dosyalar bu parametreyi sağlar bir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] "güvenli" uzantılar .exe gibi sonlanan dosyaların aktarımını engelleyen bir Web sunucusundan yüklenecek dağıtım. |
-| `disallowUrlActivation` | İsteğe bağlı. Varsayılan olarak `false`. Varsa `true`, yüklü bir uygulama URL'si tıklayarak ya da Internet Explorer'a URL girilerek başlatılmasını önler. Varsa `install` öznitelik yoksa, bu öznitelik yoksayılır. |
-| `trustURLParameters` | İsteğe bağlı. Varsayılan olarak `false`. Varsa `true`URL'nin uygulamanın içine geçirilen sorgu dizesi parametreleri içermesine izin verir, çok benzer bir komut satırı bağımsız değişkenlerini komut satırı uygulamaya geçirilir. Daha fazla bilgi için [nasıl yapılır: Bir çevrimiçi bir ClickOnce uygulamasında sorgu dize bilgilerini alma](../deployment/how-to-retrieve-query-string-information-in-an-online-clickonce-application.md).<br /><br /> Varsa `disallowUrlActivation` özniteliği `true`, `trustUrlParameters` bildirimden hariç, veya açıkça `false`. |
+| `install` | Gerekli. Bu uygulamanın Windows **Başlat** menüsünde ve Denetim Masası **Program Ekle veya Kaldır** uygulamasında bir varlığı tanımlayıp tanımlamadığını belirtir. Geçerli değerler ve `true` ' `false`dir. , Her zaman bu uygulamanın en son sürümünü ağdan çalıştırır `subscription` ve öğesini tanımaz. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] `false` |
+| `minimumRequiredVersion` | İsteğe bağlı. Bu uygulamanın istemcide çalışabilecek en düşük sürümünü belirtir. Uygulamanın sürüm numarası dağıtım bildiriminde sağlanan sürüm numarasından azsa, uygulama çalışmaz. Sürüm numaraları biçiminde `N.N.N.N`belirtilmelidir, burada `N` işaretsiz bir tamsayıdır. Özniteliği ise `false` ,`minimumRequiredVersion`ayarlanmamalıdır. `install` |
+| `mapFileExtensions` | İsteğe bağlı. Varsayılan olarak `false`. Eğer `true`, dağıtımdaki tüm dosyaların. deploy uzantısı olmalıdır. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)], bu uzantıyı Web sunucusundan indirdiği anda bu dosyaların dışına çıkaracaktır. Kullanarak [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]uygulamanızı yayımlarsanız, bu uzantıyı otomatik olarak tüm dosyalara ekler. Bu parametre, bir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] dağıtım içindeki tüm dosyaların,. exe gibi "güvenli olmayan" uzantılar ile biten dosyaların aktarımını engelleyen bir Web sunucusundan indirilmesine izin verir. |
+| `disallowUrlActivation` | İsteğe bağlı. Varsayılan olarak `false`. `true`, Yüklü bir uygulamanın URL 'ye tıklanması veya URL 'yi Internet Explorer 'a girerek başlatılmasını önler. `install` Özniteliği yoksa, bu öznitelik yoksayılır. |
+| `trustURLParameters` | İsteğe bağlı. Varsayılan olarak `false`. İse `true`, URL 'nin uygulamaya geçirilen sorgu dizesi parametreleri içermesini sağlar ve komut satırı bağımsız değişkenleri bir komut satırı uygulamasına geçirilir. Daha fazla bilgi için [nasıl yapılır: Sorgu dizesi bilgilerini çevrimiçi ClickOnce uygulamasında](../deployment/how-to-retrieve-query-string-information-in-an-online-clickonce-application.md)alma.<br /><br /> `false`Özniteliği ise `true` ,`trustUrlParameters` bildirimden dışlanması ya da açıkça olarak ayarlanması gerekir. `disallowUrlActivation` |
 
- `deployment` Öğesi şu alt öğelerden de içerir.
+ `deployment` Öğesi de aşağıdaki alt öğeleri içerir.
 
-## <a name="subscription"></a>aboneliği
- İsteğe bağlı. İçeren `update` öğesi. `subscription` Öğesi özniteliklere sahip değildir. Varsa `subscription` öğesi mevcut değil, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulama hiçbir zaman güncelleştirmeleri için tarama. Varsa `install` özniteliği `deployment` öğesi `false`, `subscription` öğesi göz ardı edilir, çünkü bir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] ağdan başlatılan her zaman uygulamanın en son sürümünü kullanır.
+## <a name="subscription"></a>subscription
+ İsteğe bağlı. `update` Öğesini içerir. `subscription` Öğesinde hiç öznitelik yok. `subscription` Öğe yoksa[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] , uygulama güncelleştirmeleri hiçbir şekilde taramayacaktır. `install` Öğesininözniteliği`false`ise, ağdan başlatılan bir[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulama her zaman en son sürümü kullandığından, öğeyoksayılır.`subscription` `deployment`
 
 ## <a name="update"></a>update
- Gerekli. Bu öğenin alt öğesi olan `subscription` öğesi ve ya da içeren `beforeApplicationStartup` veya `expiration` öğesi. `beforeApplicationStartup` ve `expiration` hem de aynı dağıtım bildiriminde belirtilemez.
+ Gerekli. Bu öğe, `subscription` öğesinin bir alt öğesidir ve ya da `expiration` öğesini içerir `beforeApplicationStartup` . `beforeApplicationStartup``expiration` aynı dağıtım bildiriminde her ikisi de belirtilemez.
 
- `update` Öğesi özniteliklere sahip değildir.
+ `update` Öğesinde hiç öznitelik yok.
 
 ## <a name="beforeapplicationstartup"></a>beforeApplicationStartup
- İsteğe bağlı. Bu öğenin alt öğesi olan `update` öğesi ve öznitelikleri yok. Zaman `beforeApplicationStartup` öğe varsa, uygulama zaman engellenen [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] güncelleştirmeleri, istemcinin çevrimiçi olup olmadığını denetler. Bu öğe yoksa [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] ilk için belirtilen değerlere göre güncelleştirmeleri için tarama yapmadan `expiration` öğesi. `beforeApplicationStartup` ve `expiration` hem de aynı dağıtım bildiriminde belirtilemez.
+ İsteğe bağlı. Bu öğe, `update` öğesinin bir alt öğesidir ve özniteliği yoktur. Öğe mevcut olduğunda, istemci çevrimiçi ise güncelleştirmeleri [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] denetlediğinde uygulama engellenir. `beforeApplicationStartup` Bu öğe yoksa, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] önce `expiration` öğe için belirtilen değerlere göre güncelleştirmeleri tarar. `beforeApplicationStartup``expiration` aynı dağıtım bildiriminde her ikisi de belirtilemez.
 
-## <a name="expiration"></a>süre sonu
- İsteğe bağlı. Bu öğenin alt öğesi olan `update` öğesi ve alt öğesi yok. `beforeApplicationStartup` ve `expiration` hem de aynı dağıtım bildiriminde belirtilemez. Var olan sürüm çalışırken güncelleştirme denetimi oluşur ve güncelleştirilmiş bir sürümü algılandı, yeni sürüm önbelleğe alır. Yeni sürüm daha sonra sonraki başlatmada yükledikten [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulama.
+## <a name="expiration"></a>Dolmadan
+ İsteğe bağlı. Bu öğe, `update` öğesinin bir alt öğesidir ve alt öğesi yoktur. `beforeApplicationStartup``expiration` aynı dağıtım bildiriminde her ikisi de belirtilemez. Güncelleştirme denetimi gerçekleştiğinde ve güncelleştirilmiş bir sürüm algılandığında, varolan sürüm çalışırken yeni sürüm önbelleğe alınır. Yeni sürüm daha sonra [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulamanın bir sonraki başlatmaya yüklenir.
 
- `expiration` Öğesi aşağıdaki öznitelikler destekler.
+ `expiration` Öğesi aşağıdaki öznitelikleri destekler.
 
 |Öznitelik|Açıklama|
 |---------------|-----------------|
-|`maximumAge`|Gerekli. Güncelleştirme denetimi uygulamanın gerçekleştirdiği önce geçerli güncelleştirme kaç yaşında olması gerektiğini tanımlar. Zaman birimi tarafından belirlenen `unit` özniteliği.|
-|`unit`|Gerekli. İçin zaman birimi tanımlar `maximumAge`. Geçerli birimleri `hours`, `days`, ve `weeks`.|
+|`maximumAge`|Gerekli. Uygulamanın bir güncelleştirme denetimi gerçekleştirmeden önce geçerli güncelleştirmenin ne kadar eski olması gerektiğini tanımlar. Zaman birimi `unit` özniteliğe göre belirlenir.|
+|`unit`|Gerekli. İçin `maximumAge`zaman birimini tanımlar. Geçerli birimler `hours`, `days`, ve `weeks`.|
 
 ## <a name="deploymentprovider"></a>deploymentProvider
- .NET Framework 2.0 için dağıtım bildirimi içeriyorsa, bu öğe gereklidir bir `subscription` bölümü. .NET Framework 3.5 ve daha sonra bu öğe isteğe bağlıdır ve sunucu ve dosya yolu, dağıtım bildiriminde bulunan varsayılan olur.
+ .NET Framework 2,0 için, dağıtım bildirimi bir `subscription` bölüm içeriyorsa bu öğe gereklidir. .NET Framework 3,5 ve üzeri için, bu öğe isteğe bağlıdır ve varsayılan olarak dağıtım bildiriminin bulunduğu sunucu ve dosya yoludur.
 
- Bu öğenin alt öğesi olan `deployment` öğesi ve aşağıdaki özniteliklere sahiptir.
+ Bu öğe, `deployment` öğesinin bir alt öğesidir ve aşağıdaki özniteliğe sahiptir.
 
 | Öznitelik | Açıklama |
 |------------| - |
-| `codebase` | Gerekli. Tekdüzen Kaynak Tanımlayıcısı (URI) olarak güncelleştirmek için kullanılan dağıtım bildiriminin konumunu tanımlayan [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulama. Bu öğe, CD tabanlı yüklemeler için güncelleştirme konumları iletmek için de sağlar. Geçerli bir URI olmalıdır. |
+| `codebase` | Gerekli. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Uygulamayı güncelleştirmek için kullanılan dağıtım bildiriminin bir Tekdüzen Kaynak tanımlayıcısı (URI) olarak konumunu tanımlar. Bu öğe Ayrıca, CD tabanlı yüklemeler için güncelleştirme konumlarına iletme olanağı tanır. Geçerli bir URI olmalıdır. |
 
 ## <a name="remarks"></a>Açıklamalar
- Yapılandırabileceğiniz, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] başlangıçta güncelleştirmeleri taramak için uygulama başlangıcından sonra güncelleştirmeleri için tarama ya da asla güncelleştirmeleri denetleme. Başlangıçta güncelleştirmeleri taramak için emin olun `beforeApplicationStartup` öğesi var. altında `update` öğesi. Başlangıcından sonra güncelleştirmeleri taramak için emin olun `expiration` öğesi var. altında `update` öğesi ve güncelleştirme aralıkları sağlanır.
+ [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Uygulamanızı başlangıçta güncelleştirmeleri tarayacak, başlangıçtan sonra güncelleştirmeleri taratın veya güncelleştirmeleri hiçbir şekilde denetbir şekilde kontrol edebilirsiniz. Başlangıçta güncelleştirmeleri taramak için öğesinin `beforeApplicationStartup` `update` altında bulunduğundan emin olun. Başlangıçtan sonra güncelleştirmeleri taramak için, öğesinin `expiration` `update` öğesinin altında mevcut olduğundan ve bu güncelleştirme aralıklarının sağlandığından emin olun.
 
- Güncelleştirmeleri denetlemeyi devre dışı bırakmak için kaldırmanız `subscription` öğesi. Hiçbir zaman güncelleştirmeleri taramak için dağıtım bildirimi içinde belirttiğinizde, yine de el ile güncelleştirmeleri kullanarak denetleyebilirsiniz <xref:System.Deployment.Application.ApplicationDeployment.CheckForUpdate%2A> yöntemi.
+ Güncelleştirme denetimini devre dışı bırakmak için `subscription` öğesini kaldırın. Güncelleştirmeleri hiçbir zaman taramayacak dağıtım bildiriminde belirttiğinizde, <xref:System.Deployment.Application.ApplicationDeployment.CheckForUpdate%2A> yöntemini kullanarak güncelleştirmeleri el ile denetleyebilirsiniz.
 
- DeploymentProvider'ın güncelleştirmeleri nasıl olduğu ile ilgili daha fazla bilgi için bkz: [ClickOnce güncelleştirme stratejisini seçme](../deployment/choosing-a-clickonce-update-strategy.md).
+ DeploymentProvider 'ın güncelleştirmelerle nasıl ilişkili olduğu hakkında daha fazla bilgi için bkz. [ClickOnce Update stratejisi seçme](../deployment/choosing-a-clickonce-update-strategy.md).
 
 ## <a name="examples"></a>Örnekler
- Aşağıdaki kod örneğinde gösterilmiştir bir `deployment` öğesinde bir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] dağıtım bildirimi. Örnekte bir `deploymentProvider` tercih edilen güncelleştirme konumunu göstermek için öğesi.
+ Aşağıdaki kod örneğinde bir `deployment` [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] dağıtım bildiriminde bir öğe gösterilmektedir. Örnek, tercih edilen `deploymentProvider` güncelleştirme konumunu belirtmek için bir öğesi kullanır.
 
 ```xml
 <deployment install="true" minimumRequiredVersion="2.0.0.0" mapFileExtension="true" trustUrlParameters="true">

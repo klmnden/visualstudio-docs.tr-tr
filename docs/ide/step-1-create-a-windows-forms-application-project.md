@@ -13,14 +13,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dc2b21edcae4cd825ade551b92f98853da8f2516
-ms.sourcegitcommit: 9c07ae6fb18204ea080c8248994a683fa12e5c82
+ms.openlocfilehash: 65339eabcffdf0f333036442ea8473ecf8c8f06e
+ms.sourcegitcommit: 4dfe098ac0df294aad63e6b384d6575980798ca3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "70293651"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70888016"
 ---
-# <a name="step-1-create-a-windows-forms-application-project"></a>1\. Adım: Windows Forms Uygulaması projesi oluşturma
+# <a name="step-1-create-a-windows-forms-app-project"></a>1\. Adım: Windows Forms Uygulaması projesi oluşturma
 
 Bir resim görüntüleyici oluşturduğunuzda, ilk adım Windows Forms bir uygulama projesi oluşturmaktır.
 
@@ -70,9 +70,9 @@ Bir resim görüntüleyici oluşturduğunuzda, ilk adım Windows Forms bir uygul
 
 ::: moniker-end
 
-Visual Studio, programınız için bir çözüm oluşturur. Bir çözüm, programınızın gerektirdiği tüm proje ve dosyalar için bir kapsayıcı görevi görür. Bu terimler, Bu öğreticinin ilerleyen kısımlarında daha ayrıntılı olarak açıklanacaktır.
+Visual Studio, uygulamanız için bir çözüm oluşturur. Bir çözüm, uygulamanız için gereken tüm proje ve dosyalar için bir kapsayıcı görevi görür. Bu terimler, Bu öğreticinin ilerleyen kısımlarında daha ayrıntılı olarak açıklanacaktır.
 
-## <a name="about-the-windows-forms-application-project"></a>Windows Forms uygulama projesi hakkında
+## <a name="about-the-windows-forms-app-project"></a>Windows Forms uygulama projesi hakkında
 
 1. Geliştirme ortamı üç pencere içerir: Ana pencere, **Çözüm Gezgini**ve **Özellikler** penceresi.
 
@@ -96,7 +96,7 @@ Visual Studio, programınız için bir çözüm oluşturur. Bir çözüm, progra
 
     * **Çözüm Gezgini penceresi** Bu pencerede, çözümünüzdeki tüm öğeleri görüntüleyebilir ve buna gidebilirsiniz.
 
-       Bir dosya seçerseniz, **Özellikler** penceresinin içeriği değişir. Bir kod dosyası açarsanız ( C# ve. *vb* içinde *. cs* ile biten) Visual Basic), kod dosyası veya kod dosyası Tasarımcısı görüntülenir. Tasarımcı, üzerinde düğme ve liste gibi denetimler ekleyebileceğiniz görsel bir yüzeydir. Visual Studio Forms için tasarımcı **Windows Form Tasarımcısı**olarak adlandırılır.
+    Bir dosya seçerseniz, **Özellikler** penceresinin içeriği değişir. Bir kod dosyası açarsanız ( C# ve. *vb* içinde *. cs* ile biten) Visual Basic), kod dosyası veya kod dosyası Tasarımcısı görüntülenir. Tasarımcı, üzerinde düğme ve liste gibi denetimler ekleyebileceğiniz görsel bir yüzeydir. Visual Studio Forms için tasarımcı **Windows Form Tasarımcısı**olarak adlandırılır.
 
     * **Özellikler penceresi** Bu pencerede, diğer pencereler üzerinde seçtiğiniz öğelerin özelliklerini değiştirebilirsiniz. Örneğin, Form1 ' i seçerseniz, **Text** özelliğini ayarlayarak başlığını değiştirebilir ve **BackColor** özelliğini ayarlayarak arka plan rengini değiştirebilirsiniz.
 
@@ -114,7 +114,7 @@ Visual Studio, programınız için bir çözüm oluşturur. Bir çözüm, progra
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-* Sonraki öğretici adımına gitmek için bkz [. 2. Adım: Programınızı](../ide/step-2-run-your-program.md)çalıştırın.
+* Sonraki öğretici adımına gitmek için bkz  **[. 2. Adım: ](../ide/step-2-run-your-program.md)Uygulamanızı**çalıştırın.
 
 * Genel bakış konusuna dönmek için bkz [. öğretici 1: Bir resim görüntüleyici](../ide/tutorial-1-create-a-picture-viewer.md)oluşturun.
 

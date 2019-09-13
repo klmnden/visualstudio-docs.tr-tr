@@ -10,12 +10,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: f71767571c6ea041a16eca5a66856c567be72b60
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 96cb1cc275b5eb521bc998ea26d7c742bbeabdfb
+ms.sourcegitcommit: b60a00ac3165364ee0e53f7f6faef8e9fe59ec4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68925711"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70913359"
 ---
 # <a name="unit-tests-for-generic-methods"></a>Genel metotlar için birim testleri
 
@@ -162,13 +162,11 @@ Bu örnekte, genel tür parametresi `T` kısıtlamasına sahip `where T : Employ
 
 Diğer bir deyişle, çağırdığınızda `DataTestHelper<T>()` yöntemi test yönteminden `DataTest()`, türünde bir parametre geçmelidir `Employee` veya türetilmiş bir sınıf `Employee`.
 
-`using ClassLibrary2;`
-
-`using Microsoft.VisualStudio.TestTools.UnitTesting;`
-
-`namespace TestProject1`
-
 ```csharp
+using ClassLibrary2;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
+
+namespace TestProject1
 {
     [TestClass()]
     public class GenericList_NodeTest

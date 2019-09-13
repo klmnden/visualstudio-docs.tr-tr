@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 00874c8fd7ded67c380de1166d7e9753a3bd3c24
-ms.sourcegitcommit: 044bb54cb4552c8f4651feb11d62e52726117e75
+ms.openlocfilehash: 33ef3c31acd39798df84c39fff82faba063fdaa9
+ms.sourcegitcommit: b60a00ac3165364ee0e53f7f6faef8e9fe59ec4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68662047"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70913226"
 ---
 # <a name="msbuild-target-framework-and-target-platform"></a>MSBuild hedef çerçevesi ve hedef platform
 Bir proje, .NET Framework belirli bir sürümü ve belirli bir yazılım mimarisi olan bir *hedef platform*olan bir *hedef çerçeve*üzerinde çalışmak üzere oluşturulabilir.  Örneğin, 2,0 bitlik bir platformda .NET Framework ' de çalışacak bir uygulamayı, 802x86 işlemci ailesi ("x86") ile uyumlu 32 bir şekilde hedefleyebilirsiniz. Hedef Framework ve hedef platformun birleşimi *hedef bağlam*olarak bilinir.
@@ -58,7 +58,10 @@ Hedef çerçeve, proje dosyasındaki `TargetFrameworkVersion` özelliğinde beli
 
  *Hedef profil* , hedef Framework 'ün bir alt kümesidir. Örneğin, .NET Framework 4 Istemci profili MSBuild derlemelerine başvuruları içermez.
 
- Hedef profil, bir proje dosyasındaki `TargetFrameworkProfile` özelliğinde belirtilmiştir. IDE 'deki proje özelliği sayfalarında Target-Framework denetimini kullanarak hedef profilini değiştirebilirsiniz. Daha fazla bilgi için [nasıl yapılır: .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md)bir sürümünü hedefleyin.
+ > [!NOTE]
+ > Hedef profiller yalnızca [taşınabilir sınıf kitaplıkları](/dotnet/standard/cross-platform/cross-platform-development-with-the-portable-class-library)için geçerlidir.
+
+ Hedef profil, bir proje dosyasındaki `TargetFrameworkProfile` özelliğinde belirtilmiştir. IDE 'deki proje özelliği sayfalarında Target-Framework denetimini kullanarak hedef profilini değiştirebilirsiniz.
 
 ```xml
 <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>

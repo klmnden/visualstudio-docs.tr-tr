@@ -16,18 +16,18 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f9f5c6f3aff6338feb0de16a44d3b7d02d0c3b9
-ms.sourcegitcommit: 9c07ae6fb18204ea080c8248994a683fa12e5c82
+ms.openlocfilehash: 34f4b8272494e4d1bdef1f073cf602a6c2397445
+ms.sourcegitcommit: 4dfe098ac0df294aad63e6b384d6575980798ca3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "70293644"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70887940"
 ---
 # <a name="step-9-review-comment-and-test-your-code"></a>9\. Adım: Kodunuzu gözden geçirme, açıklama ve test etme
 
-Daha sonra kodunuza bir açıklama eklersiniz. Yorum, programın davranış biçimini değiştirmeyen bir notdur. Kodunuzu okuyan birisinin ne yaptığını öğrenmesini kolaylaştırır. Kodunuza açıklama eklemek için iyi bir önleminizi alarak vardır.
+Daha sonra kodunuza bir açıklama eklersiniz. Yorum, uygulamanın davranış biçimini değiştirmeyen bir notdur. Kodunuzu okuyan birisinin ne yaptığını öğrenmesini kolaylaştırır. Kodunuza açıklama eklemek için iyi bir önleminizi alarak vardır.
 
-İçinde C#, iki eğik çizgi (//) bir satırı açıklama olarak işaretler. Visual Basic, bir satırı açıklama olarak işaretlemek için tek tırnak işareti (') kullanılır. Bir açıklama ekledikten sonra, programınızı test edersiniz. Projeniz üzerinde çalışırken kodunuzu sık çalıştırmak ve test etmek iyi bir uygulamadır. bu sayede, kod daha karmaşık hale gelmeden önce sorunları önceden yakalayabilir ve çözebilirsiniz. Buna *yinelemeli test*denir.
+İçinde C#, iki eğik çizgi (//) bir satırı açıklama olarak işaretler. Visual Basic, bir satırı açıklama olarak işaretlemek için tek tırnak işareti (') kullanılır. Bir açıklama ekledikten sonra uygulamanızı test edersiniz. Projeniz üzerinde çalışırken kodunuzu sık çalıştırmak ve test etmek iyi bir uygulamadır. bu sayede, kod daha karmaşık hale gelmeden önce sorunları önceden yakalayabilir ve çözebilirsiniz. Buna *yinelemeli test*denir.
 
 Yalnızca bir şey oluşturmuş olabilirsiniz ve henüz yapılmasa da, bir resmi yükleyebilir. Kodunuza bir açıklama eklemeden ve test etmeden önce, bu kavramları sık kullandığınız için kod kavramlarını gözden geçirmek için zaman alın:
 
@@ -64,7 +64,7 @@ Yalnızca bir şey oluşturmuş olabilirsiniz ve henüz yapılmasa da, bir resmi
      
      [!code-vb[VbExpressTutorial1Step9_10#1](../ide/codesnippet/VisualBasic/step-9-review-comment-and-test-your-code_1.vb)]
 
-    **ShowButton** düğinizin <xref:System.Windows.Forms.Control.Click> olay işleyicisi artık tamamlandı ve çalışıyor. Bir `if` deyimden başlayarak kod yazmaya başladıysanız. Bir `if` ifade, programınıza "Bu şeyi denetle ve doğru ise, bu eylemleri yapın." Bu durumda, programınıza **Dosya Aç** iletişim kutusunu açmasını söylersiniz ve Kullanıcı bir dosya seçip **Tamam** düğmesini seçerse, bu dosyayı **PictureBox**'a yükleyin.
+    **ShowButton** düğinizin <xref:System.Windows.Forms.Control.Click> olay işleyicisi artık tamamlandı ve çalışıyor. Bir `if` deyimden başlayarak kod yazmaya başladıysanız. Bir `if` ifade, uygulamanıza "Bunu nasıl denetleyeceğinizi, ister doğru olursa, bu eylemleri gerçekleştirirsiniz." Bu durumda, uygulamanıza **Dosya Aç** iletişim kutusunu açmasını söylersiniz ve Kullanıcı bir dosya seçip **Tamam** düğmesini seçerse, bu dosyayı **PictureBox**'a yükleyin.
 
     > [!TIP]
     > IDE, kod yazmanızı kolaylaştıracak şekilde oluşturulmuştur ve *kod parçacıkları* bunu yapmanın bir yoludur. Kod parçacığı, küçük bir kod bloğuna genişletilmiş bir kısayoldur.
@@ -73,22 +73,22 @@ Yalnızca bir şey oluşturmuş olabilirsiniz ve henüz yapılmasa da, bir resmi
     >
     >  Kodu yazarken bir kod parçacığını etkinleştirmek için yazın ve **sekme** tuşunu seçin. Birçok parçacık, **IntelliSense** penceresinde görünür. bu **nedenle,** **IntelliSense** PENCERESINDE kod parçacığını seçmek ve sonra IDE 'nin kod parçacığını kullanmasını söylemek için. (IntelliSense parçacığı destekler `if` , ancak `ifelse` kod parçacığını destekler.)
 
-1. Programınızı çalıştırmadan önce, aşağıdaki ekran görüntüsüne benzer şekilde görünmesi gereken, **Tümünü Kaydet** araç çubuğu düğmesini seçerek programınızı kaydedin.
+1. Uygulamanızı çalıştırmadan önce, aşağıdaki ekran görüntüsüne benzer şekilde görünmesi gereken **Tümünü Kaydet** araç çubuğu düğmesini seçerek uygulamanızı kaydedin.
 
      ![Tümünü Kaydet araç çubuğu düğmesi](../ide/media/express_iconsaveall.png)<br>
 ***Tümünü Kaydet*** *düğme*
 
-     Alternatif olarak, programınızı kaydetmek için, **Dosya** > **Tümünü** menü çubuğundan Kaydet ' i seçin (veya **CTRL**+ **+ Shift**+**S**tuşlarına basın). Bu, erken ve sık tasarrufu sağlamak için en iyi uygulamadır.
+     Alternatif olarak, uygulamanızı kaydetmek için, **Dosya** > **Tümünü** menü çubuğundan Kaydet ' i seçin (veya **CTRL**+ **+ Shift**+**S**tuşlarına basın). Bu, erken ve sık tasarrufu sağlamak için en iyi uygulamadır.
 
      Çalıştığında, programınız aşağıdaki görüntüye benzer şekilde görünmelidir.
 
      ![Resim görüntüleyici](../ide/media/express_pictureviewerdonerun.png)<br>***Resim görüntüleyici***
 
-## <a name="to-test-your-program"></a>Programınızı test etmek için
+## <a name="to-test-your-app"></a>Uygulamanızı test etmek için
 
 1. **F5** tuşunu seçin veya **hata ayıklamayı Başlat** araç çubuğu düğmesini seçin.
 
-1. Yeni yazdığınız kodu çalıştırmak için **bir resim göster** düğmesini seçin. İlk olarak, program açık bir **Dosya** iletişim kutusu açar. Filtrelerinizin, iletişim kutusunun alt kısmındaki **dosya türü** açılan listesinde göründüğünü doğrulayın. Ardından bir resme gidin ve açın. Genellikle *Belgelerim klasörünüzdeki Windows* işletim sistemiyle birlikte gelen örnek resimleri, *Resimlerim \ örnek resimler* klasörü içinde bulabilirsiniz.
+1. Yeni yazdığınız kodu çalıştırmak için **bir resim göster** düğmesini seçin. Uygulama ilk olarak bir **Dosya Aç** iletişim kutusu açar. Filtrelerinizin, iletişim kutusunun alt kısmındaki **dosya türü** açılan listesinde göründüğünü doğrulayın. Ardından bir resme gidin ve açın. Genellikle *Belgelerim klasörünüzdeki Windows* işletim sistemiyle birlikte gelen örnek resimleri, *Resimlerim \ örnek resimler* klasörü içinde bulabilirsiniz.
 
     > [!TIP]
     > **Resim dosyası seç** iletişim kutusunda herhangi bir görüntü görmüyorsanız, iletişim kutusunun sağ alt tarafındaki aşağı açılan listede **tüm dosyalar (\**.)** filtresinin seçili olduğundan emin olun.
@@ -99,7 +99,7 @@ Yalnızca bir şey oluşturmuş olabilirsiniz ve henüz yapılmasa da, bir resmi
 
 ## <a name="to-continue-or-review"></a>Devam etmek veya gözden geçirmek için
 
-- Sonraki öğretici adımına gitmek için bkz [. adım 10: Ek düğmeler ve onay kutusu](../ide/step-10-write-code-for-additional-buttons-and-a-check-box.md)için kod yazın.
+- Sonraki öğretici adımına gitmek için bkz  **[. adım 10: Ek düğmeler ve onay kutusu](../ide/step-10-write-code-for-additional-buttons-and-a-check-box.md)** için kod yazın.
 
 - Önceki öğretici adımına dönmek için bkz [. 8. Adım: Resim göster düğmesi olay işleyicisi](../ide/step-8-write-code-for-the-show-a-picture-button-event-handler.md)için kod yazın.
 

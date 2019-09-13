@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 66b0a22fcef06f69f5c8adfa2afa0b6fdadc9f01
-ms.sourcegitcommit: 9c07ae6fb18204ea080c8248994a683fa12e5c82
+ms.openlocfilehash: 5ff85034d7185e68a43ed8b4c70f68787414ddd9
+ms.sourcegitcommit: b60a00ac3165364ee0e53f7f6faef8e9fe59ec4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "70293561"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70913170"
 ---
 # <a name="step-5-add-controls-to-your-form"></a>5\. Adım: Formunuza denetimler ekleme
 
@@ -85,7 +85,7 @@ Bu adımda, formunuza <xref:System.Windows.Forms.PictureBox> denetim <xref:Syste
 
 ## <a name="to-continue-or-review"></a>Devam etmek veya gözden geçirmek için
 
-* Sonraki öğretici adımına gitmek için bkz [. 6. Adım: Düğme denetimlerinizi](../ide/step-6-name-your-button-controls.md)adlandırın.
+* Sonraki öğretici adımına gitmek için bkz  **[. 6. Adım: Düğme denetimlerinizi](../ide/step-6-name-your-button-controls.md)** adlandırın.
 
 * Önceki öğretici adımına dönmek için bkz [. 4. Adım: Bir TableLayoutPanel denetimiyle](../ide/step-4-lay-out-your-form-with-a-tablelayoutpanel-control.md)formunuzu düzenleyin.
 

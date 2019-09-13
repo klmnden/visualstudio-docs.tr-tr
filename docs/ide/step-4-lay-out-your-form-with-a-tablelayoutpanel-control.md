@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a0bc67968b7248494a087f06037f72152b53300
-ms.sourcegitcommit: 9c07ae6fb18204ea080c8248994a683fa12e5c82
+ms.openlocfilehash: 3595705030e2e969f99455700ab70f36bf22274a
+ms.sourcegitcommit: 4dfe098ac0df294aad63e6b384d6575980798ca3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "70293628"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70887991"
 ---
 # <a name="step-4-lay-out-your-form-with-a-tablelayoutpanel-control"></a>4\. Adım: TableLayoutPanel denetimi ile formunuzu düzenleme
 
@@ -93,7 +93,7 @@ Bu adımda formunuza bir <xref:System.Windows.Forms.TableLayoutPanel> denetim ek
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-* Sonraki öğretici adımına gitmek için bkz [. 5. Adım: Formunuza](../ide/step-5-add-controls-to-your-form.md)denetimler ekleyin.
+* Sonraki öğretici adımına gitmek için bkz  **[. 5. Adım: ](../ide/step-5-add-controls-to-your-form.md)Formunuza**denetimler ekleyin.
 
 * Önceki öğretici adımına dönmek için bkz [. Adım 3: Form özelliklerinizi](../ide/step-3-set-your-form-properties.md)ayarlayın.
 

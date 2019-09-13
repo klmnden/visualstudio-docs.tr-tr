@@ -16,12 +16,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 281c98ca52b6dd18ee726e3191d47d6755fd8326
-ms.sourcegitcommit: 9c07ae6fb18204ea080c8248994a683fa12e5c82
+ms.openlocfilehash: 9763026a4ef1c219bcb9f5b5270ac5d3b48e2e14
+ms.sourcegitcommit: 4dfe098ac0df294aad63e6b384d6575980798ca3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "70293612"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70887875"
 ---
 # <a name="step-10-write-code-for-additional-buttons-and-a-check-box"></a>10. Adım: Ek düğmeler ve onay kutusu için kod yazma
 
@@ -30,7 +30,7 @@ Artık diğer dört yöntemi tamamlamaya hazırsınız. Bu kodu kopyalayabilir v
 Bu kod, daha önce eklediğiniz düğmelere işlevsellik ekler. Bu kod olmadan düğmeler hiçbir şey yapmaz. Düğmeler, denetimleri etkinleştirdiğinizde farklı şeyler <xref:System.Windows.Forms.Control.Click> yapmak için olaylarında kod kullanır (ve onay <xref:System.Windows.Forms.CheckBox.CheckedChanged> kutusu olayı kullanır). Örneğin, `clearButton_Click` **Resmi Temizle** düğmesini seçtiğinizde `ClearButton_Click`etkinleştiren (veya) olay, **Image** özelliğini **null** (veya **Nothing**) olarak ayarlayarak geçerli görüntüyü siler. Koddaki her olay kodun ne yaptığını açıklayan yorumlar içerir.
 
 > [!TIP]
-> En iyi uygulama olarak: Kodunuzda her zaman yorum yapın. Yorumlar, bir kişinin okuması ve kodunuzun daha anlaşılır olması için gereken zamana değecektir. Yorum satırındaki her şey program tarafından yok sayılır. İçinde C#, başlangıca iki eğik çizgi (//) yazarak bir satır yorum yapın ve Visual Basic tek tırnak işaretiyle (') başlayarak bir satırı açıklama olarak görürsünüz.
+> En iyi uygulama olarak: Kodunuzda her zaman yorum yapın. Yorumlar, bir kişinin okuması ve kodunuzun daha anlaşılır olması için gereken zamana değecektir. Açıklama satırındaki her şey uygulama tarafından yok sayılır. İçinde C#, başlangıca iki eğik çizgi (//) yazarak bir satır yorum yapın ve Visual Basic tek tırnak işaretiyle (') başlayarak bir satırı açıklama olarak görürsünüz.
 
 ## <a name="how-to-write-code-for-additional-buttons-and-a-check-box"></a>Ek düğmeler ve onay kutusu için kod yazma
 
@@ -44,7 +44,7 @@ Aşağıdaki kodu **Form1** kod dosyanıza ekleyin (*Form1.cs* veya *Form1. vb*)
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-* Sonraki öğretici adımına gitmek için bkz [. adım 11: Programınızı çalıştırın ve diğer özellikleri](../ide/step-11-run-your-program-and-try-other-features.md)deneyin.
+* Sonraki öğretici adımına gitmek için bkz  **[. adım 11: Uygulamanızı çalıştırın ve diğer özellikleri](../ide/step-11-run-your-program-and-try-other-features.md)** deneyin.
 
 * Önceki öğretici adımına dönmek için bkz [. Adım 9: Kodunuzu](../ide/step-9-review-comment-and-test-your-code.md)gözden geçirin, yorum yapın ve test edin.
 

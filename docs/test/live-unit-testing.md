@@ -9,12 +9,12 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: bfe1affaad05d2c20a27fb0e315fc1d3b263f22b
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: e4ace476a2454c7f6735f19cd07f222d6c06564e
+ms.sourcegitcommit: b60a00ac3165364ee0e53f7f6faef8e9fe59ec4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68923745"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70913329"
 ---
 # <a name="live-unit-testing-with-visual-studio"></a>Visual Studio ile Live Unit Testing
 
@@ -177,6 +177,12 @@ Live Unit Testing her bir yöntem hariç tutmak için de aşağıdaki öznitelik
 - XUnit için: `[Trait("Category", "SkipWhenLiveUnitTesting")]`
 - NUnit için: `[Category("SkipWhenLiveUnitTesting")]`
 - MSTest için: `[TestCategory("SkipWhenLiveUnitTesting")]`
+
+Ayrıca, Live Unit Testing bir test derlemesinin tamamını da dışlayabilirsiniz:
+
+- XUnit için: `[assembly: AssemblyTrait("Category", "SkipWhenLiveUnitTesting")]`
+- NUnit için: `[assembly: Category("SkipWhenLiveUnitTesting")]`
+- MSTest için: `[assembly: TestCategory("SkipWhenLiveUnitTesting")]`
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

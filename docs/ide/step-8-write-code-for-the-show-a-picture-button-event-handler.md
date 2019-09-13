@@ -16,20 +16,20 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ab10700e984f50089a3e66b6b89f449d963fd208
-ms.sourcegitcommit: 9c07ae6fb18204ea080c8248994a683fa12e5c82
+ms.openlocfilehash: 26bfd4d74580fecd15b1891895e5ae28a18f3296
+ms.sourcegitcommit: 4dfe098ac0df294aad63e6b384d6575980798ca3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "70293552"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70887962"
 ---
 # <a name="step-8-write-code-for-the-show-a-picture-button-event-handler"></a>8\. Adım: Resim göster düğmesi olay işleyicisi için kod yazma
 
 Bu adımda, **bir resim göster** düğmesini aşağıdaki gibi çalışır hale getirebilirsiniz:
 
-- Kullanıcı bu düğmeyi seçtiğinde program bir <xref:System.Windows.Forms.OpenFileDialog> kutu açar.
+- Kullanıcı bu düğmeyi seçtiğinde, uygulama bir <xref:System.Windows.Forms.OpenFileDialog> kutu açar.
 
-- Bir Kullanıcı bir resim dosyası açarsa, program içinde <xref:System.Windows.Forms.PictureBox>bu resmi gösterir.
+- Bir Kullanıcı bir resim dosyası açarsa, uygulama bu resmi içinde <xref:System.Windows.Forms.PictureBox>gösterir.
 
 IDE 'de kod yazmanıza yardımcı olan, IntelliSense adlı güçlü bir araç vardır. Kod yazdığınızda, IDE girdiğiniz kısmi sözcüklerin önerilen tamamlarla bir kutu açar.
 
@@ -69,7 +69,7 @@ Daha sonra, bir **Dosya Aç** iletişim kutusunu açmak için daha fazla kod gir
  1. Bir denetim veya bileşen üzerinde bir yöntem kullandığınızda ( *bir yöntemi çağırmak*olarak adlandırılır), parantez eklemeniz gerekir. Bu nedenle, içindeki `ShowDialog`"g" dan hemen sonra açma ve kapatma parantezleri girin: `()`Şimdi "openFileDialog1. ShowDialog ()" şeklinde görünmelidir.
 
     > [!NOTE]
-    > Yöntemler, herhangi bir programın önemli bir parçasıdır ve bu öğretici, yöntemlerin kullanılması için çeşitli yollar göstermiştir. Bir bileşenin yöntemini çağırmak için, **OpenFileDialog** bileşeni `ShowDialog()` yöntemini nasıl adlandırmış olursunuz. Bir Kullanıcı bir düğme seçtiğinde bir iletişim kutusu ve resim açan `showButton_Click()` yöntemi olarak adlandırılan, programınızın sizin oluşturduğunuz gibi işlemler yapması için kendi yöntemlerinizi oluşturabilirsiniz.
+    > Yöntemler, herhangi bir uygulamanın önemli bir parçasıdır ve bu öğretici, yöntemlerin kullanılması için çeşitli yollar göstermiştir. Bir bileşenin yöntemini çağırmak için, **OpenFileDialog** bileşeni `ShowDialog()` yöntemini nasıl adlandırmış olursunuz. Bir Kullanıcı bir düğme seçtiğinde bir iletişim kutusu ve resim açan `showButton_Click()` yöntemi olarak adlandırılan, uygulamanızın sizin oluşturduğunuz gibi bir işlem yapmasını sağlamak için kendi yöntemlerinizi oluşturabilirsiniz.
 
  1. İçin C#, bir boşluk ekleyin ve ardından iki eşittir işareti (`==`) ekleyin. Visual Basic için bir boşluk ekleyin ve sonra tek bir eşittir işareti (`=`) kullanın. (C# ve Visual Basic farklı eşitlik işleçleri kullanın.)
 
@@ -102,7 +102,7 @@ Daha sonra, bir **Dosya Aç** iletişim kutusunu açmak için daha fazla kod gir
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-* Sonraki öğretici adımına gitmek için bkz [. Adım 9: Kodunuzu](../ide/step-9-review-comment-and-test-your-code.md)gözden geçirin, yorum yapın ve test edin.
+* Sonraki öğretici adımına gitmek için bkz  **[. Adım 9: ](../ide/step-9-review-comment-and-test-your-code.md)Kodunuzu**gözden geçirin, yorum yapın ve test edin.
 
 * Önceki öğretici adımına dönmek için bkz [. 7. Adım: Formunuza](../ide/step-7-add-dialog-components-to-your-form.md)iletişim kutusu bileşenleri ekleyin.
 

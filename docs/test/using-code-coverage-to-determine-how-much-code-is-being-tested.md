@@ -11,14 +11,12 @@ dev_langs:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.workload:
-- multiple
-ms.openlocfilehash: f6aa9cb62bc0ae956a85acd75d1a9615a2283133
-ms.sourcegitcommit: f42b5318c5c93e2b5ecff44f408fab8bcdfb193d
+ms.openlocfilehash: 24bc4c54e455f43aa5fd5fee0ce0d5a44042e497
+ms.sourcegitcommit: b60a00ac3165364ee0e53f7f6faef8e9fe59ec4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2019
-ms.locfileid: "69976772"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70913199"
 ---
 # <a name="use-code-coverage-to-determine-how-much-code-is-being-tested"></a>Kod kapsamını kullanarak ne kadar kodun test edildiğini belirleme
 
@@ -28,33 +26,51 @@ Kod Kapsamı Çözümleme (CLI) yönetilen ve yönetilmeyen (yerel) kod için uy
 
 Test yöntemlerini Test Gezgini'ni kullanarak çalıştırdığınızda kod kapsamı bir seçenektir. Sonuçlar tablosu, her derleme sınıfı ve yöntemi içinde çalışan kod yüzdesini gösterir. Ayrıca, kaynak düzenleyici hangi kodun test edildiğini gösterir.
 
+::: moniker range="vs-2017"
+
 ![Renklendirme ile kod kapsamı sonuçları](../test/media/codecoverage1.png)
+
+::: moniker-end
 
 ## <a name="requirements"></a>Gereksinimler
 
 Kod kapsamı özelliği yalnızca Visual Studio Enterprise sürümünde kullanılabilir.
 
-## <a name="to-analyze-code-coverage-on-unit-tests-in-test-explorer"></a>Test Gezgini'ndeki birim testlerinde kod kapsamını analiz etmek için
+## <a name="analyze-code-coverage"></a>Kod kapsamını analiz et
 
 ::: moniker range="vs-2017"
+
 1. **Test** menüsünde, **kod kapsamını analiz et**' i seçin.
+
 ::: moniker-end
+
 ::: moniker range=">=vs-2019"
-1. **Test Gezgini**'nde **Çalıştır** menüsünden **kod kapsamını çözümle** ' yi seçin.
+
+1. **Test Gezgini**'nde **Çalıştır** menüsündeki **Tüm testler için kod kapsamını çözümle** ' yi seçin.
+
+   ![VS 2019 ' de kod kapsamı menüsünü çözümle](../test/media/vs-2019/analyze-code-coverage.png)
+
+   **Test Gezgini** açık değilse, **Test** > **Windows** > **Test Gezgini**' ni seçerek açın veya **CTRL**+**E**,**T**'ye basın.
+
 ::: moniker-end
 
-2. Hangi satırların çalıştırıldığını görmek için kod kapsamı renklendirmesini göster simgesi ![](../test/media/codecoverage-showcoloringicon.png) **kod kapsamı renklendirmesini göster**' i seçin.
+2. Testler çalıştırıldıktan sonra, hangi satırların çalıştırıldığını görmek için kod kapsamı renklendirmesi simgesini ![](../test/media/codecoverage-showcoloringicon.png) göster ' i seçin. kod **kapsamı sonuçları** penceresinde kod **kapsamı renklendirmesini göster** ' i seçin. Varsayılan olarak, testlerin kapsadığı kod açık mavi renkle vurgulanır.
 
-   Renkleri değiştirmek veya kalın yüzü kullanmak için, **Araçlar** > **Seçenekler** > **ortam** > **yazı tipleri ve renkler** > **için ayarları göster ' i seçin: Metin düzenleyici**. **Görüntüleme öğeleri**altında, kapsam öğelerini ayarlayın.
+   > [!TIP]
+   > Renkleri değiştirmek veya kalın yüzü kullanmak için, **Araçlar** > **Seçenekler** > **ortam** > **yazı tipleri ve renkler** > **için ayarları göster ' i seçin: Metin düzenleyici**. **Görüntüleme öğeleri**altında, "kapsam" öğeleri için ayarları ayarlayın, örneğin, **kapsam dokunulmayan alanı**.
+   >
+   > ![Kod kapsamı yazı tipleri ve renkler](media/vs-2019/coverage-fonts-and-colors.png)
 
 3. Sonuçlar düşük kapsamı gösterirse, hangi kod parçalarının uygulanmadığını araştırın ve bunları kapsamak için daha fazla test yazın. Geliştirme ekipleri için tipik olarak yaklaşık %80 kod kapsamı hedeflenir. Bazı durumlarda, düşük kapsam kabul edilebilir. Örneğin, düşük kapsamı bazı kodlar standart şablonundan oluşturulduğu kabul edilebilir.
 
 > [!TIP]
-> - Derleyici iyileştirmesinin kapalı olduğundan emin olun
-> - yönetilmeyen (yerel) kodla çalışıyorsanız bir hata ayıklama derlemesi kullanın
-> - Her derleme için. pdb (sembol) dosyaları oluşturmadığınızdan emin olun
+> - Derleyici iyileştirmesini kapat
+> - Yönetilmeyen (yerel) kodla çalışıyorsanız bir hata ayıklama derlemesi kullanın
+> - Her derleme için. pdb (sembol) dosyaları oluştur
 
-Tahmin ettiğiniz sonuçları alamazsanız bkz. [kod kapsamı sorunlarını giderme](../test/troubleshooting-code-coverage.md). Kodunuzu güncelleştirdikten sonra kod kapsamını çalıştırmayı unutmayın. Kodunuzu değiştirdikten sonra veya testleri çalıştırdığınızda kapsam sonuçları ve kod renklendirme otomatik olarak güncelleştirilmez.
+Tahmin ettiğiniz sonuçları alamazsanız bkz. [kod kapsamı sorunlarını giderme](../test/troubleshooting-code-coverage.md).
+
+Kodunuzu güncelleştirdikten sonra kod kapsamını çalıştırmayı unutmayın. Kodunuzu değiştirdikten sonra veya testleri çalıştırdığınızda kapsam sonuçları ve kod renklendirme otomatik olarak güncelleştirilmez.
 
 ## <a name="report-in-blocks-or-lines"></a>Bloklar veya satırlarda raporla
 

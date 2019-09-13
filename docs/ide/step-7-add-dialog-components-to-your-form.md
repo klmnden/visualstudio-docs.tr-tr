@@ -13,16 +13,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 58721610a493283ff0bed8fca9cf6e6f6d668c4d
-ms.sourcegitcommit: 9c07ae6fb18204ea080c8248994a683fa12e5c82
+ms.openlocfilehash: 402d24ae90c6a7523398b21bfc77eb1b30bdf04f
+ms.sourcegitcommit: 4dfe098ac0df294aad63e6b384d6575980798ca3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "70293474"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70887878"
 ---
 # <a name="step-7-add-dialog-components-to-your-form"></a>7\. Adım: Formunuza iletişim kutusu bileşenleri ekleme
 
-Programınızın resim dosyalarını açmasını ve bir arka plan rengi seçmesini etkinleştirmek için, bu adımda formunuza bir <xref:System.Windows.Forms.OpenFileDialog> bileşen <xref:System.Windows.Forms.ColorDialog> ve bileşen eklersiniz.
+Uygulamanızın resim dosyalarını açmasını ve bir arka plan rengi seçmesini etkinleştirmek için, bu adımda formunuza bir <xref:System.Windows.Forms.OpenFileDialog> bileşen <xref:System.Windows.Forms.ColorDialog> ve bileşen eklersiniz.
 
 Bir bileşen, bazı yollarla denetim gibidir. Formunuza bir bileşen eklemek için **araç kutusunu** kullanın ve **Özellikler penceresini kullanarak özelliklerini ayarlarsınız** . Ancak, bir denetimin aksine formunuza bir bileşen eklemek, kullanıcının formda görebileceği görünür bir öğe eklemez. Bunun yerine, kodla tetikleyebileceğiniz belirli davranışları sağlar. Bu, bir **Dosya Aç** iletişim kutusu açan bir bileşendir.
 
@@ -54,7 +54,7 @@ Bir bileşen, bazı yollarla denetim gibidir. Formunuza bir bileşen eklemek iç
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-* Sonraki öğretici adımına gitmek için bkz [. 8. Adım: Resim göster düğmesi olay işleyicisi](../ide/step-8-write-code-for-the-show-a-picture-button-event-handler.md)için kod yazın.
+* Sonraki öğretici adımına gitmek için bkz  **[. 8. Adım: Resim göster düğmesi olay işleyicisi](../ide/step-8-write-code-for-the-show-a-picture-button-event-handler.md)** için kod yazın.
 
 * Önceki öğretici adımına dönmek için bkz [. 6. Adım: Düğme denetimlerinizi](../ide/step-6-name-your-button-controls.md)adlandırın.
 

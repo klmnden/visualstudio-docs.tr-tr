@@ -16,12 +16,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 794244bcdb814f78338a119d27ec0b0299023e59
-ms.sourcegitcommit: 9c07ae6fb18204ea080c8248994a683fa12e5c82
+ms.openlocfilehash: fc843cceea35d196e3f9719a0690764611865600
+ms.sourcegitcommit: 4dfe098ac0df294aad63e6b384d6575980798ca3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "70293504"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70887968"
 ---
 # <a name="step-6-name-your-button-controls"></a>6\. Adım: Düğme denetimlerinizi adlandırma
 
@@ -71,14 +71,14 @@ Formunuzda dört düğme vardır ve bunları **button1**, **button2**, **BUTTON3
    > [!IMPORTANT]
    > C# Kod parçacığını veya Visual Basic kod parçacığını görüntülemek için bu sayfanın sağ üst kısmındaki programlama dili denetimini kullanın.<br><br>![Docs.Microsoft.com için programlama dili denetimi](../ide/media/docs-programming-language-control.png)
 
-   Adlandırılan `showButton_Click()` koda bakıyorsunuz (alternatif olarak, `ShowButton_Click()`). IDE bunu, **showButton** düğmesi için kod dosyasını açtığınızda formun koduna eklemiştir. Tasarım zamanında, bir formdaki denetim için kod dosyasını açtığınızda, zaten mevcut değilse denetim için kod oluşturulur. *Yöntem*olarak bilinen bu kod, programınızı çalıştırdığınızda çalışır ve bu durumda, **bir resim göster** düğmesi.
+   Adlandırılan `showButton_Click()` koda bakıyorsunuz (alternatif olarak, `ShowButton_Click()`). IDE bunu, **showButton** düğmesi için kod dosyasını açtığınızda formun koduna eklemiştir. Tasarım zamanında, bir formdaki denetim için kod dosyasını açtığınızda, zaten mevcut değilse denetim için kod oluşturulur. *Yöntem*olarak bilinen bu kod, uygulamanızı çalıştırdığınızda çalışır ve bu durumda **bir resim göster** düğmesi.
 
 1. **Windows Form Tasarımcısı** sekmesini yeniden seçin (**Form1.cs [Design]** ) ve ardından formun kodunda bir yöntem oluşturmak için **Resmi Temizle** düğmesine ait kod dosyasını açın. Bunu kalan iki düğme için tekrarlayın. Her seferinde IDE, formun kod dosyasına yeni bir yöntem ekler.
 
 1. Bir yöntemi daha eklemek için, IDE 'nin bir `checkBox1_CheckedChanged()` Yöntem eklemesini sağlamak üzere **Windows Form Tasarımcısı** **onay kutusu** denetimi için kod dosyasını açın. Bu yöntem, Kullanıcı onay kutusunu seçtiğinde veya temizlediğinde çağrılır.
 
    > [!TIP]
-   > Bir program üzerinde çalışırken genellikle kod Düzenleyicisi ve **Windows Form Tasarımcısı**arasında geçiş yapabilirsiniz. IDE, projenizde gezinmeyi kolaylaştırır. C# **Windows Form Tasarımcısı** açmak için **Çözüm Gezgini** kullanın *Visual Basic ya da* menü çubuğunda, **Görünüm** > **Tasarımcısı** *' nı seçin* .
+   > Uygulama üzerinde çalışırken genellikle kod Düzenleyicisi ve **Windows Form Tasarımcısı**arasında geçiş yapabilirsiniz. IDE, projenizde gezinmeyi kolaylaştırır. C# **Windows Form Tasarımcısı** açmak için **Çözüm Gezgini** kullanın *Visual Basic ya da* menü çubuğunda, **Görünüm** > **Tasarımcısı** *' nı seçin* .
 
     Aşağıdaki kod düzenleyicisinde gördüğünüz yeni kodu gösterir.
 
@@ -86,7 +86,7 @@ Formunuzda dört düğme vardır ve bunları **button1**, **button2**, **BUTTON3
     
     [!code-vb[VbExpressTutorial1Step6_#2](../ide/codesnippet/VisualBasic/step-6-name-your-button-controls_2.vb)]
 
-    Eklediğiniz beş yöntem *olay işleyicileri*olarak adlandırılır, çünkü bir olay (Kullanıcı bir düğme seçme veya bir kutu seçme gibi) olduğunda programınız bunları çağırır.
+    Eklediğiniz beş yönteme olay *işleyicileri*denir, çünkü uygulamanız her bir olay (bir düğme seçme veya bir kutu seçtiğinizde) olur.
 
     Tasarım zamanında IDE 'deki bir denetimin kodunu görüntülediğinizde, Visual Studio bir tane değilse denetim için bir olay işleyici yöntemi ekler. Örneğin, bir düğmeye çift tıkladığınızda IDE, <xref:System.Windows.Forms.Control.Click> olayı için bir olay işleyicisi ekler (Kullanıcı düğmeyi seçtiğinde çağrılır). Bir onay kutusunu çift tıklattığınızda, IDE, <xref:System.Windows.Forms.CheckBox.CheckedChanged> olayı için bir olay işleyicisi ekler (Kullanıcı kutuyu seçtiğinde veya temizlediğinde çağrılır).
 
@@ -100,7 +100,7 @@ Formunuzda dört düğme vardır ve bunları **button1**, **button2**, **BUTTON3
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-* Sonraki öğretici adımına gitmek için bkz [. 7. Adım: Formunuza](../ide/step-7-add-dialog-components-to-your-form.md)iletişim kutusu bileşenleri ekleyin.
+* Sonraki öğretici adımına gitmek için bkz  **[. 7. Adım: ](../ide/step-7-add-dialog-components-to-your-form.md)Formunuza**iletişim kutusu bileşenleri ekleyin.
 
 * Önceki öğretici adımına dönmek için bkz [. 5. Adım: Formunuza](../ide/step-5-add-controls-to-your-form.md)denetimler ekleyin.
 

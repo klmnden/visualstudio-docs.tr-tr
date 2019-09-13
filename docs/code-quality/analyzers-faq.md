@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 53bd2139d5b81ed743cdfd92fe76cb575dcc6487
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: ae41d9ac30567a32780af422c3af1e2b0d6a63ae
+ms.sourcegitcommit: b761a4a457646d04adfda510c8837734ee4d8f17
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69547896"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70929773"
 ---
 # <a name="code-analysis-faq"></a>Kod Analizi hakkında SSS
 
@@ -24,7 +24,7 @@ Bu sayfa, Visual Studio 'da .NET Compiler Platform tabanlı kod analizi hakkınd
 
 **S**: Kod stilini denetlemek için kod analizini veya EditorConfig 'i kullanmalıdır mi?
 
-Y: Kod Analizi ve. editorconfig dosyaları el ile çalışır. [Bir. editorconfig dosyasında](../ide/editorconfig-code-style-settings-reference.md) veya [metin düzenleyici seçenekleri](../ide/code-styles-and-code-cleanup.md) sayfasında kod stilleri tanımladığınızda aslında Visual Studio 'da yerleşik olarak bulunan kod Çözümleyicileri yapılandırılırsınız. EditorConfig dosyaları, [FxCop çözümleyicileri](configure-fxcop-analyzers.md)gibi bazı üçüncü taraf çözümleyici paketlerini yapılandırmak için de kullanılabilir.
+Y: Kod Analizi ve. editorconfig dosyaları el ile çalışır. [Bir. editorconfig dosyasında](../ide/editorconfig-code-style-settings-reference.md) veya [metin düzenleyici seçenekleri](../ide/code-styles-and-code-cleanup.md) sayfasında kod stilleri tanımladığınızda aslında Visual Studio 'da yerleşik olarak bulunan kod Çözümleyicileri yapılandırılırsınız. EditorConfig dosyaları, [FxCop çözümleyicileri](configure-fxcop-analyzers.md)gibi bazı NuGet çözümleyici paketlerini yapılandırmak için de kullanılabilir.
 
 ## <a name="editorconfig-versus-rule-sets"></a>EditorConfig ve kural kümeleri
 
@@ -32,7 +32,7 @@ Y: Kod Analizi ve. editorconfig dosyaları el ile çalışır. [Bir. editorconfi
 
 Y: Kural kümeleri ve. editorconfig dosyaları, Çözümleyicileri yapılandırmanın birbirini dışlamalı yollarıdır. Bunlar arada bulunabilir. [Kural kümeleri](analyzer-rule-sets.md) kuralları etkinleştirip devre dışı bırakmanızı ve bunların önem derecesini ayarlamanıza olanak sağlar. EditorConfig dosyaları, kuralları yapılandırmak için başka yollar sunar. FxCop çözümleyicileri için. editorconfig dosyaları [hangi kod türlerini analiz edeceğinizi tanımlamanızı](fxcop-analyzer-options.md)sağlar. Visual Studio 'da yerleşik olan çözümleyiciler için. editorconfig dosyaları bir kod temeli için [tercih edilen kod stillerini tanımlamanıza](../ide/editorconfig-code-style-settings-reference.md) olanak sağlar.
 
-Kural kümelerine ve. editorconfig dosyalarına ek olarak, bazı üçüncü taraf çözümleyiciler, C# ve vb derleyicileri için [ek dosyalar](../ide/build-actions.md#build-action-values) olarak işaretlenen metin dosyaları kullanılarak yapılandırılır.
+Kural kümelerine ve. editorconfig dosyalarına ek olarak, bazı çözümleyiciler, C# ve vb derleyicileri için [ek dosyalar](../ide/build-actions.md#build-action-values) olarak işaretlenen metin dosyaları kullanılarak yapılandırılır.
 
 > [!NOTE]
 > EditorConfig dosyaları eski Analizi yapılandırmak için kullanılamaz, ancak kural kümeleri olabilir.
@@ -55,7 +55,7 @@ Y: Visual Studio IDE, hem kod stili hem de kalite sorunlarına yönelik yerleşi
 
 **S**: Eski analiz ve .NET Compiler Platform tabanlı kod analizi arasındaki fark nedir?
 
-Y: .net Compiler platform tabanlı kod analizi, kaynak kodu gerçek zamanlı ve derleme sırasında analiz ederken, eski analiz derleme tamamlandıktan sonra ikili dosyaları analiz eder. Daha fazla bilgi için, bkz. [.net Compiler platform tabanlı analizler, eski analizler](roslyn-analyzers-overview.md#net-compiler-platform-based-analysis-versus-legacy-analysis) ve [FxCop çözümleyicileri hakkında SSS](fxcop-analyzers-faq.md).
+Y **: .net Compiler platform**tabanlı kod analizi, kaynak kodu gerçek zamanlı ve derleme sırasında analiz ederken, eski analiz derleme tamamlandıktan sonra ikili dosyaları analiz eder. Daha fazla bilgi için, bkz. [.net Compiler platform tabanlı analizler, eski analizler](roslyn-analyzers-overview.md#net-compiler-platform-based-analysis-versus-legacy-analysis) ve [FxCop çözümleyicileri hakkında SSS](fxcop-analyzers-faq.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

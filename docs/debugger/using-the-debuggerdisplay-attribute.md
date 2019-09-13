@@ -12,19 +12,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1f8046ba598873329e6aa9fcea344504f15b4dbc
-ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
+ms.openlocfilehash: 9fbe3ff31d00945ef462c5c20eb1c4b33c250f97
+ms.sourcegitcommit: 4dfe098ac0df294aad63e6b384d6575980798ca3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68680584"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70887756"
 ---
 # <a name="tell-the-debugger-what-to-show-using-the-debuggerdisplay-attribute-c-visual-basic-f-ccli"></a>Hata ayıklayıcıya DebuggerDisplay özniteliği kullanarak neyin gösterileceğini söyleyin (C#, Visual Basic, F#, C++/CLI)
 Bir nesne, özellik veya alanın hata ayıklayıcı değişkeni penceresinde nasıl görüntülendiğini denetler.<xref:System.Diagnostics.DebuggerDisplayAttribute> Bu öznitelik türler, temsilciler, özellikler, alanlar ve derlemelere uygulanabilir. Bir temel türe uygulanmışsa öznitelik bir alt sınıf için de geçerli olur.
 
 `DebuggerDisplay` Özniteliğin tek bir bağımsız değişkeni vardır ve bu, türü örneklerin değer sütununda görüntülenecek bir dizedir. Bu dize, küme ayraçları (`{` ve `}`) içerebilir. Bir küme ayraçları içindeki metin, alan, özellik veya yöntem olarak değerlendirilir.
 
-Bir sınıfta geçersiz kılınan `ToString()` bir yöntem varsa, hata ayıklayıcı varsayılan `{<typeName>}`yerine geçersiz kılınan yöntemi kullanır. Bu nedenle, `ToString()` yöntemi geçersiz kıldıysanız, hata ayıklayıcı varsayılan`{<typeName>}`yerine geçersiz kılınan yöntemi kullanır ve kullanmak `DebuggerDisplay`zorunda değilsiniz. Her ikisini de kullanırsanız, `DebuggerDisplay` öznitelik geçersiz kılınan `ToString()` yönteme göre önceliklidir.
+Bir sınıfta geçersiz kılınan `ToString()` bir yöntem varsa, hata ayıklayıcı varsayılan `{<typeName>}`yerine geçersiz kılınan yöntemi kullanır. Bu nedenle, `ToString()` yöntemi geçersiz kıldıysanız, hata ayıklayıcı varsayılan`{<typeName>}`yerine geçersiz kılınan yöntemi kullanır ve kullanmak `DebuggerDisplay`zorunda değilsiniz. Her ikisini de kullanırsanız, `DebuggerDisplay` öznitelik geçersiz kılınan `ToString()` yönteme göre önceliklidir. Öznitelik `DebuggerDisplay` , bir alt sınıfta geçersiz kılınan `ToString()` yöntemden de önceliklidir.
 
 Hata ayıklayıcının bu örtük `ToString()` çağrıyı değerlendirip, **Araçlar/Seçenekler/hata ayıklama** iletişim kutusunda bir Kullanıcı ayarına bağlıdır. Visual Basic bu örtük `ToString()` değerlendirmeyi uygulamaz.
 

@@ -1,6 +1,6 @@
 ---
-title: '11. Adım: Programınızı çalıştırma ve diğer özellikleri deneme'
-ms.date: 08/30/2019
+title: '11. Adım: Resim görüntüleyici uygulamanızı çalıştırın ve diğer özellikleri deneyin'
+ms.date: 09/11/2019
 ms.assetid: 656614d0-4fe7-4a67-8edc-c10919377d09
 ms.topic: tutorial
 ms.prod: visual-studio-windows
@@ -13,18 +13,18 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5486aa4d2effa3feb03b31bace7a9cfc86fd9925
-ms.sourcegitcommit: 9c07ae6fb18204ea080c8248994a683fa12e5c82
+ms.openlocfilehash: 672156f9c1274189e904c79eb74a0c01e10f3a60
+ms.sourcegitcommit: b60a00ac3165364ee0e53f7f6faef8e9fe59ec4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "70293601"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70913124"
 ---
-# <a name="step-11-run-your-program-and-try-other-features"></a>11. Adım: Programınızı çalıştırma ve diğer özellikleri deneme
+# <a name="step-11-run-your-picture-viewer-app-and-try-other-features"></a>11. Adım: Resim görüntüleyici uygulamanızı çalıştırın ve diğer özellikleri deneyin
 
-Programınız tamamlandı ve çalıştırılmaya hazırlanıyor. Programınızı çalıştırabilir ve arka plan rengini <xref:System.Windows.Forms.PictureBox>ayarlayabilirsiniz. Daha fazla bilgi edinmek için, formun rengini değiştirerek, düğmeleri ve onay kutusunu özelleştirerek ve formun özelliklerini değiştirerek programı geliştirmeyi deneyin.
+Resim görüntüleyici uygulamanız tamamlandı ve çalıştırılmaya hazırlanıyor. Uygulamanızı çalıştırabilir ve arka plan rengini <xref:System.Windows.Forms.PictureBox>ayarlayabilirsiniz. Daha fazla bilgi edinmek için formun rengini değiştirerek, düğmeleri ve onay kutusunu özelleştirerek ve formun özelliklerini değiştirerek uygulamayı geliştirmeyi deneyin.
 
-## <a name="how-to-run-your-program-and-set-the-background-color"></a>Programınızı çalıştırma ve arka plan rengini ayarlama
+## <a name="how-to-run-your-app-and-set-the-background-color"></a>Uygulamanızı çalıştırma ve arka plan rengini ayarlama
 
 1. **F5**' i seçin veya menü çubuğunda Hata **Ayıkla** > **Başlat hata**Ayıkla ' yı seçin.
 
@@ -38,7 +38,7 @@ Programınız tamamlandı ve çalıştırılmaya hazırlanıyor. Programınızı
     > [!NOTE]
     > URL 'sini **Dosya Aç** iletişim kutusuna yapıştırarak Internet 'ten bir resim yükleyebilirsiniz. Arka plan renginiz görünür olduğundan, saydam bir arka plana sahip bir görüntü bulmaya çalışın.
 
-1. Temizlendiğinden emin olmak için **Resmi Temizle** düğmesini seçin. Sonra, **Kapat** düğmesini seçerek programdan çıkın.
+1. Temizlendiğinden emin olmak için **Resmi Temizle** düğmesini seçin. Sonra, **Kapat** düğmesini seçerek uygulamadan çıkın.
 
 ## <a name="try-other-features"></a>Diğer özellikleri deneme
 
@@ -48,7 +48,7 @@ Programınız tamamlandı ve çalıştırılmaya hazırlanıyor. Programınızı
 
 * Formunuzun **FormBorderStyle** ve **ControlBox** özelliklerini değiştirin.
 
-* Kullanıcı **ENTER** veya **ESC** tuşunu seçtiğinde düğmelerin otomatik olarak seçilmesi için formunuzun **AcceptButton** ve **CancelButton** özelliklerini kullanın. Kullanıcı **ENTER** ' a tıkladığında **dosyayı aç** iletişim kutusunu açar ve Kullanıcı **ESC**' i seçtiğinde kutuyu kapatır.
+* Kullanıcı **ENTER** veya **ESC** tuşunu seçtiğinde düğmelerin otomatik olarak seçilmesi için formunuzun **AcceptButton** ve **CancelButton** özelliklerini kullanın. Kullanıcı **ENTER** ' a tıkladığında ve Kullanıcı **ESC**' i seçtiğinde kutuyu kapatdığınızda, uygulamayı **Aç** iletişim kutusunu açın.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
