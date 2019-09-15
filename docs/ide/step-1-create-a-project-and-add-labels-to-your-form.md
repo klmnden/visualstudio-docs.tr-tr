@@ -1,213 +1,218 @@
 ---
-title: '1. Adım: Proje oluşturma ve formunuza etiketler ekleme'
+title: '1\. Adım: Proje oluşturma ve formunuza etiketler ekleme'
 ms.date: 05/31/2019
-ms.topic: conceptual
+ms.topic: tutorial
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
 ms.assetid: f44e50be-a5f5-4d77-9cff-dd52374c3f74
+ms.devlang:
+- csharp
+- vb
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c04e0700a9913548b33e1ef3e9092f774cddc77
-ms.sourcegitcommit: aeb1a1135dd789551e15aa5124099a5fe3f0f32b
+ms.openlocfilehash: 88ec1c96bea4ebbe3465a489354d90fbbe906858
+ms.sourcegitcommit: 0e482cfc15f809b564c3de61646f29ecd7bfcba6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "66501141"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "70987950"
 ---
-# <a name="step-1-create-a-project-and-add-labels-to-your-form"></a>1. Adım: Proje oluşturma ve formunuza etiketler ekleme
+# <a name="step-1-create-a-project-and-add-labels-to-your-form"></a>1\. Adım: Proje oluşturma ve formunuza etiketler ekleme
 
-Bu sınavı geliştirmede ilk adım olarak projeyi oluşturun ve bir forma etiketler, bir düğme ve diğer denetimleri ekleyin. Ayrıca eklediğiniz her denetimin özelliklerini ayarlarsınız. Proje formu, denetimleri, içerir ve (öğreticide daha ilerideki) kodu. Etiketler sınav sorularını gösterir düğme sınavı başlatır ve diğer denerimler ise sınav yanıtlarını ve sınavı bitirmek için kalan süreyi gösterir.
+Bu testi geliştirmenin ilk adımı olarak, projeyi oluşturur ve bir forma Etiketler, bir düğme ve diğer denetimler eklersiniz. Eklediğiniz her denetim için de Özellikler ayarlarsınız. Proje formu, denetimleri ve (öğreticide daha sonra) kodu içerecektir. Düğme, testi başlatır, Etiketler test sorunlarını gösterir ve diğer denetimler, test yanıtlarını ve testi tamamlaması için kalan süreyi gösterir.
 
 > [!NOTE]
-> Bu konu, temel kodlama kavramları hakkındaki bir öğretici serisinin bir parçasıdır. Öğreticiye genel bakış için bkz. [öğretici 2: Zamanlı matematik testi oluşturma](../ide/tutorial-2-create-a-timed-math-quiz.md).
+> Bu konu, temel kodlama kavramlarıyla ilgili bir öğretici serisinin bir parçasıdır. 
+> - Öğreticiye genel bakış için bkz [. öğretici 2: Süreli bir matematik testi](../ide/tutorial-2-create-a-timed-math-quiz.md)oluşturun. 
+> - Kodun tamamlanmış bir sürümünü indirmek için bkz. [tüm matematik testi öğreticisi örneği](https://code.msdn.microsoft.com/Complete-Math-Quiz-8581813c).
 
-## <a name="to-create-a-project-for-a-form"></a>Bir form için bir proje oluşturmak için
+## <a name="to-create-a-project-for-a-form"></a>Form için bir proje oluşturmak için
 
 ::: moniker range="vs-2017"
 
-1. Menü çubuğunda, **dosya** > **yeni** > **proje**.
+1. Menü çubuğunda **Dosya** > **Yeni** > **Proje**' yi seçin.
 
-1. Seçin ya da **Visual C#**  veya **Visual Basic** sol tarafındaki **yeni proje** iletişim kutusuna ve ardından **Windows Masaüstü**.
+1. **Yeni proje** iletişim kutusunun sol tarafındaki **görsel C#**  veya **Visual Basic** seçin ve ardından **Windows Masaüstü**' nu seçin.
 
-1. Şablonlar listesinde seçin **Windows Forms uygulaması (.NET Framework)** şablon adlandırın *MathQuiz*ve ardından **Tamam** düğmesi.
+1. Şablon listesinde **Windows Forms App (.NET Framework)** şablonunu seçin, *MathQuiz*olarak adlandırın ve **Tamam** düğmesini seçin.
 
-    Adlı bir form *Form1.cs* veya *Form1.vb* , seçtiğiniz programlama diline bağlı olarak görünür.
+    Seçtiğiniz programlama diline bağlı olarak, *Form1.cs* veya *Form1. vb* adlı bir form görüntülenir.
 
    > [!NOTE]
-   > Görmüyorsanız **Windows Forms uygulaması (.NET Framework)** şablon, Visual Studio yükleyicisini kullanma **.NET Masaüstü geliştirmesinden** iş yükü.<br/><br/>![.NET masaüstü geliştirme iş yükünü Visual Studio yükleyicisi](../ide/media/dot-net-desktop-dev-workload.png)<br/><br/> Daha fazla bilgi için [Visual Studio'yu yükleyin](../install/install-visual-studio.md) sayfası.
+   > **Windows Forms App (.NET Framework)** şablonunu görmüyorsanız, **.net masaüstü geliştirme** iş yükünü yüklemek için Visual Studio yükleyicisi kullanın.<br/><br/>![Visual Studio Yükleyicisi .NET masaüstü geliştirme iş yükü](../ide/media/dot-net-desktop-dev-workload.png)<br/><br/> Daha fazla bilgi için bkz. [Visual Studio 'Yu Install](../install/install-visual-studio.md) sayfası.
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
-1. Pencerenin başlangıç seçin **yeni bir proje oluşturma**.
+1. Başlangıç penceresinde **Yeni proje oluştur**' u seçin.
 
-   !['Yeni Proje oluştur' penceresini görüntüleyin](../get-started/media/vs-2019/create-new-project-dark-theme.png)
+   ![' Yeni proje oluştur ' penceresini görüntüleyin](../get-started/media/vs-2019/create-new-project-dark-theme.png)
 
-1. Üzerinde **yeni bir proje oluşturma** penceresinde girin veya yazın *Windows Forms* arama kutusuna.
+1. **Yeni proje oluştur** penceresinde, arama kutusuna *Windows Forms* girin veya yazın.
 
-1. Seçin **Windows Forms Uygulaması (.NET Framework)** şablonu seçip **Sonraki**.
+1. **Windows Forms App (.NET Framework)** şablonunu seçin ve ardından **İleri**' yi seçin.
 
-   ![Windows Forms uygulaması (.NET Framework) Visual Basic şablonu seçin](../get-started/visual-basic/media/vs-2019/vb-create-new-project-search-winforms-filtered.png)
+   ![Windows Forms uygulaması için Visual Basic şablonu seçin (.NET Framework)](../get-started/visual-basic/media/vs-2019/vb-create-new-project-search-winforms-filtered.png)
 
    > [!NOTE]
-   > Görmüyorsanız, **Windows Forms uygulaması (.NET Framework)** şablon yükleyebileceğiniz buradan **yeni bir proje oluşturma** penceresi. İçinde **aradığınızı bulamadınız?** message öğesini **daha fazla araçları ve özellikleri yükleme** bağlantı.
+   > **Windows Forms App (.NET Framework)** şablonunu görmüyorsanız, **Yeni proje oluştur** penceresinden yükleyebilirsiniz. **Aradığınızı bulamıyor musunuz?** iletisi için **daha fazla araç ve özellik yüklemeyi** seçin bağlantısına tıklayın.
    >
-   > !['Daha fazla araçları ve özellikleri yükleme' bağlantı 'Yeni Proje oluştur' penceresinde 'aradığınızı bulma yok' iletisi](../get-started/media/vs-2019/not-finding-what-looking-for.png)
+   > ![' Yeni proje oluştur ' penceresindeki ' daha fazla araç ve özellik yüklemesi ' ' ne aradığınızı bulma ' iletisi bağlantısı](../get-started/media/vs-2019/not-finding-what-looking-for.png)
    >
-   > Ardından, Visual Studio yükleyicisinde seçin seçin **.NET Masaüstü geliştirmesinden** iş yükü.
+   > Sonra, Visual Studio Yükleyicisi **.net masaüstü geliştirme** Iş yükünü seçin.
    >
    > ![Visual Studio Yükleyicisi'nde .NET core iş yükü](../ide/media/install-dot-net-desktop-env.png)
    >
-   > Bundan sonra seçin **Değiştir** Visual Studio Yükleyicisi'nde düğmesi. Çalışmanızı kaydetmek için istenebilir; Bu durumda, bunu yapın. Ardından, **devam** iş yükünü yüklemek için.
+   > Bundan sonra Visual Studio Yükleyicisi **Değiştir** düğmesini seçin. İşinizi kaydetmeniz istenebilir; Öyleyse, bunu yapın. Sonra, iş yükünü yüklemek için **devam** ' ı seçin.
 
-1. İçinde **yeni projenizi Yapılandırın** penceresinde yazın veya girin *MathQuiz* içinde **Proje adı** kutusu. Ardından, **Oluştur**.
+1. **Yeni projeyi yapılandırın** penceresinde, **Proje adı** kutusuna *MathQuiz* yazın veya girin. Ardından **Oluştur**' u seçin.
 
 ::: moniker-end
 
-## <a name="to-set-properties-for-a-form"></a>Bir formun özelliklerini ayarlamak için
+## <a name="to-set-properties-for-a-form"></a>Form özelliklerini ayarlamak için
 
-1. Visual Studio'da formu seçin (ya da *Form1.cs* veya *Form1.vb*programlama diline bağlı olarak) ve ardından değiştirmek, **Metin** özelliğini  **Matematik Sınavı**.
+1. Visual Studio 'da, formu (programlama diline bağlı olarak *Form1.cs* veya *Form1. vb*) seçin ve ardından **Text** özelliğini **matematik sınavı**olarak değiştirin.
 
-     **Özellikleri** penceresi formun özelliklerini içerir.
+     **Özellikler** penceresi form özelliklerini içerir.
 
-1. Formun boyutunu 500 piksel genişliğe ve 400 piksel uzunluğa ayarlayın değiştirin.
+1. Formun boyutunu, 400 piksel yüksekliğinde 500 piksel genişliğinde olarak değiştirin.
 
-     Form tümleşik geliştirme ortamı (IDE) sol alt köşesinde doğru boyutu görünene kadar kenarlarını sürükleyerek yeniden boyutlandırabilirsiniz. Alternatif olarak, değerlerini değiştirebilirsiniz **boyutu** özelliği.
+     Tümleşik geliştirme ortamının (IDE) sol alt köşesinde doğru boyut görünene kadar, kenarlarını sürükleyerek formu yeniden boyutlandırabilirsiniz. Alternatif olarak, **size** özelliğinin değerlerini değiştirebilirsiniz.
 
-1. Değiştirin **FormBorderStyle** özelliğini **Fixed3D**, ayarlayıp **MaximizeBox** özelliğini **False**.
+1. **FormBorderStyle** özelliğinin değerini **Fixed3D**olarak değiştirin ve **MaximizeBox** özelliğini **false**olarak ayarlayın.
 
-     Bu değerler, sınava girenlerin formu yeniden boyutlandırmasını engeller.
+     Bu değerler, test takipçilerin formu yeniden boyutlandırmasını engeller.
 
-## <a name="to-create-the-time-remaining-box"></a>Kutusunda kalan süreyi oluşturmak için
+## <a name="to-create-the-time-remaining-box"></a>Kalan süre kutusunu oluşturmak için
 
-1. Ekleme bir <xref:System.Windows.Forms.Label> denetimi **araç kutusu**ve ardından değerini kendi **(ad)** özelliğini **timeLabel**.
+1. <xref:System.Windows.Forms.Label> **Araç kutusundan**bir denetim ekleyin ve sonra **(Name)** özelliğinin değerini **timeLabel**olarak ayarlayın.
 
-     Bu etiket, sağ üst köşedeki sınavda kalan saniye sayısını gösteren bir kutusu olacaktır.
+     Bu etiket, sağ üst köşede, test içinde kalan saniye sayısını gösteren bir kutu olur.
 
-2. Değişiklik **AutoSize** özelliğini **False** böylece kutuyu yeniden boyutlandırabilirsiniz.
+2. Kutuyu yeniden boyutlandırabilmeniz için **AutoSize** özelliğini **false** olarak değiştirin.
 
-3. Değişiklik **BorderStyle** özelliğini **FixedSingle** kutu çevresinde bir çizgi çizmek için.
+3. Kutunun çevresinde bir çizgi çizmek için **BorderStyle** özelliğini **FixedSingle** olarak değiştirin.
 
-4. Ayarlama **boyutu** özelliğini **200, 30**.
+4. **Boyut** özelliğini **200, 30**olarak ayarlayın.
 
-5. Etiketi, mavi aralık çizgilerinin görüneceği yeri formun sağ üst köşesine taşıyın.
+5. Etiketi formun sağ üst köşesine taşıyın, burada mavi yer çizgisi çizgileri görünür.
 
-     Bu satırlar formdaki denetimleri hizalamanıza yardımcı olur.
+     Bu satırlar formdaki denetimleri hizalamaya yardımcı olur.
 
-6. İçinde **özellikleri** penceresinde seçin **metin** özelliği ve ardından **geri** değerini temizlemek için anahtar.
+6. **Özellikler** penceresinde, **metin** özelliğini seçin ve sonra değerini temizlemek için **geri al** tuşunu seçin.
 
-7. Artı işaretini seçin ( **+** ) yanındaki **yazı tipi** özelliği ve değerini değiştirin **boyutu** özelliğini **15.75 olarak**.
+7. **Yazı tipi** özelliğinin yanındaki artı **+** işaretini () seçin ve ardından **size** özelliğinin değerini **15,75**olarak değiştirin.
 
-     Aşağıdaki resmin gösterdiği gibi birkaç yazıtipi özelliğini değiştirebilirsiniz.
+     Aşağıdaki ekran görüntüsünde gösterildiği gibi çeşitli yazı tipi özelliklerini değiştirebilirsiniz.
 
      ![Yazı tipi boyutunu gösteren Özellikler penceresi](../ide/media/express_setfontsize.png)
 
-8. Başka bir etiket denetimi ekleme **araç kutusu**ve ardından yazı tipi boyutunu ayarlayın **15.75 olarak**.
+8. **Araç kutusundan**başka bir etiket denetimi ekleyin ve ardından yazı tipi boyutunu **15,75**olarak ayarlayın.
 
-9. Ayarlama **metin** özelliğini **kalan süre**.
+9. **Text** özelliğini **Left zaman**olarak ayarlayın.
 
-10. Etiket hemen soluna hizalanacağı şekilde taşıyın **timeLabel** etiketi.
+10. Etiketi **timeLabel** etiketinin hemen soluna doğru olacak şekilde taşıyın.
 
-### <a name="to-add-controls-for-the-addition-problems"></a>Toplama problemleri için denetimler ekleme
+### <a name="to-add-controls-for-the-addition-problems"></a>Ek sorunlara yönelik denetimler eklemek için
 
-1. Bir etiket denetimi ekleme **araç kutusu**ve ardından kendi **metin** özelliğini **?** (soru işareti).
+1. **Araç kutusundan**bir etiket denetimi ekleyin ve **Text** **özelliğini olarak ayarlayın** . (soru işareti).
 
-2. Ayarlama **AutoSize** özelliğini **False**.
+2. **AutoSize** özelliğini **false**olarak ayarlayın.
 
-3. Ayarlama **boyutu** özelliğini **60, 50**.
+3. **Boyut** özelliğini **60, 50**olarak ayarlayın.
 
-4. Yazı tipi boyutunu **18**.
+4. Yazı tipi boyutunu **18**olarak ayarlayın.
 
-5. Ayarlama **TextAlign** özelliğini **MiddleCenter**.
+5. **TextAlign** özelliğini **MiddleCenter**olarak ayarlayın.
 
-6. Ayarlama **konumu** özelliğini **50, 75** denetimin form üzerinde yerleştirmek için.
+6. Denetimi form üzerinde konumlandırmak için **Location** özelliğini **50, 75** olarak ayarlayın.
 
-7. Ayarlama **(ad)** özelliğini **plusLeftLabel**.
+7. **(Ad)** özelliğini **plusLeftLabel**olarak ayarlayın.
 
-8. Seçin **plusLeftLabel** etiket ve ardından ya da **Ctrl**+**C** anahtarları veya **kopyalama** üzerinde  **Düzen** menüsü.
+8. **PlusLeftLabel** etiketini seçin ve ardından **CTRL**+**C** tuşlarını veya **Düzen** menüsünden **Kopyala** ' yı seçin.
 
-9. Ya da seçerek etiketi üç kez yapıştırın **Ctrl**+**V** anahtarları veya **Yapıştır** üzerinde **Düzenle** menüsü.
+9. **CTRL** V tuşlarını seçerek veya Düzen menüsüne yapıştırarak etiketi üç kez yapıştırın.+
 
-10. Böylece bir satır sağında bulunan üç yeni etiket düzenleyin **plusLeftLabel** etiketi.
+10. Üç yeni etiketi, **plusLeftLabel** etiketinin sağındaki bir satırda olacak şekilde düzenleyin.
 
-     Boşluk satırlarını aralarında boşluk ve satır yukarı kullanabilirsiniz.
+     Yer çizgilerini, aralarında boşluk bırakmak ve bunları hizalamak için kullanabilirsiniz.
 
-11. İkinci etiketin değerini **metin** özelliğini **+** (artı).
+11. İkinci etiketin **metin** özelliğinin değerini (artı işareti) olarak **+** ayarlayın.
 
-12. Üçüncü etiketin değerini **(ad)** özelliğini **plusRightLabel**.
+12. Üçüncü etiketin **(Name)** özelliğinin değerini **plusRightLabel**olarak ayarlayın.
 
-13. Dördüncü etiketin değerini **metin** özelliğini **=** (eşittir işareti).
+13. Dördüncü etiketin **Text** özelliğinin değerini (eşittir işareti) olarak **=** ayarlayın.
 
-14. Ekleme bir <xref:System.Windows.Forms.NumericUpDown> denetimi **araç kutusu**, yazı tipi boyutunu ayarlayın **18**ve genişliğini ayarlayın **100**.
+14. <xref:System.Windows.Forms.NumericUpDown> **Araç kutusundan**bir denetim ekleyin, yazı tipi boyutunu **18**olarak ayarlayın ve genişliğini **100**olarak ayarlayın.
 
-     Bu bir sonraki denetim türü hakkında daha fazla öğreneceksiniz.
+     Daha sonra bu tür bir denetim hakkında daha fazla bilgi edineceksiniz.
 
-15. NumericUpDown denetimini ek sorunun etiket denetimleri ile hizalar.
+15. Ek sorun için etiket denetimleriyle NumericUpDown denetimini hizalamak.
 
-16. Değiştirin **(ad)** NumericUpDown denetimi için özellik **toplam**.
+16. NumericUpDown denetimi için **(Name)** özelliğinin değerini **Sum**olarak değiştirin.
 
-     Aşağıdaki resmin gösterdiği gibi ilk satırı oluşturdunuz.
+     İlk satırı aşağıdaki çizimde gösterildiği gibi oluşturdunuz.
 
-     ![Matematik sınavının ilk satırı](../ide/media/express_firstrow.png)
+     ![Matematik sınavından ilk satır](../ide/media/express_firstrow.png)
 
-## <a name="to-add-controls-for-the-subtraction-multiplication-and-division-problems"></a>Çıkarma, çarpma ve bölme problemleri için denetimler ekleme
+## <a name="to-add-controls-for-the-subtraction-multiplication-and-division-problems"></a>Çıkarma, çarpma ve bölme sorunlarına yönelik denetimler eklemek için
 
-1. Beş denetimin tümünü (dört Label denetimi ve NumericUpDown denetimi) ek sorun için kopyalayın ve ardından bunları yapıştırın.
+1. Ek sorun için beş denetimi (dört etiket denetimi ve NumericUpDown denetimi) kopyalayın ve ardından yapıştırın.
 
-     Form, hala seçili olan beş yeni denetimler içerir.
+     Form, hala seçili olan beş yeni denetim içerir.
 
-2. Ek denetimler altında hizaya gelecek şekilde tüm denetimleri yere taşıyın.
+2. Tüm denetimleri, toplama denetimlerinin altına gelecek şekilde yerleştirmek üzere taşıyın.
 
-     Boşluk satırlarını iki satır arasında yeterli uzaklık vermek için kullanabilirsiniz.
+     Boşluk çizgilerini, iki satır arasında yeterli mesafe sağlamak için kullanabilirsiniz.
 
-3. Değiştirin **metin** İkinci etiketin özelliği **-** (eksi işareti).
+3. İkinci etiket için **metin** özelliğinin değerini (eksi işareti) olarak **-** değiştirin.
 
-4. İlk soru işareti etiketini ad **minusLeftLabel**.
+4. İlk soru-işaret etiketini **minusLeftLabel**olarak adlandırın.
 
-5. İkinci soru işareti etiketini ad **minusRightLabel**.
+5. İkinci soru-işaret etiketini **minusRightLabel**olarak adlandırın.
 
-6. NumericUpDown denetimini **fark**.
+6. NumericUpDown denetim **farkını**adlandırın.
 
 7. Beş denetimi iki kez yapıştırın.
 
-8. Üçüncü satırda ilk etiketi adı **timesLeftLabel**, İkinci etiketin değiştirme **metin** özelliğini **×** üçüncüetiketiolarakadlandırın(çarpıişareti)**timesRightLabel**ve NumericUpDown denetimini **ürün**.
+8. Üçüncü satır için, ilk etiketi **timesLeftLabel**olarak adlandırın, Ikinci etiketin **Text** özelliğini **×** (çarpma işareti) olarak değiştirin, üçüncü etiketi **timesRightLabel**olarak adlandırın ve NumericUpDown denetim **ürününe**adlandırın.
 
-9. Dördüncü satır için ilk etiketin adını **dividedLeftLabel**, İkinci etiketin değiştirme **metin** özelliğini **bölü;** (bölme oturum) üçüncü etiketi adı  **dividedRightLabel**ve NumericUpDown denetimini **bölümü**.
-
-    > [!NOTE]
-    > Bu öğreticide çarpı işareti × ve bölme oturum bölü; kopyalayın ve bunları form üzerine yapıştırın.
-
-## <a name="to-add-a-start-button-and-set-the-tab-index-order"></a>Bir başlatma düğmesi ekleme ve sekme indisi sırasını ayarlama
-
-1. Ekleme bir <xref:System.Windows.Forms.Button> denetimi **araç kutusu**ve ardından kendi **(ad)** özelliğini **startButton**.
-
-2. Ayarlama **metin** özelliğini **sınavın başlaması**.
-
-3. Yazı tipi boyutunu **14**.
-
-4. Ayarlama **AutoSize** özelliğini **True**, düğme metin sığdırmak için otomatik olarak yeniden boyutlandırmak neden olur.
-
-5. Düğmeyi formun altına yakın ortalayın.
-
-6. Değerini **TabIndex** özelliği **startButton** denetimini **1**.
+9. Dördüncü satır için, ilk etiketi **Dividedleftlabel**olarak adlandırın, Ikinci etiketin **Text** özelliğini **÷** (bölme işareti) olarak değiştirin, üçüncü Label **Dividedrigulabel**' ı adlandırın ve NumericUpDown denetim **bölümünü**adlandırın.
 
     > [!NOTE]
-    > **TabIndex** özelliği, sınava giren seçtiğinde denetimlerin sırasını ayarlar **sekmesini** anahtarı. Nasıl çalıştığını görmek için herhangi bir iletişim kutusunu açın (örneğin, menü çubuğunda, **dosya** > **açın**) ve ardından **sekmesini** anahtar birkaç kez. Nasıl imlecinizin denetimden denetime her zaman, hareket ettiğini izleyin **sekmesini** anahtarı. Programcı sipariş oluşturan oluştururken verdi.
+    > Bu öğreticiden çarpma işareti × ve bölüm işareti ÷ kopyalayabilir ve bunları forma yapıştırabilirsiniz.
 
-7. Değerini **TabIndex** özelliğinin değerini NumericUpDown toplam denetimi için için **2**, fark denetimi için **3**, ürün denetimi için **4**ve bölüm denetimi için **5**.
+## <a name="to-add-a-start-button-and-set-the-tab-index-order"></a>Bir başlangıç düğmesi eklemek ve sekme-dizin sırasını ayarlamak için
 
-     Form aşağıdaki gibi görünmelidir.
+1. <xref:System.Windows.Forms.Button> **Araç kutusundan**bir denetim ekleyin ve sonra **(Name)** özelliğini **startButton**olarak ayarlayın.
 
-     ![İlk matematik sınavı formu](../ide/media/express_formlaidout.png)
+2. **Testi başlatmak**için **metin** özelliğini ayarlayın.
 
-8. Doğrulamak için olup olmadığını **TabIndex** beklediğiniz, kaydedin ve seçerek programınızı çalıştırma özelliği çalışır **F5** anahtar veya göre seçme **hata ayıklama**  >  **Hata ayıklamayı Başlat** menüsünde çubuk ve ardından **sekmesini** anahtar birkaç kez.
+3. Yazı tipi boyutunu **14**olarak ayarlayın.
+
+4. **AutoSize** özelliğini **true**olarak ayarlayın. Bu, düğmenin metne sığacak şekilde otomatik olarak yeniden boyutlandırmasına neden olur.
+
+5. Formun alt kısmındaki düğmeyi ortalayın.
+
+6. **StartButton** denetimi için **TabIndex** özelliğinin değerini **1**olarak ayarlayın.
+
+    > [!NOTE]
+    > **TabIndex** özelliği, test Taklayıcı **sekme** tuşunu seçtiğinde denetimlerin sırasını ayarlar. Nasıl çalıştığını görmek için herhangi bir iletişim kutusunu açın (örneğin, menü çubuğunda **Dosya** > **Aç**' ı seçin) ve ardından **sekme** tuşuna birkaç kez tıklayın. Her **sekme** tuşunu seçtiğiniz her seferinde imlecinizin denetim ' e nasıl taşındığını izleyin. Bir programcı bu formu oluştururken bir sıraya karar verdi.
+
+7. Değer denetimi için **TabIndex** özelliğinin değerini **2**, fark denetimi için **3**, ürün denetimi için **4**ve bölüm denetimi için **5**olarak ayarlayın.
+
+     Form aşağıdaki ekran görüntüsüne benzer şekilde görünmelidir.
+
+     ![İlk matematik testi formu](../ide/media/express_formlaidout.png)
+
+8. **TabIndex** özelliğinin beklendiği gibi çalışıp çalışmadığını doğrulamak için **F5** tuşunu seçerek veya menü çubuğunda **Hata Ayıkla** > **Başlat** ' ı seçerek programınızı kaydedip çalıştırın ve ardından **sekme** tuşuna birkaç kez tıklayın .
 
 ## <a name="to-continue-or-review"></a>Devam etmek veya gözden geçirmek için
 
-- Sonraki öğretici adımına gitmek için bkz: [2. adım: Rasgele bir toplama problemi oluşturma](../ide/step-2-create-a-random-addition-problem.md).
+- Sonraki öğretici adımına gitmek için bkz  **[. 2. Adım: Rastgele bir ekleme sorunu](../ide/step-2-create-a-random-addition-problem.md)** oluşturun.
 
-- Genel Bakış konusuna dönmek için bkz: [öğretici 2: Zamanlı matematik testi oluşturma](../ide/tutorial-2-create-a-timed-math-quiz.md).
+- Genel bakış konusuna dönmek için bkz [. öğretici 2: Süreli bir matematik testi](../ide/tutorial-2-create-a-timed-math-quiz.md)oluşturun.

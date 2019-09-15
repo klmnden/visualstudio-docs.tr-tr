@@ -1,7 +1,12 @@
 ---
 title: '2\. Adım: Rastgele bir toplama problemi oluşturma'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: tutorial
+ms.prod: visual-studio-windows
+ms.technology: vs-ide-general
+ms.devlang:
+- csharp
+- vb
 dev_langs:
 - csharp
 - vb
@@ -11,18 +16,21 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d5b83edaec6b81c3a2c5699184c62dbd70d71913
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
+ms.openlocfilehash: d1eee0c161de486740b7576b184f869bffd7fb98
+ms.sourcegitcommit: 0e482cfc15f809b564c3de61646f29ecd7bfcba6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68416881"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "70987711"
 ---
 # <a name="step-2-create-a-random-addition-problem"></a>2\. Adım: Rastgele bir toplama problemi oluşturma
+
 Bu öğreticinin ikinci bölümünde, rastgele sayıları temel alan matematik sorunları ekleyerek testi zorlayıcı hale getirebilirsiniz. Ayrıca, adlı `StartTheQuiz()` ve sorunları dolduran ve geri sayım zamanlayıcısını Başlatan bir yöntem de oluşturabilirsiniz. Bu öğreticide daha sonra çıkarma, çarpma ve bölme sorunlarını ekleyeceğiz.
 
 > [!NOTE]
-> Bu konu, temel kodlama kavramlarıyla ilgili bir öğretici serisinin bir parçasıdır. Öğreticiye genel bakış için bkz [. öğretici 2: Süreli bir matematik testi](../ide/tutorial-2-create-a-timed-math-quiz.md)oluşturun.
+> Bu konu, temel kodlama kavramlarıyla ilgili bir öğretici serisinin bir parçasıdır. 
+> - Öğreticiye genel bakış için bkz [. öğretici 2: Süreli bir matematik testi](../ide/tutorial-2-create-a-timed-math-quiz.md)oluşturun. 
+> - Kodun tamamlanmış bir sürümünü indirmek için bkz. [tüm matematik testi öğreticisi örneği](https://code.msdn.microsoft.com/Complete-Math-Quiz-8581813c).
 
 ## <a name="to-create-a-random-addition-problem"></a>Rastgele bir ek sorun oluşturmak için
 
@@ -36,6 +44,9 @@ Bu öğreticinin ikinci bölümünde, rastgele sayıları temel alan matematik s
 
      [!code-csharp[VbExpressTutorial3Step2#1](../ide/codesnippet/CSharp/step-2-create-a-random-addition-problem_1.cs)]
      [!code-vb[VbExpressTutorial3Step2#1](../ide/codesnippet/VisualBasic/step-2-create-a-random-addition-problem_1.vb)]
+
+   > [!IMPORTANT]
+   > C# Kod parçacığını veya Visual Basic kod parçacığını görüntülemek için bu sayfanın sağ üst kısmındaki programlama dili denetimini kullanın.<br><br>![Docs.Microsoft.com için programlama dili denetimi](../ide/media/docs-programming-language-control.png)
 
      Formunuza rastgele bir nesne eklediniz ve nesne **rastgele**olarak adlandırılıyordu.
 
@@ -60,7 +71,8 @@ Bu öğreticinin ikinci bölümünde, rastgele sayıları temel alan matematik s
 
      Koddan sonra `randomizer` nokta (.) girdiğinizde bir IntelliSense penceresi açılır ve çağırabilmeniz için tüm rasgele nesne yöntemlerini gösterir. Örneğin, IntelliSense `Next()` yöntemi aşağıdaki gibi listeler.
 
-     ![Next yöntemi](../ide/media/express_randomwhite.png) Next yöntemi
+     ![Next yöntemi](../ide/media/express_randomwhite.png)<br/>
+*Next yöntemi*
 
      Bir nesneden sonra bir nokta girdiğinizde, IntelliSense, nesne üyelerinin bir listesini (özellikler, Yöntemler ve olaylar gibi) gösterir.
 
@@ -87,14 +99,15 @@ Bu öğreticinin ikinci bölümünde, rastgele sayıları temel alan matematik s
 
 8. Kodunuzu kaydedin, çalıştırın ve sonra **Başlat** düğmesini seçin.
 
-     Aşağıdaki çizimde gösterildiği gibi rastgele bir ek sorun belirir.
+     Aşağıdaki ekran görüntüsünde gösterildiği gibi rastgele bir ek sorun belirir.
 
-     ![Rastgele ek sorun](../ide/media/express_additionproblem.png) rastgele ek sorun
+     ![Rastgele ek sorun](../ide/media/express_additionproblem.png)<br/>
+*Rastgele ek sorun*
 
      Öğreticinin bir sonraki adımında, toplamı ekleyeceksiniz.
 
 ## <a name="to-continue-or-review"></a>Devam etmek veya gözden geçirmek için
 
-- Sonraki öğretici adımına geçmek için, bkz [. Adım 3: Geri sayım Zamanlayıcısı](../ide/step-3-add-a-countdown-timer.md)ekleyin.
+- Sonraki öğretici adımına geçmek için, bkz  **[. Adım 3: Geri sayım Zamanlayıcısı](../ide/step-3-add-a-countdown-timer.md)** ekleyin.
 
 - Önceki öğretici adımına dönmek için bkz [. Adım 1: Bir proje oluşturun ve formunuza](../ide/step-1-create-a-project-and-add-labels-to-your-form.md)Etiketler ekleyin.

@@ -1,7 +1,7 @@
 ---
-title: Entity Framework ve Visual Studio 2019 ile ASP.NET Core web uygulaması
+title: Entity Framework & Visual Studio 2019 ile Web uygulaması ASP.NET Core
 titleSuffix: ''
-description: ASP.NET Core web uygulaması oluşturmadan önce ilk adım olarak, Visual Studio 2019 bu videosu ve adım adım yönergeleri ile nasıl yükleneceğini öğrenin.
+description: ASP.NET Core Web uygulaması oluşturmadan önce ilk adım olarak, bu video öğreticisiyle Visual Studio 2019 'yi yüklemeyi ve adım adım yönergeleri öğrenin.
 ms.custom: get-started
 ms.date: 03/31/2019
 ms.technology: vs-ide-general
@@ -17,87 +17,87 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 6668648668ab71e033d1341d71ecf5c7c2a47554
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 1851c497579d45aa45c36dc1cd20945ce2b9c1e1
+ms.sourcegitcommit: 6c55c40da74ed8969dcba56acbd30458fdb69c5a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66261717"
+ms.lasthandoff: 09/13/2019
+ms.locfileid: "70977461"
 ---
 # <a name="tutorial-create-your-first-aspnet-core-app-using-entity-framework-with-visual-studio-2019"></a>Öğretici: Visual Studio 2019 ile Entity Framework kullanarak ilk ASP.NET Core uygulamanızı oluşturma
 
-Bu öğreticide, verileri kullanan ASP.NET Core web uygulaması oluşturacak ve Azure'a dağıtın. Bu öğreticide, aşağıdaki adımlardan oluşur:
+Bu öğreticide, verileri kullanan bir ASP.NET Core Web uygulaması oluşturacaksınız ve Azure 'a dağıtırsınız. Bu öğretici aşağıdaki adımlardan oluşur:
 
-- [1. Adım: Visual Studio 2019 yükleyin](#step-1-install-visual-studio-2019)
-- [2. Adım: İlk ASP.NET Core web uygulamanızı oluşturma](tutorial-aspnet-core-ef-step-02.md)
-- [3. Adım: Entity Framework kullanarak verileri ile çalışma](tutorial-aspnet-core-ef-step-03.md)
-- [4. Adım: ASP.NET Core uygulamanızı bir web API'SİNİN kullanıma sunma](tutorial-aspnet-core-ef-step-04.md)
-- [5. Adım: ASP.NET Core uygulamanızı Azure'a dağıtma](tutorial-aspnet-core-ef-step-05.md)
+- [1. Adım: Visual Studio 2019 'yi yükler](#step-1-install-visual-studio-2019)
+- [2. Adım: İlk ASP.NET Core Web uygulamanızı oluşturma](tutorial-aspnet-core-ef-step-02.md)
+- [3. Adım: Entity Framework kullanarak verilerle çalışma](tutorial-aspnet-core-ef-step-03.md)
+- [4. Adım: ASP.NET Core uygulamanızdan bir Web API 'SI kullanıma sunma](tutorial-aspnet-core-ef-step-04.md)
+- [5. Adım: ASP.NET Core uygulamanızı Azure 'a dağıtın](tutorial-aspnet-core-ef-step-05.md)
 
-## <a name="step-1-install-visual-studio-2019"></a>1. Adım: Visual Studio 2019 yükleyin
+## <a name="step-1-install-visual-studio-2019"></a>1\. Adım: Visual Studio 2019 'yi yükler
 
-Bu video öğreticide ve adım adım yönergeleri ile Visual Studio 2019 yüklemeyi öğrenin. Zaten Visual Studio yüklü değilse, atlayın [2. adım: İlk ASP.NET Core web uygulamanızı oluşturma](tutorial-aspnet-core-ef-step-02.md).
+Bu video öğreticisiyle Visual Studio 2019 ' i nasıl yükleyeceğinizi ve adım adım yönergeleri öğrenin. Visual Studio 'yu önceden yüklediyseniz adım 2 ' ye [atlayın: İlk ASP.NET Core Web uygulamanızı](tutorial-aspnet-core-ef-step-02.md)oluşturun.
 
-_Bu video ve bunların Visual Studio'yu yükleyin ve ilk ASP.NET Core uygulamanızı oluşturmak için izleme izleyin._
+_Visual Studio 'Yu yüklemek ve ilk ASP.NET Core uygulamanızı oluşturmak için bu videoyu izleyin ve takip edin._
 
 > [!VIDEO https://www.youtube.com/embed/Fz_HAqQGLtY]
 
 ## <a name="download-the-installer"></a>Yükleyiciyi indirin
 
-Git [visualstudio.com](https://visualstudio.com) yükleyicisi bulunamadı. Visual Studio 2019 bağlantıyı bulun ve yüklemeyi başlatmak için tıklatın. Visual Studio'nun Ücretsiz bir sürümü Visual Studio Community seçin.
+Yükleyiciyi bulmak için [VisualStudio.com](https://visualstudio.com) adresine gidin. Visual Studio 2019 bağlantısını bulun ve indirmeyi başlatmak için tıklatın. Visual Studio 'nun ücretsiz bir sürümü için Visual Studio Community ' yi seçin.
 
-## <a name="start-the-installer"></a>Yükleyiciyi başlatın
+## <a name="start-the-installer"></a>Yükleyiciyi Başlat
 
-İndirme tamamlandıktan sonra tıklayın **çalıştırma** yükleyiciyi başlatmak için.
+İndirme tamamlandıktan sonra, yükleyiciyi başlatmak için **Çalıştır** ' a tıklayın.
 
 ![Visual Studio 2019 yükleyicisi](media/vs-2019/vs2019-installer.png)
 
-## <a name="choose-workloads"></a>İş yükleri seçin
+## <a name="choose-workloads"></a>İş yüklerini seçin
 
-Visual Studio, birçok farklı türde geliştirme için kullanılabilir ve iş yükleri için derlemek istediğiniz uygulamaları türü için ihtiyacınız olan her şey indirmek kolaylaştırır. Seçin **ASP.NET ve Web geliştirme** ve **.NET Core çoklu platform geliştirme** iş yükleri için şimdi. Her zaman ek iş yüklerinin ve bileşenlerin daha sonra yüklemek için yükleyici denemesine.
+Visual Studio birçok farklı geliştirme türü için kullanılabilir ve iş yükleri, derlemek istediğiniz uygulama türleri için ihtiyaç duyduğunuz her şeyi indirmeyi kolaylaştırır. Şimdilik **ASP.net ve Web geliştirme** ve **.NET Core platformlar arası geliştirme** iş yüklerini seçin. Ek iş yüklerini ve bileşenleri yüklemek için yükleyiciyi daha sonra her zaman yeniden başlatabilirsiniz.
 
-![Visual Studio 2019 iş yükleri seçin](media/vs-2019/vs2019-choose-workloads.png)
+![Visual Studio 2019 Iş yüklerini seçin](media/vs-2019/vs2019-choose-workloads.png)
 
 ## <a name="install"></a>Yükleme
 
-Tıklayın **yükleme** ve Visual Studio yükleyip yükleyici sağlar.
+**Yükle** ' ye tıklayın ve yükleyicinin Visual Studio 'yu indirip yüklemesine izin verin.
 
-## <a name="run-visual-studio-for-the-first-time"></a>Visual Studio'yu ilk kez çalıştırın.
+## <a name="run-visual-studio-for-the-first-time"></a>Visual Studio 'Yu ilk kez çalıştırın
 
-Yükleyici tamamlandığında Visual Studio otomatik olarak başlatma. Oturum açmaya sahip olduğu daha sonra bunu seçtiğiniz artık onunla ancak için ilişkili bazı kullanışlı özellikler istenebilir. Sonraki teması ve geliştirme ayarlarınızı seçin. Bu seçimleri yaptıktan sonra ilk projenizi başlamaya hazır olacaksınız. Tıklayın **yeni bir proje oluşturma** seçip **ASP.NET Core Web uygulaması**.
+Yükleyici tamamlandığında Visual Studio otomatik olarak başlamalıdır. Bunlarla ilişkili bazı iyi özellikler içeren oturum açmanız istenebilir, ancak şimdilik bunu daha sonra yapmayı tercih edebilirsiniz. Daha sonra tema ve geliştirme ayarlarınızı seçebilirsiniz. Bu seçimleri yaptıktan sonra ilk projenizi başlatmaya başlayabilirsiniz. **Yeni proje oluştur ' a** tıklayın ve ardından **ASP.NET Core Web uygulaması**' nı seçin.
 
-![Visual Studio 2019 yeni ASP.NET Core Web uygulaması projesi oluşturma](media/vs-2019/vs2019-create-new-project.png)
+![Visual Studio 2019 yeni ASP.NET Core Web uygulaması projesi oluştur](media/vs-2019/vs2019-create-new-project.png)
 
-## <a name="explore-aspnet-core-project-types"></a>ASP.NET Core proje türlerini keşfedin
+## <a name="explore-aspnet-core-project-types"></a>ASP.NET Core proje türlerini keşfet
 
-Proje adı ve konumu seçin, ardından çekme **Oluştur**. Şimdi, ASP.NET Core uygulamanız için kullanılacak şablonu seçin. Aşağıdaki seçeneklerden birini seçebilirsiniz:
+Proje adınızı ve konumunuzu seçip **Oluştur**' u seçin. Şimdi ASP.NET Core uygulamanız için kullanılacak şablonu seçin. Aşağıdaki seçeneklerden birini seçebilirsiniz:
 
-- Boş. Sıfırdan başlayın sağlayan boş bir proje şablonu.
-- API. Web API'leri için idealdir.
-- Web uygulaması. Razor sayfaları ile oluşturulan standart ASP.NET Core web uygulaması.
-- Web uygulaması (Model-View-Controller). Model-View-Controller desenini kullanarak, standart ASP.NET Core web uygulaması.
+- Olmamalıdır. Sıfırdan başlayıp başlayabilmenizi sağlayan boş bir proje şablonu.
+- 'SİNDEKİ. Web API 'Leri için en iyisi.
+- Web uygulaması. Razor Pages ile oluşturulan standart bir ASP.NET Core Web uygulaması.
+- Web uygulaması (Model-View-Controller). Model-View-Controller modelini kullanan standart bir ASP.NET Core Web uygulaması.
 - Angular.
-- React.js.
-- React.js / Redux.
-- Razor sınıf kitaplığı. Razor varlıklar projeler arasında paylaşmak için kullanılır.
+- Tepki verme. js.
+- Tepki. js/Redux.
+- Razor sınıf kitaplığı. Razor varlıklarını projeler arasında paylaşmak için kullanılır.
 
-Çoğu proje şablonları için de bir kutuyu işaretleyerek Docker desteğini etkinleştirmek seçebileceğiniz olduğunu unutmayın. Değişiklik kimlik doğrulaması düğmesine tıklayarak, kimlik doğrulama desteği de ekleyebilirsiniz. Buradan arasından seçim yapabilirsiniz:
+Çoğu proje şablonu için bir kutuyu işaretleyerek Docker desteğini etkinleştirmeyi de seçebilirsiniz. Kimlik doğrulamasını Değiştir düğmesine tıklayarak da kimlik doğrulama desteği ekleyebilirsiniz. Buradan buradan seçim yapabilirsiniz:
 
 - Kimlik doğrulaması yok.
-- Bireysel kullanıcı hesapları. Bu, yerel veya Azure tabanlı bir veritabanında depolanır.
-- İş veya Okul hesapları. Bu seçenek, Active Directory, Azure AD kullanır veya Office 365 kimlik doğrulaması için.
-- Windows kimlik doğrulaması. İntranet uygulamaları için uygundur.
+- Bireysel kullanıcı hesapları. Bunlar yerel veya Azure tabanlı bir veritabanında depolanır.
+- İş veya okul hesapları. Bu seçenek kimlik doğrulaması için Active Directory, Azure AD veya Office 365 kullanır.
+- Windows kimlik doğrulaması. İntranet uygulamaları için uygun.
 
-Kimlik doğrulaması yok ile'standart Web uygulaması şablonu seçin ve tıklayın **Tamam**.
+Kimlik doğrulaması olmadan standart Web uygulaması şablonunu seçin ve **Oluştur**' a tıklayın.
 
-![Visual Studio 2019 ASP.NET Core proje seçenekleri seçin](media/vs-2019/vs2019-choose-aspnetcore-project.png)
+![Visual Studio 2019 ASP.NET Core projesi seçeneklerini belirleyin](media/vs-2019/vs2019-choose-aspnetcore-project.png)
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-Sonraki videoda, ilk ASP.NET Core projenizi hakkında daha fazla bilgi edineceksiniz.
+Sonraki videoda, ilk ASP.NET Core projeniz hakkında daha fazla bilgi edineceksiniz.
 
-[Öğretici: İlk ASP.NET Core Web uygulamanızı oluşturma](tutorial-aspnet-core-ef-step-02.md)
+[Öğretici: Ilk ASP.NET Core Web uygulamanızı oluşturma](tutorial-aspnet-core-ef-step-02.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [Öğretici: Kullanmaya başlama C# ve ASP.NET Core](tutorial-aspnet-core.md) videolu kılavuzda olmadan daha ayrıntılı bir eğitim
+- [Öğretici: Video kılavuzsunda C# daha ayrıntılı](tutorial-aspnet-core.md) bir öğretici ile çalışmaya başlayın ve ASP.NET Core

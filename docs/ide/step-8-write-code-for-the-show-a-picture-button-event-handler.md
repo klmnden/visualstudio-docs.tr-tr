@@ -16,12 +16,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 26bfd4d74580fecd15b1891895e5ae28a18f3296
-ms.sourcegitcommit: 4dfe098ac0df294aad63e6b384d6575980798ca3
+ms.openlocfilehash: 2b5502101bb2e199830b68c0fe0b929608a427ed
+ms.sourcegitcommit: 0e482cfc15f809b564c3de61646f29ecd7bfcba6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70887962"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "70987938"
 ---
 # <a name="step-8-write-code-for-the-show-a-picture-button-event-handler"></a>8\. Adım: Resim göster düğmesi olay işleyicisi için kod yazma
 
@@ -42,6 +42,9 @@ IntelliSense, daha sonra ne yapmak istediğinizi belirlemeyi dener ve listeden s
 1. İki küme `i` ayracı `{ }`arasına boş satıra bir yazın. (Visual Basic, ve `Private Sub...` `End Sub`arasındaki boş satıra yazın.) Aşağıdaki görüntüde gösterildiği gibi bir **IntelliSense** penceresi açılır.
 
     ![Visual C&#35; Code ile IntelliSense](../ide/media/express_ifintellisense.png)
+
+    > [!NOTE]
+    > Kodunuz, "camelCase" harflerine olay işleyicilerini görüntülemeyebilir. 
 
 1. **IntelliSense** penceresi, sözcüğü `if`vurgulaması gerekir. (Değilse, küçük harf `f`girin ve bu işlem olur.) **IntelliSense** penceresinin yanındaki bir *araç ipucu* kutusunun Açıklama, **If ifadesi için kod parçacığı**gibi göründüğünü fark edebilirsiniz. (Visual Basic araç ipucu, bunun bir parçacık olduğunu ancak biraz farklı bir ifade olduğunu da belirtir.) Bu kod parçacığını kullanmak istiyorsanız, kodunuza eklemek `if` için **sekme** tuşunu seçin. Sonra `if` kod parçacığını kullanmak için **Tab** tuşunu yeniden seçin. (Başka bir yerde tercih ederseniz **IntelliSense** penceresi kaybolduysa, üzerine `i` geri yazıp yeniden yazın ve **IntelliSense** penceresi tekrar açılır.)
 

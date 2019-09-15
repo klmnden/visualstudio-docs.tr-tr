@@ -1,7 +1,12 @@
 ---
 title: '7\. Adım: Çarpma ve bölme problemleri ekleme'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: tutorial
+ms.prod: visual-studio-windows
+ms.technology: vs-ide-general
+ms.devlang:
+- csharp
+- vb
 dev_langs:
 - csharp
 - vb
@@ -11,15 +16,21 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 887af3a439e1f6e0f21d5ca68061d2f9977dfac7
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
+ms.openlocfilehash: 182ab3c06ef0956d6c0d97c4276a44c3f3239875
+ms.sourcegitcommit: 0e482cfc15f809b564c3de61646f29ecd7bfcba6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68416542"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "70987857"
 ---
 # <a name="step-7-add-multiplication-and-division-problems"></a>7\. Adım: Çarpma ve bölme problemleri ekleme
+
 Bu öğreticinin yedinci kısmında çarpma ve bölme sorunları ekleyeceksiniz, ancak önce bu değişikliği nasıl yapacağınızı düşünün. Değerlerin depolanmasını içeren ilk adımı göz önünde bulundurun.
+
+> [!NOTE]
+> Bu konu, temel kodlama kavramlarıyla ilgili bir öğretici serisinin bir parçasıdır. 
+> - Öğreticiye genel bakış için bkz [. öğretici 2: Süreli bir matematik testi](../ide/tutorial-2-create-a-timed-math-quiz.md)oluşturun. 
+> - Kodun tamamlanmış bir sürümünü indirmek için bkz. [tüm matematik testi öğreticisi örneği](https://code.msdn.microsoft.com/Complete-Math-Quiz-8581813c).
 
 ## <a name="to-add-multiplication-and-division-problems"></a>Çarpma ve bölme sorunları eklemek için
 
@@ -27,6 +38,9 @@ Bu öğreticinin yedinci kısmında çarpma ve bölme sorunları ekleyeceksiniz,
 
      [!code-vb[VbExpressTutorial3Step7#15](../ide/codesnippet/VisualBasic/step-7-add-multiplication-and-division-problems_1.vb)]
      [!code-csharp[VbExpressTutorial3Step7#15](../ide/codesnippet/CSharp/step-7-add-multiplication-and-division-problems_1.cs)]
+
+     > [!IMPORTANT]
+     > C# Kod parçacığını veya Visual Basic kod parçacığını görüntülemek için bu sayfanın sağ üst kısmındaki programlama dili denetimini kullanın.<br><br>![Docs.Microsoft.com için programlama dili denetimi](../ide/media/docs-programming-language-control.png)
 
 2. Daha önce yaptığınız gibi, çarpma ve `StartTheQuiz()` bölme sorunları için yöntemi rastgele sayıları dolduracak şekilde değiştirin.
 
@@ -49,11 +63,11 @@ Bu öğreticinin yedinci kısmında çarpma ve bölme sorunları ekleyeceksiniz,
 
      Aşağıdaki çizimde gösterildiği gibi, test takiciler, testi tamamlamaya yönelik dört sorunu yanıtmalıdır.
 
-     ![Dört problemi olan matematik sınavından](../ide/media/express_finishedquiz.png)
-dört sorunla karşılaşırsanız
+     ![Dört problemle matematik sınavından](../ide/media/express_finishedquiz.png)<br/>
+***Matematik sınavı*** *dört sorunla*
 
 ## <a name="to-continue-or-review"></a>Devam etmek veya gözden geçirmek için
 
-- Sonraki öğretici adımına gitmek için bkz [. 8. Adım: Testi](../ide/step-8-customize-the-quiz.md)özelleştirin.
+- Sonraki öğretici adımına gitmek için bkz  **[. 8. Adım: ](../ide/step-8-customize-the-quiz.md)Sınavları**özelleştirin.
 
 - Önceki öğretici adımına dönmek için bkz [. 6. Adım: Çıkarma sorunu](../ide/step-6-add-a-subtraction-problem.md)ekleyin.

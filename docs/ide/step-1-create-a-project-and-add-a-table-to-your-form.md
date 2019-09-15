@@ -1,5 +1,5 @@
 ---
-title: '1. Adım: Proje oluşturma ve formunuza tablo ekleme'
+title: '1\. Adım: Proje oluşturma ve formunuza tablo ekleme'
 ms.date: 05/31/2019
 ms.topic: conceptual
 ms.prod: visual-studio-windows
@@ -10,14 +10,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 64ebd8469eb763af9565609dd680ba1e256ed6c5
-ms.sourcegitcommit: aeb1a1135dd789551e15aa5124099a5fe3f0f32b
+ms.openlocfilehash: 3b57164938f8256743f314d1c302a24547f6074d
+ms.sourcegitcommit: 0e482cfc15f809b564c3de61646f29ecd7bfcba6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "66501151"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "70987807"
 ---
-# <a name="step-1-create-a-project-and-add-a-table-to-your-form"></a>1. Adım: Proje oluşturma ve formunuza tablo ekleme
+# <a name="step-1-create-a-project-and-add-a-table-to-your-form"></a>1\. Adım: Proje oluşturma ve formunuza tablo ekleme
 
 Eşleştirme oyunu hazırlarken ilk adım projeyi oluşturmak ve formunuza bir tablo eklemektir. Tablo, simgeleri 4x4'lük muntazam bir kılavuza hizalamaya yardımcı olur. Ayrıca, oyun tahtasının görünüşünü iyileştirmek için çeşitli özellikleri ayarlarsınız.
 
@@ -25,109 +25,109 @@ Eşleştirme oyunu hazırlarken ilk adım projeyi oluşturmak ve formunuza bir t
 
 ::: moniker range="vs-2017"
 
-1. Menü çubuğunda, **dosya** > **yeni** > **proje**.
+1. Menü çubuğunda **Dosya** > **Yeni** > **Proje**' yi seçin.
 
-1. Seçin ya da **Visual C#**  veya **Visual Basic** sol tarafındaki **yeni proje** iletişim kutusuna ve ardından **Windows Masaüstü**.
+1. **Yeni proje** iletişim kutusunun sol tarafındaki **görsel C#**  veya **Visual Basic** seçin ve ardından **Windows Masaüstü**' nu seçin.
 
-1. Şablonlar listesinde seçin **Windows Forms uygulaması (.NET Framework)** şablon adlandırın *oyunu*ve ardından **Tamam** düğmesi.
+1. Şablon listesinde **Windows Forms App (.NET Framework)** şablonunu seçin, *MatchingGame*olarak adlandırın ve **Tamam** düğmesini seçin.
 
-    Adlı bir form *Form1.cs* veya *Form1.vb* , seçtiğiniz programlama diline bağlı olarak görünür.
+    Seçtiğiniz programlama diline bağlı olarak, *Form1.cs* veya *Form1. vb* adlı bir form görüntülenir.
 
    > [!NOTE]
-   > Görmüyorsanız **Windows Forms uygulaması (.NET Framework)** şablon, Visual Studio yükleyicisini kullanma **.NET Masaüstü geliştirmesinden** iş yükü.<br/><br/>![.NET masaüstü geliştirme iş yükünü Visual Studio yükleyicisi](../ide/media/dot-net-desktop-dev-workload.png)<br/><br/> Daha fazla bilgi için [Visual Studio'yu yükleyin](../install/install-visual-studio.md) sayfası.
+   > **Windows Forms App (.NET Framework)** şablonunu görmüyorsanız, **.net masaüstü geliştirme** iş yükünü yüklemek için Visual Studio yükleyicisi kullanın.<br/><br/>![Visual Studio Yükleyicisi .NET masaüstü geliştirme iş yükü](../ide/media/dot-net-desktop-dev-workload.png)<br/><br/> Daha fazla bilgi için bkz. [Visual Studio 'Yu Install](../install/install-visual-studio.md) sayfası.
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
-1. Pencerenin başlangıç seçin **yeni bir proje oluşturma**.
+1. Başlangıç penceresinde **Yeni proje oluştur**' u seçin.
 
-   !['Yeni Proje oluştur' penceresini görüntüleyin](../get-started/media/vs-2019/create-new-project-dark-theme.png)
+   ![' Yeni proje oluştur ' penceresini görüntüleyin](../get-started/media/vs-2019/create-new-project-dark-theme.png)
 
-1. Üzerinde **yeni bir proje oluşturma** penceresinde girin veya yazın *Windows Forms* arama kutusuna.
+1. **Yeni proje oluştur** penceresinde, arama kutusuna *Windows Forms* girin veya yazın.
 
-1. Seçin **Windows Forms Uygulaması (.NET Framework)** şablonu seçip **Sonraki**.
+1. **Windows Forms App (.NET Framework)** şablonunu seçin ve ardından **İleri**' yi seçin.
 
-   ![Windows Forms uygulaması (.NET Framework) Visual Basic şablonu seçin](../get-started/visual-basic/media/vs-2019/vb-create-new-project-search-winforms-filtered.png)
+   ![Windows Forms uygulaması için Visual Basic şablonu seçin (.NET Framework)](../get-started/visual-basic/media/vs-2019/vb-create-new-project-search-winforms-filtered.png)
 
    > [!NOTE]
-   > Görmüyorsanız, **Windows Forms uygulaması (.NET Framework)** şablon yükleyebileceğiniz buradan **yeni bir proje oluşturma** penceresi. İçinde **aradığınızı bulamadınız?** message öğesini **daha fazla araçları ve özellikleri yükleme** bağlantı.
+   > **Windows Forms App (.NET Framework)** şablonunu görmüyorsanız, **Yeni proje oluştur** penceresinden yükleyebilirsiniz. **Aradığınızı bulamıyor musunuz?** iletisi için **daha fazla araç ve özellik yüklemeyi** seçin bağlantısına tıklayın.
    >
-   > !['Daha fazla araçları ve özellikleri yükleme' bağlantı 'Yeni Proje oluştur' penceresinde 'aradığınızı bulma yok' iletisi](../get-started/media/vs-2019/not-finding-what-looking-for.png)
+   > ![' Yeni proje oluştur ' penceresindeki ' daha fazla araç ve özellik yüklemesi ' ' ne aradığınızı bulma ' iletisi bağlantısı](../get-started/media/vs-2019/not-finding-what-looking-for.png)
    >
-   > Ardından, Visual Studio yükleyicisinde seçin seçin **.NET Masaüstü geliştirmesinden** iş yükü.
+   > Sonra, Visual Studio Yükleyicisi **.net masaüstü geliştirme** Iş yükünü seçin.
    >
    > ![Visual Studio Yükleyicisi'nde .NET core iş yükü](../ide/media/install-dot-net-desktop-env.png)
    >
-   > Bundan sonra seçin **Değiştir** Visual Studio Yükleyicisi'nde düğmesi. Çalışmanızı kaydetmek için istenebilir; Bu durumda, bunu yapın. Ardından, **devam** iş yükünü yüklemek için.
+   > Bundan sonra Visual Studio Yükleyicisi **Değiştir** düğmesini seçin. İşinizi kaydetmeniz istenebilir; Öyleyse, bunu yapın. Sonra, iş yükünü yüklemek için **devam** ' ı seçin.
 
-1. İçinde **yeni projenizi yapılandırın** penceresinde yazın veya girin *oyunu* içinde **proje adı** kutusu. Ardından, **Oluştur**.
+1. **Yeni projeyi yapılandırın** penceresinde, **Proje adı** kutusuna *MatchingGame* yazın veya girin. Ardından **Oluştur**' u seçin.
 
 ::: moniker-end
 
-## <a name="to-set-properties-for-a-form"></a>Bir formun özelliklerini ayarlamak için
+## <a name="to-set-properties-for-a-form"></a>Form özelliklerini ayarlamak için
 
-1. İçinde **özellikleri** penceresinde aşağıdaki form özelliklerini ayarlayın.
+1. **Özellikler** penceresinde, aşağıdaki form özelliklerini ayarlayın.
 
-   1. Formun değiştirme **metin** özelliğinden **Form1** için **eşleştirme oyunu**. Bu metin oyun penceresinin en üstünde görünür.
+   1. Formun **Text** özelliğini **Form1** iken **eşleşen oyunla**değiştirin. Bu metin oyun penceresinin en üstünde görünür.
 
-   2. Formun boyutunu 550 piksel genişliğe ve 550 piksel uzunluğa ayarlayın. Ayarlayarak ya da bunu yapabilirsiniz **boyutu** özelliğini **550, 550**, veya tümleşik geliştirme ortamı (sağ alt köşesinde doğru boyutu görünceye kadar formu köşesinden sürükleyerek IDE).
+   2. Formun boyutunu 550 piksel genişliğe ve 550 piksel uzunluğa ayarlayın. Bunu, **Boyut** özelliğini **550, 550**olarak ayarlayarak veya tümleşik geliştirme ortamının sağ alt köşesinde (IDE) doğru boyutu görene kadar formun köşesini sürükleyerek yapabilirsiniz.
 
-2. Seçerek araç kutusunu görüntüleyin **araç kutusu** IDE'nin sol tarafındaki sekmesi.
+2. IDE 'nin sol tarafındaki **araç kutusu** sekmesini seçerek araç kutusunu görüntüleyin.
 
-3. Sürükleme bir <xref:System.Windows.Forms.TableLayoutPanel> denetimi **kapsayıcıları** Araç Kutusu'nda, kategori ve bunun için aşağıdaki özellikleri ayarlayın.
+3. Araç kutusundaki <xref:System.Windows.Forms.TableLayoutPanel> **kapsayıcılar** kategorisinden bir denetim sürükleyin ve sonra bunun için aşağıdaki özellikleri ayarlayın.
 
-   1. Ayarlama **BackColor** özelliğini **CornflowerBlue**. Bunu yapmak için açık **BackColor** yanındaki aşağı açılır oku seçerek iletişim kutusu **BackColor** özelliğinde **özellikleri** penceresi.  Ardından, **Web** sekmesinde **BackColor** iletişim kutusu, kullanılabilir renk adlarının bir listesini görüntülemek için.
+   1. **BackColor** özelliğini **CornflowerBlue**olarak ayarlayın. Bunu yapmak için, **Özellikler** penceresinde **BackColor** özelliğinin yanındaki açılan oku seçerek **BackColor** iletişim kutusunu açın.  Ardından, kullanılabilir renk adlarının listesini görüntülemek için **BackColor** Iletişim kutusundaki **Web** sekmesini seçin.
 
       > [!NOTE]
-      > Renkler alfabetik sırada değildir ve **CornflowerBlue** listenin sonuna olan.
+      > Renkler alfabetik sırada değildir ve **CornflowerBlue** listenin en altına yakındır.
 
-   2. Ayarlama **Dock** özelliğini **dolgu** özelliğin yanındaki açılan düğmeyi seçerek ve büyük Orta düğmeyi seçerek. Böylece tablo formun tamamını kaplayacak şekilde yayılır.
+   2. Özelliğin yanındaki açılan düğmeyi seçerek ve büyük orta düğmesini seçerek, **Dock** özelliğini **Fill** olarak ayarlayın. Böylece tablo formun tamamını kaplayacak şekilde yayılır.
 
-   3. Ayarlama **CellBorderStyle** özelliğini **iç**. Böylece, tahta üzerindeki her bir hücre arasında görsel kenarlıklar olur.
+   3. **CellBorderStyle** özelliğini **ınmetinolarak**ayarlayın. Böylece, tahta üzerindeki her bir hücre arasında görsel kenarlıklar olur.
 
    4. TableLayoutPanel denetiminin sağ üst köşesindeki üçgen düğmesini seçerek ilgili görev menüsünü görüntüleyin.
 
-   5. Görev menüsünde **Satır Ekle** iki kez iki satır daha ekleyin ve ardından **Sütun Ekle** iki kez iki sütun daha eklemek için.
+   5. Görev menüsünde, iki satır daha eklemek için **satır ekle** ' yi seçin ve daha sonra iki sütun eklemek için sütun Iki kez **Ekle** ' yi seçin.
 
-   6. Görev menüsünde **satırları ve sütunları Düzenle** açmak için **sütun ve satır stilleri** penceresi. Her sütun seçin, **yüzde** seçenek düğmesini ve ardından her bir sütunun genişliğini toplam genişliğin yüzde 25 değerine ayarlayın. Ardından **satırları** açılır listeden kutusu penceresinin en üstünde ve her bir satırın yüksekliğini yüzde 25 değerine ayarlayın. İşiniz bittiğinde seçin **Tamam** düğmesi.
+   6. Görev menüsünde **satırları ve sütunları Düzenle** ' yi seçerek **sütun ve satır stilleri** penceresini açın. Sütunların her birini seçin, **yüzde** seçenek düğmesini seçin ve sonra her bir sütunun genişliğini toplam genişliğinin yüzde 25 ' i olarak ayarlayın. Ardından pencerenin üst kısmındaki açılan kutudan **Satırlar** ' ı seçin ve her satırın yüksekliğini yüzde 25 olarak ayarlayın. İşiniz bittiğinde **Tamam** düğmesini seçin.
 
       TableLayoutPanel denetiminiz şu anda, eşit boyutlu on altı kare hücre içeren 4x4'lük bir kılavuz halinde olmalıdır. Bu satırlar ve sütunlar, sonradan simge resimlerinin görüneceği yerlerdir.
 
-4. Form düzenleyicisinde TableLayoutPanel seçildiğinden emin olun. Bunu doğrulamak için görmelisiniz **tableLayoutPanel1** en üstündeki **özellikleri** penceresi. Seçilmezse, formda TableLayoutPanel öğesini seçin veya en üstündeki aşağı açılır denetimden seçin **özellikleri** penceresi.
+4. Form düzenleyicisinde TableLayoutPanel seçildiğinden emin olun. Bunu doğrulamak için, **Özellikler** penceresinin en üstünde **tableLayoutPanel1** görmeniz gerekir. Seçili değilse, formda TableLayoutPanel öğesini seçin veya **Özellikler** penceresinin en üstündeki açılan denetimde seçin.
 
-    TableLayoutPanel seçili durumdayken araç kutusunu açın ve eklemek bir <xref:System.Windows.Forms.Label> denetimi (bulunan **ortak denetimleri** kategorisi) TableLayoutPanel öğesinin sol üst hücresine. Etiket denetimi artık IDE'de seçilmesi gerekir. Bu öğe için aşağıdaki özellikleri ayarlayın.
+    TableLayoutPanel seçiliyken, araç kutusunu açın ve TableLayoutPanel 'in sol üst hücresine <xref:System.Windows.Forms.Label> bir denetim ( **ortak denetimler** kategorisinde bulunur) ekleyin. Etiket denetimi artık IDE 'de seçilmelidir. Bu öğe için aşağıdaki özellikleri ayarlayın.
 
-   1. Etiketin olduğundan emin olun **BackColor** özelliği **CornflowerBlue**.
+   1. Etiketin **BackColor** özelliğinin **CornflowerBlue**olarak ayarlandığından emin olun.
 
-   2. Ayarlama **AutoSize** özelliğini **False**.
+   2. **AutoSize** özelliğini **false**olarak ayarlayın.
 
-   3. Ayarlama **Dock** özelliğini **dolgu**.
+   3. **Dock** özelliğini **Fill**olarak ayarlayın.
 
-   4. Ayarlama **TextAlign** özelliğini **MiddleCenter** özelliğin yanındaki açılan düğmeyi seçerek ve ardından Orta düğmeyi seçerek. Böylece, simgenin hücrenin ortasında görünmesi sağlanır.
+   4. Özelliğin yanındaki açılan düğmeyi seçerek ve ardından ortadaki düğmeyi seçerek **TextAlign** özelliğini **MiddleCenter** olarak ayarlayın. Böylece, simgenin hücrenin ortasında görünmesi sağlanır.
 
-   5. Seçin **yazı tipi** özelliği. Üç nokta ( **...** ) düğmesi görünmelidir.
+   5. **Yazı tipi** özelliğini seçin. Üç nokta ( **...** ) düğmesi görünmelidir.
 
-   6. Üç nokta düğmesini seçin ve ayarlayın **yazı tipi** değerini **Webdings**, **yazı tipi stili** için **kalın**ve **boyutu** için **48**.
+   6. Üç nokta düğmesini seçin ve **yazı tipi** değerini **Web**'e, **yazı tipi stilini** **kalın**olarak ve **Boyut** olarak **48**olarak ayarlayın.
 
-   7. Ayarlama **metin** harf etiketi özelliği **c**.
+   7. Etiketin **Text** özelliğini **c**harfine ayarlayın.
 
         TableLayoutPanel öğesinin sol üst hücresinde şimdi, mavi arka plan üzerinde ortalanmış bir siyah kutu yer alıyor olmalıdır.
 
        > [!NOTE]
-       > Webdings yazı tipi, simgelerden oluşan bir yazı tipi olup Windows işletim sistemiyle birlikte gelir. Eşleştirme oyununuzda oyuncunun simge çiftlerini eşleştirmesi gerektiğinden, eşleştirilecek simgeleri göstermek için bu yazı tipini kullanıyorsunuz. Yerine **c** içinde **metin** özelliği, hangi simgelerin gösterildiğini görmek için farklı harfler girmeyi deneyin. Ünlem işareti bir örümcek, büyük N harfi bir göz ve virgül ise kırmızı biberdir.
+       > Webdings yazı tipi, simgelerden oluşan bir yazı tipi olup Windows işletim sistemiyle birlikte gelir. Eşleştirme oyununuzda oyuncunun simge çiftlerini eşleştirmesi gerektiğinden, eşleştirilecek simgeleri göstermek için bu yazı tipini kullanıyorsunuz. **Metin** özelliğine **c** koymak yerine, hangi simgelerin görüntülendiğini görmek için farklı harfler girmeyi deneyin. Ünlem işareti bir örümcek, büyük N harfi bir göz ve virgül ise kırmızı biberdir.
 
-5. Etiket denetiminizi seçin ve TableLayoutPanel içinde sonraki hücreye kopyalayın. (Seçin **Ctrl**+**C** anahtarları veya menü çubuğunda, **Düzenle** > **kopyalama**.) Sonra da yapıştırın. (Seçin **Ctrl**+**V** anahtarları veya menü çubuğunda, **Düzenle** > **Yapıştır**.) TableLayoutPanel öğesinin ikinci hücresinde ilk etiketin bir kopyası görünür. Yeniden yapıştırın ve üçüncü hücrede bir başka etiket görünür. Hücrelerin tümü doluncaya kadar etiket denetimlerini yapıştırmayı sürdürün.
+5. Etiket denetiminizi seçin ve TableLayoutPanel içindeki bir sonraki hücreye kopyalayın. ( **CTRL**+**C** tuşlarını seçin veya menü çubuğunda**kopyayı** **Düzenle** > ' yi seçin.) Sonra da yapıştırın. ( **CTRL**+**V** tuşlarını seçin veya menü çubuğunda**yapıştırmayı** **Düzenle** > ' yi seçin.) İlk etiketin bir kopyası TableLayoutPanel 'in ikinci hücresinde görüntülenir. Tekrar yapıştırın ve üçüncü hücrede başka bir etiket görüntülenir. Tüm hücreler dolduruluncaya kadar etiket denetimlerini yapıştırmayı sürdürün.
 
    > [!NOTE]
-   > Çok fazla kez yapıştırırsanız, IDE yeni etiket denetiminizi ekleyecek bir yer sahip olacak şekilde TableLayoutPanel denetimine yeni bir satır ekler. Bunu geri alabilirsiniz. Yeni hücreyi kaldırmak için **Ctrl**+**Z** anahtarları veya menü çubuğunda, **Düzenle** > **geri**.
+   > Çok sayıda yapıştırırsanız, IDE, yeni etiket denetiminizi eklemek için bir yer olmasını sağlamak üzere TableLayoutPanel 'e yeni bir satır ekler. Bunu geri alabilirsiniz. Yeni hücreyi kaldırmak için **CTRL**+**Z** tuşlarını seçin veya menü çubuğunda**geri al**'ı **Düzenle** > ' yi seçin.
 
-    Artık formunuz hazırdır. Aşağıdaki resimde olduğu gibi görünmesi gerekir.
+    Artık formunuz hazırdır. Aşağıdaki resme benzer görünmelidir.
 
-    ![İlk eşleştirme oyunu formu](../ide/media/express_tut4step1.png)<br/>   İlk eşleştirme oyunu formu
+    ![İlk eşleşen oyun formu](../ide/media/express_tut4step1.png)<br/>*İlk eşleşen oyun formu*
 
 ## <a name="to-continue-or-review"></a>Devam etmek veya gözden geçirmek için
 
-- Sonraki öğretici adımına gitmek için bkz: [2. adım: Rasgele nesne ve simge listesi ekleme](../ide/step-2-add-a-random-object-and-a-list-of-icons.md).
+- Sonraki öğretici adımına gitmek için bkz [. 2. Adım: Rastgele bir nesne ve simge](../ide/step-2-add-a-random-object-and-a-list-of-icons.md)listesi ekleyin.
 
-- Genel Bakış konusuna dönmek için bkz: [Tutorial 3: Eşleşen bir oluşturma oyun](../ide/tutorial-3-create-a-matching-game.md).
+- Genel bakış konusuna dönmek için bkz [. öğretici 3: Eşleşen bir oyun](../ide/tutorial-3-create-a-matching-game.md)oluşturun.

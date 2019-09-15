@@ -1,5 +1,5 @@
 ---
-title: Hata ayıklama sırasında XAML özelliklerini denetleme | Microsoft Docs
+title: Hata ayıklarken XAML özelliklerini İnceleme | Microsoft Docs
 ms.date: 03/06/2017
 ms.topic: conceptual
 ms.assetid: 390edde4-7b8d-4c89-8d69-55106b7e6b11
@@ -8,29 +8,29 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: d5b04a64ea75458d23e64e83a405a103ae70a100
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fdb973718e56279e7bfb04c9d412bcd83410223d
+ms.sourcegitcommit: 0e482cfc15f809b564c3de61646f29ecd7bfcba6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62906091"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "70987748"
 ---
 # <a name="inspect-xaml-properties-while-debugging"></a>Hata ayıklama sırasında XAML özelliklerini denetleme
-Çalışan XAML kodunuzu ile gerçek zamanlı bir görünümünü elde edebilirsiniz **Live Visual Tree** ve **Live Property Explorer**. Bu araçlar, çalışan XAML uygulamanızın kullanıcı Arabirimi öğelerini ağaç görünümünü sağlar ve seçtiğiniz herhangi bir kullanıcı Arabirimi öğesi çalışma zamanı özelliklerini göster.
+**Canlı görsel ağaç** ve **canlı Özellik GEZGINI**ile çalışan xaml kodunuzun gerçek zamanlı bir görünümünü alabilirsiniz. Bu araçlar, çalışan XAML uygulamanızın kullanıcı arabirimi öğelerinin ağaç görünümünü sağlar ve seçtiğiniz herhangi bir kullanıcı arabirimi öğesinin çalışma zamanı özelliklerini gösterir.
 
-Aşağıdaki yapılandırmaları bu araçları kullanabilirsiniz:
+Aşağıdaki yapılandırmalarda bu araçları kullanabilirsiniz:
 
-|Uygulama türü|İşletim sistemi ve araçları|
+|Uygulama türü|İşletim sistemi ve araçlar|
 |-----------------|--------------------------------|
-|Windows Presentation Foundation (4.0 ve üzeri) uygulamaları|Windows 7 ve üzeri|
-|Evrensel Windows uygulamaları|Windows 10 ve üzeri ile [Windows 10 SDK'sı](https://dev.windows.com/en-us/downloads/windows-10-sdk)|
+|Windows Presentation Foundation (4,0 ve üzeri) uygulamalar|Windows 7 ve üzeri|
+|Evrensel Windows uygulamaları|Windows 10 ve üzeri, Windows 10 [SDK](https://dev.windows.com/en-us/downloads/windows-10-sdk) ile|
 
-## <a name="looking-at-elements-in-the-live-visual-tree"></a>Öğeleri Canlı görsel ağaç bakarak
-Bir liste görünümü ve bir düğme olan çok basit WPF uygulaması başlayalım. Düğmesini her zaman başka bir öğe listesine eklenir. Tek sayılı öğeleri gri renkte görünür ve öğeleri tek sayılı sarı renkte görünür.
+## <a name="looking-at-elements-in-the-live-visual-tree"></a>Canlı görsel ağaçtaki öğelere bakma
+Bir liste görünümü ve bir düğme içeren çok basit bir WPF uygulamasını kullanmaya başlayalım. Düğmeye her tıkladığınızda, listeye başka bir öğe eklenir. Çift numaralı öğeler gri renklendirilir ve tek sayılı öğeler sarı renktedir.
 
-Yeni bir C# WPF uygulaması (Dosya > Yeni > Proje, ardından C# ve WPF uygulaması bulabilirsiniz). Adlandırın **TestXAML**.
+Yeni C# bir WPF uygulaması (Dosya > Yeni > projesi oluşturun ve ardından WPF C# uygulaması seçin ve bulun). **TestXaml**olarak adlandırın.
 
-MainWindow.xaml şu şekilde değiştirin:
+MainWindow. xaml ' i şu şekilde değiştirin:
 
 ```xaml
 <Window x:Class="TestXAML.MainWindow"
@@ -48,7 +48,7 @@ MainWindow.xaml şu şekilde değiştirin:
 </Window>
 ```
 
-Aşağıdaki komut işleyici MainWindow.xaml.cs dosyasına ekleyin:
+MainWindow.xaml.cs dosyasına aşağıdaki komut işleyicisini ekleyin:
 
 ```csharp
 int count;
@@ -69,37 +69,41 @@ private void button_Click(object sender, RoutedEventArgs e)
 }
 ```
 
-Projeyi oluşturmak ve hata ayıklamaya başlayın. (Derleme yapılandırması hata ayıklama, yayın değil olmalıdır. Derleme yapılandırmaları hakkında daha fazla bilgi için bkz. [derleme yapılandırmalarını anlama](../ide/understanding-build-configurations.md).)
+Projeyi oluşturmak ve hata ayıklamaya başlayın. (Derleme yapılandırması, yayın değil, hata ayıklama olmalıdır. Derleme konfigürasyonları hakkında daha fazla bilgi için bkz. [derleme yapılandırmasını anlama](../ide/understanding-build-configurations.md).)
 
-Pencere ortaya çıktığında tıklayın **Öğe Ekle** düğmesine birkaç kez. Bunun gibi bir şey görmeniz gerekir:
+Pencere geldiğinde, birkaç kez **öğe Ekle** düğmesine tıklayın. Şuna benzer bir şey görmeniz gerekir:
 
-![Uygulamanın ana pencere](../debugger/media/livevisualtree-app.png "LiveVIsualTree uygulama")
+![Uygulamanın ana penceresi](../debugger/media/livevisualtree-app.png "Livevisualtree-uygulama")
 
-Şimdi açmak **Live Visual Tree** penceresi (**hata ayıklama > Windows > Live Visual Tree**, veya IDE'nin sol tarafında bulabilirsiniz). Bu pencereyi baktığımızda şekilde yerleştirme konumuna uzağa sürükleyin ve **Canlı özellikleri** yan yana penceresi. İçinde **Live Visual Tree** penceresini genişletin **ContentPresenter** düğümü. Bu düğme ve liste kutusu için düğüm içermelidir. Liste kutusu genişletin (ardından **ScrollContentPresenter** ve **ItemsPresenter**) liste kutusu öğelerini bulmak için. Pencerenin şu şekilde görünmelidir:
+Şimdi **canlı görsel ağaç** penceresini açın (**Windows > canlı görsel ağaç > hata ayıklayın**veya IDE 'nin sol tarafında bulun). Bu pencereye ve **canlı Özellikler** penceresine yan yana bakabilmemiz için yerleştirme konumundan uzağa sürükleyin. **Canlı görsel ağaç** penceresinde, **ContentPresenter** düğümünü genişletin. Düğme ve liste kutusu için düğüm içermelidir. Liste kutusu öğelerini bulmak için liste kutusunu (ve ardından **ScrollContentPresenter** ve **ItemsPresenter**) genişletin. Pencere şuna benzemelidir:
 
-![Canlı görsel ağaç ListBoxItems](../debugger/media/livevisualtree-listboxitems.png "LiveVisualTree ListBoxItems")
+![Canlı görsel ağaçtaki ListBoxItems](../debugger/media/livevisualtree-listboxitems.png "Livevisualtree-ListBoxItems")
 
-Uygulama penceresine dönün ve birkaç daha fazla öğe ekleyin. Daha fazla liste kutusu öğeleri görünür görmelisiniz **Live Visual Tree**.
+Uygulama penceresine dönüp birkaç öğe daha ekleyin. **Canlı görsel ağaçta**daha fazla liste kutusu öğesi göründüğünü görmeniz gerekir.
 
-Şimdi bir liste kutusu öğelerini özelliklerine göz atalım. İlk liste kutusu öğesini seçmek **Live Visual Tree** tıklatıp **özellikleri göster** araç çubuğundaki simgeye. **Live Property Explorer** görünmelidir. Unutmayın **içerik** "Item1" bir alandır ve **arka plan** alandır **#FFFFFFE0** (Açık Sarı). Geri Git **Live Visual Tree** ve ikinci liste kutusu öğesini seçin. **Live Property Explorer** göstermesi gerekir **içerik** "Item2" bir alandır ve **arka plan** alandır **#FFD3D3D3** (açık gri ).
+Şimdi liste kutusu öğelerinden birinin özelliklerine göz atalım. **Canlı görsel ağaçtaki** ilk liste kutusu öğesini seçin ve araç çubuğundaki **özellikleri göster** simgesine tıklayın. **Canlı Özellik Gezgini** görünmelidir. **İçerik** alanının "Item1" olduğunu ve **arka plan** alanının **#FFFFFFE0** (açık sarı) olduğunu unutmayın. **Canlı görsel ağaca** dönün ve ikinci liste kutusu öğesini seçin. **Canlı Özellik Gezgini** , **Içerik** alanının "Item2" olduğunu ve **arka plan** alanının **#FFD3D3D3** (açık gri) olduğunu göstermelidir.
 
-Çok ilgi doğrudan büyük olasılıkla öğelerin XAML gerçek yapısını içerir ve kod iyi bilmiyorsanız, aradığınızı bulmak için ağacı gezinme sabit bir zaman olabilir. Bu nedenle **Live Visual Tree** incelemek istediğiniz öğe bulmanıza yardımcı olmak için uygulamanın UI kullandığınız olanak sağlayan birkaç yolu vardır.
+XAML gerçek yapısı, muhtemelen doğrudan ilgilenmediğiniz çok sayıda öğeye sahiptir ve kodun iyi olduğunu bilmiyorsanız, aradığınız şeyi bulmak için ağaçta gezinmek için bir sabit zaman olabilir. Bu nedenle, **canlı görsel ağaç** , incelemek istediğiniz öğeyi bulmanıza yardımcı olmak için uygulamanın kullanıcı arabirimini kullanmanıza olanak sağlayan birkaç yol içerir.
 
-**Çalışan uygulamada Seçimi Etkinleştir**. En soldaki düğme seçtiğinizde bu modu etkinleştirebilirsiniz **Live Visual Tree** araç çubuğu. Bu moduyla uygulamada, bir kullanıcı Arabirimi öğesi seçebilirsiniz ve **Live Visual Tree** (ve **Canlı özellik Görüntüleyici**) o öğeye karşılık gelen ağaç düğümü göstermek için otomatik olarak güncelleştirir. ve özellikleri.
+**Çalışan uygulamada seçimi etkinleştirin**. **Canlı görsel ağaç** araç çubuğunda en soldaki düğmeyi seçtiğinizde bu modu etkinleştirebilirsiniz. Bu mod üzerinde, uygulamada bir UI öğesi seçebilirsiniz ve **canlı görsel ağaç** (ve **canlı Özellik Görüntüleyicisi**), düğümü ilgili öğeye ve özelliklerine karşılık gelen ağaçta göstermek için otomatik olarak güncelleştirilir.
 
-**Çalışan uygulamada Düzen donatıcılarını görüntüleyin**. Etkin seçim düğmesi sağda hemen düğmesini seçtiğinizde, bu modu etkinleştirebilirsiniz. Zaman **Düzen donatıcılarını görüntüleyin** açıktır, uygulama penceresinin yatay ve dikey çizgileri seçili nesnenin sınırları boyunca neler bunu, kenar boşlukları gösteren dikdörtgenler yanı sıra hizalar görebilmeniz göstermek neden olur. Örneğin, her ikisini de etkinleştirmek **Seçimi Etkinleştir** ve **görünen Düzen** açık ve select **Öğe Ekle** uygulamada metin bloğu. Metin bloğu düğümü görmelisiniz **Canlı görsel ağaç** ve metin engelleme özellikleri **Canlı özellik Görüntüleyici**, yatay ve dikey metin bloğu sınırlarının satırlarda yanı sıra.
+**Çalışan uygulamada düzen donatıcıları görüntüleyin**. Seçimi Etkinleştir düğmesinin hemen sağında bulunan düğmeyi seçtiğinizde bu modu etkinleştirebilirsiniz. **Görüntüleme düzeni donatıcıları** açık olduğunda, uygulama penceresinin seçili nesnenin sınırları üzerinde yatay ve dikey çizgiler görüntülemesine neden olur, böylece neyin ne kadar hizalanacağını görebilir ve kenar boşluklarını gösteren dikdörtgenler de gösterilir. Örneğin, her ikisini de **seçimi** ve **görüntüleme yerleşimini** etkinleştirin ve uygulamada **öğe Ekle** metin bloğunu seçin. **Canlı görsel ağaçta** metin bloğu düğümünü ve **canlı Özellik görüntüleyicisinde**metin bloğu özelliklerinin yanı sıra metin bloğunun sınırları üzerindeki yatay ve dikey çizgileri görmeniz gerekir.
 
-![LivePropertyViewer DisplayLayout içinde](../debugger/media/livevisualtreelivepropertyviewer-displaylayout.png "LiveVisualTreeLivePropertyViewer DisplayLayout")
+![DisplayLayout Içinde Livepropertyviewer](../debugger/media/livevisualtreelivepropertyviewer-displaylayout.png "Livevisualtreelivepropertyviewer-DisplayLayout")
 
-**Önizleme seçimi**. Live Visual Tree araç soldaki alan üçüncü düğmeye seçerek bu modu etkinleştirebilirsiniz. Bu mod, uygulamanın kaynak koduna erişiminiz varsa öğe nerede bildirildi, XAML gösterir. Seçin **etkinleştirme seçimi** ve **Önizleme seçimi**, ve ardından test uygulamamız düğmesini seçin. MainWindow.xaml dosyasını Visual Studio'da açılır ve imleç düğmenin tanımlandığı satıra yerleştirilir.
+**Önizleme seçimi**. Canlı görsel ağaç araç çubuğunda sol taraftaki üçüncü düğmeyi seçerek bu modu etkinleştirebilirsiniz. Bu mod, uygulamanın kaynak koduna erişiminiz varsa, öğenin bildirildiği XAML 'yi gösterir. Seçim ve **Önizleme seçimini** **Etkinleştir** ' i seçin ve ardından test uygulamamızda düğmesini seçin. MainWindow. xaml dosyası Visual Studio 'da açılır ve imleç düğmenin tanımlandığı satıra yerleştirilir.
 
-## <a name="using-xaml-tools-with-running-applications"></a>Çalışan uygulamalar ile XAML araçlarını kullanma
-Kaynak kodu yoksa olsa bile bu XAML araçları kullanabilirsiniz. Çalışan bir XAML uygulamaya ekleme yaptığınızda, kullanabileceğiniz **Live Visual Tree** uygulama UI öğeleri üzerinde çok. Önce kullandığımız WPF test uygulaması kullanarak, bir örnek aşağıda verilmiştir.
+## <a name="using-xaml-tools-with-running-applications"></a>Çalışan uygulamalarla XAML araçlarını kullanma
+Kaynak kodunuz olmadığında bile bu XAML araçlarını kullanabilirsiniz. Çalışan bir XAML uygulamasına iliştirmeye çalıştığınızda, bu uygulamanın UI öğelerinde **canlı görsel ağaç** ' ı da kullanabilirsiniz. Daha önce kullandığımız aynı WPF test uygulamasını kullanarak bir örnek aşağıda verilmiştir.
 
-1. Başlangıç **TestXaml** sürüm yapılandırmasını uygulama. İçinde çalışan bir işleme iliştirilemiyor bir **hata ayıklama** yapılandırma.
+1. Sürüm yapılandırmasında **TestXaml** uygulamasını başlatın. **Hata ayıklama** yapılandırmasında çalışan bir işleme iliştiremezsiniz.
 
-2. Visual Studio ikinci bir örneğini açın ve tıklayın **hata ayıklama > iliştirme**. Bulma **TestXaml.exe** kullanılabilir işlemler seçeneğine tıklayıp listesinde **iliştirme**.
+2. Visual Studio 'nun ikinci bir örneğini açın ve **Işleme eklemek > hata ayıkla**' ya tıklayın. Kullanılabilir süreçler listesinde **TestXaml. exe dosyasını** bulun ve **Ekle**' ye tıklayın.
 
 3. Uygulama çalışmaya başlar.
 
-4. Visual Studio'nun ikinci örnekte, Aç **Live Visual Tree** (**hata ayıklama > Windows > Live Visual Tree**). Görmelisiniz **TestXaml** kullanıcı Arabirimi öğeleri ve olmalıdır uygulama doğrudan hata ayıklarken gibi bunları yönetmek kullanabilirsiniz.
+4. Visual Studio 'nun ikinci örneğinde, **Live Visual Tree** (**hata ayıkla > Windows > Live Visual Tree**) öğesini açın. **TestXaml** Kullanıcı arabirimi öğelerini görmeniz gerekir ve uygulamayı doğrudan hata ayıklarken yaptığınız gibi işleyebilmelisiniz.
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[Xaml dinamik yeniden yüklemesine çalışan XAML kodu yazma ve hata ayıklama](xaml-hot-reload.md)

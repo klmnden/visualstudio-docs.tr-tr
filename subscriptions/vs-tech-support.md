@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/29/2019
 ms.topic: conceptual
 description: Visual Studio aboneliğinizle birlikte sunulan teknik destek avantajını nasıl etkinleştireceğinizi öğrenin.
-ms.openlocfilehash: 705ec75afc2ba870b5e596f63e27fae92fbedf58
-ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
+ms.openlocfilehash: 6474cf3322b878055053eaaf1f1943ebc546b206
+ms.sourcegitcommit: 02acadb912faced7eaffe27c2c19104bf0428bcd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68681586"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70936901"
 ---
 # <a name="activate-and-use-the-technical-support-benefit-in-visual-studio-subscriptions"></a>Visual Studio aboneliklerinde teknik destek avantajını etkinleştirin ve kullanın
 Visual Studio aboneliklerinde teknik destek avantajı, hala [destek yaşam döngüsünün](https://support.microsoft.com/lifecycle/search)temel destek aşamasında olan ürünlere yönelik **Üretim dışı ortamlarda** onarım sorunlarını çözmeye yöneliktir. Visual Studio Enterprise standart ve yıllık bulut abonelikleri dört olay alır, Visual Studio Professional ancak standart ve yıllık bulut abonelikleri, avantajı etkinleştirmede 1 yıla kadar olmak üzere iki olay alır. Abonelik geçerli olduğunda avantajı etkinleştirme gerçekleşmelidir.
@@ -23,6 +23,13 @@ Visual Studio aboneliklerinde teknik destek avantajı, hala [destek yaşam döng
 > Belirli bir düzeydeki tüm abonelikler destek olayları almaya uygun değildir. FTE, NFR, MPN, MCT ve diğer programlar aracılığıyla edinilen abonelikler destek olaylarını almaz. Aboneliğiniz, teknik destek olayları almaya uygun değilse, teknik destek kutucuğu kullanılabilir avantajlarda görünmez.
 
 **Avantajı kullanarak bir destek isteği göndermek için, önce onu etkinleştirmeniz gerekir.  Etkinleştirmeyi gerçekleştirmek için sonraki bölümdeki adımları izleyin.**
+
+## <a name="supported-products"></a>Desteklenen Ürünler 
+Visual Studio IDE ve Azure DevOps Server gibi Geliştirici Araçları, Visual Studio abonelikleri aracılığıyla hem temel hem de genişletilmiş destek alır.
+
+Visual Studio aboneliklerinden indirilen geliştirici olmayan ürünler (SQL, Windows, SharePoint gibi) yalnızca temel destek için uygundur. Bu ürünler yalnızca uygulamaları tasarlamak, geliştirmek, test etmek veya göstermek için geliştirme ortamları için lisanslanır. Bu ürünler üretim ortamları için lisanslanmaz.
+
+Ürün düzeyi açıklamaları-destek planı belirtilen üründe (kod: 8) destek için kullanılamaz durumdaysa, **kullanılamayan destek planlarını** genişletin. Destek sözleşmeniz seçtiğiniz ürün sürümü için kullanılamaz.
 
 ## <a name="how-to-activate-the-benefit"></a>Avantajı etkinleştirme
 1. Git ' https://my.visualstudio.com/Benefits e gidin, destek bölümüne gidin ve teknik destek kutucuğunda **etkinleştirmek için sohbet**' e tıklayın.
@@ -75,7 +82,7 @@ Bir olayı çevrimiçi olarak gönderirken öncelikle oturum açmanız istenir. 
    > [!div class="mx-imgBorder"]
    > ![Teknik destek avantajı olay gönderimi-sözleşme ekleme](_img/vs-tech-support/vs-tech-support-add-contract.png)
 
-4. **ERIŞIM kimliğinizi** ve **sözleşme kimliğinizi**girin.            **Ekle**'yi tıklatın.
+4. **ERIŞIM kimliğinizi** ve **sözleşme kimliğinizi**girin.  **Ekle**'yi tıklatın.
 
    > [!div class="mx-imgBorder"]
    > ![Teknik destek avantajı olay gönderimi-sözleşme KIMLIĞI Ekle](_img/vs-tech-support/vs-tech-support-add-contract-id.png)

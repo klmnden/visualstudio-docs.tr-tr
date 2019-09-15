@@ -1,7 +1,12 @@
 ---
 title: '3\. Adım: Geri sayım zamanlayıcısı ekleme'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: tutorial
+ms.prod: visual-studio-windows
+ms.technology: vs-ide-general
+ms.devlang:
+- csharp
+- vb
 dev_langs:
 - csharp
 - vb
@@ -11,18 +16,21 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 86e19e99bc6732ddadabdb3e308dcf8e0def41fa
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
+ms.openlocfilehash: 6756000cc2db853589d98c21abab7db452d55af9
+ms.sourcegitcommit: 0e482cfc15f809b564c3de61646f29ecd7bfcba6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68416716"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "70987886"
 ---
 # <a name="step-3-add-a-countdown-timer"></a>3\. Adım: Geri sayım zamanlayıcısı ekleme
+
 Bu öğreticinin üçüncü bölümünde, bir geri sayım süreölçeri ekleyerek, test takici 'in tamamlaması için kalan saniye sayısını izleyebilirsiniz.
 
 > [!NOTE]
-> Bu konu, temel kodlama kavramlarıyla ilgili bir öğretici serisinin bir parçasıdır. Öğreticiye genel bakış için bkz [. öğretici 2: Süreli bir matematik testi](../ide/tutorial-2-create-a-timed-math-quiz.md)oluşturun.
+> Bu konu, temel kodlama kavramlarıyla ilgili bir öğretici serisinin bir parçasıdır. 
+> - Öğreticiye genel bakış için bkz [. öğretici 2: Süreli bir matematik testi](../ide/tutorial-2-create-a-timed-math-quiz.md)oluşturun. 
+> - Kodun tamamlanmış bir sürümünü indirmek için bkz. [tüm matematik testi öğreticisi örneği](https://code.msdn.microsoft.com/Complete-Math-Quiz-8581813c).
 
 ## <a name="to-add-a-countdown-timer"></a>Geri sayım Zamanlayıcısı eklemek için
 
@@ -30,6 +38,9 @@ Bu öğreticinin üçüncü bölümünde, bir geri sayım süreölçeri ekleyere
 
      [!code-vb[VbExpressTutorial3Step3#5](../ide/codesnippet/VisualBasic/step-3-add-a-countdown-timer_1.vb)]
      [!code-csharp[VbExpressTutorial3Step3#5](../ide/codesnippet/CSharp/step-3-add-a-countdown-timer_1.cs)]
+
+   > [!IMPORTANT]
+   > C# Kod parçacığını veya Visual Basic kod parçacığını görüntülemek için bu sayfanın sağ üst kısmındaki programlama dili denetimini kullanın.<br><br>![Docs.Microsoft.com için programlama dili denetimi](../ide/media/docs-programming-language-control.png)
 
      Artık, belirttiğiniz süre sonunda bir olay harekete geçiren bir zamanlayıcı gibi saniye sayısını sayan bir yönteme ihtiyacınız vardır.
 
@@ -57,7 +68,7 @@ Bu öğreticinin üçüncü bölümünde, bir geri sayım süreölçeri ekleyere
      Yeni bir `if else` ifade eklediniz, bu, programları kararlar almak için nasıl söylersiniz. Bir `if else` ifade aşağıdaki gibi görünür.
 
     > [!NOTE]
-    > Aşağıdaki örnek yalnızca gösterim amaçlıdır; projenize eklemeyin.
+    > Aşağıdaki örnek yalnızca tanıtım amaçlıdır; projenize eklemeyin.
 
     ```vb
     If (something that your program will check) Then
@@ -102,10 +113,11 @@ Bu öğreticinin üçüncü bölümünde, bir geri sayım süreölçeri ekleyere
 
      Süreölçer, sayıyı aşağı doğru olarak başlatır. Zaman çalıştığında, test sonlanır ve yanıt görüntülenir. Aşağıdaki çizimde devam eden bir test gösterilmektedir.
 
-     ![Matematik sınavından devam](../ide/media/express_addcountdown.png) ediyor matematik testi devam ediyor
+     ![Matematik testi devam ediyor](../ide/media/express_addcountdown.png)<br/>
+*Matematik testi devam ediyor*
 
 ## <a name="to-continue-or-review"></a>Devam etmek veya gözden geçirmek için
 
-- Sonraki öğretici adımına gitmek için bkz [. 4. Adım: CheckTheAnswer () yöntemini](../ide/step-4-add-the-checktheanswer-parens-method.md)ekleyin.
+- Sonraki öğretici adımına gitmek için bkz  **[. 4. Adım: CheckTheAnswer () yöntemini](../ide/step-4-add-the-checktheanswer-parens-method.md)** ekleyin.
 
 - Önceki öğretici adımına dönmek için bkz [. 2. Adım: Rastgele bir ekleme sorunu](../ide/step-2-create-a-random-addition-problem.md)oluşturun.

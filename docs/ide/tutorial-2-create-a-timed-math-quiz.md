@@ -12,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c0c7f3695be87f6cb4081b3aa02fc7a129869a4c
-ms.sourcegitcommit: 9c07ae6fb18204ea080c8248994a683fa12e5c82
+ms.openlocfilehash: 51bda0a85735bf2b1dae5044b9e4ab8e5384f8ae
+ms.sourcegitcommit: 0e482cfc15f809b564c3de61646f29ecd7bfcba6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "70293690"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "70987874"
 ---
 # <a name="tutorial-2-create-a-timed-math-quiz"></a>Öğretici 2: Süreli matematik testi oluşturma
 
@@ -31,7 +31,7 @@ Bu öğreticide, bir sınavın belirli bir süre içinde dört rastgele aritmeti
 
 - Kodda temel aritmetik işlemler gerçekleştirin.
 
-Bitirdiğinizde, test, farklı sayılar dışında aşağıdaki resme benzer şekilde görünür:
+Bitirdiğinizde, test, farklı sayılar dışında aşağıdaki ekran görüntüsüne benzer şekilde görünür:
 
 ![Dört problemle matematik sınavından](../ide/media/express_finishedquiz.png)
 
@@ -40,7 +40,7 @@ Bitirdiğinizde, test, farklı sayılar dışında aşağıdaki resme benzer şe
 Sınavın tamamlanmış bir sürümünü indirmek için bkz. [tüm matematik testi öğreticisi örneği](https://code.msdn.microsoft.com/Complete-Math-Quiz-8581813c).
 
 > [!NOTE]
-> Bu öğreticide hem görsel C# hem de Visual Basic ele alınmaktadır, bu nedenle kullandığınız programlama diline özgü bilgilere odaklanırsınız.
+> Bu öğretici hem hem C# de Visual Basic, bu nedenle kullandığınız programlama diline özgü bilgilere odaklanırsınız.
 
 ## <a name="related-topics"></a>İlgili konular
 

@@ -14,16 +14,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: db966d2c0ac048bd650500ed6ab191e6bc867e36
-ms.sourcegitcommit: 9753c7544cec852ca5efd0834e0956d9e53a5734
+ms.openlocfilehash: 61c1efea7340425090adbdd1c9bc865c4a056d42
+ms.sourcegitcommit: 0e482cfc15f809b564c3de61646f29ecd7bfcba6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67043316"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "70987759"
 ---
 # <a name="learn-productivity-tips-and-tricks-for-the-debugger-in-visual-studio"></a>Hata Ayıklayıcı'Visual Studio için üretkenlik ipuçları ve püf noktaları öğrenin
 
-Visual Studio hata ayıklayıcı için birkaç üretkenlik ipuçları ve püf noktaları öğrenmek için bu konuyu okuyun. Hata ayıklayıcı temel özelliklerine bir bakış için bkz. [hata ayıklayıcıya ilk bakış](../debugger/debugger-feature-tour.md). Bu konu başlığında özellik turu dahil edilmeyen bazı alanlar biz karşılarız.
+Visual Studio hata ayıklayıcı için birkaç üretkenlik ipuçları ve püf noktaları öğrenmek için bu konuyu okuyun. Hata ayıklayıcının temel özelliklerine bakmak için bkz. [hata ayıklayıcıya ilk bakış](../debugger/debugger-feature-tour.md). Bu konu başlığında özellik turu dahil edilmeyen bazı alanlar biz karşılarız.
 
 ## <a name="pin-data-tips"></a>PIN veri ipuçları
 
@@ -39,6 +39,10 @@ Visual Studio tarafından desteklenen çoğu dillerde hata ayıklama oturumu ort
 
 Özelliğini kullanarak ve özellik kısıtlamaları hakkında daha fazla bilgi için bkz. [Düzenle ve devam et](../debugger/edit-and-continue.md).
 
+## <a name="edit-xaml-code-and-continue-debugging"></a>XAML kodunu Düzenle ve hata ayıklamaya devam et
+
+Bir hata ayıklama oturumu sırasında XAML kodunu değiştirmek için bkz. xaml [üzerinde çalışan xaml kodunu yazma ve hata ayıklama xaml çalışırken yeniden yükleme](xaml-hot-reload.md).
+
 ## <a name="debug-issues-that-are-hard-to-reproduce"></a>Yeniden oluşturulması zor olan sorunlarında hata ayıklama
 
 Zor veya uygulamanızda belirli bir durumu yeniden oluşturmak harcanan zamanı ortadan kaldırır, koşullu kesme noktası kullanımı yardımcı olup olmadığını düşünün. Kullanabileceğiniz [koşullu kesme noktaları](../debugger/using-breakpoints.md#BKMK_Specify_a_breakpoint_condition_using_a_code_expression) ve filtre uygulamayı (örneğin, bir durum içinde bir değişkeni depolamak bozuk veri) istenen duruma girene kadar uygulama kodunuza bozmayı önlemek için kesme noktaları. İfadeler, filtreler, isabet sayılarını vb. kullanarak koşulları ayarlayabilirsiniz.
@@ -53,9 +57,9 @@ Zor veya uygulamanızda belirli bir durumu yeniden oluşturmak harcanan zamanı 
 
 3. Koşul başka bir türünü ilgileniyorsanız seçin **filtre** yerine **koşullu ifade** içinde **kesme noktası ayarları** iletişim kutusunu ve sonra Filtre ipuçları.
 
-## <a name="configure-the-data-to-show-in-the-debugger"></a>Hata Ayıklayıcısı'nda gösterilecek verileri yapılandırma
+## <a name="configure-the-data-to-show-in-the-debugger"></a>Hata ayıklayıcıda gösterilecek verileri yapılandırın
 
-İçin C#, Visual Basic ve C++ (C++/CLI kodu), hata ayıklayıcıyı kullanarak göstermek için hangi bilgilerin söyleyebilirsiniz [DebuggerDisplay](../debugger/using-the-debuggerdisplay-attribute.md) özniteliği. İçin C++ kodu aynı kullanarak yapabileceğiniz [Natvis görselleştirmeler](create-custom-views-of-native-objects.md).
+, C#Visual Basic ve C++ (C++yalnızca/CLI kodu) için, hata ayıklayıcısına [DebuggerDisplay](../debugger/using-the-debuggerdisplay-attribute.md) özniteliğini kullanarak hangi bilgilerin gösterileceğini söyleyebilirsiniz. Kod C++ Için, [Natvis görselleştirmelerini](create-custom-views-of-native-objects.md)kullanarak aynı yapabilirsiniz.
 
 ## <a name="change-the-execution-flow"></a>Yürütme akışı değiştirme
 
@@ -110,7 +114,7 @@ Dize Görselleştirici bir dize dize türüne bağlı olarak biçimlendirilmiş 
 
 ![JSON dizesi Görselleştirici](../debugger/media/dbg-tips-string-visualizer-json.png "JSONStringVisualizer")
 
-Birkaç diğer türleri için hata ayıklayıcı pencerelerinde görüntülenen DataSet ve DataTable nesneleri gibi yerleşik Görselleştirici da açabilirsiniz.
+Hata ayıklayıcı penceresinde görünen veri kümesi ve DataTable nesneleri gibi diğer diğer türler için de bir yerleşik görselleştiricisi açabilirsiniz.
 
 ## <a name="break-into-code-on-handled-exceptions"></a>Koda işlenen özel durumlar üzerinde kesme
 

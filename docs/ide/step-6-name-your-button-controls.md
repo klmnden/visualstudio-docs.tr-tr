@@ -16,12 +16,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fc843cceea35d196e3f9719a0690764611865600
-ms.sourcegitcommit: 4dfe098ac0df294aad63e6b384d6575980798ca3
+ms.openlocfilehash: b739e3a786d3765721b562538148f044416d38d4
+ms.sourcegitcommit: 0e482cfc15f809b564c3de61646f29ecd7bfcba6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70887968"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "70987910"
 ---
 # <a name="step-6-name-your-button-controls"></a>6\. Adım: Düğme denetimlerinizi adlandırma
 
@@ -52,7 +52,7 @@ Formunuzda dört düğme vardır ve bunları **button1**, **button2**, **BUTTON3
 ***Kodla Form1.cs*** sekmesi *C#*
 
     > [!NOTE]
-    > Form1.cs sekmesinizdeki **showButton** **yerine showButton görüntülenebilir** .
+    > Form1.cs of Form1. vb sekmesinizdeki **showButton** **yerine showButton görüntülenebilir** .
 
 1. Kodun bu bölümüne odaklanın.
 
@@ -85,6 +85,9 @@ Formunuzda dört düğme vardır ve bunları **button1**, **button2**, **BUTTON3
     [!code-csharp[VbExpressTutorial1Step6_#2](../ide/codesnippet/CSharp/step-6-name-your-button-controls_2.cs)]
     
     [!code-vb[VbExpressTutorial1Step6_#2](../ide/codesnippet/VisualBasic/step-6-name-your-button-controls_2.vb)]
+
+    > [!NOTE]
+    > Kodunuz, "camelCase" harflerine olay işleyicilerini görüntülemeyebilir. 
 
     Eklediğiniz beş yönteme olay *işleyicileri*denir, çünkü uygulamanız her bir olay (bir düğme seçme veya bir kutu seçtiğinizde) olur.
 

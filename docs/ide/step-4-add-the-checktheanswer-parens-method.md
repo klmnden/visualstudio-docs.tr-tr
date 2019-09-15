@@ -1,7 +1,12 @@
 ---
 title: '4\. Adım: CheckTheAnswer() yöntemi ekleme'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: tutorial
+ms.prod: visual-studio-windows
+ms.technology: vs-ide-general
+ms.devlang:
+- csharp
+- vb
 dev_langs:
 - csharp
 - vb
@@ -11,20 +16,26 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c691b1db57fa1a00ad33441e36ff0f7f79716f11
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
+ms.openlocfilehash: 8c40150c3fbcd07abfad4a10155722750cbe4849
+ms.sourcegitcommit: 0e482cfc15f809b564c3de61646f29ecd7bfcba6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68416519"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "70987696"
 ---
 # <a name="step-4-add-the-checktheanswer-method"></a>4\. Adım: CheckTheAnswer() yöntemi ekleme
+
 Bu öğreticinin dördüncü bölümünde, matematik sorunlarına verilen yanıtların doğru olup olmadığını belirleyen `CheckTheAnswer()`bir yöntemi yazacaksınız. Bu konu, temel kodlama kavramlarıyla ilgili bir öğretici serisinin bir parçasıdır. Öğreticiye genel bakış için bkz [. öğretici 2: Süreli bir matematik testi](../ide/tutorial-2-create-a-timed-math-quiz.md)oluşturun.
 
 > [!NOTE]
-> Visual Basic ' de takip ediyorsanız, bu yöntem bir değer döndürdüğünden, `Function` her zamanki `Sub` anahtar sözcüğü yerine anahtar sözcüğünü kullanırsınız. Oldukça basittir: Sub bir değer döndürmez, ancak bir işlev yapar.
+> Bu konu, temel kodlama kavramlarıyla ilgili bir öğretici serisinin bir parçasıdır. 
+> - Öğreticiye genel bakış için bkz [. öğretici 2: Süreli bir matematik testi](../ide/tutorial-2-create-a-timed-math-quiz.md)oluşturun. 
+> - Kodun tamamlanmış bir sürümünü indirmek için bkz. [tüm matematik testi öğreticisi örneği](https://code.msdn.microsoft.com/Complete-Math-Quiz-8581813c).
 
 ## <a name="to-verify-whether-the-answers-are-correct"></a>Yanıtların doğru olup olmadığını doğrulamak için
+
+> [!NOTE]
+> Visual Basic ' de takip ediyorsanız, bu yöntem bir değer döndürdüğünden, `Function` her zamanki `Sub` anahtar sözcüğü yerine anahtar sözcüğünü kullanırsınız. Oldukça basittir: Sub bir değer döndürmez, ancak bir işlev yapar.
 
 1. `CheckTheAnswer()` Yöntemini ekleyin.
 
@@ -32,6 +43,9 @@ Bu öğreticinin dördüncü bölümünde, matematik sorunlarına verilen yanıt
 
      [!code-vb[VbExpressTutorial3Step4#8](../ide/codesnippet/VisualBasic/step-4-add-the-checktheanswer-parens-method_1.vb)]
      [!code-csharp[VbExpressTutorial3Step4#8](../ide/codesnippet/CSharp/step-4-add-the-checktheanswer-parens-method_1.cs)]
+
+     > [!IMPORTANT]
+     > C# Kod parçacığını veya Visual Basic kod parçacığını görüntülemek için bu sayfanın sağ üst kısmındaki programlama dili denetimini kullanın.<br><br>![Docs.Microsoft.com için programlama dili denetimi](../ide/media/docs-programming-language-control.png)
 
      Daha sonra, yeni <xref:System.Windows.Forms.Timer.Tick> `CheckTheAnswer()` yöntemi çağırmak için zamanlayıcının olay işleyicisine yönelik yöntemdeki kodu güncelleştirerek yanıtı kontrol edersiniz.
 
@@ -51,6 +65,6 @@ Bu öğreticinin dördüncü bölümünde, matematik sorunlarına verilen yanıt
 
 ## <a name="to-continue-or-review"></a>Devam etmek veya gözden geçirmek için
 
-- Sonraki öğretici adımına gitmek için bkz [. 5. Adım: NumericUpDown denetimleri](../ide/step-5-add-enter-event-handlers-for-the-numericupdown-controls.md)için Enter Olay işleyicileri ekleyin.
+- Sonraki öğretici adımına gitmek için bkz  **[. 5. Adım: NumericUpDown denetimleri](../ide/step-5-add-enter-event-handlers-for-the-numericupdown-controls.md)** için Enter Olay işleyicileri ekleyin.
 
 - Önceki öğretici adımına dönmek için bkz [. Adım 3: Geri sayım Zamanlayıcısı](../ide/step-3-add-a-countdown-timer.md)ekleyin.
