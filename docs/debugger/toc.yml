@@ -126,8 +126,12 @@
               href: edit-and-continue-visual-basic.md
             - name: Düzenle ve Devam Et ile kesme modunda düzenleme uygulama
               href: how-to-apply-edits-in-break-mode-with-edit-and-continue.md
-        - name: XAML kodu çalıştırarak yazma ve hata ayıklama
-          href: xaml-hot-reload.md
+        - name: XAML Çalışırken Yeniden Yükleme
+          items:
+            - name: XAML kodu çalıştırarak yazma ve hata ayıklama
+              href: xaml-hot-reload.md
+            - name: XAML Çalışırken Yeniden Yükleme ile ilgili sorunları giderme
+              href: xaml-hot-reload-troubleshooting.md
         - name: 'F# için Düzenle ve Devam Et desteklenmez'
           href: edit-and-continue-not-supported-for-f-hash.md
     - name: Hata ayıklayıcısı verilerini görüntüleme
