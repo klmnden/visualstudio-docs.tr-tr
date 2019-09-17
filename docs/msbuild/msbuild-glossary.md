@@ -24,7 +24,7 @@ Bu terimler Microsoft Build Engine (MSBuild) ve bileşenlerini tanımlamakta kul
 AssemblyFoldersEx\
 Üçüncü taraf satıcıların, tasarım zamanı çözümlemenin başvuru derlemelerini bulmak için nerede görünebileceği, desteklediği her bir sürüm için yolları depolayacağı bir kayıt defteri konumu.
 
-işlem
+işlem\
 Toplu işleme öğeleri, öğe meta verileri temelinde *toplu*iş olarak bilinen farklı kategorilere bölmek ve sonra her toplu işi kullanarak bir kez hedef veya görev çalıştırmak anlamına gelir. Toplu işleme, for--Loop yapısının MSBuild eşdeğeridir. Daha fazla bilgi için bkz. [toplu](../msbuild/msbuild-batching.md)işlem.
 
 Yapı kapsamı\
@@ -33,7 +33,7 @@ Yapı kapsamı, bir proje için ve çok projeli bir derlemede oluşturulan herha
 alt proje\
 Bkz. *Proje, alt*.
 
-koşul
+koşul\
 Birçok MSBuild öğesi koşullu olarak tanımlanabilir; diğer bir deyişle, `Condition` özniteliği öğesinde görüntülenir. Koşul olarak `true`değerlendirilmediği takdirde koşullu öğelerin içeriği yoksayılır. Daha fazla bilgi için bkz. [koşullar](../msbuild/msbuild-conditions.md).
 
 Tanım, öğe\
