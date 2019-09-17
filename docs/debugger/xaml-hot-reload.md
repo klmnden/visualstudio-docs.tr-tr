@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1b5591d9c05ee0449b9ff77729d73722c18e4d3a
-ms.sourcegitcommit: 0e482cfc15f809b564c3de61646f29ecd7bfcba6
+ms.openlocfilehash: aedc785a86966cf6425dfe35c5925efc9b78a509
+ms.sourcegitcommit: b02c40c1ba193e38b5ace14590a6d57590d3270f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "70987664"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71012611"
 ---
 # <a name="write-and-debug-running-xaml-code-with-xaml-hot-reload-in-visual-studio"></a>Visual Studio 'da XAML etkin yeniden yüklemesine sahip XAML kodunu yazma ve hata ayıklama
 
@@ -38,7 +38,7 @@ XAML dinamik yeniden yükleme, özellikle bu senaryolarda yararlı olur:
 
 Aşağıdaki çizim, kaynak kodunuzu açmak için canlı görsel ağaç kullanımını ve sonra düğme metnini ve düğme rengini değiştirmek için XAML etkin yeniden yüklemeyi gösterir.
 
-![XAML etkin yeniden yükleme](../debugger/media/xaml-hot-reload-using.gif)
+![XAML Çalışırken Yeniden Yükleme](../debugger/media/xaml-hot-reload-using.gif)
 
 > [!NOTE]
 > Visual Studio XAML etkin yeniden yüklemesi şu anda yalnızca Visual Studio 'da uygulamanızı çalıştırırken veya hata ayıklayıcı ekli olarak Visual Studio için Blend desteklenir (**F5** veya **hata ayıklamayı Başlat**). [Bir ortam değişkenini el ile](xaml-hot-reload-troubleshooting.md#verify-that-you-use-start-debugging-rather-than-attach-to-process)ayarlamadığınız sürece, [İşleme İliştir](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md) ' i kullanarak bu deneyimi etkinleştiremezsiniz.
@@ -66,5 +66,5 @@ XAML sık yükleme 'yi kullanırken aşağıdaki hatalarda gelebiliriz.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[](xaml-hot-reload-troubleshooting.md)
-[Xamarin. Forms için](/xamarin/xamarin-forms/xaml/hot-reload) xaml Hot Reload yükleme xaml Hot Reload sorunlarını giderme
+* [XAML dinamik yeniden yükleme sorunlarını giderme](xaml-hot-reload-troubleshooting.md)
+* [Xamarin. Forms için XAML Hot reload](/xamarin/xamarin-forms/xaml/hot-reload)

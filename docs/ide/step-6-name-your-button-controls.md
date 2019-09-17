@@ -16,12 +16,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b739e3a786d3765721b562538148f044416d38d4
-ms.sourcegitcommit: 0e482cfc15f809b564c3de61646f29ecd7bfcba6
+ms.openlocfilehash: db84490c5e3067012ec37643996bd3c0a4874abc
+ms.sourcegitcommit: b02c40c1ba193e38b5ace14590a6d57590d3270f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "70987910"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71012597"
 ---
 # <a name="step-6-name-your-button-controls"></a>6\. Adım: Düğme denetimlerinizi adlandırma
 
@@ -52,7 +52,7 @@ Formunuzda dört düğme vardır ve bunları **button1**, **button2**, **BUTTON3
 ***Kodla Form1.cs*** sekmesi *C#*
 
     > [!NOTE]
-    > Form1.cs of Form1. vb sekmesinizdeki **showButton** **yerine showButton görüntülenebilir** .
+    > Form1.cs veya Form1. vb sekmesinizdeki **showButton** **yerine showButton görüntülenebilir** .
 
 1. Kodun bu bölümüne odaklanın.
 
