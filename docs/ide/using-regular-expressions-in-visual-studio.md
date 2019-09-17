@@ -1,6 +1,6 @@
 ---
 title: Normal ifadeler kullanma
-ms.date: 06/12/2019
+ms.date: 09/13/2019
 ms.topic: conceptual
 f1_keywords:
 - vsregularexpressionhelp
@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aaea2e8a2c4fbbead563bd9565cf84466e00c75c
-ms.sourcegitcommit: 9c07ae6fb18204ea080c8248994a683fa12e5c82
+ms.openlocfilehash: 380201259cc19c15b68ea9142308f21b901a9241
+ms.sourcegitcommit: b02c40c1ba193e38b5ace14590a6d57590d3270f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "70293433"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71012579"
 ---
 # <a name="use-regular-expressions-in-visual-studio"></a>Visual Studio'da normal ifadeler kullanma
 
@@ -35,36 +35,33 @@ Aşağıdaki tabloda bazı normal ifade karakterleri, işleçler, yapılar ve mo
 |-------------|----------------|-------------|
 |Tek bir karakterle Eşleştir (satır sonu hariç). Daha fazla bilgi için, bkz. [herhangi bir karakter](/dotnet/standard/base-types/character-classes-in-regular-expressions#any-character-).|biçimindeki telefon numarasıdır.|`a.o`"About" içinde "Acro" ve "" değil "About" ve "ABO" içinde "Aro" ile eşleşir|
 |Önceki ifadenin sıfır veya daha fazla tekrarlamalarını eşleştirin (mümkün olduğunca çok karakterle Eşleştir). Daha fazla bilgi için bkz. [sıfır veya daha fazla kez eşleşme](/dotnet/standard/base-types/quantifiers-in-regular-expressions#match-zero-or-more-times-).|*|`a*r` "rack" daki "r", "ark" içinde "ar" ve "aardvark", "aar" ile eşleşir.|
-|Sıfır veya daha fazla kez herhangi bir karakterle eşleştir (joker karakter \*)|.*|`c.*e` "comme" "racket", "comment" "comme" ve "Code" ve "code" ile eşleşir.|
-|Önceki ifadenin bir veya daha çok tekrarı ile Eşleştir (mümkün olduğu kadar çok karakterle Eşleştir). Daha fazla bilgi için bkz. [bir veya daha fazla kez eşleşme](/dotnet/standard/base-types/quantifiers-in-regular-expressions#match-one-or-more-times-).|+|`e.+d`"besleyici" içinde "eed" eşleşir ancak "Ed" olarak eşleşmez|
-|Bir veya daha fazla (joker?) herhangi bir karakterle eşleştir|.+|`e.+e`"besleyici" içinde "epi" ile eşleşir ancak "Ee" değil|
-|Önceki ifadenin sıfır veya daha fazla tekrarlamalarını eşleştirin (mümkün olduğunca az karakter eşleştirin). Daha fazla bilgi için bkz. [sıfır veya daha fazla kez eşleşme (geç eşleşme)](/dotnet/standard/base-types/quantifiers-in-regular-expressions#match-zero-or-more-times-lazy-match-).|*?|`e.*?e`"besleyici" içinde "Ee" ile eşleşir ancak "göz yormayabilir"|
-|Önceki ifadenin bir veya daha çok tekrarı ile Eşleştir (mümkün olduğu kadar az karakterle Eşleştir). Daha fazla bilgi için bkz. [bir veya daha fazla kez eşleşme (geç eşleşme)](/dotnet/standard/base-types/quantifiers-in-regular-expressions#match-one-or-more-times-lazy-match-).|+?|`e.+?e`"Enterprise" içinde "Ente" ve "erprise" ile eşleşir ancak "Enterprise" sözcüğünün tamamını kullanmaz|
+|Herhangi bir karakteri sıfır veya daha fazla kez eşleştirin.|.*|`c.*e` "comme" "racket", "comment" "comme" ve "Code" ve "code" ile eşleşir.|
+|Önceki ifadenin bir veya daha çok tekrarı ile Eşleştir (mümkün olduğu kadar çok karakterle Eşleştir). Daha fazla bilgi için bkz. [bir veya daha fazla kez eşleşme](/dotnet/standard/base-types/quantifiers-in-regular-expressions#match-one-or-more-times-).|+|`e+d`"faed" içinde "besleyici" ve "Ed" içinde "eed" ile eşleşir|
+|Karakterleri bir veya daha fazla kez eşleştirin.|.+|`e.+e`"besleyici" içinde "eleştirme" ile eşleşir, ancak "Feed" içinde eşleşme buluyor|
+|Önceki ifadenin sıfır veya daha fazla tekrarlamalarını eşleştirin (mümkün olduğunca az karakter eşleştirin). Daha fazla bilgi için bkz. [sıfır veya daha fazla kez eşleşme (geç eşleşme)](/dotnet/standard/base-types/quantifiers-in-regular-expressions#match-zero-or-more-times-lazy-match-).|*?|`\w*?d`"faed" içinde "FAD" ve "Ed" ile eşleşir, ancak geç eşleşme nedeniyle "Faded" sözcüğünün tamamını kullanmaz|
+|Önceki ifadenin bir veya daha çok tekrarı ile Eşleştir (mümkün olduğu kadar az karakterle Eşleştir). Daha fazla bilgi için bkz. [bir veya daha fazla kez eşleşme (geç eşleşme)](/dotnet/standard/base-types/quantifiers-in-regular-expressions#match-one-or-more-times-lazy-match-).|+?|`e\w+?`"faed" içinde "Ee" ve "Ed" içinde "Ee" ile eşleşir, ancak "Soldur" içinde hiçbir eşleşme bulmazlar|
 |Eşleşme dizesini [bir satırın veya dizenin başına](/dotnet/standard/base-types/anchors-in-regular-expressions#start-of-string-or-line-) bağla|^|`^car`"otomobil" sözcüğüyle yalnızca bir satırın başlangıcında göründüğünde eşleşir|
-|Eşleşme dizesini [bir satırın sonuna](/dotnet/standard/base-types/anchors-in-regular-expressions#end-of-string-or-line-) bağla|\r?$|`end\r?$`yalnızca bir satırın sonunda göründüğünde "End" ile eşleşir|
-|Eşleşme dizesini dosyanın sonuna bağlantı|$|`end$`Yalnızca dosyanın sonunda göründüğünde "End" ile eşleşir|
+|Eşleşme dizesini [bir satırın sonuna](/dotnet/standard/base-types/anchors-in-regular-expressions#end-of-string-or-line-) bağla|\r?$|`car\r?$`"otomobil" ifadesi yalnızca bir satırın sonunda göründüğünde eşleşir|
+|Eşleşme dizesini dosyanın sonuna bağlantı|$|`car$`Yalnızca dosyanın sonunda göründüğünde "otomobil" ile eşleşir|
 |Bir kümedeki tek bir karakterle eşleştir|[abc]|`b[abc]`"ba", "BB" ve "BC" ile eşleşir|
-|Karakter aralığındaki herhangi bir karakterle eşleştir|[a-f]|`be[n-t]`"altta", "Ben" içinde "bir" ve "bes" içinde "Bet" ve "altı" içinde "bes" ile eşleşir, ancak "aşağıda" değil|
+|Karakter aralığındaki herhangi bir karakterle eşleştir|[a-f]|`be[n-t]`"sonra", "in" içinde "", "ve" bes "içinde" Bet "ile eşleşir, ancak" aşağıda "içinde eşleşme yok buluyor|
 |Yakalama ve parantez içinde yer alan ifadesi örtük olarak numaralandır|()|`([a-z])X\1` "aXa" ve "bXb" ancak değil "aXb" ile eşleşir. "\1", ilk ifade grubu "[a-z]" anlamına gelir. Daha fazla bilgi için bkz. [yakalama grupları ve değiştirme desenleri](#capture-groups-and-replacement-patterns). |
 |Eşlemeyi geçersiz kıl|(?!abc)|`real(?!ity)` "gerçek" bir "realty" ve "really" eşleşir ancak değil içinde "gerçeklik." Ayrıca ikinci "real" (ancak değil ilk "real") "realityreal" içinde bulur.|
-|Belirli bir karakter kümesinde olmayan herhangi bir karakterle eşleştirin. Daha fazla bilgi için bkz. [negatif karakter grubu](/dotnet/standard/base-types/character-classes-in-regular-expressions#negative-character-group-).|[^ abc]|`be[^n-t]`"önceki" içinde "BEF", "Behind" içinde "beh" ve "Bel" içinde "aşağıda" değil, "Bel" ile eşleşir|
+|Belirli bir karakter kümesinde olmayan herhangi bir karakterle eşleştirin. Daha fazla bilgi için bkz. [negatif karakter grubu](/dotnet/standard/base-types/character-classes-in-regular-expressions#negative-character-group-).|[^ abc]|`be[^n-t]`"önceki" içinde "BEF", "arkasında" ve "Bel" içinde "ın" içinde "Bel" eşleşir, ancak "aşağıda" içinde eşleşme yok buluyor|
 |Simgeden önceki veya bir ifadeden sonraki ifadeyle Eşleştir|&#124;|`(sponge|mud) bath`"sünge banyo" ve "Mud banyo" ile eşleşir|
 |Ters eğik çizgiden sonraki [karakteri kaçış](/dotnet/standard/base-types/character-escapes-in-regular-expressions)| \\ |`\^`^ karakteriyle eşleşir|
 |Önceki karakterin veya grubun oluşum sayısını belirtin. Daha fazla bilgi için bkz. [tam n kez eşleşme](/dotnet/standard/base-types/quantifiers-in-regular-expressions#match-exactly-n-times-n).|{n}, burada ' n ' oluşum sayısıdır|`x(ab){2}x`"xabex" ile eşleşir<br/>`x(ab){2,3}x`"xabex" ve "xabababx" ile eşleşir ancak "xababababx" olarak eşleşmez|
 |[Unicode kategorisindeki metni eşleştirin](/dotnet/standard/base-types/character-classes-in-regular-expressions#unicode-category-or-unicode-block-p). Unicode karakter sınıfları hakkında daha fazla bilgi için bkz. [Unicode standart 5,2 karakter özellikleri](http://www.unicode.org/versions/Unicode5.2.0/ch04.pdf).|\p{X}, "X" değerinin Unicode numarası olduğu.|`\p{Lu}`"Thomas tikan" içinde "T" ve "D" ile eşleşir|
-|[Sözcük sınırını Eşleştir](/dotnet/standard/base-types/anchors-in-regular-expressions#word-boundary-b)|\b (bir karakter sınıfı dışında `\b` bir sözcük sınırını belirler ve bir karakter sınıfı içinde `\b` Geri Al ile eşleşir.)|`\bin`"in" içinde "içinde" eşleşir ancak "Pinto" Not etmez|
+|[Sözcük sınırını Eşleştir](/dotnet/standard/base-types/anchors-in-regular-expressions#word-boundary-b)|\b (bir karakter sınıfı dışında `\b` bir sözcük sınırını belirler ve bir karakter sınıfı içinde `\b` Geri Al ile eşleşir.)|`\bin`"iç" içinde "içinde" eşleşir, ancak "Pinto" içinde eşleşme yok|
 |Satır sonuyla eşleştir (diğer bir deyişle, satır başı, izleyen yeni bir satır)|\r?\n|`End\r?\nBegin`"End" ve "Begin" ile yalnızca "End" satırdaki son dize olduğunda ve "Begin" bir sonraki satırdaki ilk dizeyse|
 |Herhangi bir [sözcük karakteri](/dotnet/standard/base-types/character-classes-in-regular-expressions#word-character-w) Eşleştir|\w|`a\wd`"Add" ve "A1D" ile eşleşir, ancak "a d" eşleşmez|
 |Herhangi bir [boşluk karakteriyle](/dotnet/standard/base-types/character-classes-in-regular-expressions#whitespace-character-s) Eşleştir|\s|`Public\sInterface`"ortak arabirim" ifadesi ile eşleşir|
-|Herhangi bir [ondalık basamak karakteriyle](/dotnet/standard/base-types/character-classes-in-regular-expressions#decimal-digit-character-d) Eşleştir|\d|`\d`"3456", "2" ve "1" içinde "1" içinde "3" ve "1" ile eşleşir|
-|Unicode karakterini eşleştir|\uXXXX nerede XXXX Unicode karakter değerini belirtir.|`\u0065`"e" karakteriyle eşleşir|
-|Tanımlayıcı eşleştir|\b [\_\w-[0-9]] [\_\w]*\b|"Type1" ile eşleşir, ancak "& Type1" veya "#define" olarak eşleşmez|
-|Tırnak işaretleri içindeki bir dizeyle eşleştir|((\\".+?\\")&#124;('.+?'))|Tek veya çift tırnak içinde herhangi bir dizeyle eşleşir|
-|Onaltılık bir sayıyla eşleştir|\b0 [xx] ([0-9A-FA-F] +\)\b|"0xc67f" ile eşleşir ancak "0xc67g" olarak eşleşmez|
-|Eşleşme tamsayıları ve ondalık sayıları|\b[0-9]*\\.\*[0-9]+\b|"1,333" ile eşleşir|
+|Herhangi bir [ondalık basamak karakteriyle](/dotnet/standard/base-types/character-classes-in-regular-expressions#decimal-digit-character-d) Eşleştir|\d|`\d`"WD40" içinde "4" ve "0" ile eşleşir|
+
+Bazı işleçleri ve yapıları bir onaltılık sayıyla `\b0[xX]([0-9a-fA-F]+\)\b`eşleşecek şekilde birleştiren örnek bir normal ifade. Bu ifade "0xc67f" ile eşleşir ancak "0xc67g" olarak eşleşmez.
 
 > [!TIP]
-> Windows işletim sistemlerinde satırların çoğu "\r\n" (bir yeni satırın izlediği bir satır başı) bitmelidir. Bu karakterler görünür değildir ancak düzenleyicide bulunur ve .NET normal ifade hizmetine iletilir.
+> Windows işletim sistemlerinde satırların çoğu "\r\n" (bir yeni satırın izlediği bir satır başı) bitmelidir. Bu karakterler görünmez, ancak düzenleyicide bulunur ve .NET normal ifade hizmetine geçirilir.
 
 ## <a name="capture-groups-and-replacement-patterns"></a>Yakalama grupları ve değiştirme desenleri
 
