@@ -9,19 +9,19 @@ ms.devlang:
 - csharp
 - vb
 dev_langs:
-- csharp
-- vb
+- CSharp
+- VB
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c35ee154dd0656f1eb29fd8a03e8c1b63876ed2
-ms.sourcegitcommit: 0e482cfc15f809b564c3de61646f29ecd7bfcba6
+ms.openlocfilehash: 2d2e77b3bfd62bf1dfdf15ff083b07459bd3bf77
+ms.sourcegitcommit: 2db01751deeee7b2bdb1db25419ea6706e6fcdf8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "70987678"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71062666"
 ---
 # <a name="step-10-write-code-for-additional-buttons-and-a-check-box"></a>10. Adım: Ek düğmeler ve onay kutusu için kod yazma
 
@@ -43,7 +43,7 @@ Aşağıdaki kodu **Form1** kod dosyanıza ekleyin (*Form1.cs* veya *Form1. vb*)
   [!code-vb[VbExpressTutorial1Step9_10#2](../ide/codesnippet/VisualBasic/step-10-write-code-for-additional-buttons-and-a-check-box_1.vb)]
 
 > [!NOTE]
-> Kodunuz "camelCase" harflerini görüntülenmeyebilir. 
+> Kodunuz "camelCase" harflerini görüntülenmeyebilir.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

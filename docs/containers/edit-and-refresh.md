@@ -1,20 +1,20 @@
 ---
 title: Yerel bir Docker kapsayıcısında uygulamalarda hata ayıklama | Microsoft Docs
 description: Yerel bir Docker kapsayıcısında çalışan bir uygulamayı değiştirmeyi, Düzenle ve Yenile aracılığıyla kapsayıcıyı yenilemeyi ve sonra hata ayıklama kesme noktalarını ayarlamayı öğrenin.
+ms.author: ghogen
 author: ghogen
 manager: jillfra
 ms.assetid: 480e3062-aae7-48ef-9701-e4f9ea041382
 ms.topic: conceptual
 ms.workload: multiple
 ms.date: 07/25/2019
-ms.author: ghogen
 ms.technology: vs-azure
-ms.openlocfilehash: d7a7fa83fe0976ee1e08c6c614a11f783178a285
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
+ms.openlocfilehash: 5af092bbcb987f45b10121f37d40eaa5466c3da5
+ms.sourcegitcommit: 2db01751deeee7b2bdb1db25419ea6706e6fcdf8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70179858"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71062181"
 ---
 # <a name="debug-apps-in-a-local-docker-container"></a>Yerel bir Docker kapsayıcısında uygulamalarda hata ayıklama
 
@@ -48,14 +48,14 @@ Docker kapsayıcıları .NET Framework ve .NET Core projeleri için kullanılabi
 [!INCLUDE [create-aspnet5-app](../azure/includes/create-aspnet5-app.md)]
 ::: moniker-end
 ::: moniker range=">= vs-2019"
-[! [Create-aspnet5-App-2019](../azure/includes/vs-2019/create-aspnet5-app-2019.md) dahil
+[!INCLUDE [create-aspnet5-app-2019](../azure/includes/vs-2019/create-aspnet5-app-2019.md)]
 ::: moniker-end
 
 ### <a name="edit-your-code-and-refresh"></a>Kodunuzu düzenleyin ve yenileyin
 
 Değişiklikleri hızlıca yinelemek için, uygulamanızı bir kapsayıcıda başlatabilirsiniz. Daha sonra, IIS Express istediğiniz gibi görüntüleyerek değişiklik yapmaya devam edin.
 
-1. **Çözüm yapılandırmasını** **hata ayıklama**olarak ayarlayın. Ardından, Docker görüntünüzü derlemek ve yerel olarak çalıştırmak için CTRL + F5 tuşlarına basın.
+1. **Çözüm yapılandırmasını** **hata ayıklama**olarak ayarlayın. Ardından, Docker görüntünüzü derlemek ve yerel olarak çalıştırmak için **CTRL**+**F5** tuşuna basın.
 
     Kapsayıcı görüntüsü bir Docker kapsayıcısında oluşturulup çalıştırıldığında, Visual Studio varsayılan tarayıcınızda Web uygulamasını başlatır.
 

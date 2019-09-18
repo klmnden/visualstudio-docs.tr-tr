@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: d6d891001bbb46e01049c2c8d71bb25372bb8c29
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 07a5130edd534008b4343ab439bf20bf63bc3cde
+ms.sourcegitcommit: 2db01751deeee7b2bdb1db25419ea6706e6fcdf8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69551064"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71062407"
 ---
 # <a name="fxcop-rule-port-status"></a>FxCop kural bağlantı noktası durumu
 
@@ -69,8 +69,8 @@ Kural Kimliği | Başlık
 [CA1065](ca1065-do-not-raise-exceptions-in-unexpected-locations.md) | Beklenmeyen konumlarda özel durum harekete geçirmeyin
 CA1066 | Tür {0} , eşit olarak\<geçersiz kılındığından IEquatable T > uygulamalıdır
 CA1067 | IEquatable\<T > uygularken Object. Equals (nesne) öğesini geçersiz kıl
-CA1068 | CancellationToken parametreleri en son gelmelidir
-CA1200 | Ön ek ile cref etiketlerini kullanmaktan kaçının
+[CA1068](ca1068.md) | CancellationToken parametreleri en sonda olmalıdır
+CA1200 | cref etiketlerini ön ek ile kullanmaktan kaçının
 [CA1303](ca1303-do-not-pass-literals-as-localized-parameters.md) | Harfleri yerelleştirilmiş parametreler olarak göndermeyin
 [CA1304](ca1304-specify-cultureinfo.md) | CultureInfo belirt
 [CA1305](ca1305-specify-iformatprovider.md) | IFormatProvider belirt
@@ -193,7 +193,7 @@ CA5369 | Seri durumdan çıkarma Için XmlReader kullanın
 CA5370 | Okuyucuyu doğrulamak Için XmlReader kullanın
 CA5371 | Şema okuma Için XmlReader kullanın
 CA5372 | XPathDocument Için XmlReader kullanın
-CA5373 | Kullanımdan kalkmış anahtar türetme işlevini kullanma
+CA5373 | Eski anahtar türetme işlevini kullanmayın
 CA5374 | XslTransform kullanma
 CA5375 | Hesap paylaşılan erişim Imzasını kullanma
 CA5376 | SharedAccessProtocol HttpsOnly kullanın
@@ -204,7 +204,7 @@ CA9999 | Çözümleyici sürümü uyumsuzluğu
 
 ## <a name="unported-rules"></a>Bağlantı edilmemiş kurallar
 
-[FxCop çözümleyicilerine](install-fxcop-analyzers.md) eklenmemiş kuralların kümesi, henüz bir yandan hala bir yandan da kaldırılmayan ve bu öğelerden [](#rules-that-may-be-ported)çıkılmamış olan kurallardan oluşur. [](#deprecated-rules)
+[FxCop çözümleyicilerine](install-fxcop-analyzers.md) eklenmemiş kuralların kümesi, henüz bir [yandan hala bir yandan da](#rules-that-may-be-ported)kaldırılmayan ve bu [öğelerden çıkılmamış](#deprecated-rules)olan kurallardan oluşur.
 
 ### <a name="rules-that-may-be-ported"></a>Bağlantı halinde olabilecek kurallar
 

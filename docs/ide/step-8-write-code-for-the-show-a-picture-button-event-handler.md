@@ -9,19 +9,19 @@ ms.devlang:
 - csharp
 - vb
 dev_langs:
-- csharp
-- vb
+- CSharp
+- VB
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b5502101bb2e199830b68c0fe0b929608a427ed
-ms.sourcegitcommit: 0e482cfc15f809b564c3de61646f29ecd7bfcba6
+ms.openlocfilehash: 744fd81fe8121936def42277b442d8e54ea88786
+ms.sourcegitcommit: 2db01751deeee7b2bdb1db25419ea6706e6fcdf8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "70987938"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71062865"
 ---
 # <a name="step-8-write-code-for-the-show-a-picture-button-event-handler"></a>8\. Adım: Resim göster düğmesi olay işleyicisi için kod yazma
 
@@ -44,7 +44,7 @@ IntelliSense, daha sonra ne yapmak istediğinizi belirlemeyi dener ve listeden s
     ![Visual C&#35; Code ile IntelliSense](../ide/media/express_ifintellisense.png)
 
     > [!NOTE]
-    > Kodunuz, "camelCase" harflerine olay işleyicilerini görüntülemeyebilir. 
+    > Kodunuz, "camelCase" harflerine olay işleyicilerini görüntülemeyebilir.
 
 1. **IntelliSense** penceresi, sözcüğü `if`vurgulaması gerekir. (Değilse, küçük harf `f`girin ve bu işlem olur.) **IntelliSense** penceresinin yanındaki bir *araç ipucu* kutusunun Açıklama, **If ifadesi için kod parçacığı**gibi göründüğünü fark edebilirsiniz. (Visual Basic araç ipucu, bunun bir parçacık olduğunu ancak biraz farklı bir ifade olduğunu da belirtir.) Bu kod parçacığını kullanmak istiyorsanız, kodunuza eklemek `if` için **sekme** tuşunu seçin. Sonra `if` kod parçacığını kullanmak için **Tab** tuşunu yeniden seçin. (Başka bir yerde tercih ederseniz **IntelliSense** penceresi kaybolduysa, üzerine `i` geri yazıp yeniden yazın ve **IntelliSense** penceresi tekrar açılır.)
 

@@ -139,7 +139,7 @@
       displayName: Feature tour
       href: ide/quickstart-ide-orientation.md
     - name: 'C++: Konsol uygulaması oluşturma'
-      href: ide/getting-started-with-cpp-in-visual-studio.md
+      href: /cpp/get-started/tutorial-console-cpp
     - name: 'Python: Web uygulaması oluşturma'
       href: ide/quickstart-python.md
     - name: 'Node.js: Web uygulaması oluşturma'

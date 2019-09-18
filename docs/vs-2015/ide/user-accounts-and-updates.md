@@ -1,5 +1,5 @@
 ---
-title: Kullanıcı hesapları ve güncelleştirmeler | Microsoft Docs
+title: Kullanıcı hesapları ve güncelleştirmeleri | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -9,27 +9,32 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e955eaacd2f290558c5d786439373a9cc8febb35
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4ecd7a4d237a53a19286790346f790b82b981f60
+ms.sourcegitcommit: 2db01751deeee7b2bdb1db25419ea6706e6fcdf8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68158281"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71062872"
 ---
-# <a name="user-accounts-and-updates"></a>Kullanıcı Hesapları ve Güncelleştirmeler
+# <a name="user-accounts-and-updates"></a>Kullanıcı hesapları ve güncelleştirmeler
+
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio'nun kendisine bağlı bir ortamdır. Oturum açma tarafından bu hesaba bağlı tüm hesaplarının yanı sıra, kullanıcı hesabı ile ilişkili tüm hizmetlere erişim sağlar. Visual Studio kullandığınız her yerde hesap ayarlarınız sizinle birlikte Dolaşımda olur. Bireysel kullanıcılar için belirli bir Visual Studio örneğinde izin düzeylerinin yapılandırabilirsiniz. Ayrıca, Visual Studio yüklemenizin bir SDK'sı gibi herhangi bir bileşeni sahip bir güncelleştirme kullanılabilir olduğunda bildirir.  
+> [!WARNING]
+> Visual Studio 2015, koşullu erişim için yapılandırılmış kaynaklara erişemez. Bu kaynaklarla çalışmak için Visual Studio 2017 veya sonraki bir sürüme yükseltin.
+
+Visual Studio 'Nun kendisi bağlı bir ortamdır. Oturum açarak, Kullanıcı hesabınızla ilişkili tüm hizmetlere ve bu firmayla bağlantılı tüm hesaplara erişimi etkinleştirebilirsiniz. Hesap ayarlarınız, Visual Studio 'Yu kullandığınız her yerde sizinle dolaşımda. Belirli bir Visual Studio örneğinde, bireysel kullanıcılar için izin düzeylerini yapılandırabilirsiniz. Ayrıca, bir SDK gibi yüklemenizin bir güncelleştirmesi mevcut olduğunda Visual Studio size bildirir.  
   
 ## <a name="in-this-section"></a>Bu bölümde  
   
 |||  
 |-|-|  
-|[Visual Studio'da Oturum Açma](../ide/signing-in-to-visual-studio.md)|Neden ve nasıl açıklar Visual Studio'ya oturum açmak için.|  
-|[Birden çok kullanıcı hesabıyla çalışma](../ide/work-with-multiple-user-accounts.md)|Birden çok Microsoft hesapları ve/veya iş ilişkilendir ya da Okul hesapları tüm hesaplarınızdan ve hizmetlerindeki kaynaklara erişim sağlamak için açıklar.|  
-|[Eşitlenmiş Ayarlar](../ide/synchronized-settings-in-visual-studio.md)|Ayarları nasıl Dolaşımda açıklar.|  
-|[Visual Studio’nun Kilidini Açma](../ide/how-to-unlock-visual-studio.md)|Çeşitli senaryolarda Visual Studio'nun kilidini açıklar.|  
-|[Bildirimler](../ide/visual-studio-notifications.md)|Nasıl Visual Studio size bildirir açıklar bileşenleri SDK'ları veya Visual Studio'nun kendisine gibi bir güncelleştirme kullanılabilir olduğunda.|  
+|[Visual Studio'da Oturum Açma](../ide/signing-in-to-visual-studio.md)|Visual Studio 'da nasıl ve nasıl oturum açılacağını açıklar.|  
+|[Birden çok kullanıcı hesabıyla çalışma](../ide/work-with-multiple-user-accounts.md)|Birden çok Microsoft hesabı ve/veya iş veya okul hesabını, tüm hesaplarınızdan gelen kaynak ve hizmetlere erişimi etkinleştirmek üzere nasıl ilişkilendireceğini açıklar.|  
+|[Eşitlenmiş Ayarlar](../ide/synchronized-settings-in-visual-studio.md)|Ayarların nasıl dolaşımını açıklar.|  
+|[Visual Studio’nun Kilidini Açma](../ide/how-to-unlock-visual-studio.md)|Çeşitli senaryolarda Visual Studio 'Nun nasıl kilidinin kaldırılacağını açıklar.|  
+|[Bildirimler](../ide/visual-studio-notifications.md)|SDK 'lar ya da Visual Studio 'Nun kendisi gibi bileşenler için kullanılabilir bir güncelleştirme olduğunda Visual Studio 'Nun size nasıl bildirim sağladığını açıklar.|  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Visual Studio IDE](../ide/visual-studio-ide.md)
+## <a name="see-also"></a>Ayrıca bkz.
+
+- [Visual Studio IDE](../ide/visual-studio-ide.md)

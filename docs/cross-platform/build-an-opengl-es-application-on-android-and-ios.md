@@ -1,7 +1,7 @@
 ---
 title: Android ve iOS üzerinde OpenGL ES uygulaması oluşturma | Microsoft Docs
 ms.custom: ''
-ms.date: 05/16/2019
+ms.date: 09/17/2019
 ms.technology: vs-ide-mobile
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +12,12 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: b235576f21b63a7be4170f36abf58bed9fab9df3
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 259092668c336a90758a669efdc4b154b2097cab
+ms.sourcegitcommit: 541a0556958201ad6626bc8638406ad02640f764
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68923881"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71079267"
 ---
 # <a name="build-an-opengl-es-application-on-android-and-ios"></a>Android ve iOS üzerinde OpenGL ES uygulaması oluşturma
 
@@ -25,17 +25,21 @@ ms.locfileid: "68923881"
 
 ## <a name="requirements"></a>Gereksinimler
 
-İOS ve Android için bir OpenGL ES uygulaması oluşturabilmeniz için önce tüm sistem gereksinimlerini karşıladığınızdan emin olun. Henüz yapmadıysanız, Visual Studio Yükleyicisi C++ iş yüküyle mobil geliştirmeyi yükleyebilirsiniz. İOS için derlemek için isteğe bağlı C++ iOS geliştirme araçları 'nı dahil edin. Android için derlemek için Android geliştirme araçları C++ 'nı ve gerekli üçüncü taraf araçları 'nı yüklemek için: Android NDK, Apache Ant, Google Android Emulator ve Intel Hardware Accelerated Execution Manager. Ardından, Intel HAXM ve Android Emulator sisteminizde çalıştırılacak şekilde yapılandırın. Daha fazla bilgi ve ayrıntılı yönergeler için bkz. [platformlar C++ arası mobil geliştirme için Visual Install](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md). İOS uygulamasını derlemek ve test etmek için, yükleme yönergelerine göre ayarlanmış bir Mac bilgisayar olması gerekir. İOS geliştirme için ayarlama hakkında daha fazla bilgi için bkz. [iOS kullanarak derlemek için araçları kurma ve yapılandırma](../cross-platform/install-and-configure-tools-to-build-using-ios.md).
+İOS ve Android için bir OpenGL ES uygulaması oluşturabilmeniz için önce tüm sistem gereksinimlerini karşıladığınızdan emin olun. Henüz yapmadıysanız, Visual Studio Yükleyicisi C++ iş yüküyle mobil geliştirmeyi yükleyebilirsiniz. İOS için derlemek için isteğe bağlı C++ iOS geliştirme araçları 'nı dahil edin. Android için derlemek için Android geliştirme araçları C++ 'nı ve gerekli üçüncü taraf araçları 'nı yüklemek için: Android NDK, Apache Ant ve Google Android Emulator. Intel platformlarında daha iyi öykünücü performansı için, ayrıca Intel Hardware Accelerated Execution Manager (HAXM) yüklemenizi öneririz. Ardından, Intel HAXM ve Android Emulator sisteminizde çalıştırılacak şekilde yapılandırın. Daha fazla bilgi ve ayrıntılı yönergeler için bkz. [platformlar C++ arası mobil geliştirme için Visual Install](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md).
+
+İOS uygulamasını derlemek ve test etmek için, yükleme yönergelerine göre ayarlanmış bir Mac bilgisayar olması gerekir. İOS geliştirme için ayarlama hakkında daha fazla bilgi için bkz. [iOS kullanarak derlemek için araçları kurma ve yapılandırma](../cross-platform/install-and-configure-tools-to-build-using-ios.md).
 
 ## <a name="create-a-new-opengles-application-project"></a>Yeni bir OpenGLES uygulama projesi oluşturma
 
-Bu öğreticide, önce yeni bir OpenGL ES uygulaması projesi oluşturun ve ardından Android için Visual Studio öykünücüsü içinde varsayılan uygulamayı derleyin ve çalıştırın. Ardından, iOS için uygulamayı derleyin ve uygulamayı bir iOS cihazında çalıştırırsınız.
+Bu öğreticide, önce yeni bir OpenGL ES uygulama projesi oluşturursunuz. sonra, Android için Visual Studio öykünücüsü ' nde varsayılan uygulamayı derleyin ve çalıştırın. Ardından, iOS için uygulamayı derleyin ve uygulamayı bir iOS cihazında çalıştırırsınız.
 
-1. Visual Studio'da **dosya** > **yeni** > **proje**.
+::: moniker range="vs-2017"
 
-1. **Yeni proje** iletişim kutusunda, **Şablonlar**altında  >  **görsel C++**  **platformlar arası**' ı seçin ve ardından **OpenGLES uygulaması (Android, iOS)** şablonunu seçin.
+1. Visual Studio 'da **Dosya** > **Yeni** > **Proje**' yi seçin.
 
-1. Uygulamaya benzer `MyOpenGLESApp`bir ad verin ve ardından **Tamam**' ı seçin.
+1. **Yeni proje** iletişim kutusunda, **Şablonlar**altında > **görsel C++**  **platformlar arası**' ı seçin ve ardından **OpenGLES uygulaması (Android, iOS)** şablonunu seçin.
+
+1. Uygulamaya *Myopengtasapp*gibi bir ad verin ve ardından **Tamam**' ı seçin.
 
    ![Yeni OpenGLES uygulama projesi](../cross-platform/media/cppmdd_opengles_newproj.PNG "CPPMDD_OpenGLES_NewProj")
 
@@ -43,7 +47,23 @@ Bu öğreticide, önce yeni bir OpenGL ES uygulaması projesi oluşturun ve ard�
 
    ![Çözüm Gezgini Myopengtasapp](../cross-platform/media/cppmdd_opengles_solexpl.PNG "CPPMDD_OpenGLES_SolExpl")
 
-   Yeni OpenGL ES uygulama çözümü, üç kitaplık projesi ve iki uygulama projesi içerir. Kitaplıklar klasörü, Paylaşılan koda başvuran, paylaşılan bir kod projesi ve platforma özel iki proje içerir:
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. Visual Studio 'da **Dosya** > **Yeni** > **Proje**' yi seçin.
+
+1. **Yeni proje oluştur** Iletişim kutusunda **OpenGLES uygulaması (Android, iOS)** şablonunu seçin ve ardından **İleri**' yi seçin.
+
+1. **Yeni projenizi yapılandırın** iletişim kutusunda, **Proje adı**alanına *Myopengtasapp* gibi bir ad girin ve ardından **Oluştur**' u seçin.
+
+   Visual Studio yeni çözümü oluşturur ve Çözüm Gezgini açar.
+
+   ![Çözüm Gezgini Myopengtasapp](../cross-platform/media/cppmdd_opengles_solexpl.PNG "CPPMDD_OpenGLES_SolExpl")
+
+::: moniker-end
+
+Yeni OpenGL ES uygulama çözümü, üç kitaplık projesi ve iki uygulama projesi içerir. Kitaplıklar klasörü, Paylaşılan koda başvuran, paylaşılan bir kod projesi ve platforma özel iki proje içerir:
 
 - `MyOpenGLESApp.Android.NativeActivity`Uygulamanızı Android 'de yerel bir etkinlik olarak uygulayan başvuruları ve birleştirici kodu içerir. Birleştirici kodundan gelen giriş noktaları, içindeki `MyOpenGLESApp.Shared`ortak paylaşılan kodu içeren *Main. cpp*öğesine uygulanır. Önceden derlenmiş üstbilgiler *pch. h*içinde. Bu yerel etkinlik uygulaması projesi, `MyOpenGLESApp.Android.Packaging` proje tarafından çekilen paylaşılan bir kitaplık ( *. so*) dosyasında derlenir.
 

@@ -1,7 +1,7 @@
 ---
 title: Yükleme sorunlarını giderme veya yükseltme sorunları
 description: Bazı durumlarda sorunlar. Visual Studio yüklemesi veya yükseltmesi başarısız olursa, bu sayfa yardımcı olabilir.
-ms.date: 03/30/2019
+ms.date: 09/13/2019
 ms.custom: seodec18
 ms.topic: troubleshooting
 helpviewer_keywords:
@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: ce451ecdeb6d196e6520acffb9a6c76add36f5bf
-ms.sourcegitcommit: b60a00ac3165364ee0e53f7f6faef8e9fe59ec4a
+ms.openlocfilehash: f9612d9943c425a91bb3d01ea3bb5b1e37f270d3
+ms.sourcegitcommit: 2db01751deeee7b2bdb1db25419ea6706e6fcdf8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70913252"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71062807"
 ---
 # <a name="troubleshoot-visual-studio-installation-and-upgrade-issues"></a>Visual Studio yükleme ve yükseltme sorunlarını giderme
 
@@ -114,12 +114,14 @@ Son çare yapabilecekleriniz [Visual Studio kaldırmak](remove-visual-studio.md)
 
 ## <a name="offline-installations"></a>Çevrimdışı yüklemeler
 
-Bilinen sorunlar ve geçici yerel bir düzenden yükleme sırasında yardımcı olabilecek bazı çözümler tablosu aşağıdadır.
+Aşağıda, bir [çevrimdışı yükleme](create-an-offline-installation-of-visual-studio.md) oluştururken ve sonra yerel bir düzenden yüklerken size yardımcı olabilecek bilinen sorunların ve bazı geçici çözümlerin bir tablosu verilmiştir.
 
 | Sorun       | Öğe                   | Çözüm |
 | ----------- | ---------------------- | -------- |
 | Kullanıcılar dosyalara erişimi yoktur. | izinleri (ACL) | Bunlar diğer kullanıcılara Okuma yetkisi vermek için izinleri (ACL) ayarlayın sağlayın *önce* çevrimdışı yükleme paylaşın. |
 | Yeni iş yükleri, bileşenleri ve dil yüklenemedi.  | `--layout`  | Kısmi bir düzenden yükleme ve daha önce iş yükleri, bileşenler veya indirilmedi diller, kısmi düzeni'ni seçin, internet erişimi olduğundan emin olun. |
+
+Bir [ağ yüklemesiyle](create-a-network-installation-of-visual-studio.md)ilgili sorunları çözme hakkında daha fazla bilgi için bkz. [Visual Studio 'yu yüklerken veya kullanırken ağla Ilgili hatalarda sorun giderme](troubleshooting-network-related-errors-in-visual-studio.md).
 
 ## <a name="installation-logs"></a>Yükleme günlükleri
 

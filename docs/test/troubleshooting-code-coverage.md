@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 7aef839027639770e60292210aaddf998c97fce0
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: abd5075d04f26b9795695bfcd4fcd387e1a15d24
+ms.sourcegitcommit: 541a0556958201ad6626bc8638406ad02640f764
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68926551"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71079581"
 ---
 # <a name="troubleshoot-code-coverage"></a>Kod kapsamı sorunlarını giderme
 
@@ -56,6 +56,8 @@ Açıklama&mdash;kod kapsamı motorunun her derleme, ilişkili olmasını gerekt
 *.Pdb* dosyası oluşturuldu, birlikte aynı derleme *.dll* veya *.exe* dosyaları.
 
 Çözüm&mdash;yapı ayarlarınızı oluşturduğundan emin olun *.pdb* dosya. Varsa *.pdb* proje oluşturulduğunda, dosyaları güncel değil, daha sonra proje özelliklerini açın, seçin **derleme** sayfasında **Gelişmiş**ve incelemek**Hata ayıklama bilgisi**.
+
+Projeler C++ için, oluşturulan. pdb dosyalarının tam hata ayıklama bilgilerine sahip olduğundan emin olun. Proje özelliklerini açın ve **bağlayıcı** > hata**ayıklama** > **hata ayıklama bilgileri oluştur** ' un, **Paylaşım ve yayımlama için iyileştirilmiş hata ayıklama bilgileri oluşturmak üzere ayarlandığını doğrulayın (/Debug: Full)** .
 
 Varsa *.pdb* ve *.dll* veya *.exe* dosyalar farklı yerlerde kopyalama *.pdb* aynı dizine dosya. Kod kapsamı motorunun aramak için yapılandırmak da mümkündür *.pdb* dosyalarını başka bir konumda. Daha fazla bilgi için [kod kapsamı analizini özelleştirme](../test/customizing-code-coverage-analysis.md).
 
