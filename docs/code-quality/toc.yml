@@ -332,8 +332,17 @@
                   href: ca1064-exceptions-should-be-public.md
                 - name: 'CA1065: Beklenmeyen konumlarda özel durum harekete geçirmeyin'
                   href: ca1065-do-not-raise-exceptions-in-unexpected-locations.md
+                - name: 'CA1068: CancellationToken parametreleri en sonda olmalıdır'
+                  href: ca1068.md
                 - name: 'CA2210: Derlemelerin geçerli tanımlayıcı adları olmalıdır'
                   href: ca2210-assemblies-should-have-valid-strong-names.md
+            - name: Belge uyarıları
+              items:
+                - name: Genel Bakış
+                  displayName: documentation warnings
+                  href: documentation-warnings.md
+                - name: 'CA1200: cref etiketlerini ön ek ile kullanmaktan kaçının'
+                  href: ca1200.md
             - name: Genelleştirme uyarıları
               items:
                 - name: Genel Bakış

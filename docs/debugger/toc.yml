@@ -42,6 +42,8 @@
       items:
         - name: Kesme noktalarını kullanma
           href: using-breakpoints.md
+        - name: İzleme noktalarını kullanma
+          href: using-tracepoints.md
         - name: Kesme noktalarıyla ilgili sorun giderme
           href: troubleshooting-breakpoints.md
     - name: Veri inceleme
