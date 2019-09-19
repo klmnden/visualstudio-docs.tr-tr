@@ -1,0 +1,60 @@
+### YamlMime:Landing
+title: Visual Studio'da uygulama performansını ölçmeye
+summary: Profil oluşturma ve tanılama araçları bellek ve CPU kullanımı ve diğer uygulama düzeyi sorunları tanılamanıza yardımcı olur. Bu araçlarla, uygulamanızı çalıştırırken performans verileri birikmesini sağlayabilirsiniz.
+metadata:
+  title: Visual Studio 'da ölçüm performansı
+  description: Profil oluşturma araçlarını kullanarak performansı ölçmek için Visual Studio 'Yu nasıl kullanacağınızı öğrenin.
+  ms.topic: landing-page
+  author: mikejo5000
+  ms.author: mikejo
+  manager: jillfra
+  ms.date: 09/17/2019
+  ms.openlocfilehash: fcb3e40870d6f916cf754368359a90215ce1b665
+  ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
+  ms.translationtype: MT
+  ms.contentlocale: tr-TR
+  ms.lasthandoff: 09/19/2019
+  ms.locfileid: "71130643"
+landingContent:
+- title: Profil oluşturma hakkında
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Profil oluşturma araçlarına ilk bakış
+      url: profiling-feature-tour.md
+  - linkListType: concept
+    links:
+    - text: Profil oluşturma araçlarını çalıştırma yolları
+      url: running-profiling-tools-with-or-without-the-debugger.md
+- title: Kullanmaya başlayın
+  linkLists:
+  - linkListType: quickstart
+    links:
+    - text: CPU kullanımını analiz etmeC#(, Visual Basic)
+      url: quickstart-cpu-usage-managed.md
+    - text: CPU kullanımını analiz etmeC++()
+      url: quickstart-cpu-usage-native.md
+    - text: CPU kullanımını analiz etme (ASP.NET)
+      url: quickstart-cpu-usage-aspnet.md
+  - linkListType: tutorial
+    links:
+    - text: CPU kullanımını çözümlemeye başlama
+      url: beginners-guide-to-performance-profiling.md
+    - text: Bellek kullanımını ölçmeye başlama
+      url: beginners-guide-to-performance-profiling.md
+- title: Diğer performans araçları
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: PerfTips
+      url: perftips.md
+    - text: Kaynak tüketimini çözümleme (XAML)
+      url: application-timeline.md
+    - text: GPU kullanımını analiz etme (Direct3D)
+      url: gpu-usage.md
+    - text: Ağ kullanımını analiz etme (UWP)
+      url: network-usage.md
+    - text: Enerji kullanımını analiz etme (UWP)
+      url: analyze-energy-use-in-store-apps.md
+    - text: Performans Gezgini (eski)
+      url: performance-explorer.md

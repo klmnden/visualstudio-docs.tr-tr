@@ -3,46 +3,57 @@ title: Projeleri ve Çözümleri Oluşturma ve Temizleme
 description: Bu makalede Mac için Visual Studio içinde bir projenin nasıl oluşturulacağı açıklanır
 author: heiligerdankgesang
 ms.author: dominicn
-ms.date: 05/06/2018
+ms.date: 09/19/2019
 ms.assetid: E4B6CB42-9FE2-43B9-93B7-BD4BD50518B1
-ms.openlocfilehash: b69bdbacc9b6d8d19dd3ce7abbc9b2a822a48f07
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: 924bdb08154ecb3caad04cabf7e860bed9204e98
+ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68872273"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71128450"
 ---
 # <a name="building-and-cleaning-projects-and-solutions"></a>Projeleri ve çözümleri oluşturma ve Temizleme
 
-Çözümünüzü ve projenizi oluşturma, yeniden oluşturma ve temizleme hakkında bilgi edinmek için bu makaledeki adımları izleyin.
+Bir çözümdeki projelerin tümünü veya bir kısmını oluşturma, yeniden oluşturma veya temizleme hakkında bilgi edinmek için bu makaledeki adımları izleyin.
+
+> [!NOTE]
+> Bu konu Mac için Visual Studio için geçerlidir. Windows üzerinde Visual Studio için bkz. [Visual Studio 'da projeler ve çözümler oluşturma ve Temizleme](/visualstudio/ide/building-and-cleaning-projects-and-solutions-in-visual-studio).
 
 ## <a name="to-build-rebuild-or-clean-an-entire-solution"></a>Derleme, yeniden oluşturmanız veya bütün bir çözüm Temizle
 
-Tüm çözümü derlemek, yeniden derlemek veya temizlemek için:
-
-1. Çözüm Bölmesi çözüm düğümünü seçin:
+1. **Çözüm bölmesi**çözüm düğümünü seçin:
 
     ![Çözüm düğümünü seçme](media/compiling-and-building-image1.png)
 
-2. Menü çubuğunda Yapı menüsünü seçin ve aşağıdaki seçeneklerden birini belirleyin:
+2. Menü çubuğunda **Yapı** menüsünü seçin ve aşağıdaki seçeneklerden birini belirleyin:
 
     ![Tümünü Oluştur menü öğesi seçiliyor](media/compiling-and-building-image2.png)
 
-    * En son derlemeden bu yana proje içinde değiştirilen tüm dosyaları oluşturmak için **Tüm denemeler oluşturun** .
-    * **Tümünü yeniden derle** -çözümü temizler ve sonra oluşturur.
-    * **Tümünü Temizle** -çözümünüzdeki tüm derleme ürünlerini kaldırır.
+    * En son derlemeden bu yana değiştirilen proje içindeki dosya ve bileşenleri derlemek için **Tümünü derle** ' yi seçin.
+
+    * Çözümü "temizlemek" için **tümünü yeniden derle** ' yi seçin ve ardından tüm proje dosyalarını ve bileşenlerini derleyin.
+
+    * Tüm ara ve çıkış dosyalarını silmek için **Tümünü Temizle** ' yi seçin. Yalnızca proje ve bileşen dosyalarını sol yeni örneklerini Ara ve Çıkış dosyalarını sonra oluşturulabilir.
 
 ## <a name="to-build-or-rebuild-a-single-project"></a>Derleme veya tek projeyi yeniden derleyin
 
-1. Çözüm Bölmesi, projeyi seçin.
+1. **Çözüm bölmesi**projeyi seçin.
 
-2. Menü çubuğunda Oluştur ' u seçin ve ardından Build [ProjectName], Rebuild [ProjectName] veya Clean [ProjectName] öğesini seçin.
+2. Menü çubuğundan **Yapı** menüsünü seçin.
+
+3. Build [ProjectName], Rebuild [ProjectName] veya Clean [ProjectName] öğesini seçin.
 
 ## <a name="to-stop-a-build"></a>Bir derlemeyi durdurmak için
 
-Bir derlemeyi durdurmak için durum alanında kırmızı kareye basın:
+Bir derlemeyi durdurmak için, aşağıdaki seçeneklerden birini kullanın:
 
-![Derlemeyi durdurmak için kırmızı kare tuşuna basın](media/compiling-and-building-image3.png)
+* Durum alanında kırmızı kareye basın:
+
+    ![Derlemeyi durdurmak için kırmızı kare tuşuna basın](media/compiling-and-building-image3.png)
+
+* **Derleme** menüsündeki **Durdur** öğesini kullanın.
+
+* **Cmd + SHIFT + Return**tuşlarına basın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

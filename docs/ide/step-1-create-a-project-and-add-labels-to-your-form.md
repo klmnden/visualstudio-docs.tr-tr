@@ -5,20 +5,17 @@ ms.topic: tutorial
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
 ms.assetid: f44e50be-a5f5-4d77-9cff-dd52374c3f74
-ms.devlang:
-- csharp
-- vb
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 88ec1c96bea4ebbe3465a489354d90fbbe906858
-ms.sourcegitcommit: 0e482cfc15f809b564c3de61646f29ecd7bfcba6
+ms.openlocfilehash: b52851ce3e344293faede243413fc796e9882196
+ms.sourcegitcommit: 6eed0372976c0167b9a6d42ba443f9a474b8bb91
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "70987950"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71119045"
 ---
 # <a name="step-1-create-a-project-and-add-labels-to-your-form"></a>1\. Adım: Proje oluşturma ve formunuza etiketler ekleme
 

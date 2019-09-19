@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 73e940f6d302d28713c0345f77d6c78c8223e363
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 91b175eec9d17624f2b7225d1aac428926310734
+ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440275"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71128224"
 ---
 # <a name="beginners-guide-to-cpu-sampling"></a>CPU örnekleme Başlangıç Kılavuzu
 Visual Studio profil oluşturma araçları, uygulamanızdaki performans sorunlarını analiz etmek için kullanabilirsiniz. Bu yordam, nasıl kullanılacağını gösterir **örnekleme** veri.
@@ -32,10 +32,10 @@ Visual Studio profil oluşturma araçları, uygulamanızdaki performans sorunlar
 
  Belirli aralıklarla **örnekleme** yöntemi uygulamanızda yürütülen işlevler hakkında bilgi toplar. Bir profil oluşturma çalıştırmasını tamamladıktan sonra **özeti** verileri en etkin işlev çağrısı ağacını gösterir, profil oluşturma görünümü adlı **etkin yolu**, burada uygulamadaki işin çoğu yapılmıştır. Görünüm ayrıca en bireysel işleri yapan işlevleri listeler ve örnekleme oturumunun belirli segmentlerine odaklanmak için kullanabileceğiniz bir zaman çizelgesi grafiği sağlar.
 
- Varsa **örnekleme** duyduğunuz verileri sağlamazsa diğer profil oluşturma araçları koleksiyonu yöntemleri size yardımcı olabilecek bilgiler farklı türde sağlayın. Bu diğer yöntemler hakkında daha fazla bilgi için bkz. [nasıl yapılır: Koleksiyon metotları seçme](../profiling/how-to-choose-collection-methods.md).
+ Varsa **örnekleme** duyduğunuz verileri sağlamazsa diğer profil oluşturma araçları koleksiyonu yöntemleri size yardımcı olabilecek bilgiler farklı türde sağlayın. Bu diğer yöntemler hakkında daha fazla bilgi için bkz [. nasıl yapılır: Koleksiyon yöntemleri](../profiling/how-to-choose-collection-methods.md)' ni seçin.
 
 > [!TIP]
-> Windows işlevlerini çağıran kodu yazıyorsanız, en güncel olduğundan emin olun. *pdb* dosyaları. Bu dosyalar olmadan rapor görünümleriniz karmaşık ve anlaşılması zor olan Windows işlev adlarını listeler. Gereksinim duyduğunuz dosyaların bilgisayarınızda yüklü olduğundan emin olma hakkında daha fazla bilgi için bkz. [nasıl yapılır: Windows sembol bilgilerini başvuru](../profiling/how-to-reference-windows-symbol-information.md).
+> Windows işlevlerini çağıran kodu yazıyorsanız, en güncel olduğundan emin olun. *pdb* dosyaları. Bu dosyalar olmadan rapor görünümleriniz karmaşık ve anlaşılması zor olan Windows işlev adlarını listeler. İhtiyacınız olan dosyalara sahip olduğunuzdan emin olmak hakkında daha fazla bilgi için bkz [. nasıl yapılır: Başvuru Windows sembol bilgileri](../profiling/how-to-reference-windows-symbol-information.md).
 
 ## <a name="create-and-run-a-performance-session"></a>Oluşturma ve performans oturumu çalıştırma
  Analiz etmek için gereken verileri almak için öncelikle bir performans oturumu oluşturmanız ve ardından çalıştırmanız gerekir. **Performans Sihirbazı** her ikisini de yapmanızı sağlar.
@@ -63,12 +63,12 @@ Visual Studio profil oluşturma araçları, uygulamanızdaki performans sorunlar
 
      Uygulamayı yürütmeyi bitirdikten sonra **özeti** profil oluşturma verilerinin görünümü ana Visual Studio penceresinde görüntülenir ve yeni bir oturum için bir simge görünür **performans Gezgini** penceresi.
 
-## <a name="step-2-analyze-sampling-data"></a>2. Adım: Örnekleme verileri analiz edin
+## <a name="step-2-analyze-sampling-data"></a>2\. Adım: Örnekleme verilerini analiz etme
  Bir performans oturumunu çalıştırmayı bitirdiğinizde **özeti** Visual Studio ana penceresinde profil oluşturma rapor görünümünde görünür.
 
  İnceleyerek verilerinizi analiz etmeye başlamanızı öneririz **sık kullanılan yol** ardından fazla çalışmayı yapan ve son olarak diğer işlevlere odaklanarak üzerinde kullanarak işlevlerin listesi **Özet zaman çizelgesi** . Profil oluşturma önerilerini ve Uyarıları da görüntüleyebilirsiniz **hata listesi** penceresi.
 
- Örnekleme yöntemi, size gereken bilgileri sağlamayabilir olduğunu unutmayın. Örneğin, yalnızca uygulama kullanıcı modu kodunu yürüttüğünde örnekleri toplanır. Bu nedenle, giriş ve çıkış işlemleri gibi bazı işlevler örnekleme tarafından yakalanmaz. Profil oluşturma araçları, önemli verilere odaklanmanıza olanak veren çeşitli toplama yöntemleri sağlar. Diğer yöntemler hakkında daha fazla bilgi için bkz. [nasıl yapılır: Koleksiyon metotları seçme](../profiling/how-to-choose-collection-methods.md).
+ Örnekleme yöntemi, size gereken bilgileri sağlamayabilir olduğunu unutmayın. Örneğin, yalnızca uygulama kullanıcı modu kodunu yürüttüğünde örnekleri toplanır. Bu nedenle, giriş ve çıkış işlemleri gibi bazı işlevler örnekleme tarafından yakalanmaz. Profil oluşturma araçları, önemli verilere odaklanmanıza olanak veren çeşitli toplama yöntemleri sağlar. Diğer yöntemler hakkında daha fazla bilgi için bkz [. nasıl yapılır: Koleksiyon yöntemleri](../profiling/how-to-choose-collection-methods.md)' ni seçin.
 
  Şekildeki her numaralı alan yordamdaki bir adımda ilgilidir.
 
@@ -108,7 +108,7 @@ Visual Studio profil oluşturma araçları, uygulamanızdaki performans sorunlar
 
     - Uyarı hakkında ayrıntılı bilgi görüntülemek için hatayı sağ tıklayın ve ardından **hata yardımını göster**
 
-## <a name="step-3-revise-code-and-rerun-a-session"></a>3. Adım: Kodu gözden geçirin ve bir oturumu yeniden çalıştırın
+## <a name="step-3-revise-code-and-rerun-a-session"></a>3\. Adım: Kodu gözden geçirin ve bir oturumu yeniden çalıştırın
  Bulmak ve bir veya daha fazla işlev en iyi duruma getirme sonra profil oluşturma çalıştırmasını yineleyebilirsiniz ve uygulamanızın performansını için Değişikliklerinizi yaptıktan farkı görmek için verileri karşılaştırabilirsiniz.
 
 #### <a name="to-revise-code-and-rerun-the-profiler"></a>Kodu gözden geçirin ve profil oluşturucuyu yeniden çalıştırmak için
@@ -121,11 +121,11 @@ Visual Studio profil oluşturma araçları, uygulamanızdaki performans sorunlar
 
 4. Oturumu yeniden çalıştırdıktan sonra başka bir veri dosyası eklenir *raporları* klasörü oturumda **performans Gezgini**. Hem özgün seçin ve yeni profil oluşturma verisini, seçime sağ tıklayın ve ardından **Performans raporlarını Karşılaştır**.
 
-     Karşılaştırma sonuçlarını görüntüleyen yeni bir rapor penceresi açılır. Karşılaştırma görünümünün nasıl kullanılacağı hakkında daha fazla bilgi için bkz. [nasıl yapılır: Performans veri dosyalarını karşılaştırma](../profiling/how-to-compare-performance-data-files.md).
+     Karşılaştırma sonuçlarını görüntüleyen yeni bir rapor penceresi açılır. Karşılaştırma görünümünü kullanma hakkında daha fazla bilgi için bkz [. nasıl yapılır: Performans veri dosyalarını](../profiling/how-to-compare-performance-data-files.md)karşılaştırın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 - [Performans Gezgini](../profiling/performance-explorer.md)
 - [Başlarken](../profiling/getting-started-with-performance-tools.md)
 - [Genel Bakışlar](../profiling/overviews-performance-tools.md)
-- [Visual Studio profil oluşturma](../profiling/index.md)
+- [Visual Studio profil oluşturma](../profiling/index.yml)
 - [Araçlar profil oluşturmaya ilk bakış](../profiling/profiling-feature-tour.md)

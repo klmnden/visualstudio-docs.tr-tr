@@ -17,19 +17,23 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a79bcf2aade3a84e0453aec1d64e37c8a6a5c24c
-ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
+ms.openlocfilehash: f5dd3b1dc758a9b4f7634d4b6e73ab294289d6cd
+ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "67033028"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71128299"
 ---
 # <a name="measure-application-performance-by-analyzing-cpu-usage"></a>CPU kullanımını analiz etme ölçü uygulama performansı
-Visual Studio profil oluşturma araçları, uygulamanızdaki performans sorunlarını analiz etmek için kullanabilirsiniz. Bu yordam, nasıl kullanılacağını gösterir **CPU kullanımı** tanılama araçları, uygulamanız için performans verilerini almak için sekmesinde. Tanılama araçları, yerel/C++ geliştirme ve ASP.NET dahil olmak üzere Visual Studio .NET geliştirme için desteklenir.
+
+Visual Studio profil oluşturma araçları, uygulamanızdaki performans sorunlarını analiz etmek için kullanabilirsiniz. Bu yordam, nasıl kullanılacağını gösterir **CPU kullanımı** tanılama araçları, uygulamanız için performans verilerini almak için sekmesinde.
 
 Hata ayıklayıcı zaman duraklatır, **CPU kullanımı** aracı, uygulamanızda yürütülen işlevler hakkında bilgi toplar. Aracı işleri yapan işlevleri listeler ve örnekleme oturumunun belirli segmentlerine odaklanmak için kullanabileceğiniz bir zaman çizelgesi grafiği sağlar.
 
 Tanılama hub'ı, çok sayıda çalıştırın ve tanılama oturumunuzu yönetmek için diğer bir seçenek sunar. Varsa **CPU kullanımı** duyduğunuz verileri sağlamazsa [diğer profil oluşturma araçları](../profiling/profiling-feature-tour.md) farklı türde size yardımcı olabilecek bilgiler sağlar. Çoğu durumda, uygulamanızın performans sorunu, CPU, bellek, işleme kullanıcı Arabirimi veya ağ isteği süresi gibi dışında bir şey tarafından kaynaklanabilir. Tanılama hub'ı, çok sayıda kaydedin ve bu tür verilerin analiz etmek için diğer bir seçenek sunar.
+
+> [!Important]
+> Tanılama araçları, yerel/C++ geliştirme ve ASP.NET dahil olmak üzere Visual Studio .NET geliştirme için desteklenir.
 
 Bu makalede, normal, hata ayıklama iş akışından çözümlenirken CPU kullanımının açıklayacağız. CPU kullanımı eklenmiş bir hata ayıklayıcı olmadan veya - daha fazla bilgi için çalışan bir uygulamanın hedefleyerek çözümleyebilirsiniz [hata ayıklama olmadan profil oluşturma verisi toplama](../profiling/running-profiling-tools-with-or-without-the-debugger.md#collect-profiling-data-without-debugging) içinde [profil oluşturma araçları ile veyaHataAyıklayıcıolmadançalıştırın](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
 
@@ -41,7 +45,7 @@ Bu öğreticide şunları yapacaksınız:
 > * CPU kullanım verileri toplama
 > * CPU kullanım verilerini çözümleme
 
-## <a name="step-1-collect-profiling-data"></a>1. Adım: Profil oluşturma verilerini topla
+## <a name="step-1-collect-profiling-data"></a>1\. Adım: Profil oluşturma verilerini topla
 
 1. Visual Studio'da hata ayıklama ve CPU kullanımını incelemek için istediğiniz noktada uygulamanızda bir kesme noktası ayarlamak istediğiniz projeyi açın.
 
@@ -60,7 +64,7 @@ Bu öğreticide şunları yapacaksınız:
 
 5. Tıklayın **hata ayıklama** > **hata ayıklamayı Başlat** (veya **Başlat** araç çubuğunda veya **F5**).
 
-     Uygulamanın yüklenmesi tamamlandığında, Tanılama Araçları'nın Özet görünümü görüntülenir. Pencereyi açmak gerekirse tıklayın **hata ayıklama** > **Windows** > **tanılama araçlarını Göster**.
+     Uygulamanın yüklenmesi tamamlandığında, Tanılama Araçları'nın Özet görünümü görüntülenir. Pencereyi açmanız gerekiyorsa, **Hata Ayıkla** > **Windows** > **Tanılama araçları göster**' e tıklayın.
 
      ![Tanılama araçları Özet sekmesi](../profiling/media/diag-tools-summary-tab.png "DiagToolsSummaryTab")
 
@@ -86,13 +90,13 @@ Bu öğreticide şunları yapacaksınız:
 
      ![Tanılama araçları CPU kullanımı sekmesinde](../profiling/media/diag-tools-cpu-usage-tab.png "DiagToolsCPUUsageTab")
 
-9. Kod analiz etmek için daha belirli bir bölge seçmek istiyorsanız, CPU zaman çizelgesinde bir bölgeyi seçin (gösteren bir bölge olmalıdır profil oluşturma verilerini).
+9. Analiz etmek için daha belirli bir kod bölgesi seçmek istiyorsanız, CPU zaman çizelgesinde bir bölge seçin (profil oluşturma verilerini gösteren bir bölge olmalıdır).
 
      ![Tanılama araçları zaman diliminin seçerek](../profiling/media/diag-tools-select-time-segment.png "DiagToolsSelectTimeSegment")
 
      Bu noktada, verileri çözümlemek başlayabilirsiniz.
 
-## <a name="step-2-analyze-cpu-usage-data"></a>2. Adım: CPU kullanım verilerini çözümleme
+## <a name="step-2-analyze-cpu-usage-data"></a>2\. Adım: CPU kullanım verilerini çözümleme
 
 CPU kullanımı altında işlevler listesini inceleyerek, en fazla çalışmayı yapan işlevleri tanımlama ve ardından her birine daha yakından bakalım alma verilerinizi analiz etmeye başlamanızı öneririz.
 
@@ -109,15 +113,15 @@ CPU kullanımı altında işlevler listesini inceleyerek, en fazla çalışmayı
 
     ![Tanılama araçları arayan-Aranan görünümü](../profiling/media/diag-tools-caller-callee.png "DiagToolsCallerCallee")
 
-    Bu görünümünde seçili işlev hem de başlığında gösterilir **geçerli işlevin** kutusunu (Bu örnekte, GetNumber). Geçerli işlevi çağıran işleve sol altında gösterilen **çağıran fonksiyonları**, ve geçerli işlev tarafından çağrılan tüm işlevleri gösterilir **çağrılan işlevlerin** sağdaki kutuya. (Geçerli işlevin değiştirmek için ya da kutusunu seçebilirsiniz.)
+    Bu görünümünde seçili işlev hem de başlığında gösterilir **geçerli işlevin** kutusunu (Bu örnekte, GetNumber). Geçerli işlevi çağıran işlev, sol tarafta **çağırma işlevleri**altında gösterilir ve geçerli işlev tarafından çağrılan işlevler sağ taraftaki **çağrılan işlevler** kutusunda gösterilir. (Geçerli işlevin değiştirmek için ya da kutusunu seçebilirsiniz.)
 
     Bu görünüm, toplam süre (ms) ve genel uygulamayı işlevi tamamlamak için gerçekleştirdiği zaman yüzdesini gösterir.
-    **İşlev gövdesi** ayrıca süresi (ve zamanı yüzdesi) işlev gövdesinde harcanan süre hariç toplam miktarı harcanan içinde arama ve işlevlerin çağrılma gösterilmektedir. (Bu örnekte, 2367 2389 ms dışında işlev gövdesinde harcanan ve kalan 22 ms, bu işlev tarafından çağırılan dış kodunda harcanan).
+    **İşlev gövdesi** ayrıca süresi (ve zamanı yüzdesi) işlev gövdesinde harcanan süre hariç toplam miktarı harcanan içinde arama ve işlevlerin çağrılma gösterilmektedir. (Bu örnekte, işlev gövdesinde 2367 MS 'tan 2389 tanesi harcanmış ve kalan 22 MS, bu işlev tarafından çağrılan harici kodda harcanmıştı).
 
     > [!TIP]
     > Yüksek değerleri **işlev gövdesi** işlevin kendisi içinde bir performans engelini işaret edebilir.
 
-3. İşlevleri adlı sırasını gösteren üst düzey bir görünümü görmek için seçin **çağrı ağacı** Bölmenin üst kısmındaki açılan listeden.
+3. İşlevlerin çağrıldığı sırayı gösteren daha yüksek düzeyde bir görünüm görmek için bölmenin en üstündeki açılan listeden bir adım **Seç ' i seçin** .
 
     Şekildeki her numaralı alan yordamdaki bir adımda ilgilidir.
 
@@ -144,13 +148,13 @@ CPU kullanımı altında işlevler listesini inceleyerek, en fazla çalışmayı
     - **Modüller** işlev veya bir [harici kod] düğümünde işlevler içeren modül sayısı içeren modülünün adı.
 
     ::: moniker range=">=vs-2019"
-    Çağrı ağacı Görünümü'nde en yüksek CPU yüzdesi kullanan işlev çağrıları görmek için tıklayın **etkin yolu Genişlet**.
+    Çağrı ağacı görünümünde en yüksek CPU yüzdesini kullanan işlev çağrılarını görmek için, **etkin yolu genişlet**' e tıklayın.
 
-    ![Tanılama araçları sık kullanılan yol](../profiling/media/vs-2019/diag-tools-hot-path.png "DiagToolsHotPath")
+    ![Tanılama araçları etkin yolu](../profiling/media/vs-2019/diag-tools-hot-path.png "Diagtoolshotpath")
     ::: moniker-end
 
     > [!NOTE]
-    > Çağrı ağacında "bozuk" kod ya da "unwalkable yığın" işaretlenmiş kod görürseniz, bu olay izleme için Windows (ETW) olayları büyük olasılıkla bırakılan gösterir. Bu sorunu çözmek için ikinci kez aynı izlemeyi toplamayı deneyin.
+    > Çağrı ağacında "bozuk" kod veya "tasene yığın" olarak işaretlenen kodu görürseniz, bu, Windows için olay Izleme (ETW) olaylarının büyük olasılıkla bırakılmakta olduğunu gösterir. Sorunu çözmek için ikinci kez aynı izlemeyi toplamayı deneyin.
 
 ## <a name="view-external-code"></a>Dış Kodu Göster
 

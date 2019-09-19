@@ -1,5 +1,5 @@
 ---
-title: Bir Web sitesi için yayımlama
+title: Bir Web sitesine yayımlama
 ms.date: 01/29/2019
 ms.topic: quickstart
 helpviewer_keywords:
@@ -10,51 +10,51 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ae1d142058b2f655bb55e5140a6ad6ac5f119742
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 1236c3057cd209bd5c7c81304a2168704927c506
+ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66263495"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71127931"
 ---
-# <a name="publish-a-web-app-to-a-web-site-using-visual-studio"></a>Visual Studio kullanarak bir web sitesi için bir Web uygulaması yayımlama
+# <a name="publish-a-web-app-to-a-web-site-using-visual-studio"></a>Web uygulamasını Visual Studio kullanarak Web sitesinde yayımlama
 
-Kullanabileceğiniz **Yayımla** ASP.NET, ASP.NET Core, .NET Core ve Python uygulamaları bir Web sitesine Visual Studio'dan yayımlamak için aracı. Node.js için adımları desteklenir ancak kullanıcı arabirimi farklıdır.
+**Yayımla** aracını, ASP.NET, ASP.NET Core, .NET Core ve Python uygulamalarını Visual Studio 'daki bir Web sitesine yayımlamak için kullanabilirsiniz. Node. js için, adımlar desteklenir, ancak kullanıcı arabirimi farklıdır.
 
 [!INCLUDE [quickstart-prereqs](includes/quickstart-prereqs.md)]
 
 > [!NOTE]
-> Bir ağ dosya paylaşımı için bir Windows Masaüstü uygulamasını yayınlamak gerekiyorsa bkz [ClickOnce kullanarak masaüstü uygulaması dağıtma](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) (C# veya Visual Basic). İçin C++/CLR, bkz: [ClickOnce kullanarak yerel bir uygulama dağıtma](/cpp/windows/clickonce-deployment-for-visual-cpp-applications) veya C /C++, bkz: [bir kurulum projesi kullanarak yerel bir uygulama dağıtma](/cpp/windows/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project).
+> Bir Windows masaüstü uygulamasını bir ağ dosya paylaşımında yayımlamanız gerekiyorsa bkz. ClickOnce (C# veya Visual Basic) [kullanarak masaüstü uygulaması dağıtma](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) . /CLI C++için bkz. [ClickOnce kullanarak yerel uygulama dağıtma](/cpp/windows/clickonce-deployment-for-visual-cpp-applications) veya C/C++için bkz. [Kurulum projesi kullanarak yerel uygulama dağıtma](/cpp/windows/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project).
 
-## <a name="publish-to-a-web-site"></a>Bir Web sitesi için yayımlama
+## <a name="publish-to-a-web-site"></a>Web sitesinde yayımlama
 
-1. Çözüm Gezgini'nde projeye sağ tıklayıp seçin **Yayımla** (veya **derleme** > **Yayımla** menü öğesi).
+1. Çözüm Gezgini, projeye sağ tıklayın ve **Yayımla** ' yı seçin (veya **Yapı** > **Yayımla** menü öğesini kullanın).
 
-    ![Çözüm Gezgini'nde proje bağlam menüsünde Yayımla komutunu](../deployment/media/quickstart-publish.png "seçin yayımlama")
+    ![Çözüm Gezgini içindeki proje bağlam menüsündeki Yayımla komutu](../deployment/media/quickstart-publish.png "Yayımla") ' yı seçin
 
-1. Tüm yayımlama profilleri, daha önce yapılandırdıysanız **Yayımla** bölmesi görünür. Seçin **yeni profil oluşturma**.
+1. Daha önce herhangi bir yayımlama profili yapılandırdıysanız, **Yayımla** bölmesi görüntülenir. **Yeni Profil oluştur**' u seçin.
 
 1. İçinde **yayımlama hedefi çekme** iletişim kutusunda, seçin **IIS, FTP, vb**.
 
-    ![IIS, FTP, vb.'yi seçin.](../deployment/media/quickstart-publish-iis-ftp.png "seçin IIS, FTP, vb..")
+    ![IIS, FTP, vb. seçin.](../deployment/media/quickstart-publish-iis-ftp.png "IIS, FTP, vb. seçin.")
 
-1. **Yayımla**’yı seçin. Profil yayımlama Ayarları iletişim kutusu açılır.
+1. **Yayımla**’yı seçin. Profil yayımlama ayarları iletişim kutusu açılır.
 
-    ![Klasör Seç](../deployment/media/quickstart-publish-settings-web.png "klasörü seçin")
+    ![Klasör Seç](../deployment/media/quickstart-publish-settings-web.png "Klasör Seç")
 
-1. İçinde **yayımlama yöntemi** alan, bir yöntem gibi seçin **Web dağıtımı** veya **FTP**. Gördüğünüz ayarları sonraki yayımlama yönteminize karşılık gelir. Web dağıtımı IIS sunucuları için Web uygulamaları ve Web siteleri dağıtımını basitleştirir ve sunucu üzerindeki bir uygulama olarak yüklenmelidir. Kullanım [Web Platformu yükleyicisi](https://www.microsoft.com/web/downloads/platform.aspx) yükleyin.
+1. **Yayımla yöntemi** alanında **Web dağıtımı** veya **FTP**gibi bir yöntem seçin. Sonraki gördüğünüz ayarlar yayımlama yönteminiz için karşılık gelir. Web Dağıtımı, Web uygulamalarının ve Web sitelerinin IIS sunucularına dağıtımını basitleştirir ve sunucuda bir uygulama olarak yüklenmelidir. Yüklemek için [Web Platformu Yükleyicisi](https://www.microsoft.com/web/downloads/platform.aspx) 'ni kullanın.
 
-1. Yayımlama yöntemi için gerekli ayarları yapılandırın ve seçin **bağlantıyı doğrula**. Sunucu veya hedef kullanılabilir ve ayarlarınızın doğru olduğundan, bağlantı belirten bir ileti doğrulanır ve yayımlamak hazırız.
+1. Yayımla yöntemi için gerekli ayarları yapılandırın ve **bağlantıyı doğrula**' yı seçin. Sunucu veya hedef kullanılabiliyorsa ve ayarlarınız doğruysa, bağlantının doğrulanacağını belirten bir ileti ve yayımlamaya hazırsınız demektir.
 
-    ![Bağlantınızı doğrulama](../deployment/media/quickstart-publish-web-deploy.png "bağlantınızı doğrulama")
+    ![Bağlantınızı doğrulama](../deployment/media/quickstart-publish-web-deploy.png "Bağlantınızı doğrulama")
 
-1. Seçin **ayarları** gibi bir hata ayıklama veya sürüm yapılandırmasına dağıtın ve ardından diğer dağıtım ayarlarını yapılandırmak için **Kaydet**. Uzaktan hata ayıklaması, hata ayıklama yapılandırması gereklidir.
+1. Bir hata ayıklama veya sürüm yapılandırması dağıtıp dağıtmayacağı gibi diğer dağıtım ayarlarını yapılandırmak için **ayarları** seçin ve ardından **Kaydet**' i seçin. Uzaktan hata ayıklaması yapıyorsanız, hata ayıklama yapılandırması gerekir.
 
-1. Yayımlamak için seçin **Yayımla**. Dağıtım ilerleme durumu ve sonuçları çıktı penceresini gösterir.
+1. Yayımlamak için **Yayımla**' yı seçin. Çıkış penceresinde dağıtım ilerleme durumu ve sonuçları gösterilir.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-Bu hızlı başlangıçta, bir yayımlama profili oluşturmak için Visual Studio kullanmayı öğrendiniz. Ayrıca bir yayımlama yapılandırabilirsiniz alarak profili yayımlama ayarları.
+Bu hızlı başlangıçta, bir yayımlama profili oluşturmak için Visual Studio 'Yu nasıl kullanacağınızı öğrendiniz. Yayımlama ayarlarını içeri aktararak de bir yayımlama profili yapılandırabilirsiniz.
 
 > [!div class="nextstepaction"]
 > [Yayımlama ayarlarını içeri aktarma ve IIS’ye dağıtma](tutorial-import-publish-settings-iis.md)

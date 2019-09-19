@@ -1,70 +1,75 @@
 ---
-title: Derleme yapılandırmaları oluşturma ve düzenleme
-description: Bu makalede Mac için Visual Studio'da oluşturma derleme yapılandırmaları
+title: Derleme yapılandırması oluşturma ve bunları Düzenle
+description: Bu makalede Mac için Visual Studio yapı yapılandırmalarının oluşturulması açıklanmaktadır
 author: heiligerdankgesang
 ms.author: dominicn
-ms.date: 05/06/2018
+ms.date: 09/18/2019
 ms.assetid: CC1B72D6-12FF-4CCC-A9D4-00F2DC14589F
 ms.custom: video
-ms.openlocfilehash: 09591cb4feee4e9dc673f925bf3917eb3d07319b
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
+ms.openlocfilehash: 26f6e25bfe1284fc31bcd484b905bf5d75c2ba15
+ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67693068"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71128434"
 ---
-# <a name="creating-and-editing-build-configurations"></a>Derleme yapılandırmaları oluşturma ve düzenleme
+# <a name="creating-and-editing-build-configurations"></a>Derleme yapılandırması oluşturma ve bunları Düzenle
 
-Derleme yapılandırmaları, tek tek projeler için veya bir çözüm çapında temelinde oluşturulabilir. Bu yapılandırmalar bir derleme üzerinde kesin denetim verir.
+Yapı konfigürasyonları, farklı test ve dağıtım durumlarına karşı bir yapılandırma oluşturmanıza olanak sağlayan bir yapı üzerinde tam denetim sağlar. Tek tek projeler için veya çözüm genelinde derleme yapılandırması oluşturabilirsiniz.
 
-Seçenekler menüsünün hem projeler ve çözümler için yeni ve mevcut yapılandırmaları oluşturma ve düzenleme için ile bir alanı sağlar.
+Proje seçenekleri iletişim kutusunu kullanarak hem projeler hem de çözümler için yeni konfigürasyonlar oluşturabilir ve varolanları düzenleyebilirsiniz.
 
-## <a name="creating-a-project-build-configurations"></a>Bir proje derlemesi yapılandırmaları oluşturma
+>[!NOTE]
+>Bu konu Mac için Visual Studio için geçerlidir. Windows üzerinde Visual Studio için bkz [. nasıl yapılır: Yapılandırma](/visualstudio/ide/how-to-create-and-edit-configurations)oluşturun ve düzenleyin.
 
-Bir proje yapı yapılandırmasını oluşturmak için aşağıdaki adımları uygulayın:
+## <a name="creating-a-project-build-configuration"></a>Proje Derleme yapılandırması oluşturma
 
-1. Proje düğümüne sağ tıklayıp **seçenekleri**.
+Proje yapı yapılandırması oluşturmak için aşağıdaki adımları izleyin:
 
-2. Proje Seçenekleri iletişim kutusunda, seçmek **Yapı > yapılandırmaları**:
+1. Proje düğümüne sağ tıklayın ve **Seçenekler**' i seçin. Proje seçenekleri iletişim kutusunu açmak için proje düğümüne çift tıklayabilirsiniz.
 
-    ![Yapılandırma Yöneticisi'nde proje seçenekleri](media/create-and-edit-configurations-image2.png)
+2. Proje seçenekleri iletişim kutusunda **> yapılandırma oluştur**' u seçin:
 
-3. Yeni bir yapılandırma oluşturmak için Seç **Ekle**. Alternatif olarak, mevcut yapılandırmalardan birini kopyalayabilirsiniz.
+    ![Proje seçeneklerinde Yapılandırma Yöneticisi](media/create-and-edit-configurations-image2.png)
 
-Yapılandırma oluşturulduktan sonra kullanabileceğiniz **derleme** özelliklerini yapılandırmanıza uygun uyum sağlamak için Proje Seçenekleri bölümünde:
+3. Yeni bir yapılandırma oluşturmak için **Ekle** ' yi seçin. Ayrıca, varolan yapılandırmaların herhangi birini kopyalayabilirsiniz.
 
-![Yapı seçeneklerini yapılandırma](media/create-and-edit-configurations-image3.png)
+Yapılandırmayı oluşturduktan sonra, yapılandırmanıza uygun özellikleri uyarlamak için proje seçeneklerinde **Build** bölümünü kullanabilirsiniz:
 
-## <a name="creating-a-solution-build-configuration"></a>Çözüm yapı yapılandırması oluşturma
+![Derleme seçeneklerini yapılandırma](media/create-and-edit-configurations-image3.png)
 
-Çözüm yapı yapılandırması oluşturmak için aşağıdaki adımları uygulayın:
+## <a name="creating-a-solution-build-configuration"></a>Çözüm derleme yapılandırması oluşturma
 
-1. Çözüm düğümüne sağ tıklayıp **seçenekleri**.
+Bir çözüm yapı yapılandırması oluşturmak için aşağıdaki adımları izleyin:
 
-2. Çözüm Seçenekleri iletişim kutusunda, seçmek **Yapı > yapılandırmaları**:
+1. Çözüm düğümüne sağ tıklayın ve **Seçenekler**' i seçin. Ayrıca çözüm düğümüne çift tıklayarak çözüm seçenekleri iletişim kutusunu getirebilirsiniz.
 
-    ![Yapılandırma Yöneticisi'nde çözüm seçenekleri](media/create-and-edit-configurations-image1.png)
+2. Çözüm seçenekleri iletişim kutusunda **derleme > yapılandırması**' nı seçin:
 
-3. Yeni bir yapılandırma oluşturmak için Seç **Ekle**. Alternatif olarak, mevcut yapılandırmalardan birini kopyalayabilirsiniz.
+    ![Çözüm seçeneklerinde Yapılandırma Yöneticisi](media/create-and-edit-configurations-image1.png)
 
-Yapılandırma oluşturulduktan sonra kullanabileceğiniz **derleme** özelliklerini yapılandırmanıza uygun uyum sağlamak için her projenin Seçenekleri bölümünde:
+3. Yeni bir yapılandırma oluşturmak için **Ekle** ' yi seçin. Ayrıca, varolan yapılandırmaların herhangi birini kopyalayabilirsiniz.
 
-![Yapı seçeneklerini yapılandırma](media/create-and-edit-configurations-image3.png)
+Yapılandırmayı oluşturduktan sonra, yapılandırmanıza uygun özellikleri uyarlayabilmeniz için, projelerinizden her biri için proje seçenekleri iletişim kutusunun **derleme** bölümünü kullanabilirsiniz:
 
-## <a name="editing-a-build-configuration"></a>Yapı yapılandırmasını düzenleme
+![Derleme seçeneklerini yapılandırma](media/create-and-edit-configurations-image3.png)
 
-Bir yapılandırma yeniden adlandırmak için proje veya çözüm seçenekleri yapılandırma listeden seçin:
+## <a name="renaming-a-build-configuration"></a>Derleme yapılandırmasını yeniden adlandırma
+
+Bir yapılandırmayı yeniden adlandırmak için, proje veya çözüm seçeneklerinde **> yapılandırmalar** ' a giderek bu yapılandırmayı yapılandırma listesinden seçin:
 
 ![yapılandırma listesi](media/create-and-edit-configurations-image4.png)
 
-Seçin **Yeniden Adlandır** düğmesi.
+**Yeniden Adlandır** düğmesini seçin.
 
-![yeniden adlandırma iletişim kutusu](media/create-and-edit-configurations-image5.png)
+![Yeniden Adlandır iletişim kutusu](media/create-and-edit-configurations-image5.png)
 
-## <a name="related-video"></a>İlgili Video
+Onaylamak için **Tamam** ' ı tıklatın.
+
+## <a name="related-video"></a>İlgili video
 
 > [!Video https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Visual-Studio-for-Mac-Launch-Multiple-Projects/player]
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [Derleme yapılandırmaları (Windows için Visual Studio) oluşturma ve düzenleme](/visualstudio/ide/how-to-create-and-edit-configurations)
+- [Derleme yapılandırması oluşturma ve düzenleme (Windows üzerinde Visual Studio)](/visualstudio/ide/how-to-create-and-edit-configurations)

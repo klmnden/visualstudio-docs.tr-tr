@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 97ed8dda2ea5d338bc7d60be845fafad6a30b47f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a368a9b8f6d25753993a2cc10ea9ca94734d6709
+ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62777588"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71128284"
 ---
 # <a name="analyze-resource-consumption-and-ui-thread-activity-xaml"></a>Kaynak tüketimi ve kullanıcı Arabirimi iş parçacığı etkinliği (XAML) analiz edin
 
@@ -123,8 +123,8 @@ Kullanım **zaman çizelgesi ayrıntıları** sıralama, filtreleme ve açıklam
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [WPF ekibi blogu: WPF uygulamaları için yeni kullanıcı Arabirimi Performans analiz aracı](https://blogs.msdn.microsoft.com/wpf/2015/01/16/new-ui-performance-analysis-tool-for-wpf-applications/)
+- [WPF Ekip Blogu: WPF uygulamaları için yeni UI performans Analizi Aracı](https://blogs.msdn.microsoft.com/wpf/2015/01/16/new-ui-performance-analysis-tool-for-wpf-applications/)
 - [C++, C# ve Visual Basic kullanarak UWP uygulamaları için en iyi performans](/previous-versions/windows/apps/hh750313\(v\=win.10\))
 - [WPF uygulama performansını iyileştirin](/dotnet/framework/wpf/advanced/optimizing-wpf-application-performance)
-- [Visual Studio profil oluşturma](../profiling/index.md)
+- [Visual Studio profil oluşturma](../profiling/index.yml)
 - [Araçlar profil oluşturmaya ilk bakış](../profiling/profiling-feature-tour.md)

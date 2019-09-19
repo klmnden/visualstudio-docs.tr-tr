@@ -1,6 +1,6 @@
 ---
-title: CPU kullanım verilerini (ASP.NET) çözümleme
-description: CPU kullanımı Tanılama Aracı'nı kullanarak ASP.NET uygulamalarında uygulama performansını ölçmeye
+title: CPU kullanım verilerini çözümleme (ASP.NET)
+description: CPU kullanımı Tanılama aracını kullanarak ASP.NET uygulamalarında uygulama performansını ölçme
 ms.custom: mvc
 ms.date: 08/06/2018
 ms.topic: quickstart
@@ -12,46 +12,46 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 65d6dbd67debc4673173af29e0c92aa57b58c865
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: cbaaa53fe737761fdd938b7861c371e8e5619acc
+ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65703868"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71128174"
 ---
-# <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-aspnet"></a>Hızlı Başlangıç: CPU kullanım verilerini, Visual Studio (ASP.NET) çözümleme
+# <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-aspnet"></a>Hızlı Başlangıç: Visual Studio 'da CPU kullanım verilerini çözümleme (ASP.NET)
 
-Visual Studio, uygulamanızdaki performans sorunlarını analiz etmenize yardımcı olmak için çok sayıda güçlü özellikler sağlar. Bu konuda bazı temel özellikleri öğrenmek için hızlı bir yolunu sağlar. Burada, yüksek CPU kullanımından kaynaklanan performans sorunlarını tanımlamak için bir aracı atacağız. Tanılama araçları, yerel/C++ geliştirme ve ASP.NET dahil olmak üzere Visual Studio .NET geliştirme için desteklenir.
+Visual Studio, uygulamanızdaki performans sorunlarını çözümlemenize yardımcı olacak birçok güçlü özellik sunar. Bu konu, temel özelliklerden bazılarını öğrenmenin hızlı bir yolunu sağlar. Burada, yüksek CPU kullanımı nedeniyle performans sorunlarını belirlemek için bir araca bakacağız. Tanılama araçları, yerel/C++ geliştirme ve ASP.NET dahil olmak üzere Visual Studio .NET geliştirme için desteklenir.
 
-Tanılama hub'ı, çok sayıda çalıştırın ve tanılama oturumunuzu yönetmek için diğer bir seçenek sunar. Varsa **CPU kullanımı** burada açıklanan aracı değil size gereksinim duyduğunuz verileri [diğer profil oluşturma araçları](../profiling/profiling-feature-tour.md) farklı türde size yardımcı olabilecek bilgiler sağlar. Çoğu durumda, uygulamanızın performans sorunu, CPU, bellek, işleme kullanıcı Arabirimi veya ağ isteği süresi gibi dışında bir şey tarafından kaynaklanabilir.
+Tanılama hub'ı, çok sayıda çalıştırın ve tanılama oturumunuzu yönetmek için diğer bir seçenek sunar. Burada açıklanan **CPU kullanım** aracı size ihtiyacınız olan verileri sağlamıyorsa, [diğer profil oluşturma araçları](../profiling/profiling-feature-tour.md) sizin için yararlı olabilecek farklı türde bilgiler sağlar. Çoğu durumda, uygulamanızın performans sorunu, CPU, bellek, işleme kullanıcı Arabirimi veya ağ isteği süresi gibi dışında bir şey tarafından kaynaklanabilir.
 
-Windows 8 ve üzeri, hata ayıklayıcısı ile profil oluşturma araçları çalıştırmak için gereklidir (**tanılama araçları** pencere). Windows 7 ve daha sonra son İnceleme aracını kullanabilirsiniz [performans Profiler](../profiling/profiling-feature-tour.md).
+Windows 8 ve üzeri, hata ayıklayıcısı ile profil oluşturma araçları çalıştırmak için gereklidir (**tanılama araçları** pencere). Windows 7 ve üzeri sürümlerde, [performans profil oluşturucuyu](../profiling/profiling-feature-tour.md)son mordıtem Aracı ' nı kullanabilirsiniz.
 
 ## <a name="create-a-project"></a>Proje oluşturma
 
-1. Visual Studio'da **dosya** > **yeni proje**.
+1. Visual Studio 'da **Dosya** > **Yeni proje**' yi seçin.
 
-1. Altında **Visual C#**, seçin **Web**seçip Ortadaki bölmeden **ASP.NET Web uygulaması (.NET Framework)**.
+1. **C#Görsel**bölümünde **Web**' i seçin ve ardından orta bölmedeki **ASP.NET Web uygulaması (.NET Framework)** öğesini seçin.
 
-    Görmüyorsanız **ASP.NET Web uygulaması** proje şablonu, tıklayın **açık Visual Studio yükleyicisi** sol bölmesinde bağlantıyı **yeni proje** iletişim kutusu. Visual Studio Yükleyicisi'ni başlatır. Seçin **ASP.NET ve web geliştirme** iş yükü, ardından **Değiştir**.
+    **ASP.NET Web uygulaması** proje şablonunu görmüyorsanız, **Yeni proje** iletişim kutusunun sol bölmesindeki **Visual Studio yükleyicisi aç** bağlantısına tıklayın. Visual Studio Yükleyicisi'ni başlatır. **ASP.net ve Web geliştirme** iş yükünü seçin ve ardından **Değiştir**' i seçin.
 
-1. Gibi bir ad yazın **MyProfilingApp_MVC** tıklatıp **Tamam**.
+1. **MyProfilingApp_MVC** gibi bir ad yazın ve **Tamam**' a tıklayın.
 
-1. Görünen iletişim kutusunda **MVC** orta bölmesinde ve ardından **Tamam**.
+1. Görüntülenen iletişim kutusunda Ortadaki bölmede **MVC** ' yi seçin ve ardından **Tamam**' a tıklayın.
 
-    Visual Studio projesi oluşturur. Çözüm Gezgini (sağ bölme), proje dosyaları gösterir.
+    Visual Studio projesi oluşturur. Çözüm Gezgini (sağ bölme) proje dosyalarınızı gösterir.
 
-1. Çözüm Gezgini'nde, modeller klasörü sağ tıklatın ve seçin **Ekle** > **sınıfı**.
+1. Çözüm Gezgini, modeller klasörüne sağ tıklayın ve**sınıf** **Ekle** > ' yi seçin.
 
-1. Yeni bir sınıf adı `Data.cs` ve **Ekle**.
+1. Yeni sınıfı `Data.cs` adlandırın ve **Ekle**' yi seçin.
 
-1. Çözüm Gezgini'nde açın `Models/Data.cs` ve aşağıdakileri ekleyin `using` deyimini dosyanın en üstüne:
+1. Çözüm Gezgini ' de açın `Models/Data.cs` ve aşağıdaki `using` ifadeyi dosyanın en üstüne ekleyin:
 
     ```csharp
     using System.Threading;
     ```
 
-1. Aşağıdaki kod Data.cs değiştirin:
+1. Data.cs ' de, aşağıdaki kodu değiştirin:
 
     ```csharp
     public class Data
@@ -129,7 +129,7 @@ Windows 8 ve üzeri, hata ayıklayıcısı ile profil oluşturma araçları çal
     }
     ```
 
-1. Çözüm Gezgini'nde açın *Controller/HomeControllers.cs*, aşağıdaki kodu değiştirin:
+1. Çözüm Gezgini, *Controller/HomeControllers. cs*' yi açın ve aşağıdaki kodu değiştirin:
 
     ```csharp
     public ActionResult About()
@@ -153,36 +153,36 @@ Windows 8 ve üzeri, hata ayıklayıcısı ile profil oluşturma araçları çal
     }
     ```
 
-## <a name="step-1-collect-profiling-data"></a>1. Adım: Profil oluşturma verilerini topla
+## <a name="step-1-collect-profiling-data"></a>1\. Adım: Profil oluşturma verilerini topla
 
-1. İlk olarak, bu kod satırı üzerinde uygulamanızda bir kesme noktası ayarlamak `Simple` Oluşturucusu:
+1. İlk olarak, `Simple` kurucudaki Bu kod satırında uygulamanızda bir kesme noktası ayarlayın:
 
     `for (int i = 0; i < 200; i++)`
 
-    Bir kesme noktası cilt payını sola kod satırının tıklayarak ayarlayın.
+    Kod satırının solundaki cilt paya tıklayarak bir kesme noktası ayarlayın.
 
-1. Ardından, sonunda kapanış ayracı ikinci bir kesme noktası ayarlamak `Simple` Oluşturucusu:
+1. Sonra, `Simple` oluşturucunun sonundaki kapanış küme ayracı üzerinde ikinci bir kesme noktası ayarlayın:
 
-     ![Profil oluşturma için kesme noktaları belirleyin](../profiling/media/quickstart-cpu-usage-breakpoints-aspnet.png)
+     ![Profil oluşturma için kesme noktaları ayarla](../profiling/media/quickstart-cpu-usage-breakpoints-aspnet.png)
 
     > [!TIP]
     > İki kesme noktaları ayarlayarak veri toplamayı çözümlemek istediğiniz kod parçalarını sınırlayabilirsiniz.
 
-1. **Tanılama araçları** pencere zaten görünür değilse, bunu devre dışı bırakmış. Pencereyi ayarlayıp yeniden getirmek için tıklayın **hata ayıklama** > **Windows** > **tanılama araçlarını Göster**.
+1. **Tanılama araçları** pencere, siz kapatmadığınız müddetçe zaten görünür. Pencereyi ayarlayıp yeniden getirmek için tıklayın **hata ayıklama** > **Windows** > **tanılama araçlarını Göster**.
 
 1. Tıklayın **hata ayıklama** > **hata ayıklamayı Başlat** (veya **Başlat** araç çubuğunda veya **F5**).
 
-1. Uygulama yükleme bittiğinde, bilgisayarınızı **hakkında** yeni kod çalıştırmaya başlamak için web sayfasının üstündeki bağlantısı.
+1. Uygulamanın yüklenmesi tamamlandığında, yeni kodu çalıştırmaya başlamak için Web sayfasının en üstündeki **hakkında hakkında** bağlantısına tıklayın.
 
-1. Bakmak **özeti** Tanılama Araçları'nın görünümü görüntülenir.
+1. Tanılama araçlarının **Özet** görünümüne bakın.
 
-1. Seçerek hata ayıklayıcıyı duraklatılmış durumdayken, CPU kullanım verileri toplamayı etkinleştir **kayıt CPU profili**ve ardından açın **CPU kullanımı** sekmesi.
+1. Hata ayıklayıcı duraklatıldığında, CPU kullanım verilerinin toplanmasını sağlamak için **CPU profilini kaydet**' i seçip **CPU kullanımı** sekmesini açın.
 
-     ![Tanılama araçları, CPU profili oluşturmayı etkinleştir](../profiling/media/quickstart-cpu-usage-summary.png)
+     ![Tanılama araçları CPU profilini oluşturmayı etkinleştirir](../profiling/media/quickstart-cpu-usage-summary.png)
 
-     Veri toplama etkinleştirilirse, Kaydet düğmesinin kırmızı bir daire görüntüler.
+     Veri toplama etkinleştirildiğinde, kayıt düğmesi kırmızı bir daire görüntüler.
 
-     Seçeneğini belirlediğinizde **kayıt CPU profili**, Visual Studio, işlevlerinizin kaydı başlayacak ve aldıkları yürütmek için ne kadar süre ve örnekleme oturumunun belirli segmentlerine odaklanmak için kullanabileceğiniz bir zaman çizelgesi grafiği sağlar. Uygulamanız bir kesme noktasında durdurulur, yalnızca bu toplanan verileri görüntüleyebilirsiniz.
+     **CPU profilini kaydet**' i seçtiğinizde, Visual Studio işlevlerinizi kaydetmeye başlar ve ne kadar sürer ve ayrıca örnekleme oturumunun belirli kesimlerine odaklanmak için kullanabileceğiniz bir zaman çizelgesi grafiği sağlar. Bu toplanan verileri yalnızca, uygulamanız bir kesme noktasında durdurulduğunda görüntüleyebilirsiniz.
 
 6. Uygulamayı, ikinci bir kesme noktasına kadar çalıştırmak için F5'e basın.
 
@@ -194,7 +194,7 @@ Windows 8 ve üzeri, hata ayıklayıcısı ile profil oluşturma araçları çal
 
      Bu noktada, verileri çözümlemek başlayabilirsiniz.
 
-## <a name="step-2-analyze-cpu-usage-data"></a>2. Adım: CPU kullanım verilerini çözümleme
+## <a name="step-2-analyze-cpu-usage-data"></a>2\. Adım: CPU kullanım verilerini çözümleme
 
 CPU kullanımı altında işlevler listesini inceleyerek, en fazla çalışmayı yapan işlevleri tanımlama ve ardından her birine daha yakından bakalım alma verilerinizi analiz etmeye başlamanızı öneririz.
 
@@ -205,17 +205,17 @@ CPU kullanımı altında işlevler listesini inceleyerek, en fazla çalışmayı
     > [!TIP]
     > İşlevler, en fazla çalışmayı yapan olanlar başlayarak sırayla listelenir (çağrı sırayla olmadıklarını). Bu, uzun çalışan işlevleri hızlıca belirlemenize yardımcı olur.
 
-2. İşlev listesinde çift `MyProfilingApp_MVC.Models.ServerClass::GetNumber` işlevi.
+2. İşlev listesinde, `MyProfilingApp_MVC.Models.ServerClass::GetNumber` işlevine çift tıklayın.
 
-    İşlev çift tıkladığınızda **çağıran/çağrılan** görünümü sol bölmede açılır.
+    İşleve çift tıkladığınızda, **çağıran/çağrılan** görünümü sol bölmede açılır.
 
-    ![Arayan/Aranan görünümü tanılama araçları](../profiling/media/quickstart-cpu-usage-caller-callee-aspnet.png)
+    ![Tanılama araçları arayan/çağrılan görünümü](../profiling/media/quickstart-cpu-usage-caller-callee-aspnet.png)
 
-    Bu görünümünde seçili işlev hem de başlığında gösterilir **geçerli işlevin** kutusunu (`ServerClass::GetNumber`, bu örnekte). Geçerli işlevi çağıran işleve sol altında gösterilen **işlevi çağırma**, ve geçerli işlev tarafından çağrılan tüm işlevleri gösterilir **çağrılan işlevlerin** sağdaki kutuya. (Geçerli işlevin değiştirmek için ya da kutusunu seçebilirsiniz.)
+    Bu görünümde, seçilen işlev başlıkta ve **geçerli işlev** kutusunda (`ServerClass::GetNumber`Bu örnekte) görüntülenir. Geçerli işlevi çağıran işleve sol altında gösterilen **işlevi çağırma**, ve geçerli işlev tarafından çağrılan tüm işlevleri gösterilir **çağrılan işlevlerin** sağdaki kutuya. (Geçerli işlevin değiştirmek için ya da kutusunu seçebilirsiniz.)
 
     Bu görünüm, toplam süre (ms) ve genel uygulamayı işlevi tamamlamak için gerçekleştirdiği zaman yüzdesini gösterir.
 
-    **İşlev gövdesi** ayrıca süresi (ve zamanı yüzdesi) işlev gövdesinde harcanan süre hariç toplam miktarı harcanan içinde arama ve işlevlerin çağrılma gösterilmektedir. (Bu örnekte, 2220 2235 ms dışında işlev gövdesi ve kalan zaman harcanan (< 20 ms) Bu işlev tarafından çağırılan dış kod harcandığını). Gerçek değerleri ortamınıza bağlı olarak farklı olacaktır.
+    **İşlev gövdesi** ayrıca süresi (ve zamanı yüzdesi) işlev gövdesinde harcanan süre hariç toplam miktarı harcanan içinde arama ve işlevlerin çağrılma gösterilmektedir. (Bu çizimde, işlev gövdesinde 2220 MS 'tan 2235 tanesi harcanmış ve kalan süre (< 20 ms) Bu işlev tarafından çağrılan harici kodda harcanmıştı). Gerçek değerler ortamınıza bağlı olarak farklı olacaktır.
 
     > [!TIP]
     > Yüksek değerleri **işlev gövdesi** işlevin kendisi içinde bir performans engelini işaret edebilir.
@@ -224,9 +224,9 @@ CPU kullanımı altında işlevler listesini inceleyerek, en fazla çalışmayı
 
 - [Bellek kullanımını analiz etme](../profiling/memory-usage.md)performans sorunlarını tanımlamak için.
 - [CPU kullanımını analiz etme](../profiling/cpu-usage.md) CPU kullanım aracı hakkında daha ayrıntılı bilgiler.
-- -Daha fazla bilgi için çalışan bir uygulamanın hedefleyerek veya eklenmiş bir hata ayıklayıcı olmadan CPU kullanımını analiz etme [hata ayıklama olmadan profil oluşturma verisi toplama](../profiling/running-profiling-tools-with-or-without-the-debugger.md#collect-profiling-data-without-debugging) içinde [profil oluşturma araçları ile veya hata ayıklayıcı olmadan çalıştırın](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
+- Bir hata ayıklayıcı ekli veya çalışan bir uygulamayı hedefleyerek CPU kullanımını analiz etme-daha fazla bilgi için bkz. hata [ayıklayıcı ile veya olmayan profil oluşturma araçlarında](../profiling/running-profiling-tools-with-or-without-the-debugger.md) [hata ayıklama olmadan profil oluşturma verileri toplama](../profiling/running-profiling-tools-with-or-without-the-debugger.md#collect-profiling-data-without-debugging) .
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [Visual Studio profil oluşturma](../profiling/index.md)
+- [Visual Studio profil oluşturma](../profiling/index.yml)
 - [Araçlar profil oluşturmaya ilk bakış](../profiling/profiling-feature-tour.md)

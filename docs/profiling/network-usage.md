@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2d0a806ef6e6c3fb20ce4d2697f3b4fe6ff6674e
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 58f69d5188a82937c44552e8fd192ea2dba28d3e
+ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63403564"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71128148"
 ---
 # <a name="analyze-network-usage-in-uwp-apps"></a>UWP uygulamalarında ağ kullanımını analiz etme
 Visual Studio **ağ** Tanılama aracını kullanarak gerçekleştirilen ağ işlemleri hakkındaki verileri toplar [Windows.Web.Http API](/uwp/api/windows.web.http). Verileri çözümleme, erişim ve kimlik doğrulaması ile ilgili sorunlar, yanlış önbellek kullanımı ve görüntü gibi sorunları çözmek ve indirme performansını yardımcı olabilir.
@@ -74,7 +74,7 @@ Visual Studio **ağ** Tanılama aracını kullanarak gerçekleştirilen ağ işl
 ## <a name="see-also"></a>Ayrıca bkz.
 
 - [Hata ayıklayıcı ile veya hata ayıklayıcı olmadan profil oluşturma araçları çalıştırma](../profiling/running-profiling-tools-with-or-without-the-debugger.md)
-- [Visual Studio blog'u: Visual Studio'nun ağ Inspector ile tanışın](http://go.microsoft.com/fwlink/?LinkId=535022)
-- [Kanal 9 Video: VS tanılama araçları - yeni ağ Profiler](https://channel9.msdn.com/Series/ConnectOn-Demand/206)
-- [Visual Studio profil oluşturma](../profiling/index.md)
+- [Visual Studio blogu: Visual Studio 'nun ağ denetçisini tanıtma](http://go.microsoft.com/fwlink/?LinkId=535022)
+- [Channel 9 videosu: VS tanılama araçları-yeni ağ Profilcisi](https://channel9.msdn.com/Series/ConnectOn-Demand/206)
+- [Visual Studio profil oluşturma](../profiling/index.yml)
 - [Araçlar profil oluşturmaya ilk bakış](../profiling/profiling-feature-tour.md)

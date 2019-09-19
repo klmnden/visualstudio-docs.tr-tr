@@ -1,5 +1,5 @@
 ---
-title: Profil oluşturma Visual Studio 2017'deki yenilikler | Microsoft Docs
+title: Visual Studio 2017 ' de profil oluşturma yenilikleri | Microsoft Docs
 titleSuffix: ''
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -13,28 +13,28 @@ manager: jillfra
 ms.workload:
 - multiple
 monikerRange: vs-2017
-ms.openlocfilehash: 8fcd01198877ef06eb398ce99fe467deb923546c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0512c6e95f0a26184593f7af5ba08c31c33a3299
+ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62999230"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71128334"
 ---
-# <a name="whats-new-in-profiling-tools-in-includevsdev15miscincludesvsdev15mdmd"></a>İçinde profil oluşturma araçlarındaki yenilikler nelerdir? [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]
+# <a name="whats-new-in-profiling-tools-in-includevs_dev15miscincludesvs_dev15_mdmd"></a>İçindeki profil oluşturma araçlarındaki yenilikler[!include[vs_dev15](../misc/includes/vs_dev15_md.md)]
 
-Tanılama araçları, uygulamanızdaki düzeltme gereken sorunları belirlemenize yardımcı olmak için yeni görselleştirmeler içerir. Tanılama araçları, artık ASP.NET uygulamaları için destek içerir.
+Tanılama araçları, uygulamanızda düzeltilmesi gereken sorunları belirlemenize yardımcı olacak yeni görselleştirmeler içerir. Tanılama araçları artık ASP.NET uygulamaları için destek içerir.
 
-Ek bilgi için bkz: [sürüm notları [!include[vs_dev15](../misc/includes/vs_dev15_md.md)] ](/visualstudio/releasenotes/vs2017-relnotes).
+Daha fazla bilgi için [sürüm notlarına [!include[vs_dev15](../misc/includes/vs_dev15_md.md)] ](/visualstudio/releasenotes/vs2017-relnotes)bakın.
 
-A **özeti** sekmesinde, performans analizi için anahtar alanları odaklanmanıza yardımcı olan araçlar eklendi. Bu sekme kaç tane olay meydana gösterir, yığın anlık görüntüleri yararlanmanıza imkan sağlar ve CPU kullanım verilerini toplamayı hızlı bir şekilde etkinleştirmenize olanak tanır. Bu görünüm tüm gösterir [Application ınsights](/azure/azure-monitor/app/visual-studio) veya [UI analizi](/visualstudio/releasenotes/vs2017-relnotes) olayları. Ayrıca, Visual Studio Enterprise için bu görünüm IntelliTrace olaylarını da gösterir.
+Performans analiziniz için önemli alanlara odaklanmanıza yardımcı olan araçlara bir **Özet** sekmesi eklenmiştir. Bu sekme, kaç olay oluştuğunu gösterir, yığının anlık görüntülerini almanızı sağlar ve CPU kullanımı veri toplamayı hızlıca etkinleştirmenizi sağlar. Bu görünümde tüm [Application Insights](/azure/azure-monitor/app/visual-studio) veya [UI çözümleme](/visualstudio/releasenotes/vs2017-relnotes) olayları gösterilir. Ayrıca, Visual Studio Enterprise için de bu görünüm IntelliTrace olaylarını gösterir.
 
-![Tanılama araçları özeti sekmesi](../profiling/media/diag-tools-summary-tab-2.png "DiagToolsSummaryTab")
+![Tanılama araçları Özet sekmesi](../profiling/media/diag-tools-summary-tab-2.png "DiagToolsSummaryTab")
 
-CPU kullanım aracı [yeni görselleştirmeler](../profiling/Beginners-Guide-to-Performance-Profiling.md) performans sorunlarına neden olma olasılığı olan işlevler tanımlamanıza yardımcı olacak. Yeni **çağıran/çağrılan** görünümü seçili bir işlevden yapılan işlev çağrılarının maliyetlerini incelemenize olanak sağlar.
+CPU kullanım aracında, performans sorunlarına neden olabilecek işlevleri belirlemenize yardımcı olacak [Yeni görselleştirmeler](../profiling/Beginners-Guide-to-Performance-Profiling.md) vardır. Yeni **arayan/çağrılan** görünümü seçili bir işleve ve bu işlevden yapılan işlev çağrılarının maliyetlerini araştırmanıza olanak sağlar.
 
-![Tanılama araçları arayan Aranan görünümü](../profiling/media/diag-tools-caller-callee-2.png "DiagToolsCallerCallee")
+![Tanılama araçları çağıran çağrılan görünümü](../profiling/media/diag-tools-caller-callee-2.png "Diagtoolscallerçağrılan")
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [Visual Studio profili](../profiling/index.md)
+- [Visual Studio 'da profil](../profiling/index.yml)
 - [Araçlar profil oluşturmaya ilk bakış](../profiling/profiling-feature-tour.md)
