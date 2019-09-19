@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aa2c9a4585947fb7d2e21d1eea4e6613cdd33964
-ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
+ms.openlocfilehash: 3d2540b0c725860ea9a21f32d1d01074cf39380f
+ms.sourcegitcommit: 6993bcb0d2b0067b1b7b7899bfba52c31c70b7e7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/10/2019
-ms.locfileid: "65531665"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71095290"
 ---
 # <a name="features-of-the-code-editor"></a>Kod Düzenleyicisi özellikleri
 
@@ -56,15 +56,15 @@ Gelişmiş Özellikler bulabilirsiniz **Düzenle** > **Gelişmiş** araç çubu�
 |Seçimi Biçimlendir|Kod satırlarının uygun girintisini ayarlar ve seçimdeki satırları ayırmak için çengelli ayraç taşır.|
 |Seçili satırları sekmeye Dönüştür|Uygun yerlerde sekmeleri öndeki boşlukları değiştirir.|
 |Seçili satırları sekmeye dönüştürme|Değişiklikleri sekmeleri boşluklarla değiştirin. Dosyanızdaki tüm boşlukları sekme (veya tüm sekmeleri boşluklara) dönüştürmek isterseniz, kullanabileceğiniz `Edit.ConvertSpacesToTabs` ve `Edit.ConvertTabsToSpaces` komutları. Bu komutlar Visual Studio menülerinde görünmez, ancak bunları çağırabilirsiniz **hızlı erişim** penceresinden veya komut penceresinden.|
-|Büyük Harf Yap|Büyük harfe Seçimdeki tüm karakterleri veya seçim yok ise büyük harfe ekleme noktasındaki karakteri değiştirir. Kısayol: **CTRL**+**Shift**+**U**.|
-|Küçük harfe Dönüştür|Küçük harf, seçimdeki tüm karakterleri veya herhangi bir seçim yoksa ekleme noktasındaki karakteri küçük harfe değiştirir. Kısayol: **CTRL**+**U**.|
-|Seçili satırları Yukarı Taşı|Seçili satır bir satır yukarı taşır. Kısayol: **Alt**+**yukarı ok**.|
-|Seçili satırları Aşağı Taşı|Seçili satır bir satır aşağı taşır. Kısayol: **Alt**+**aşağı ok**.|
-|Yatay boşluğu Sil|Sekme veya boşluk geçerli satırın sonunda siler. Kısayol: **CTRL**+**K**, **Ctrl**+ **\\**|
+|Büyük Harf Yap|Büyük harfe Seçimdeki tüm karakterleri veya seçim yok ise büyük harfe ekleme noktasındaki karakteri değiştirir. Kısayol **CTRL**+SHIFTU+.|
+|Küçük harfe Dönüştür|Küçük harf, seçimdeki tüm karakterleri veya herhangi bir seçim yoksa ekleme noktasındaki karakteri küçük harfe değiştirir. KısayolCTRL+**U**.|
+|Seçili satırları Yukarı Taşı|Seçili satır bir satır yukarı taşır. KısayolAlt+**yukarı ok**.|
+|Seçili satırları Aşağı Taşı|Seçili satır bir satır aşağı taşır. KısayolAlt+**aşağı ok**.|
+|Yatay boşluğu Sil|Sekme veya boşluk geçerli satırın sonunda siler. Kısayol **CTRL**+**K**, **CTRL**+ **\\**|
 |Boşluğu görüntüle|Boşlukları Kabarık noktalar olarak, sekmeleri oklar olarak görüntüler. Bir dosyanın sonu dikdörtgen bir simge olarak görüntülenir. Varsa **Araçları** > **seçenekleri** > **metin düzenleyici** > **tüm diller**  >  **Sözcük kaydırma** > **Show görünür glyph'leri sözcük kaydırma için** olduğu belirlenirse, o glyph de gösterilir.|
 |Sözcük kaydırma|Tüm satırların kod penceresinde görünür olmasını belgeye neden olur. Sözcük kaydırma ve buna kapatabilirsiniz **metin düzenleyici tüm diller** ayarları (**Araçları** > **seçenekleri** > **metin düzenleyicisi**   >  **Tüm diller**).|
-|Seçimi açıklama satırı yap|Seçime veya geçerli satıra yorum karakterleri ekler. Kısayol: **CTRL**+**K**, **Ctrl**+**C**|
-|Seçimi işletilir satıra Çevir|Seçimden veya geçerli satıra yorum karakterleri kaldırır. Kısayol: **CTRL**+**K**, **Ctrl**+**U**|
+|Seçimi açıklama satırı yap|Seçime veya geçerli satıra yorum karakterleri ekler. Kısayol **CTRL** **K,** CTRL C++|
+|Seçimi işletilir satıra Çevir|Seçimden veya geçerli satıra yorum karakterleri kaldırır. Kısayol **CTRL** **K,** CTRL U++|
 |Satır Girintisini Artır|Bir sekme (veya eşdeğer boşluk) seçilen satırlardan veya geçerli satırı ekler.|
 |Satır girintisini Azalt|Bir sekme (veya eşdeğer boşluk) seçilen satırlardan veya geçerli satırı kaldırır.|
 |Etiket Seç|Etiket (örneğin, XML veya HTML) içeren bir belgede etiket seçilir.|
@@ -76,7 +76,7 @@ Kod Düzenleyicisi'nde çeşitli geriye doğru gezinmek gibi farklı yolları ve
 
 ## <a name="find-references-in-your-code-base"></a>Kod tabanınızın başvuruları Bul
 
-Belirli kod öğelerinin tabanınızın Burada başvurulan bulmak için kullanabileceğiniz **tüm başvuruları Bul** komut veya basın **Shift**+**F12**. Ayrıca, tıkladığınızda bir tür veya üye, **başvuru vurgulama** özelliği, bu türe veya üyeye tüm başvurularını otomatik olarak vurgular. Daha fazla bilgi için [kodunuzdaki başvuruları bulma](finding-references.md).
+Kodlarınızın tamamında belirli kod öğelerine başvurulduğunu bulmak için, **tüm başvuruları bul** komutunu kullanabilir veya **SHIFT**+**F12**tuşlarına basabilirsiniz. Ayrıca, tıkladığınızda bir tür veya üye, **başvuru vurgulama** özelliği, bu türe veya üyeye tüm başvurularını otomatik olarak vurgular. Daha fazla bilgi için [kodunuzdaki başvuruları bulma](finding-references.md).
 
 ## <a name="customize-the-editor"></a>Düzenleyiciyi özelleştirme
 
@@ -90,6 +90,6 @@ JavaScript özel düzenleyici seçenekleri için bkz. [JavaScript Düzenleyici S
 
 - [Kaynak Düzenleyicisi (Mac için Visual Studio)](/visualstudio/mac/source-editor)
 - [Visual Studio IDE](../get-started/visual-studio-ide.md)
-- [Visual Studio'da C++ kullanmaya başlama](../ide/getting-started-with-cpp-in-visual-studio.md)
+- [Visual Studio'da C++ kullanmaya başlama](/cpp/get-started/tutorial-console-cpp)
 - [C# ve Visual Studio'da ASP.NET kullanmaya başlama](../get-started/csharp/tutorial-aspnet-core.md)
 - [Visual Studio'da Python ile çalışmaya başlama](../ide/quickstart-python.md)

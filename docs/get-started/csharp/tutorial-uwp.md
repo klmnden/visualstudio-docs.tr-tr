@@ -14,12 +14,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: dab237eeb99f4d4d67652dba583bf9851b6d6175
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
+ms.openlocfilehash: 930512d762a05a91ab233566b76c6591ab2ea6d4
+ms.sourcegitcommit: 6993bcb0d2b0067b1b7b7899bfba52c31c70b7e7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70180457"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71095380"
 ---
 # <a name="tutorial-create-your-first-universal-windows-platform-application-in-visual-studio-with-xaml-and-c35"></a>Öğretici: Visual Studio 'da XAML ve C ile ilk Evrensel Windows Platformu uygulamanızı oluşturma&#35;
 
@@ -91,7 +91,7 @@ Geliştirmeye başlama zamanı. Düğme denetimi ekleyecek, düğmeye bir eylem 
 
    ![XAML düzenleyicisinde XAML Tasarımcısı bölmesi](media/uwp-xaml-editor.png)
 
-1. Araç kutusu ' nu seçerek araç kutusu açılır penceresini açın.
+1. Araç **kutusu ' nu seçerek araç** kutusu açılır penceresini açın.
 
    ![Araç kutusu ' na tıklayarak araç kutusu açılır penceresini açın](media/uwp-toolbox.png)
 
@@ -160,7 +160,7 @@ Kod, bir konuşma senıs nesnesi oluşturmak için bazı Windows API 'Lerini kul
 
    ![UWP uygulamanızı başlatmak ve hatalarını ayıklamak için yerel makine ' ye tıklayın](media/uwp-start-or-debug.png)
 
-   (Alternatif olarak, menü çubuğunda > hata**ayıklamayı Başlat** ' ı seçebilir veya F5 tuşuna basarak uygulamanızı başlatabilirsiniz.)
+   (Alternatif olarak, menü çubuğunda **hata** > **ayıklamayı Başlat** ' ı seçebilir veya F5 tuşuna basarak uygulamanızı başlatabilirsiniz.)
 
 1. Giriş ekranı kaybolduktan sonra görüntülenen uygulamanızı görüntüleyin. Uygulama şuna benzer görünmelidir:
 
@@ -170,7 +170,7 @@ Kod, bir konuşma senıs nesnesi oluşturmak için bazı Windows API 'Lerini kul
 
    Windows 10 cihazınız, "Merhaba, Dünya!" harfine sahip olacak
 
-1. Uygulamayı kapatmak için araç çubuğunda **hata ayıklamayı Durdur** düğmesine tıklayın. (Alternatif olarak, > menü çubuğunda Hata**ayıklamayı Durdur** ' u seçin veya SHIFT + F5 tuşlarına basın.)
+1. Uygulamayı kapatmak için araç çubuğunda **hata ayıklamayı Durdur** düğmesine tıklayın. (Alternatif olarak, menü çubuğunda Hata**ayıklamayı Durdur** ' **u seçin** > veya SHIFT + F5 tuşlarına basın.)
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
@@ -178,3 +178,8 @@ Bu öğreticiyi tamamlamak Tebrikler! UWP ve Visual Studio IDE hakkında bazı t
 
 > [!div class="nextstepaction"]
 > [Kullanıcı arabirimi oluşturma](/windows/uwp/design/basics/xaml-basics-ui)
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+- [UWP genel bakış](/windows/uwp/get-started/universal-application-platform-guide)
+- [UWP uygulama örnekleri al](/windows/uwp/get-started/get-uwp-app-samples)

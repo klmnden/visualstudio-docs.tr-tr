@@ -1,6 +1,6 @@
 ---
-title: Yazma ve kodu yönetin
-description: Kod Düzenleyicisi ve diğer araçları, Visual Studio'da yazma gidin, yönetmek ve kodunuzu geliştirmek için kullanmayı öğrenin.
+title: Kodu yazma ve yönetme
+description: Kodunuzu yazmak, gezinmek, yönetmek ve geliştirmek için Visual Studio 'daki kod düzenleyicisini ve diğer araçları nasıl kullanacağınızı öğrenin.
 ms.date: 01/01/2018
 layout: LandingPage
 ms.topic: landing-page
@@ -8,16 +8,16 @@ author: gewarren
 ms.author: gewarren
 ms.workload:
 - multiple
-ms.openlocfilehash: d18ca688c1eac02fc2b24c3f8cb0f9551e4939ae
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 49c8ac683c83753b75c20e15ca9aa12845135905
+ms.sourcegitcommit: 6993bcb0d2b0067b1b7b7899bfba52c31c70b7e7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62430308"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71095232"
 ---
-# <a name="write-and-manage-code-using-visual-studio"></a>Yazmak ve kodunuzu Visual Studio kullanarak yönetme
+# <a name="write-and-manage-code-using-visual-studio"></a>Visual Studio kullanarak kod yazma ve yönetme
 
-Kod Düzenleyicisi ve diğer araçları, Visual Studio'da yazma gidin, yönetmek ve kodunuzu geliştirmek için kullanmayı öğrenin.
+Kodunuzu yazmak, gezinmek, yönetmek ve geliştirmek için Visual Studio 'daki kod düzenleyicisini ve diğer araçları nasıl kullanacağınızı öğrenin.
 
 <!-- markdownlint-disable MD033 -->
 
@@ -69,7 +69,7 @@ Kod Düzenleyicisi ve diğer araçları, Visual Studio'da yazma gidin, yönetmek
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Kod gidin</h3>
+                        <h3>Koda git</h3>
                     </div>
                 </div>
             </div>
@@ -105,7 +105,7 @@ Kod Düzenleyicisi ve diğer araçları, Visual Studio'da yazma gidin, yönetmek
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Visual Studio Proje veya çözüm kullanın</h3>
+                        <h3>Projeler veya çözümler olmadan Visual Studio 'Yu kullanma</h3>
                     </div>
                 </div>
             </div>
@@ -123,7 +123,7 @@ Kod Düzenleyicisi ve diğer araçları, Visual Studio'da yazma gidin, yönetmek
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Kodunuzu Git ile Visual Studio kullanarak yönetme</h3>
+                        <h3>Visual Studio ile git kullanarak kodunuzu yönetme</h3>
                     </div>
                 </div>
             </div>
@@ -132,9 +132,9 @@ Kod Düzenleyicisi ve diğer araçları, Visual Studio'da yazma gidin, yönetmek
     </li>
 </ul>
 
-## <a name="get-started-with-programming-languages-in-visual-studio"></a>Programlama dilleri Visual Studio ile çalışmaya başlama
+## <a name="get-started-with-programming-languages-in-visual-studio"></a>Visual Studio 'da programlama dilleri ile çalışmaya başlama
 
-Visual Studio'da ilk uygulamanızı oluşturun.
+Visual Studio 'da ilk uygulamanızı oluşturun.
 
 <ul class="panelContent cardsFTitle">
     <li>
@@ -148,7 +148,7 @@ Visual Studio'da ilk uygulamanızı oluşturun.
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>C# ve Visual Studio'da ASP.NET Core ile çalışmaya başlama</h3>
+                        <h3>Visual Studio 'da C# ve ASP.NET Core kullanmaya başlayın</h3>
                     </div>
                 </div>
             </div>
@@ -156,7 +156,7 @@ Visual Studio'da ilk uygulamanızı oluşturun.
         </a>
     </li>
     <li>
-        <a href="/visualstudio/ide/getting-started-with-cpp-in-visual-studio">
+        <a href="/cpp/get-started/tutorial-console-cpp">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -166,7 +166,7 @@ Visual Studio'da ilk uygulamanızı oluşturun.
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Visual Studio'da C++ konsol uygulaması oluşturma</h3>
+                        <h3>Visual Studio C++ 'da konsol uygulaması oluşturma</h3>
                     </div>
                 </div>
             </div>
@@ -184,7 +184,7 @@ Visual Studio'da ilk uygulamanızı oluşturun.
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Visual Studio'da Python ile çalışmaya başlama</h3>
+                        <h3>Visual Studio 'da Python ile çalışmaya başlama</h3>
                     </div>
                 </div>
             </div>
@@ -238,7 +238,7 @@ Visual Studio'da ilk uygulamanızı oluşturun.
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Visual Studio için R araçları kullanmaya başlayın</h3>
+                        <h3>Visual Studio için R Araçları kullanmaya başlayın</h3>
                     </div>
                 </div>
             </div>
@@ -256,7 +256,7 @@ Visual Studio'da ilk uygulamanızı oluşturun.
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>C# dilinde bir UWP uygulaması oluşturma</h3>
+                        <h3>İçinde UWP uygulaması oluşturmaC#</h3>
                     </div>
                 </div>
             </div>
@@ -274,7 +274,7 @@ Visual Studio'da ilk uygulamanızı oluşturun.
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>C# .NET Core konsol uygulaması oluşturma</h3>
+                        <h3>İçinde bir .NET Core konsol uygulaması oluşturunC#</h3>
                     </div>
                 </div>
             </div>
@@ -292,7 +292,7 @@ Visual Studio'da ilk uygulamanızı oluşturun.
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Visual Studio'da bir Azure web uygulaması oluşturma</h3>
+                        <h3>Visual Studio 'da Azure Web uygulaması oluşturma</h3>
                     </div>
                 </div>
             </div>

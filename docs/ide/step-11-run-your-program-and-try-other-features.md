@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 672156f9c1274189e904c79eb74a0c01e10f3a60
-ms.sourcegitcommit: b60a00ac3165364ee0e53f7f6faef8e9fe59ec4a
+ms.openlocfilehash: 4d57852a356b2399a358f1636495e96a3dcec44f
+ms.sourcegitcommit: 6993bcb0d2b0067b1b7b7899bfba52c31c70b7e7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70913124"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71095326"
 ---
 # <a name="step-11-run-your-picture-viewer-app-and-try-other-features"></a>11. Adım: Resim görüntüleyici uygulamanızı çalıştırın ve diğer özellikleri deneyin
 
@@ -63,4 +63,4 @@ Daha fazla bilgi edinmek için aşağıdaki öğreticiyle devam edin:
 
 * [Diğer C# öğreticiler](/visualstudio/get-started/csharp/)
 * [Daha fazla Visual Basic öğretici](/visualstudio/get-started/visual-basic/)
-* [C++öğreticide](../ide/getting-started-with-cpp-in-visual-studio.md)
+* [C++öğreticide](/cpp/get-started/tutorial-console-cpp)

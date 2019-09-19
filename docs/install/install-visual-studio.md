@@ -20,12 +20,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: ac40a7e7d62417d2d89302304501fb2b3ecd34f4
-ms.sourcegitcommit: 9c07ae6fb18204ea080c8248994a683fa12e5c82
+ms.openlocfilehash: 5d83086720a94c23d0ceb3f07d9398a7d5256f68
+ms.sourcegitcommit: 6993bcb0d2b0067b1b7b7899bfba52c31c70b7e7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "70293713"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71095365"
 ---
 # <a name="install-visual-studio"></a>Visual Studio'yu yükleme
 
@@ -236,7 +236,7 @@ Daha fazla bilgi için bkz. [yükleme konumlarını seçme](change-installation-
 
 3. Bir proje türü seçin.
 
-   Örneğin, [bir C++ uygulama oluşturmak](../ide/getting-started-with-cpp-in-visual-studio.md)için, **yüklendi**, **görsel C++** ' i seçin ve ardından derlemek istediğiniz C++ proje türünü seçin.
+   Örneğin, [bir C++ uygulama oluşturmak](/cpp/get-started/tutorial-console-cpp)için, **yüklendi**, **görsel C++** ' i seçin ve ardından derlemek istediğiniz C++ proje türünü seçin.
 
    [Bir C# uygulama oluşturmak](../get-started/csharp/tutorial-console.md)için, **yüklü**, **görsel C#** ' i seçin ve ardından derlemek istediğiniz C# proje türünü seçin.
 

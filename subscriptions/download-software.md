@@ -6,18 +6,18 @@ manager: lank
 ms.date: 07/18/2019
 ms.topic: conceptual
 description: Visual Studio aboneliklerinde Microsoft yazılım başlıklarını bulmayı ve indirmeyi öğrenin
-ms.openlocfilehash: 1386add84ef86b5bf4c255d176b86d5fd9f294f6
-ms.sourcegitcommit: 485881e6ba872c7b28a7b17ceaede845e5bea4fe
+ms.openlocfilehash: 003d27e1c8344c6c4cb22a69e06efc94238bb622
+ms.sourcegitcommit: 6993bcb0d2b0067b1b7b7899bfba52c31c70b7e7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68377852"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71095406"
 ---
 # <a name="downloading-software-titles-in-visual-studio-subscriptions"></a>Visual Studio aboneliklerinde yazılım başlıkları indiriliyor
 Sahip olduğunuz Visual Studio aboneliğine bağlı olarak, kullanabileceğiniz çok çeşitli Microsoft yazılım başlıkları bulunabilir.  Bu makalede, aboneliğinizden en iyi şekilde yararlanmak için ihtiyacınız olan yazılımın nasıl konumlandırılmaları ve indirileceği açıklanır. 
 
 > [!NOTE]
-> [Karşıdan yüklemeler](https://my.visualstudio.com/downloads/featured) sayfasında sizin için yalnızca aboneliğinize dahil olan indirmeler görüntülenir.  Birden fazla aboneliğiniz veya program üyeliğiniz varsa, şu anda farklı bir abonelik görüntülüyor olsanız bile, gösterilen İndirilenler **en yüksek abonelik** için olacaktır.  Örneğin, hem aynı oturum açma KIMLIĞIYLE ilişkili bir Visual Studio Professional aboneliğiniz hem de bir Visual Studio Test Professional aboneliğiniz varsa, gösterilen indirmeler, şu durumlarda bile profesyonel düzeyde aboneliğe dahil edilir. Şu anda dev Essentials avantajlarınızı görüntülüyor.
+> [Karşıdan yüklemeler](https://my.visualstudio.com/downloads/featured) sayfasında sizin için yalnızca aboneliğinize dahil olan indirmeler görüntülenir.  Birden fazla aboneliğiniz veya program üyeliğiniz varsa, şu anda farklı bir abonelik görüntülüyor olsanız bile, gösterilen İndirilenler **en yüksek abonelik** için olacaktır.  Örneğin, aynı oturum açma KIMLIĞIYLE ilişkili bir Visual Studio Enterprise aboneliğiniz ve bir Visual Studio Professional aboneliğiniz varsa, şu anda görüntülüyor olsanız bile, gösterilen indirmeler kurumsal aboneliğe dahil edilir. Profesyonel Abonelik avantajlarınız.
 
 ## <a name="how-do-i-find-downloads-in-the-subscriber-portal"></a>Nasıl yaparım? abone portalında İndirmeleri bulamıyor musunuz?
 [İndirmeler](https://my.visualstudio.com/downloads/featured?wt.mc_id=o~msft~docs) sayfasını ziyaret ettiğinizde, gruplar halinde ürün türüne göre düzenlenmiş popüler indirmeleri görürsünüz.  Gösterilen popüler indirmelerden birini seçebilir veya sayfanın en üstündeki arama çubuğunu kullanarak herhangi bir ürünü arayabilirsiniz.

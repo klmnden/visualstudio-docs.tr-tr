@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/19/2019
 ms.topic: conceptual
 description: Visual Studio abonelikleri portalında kullanabileceğiniz tüm avantajlar hakkında bilgi edinin
-ms.openlocfilehash: 8ac16b09077935fc1b45d2b04acd895107096459
-ms.sourcegitcommit: 485881e6ba872c7b28a7b17ceaede845e5bea4fe
+ms.openlocfilehash: 5ca5d3a2dcdf04e54159c746b93368b7d56be0da
+ms.sourcegitcommit: 6993bcb0d2b0067b1b7b7899bfba52c31c70b7e7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68377925"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71095312"
 ---
 # <a name="using-the-subscriber-portal---myvisualstudiocom"></a>Abone portalını kullanma-my.visualstudio.com
 
@@ -21,8 +21,8 @@ Portalın kullanılması için aboneliğinizle ilişkili kimlikle oturum açman�
 
 Portal altı sayfada düzenlenir.  Her sayfa, aboneliğinize dahil edilen farklı ürün veya hizmetlere erişmenizi sağlar.  Altı sayfa avantajlardır, Indirmeler, ürün anahtarları, abonelikler, destek ve Market.
 
-## <a name="benefitshttpsmyvisualstudiocombenefitswtmcidomsftdocs"></a>[Larından](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)
-Aboneliklerinize dahil edilen araçlar ve hizmetler, avantajlar sayfasında "kutucuklar" olarak görüntülenir.  Tüm avantajlar tüm aboneliklere dahil değildir. Kutucuklar üç kategoride gruplandırılır:  Araçlar, profesyonel geliştirme ve destek.  Visual Studio Dev Essentials kullanıyorsanız, diğer üç kategoriden seçilen avantajları içerebilen, öne çıkan bir kategori da görürsünüz.
+## <a name="benefitshttpsmyvisualstudiocombenefitswtmc_idomsftdocs"></a>[Larından](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)
+Aboneliklerinize dahil edilen araçlar ve hizmetler, avantajlar sayfasında "kutucuklar" olarak görüntülenir.  Tüm avantajlar tüm aboneliklere dahil değildir. Kutucuklar üç kategoride gruplandırılır:  Araçlar, profesyonel geliştirme ve destek.  
 
 ### <a name="tools"></a>Araçlar
 Araçlar kategorisi, Visual Studio IDE, Azure DevOps ve iş ortaklarımız tarafından sunulan araçların yanı sıra temel geliştirme araçlarını bulabileceğiniz yerdir.  Ayrıca Azure ve Visual Studio App Center gibi hizmetleri de görürsünüz.
@@ -33,15 +33,15 @@ Bu kategori, Microsoft ve iş ortaklarımız tarafından sağlanan çevrimiçi e
 ### <a name="support"></a>Destek
 Azure hakkında bir sorunuz mu var?  Azure Community 'den forum aracılığıyla yardım alın veya Azure danışmanlık sohbetlerinden (Önizleme) yararlanın.  Danışman sohbet hizmeti, teknik belgeleri ve ürün bilgilerini bulmanıza ve abonelikle ilgili sorularla yardım almanıza yardımcı olmak için kullanılabilir.  Abonelikler ' i seçin, geliştirme ve test ortamlarında çalışan çok çeşitli Microsoft ürünleriyle ilgili sorunları çözmenize yardımcı olması için olay tabanlı teknik destek de içerir.
 
-## <a name="downloadshttpsmyvisualstudiocomdownloadswtmcidomsftdocs"></a>[İndirmeler](https://my.visualstudio.com/downloads?wt.mc_id=o~msft~docs)
+## <a name="downloadshttpsmyvisualstudiocomdownloadswtmc_idomsftdocs"></a>[İndirmeler](https://my.visualstudio.com/downloads?wt.mc_id=o~msft~docs)
 Sahip olduğunuz aboneliğe veya programa bağlı olarak, güncelleştirmeler ve düzeltme eklerinden, güncel ürünlerin kapsamlı bir kitaplığına ve daha eski sürümlere karşı, uygulamalarınızı çok çeşitli senaryolarda test edebilmeniz için yazılım indirmelerine erişebilirsiniz.
 
 Tek bir hesapla ilişkilendirilmiş birden çok aboneliği olan aboneler için basit hale getirmek amacıyla, Indirmeler sayfasını ziyaret ettiğinizde, sahip olduğunuz en yüksek abonelikle sunulan İndirmeleri görürsünüz.  Bu şekilde, şu anda kullanmakta olduğunuz aboneliği bağımsız olarak tüm indirmelerinizi görebilirsiniz.
 
-## <a name="product-keyshttpsmyvisualstudiocomproductkeyswtmcidomsftdocs"></a>[Ürün anahtarları](https://my.visualstudio.com/productkeys?wt.mc_id=o~msft~docs)
+## <a name="product-keyshttpsmyvisualstudiocomproductkeyswtmc_idomsftdocs"></a>[Ürün anahtarları](https://my.visualstudio.com/productkeys?wt.mc_id=o~msft~docs)
 Ürünleri yüklemek ve etkinleştirmek için anahtar almak ve daha önce istemiş olduğunuz anahtarları görmek için ürün anahtarları sayfasını ziyaret edin.  Tüm anahtarlarınızın bir listesini, safekeeping için de dışarı aktarabilirsiniz.
 
-## <a name="subscriptionshttpsmyvisualstudiocomsubscriptionswtmcidomsftdocs"></a>[Aboneliklerin](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs)
+## <a name="subscriptionshttpsmyvisualstudiocomsubscriptionswtmc_idomsftdocs"></a>[Aboneliklerin](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs)
 Abonelikler sayfası size sahip olduğunuz abonelikleri görmenizi, abonelikler arasında geçiş yapma, bunları yenileme ve yeni abonelikleri etkinleştirme olanakları sağlar. Ayrıca, Microsoft hesabınızı kullanarak erişebileceğiniz abonelikleri, var olan Visual Studio IDE, Azure DevOps veya Azure kaynaklarıyla zaten ilişkilendirilmiş alternatif bir hesapla ilişkilendirebilirsiniz.
 
 ## <a name="support"></a>Destek

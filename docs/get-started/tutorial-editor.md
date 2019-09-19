@@ -11,12 +11,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: b6741b40925f5d9914152d396be4686d166bf222
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
+ms.openlocfilehash: 0f83304daa0e86bb9d4f999262f827615923fe4d
+ms.sourcegitcommit: 6993bcb0d2b0067b1b7b7899bfba52c31c70b7e7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70180206"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71095347"
 ---
 # <a name="learn-to-use-the-code-editor"></a>Kod Düzenleyicisi'ni kullanmayı öğrenin
 
@@ -36,7 +36,7 @@ Visual Studio Kod düzenleyicisinde 10 dakikalık giriş, Visual Studio yazma, g
 
 ::: moniker-end
 
-Bu makalede, zaten bir programlama dili ile ilgili bilgi sahibi olduğunuz kabul edilmektedir. Değilseniz, öneririz programlama hızlı başlangıçları birini ilk bakış, gibi bir web uygulaması oluşturma [Python](../ide/quickstart-python.md) veya [C#](../get-started/csharp/tutorial-aspnet-core.md), veya bir konsol uygulaması oluşturma [Visual Basic](../ide/quickstart-visual-basic-console.md) veya [C++](../ide/getting-started-with-cpp-in-visual-studio.md).
+Bu makalede, zaten bir programlama dili ile ilgili bilgi sahibi olduğunuz kabul edilmektedir. Değilseniz, öneririz programlama hızlı başlangıçları birini ilk bakış, gibi bir web uygulaması oluşturma [Python](../ide/quickstart-python.md) veya [C#](../get-started/csharp/tutorial-aspnet-core.md), veya bir konsol uygulaması oluşturma [Visual Basic](../ide/quickstart-visual-basic-console.md) veya [C++](/cpp/get-started/tutorial-console-cpp).
 
 ## <a name="create-a-new-code-file"></a>Yeni bir kod dosyası oluşturma
 
@@ -66,7 +66,7 @@ Yeni bir dosya oluşturarak ve bazı kodlar eklemeden başlatın.
 
 Visual Studio sağlar yararlı *kod parçacıkları* kod bloklarında kullanılan yaygın olarak hızla ve kolayca oluşturmak için kullanabilirsiniz. [Kod parçacıkları](../ide/code-snippets.md) C#, Visual Basic ve C++ gibi farklı programlama dili için kullanılabilir. C# ekleyelim `void Main` bizim dosyasına kod parçacığı.
 
-1. İmlecinizi, dosyadaki son kapanış küme ayracı üzerine yerleştirin ve karakterleri `svm`yazın. (`svm` C# için `static void Main`temsil eder; [Main ()](/dotnet/csharp/programming-guide/main-and-command-args/) yöntemi uygulamalar için giriş noktasıdır.)
+1. İmlecinizi, dosyadaki son **Kapanış küme ayracı** üzerine yerleştirin ve karakterleri `svm`yazın. (`svm` C# için `static void Main`temsil eder; [Main ()](/dotnet/csharp/programming-guide/main-and-command-args/) yöntemi uygulamalar için giriş noktasıdır.)
 
    Hakkında bilgi ile bir açılır iletişim kutusu görünür `svm` kod parçacığı.
 
