@@ -523,6 +523,8 @@
                   href: ca1823-avoid-unused-private-fields.md
                 - name: 'CA1824: Derlemeleri NeutralResourcesLanguageAttribute ile işaretleyin'
                   href: ca1824-mark-assemblies-with-neutralresourceslanguageattribute.md
+                - name: 'CA1825: Sıfır uzunluklu dizi ayırmalarından kaçının'
+                  href: ca1825.md
             - name: Taşınabilirlik uyarıları
               items:
                 - name: Genel Bakış
