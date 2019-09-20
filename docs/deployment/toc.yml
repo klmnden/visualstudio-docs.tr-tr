@@ -1,5 +1,5 @@
 - name: Dağıtım belgeleri
-  href: index.md
+  href: index.yml
 - name: Genel Bakış
   items:
     - name: Dağıtıma genel bakış
@@ -22,8 +22,8 @@
       items:
         - name: Yayımla aracı ile .NET Core uygulaması dağıtma
           href: /dotnet/core/deploying/deploy-with-vs
-        - name: Bir masaüstü uygulamasını Microsoft Store için paketleme (Masaüstü Köprüsü)
-          href: /windows/uwp/porting/desktop-to-uwp-packaging-dot-net
+        - name: Bir masaüstü uygulamasını Microsoft Store için paketleme
+          href: /windows/msix/desktop/desktop-to-uwp-packaging-dot-net
         - name: ClickOnce kullanarak masaüstü uygulaması dağıtma
           href: how-to-publish-a-clickonce-application-using-the-publish-wizard.md
         - name: Komut Satırından ClickOnce uygulamalarını derleme
@@ -38,14 +38,12 @@
           href: tutorial-import-publish-settings-azure.md
         - name: Git ile Azure’a sürekli ASP.NET Core dağıtımı
           href: /aspnet/core/publishing/azure-continuous-deployment
-        - name: Visual Studio Kubernetes araçları ile Kubernetes’te yayımlama
-          href: ../containers/tutorial-kubernetes-tools.md?toc=/visualstudio/deployment/toc.json
     - name: C++
       items:
         - name: C/C++ uygulaması dağıtma
           href: /cpp/ide/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project
-        - name: Bir masaüstü uygulamasını Microsoft Store için paketleme (Masaüstü Köprüsü)
-          href: /windows/uwp/porting/desktop-to-uwp-packaging-dot-net
+        - name: Bir masaüstü uygulamasını Microsoft Store için paketleme
+          href: /windows/msix/desktop/desktop-to-uwp-packaging-dot-net
         - name: ClickOnce kullanarak C++/CLR uygulaması dağıtma...
           href: /cpp/ide/clickonce-deployment-for-visual-cpp-applications
     - name: UWP
