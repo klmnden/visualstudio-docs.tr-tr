@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 0395e2d6e54e737af9a98d8c24b8ea29eff7577a
-ms.sourcegitcommit: 6eed0372976c0167b9a6d42ba443f9a474b8bb91
+ms.openlocfilehash: a22bdbc30fc222e26c01a10afdd7a666eebcb9f6
+ms.sourcegitcommit: a2df993dc5e11c5131dbfcba686f0028a589068f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71118680"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71150118"
 ---
 # <a name="customize-code-coverage-analysis"></a>Kod kapsamı analizini özelleştirme
 
@@ -63,7 +63,7 @@ Kod kapsamını özelleştirmek için aşağıdaki adımları izleyin:
 
 ::: moniker-end
 
-### <a name="specify-symbol-search-paths"></a>Sembol arama yollarını belirtin
+## <a name="symbol-search-paths"></a>Sembol arama yolları
 
 Kod kapsamı sembol dosyalarını gerektirir ( *.pdb* dosyaları) derlemeler için. Çözümünüz tarafından oluşturulan derlemeler için, sembol dosyaları genellikle ikili dosyalarla birlikte bulunur ve kod kapsamı otomatik olarak işe yarar. Bazı durumlarda, kod kapsamı analizinizdeki başvurulan derlemeleri dahil etmek isteyebilirsiniz. Bu gibi durumlarda *.pdb* dosyaları ikili bitişik olmayabilir ve sembol arama yolu belirtebilirsiniz *.runsettings* dosya.
 
@@ -77,9 +77,11 @@ Kod kapsamı sembol dosyalarını gerektirir ( *.pdb* dosyaları) derlemeler iç
 > [!NOTE]
 > Sembol çözümleme zaman alabilir özellikle birçok derlemeleri ile bir uzak dosya konumu kullanırken. Bu nedenle, kopyalamayı düşünün *.pdb* aynı yerel konuma ikili dosyaları ( *.dll* ve *.exe*) dosyaları.
 
-### <a name="exclude-and-include"></a>Dahil ve hariç tut
+## <a name="include-or-exclude-assemblies-and-members"></a>Derlemeleri ve üyeleri dahil etme veya dışlama
 
-Belirtilen derleme kod kapsamını çözümleme dışı bırakabilirsiniz. Örneğin:
+Kod kapsamı analizinden derlemeleri veya belirli türleri ve üyeleri dahil edebilir veya dışlayabilirsiniz. **Dahil etme** bölümü boşsa veya atlanırsa, yüklenen ve ilişkili pdb dosyalarına sahip olan tüm derlemeler dahil edilir. Bir derleme veya üye **dışlama** bölümündeki bir yan tümcesiyle eşleşiyorsa, kod kapsamından çıkarılır. **Dışlama** bölümü **dahil etme** bölümüne göre önceliklidir: bir derleme hem **dahil** hem de **hariç**olarak listeleniyorsa, kod kapsamına dahil edilmez.
+
+Örneğin, aşağıdaki XML, adını belirterek tek bir derlemeyi dışlar:
 
 ```xml
 <ModulePaths>
@@ -90,7 +92,7 @@ Belirtilen derleme kod kapsamını çözümleme dışı bırakabilirsiniz. Örne
 </ModulePaths>
 ```
 
-Alternatif olarak, hangi derlemelerin dahil edileceğini belirtebilirsiniz. Bu yaklaşım çözüme daha fazla derleme eklediğinizde, bunları listeye eklemeyi unutmamanız gerekir:
+Aşağıdaki örnek, kod kapsamına yalnızca tek bir derlemenin dahil edileceğini belirtir:
 
 ```xml
 <ModulePaths>
@@ -101,11 +103,20 @@ Alternatif olarak, hangi derlemelerin dahil edileceğini belirtebilirsiniz. Bu y
 </ModulePaths>
 ```
 
-**Ekleme** boşsa, kod kapsamı işleme, yüklenmiş ve *. pdb* dosyalarının bulunduğu tüm derlemeleri içerir. Kod kapsamı yan tümcesinde eşleşen öğeleri içermez bir **hariç** listesi. **Dahil** önce işlenen **hariç**.
+Aşağıdaki tabloda, derlemelerin ve üyelerin kod kapsamından içerme veya dışlama için eşleştiribileceği çeşitli yollar gösterilmektedir.
+
+| XML öğesi | Eşleşme |
+| - | - |
+| ModulePath | Bütünleştirilmiş kod adı veya dosya yolu tarafından belirtilen derlemeleri eşleştirir. |
+| CompanyName | Derlemeleri **Şirket** özniteliğiyle eşleştirir. |
+| PublicKeyToken | İmzalı derlemeleri ortak anahtar belirteci ile eşleştirir. |
+| Kaynak | Öğelerin tanımlandıkları kaynak dosyanın yol adına göre eşleşir. |
+| Öznitelik | Belirtilen özniteliğine sahip öğeleri eşleştirir. Özniteliğin tam adını belirtin, örneğin `<Attribute>^System\.Diagnostics\.DebuggerHiddenAttribute$</Attribute>`.<br/><br/><xref:System.Runtime.CompilerServices.CompilerGeneratedAttribute> Özniteliğini hariç tutdıysanız,,, ve otomatik uygulanan özellikler gibi dil `async`özelliklerini `await` `yield return`kullanan kod, kod kapsamı analizinden hariç tutulur. Gerçekten üretilen kodu hariç tutmak için, yalnızca <xref:System.CodeDom.Compiler.GeneratedCodeAttribute> özniteliğini hariç tutun. |
+| İşlev | Parametre listesi de dahil olmak üzere tam olarak nitelenmiş ad ile yordamları, işlevleri veya yöntemleri eşleştirir. Ayrıca, bir [normal ifade](#regular-expressions)kullanarak adın bir bölümünü de eşleştirebilirsiniz.<br/><br/>Örnekler:<br/><br/>`Fabrikam.Math.LocalMath.SquareRoot(double);` (C#)<br/><br/>`Fabrikam::Math::LocalMath::SquareRoot(double)`(C++) |
 
 ### <a name="regular-expressions"></a>Normal ifadeler
 
-Dahil etme ve hariç tutma düğümleri, joker karakterlerle aynı olmayan normal ifadeler kullanır. Daha fazla bilgi için [Visual Studio'da normal ifadeler kullanma](../ide/using-regular-expressions-in-visual-studio.md). Bazı örnekler şunlardır:
+Dahil etme ve hariç tutma düğümleri, joker karakterlerle aynı olmayan normal ifadeler kullanır. Tüm eşlemeler büyük/küçük harf duyarsızdır. Bazı örnekler şunlardır:
 
 - **. herhangi\***  bir karakter dizesiyle eşleşir
 
@@ -119,9 +130,7 @@ Dahil etme ve hariç tutma düğümleri, joker karakterlerle aynı olmayan norma
 
 - **$** Dize sonu ile eşleşir
 
-Tüm eşlemeler büyük/küçük harf duyarsızdır.
-
-Örneğin:
+Aşağıdaki XML, belirli derlemelerin normal ifadeler kullanılarak nasıl ekleneceğini ve dışlanacağını göstermektedir:
 
 ```xml
 <ModulePaths>
@@ -138,48 +147,27 @@ Tüm eşlemeler büyük/küçük harf duyarsızdır.
 </ModulePaths>
 ```
 
+Aşağıdaki XML, belirli işlevlerin normal ifadeler kullanılarak nasıl ekleneceğini ve dışlanacağını göstermektedir:
+
+```xml
+<Functions>
+  <Include>
+    <!-- Include methods in the Fabrikam namespace: -->
+    <Function>^Fabrikam\..*</Function>
+    <!-- Include all methods named EqualTo: -->
+    <Function>.*\.EqualTo\(.*</Function>
+  </Include>
+  <Exclude>
+    <!-- Exclude methods in a class or namespace named UnitTest: -->
+    <Function>.*\.UnitTest\..*</Function>
+  </Exclude>
+</Functions>
+```
+
 > [!WARNING]
 > Atlanmayan veya eşleşmeyen parantezler gibi normal bir ifadede bir hata varsa kod kapsamı çözümleme çalışmaz.
 
-### <a name="other-ways-to-include-or-exclude-elements"></a>Öğeleri içerecek veya dışlayacak diğer yollar
-
-- **ModulePath** -derleme dosyası yolu tarafından belirtilen derlemeler eşleşir.
-
-- **CompanyName** -tarafından derlemeler eşleşir **şirket** özniteliği.
-
-- **PublicKeyToken** -imzalı derlemeler ortak anahtar belirteci tarafından eşleşir.
-
-- **Kaynak** -bunlar tanımlandığı kaynak dosyasının yolu adıyla eşleşen öğeler.
-
-- **Öznitelik** -belirli bir özniteliği bağlı öğeleri ile eşleşir. Özniteliğin tam adını belirtin, örneğin `<Attribute>^System\.Diagnostics\.DebuggerHiddenAttribute$</Attribute>`.
-
-  > [!TIP]
-  > <xref:System.Runtime.CompilerServices.CompilerGeneratedAttribute> Özniteliğini hariç tutdıysanız,,, ve otomatik uygulanan özellikler gibi dil `async`özelliklerini `await` `yield return`kullanan kod, kod kapsamı analizinden hariç tutulur. Gerçekten üretilen kodu hariç tutmak için, yalnızca <xref:System.CodeDom.Compiler.GeneratedCodeAttribute> özniteliğini hariç tutun.
-
-- **İşlev** -yordamları, işlevleri veya yöntemleri tam adıyla eşleştirir. Normal ifade bir işlev adı ile eşleşmesi için ad alanı, sınıf adı, yöntem adı ve parametre listesine dahil olmak üzere, işlevinin tam adı eşleşmelidir. Örneğin:
-
-   ```csharp
-   Fabrikam.Math.LocalMath.SquareRoot(double);
-   ```
-
-   ```cpp
-   Fabrikam::Math::LocalMath::SquareRoot(double)
-   ```
-
-   ```xml
-   <Functions>
-     <Include>
-       <!-- Include methods in the Fabrikam namespace: -->
-       <Function>^Fabrikam\..*</Function>
-       <!-- Include all methods named EqualTo: -->
-       <Function>.*\.EqualTo\(.*</Function>
-     </Include>
-     <Exclude>
-       <!-- Exclude methods in a class or namespace named UnitTest: -->
-       <Function>.*\.UnitTest\..*</Function>
-     </Exclude>
-   </Functions>
-   ```
+Normal ifadeler hakkında daha fazla bilgi için bkz. [Visual Studio 'da normal Ifadeler kullanma](../ide/using-regular-expressions-in-visual-studio.md).
 
 ## <a name="sample-runsettings-file"></a>Örnek .runsettings dosyası
 

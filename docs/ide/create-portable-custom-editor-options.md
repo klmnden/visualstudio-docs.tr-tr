@@ -7,20 +7,33 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f48a690513c80b02683df61a0abf68a3cad58293
-ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
+ms.openlocfilehash: 6b8602dfb37b1cdad046b012d62f888e77ca5343
+ms.sourcegitcommit: a2df993dc5e11c5131dbfcba686f0028a589068f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/22/2019
-ms.locfileid: "67328800"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71150174"
 ---
 # <a name="create-portable-custom-editor-settings-with-editorconfig"></a>EditorConfig ile taşınabilir, özel düzenleyici ayarları oluşturma
 
-Ekleyebileceğiniz bir [EditorConfig](http://editorconfig.org/) dosya projeye ya da tutarlı kodlama zorlamak için kod temeli stiller herkes kod temelinde çalışır. EditorConfig ayarları Düzenleyicisi ayarları genel Visual Studio metin üzerinde önceliklidir. Bu, her kod temelini o projeye özel metin düzenleyici ayarlarını kullanmak üzere uyarlayabileceğiniz anlamına gelir. Visual Studio'da kendi kişisel Düzenleyici tercihleri yine de ayarlayabilirsiniz **seçenekleri** iletişim kutusu. Bir kod temelinde çalışırken sürekli bu ayarlar geçerli bir *.editorconfig* dosyası veya *.editorconfig* dosya belirli bir ayarı geçersiz kılma değil. Böyle bir tercih, girinti stili örneğidir&mdash;sekme veya boşluk.
+Kod tabanında çalıştırılan herkes için tutarlı kodlama stillerini zorlamak üzere projenize veya kod tabanınıza bir [Editorconfig](http://editorconfig.org/) dosyası ekleyebilirsiniz. EditorConfig ayarları Düzenleyicisi ayarları genel Visual Studio metin üzerinde önceliklidir. Bu, her kod temelini o projeye özel metin düzenleyici ayarlarını kullanmak üzere uyarlayabileceğiniz anlamına gelir. Visual Studio'da kendi kişisel Düzenleyici tercihleri yine de ayarlayabilirsiniz **seçenekleri** iletişim kutusu. Bir kod temelinde çalışırken sürekli bu ayarlar geçerli bir *.editorconfig* dosyası veya *.editorconfig* dosya belirli bir ayarı geçersiz kılma değil. Böyle bir tercih, girinti stili örneğidir&mdash;sekme veya boşluk.
 
 EditorConfig ayarlar, çok sayıda kod düzenleyici ve IDE'ler, Visual Studio da dahil olmak üzere tarafından desteklenir. Bu kodunuzla dolaşır ve Visual Studio dışında bile kodlama stillerini zorunlu kılabilir taşınabilir bir bileşendir.
 
-Visual Studio projenize bir EditorConfig dosya eklediğinizde, belgeyi Biçimlendir sürece var olan kod biçimlendirme değişmez (**Düzenle** > **Gelişmiş**  >  **Belgeyi Biçimlendir** veya **Ctrl**+**K**, **Ctrl**+**D**varsayılan profilde). Ancak, yeni bir kod satırlarını EditorConfig ayarlarına göre biçimlendirilir.
+::: moniker range=">=vs-2019"
+
+Visual Studio 'da projenize bir EditorConfig dosyası eklediğinizde, yeni kod satırları EditorConfig ayarlarına göre biçimlendirilir. Aşağıdaki komutlardan birini çalıştırmadığınız takdirde varolan kodun biçimlendirmesi değiştirilmez:
+
+ - [Kod temizleme](../ide/code-styles-and-code-cleanup.md) (**CTRL**+**K**,CTRL+**E**), girinti stili gibi tüm beyaz boşluk ayarlarını ve sıralama `using` deyimleri gibi seçili kod stili ayarlarını uygular.
+ - **Düzenle** +Yalnızcagirinti+gibi beyaz boşluk ayarlarını uygulayan **Gelişmiş** > **Biçim belgesi** **(veya varsayılan profilde CTRL** **D** ) > biçim.
+ 
+ ::: moniker-end
+ 
+::: moniker range="=vs-2017"
+
+Visual Studio 'da projenize bir EditorConfig dosyası eklediğinizde, yeni kod satırları EditorConfig ayarlarına göre biçimlendirilir. Belgeyi biçimlendirmediğiniz (**Gelişmiş** > **Biçim belgesini** **Düzenle** > veya **CTRL**+**K**, **CTRL** + **D** varsayılan profilde). Belgeyi biçimlendirmek, [ek kod temizleme işlemini gerçekleştirmek](../ide/code-styles-and-code-cleanup.md#apply-code-styles)üzere biçim belgesi yapılandırmadığınız sürece yalnızca girinti stili gibi beyaz boşluk ayarlarını etkiler.
+ 
+ ::: moniker-end
 
 ::: moniker range="vs-2017"
 
@@ -31,7 +44,7 @@ Visual Studio projenize bir EditorConfig dosya eklediğinizde, belgeyi Biçimlen
 > [!NOTE]
 > Bu konu, Windows üzerinde Visual Studio için geçerlidir. Mac için Visual Studio için bkz: [Mac için Visual Studio'da EditorConfig](/visualstudio/mac/editorconfig).
 
-## <a name="code-consistency"></a>Kod tutarlılık
+## <a name="code-consistency"></a>Kod tutarlılığı
 
 Tutarlı kodlama stili ve girinti stili, sekme genişliği, satır sonu karakterleri, gibi kod tabanında kodlama, ayarları korumak EditorConfig dosyaları ayarlarında etkinleştirmeniz ve daha fazlasını düzenleyicimizi veya IDE'mizi bağımsız olarak kullanırsınız. Örneğin, kod temelinizde girintileri her zaman beş boşluk karakterlerinden oluşamaz tercih edilmesi bir kuralı varsa, C# kodlama, UTF-8 kodlamasını, belgeleri kullanın ve her satırı bir CR/LF ile her zaman sona erer, yapılandırabileceğiniz bir *.editorconfig* Bunu yapmak için dosya.
 
@@ -55,15 +68,15 @@ Visual Studio düzenleyicisinde çekirdek kümesini destekleyen [EditorConfig ö
 - INSERT\_final_newline
 - kök
 
-EditorConfig Düzenleyici ayarları XML dışında tüm Visual Studio tarafından desteklenen dillerde desteklenir. Ayrıca, EditorConfig destekler [kod stili](../ide/editorconfig-code-style-settings-reference.md) kuralları da dahil olmak üzere [dil](../ide/editorconfig-language-conventions.md), [biçimlendirme](../ide/editorconfig-formatting-conventions.md), ve [adlandırma](../ide/editorconfig-naming-conventions.md) için kuralları C# ve Visual Basic.
+EditorConfig Düzenleyici ayarları XML dışında tüm Visual Studio tarafından desteklenen dillerde desteklenir. Ayrıca, EditorConfig, ve Visual Basic C# için [dil](../ide/editorconfig-language-conventions.md), [biçimlendirme](../ide/editorconfig-formatting-conventions.md)ve [adlandırma](../ide/editorconfig-naming-conventions.md) kuralları da dahil olmak üzere [kod stili](../ide/editorconfig-code-style-settings-reference.md) kurallarını destekler.
 
-## <a name="add-and-remove-editorconfig-files"></a>EditorConfig dosyaları ekleyip
+## <a name="add-and-remove-editorconfig-files"></a>EditorConfig dosyalarını ekleme ve kaldırma
 
-EditorConfig dosyayı projenize ekleyin veya kod tabanı, yeni satırları, yazdığınız kodun EditorConfig dosyanın göre biçimlendirilir. Belgeyi Biçimlendir kadar ancak EditorConfig dosya ekleme mevcut stilleri yenilerini dönüştürmez. Örneğin, sekmeler olarak biçimlendirilen girintileri dosyanızdaki varsa ve boşluklarla girinti bir EditorConfig dosyası eklerseniz, girinti karakterleri otomatik olarak boşluklara dönüştürülmez. Belgeyi Biçimlendir ne zaman (**Düzenle** > **Gelişmiş** > **belgeyi Biçimlendir** veya **Ctrl** + **K**, **Ctrl**+**D**), mevcut kod satırlarına EditorConfig dosyasındaki ayarları uygulanır.
+Projenize veya kod tabanınıza bir EditorConfig dosyası eklediğinizde, yazdığınız tüm yeni kod satırları EditorConfig dosyasına göre biçimlendirilir. Ancak, bir EditorConfig dosyası eklemek, belgeyi biçimlendirene veya [kod temizliği](../ide/code-styles-and-code-cleanup.md)çalıştırana kadar mevcut stilleri yeni olanlara dönüştürmez. Örneğin, dosyanızda sekmelerle biçimlendirilmiş Girintileriniz varsa ve boşluklarla girintilenen bir EditorConfig dosyası eklerseniz, girinti karakterleri otomatik olarak boşluklara dönüştürülmez. Belgeyi**biçimlendirdiğinizde (**  > **Gelişmiş**Biçimbelgesi+veya CTRL**K**, **CTRL**D), içindeki boşluk ayarlarını+ >  EditorConfig dosyası varolan kod satırlarına uygulanır.
 
-EditorConfig dosya projenizden kaldırmak veya kod temeli ve yeni satır göre genel Düzenleyici ayarları Biçimlendirilecek kod istiyorsanız kapatın ve herhangi bir açık kod dosyaları yeniden açın.
+Bir EditorConfig dosyasını projenizden veya kod tabanınızdan kaldırırsanız ve yeni kod satırlarının genel düzenleyici ayarlarına göre biçimlendirilmesini istiyorsanız, açık kod dosyalarını kapatıp yeniden açmanız gerekir.
 
-### <a name="add-an-editorconfig-file-to-a-project"></a>EditorConfig dosyası bir projeye ekleyin.
+### <a name="add-an-editorconfig-file-to-a-project"></a>Bir projeye EditorConfig dosyası ekleme
 
 1. Bir proje veya çözüm Visual Studio'da açın. Bağlı olarak proje veya çözüm düğümü seçin, *.editorconfig* ayarları, Çözümdeki tüm projeleri veya tek uygulamalıdır. Ayrıca, proje veya çözümü eklemek için bir klasör seçebilirsiniz *.editorconfig* dosya.
 
@@ -71,17 +84,17 @@ EditorConfig dosya projenizden kaldırmak veya kod temeli ve yeni satır göre g
 
    **Yeni Öğe Ekle** iletişim kutusu açılır.
 
-1. Arama kutusuna arama **editorconfig**.
+1. Arama kutusunda, **editorconfig**' i arayın.
 
-   İki **editorconfig dosya** öğe şablonları, arama sonuçlarında gösterilir.
+   Arama sonuçlarında iki **editorconfig dosya** öğesi şablonu gösterilmektedir.
 
-   ![Visual Studio'da EditorConfig dosya öğesi şablonları](media/editorconfig-item-templates.png)
+   ![Visual Studio 'da EditorConfig dosyası öğe şablonları](media/editorconfig-item-templates.png)
 
-1. Seçin **editorconfig dosyası (varsayılan)** EditorConfig dosyası eklemek için şablon önceden doldurulmuş iki çekirdek girinti stili ve boyutu için EditorConfig seçeneği. Ya da seçin **editorconfig dosyası (.NET)** varsayılan ile önceden doldurulmuş bir EditorConfig dosyası eklemek için şablon [.NET kod stili, biçimlendirme ve adlandırma kuralları](../ide/editorconfig-code-style-settings-reference.md).
+1. Girinti stili ve boyutu için iki Core EditorConfig seçeneği ile önceden doldurulan bir EditorConfig dosyası eklemek için **Editorconfig dosyası (varsayılan)** şablonunu seçin. Ya da varsayılan [.NET kod stili, biçimlendirme ve adlandırma kurallarıyla](../ide/editorconfig-code-style-settings-reference.md)önceden doldurulan bir editorconfig dosyası eklemek için **editorconfig dosyası (.net)** şablonunu seçin.
 
    Bir *.editorconfig* dosyası Çözüm Gezgini'nde görünür ve düzenleyicide açılır.
 
-   ![Çözüm Gezgini ve düzenleyici .editorconfig dosyasında](media/editorconfig-dotnet.png)
+   ![Çözüm Gezgini ve düzenleyicideki. editorconfig dosyası](media/editorconfig-dotnet.png)
 
 1. Dosyayı istediğiniz gibi düzenleyin.
 
@@ -89,9 +102,9 @@ EditorConfig dosya projenizden kaldırmak veya kod temeli ve yeni satır göre g
 
 EditorConfig dosyayı projenize ekleyebilirsiniz birkaç yolu vardır:
 
-- [Kod çıkarımı özelliği](/visualstudio/intellicode/code-style-inference) Visual Studio Intellicode, mevcut koddan, kod stilleri algılar. Ardından, kod stili tercihleri zaten tanımlanmış bir boş olmayan EditorConfig dosyası oluşturur.
+- Visual Studio için ıntellicode 'un [kod çıkarımı özelliği](/visualstudio/intellicode/code-style-inference) , kod stillerinizi mevcut koddan algılar. Daha sonra, kod stili tercihleriniz zaten tanımlanmış boş olmayan bir EditorConfig dosyası oluşturur.
 
-- Visual Studio 2019 ' başlayarak, şunları yapabilirsiniz [kod stili ayarlarınızı temel alan bir EditorConfig dosyası oluştur](/visualstudio/ide/code-styles-and-code-cleanup#code-styles-in-editorconfig-files) içinde **Araçları** > **seçenekleri**.
+- Visual Studio 2019 ' den başlayarak, **Araçlar** >  [seçeneklerinizde kod stili ayarlarınıza göre bir editorconfig dosyası](/visualstudio/ide/code-styles-and-code-cleanup#code-styles-in-editorconfig-files) oluşturabilirsiniz.
 
 ## <a name="file-hierarchy-and-precedence"></a>Dosya hiyerarşisi ve önceliği
 
@@ -108,9 +121,9 @@ Bazı geçersiz kılmak istiyorsanız, ancak tüm ayarları yalnızca ayarların
 root = true
 ```
 
-EditorConfig dosyaları yukarıdan okunur. Aynı ada sahip birden çok özellik varsa, en yakın zamanda bu ada sahip özelliği önceliklidir bulundu.
+EditorConfig dosyaları üstten alta okunurdur. Aynı ada sahip birden fazla özellik varsa, bu adı taşıyan en son bulunan özellik öncelik kazanır.
 
-## <a name="edit-editorconfig-files"></a>EditorConfig dosyaları düzenleme
+## <a name="edit-editorconfig-files"></a>EditorConfig dosyalarını Düzenle
 
 Visual Studio düzenlemenize yardımcı olur *.editorconfig* IntelliSense tamamlanma listelerinde sağlayarak dosyaları.
 
@@ -147,7 +160,7 @@ Bastığınızda artık **sekmesini** anahtar, sekme karakterlerini yerine boşl
 
 ![Sekme tuşunu sekme karakteri ekler.](../ide/media/vside_editorconfig_tab.png)
 
-## <a name="troubleshoot-editorconfig-settings"></a>EditorConfig ayarlarında sorun giderme
+## <a name="troubleshoot-editorconfig-settings"></a>EditorConfig ayarları sorunlarını giderme
 
 Varsa bir EditorConfig dosyası herhangi bir dizin yapısına veya projenizin konumunu üzerindeki Visual Studio Düzenleyicisi ayarları, dosya düzenleyiciniz için geçerlidir. Bu durumda, durum çubuğundaki şu iletiyi görebilirsiniz:
 

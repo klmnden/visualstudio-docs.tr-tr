@@ -1,21 +1,21 @@
 ---
-title: Visual Studio + GitHub paketi | Microsoft Docs
+title: Visual Studio + GitHub teklifi | Microsoft Docs
 author: evanwindom
 ms.author: lank
 manager: lank
 ms.date: 07/19/2019
 ms.topic: conceptual
-description: Yeni Visual Studio + GitHub paketi hakkında bilgi edinin
-ms.openlocfilehash: 1d7b55a32c796747d50fac8dae14d6af2f847c46
-ms.sourcegitcommit: 485881e6ba872c7b28a7b17ceaede845e5bea4fe
+description: Yeni Visual Studio + GitHub teklifi hakkında bilgi edinin
+ms.openlocfilehash: 6c34ecc37285166135584a98453a1e92393073ab
+ms.sourcegitcommit: a2df993dc5e11c5131dbfcba686f0028a589068f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68377654"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71150086"
 ---
 # <a name="introducing-visual-studio-subscriptions-with-github-enterprise"></a>GitHub Enterprise ile Visual Studio aboneliklerine giriş  
 
-Microsoft ile kurumsal anlaşma (EA) olan müşteriler, Visual Studio Standard abonelikleri ve GitHub Enterprise 'ı birlikte getiren yeni bir abonelik paketi satın almaya uygundur. Visual Studio abonelerinin GitHub Enterprise 'ı edinmenin kolay ve ekonomik bir yoludur. 
+Microsoft ile kurumsal anlaşma (EA) olan müşteriler, Visual Studio Standard abonelikleri ve GitHub Enterprise 'ı birlikte getiren yeni bir abonelik teklifi satın almaya uygundur. Visual Studio abonelerinin GitHub Enterprise 'ı edinmenin kolay ve ekonomik bir yoludur. 
 
 - Açık kaynak kodu, topluluk ve en iyi uygulamaları IDE ve iş akışlarınıza güvenli bir şekilde sunarak, Visual Studio ve GitHub ile yenilik yapın ölçeklendirin.
 - Harika uygulamalar oluşturmak, dağıtmak ve yönetmek için en kapsamlı kaynak kümesi olan geliştiriciler için en iyi sınıf geliştirme araçları ve hizmetleri kullanın. 
@@ -28,7 +28,7 @@ Kuruluşunuz yeni bir EA giriyor veya var olanı yenilemekte ise aşağıdaki se
 - GitHub Enterprise ile Visual Studio Enterprise
 - GitHub Enterprise ile Visual Studio Professional
 
-Kuruluşunuzda yenilemeyle ilgili olmayan bir EA varsa, mevcut Visual Studio Enterprise veya Visual Studio Professional aboneliklerinize GitHub Enterprise eklemek için "adım adım" SKU 'SU satın alabilirsiniz.  Sözleşmenizin yenileme işleminde, paketi satın alabilirsiniz.
+Kuruluşunuzda yenilemeyle ilgili olmayan bir EA varsa, mevcut Visual Studio Enterprise veya Visual Studio Professional aboneliklerinize GitHub Enterprise eklemek için "adım adım" SKU 'SU satın alabilirsiniz. Sözleşmeniz yenilendiğinde teklifi satın alabilirsiniz.
 
 Visual Studio Enterprise, Visual Studio Professional ve GitHub Enterprise için mevcut SKU 'Lar Ayrıca kullanılabilir olmaya devam edecektir. 
 
@@ -40,7 +40,7 @@ Visual Studio + GitHub Enterprise abonelikleri iki parçaya atanır:
 1. Visual Studio aboneliği (Enterprise veya Professional)
 2. GitHub Enterprise aboneliği
 
-Kuruluşunuz abonelikleri satın aldığında, yöneticiler tarafından atanır.  Visual Studio abonelikleri ve GitHub kurumsal abonelikleri ayrı ayrı atanır.  
+Kuruluşunuz abonelikleri satın aldığında, yöneticiler tarafından atanır. Visual Studio abonelikleri ve GitHub kurumsal abonelikleri ayrı ayrı atanır.  
 
 Visual Studio + GitHub aboneliğine atandıysanız, Visual Studio abonelik yöneticinizin size bir abonelik atandığını bildiren bir e-posta alırsınız.  Bu noktada, adresinde https://my.visualstudio.com/subscriptions görebilirsiniz.  
 
