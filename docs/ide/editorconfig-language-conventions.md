@@ -1,6 +1,6 @@
 ---
 title: EditorConfig için .NET dil kuralları
-ms.date: 07/17/2019
+ms.date: 09/23/2019
 ms.topic: reference
 dev_langs:
 - CSharp
@@ -13,22 +13,23 @@ manager: jillfra
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 2231d3637b4a016d1da783d65d4237b9f5d6bab2
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: e4f49df2c775bc3bb95888d76da133898ab9c76e
+ms.sourcegitcommit: 88f576ac32af31613c1a10c1548275e1ce029f4f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69551423"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71186501"
 ---
 # <a name="language-conventions"></a>Dil kuralları
 
 Visual Studio 'da EditorConfig için dil kuralları iki kategoriye ayrılır: Visual Basic ve C#ve C# özel olanlar için geçerlidir. Dil kuralları, bir programlama dilinin çeşitli yönlerinin nasıl kullanıldığını, örneğin değiştiriciler ve ayraçları etkiler.
 
 > [!TIP]
-> - **Bu makalede** , sayfanın farklı bölümlerine gitmek için bağlantıları kullanın.
 > - Kod örneklerini tercih ettiğiniz programlama dilinde görmek için, tarayıcı penceresinin sağ üst köşesindeki dil seçicisini kullanarak bunu seçin.
 >
 >   ![Kod dili seçici denetimi](media/code-language-picker.png)
+>
+> - **Bu makalede** , sayfanın farklı bölümlerine gitmek için bağlantıları kullanın.
 
 ## <a name="rule-format"></a>Kural biçimi
 
@@ -36,19 +37,48 @@ Dil kuralları kuralları aşağıdaki genel biçimdedir:
 
 `option_name = value:severity`
 
-Her dil kuralı için, stilin ne zaman tercih edilmesi gerektiğini tanımlayan bir değer belirtirsiniz. `true` Birçok kural bir değeri kabul eder (Bu stili tercih edin) veya `false` (Bu stili tercih etmez); `when_on_single_line` diğerleri veya `never`gibi değerleri kabul eder. Kuralın ikinci bölümü **önem derecesini**belirtir.
+Her dil kuralı için, stilin ne zaman tercih edilmesi gerektiğini tanımlayan bir değer belirtirsiniz. Birçok kural bir değeri `true` kabul eder (Bu stili tercih et) veya `false` (Bu stili tercih etme). Diğer kurallar `when_on_single_line` veya `never`gibi değerleri kabul eder. Kuralın ikinci bölümü [önem derecesini](#severity-levels)belirtir.
 
-### <a name="severity"></a>Önem Derecesi
+::: moniker range=">=vs-2019"
+
+> [!NOTE]
+> Dil kuralları çözümleyiciler tarafından zorlandığından, çözümleyiciler için varsayılan yapılandırma söz dizimini kullanarak önem derecesini de ayarlayabilirsiniz. Sözdizimi, örneğin, `dotnet_diagnostic.<rule ID>.severity = <severity>` `dotnet_diagnostic.IDE0040.severity = silent`biçimini alır. Daha fazla bilgi için bkz. [bir EditorConfig dosyasında kural önem derecesini ayarlama](../code-quality/use-roslyn-analyzers.md#set-rule-severity-in-an-editorconfig-file).
+
+::: moniker-end
+
+## <a name="severity-levels"></a>Önem düzeyleri
 
 Dil kuralı önem derecesi, bu stilin zorlanmasını sağlayan düzeyi belirtir. Aşağıdaki tabloda olası önem düzeyi değerleri ve bunların etkileri listelenmektedir:
 
 Önem Derecesi | Efekt
 :------- | ------
-`none` | Bu kural ihlal edildiğinde kullanıcıya herhangi bir şey gösterme. Kod oluşturma özellikleri bu stilde kod üretir. Önem derecesine `none` sahip kurallar, **Hızlı Eylemler ve yeniden düzenlemeler** menüsünde hiçbir şekilde görünmez. Çoğu durumda bu, "devre dışı" veya "yoksayıldı" olarak değerlendirilir.
-`silent`(Ayrıca `refactoring` , Visual Studio 2017 sürüm 15,8 ve üstü) | Bu kural ihlal edildiğinde kullanıcıya herhangi bir şey gösterme. Kod oluşturma özellikleri bu stilde kod üretir. Önem derecesine `silent` sahip kurallar Temizleme **ve hızlı eylemler ve yeniden düzenlemeler** menüsünde görünür.
-`suggestion` | Bu stil kuralı ihlal edildiğinde kullanıcıya öneri olarak gösterin. Öneriler, ilk iki karakterin altında üç gri nokta olarak görünür.
-`warning` | Bu stil kuralı ihlal edildiğinde, bir derleyici uyarısı gösterin.
 `error` | Bu stil kuralı ihlal edildiğinde, bir derleyici hatası gösterir.
+`warning` | Bu stil kuralı ihlal edildiğinde, bir derleyici uyarısı gösterin.
+`suggestion` | Bu stil kuralı ihlal edildiğinde kullanıcıya öneri olarak gösterin. Öneriler, ilk iki karakterin altında üç gri nokta olarak görünür.
+`silent` | Bu kural ihlal edildiğinde kullanıcıya herhangi bir şey gösterme. Kod oluşturma özellikleri bu stilde kod üretir. Önem derecesine `silent` sahip kurallar temizleme işlemine katılır ve **Hızlı Eylemler ve yeniden düzenlemeler** menüsünde görüntülenir.
+`none` | Bu kural ihlal edildiğinde kullanıcıya herhangi bir şey gösterme. Kod oluşturma özellikleri bu stilde kod üretir. Önem derecesine `none` sahip kurallar, **Hızlı Eylemler ve yeniden düzenlemeler** menüsünde hiçbir şekilde görünmez. Çoğu durumda bu, "devre dışı" veya "yoksayıldı" olarak değerlendirilir.
+
+::: moniker range=">=vs-2019"
+
+## <a name="automatically-configure-code-styles"></a>Kod stillerini otomatik yapılandır
+
+Visual Studio 2019 sürüm 16,3 ' den başlayarak, bir stil ihlali oluştuktan sonra [hızlı eylemler](quick-actions.md) ampul menüsünden kod stili kurallarını yapılandırabilirsiniz.
+
+Kod stili kuralını değiştirmek için:
+
+1. Düzenleyicide dalgalı çizgi üzerine gelin ve görüntülenen ampul menüsünü açın. **Yapılandırma veya gizleme sorunları** > ,**kural \<kimliğini yapılandırma > kodu stilini**seçin.
+
+   ![Visual Studio 'da ampul menüsünden kod stili yapılandırma](media/vs-2019/configure-code-style.png)
+
+2. Buradan, kod stili seçeneklerinden birini seçin.
+
+   ![Kod stili ayarını Yapılandır](media/vs-2019/configure-code-style-setting.png)
+
+   Visual Studio, önizleme kutusunda gösterildiği gibi EditorConfig dosyasındaki yapılandırma ayarını ekler veya değiştirir.
+
+Kod stili ihlalinin önem derecesini değiştirmek için, aynı adımları izleyin, ancak  **\<kural kimliğini Yapılandır > kod stili**yerine  **\<kural kimliği > önem derecesi** ' ni seçin. Daha fazla bilgi için bkz. [kural önem derecesini otomatik olarak yapılandırma](../code-quality/use-roslyn-analyzers.md#automatically-configure-rule-severity).
+
+::: moniker-end
 
 ## <a name="net-code-style-settings"></a>.NET kod stili ayarları
 

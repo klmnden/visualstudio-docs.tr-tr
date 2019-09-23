@@ -1,6 +1,6 @@
 ---
-title: Çözümleyici kural kümeleri
-ms.date: 04/22/2019
+title: FxCop Çözümleyicisi kural kümeleri
+ms.date: 09/23/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - analyzer packages, rule sets
@@ -10,16 +10,27 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 68410fd43f182873c27e3d5fed742bed7ba8a4ed
-ms.sourcegitcommit: b83fefa8177c5554cbe2c59c4d102cbc534f7cc6
+ms.openlocfilehash: da1567dd088ecc060f031e59827ff33024e9e955
+ms.sourcegitcommit: 88f576ac32af31613c1a10c1548275e1ce029f4f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "69585139"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71185957"
 ---
 # <a name="rule-sets-for-analyzer-packages"></a>Çözümleyici paketleri için kural kümeleri
 
 Önceden tanımlanmış kural kümeleri, bazı NuGet çözümleyici paketlerine dahildir. Örneğin, [Microsoft. CodeAnalysis. Fxcopçözümleyiciler](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/) NuGet çözümleyici paketine (sürüm 2.6.2 Critical ' den başlayarak) dahil edilen kural kümeleri, güvenlik, adlandırma veya performans gibi kategorilerine göre kuralları etkinleştirir veya devre dışı bırakır. Kural kümelerinin kullanılması, yalnızca belirli bir kural kategorisiyle ilgili olan kural ihlallerini hızlıca görmeyi kolaylaştırır.
+
+Bir kural kümesi, hedeflenen sorunları ve belirli koşulları belirleyen kod analizi kurallarının bir gruplandırmasıdır. Kural kümeleri kuralları etkinleştirmenizi veya devre dışı bırakmanızı ve tek tek kural ihlalleri için önem derecesini ayarlamanıza olanak sağlar. FxCop Çözümleyicisi NuGet paketi aşağıdaki kural kategorileri için önceden tanımlanmış kural kümelerini içerir:
+
+- tasarlama
+- belgeler
+- bakım
+- adlandırma
+- performans
+- güvenilirlik
+- güvenlik
+- kullanım
 
 Eski "FxCop" analizinden .NET Compiler Platform tabanlı kod çözümlemesine geçiş yapıyorsanız, bu kural kümeleri, [daha önce kullandığınız](rule-set-reference.md)şekilde benzer kural yapılandırmalarının kullanılmasına devam etmeyi sağlar.
 
@@ -74,5 +85,5 @@ Ayrıca, paketteki her bir kural kategorisi için performans veya güvenlik gibi
 - [Çözümleyiciler SSS](analyzers-faq.md)
 - [.NET Compiler Platform çözümleyicilerine genel bakış](roslyn-analyzers-overview.md)
 - [Çözümleyicileri yükleiciler](install-roslyn-analyzers.md)
-- [Çözümleyiciler kullanma](use-roslyn-analyzers.md)
+- [Çözümleyicileri yapılandırma](use-roslyn-analyzers.md)
 - [Kod analizi kurallarını gruplandırmak için kural kümeleri kullanma](using-rule-sets-to-group-code-analysis-rules.md)

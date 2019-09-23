@@ -5,19 +5,19 @@ description: Visual Studio için yayınlanmış sürümlerin ve derleme numarala
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.date: 09/16/2019
+ms.date: 09/23/2019
 ms.topic: reference
 ms.custom: seodec18
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: f489d453e75031ddb9bd26e59cd4af182301c159
-ms.sourcegitcommit: 2db01751deeee7b2bdb1db25419ea6706e6fcdf8
+ms.openlocfilehash: 84e4fba6e55cc7fd4cdfbbd28303aac4cf912bff
+ms.sourcegitcommit: 88f576ac32af31613c1a10c1548275e1ce029f4f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71062383"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71186408"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Visual Studio derleme numaraları ve yayın tarihleri
 
@@ -29,6 +29,8 @@ Aşağıdaki tabloda, Visual Studio 2019 için derleme numaraları ve sürüm ta
 
 | **Sürüm**| **Kanal** | **Yayın tarihi** | **Derleme sürümü** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 16.4.0 | Önizleme 1 | 23 Eylül 2019 | 16.4.29319.158 |
+| 16.3.0 | Sürüm | 23 Eylül 2019 | 16.3.29318.209 |
 | 16.3.0 | Preview 4 | 16 Eylül 2019 | 16.3.29311.281 |
 | 16.2.5 | Sürüm | 10 Eylül 2019 | 16.2.29306.81 |
 | 16.0.8 | Sürüm | 10 Eylül 2019 | 16.0.28803.584 |

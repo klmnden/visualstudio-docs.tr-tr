@@ -1,6 +1,6 @@
 ---
 title: Gelişmiş Derleme Ayarları İletişim Kutusu (C#)
-ms.date: 06/20/2017
+ms.date: 08/05/2019
 ms.technology: vs-ide-compile
 ms.topic: reference
 f1_keywords:
@@ -13,16 +13,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 306cecc6bdc194e0022c056ac0a87e2ab063d20b
-ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
+ms.openlocfilehash: c4a1c902047b76ef3b29814d10cfc112ab9c7274
+ms.sourcegitcommit: 88f576ac32af31613c1a10c1548275e1ce029f4f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68461891"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71186792"
 ---
-# <a name="advanced-build-settings-dialog-box-c"></a>Gelişmiş Derleme Ayarları İletişim Kutusu (C#)
+# <a name="advanced-build-settings-dialog-box-c"></a>Gelişmiş derleme ayarları iletişim kutusu (C#)
 
-Projenin Gelişmiş derleme yapılandırma özelliklerini belirtmek için **Proje Tasarımcısı** ' nın **Gelişmiş derleme ayarları** iletişim kutusunu kullanın. Bu iletişim kutusu yalnızca projeler [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] için geçerlidir.
+Projenin Gelişmiş derleme yapılandırma özelliklerini belirtmek için **Proje Tasarımcısı** ' nın **Gelişmiş derleme ayarları** iletişim kutusunu kullanın. Bu iletişim kutusu yalnızca projeler C# için geçerlidir.
 
 ## <a name="general"></a>Genel
 
@@ -30,19 +30,19 @@ Aşağıdaki seçenekler genel Gelişmiş ayarları ayarlamanıza olanak sağlar
 
 **Dil sürümü**
 
-Kullanılacak dilin sürümünü belirtir. Özellik kümesi her sürümde farklıdır, bu nedenle derleyicinin uygulanan özelliklerin yalnızca bir alt kümesine izin vermeye zorlamak veya yalnızca var olan bir standartta uyumlu özellikleri etkinleştirmek için bu seçenek kullanılabilir. Bu ayar aşağıdaki seçeneklere sahiptir:
+::: moniker range=">=vs-2019"
 
-- **default**
+Bir projenin hedef çerçevesine göre varsayılan dil sürümünün nasıl seçildiği hakkında bilgi sağlayan [/langversion (C# derleyici seçenekleri)](/dotnet/csharp/language-reference/compiler-options/langversion-compiler-option)bağlantıları.
 
-   Geçerli sürümü hedefler.
+::: moniker-end
 
-- **ISO-1** ve **ISO-2**
+::: moniker range="vs-2017"
 
-   Sırasıyla ISO-1 ve ISO-2 Standart özelliklerini hedefler.
+Kullanılacak dilin sürümünü belirtir. Özellik kümesi her sürümde farklıdır, bu nedenle derleyicinin uygulanan özelliklerin yalnızca bir alt kümesine izin vermeye zorlamak veya yalnızca var olan bir standartta uyumlu özellikleri etkinleştirmek için bu seçenek kullanılabilir.
 
-- **C#[sürüm numarası]**
+Varsayılan değer 7,0 ' C# dir.
 
-   Belirli bir sürümünü hedefler C#. Daha fazla bilgi için bkz. [/langversionC# (derleyici seçenekleri)](/dotnet/csharp/language-reference/compiler-options/langversion-compiler-option).
+::: moniker-end
 
 **İç derleyici hata bildirimi**
 
@@ -96,5 +96,5 @@ DLL 'nin yükleneceği tercih edilen temel adresi belirtir. Bir DLL için varsay
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-- [C# Derleyici Seçenekleri](/dotnet/csharp/language-reference/compiler-options/index)
-- [Derleme Sayfası, Proje Tasarımcısı (C#)](../../ide/reference/build-page-project-designer-csharp.md)
+- [C# derleyici seçenekleri](/dotnet/csharp/language-reference/compiler-options/index)
+- [Derleme sayfası, proje Tasarımcısı (C#)](../../ide/reference/build-page-project-designer-csharp.md)

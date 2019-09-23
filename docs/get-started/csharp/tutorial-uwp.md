@@ -3,7 +3,7 @@ title: Visual Studio ile Evrensel Windows Platformu (UWP) uygulaması oluşturma
 description: XAML ve Visual Studio 'da bir UWP uygulaması oluşturun veC#
 titleSuffix: ''
 ms.custom: seodec18, get-started
-ms.date: 03/23/2019
+ms.date: 09/20/2019
 ms.technology: vs-ide-general
 ms.topic: tutorial
 ms.devlang: CSharp
@@ -14,12 +14,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 930512d762a05a91ab233566b76c6591ab2ea6d4
-ms.sourcegitcommit: 6993bcb0d2b0067b1b7b7899bfba52c31c70b7e7
+ms.openlocfilehash: 1be0e656489c4bbff9064db329fb8b015b446297
+ms.sourcegitcommit: 88f576ac32af31613c1a10c1548275e1ce029f4f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71095380"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71186849"
 ---
 # <a name="tutorial-create-your-first-universal-windows-platform-application-in-visual-studio-with-xaml-and-c35"></a>Öğretici: Visual Studio 'da XAML ve C ile ilk Evrensel Windows Platformu uygulamanızı oluşturma&#35;
 
@@ -62,6 +62,10 @@ Visual Studio henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://v
 
    > [!NOTE]
    > **Boş uygulama (Evrensel Windows)** proje şablonunu görmüyorsanız, **daha fazla araç ve özellik yüklemesi** bağlantısına tıklayın.<br><br>![Daha fazla araç ve özellik yüklemesi bağlantısına tıklayın](media/vs-2019/uwp-not-finding.png)<br><br>Visual Studio Yükleyicisi'ni başlatır. **Evrensel Windows platformu geliştirme** iş yükünü seçin ve ardından **Değiştir**' i seçin.<br><br>![Visual Studio Yükleyicisi Evrensel Windows Platformu geliştirme iş yükü](media/uwp-dev-workload.png)
+
+1. Projeye bir ad, _HelloWorld_ve **Oluştur**seçeneğini belirleyin.
+
+   ![Proje ekranınızı yapılandırma](media/vs-2019/uwp-configure-your-project.png)
 
 1. **Yeni Evrensel Windows platformu projesi** iletişim kutusunda varsayılan **hedef sürümü** ve **En düşük sürüm** ayarlarını kabul edin.
 
@@ -154,6 +158,8 @@ Kod, bir konuşma senıs nesnesi oluşturmak için bazı Windows API 'Lerini kul
 
 ## <a name="run-the-application"></a>Uygulamayı çalıştırma
 
+
+::: moniker range="vs-2017"
 "Merhaba Dünya" UWP uygulamasını oluşturmak, dağıtmak ve bunların nasıl göründüğünü ve seslerinin nasıl çalıştığını görmek zaman alabilir. İşte nasıl.
 
 1. Uygulamayı yerel makinede başlatmak için Oynat düğmesini ( **yerel makine**) kullanın.
@@ -171,6 +177,28 @@ Kod, bir konuşma senıs nesnesi oluşturmak için bazı Windows API 'Lerini kul
    Windows 10 cihazınız, "Merhaba, Dünya!" harfine sahip olacak
 
 1. Uygulamayı kapatmak için araç çubuğunda **hata ayıklamayı Durdur** düğmesine tıklayın. (Alternatif olarak, menü çubuğunda Hata**ayıklamayı Durdur** ' **u seçin** > veya SHIFT + F5 tuşlarına basın.)
+
+::: moniker-end
+::: moniker range=">=vs-2019"
+"Merhaba Dünya" UWP uygulamasını oluşturmak, dağıtmak ve bunların nasıl göründüğünü ve seslerinin nasıl çalıştığını görmek zaman alabilir. İşte nasıl.
+
+1. Uygulamayı yerel makinede başlatmak için Oynat düğmesini ( **yerel makine**) kullanın.
+
+   ![UWP uygulamanızı başlatmak ve hatalarını ayıklamak için yerel makine ' ye tıklayın](media/uwp-start-or-debug.png)
+
+   (Alternatif olarak, menü çubuğunda **hata** > **ayıklamayı Başlat** ' ı seçebilir veya F5 tuşuna basarak uygulamanızı başlatabilirsiniz.)
+
+1. Giriş ekranı kaybolduktan sonra görüntülenen uygulamanızı görüntüleyin. Uygulama şuna benzer görünmelidir:
+
+   ![UWP "Merhaba Dünya" uygulaması](media/vs-2019/uwp-hello-world-app.png)
+
+1. **Merhaba Dünya** düğmesine tıklayın.
+
+   Windows 10 cihazınız, "Merhaba, Dünya!" harfine sahip olacak
+
+1. Uygulamayı kapatmak için araç çubuğunda **hata ayıklamayı Durdur** düğmesine tıklayın. (Alternatif olarak, menü çubuğunda Hata**ayıklamayı Durdur** ' **u seçin** > veya SHIFT + F5 tuşlarına basın.)
+
+::: moniker-end
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

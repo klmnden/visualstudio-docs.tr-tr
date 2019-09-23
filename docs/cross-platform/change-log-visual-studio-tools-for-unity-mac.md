@@ -1,7 +1,7 @@
 ---
 title: Değişiklik günlüğü (Unity, Mac için Visual Studio Araçları) | Microsoft Docs
 ms.custom: ''
-ms.date: 04/02/2019
+ms.date: 09/18/2019
 ms.technology: vs-unity-tools
 ms.topic: conceptual
 ms.assetid: 33a6ac54-d997-4308-b5a0-af7387460849
@@ -10,16 +10,84 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: ff2bcce9e041ff28393020c48563fe345c4fa076
-ms.sourcegitcommit: 044bb54cb4552c8f4651feb11d62e52726117e75
+ms.openlocfilehash: 897851055bd2eacc10edea9fdff2ab3ecd61b963
+ms.sourcegitcommit: 88f576ac32af31613c1a10c1548275e1ce029f4f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68661813"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71185970"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-mac"></a>Değişiklik Günlüğü (Unity için Visual Studio Araçları, Mac)
 
 Değişiklik günlüğü Unity için Visual Studio Araçları.
+
+## <a name="2330"></a>2.3.3.0
+
+Yayın tarihi, 23 Eylül 2019
+
+### <a name="new-features"></a>Yeni Özellikler
+
+- **Tümleştirme:**
+
+  - IDE 'nin kullanılmayan parametreleri kaldırmak üzere hızlı bir çözüm göstermesini engellemek için, IDE0060 için yeni bir supprescursor eklendi.
+    - `USP0005`için `IDE0060`: Unity iletileri Unity çalışma zamanı tarafından çağrılır.
+
+## <a name="2320"></a>2.3.2.0
+
+Yayın tarihi, 16 Eylül 2019
+
+### <a name="new-features"></a>Yeni Özellikler
+
+- **Tümleştirme:**
+
+  - Unity 'ye özgü yeni Tanılamalar ekleyerek, Visual Studio 'nun Unity projelerine yönelik olduğunu anlama konusunu sunuyoruz. Unity projeleri için geçerli olmayan genel C# tanılamalarını gizleyerek IDE’yi daha akıllı hale getirdik. Örneğin, IDE, Unity düzenleyicisinde değişkeni değiştirmenize engel olacak bir Inspector değişkenini `readonly` değiştirmek için hızlı bir çözüm göstermez.
+    - `UNT0001`: Unity iletileri, boş olsalar bile çalışma zamanı tarafından çağrılır. Unity çalışma zamanının bunları işlemek için gereksiz yere zaman harcamaması için bunları bildirmeyin.
+    - `UNT0002`: Dize eşitliği kullanarak etiket karşılaştırması yapma, yerleşik CompareTag yönteminden daha yavaştır.
+    - `UNT0003`: Tür güvenliği için, GetComponent’ın genel biçiminin kullanılması tercih edilir.
+    - `UNT0004`: Güncelleştirme iletisi kare hızına bağlıdır ve Time.fixedDeltaTime yerine Time.deltaTime’ı kullanmalıdır.
+    - `UNT0005`: FixedUpdate iletisi kare hızından bağımsızdır ve Time.deltaTime yerine Time.fixedDeltaTime kullanmalıdır.
+    - `UNT0006`: Bu Unity iletisi için yanlış bir yöntem imzası algılandı.
+    - `UNT0007`: Unity nesnelerine yönelik null karşılaştırma işleci, null birleşim ile uyumsuzdur ve Unity bunu geçersiz kılar.
+    - `UNT0008`: Unity nesnelerine yönelik null karşılaştırma işleci, null yayma ile uyumsuzdur ve Unity bunu geçersiz kılar.
+    - `UNT0009`: Bir sınıfa InitializeOnLoad özniteliği uygularken statik bir oluşturucu sağlamanız gerekir. InitializeOnLoad özniteliği, düzenleyici başlatıldığında bunun çağrılmasını sağlar.
+    - `UNT0010`: MonoBehaviours yalnızca AddComponent() kullanılarak oluşturulmalıdır. MonoBehaviour bir bileşendir ve bunun GameObject’e eklenmesi gerekir.
+    - `UNT0011`: ScriptableObject yalnızca CreateInstance() kullanılarak oluşturulmalıdır. Unity ileti yöntemlerinin işlenmesi için ScriptableObject’in Unity altyapısı tarafından oluşturulması gerekir.
+    - `USP0001`için `IDE0029`: Unity nesneleri null birleşim kullanmamalıdır.
+    - `USP0002`için `IDE0031`: Unity nesneleri null yayma kullanmamalıdır.
+    - `USP0003`için `IDE0051`: Unity iletileri Unity çalışma zamanı tarafından çağrılır.
+    - `USP0004`için `IDE0044`: SerializeField özniteliğine sahip alanlar ReadOnly yapılmamalıdır.
+
+## <a name="2310"></a>2.3.1.0
+
+Yayımlanma tarihi 4 Eylül 2019
+
+### <a name="new-features"></a>Yeni Özellikler
+
+- **Değerlendirme:**
+
+  - Daha iyi tür görüntüleme desteği eklendi, yani `List<object>` `List'1[[System.Object, <corlib...>]]`yerine.
+
+  - İşaretçi üye erişimi için destek eklendi, ör `p->data->member`.
+
+  - Dizi başlatıcılarda örtük dönüştürmeler için destek eklendi, örn `new byte [] {1,2,3,4}`.
+
+  - Bayt dizileri ve dizeleri incelenirken Onaltılı düzenleyici desteği eklendi.
+
+## <a name="2300"></a>2.3.0.0
+
+Yayın tarihi 13 Ağustos 2019
+
+### <a name="bug-fixes"></a>Hata düzeltmeleri
+
+- **Değerlendirme:**
+
+  - Özel durumlarla düzeltilen Adımlama sorunları.
+
+  - Sözde tanımlayıcıların ($exception gibi) sabit değerlendirmesi.
+
+  - Geçersiz adreslerin başvurusu kaldırılırken kilitlenmeyi önleyin.  
+
+  - Kaldırılmış AppDomain 'ler ile ilgili sorun düzeltildi.
 
 ## <a name="2200"></a>2.2.0.0
 
@@ -103,7 +171,7 @@ Yayın tarihi 20 Haziran 2019
 
   - IntelliSense hatalarının ve uyarılarının kullanımı açısından Unity projelerinin tam derlemesini devre dışı bıraktı. Aslında Unity, dahili olarak hangi Unity 'nin yaptığını temsil eden sınıf kitaplığı projeleri içeren bir Visual Studio çözümü oluşturur. Bu şekilde, Visual Studio 'daki derlemenin sonucu, derleme işlem hattı kapalıyken Unity tarafından hiçbir şekilde kullanılmaz veya alınmaz. Visual Studio 'da oluşturma işlemi yalnızca hiçbir şey için kaynakları tüketiyor. Kendisine bağlı araçlara veya kuruluma sahip olduğunuz için tam bir yapıya ihtiyacınız varsa, bu iyileştirmeyi devre dışı bırakabilirsiniz (Unity için ayarlar/araçlar/projelerin tam derlemesini devre dışı bırak).
   
-  - UPE içinde Unity paketleri için destek eklendi. Yalnızca başvurulan paketler (Paketler klasöründe manifest. JSON kullanılarak) ve yerel paketler (paketler klasörüne katıştırılmış) görünür.
+  - UPE içinde Unity paketleri için destek eklendi. Yalnızca başvurulan paketler ( `Packages` klasöründe manifest. JSON kullanılarak) ve yerel paketler ( `Packages` klasöre katıştırılmış) görünür.
 
 ## <a name="2021"></a>2.0.2.1
 
@@ -164,6 +232,12 @@ Yayımlanma tarihi, 20 Mart 2019
 - **Proje oluşturma:**
 
   - Çözüm dosyasını işlerken dış özellikleri koruyun.
+  
+- **Değerlendirme:**
+
+  - Diğer ad nitelenmiş adlar için destek eklendi (şimdilik yalnızca genel ad alanı). Bu nedenle, ifade değerlendirici artık genel:: Namespace. Type biçimini kullanarak türleri kabul ediyor.
+
+  - İşaretçi başvuru `pointer[index]` `*(pointer+index)` formuyla anlam ile aynı olan form için destek eklendi.
 
 ## <a name="2004"></a>2.0.0.4
 
@@ -173,7 +247,7 @@ Yayımlanma tarihi, 5 Mart 2019
 
 - **Tümleştirme:**
 
-  - ScriptableObject API 'SI güncelleştirildi.
+  - `ScriptableObject` API güncelleştirildi.
 
 ### <a name="bug-fixes"></a>Hata düzeltmeleri
 
@@ -189,7 +263,7 @@ Yayımlanma tarihi, 5 Mart 2019
 
 - **Proje oluşturma:**
 
-  - Ortak ve serileştirilmiş alanlar artık uyarılara neden olmaz. Bu iletileri oluşturan Unity projelerinde CS0649 ve IDE0051 derleyici uyarılarını otomatik olarak gizliyoruz.
+  - Ortak ve serileştirilmiş alanlar artık uyarılara neden olmaz. Bu iletileri oluşturan Unity projelerinde `CS0649` ve `IDE0051` derleyici uyarılarını otomatik olarak gizliyoruz.
 
 - **Tümleştirme:**
 

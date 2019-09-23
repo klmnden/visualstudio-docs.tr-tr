@@ -12,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2b18f5763d68487e7642f5632c05516d2f1bd9e2
-ms.sourcegitcommit: aeb1a1135dd789551e15aa5124099a5fe3f0f32b
+ms.openlocfilehash: d1b4ff448f04ff6f683fac06cbc0b31797edf587
+ms.sourcegitcommit: 88f576ac32af31613c1a10c1548275e1ce029f4f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "66500948"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71186587"
 ---
 # <a name="rename-a-code-symbol-refactoring"></a>Bir kod sembol yeniden düzenlemeyi yeniden adlandırma
 
@@ -27,11 +27,11 @@ Bu yeniden düzenleme için geçerlidir:
 
 - Visual Basic
 
-**Ne:** Alanlar, yerel değişkenler, yöntemleri, ad alanları, özellikler ve türler gibi kod simgeleri tanımlayıcıları yeniden adlandır olanak tanır.
+**Yazdırılacak** Alanlar, yerel değişkenler, Yöntemler, ad alanları, Özellikler ve türler gibi kod sembolleri için tanımlayıcıları yeniden adlandırmanızı sağlar.
 
-**ne zaman:** Güvenli bir şekilde bir şey tüm örneklerini bulun ve yeni adı kopyala/yapıştır gerekmeden yeniden adlandırmak istediğiniz.
+**Oluşturulurken** Tüm örnekleri bulmak zorunda kalmadan bir şeyi güvenle yeniden adlandırmak ve yeni adı kopyalayıp yapıştırmak istiyorsunuz.
 
-**Neden:** Kopyalayıp yeni bir ad, bir projenin tamamı yapıştırarak musunuz büyük olasılıkla hatalara neden. Bu yeniden düzenleme aracı doğru yeniden adlandırma eylemi gerçekleştirir.
+**Kaydol** Yeni adı bir projenin tamamına kopyalamak ve yapıştırmak muhtemelen hatalara neden olabilir. Bu yeniden düzenleme aracı doğru yeniden adlandırma eylemi gerçekleştirir.
 
 ## <a name="how-to"></a>Nasıl Yapılır Konuları
 
@@ -70,11 +70,15 @@ Bu yeniden düzenleme için geçerlidir:
 
 ## <a name="remarks"></a>Açıklamalar
 
+- Visual Studio 2019 sürüm 16,3 ' den başlayarak, içindeki dosyanın adıyla eşleşen bir türü yeniden adlandırdığınızda, dosyayı aynı anda yeniden adlandırmanızı sağlayan bir onay kutusu görüntülenir. Bu seçenek, bir sınıfı, arabirimi veya numaralandırmayı yeniden adlandırdığınızda görüntülenir. Bu seçenek, birden çok tanım içeren kısmi türler için desteklenmez.
+
+   ![Animasyonu dosyayla yeniden adlandırma-C#](media/rename-with-file-animated-cs.gif)
+   
 - Bir çakışma neden zaten var olan bir ad kullanırsanız **Yeniden Adlandır** kutusunun sizi uyaracaktır.
 
    ![Yeniden adlandırma çakışması](media/rename-conflict-cs.png)
 
-- Bir sembol yeniden adlandırmak için başka bir düzenleyicide adını değiştirmek için yoludur. İmleç sembol adı, tuşuna **Ctrl**+ **.** veya yalnızca görünür ve ampul simgesini menüyü genişleterek **Yeniden Adlandır \<eski adı > için \<yeni adı >** .
+- Bir sembolü yeniden adlandırmaya yönelik başka bir yol da düzenleyicide adını değiştirkullanmaktır. Ardından, imleç sembol adında, **CTRL**+tuşuna basın **.** ya da görünen ampul simgesi menüsünü genişlettikten sonra **eski adı > > \<yeni ad olarak \<yeniden adlandır**' ı seçin.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

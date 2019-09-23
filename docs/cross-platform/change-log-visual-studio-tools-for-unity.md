@@ -1,7 +1,7 @@
 ---
 title: Değişiklik günlüğü (Unity, Windows için Visual Studio Araçları) | Microsoft Docs
 ms.custom: ''
-ms.date: 07/29/2019
+ms.date: 09/18/2019
 ms.technology: vs-unity-tools
 ms.topic: conceptual
 ms.assetid: ea490b7e-fc0d-44b1-858a-a725ce20e396
@@ -10,16 +10,101 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: d9b89be226ca7cafbfe66a14cd606f50678a013a
-ms.sourcegitcommit: 044bb54cb4552c8f4651feb11d62e52726117e75
+ms.openlocfilehash: 713535bb11b4bd9cab4ef1b31507b96fe1c9897a
+ms.sourcegitcommit: 88f576ac32af31613c1a10c1548275e1ce029f4f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68661953"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71185997"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-windows"></a>Değişiklik günlüğü (Unity, Windows için Visual Studio Araçları)
 
 Değişiklik günlüğü Unity için Visual Studio Araçları.
+
+## <a name="4330"></a>4.3.3.0
+
+Yayın tarihi, 23 Eylül 2019
+
+### <a name="bug-fixes"></a>Hata düzeltmeleri
+
+- **Tümleştirme:**
+
+  - Basit derlemeler için düzeltilen hata ve uyarı raporlaması.
+
+## <a name="4320"></a>4.3.2.0
+
+Yayın tarihi, 16 Eylül 2019
+
+### <a name="new-features"></a>Yeni Özellikler
+
+- **Tümleştirme:**
+
+  - Unity 'ye özgü yeni Tanılamalar ekleyerek, Visual Studio 'nun Unity projelerine yönelik olduğunu anlama konusunu sunuyoruz. Unity projeleri için geçerli olmayan genel C# tanılamalarını gizleyerek IDE’yi daha akıllı hale getirdik. Örneğin, IDE, Unity düzenleyicisinde değişkeni değiştirmenize engel olacak bir Inspector değişkenini `readonly` değiştirmek için hızlı bir çözüm göstermez.
+    - `UNT0001`: Unity iletileri, boş olsalar bile çalışma zamanı tarafından çağrılır. Unity çalışma zamanının bunları işlemek için gereksiz yere zaman harcamaması için bunları bildirmeyin.
+    - `UNT0002`: Dize eşitliği kullanarak etiket karşılaştırması yapma, yerleşik CompareTag yönteminden daha yavaştır.
+    - `UNT0003`: Tür güvenliği için, GetComponent’ın genel biçiminin kullanılması tercih edilir.
+    - `UNT0004`: Güncelleştirme iletisi kare hızına bağlıdır ve Time.fixedDeltaTime yerine Time.deltaTime’ı kullanmalıdır.
+    - `UNT0005`: FixedUpdate iletisi kare hızından bağımsızdır ve Time.deltaTime yerine Time.fixedDeltaTime kullanmalıdır.
+    - `UNT0006`: Bu Unity iletisi için yanlış bir yöntem imzası algılandı.
+    - `UNT0007`: Unity nesnelerine yönelik null karşılaştırma işleci, null birleşim ile uyumsuzdur ve Unity bunu geçersiz kılar.
+    - `UNT0008`: Unity nesnelerine yönelik null karşılaştırma işleci, null yayma ile uyumsuzdur ve Unity bunu geçersiz kılar.
+    - `UNT0009`: Bir sınıfa InitializeOnLoad özniteliği uygularken statik bir oluşturucu sağlamanız gerekir. InitializeOnLoad özniteliği, düzenleyici başlatıldığında bunun çağrılmasını sağlar.
+    - `UNT0010`: MonoBehaviours yalnızca AddComponent() kullanılarak oluşturulmalıdır. MonoBehaviour bir bileşendir ve bunun GameObject’e eklenmesi gerekir.
+    - `UNT0011`: ScriptableObject yalnızca CreateInstance() kullanılarak oluşturulmalıdır. Unity ileti yöntemlerinin işlenmesi için ScriptableObject’in Unity altyapısı tarafından oluşturulması gerekir.
+    - `USP0001`için `IDE0029`: Unity nesneleri null birleşim kullanmamalıdır.
+    - `USP0002`için `IDE0031`: Unity nesneleri null yayma kullanmamalıdır.
+    - `USP0003`için `IDE0051`: Unity iletileri Unity çalışma zamanı tarafından çağrılır.
+    - `USP0004`için `IDE0044`: SerializeField özniteliğine sahip alanlar ReadOnly yapılmamalıdır.
+
+## <a name="4310"></a>4.3.1.0
+
+Yayımlanma tarihi 4 Eylül 2019
+
+### <a name="new-features"></a>Yeni Özellikler
+
+- **Değerlendirme:**
+
+  - Daha iyi tür görüntüleme desteği eklendi, yani `List<object>` `List'1[[System.Object, <corlib...>]]`yerine.
+
+  - İşaretçi üye erişimi için destek eklendi, ör `p->data->member`.
+
+  - Dizi başlatıcılarda örtük dönüştürmeler için destek eklendi, örn `new byte [] {1,2,3,4}`.
+
+## <a name="4300"></a>4.3.0.0
+
+Yayın tarihi 13 Ağustos 2019
+
+### <a name="new-features"></a>Yeni Özellikler
+
+- **Hata Ayıklayıcı:**
+
+  - MDS Protokolü 2,51 için destek eklendi.
+
+- **Tümleştirme:**
+
+  - Sıralama, arama ve yenileme özellikleriyle "Unity örneğine Ekle" penceresi geliştirildi. PID artık yerel oyuncular için de görüntülenir (sahip olan işlemi almak için sistemdeki dinleme yuvaları sorgulanarak).
+
+  - Asmdef dosyaları için destek eklendi.
+
+### <a name="bug-fixes"></a>Hata düzeltmeleri
+
+- **Tümleştirme:**
+
+  - Unity oynatıcılarla iletişim kurulurken hatalı biçimlendirilmiş iletilerin işlenmesi düzeltildi.
+
+- **Değerlendirme:**
+
+  - İfadelerde ad alanlarını sabit olarak işleme.
+
+  - IntPtr türleriyle düzeltilen İnceleme.
+  
+  - Özel durumlarla düzeltilen Adımlama sorunları.
+
+  - Sözde tanımlayıcıların ($exception gibi) sabit değerlendirmesi.
+
+  - Geçersiz adreslerin başvurusu kaldırılırken kilitlenmeyi önleyin.  
+
+  - Kaldırılmış AppDomain 'ler ile ilgili sorun düzeltildi.
 
 ## <a name="4201"></a>4.2.0.1
 
@@ -79,7 +164,7 @@ Yayımlanma tarihi 21 Mayıs 2019
 
   - Unity 2019. x ile güncelleştirilmiş proje adı ayıklama mekanizması.
 
-  - UPE içinde Unity paketleri için destek eklendi. Yalnızca başvurulan paketler ( ```Packages``` klasöründe manifest. JSON kullanılarak) ve yerel paketler ( ```Packages``` klasöre katıştırılmış) görünür.
+  - UPE içinde Unity paketleri için destek eklendi. Yalnızca başvurulan paketler ( `Packages` klasöründe manifest. JSON kullanılarak) ve yerel paketler ( `Packages` klasöre katıştırılmış) görünür.
 
 - **Proje oluşturma:**
 
@@ -89,7 +174,7 @@ Yayımlanma tarihi 21 Mayıs 2019
 
   - Diğer ad nitelenmiş adlar için destek eklendi (şimdilik yalnızca genel ad alanı). Bu nedenle, ifade değerlendirici artık genel:: Namespace. Type biçimini kullanarak türleri kabul ediyor.
 
-  - İşaretçi başvuru ```pointer[index]``` ```*(pointer+index)``` formuyla anlam ile aynı olan form için destek eklendi.
+  - İşaretçi başvuru `pointer[index]` `*(pointer+index)` formuyla anlam ile aynı olan form için destek eklendi.
 
 ### <a name="bug-fixes"></a>Hata düzeltmeleri
 
@@ -129,7 +214,7 @@ Yayın tarihi, 13 Şubat 2019
 
   - Yükleme sırasında Unity süreçlerini düzgün bir şekilde algılamak ve kurulum altyapısının dosya kilitlerini daha iyi işlemesini sağlamak için destek eklendi.
 
-  - ScriptableObject API 'SI güncelleştirildi.
+  - `ScriptableObject` API güncelleştirildi.
 
 ## <a name="4003"></a>4.0.0.3
 
@@ -139,13 +224,13 @@ Yayın tarihi 31 Ocak 2019
 
 - **Proje oluşturma:**
 
-  - Ortak ve serileştirilmiş alanlar artık uyarılara neden olmaz. Bu iletileri oluşturan Unity projelerinde CS0649 ve IDE0051 derleyici uyarılarını otomatik olarak gizliyoruz.
+  - Ortak ve serileştirilmiş alanlar artık uyarılara neden olmaz. Bu iletileri oluşturan Unity projelerinde `CS0649` ve `IDE0051` derleyici uyarılarını otomatik olarak gizliyoruz.
 
 - **Tümleştirme:**
 
   - Unity Düzenleyicisi ve oynatıcı örneklerini görüntülemek için Kullanıcı deneyimi geliştirildi (Windows artık yeniden boyutlandırılabilir, tek biçimli kenar boşlukları kullanıyor ve bir yeniden boyutlandırma tutamacı görüntülüyor). Unity düzenleyicileri için Işlem kimliği bilgileri eklendi.
 
-  - Monodavranış API 'SI güncelleştirildi.
+  - `MonoBehaviour` API güncelleştirildi.
 
 - **Değerlendirme:**
 
