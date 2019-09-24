@@ -123,8 +123,10 @@
           items:
             - name: Genel Bakış
               href: configure-fxcop-analyzers.md
-            - name: EditorConfig seçenekleri
+            - name: Kapsam seçenekleri
               href: fxcop-analyzer-options.md
+            - name: Önceden tanımlanmış kural kümeleri
+              href: analyzer-rule-sets.md
         - name: SSS
           href: fxcop-analyzers-faq.md
     - name: Eski analizden FxCop çözümleyicilerine geçiş
@@ -137,8 +139,6 @@
       items:
         - name: Genel Bakış
           href: using-rule-sets-to-group-code-analysis-rules.md
-        - name: Çözümleyici paketleri için kural kümeleri
-          href: analyzer-rule-sets.md
         - name: Kural kümelerini yapılandırma
           href: how-to-configure-code-analysis-for-a-managed-code-project.md
         - name: Bir ASP.NET web uygulaması için kod analizini yapılandırma
