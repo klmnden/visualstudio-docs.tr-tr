@@ -654,7 +654,7 @@
         - name: 'İzlenecek yol: Birden çok bilgisayarda derleme ortamı oluşturma'
           href: ide/walkthrough-creating-a-multiple-computer-build-environment.md
     - name: Hata ayıklama >>
-      href: debugger/index.md
+      href: debugger/index.yml
     - name: Test >>
       displayName: Unit testing
       href: test/improve-code-quality.md
