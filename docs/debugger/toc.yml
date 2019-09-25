@@ -1,5 +1,5 @@
 - name: Hata ayıklayıcısı belgeleri
-  href: index.md
+  href: index.yml
 - name: Genel Bakış
   items:
     - name: Hata ayıklama nedir?
@@ -450,7 +450,7 @@
               href: how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio.md
             - name: Microsoft Store uygulamaları için içeriği önceden getirme
               href: prefetch-content-for-windows-store-apps.md
-        - name: Yönetilen kod
+        - name: 'Yönetilen kod (C#, Visual Basic, F#)'
           items:
             - name: Yönetilen kodda hata ayıklama
               href: debugging-managed-code.md
@@ -494,7 +494,7 @@
                   href: how-to-display-wpf-trace-information.md
             - name: 'F# hatalarını ayıklama'
               href: debugging-f-hash.md
-        - name: Yerel kod
+        - name: C/C++ kodu
           items:
             - name: Yerel kodda hata ayıklama
               href: debugging-native-code.md
@@ -582,7 +582,7 @@
                   href: com-debugging-tools.md
             - name: Eklenen kodda hata ayıklama
               href: how-to-debug-injected-code.md
-        - name: GPU kodunda hata ayıklama
+        - name: GPU kodu
           href: debugging-gpu-code.md
         - name: Grafik tanılaması
           href: graphics/toc.yml
@@ -632,6 +632,10 @@
                       href: error-the-web-server-could-not-find-the-requested-resource.md
                     - name: Web sunucusu doğru yapılandırılmamış
                       href: error-the-web-server-is-not-configured-correctly.md
+        - name: Python
+          href: ../python/tutorial-working-with-python-in-visual-studio-step-04-debugging.md
+        - name: JavaScript ve TypeScript
+          href: ../javascript/debug-nodejs.md
         - name: Web uygulamaları
           items:
             - name: Web uygulamalarında hata ayıklama
