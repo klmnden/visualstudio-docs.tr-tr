@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: a17c5bdc9e21bdf877206b1dc28596c251049455
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: 12371c34c846991a0ec41f5e9d9588c5bde8e4d6
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66714742"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71233590"
 ---
 # <a name="ca1813-avoid-unsealed-attributes"></a>CA1813: Mühürsüz özniteliklerden kaçının
 
@@ -30,36 +30,36 @@ ms.locfileid: "66714742"
 |-|-|
 |TypeName|AvoidUnsealedAttributes|
 |CheckId|CA1813|
-|Kategori|Microsoft.Performance|
-|Yeni Değişiklik|Yeni|
+|Kategori|Microsoft. Performance|
+|Son değişiklik|Yeni|
 
 ## <a name="cause"></a>Sebep
 
-Bir ortak türün devraldığı <xref:System.Attribute?displayProperty=fullName>soyut ve korumalı değil (`NotInheritable` Visual Basic'te).
+Ortak bir tür öğesinden <xref:System.Attribute?displayProperty=fullName>devralınır, soyut değildir ve korumalı değildir (`NotInheritable` Visual Basic).
 
 ## <a name="rule-description"></a>Kural açıklaması
 
-.NET özel öznitelikleri almak için yöntemler sağlar. Varsayılan olarak, bu yöntemleri öznitelik devralma hiyerarşisinde arar. Örneğin, <xref:System.Attribute.GetCustomAttribute%2A?displayProperty=fullName> belirtilen öznitelik türünün veya belirtilen öznitelik türü genişleten herhangi bir öznitelik türü arar. Öznitelik mühürleme kalıtım hiyerarşisi aracılığıyla aramayı ortadan kaldırır ve performansı artırabilir.
+.NET özel özniteliklerin alınması için yöntemler sağlar. Varsayılan olarak, bu yöntemleri öznitelik devralma hiyerarşisinde arar. Örneğin, <xref:System.Attribute.GetCustomAttribute%2A?displayProperty=fullName> belirtilen öznitelik türünü veya belirtilen öznitelik türünü genişleten herhangi bir öznitelik türünü arar. Özniteliği mühürde devralma hiyerarşisinde arama kaldırılır ve performans iyileştirebilirler.
 
-## <a name="how-to-fix-violations"></a>İhlaller nasıl düzeltilir?
+## <a name="how-to-fix-violations"></a>İhlalleri çözme
 
-Bu kural ihlalini düzeltmek için öznitelik türünü mühürleyin veya soyut olun.
+Bu kural ihlalini onarmak için öznitelik türünü mühürleyin veya soyut hale getirin.
 
-## <a name="when-to-suppress-warnings"></a>Uyarılar bastırıldığında
+## <a name="when-to-suppress-warnings"></a>Uyarıların ne zaman bastırılamıyor
 
-Bu kuraldan bir uyarıyı bastırmak güvenlidir. Yalnızca bir öznitelik hiyerarşisi tanımlıyorsanız gösterme ve öznitelik mühürleme ya da soyut kolaylaştırır.
+Bu kuraldan bir uyarıyı gizlemek güvenlidir. Yalnızca bir öznitelik hiyerarşisi tanımlıyorsanız ve özniteliği mühürleyip soyut hale getirmemek istiyorsanız gizleyin.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, bu kural karşılayan özel bir öznitelik gösterir.
+Aşağıdaki örnek, bu kuralı karşılayan özel bir özniteliği gösterir.
 
 [!code-csharp[FxCop.Performance.AttributesSealed#1](../code-quality/codesnippet/CSharp/ca1813-avoid-unsealed-attributes_1.cs)]
 [!code-vb[FxCop.Performance.AttributesSealed#1](../code-quality/codesnippet/VisualBasic/ca1813-avoid-unsealed-attributes_1.vb)]
 
-## <a name="related-rules"></a>İlgili kuralları
+## <a name="related-rules"></a>İlgili kurallar
 
-- [CA1019: Öznitelik bağımsız değişkenleri için erişimcileri tanımlayın](../code-quality/ca1019-define-accessors-for-attribute-arguments.md)
-- [CA1018: Öznitelikleri AttributeUsageAttribute ile işaretle](../code-quality/ca1018-mark-attributes-with-attributeusageattribute.md)
+- [CA1019 Öznitelik bağımsız değişkenleri için erişimcileri tanımlayın](../code-quality/ca1019-define-accessors-for-attribute-arguments.md)
+- [CA1018 Öznitelikleri AttributeUsageAttribute ile işaretle](../code-quality/ca1018-mark-attributes-with-attributeusageattribute.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4462bb8ef65fdf593ab0bf64813c19af5d390d97
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d4f02938aed7456762f1ef51da716b6b96bdf437
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62545035"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71232156"
 ---
 # <a name="ca2140-transparent-code-must-not-reference-security-critical-items"></a>CA2140: Saydam kod güvenlik kritik nesnelerine başvurmamalıdır
 
@@ -30,49 +30,49 @@ ms.locfileid: "62545035"
 |TypeName|TransparentMethodsMustNotReferenceCriticalCode|
 |CheckId|CA2140|
 |Kategori|Microsoft.Security|
-|Yeni Değişiklik|Yeni|
+|Son değişiklik|Yeni|
 
 ## <a name="cause"></a>Sebep
 
 Saydam bir yöntem:
 
-- bir güvenlik kritik güvenlik özel durum türü işleme
+- Güvenlik açısından kritik güvenlik özel durum türünü işler
 
-- kritik güvenlik türünü işaretlenmiş bir parametre içeriyor
+- , güvenlik açısından kritik tür olarak işaretlenmiş bir parametreye sahiptir
 
-- Güvenlik kritik kısıtlamalar içeren genel bir parametre içeriyor
+- kritik güvenlik kısıtlamalarına sahip genel bir parametreye sahiptir
 
-- kritik güvenlik türünü, yerel bir değişken yok
+- , güvenlik açısından kritik bir tür yerel değişkenine sahiptir
 
-- Güvenlik kritik olarak işaretlenmiş bir türe başvuran
+- Güvenlik açısından kritik olarak işaretlenmiş bir türe başvurur
 
-- Güvenlik kritik olarak işaretlenmiş bir yöntemi çağırır
+- Güvenlik açısından kritik olarak işaretlenen bir yöntemi çağırır
 
-- Güvenlik kritik olarak işaretlenmiş bir alana başvuruyor
+- Güvenlik açısından kritik olarak işaretlenmiş bir alana başvurur
 
-- Güvenlik kritik olarak işaretlenmiş bir tür döndürür
+- Güvenlik açısından kritik olarak işaretlenen bir tür döndürür
 
 ## <a name="rule-description"></a>Kural açıklaması
 
-İle işaretlenmiş bir kod öğesi <xref:System.Security.SecurityCriticalAttribute> güvenlik açısından kritik bir özniteliktir. Saydam bir yöntem, kritik güvenlik öğesini kullanamaz. Saydam bir tür kritik güvenlik türünü kullanmayı deneyip denemeyeceğini bir <xref:System.TypeAccessException>, <xref:System.MethodAccessException> , veya <xref:System.FieldAccessException> tetiklenir.
+<xref:System.Security.SecurityCriticalAttribute> Özniteliğiyle işaretlenmiş bir kod öğesi güvenlik açısından kritik ' dir. Saydam bir yöntem, kritik güvenlik öğesini kullanamaz. Saydam bir tür, <xref:System.TypeAccessException> <xref:System.MethodAccessException> bir güvenlik kritik türünü kullanmayı denerse, veya <xref:System.FieldAccessException> oluşturulur.
 
-## <a name="how-to-fix-violations"></a>İhlaller nasıl düzeltilir?
+## <a name="how-to-fix-violations"></a>İhlalleri çözme
 
-Bu kural ihlalini düzeltmek için aşağıdakilerden birini yapın:
+Bu kuralın ihlalini onarmak için aşağıdakilerden birini yapın:
 
-- Güvenlik kritik kod ile kod öğesini Web sayfasında işaretlemek <xref:System.Security.SecurityCriticalAttribute> özniteliği
+- Güvenlik açısından kritik kodu <xref:System.Security.SecurityCriticalAttribute> kullanan kod öğesini özniteliğiyle işaretle
 
      \- veya -
 
-- Kaldırma <xref:System.Security.SecurityCriticalAttribute> öznitelik güvenlik kritik olarak işaretlenmiş ve bunun yerine bunları ile işaretleyin kod öğelerinden <xref:System.Security.SecuritySafeCriticalAttribute> veya <xref:System.Security.SecurityTransparentAttribute> özniteliği.
+- Özniteliği güvenlik açısından kritik olarak işaretlenen kod öğelerinden kaldırın ve bunun yerine bunları <xref:System.Security.SecuritySafeCriticalAttribute> veya <xref:System.Security.SecurityTransparentAttribute> özniteliğiyle işaretleyin. <xref:System.Security.SecurityCriticalAttribute>
 
-## <a name="when-to-suppress-warnings"></a>Uyarılar bastırıldığında
+## <a name="when-to-suppress-warnings"></a>Uyarıların ne zaman bastırılamıyor
 
 Bu kuraldan uyarıyı bastırmayın.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örneklerde, bir güvenlik kritik genel koleksiyon, bir güvenlik kritik alan ve güvenlik kritik yöntem başvurmak saydam bir yöntem çalışır.
+Aşağıdaki örneklerde, saydam bir yöntem güvenlik açısından kritik Genel koleksiyona, güvenlik açısından kritik alana ve güvenlik açısından kritik bir yönteme başvurmasına çalışır.
 
 [!code-csharp[FxCop.Security.CA2140.TransparentMethodsMustNotReferenceCriticalCode#1](../code-quality/codesnippet/CSharp/ca2140-transparent-code-must-not-reference-security-critical-items_1.cs)]
 

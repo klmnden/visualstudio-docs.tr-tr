@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 5ab7cf2c5a4f17966ed5b4da30657e05a4683738
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 3114ea004c425567ae479343e0449d2cbc3aa669
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68922642"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71235698"
 ---
 # <a name="ca1047-do-not-declare-protected-members-in-sealed-types"></a>CA1047: Sealed türlerde protected üyeler bildirmeyin
 
@@ -31,7 +31,7 @@ ms.locfileid: "68922642"
 |TypeName|DoNotDeclareProtectedMembersInSealedTypes|
 |CheckId|CA1047|
 |Kategori|Microsoft.Design|
-|Yeni Değişiklik|Kırılmamış|
+|Son değişiklik|Kırılmamış|
 
 ## <a name="cause"></a>Sebep
 Ortak bir tür `sealed` (`NotInheritable` Visual Basic 'te) ve korumalı bir üye ya da korumalı bir iç içe tür bildirir. Bu kural yöntemler için <xref:System.Object.Finalize%2A> ihlalleri raporlamaz, bu da bu düzene uymalıdır.

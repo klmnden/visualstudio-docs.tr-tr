@@ -1,108 +1,119 @@
 ---
-title: Mac için Visual Studio 2019 yükleyin
-description: Mac ve platformlar arası geliştirme için gereken ek bileşenleri için Visual Studio 2019'ı yükleme hakkında yönergeler.
+title: Mac için Visual Studio 2019 'yi yükler
+description: Mac için Visual Studio 2019 ' i ve platformlar arası geliştirme için gereken ek bileşenleri yüklemek için yönergeler.
 author: asb3993
 ms.author: amburns
-ms.date: 04/02/2019
+ms.date: 09/18/2019
 ms.technology: vs-ide-install
 ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
 ms.custom: video
-ms.openlocfilehash: 2086532f0602b4a2509358cbb6d57178a9a1a0d4
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
+ms.openlocfilehash: 3e4a41567b02807dce280426daf59e30ed1876eb
+ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67691460"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71211447"
 ---
-# <a name="install-visual-studio-2019-for-mac"></a>Mac için Visual Studio 2019 yükleyin
+# <a name="install-visual-studio-2019-for-mac"></a>Mac için Visual Studio 2019 'yi yükler
 
-MacOS üzerinde yerel, platformlar arası .NET uygulamalarını geliştirmeye başlamak için aşağıdaki adımları izleyerek Mac için Visual Studio 2019'ı yükleyin.
+MacOS 'ta yerel, platformlar arası .NET uygulamaları geliştirmeye başlamak için aşağıdaki adımları izleyerek Mac için Visual Studio 2019 ' yi yüklemelisiniz.
 
  > [!div class="button"]
- > [Mac için Visual Studio'yu indirin](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=navigation+cta&utm_content=download+vsmac2019)
+ > [Mac için Visual Studio indir](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=navigation+cta&utm_content=download+vsmac2019)
 
 ## <a name="requirements"></a>Gereksinimler
 
-- Mac ile macOS Sierra 10.12 yüksek veya üzeri.
+- MacOS High Sierra 10,12 veya üzeri bir Mac.
 
-İOS veya Mac OS x için Xamarin uygulamaları oluşturmak için ayrıca gerekir:
+İOS veya macOS için Xamarin uygulamaları oluşturmak üzere şunları da yapmanız gerekir:
 
-- Xcode 10.0 veya üzeri. En son kararlı sürüme genellikle önerilir.
-- Bir Apple kimliği Bir Apple kimliği yoksa, yeni bir hesap oluşturabilirsiniz https://appleid.apple.com. Yükleme ve Xcode ile imzalamak için bir Apple Kimliği gereklidir.
+- Xcode 10,0 veya üzeri. En son kararlı sürüm genellikle önerilir.
+- Bir Apple KIMLIĞI. Zaten bir Apple KIMLIĞINIZ yoksa, üzerinde https://appleid.apple.com yeni bir tane oluşturabilirsiniz. Xcode 'a yükleme ve oturum açma için bir Apple KIMLIĞI olması gerekir.
 
 ## <a name="installation-instructions"></a>Yükleme yönergeleri
 
-1. Yükleyici'den indirin [indirme sayfasında Mac için Visual Studio](https://aka.ms/vsmac).
-2. İndirme tamamlandıktan sonra tıklayın **VisualStudioforMacInstaller.dmg** yükleyici bağlamak için çalıştırın ve ok logosu çift tıklayarak:
+1. Yükleyiciyi [Mac için Visual Studio indirme sayfasından](https://aka.ms/vsmac)indirin.
+2. İndirme işlemi tamamlandıktan sonra, yükleyiciyi bağlamak için **VisualStudioforMacInstaller. dmg** ' ye tıklayın ve ardından ok logosunu çift tıklayarak çalıştırın:
 
-    [![Yüklemeye başlamak için büyük oku](media/install-installer-sml.png)](media/install-installer.png#lightbox)
+    [![Yüklemeyi başlatmak için büyük oka tıklayın](media/install-installer-sml.png)](media/install-installer.png#lightbox)
 
-3. Internet'ten yüklenen uygulama hakkında bir uyarı ile sunulan. Tıklayın **açık**.
-4. Yükleyicinin sisteminizi denetlerken bekleyin:
+3. Internet 'ten indirilen uygulamayla ilgili bir uyarı alabilirsiniz. Tıklayın **açık**.
+4. Yükleyici sisteminizi denetlerken bekleyin:
 
-    [![Sisteminiz yüklü bileşenleri için yükleyici denetler](media/install-checking-sml.png)](media/install-checking.png#lightbox)
+    [![Yükleyici, sisteminizde yüklü bileşenleri denetler](media/install-checking-sml.png)](media/install-checking.png#lightbox)
 
-5. Gizlilik ve lisans koşullarını kabul etmek isteyen bir uyarı görüntülenir. Bunları okuyun ve sonra basın için bağlantıları izleyin **devam** kabul ediyorsanız:
+5. Gizlilik ve lisans şartlarını doğrulamanızı isteyen bir uyarı görüntülenir. Bunları okumak için bağlantıları izleyin ve kabul ediyorsanız **devam** ' a basın:
 
-    [![Koşulları ve gizlilik için bağlantıları izleyin, sonra kabul etmiyorsanız devam edin](media/install-privacy-sml.png)](media/install-privacy.png#lightbox)
+    [![Gizlilik ve koşullara ilişkin bağlantıları izleyin, ardından kabul ediyorsanız devam edin](media/install-privacy.png)](media/install-privacy.png#lightbox)
 
 6. Kullanılabilir iş yüklerinin listesi görüntülenir. Kullanmak istediğiniz bileşenleri seçin:
 
-    [![İsteğe bağlı bir iş yükü özellikleri yüklemek istediğiniz seçin](media/install-selection.png)](media/install-selection.png#lightbox)
+    [![Yüklemek istediğiniz isteğe bağlı iş yükü özelliklerini seçin](media/install-selection.png)](media/install-selection.png#lightbox)
 
-   Tüm platformlara yüklemek istemiyorsanız, yüklemek için hangi platformların karar vermenize yardımcı olması için aşağıdaki kılavuzu kullanın:
+   Tüm platformları yüklemek istemiyorsanız, hangi platformları yükleyeceğinize karar vermenize yardımcı olması için aşağıdaki kılavuzu kullanın:
 
-   * **Xamarin kullanarak uygulamaları**:
-      - Xamarin.Forms – seçin **Android** ve **iOS** platformlar.
-      - iOS yalnızca – seçin **iOS** Platformu (yüklemeniz gerekecek Not [ **Xcode**](https://developer.apple.com/xcode/)).
-      - Android yalnızca – seçin **Android** Platformu (ilgili bağımlılıkları da seçmeniz gerekir. Not).
-      - Mac yalnızca – seçin **macOS** Platformu (yüklemeniz gerekecek Not [ **Xcode**](https://developer.apple.com/xcode/)).
-      - Tam olarak platformlar arası Xamarin uygulamaları – seçin **Android**, **iOS**, ve **macOS** platformlar.
-   * **.NET core uygulamaları** – Select **.NET Core** platform.
-   * **ASP.NET Core Web uygulamaları** – Select **.NET Core** platform.
-   * **Platformlar arası Unity oyun geliştirme** – Mac için Visual Studio dışında yüklenecek hiçbir ek platform gerekiyor Başvurmak [Unity Kurulum Kılavuzu](/visualstudio/mac/setup-vsmac-tools-unity) Unity uzantının yüklenmesi hakkında daha fazla bilgi.
 
-7. Seçimlerinizi yaptıktan sonra basın **yükleme** düğmesi.
-8. İndirir ve Mac ve seçilen iş yükleri için Visual Studio'yu yükler yükleyici ilerleme durumunu görüntüler. Yükleme için gerekli ayrıcalıklara vermek için parolanızı girmeniz istenebilir.
+|Uygulama türü  |Hedef  |Seçim  |Notlar  |
+|---------|---------|---------|---------|
+|**Xamarin kullanan uygulamalar**| Xamarin.Forms|**Android** ve **iOS** platformlarını seçin |[ **Xcode** 'u yüklemeniz gerekecektir](https://developer.apple.com/xcode/) |
+||yalnızca iOS|**İOS** platformunu seçin|[ **Xcode** 'u yüklemeniz gerekecektir](https://developer.apple.com/xcode/)|
+||Yalnızca Android|**Android** platformunu seçin|Ayrıca ilgili bağımlılıkları da seçmeniz gerektiğini unutmayın|
+||Yalnızca Mac|**MacOS (Cocoa)** platformunu seçin|[ **Xcode** 'u yüklemeniz gerekecektir](https://developer.apple.com/xcode/)|
+|**.NET Core Uygulamaları**|         |**.NET Core** platformunu seçin.|         |
+|**ASP.NET Core Web uygulamaları**|         |**.NET Core** platformunu seçin.|         |
+|**Azure İşlevleri**|         |**.NET Core** platformunu seçin.|         |
+|**Platformlar arası Unity oyun geliştirme**|         |Mac için Visual Studio ötesinde ek platform yüklenmesi gerekmez.| Unity uzantısını yükleme hakkında daha fazla bilgi için [Unity kurulum kılavuzuna](/visualstudio/mac/setup-vsmac-tools-unity) bakın.|
 
-Bir Kurumsal ortamda yüklenirken ağ bulmakta güçlük çekiyorsanız, gözden [bir güvenlik duvarı veya proxy yüklemeye](https://docs.microsoft.com/visualstudio/mac/installation#install-visual-studio-for-mac-behind-a-firewall-or-proxy-server) yönergeleri.
 
-Değişiklikleri hakkında daha fazla bilgi [sürüm notları](https://docs.microsoft.com/visualstudio/releasenotes/vs2019-mac-relnotes).
+7. Seçimlerinizi yaptıktan sonra, **Install** düğmesine basın.
+8. Yükleyici, Mac için Visual Studio ve seçilen iş yüklerini indirdiği ve yükleyen ilerlemeyi görüntüler. Yükleme için gerekli ayrıcalıkları vermek üzere parolanızı girmeniz istenir.:
+
+    [![Yüklemek istediğiniz isteğe bağlı iş yükü özelliklerini seçin](media/installation-progress.png)](media/installation-progress.png#lightbox)
+
+9. Mac için Visual Studio, yükledikten sonra oturum açarak ve kullanmak istediğiniz anahtar bağlamalarını seçerek yüklemenizi kişiselleştirmenizi ister:
+
+    [![IDE 'de oturum açın](media/ide-tour-2019-start-signin.png)](media/ide-tour-2019-start-signin.png#lightbox)
+
+    [![Kullanmak istediğiniz klavye kısayollarını seçin](media/ide-tour-2019-keyboard-shortcut.png)](media/ide-tour-2019-keyboard-shortcut.png#lightbox)
+
+Şirket ortamında yükleme sırasında ağ sorununuz varsa, [bir güvenlik duvarı veya proxy yönergeleri arkasındaki yüklemeyi](https://docs.microsoft.com/visualstudio/mac/installation#install-visual-studio-for-mac-behind-a-firewall-or-proxy-server) inceleyin.
+
+[Sürüm notlarındaki](https://docs.microsoft.com/visualstudio/releasenotes/vs2019-mac-relnotes)değişiklikler hakkında daha fazla bilgi edinin.
 
 > [!NOTE]
-> Bir platform veya aracı özgün yükleme sırasında (bunu #6. adımda seçimini tarafından) yüklemeyi seçerseniz, daha sonra bileşenleri eklemek isterseniz, yükleyici yeniden çalıştırmanız gerekir.
+> Özgün yükleme sırasında bir platform veya araç yüklememeyi seçtiyseniz (#6 adımında bunu seçerek), bileşenleri daha sonra eklemek istiyorsanız yükleyiciyi yeniden çalıştırmalısınız.
 
-## <a name="install-visual-studio-for-mac-behind-a-firewall-or-proxy-server"></a>Visual Studio Mac için bir güvenlik duvarı veya proxy sunucusunun arkasına yükleme
+## <a name="install-visual-studio-for-mac-behind-a-firewall-or-proxy-server"></a>Bir güvenlik duvarı veya proxy sunucusunun arkasında Mac için Visual Studio yüklemesi
 
-Güvenlik duvarının arkasında Mac için Visual Studio'yu yüklemek için belirli uç noktaları, yazılım güncelleştirmeleri ve gerekli araçları indirmeye izin ver için erişilebilir yapılması gerekir.
+Bir güvenlik duvarının arkasında Mac için Visual Studio yüklemek için, yazılım için gerekli araçların ve güncelleştirmelerin indirilmelerine izin vermek üzere belirli uç noktalara erişilebilir hale gelmelidir.
 
-Şu konumlardan erişime izin vermek için ağ yapılandırın:
+Ağınızı aşağıdaki konumlara erişime izin verecek şekilde yapılandırın:
 
-- [Visual Studio uç noktaları](/visualstudio/install/install-visual-studio-behind-a-firewall-or-proxy-server)
+- [Visual Studio uç noktaları](/visualstudio/mac/install-behind-a-firewall-or-proxy-server)
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-Mac için Visual Studio yükleme, uygulamalarınız için kod yazmaya olanak tanır. Aşağıdaki kılavuzlarda yazma ve projelerinizi dağıtma sonraki adımlarda size rehberlik sağlanmaktadır.
+Mac için Visual Studio yükleme, uygulamalarınız için kod yazmaya başlayabilmeniz için izin verir. Aşağıdaki kılavuzlar, projelerinizi yazmanın ve dağıtmanın sonraki adımlarında size yol gösterecek şekilde sunulmaktadır.
 
 ### <a name="ios"></a>iOS
 
 1. [Hello, iOS](https://developer.xamarin.com/guides/ios/getting_started/hello,_iOS/)
-2. [Cihaz sağlama](https://developer.xamarin.com/guides/ios/getting_started/installation/device_provisioning)(cihazda uygulamanızı çalıştırmak için).
+2. [Cihaz sağlama](https://developer.xamarin.com/guides/ios/getting_started/installation/device_provisioning) (Uygulamanızı cihazda çalıştırmak için).
 
 ### <a name="android"></a>Android
 
-1. [Xamarin Android SDK Yöneticisi'ni kullanma](https://developer.xamarin.com/guides/android/getting_started/installation/android-sdk/?ide=xs)
+1. [Xamarin Android SDK Manager 'ı kullanma](https://developer.xamarin.com/guides/android/getting_started/installation/android-sdk/?ide=xs)
 2. [Android SDK Emulator](https://developer.xamarin.com/guides/android/getting_started/installation/android-emulator/)
 4. [Cihazı Dağıtım için Ayarlama](https://developer.xamarin.com/guides/android/getting_started/installation/set_up_device_for_development/)
 
-### <a name="net-core-apps-aspnet-core-web-apps-unity-game-development"></a>.NET core uygulamaları, ASP.NET Core web uygulamaları, Unity oyun geliştirme
+### <a name="net-core-apps-aspnet-core-web-apps-unity-game-development"></a>.NET Core Uygulamaları, ASP.NET Core Web Apps, Unity oyun geliştirme
 
-Diğer iş yükleri için başvurmak [iş yükleri](workloads.md) sayfası.
+Diğer Iş yükleri için [Iş yükleri](workloads.md) sayfasına bakın.
 
-## <a name="related-video"></a>İlgili Video
+## <a name="related-video"></a>İlgili video
 
 > [!Video https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Visual-Studio-for-Mac-Acquisition/player]
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [(Windows üzerinde) Visual Studio'yu yükleyin](/visualstudio/install/install-visual-studio)
+- [Visual Studio 'Yu (Windows 'a) yükler](/visualstudio/install/install-visual-studio)

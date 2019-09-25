@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: fafa4782762e18f1ced8c7f929720e995986ac7a
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: b5826633737c3bb7d8f358ff090f0b1a55ac8eef
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69546872"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71231050"
 ---
 # <a name="ca2231-overload-operator-equals-on-overriding-valuetypeequals"></a>CA2231: Eşittir işlecini ValueType.Equals'ı geçersiz kılarak aşırı yükleyin
 
@@ -32,7 +32,7 @@ ms.locfileid: "69546872"
 |TypeName|OverloadOperatorEqualsOnOverridingValueTypeEquals|
 |CheckId|CA2231|
 |Kategori|Microsoft. Usage|
-|Yeni Değişiklik|Kırılmamış|
+|Son değişiklik|Kırılmamış|
 
 ## <a name="cause"></a>Sebep
 

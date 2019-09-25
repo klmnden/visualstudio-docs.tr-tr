@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 505aa8cdc1371a3bc288772d77b49eb7a50e9830
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 0639d30771b3a6bb288ddbf9644dda2efcd5f90d
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68920153"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71231355"
 ---
 # <a name="ca2230-use-params-for-variable-arguments"></a>CA2230: Değişken bağımsız değişkenler için params kullanın
 
@@ -28,7 +28,7 @@ ms.locfileid: "68920153"
 |TypeName|UseParamsForVariableArguments|
 |CheckId|CA2230|
 |Kategori|Microsoft. Usage|
-|Yeni Değişiklik|Yeni|
+|Son değişiklik|Yeni|
 
 ## <a name="cause"></a>Sebep
 Ortak veya korumalı bir tür, `VarArgs` çağırma kuralını kullanan ortak veya korumalı bir yöntem içerir.

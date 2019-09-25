@@ -21,30 +21,30 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 181596e7b76dc2288da82e731455710fde0205d8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 723549865a39b390d411ffe83ee1fefad7ecb82d
+ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62564749"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71211280"
 ---
 # <a name="com-debugging-tools"></a>COM Hata Ayıklama Araçları
 
-Bu konu, test ve COM programlar denetlemenize yardımcı olabilecek araçları listeler.
+Bu konuda, COM programlarını test etmenize ve incelemenize yardımcı olabilecek araçlar listelenmektedir.
 
 OLE/COM Nesne Görüntüleyicisi
 
-OLEVIEW bilgisayarınız ve destekledikleri arabirimleri yüklü ActiveX ve OLE nesneleri görüntüler. Ayrıca, kayıt defterini düzenlemek ve tür kitaplıklarını aramak sağlar.
+OLEVIEW, bilgisayarınızda yüklü olan ActiveX ve OLE nesnelerini ve destekledikleri arabirimleri görüntüler. Ayrıca, kayıt defterini düzenlemenizi ve tür kitaplıklarına bakeklemenizi sağlar.
 
-Microsoft Foundation sınıf örnekleri
+Microsoft Foundation Class örnekleri
 
-MFC ActiveX örnekler OCLIENT ve SUPERPAD uygulamalarınızı karşı test etmek de kullanılabilir. Bu örnek için tam kaynak kodu bulunur.
+MFC ActiveX örnekleri OCLIENT ve SUPERPANEL, uygulamalarınızı karşı test etmek için de kullanılabilir. Bu örnekler için tam kaynak kodu dahildir.
 
 ### <a name="see-also"></a>Ayrıca bkz.
 
 - [COM ve ActiveX Hata Ayıklaması](../debugger/com-and-activex-debugging.md)
 - [COM Hata Ayıklama Araçları](../debugger/com-debugging-tools.md)
-- [Visual Studio’da hata ayıklama](../debugger/index.md)
+- [Visual Studio’da hata ayıklama](../debugger/index.yml)
 - [Hata ayıklayıcıya ilk bakış](../debugger/debugger-feature-tour.md)
-- [OCLIENT örneği: Bir görsel kapsayıcı uygulaması gösterir](https://msdn.microsoft.com/library/8cd5c234-9a4e-4934-8f5d-bac189ad92c4)
-- [SUPERPAD örneği: CEditView kullanarak metin düzenlemeleri sunucu düzenleme bir görsel gösterir](https://msdn.microsoft.com/library/7b14e975-d986-4e6a-8289-226485cfcb72)
+- [OCLIENT örneği: Görsel olarak düzenlenen kapsayıcı uygulamasını gösterir](https://msdn.microsoft.com/library/8cd5c234-9a4e-4934-8f5d-bac189ad92c4)
+- [Süper panel örneği: CEditView kullanarak metin düzenleyen bir görsel düzenleme sunucusu gösterir](https://msdn.microsoft.com/library/7b14e975-d986-4e6a-8289-226485cfcb72)

@@ -8,76 +8,76 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6de817e3aaecbdd1c89cc2174e91126ea39d99d7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 42efb51dfe9c447538fe8f01bdd37c73bf993d8f
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62541123"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71237113"
 ---
 # <a name="ca3075-insecure-dtd-processing"></a>CA3075: Güvensiz DTD İşleme
 
 |||
 |-|-|
-|TypeName|InsecureDTDProcessing|
+|TypeName|Insecuredtdprocessing|
 |CheckId|CA3075|
 |Kategori|Microsoft.Security|
-|Yeni Değişiklik|Bozucu olmayan|
+|Son değişiklik|Kırılmamış|
 
 ## <a name="cause"></a>Sebep
 
-Güvenli olmayan kullanırsanız <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A> örnekleri veya giriş ve saldırganlar için hassas bilgileri ifşa güvenilmeyen Dış varlık kaynakları, ayrıştırıcının kabul başvurusu.
+Güvenli olmayan <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A> örnekler kullanırsanız veya dış varlık kaynaklarına başvurdıysanız, ayrıştırıcı güvenilmeyen girişi kabul edebilir ve duyarlı bilgileri saldırganlar 'e açığa çıkarabilir.
 
 ## <a name="rule-description"></a>Kural açıklaması
 
-A *belge türü tanımı (DTD'nin)* bir XML ayrıştırıcısı bir belgenin geçerlilik belirlemek iki yöntemden biri tarafından tanımlanan olan [World Wide Web Consortium (W3C) Genişletilebilir Biçimlendirme Dili (XML) 1.0](http://www.w3.org/TR/2008/REC-xml-20081126/). Bu kural, özellikler ve örnekler burada güvenilir olmayan verileri kabul edilir olası geliştiricilerinden uyarmak için çalışmaktadır [bilgilerin açığa çıkması](/dotnet/framework/wcf/feature-details/information-disclosure) tehditleri veya [hizmet reddi (DoS)](/dotnet/framework/wcf/feature-details/denial-of-service) saldırıları. Bu kuralın ne zaman tetikleyen:
+Bir *belge türü tanımı (DTD)* , bir XML ayrıştırıcısının, [World Wide Web Konsorsiyumu (W3C) Genişletilebilir Biçimlendirme Dili (XML) 1,0](http://www.w3.org/TR/2008/REC-xml-20081126/)tarafından tanımlanan bir belgenin geçerliliğini belirleyebilmesi için iki yönden biridir. Bu kural, geliştiricilerin olası [bilgi açığa çıkması](/dotnet/framework/wcf/feature-details/information-disclosure) tehditleri veya [hizmet reddi (DOS)](/dotnet/framework/wcf/feature-details/denial-of-service) saldırıları hakkında uyarması için güvenilmeyen verilerin kabul edildiği özellikleri ve örnekleri arar. Bu kural şu durumlarda tetiklenir:
 
-- XmlReaderSettings üzerinde etkin <xref:System.Xml.XmlReader> kullanarak dış XML varlıkları çözümler örneği <xref:System.Xml.XmlUrlResolver>.
+- DtdProcessing, kullanarak <xref:System.Xml.XmlUrlResolver>dış XML <xref:System.Xml.XmlReader> varlıklarını çözen örnek üzerinde etkindir.
 
-- <xref:System.Xml.XmlNode.InnerXml%2A> XML özelliğinde ayarlanır.
+- XML <xref:System.Xml.XmlNode.InnerXml%2A> 'deki özelliği ayarlanır.
 
-- <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A> özellik ayrıştırma için ayarlanır.
+- <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A>Özellik Parse olarak ayarlandı.
 
-- Giriş kullanılarak işlenir güvenilmeyen <xref:System.Xml.XmlResolver> yerine <xref:System.Xml.XmlSecureResolver>.
+- Güvenilmeyen giriş, <xref:System.Xml.XmlSecureResolver>yerine kullanılarak <xref:System.Xml.XmlResolver> işlenir.
 
-- <xref:System.Xml.XmlReader.Create%2A?displayProperty=nameWithType> Metodunu çağırmak bir güvenli <xref:System.Xml.XmlReaderSettings> örneği veya hiç bir örneği yok.
+- Yöntemi <xref:System.Xml.XmlReader.Create%2A?displayProperty=nameWithType> , güvenli olmayan <xref:System.Xml.XmlReaderSettings> bir örnekle veya hiç örnek olmadan çağrılır.
 
-- <xref:System.Xml.XmlReader> Güvenli varsayılan ayarları veya değerleri ile oluşturulur.
+- <xref:System.Xml.XmlReader>, güvenli olmayan varsayılan ayarlarla veya değerlerle oluşturulur.
 
-Her durumda, sonuç aynıdır: XML işleneceği makinesinden dosya sistemi veya ağ paylaşımları içeriğinden saldırganın sunulur veya DTD'nin işleme DoS vektörü olarak kullanılabilir.
+Bu durumların her birinde, sonuç aynıdır: XML 'nin işlendiği makinedeki dosya sistemi veya ağ paylaşımlarından içerik saldırgana sunulur veya DTD işleme bir DoS vektörü olarak kullanılabilir.
 
-## <a name="how-to-fix-violations"></a>İhlaller nasıl düzeltilir?
+## <a name="how-to-fix-violations"></a>İhlalleri çözme
 
-- Catch ve doğru yolu bilgi açıklamalardan kaçınmak için tüm XmlTextReader özel durumları işler.
+- Yol bilgilerinin açığa çıkmasını önlemek için tüm XmlTextReader özel durumlarını doğru bir şekilde yakalayın ve işleyin.
 
-- Kullanım <xref:System.Xml.XmlSecureResolver> XmlTextReader erişebildiği kaynakları sınırlandırmak için.
+- XmlTextReader 'ın erişebileceği kaynakları kısıtlamak içinkullanın.<xref:System.Xml.XmlSecureResolver>
 
-- İzin verme <xref:System.Xml.XmlReader> ayarlayarak herhangi bir dış kaynağa açmak için <xref:System.Xml.XmlResolver> özelliğini **null**.
+- <xref:System.Xml.XmlResolver> Özelliği **null**olarak ayarlayarak <xref:System.Xml.XmlReader> herhangi bir dış kaynağı açmaya izin vermeyin.
 
-- Emin <xref:System.Data.DataViewManager.DataViewSettingCollectionString%2A?displayProperty=nameWithType> özelliği, güvenilir bir kaynaktan atanır.
+- <xref:System.Data.DataViewManager.DataViewSettingCollectionString%2A?displayProperty=nameWithType> Özelliğin güvenilir bir kaynaktan atandığından emin olun.
 
-**.NET 3.5 ve önceki sürümler**
+**.NET 3,5 ve öncesi**
 
-- Güvenilmeyen kaynaklarıyla ayarlayarak uğraşıyorsanız DTD işlemeyi devre dışı <xref:System.Xml.XmlReaderSettings.ProhibitDtd%2A> özelliğini **true**.
+- <xref:System.Xml.XmlReaderSettings.ProhibitDtd%2A> Özelliği **true**olarak ayarlayarak güvenilmeyen kaynaklarla uğraşıyorsanız DTD işlemesini devre dışı bırakın.
 
-- Tam güven devralma talebi XmlTextReader sınıfı vardır.
+- XmlTextReader sınıfı tam güven devralma talebine sahiptir.
 
 **.NET 4 ve üzeri**
 
-- Güvenilmeyen kaynaklarıyla ayarlayarak ilgilenme, XmlReaderSettings etkinleştirmemeye <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A?displayProperty=nameWithType> özelliğini **yasakla** veya **Yoksay**.
+- <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A?displayProperty=nameWithType> Özelliği **yasakla** veya **Yoksay**olarak ayarlayarak güvenilmeyen kaynaklarla uğraşıyorsanız DtdProcessing 'ı etkinleştirmemeye özen gösterin.
 
-- Load() yöntem tüm sınıfının InnerXml durumlarda XmlReader örneği alır emin olun.
+- Load () yönteminin tüm InnerXml durumlarında bir XmlReader örneği aldığından emin olun.
 
 > [!NOTE]
-> Bu kural, hatalı pozitif sonuçları bazı geçerli XmlSecureResolver örneklerinde bildirebilir.
+> Bu kural, bazı geçerli XmlSecureResolver örneklerinde hatalı pozitif sonuçlar bildirebilir.
 
-## <a name="when-to-suppress-warnings"></a>Uyarılar bastırıldığında
+## <a name="when-to-suppress-warnings"></a>Uyarıların ne zaman bastırılamıyor
 
-Giriş güvenilir bir kaynaktan olduğu biliniyorsa emin olmadığınız sürece, bir kuraldan bu uyarıyı bastırmayın.
+Girişin güvenilen bir kaynaktan geldiğinden emin olmadığınız için, bu uyarıdan bir kuralı engellemez.
 
 ## <a name="pseudo-code-examples"></a>Sözde kod örnekleri
 
-### <a name="violation"></a>İhlali
+### <a name="violation"></a>Edildiği
 
 ```csharp
 using System.IO;
@@ -121,7 +121,7 @@ class TestClass
 }
 ```
 
-### <a name="violation"></a>İhlali
+### <a name="violation"></a>Edildiği
 
 ```csharp
 using System.Xml;
@@ -161,7 +161,7 @@ namespace TestNamespace
 }
 ```
 
-### <a name="violations"></a>İhlalleri
+### <a name="violations"></a>Lerinden
 
 ```csharp
 using System.Xml;
@@ -209,7 +209,7 @@ public static void TestMethod(string xml)
 }
 ```
 
-### <a name="violation"></a>İhlali
+### <a name="violation"></a>Edildiği
 
 ```csharp
 using System.IO;
@@ -250,7 +250,7 @@ namespace TestNamespace
 }
 ```
 
-### <a name="violation"></a>İhlali
+### <a name="violation"></a>Edildiği
 
 ```csharp
 using System.Xml;
@@ -287,7 +287,7 @@ namespace TestNamespace
 }
 ```
 
-### <a name="violation"></a>İhlali
+### <a name="violation"></a>Edildiği
 
 ```csharp
 using System.Xml;
@@ -315,7 +315,7 @@ namespace TestNamespace
 }
 ```
 
-### <a name="violations"></a>İhlalleri
+### <a name="violations"></a>Lerinden
 
 ```csharp
 using System.Xml;

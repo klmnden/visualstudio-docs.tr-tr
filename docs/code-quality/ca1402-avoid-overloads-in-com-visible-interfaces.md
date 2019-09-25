@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: aa45a54a994d19b1a04bc0785f21b88dfeef4475
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: fdbb6012fb1252c90014ba91caf8ad7dacf901c2
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68922119"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71234856"
 ---
 # <a name="ca1402-avoid-overloads-in-com-visible-interfaces"></a>CA1402: COM görünebilir arabirimler içinde aşırı yüklemelerden kaçının
 
@@ -31,7 +31,7 @@ ms.locfileid: "68922119"
 |TypeName|AvoidOverloadsInComVisibleInterfaces|
 |CheckId|CA1402|
 |Kategori|Microsoft. çalışabilirliği|
-|Yeni Değişiklik|Yeni|
+|Son değişiklik|Yeni|
 
 ## <a name="cause"></a>Sebep
 Bileşen nesne modeli (COM) görünür arabirimi, aşırı yüklenmiş yöntemleri bildirir.

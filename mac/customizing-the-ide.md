@@ -1,36 +1,36 @@
 ---
 title: IDE’yi Özelleştirme
-description: Mac için Visual Studio hem verimlilik hem de estetik gereksinimlerini karşılayan bir ortamda uygulamalar geliştirmek kullanıcıların çeşitli şekillerde özelleştirilebilir. Mac uygulamanızı gereksinimlerinize uyacak şekilde uyarlanabilir için bu konuda çeşitli yollarla Visual Studio keşfediyor.
+description: Mac için Visual Studio, kullanıcıların hem verimlilik hem de Aesthetic Characteristics ihtiyaçlarını karşılayan bir ortamda uygulama geliştirmesine olanak tanıyan çeşitli yollarla özelleştirilebilir. Bu makalede, Mac için Visual Studio gereksinimlerinize uyacak şekilde uyarlanabilen çeşitli yollar ele alınabilir.
 author: alanjclark
 ms.author: alcl
 ms.date: 05/06/2018
 ms.assetid: F7C2A28C-0759-4E0D-A28E-B72D5AB73DB6
 ms.custom: video
-ms.openlocfilehash: ff0c7a2970a9ecfdfb9de08f487ad7dfbe768249
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
+ms.openlocfilehash: fa1e2924e810f9e37f28d5becdfd8d46243b76fe
+ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67691832"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71213747"
 ---
 # <a name="customizing-the-ide"></a>IDE’yi Özelleştirme
 
-Mac için Visual Studio hem verimlilik hem de estetik ihtiyaçlarını karşılayan bir ortamda uygulamalar geliştirmek kullanıcıların çeşitli şekillerde özelleştirilebilir. Bu makalede, çeşitli yollarla Mac için Visual Studio ihtiyaçlarınızı uyarlanabilir keşfediyor.
+Mac için Visual Studio özelleştirilebilir, böylece kullanıcıların hem verimlilik hem de aestheler için ihtiyaçlarını karşılayan bir ortamda uygulamalar geliştirebilir. Bu makalede, Mac için Visual Studio gereksinimlerinize uyacak şekilde uyarlanabilen çeşitli yollar ele alınabilir.
 
 ## <a name="dark-theme"></a>Koyu renkli tema
 
-![Koyu tema görüntüle](media/customizing-the-ide-image7a.png)
+![Koyu tema görünümü](media/customizing-the-ide-image7a.png)
 
-Göz atarak Mac için Visual Studio'da Temalar geçebilirsiniz **Visual Studio > Tercihler > ortam > görsel stil** ve istenen temanızı gelen seçerek **kullanıcı arabirimi teması** açılan , aşağıdaki görüntüde gösterildiği gibi:
+Mac için Visual Studio temaları, Visual **Studio > tercihleri > ortam > görsel stil** ' e giderek ve aşağıdaki görüntüde gösterildiği gibi **Kullanıcı arabirimi teması** açılan listesinden istediğiniz temayı seçerek değiştirebilirsiniz:
 
 ![Koyu tema seçimi](media/customizing-the-ide-image7b.png)
 
 ## <a name="localization"></a>Yerelleştirme
 
-Mac için Visual Studio, daha fazla geliştiricileri için erişilebilir olmasını etkinleştirme aşağıdaki 14 dilde kullanıma sunulmuştur:
+Mac için Visual Studio, aşağıdaki 14 dilde yerelleştirilir ve daha fazla geliştirici tarafından erişilebilmesini sağlar:
 
-* Çince - Çin
-* Çince - Tayvan
+* Çince-Çin
+* Çince-Tayvan
 * Çekçe
 * Fransızca
 * Almanca
@@ -44,94 +44,98 @@ Mac için Visual Studio, daha fazla geliştiricileri için erişilebilir olması
 * İspanyolca
 * Türkçe
 
-Mac için Visual Studio tarafından görüntülenen dili değiştirmek için Gözat **Visual Studio > Tercihler > ortam > görsel stil** ve istediğiniz dili seçin **kullanıcı arabirimi dili**aşağıdaki görüntüde gösterildiği gibi açılır:
+Mac için Visual Studio tarafından gösterilen dili değiştirmek için, Visual **Studio > tercihleri > ortam > görsel stil** ' e gidin ve aşağıda gösterildiği gibi **Kullanıcı arabirimi dili** açılan listesinden istediğiniz dili seçin görüntüyle
 
-![Dil Seçimi](media/customizing-the-ide-image11a.png)
+![Dil seçimi](media/customizing-the-ide-image11a.png)
 
 ## <a name="author-information"></a>Yazar bilgileri
 
-Yazar bilgileri bölmesi ilgili bilgileri kendiniz adınız, e-posta adresi, telif hakkı sahibinin şirketiniz, çalışmanız için gibi ekleyin ve ticari marka sağlar:
+Yazar bilgileri paneli adınız, e-posta adresiniz, çalışmanız için telif hakkı sahibi, şirketiniz ve ticari marka gibi ilgili bilgileri eklemenize olanak tanır:
 
-![Yazar bilgileri bölümünü düzenleyin](media/customizing-the-ide-image9a.png)
+![Yazar bilgilerini düzenle bölümü](media/customizing-the-ide-image9a.png)
 
-Bu bilgiler gibi yeni dosyaları ekleyebilirsiniz. lisans, standart dosya üstbilgileri doldurmak için kullanılır:
+Bu bilgiler, yeni dosyalara ekleyebileceğiniz bir lisans gibi standart dosya üstbilgilerini doldurmak için kullanılır:
 
-![Standart üst bilgi seçenekleri](media/customizing-the-ide-image8a.png)
+![Standart başlık seçenekleri](media/customizing-the-ide-image8a.png)
 
-Doldurulmuş **adı** ve **e-posta** alanları Mac için Visual Studio'da sürüm denetimi yoluyla yapılan herhangi bir kaydetme kullanılacak Bu alanlar doldurulmuyor, Mac için Visual Studio sürüm denetimi kullanmaya çalıştığınızda Bunu yapmak isteyip istemediğinizi sorar.
+Doldurulan **ad** ve **e-posta** alanları, Mac için Visual Studio sürüm denetimi aracılığıyla yapılan herhangi bir yürütmede kullanılacaktır. Bu alanları doldurmadığınız takdirde, Mac için Visual Studio Sürüm denetimini kullanmaya çalıştığınızda bunu yapmanız istenir.
 
-## <a name="key-bindings"></a>Tuş bağlamaları
+## <a name="key-bindings"></a>Anahtar bağlamaları
 
-Tuş bağlamaları, böylece Mac için Visual Studio daha verimli bir şekilde taşıyabilir, geliştirme ortamınıza uyarlamak izin ver (Windows) Visual Studio, ReSharper, Visual Studio Code ve Xcode gibi birçok popüler IDE tanıdık anahtar bağlamalarını sunar.
+Anahtar bağlamaları veya klavye kısayolları, Mac için Visual Studio boyunca daha verimli bir şekilde geçiş yapabilmeniz için geliştirme ortamınızı uyarlamanızı sağlar. Visual Studio (Windows üzerinde), ReSharper, Visual Studio Code ve Xcode gibi birçok popüler IDE için tanıdık anahtar bağlamaları sağlar.
 
-Tuş bağlamaları göz atarak ayarlanabilir **Visual Studio > Tercihler > ortam > anahtar bağlamaları**tarafından aşağıdaki görüntüde gösterildiği gibi:
+Anahtar bağlamaları, aşağıdaki görüntüde gösterildiği gibi **Visual Studio > tercihleri > ortam > anahtar bağlamalarına**göz atarak ayarlanabilir:
 
-![Set anahtar bağlamaları](media/customizing-the-ide-image10a.png)
+![Anahtar bağlamalarını ayarla](media/customizing-the-ide-image10a.png)
 
-Buradan anahtar bağlaması birleşimleri için arama yapın, çakışan bağlamalarını görüntülemenize, yeni bağlamalar eklemek ve mevcut bağlamaları Düzenle.
+Buradan, anahtar bağlama kombinasyonlarını arayabilir, çakışan bağlamaları görüntüleyebilir, yeni bağlamalar ekleyebilir ve mevcut bağlamaları düzenleyebilirsiniz.
+
+Bu bağlamalar, **klavye seçim** ekranı aracılığıyla Mac için Visual Studio ilk kurulumu sırasında da ayarlanabilir:
+
+![Anahtar bağlamalarını ayarla, ilk çalıştırma](media/ide-tour-2019-keyboard-shortcut.png)
 
 ## <a name="workspace-layout"></a>Çalışma alanı düzeni
 
-Mac çalışma alanı için Visual Studio oluşan ücretsiz tarafından çevrelenen bir ana belge alanının (normalde Düzenleyicisi, Tasarımcı yüzeyine veya seçenekleri dosyası) *doldurmalar* erişmek ve uygulamayı yönetmek için kullanışlı bilgiler içerir dosyaları, test ve hata ayıklama.
+Mac için Visual Studio çalışma alanı, ana belge alanından (normalde düzenleyici, tasarımcı yüzeyi veya seçenekler dosyası) oluşur ve uygulama dosyalarına erişmek ve bunları yönetmek, test etmek ve yönetmek için faydalı *bilgiler içeren* masının.
 
  ![Çalışma alanı düzeni](media/customizing-the-ide-image1a.png)
 
-### <a name="viewing-and-arranging-pads"></a>Görüntüleme ve düzenleme doldurmalar
+### <a name="viewing-and-arranging-pads"></a>Bölmeleri görüntüleme ve düzenleme
 
-Mac için Visual Studio'da herhangi bir yeni çözüm veya dosya açıldığında, bazı göreceksiniz *doldurmalar* çalışma alanında, çözüm bölmesi, belge anahat ve hatalar dahil olmak üzere:
+Mac için Visual Studio içinde herhangi bir yeni çözüm veya dosyayı açtığınızda, çalışma alanında Çözüm Bölmesi, belge anahattı ve hatalar dahil bazı *Pad* 'ler fark etmelisiniz:
 
-![Çözüm doldurmalar](media/customizing-the-ide-image2a.png)
+![Çözüm defterleri](media/customizing-the-ide-image2a.png)
 
-Mac için Visual Studio tüm erişilebilir göz atarak ek bilgi, araçları ve gezinme yardımları içeren bölmeleri sağlar **Görüntüle > doldurmalar** menü öğesi ve Panel eklemek için seçme:
+Mac için Visual Studio, tümüne **görünüm > Pad** menü öğesine gözatıp eklemek üzere bir panel seçerek erişilebilen ek bilgiler, Araçlar ve gezinti yardımları içeren defterler sağlar:
 
-![Yeni paneli seçin](media/customizing-the-ide-image3a.png)
+![Yeni Pad seçin](media/customizing-the-ide-image3a.png)
 
-Bölmeleri da açılabilir otomatik olarak çeşitli komutlarıyla gibi **dosyalarda Bul** (Shift + Cmd + F) komutu, arama sonuçlarının ayrılmış bir panel açılır.
+Tablalar, arama sonuçlarının ayrılmış bir panelini açan **dosyalarda bul** (Shift + cmd + F) komutu gibi çeşitli komutlar tarafından otomatik olarak açılabilir.
 
-Bölmeleri taşınır ve sizin için en kullanışlı yolu içinde iş akışınız düzenlenir. Örneğin, bunlar-yukarıda veya aşağıda başka bir paneli veya sekmeli doldurmalar ikisi arasında hızlıca geçiş olanak sağlayan bir dizi olarak başka bir panel bitişik belge Düzenleyicisi herhangi bir tarafında sabitlenebilir.
+Pad 'ler, sizin için yararlı olan her türlü şekilde iş akışınız genelinde taşınabilir ve düzenlenebilir. Örneğin, belge düzenleyicisinin herhangi bir tarafına, başka bir bölmenin üzerine veya altına veya altına ya da aralarında hızlı bir şekilde geçiş yapma olanağı sağlayan bir sekmeli Pad kümesi olarak yuvalanabilir.
 
-Sık kullanılan tuş takımları için de penceresi Mac için Visual Studio panelinden ayırma ve tamamen bu paneli için ayrı bir pencerede oluşturun.
+Sık kullanılan Pad 'ler için Mac için Visual Studio penceresinden bir paneli tamamen ayırabilirsiniz ve bu pad için ayrı bir pencere oluşturabilirsiniz.
 
-Bölmeleri, gizli ve her paneli sağ üst köşesindeki değiştirir kapatan:
+Pad 'ler, her bir panelinin sağ üst köşesindeki geçiş tuşları tarafından gizlenebilir ve kapatılabilir:
 
-![Kullanamamaktadır kapatmak ve gizleme](media/customizing-the-ide-image5a.png)
+![Bölmeleri gizleme ve kapatma](media/customizing-the-ide-image5a.png)
 
-Otomatik gizlenen bölmeleri, gerekli olduğunda bunları kolayca erişilebilir hale getirme çalışma alanının kenarlara sabitlenir. Paneli üzerinde bekleyerek yeniden görüntüler ve fare ve klavye odağı ayrıldığında gizlenir.
+Oto gizli yüzeyler, gerektiğinde kolayca erişilebilir hale getirerek çalışma alanının taraflarına yerleştirilir. Pad 'in üzerine gelindiğinde bir daha görüntülenir ve fare ve klavye odağı bunu terk ettiğinde gizlenir.
 
 ### <a name="organizing-layouts"></a>Düzenleri düzenleme
 
-Herhangi bir zamanda görüntülenen doldurmalar geçerli bağlam üzerinde bağlıdır. Örneğin, görsel tasarımcı kullanarak, araç ve özellik Kılavuzu doldurmalar en önemli olan; hata ayıklarken hata ayıklayıcı bölmeleri, Yereller ve yığın görüntülemek için yararlıdır.
+Herhangi bir zamanda görüntülenen Pad 'ler geçerli içeriğe bağımlıdır. Örneğin, görsel tasarımcı kullanılırken araç kutusu ve özellik Kılavuz bölmeleri en önemli öneme sahiptir; hata ayıklama sırasında, yığın ve Yereller görüntülemek için hata ayıklayıcı Pad 'ler olması yararlı olur.
 
-Açık doldurmalar durumu tarafından temsil edilen bir *Düzen*. Düzenleri el ile Görünüm menüsü, aşağıdaki görüntüde gösterildiği gibi değiştirilebilir veya hata ayıklama veya görsel taslak açma gibi bir eylem uyguladığınızda, otomatik olarak anahtarlanır:
+Açık tablaın durumu bir *Düzen*tarafından temsil edilir. Düzenler, aşağıdaki görüntüde gösterildiği gibi Görünüm menüsü aracılığıyla el ile değiştirilebilir veya hata ayıklama veya film şeridi açma gibi bir eylemi gerçekleştirdiğinizde otomatik olarak geçer:
 
-![Yeni düzeni seçme](media/customizing-the-ide-image6b.png)
+![Yeni düzenleri seçme](media/customizing-the-ide-image6b.png)
 
-Var. her zaman bir etkin düzen ve bir düzende yaptığınız tüm değişiklikler etkin düzen gibi ekleme veya bir paneli yeniden konumlandırma yalnızca değiştirir Mac için Visual Studio'yu kapattıktan sonra yaptığınız değişiklikler kaydedilmeyecek.
+Her zaman bir etkin düzen ve bir düzende yaptığınız herhangi bir değişiklik, bir paneli ekleme veya yeniden konumlandırma gibi yalnızca etkin düzeni değiştirir. Mac için Visual Studio kapattıktan sonra yaptığınız değişiklikler kaydedilmez.
 
-Ancak, kullanarak yeni bir düzen oluşturmak mümkün **Görüntüle > geçerli düzeni Kaydet** menü öğesi. Herhangi bir zamanda seçmeniz Bu geçerli düzeninizi menüye ekleyecektir:
+Ancak, **geçerli düzeni kaydet > görüntüle** menü öğesini kullanarak yeni bir düzen oluşturmak mümkündür. Bu komut, geçerli düzeninizi istediğiniz zaman seçebilmeniz için menüye ekler:
 
 ![Geçerli düzeni Kaydet](media/customizing-the-ide-image6a.png)
 
-### <a name="side-by-side-editing-support"></a>Yan yana düzenleme desteği
+### <a name="side-by-side-editing-support"></a>Yan yana Düzenle desteği
 
-Mac için Visual Studio, metin düzenleyiciler yan yana açın ya da bir düzenleyici ayrılmış bir kayan pencere olmasını sağlar.
+Mac için Visual Studio, metin düzenleyicilerini yan yana açmanıza veya bir düzenleyicinin ayrılmış bir kayan pencere olarak olmasını sağlar.
 
-2 sütun modu etkinleştirilebilir görüntüle menü öğesini seçerek **Görüntüle > Düzenleyici sütunları > 2 sütun**, ya da bir düzenleyici sekmesini Düzenleyicisi alanın kenarlarına birine sürükleyerek:
+İki sütunlu mod, **> Düzenleyicisi sütunları > 2 sütun**' u seçerek veya bir Düzenleyici sekmesini düzenleyici alanının kenarlarından birine sürükleyerek Görünüm menüsü öğesi aracılığıyla etkinleştirilebilir:
 
-![İki sütun yan yana modu](media/customizing-the-ide-sbs.png)
+![İki sütunlu yan yana mod](media/customizing-the-ide-sbs.png)
 
-Düzenleyici sekmeler, kayan bir düzenleyici penceresi oluşturmak için Belge alanından çıktığında sürüklenebilir. Bu kayan pencere ayrıca yan yana düzenleyicileri destekler ve çeşitli Düzenleyici sekmeler içerebilir:
+Bir kayan Düzenleyici penceresi oluşturmak için, düzenleyici sekmeleri belge alanının dışına sürüklenebilir. Bu kayan pencere Ayrıca yan yana düzenleyicilerini destekler ve çeşitli düzenleyici sekmeleri içerebilir:
 
-![Yeni bir pencere oluşturma](media/customizing-the-ide-sbs1.png)
+![Yeni pencere oluştur](media/customizing-the-ide-sbs1.png)
 
-![İki sütun ek sekme ile yan yana](media/customizing-the-ide-sbs2.png)
+![İki sütun ek sekmeler ile yan yana](media/customizing-the-ide-sbs2.png)
 
-Tek bir açık düzenleyiciye geri almak için seçin **Görüntüle > > 1 sütun Düzenleyicisi sütunları**.
+Tek bir açık Düzenleyiciye dönmek için **> Düzenleyicisi sütunları > 1 sütun görüntüle**' yi seçin.
 
-## <a name="related-video"></a>İlgili Video
+## <a name="related-video"></a>İlgili video
 
 > [!Video https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Visual-Studio-for-Mac-Customize-the-Look-and-Feel/player]
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [Visual Studio (Windows üzerinde) IDE'yi kişiselleştirme](/visualstudio/ide/personalizing-the-visual-studio-ide)
+- [Visual Studio IDE 'yi kişiselleştirme (Windows üzerinde)](/visualstudio/ide/personalizing-the-visual-studio-ide)

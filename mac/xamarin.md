@@ -5,16 +5,24 @@ author: therealjohn
 ms.author: johmil
 ms.date: 06/18/2019
 ms.assetid: 339F6051-5F90-48DC-8237-EBBC8A03A32B
-ms.openlocfilehash: 4eec080655c0f47823810dfd689fe49a6f7e43eb
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: c8b6bddac92a9ec6b40ba08ebcdc3fe3577b0bc8
+ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68872345"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71211480"
 ---
 # <a name="xamarin-mobile-app-development"></a>Xamarin mobil uygulama geliştirme
 
 [Xamarin](/xamarin) için birinci sınıf destekle Android, macOS, iOS, tvOS ve watchOS için zengin yerel deneyimler geliştirebilirsiniz. Xamarin.Forms platformlar arası uygulamaları, yerel işlevselliğe erişimi sınırlamadan Android, iOS ve macOS arasında XAML tabanlı UI kodunu paylaşmanıza yardımcı olur.
+
+## <a name="xamarinforms"></a>Xamarin.Forms
+
+Xamarin. Forms için XAML Hot reload, sürüm 8,3 ve sonraki sürümlerde Mac için Visual Studio yerleşik olarak bulunur. Bu özellik etkinleştirildiğinde değişiklikler, dosyayı her kaydettiğinizde çalışan uygulamanıza anında yansıtılır.
+
+XAML Hot reload, Visual Studio 'da **Xamarin Hot Reload 'ı etkinleştir** onay kutusunu işaretleyerek etkinleştirilebilir **> tercihleri > projeler > Xamarin Hot Reload**.
+
+Dinamik yeniden yükleme hakkında daha fazla bilgi için, belgeler içindeki [Xamarin. Forms Için xaml Hot Reload Kılavuzu kılavuzuna](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/xaml/hot-reload) bakın.
 
 ## <a name="android"></a>Android
 

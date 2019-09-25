@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9dd45410a2c928a0ffbbe827b100edd119cf59f0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 257100be0eb2766ef413854795c934b230e29370
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62797485"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71235239"
 ---
 # <a name="ca1065-do-not-raise-exceptions-in-unexpected-locations"></a>CA1065: Beklenmeyen konumlarda özel durum harekete geçirmeyin
 
@@ -28,7 +28,7 @@ ms.locfileid: "62797485"
 |TypeName|DoNotRaiseExceptionsInUnexpectedLocations|
 |CheckId|CA1065|
 |Kategori|Microsoft.Design|
-|Yeni Değişiklik|Bozucu olmayan|
+|Son değişiklik|Kırılmamış|
 
 ## <a name="cause"></a>Sebep
 
@@ -36,117 +36,117 @@ ms.locfileid: "62797485"
 
 ## <a name="rule-description"></a>Kural açıklaması
 
-Özel durum oluşturması beklenmiyor yöntemleri gibi kategorilere ayrılabilir:
+Özel durum oluşturması beklenmeyen yöntemler aşağıdaki şekilde kategorize edilebilir:
 
-- Özellik Get yöntemleri
+- Özellik get yöntemleri
 
-- Olay erişimci metotları
+- Olay erişimci yöntemleri
 
-- Equals yöntemi
+- Eşittir yöntemleri
 
-- GetHashCode Methods
+- GetHashCode yöntemleri
 
-- ToString yöntemi
+- ToString yöntemleri
 
 - Statik Oluşturucular
 
 - Sonlandırıcılar
 
-- Dispose yöntemi
+- Dispose yöntemleri
 
 - Eşitlik İşleçleri
 
-- Örtük dönüştürme işleçleri
+- Örtük atama Işleçleri
 
-Aşağıdaki bölümlerde, bu yöntem türleri açıklanmaktadır.
+Aşağıdaki bölümler bu yöntem türlerini tartışır.
 
-### <a name="property-get-methods"></a>Özellik Get yöntemleri
+### <a name="property-get-methods"></a>Özellik get yöntemleri
 
-Özellikler, temelde akıllı alanlardır. Bu nedenle, bir alan mümkün olduğunca gibi davranırlar. Alanlar, özel durumlar yok ve birinin diğerinden özellikleri gerekir. Özel durum oluşturan bir özellik varsa, bu bir yöntem yapmayı göz önüne alın.
+Özellikler temel olarak akıllı alanlardır. Bu nedenle, mümkün olduğunca bir alan gibi davranmalıdır. Alanlar özel durum oluşturmaz ve özelliklerden hiçbirine gerek kalmaz. Özel durum oluşturan bir özelliğe sahipseniz, bunu bir yöntemi yapmayı düşünün.
 
-Bir özellik get yöntemi aşağıdaki özel durumlar atılabilir:
+Bir özellik Get yönteminden aşağıdaki özel durumlar oluşturulabilir:
 
-- <xref:System.InvalidOperationException?displayProperty=fullName> ve tüm türevleri (dahil olmak üzere <xref:System.ObjectDisposedException?displayProperty=fullName>)
+- <xref:System.InvalidOperationException?displayProperty=fullName>ve tüm türetme (dahil <xref:System.ObjectDisposedException?displayProperty=fullName>)
 
-- <xref:System.NotSupportedException?displayProperty=fullName> ve tüm türevleri
+- <xref:System.NotSupportedException?displayProperty=fullName>ve tüm türetme
 
-- <xref:System.ArgumentException?displayProperty=fullName> (yalnızca get dizinlenmiş)
+- <xref:System.ArgumentException?displayProperty=fullName>(yalnızca dizinli Get 'ten)
 
-- <xref:System.Collections.Generic.KeyNotFoundException> (yalnızca get dizinlenmiş)
+- <xref:System.Collections.Generic.KeyNotFoundException>(yalnızca dizinli Get 'ten)
 
-### <a name="event-accessor-methods"></a>Olay erişimci metotları
+### <a name="event-accessor-methods"></a>Olay erişimci yöntemleri
 
-Olay erişimcileri, özel durumlar yok basit işlemler olmalıdır. Bir olay, bir olay işleyicisi ekleyip çalıştığınızda bir özel durum oluşturmamalıdır.
+Olay erişimcileri özel durum oluşturmayan basit işlemler olmalıdır. Olay işleyicisi eklemeyi veya kaldırmayı denediğinizde bir olay özel durum oluşturmaz.
 
-Olay erişimci aşağıdaki özel durumlar atılabilir:
+Aşağıdaki özel durumlar bir olay erişimcisinde oluşturulabilir:
 
-- <xref:System.InvalidOperationException?displayProperty=fullName> ve tüm türevleri (dahil olmak üzere <xref:System.ObjectDisposedException?displayProperty=fullName>)
+- <xref:System.InvalidOperationException?displayProperty=fullName>ve tüm türetme (dahil <xref:System.ObjectDisposedException?displayProperty=fullName>)
 
-- <xref:System.NotSupportedException?displayProperty=fullName> ve tüm türevleri
+- <xref:System.NotSupportedException?displayProperty=fullName>ve tüm türetme
 
-- <xref:System.ArgumentException> ve türevleri
+- <xref:System.ArgumentException>ve türetme
 
-### <a name="equals-methods"></a>Equals yöntemi
+### <a name="equals-methods"></a>Eşittir yöntemleri
 
-Aşağıdaki **eşittir** yöntemleri, özel durum oluşturmamalıdır:
+Aşağıdaki **eşittir** yöntemleri özel durum oluşturmaz:
 
 - <xref:System.Object.Equals%2A?displayProperty=fullName>
 
 - <xref:System.IEquatable%601.Equals%2A>
 
-Bir **eşittir** yöntemi döndürmelidir `true` veya `false` yerine bir özel durum. Örneğin, eşittir geçirilir, eşleşmeyen iki tür yalnızca döndürmelidir `false` oluşturmak yerine bir <xref:System.ArgumentException>.
+Bir **Equals** yöntemi, özel `true` durum `false` oluşturmak yerine veya döndürmelidir. Örneğin, eşittir iki eşleşmeyen tür geçirtiyse, oluşturmak yerine `false` <xref:System.ArgumentException>yalnızca döndürmelidir.
 
-### <a name="gethashcode-methods"></a>GetHashCode Methods
+### <a name="gethashcode-methods"></a>GetHashCode yöntemleri
 
-Aşağıdaki **GetHashCode** yöntemleri genellikle özel durum oluşturmamalıdır:
+Aşağıdaki **GetHashCode** yöntemleri genellikle özel durum oluşturmaz:
 
 - <xref:System.Object.GetHashCode%2A>
 
 - <xref:System.Collections.IEqualityComparer.GetHashCode%2A>
 
-**GetHashCode** her zaman bir değer döndürmesi gerekir. Aksi takdirde karma tablosundaki öğeleri kaybedebilir.
+**GetHashCode** her zaman bir değer döndürmelidir. Aksi takdirde, karma tablodaki öğeleri kaybedebilirsiniz.
 
-Sürümleri **GetHashCode** bağımsız değişken throw süren bir <xref:System.ArgumentException>. Ancak, **Object.GetHashCode** hiçbir zaman özel bir durum oluşturmamalıdır.
+Bağımsız değişken alan **GetHashCode** sürümleri bir <xref:System.ArgumentException>oluşturabilir. Ancak **Object. GetHashCode** asla bir özel durum oluşturmaz.
 
-### <a name="tostring-methods"></a>ToString yöntemi
+### <a name="tostring-methods"></a>ToString yöntemleri
 
-Hata ayıklayıcı kullanan <xref:System.Object.ToString%2A?displayProperty=fullName> dize biçiminde nesneleri hakkındaki bilgileri görüntülemek amacıyla. Bu nedenle, **ToString** bir nesne durumunu değiştirmemesi gerekir ve özel durumlar olmamalıdır.
+Hata ayıklayıcı, <xref:System.Object.ToString%2A?displayProperty=fullName> dize biçimindeki nesneler hakkında bilgi görüntülemeye yardımcı olmak için kullanır. Bu nedenle, **ToString** bir nesnenin durumunu değiştirmemelidir ve özel durum oluşturmaz.
 
 ### <a name="static-constructors"></a>Statik Oluşturucular
 
-Statik oluşturucu özel durumları atma türü geçerli uygulama etki alanında kullanılamaz hale gelmesine neden olur. Statik Oluşturucu bir özel durum için geçerli bir nedeniniz (örneğin, bir güvenlik sorunu) olmalıdır.
+Statik bir oluşturucudan özel durumlar oluşturmak, türün geçerli uygulama etki alanında kullanılamaz hale gelmesine neden olur. Statik bir oluşturucudan özel durum oluşturmak için iyi bir nedeniniz (güvenlik sorunu gibi) olmalıdır.
 
 ### <a name="finalizers"></a>Sonlandırıcılar
 
-Bir sonlandırıcı bir özel durum, işlemi çıkarmadan CLR hızlı başarısız olmasına neden olur. Bu nedenle, özel durumları atma içindeki bir sonlandırıcı her zaman kaçınılmalıdır.
+Sonlandırıcının bir özel durum oluşturmak, CLR 'nin hızlı bir şekilde başarısız olmasına neden olur ve bu da işlemi kapatır. Bu nedenle, bir sonlandırıcının özel durumların oluşturulması her zaman kaçınılmalıdır.
 
-### <a name="dispose-methods"></a>Dispose yöntemi
+### <a name="dispose-methods"></a>Dispose yöntemleri
 
-A <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> yöntemi bir özel durum oluşturmamalıdır. Dispose temizleme mantık parçası olarak çağırılır genellikle bir `finally` yan tümcesi. Bu nedenle, özel durum işleme içine eklenecek kullanıcıyı açıkça Dispose ' bir özel durum zorlar `finally` yan tümcesi.
+Bir <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> Yöntem özel durum oluşturmaz. Dispose, genellikle bir yan tümcedeki Temizleme mantığının bir `finally` parçası olarak çağırılır. Bu nedenle, Dispose 'ten özel bir durum açıkça oluşturmak, kullanıcının `finally` yan tümce içinde özel durum işleme eklemesini zorlar.
 
-**Dispose(false)** kod yolu hiçbir zaman throw özel durumlar, Dispose neredeyse her zaman bir sonlandırıcı çağrıldığı için.
+Dispose **(false)** kod yolu hiçbir zaman özel durum oluşturmaz, çünkü Dispose bir sonlandırıcının neredeyse her zaman çağrılır.
 
-### <a name="equality-operators--"></a>Eşitlik işleçleri (==,! =)
+### <a name="equality-operators--"></a>Eşitlik Işleçleri (= =,! =)
 
-Equals yöntemler gibi eşitlik işleçleri ya da döndürmelidir `true` veya `false`ve özel durum oluşturmamalıdır.
+Eşittir yöntemlerine benzer şekilde, eşitlik işleçleri `true` veya `false`döndürmelidir ve özel durumlar oluşturmamalıdır.
 
-### <a name="implicit-cast-operators"></a>Örtük dönüştürme işleçleri
+### <a name="implicit-cast-operators"></a>Örtük atama Işleçleri
 
-Örtük dönüştürme işleci tarafından oluşturulan bir özel durum, kullanıcı genellikle bir örtük dönüştürme işleci çağrıldıktan farkında olduğundan beklenmiyor. Bu nedenle, hiçbir özel durum örtük dönüştürme işleçleri durumun oluşturulması gerekir.
+Kullanıcı genellikle örtük bir atama işlecinin çağrıldığı farkında olduğundan, örtük atama işleci tarafından oluşturulan özel durum beklenmiyor. Bu nedenle, örtük atama işleçlerinden hiçbir özel durum atılmamalıdır.
 
-## <a name="how-to-fix-violations"></a>İhlaller nasıl düzeltilir?
+## <a name="how-to-fix-violations"></a>İhlalleri çözme
 
-Özellik alıcılar için ya da mantığını artık özel durum veya özelliği bir yönteme sahip olacak şekilde değiştirin.
+Özellik kodlayıcıları için, mantığı, artık özel durum oluşturmak zorunda olmayacak şekilde değiştirin ya da özelliği bir yönteme değiştirin.
 
-Daha önce listelenen tüm diğer yöntemi türleri için mantığını artık özel durum oluşturması gerekir geçirmeyecek şekilde değiştirin.
+Daha önce listelenen diğer tüm yöntem türleri için mantığı, artık özel durum oluşturması için değiştirin.
 
-## <a name="when-to-suppress-warnings"></a>Uyarılar bastırıldığında
+## <a name="when-to-suppress-warnings"></a>Uyarıların ne zaman bastırılamıyor
 
-İhlali tarafından oluşturulan bir özel durum yerine bir özel durum bildirimi nedeniyle oluştu, bu kuraldan bir uyarıyı bastırmak güvenlidir.
+İhlalin oluşan özel durum yerine bir özel durum bildirimi neden olduysa, bu kuraldan bir uyarının görüntülenmesini güvenli hale gelir.
 
-## <a name="related-rules"></a>İlgili kuralları
+## <a name="related-rules"></a>İlgili kurallar
 
-- [CA2219: Özel durum yan tümceleri içinde özel durum harekete geçirmeyin](../code-quality/ca2219-do-not-raise-exceptions-in-exception-clauses.md)
+- [CA2219 Özel durum yan tümcelerinde özel durum yükseltmeyin](../code-quality/ca2219-do-not-raise-exceptions-in-exception-clauses.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

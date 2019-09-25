@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 08a45219eb2fceeaa9c58a140990ea577c941ff7
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: f788ded21ef5dd9c84d218cedb55ec8dcf7eff2d
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68923033"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71236171"
 ---
 # <a name="ca1023-indexers-should-not-be-multidimensional"></a>CA1023: Dizin oluşturucular çok boyutlu olmamalıdır
 
@@ -32,7 +32,7 @@ ms.locfileid: "68923033"
 |TypeName|IndexersShouldNotBeMultidimensional|
 |CheckId|CA1023|
 |Kategori|Microsoft.Design|
-|Yeni Değişiklik|Yeni|
+|Son değişiklik|Yeni|
 
 ## <a name="cause"></a>Sebep
 Ortak veya korumalı bir tür, birden fazla dizin kullanan ortak veya korumalı bir Dizin Oluşturucu içerir.

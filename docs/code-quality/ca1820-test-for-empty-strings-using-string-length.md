@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bb5160ef663375ee3dd4b45797e8f4536acdf793
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: b197cacc764f1f5472d3eb074ac89199db508408
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66744654"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71233423"
 ---
 # <a name="ca1820-test-for-empty-strings-using-string-length"></a>CA1820: Dize uzunluğunu kullanarak boş dizeleri test edin
 
@@ -27,29 +27,29 @@ ms.locfileid: "66744654"
 |-|-|
 |TypeName|TestForEmptyStringsUsingStringLength|
 |CheckId|CA1820|
-|Kategori|Microsoft.Performance|
-|Yeni Değişiklik|Bölünemez|
+|Kategori|Microsoft. Performance|
+|Son değişiklik|Kırılmamış|
 
 ## <a name="cause"></a>Sebep
 
-Bir dize kullanarak boş bir dize karşılaştırma <xref:System.Object.Equals%2A?displayProperty=nameWithType>.
+Dize, kullanılarak <xref:System.Object.Equals%2A?displayProperty=nameWithType>boş dizeyle karşılaştırılır.
 
 ## <a name="rule-description"></a>Kural açıklaması
 
-Karşılaştırma dizeleri kullanarak <xref:System.String.Length%2A?displayProperty=nameWithType> özelliği veya <xref:System.String.IsNullOrEmpty%2A?displayProperty=nameWithType> yöntemdir kullanmaktan daha hızlı <xref:System.Object.Equals%2A>. Bunun nedeni, <xref:System.Object.Equals%2A> ya da daha fazla MSIL yönergeleri yürüten <xref:System.String.IsNullOrEmpty%2A> veya yönerge almak için yürütülen sayısını <xref:System.String.Length%2A> özellik değer ve sıfır olarak karşılaştırır.
+<xref:System.String.Length%2A?displayProperty=nameWithType> Özelliği <xref:System.Object.Equals%2A>veya yöntemikullanılarakdizelerikarşılaştırmak,kullanmaktandahahızlıdır.<xref:System.String.IsNullOrEmpty%2A?displayProperty=nameWithType> Bunun nedeni <xref:System.Object.Equals%2A> , <xref:System.String.Length%2A> özellik değerini almak ve değeri sıfıra karşılaştırmak <xref:System.String.IsNullOrEmpty%2A> için yürütülen yönergelerin sayısından ya da daha fazla MSIL yönergesi yürütür.
 
-Null dizeler için <xref:System.Object.Equals%2A> ve `<string>.Length == 0` farklı davranır. Değeri alınacak çalışırsanız <xref:System.String.Length%2A> boş bir dize özelliği, ortak dil çalışma zamanı oluşturur bir <xref:System.NullReferenceException?displayProperty=fullName>. Boş bir dize ve boş bir dize arasında bir karşılaştırma gerçekleştirmek, ortak dil çalışma zamanı bir özel durum oluşturmaz ve döndürür `false`. Null sınaması, bu iki yaklaşımı göreli performansını önemli ölçüde etkilemez. .NET Framework 2.0 veya üstü hedeflenirken kullanın <xref:System.String.IsNullOrEmpty%2A> yöntemi. Aksi takdirde kullanın <xref:System.String.Length%2A> == 0 karşılaştırma mümkün olduğunda.
+Null dizeler <xref:System.Object.Equals%2A> için ve `<string>.Length == 0` farklı davranır. <xref:System.String.Length%2A> Özelliğin değerini null bir dizeye almaya çalışırsanız, ortak dil çalışma zamanı bir <xref:System.NullReferenceException?displayProperty=fullName>oluşturur. Null dize ve boş dize arasında bir karşılaştırma gerçekleştirirseniz, ortak dil çalışma zamanı bir özel durum oluşturmaz ve döndürür `false`. Null testi, bu iki yaklaşımın göreli performansını önemli ölçüde etkilemez. .NET Framework 2,0 veya sonraki bir sürümü hedeflerken <xref:System.String.IsNullOrEmpty%2A> yöntemini kullanın. Aksi takdirde, mümkün <xref:System.String.Length%2A> olduğunda = = 0 karşılaştırmayı kullanın.
 
-## <a name="how-to-fix-violations"></a>İhlaller nasıl düzeltilir?
+## <a name="how-to-fix-violations"></a>İhlalleri çözme
 
-Bu kural ihlalini düzeltmek için kullanılacak karşılaştırma değiştirme <xref:System.String.IsNullOrEmpty%2A> yöntemi.
+Bu kural ihlalini onarmak için, karşılaştırma <xref:System.String.IsNullOrEmpty%2A> yöntemini metodunu kullanacak şekilde değiştirin.
 
-## <a name="when-to-suppress-warnings"></a>Uyarılar bastırıldığında
+## <a name="when-to-suppress-warnings"></a>Uyarıların ne zaman bastırılamıyor
 
-Performans sorunu değilse bu kuraldan bir uyarıyı bastırmak güvenlidir.
+Performans bir sorun değilse, bu kuraldan bir uyarıyı gizlemek güvenlidir.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, boş bir dize aramak için kullanılan farklı teknikleri gösterir.
+Aşağıdaki örnek, boş bir dizeyi aramak için kullanılan farklı teknikleri gösterir.
 
 [!code-csharp[FxCop.Performance.StringTest#1](../code-quality/codesnippet/CSharp/ca1820-test-for-empty-strings-using-string-length_1.cs)]

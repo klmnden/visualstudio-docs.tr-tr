@@ -13,12 +13,12 @@ ms.workload:
 f1_keywords:
 - CA2302
 - EnsureBinaryFormatterBinderIsSetBeforeCallingBinaryFormatterDeserialize
-ms.openlocfilehash: 1d7c87921a226b8918bfaa79fda6de85d710baa4
-ms.sourcegitcommit: 673b9364fc9a96b027662dcb4cf5d61cab60ef11
+ms.openlocfilehash: 90e17211bc30dc65ce78b738dc692d5dbb7aaa69
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/21/2019
-ms.locfileid: "69891197"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71237739"
 ---
 # <a name="ca2302-ensure-binaryformatterbinder-is-set-before-calling-binaryformatterdeserialize"></a>CA2302: BinaryFormatter.Deserialize çağırmadan önce BinaryFormatter.Binder öğesinin ayarlandığından emin olun
 
@@ -27,7 +27,7 @@ ms.locfileid: "69891197"
 |TypeName|EnsureBinaryFormatterBinderIsSetBeforeCallingBinaryFormatterDeserialize|
 |CheckId|CA2302|
 |Kategori|Microsoft.Security|
-|Yeni Değişiklik|Kırılmamış|
+|Son değişiklik|Kırılmamış|
 
 ## <a name="cause"></a>Sebep
 
@@ -47,7 +47,7 @@ Bu kural, <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter?d
   - <xref:System.Web.Script.Serialization.JavaScriptSerializer?displayProperty=nameWithType>-Hiçbir şekilde <xref:System.Web.Script.Serialization.SimpleTypeResolver?displayProperty=nameWithType>kullanmayın. Bir tür Çözümleyicisi kullanmanız gerekiyorsa, serisi kaldırılan türleri beklenen bir listeyle kısıtlayın.
   - <xref:System.Xml.Serialization.XmlSerializer?displayProperty=nameWithType>
   - Newtonsoft Json.NET-TypeNameHandling. None kullanın. TypeNameHandling için başka bir değer kullanmanız gerekiyorsa, serisi kaldırılan türleri özel bir ISerializationBinder ile beklenen bir listeyle kısıtlayın.
-  - Protokol arabellekleri
+  - Protokol Arabellekleri
 - Seri hale getirilen verileri prova yapın. Serileştirmeden sonra, serileştirilmiş verileri şifreli olarak imzalayın. Seri durumdan önce, şifreleme imzasını doğrulayın. Şifreleme anahtarını, önemli döndürmeler için açıklanmasını ve tasarıma karşı koruyun.
 - Seri durumdan çıkarılan türleri kısıtla. Özel <xref:System.Runtime.Serialization.SerializationBinder?displayProperty=nameWithType>bir uygulama uygulayın. İle <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter>seri durumdan kaldırmadan önce, <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Binder> özelliği özel <xref:System.Runtime.Serialization.SerializationBinder>bir örneğine ayarlayın. Geçersiz kılınan <xref:System.Runtime.Serialization.SerializationBinder.BindToType%2A> yöntemde, tür beklenmiyorsa, serisini durdurmak için bir özel durum oluşturur.
   - Tüm kod yollarının <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Binder> özellik kümesine sahip olduğundan emin olun.

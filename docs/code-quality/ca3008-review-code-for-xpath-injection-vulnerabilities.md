@@ -10,53 +10,53 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 5a4b80b8ede1ab2b8d858ed7378f318f2eebe5fa
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: 1d001dc306bbb225c4ecc1c0f17bf46619e2d0a7
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65841531"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71237255"
 ---
 # <a name="ca3008-review-code-for-xpath-injection-vulnerabilities"></a>CA3008: XPath ekleme güvenlik açıkları için inceleme kodu
 
 |||
 |-|-|
-|TypeName|ReviewCodeForXPathInjectionVulnerabilities|
+|TypeName|Belgeınlist Codeforxpathınjectionaçıklardan|
 |CheckId|CA3008|
 |Kategori|Microsoft.Security|
-|Yeni Değişiklik|Bozucu olmayan|
+|Son değişiklik|Kırılmamış|
 
 ## <a name="cause"></a>Sebep
 
-Potansiyel olarak güvenilmeyen HTTP istek girişi bir XPath sorgusu ulaşır.
+Potansiyel olarak güvenilmeyen HTTP isteği girişi bir XPath sorgusuna ulaşır.
 
 ## <a name="rule-description"></a>Kural açıklaması
 
-Güvenilmeyen girdisiyle çalışırken, XPath ekleme saldırıları oluşturduğunu unutmayın. Güvenilmeyen girişini kullanarak XPath sorguları oluşturmak saldırganın kötü amaçlı olarak istenmeyen bir sonuç döndürmek için sorguyu düzenlemek ve büyük olasılıkla sorgulanan XML içeriğini açıklar.
+Güvenilmeyen girişle çalışırken, XPath ekleme saldırılarına karşı en az bir yer vardır. Güvenilmeyen giriş kullanarak XPath sorguları oluşturmak, bir saldırganın istenmeyen bir sonuç döndürmek için sorguyu kötü amaçlı olarak işlemesini ve sorgulanan XML 'in içeriğini açığa çıkarmasına izin verebilir.
 
-Bu kural, bir XPath ifadesi ulaşmasını HTTP isteklerinden alınan giriş bulmayı dener.
-
-> [!NOTE]
-> Bu kural, derlemeler arasında veri izleyemezsiniz. Örneğin, bir derleme HTTP istek girişi okur ve bir XPath sorgusu gerçekleştiren başka bir derlemeye geçtikten sonra bu kural bir uyarı üreten olmaz.
+Bu kural, bir XPath ifadesine ulaşan HTTP isteklerinden girdi bulmaya çalışır.
 
 > [!NOTE]
-> Derinlikte bu kural veri akışı yöntem çağrıları arasında çözümler için yapılandırılabilir bir sınır yoktur. Bkz: [Çözümleyicisi yapılandırma](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis) sınırı bir EditorConfig dosyasında nasıl yapılandıracağınızı öğrenmek için.
+> Bu kural derlemeler genelinde verileri izleyemez. Örneğin, bir derleme HTTP istek girişini okuyup bir XPath sorgusu gerçekleştiren başka bir derlemeye geçerse, bu kural bir uyarı oluşturmaz.
 
-## <a name="how-to-fix-violations"></a>İhlaller nasıl düzeltilir?
+> [!NOTE]
+> Bu kuralın, yöntem çağrılarında veri akışını ne kadar analiz edip bu kurala ilişkin yapılandırılabilir bir sınır vardır. Bir EditorConfig dosyasında sınırı yapılandırma hakkında bilgi için bkz. [çözümleyici yapılandırması](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis) .
 
-XPath ekleme güvenlik açıklarına düzeltmek için aşağıdaki yaklaşımlardan şunlardır:
+## <a name="how-to-fix-violations"></a>İhlalleri çözme
 
-- Kullanıcı girişi XPath sorguları oluşturmak yok.
-- Giriş yalnızca güvenli bir karakter kümesi içerdiğini doğrulayın.
-- Tırnak işaretleri çıkış.
+XPath ekleme güvenlik açıklarını gidermeye yönelik bazı yaklaşımlar şunlardır:
 
-## <a name="when-to-suppress-warnings"></a>Uyarılar bastırıldığında
+- Kullanıcı girişinden XPath sorguları oluşturmayın.
+- Girişin yalnızca güvenli bir karakter kümesi içerdiğini doğrulayın.
+- Kaçış tırnak işaretleri.
 
-Güvenli olması için giriş doğruladınız biliyorsanız, bu uyarının gösterilmemesi uygundur.
+## <a name="when-to-suppress-warnings"></a>Uyarıların ne zaman bastırılamıyor
+
+Girişin güvenli olduğunu bildiğinizi biliyorsanız, bu uyarıyı bastırmak normaldir.
 
 ## <a name="pseudo-code-examples"></a>Sözde kod örnekleri
 
-### <a name="violation"></a>İhlali
+### <a name="violation"></a>Edildiği
 
 ```csharp
 using System;

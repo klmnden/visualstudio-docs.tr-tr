@@ -10,51 +10,51 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f0b0ba39c8edee9b2b8df608b47a00e6353538f
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: 37ba7e8664c6fa24e302dbebd38643a0c451114c
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65841062"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71237252"
 ---
 # <a name="ca3009-review-code-for-xml-injection-vulnerabilities"></a>CA3009: XML ekleme güvenlik açıkları için inceleme kodu
 
 |||
 |-|-|
-|TypeName|ReviewCodeForXmlInjectionVulnerabilities|
+|TypeName|Belgekodu Koduforxmlinjectionaçıklardan|
 |CheckId|CA3009|
 |Kategori|Microsoft.Security|
-|Yeni Değişiklik|Bozucu olmayan|
+|Son değişiklik|Kırılmamış|
 
 ## <a name="cause"></a>Sebep
 
-Potansiyel olarak güvenilmeyen HTTP istek girişi ham XML çıktısı ulaşır.
+Potansiyel olarak güvenilmeyen HTTP isteği girişi ham XML çıktısına ulaşır.
 
 ## <a name="rule-description"></a>Kural açıklaması
 
-Güvenilmeyen girdisiyle çalışırken, XML ekleme saldırıları oluşturduğunu unutmayın. Bir saldırganın özel karakterler bir XML belgesine belge geçersiz hale eklemek için XML ekleme kullanabilirsiniz XML. Veya, saldırgan PKI'nizin XML düğümüyle kötü amaçlı olarak ekleyebilirsiniz.
+Güvenilmeyen girişle çalışırken, XML ekleme saldırıları olması gerekir. Bir saldırgan XML belgesine özel karakterler eklemek için XML ekleme işlemini kullanarak belgeyi geçersiz XML haline getirir. Ya da bir saldırgan, kendi tercih eden XML düğümlerini kötü amaçlı olarak ekleyebilir.
 
-Bu kural, ham XML yazma ulaşmasını HTTP isteklerinden alınan giriş bulmayı dener.
-
-> [!NOTE]
-> Bu kural, derlemeler arasında veri izleyemezsiniz. Örneğin, bir derleme HTTP istek girişi okur ve yazar ham XML başka bir derlemeye geçirir, bu kural bir uyarı üreten olmaz.
+Bu kural, Ham XML yazma 'ya ulaşan HTTP isteklerinden girdi bulmaya çalışır.
 
 > [!NOTE]
-> Derinlikte bu kural veri akışı yöntem çağrıları arasında çözümler için yapılandırılabilir bir sınır yoktur. Bkz: [Çözümleyicisi yapılandırma](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis) sınırı bir EditorConfig dosyasında nasıl yapılandıracağınızı öğrenmek için.
+> Bu kural derlemeler genelinde verileri izleyemez. Örneğin, bir derleme HTTP istek girişini okuyup ham XML yazan başka bir derlemeye geçerse, bu kural bir uyarı oluşturmaz.
 
-## <a name="how-to-fix-violations"></a>İhlaller nasıl düzeltilir?
+> [!NOTE]
+> Bu kuralın, yöntem çağrılarında veri akışını ne kadar analiz edip bu kurala ilişkin yapılandırılabilir bir sınır vardır. Bir EditorConfig dosyasında sınırı yapılandırma hakkında bilgi için bkz. [çözümleyici yapılandırması](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis) .
 
-Ham XML yazmayın. Bunun yerine, bu XML kodlama yöntemleri veya özellikleri kullanın, giriş.
+## <a name="how-to-fix-violations"></a>İhlalleri çözme
 
-Veya, XML kodlama ham XML yazmadan önce giriş.
+Ham XML yazma. Bunun yerine, XML kodlaması olan yöntemleri veya özellikleri kullanın.
 
-## <a name="when-to-suppress-warnings"></a>Uyarılar bastırıldığında
+Veya ham XML yazmadan önce XML kodlaması girişi.
 
-Bu kuraldan uyarıları bastırma yok.
+## <a name="when-to-suppress-warnings"></a>Uyarıların ne zaman bastırılamıyor
+
+Bu kuraldan gelen uyarıları göstermez.
 
 ## <a name="pseudo-code-examples"></a>Sözde kod örnekleri
 
-### <a name="violation"></a>İhlali
+### <a name="violation"></a>Edildiği
 
 ```csharp
 using System;

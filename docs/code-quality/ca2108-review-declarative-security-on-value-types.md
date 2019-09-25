@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 37f4cac83c83b47fda5cf9cde85a3e14d857d2bc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4107800a5623de29448a9213184dd44feed2cac9
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62545544"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71232811"
 ---
 # <a name="ca2108-review-declarative-security-on-value-types"></a>CA2108: Değer türleri üzerinde bildirimsel güvenliği gözden geçirin
 
@@ -28,33 +28,33 @@ ms.locfileid: "62545544"
 |TypeName|ReviewDeclarativeSecurityOnValueTypes|
 |CheckId|CA2108|
 |Kategori|Microsoft.Security|
-|Yeni Değişiklik|Bozucu olmayan|
+|Son değişiklik|Kırılmamış|
 
 ## <a name="cause"></a>Sebep
 
-Ortak veya korunan değer türü tarafından güvenliği sağlanan bir [veri ve modelleme](/dotnet/framework/data/index) veya [bağlantı talepleri](/dotnet/framework/misc/link-demands).
+Ortak veya korumalı bir değer türü, bir [veri ve modelleme](/dotnet/framework/data/index) veya [bağlantı taleplerine](/dotnet/framework/misc/link-demands)karşı korunur.
 
 ## <a name="rule-description"></a>Kural açıklaması
 
-Değer türleri ayrılan ve diğer oluşturucular yürütmeden önce kendi varsayılan oluşturucu tarafından başlatılır. Bir değer türü, isteğe bağlı ya da LinkDemand tarafından güvenlik altına alınır ve arayan güvenlik denetimi, herhangi bir oluşturucu dışında uygun izinlere sahip değil'de varsayılan başarısız olur ve bir güvenlik özel durumu oluşturulur. Değer türü serbest değil; kendi varsayılan oluşturucu tarafından ayarlanmış durumda kalır. Değer türü örneğini geçirir bir çağıranın oluşturun veya örnek erişim izni olduğunu varsaymayın.
+Değer türleri, diğer oluşturucular yürütmeden önce varsayılan oluşturucularında ayrılır ve başlatılır. Bir değer türü talep veya LinkDemand tarafından güvenli hale getirilmezse ve çağıranın güvenlik denetimini karşılayan izinleri yoksa, varsayılan dışında bir Oluşturucu başarısız olur ve bir güvenlik özel durumu oluşturulur. Değer türü serbest bırakılmıyor; Bu, varsayılan oluşturucusu tarafından ayarlanmış durumda bırakılır. Değer türünün bir örneğini geçiren bir çağıranın örnek oluşturma veya örneğe erişme iznine sahip olduğunu varsayın.
 
-## <a name="how-to-fix-violations"></a>İhlaller nasıl düzeltilir?
+## <a name="how-to-fix-violations"></a>İhlalleri çözme
 
-Güvenlik denetimi türünden kaldırın ve onun yerine kullanmak yöntem düzeyi güvenlik denetimleri sürece bu kural ihlalini düzeltmek olamaz. Bu şekilde ihlali düzeltme değer türü örneklerini alma gelen yetersiz izinlerle çağıranlar engellemez. Bir değer türü örneği, varsayılan durumunda, hassas bilgileri kullanıma sunmuyor ve zararlı bir biçimde kullanılamaz emin olmanız gerekir.
+Türden güvenlik denetimini kaldırmadığınız ve kendi yerinde Yöntem düzeyi güvenlik denetimlerini kullanmadığınız müddetçe, bu kural ihlaline çözüm yükleyemezsiniz. İhlalin bu şekilde düzeltilmesi, yetersiz izinlere sahip çağıranların değer türünün örneklerini almasını engellemez. Değer türünün bir örneğinin varsayılan durumunda, hassas bilgileri kullanıma sunmadığından ve zararlı bir şekilde kullanılamayacak olduğundan emin olmanız gerekir.
 
-## <a name="when-to-suppress-warnings"></a>Uyarılar bastırıldığında
+## <a name="when-to-suppress-warnings"></a>Uyarıların ne zaman bastırılamıyor
 
-Herhangi bir çağıranın varsayılan durumuna içinde değer türüne örneklerini güvenlik tehdit taşıyor olmadan elde bu kuraldan bir uyarıyı gösterilmemesini sağlayabilirsiniz.
+Herhangi bir çağıran, güvenlik tehdidi oluşturmadan bu kuraldan bir uyarıyı, varsayılan durumunda değer türünün örneklerini elde edebilir.
 
 ## <a name="example-1"></a>Örnek 1
 
-Aşağıdaki örnek bu kuralı ihlal eden bir değer türü içeren bir kitaplık gösterir. `StructureManager` Türü, değer türü örneğini geçirir bir çağıranın oluşturun veya örnek erişim izni olduğunu varsayar.
+Aşağıdaki örnek, bu kuralı ihlal eden bir değer türü içeren bir kitaplığı göstermektedir. `StructureManager` Tür, değer türünün bir örneğini geçiren bir çağıranın örnek oluşturma veya örneğe erişme iznine sahip olduğunu varsayar.
 
 [!code-csharp[FxCop.Security.DemandOnValueType#1](../code-quality/codesnippet/CSharp/ca2108-review-declarative-security-on-value-types_1.cs)]
 
 ## <a name="example-2"></a>Örnek 2
 
-Aşağıdaki uygulama kitaplığın zayıflık gösterir.
+Aşağıdaki uygulama, kitaplığın zayıflılığını gösterir.
 
 [!code-csharp[FxCop.Security.TestDemandOnValueType#1](../code-quality/codesnippet/CSharp/ca2108-review-declarative-security-on-value-types_2.cs)]
 

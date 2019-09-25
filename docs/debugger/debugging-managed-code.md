@@ -1,6 +1,6 @@
 ---
 title: Yönetilen kodda hata ayıklama | Microsoft Docs
-ms.date: 11/04/2016
+ms.date: 09/23/2019
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -16,72 +16,72 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: a5cf348b06bca6127690c7b5a7301881bdf75078
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c94de629026cfa1b78429aaf2209b81eead7da4f
+ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62851880"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71211205"
 ---
-# <a name="debugging-managed-code"></a>Yönetilen Kodda Hata Ayıklama
+# <a name="debug-managed-code-c-visual-basic-f-ccli"></a>Yönetilen kodda hata ayıklamaC#(, Visual Basic F#, C++,/CLI)
 
-Bu bölüm yaygın hata ayıklama sorunları ve yönetilen uygulamalar için teknikleri kapsar veya uygulamalarda yazıldığına dillerde hedefleyen Visual Basic, C# ve C++ gibi ortak dil çalışma zamanı. Burada açıklanan teknikleri, üst düzey tekniklerle aynıdır. [Hata ayıklayıcıya ilk bakış](../debugger/debugger-feature-tour.md).
+Bu bölümde, yönetilen uygulamalar veya Visual Basic, C#ve C++/cligibi ortak dil çalışma zamanını hedefleyen dillerde yazılmış uygulamalar için yaygın hata ayıklama sorunları ve teknikleri ele alınmaktadır. Burada açıklanan teknikler, üst düzey tekniklerdir. [İlk olarak hata ayıklayıcıya bakın](../debugger/debugger-feature-tour.md).
 
 ## <a name="in-this-section"></a>Bu Bölümde
 
-[Çıkış penceresindeki tanılama iletileri](../debugger/diagnostic-messages-in-the-output-window.md)\
-Açıklar <xref:System.Diagnostics.Debug> ve <xref:System.Diagnostics.Trace> sınıfları, çalışma zamanı iletileri ile yazabileceğiniz **çıkış** penceresi. Bu sınıflar, belirtilen bir koşulu başarısız olursa da yürütmeyi keser yürütme ve bilgi çıkış bozmadan bilgi çıkışı etkinleştir çıkış yöntemleri kapsar.
+[Çıkış Penceresi tanılama Iletileri](../debugger/diagnostic-messages-in-the-output-window.md)\
+Ve sınıflarını, çalışma zamanı iletilerini çıkış penceresine yazabileceğiniz şekilde açıklar. <xref:System.Diagnostics.Debug> <xref:System.Diagnostics.Trace> Bu sınıflar, belirtilen bir koşul başarısız olursa yürütmeyi kesintiye uğratmadan, yürütme ve bilgi çıkışının kesintiye girmeden bilgi çıktısını etkinleştiren çıkış yöntemlerini içerir.
 
-[Yönetilen koddaki onaylar](../debugger/assertions-in-managed-code.md)\
-Bağımsız değişken olarak belirttiğiniz koşullara test yönetilen koddaki onaylar açıklar `Assert` yöntemleri. Ayrıca, bu konu örnek kod, hakkında bilgi sağlar <xref:System.Diagnostics.Debug> ve <xref:System.Diagnostics.Trace> sınıfı yöntemleri, kodun, yan etkileri, hata ayıklama ve yayın sürümleri hususlarına assert bağımsız değişkenler, özelleştirme assert davranışı ve yapılandırma dosyaları.
+[Yönetilen koddaki Onaylamalar](../debugger/assertions-in-managed-code.md)\
+Yöntemler için `Assert` bağımsız değişken olarak belirttiğiniz test koşullarını Yönetilen koddaki onayları açıklar. Buna ek olarak, bu konuda örnek kod, <xref:System.Diagnostics.Debug> ve <xref:System.Diagnostics.Trace> sınıf yöntemleri hakkında bilgi, kod hata ayıklama ve yayın sürümlerindeki konular, yan etkiler, onaylama bağımsız değişkenleri, onaylama davranışını özelleştirme ve yapılandırma dosyaları sağlanmaktadır.
 
-[Visual Basic'de Durdur deyimleri](../debugger/stop-statements-in-visual-basic.md)\
-Açıklar `Stop` bir kesme noktası ayarlamak için bir alternatif sağlayan bir ifade. Örnek kod ayrıca sağlanan, arasında karşılaştırma birlikte `Stop` deyimi ve `End` arasında iyi gibi olarak bir deyim `Stop` ve `Assert` deyimi.
+[Visual Basic deyimlerini durdur](../debugger/stop-statements-in-visual-basic.md)\
+Kesme noktası ayarlamaya alternatif sağlayan ifadesiniaçıklar.`Stop` Örnek kod `Stop` Ayrıca, `Stop` ve deyimleri arasındaki karşılaştırmaların `End` yanı sıra, ve `Assert` deyimleriyle birlikte da sağlanır.
 
-[İzlenecek yol: Bir Windows formunda hata ayıklama](../debugger/walkthrough-debugging-a-windows-form.md)\
-Bir Windows formu oluşturma ve bu formunda hata ayıklama için adım adım yönergeler sağlar. Windows Form, yönetilen bir Windows uygulamasının standart bir bileşen en yaygın yönetilen uygulamalardan biridir. Bu izlenecek yol, Visual C# ve Visual Basic kullanan, ancak C++ ile bir Windows formu oluşturma tekniklerini genellikle benzerdir.
+[İzlenecek yol: Windows formunda hata ayıklama](../debugger/walkthrough-debugging-a-windows-form.md)\
+Windows formu oluşturmak ve bu formun hatalarını ayıklamak için adım adım yönergeler sağlar. Yönetilen bir Windows uygulamasının standart bir bileşeni olan Windows formu, en yaygın yönetilen uygulamalardan biridir. Bu izlenecek yol, C# Visual ve Visual Basic kullanır, ancak ile C++ Windows formu oluşturma teknikleri genellikle benzerdir.
 
-[OnStart metodunda hata ayıklama](../debugger/how-to-debug-the-onstart-method.md)\
-Hata ayıklama için izin vermek için kod örnekleri sağlar `OnStart` yöntemi bir Windows hizmetidir. Hata ayıklamak için `OnStart` yöntemi bir Windows hizmetinin Hizmet benzetimini yapmak için kodu birkaç satır kod eklemeniz gerekir.
+[OnStart yönteminde hata ayıklama](../debugger/how-to-debug-the-onstart-method.md)\
+Yönetilen bir Windows hizmeti `OnStart` yönteminde hata ayıklamanıza olanak tanımak için kod örnekleri sağlar. Bir Windows hizmeti `OnStart` yönteminde hata ayıklamak için, hizmetin benzetimini yapmak üzere birkaç satır kod eklemeniz gerekir.
 
-[Karışık mod hata ayıklama](../debugger/debugging-mixed-mode-applications.md)\
-Karışık mod uygulamalarında hata ayıklama açıklanır. Bu, yerel kod yönetilen kodu ile bir araya getiren herhangi bir uygulama anlamına gelir.
+[Karışık modda hata ayıklama](../debugger/debugging-mixed-mode-applications.md)\
+Karışık modda uygulamalarda hata ayıklamayı açıklar. Bu, yerel kodu yönetilen kodla birleştiren tüm uygulamalar anlamına gelir.
 
-[Hata: Sistemde bir çekirdek hata ayıklayıcı etkinleştirildiğinden hata ayıklama mümkün değil](../debugger/error-debugging-isn-t-possible-because-a-kernel-debugger-is-enabled-on-the-system.md)\
-Yönetilen kodda hata ayıklama çalışırsanız oluşan bir hata iletisi açıklayan bir [!INCLUDE[win7](../debugger/includes/win7_md.md)], [!INCLUDE[wiprlhext](../debugger/includes/wiprlhext_md.md)], [!INCLUDE[winxp](../code-quality/includes/winxp_md.md)], [!INCLUDE[Win2kFamily](../code-quality/includes/win2kfamily_md.md)], veya hata ayıklama modunda başlatıldı Windows NT sistem.
+[Hata: Sistemde bir çekirdek hata ayıklayıcısı etkinleştirildiğinden hata ayıklama mümkün değil](../debugger/error-debugging-isn-t-possible-because-a-kernel-debugger-is-enabled-on-the-system.md)\
+Hata ayıklama modunda [!INCLUDE[win7](../debugger/includes/win7_md.md)]başlatılmış bir [!INCLUDE[winxp](../code-quality/includes/winxp_md.md)], [!INCLUDE[wiprlhext](../debugger/includes/wiprlhext_md.md)] [!INCLUDE[Win2kFamily](../code-quality/includes/win2kfamily_md.md)],, veya Windows NT sisteminde yönetilen kodda hata ayıklamaya çalıştığınızda oluşan bir hata iletisi açıklanır.
 
-[JIT iyileştirmesi ve hata ayıklama](../debugger/jit-optimization-and-debugging.md)\
-Hata ayıklamayı JIT iyileştirmesini etkilerini açıklar.
+[JıT Iyileştirme ve hata ayıklama](../debugger/jit-optimization-and-debugging.md)\
+Hata ayıklama sırasında JıT iyileştirmesinin etkilerini açıklar.
 
-[LINQ ve DLINQ hata ayıklama](../debugger/debugging-linq.md)\
-LINQ sorguları hata ayıklama teknikleri açıklar.
+[LINQ ve DLıNQ hatalarını ayıklama](../debugger/debugging-linq.md)\
+LINQ sorgularının hatalarını ayıklama tekniklerini açıklar.
 
 [İzlenecek yol: Paralel uygulamada hata ayıklama](../debugger/walkthrough-debugging-a-parallel-application.md)\
-Nasıl kullanılacağını açıklar **Paralel Görevler** ve **Paralel Yığınlar** paralel uygulamada hata ayıklamak için windows aracı.
+Paralel bir uygulamada hata ayıklamak için **paralel görevler** ve **Paralel Yığınlar** araç pencerelerinin nasıl kullanılacağını açıklar.
 
 ## <a name="related-sections"></a>İlgili Bölümler
 
 [IntelliTrace](../debugger/intellitrace.md)\
-IntelliTrace ile uygulamanızın yürütme geçmişini kaydederek hataları daha hızlı ve daha kolay bulun. Geri adım ve kaydedilen olaylarını ve zamanında önemli anlarda uygulamanızın durumunu incelemek için çağrılar aracılığıyla iletebilir. Kodunuzdaki hataları ayıklamanıza sayıda kesme noktası ayarlama veya sık olarak uygulamanızı yeniden başlatmadan olmadan. Visual Studio Enterprise gereklidir.
+Uygulamanızın yürütme geçmişini IntelliTrace ile kaydederek daha hızlı ve kolay bir şekilde hata bulun. Kaydedilen olayları ve geri doğru ilerlemeden, uygulamanın durumunu zaman içinde önemli noktalarda incelemek için çağrılar yapın. Çok sayıda kesme noktası ayarlamadan veya uygulamanızı sık yeniden başlatarak kodunuzda hata ayıklayın. Visual Studio Enterprise gerektirir.
 
-[İzleme ve İşaretleme uygulamaları](/dotnet/framework/debug-trace-profile/tracing-and-instrumenting-applications)\
-İzleme, onu çalıştıran ve izleme, ancak uygulamanızın yürütmesini izlemek bir yol açıklar izleme deyimleri kodunuzda stratejik konumlara yerleştirerek içerir. İzleme anahtarları, izleme dinleyicileri bir uygulamadaki kodu izleme, uygulama koduna izleme deyimleri ekleme ve ile koşullu derleme, izleme, bu konuda ayrıca izleme için bir giriş için bağlantılar sağlar ve <xref:System.Diagnostics.Debug> ve <xref:System.Diagnostics.Trace> .
+[Uygulamaları izleme ve Işaretleme](/dotnet/framework/debug-trace-profile/tracing-and-instrumenting-applications)\
+Uygulamasının, çalışırken uygulamanın yürütülmesini izlemenin ve izleme deyimlerinin kodunuzda stratejik konumlarda yerleştirilmesi için gereken bir yol olan izlemeyi açıklar. Bu konu ayrıca, izleme ve izleme, izleme anahtarları, izleme dinleyicileri, bir uygulamadaki kod izleme, uygulama koduna izleme deyimleri ekleme ve ile koşullu olarak <xref:System.Diagnostics.Debug> <xref:System.Diagnostics.Trace> derleme için bir giriş bağlantıları sağlar. .
 
-[/ ASSEMBLYDEBUG](/cpp/build/reference/assemblydebug-add-debuggableattribute)\
-Ekleyen bir bağlayıcı seçeneği açıklar <xref:System.Diagnostics.DebuggableAttribute> C++ ile yazılmış kodu. Bu öznitelik, hata ayıklama kullanmak için gerekli olan özellikleri gibi C++ ile ekleyin.
+[/ASSEMBLYDEBUG](/cpp/build/reference/assemblydebug-add-debuggableattribute)\
+İle <xref:System.Diagnostics.DebuggableAttribute> C++yazılmış koda eklenen bağlayıcı seçeneğini açıklar. Bu öznitelik, ile C++iliştirme gibi hata ayıklama özelliklerini kullanmak için gereklidir.
 
-[Hata ayıklama Windows hizmet uygulamaları](/dotnet/framework/windows-services/how-to-debug-windows-service-applications)\
-Windows hizmet uygulamalarında hata ayıklama, kurma da dahil olmak üzere, işlemine iliştirme, hizmetin kodda hata ayıklama ile ilgili konuları sağlar `OnStart` yöntemi ve kodda kesme noktaları ayarlama ve Hizmetleri denetimi kullanarak ana yöntemi Başlatma, durdurma, duraklatma ve devam hizmetiniz için manager'ı tıklatın.
+[Windows hizmet uygulamalarında hata ayıklama](/dotnet/framework/windows-services/how-to-debug-windows-service-applications)\
+Windows hizmet uygulamalarında hata ayıklama, işleme ekleme, hizmetin `OnStart` yöntemindeki kodda hata ayıklama, ana yöntemdeki kod, kesme noktaları ayarlama ve hizmetler denetimini kullanma dahil olmak üzere önemli noktalar sağlar Hizmetinizi başlatmak, durdurmak, duraklatmak ve devam ettirmek için yönetici.
 
 [Hata ayıklama ve profil oluşturma](/dotnet/framework/debug-trace-profile/index)\
-Hata ayıklama .NET Framework uygulamaları ve yapılandırma gereksinimleri açıklanır.
+.NET Framework uygulamalarda hata ayıklamayı ve yapılandırma gereksinimlerini açıklar.
 
-[Betik ve Web uygulamalarında hata ayıklama](/visualstudio/debugger/how-to-enable-debugging-for-aspnet-applications)\
-Genel hata ayıklama sorunları ve komut dosyası ve Web uygulamalarında hata ayıklama sırasında karşılaşabileceğiniz teknikleri açıklar.
+[Betikte ve Web uygulamalarında hata ayıklama](/visualstudio/debugger/how-to-enable-debugging-for-aspnet-applications)\
+Betiklerin ve Web uygulamalarında hata ayıklarken karşılaşabileceğiniz yaygın hata ayıklama sorunlarını ve tekniklerini açıklar.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [İzlenecek yol: Tasarım zamanında özel Windows Forms denetimleri hatalarını ayıklama](/dotnet/framework/winforms/controls/walkthrough-debugging-custom-windows-forms-controls-at-design-time)
+- [İzlenecek yol: Tasarım zamanında özel Windows Forms Denetimlerinde hata ayıkla](/dotnet/framework/winforms/controls/walkthrough-debugging-custom-windows-forms-controls-at-design-time)
 - [Hata Ayıklayıcısı Güvenliği](../debugger/debugger-security.md)
-- [Visual Studio’da hata ayıklama](../debugger/index.md)
+- [Visual Studio’da hata ayıklama](../debugger/index.yml)
 - [Hata ayıklayıcıya ilk bakış](../debugger/debugger-feature-tour.md)

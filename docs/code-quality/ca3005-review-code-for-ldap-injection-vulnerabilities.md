@@ -10,54 +10,54 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 10b9091df08368674511b770158ea47c247aade7
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: c0c99d5d0adb145a061693f8a83b1f674e05eed4
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65841372"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71237334"
 ---
 # <a name="ca3005-review-code-for-ldap-injection-vulnerabilities"></a>CA3005: LDAP ekleme güvenlik açıkları için inceleme kodu
 
 |||
 |-|-|
-|TypeName|ReviewCodeForLdapInjectionVulnerabilities|
+|TypeName|Belgekodu Koduforldapinjectionaçıklardan|
 |CheckId|CA3005|
 |Kategori|Microsoft.Security|
-|Yeni Değişiklik|Bozucu olmayan|
+|Son değişiklik|Kırılmamış|
 
 ## <a name="cause"></a>Sebep
 
-Potansiyel olarak güvenilmeyen HTTP istek girişi bir LDAP deyimi ulaşır.
+Güvenilmez HTTP isteği girişi bir LDAP bildirimine ulaşır.
 
 ## <a name="rule-description"></a>Kural açıklaması
 
-Güvenilmeyen girdisiyle çalışırken, Basit Dizin Erişim Protokolü (LDAP) ekleme saldırıları oluşturduğunu unutmayın. Bir saldırgan, olası kötü amaçlı LDAP deyimleri bilgi dizinleri karşı çalıştırabilirsiniz. Kullanıcı girişi dizin hizmetlerine erişmek için dinamik LDAP ifadeleri oluşturmak için kullandıkları uygulamalarda özellikle savunmasızdır.
+Güvenilmeyen girişle çalışırken, Hafif Dizin Erişim Protokolü (LDAP) ekleme saldırılarına karşı en az bir yer vardır. Saldırgan, potansiyel olarak kötü amaçlı LDAP deyimlerini bilgi dizinlerine karşı çalıştırabilir. Dizin hizmetlerine erişim için dinamik LDAP deyimleri oluşturmak üzere Kullanıcı girişi kullanan uygulamalar özellikle savunmasız olacaktır.
 
-Bu kural, bir LDAP deyimi ulaşmasını HTTP isteklerinden alınan giriş bulmayı dener.
-
-> [!NOTE]
-> Bu kural, derlemeler arasında veri izleyemezsiniz. Örneğin, bir derleme HTTP istek girişi okur ve bir LDAP deyimi yürütür, başka bir derlemeye geçtikten sonra bu kural bir uyarı üretir olmaz.
+Bu kural, bir LDAP bildirimine ulaşan HTTP isteklerinden girdi bulmaya çalışır.
 
 > [!NOTE]
-> Derinlikte bu kural veri akışı yöntem çağrıları arasında çözümler için yapılandırılabilir bir sınır yoktur. Bkz: [Çözümleyicisi yapılandırma](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis) sınırı bir EditorConfig dosyasında nasıl yapılandıracağınızı öğrenmek için.
+> Bu kural derlemeler genelinde verileri izleyemez. Örneğin, bir derleme HTTP istek girişini okuyup onu bir LDAP ifadesini yürüten başka bir derlemeye geçirirse, bu kural bir uyarı oluşturmaz.
 
-## <a name="how-to-fix-violations"></a>İhlaller nasıl düzeltilir?
+> [!NOTE]
+> Bu kuralın, yöntem çağrılarında veri akışını ne kadar analiz edip bu kurala ilişkin yapılandırılabilir bir sınır vardır. Bir EditorConfig dosyasında sınırı yapılandırma hakkında bilgi için bkz. [çözümleyici yapılandırması](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis) .
 
-LDAP deyimleri kullanıcı tarafından denetlenen bölümü için aşağıdakilerden birini göz önünde bulundurun:
-- Özel olmayan karakterleri güvenli bir listesini sağlar.
-- Özel karakter izin verme
-- Özel karakterlerden kaçının.
+## <a name="how-to-fix-violations"></a>İhlalleri çözme
 
-Bkz: [OWASP'ın LDAP ekleme önleme kural sayfası](https://github.com/OWASP/CheatSheetSeries/blob/master/cheatsheets/LDAP_Injection_Prevention_Cheat_Sheet.md) daha fazla kılavuzluk için.
+LDAP deyimlerinin kullanıcı denetimli bölümü için şunlardan birini göz önünde bulundurun:
+- Özel olmayan karakterlerin yalnızca güvenli bir listesine izin verin.
+- Özel karaktere izin verme
+- Özel karakterler kaçış.
 
-## <a name="when-to-suppress-warnings"></a>Uyarılar bastırıldığında
+Daha fazla bilgi için bkz. [OWASP 'nın LDAP ekleme engellemesi sayfası](https://github.com/OWASP/CheatSheetSeries/blob/master/cheatsheets/LDAP_Injection_Prevention_Cheat_Sheet.md) .
 
-Girişi doğrulanması veya güvenli olacak şekilde Atlanan biliyorsanız, bu uyarının gösterilmemesi uygundur.
+## <a name="when-to-suppress-warnings"></a>Uyarıların ne zaman bastırılamıyor
+
+Girişin doğrulandığını veya güvenli olduğunu biliyorsanız, bu uyarıyı bastırmak normaldir.
 
 ## <a name="pseudo-code-examples"></a>Sözde kod örnekleri
 
-### <a name="violation"></a>İhlali
+### <a name="violation"></a>Edildiği
 
 ```csharp
 using System;

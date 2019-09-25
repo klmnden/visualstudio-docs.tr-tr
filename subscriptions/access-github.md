@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/19/2019
 ms.topic: conceptual
 description: Yeni Visual Studio + GitHub teklifi hakkında bilgi edinin
-ms.openlocfilehash: 6c34ecc37285166135584a98453a1e92393073ab
-ms.sourcegitcommit: a2df993dc5e11c5131dbfcba686f0028a589068f
+ms.openlocfilehash: 09168bffbdb8caf9e6366335f5d08f5bf81573f9
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "71150086"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71238144"
 ---
 # <a name="introducing-visual-studio-subscriptions-with-github-enterprise"></a>GitHub Enterprise ile Visual Studio aboneliklerine giriş  
 
@@ -32,7 +32,7 @@ Kuruluşunuzda yenilemeyle ilgili olmayan bir EA varsa, mevcut Visual Studio Ent
 
 Visual Studio Enterprise, Visual Studio Professional ve GitHub Enterprise için mevcut SKU 'Lar Ayrıca kullanılabilir olmaya devam edecektir. 
 
-Avantajlar, Seçenekler ve fiyatlandırma hakkında daha fazla bilgi edinmek için lütfen https://visualstudio.microsoft.com/subscriptions/visual-studio-github ziyaret edin. 
+Avantajlar ve seçenekler hakkında daha fazla bilgi edinmek için https://visualstudio.microsoft.com/subscriptions/visual-studio-github lütfen adresini ziyaret edin. 
 
 ## <a name="getting-your-subscriptions"></a>Abonelikleriniz alınıyor
 

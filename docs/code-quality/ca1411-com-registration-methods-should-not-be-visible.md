@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 4f6f40308255e0496b2bcccddf4299e83ea93100
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: e9582fb6bbdbda8aefbb60e2c69d16380eec3dff
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68922048"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71234750"
 ---
 # <a name="ca1411-com-registration-methods-should-not-be-visible"></a>CA1411: COM kayıt metotları görünebilir olmamalıdır
 
@@ -31,7 +31,7 @@ ms.locfileid: "68922048"
 |TypeName|ComRegistrationMethodsShouldNotBeVisible|
 |CheckId|CA1411|
 |Kategori|Microsoft. çalışabilirliği|
-|Yeni Değişiklik|Yeni|
+|Son değişiklik|Yeni|
 
 ## <a name="cause"></a>Sebep
 

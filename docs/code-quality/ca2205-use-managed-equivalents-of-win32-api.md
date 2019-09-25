@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 99d53296ad72aef1910a39299be64c7cb03dd49a
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: 6481bbcca68c7471e4f25c7629e3b55fa407d175
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66714724"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71231715"
 ---
 # <a name="ca2205-use-managed-equivalents-of-win32-api"></a>CA2205: Win32 API'sinin yönetilen eşdeğerlerini kullanın
 
@@ -30,36 +30,36 @@ ms.locfileid: "66714724"
 |-|-|
 |TypeName|UseManagedEquivalentsOfWin32Api|
 |CheckId|CA2205|
-|Kategori|Microsoft.Usage|
-|Yeni Değişiklik|Bozucu olmayan|
+|Kategori|Microsoft. Usage|
+|Son değişiklik|Kırılmamış|
 
 ## <a name="cause"></a>Sebep
 
-Bir platform çağırma yöntemi tanımlanır ve. NET'te eşdeğer bir işlevselliği olan bir yöntem bulunmaktadır.
+Platform çağırma yöntemi tanımlanmıştır ve .NET 'te eşdeğer işlevselliğe sahip bir yöntem vardır.
 
 ## <a name="rule-description"></a>Kural açıklaması
 
-Bir platform çağırma yöntemi kullanılarak tanımlanır ve yönetilmeyen bir DLL işlevini çağırmak için kullanılan <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName> özniteliği veya `Declare` Visual Basic'teki. Hatalı tanımlanmış bir platform çağırma yöntemi için çalışma zamanı özel durumları nedeniyle, parametre ve dönüş değeri veri türleri ve çağırma kuralı ve karakter gibi yanlış alan belirtimleri eşleme hatalı misnamed bir işlev gibi sorunlara neden olabilir ayarlayın. Varsa, tanımlamak ve yönetilmeyen yöntemi doğrudan çağırmanız eşdeğer yönetilen yöntemini çağırmak hataya daha basit ve daha az hata var. Platform çağırma yöntemi Çağır ele alınması gereken ek güvenlik sorunlarına da yol açabilir.
+Bir platform çağırma yöntemi, yönetilmeyen bir DLL işlevini çağırmak için kullanılır ve <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName> özniteliği `Declare` veya Visual Basic anahtar sözcüğü kullanılarak tanımlanır. Yanlış tanımlanmış bir platform çağırma yöntemi, yanlış adlandırılmış bir işlev, parametre ve dönüş değeri veri türlerinin hatalı eşlemesi ve çağırma kuralı ve karakteri gibi yanlış alan belirtimleri nedeniyle çalışma zamanı özel durumlarına neden olabilir kurmak. Varsa, daha basit ve yönetilmeyen yöntemi doğrudan çağırdığından, eşdeğer yönetilen yöntemi çağırmak daha basit ve daha az hataya açıktır. Platform çağırma yöntemini çağırmak, giderilmesi gereken ek güvenlik sorunlarına da yol açabilir.
 
-## <a name="how-to-fix-violations"></a>İhlaller nasıl düzeltilir?
+## <a name="how-to-fix-violations"></a>İhlalleri çözme
 
-Bu kural ihlalini düzeltmek için yönetilmeyen işlev çağrısı yönetilen eşdeğerine çağrısı ile değiştirin.
+Bu kuralın ihlalini onarmak için yönetilmeyen işleve yapılan çağrıyı, yönetilen eşdeğeri çağrısıyla değiştirin.
 
-## <a name="when-to-suppress-warnings"></a>Uyarılar bastırıldığında
+## <a name="when-to-suppress-warnings"></a>Uyarıların ne zaman bastırılamıyor
 
-Önerilen değiştirme yöntemi gerekli işlevleri sağlamıyorsa bu kuraldan bir uyarıyı gizler.
+Önerilen değiştirme yöntemi gerekli işlevselliği sağlamıyorsa bu kuraldan bir uyarı gizleyin.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnekte gösterildiği bir platform kuralı ihlal yöntem tanımını çağırın. Ayrıca, platform çağrıları yöntemi çağırın ve eşdeğer Yönetilen yöntemi gösterilir.
+Aşağıdaki örnek, kuralı ihlal eden bir platform çağırma yöntemi tanımını gösterir. Ayrıca, platform çağırma yöntemine yapılan çağrılar ve eşdeğer yönetilen yöntem gösterilir.
 
 [!code-csharp[FxCop.Usage.ManagedEquivalents#1](../code-quality/codesnippet/CSharp/ca2205-use-managed-equivalents-of-win32-api_1.cs)]
 [!code-vb[FxCop.Usage.ManagedEquivalents#1](../code-quality/codesnippet/VisualBasic/ca2205-use-managed-equivalents-of-win32-api_1.vb)]
 
-## <a name="related-rules"></a>İlgili kuralları
+## <a name="related-rules"></a>İlgili kurallar
 
-- [CA1404: P/Invoke ardından hemen GetLastError çağırın](../code-quality/ca1404-call-getlasterror-immediately-after-p-invoke.md)
-- [CA1060: P/Invokes öğesini NativeMethods sınıfına taşıyın](../code-quality/ca1060-move-p-invokes-to-nativemethods-class.md)
-- [CA1400: P/Invoke giriş noktaları bulunmalıdır](../code-quality/ca1400-p-invoke-entry-points-should-exist.md)
-- [CA1401: P/Invoke'lar görünür olmamalıdır](../code-quality/ca1401-p-invokes-should-not-be-visible.md)
-- [CA2101: P/Invoke dize bağımsız değişkenleri için hazırlama belirtin](../code-quality/ca2101-specify-marshaling-for-p-invoke-string-arguments.md)
+- [CA1404 P/Invoke sonrasında GetLastError 'yi çağırın](../code-quality/ca1404-call-getlasterror-immediately-after-p-invoke.md)
+- [CA1060 P/Invoke öğesini NativeMethods sınıfına taşı](../code-quality/ca1060-move-p-invokes-to-nativemethods-class.md)
+- [CA1400 P/Invoke giriş noktaları bulunmalıdır](../code-quality/ca1400-p-invoke-entry-points-should-exist.md)
+- [CA1401 P/Invoke görünür olmamalıdır](../code-quality/ca1401-p-invokes-should-not-be-visible.md)
+- [CA2101 P/Invoke dize bağımsız değişkenleri için sıralama belirtin](../code-quality/ca2101-specify-marshaling-for-p-invoke-string-arguments.md)

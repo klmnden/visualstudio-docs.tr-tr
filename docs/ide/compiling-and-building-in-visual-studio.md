@@ -12,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fe8528b9e6ad302319f1fb1ebb010c7f55b93932
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
+ms.openlocfilehash: 2c99408530344c72d2e9669178c5e79f7c34d551
+ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68416588"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71211248"
 ---
 # <a name="compile-and-build-in-visual-studio"></a>Derleme ve Visual Studio'da derleyin
 
@@ -25,7 +25,7 @@ Kaynak kodu derlerken, derleme altyapısı derlemeler ve yürütülebilir uygula
 
 Kodunuzu genellikle oluşturarak hızlı bir şekilde sözdizimi, yanlış yazılmış anahtar sözcükler gibi derleme zamanı hataları belirlemek ve uyuşmazlıkları yazın. Ayrıca, algılamak ve çalışma zamanı hataları, mantık hataları ve anlamsal hataları gibi oluşturma ve kod hata ayıklama sürümlerini çalıştıran düzeltin.
 
-Uygulamanın kaynak kodunu doğru söz dizimini içerir ve kitaplıkları, derlemeler ve diğer bileşenleri için tüm statik başvuruları çözümlemek başarılı bir derleme doğrular. Çalıştırılabilir bir uygulamaya üretilen, test edilebilirler düzgün hem de çalışması için bir [ortam hata ayıklama](../debugger/index.md) ve el ile ve otomatik testler için çeşitli [kod kalitesini doğrulamak](../test/improve-code-quality.md). Uygulamanın tam olarak test sonra müşterilerinize dağıtmak için bir yayın sürümünü derleyebilirsiniz. Bu işleme giriş için bkz [. İzlenecek yol: Uygulama](../ide/walkthrough-building-an-application.md)oluşturma.
+Uygulamanın kaynak kodunu doğru söz dizimini içerir ve kitaplıkları, derlemeler ve diğer bileşenleri için tüm statik başvuruları çözümlemek başarılı bir derleme doğrular. Çalıştırılabilir bir uygulamaya üretilen, test edilebilirler düzgün hem de çalışması için bir [ortam hata ayıklama](../debugger/index.yml) ve el ile ve otomatik testler için çeşitli [kod kalitesini doğrulamak](../test/improve-code-quality.md). Uygulamanın tam olarak test sonra müşterilerinize dağıtmak için bir yayın sürümünü derleyebilirsiniz. Bu işleme giriş için bkz [. İzlenecek yol: Uygulama](../ide/walkthrough-building-an-application.md)oluşturma.
 
 Bir uygulama oluşturmak için aşağıdaki yöntemlerden herhangi birini kullanabilirsiniz: Visual Studio IDE, MSBuild komut satırı araçları ve Azure işlem hatları:
 

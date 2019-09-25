@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bf5bb8320a8876582cc325ecf973c83593777193
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: ab0f6aaae97a510b0521e10ad607a86988c345a3
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68920505"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71232091"
 ---
 # <a name="ca2142-transparent-code-should-not-be-protected-with-linkdemands"></a>CA2142: Saydam kod LinkDemands ile korunmamalıdır
 
@@ -24,7 +24,7 @@ ms.locfileid: "68920505"
 |TypeName|TransparentMethodsShouldNotBeProtectedWithLinkDemands|
 |CheckId|CA2142|
 |Kategori|Microsoft.Security|
-|Yeni Değişiklik|Yeni|
+|Son değişiklik|Yeni|
 
 ## <a name="cause"></a>Sebep
 Saydam bir yöntem, ya <xref:System.Security.Permissions.SecurityAction> da başka bir güvenlik talebi gerektirir.

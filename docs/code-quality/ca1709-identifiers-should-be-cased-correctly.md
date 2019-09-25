@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 864918b7ce394e9f096c6fa9dea9389957983177
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 9ff614d9fdc4b250bd91abf24908b33d71a182df
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68921772"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71234159"
 ---
 # <a name="ca1709-identifiers-should-be-cased-correctly"></a>CA1709: Tanımlayıcılar doğru büyük küçük harfe sahip olmalıdır
 
@@ -28,7 +28,7 @@ ms.locfileid: "68921772"
 |TypeName|IdentifiersShouldBeCasedCorrectly|
 |CheckId|CA1709|
 |Kategori|Microsoft. Naming|
-|Yeni Değişiklik|Parçalara ayırma-derlemeler, ad alanları, türler, Üyeler ve parametreler üzerinde tetiklenir.<br /><br /> Genel tür parametrelerinde harekete geçirildiğinde, bölünmez.|
+|Son değişiklik|Parçalara ayırma-derlemeler, ad alanları, türler, Üyeler ve parametreler üzerinde tetiklenir.<br /><br /> Genel tür parametrelerinde harekete geçirildiğinde, bölünmez.|
 
 ## <a name="cause"></a>Sebep
 

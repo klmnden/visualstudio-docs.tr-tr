@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c5cc12d5d0a62f8d2530f13fcf860aba4e118ca4
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 99274abee2c05a1bd33e34c9eb02cc928c1b54b0
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68921848"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71234620"
 ---
 # <a name="ca1415-declare-pinvokes-correctly"></a>CA1415: P/Invoke'ları doğru bildirin
 
@@ -28,7 +28,7 @@ ms.locfileid: "68921848"
 |TypeName|DeclarePInvokesCorrectly|
 |CheckId|CA1415|
 |Kategori|Microsoft. çalışabilirliği|
-|Yeni Değişiklik|Bölünmez olmayan-parametreyi bildiren P/Invoke derleme dışında görülemez. Parçalama-parametreyi bildiren P/Invoke, derleme dışında görünebilirler.|
+|Son değişiklik|Bölünmez olmayan-parametreyi bildiren P/Invoke derleme dışında görülemez. Parçalama-parametreyi bildiren P/Invoke, derleme dışında görünebilirler.|
 
 ## <a name="cause"></a>Sebep
 Platform çağırma yöntemi yanlış bir şekilde bildirilmiştir.

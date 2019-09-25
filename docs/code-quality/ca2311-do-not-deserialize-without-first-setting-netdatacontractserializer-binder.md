@@ -13,12 +13,12 @@ ms.workload:
 f1_keywords:
 - CA2311
 - DoNotDeserializeWithoutFirstSettingNetDataContractSerializerBinder
-ms.openlocfilehash: 2ec13d78e364940fa9c210cf0792e810c8f0f341
-ms.sourcegitcommit: 673b9364fc9a96b027662dcb4cf5d61cab60ef11
+ms.openlocfilehash: 8445c6260592bbaf109dd3786111fe64441a4da0
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/21/2019
-ms.locfileid: "69891172"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71237694"
 ---
 # <a name="ca2311-do-not-deserialize-without-first-setting-netdatacontractserializerbinder"></a>CA2311: İlk olarak NetDataContractSerializer.Binder öğesini ayarlamadan seri durumdan çıkarmayın
 
@@ -27,7 +27,7 @@ ms.locfileid: "69891172"
 |TypeName|DoNotDeserializeWithoutFirstSettingNetDataContractSerializerBinder|
 |CheckId|CA2311|
 |Kategori|Microsoft.Security|
-|Yeni Değişiklik|Kırılmamış|
+|Son değişiklik|Kırılmamış|
 
 ## <a name="cause"></a>Sebep
 
@@ -47,7 +47,7 @@ Bu kural <xref:System.Runtime.Serialization.NetDataContractSerializer?displayPro
   - <xref:System.Web.Script.Serialization.JavaScriptSerializer?displayProperty=nameWithType>-Hiçbir şekilde <xref:System.Web.Script.Serialization.SimpleTypeResolver?displayProperty=nameWithType>kullanmayın. Bir tür Çözümleyicisi kullanmanız gerekiyorsa, serisi kaldırılan türleri beklenen bir listeyle kısıtlayın.
   - <xref:System.Xml.Serialization.XmlSerializer?displayProperty=nameWithType>
   - Newtonsoft Json.NET-TypeNameHandling. None kullanın. TypeNameHandling için başka bir değer kullanmanız gerekiyorsa, serisi kaldırılan türleri özel bir ISerializationBinder ile beklenen bir listeyle kısıtlayın.
-  - Protokol arabellekleri
+  - Protokol Arabellekleri
 - Seri hale getirilen verileri prova yapın. Serileştirmeden sonra, serileştirilmiş verileri şifreli olarak imzalayın. Seri durumdan önce, şifreleme imzasını doğrulayın. Şifreleme anahtarını, önemli döndürmeler için açıklanmasını ve tasarıma karşı koruyun.
 - Seri durumdan çıkarılan türleri kısıtla. Özel <xref:System.Runtime.Serialization.SerializationBinder?displayProperty=nameWithType>bir uygulama uygulayın. İle <xref:System.Runtime.Serialization.NetDataContractSerializer>seri durumdan kaldırmadan önce, <xref:System.Runtime.Serialization.NetDataContractSerializer.Binder> özelliği özel <xref:System.Runtime.Serialization.SerializationBinder>bir örneğine ayarlayın. Geçersiz kılınan <xref:System.Runtime.Serialization.SerializationBinder.BindToType%2A> yöntemde, tür beklenmiyorsa, serisini durdurmak için bir özel durum oluşturur.
 

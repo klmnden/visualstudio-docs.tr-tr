@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 2110a8d0b58d87a4554971cf00af6441d293aa91
-ms.sourcegitcommit: 92a04c57ac0a49f304fa2ea5043436f30068c3cd
+ms.openlocfilehash: 9f9425ab1ea9eadd3bd06d950118ce83ba5c35f9
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/21/2019
-ms.locfileid: "65975887"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71231640"
 ---
 # <a name="ca2208-instantiate-argument-exceptions-correctly"></a>CA2208: Bağımsız değişken özel durumlarını doğru örnekleyin
 
@@ -31,54 +31,54 @@ ms.locfileid: "65975887"
 |-|-|
 |TypeName|InstantiateArgumentExceptionsCorrectly|
 |CheckId|CA2208|
-|Kategori|Microsoft.Usage|
-|Yeni Değişiklik|Bozucu olmayan|
+|Kategori|Microsoft. Usage|
+|Son değişiklik|Kırılmamış|
 
 ## <a name="cause"></a>Sebep
 
-Aşağıdaki durumlarda olası nedenler:
+Olası nedenler aşağıdaki durumları içerir:
 
-- Varsayılan (parametresiz) kurucu veya, türetilen bir özel durum türü için bir çağrı yapılır <xref:System.ArgumentException>.
+- Bir özel durum türünün varsayılan (parametresiz) oluşturucusuna bir çağrı yapılır veya öğesinden <xref:System.ArgumentException>türetilir.
 
-- Bir hatalı dize bağımsız değişkeni parametreli bir kurucu veya, türetilen bir özel durum türü iletilir <xref:System.ArgumentException>.
+- Yanlış dize bağımsız değişkeni, veya ' <xref:System.ArgumentException>den türetilen bir özel durum türünün parametreli oluşturucusuna geçirilir.
 
 ## <a name="rule-description"></a>Kural açıklaması
 
-Varsayılan oluşturucuyu çağırmak yerine sağlanması daha anlamlı bir özel durum iletisi veren oluşturucu aşırı yüklemeleri birini çağırın. Özel durum iletisi, geliştirici hedef ve hata durumu ve düzeltin veya özel durumdan kaçınmak nasıl NET bir şekilde açıklayın.
+Varsayılan oluşturucuyu çağırmak yerine, daha anlamlı bir özel durum iletisi sağlanmasını sağlayan Oluşturucu aşırı yüklemelerinin birini çağırın. Özel durum iletisi, geliştiriciyi hedeflemelidir ve hata koşulunu açıkça açıklamalı ve özel durumu nasıl düzeltebileceğiniz veya kaçınmalıdır.
 
-Bir ve iki dize oluşturucular imzaları <xref:System.ArgumentException> ve türetilmiş türlerini konumuna göre tutarlı olmayan `message` ve `paramName` parametreleri. Bu oluşturucular doğru dize bağımsız değişkenlerle çağrılır emin olun. İmzaları aşağıdaki gibidir:
+<xref:System.ArgumentException> Ve türetilmiş türlerinin bir ve iki dize Oluşturucusu imzaları, konum `message` ve `paramName` parametrelere göre tutarlı değildir. Bu oluşturucuların doğru dize bağımsız değişkenleriyle çağrıldığından emin olun. İmzalar aşağıdaki gibidir:
 
-- <xref:System.ArgumentException>(string `message`)
-- <xref:System.ArgumentException>(string `message`, dize `paramName`)
-- <xref:System.ArgumentNullException>(string `paramName`)
-- <xref:System.ArgumentNullException>(string `paramName`, dize `message`)
-- <xref:System.ArgumentOutOfRangeException>(string `paramName`)
-- <xref:System.ArgumentOutOfRangeException>(string `paramName`, dize `message`)
-- <xref:System.DuplicateWaitObjectException>(string `parameterName`)
-- <xref:System.DuplicateWaitObjectException>(string `parameterName`, dize `message`)
+- <xref:System.ArgumentException>(dize `message`)
+- <xref:System.ArgumentException>(dize `message`, dize `paramName`)
+- <xref:System.ArgumentNullException>(dize `paramName`)
+- <xref:System.ArgumentNullException>(dize `paramName`, dize `message`)
+- <xref:System.ArgumentOutOfRangeException>(dize `paramName`)
+- <xref:System.ArgumentOutOfRangeException>(dize `paramName`, dize `message`)
+- <xref:System.DuplicateWaitObjectException>(dize `parameterName`)
+- <xref:System.DuplicateWaitObjectException>(dize `parameterName`, dize `message`)
 
-## <a name="how-to-fix-violations"></a>İhlaller nasıl düzeltilir?
+## <a name="how-to-fix-violations"></a>İhlalleri çözme
 
-Bu kural ihlalini düzeltmek için bir ileti, bir parametre adı veya her ikisini de alan bir oluşturucu çağırmak ve bağımsız değişken türü için uygun olduğundan emin olun <xref:System.ArgumentException> çağrılan.
+Bu kural ihlalini onarmak için ileti, parametre adı veya her ikisini de alan bir Oluşturucu çağırın ve bağımsız değişkenlerin <xref:System.ArgumentException> Çağrılmakta olan tür için uygun olduğundan emin olun.
 
-## <a name="when-to-suppress-warnings"></a>Uyarılar bastırıldığında
+## <a name="when-to-suppress-warnings"></a>Uyarıların ne zaman bastırılamıyor
 
-Parametreli bir kurucu doğru dize bağımsız değişkenleri ile yalnızca çağrılması halinde bu kuraldan bir uyarıyı bastırmak güvenlidir.
+Yalnızca parametreli bir oluşturucunun doğru dize bağımsız değişkenleriyle çağrılması durumunda, bu kuraldan bir uyarıyı bastırmak güvenlidir.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki kod, yanlış bir örneğini başlatan bir oluşturucu göstermektedir <xref:System.ArgumentNullException>.
+Aşağıdaki kod, bir örneğini <xref:System.ArgumentNullException>yanlış örnekleyen bir oluşturucuyu gösterir.
 
 [!code-cpp[FxCop.Usage.InstantiateArgumentExceptionsCorrectly#1](../code-quality/codesnippet/CPP/ca2208-instantiate-argument-exceptions-correctly_1.cpp)]
 [!code-csharp[FxCop.Usage.InstantiateArgumentExceptionsCorrectly#1](../code-quality/codesnippet/CSharp/ca2208-instantiate-argument-exceptions-correctly_1.cs?range=3-6)]
 [!code-vb[FxCop.Usage.InstantiateArgumentExceptionsCorrectly#1](../code-quality/codesnippet/VisualBasic/ca2208-instantiate-argument-exceptions-correctly_1.vb)]
 
-Aşağıdaki kod, önceki ihlali oluşturucu bağımsız geçerek düzeltir.
+Aşağıdaki kod, Oluşturucu bağımsız değişkenlerini değiştirerek önceki ihlalin düzeltir.
 
 [!code-cpp[FxCop.Usage.InstantiateArgumentExceptionsCorrectly#2](../code-quality/codesnippet/CPP/ca2208-instantiate-argument-exceptions-correctly_2.cpp)]
 [!code-csharp[FxCop.Usage.InstantiateArgumentExceptionsCorrectly#2](../code-quality/codesnippet/CSharp/ca2208-instantiate-argument-exceptions-correctly_2.cs?range=3-6)]
 [!code-vb[FxCop.Usage.InstantiateArgumentExceptionsCorrectly#2](../code-quality/codesnippet/VisualBasic/ca2208-instantiate-argument-exceptions-correctly_2.vb)]
 
-## <a name="related-rules"></a>İlgili kuralları
+## <a name="related-rules"></a>İlgili kurallar
 
-- [CA1507: Nameof dize yerine kullanın](ca1507.md)
+- [CA1507: Dize yerine NameOf kullanın](ca1507.md)

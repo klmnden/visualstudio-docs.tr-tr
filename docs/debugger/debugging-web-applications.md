@@ -18,24 +18,24 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5fa8bb0fb7672c177d0543a06fe423ca1d115514
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c6bd788124927de759558392cfe36194632c0996
+ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62851800"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71211103"
 ---
 # <a name="debugging-web-applications"></a>Web Uygulamalarında Hata Ayıklama
-Bu bölümde, birden fazla Web uygulamalarında hata ayıklamak açıklanmaktadır.
+Bu bölümde birçok Web uygulaması türünün nasıl ayıklanacağı açıklanmaktadır.
 
 ## <a name="in-this-section"></a>Bu Bölümde
- [İstemci tarafı hata ayıklamayı](../debugger/client-side-script-debugging.md) test betikleri ve istemci tarafı betiklerde Discusses [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] sayfaları.
+ [Istemci tarafı betik hata ayıklaması](../debugger/client-side-script-debugging.md) [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Sayfalardaki betikleri ve istemci tarafı betikleri test etmeyi açıklar.
 
 ## <a name="related-sections"></a>İlgili Bölümler
- [ASP.NET uygulamalarında hata ayıklama](../debugger/how-to-enable-debugging-for-aspnet-applications.md) hata ayıklamasını etkinleştirmek için gereken adımları açıklar [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] uygulamalar.
+ [ASP.NET uygulamalarında hata ayıklama](../debugger/how-to-enable-debugging-for-aspnet-applications.md) [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Uygulamalarda hata ayıklamayı etkinleştirmek için gereken adımları açıklar.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 - [Web Uygulamalarında ve Betikte Hata Ayıklama](/visualstudio/debugger/how-to-enable-debugging-for-aspnet-applications)
 - [Hata Ayıklayıcısı Ayarları ve Hazırlığı](../debugger/debugger-settings-and-preparation.md)
 - [Hata ayıklayıcıya ilk bakış](../debugger/debugger-feature-tour.md)
-- [Visual Studio’da hata ayıklama](../debugger/index.md)
+- [Visual Studio’da hata ayıklama](../debugger/index.yml)

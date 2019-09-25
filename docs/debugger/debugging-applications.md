@@ -1,5 +1,5 @@
 ---
-title: Uygulamalarında hata ayıklama | Microsoft Docs
+title: Uygulamalarda hata ayıklama | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -13,25 +13,27 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b918559742e9570ba3ad0ad1233ab643d087fdd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 63d393e5ab056f16e54382b2295a667f079ede95
+ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62852247"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71211158"
 ---
 # <a name="debugging-applications"></a>Uygulamalarda Hata Ayıklama
-Aşağıdaki bölümlerde, belirli türde uygulamalar için hata ayıklama ile ilgilidir. Farklı uygulama türleri ve farklı dillerde farklı ayarlar ve teknikleri gerektirir ve hata ayıklama için gereken farklı mevcut verir.
+Aşağıdaki bölümler, belirli türde uygulamalar için hata ayıklama ile ilgilenir. Farklı uygulama türleri ve farklı diller, farklı ayarlar ve teknikler gerektirir ve hataları ayıklanmanız gereken farklı sorunlar sunar.
 
-## <a name="debugging-for-different-types-of-applications"></a>Farklı uygulama türleri için hata ayıklama
+## <a name="debugging-for-different-types-of-applications"></a>Farklı türlerde uygulamalar için hata ayıklama
 
 |||
 |-|-|
-|[UWP uygulamalarında hata ayıklama](../debugger/debugging-windows-store-and-windows-universal-apps.md)|UWP uygulamalarında hata ayıklamak açıklar.|
-|[Yönetilen kodda hata ayıklama](../debugger/debugging-managed-code.md)|(Visual C#, Visual Basic ve F3) yönetilen kodda hata ayıklama işlemini açıklamaktadır.|
-|[Yerel kodda hata ayıklama](../debugger/debugging-native-code.md)|Farklı türde bir yerel C++ uygulamalarında hata ayıklama işlemini açıklamaktadır.|
-|[GPU kodunda hata ayıklama](../debugger/debugging-gpu-code.md)|Grafik işlemci birimi (GPU) üzerinde çalışan C++ kod hatalarını ayıklamak açıklar.|
-|[Grafik tanılama (hata ayıklama DirectX grafik)](/visualstudio/debugger/graphics/visual-studio-graphics-diagnostics)|DirectX grafik hata ayıklama işlemini açıklamaktadır.|
-|[ASP.NET uygulamalarında hata ayıklama](../debugger/how-to-enable-debugging-for-aspnet-applications.md)|ASP.NET uygulamalarında hata ayıklama işlemini açıklamaktadır.|
-|[Web uygulamalarında hata ayıklama](../debugger/debugging-web-applications.md)|Web uygulamalarında ve betikte hata ayıklama işlemini açıklamaktadır.|
-|[WCF hizmetlerinde hata ayıklama](../debugger/debugging-wcf-services.md)|Windows Communication Foundation hizmetlerinde hata ayıklama işlemini açıklamaktadır.|
+|[UWP uygulamalarında hata ayıklama](../debugger/debugging-windows-store-and-windows-universal-apps.md)|UWP uygulamalarının hatalarını ayıklama işlemini açıklar.|
+|[Yönetilen kodda hata ayıklama](../debugger/debugging-managed-code.md)|Yönetilen kodun hata ayıklamanın nasıl yapılacağını açıklar C#(Visual, F#Visual Basic, C++ve/CLI).|
+|[Yerel kodda hata ayıklama](../debugger/debugging-native-code.md)|Farklı türdeki yerel C++ uygulamalardaki hataları nasıl ayıklayacağınız açıklanmaktadır.|
+|[GPU kodunda hata ayıklama](../debugger/debugging-gpu-code.md)|Grafik işleme birimi ( C++ GPU) üzerinde çalışan kodun nasıl ayıklanılacağını açıklar.|
+|[Grafik Tanılama (DirectX grafik hatalarını ayıklama)](/visualstudio/debugger/graphics/visual-studio-graphics-diagnostics)|DirectX grafiklerinin nasıl ayıklanılacağını açıklar.|
+|[ASP.NET uygulamalarında hata ayıklama](../debugger/how-to-enable-debugging-for-aspnet-applications.md)|ASP.NET uygulamalarında hata ayıklamayı açıklar.|
+|[Python kodunda hata ayıklama](../python/tutorial-working-with-python-in-visual-studio-step-04-debugging.md)|Python kodu hata ayıklamanın nasıl yapılacağını açıklar|
+|[JavaScript ve TypeScript uygulamalarında hata ayıklama](/javascript/debug-nodejs.md)|JavaScript, TypeScript ve Node. js uygulamalarında hata ayıklamayı açıklar|
+|[Web uygulamalarında hata ayıklama](../debugger/debugging-web-applications.md)|Web uygulamalarında ve betikte hata ayıklamanın nasıl yapılacağını açıklar.|
+|[WCF hizmetlerinde hata ayıklama](../debugger/debugging-wcf-services.md)|Windows Communication Foundation hizmetlerinde hata ayıklamanın nasıl yapılacağını açıklar.|

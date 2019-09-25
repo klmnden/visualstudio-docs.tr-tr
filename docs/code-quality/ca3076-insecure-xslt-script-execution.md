@@ -7,45 +7,45 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f98b022aef49a4d98ad4864793aa55732f8de6c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1c6c5df0109a8cff3cefcc308ea27077ef0fbe03
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62541096"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71237075"
 ---
 # <a name="ca3076-insecure-xslt-script-execution"></a>CA3076: Güvensiz XSLT Betiği Yürütme
 
 |||
 |-|-|
-|TypeName|InsecureXSLTScriptExecution|
+|TypeName|Insecurexsltscriptexecution|
 |CheckId|CA3076|
 |Kategori|Microsoft.Security|
-|Yeni Değişiklik|Bozucu olmayan|
+|Son değişiklik|Kırılmamış|
 
 ## <a name="cause"></a>Sebep
 
-Genişletilebilir Stil Sayfası Dil Dönüşümleri (XSLT) .NET uygulamalarında endpoınt çalışırsa, saldırganların hizmet reddi ve siteler arası lideri, hassas bilgileri ifşa güvenilmeyen URI başvuruları işlemci çözebilir saldırıları. Daha fazla bilgi için [XSLT güvenlik Considerations(.NET Guide)](/dotnet/standard/data/xml/xslt-security-considerations).
+.NET uygulamalarında Genişletilebilir Stil sayfaları Dil Dönüşümleri (XSLT) çalıştırıyorsanız, işlemci güvenilir bilgileri saldırganlar 'e açığa çıkarabilecek güvenilmeyen URI başvurularını çözümleyebilir, hizmet reddi ve siteler arası saldırıları. Daha fazla bilgi için bkz. [XSLT güvenlik konuları (. net Guide)](/dotnet/standard/data/xml/xslt-security-considerations).
 
 ## <a name="rule-description"></a>Kural açıklaması
 
-**XSLT** XML verileri dönüştürmeye ilişkin bir World Wide Web Consortium (W3C) standart'tır. XSLT genellikle diğer biçimlere HTML, sabit uzunluklu metin, virgülle ayrılmış metin ya da farklı bir XML biçimi gibi XML verileri dönüştürmek için stil sayfaları yazmak için kullanılır. Varsayılan olarak yasaklanmış olsa da, projeniz için etkinleştirmeyi tercih edebilirsiniz.
+**XSLT** , XML verilerini dönüştürmek için bir World WIDE Web KONSORSIYUMU (W3C) standardıdır. XSLT genellikle, XML verilerini HTML, sabit uzunlukta metin, virgülle ayrılmış metin veya farklı bir XML biçimi gibi diğer biçimlere dönüştürmek üzere stil sayfaları yazmak için kullanılır. Varsayılan olarak yasaklanmış olmasına karşın, bunu projeniz için etkinleştirmeyi tercih edebilirsiniz.
 
-Tetikleyiciler olduğunda bu kural, değil ifşa eden bir saldırı yüzeyini emin olmak için XslCompiledTransform.<xref:System.Xml.Xsl.XslCompiledTransform.Load%2A> güvenli olmayan birleşim örneğini alır <xref:System.Xml.Xsl.XsltSettings> ve <xref:System.Xml.XmlResolver>, kötü amaçlı betik işlemesini sağlar.
+Bir saldırı yüzeyi açığa çıkarmadığından emin olmak için, bu kural XslCompiledTransform her seferinde tetiklenir.<xref:System.Xml.Xsl.XslCompiledTransform.Load%2A> , <xref:System.Xml.Xsl.XsltSettings> ve<xref:System.Xml.XmlResolver>kötü amaçlı betik işlemeye izin veren güvenli olmayan birleşim örneklerini alır.
 
-## <a name="how-to-fix-violations"></a>İhlaller nasıl düzeltilir?
+## <a name="how-to-fix-violations"></a>İhlalleri çözme
 
-- Güvenli olmayan XsltSettings bağımsız değişken XsltSettings ile değiştirin.<xref:System.Xml.Xsl.XsltSettings.Default%2A> veya bir örnekle, belge işlev ve betik yürütme devre dışı bıraktı.
+- Güvenli olmayan XsltSettings bağımsız değişkenini XsltSettings ile değiştirin.<xref:System.Xml.Xsl.XsltSettings.Default%2A> ya da belge işlev ve betik yürütmeyi devre dışı bırakmış bir örnekle.
 
-- Değiştirin <xref:System.Xml.XmlResolver> bağımsız değişkeni null ile veya bir <xref:System.Xml.XmlSecureResolver> örneği.
+- Bağımsız değişkeni null veya bir <xref:System.Xml.XmlSecureResolver> örnekle değiştirin. <xref:System.Xml.XmlResolver>
 
-## <a name="when-to-suppress-warnings"></a>Uyarılar bastırıldığında
+## <a name="when-to-suppress-warnings"></a>Uyarıların ne zaman bastırılamıyor
 
-Giriş güvenilir bir kaynaktan olduğu biliniyorsa emin olmadığınız sürece, bir kuraldan bu uyarıyı bastırmayın.
+Girişin güvenilen bir kaynaktan geldiğinden emin olmadığınız için, bu uyarıdan bir kuralı engellemez.
 
 ## <a name="pseudo-code-examples"></a>Sözde kod örnekleri
 
-### <a name="violation-that-uses-xsltsettingstrustedxslt"></a>XsltSettings.TrustedXslt kullanan ihlali
+### <a name="violation-that-uses-xsltsettingstrustedxslt"></a>XsltSettings. TrustedXslt kullanan ihlal
 
 ```csharp
 using System.Xml;
@@ -66,7 +66,7 @@ namespace TestNamespace
 }
 ```
 
-### <a name="solution-that-uses-xsltsettingsdefault"></a>XsltSettings.Default kullanan bir çözüm
+### <a name="solution-that-uses-xsltsettingsdefault"></a>XsltSettings. Default kullanan çözüm
 
 ```csharp
 using System.Xml;
@@ -87,7 +87,7 @@ namespace TestNamespace
 }
 ```
 
-### <a name="violationmdashdocument-function-and-script-execution-not-disabled"></a>İhlali&mdash;belge işlev ve betik yürütme devre dışı
+### <a name="violationmdashdocument-function-and-script-execution-not-disabled"></a>İhlalin&mdash;belge işlevi ve betiği yürütme devre dışı değil
 
 ```csharp
 using System.Xml;
@@ -112,7 +112,7 @@ namespace TestNamespace
 }
 ```
 
-### <a name="solutionmdashdisable-document-function-and-script-execution"></a>Çözüm&mdash;belge işlev ve betik yürütme devre dışı bırak
+### <a name="solutionmdashdisable-document-function-and-script-execution"></a>Çözüm&mdash;belge işlevini ve betik yürütmeyi devre dışı bırak
 
 ```csharp
 using System.Xml;
@@ -141,4 +141,4 @@ namespace TestNamespace
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [XSLT güvenlik konuları (.NET Kılavuzu)](/dotnet/standard/data/xml/xslt-security-considerations)
+- [XSLT güvenlik konuları (. NET Kılavuzu)](/dotnet/standard/data/xml/xslt-security-considerations)

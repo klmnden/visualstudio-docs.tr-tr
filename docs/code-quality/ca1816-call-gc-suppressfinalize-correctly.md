@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c14f9ed8803c02d1570ac2a3dee82fbdfca5f01
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3fdd20df37586e50b5236872f1d84de48d08c87a
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62796786"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71233526"
 ---
 # <a name="ca1816-call-gcsuppressfinalize-correctly"></a>CA1816: GC.SuppressFinalize'ı doğru çağırın
 
@@ -30,58 +30,58 @@ ms.locfileid: "62796786"
 |-|-|
 |TypeName|CallGCSuppressFinalizeCorrectly|
 |CheckId|CA1816|
-|Kategori|Microsoft. Kullanım|
-|Yeni Değişiklik|Bozucu olmayan|
+|Kategori|MICROSOFT. Kullanım|
+|Son değişiklik|Kırılmamış|
 
 ## <a name="cause"></a>Sebep
 
-Bu kural ihlalleri neden olabilir:
+Bu kuralın ihlalleri şunlar olabilir:
 
-- Uygulaması olan bir yöntemin <xref:System.IDisposable.Dispose%2A?displayProperty=nameWithType> ve çağrı değil <xref:System.GC.SuppressFinalize%2A?displayProperty=nameWithType>.
+- Bir uygulama <xref:System.IDisposable.Dispose%2A?displayProperty=nameWithType> olan ve çağırımeyen <xref:System.GC.SuppressFinalize%2A?displayProperty=nameWithType>bir yöntem.
 
-- Uygulaması olmayan bir yöntem <xref:System.IDisposable.Dispose%2A?displayProperty=nameWithType> ve çağrıları <xref:System.GC.SuppressFinalize%2A?displayProperty=nameWithType>.
+- <xref:System.IDisposable.Dispose%2A?displayProperty=nameWithType> Ve çağrısı<xref:System.GC.SuppressFinalize%2A?displayProperty=nameWithType>olmayan bir yöntem.
 
-- Çağıran bir yöntem <xref:System.GC.SuppressFinalize%2A?displayProperty=nameWithType> ve dışında bir şey geçirir [bu (C#)](/dotnet/csharp/language-reference/keywords/this) veya [bana (Visual Basic)](/dotnet/visual-basic/programming-guide/program-structure/me-my-mybase-and-myclass#me).
+- [BuC#()](/dotnet/csharp/language-reference/keywords/this) veya <xref:System.GC.SuppressFinalize%2A?displayProperty=nameWithType> [ben (Visual Basic)](/dotnet/visual-basic/programming-guide/program-structure/me-my-mybase-and-myclass#me)dışında bir öğe çağıran ve ileten bir yöntem.
 
 ## <a name="rule-description"></a>Kural açıklaması
 
-<xref:System.IDisposable.Dispose%2A?displayProperty=nameWithType> Yöntemi nesnenin çöp toplama için kullanılabilir hale gelmeden önce herhangi bir zamanda kaynakları serbest kullanıcılar olanak sağlar. Varsa <xref:System.IDisposable.Dispose%2A?displayProperty=nameWithType> yöntemi çağrıldığında, bu nesnenin kaynakları serbest bırakır. Bu, sonlandırma gereksiz kılar. <xref:System.IDisposable.Dispose%2A?displayProperty=nameWithType> çağırmalıdır <xref:System.GC.SuppressFinalize%2A?displayProperty=nameWithType> böylece nesnenin Sonlandırıcısı çöp toplayıcı çağrısı değil.
+Yöntemi <xref:System.IDisposable.Dispose%2A?displayProperty=nameWithType> , kullanıcıların nesne çöp toplama için kullanılabilir hale gelmeden önce kaynakları serbest bırakmasına olanak tanır. <xref:System.IDisposable.Dispose%2A?displayProperty=nameWithType> Yöntemi çağrılırsa, nesnesinin kaynaklarını boşaltır. Bu, sonlandırılmasını gereksiz hale getirir. <xref:System.IDisposable.Dispose%2A?displayProperty=nameWithType><xref:System.GC.SuppressFinalize%2A?displayProperty=nameWithType> çöp toplayıcı nesnenin sonlandırıcısını çağırmaması için çağrılmalıdır.
 
-Yeniden uygulayın türetilen türlerle sonlandırıcılar önlemek için <xref:System.IDisposable> ve onu çağırmak için korumasız türleri sonlandırıcılar olmadan hala çağırmalıdır <xref:System.GC.SuppressFinalize%2A?displayProperty=nameWithType>.
+Sonlandırıcılarla türetilmiş türlerin yeniden uygulanması <xref:System.IDisposable> ve çağırmasını engellemek için, sonlandırıcılar olmayan korumasız türler yine de çağırmalıdır. <xref:System.GC.SuppressFinalize%2A?displayProperty=nameWithType>
 
-## <a name="how-to-fix-violations"></a>İhlaller nasıl düzeltilir?
+## <a name="how-to-fix-violations"></a>İhlalleri çözme
 
-Bu kural ihlalini düzeltmek için:
+Bu kuralın ihlalini onarmak için:
 
-- Yöntem uygulaması ise <xref:System.IDisposable.Dispose%2A>, bir çağrı ekleyin <xref:System.GC.SuppressFinalize%2A?displayProperty=nameWithType>.
+- Yöntemi bir uygulama <xref:System.IDisposable.Dispose%2A>ise, öğesine <xref:System.GC.SuppressFinalize%2A?displayProperty=nameWithType>bir çağrı ekleyin.
 
-- Yöntem uygulaması değilse <xref:System.IDisposable.Dispose%2A>, çağrısını kaldırın ya da <xref:System.GC.SuppressFinalize%2A?displayProperty=nameWithType> veya türün taşıma <xref:System.IDisposable.Dispose%2A> uygulaması.
+- Yöntemi bir uygulama <xref:System.IDisposable.Dispose%2A>değilse, <xref:System.GC.SuppressFinalize%2A?displayProperty=nameWithType> çağrısını kaldırın ya da türün <xref:System.IDisposable.Dispose%2A> uygulamasına taşıyın.
 
-- Tüm çağrıları değiştirme <xref:System.GC.SuppressFinalize%2A?displayProperty=nameWithType> geçirilecek [bu (C#)](/dotnet/csharp/language-reference/keywords/this) veya [bana (Visual Basic)](/dotnet/visual-basic/programming-guide/program-structure/me-my-mybase-and-myclass#me).
+- [ThisC#()](/dotnet/csharp/language-reference/keywords/this) veya <xref:System.GC.SuppressFinalize%2A?displayProperty=nameWithType> [Me (Visual Basic)](/dotnet/visual-basic/programming-guide/program-structure/me-my-mybase-and-myclass#me)iletmek için tüm çağrıları değiştirin.
 
-## <a name="when-to-suppress-warnings"></a>Uyarılar bastırıldığında
+## <a name="when-to-suppress-warnings"></a>Uyarıların ne zaman bastırılamıyor
 
-Kasıtlı olarak kullanıyorsanız, yalnızca bu kuraldan bir uyarıyı bastırmak <xref:System.GC.SuppressFinalize%2A?displayProperty=nameWithType> diğer nesnelerin ömrünü denetlemek için. Uygulaması, bu kuraldan bir uyarıyı bastırmak yoksa <xref:System.IDisposable.Dispose%2A> çağrısı değil <xref:System.GC.SuppressFinalize%2A?displayProperty=nameWithType>. Bu durumda, sonlandırma bastırmak başarısız olan performansı düşürür ve hiçbir avantaj sağlar.
+Yalnızca diğer nesnelerin ömrünü denetlemek için kasıtlı olarak kullanıyorsanız <xref:System.GC.SuppressFinalize%2A?displayProperty=nameWithType> , bu kuraldan bir uyarı gizleyin. Bir uygulama <xref:System.IDisposable.Dispose%2A> çağrımazsa <xref:System.GC.SuppressFinalize%2A?displayProperty=nameWithType>bu kuraldan bir uyarıyı bastırmayın. Bu durumda, sonlandırmadan performansı düşürür ve hiçbir avantaj sağlamaz.
 
 ## <a name="example-that-violates-ca1816"></a>CA1816 ihlal eden örnek
 
-Bu kod, çağıran bir yöntemi gösterir <xref:System.GC.SuppressFinalize%2A?displayProperty=nameWithType>, ancak geçmiyor [bu (C#)](/dotnet/csharp/language-reference/keywords/this) veya [bana (Visual Basic)](/dotnet/visual-basic/programming-guide/program-structure/me-my-mybase-and-myclass#me). Sonuç olarak, bu kod CA1816 kuralı ihlal ediyor.
+Bu kod, çağıran <xref:System.GC.SuppressFinalize%2A?displayProperty=nameWithType>bir yöntemi gösterir, ancak [bunu (C#)](/dotnet/csharp/language-reference/keywords/this) veya [beni (Visual Basic)](/dotnet/visual-basic/programming-guide/program-structure/me-my-mybase-and-myclass#me)geçirmez. Sonuç olarak, bu kod CA1816 kuralını ihlal ediyor.
 
 [!code-vb[FxCop.Usage.CallGCSuppressFinalizeCorrectly#1](../code-quality/codesnippet/VisualBasic/ca1816-call-gc-suppressfinalize-correctly_1.vb)]
 [!code-csharp[FxCop.Usage.CallGCSuppressFinalizeCorrectly#1](../code-quality/codesnippet/CSharp/ca1816-call-gc-suppressfinalize-correctly_1.cs)]
 
-## <a name="example-that-satisfies-ca1816"></a>CA1816 karşılayan örneği
+## <a name="example-that-satisfies-ca1816"></a>CA1816 karşılayan örnek
 
-Bu örnek bir yöntem çağrıları, doğru bir şekilde gösterir <xref:System.GC.SuppressFinalize%2A?displayProperty=nameWithType> geçirerek [bu (C#)](/dotnet/csharp/language-reference/keywords/this) veya [bana (Visual Basic)](/dotnet/visual-basic/programming-guide/program-structure/me-my-mybase-and-myclass#me).
+Bu örnek, <xref:System.GC.SuppressFinalize%2A?displayProperty=nameWithType> [Bu (C#)](/dotnet/csharp/language-reference/keywords/this) veya [Me (Visual Basic)](/dotnet/visual-basic/programming-guide/program-structure/me-my-mybase-and-myclass#me)geçirerek doğru şekilde çağıran bir yöntemi gösterir.
 
 [!code-vb[FxCop.Usage.CallGCSuppressFinalizeCorrectly2#1](../code-quality/codesnippet/VisualBasic/ca1816-call-gc-suppressfinalize-correctly_2.vb)]
 [!code-csharp[FxCop.Usage.CallGCSuppressFinalizeCorrectly2#1](../code-quality/codesnippet/CSharp/ca1816-call-gc-suppressfinalize-correctly_2.cs)]
 
-## <a name="related-rules"></a>İlgili kuralları
+## <a name="related-rules"></a>İlgili kurallar
 
-- [CA2215: Atma yöntemleri taban sınıf atmayı çağırmalıdır](../code-quality/ca2215-dispose-methods-should-call-base-class-dispose.md)
-- [CA2216: Atılabilir türler sonlandırıcıyı bildirmelidir](../code-quality/ca2216-disposable-types-should-declare-finalizer.md)
+- [CA2215 Dispose yöntemleri taban sınıf atmayı çağırmalıdır](../code-quality/ca2215-dispose-methods-should-call-base-class-dispose.md)
+- [CA2216 Atılabilir türler sonlandırıcıyı bildirmelidir](../code-quality/ca2216-disposable-types-should-declare-finalizer.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [Dispose deseni](/dotnet/standard/design-guidelines/dispose-pattern)
+- [Dispose kriteri](/dotnet/standard/design-guidelines/dispose-pattern)

@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl yapılır: Bir ActiveX denetiminde hata ayıklama | Microsoft Docs'
+title: 'Nasıl yapılır: ActiveX denetiminde hata ayıklama | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -24,42 +24,42 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c76167468d9eb6fbe93c3bef0c4ae8c15634fc5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c1d02cb4d581a7234ad2dd950fa51f46a5d128b2
+ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62894436"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71211089"
 ---
-# <a name="how-to-debug-an-activex-control"></a>Nasıl yapılır: Bir ActiveX denetiminde hata ayıklama
+# <a name="how-to-debug-an-activex-control"></a>Nasıl yapılır: ActiveX Denetiminde Hata Ayıklama
 
 > [!NOTE]
-> Gördüğünüz iletişim kutuları ve menü komutları, etkin ayarlarınıza ve ürün sürümüne bağlı olarak Yardım menüsünde açıklanana göre farklılık gösterebilir. Ayarlarınızı değiştirmek için Araçlar menüsünden içeri ve dışarı aktarma ayarları seçin. Daha fazla bilgi için [ayarlarına](../ide/environment-settings.md#reset-settings).
+> Gördüğünüz iletişim kutuları ve menü komutları, etkin ayarlarınıza ve ürün sürümüne bağlı olarak Yardım menüsünde açıklanana göre farklılık gösterebilir. Ayarlarınızı değiştirmek için Araçlar menüsünden Içeri ve dışarı aktarma ayarları ' nı seçin. Daha fazla bilgi için [ayarlarına](../ide/environment-settings.md#reset-settings).
 
-ActiveX denetimi hata ayıklamak için bir kapsayıcı (çalıştırmak denetimi için yürütülebilir) belirtmeniz gerekir.
+ActiveX denetimi hata ayıklaması yapmak için denetimin içinde çalışacağı bir kapsayıcı (yürütülebilir) belirtmeniz gerekir.
 
 ## <a name="to-specify-a-container-for-the-debug-session"></a>Hata ayıklama oturumu için bir kapsayıcı belirtmek için
 
 1. Çözüm Gezgini'nde projeyi seçin.
 
-2. Gelen **görünümü** menüsünde seçin **özellik sayfaları**.
+2. **Görünüm** menüsünde **Özellik sayfaları**' nı seçin.
 
-3. İçinde **proje özellik sayfaları** açık iletişim kutusunu **yapılandırma özellikleri** klasörü ve select **hata ayıklama**.
+3. **Proje özellik sayfaları** iletişim kutusunda, **yapılandırma özellikleri** klasörünü açın ve **hata ayıklama**öğesini seçin.
 
-4. Altında **hata ayıklama** kategori bulun **komut** özelliği.
+4. **Hata ayıklama** kategorisi altında, **komut** özelliğini bulun.
 
-5. Kapsayıcı için yol adı belirtin. Örneğin, C:\Program Files\Internet Explorer\IEXPLORE. EXE.
+5. Kapsayıcının yol adını belirtin. Örneğin, C:\Program Files\Explorer\IEXPLORE. EXE.
 
-6. Internet Explorer kapsayıcısı olarak belirtin ve etkin Desktop uygulamasını kullanıyorsanız, yazın `/new` içinde **komut satırı bağımsız değişkenlerini** kutusu.
+6. Kapsayıcı olarak Internet Explorer 'ı belirtirseniz ve etkin masaüstü kullanıyorsanız, **komut bağımsız değişkenleri** kutusuna yazın `/new` .
 
 7. **Tamam**'ı tıklatın.
 
-     Bir kapsayıcıda belirtmezseniz **proje özellik sayfaları** iletişim kutusunda belirtebilirsiniz kapsayıcı hatalarını ayıklamaya başladığınızda. Hata ayıklamayı başlatmak için bir yürütme komutu seçtiğinizde [oturumu için yürütülebilir hata ayıklama iletişim kutusu](../debugger/executable-for-debugging-session-dialog-box.md) görünür. İletişim kutusundaki kapsayıcı yol adını belirtin.
+     **Proje özellik sayfaları** iletişim kutusunda bir kapsayıcı belirtmezseniz, hata ayıklamaya başladığınızda kapsayıcıyı belirtebilirsiniz. Hata ayıklamayı başlatmak için bir yürütme komutu seçtiğinizde, [hata ayıklama oturumu Için yürütülebilir Iletişim kutusu](../debugger/executable-for-debugging-session-dialog-box.md) görüntülenir. İletişim kutusunda kapsayıcının yol adını belirtin.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
 - [ActiveX Denetimleri](/cpp/mfc/activex-controls)
 - [Test Kapsayıcısı ile Özellikleri ve Olayları Test Etme](/cpp/mfc/testing-properties-and-events-with-test-container)
 - [COM ve ActiveX Hata Ayıklaması](../debugger/com-and-activex-debugging.md)
-- [Visual Studio’da hata ayıklama](../debugger/index.md)
+- [Visual Studio’da hata ayıklama](../debugger/index.yml)
 - [Hata ayıklayıcıya ilk bakış](../debugger/debugger-feature-tour.md)

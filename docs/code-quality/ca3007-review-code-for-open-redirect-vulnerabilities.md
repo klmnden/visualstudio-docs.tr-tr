@@ -10,55 +10,55 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: e60d0fad1262138b57f079485bc7455e55c7ec25
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: 0226c0e2e66a6543b81cd8ee674a743766b65f3e
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65841340"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71237270"
 ---
 # <a name="ca3007-review-code-for-open-redirect-vulnerabilities"></a>CA3007: Açık yeniden yönlendirme güvenlik açıkları için inceleme kodu
 
 |||
 |-|-|
-|TypeName|ReviewCodeForOpenRedirectVulnerabilities|
+|TypeName|Belgekodu Koduforopenredirectgüvenlik açıkları|
 |CheckId|CA3007|
 |Kategori|Microsoft.Security|
-|Yeni Değişiklik|Bozucu olmayan|
+|Son değişiklik|Kırılmamış|
 
 ## <a name="cause"></a>Sebep
 
-Potansiyel olarak güvenilmeyen HTTP istek girişi HTTP yanıt yeniden yönlendirmesi ulaşır.
+Güvenilir olmayan HTTP isteği girişi bir HTTP yanıtı yönlendirmeye ulaşır.
 
 ## <a name="rule-description"></a>Kural açıklaması
 
-Güvenilmeyen girdisiyle çalışırken, açık yeniden yönlendirme güvenlik açıklarını gösteren oluşturduğunu unutmayın. Bir saldırgan, Web sitenizi meşru bir URL görünümünü sağlar, ancak duymayan bir ziyaretçi için bir kimlik avı veya diğer kötü amaçlı Web sayfası yeniden yönlendirme için kullanılacak bir açık yeniden yönlendirme güvenlik açığından yararlanabilir.
+Güvenilmeyen girişle çalışırken, açık yeniden yönlendirme güvenlik açıklarına karşı bir sorun yaşının. Saldırgan, meşru bir URL 'nin görünümüne izin vermek için Web sitesini kullanmak üzere açık bir yeniden yönlendirme güvenlik açığıyla yararlanabilir, ancak şüphelenmeyecek bir ziyaretçi kimlik avına veya başka bir kötü amaçlı Web sayfasına yönlendirebilir.
 
-Bu kural, bir HTTP yeniden yönlendirme URL'si ulaşmasını HTTP isteklerinden alınan giriş bulmayı dener.
-
-> [!NOTE]
-> Bu kural, derlemeler arasında veri izleyemezsiniz. Örneğin, bir derleme HTTP istek girişi okur ve bir HTTP yeniden yönlendirme ile yanıt veren başka bir derlemeye geçirir, bu kural bir uyarı üreten olmaz.
+Bu kural http isteklerinden gelen ve HTTP yeniden yönlendirme URL 'sine ulaşan giriş bulmaya çalışır.
 
 > [!NOTE]
-> Derinlikte bu kural veri akışı yöntem çağrıları arasında çözümler için yapılandırılabilir bir sınır yoktur. Bkz: [Çözümleyicisi yapılandırma](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis) sınırı bir EditorConfig dosyasında nasıl yapılandıracağınızı öğrenmek için.
+> Bu kural derlemeler genelinde verileri izleyemez. Örneğin, bir derleme HTTP istek girişini okuduğunda ve bunu bir HTTP yeniden yönlendirme ile yanıt veren başka bir derlemeye geçirirse, bu kural bir uyarı oluşturmaz.
 
-## <a name="how-to-fix-violations"></a>İhlaller nasıl düzeltilir?
+> [!NOTE]
+> Bu kuralın, yöntem çağrılarında veri akışını ne kadar analiz edip bu kurala ilişkin yapılandırılabilir bir sınır vardır. Bir EditorConfig dosyasında sınırı yapılandırma hakkında bilgi için bkz. [çözümleyici yapılandırması](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis) .
 
-Açık yeniden yönlendirme güvenlik açıklarını düzeltme için aşağıdaki yaklaşımlardan şunlardır:
+## <a name="how-to-fix-violations"></a>İhlalleri çözme
 
-- Yeniden yönlendirmeleri başlatmak kullanıcılara izin verme.
-- Kullanıcılar bir yeniden yönlendirme senaryosunda herhangi bir bölümünü URL'yi belirtmek izin verme.
-- Yeniden yönlendirmeleri, bir önceden tanımlanmış "izin" URL'lerin listesini sınırlayın.
-- Doğrulama URL'lerini yönlendirmek.
-- Varsa bir bildirim sayfası kullandığınızda Kullanıcılar sitenizi uzağa Rehbere yönlendiriliyorsunuz göz önünde bulundurun.
+Açık yeniden yönlendirme güvenlik açıklarını gidermeye yönelik bazı yaklaşımlar şunlardır:
 
-## <a name="when-to-suppress-warnings"></a>Uyarılar bastırıldığında
+- Kullanıcıların yeniden yönlendirmeleri başlatmasına izin verme.
+- Kullanıcıların bir yeniden yönlendirme senaryosunda URL 'nin herhangi bir kısmını belirtmenize izin vermez.
+- Yeniden yönlendirmeleri, URL 'Lerin önceden tanımlanmış bir "izin verilenler listesi" olarak kısıtlar.
+- Yeniden yönlendirme URL 'Lerini doğrulayın.
+- Uygulanabiliyorsa, kullanıcılar sitenizden yeniden yönlendirildiğinde bir vazgeçme sayfası kullanın.
 
-Hedeflenen URL'lere sınırlanması giriş doğruladınız biliyorsanız, bu uyarının gösterilmemesi uygundur.
+## <a name="when-to-suppress-warnings"></a>Uyarıların ne zaman bastırılamıyor
+
+Girişin amaçlanan URL 'Lerle sınırlı olduğunu bildiğinizi biliyorsanız, bu uyarıyı bastırmak de normaldir.
 
 ## <a name="pseudo-code-examples"></a>Sözde kod örnekleri
 
-### <a name="violation"></a>İhlali
+### <a name="violation"></a>Edildiği
 
 ```csharp
 using System;

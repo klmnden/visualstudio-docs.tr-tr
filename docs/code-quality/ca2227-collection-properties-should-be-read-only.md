@@ -18,12 +18,12 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a6ced277aa442450418ce55f4e1db56ad5d8af1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3d097a67c9a62a6847ff6ab0bb882257c082ca6f
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62806543"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71231309"
 ---
 # <a name="ca2227-collection-properties-should-be-read-only"></a>CA2227: Koleksiyon özellikleri salt okunur olmalıdır
 
@@ -31,37 +31,37 @@ ms.locfileid: "62806543"
 |-|-|
 |TypeName|CollectionPropertiesShouldBeReadOnly|
 |CheckId|CA2227|
-|Kategori|Microsoft.Usage|
-|Yeni Değişiklik|Yeni|
+|Kategori|Microsoft. Usage|
+|Son değişiklik|Yeni|
 
 ## <a name="cause"></a>Sebep
 
-Dışarıdan görünen, yazılabilir bir özellik uygulayan bir tür olan <xref:System.Collections.ICollection?displayProperty=fullName>. Bu kural, diziler, dizin oluşturucular (Özellikler) 'Öğesini' adı ile ve izin kümeleri yok sayar.
+Dışarıdan görülebilen yazılabilir bir özellik, uygulayan <xref:System.Collections.ICollection?displayProperty=fullName>bir türdür. Bu kural dizileri, Dizin oluşturucular (adı ' Item ' olan Özellikler) ve izin kümelerini yoksayar.
 
 ## <a name="rule-description"></a>Kural açıklaması
 
-Yazılabilir koleksiyon özelliği kullanıcının koleksiyonun tamamen farklı bir koleksiyon ile değiştirin izin verir. Salt okunur özelliği değiştirilmesini durdurur ancak hala ayarlamak tek tek üyeleri sağlar. Bir hedef koleksiyonunu değiştirme varsa, tercih edilen tasarım deseni tüm öğeleri koleksiyondan kaldırmak için bir yöntem ve koleksiyonu yeniden doldurmak için bir yöntem eklemektir. Bkz: <xref:System.Collections.ArrayList.Clear%2A> ve <xref:System.Collections.ArrayList.AddRange%2A> yöntemlerinin <xref:System.Collections.ArrayList?displayProperty=fullName> sınıfı bu düzeni gösteren bir örnek.
+Yazılabilir bir koleksiyon özelliği, kullanıcının koleksiyonu tamamen farklı bir koleksiyonla değiştirmesine izin verir. Salt okunurdur özelliği, koleksiyonun değiştirilmesini engeller, ancak yine de tekil üyelerin ayarlamaya izin verir. Koleksiyonu değiştirmek bir hedeftir, tercih edilen tasarım alanı, koleksiyondaki tüm öğeleri kaldırmak için bir yöntem ve koleksiyonu yeniden doldurmak için bir yöntem dahil olmaktır. Bu düzenin bir <xref:System.Collections.ArrayList.AddRange%2A> örneği için <xref:System.Collections.ArrayList?displayProperty=fullName> sınıfının veyöntemlerinebakın.<xref:System.Collections.ArrayList.Clear%2A>
 
-İkili hem XML serileştirme koleksiyonlar salt okunur özelliklerini destekler. <xref:System.Xml.Serialization.XmlSerializer?displayProperty=fullName> Sınıfında uygulayan türler için belirli gereksinimler <xref:System.Collections.ICollection> ve <xref:System.Collections.IEnumerable?displayProperty=fullName> seri hale getirilebilir olması.
+Hem ikili hem de XML serileştirme koleksiyonları olan salt yazılır özellikleri destekler. Sınıfı <xref:System.Xml.Serialization.XmlSerializer?displayProperty=fullName> , <xref:System.Collections.ICollection> ve<xref:System.Collections.IEnumerable?displayProperty=fullName> seri hale getirilebilir olması için uygulayan türler için özel gereksinimlere sahiptir.
 
-## <a name="how-to-fix-violations"></a>İhlaller nasıl düzeltilir?
+## <a name="how-to-fix-violations"></a>İhlalleri çözme
 
-Bu kural ihlalini düzeltmek için özelliği salt okunur yapma. Tasarım gerektiriyorsa, temizlemek ve koleksiyon derlenmeye yöntemleri ekleyin.
+Bu kuralın ihlalini onarmak için, özelliği salt okunurdur yapın. Tasarım için gerekiyorsa, koleksiyonu temizlemek ve yeniden doldurmak için yöntemler ekleyin.
 
-## <a name="when-to-suppress-warnings"></a>Uyarılar bastırıldığında
+## <a name="when-to-suppress-warnings"></a>Uyarıların ne zaman bastırılamıyor
 
-Özelliğin parçası ise uyarıyı gözardı edebileceğini bir [veri aktarım nesnesini (DTO)](/previous-versions/msp-n-p/ff649585(v=pandp.10)) sınıfı.
+Özellik [veri aktarımı nesne (DTO)](/previous-versions/msp-n-p/ff649585(v=pandp.10)) sınıfının bir parçasıysa, bu uyarıyı gizleyebilirsiniz.
 
-Aksi takdirde, bu kuraldan uyarıları bastırmayın.
+Aksi takdirde, bu kuraldan gelen uyarıları engellemez.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, bir yazılabilir koleksiyon özelliğini türüyle gösterir ve koleksiyonunu nasıl doğrudan değiştirilebilir gösterir. Ayrıca, bu salt okunur koleksiyon özelliğini kullanarak değiştirme tercih edilen şekilde gösterir `Clear` ve `AddRange` yöntemleri.
+Aşağıdaki örnek, yazılabilir bir koleksiyon özelliğine sahip bir tür gösterir ve koleksiyonun nasıl doğrudan değiştirileceğini gösterir. Ayrıca, ve `Clear` `AddRange` yöntemlerini kullanarak salt okunurdur bir koleksiyon özelliğinin değiştirilmesi için tercih edilen yöntemi gösterir.
 
 [!code-csharp[FxCop.Usage.PropertiesReturningCollections#1](../code-quality/codesnippet/CSharp/ca2227-collection-properties-should-be-read-only_1.cs)]
 [!code-vb[FxCop.Usage.PropertiesReturningCollections#1](../code-quality/codesnippet/VisualBasic/ca2227-collection-properties-should-be-read-only_1.vb)]
 [!code-cpp[FxCop.Usage.PropertiesReturningCollections#1](../code-quality/codesnippet/CPP/ca2227-collection-properties-should-be-read-only_1.cpp)]
 
-## <a name="related-rules"></a>İlgili kuralları
+## <a name="related-rules"></a>İlgili kurallar
 
-- [CA1819: Özellikler diziler döndürmemelidir](../code-quality/ca1819-properties-should-not-return-arrays.md)
+- [CA1819 Özellikler diziler döndürmemelidir](../code-quality/ca1819-properties-should-not-return-arrays.md)

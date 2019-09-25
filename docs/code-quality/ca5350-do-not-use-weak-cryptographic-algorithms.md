@@ -8,54 +8,54 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bff3ccdb9120a1964f5c55e2d533406eedf01a88
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4aecd052e86a4c0366a1a43cb985ad50ab8862d8
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62540852"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71236960"
 ---
 # <a name="ca5350-do-not-use-weak-cryptographic-algorithms"></a>CA5350: Zayıf Şifreleme Algoritmaları Kullanmayın
 
 |||
 |-|-|
-|TypeName|DoNotUseWeakCryptographicAlgorithms|
+|TypeName|Donotuseweakcryptographicalgoritma|
 |CheckId|CA5350|
-|Kategori|Microsoft.Cryptography|
-|Yeni Değişiklik|Bozucu olmayan|
+|Kategori|Microsoft. Cryptography|
+|Son değişiklik|Kırılmamış|
 
 > [!NOTE]
-> Bu uyarı, Kasım 2015 tarihinde güncelleştirildiği.
+> Bu uyarı en son 2015 Kasım tarihinde güncelleştirildi.
 
 ## <a name="cause"></a>Sebep
 
-Şifreleme algoritmaları gibi <xref:System.Security.Cryptography.TripleDES> ve karma algoritmaları gibi <xref:System.Security.Cryptography.SHA1> ve <xref:System.Security.Cryptography.RIPEMD160> zayıf olarak değerlendirilir.
+Ve gibi şifreleme algoritmaları <xref:System.Security.Cryptography.TripleDES> ve gibi karma algoritmalar <xref:System.Security.Cryptography.SHA1> <xref:System.Security.Cryptography.RIPEMD160> zayıf kabul edilir.
 
-Bu şifreleme algoritmaları kadar güvenlik güvencesi daha modern ortaklarınıza olarak sağlamaz. Şifreleme karma algoritmaları <xref:System.Security.Cryptography.SHA1> ve <xref:System.Security.Cryptography.RIPEMD160> daha modern karma algoritmaları daha az çakışma Direnci sağlayın. Şifreleme algoritması <xref:System.Security.Cryptography.TripleDES> daha az güvenlik bitten daha modern şifreleme algoritmaları sağlar.
+Bu şifreleme algoritmaları, daha modern karşılıklarıyla çok güvenlik güvencesi sağlamaz. Daha modern karma <xref:System.Security.Cryptography.SHA1> algoritmalardan daha az çakışma <xref:System.Security.Cryptography.RIPEMD160> sağlayan şifreleme algoritmaları. Şifreleme algoritması <xref:System.Security.Cryptography.TripleDES> , daha fazla modern şifreleme algoritmalarından daha az sayıda güvenlik sağlar.
 
 ## <a name="rule-description"></a>Kural açıklaması
 
-Zayıf şifreleme algoritmalarını ve karma işlevler bir dizi nedenden ötürü bugün kullanılır, ancak bunlar bunların koruduğu verilerin gizliliği güvence altına almak için kullanılmamalıdır.
+Zayıf şifreleme algoritmaları ve karma işlevleri bugün çok sayıda nedenden dolayı kullanılır, ancak korudukları verilerin gizliliğini garanti etmek için kullanılmamalıdır.
 
-Kural tetikler 3DES, SHA1 veya RIPEMD160 algoritmaları oluşturur ve kod içinde bulduğunda kullanıcıya bir uyarı.
+Kural, koddaki 3DES, SHA1 veya RIPEMD160 algoritmaları bulduğunda tetiklenir ve kullanıcıya bir uyarı oluşturur.
 
-## <a name="how-to-fix-violations"></a>İhlaller nasıl düzeltilir?
+## <a name="how-to-fix-violations"></a>İhlalleri çözme
 
-Şifreleme bakımından daha güçlü seçenekleri kullanın:
+Şifreleme daha güçlü seçenekleri kullanın:
 
-- TripleDES şifreleme için <xref:System.Security.Cryptography.Aes> şifreleme.
+- TripleDES şifrelemesi için şifreleme kullanın <xref:System.Security.Cryptography.Aes> .
 
-- SHA1 veya RIPEMD160 karma işlevler için olanları içinde kullanmak [SHA-2](/windows/desktop/SecCrypto/hash-and-signature-algorithms) ailesi (örneğin <xref:System.Security.Cryptography.SHA512>, <xref:System.Security.Cryptography.SHA384>, <xref:System.Security.Cryptography.SHA256>).
+- SHA1 veya RIPEMD160 karma işlevleri için [SHA-2](/windows/desktop/SecCrypto/hash-and-signature-algorithms) ailesinden (ör. <xref:System.Security.Cryptography.SHA512>, <xref:System.Security.Cryptography.SHA384>, <xref:System.Security.Cryptography.SHA256>) olanları kullanın.
 
-## <a name="when-to-suppress-warnings"></a>Uyarılar bastırıldığında
+## <a name="when-to-suppress-warnings"></a>Uyarıların ne zaman bastırılamıyor
 
-Verileri için gereken koruma düzeyini güvenlik garantisi gerekmiyorsa, bu kuraldan bir uyarıyı gizler.
+Veriler için gereken koruma düzeyi bir güvenlik garantisi gerektirmiyorsa bu kuraldan bir uyarı gizleyin.
 
 ## <a name="pseudo-code-examples"></a>Sözde kod örnekleri
 
-Bu makalenin yazıldığı zaman itibariyle, aşağıdaki sözde kod örneği bu kural tarafından algılanan düzeni göstermektedir.
+Bu yazma sırasında, aşağıdaki sözde kod örneği, bu kural tarafından algılanan kalıbı gösterir.
 
-### <a name="sha-1-hashing-violation"></a>SHA-1 karma ihlali
+### <a name="sha-1-hashing-violation"></a>SHA-1 karma Ihlali
 
 ```csharp
 using System.Security.Cryptography;
@@ -63,7 +63,7 @@ using System.Security.Cryptography;
 var hashAlg = SHA1.Create();
 ```
 
-Çözüm:
+Çözümden
 
 ```csharp
 using System.Security.Cryptography;
@@ -71,7 +71,7 @@ using System.Security.Cryptography;
 var hashAlg = SHA256.Create();
 ```
 
-### <a name="ripemd160-hashing-violation"></a>RIPEMD160 Karma ihlali
+### <a name="ripemd160-hashing-violation"></a>RIPEMD160 karma Ihlali
 
 ```csharp
 using System.Security.Cryptography;
@@ -79,7 +79,7 @@ using System.Security.Cryptography;
 var hashAlg = RIPEMD160Managed.Create();
 ```
 
-Çözüm:
+Çözümden
 
 ```csharp
 using System.Security.Cryptography;
@@ -87,7 +87,7 @@ using System.Security.Cryptography;
 var hashAlg = SHA256.Create();
 ```
 
-### <a name="tripledes-encryption-violation"></a>TripleDES şifreleme ihlali
+### <a name="tripledes-encryption-violation"></a>TripleDES şifreleme Ihlali
 
 ```csharp
 using System.Security.Cryptography;
@@ -98,7 +98,7 @@ using (TripleDES encAlg = TripleDES.Create())
 }
 ```
 
-Çözüm:
+Çözümden
 
 ```csharp
 using System.Security.Cryptography;

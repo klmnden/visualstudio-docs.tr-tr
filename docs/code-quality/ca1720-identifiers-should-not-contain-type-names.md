@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a35bec2395ccec649443df71e87904c71bf635d8
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: a2677c2ef5342b795bb684f3ab06bc7cf5195cf7
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69547103"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71233890"
 ---
 # <a name="ca1720-identifiers-should-not-contain-type-names"></a>CA1720: Tanımlayıcılar tür adları içermemelidir
 
@@ -28,13 +28,13 @@ ms.locfileid: "69547103"
 |TypeName|IdentifiersShouldNotContainTypeNames|
 |CheckId|CA1720|
 |Kategori|Microsoft. Naming|
-|Yeni Değişiklik|Yeni|
+|Son değişiklik|Yeni|
 
 ## <a name="cause"></a>Sebep
 
 Bir üye içindeki bir parametrenin adı bir veri türü adı içerir.
 
--veya-
+veya
 
 Üyenin adı dile özgü bir veri türü adı içerir.
 
@@ -81,7 +81,7 @@ Ayrıca, bir parametrenin adları, büyük/küçük harf duyarsız bir şekilde 
 - Int64
 - UInt64
 - IntPtr
-- Kaydetmeye
+- kaydetmeye
 - Çağrısı
 - Uıınptr
 - UPtr

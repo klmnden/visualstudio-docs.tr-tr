@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f55c48583e47a4602f33d69799d1d86a6c9c3e56
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: f09817e9248fdc28f56ac0162e783bf72643ee5c
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68921153"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71232684"
 ---
 # <a name="ca2116-aptca-methods-should-only-call-aptca-methods"></a>CA2116: APTCA metotları yalnızca APTCA metotlarını çağırmalıdır
 
@@ -28,7 +28,7 @@ ms.locfileid: "68921153"
 |TypeName|AptcaMethodsShouldOnlyCallAptcaMethods|
 |CheckId|CA2116|
 |Kategori|Microsoft.Security|
-|Yeni Değişiklik|Yeni|
+|Son değişiklik|Yeni|
 
 ## <a name="cause"></a>Sebep
 

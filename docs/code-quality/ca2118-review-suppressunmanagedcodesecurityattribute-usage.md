@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 50c82cd77969da5cbf302b6774f07da1a6a8b040
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: b64551ec81de6a1eae7831af9f3382a2cd4c3b0e
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66714007"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71232629"
 ---
 # <a name="ca2118-review-suppressunmanagedcodesecurityattribute-usage"></a>CA2118: SuppressUnmanagedCodeSecurityAttribute kullanımını gözden geçirin
 
@@ -28,51 +28,51 @@ ms.locfileid: "66714007"
 |TypeName|ReviewSuppressUnmanagedCodeSecurityUsage|
 |CheckId|CA2118|
 |Kategori|Microsoft.Security|
-|Yeni Değişiklik|Yeni|
+|Son değişiklik|Yeni|
 
 ## <a name="cause"></a>Sebep
 
-Bir ortak veya korumalı tür veya üye <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute?displayProperty=fullName> özniteliği.
+Ortak veya korumalı bir tür veya üyenin <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute?displayProperty=fullName> özniteliği vardır.
 
 ## <a name="rule-description"></a>Kural açıklaması
 
-<xref:System.Security.SuppressUnmanagedCodeSecurityAttribute> COM birlikte çalışma veya platform çağırma kullanan yönetilmeyen kodu yürüten üyeler için varsayılan güvenlik sistemi davranışını değiştirir. Genellikle, sistemi yapan bir [veri ve modelleme](/dotnet/framework/data/index) yönetilmeyen kod izni. Bu isteğe bağlı üye her çalıştırılışı için çalışma zamanında gerçekleştirilir ve izin için çağrı yığınında her çağıranı denetler. Özniteliği olduğunda sistemi yapan bir [bağlantı talepleri](/dotnet/framework/misc/link-demands) izni: şu anki çağırıcı izinlerini arayan JIT olarak derlenmiş olduğunda denetlenir.
+<xref:System.Security.SuppressUnmanagedCodeSecurityAttribute>COM birlikte çalışma veya platform çağırma kullanılarak yönetilmeyen kodu çalıştıran Üyeler için varsayılan güvenlik sistemi davranışını değiştirir. Genellikle, sistem, yönetilmeyen kod izni için bir [veri ve modelleme](/dotnet/framework/data/index) sağlar. Bu talep, üyenin her çağrılması için çalışma zamanında gerçekleşir ve izin için çağrı yığınında her çağrıyı denetler. Öznitelik mevcut olduğunda, sistem izin için bir [bağlantı taleplerine](/dotnet/framework/misc/link-demands) sahip olur: çağıran JIT olarak derlendiğinde, hemen çağıranın izinleri denetlenir.
 
-Bu öznitelik, öncelikle performansı artırmak için kullanılır; ancak, gelen performans artışı önemli güvenlik riskleri ile gelir. Öznitelik yerel yöntemlerini çağıran ortak üyelerde yerleştirirseniz, çağıranlar çağrı yığını (şu anki çağırıcı dışında) yönetilmeyen kod yönetilmeyen kod yürütme izni gerekmez. Genel üye Eylemler ve giriş işleme bağlı olarak, normalde güvenilir koda kısıtlı erişim işlevini güvenilmez arayanlara izin verebilir.
+Bu öznitelik, öncelikle performansı artırmak için kullanılır; ancak, gelen performans artışı önemli güvenlik riskleri ile gelir. Özniteliği yerel yöntemleri çağıran ortak üyelere yerleştirirseniz, Çağrı yığınındaki çağıranlar (hemen çağıran), yönetilmeyen kodu yürütmek için yönetilmeyen kod iznine gerek kalmaz. Genel üyenin eylemlerine ve giriş işlemeye bağlı olarak, güvenilir olmayan çağıranların normal olarak güvenilir kodla sınırlı işlevlere erişmesine izin verebilir.
 
-.NET güvenlik denetimleri çağıranlar geçerli işlemin adres alanına doğrudan erişim kazanmasını engellemek için kullanır. Bu öznitelik normal güvenlik atladığından okumak veya yazmak için işlemin belleğinin için kullanılabiliyorsa kodunuzu önemli bir tehlike doğurur. Risk kasıtlı olarak işlem bellek erişimi sağlayan yöntemler için sınırlı olduğunu unutmayın; Mevcut hiçbir senaryoda burada kötü amaçlı kod erişim herhangi bir yolla, örneğin, şaşırtıcı, hatalı biçimlendirilmiş veya geçersiz bir giriş sağlayarak elde edebilirsiniz.
+.NET, çağıranların geçerli işlemin adres alanına doğrudan erişim kazanmasını engellemek için güvenlik denetimlerine bağımlıdır. Bu öznitelik normal güvenliği atladığı için, kodunuz işlemin belleğini okumak veya yazmak için kullanılacaksa, kodunuz ciddi bir tehdit doğurur. Riskin işlem belleğine kasıtlı olarak erişim sağlayan yöntemlerle sınırlı olmadığına unutmayın; kötü amaçlı kodun herhangi bir şekilde erişim sağlayabildiği herhangi bir senaryoda (örneğin, ortaya çıkmış, hatalı biçimlendirilmiş veya geçersiz giriş sağlayarak) de mevcuttur.
 
-Yerel bilgisayardan yürütme ya da aşağıdaki gruplardan birinin üyesi olduğu sürece varsayılan güvenlik ilkesini yönetilmeyen kodu bir bütünleştirilmiş kod izni vermez:
+Varsayılan güvenlik ilkesi, yerel bilgisayardan yürütülmediği veya aşağıdaki gruplardan birinin üyesi olduğu durumlar dışında, bir derlemeye yönetilmeyen kod iznini vermez:
 
-- Bilgisayar bölge kodu grubum
+- Bilgisayarımın bölge kodu grubu
 
-- Microsoft güçlü adı kod grubu
+- Microsoft tanımlayıcı ad kod grubu
 
-- ECMA tanımlayıcı adı kod grubu
+- ECMA tanımlayıcı ad kodu grubu
 
-## <a name="how-to-fix-violations"></a>İhlaller nasıl düzeltilir?
+## <a name="how-to-fix-violations"></a>İhlalleri çözme
 
-Bu öznitelik kesinlikle gerekli olduğundan emin olmak için kodunuzu dikkatle inceleyin. İle yönetilen kod güvenlik bilginiz ya da bu özniteliği kullanarak güvenlik etkilerini anlamak değil, kodunuzdan kaldırın. Öznitelik gerekliyse, Arayanların kodunuzu amaçla kullanamazsınız emin olmanız gerekir. Kodunuzu yönetilmeyen kod yürütmek için izinlere sahip değilse, bu öznitelik etkiye sahip değildir ve kaldırılması gerekiyor.
+Bu özniteliğin kesinlikle gerekli olduğundan emin olmak için kodunuzu dikkatle gözden geçirin. Yönetilen kod güvenliğini tanımıyorsanız veya bu özniteliği kullanmanın güvenlik etkilerine ilişkin etkileri anladıysanız, kodunuzu koddan kaldırın. Öznitelik gerekliyse, çağıranların kodunuzu kötü amaçlı olarak kullangerektirmediğinden emin olmanız gerekir. Kodunuzun yönetilmeyen kodu yürütme izni yoksa, bu özniteliğin hiçbir etkisi olmaz ve kaldırılması gerekir.
 
-## <a name="when-to-suppress-warnings"></a>Uyarılar bastırıldığında
+## <a name="when-to-suppress-warnings"></a>Uyarıların ne zaman bastırılamıyor
 
-Güvenli bir şekilde bu kuraldan bir uyarıyı bastırmak için kodunuzu yerel işlemler veya yıkıcı bir şekilde kullanılabilecek kaynaklara erişim çağıranlar sağlamaz emin olmanız gerekir.
+Bu kuraldan bir uyarıyı güvenle bastırmak için, kodunuzun, bir bozucu şekilde kullanılabilecek yerel işlemlere veya kaynaklara çağrı sağlamadıklarından emin olmanız gerekir.
 
 ## <a name="example-1"></a>Örnek 1
 
-Aşağıdaki örnek bu kuralı ihlal ediyor.
+Aşağıdaki örnek, kuralını ihlal ediyor.
 
 [!code-csharp[FxCop.Security.TypesDoNotSuppress#1](../code-quality/codesnippet/CSharp/ca2118-review-suppressunmanagedcodesecurityattribute-usage_1.cs)]
 
 ## <a name="example-2"></a>Örnek 2
 
-Aşağıdaki örnekte, `DoWork` yöntemi sağlayan platform çağırma yöntemi genel olarak erişilebilir kod yolu `FormatHardDisk`.
+Aşağıdaki örnekte, `DoWork` yöntemi platform çağırma yöntemine `FormatHardDisk`genel olarak erişilebilen bir kod yolu sağlar.
 
 [!code-csharp[FxCop.Security.PInvokeAndSuppress#1](../code-quality/codesnippet/CSharp/ca2118-review-suppressunmanagedcodesecurityattribute-usage_2.cs)]
 
 ## <a name="example-3"></a>Örnek 3
 
-Aşağıdaki örnekte, genel yöntem `DoDangerousThing` bir ihlaline neden olur. İhlali gidermek için `DoDangerousThing` özel yapılmalıdır ve erişimi olmalıdır bir güvenlik talebi tarafından güvenli bir genel yöntem aracılığıyla tarafından gösterildiği gibi `DoWork` yöntemi.
+Aşağıdaki örnekte, Public yöntemi `DoDangerousThing` bir ihlale neden olur. İhlalin `DoDangerousThing` çözülmesi için özel hale getirilmesi gerekir ve erişim, `DoWork` yöntem tarafından gösterildiği gibi bir güvenlik talebi tarafından güvenliği sağlanmış ortak bir yöntem üzerinden olmalıdır.
 
 [!code-csharp[FxCop.Security.TypeInvokeAndSuppress#1](../code-quality/codesnippet/CSharp/ca2118-review-suppressunmanagedcodesecurityattribute-usage_3.cs)]
 

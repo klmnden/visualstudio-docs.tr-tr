@@ -10,57 +10,57 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: b81bd810bac142bdec23074e69bbd3840043c8f6
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: c9e43dcdf1e923cb7bc4a98b17fd0be71b7927eb
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65841402"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71237406"
 ---
 # <a name="ca3003-review-code-for-file-path-injection-vulnerabilities"></a>CA3003: Dosya yolu ekleme güvenlik açıkları için inceleme kodu
 
 |||
 |-|-|
-|TypeName|ReviewCodeForFilePathInjectionVulnerabilities|
+|TypeName|Belgeınlist Codeforfilepathınjectionaçıklardan|
 |CheckId|CA3003|
 |Kategori|Microsoft.Security|
-|Yeni Değişiklik|Bozucu olmayan|
+|Son değişiklik|Kırılmamış|
 
 ## <a name="cause"></a>Sebep
 
-Potansiyel olarak güvenilmeyen HTTP istek girişi dosya işlemi yolunu ulaşır.
+Güvenilir olmayan HTTP isteği girişi bir dosya işleminin yoluna ulaşır.
 
 ## <a name="rule-description"></a>Kural açıklaması
 
-Güvenilir olmayan girişlere karşı web isteklerinden ile çalışırken, kullanıcı tarafından denetlenen giriş dosyalara olan yolları belirtirken kullanarak oluşturduğunu unutmayın. Bir saldırganın hassas veri bilgilerini açığa çıkmasına neden olabilecek istenmeyen bir dosyayı okumak mümkün olabilir. Veya, bir saldırganın hassas verilerin yetkisiz değişiklik kaynaklanan veya sunucunun güvenlikten ödün istenmeyen bir dosyaya yazmak mümkün olabilir. Ortak bir saldırganın teknik [yol çapraz geçişi](https://www.owasp.org/index.php/Path_Traversal) hedeflenen dizin dışındaki dosyalara erişmek için.
+Web isteklerinden güvenilmeyen giriş ile çalışırken, dosyalara yollar belirtirken Kullanıcı denetimli girişi kullanmanın en az olması gerekir. Saldırgan, istenmeyen bir dosyayı okuyabilir ve bu da hassas verilerin bilgi halinde açıklanmasına neden olabilir. Ya da bir saldırgan, istenmeyen bir dosyaya yazabiliyor olabilir, bu da hassas verilerin yetkisiz olarak değiştirilmesine veya sunucunun güvenliğinin tehlikeye çıkmasına yol açabilir. Ortak bir saldırgan tekniği, hedeflenen dizin dışındaki dosyalara erişmek için [yol çapraz geçiş yoludur](https://www.owasp.org/index.php/Path_Traversal) .
 
-Bu kural, bir yolda bir dosya işlemi ulaşmasını HTTP isteklerinden alınan giriş bulmayı dener.
-
-> [!NOTE]
-> Bu kural, derlemeler arasında veri izleyemezsiniz. Örneğin, bir derleme HTTP istek girişi okur ve bir dosyaya yazar başka bir derlemeye geçirir, bu kural bir uyarı üreten olmaz.
+Bu kural, bir dosya işlemindeki yola ulaşan HTTP isteklerinden girdi bulmaya çalışır.
 
 > [!NOTE]
-> Derinlikte bu kural veri akışı yöntem çağrıları arasında çözümler için yapılandırılabilir bir sınır yoktur. Bkz: [Çözümleyicisi yapılandırma](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis) sınırı bir EditorConfig dosyasında nasıl yapılandıracağınızı öğrenmek için.
+> Bu kural derlemeler genelinde verileri izleyemez. Örneğin, bir derleme HTTP istek girişini okuyup onu bir dosyaya yazan başka bir derlemeye geçirirse, bu kural bir uyarı oluşturmaz.
 
-## <a name="how-to-fix-violations"></a>İhlaller nasıl düzeltilir?
+> [!NOTE]
+> Bu kuralın, yöntem çağrılarında veri akışını ne kadar analiz edip bu kurala ilişkin yapılandırılabilir bir sınır vardır. Bir EditorConfig dosyasında sınırı yapılandırma hakkında bilgi için bkz. [çözümleyici yapılandırması](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis) .
 
-- Mümkünse, dosya yolları kullanıcı girişi açıkça bilinen ve güvenli bir listeye göre sınırlayın.  Örneğin, uygulamanız yalnızca "red.txt", "green.txt" veya "blue.txt" erişmesi gerekiyorsa, yalnızca bu değerlere izin.
-- Güvenilmeyen dosya adları için denetleyin ve ad biçimlendirilmemiş doğrulayın.
-- Yolları belirtirken tam yol adları kullanın.
-- Path ortam değişkenleri gibi potansiyel olarak tehlikeli olabilecek yapıları kaçının.
-- Yalnızca uzun dosya adları kabul edin ve kısa adları kullanıcının gönderdiğini, uzun adını doğrulayın.
-- Son kullanıcı girişi için geçerli karakterler kısıtlayın.
-- Burada MAX_PATH uzunluk aşıldığında adları reddeder.
-- Dosya adları, tam anlamıyla, yorumlama olmadan işleyin.
-- Dosya adında bir dosya veya bir cihazı temsil edip etmediğini belirler.
+## <a name="how-to-fix-violations"></a>İhlalleri çözme
 
-## <a name="when-to-suppress-warnings"></a>Uyarılar bastırıldığında
+- Mümkünse, dosya yollarını Kullanıcı girişine dayalı olarak açıkça bilinen bir güvenli listeye sınırlayın.  Örneğin, uygulamanızın yalnızca "Red. txt", "Green. txt" veya "Blue. txt" erişimine ihtiyacı varsa yalnızca bu değerlere izin verin.
+- Güvenilmeyen dosya adlarını denetleyin ve adın düzgün biçimlendirildiğini doğrulayın.
+- Yolları belirtirken tam yol adlarını kullanın.
+- Yol ortam değişkenleri gibi potansiyel olarak tehlikeli yapılarından kaçının.
+- Yalnızca uzun dosya adlarını kabul edin ve Kullanıcı kısa adlar gönderdiğinde uzun adı doğrulayın.
+- Son Kullanıcı girişini geçerli karakterlerle sınırlayın.
+- MAX_PATH uzunluğunun aşıldığı adları reddedin.
+- Dosya adlarını, yorum yapmadan tam olarak işleme.
+- Dosya adının bir dosyayı mu yoksa bir cihazı mi temsil ettiğini belirleme.
 
-Önceki bölümde açıklandığı gibi giriş onayladıysanız Bu uyarının gösterilmemesi uygundur.
+## <a name="when-to-suppress-warnings"></a>Uyarıların ne zaman bastırılamıyor
+
+Önceki bölümde açıklandığı gibi girişi doğrulandıktan sonra bu uyarıyı bastırmak de normaldir.
 
 ## <a name="pseudo-code-examples"></a>Sözde kod örnekleri
 
-### <a name="violation"></a>İhlali
+### <a name="violation"></a>Edildiği
 
 ```csharp
 using System;

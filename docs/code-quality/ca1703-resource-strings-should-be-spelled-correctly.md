@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2643ff7cb8ce401462be7e5c1e52d5f985896f3a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: edd3945953a07b10aee5c2690a25aafe446e2c10
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62546277"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71234320"
 ---
 # <a name="ca1703-resource-strings-should-be-spelled-correctly"></a>CA1703: Kaynak dizeleri doğru yazılmalıdır
 
@@ -27,8 +27,8 @@ ms.locfileid: "62546277"
 |-|-|
 |TypeName|ResourceStringsShouldBeSpelledCorrectly|
 |CheckId|CA1703|
-|Kategori|Microsoft.Naming|
-|Yeni Değişiklik|Bölünemez|
+|Kategori|Microsoft. Naming|
+|Son değişiklik|Kırılmamış|
 
 ## <a name="cause"></a>Sebep
 
@@ -36,28 +36,28 @@ Kaynak dizesi, Microsoft Yazım kitaplığı tarafından tanınmayan bir veya bi
 
 ## <a name="rule-description"></a>Kural açıklaması
 
-Bu kural kaynak dizesi (bileşik sözcüklerin) kelimelere ayrıştırır ve her kelimenin/belirtecin yazımını denetler. Ayrıştırma algoritma hakkında daha fazla bilgi için bkz. [CA1704: Tanımlayıcıları yazıldığından](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md).
+Bu kural, kaynak dizesini kelimelere ayrıştırır (Birleşik kelimeleri simgeleştiriler) ve her bir sözcüğün/belirtecin yazımını denetler. Ayrıştırma algoritması hakkında daha fazla bilgi için bkz [. CA1704: Tanımlayıcılar doğru](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)yazılmalıdır.
 
-## <a name="how-to-fix-violations"></a>İhlaller nasıl düzeltilir?
+## <a name="how-to-fix-violations"></a>İhlalleri çözme
 
-Bu kural ihlalini düzeltmek için sözcüklerin bir özel sözlüğüne ekleyin ya da doğru yazıldığından tam sözcük kullanın. Özel sözlükler kullanma hakkında daha fazla bilgi için bkz: [CA1704: Tanımlayıcıları yazıldığından](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md).
+Bu kural ihlalini onarmak için doğru yazılmış olan tüm sözcükleri kullanın veya sözcükleri özel bir sözlüğe ekleyin. Özel sözlükleri kullanma hakkında daha fazla bilgi için bkz [. CA1704: Tanımlayıcılar doğru](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)yazılmalıdır.
 
 ## <a name="change-the-dictionary-language"></a>Sözlük dilini değiştirme
 
-Varsayılan olarak, yazım denetimcisi (TR) İngilizce sürümü kullanılır. Yazım dilini değiştirmek istiyorsanız, ekleyerek aşağıdakilerden birini özniteliklerini şekilde bunu yapabilirsiniz, *AssemblyInfo.cs* veya *AssemblyInfo.vb* dosyası:
+Varsayılan olarak, yazım denetleyicisinin Ingilizce (en) sürümü kullanılır. Yazım denetleyicisinin dilini değiştirmek istiyorsanız, *AssemblyInfo.cs* veya *AssemblyInfo. vb* dosyanıza aşağıdaki özniteliklerden birini ekleyerek bunu yapabilirsiniz:
 
-- Kullanım <xref:System.Reflection.AssemblyCultureAttribute> kaynaklarınızın bir uydu derlemesine varsa kültürü belirtmek için.
-- Kullanım <xref:System.Resources.NeutralResourcesLanguageAttribute> belirtmek için *bağımsız kültür* derlemenizin kaynaklarınızı aynı bütünleştirilmiş kod bulunuyorsa.
+- Kaynaklarınızın <xref:System.Reflection.AssemblyCultureAttribute> uydu derlemesinde olması durumunda kültürü belirtmek için kullanın.
+- Kaynaklarınızın <xref:System.Resources.NeutralResourcesLanguageAttribute> kodunuzla aynı derlemede olması halinde derlemelerinizin *bağımsız kültürünü* belirtmek için kullanın.
 
 > [!IMPORTANT]
-> İngilizce-tabanlı bir kültür dışında bir kültürü ayarlarsanız, bu kod çözümleme kural sessiz bir şekilde devre dışı bırakıldı.
+> Kültürü, Ingilizce tabanlı kültür dışında bir şeye ayarlarsanız, bu kod analizi kuralı sessizce devre dışıdır.
 
-## <a name="when-to-suppress-warnings"></a>Uyarılar bastırıldığında
+## <a name="when-to-suppress-warnings"></a>Uyarıların ne zaman bastırılamıyor
 
-Bu kuraldan uyarıyı bastırmayın. Doğru bir şekilde yazılmış kelimeler yeni yazılım kitaplıkları öğrenmek için gereken süreyi azaltın.
+Bu kuraldan uyarıyı bastırmayın. Doğru yazılmış sözcükler, yeni yazılım kitaplıklarını öğrenmek için gereken süreyi azaltır.
 
-## <a name="related-rules"></a>İlgili kuralları
+## <a name="related-rules"></a>İlgili kurallar
 
-- [CA1701: Kaynak dize bileşik sözcüklerinin doğru yazılmalıdır](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)
-- [CA1704: Tanımlayıcılar doğru yazılmalıdır](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)
-- [CA2204: Değişmez değerler doğru yazılmalıdır](../code-quality/ca2204-literals-should-be-spelled-correctly.md)
+- [CA1701 Kaynak dizesi bileşik sözcüklerin doğru şekilde küçük harf oluşturulması gerekir](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)
+- [CA1704 Tanımlayıcılar doğru yazılmalıdır](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)
+- [CA2204 Değişmez değerler doğru yazılmalıdır](../code-quality/ca2204-literals-should-be-spelled-correctly.md)

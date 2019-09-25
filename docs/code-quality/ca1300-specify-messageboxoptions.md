@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: bd269b099095326a260da7613bf3c2c402e864be
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 746475e60bbe72c4ebfc51f13d0b2d4d0552ff62
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62797696"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71235191"
 ---
 # <a name="ca1300-specify-messageboxoptions"></a>CA1300: MessageBoxOptions belirt
 
@@ -30,28 +30,28 @@ ms.locfileid: "62797696"
 |-|-|
 |TypeName|SpecifyMessageBoxOptions|
 |CheckId|CA1300|
-|Kategori|Microsoft.Globalization|
-|Yeni Değişiklik|Bölünemez|
+|Kategori|Microsoft. Globalization|
+|Son değişiklik|Kırılmamış|
 
 ## <a name="cause"></a>Sebep
 
-Bir yöntemi çağıran bir aşırı yüklemesini <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> görüntüsünü yöntemi bir <xref:System.Windows.Forms.MessageBoxOptions?displayProperty=fullName> bağımsız değişken.
+Yöntemi, <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> <xref:System.Windows.Forms.MessageBoxOptions?displayProperty=fullName> bağımsız değişken olmayan yöntemin aşırı yüklemesini çağırır.
 
 ## <a name="rule-description"></a>Kural açıklaması
 
-Doğru olarak sağdan sola okuma düzeni kullanan kültürler için bir ileti kutusu görüntülemek için geçirmek [MessageBoxOptions.RightAlign](<xref:System.Windows.Forms.MessageBoxOptions.RightAlign>) ve [MessageBoxOptions.RtlReading](<xref:System.Windows.Forms.MessageBoxOptions.RtlReading>) alanlarını <xref:System.Windows.Forms.MessageBox.Show%2A> yöntem. İnceleme <xref:System.Windows.Forms.Control.RightToLeft%2A?displayProperty=fullName> sağdan sola okuma düzeni kullanan belirlemek için içeren denetiminin özelliği.
+Sağdan sola okuma düzeni kullanan kültürler için bir ileti kutusunu doğru bir şekilde göstermek için, [MessageBoxOptions. soltalign](<xref:System.Windows.Forms.MessageBoxOptions.RightAlign>) ve [MessageBoxOptions. rtlokuyor](<xref:System.Windows.Forms.MessageBoxOptions.RtlReading>) <xref:System.Windows.Forms.MessageBox.Show%2A> alanlarını metoduna geçirin. Sağdan sola okuma düzeni kullanılıp kullanılmayacağını öğrenmek için içeren denetimin özelliğiniinceleyin.<xref:System.Windows.Forms.Control.RightToLeft%2A?displayProperty=fullName>
 
-## <a name="how-to-fix-violations"></a>İhlaller nasıl düzeltilir?
+## <a name="how-to-fix-violations"></a>İhlalleri çözme
 
-Bu kural ihlalini düzeltmek için bir aşırı yüklemesini çağırmak <xref:System.Windows.Forms.MessageBox.Show%2A> gereken yöntemini bir <xref:System.Windows.Forms.MessageBoxOptions> bağımsız değişken.
+Bu kuralın ihlalini onarmak için, bir <xref:System.Windows.Forms.MessageBox.Show%2A> <xref:System.Windows.Forms.MessageBoxOptions> bağımsız değişken alan metodun aşırı yüklemesini çağırın.
 
-## <a name="when-to-suppress-warnings"></a>Uyarılar bastırıldığında
+## <a name="when-to-suppress-warnings"></a>Uyarıların ne zaman bastırılamıyor
 
-Kod kitaplığı sağdan sola okuma düzeni kullanan bir kültür için yerelleştirilmiş değil olduğunda bu kuraldan bir uyarıyı bastırmak güvenlidir.
+Kod kitaplığı, sağdan sola okuma düzeni kullanan bir kültür için yerelleştirilmez, bu kuraldan bir uyarı bastırmak güvenlidir.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, kültürün okuma düzeni için uygun olan seçenekleri içeren bir ileti kutusu görüntüleyen bir yöntem gösterilmektedir. Görünmeyen bir kaynak dosyası örneği oluşturmak için gereklidir. Örnek bir kaynak dosyası olmadan örneği oluşturmak ve sağdan sola özelliği test etmek için yorumlarda izleyin.
+Aşağıdaki örnek, kültürün okuma düzeni için uygun olan seçeneklere sahip bir ileti kutusu görüntüleyen bir yöntemi gösterir. Örnek oluşturmak için, gösterilmemiş bir kaynak dosyası gereklidir. Örneği bir kaynak dosyası olmadan derlemek ve sağdan sola özelliği test etmek için örnekteki açıklamaları izleyin.
 
 [!code-vb[FxCop.Globalization.SpecifyMBOptions#1](../code-quality/codesnippet/VisualBasic/ca1300-specify-messageboxoptions_1.vb)]
 [!code-csharp[FxCop.Globalization.SpecifyMBOptions#1](../code-quality/codesnippet/CSharp/ca1300-specify-messageboxoptions_1.cs)]
@@ -59,4 +59,4 @@ Aşağıdaki örnek, kültürün okuma düzeni için uygun olan seçenekleri iç
 ## <a name="see-also"></a>Ayrıca bkz.
 
 - <xref:System.Resources.ResourceManager?displayProperty=fullName>
-- [(.NET Framework) Masaüstü uygulamalarındaki kaynaklar](/dotnet/framework/resources/index)
+- [Masaüstü uygulamalarındaki kaynaklar (.NET Framework)](/dotnet/framework/resources/index)

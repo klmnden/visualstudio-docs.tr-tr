@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 85e09a670ac85d37bc2c0297201db93462f64ca1
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: 140037b025db88230762bc0d540d933cec7a5119
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66714465"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71236308"
 ---
 # <a name="ca1016-mark-assemblies-with-assemblyversionattribute"></a>CA1016: Derlemeleri AssemblyVersionAttribute ile işaretleyin
 
@@ -32,37 +32,37 @@ ms.locfileid: "66714465"
 |TypeName|MarkAssembliesWithAssemblyVersion|
 |CheckId|CA1016|
 |Kategori|Microsoft.Design|
-|Yeni Değişiklik|Bölünemez|
+|Son değişiklik|Kırılmamış|
 
 ## <a name="cause"></a>Sebep
 
-Derleme sürüm numarası yok.
+Derlemenin sürüm numarası yok.
 
 ## <a name="rule-description"></a>Kural açıklaması
 
-Bir derlemenin kimliğini aşağıdaki bilgilerden oluşur:
+Bir derlemenin kimliği aşağıdaki bilgilerden oluşur:
 
-- Derleme adı
+- Bütünleştirilmiş kod adı
 
 - Sürüm numarası
 
 - Kültür
 
-- Ortak anahtarı (için kesin adlandırılmış bütünleştirilmiş kodları).
+- Ortak anahtar (kesin adlandırılmış derlemeler için).
 
-.NET sürüm numarası, derlemeyi benzersiz tanımlamada ve türleri güçlü derlemelere bağlamak için kullanır. Sürüm numarası, sürüm ve yayımcı ilkesi ile birlikte kullanılır. Varsayılan olarak uygulamalar yalnızca oluşturulmuş derleme sürümlerini çalıştırır.
+.NET, bir derlemeyi benzersiz olarak tanımlamak ve kesin adlandırılmış derlemelerdeki türlere bağlamak için sürüm numarasını kullanır. Sürüm numarası, sürüm ve yayımcı ilkesi ile birlikte kullanılır. Varsayılan olarak uygulamalar yalnızca oluşturulmuş derleme sürümlerini çalıştırır.
 
-## <a name="how-to-fix-violations"></a>İhlaller nasıl düzeltilir?
+## <a name="how-to-fix-violations"></a>İhlalleri çözme
 
-Bu kural ihlalini düzeltmek için bir sürüm numarası derlemeye kullanarak Ekle <xref:System.Reflection.AssemblyVersionAttribute?displayProperty=fullName> özniteliği.
+Bu kural ihlalini onarmak için, <xref:System.Reflection.AssemblyVersionAttribute?displayProperty=fullName> özniteliğini kullanarak derlemeye bir sürüm numarası ekleyin.
 
-## <a name="when-to-suppress-warnings"></a>Uyarılar bastırıldığında
+## <a name="when-to-suppress-warnings"></a>Uyarıların ne zaman bastırılamıyor
 
-Üçüncü taraflar tarafından veya bir üretim ortamında kullanılan derlemeler için bu kuraldan bir uyarıyı bastırmayın.
+Üçüncü taraflar veya bir üretim ortamında kullanılan derlemeler için bu kuraldan bir uyarıyı bastırmayın.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, bir derlemeye gösterir <xref:System.Reflection.AssemblyVersionAttribute> özniteliği uygulandı.
+Aşağıdaki örnek, <xref:System.Reflection.AssemblyVersionAttribute> özniteliği uygulanmış bir derlemeyi gösterir.
 
 [!code-csharp[FxCop.Design.AssembliesVersion#1](../code-quality/codesnippet/CSharp/ca1016-mark-assemblies-with-assemblyversionattribute_1.cs)]
 [!code-vb[FxCop.Design.AssembliesVersion#1](../code-quality/codesnippet/VisualBasic/ca1016-mark-assemblies-with-assemblyversionattribute_1.vb)]
@@ -70,5 +70,5 @@ Aşağıdaki örnek, bir derlemeye gösterir <xref:System.Reflection.AssemblyVer
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [Bütünleştirilmiş kod sürümü oluşturma](/dotnet/framework/app-domains/assembly-versioning)
+- [Derleme sürümü oluşturma](/dotnet/framework/app-domains/assembly-versioning)
 - [Nasıl yapılır: Yayımcı ilkesi oluşturma](/dotnet/framework/configure-apps/how-to-create-a-publisher-policy)

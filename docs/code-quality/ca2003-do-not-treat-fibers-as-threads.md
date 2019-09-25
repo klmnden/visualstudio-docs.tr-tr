@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8faaf3c6557065188c795d75ea9bbe4e78998709
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9f5e4e7eb28207cb37824b23acbbac02b6df380d
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62806994"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71233145"
 ---
 # <a name="ca2003-do-not-treat-fibers-as-threads"></a>CA2003: Fiberleri iş parçacığı olarak görmeyin
 
@@ -27,21 +27,21 @@ ms.locfileid: "62806994"
 |-|-|
 |TypeName|DoNotTreatFibersAsThreads|
 |CheckId|CA2003|
-|Kategori|Microsoft.Reliability|
-|Yeni Değişiklik|Bölünemez|
+|Kategori|Microsoft. güvenilirliği|
+|Son değişiklik|Kırılmamış|
 
 ## <a name="cause"></a>Sebep
 
-Yönetilen iş parçacığı bir Win32 iş parçacığı kabul edilir.
+Yönetilen bir iş parçacığı Win32 iş parçacığı olarak kabul ediliyor.
 
 ## <a name="rule-description"></a>Kural açıklaması
 
-Yönetilen iş parçacığı bir Win32 iş parçacığı olan varsaymayın; Bu, bir fiber olur. Ortak dil çalışma zamanı (CLR) yönetilen iş parçacıklarını iyileştirmesini SQL tarafından sahip olunan gerçek iş parçacıkları bağlamında çalışır. Bu iş parçacıkları SQL Server işlemde uygulama etki alanları ve hatta veritabanları arasında paylaşılabilir. Kullanılarak yönetilen iş parçacığı yerel depolama çalışır, ancak değil yönetilmeyen iş parçacığı yerel depolama kullanan veya kodunuzu geçerli işletim sistemi iş parçacığı üzerinde yeniden çalışacağını varsayalım. İş parçacığı yerel ayarı gibi ayarları değiştirmeyin. Kilit girer iş parçacığı kilit çıkmalı gerektirdiğinden CreateCriticalSection veya P/Invoke aracılığıyla CreateMutex çağırmayın. Win32 kritik bölümler mutex'leri iyileştirmesini kullandığınızda kilit girdiği iş parçacığının bir kilidi çıkmak değil çünkü gereksiz SQL. Güvenli bir şekilde çoğu durumu üzerinde bir yönetilen kullanabilirsiniz <xref:System.Threading.Thread> yönetilen iş parçacığı yerel depolama ve iş parçacığının geçerli kullanıcı arabirimi (UI) kültürü dahil olmak üzere bir nesne. Ancak, model nedeniyle programlama için SQL kullanırken bir iş parçacığının geçerli kültürü değiştirmek mümkün olmayacaktır. Bu sınırlama ile yeni bir izin zorlanır.
+Yönetilen bir iş parçacığının Win32 iş parçacığı olduğunu varsaymayın; Bu bir fiber. Ortak dil çalışma zamanı (CLR), yönetilen iş parçacıklarını SQL 'e ait gerçek iş parçacıkları bağlamında lifleri görmeyin olarak çalıştırır. Bu iş parçacıkları SQL Server işlemindeki AppDomain 'ler ve hatta veritabanları arasında paylaşılabilir. Yönetilen iş parçacığı yerel depolama alanı çalışır, ancak yönetilmeyen iş parçacığı yerel depolama birimini kullanamaz veya kodunuzun geçerli işletim sistemi iş parçacığında yeniden çalışacağını varsayabilirsiniz. İş parçacığının yerel ayarı gibi ayarları değiştirmeyin. P/Invoke aracılığıyla Createcriticalhandle bölümünü veya CreateMutex 'i çağırmayın, çünkü bir kilidi çağıran iş parçacığının da kiliden çıkması gerekir. Bir kilit giren iş parçacığı fibers kullandığınızda bir kilit çıkmadığından, Win32 kritik bölümleri ve zaman uyumu sağlayıcılar SQL 'de gereksizdir. Yönetilen iş parçacığı yerel depolama alanı ve iş parçacığının geçerli kullanıcı <xref:System.Threading.Thread> arabirimi (UI) kültürü dahil olmak üzere yönetilen bir nesnede durumun büyük bir bölümünü güvenle kullanabilirsiniz. Ancak, programlama modeli nedenleriyle, SQL kullandığınızda bir iş parçacığının geçerli kültürünü değiştiremeyeceksiniz. Bu sınırlama, yeni bir izin ile zorlanır.
 
-## <a name="how-to-fix-violations"></a>İhlaller nasıl düzeltilir?
+## <a name="how-to-fix-violations"></a>İhlalleri çözme
 
-İş parçacıkları kullanımınızı inceleyin ve kodunuzu buna göre değişir.
+İş parçacıklarının kullanımını inceleyin ve kodunuzu uygun şekilde değiştirin.
 
-## <a name="when-to-suppress-warnings"></a>Uyarılar bastırıldığında
+## <a name="when-to-suppress-warnings"></a>Uyarıların ne zaman bastırılamıyor
 
-Bu kural bastırmayın.
+Bu kuralı engellemez.

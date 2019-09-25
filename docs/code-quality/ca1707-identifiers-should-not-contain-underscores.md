@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1cbd6d3999525808180f69652290807d327b6814
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: adfa0ccd63d0433d367b0e7278693608bb83d685
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62797345"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71234265"
 ---
 # <a name="ca1707-identifiers-should-not-contain-underscores"></a>CA1707: Tanımlayıcılar alt çizgi içermemelidir
 
@@ -27,28 +27,28 @@ ms.locfileid: "62797345"
 |-|-|
 |TypeName|IdentifiersShouldNotContainUnderscores|
 |CheckId|CA1707|
-|Kategori|Microsoft.Naming|
-|Yeni Değişiklik|-Derlemelerini oluştuğunda kesme<br /><br /> Tür parametrelerinde oluştuğunda bölünemez-|
+|Kategori|Microsoft. Naming|
+|Son değişiklik|Parçalara ayırma-derlemeler üzerinde ne zaman tetiklenir<br /><br /> Tür parametrelerine ne zaman kabarık olmayan|
 
 ## <a name="cause"></a>Sebep
 
-Tanımlayıcı adı alt çizgi içeriyor (\_) karakter.
+Tanımlayıcının adı alt çizgi (\_) karakterini içerir.
 
 ## <a name="rule-description"></a>Kural açıklaması
 
-Kural gereği, tanımlayıcı adları alt çizgi içermez (\_) karakter. Kural ad alanlarını, türleri, üyeleri ve parametreleri denetler.
+Kurala göre, tanımlayıcı adları alt çizgi (\_) karakterini içermez. Kural ad alanlarını, türleri, üyeleri ve parametreleri denetler.
 
-Adlandırma kuralları, ortak dil çalışma zamanını hedefleyen kitaplıkları için genel bir bakış sağlar. Bu, yeni yazılım kitaplıkları için gereklidir ve kitaplık geliştirme yönetilen kodda uzmanlığına sahip olan kişi tarafından geliştirilmiştir müşterilerinizin size olan güvenini artırır öğrenme eğrisini azaltır.
+Adlandırma kuralları, ortak dil çalışma zamanını hedefleyen kitaplıklar için ortak bir görünüm sağlar. Bu, yeni yazılım kitaplıkları için gerekli olan öğrenme eğrisini azaltır ve müşterinin, kitaplığın yönetilen kod geliştirme konusunda uzmanlığa sahip olan birisi tarafından geliştirildiğini arttırır.
 
-## <a name="how-to-fix-violations"></a>İhlaller nasıl düzeltilir?
+## <a name="how-to-fix-violations"></a>İhlalleri çözme
 
-Tüm alt çizgi karakterleri adından kaldırın.
+Adın tüm alt çizgi karakterlerini kaldırır.
 
-## <a name="when-to-suppress-warnings"></a>Uyarılar bastırıldığında
+## <a name="when-to-suppress-warnings"></a>Uyarıların ne zaman bastırılamıyor
 
 Bu kuraldan uyarıyı bastırmayın.
 
-## <a name="related-rules"></a>İlgili kuralları
+## <a name="related-rules"></a>İlgili kurallar
 
-- [CA1709: Tanımlayıcılar doğru yazılmalıdır](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
-- [CA1708: Tanımlayıcılar örnekten daha fazla farklı olmalıdır](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
+- [CA1709 Tanımlayıcılar doğru şekilde yazılmalıdır](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
+- [CA1708 Tanımlayıcılar, büyük/küçük harf bakımından farklı olmalıdır](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)

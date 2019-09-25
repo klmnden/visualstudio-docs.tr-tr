@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fec59e1d683c7867eb1cad9ae4e796a0815200d4
-ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
+ms.openlocfilehash: 44bdb8c12b48a983b88e6a035fc1522856b306be
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/29/2019
-ms.locfileid: "68604776"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71235579"
 ---
 # <a name="ca1053-static-holder-types-should-not-have-default-constructors"></a>CA1053: Statik tutucu türleri varsayılan oluşturuculara sahip olmamalıdır
 
@@ -28,7 +28,7 @@ ms.locfileid: "68604776"
 |TypeName|StaticHolderTypesShouldNotHaveConstructors|
 |CheckId|CA1053|
 |Kategori|Microsoft.Design|
-|Yeni Değişiklik|Yeni|
+|Son değişiklik|Yeni|
 
 > [!NOTE]
 > Rule CA1053, [CA1052 ile birleştirilmiştir: Statik tutucu türleri [FxCop çözümleyicileri](fxcop-analyzers.yml)içinde](ca1052-static-holder-types-should-be-sealed.md) mühürlenmelidir.

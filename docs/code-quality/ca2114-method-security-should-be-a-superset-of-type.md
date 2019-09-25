@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d83da42a029d746899bfaccf5d62f8856a040611
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 536e676a1b2527c466aae741ca7117be507bfb9a
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68921112"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71232747"
 ---
 # <a name="ca2114-method-security-should-be-a-superset-of-type"></a>CA2114: Metot güvenliği türün bir üst kümesi olmalıdır
 
@@ -28,7 +28,7 @@ ms.locfileid: "68921112"
 |TypeName|MethodSecurityShouldBeASupersetOfType|
 |CheckId|CA2114|
 |Kategori|Microsoft.Security|
-|Yeni Değişiklik|Yeni|
+|Son değişiklik|Yeni|
 
 ## <a name="cause"></a>Sebep
 Bir tür bildirime dayalı güvenliğe sahiptir ve yöntemlerinden biri aynı güvenlik eylemi için bildirim güvenliğine sahiptir ve güvenlik eylemi [bağlantı taleplerine](/dotnet/framework/misc/link-demands)değildir ve tür tarafından denetlenen izinler, yöntemi tarafından denetlenen izinlerin bir alt kümesi değildir.

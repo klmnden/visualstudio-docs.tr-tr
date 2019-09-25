@@ -1,126 +1,155 @@
 ---
-title: Visual Studio için Mac turu
-description: Mac için Visual Studio, ASP.NET Core Web siteleri ve iOS, Android, Mac ve Xamarin.Forms için Xamarin projeleri dahil olmak üzere, macOS üzerinde .NET uygulama derlemek için bir tümleşik geliştirme ortamı sağlar.
+title: Mac için Visual Studio turu
+description: Mac için Visual Studio, macOS 'ta iOS, Android, Mac ve Xamarin. Forms için ASP.NET Core Web siteleri ve Xamarin projeleri gibi .NET uygulamaları oluşturmaya yönelik tümleşik bir geliştirme ortamı sağlar.
 author: asb3993
 ms.author: amburns
-ms.date: 04/02/2019
+ms.date: 09/18/2019
 ms.assetid: 7DC64A52-AA41-4F3A-A8A1-8A20BCD81CC7
 ms.custom: video
-ms.openlocfilehash: aabb6b575edb68f3e72cad06f2497b8176e950fe
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
+ms.openlocfilehash: 60691ef47b3a3dfdb2fa1148507697a27a99ef7b
+ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67691503"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71213713"
 ---
-# <a name="visual-studio-2019-for-mac-tour"></a>Tur Mac için Visual Studio 2019
+# <a name="visual-studio-2019-for-mac-tour"></a>Mac için Visual Studio 2019 Tur turu
 
-Mac için Visual Studio, bir .NET _tümleşik geliştirme ortamı_ düzenlemek için kullanılabilecek Mac üzerinde hata ayıklama ve kod derleme ve ardından bir uygulama yayımlayın. Standart Düzenleyici ve hata ayıklayıcı, gibi beklenen özelliklerine ek olarak Mac için Visual Studio yazılım geliştirme işlemini kolaylaştırmak için derleyiciler, kod tamamlama araçları, grafik tasarımcıları ve kaynak denetimi içerir.
+Mac için Visual Studio, Mac üzerinde kod düzenlemek, hata ayıklamak ve derlemek ve sonra bir uygulama yayımlamak için kullanılabilen .NET _Tümleşik geliştirme ortamıdır_ . Standart bir düzenleyici ve hata ayıklayıcı gibi beklenen özelliklerin yanı sıra, Mac için Visual Studio yazılım geliştirme sürecini kolaylaştırmak için derleyiciler, kod tamamlama araçları, grafik tasarımcıları ve kaynak denetimi de içerir.
 
-Mac için Visual Studio destekleyen birçok Windows karşılığı ile aynı dosya türleri gibi `.csproj`, `.fsproj`, veya `.sln` dosyaları ve sizin için en uygun IDE'yi kullanabileceğiniz anlamına gelir, EditorConfig gibi özellikleri destekler.
-Windows üzerinde Visual Studio önceden kullanılmış herkes için tanıdık bir deneyim, oluşturma, açma ve uygulama geliştirme olacaktır. Ayrıca, Mac için Visual Studio, çok güçlü bir IDE Windows çözümlemesiyle olun güçlü araçları kullanır. Roslyn derleyici platformu, yeniden düzenleme ve IntelliSense için kullanılır. MSBuild proje sistemi ve yapı altyapısı kullanın ve kaynak düzenleyicisinin TextMate paketi gruplarını destekler. Aynı hata ayıklayıcı altyapıları için Xamarin ve .NET Core uygulamaları ve aynı tasarımcıları Xamarin.iOS ve Xamarin.Android için kullanır.
+Mac için Visual Studio,, veya `.csproj` `.sln` dosyaları gibi Windows karşılığı `.fsproj`ile aynı dosya türlerini destekler ve editorconfig gibi özellikleri destekler, bu da sizin için en uygun IDE 'yi kullanabileceğiniz anlamına gelir.
+Bir uygulama oluşturmak, açmak ve geliştirmek, daha önce Windows üzerinde Visual Studio kullanan herkes için tanıdık bir deneyim olacaktır. Ayrıca Mac için Visual Studio, Windows karşılığına yönelik güçlü bir IDE gibi birçok güçlü araç kullanır. Roslyn derleyici platformu, yeniden düzenleme ve IntelliSense için kullanılır. Proje sistemi ve derleme altyapısı MSBuild kullanır ve kaynak Düzenleyicisi Windows üzerinde Visual Studio ile aynı temeli kullanır. Xamarin ve .NET Core uygulamaları için aynı hata ayıklayıcı altyapılarını ve Xamarin. iOS ve Xamarin. Android için aynı tasarımcıları kullanır.
 
-## <a name="what-can-i-do-in-visual-studio-for-mac"></a>Visual Studio'da Mac için neler yapabilirim
+## <a name="what-can-i-do-in-visual-studio-for-mac"></a>Mac için Visual Studio için ne yapabilirim?
 
-Mac için Visual Studio geliştirme aşağıdaki türlerini destekler:
+Mac için Visual Studio aşağıdaki geliştirme türlerini destekler:
 
-- ASP.NET Core web uygulamaları ile C#, F#ve Razor sayfaları, JavaScript ve TypeScript desteği
-- .NET core konsol uygulamaları ile C# veyaF#
-- Platformlar arası Unity oyunları ve uygulamalarıC#
-- Xamarin ile Android, iOS, tvOS ve watchOS uygulamaları C# veya F# ve XAML
-- Cocoa masaüstü uygulamalarında C# veyaF#
+- Razor sayfaları, JavaScript C#ve F#TypeScript ile Web uygulamalarını, ve desteğiyle ASP.NET Core
+- Veya içeren C# .NET Core konsol uygulamalarıF#
+- İle platformlar arası Unity oyunları ve uygulamalarıC#
+- Android, iOS, tvOS ve Xamarin ile C# or F# ve xaml içindeki watchOS uygulamaları
+- Veya içinde C# ortak COA masaüstü uygulamalarıF#
 
-Bu makalede, bazı bu uygulamaları oluşturmak için güçlü bir araç hale getiren özellikler sağlayan Mac için Visual Studio çeşitli bölümlerini keşfediyor.
+Bu makalede, bu uygulamaların oluşturulmasına yönelik güçlü bir araç haline gelen bazı özelliklere göz atabilmek için Mac için Visual Studio çeşitli bölümleri incelenmektedir.
 
 ## <a name="ide-tour"></a>IDE turu
 
-Mac için Visual Studio, uygulama dosyalarını ve ayarlarını yönetme, uygulama kodu oluşturma ve hata ayıklama için çeşitli bölümler halinde düzenlenmiştir.
+Mac için Visual Studio, uygulama dosyalarını ve ayarlarını yönetmek, uygulama kodu oluşturmak ve hata ayıklamak için çeşitli bölümler halinde düzenlenmiştir.
 
-## <a name="start-window"></a>Başlangıç penceresi
+## <a name="getting-started"></a>Başlarken
 
-Mac için Visual Studio 2019 başlattığınızda, yeni kullanıcılar bir oturum açma penceresi görürsünüz. Microsoft hesabınızla (varsa) Ücretli lisansı veya Azure abonelikleri bağlantısını etkinleştirmek için oturum açın. Basabilirsiniz **atla** ve daha sonra aracılığıyla oturum açma **Visual Studio > oturum** menü öğesi:
+Mac için Visual Studio 2019 ' u başlattığınızda yeni kullanıcılar bir oturum açma penceresi görür. Ücretli bir lisansı etkinleştirmek (varsa) veya Azure aboneliklerine bağlanmak için Microsoft hesabı ile oturum açın. Bunu **daha sonra yapacağım** ve daha sonra **Visual Studio > oturum açma** menü öğesi aracılığıyla oturum açacağım.
 
-![Microsoft hesabınızda oturum açın](media/ide-tour-2019-start-signin.png)
+![Microsoft hesabı oturum açın](media/ide-tour-2019-start-signin.png)
 
-Oturum açmış kullanıcıların görebileceği yeni _başlangıç penceresi_son projeler listesi gösterilir ve varolan açmak için düğmeler, proje veya yeni bir tane oluşturun:
+Daha sonra tercih ettiğiniz klavye kısayollarını seçerek IDE 'yi özelleştirme seçeneği sunulur: Mac için Visual Studio, Visual Studio, Visual Studio Code veya Xcode:
 
-![Son projelerden seçin veya yeni bir şeyler oluşturun](media/ide-tour-2019-start-projects.png)
+![En sevdiğiniz klavye kısayollarını seçin](media/ide-tour-2019-keyboard-shortcut.png)
+
+Oturum açan kullanıcılar yeni _başlangıç penceresini_görür. Bu, en son projelerin bir listesini ve mevcut bir projeyi açmak ya da yeni bir proje açmak için düğmeleri gösterir:
+
+![Son projeler arasından seçim yapın veya yeni bir öğe oluşturun](media/ide-tour-2019-start-projects.png)
 
 ## <a name="solutions-and-projects"></a>Çözümler ve projeler
 
-Aşağıdaki görüntüde, Mac için Visual Studio ile yüklenen bir uygulama gösterilmektedir:
+Aşağıdaki görüntüde, yüklü bir uygulamayla birlikte Mac için Visual Studio gösterilmektedir:
 
 ![Yüklü bir uygulama ile Mac için Visual Studio](media/ide-tour-image17.png)
 
-Aşağıdaki bölümler, Mac için Visual Studio temel alanları genel bir bakış sağlar
+Aşağıdaki bölümlerde Mac için Visual Studio içindeki önemli alanlara genel bir bakış sağlanmaktadır.
 
-## <a name="solution-pad"></a>Çözüm bölmesi
+## <a name="solution-pad"></a>Çözüm paneli
 
-Çözüm panelinde bir çözümdeki projelerin düzenler:
+Çözüm Bölmesi bir çözümde proje (ler) i düzenler:
 
-![Çözüm panelinde düzenlenmiş projeleri](media/ide-tour-image18.png)
+![Çözüm Bölmesi düzenlenmiş projeler](media/ide-tour-image18.png)
 
-Dosya kaynak kodu, kaynakları, kullanıcı arabirimi ve bağımlılıkları için platforma özgü projelere burada düzenlenir budur.
+Bu, kaynak kodu, kaynaklar, Kullanıcı arabirimi ve bağımlılıkların dosyaları platforma özgü projelere göre düzenlenir.
 
-Projeler ve çözümler, Mac için Visual Studio kullanarak daha fazla bilgi için bkz: [projeler ve çözümler](/visualstudio/mac/projects-and-solutions) makalesi.
+Mac için Visual Studio 'de projeleri ve çözümleri kullanma hakkında daha fazla bilgi için, bkz. [Projeler ve çözümler](/visualstudio/mac/projects-and-solutions) makalesi.
 
-## <a name="assembly-references"></a>Derleme başvuruları
+## <a name="assembly-references"></a>Bütünleştirilmiş kod başvuruları
 
-Her proje için derleme başvuruları, başvuruları klasörünün altında mevcuttur:
+Her proje için derleme başvuruları, başvurular klasörü altında kullanılabilir:
 
-![Çözüm Bölmesi'nde başvurular klasörünün](media/ide-tour-image19.png)
+![Çözüm panelinde başvurular klasörü](media/ide-tour-image19.png)
 
-Ek başvurular kullanarak eklenir **başvuruları Düzenle** başvuruları klasörü çift tıklayarak ya da seçerek görüntülenen iletişim kutusunda **başvuruları Düzenle** kendi bağlam menüsünde eylemleri:
+Başvurular klasörüne çift tıklanarak veya bağlam menüsü eylemlerinde **başvuruları Düzenle** ' yi seçerek görüntülenen **başvuruları Düzenle** iletişim kutusu kullanılarak ek başvurular eklenir:
 
-![Başvurular iletişim Düzenle](media/ide-tour-image20.png)
+![Başvuruları Düzenle Iletişim kutusu](media/ide-tour-image20.png)
 
-Başvurular, Mac için Visual Studio kullanarak daha fazla bilgi için bkz: [bir projedeki başvuruları yönetme](/visualstudio/mac/managing-references-in-a-project) makalesi.
+Mac için Visual Studio başvuruları kullanma hakkında daha fazla bilgi için bkz. [bir projede başvuruları yönetme](/visualstudio/mac/managing-references-in-a-project) makalesi.
 
-## <a name="dependencies--packages"></a>Bağımlılıkları / paketleri
+## <a name="dependencies--packages"></a>Bağımlılıklar/paketler
 
-Uygulamanızda kullanılan tüm dış bağımlılıkları içinde bir.Net Core olmanıza bağlı olarak bağımlılıklar veya paketler klasöründe depolanır veya Xamarin.iOS/Xamarin.Android projesi. Bunlar, genellikle bir NuGet biçiminde sağlanır.
+Uygulamanızda kullanılan tüm dış bağımlılıklar, .Net Core veya Xamarin. iOS/Xamarin. Android projesinde olup olmadığına bağlı olarak bağımlılıklar veya paketler klasörüne depolanır. Bunlar genellikle bir NuGet biçiminde sağlanır.
 
-NuGet, .NET geliştirme için en popüler paket yöneticisidir. Visual Studio'nun NuGet desteği ile kolayca arayabilir ve paketleri uygulaması projenize ekleyin.
+NuGet, .NET geliştirme için en popüler paket yöneticisidir. Visual Studio 'nun NuGet desteğiyle, kolayca uygulamanıza paket arayabilir ve uygulamanızı ekleyebilirsiniz.
 
-Uygulamanıza bir bağımlılık eklemek için bağımlı sağ / paketleri klasörünü açın ve seçin **paketleri Ekle**:
+Uygulamanıza bir bağımlılık eklemek için bağımlılıklar/paketler klasörüne sağ tıklayın ve **Paketleri Ekle**' yi seçin:
 
-![Bir NuGet paketi ekleme](media/ide-tour-image21.png)
+![NuGet paketi ekleme](media/ide-tour-image21.png)
 
-Bir uygulamada bir NuGet paketi kullanarak bilgi bulunabilir [projenizdeki bir NuGet dahil olmak üzere proje](/visualstudio/mac/nuget-walkthrough) makalesi.
+Bir uygulamada NuGet paketinin kullanılmasıyla ilgili bilgiler, [Proje makalenize bir NuGet projesi dahil](/visualstudio/mac/nuget-walkthrough) bulunabilir.
+
+## <a name="source-editor"></a>Kaynak Düzenleyicisi
+
+İster XAML, ister JavaScript 'e yazıyorsanız C#, kod Düzenleyicisi, Visual Studio Windows ile aynı çekirdek bileşenlerini tamamen yerel bir kullanıcı arabirimiyle paylaşır.
+
+Bu, aşağıdaki özelliklerden bazılarını getirir:
+
+* Yerel macOS (Cocoa tabanlı) kullanıcı arabirimi (araç ipuçları, düzenleyici yüzeyi, kenarlıklar, metin işleme, IntelliSense)
+* IntelliSense tür filtrelemesi ve "içeri aktarma öğelerini göster"
+* Yerel metin girişleri için destek
+* RTL/BiDi dil desteği
+* Roslyn 3
+* Çoklu giriş işareti desteği
+* Sözcük kaydırma
+* Güncelleştirilmiş IntelliSense Kullanıcı arabirimi
+* Geliştirilmiş bulma/değiştirme
+* Kod parçacığı desteği 
+* Biçim seçimi
+* Satır içi açık bulbs
+
+Kaynak düzenleyiciyi Mac için Visual Studio kullanma hakkında daha fazla bilgi için bkz. [kaynak Düzenleyici](/visualstudio/mac/source-editor) belgeleri.
+
+Sekmeleri her zaman görünür tutmak için, onları sabitlemenin avantajlarından yararlanabilirsiniz. Bu, bir projeyi her başlattığınızda, ihtiyacınız olan sekmenin her zaman görünmesini sağlar. Bir sekmeyi sabitlemek için, sekmenin üzerine gelin ve _sabitle_ simgesine tıklayın:
+
+![Sekmeyi sabitleme](media/ide-tour-tabpin.png)
 
 ## <a name="refactoring"></a>Yeniden Düzenle
 
-Mac için Visual Studio, kodunuzu yeniden değiştirmenin iki kullanışlı yöntem sağlar: Bağlam Eylemler ve kaynak çözümleme. Daha fazla ilgili [yeniden düzenleme](/visualstudio/mac/refactoring) makalesi.
+Mac için Visual Studio, kodunuzu yeniden düzenleme için iki yararlı yol sağlar: Bağlam eylemleri ve kaynak analizi. Yeniden [düzenleme](/visualstudio/mac/refactoring) makalesindeki bunlarla ilgili daha fazla bilgi edinebilirsiniz.
 
 ## <a name="debugging"></a>Hata Ayıklama
 
-Mac için Visual Studio yerel hata ayıklayıcı bir izin verme hata ayıklama desteği Xamarin.iOS ve Xamarin.Mac Xamarin.Android uygulamaları için sahiptir. Mac için Visual Studio, Mono yazılım Mono çalışma zamanına uygulanan, IDE, tüm platformlar arasında hata ayıklama yönetilen kodu izin verme hata ayıklayıcıyı kullanır. Hata ayıklama hakkında ek bilgi için ziyaret edin [hata ayıklama](/visualstudio/mac/debugging) makalesi.
+Mac için Visual Studio, Xamarin. iOS, Xamarin. Mac ve Xamarin. Android uygulamaları için hata ayıklama desteğine izin veren yerel bir hata ayıklayıcıya sahiptir. Mac için Visual Studio, mono çalışma zamanına uygulanan, IDE 'nin tüm platformlarda yönetilen kodda hata ayıklamasına izin veren mono yazılım hata ayıklayıcısını kullanır. Hata ayıklama hakkında daha fazla bilgi için [hata ayıklama](/visualstudio/mac/debugging) makalesini ziyaret edin.
 
-Hata ayıklayıcısı dizeleri, renkler, URL'ler, hem de boyutları, ortak ordinates ve bézier eğriler gibi özel türler için zengin görselleştiriciler içerir.
+Hata ayıklayıcı, dizeler, renkler, URL 'Ler ve boyutlar, koordinatlar ve Bézier eğrileri gibi özel türler için zengin Görselleştiriciler içerir.
 
-Hata Ayıklayıcı'nın veri görselleştirmeleri hakkında daha fazla bilgi için ziyaret [veri görselleştirmeleri](/visualstudio/mac/data-visualizations) makalesi.
+Hata ayıklayıcının veri görselleştirmeleri hakkında daha fazla bilgi için, [veri görselleştirmeleri](/visualstudio/mac/data-visualizations) makalesini ziyaret edin.
 
 ## <a name="version-control"></a>Sürüm denetimi
 
-Mac için Visual Studio, Git, Subversion kaynak denetimi sistemleriyle tümleştirilir. Kaynak denetimi altında proje, çözüm adının yanında listelenen dal ile belirtilir:
+Mac için Visual Studio, git ve alt sürüm kaynak denetimi sistemleriyle tümleştirilir. Kaynak denetimi altındaki projeler, çözüm adının yanında listelenen Dalla birlikte gösterilir:
 
-![Kaynak denetimi altında proje belirtmek için dal adı](media/ide-tour-image22.png)
+![Kaynak denetimi altında projeyi gösterecek dal adı](media/ide-tour-image22.png)
 
-Dosyaları kaydedilmemiş değişikliklerle bir ek açıklama simgelerine çözüm bölmesinde üzerinde aşağıdaki görüntüde gösterildiği gibi sahiptir:
+Kaydedilmemiş değişiklikleri olan dosyalar, aşağıdaki görüntüde gösterildiği gibi, çözüm bölmesindeki simgelerinde ek açıklamasına sahiptir:
 
-![Çözüm panelinde kaydedilmemiş dosyaları](media/ide-tour-image23.png)
+![Çözüm panelinde işlenmemiş dosyalar](media/ide-tour-image23.png)
 
-Visual Studio'da sürüm denetimini kullanma ile ilgili daha fazla bilgi için bkz: [sürüm denetimi](/visualstudio/mac/version-control) makalesi.
+Visual Studio 'da sürüm denetimini kullanma hakkında daha fazla bilgi için [sürüm denetimi](/visualstudio/mac/version-control) makalesine bakın.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
 - [Mac için Visual Studio'yu yükleyin](installation.md)
-- [Kullanılabilir iş yüklerinin gözden geçirin](workloads.md)
+- [Kullanılabilir iş yüklerini gözden geçirin](workloads.md)
 
-## <a name="related-video"></a>İlgili Video
+## <a name="related-video"></a>İlgili video
 
 > [!Video https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Visual-Studio-for-Mac-Overview/player]
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [Visual Studio IDE (üzerinde Windows)](/visualstudio/ide/visual-studio-ide)
+- [Visual Studio IDE (Windows üzerinde)](/visualstudio/ide/visual-studio-ide)

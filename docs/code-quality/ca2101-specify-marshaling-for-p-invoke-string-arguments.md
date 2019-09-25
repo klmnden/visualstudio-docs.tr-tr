@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d1eb4c2535060f9a110d149e88ac2532e6ad1412
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: f49c9dfdac1d8d8aec8ec32df7374b5ae0a28e92
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68921095"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71233020"
 ---
 # <a name="ca2101-specify-marshaling-for-pinvoke-string-arguments"></a>CA2101: P/Invoke dize bağımsız değişkenleri için sıralama belirtin
 
@@ -28,7 +28,7 @@ ms.locfileid: "68921095"
 |TypeName|SpecifyMarshalingForPInvokeStringArguments|
 |CheckId|CA2101|
 |Kategori|Microsoft. Globalization|
-|Yeni Değişiklik|Kırılmamış|
+|Son değişiklik|Kırılmamış|
 
 ## <a name="cause"></a>Sebep
 Platform çağırma üyesi kısmen güvenilen çağıranlar için izin verir, bir dize parametresine sahiptir ve dizeyi açıkça sıralamaz.

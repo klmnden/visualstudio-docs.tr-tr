@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 55c58f098616a5c3c2d6ad72f56e8eda51f689be
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5cf7fc6e31b9250392fc3ea447a5b91225640a50
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62796851"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71231902"
 ---
 # <a name="ca2200-rethrow-to-preserve-stack-details"></a>CA2200: Yığın ayrıntılarını korumak için yeniden fırlatın
 
@@ -30,28 +30,28 @@ ms.locfileid: "62796851"
 |-|-|
 |TypeName|RethrowToPreserveStackDetails|
 |CheckId|CA2200|
-|Kategori|Microsoft.Usage|
-|Yeni Değişiklik|Bozucu olmayan|
+|Kategori|Microsoft. Usage|
+|Son değişiklik|Kırılmamış|
 
 ## <a name="cause"></a>Sebep
 
-Bir özel durum yeniden oluşur ve özel durum açıkça belirtilen `throw` deyimi.
+Bir özel durum yeniden oluşturulur ve özel durum `throw` deyimde açıkça belirtilir.
 
 ## <a name="rule-description"></a>Kural açıklaması
 
-Bir özel durum sonra bunu izleme bilgileri parçası yığın izlemesi aşağıdadır. Yığın izlemesi, özel durum oluşturur ve özel durumu yakalar yöntemi ile biten yöntem ile başlayan yöntemi çağrı hiyerarşisini listesidir. Özel durum belirterek yeniden durum varsa `throw` deyimi, yığın izlemesi geçerli bir yöntem yeniden başlatılır ve özel durum döndüren özgün yöntem ile geçerli yöntemi arasındaki yöntem çağrılarını listesini kaybolur. Özel durum ile özgün yığın izleme bilgileri tutmak için kullanın `throw` özel durum belirtmeden deyimi.
+Bir özel durum oluşturulduktan sonra, içerdiği bilgilerin bir kısmı yığın izgıdır. Yığın izlemesi, özel durumu oluşturan yöntemiyle başlayan ve özel durumu yakalayan yöntemle biten Yöntem çağrısı hiyerarşisinin bir listesidir. `throw` Deyimdeki özel durum belirtilerek bir özel durum yeniden oluşturulursa, yığın izlemesi geçerli yöntemde yeniden başlatılır ve özel durumu oluşturan özgün yöntem ile geçerli yöntem arasındaki yöntem çağrılarının listesi kaybedilir. Özgün yığın izleme bilgilerini özel durumla birlikte tutmak için, özel durumu belirtmeden `throw` ifadesini kullanın.
 
-## <a name="how-to-fix-violations"></a>İhlaller nasıl düzeltilir?
+## <a name="how-to-fix-violations"></a>İhlalleri çözme
 
-Bu kural ihlalini düzeltmek için özel durum açıkça belirtmeden özel durumu yeniden.
+Bu kural ihlalini onarmak için özel durumu açıkça belirtmeden özel durumu yeniden oluşturun.
 
-## <a name="when-to-suppress-warnings"></a>Uyarılar bastırıldığında
+## <a name="when-to-suppress-warnings"></a>Uyarıların ne zaman bastırılamıyor
 
 Bu kuraldan uyarıyı bastırmayın.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek bir yöntemi gösterir `CatchAndRethrowExplicitly`, kural ve bir yöntem ihlal `CatchAndRethrowImplicitly`, kural karşılar.
+Aşağıdaki örnek, kuralını karşılayan kuralı ve `CatchAndRethrowExplicitly` `CatchAndRethrowImplicitly`yöntemi ihlal eden bir yöntemi gösterir.
 
 [!code-csharp[FxCop.Usage.Rethrow#1](../code-quality/codesnippet/CSharp/ca2200-rethrow-to-preserve-stack-details_1.cs)]
 [!code-vb[FxCop.Usage.Rethrow#1](../code-quality/codesnippet/VisualBasic/ca2200-rethrow-to-preserve-stack-details_1.vb)]

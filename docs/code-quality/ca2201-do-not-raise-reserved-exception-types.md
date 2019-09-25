@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1648d2ae3c46fa8382a96b497f307b370a8d345c
-ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
+ms.openlocfilehash: 3d9b787a4e50f43867b5d9b4ec7a11aba03f8599
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66820571"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71231664"
 ---
 # <a name="ca2201-do-not-raise-reserved-exception-types"></a>CA2201: Ayrılmış özel durum türlerini harekete geçirmeyin
 
@@ -27,16 +27,16 @@ ms.locfileid: "66820571"
 |-|-|
 |TypeName|DoNotRaiseReservedExceptionTypes|
 |CheckId|CA2201|
-|Kategori|Microsoft.Usage|
-|Yeni Değişiklik|Yeni|
+|Kategori|Microsoft. Usage|
+|Son değişiklik|Yeni|
 
 ## <a name="cause"></a>Sebep
 
-Bir yöntem çok genel veya çalışma zamanı tarafından ayrılmış bir özel durum türü oluşturur.
+Bir yöntem, çok genel olan veya çalışma zamanı tarafından ayrılmış bir özel durum türü oluşturur.
 
 ## <a name="rule-description"></a>Kural açıklaması
 
-Kullanıcı için yeterli bilgi sağlamak için genel aşağıdaki özel durum türleri şunlardır:
+Aşağıdaki özel durum türleri kullanıcıya yeterli bilgi sağlamak için çok genel bir durumdur:
 
 - <xref:System.Exception?displayProperty=fullName>
 
@@ -44,7 +44,7 @@ Kullanıcı için yeterli bilgi sağlamak için genel aşağıdaki özel durum t
 
 - <xref:System.SystemException?displayProperty=fullName>
 
-Aşağıdaki özel durum türleri ayrılmıştır ve yalnızca ortak dil çalışma zamanı tarafından oluşturulur:
+Aşağıdaki özel durum türleri ayrılmıştır ve yalnızca ortak dil çalışma zamanı tarafından oluşturulmalıdır:
 
 - <xref:System.AccessViolationException?displayProperty=fullName>
 
@@ -64,42 +64,42 @@ Aşağıdaki özel durum türleri ayrılmıştır ve yalnızca ortak dil çalı�
 
 - <xref:System.StackOverflowException?displayProperty=fullName>
 
-**Genel özel durum oluşturması beklenmiyor**
+**Genel özel durumlar throw**
 
-Bir genel özel durum türü gibi throw varsa <xref:System.Exception> veya <xref:System.SystemException> kitaplığı veya çerçeveyi, tüketicilerin kaynaklananlar zorlar özel durumları işlemek nasıl bilmiyorsanız Bilinmeyen özel durumlar dahil olmak üzere,.
+<xref:System.Exception> Ya<xref:System.SystemException> da bir kitaplık ya da çerçevede gibi genel bir özel durum türü oluşturursanız, müşterileri nasıl ele alınacağını bilmeyen bilinmeyen özel durumlar da dahil olmak üzere tüm özel durumları yakalayacak şekilde zorlar.
 
-Bunun yerine, framework zaten daha türetilmiş bir tür throw veya türetilen kendi türünüzü oluşturabilirsiniz <xref:System.Exception>.
+Bunun yerine, çerçevede zaten bulunan daha fazla türetilmiş bir tür oluşturun ya da ' den <xref:System.Exception>türetilen kendi türünü oluşturun.
 
-**Belirli özel durumlar**
+**Belirli özel durumlar oluşturun**
 
-Aşağıdaki tablo parametreleri gösterir ve bir özellik kümesi erişimcisinde değer parametresi dahil olmak üzere bu parametreyi doğruladığınızda atmak için hangi özel durumları:
+Aşağıdaki tabloda, bir özelliğin set erişimcisinde value parametresi de dahil olmak üzere parametresini doğruladığınızda, parametreleri ve hangi özel durumların oluşturulacağı gösterilmektedir:
 
 |Parametre açıklaması|Özel Durum|
 |---------------------------|---------------|
-|`null` Başvuru|<xref:System.ArgumentNullException?displayProperty=fullName>|
-|(Örneğin, bir koleksiyon veya liste için bir dizin), izin verilen aralığın dışında|<xref:System.ArgumentOutOfRangeException?displayProperty=fullName>|
-|Geçersiz `enum` değeri|<xref:System.ComponentModel.InvalidEnumArgumentException?displayProperty=fullName>|
-|Bir yöntemin parametre belirtimleri karşılamıyor bir biçim içeriyor (için biçim dizesi gibi `ToString(String)`)|<xref:System.FormatException?displayProperty=fullName>|
+|`null`başvurunun|<xref:System.ArgumentNullException?displayProperty=fullName>|
+|İzin verilen değer aralığının dışında (bir koleksiyon veya liste için Dizin gibi)|<xref:System.ArgumentOutOfRangeException?displayProperty=fullName>|
+|Geçersiz `enum` değer|<xref:System.ComponentModel.InvalidEnumArgumentException?displayProperty=fullName>|
+|Bir yöntemin parametre belirtimlerini karşılamayan bir biçim içerir (örneğin, için `ToString(String)`biçim dizesi gibi)|<xref:System.FormatException?displayProperty=fullName>|
 |Aksi takdirde geçersiz|<xref:System.ArgumentException?displayProperty=fullName>|
 
-Bir işlem için geçerli bir nesne throw durumunu geçersiz olduğunda <xref:System.InvalidOperationException?displayProperty=fullName>
+Bir nesnenin geçerli durumu için geçersiz bir işlem<xref:System.InvalidOperationException?displayProperty=fullName>
 
-Byla zahozena bir nesne üzerinde bir işlem gerçekleştirildiğinde throw <xref:System.ObjectDisposedException?displayProperty=fullName>
+Atılmış bir nesne üzerinde bir işlem gerçekleştirildiğinde<xref:System.ObjectDisposedException?displayProperty=fullName>
 
-Ne zaman bir işlemi desteklenmiyor (olduğu gibi bir geçersiz kılınan **Stream.Write** okumak için açık bir Stream içinde) throw <xref:System.NotSupportedException?displayProperty=fullName>
+Bir işlem desteklenmadığında (örneğin, geçersiz kılınan bir **akışta** ) throw<xref:System.NotSupportedException?displayProperty=fullName>
 
-Bir dönüştürme (olduğu gibi bir açık tür dönüştürme işleci aşırı yükleme gibi) bir taşma neden olacağından, throw <xref:System.OverflowException?displayProperty=fullName>
+Bir dönüştürme bir taşma ile sonuçlanacaksa (örneğin, açık bir atama işleci aşırı yüklemesi) throw<xref:System.OverflowException?displayProperty=fullName>
 
-Diğer tüm durumlarda, türetilen kendi türünüzü oluşturabilirsiniz <xref:System.Exception> ve bu durum.
+Diğer tüm durumlar için, ' den <xref:System.Exception> türetilen kendi türünü oluşturmayı düşünün ve bunu oluşturun.
 
-## <a name="how-to-fix-violations"></a>İhlaller nasıl düzeltilir?
+## <a name="how-to-fix-violations"></a>İhlalleri çözme
 
-Bu kural ihlalini düzeltmek için oluşturulan özel durumun türü ayrılmış türlerinden biri değil belirli bir türe değiştirin.
+Bu kuralın ihlalini onarmak için, oluşturulan özel durumun türünü ayrılmış türlerden biri olmayan belirli bir türe değiştirin.
 
-## <a name="when-to-suppress-warnings"></a>Uyarılar bastırıldığında
+## <a name="when-to-suppress-warnings"></a>Uyarıların ne zaman bastırılamıyor
 
 Bu kuraldan uyarıyı bastırmayın.
 
-## <a name="related-rules"></a>İlgili kuralları
+## <a name="related-rules"></a>İlgili kurallar
 
-- [CA1031: Genel özel durum türlerini yakalamayın](../code-quality/ca1031-do-not-catch-general-exception-types.md)
+- [CA1031 Genel özel durum türlerini yakalamayın](../code-quality/ca1031-do-not-catch-general-exception-types.md)

@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: e26daf68e0031358605427b310bb7284d43baf1b
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: d4a0a1c001407d947988497c422fdb8e88dd7c83
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68922144"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71234891"
 ---
 # <a name="ca1401-pinvokes-should-not-be-visible"></a>CA1401: P/Invoke'lar görünür olmamalıdır
 
@@ -31,7 +31,7 @@ ms.locfileid: "68922144"
 |TypeName|PInvokesShouldNotBeVisible|
 |CheckId|CA1401|
 |Kategori|Microsoft. çalışabilirliği|
-|Yeni Değişiklik|Yeni|
+|Son değişiklik|Yeni|
 
 ## <a name="cause"></a>Sebep
 Ortak bir türdeki ortak veya korumalı yöntemin <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName> özniteliği vardır (Ayrıca içindeki `Declare` [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]anahtar sözcüğü tarafından da uygulanır).

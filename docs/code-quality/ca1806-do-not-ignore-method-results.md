@@ -16,12 +16,12 @@ dev_langs:
 - CSharp
 - VB
 manager: jillfra
-ms.openlocfilehash: 2e68fb6b4c40c165a09ae2631a2ad0a64bf52fbc
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 2bf4833aebdb6a92b9bd05294dd314dc2967738e
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68921549"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71233682"
 ---
 # <a name="ca1806-do-not-ignore-method-results"></a>CA1806: Metot sonuçlarını yoksaymayın
 
@@ -30,7 +30,7 @@ ms.locfileid: "68921549"
 |TypeName|DoNotIgnoreMethodResults|
 |CheckId|CA1806|
 |Kategori|Microsoft. Usage|
-|Yeni Değişiklik|Kırılmamış|
+|Son değişiklik|Kırılmamış|
 
 ## <a name="cause"></a>Sebep
 
@@ -53,7 +53,7 @@ A yöntemi, hiç kullanılmamış bir B nesnesinin yeni bir örneğini oluşturu
 
 If yöntemi B yöntemini çağırırsa, ancak B yönteminin döndürdüğü yeni dize örneğini kullanmaz. Örneği bir bağımsız değişken olarak başka bir yönteme geçirin, örneği bir değişkene atayın. Ya da gerekli değilse çağrıyı kaldırın.
 
- -veya-
+ veya
 
 If yöntemi B yöntemini çağırırsa, ancak yöntemin döndürdüğü HRESULT veya hata kodunu kullanmaz. Sonucu bir koşullu ifadede kullanın, sonucu bir değişkene atayın ya da başka bir yönteme bağımsız değişken olarak geçirin.
 

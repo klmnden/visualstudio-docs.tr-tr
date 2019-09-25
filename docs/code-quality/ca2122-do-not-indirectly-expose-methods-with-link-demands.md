@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 340d8f0a45506f15cdd9281f7ecda463583c3144
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 6850cee67a0dfed4b386eef5ed7cb021d3c76a4d
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68920819"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71232506"
 ---
 # <a name="ca2122-do-not-indirectly-expose-methods-with-link-demands"></a>CA2122: Bağlantı talepleri olan metotları dolaylı olarak açığa çıkarmayın
 
@@ -28,7 +28,7 @@ ms.locfileid: "68920819"
 |TypeName|DoNotIndirectlyExposeMethodsWithLinkDemands|
 |CheckId|CA2122|
 |Kategori|Microsoft.Security|
-|Yeni Değişiklik|Kırılmamış|
+|Son değişiklik|Kırılmamış|
 
 ## <a name="cause"></a>Sebep
 Ortak veya korumalı bir üyenin [bağlantı talepleri](/dotnet/framework/misc/link-demands) vardır ve herhangi bir güvenlik denetimi gerçekleştirmediğinden bir üye tarafından çağırılır.

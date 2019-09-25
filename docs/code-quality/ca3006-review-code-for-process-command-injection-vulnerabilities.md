@@ -10,50 +10,50 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 35e41301dcf0a1358b6d063ce557212915b5f591
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: 986607d7f42f49c99396bbb021c48bad549930c9
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65841434"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71237287"
 ---
 # <a name="ca3006-review-code-for-process-command-injection-vulnerabilities"></a>CA3006: İşlem komutu ekleme güvenlik açıkları için inceleme kodu
 
 |||
 |-|-|
-|TypeName|ReviewCodeForProcessCommandInjectionVulnerabilities|
+|TypeName|Belgeınlist Codeforprocesscommandinjectionaçıklardan|
 |CheckId|CA3006|
 |Kategori|Microsoft.Security|
-|Yeni Değişiklik|Bozucu olmayan|
+|Son değişiklik|Kırılmamış|
 
 ## <a name="cause"></a>Sebep
 
-Potansiyel olarak güvenilmeyen HTTP istek girişi process komutu ulaşır.
+Güvenilir olmayan HTTP isteği girişi bir işlem komutuna ulaşır.
 
 ## <a name="rule-description"></a>Kural açıklaması
 
-Güvenilmeyen girdisiyle çalışırken, komut ekleme saldırıları oluşturduğunu unutmayın. Bir komut ekleme saldırısına temel alınan işletim güvenliğini ve bütünlüğünü sunucunuzun ödün sistemde kötü amaçlı komutlar yürütebilir.
+Güvenilmeyen girişle çalışırken, komut ekleme saldırılarına karşı bir sorun yaşının. Bir komut ekleme saldırısı, temel işletim sisteminde kötü amaçlı komutlar yürütebilir ve sunucunuzun güvenliğini ve bütünlüğünü tehlikeye atabilirler.
 
-Bu kural, bir işlem komut ulaşmasını HTTP isteklerinden alınan giriş bulmayı dener.
-
-> [!NOTE]
-> Bu kural, derlemeler arasında veri izleyemezsiniz. Örneğin, bir derleme HTTP istek girişi okur ve bir işlem başlatır, başka bir derlemeye geçtikten sonra bu kural bir uyarı üreten olmaz.
+Bu kural, HTTP isteklerinden bir işlem komutuna ulaşan girişi bulmaya çalışır.
 
 > [!NOTE]
-> Derinlikte bu kural veri akışı yöntem çağrıları arasında çözümler için yapılandırılabilir bir sınır yoktur. Bkz: [Çözümleyicisi yapılandırma](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis) sınırı bir EditorConfig dosyasında nasıl yapılandıracağınızı öğrenmek için.
+> Bu kural derlemeler genelinde verileri izleyemez. Örneğin, bir derleme HTTP istek girişini okur ve sonra işlemi başlatan başka bir derlemeye geçirir, bu kural bir uyarı oluşturmaz.
 
-## <a name="how-to-fix-violations"></a>İhlaller nasıl düzeltilir?
+> [!NOTE]
+> Bu kuralın, yöntem çağrılarında veri akışını ne kadar analiz edip bu kurala ilişkin yapılandırılabilir bir sınır vardır. Bir EditorConfig dosyasında sınırı yapılandırma hakkında bilgi için bkz. [çözümleyici yapılandırması](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis) .
 
-- Mümkünse, kullanıcı girişini temel alarak işlemlerini başlatma kaçının.
-- Giriş karakter ve uzunluğu ile ilgili bilinen bir güvenli kümesi karşı doğrulayın.
+## <a name="how-to-fix-violations"></a>İhlalleri çözme
 
-## <a name="when-to-suppress-warnings"></a>Uyarılar bastırıldığında
+- Mümkünse, işlem kullanıcı girişine göre başlatılmaktan kaçının.
+- Girişin bilinen bir dizi güvenli karakter ve uzunluğa karşı doğrulanması.
 
-Girişi doğrulanması veya güvenli olacak şekilde Atlanan biliyorsanız, bu uyarının gösterilmemesi güvenlidir.
+## <a name="when-to-suppress-warnings"></a>Uyarıların ne zaman bastırılamıyor
+
+Girişin doğrulandığını veya güvenli olduğunu biliyorsanız, bu uyarıyı bastırmak güvenlidir.
 
 ## <a name="pseudo-code-examples"></a>Sözde kod örnekleri
 
-### <a name="violation"></a>İhlali
+### <a name="violation"></a>Edildiği
 
 ```csharp
 using System;

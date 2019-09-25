@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a09d06a521c4751e3aea78b72b99a8126f4e7ff
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: f4c5f9c001505a76f19f2d675d552124c611f3d5
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68923242"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71236620"
 ---
 # <a name="ca1004-generic-methods-should-provide-type-parameter"></a>CA1004: Genel metotlar tür parametresi sağlamalıdır
 
@@ -31,7 +31,7 @@ ms.locfileid: "68923242"
 |TypeName|GenericMethodsShouldProvideTypeParameter|
 |CheckId|CA1004|
 |Kategori|Microsoft.Design|
-|Yeni Değişiklik|Yeni|
+|Son değişiklik|Yeni|
 
 ## <a name="cause"></a>Sebep
 Dışarıdan görülebilen genel yöntemin parametre imzası, yöntemin tüm tür parametrelerine karşılık gelen türler içermez.

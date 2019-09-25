@@ -1,0 +1,76 @@
+### YamlMime:Landing
+title: Visual Studio hata ayıklayıcısı belgeleri
+summary: Visual Studio hata ayıklayıcı, programınızın çalışma zamanı davranışını gözlemlemenize ve sorunları bulma yardımcı olur.
+metadata:
+  title: Visual Studio'da Hata Ayıklama
+  description: Visual Studio kullanarak uygulama ve kod hatalarını ayıklama hakkında bilgi edinin.
+  ms.topic: landing-page
+  author: mikejo5000
+  ms.author: mikejo
+  manager: jillfra
+  ms.date: 09/20/2019
+  ms.openlocfilehash: 2ce5c3c8c9baf6f513f7dca4b4072e02e461a62a
+  ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+  ms.translationtype: MT
+  ms.contentlocale: tr-TR
+  ms.lasthandoff: 09/24/2019
+  ms.locfileid: "71213751"
+landingContent:
+- title: Hata ayıklama hakkında
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Hata ayıklama nedir?
+      url: what-is-debugging.md
+    - text: Hata ayıklama teknikleri ve araçları
+      url: write-better-code-with-visual-studio.md
+    - text: Hata ayıklayıcıya ilk bakış
+      url: debugger-feature-tour.md
+- title: Kullanmaya başlayın
+  linkLists:
+  - linkListType: tutorial
+    links:
+    - text: Başlayanlar için hata ayıklama
+      url: debugging-absolute-beginners.md
+    - text: C#’ta hata ayıklamayı öğrenin
+      url: /visualstudio/get-started/csharp/tutorial-debugger?toc=/visualstudio/debugger/toc.json
+    - text: C++’ta hata ayıklamayı öğrenin
+      url: getting-started-with-the-debugger-cpp.md
+    - text: Visual Basic’te hata ayıklamayı öğrenin
+      url: /visualstudio/get-started/visual-basic/tutorial-debugger?toc=/visualstudio/debugger/toc.json
+    - text: Hata ayıklayıcı > Python kodunu çalıştırın >
+      url: ../python/tutorial-working-with-python-in-visual-studio-step-04-debugging.md
+- title: Duraklat ve kodu gider
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Hata ayıklayıcısı ile kodda gezinme
+      url: navigating-through-code-with-the-debugger.md
+    - text: Kesme noktalarını kullanma
+      url: using-breakpoints.md
+    - text: Kodu düzenleme ve hata ayıklamaya devam etme
+      url: edit-and-continue.md
+- title: Verileri inceleme
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Değişkenleri inceleme
+      url: autos-and-locals-windows.md
+    - text: Değişkenler üzerinde izleme ayarlama
+      url: watch-and-quickwatch-windows.md
+    - text: Çağrı yığınını görüntüleme
+      url: how-to-use-the-call-stack-window.md
+- title: Hata ayıklayıcıyla daha derin ilerleyin
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Hata ayıklayıcısı ipuçları ve püf noktaları
+      url: debugger-tips-and-tricks.md
+    - text: XAML kodu çalıştırarak yazma ve hata ayıklama
+      url: xaml-hot-reload.md
+    - text: Canlı bir Azure uygulamasında hata ayıklama
+      url: debug-live-azure-applications.md
+    - text: Hata ayıklayıcıya ne göstereceğini söyleme
+      url: using-the-debuggerdisplay-attribute.md
+    - text: Uzaktan hata ayıklama
+      url: remote-debugging.md

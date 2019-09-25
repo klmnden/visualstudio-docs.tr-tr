@@ -10,54 +10,54 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: b66e28804e85b04b1492a20828c42a9b5efd3cf8
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: 42808b3961b18a23f594800f9d0782c908c9b1ba
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65841046"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71237187"
 ---
 # <a name="ca3012-review-code-for-regex-injection-vulnerabilities"></a>CA3012: Normal ifade ekleme güvenlik açıkları için inceleme kodu
 
 |||
 |-|-|
-|TypeName|ReviewCodeForRegexInjectionVulnerabilities|
+|TypeName|Belgeınlist Codeforregexınjectionaçıklardan|
 |CheckId|CA3012|
 |Kategori|Microsoft.Security|
-|Yeni Değişiklik|Bozucu olmayan|
+|Son değişiklik|Kırılmamış|
 
 ## <a name="cause"></a>Sebep
 
-Potansiyel olarak güvenilmeyen HTTP istek girişi, normal bir ifade ulaşır.
+Güvenilir olmayan HTTP isteği girişi bir normal ifadeye ulaşır.
 
 ## <a name="rule-description"></a>Kural açıklaması
 
-Güvenilmeyen girdisiyle çalışırken, normal ifade ekleme saldırıları oluşturduğunu unutmayın. Bir saldırganın normal ifade ekleme, normal bir ifade, istenmeyen sonuçları eşleşen normal ifade yapma veya bir hizmet reddi saldırısına kaynaklanan aşırı CPU kullanma regex yapmak için kötü amaçlı olarak değiştirmek için kullanabilirsiniz.
+Güvenilmeyen girişle çalışırken, en az sayıda Regex ekleme saldırısı olması gerekir. Saldırgan, normal ifadeyi kötü amaçlı olarak değiştirmek, Regex istenmeden sonuçlarla eşleştirmek için veya Regex aşırı CPU tüketmek için bir hizmet reddi saldırısından kaynaklanan Regex ekleme işlemini kullanabilir.
 
-Bu kural, bir normal ifade ulaşmasını HTTP isteklerinden alınan giriş bulmayı dener.
-
-> [!NOTE]
-> Bu kural, derlemeler arasında veri izleyemezsiniz. Örneğin, bir derleme HTTP istek girişi okur ve normal bir ifade oluşturur, başka bir derlemeye geçtikten sonra bu kural bir uyarı üretir olmaz.
+Bu kural, bir normal ifadeye ulaşan HTTP isteklerinden girdi bulmaya çalışır.
 
 > [!NOTE]
-> Derinlikte bu kural veri akışı yöntem çağrıları arasında çözümler için yapılandırılabilir bir sınır yoktur. Bkz: [Çözümleyicisi yapılandırma](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis) sınırı bir EditorConfig dosyasında nasıl yapılandıracağınızı öğrenmek için.
+> Bu kural derlemeler genelinde verileri izleyemez. Örneğin, bir derleme HTTP istek girişini okur ve sonra onu normal ifade oluşturan başka bir derlemeye geçirirse, bu kural bir uyarı oluşturmaz.
 
-## <a name="how-to-fix-violations"></a>İhlaller nasıl düzeltilir?
+> [!NOTE]
+> Bu kuralın, yöntem çağrılarında veri akışını ne kadar analiz edip bu kurala ilişkin yapılandırılabilir bir sınır vardır. Bir EditorConfig dosyasında sınırı yapılandırma hakkında bilgi için bkz. [çözümleyici yapılandırması](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis) .
 
-Regex eklemelerini karşı bazı risk azaltma işlemleri şunlardır:
+## <a name="how-to-fix-violations"></a>İhlalleri çözme
 
-- Her zaman bir [eşleşmesi zaman aşımı](/dotnet/standard/base-types/best-practices#use-time-out-values) normal ifadeler kullanarak.
-- Kullanıcı girişini temel alarak normal ifadeler kullanmaktan kaçının.
-- Çağırarak kullanıcı girişi ile özel karakterleri kaçış <xref:System.Text.RegularExpressions.Regex.Escape%2A?displayProperty=fullName> veya başka bir yöntem.
-- Kullanıcı girişi yalnızca özel dışı karakterler sağlar.
+Regex içindeki bazı azaltmalar şunları içerir:
 
-## <a name="when-to-suppress-warnings"></a>Uyarılar bastırıldığında
+- Normal ifadeler kullanılırken her zaman bir [eşleşme zaman aşımı](/dotnet/standard/base-types/best-practices#use-time-out-values) kullanın.
+- Kullanıcı girişini temel alan normal ifadeler kullanmaktan kaçının.
+- Ya da başka bir yöntem çağırarak <xref:System.Text.RegularExpressions.Regex.Escape%2A?displayProperty=fullName> Kullanıcı girişinden özel karakterleri kaçış.
+- Kullanıcı girişinden yalnızca özel olmayan karakterlere izin ver.
 
-Kullanmakta olduğunuz biliyorsanız bir [eşleşmesi zaman aşımı](/dotnet/standard/base-types/best-practices#use-time-out-values) ve özel karakterler kullanıcı girişi ücretsizdir, bu uyarının gösterilmemesi uygundur.
+## <a name="when-to-suppress-warnings"></a>Uyarıların ne zaman bastırılamıyor
+
+[Eşleştirme zaman aşımı](/dotnet/standard/base-types/best-practices#use-time-out-values) kullandığınızı ve Kullanıcı girişinin özel karakterlerden muaf olduğunu biliyorsanız, bu uyarıyı bastırmak çok normaldir.
 
 ## <a name="pseudo-code-examples"></a>Sözde kod örnekleri
 
-### <a name="violation"></a>İhlali
+### <a name="violation"></a>Edildiği
 
 ```csharp
 using System;

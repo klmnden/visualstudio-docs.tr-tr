@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: a086ad80bd13fb18f866769db34d72cae3e67496
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: ead932af202bd1a44464025a1b09baa698acb7b1
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68922871"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71236044"
 ---
 # <a name="ca1034-nested-types-should-not-be-visible"></a>CA1034: İç içe türler görünür olmamalıdır
 
@@ -32,7 +32,7 @@ ms.locfileid: "68922871"
 |TypeName|NestedTypesShouldNotBeVisible|
 |CheckId|CA1034|
 |Kategori|Microsoft.Design|
-|Yeni Değişiklik|Yeni|
+|Son değişiklik|Yeni|
 
 ## <a name="cause"></a>Sebep
 

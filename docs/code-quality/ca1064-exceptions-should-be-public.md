@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b17ccfe66875588ac19c587ff6fcbd889d1e6a44
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 0ffc12d8d047be1bb13fcac133a61b047152ce3d
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68922323"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71235328"
 ---
 # <a name="ca1064-exceptions-should-be-public"></a>CA1064: Özel durumlar genel olmalıdır
 
@@ -28,7 +28,7 @@ ms.locfileid: "68922323"
 |TypeName|ExceptionsShouldBePublic|
 |CheckId|CA1064|
 |Kategori|Microsoft.Design|
-|Yeni Değişiklik|Kırılmamış|
+|Son değişiklik|Kırılmamış|
 
 ## <a name="cause"></a>Sebep
 Genel olmayan bir özel durum doğrudan, <xref:System.Exception> <xref:System.SystemException>, veya <xref:System.ApplicationException>' den türetilir.

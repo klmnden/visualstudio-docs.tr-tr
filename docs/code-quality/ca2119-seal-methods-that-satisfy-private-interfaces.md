@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 02e69a97468675cd6f7530793581c15717465d6f
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 84cac2f48112c43805cdd9c12a6a41cf56a8ae72
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68921055"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71232624"
 ---
 # <a name="ca2119-seal-methods-that-satisfy-private-interfaces"></a>CA2119: Özel arabirimleri karşılayan metotları mühürleyin
 
@@ -32,7 +32,7 @@ ms.locfileid: "68921055"
 |TypeName|SealMethodsThatSatisfyPrivateInterfaces|
 |CheckId|CA2119|
 |Kategori|Microsoft.Security|
-|Yeni Değişiklik|Yeni|
+|Son değişiklik|Yeni|
 
 ## <a name="cause"></a>Sebep
 Devralınabilir bir ortak tür, bir `internal` (`Friend` Visual Basic) arabiriminde geçersiz kılınabilir bir yöntem uygulamasını sağlar.

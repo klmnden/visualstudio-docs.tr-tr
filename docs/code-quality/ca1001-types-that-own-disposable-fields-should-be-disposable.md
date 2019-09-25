@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: fae67f8c1ffa3b4e6d7cc2f0fbbaf670733f9ff4
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 3bda8fc80992a2246c30e28582eb93b4624ab81c
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68923306"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71236688"
 ---
 # <a name="ca1001-types-that-own-disposable-fields-should-be-disposable"></a>CA1001: Atılabilen alanlara sahip türler atılabilir olmalıdır
 
@@ -31,7 +31,7 @@ ms.locfileid: "68923306"
 |TypeName|TypesThatOwnDisposableFieldsShouldBeDisposable|
 |CheckId|CA1001|
 |Kategori|Microsoft.Design|
-|Yeni Değişiklik|Not-tür, derlemenin dışında görünmüyorsa bölünmez.<br /><br /> Parçalama-tür derleme dışında görünüyorsa.|
+|Son değişiklik|Not-tür, derlemenin dışında görünmüyorsa bölünmez.<br /><br /> Parçalama-tür derleme dışında görünüyorsa.|
 
 ## <a name="cause"></a>Sebep
 Bir sınıf, <xref:System.IDisposable?displayProperty=fullName> türü olan bir örnek alanı bildirir ve uygular ve sınıfı uygulamaz <xref:System.IDisposable>.

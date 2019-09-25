@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b655609548d3de293abe2adc0ec3fb5c6fcf297b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1721fd52c00c5b312c88f19d48b668b12d28f050
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62546114"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71234490"
 ---
 # <a name="ca1506-avoid-excessive-class-coupling"></a>CA1506: Aşırı sınıf bağlantısından kaçının
 
@@ -27,26 +27,26 @@ ms.locfileid: "62546114"
 |-|-|
 |TypeName|AvoidExcessiveClassCoupling|
 |CheckId|CA1506|
-|Kategori|Microsoft.Maintainability|
-|Yeni Değişiklik|Yeni|
+|Kategori|Microsoft. Bakımolmaması|
+|Son değişiklik|Yeni|
 
 ## <a name="cause"></a>Sebep
 
-Bir türün veya yöntemin birçok diğer türleri ile birleştirilmiştir.
+Bir tür ya da yöntem diğer birçok türle birlikte bağlanmış.
 
 ## <a name="rule-description"></a>Kural açıklaması
 
 Bu kural türü veya yöntemini içeren benzersiz türde başvuru sayısı belirlenerek eşlenmesiyle sınıfı ölçer.
 
-Türler ve bir sınıf bağlantısı yüksek ölçüde içeren yöntemlerin bakımını yapmak zor olabilir. Türler ve düşük eşlenmesiyle ve yüksek uyum göstermesi yöntemler için iyi bir uygulamadır.
+Yüksek ölçüde sınıf bağlantısı olan türler ve Yöntemler devam etmek zor olabilir. Düşük ve yüksek bir cohede gösteren türler ve yöntemlere sahip olmak iyi bir uygulamadır.
 
-## <a name="how-to-fix-violations"></a>İhlaller nasıl düzeltilir?
+## <a name="how-to-fix-violations"></a>İhlalleri çözme
 
-Bu ihlali gidermek için tür veya yöntem bağlı türler sayısını azaltmak için yeniden tasarlayabilir deneyin.
+Bu ihlalin giderilmesi için, türü veya yöntemi, bağlandığı türlerin sayısını azaltmak için yeniden tasarlayadeneyin.
 
-## <a name="when-to-suppress-warnings"></a>Uyarılar bastırıldığında
+## <a name="when-to-suppress-warnings"></a>Uyarıların ne zaman bastırılamıyor
 
-Bu uyarı, tür veya yöntem rağmen bağımlılıklar diğer türleri üzerinde çok fazla sürdürülebilir edildiği durumlarda hariç tutun.
+Tür veya yöntem diğer türlerde çok sayıda bağımlılıklara karşın bakım yapılabilir olarak kabul edildiğinde bu uyarıyı hariç tutun.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

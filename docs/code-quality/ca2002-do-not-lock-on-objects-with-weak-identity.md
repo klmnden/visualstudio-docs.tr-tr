@@ -16,12 +16,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 054f809483cf2a9c4647370e2f69187795c5c203
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fc4504e917daeadc93963c6d6870c00515a5065a
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62545273"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71233170"
 ---
 # <a name="ca2002-do-not-lock-on-objects-with-weak-identity"></a>CA2002: Zayıf kimliği olan nesneleri kilitlemeyin
 
@@ -29,22 +29,22 @@ ms.locfileid: "62545273"
 |-|-|
 |TypeName|DoNotLockOnObjectsWithWeakIdentity|
 |CheckId|CA2002|
-|Kategori|Microsoft.Reliability|
-|Yeni Değişiklik|Bölünemez|
+|Kategori|Microsoft. güvenilirliği|
+|Son değişiklik|Kırılmamış|
 
 ## <a name="cause"></a>Sebep
 
-Bir iş parçacığı, zayıf kimliğe sahip bir nesne üzerinde kilit dener.
+Bir iş parçacığı, zayıf bir kimliğe sahip bir nesne üzerinde kilit edinmeye çalışır.
 
 ## <a name="rule-description"></a>Kural açıklaması
 
 Bir nesneye uygulama etki alanları arasından erişilebiliyorsa o nesnenin zayıf bir kimliğe sahip olduğu söylenir. Zayıf kimliğe sahip bir nesne üzerinde kilit almayı deneyen iş parçacığı aynı nesne üzerinde bir kilide sahip olan farklı uygulama etki alanı içindeki ikinci iş parçacığı tarafından engellenebilir.
 
-Aşağıdaki türleri zayıf bir kimliğe sahip ve kural tarafından işaretlenir:
+Aşağıdaki türlerin zayıf bir kimliği vardır ve kurala göre işaretlenir:
 
 - <xref:System.String>
 
-- Diziler de dahil olmak üzere, değer türlerinin [tam sayı türleri](/dotnet/csharp/language-reference/keywords/integral-types-table), [kayan nokta türleri](/dotnet/csharp/language-reference/keywords/floating-point-types-table), ve <xref:System.Boolean>.
+- [İntegral türleri](/dotnet/csharp/language-reference/keywords/integral-types-table), [kayan nokta türleri](/dotnet/csharp/language-reference/keywords/floating-point-types-table)ve <xref:System.Boolean>dahil olmak üzere değer türlerinin dizileri.
 
 - <xref:System.MarshalByRefObject>
 
@@ -60,21 +60,21 @@ Aşağıdaki türleri zayıf bir kimliğe sahip ve kural tarafından işaretleni
 
 - <xref:System.Threading.Thread>
 
-## <a name="how-to-fix-violations"></a>İhlaller nasıl düzeltilir?
+## <a name="how-to-fix-violations"></a>İhlalleri çözme
 
-Bu kural ihlalini düzeltmek için açıklama bölümünde listesinde olmayan bir türden bir nesne kullanın.
+Bu kuralın ihlalini onarmak için, açıklama bölümündeki listede yer alan bir türden bir nesne kullanın.
 
-## <a name="when-to-suppress-warnings"></a>Uyarılar bastırıldığında
+## <a name="when-to-suppress-warnings"></a>Uyarıların ne zaman bastırılamıyor
 
 Bu kuraldan uyarıyı bastırmayın.
 
-## <a name="related-rules"></a>İlgili kuralları
+## <a name="related-rules"></a>İlgili kurallar
 
-[CA2213: Atılabilen alanlar atılmalıdır](../code-quality/ca2213-disposable-fields-should-be-disposed.md)
+[CA2213 Atılabilir alanlar atılmalıdır](../code-quality/ca2213-disposable-fields-should-be-disposed.md)
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, kural ihlal bazı nesne kilitleri gösterir.
+Aşağıdaki örnekte, kuralı ihlal eden bazı nesne kilitleri gösterilmektedir.
 
 [!code-vb[FxCop.Reliability.LockWeakObjects#1](../code-quality/codesnippet/VisualBasic/ca2002-do-not-lock-on-objects-with-weak-identity_1.vb)]
 [!code-csharp[FxCop.Reliability.LockWeakObjects#1](../code-quality/codesnippet/CSharp/ca2002-do-not-lock-on-objects-with-weak-identity_1.cs)]
@@ -83,5 +83,5 @@ Aşağıdaki örnek, kural ihlal bazı nesne kilitleri gösterir.
 
 - <xref:System.Threading.Monitor>
 - <xref:System.AppDomain>
-- [lock deyimi (C#)](/dotnet/csharp/language-reference/keywords/lock-statement)
-- [SyncLock deyimi (Visual Basic)](/dotnet/visual-basic/language-reference/statements/synclock-statement)
+- [Lock deyimleri (C#)](/dotnet/csharp/language-reference/keywords/lock-statement)
+- [SyncLock ekstresi (Visual Basic)](/dotnet/visual-basic/language-reference/statements/synclock-statement)

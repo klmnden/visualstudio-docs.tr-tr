@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 621bb7292ca467d6d3197636f662a4662712d483
-ms.sourcegitcommit: 0f44ec8ba0263056ad04d2d0dc904ad4206ce8fc
+ms.openlocfilehash: 0612886bf92a4ca6a30e5e15ae1c4a4950d9ddad
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70766019"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71236665"
 ---
 # <a name="ca1002-do-not-expose-generic-lists"></a>CA1002: Genel listeleri gösterme
 
@@ -28,7 +28,7 @@ ms.locfileid: "70766019"
 |TypeName|DoNotExposeGenericLists|
 |CheckId|CA1002|
 |Kategori|Microsoft.Design|
-|Yeni Değişiklik|Yeni|
+|Son değişiklik|Yeni|
 
 ## <a name="cause"></a>Sebep
 

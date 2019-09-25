@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a70e999505bd900a7b3d89693ef4f6a1cef9de7d
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: ce7870077cb859a25de70c726c78cad1d50270e5
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68920420"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71231942"
 ---
 # <a name="ca2146-types-must-be-at-least-as-critical-as-their-base-types-and-interfaces"></a>CA2146: Türler en az kendi taban türleri ve arabirimleri kadar kritik olmalıdır
 
@@ -24,7 +24,7 @@ ms.locfileid: "68920420"
 |TypeName|Typesmusbeatliastakaralama Ticalasbasetypes|
 |CheckId|CA2146|
 |Kategori|Microsoft.Security|
-|Yeni Değişiklik|Yeni|
+|Son değişiklik|Yeni|
 
 ## <a name="cause"></a>Sebep
 <xref:System.Security.SecuritySafeCriticalAttribute> Saydam bir tür, <xref:System.Security.SecurityCriticalAttribute>veya ile işaretlenmiş bir türden türetilir veya <xref:System.Security.SecuritySafeCriticalAttribute> özniteliğiyle işaretlenmiş bir tür özniteliğiyle işaretlenmiş bir <xref:System.Security.SecurityCriticalAttribute> türden türetilir.

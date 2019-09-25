@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8f25b74949c734921c313ae2cf00a2d217029e52
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 11f210b9d37f15b3ea92b92112e48eecd3c8b9e1
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68921380"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71233415"
 ---
 # <a name="ca1822-mark-members-as-static"></a>CA1822: Üyeleri static olarak işaretleyin
 
@@ -28,7 +28,7 @@ ms.locfileid: "68921380"
 |TypeName|MarkMembersAsStatic|
 |CheckId|CA1822|
 |Kategori|Microsoft. Performance|
-|Yeni Değişiklik|Bozuk olmayan-üye, yaptığınız değişiklikten bağımsız olarak, derleme dışında görünür değilse. Parçalama-yalnızca üyeyi `this` anahtar sözcüğü olan bir örnek üye olarak değiştirirseniz.<br /><br /> Parçalama-üyeyi bir örnek üyesinden statik üyeye değiştirirseniz ve derleme dışında görünür durumdaysa.|
+|Son değişiklik|Bozuk olmayan-üye, yaptığınız değişiklikten bağımsız olarak, derleme dışında görünür değilse. Parçalara ayırma olmayan bir üyeyi yalnızca `this` anahtar sözcüğü olan bir örnek üye olarak değiştirirseniz.<br /><br /> Parçalama-üyeyi bir örnek üyesinden statik üyeye değiştirirseniz ve derleme dışında görünür durumdaysa.|
 
 ## <a name="cause"></a>Sebep
 Örnek verilerine erişmeyen bir üye statik olarak işaretlenmemiş (içinde [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]paylaşılan).

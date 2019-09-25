@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d765bfda87fe184256304b86f145f4f02adb7db6
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 23358d104c891ff9e230f0daad0f5e6ca57b46c2
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68922638"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71235760"
 ---
 # <a name="ca1046-do-not-overload-operator-equals-on-reference-types"></a>CA1046: Eşittir işlecini başvuru türlerinde aşırı yüklemeyin
 
@@ -28,7 +28,7 @@ ms.locfileid: "68922638"
 |TypeName|DoNotOverloadOperatorEqualsOnReferenceTypes|
 |CheckId|CA1046|
 |Kategori|Microsoft.Design|
-|Yeni Değişiklik|Yeni|
+|Son değişiklik|Yeni|
 
 ## <a name="cause"></a>Sebep
 Ortak veya iç içe ortak başvuru türü eşitlik işlecini aşırı yükler.

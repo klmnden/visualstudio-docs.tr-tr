@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c07dde4c3b992db30c9fc72a0dfa01f0f13b31e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b99aae681dbe7bbeece557a15d78aed0b3f07f6f
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62806608"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71230825"
 ---
 # <a name="ca2233-operations-should-not-overflow"></a>CA2233: İşleçler taşmamalıdır
 
@@ -30,33 +30,33 @@ ms.locfileid: "62806608"
 |-|-|
 |TypeName|OperationsShouldNotOverflow|
 |CheckId|CA2233|
-|Kategori|Microsoft.Usage|
-|Yeni Değişiklik|Bozucu olmayan|
+|Kategori|Microsoft. Usage|
+|Son değişiklik|Kırılmamış|
 
 ## <a name="cause"></a>Sebep
 
-Bir yöntem, bir aritmetik işlemi gerçekleştirir ve önceden işlenen taşmayı engellemek için doğrulamaz.
+Bir yöntem bir aritmetik işlem gerçekleştirir ve taşmayı engellemek için işleneni doğrulamaz.
 
 ## <a name="rule-description"></a>Kural açıklaması
 
-İşlemin sonucu dahil veri türleri için olası değerler aralığının dışında olduğundan emin olmak için önce işlenenleri doğrulamadan aritmetik işlemler gerçekleştirme. Yürütme bağlamı ve söz konusu veri türlerine bağlı olarak, aritmetik taşma ya da neden olabilir bir <xref:System.OverflowException?displayProperty=fullName> ya da sonucun en önemli bitleri atılır.
+İşlemin sonucunun, dahil edilen veri türleri için olası değerler aralığının dışında olmadığından emin olmak için, önce işlenenleri doğrulamadan aritmetik işlemler yapmayın. Yürütme bağlamına ve dahil edilen veri türlerine bağlı olarak, aritmetik taşma, sonucun bir <xref:System.OverflowException?displayProperty=fullName> veya en önemli bitlerinin iptal edilmesine yol açabilir.
 
-## <a name="how-to-fix-violations"></a>İhlaller nasıl düzeltilir?
+## <a name="how-to-fix-violations"></a>İhlalleri çözme
 
-Bu kural ihlalini düzeltmek için işlem gerçekleştirmeden önce işlenenleri doğrulayın.
+Bu kuralın ihlal edildiğini onarmak için, işlemi gerçekleştirmeden önce işlenenleri doğrulayın.
 
-## <a name="when-to-suppress-warnings"></a>Uyarılar bastırıldığında
+## <a name="when-to-suppress-warnings"></a>Uyarıların ne zaman bastırılamıyor
 
-Olası değerler işlenenlerin aritmetik işlem taşma hiçbir zaman neden olacaksa, bu kuraldan bir uyarıyı bastırmak güvenlidir.
+İşlenenlerin olası değerleri hiçbir şekilde aritmetik işlemin taşmasına neden olursa, bu kuraldan bir uyarı bastırılmaz.
 
-## <a name="example-of-a-violation"></a>Bir ihlali örneği
+## <a name="example-of-a-violation"></a>İhlalin örneği
 
-Aşağıdaki örnekte bir yöntem, bu kuralı ihlal eden bir tamsayı yönetir. [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] gerektirir **Kaldır** tamsayı taşma seçeneği bu harekete geçirmek devre dışı.
+Aşağıdaki örnekteki bir yöntem, bu kuralı ihlal eden bir tamsayıyı yönetir. [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]Bu, tetiklenmesi için tamsayı taşmasını **Kaldır** seçeneğinin devre dışı olmasını gerektirir.
 
 [!code-vb[FxCop.Usage.OperationOverflow#1](../code-quality/codesnippet/VisualBasic/ca2233-operations-should-not-overflow_1.vb)]
 [!code-csharp[FxCop.Usage.OperationOverflow#1](../code-quality/codesnippet/CSharp/ca2233-operations-should-not-overflow_1.cs)]
 
-Bu örnekte yöntemi iletilmezse <xref:System.Int32.MinValue?displayProperty=fullName>, işlem yetersiz kalması gerekir. Bu, atılması sonucun en önemli bite neden olur. Aşağıdaki kod nasıl gerçekleştirildiğini gösterir.
+Bu örnekteki yöntem geçirilmemişse <xref:System.Int32.MinValue?displayProperty=fullName>, işlem alttan olur. Bu, sonucun en önemli bitinin atılmasına neden olur. Aşağıdaki kodda bunun nasıl gerçekleştiği gösterilmektedir.
 
 ```csharp
 public static void Main()
@@ -81,32 +81,32 @@ End Sub
 2147483647
 ```
 
-## <a name="fix-with-input-parameter-validation"></a>Giriş parametresi doğrulama ile düzeltin
+## <a name="fix-with-input-parameter-validation"></a>Giriş parametresi doğrulaması ile onarma
 
-Aşağıdaki örnek, önceki ihlali Girişi değerini doğrulayarak düzeltir.
+Aşağıdaki örnek, girişin değerini doğrulayarak önceki ihlalin düzeltir.
 
 [!code-csharp[FxCop.Usage.OperationOverflowFixed#1](../code-quality/codesnippet/CSharp/ca2233-operations-should-not-overflow_2.cs)]
 [!code-vb[FxCop.Usage.OperationOverflowFixed#1](../code-quality/codesnippet/VisualBasic/ca2233-operations-should-not-overflow_2.vb)]
 
-## <a name="fix-with-a-checked-block"></a>İşaretli bir blok ile düzeltin
+## <a name="fix-with-a-checked-block"></a>Denetlenen bir blok ile onarma
 
-Aşağıdaki örnek, önceki ihlali işlemi işaretli bir blok içinde sarmalama tarafından düzeltir. İşlemi bir taşma neden olursa bir <xref:System.OverflowException?displayProperty=fullName> oluşturulur.
+Aşağıdaki örnek, işlemi işaretli bir blokta sarmalayarak önceki ihlalin düzeltir. İşlem bir taşmaya neden oluyorsa, bir <xref:System.OverflowException?displayProperty=fullName> oluşturulur.
 
-İşaretli bloklar içinde desteklenmiyor [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)].
+Denetlenen bloklar içinde [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]desteklenmez.
 
 [!code-csharp[FxCop.Usage.OperationOverflowChecked#1](../code-quality/codesnippet/CSharp/ca2233-operations-should-not-overflow_3.cs)]
 
-## <a name="turn-on-checked-arithmetic-overflowunderflow"></a>Aritmetik Taşma ve Alttaşmayı açma işaretli
+## <a name="turn-on-checked-arithmetic-overflowunderflow"></a>Işaretli aritmetik taşmaya/yetersiz kalması etkinleştir
 
-İşaretli aritmetik taşma ve alttaşmayı C# üzerinde kapatırsanız, her bir tamsayı işleminin işaretli bir blok içinde kaydırma eşdeğerdir.
+Üzerinde işaretli aritmetik taşma/aşağı taşması açarsanız C#, her tamsayı işlemini işaretlenmiş bir blokta sarmalamayı eşdeğerdir.
 
-Açmak için aritmetik taşma ve alttaşmayı C# dilinde kullanıma:
+Üzerinde işaretli aritmetik taşma/aşağı taşması açmak için C#:
 
-1. İçinde **Çözüm Gezgini**, projenize sağ tıklayın ve seçin **özellikleri**.
+1. **Çözüm Gezgini**, projenize sağ tıklayın ve **Özellikler**' i seçin.
 
-2. Seçin **derleme** sekmesine **Gelişmiş**.
+2. **Derleme** sekmesini seçin ve **Gelişmiş**' e tıklayın.
 
-3. Seçin **aritmetik taşma ve alttaşmayı denetle** tıklatıp **Tamam**.
+3. **Aritmetik taşma/yetersiz Için denetle** öğesini seçin ve **Tamam**' a tıklayın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -19,12 +19,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: b3ba92e154e3091f6ec483ba469c3fe60f50ec61
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: 837abb051467135b6332b53b2c59e5016d3adff6
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66744812"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71233060"
 ---
 # <a name="ca2100-review-sql-queries-for-security-vulnerabilities"></a>CA2100: SQL sorgularını güvenlik açıkları için inceleyin
 
@@ -33,23 +33,23 @@ ms.locfileid: "66744812"
 |TypeName|ReviewSqlQueriesForSecurityVulnerabilities|
 |CheckId|CA2100|
 |Kategori|Microsoft.Security|
-|Yeni Değişiklik|Bölünemez|
+|Son değişiklik|Kırılmamış|
 
 ## <a name="cause"></a>Sebep
 
-Bir yöntem ayarlar <xref:System.Data.IDbCommand.CommandText%2A?displayProperty=fullName> yönteme değişkeninden oluşturulmuş dize kullanarak özellik.
+Yöntemi, yöntemine dize <xref:System.Data.IDbCommand.CommandText%2A?displayProperty=fullName> bağımsız değişkeninden oluşturulan bir dize kullanarak özelliği ayarlar.
 
 ## <a name="rule-description"></a>Kural açıklaması
 
-Bu kural, dize değişkeninin kullanıcı girişi içerdiğini varsayar. Kullanıcı girişi ile oluşturulan SQL komut dizesi, SQL enjeksiyon saldırılarına karşı savunmasız durumdadır. SQL ekleme saldırısına kötü niyetli bir kullanıcı sorgu tasarımını zarar verecek ya da temel alınan veritabanına yetkisiz erişim girişimi değiştiren bir giriş sağlar. Tipik teknikleri ekleme tek tırnak işareti veya kesme işareti SQL değişmez dize sınırlayıcısı olan içerir. SQL açıklama gösterir iki kısa çizgi; ve noktalı virgül, yeni bir komut izlediğini belirtir. Kullanıcı girişi sorgu, aşağıdakilerden birini bir parçası olması gerekiyorsa saldırı riskini azaltmak için verimliliği, sırasına göre listelenmiş.
+Bu kural, dize değişkeninin kullanıcı girişi içerdiğini varsayar. Kullanıcı girişi ile oluşturulan SQL komut dizesi, SQL enjeksiyon saldırılarına karşı savunmasız durumdadır. Bir SQL ekleme saldırısında, kötü niyetli bir Kullanıcı, bir sorgunun tasarımını değiştiren ve temel alınan veritabanına yetkisiz erişim elde eden bir giriş sağlar. Tipik teknikler, SQL sabit dize sınırlayıcısı olan tek tırnak işareti veya kesme işareti ekleme işlemini içerir; bir SQL yorumunu belirten iki tire; ve yeni bir komutun izlediği noktalı virgül. Kullanıcı girişi sorgunun bir parçası olmalıdır, saldırı riskini azaltmak için, verimlilik sırasıyla listelenen aşağıdakilerden birini kullanın.
 
-- Bir saklı yordamı kullanın.
+- Saklı yordam kullanın.
 
-- Bir parametreli komut dizesi kullanın.
+- Parametreli bir komut dizesi kullanın.
 
-- Komut dizesi oluşturmadan önce hem tür hem de içerik için kullanıcı girişi doğrulayın.
+- Komut dizesini oluşturmadan önce hem tür hem de içerik için Kullanıcı girişini doğrulayın.
 
-Aşağıdaki .NET türleri uygulayan <xref:System.Data.IDbCommand.CommandText%2A> özelliği veya özelliği bir dize bağımsız değişkeni ayarlamak oluşturucular sağlar.
+Aşağıdaki .net türleri <xref:System.Data.IDbCommand.CommandText%2A> özelliği uygular veya bir dize bağımsız değişkeni kullanarak özelliği ayarlamış olan oluşturucular sağlar.
 
 - <xref:System.Data.Odbc.OdbcCommand?displayProperty=fullName> ve <xref:System.Data.Odbc.OdbcDataAdapter?displayProperty=fullName>
 
@@ -59,33 +59,33 @@ Aşağıdaki .NET türleri uygulayan <xref:System.Data.IDbCommand.CommandText%2A
 
 - <xref:System.Data.SqlClient.SqlCommand?displayProperty=fullName> ve <xref:System.Data.SqlClient.SqlDataAdapter?displayProperty=fullName>
 
-ToString yöntemini bir türün açıkça veya dolaylı olarak kullanıldığında, bu kuralı ihlal ettiğini fark sorgu dizesi oluşturmak için. Bir örnek verilmiştir.
+Bir türün ToString yöntemi açıkça veya sorgu dizesini oluşturmak için örtük olarak kullanıldığında bu kuralın ihlal edildiğini unutmayın. Bir örnek verilmiştir.
 
 ```csharp
 int x = 10;
 string query = "SELECT TOP " + x.ToString() + " FROM Table";
 ```
 
-Kötü niyetli bir kullanıcı ToString() yöntemini geçersiz kılma nedeni kuralı ihlal edildi.
+Kötü amaçlı bir Kullanıcı ToString () metodunu geçersiz kılabildiğinden kural ihlal edilir.
 
-ToString örtük olarak kullanıldığında kural ayrıca ihlal edildi.
+Ayrıca, ToString örtük olarak kullanıldığında kural da çiğnendir.
 
 ```csharp
 int x = 10;
 string query = String.Format("SELECT TOP {0} FROM Table", x);
 ```
 
-## <a name="how-to-fix-violations"></a>İhlaller nasıl düzeltilir?
+## <a name="how-to-fix-violations"></a>İhlalleri çözme
 
-Bu kural ihlalini düzeltmek için parametreli bir sorgu kullanın.
+Bu kuralın ihlalini onarmak için parametreli bir sorgu kullanın.
 
-## <a name="when-to-suppress-warnings"></a>Uyarılar bastırıldığında
+## <a name="when-to-suppress-warnings"></a>Uyarıların ne zaman bastırılamıyor
 
-Komut metni herhangi bir kullanıcı girişi içermiyorsa bu kuraldan bir uyarıyı bastırmak güvenlidir.
+Komut metni herhangi bir kullanıcı girişi içermiyorsa, bu kuraldan bir uyarıyı gizlemek güvenlidir.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek bir yöntemi gösterir `UnsafeQuery`, kural ve bir yöntem ihlal `SaferQuery`, karşılayan kural parametreli komut dizesi kullanarak.
+Aşağıdaki örnek, kuralı ve parametreli bir `UnsafeQuery`komut dizesi kullanarak kuralı karşılayan `SaferQuery`yöntemini ihlal eden bir yöntemi gösterir.
 
 [!code-vb[FxCop.Security.ReviewSqlQueries#1](../code-quality/codesnippet/VisualBasic/ca2100-review-sql-queries-for-security-vulnerabilities_1.vb)]
 [!code-csharp[FxCop.Security.ReviewSqlQueries#1](../code-quality/codesnippet/CSharp/ca2100-review-sql-queries-for-security-vulnerabilities_1.cs)]

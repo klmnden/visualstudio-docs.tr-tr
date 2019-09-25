@@ -1,5 +1,5 @@
 ---
-title: Hata ayıklama, Seçenekler iletişim kutusu | Microsoft Docs
+title: Hata ayıklama, Seçenekler Iletişim kutusu | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -21,15 +21,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d0a6a6d8312dba4ae89e773fc2be8fa0b9984e0b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4fc11269713770bbc1950d8f15626936ddd2174f
+ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62851653"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71211133"
 ---
 # <a name="debugging-options-dialog-box"></a>Hata Ayıklama, Seçenekler İletişim Kutusu
-**Hata ayıklama** klasörü içinde **seçenekleri** iletişim kutusunda **Araçları** menüsünde, hata ayıklayıcı belirtmenize olanak verir sayfalarda araç seçenekleri sağlar.
+**Hata ayıklama** klasörü, **Araçlar** menüsündeki **Seçenekler** iletişim kutusunda, hata ayıklayıcı araç seçeneklerini belirtmenizi sağlayan aşağıdaki sayfaları sağlar.
 
 - [Genel, Hata Ayıklama, Seçenekler İletişim Kutusu](../debugger/general-debugging-options-dialog-box.md)
 
@@ -37,10 +37,10 @@ ms.locfileid: "62851653"
 
 - [Çıkış Penceresi, Hata Ayıklama, Seçenekler İletişim Kutusu](../debugger/output-window-debugging-options-dialog-box.md)
 
-- [Simgeler, hata ayıklama, Seçenekler iletişim kutusu](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)
+- [Semboller, hata ayıklama, Seçenekler Iletişim kutusu](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 - [Hata Ayıklayıcısı Güvenliği](../debugger/debugger-security.md)
-- [Visual Studio’da hata ayıklama](../debugger/index.md)
+- [Visual Studio’da hata ayıklama](../debugger/index.yml)
 - [Hata ayıklayıcıya ilk bakış](../debugger/debugger-feature-tour.md)
 - [Kullanıcı arabirim başvurusunda hata ayıklama](../debugger/debugging-user-interface-reference.md)

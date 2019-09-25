@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4c646f8f6dc228d42d6efb5ec44f3ec19a53a551
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 3490cab7c902dcdf1a7d0095eb69dd44de47a727
+ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63408529"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71211121"
 ---
 # <a name="remote-debugging-a-c-or-visual-basic-project-in-visual-studio"></a>Uzaktan hata ayıklama Visual Studio'da C# veya Visual Basic projesi
 Farklı bir bilgisayara dağıtılan bir Visual Studio uygulamasında hata ayıklamak için yükleme ve uzak Araçlar, uygulamanızın dağıtıldığı bilgisayarda çalıştırın, projenizi Visual Studio'dan uzak bilgisayara bağlanmak için yapılandırın ve ardından uygulamanızı çalıştırın.
@@ -71,14 +71,14 @@ Hata ayıklayıcı uzak makinede Visual C# veya Visual Basic Masaüstü uygulama
 
 5. Emin **çalışma dizini** metin kutusu boştur.
 
-6. Seçin **uzak makine**ve türü **yourmachinename:port** metin kutusuna. (Bağlantı noktası numarası uzaktan hata ayıklayıcı penceresinde gösterilir. Bağlantı noktası numarasını artırır 2. Visual Studio'nun her sürümü).
+6. **Uzak makine kullan**' ı seçin ve metin kutusuna **yourmachinename: Port** yazın. (Bağlantı noktası numarası, uzaktan hata ayıklayıcı penceresinde gösterilir. Bağlantı noktası numarasını artırır 2. Visual Studio'nun her sürümü).
 
-    Bu örnekte, kullanın:
+    Bu örnekte, şunu kullanın:
     ::: moniker range=">=vs-2019"
-    **MJO-DL:4024** Visual Studio 2019 tarihinde
+    **Mjo-DL: 4024** on Visual Studio 2019
     ::: moniker-end
     ::: moniker range="vs-2017"
-    **MJO-DL:4022** Visual Studio 2017
+    **Mjo-DL: 4022** on Visual Studio 2017
     ::: moniker-end
 
 7. Emin olun **yerel kod hata ayıklamayı** seçilmez.
@@ -117,7 +117,7 @@ Hata ayıklayıcı uzak makinede Visual C# veya Visual Basic Masaüstü uygulama
 [!INCLUDE [remote-debugger-symbols](../debugger/includes/remote-debugger-symbols.md)]
 
 ## <a name="see-also"></a>Ayrıca Bkz.
-- [Visual Studio’da hata ayıklama](../debugger/index.md)
+- [Visual Studio’da hata ayıklama](../debugger/index.yml)
 - [Hata ayıklayıcıya ilk bakış](../debugger/debugger-feature-tour.md)
 - [Windows Güvenlik Duvarı’nı Uzaktan Hata Ayıklama İçin Yapılandırma](../debugger/configure-the-windows-firewall-for-remote-debugging.md)
 - [Uzaktan Hata Ayıklayıcı Bağlantı Noktası Atamaları](../debugger/remote-debugger-port-assignments.md)

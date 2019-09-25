@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 24723559988974c51798c3e099ff8c1d86a15db9
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 0365d82917b8cfbaf291d557a6ac2d95c220562a
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68920514"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71232130"
 ---
 # <a name="ca2141transparent-methods-must-not-satisfy-linkdemands"></a>CA2141:Transparent yöntemleri LinkDemands'i karşılamamalıdır
 
@@ -24,7 +24,7 @@ ms.locfileid: "68920514"
 |TypeName|TransparentMethodsMustNotSatisfyLinkDemands|
 |CheckId|CA2141|
 |Kategori|Microsoft.Security|
-|Yeni Değişiklik|Yeni|
+|Son değişiklik|Yeni|
 
 ## <a name="cause"></a>Sebep
 Bir güvenlik saydam yöntemi, <xref:System.Security.AllowPartiallyTrustedCallersAttribute> (aptca) özniteliğiyle işaretlenmemiş bir derlemede bir yöntemi çağırır veya bir güvenlik saydam yöntemi bir tür ya da Yöntem `.LinkDemand` için öğesini <xref:System.Security.Permissions.SecurityAction> karşılar.

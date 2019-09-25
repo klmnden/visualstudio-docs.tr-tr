@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 740ef26af6f1f84d23ef27de5176df1b3de98b34
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c3ba027ef2e663870d0af50bc6d2154133f7980c
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62797322"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71234539"
 ---
 # <a name="ca1505-avoid-unmaintainable-code"></a>CA1505: Bakımı yapılamayan kodlardan kaçının
 
@@ -27,8 +27,8 @@ ms.locfileid: "62797322"
 |-|-|
 |TypeName|AvoidUnmantainableCode|
 |CheckId|CA1505|
-|Kategori|Microsoft.Maintainability|
-|Yeni Değişiklik|Bölünemez|
+|Kategori|Microsoft. Bakımolmaması|
+|Son değişiklik|Kırılmamış|
 
 ## <a name="cause"></a>Sebep
 
@@ -36,19 +36,19 @@ Bir tür veya yöntemin düşük bakım dizin değeri vardır.
 
 ## <a name="rule-description"></a>Kural açıklaması
 
-Bakım dizini aşağıdaki ölçümleri kullanarak hesaplanır: kod, programın toplu ve döngüzel karmaşıklığına satır. Programın toplu bir türün veya yöntemin işleçler ve işlenenleri kodda sayısını temel alan bir anlayış zorluk ölçüsüdür. Döngüsel karmaşıklık yapısal türü veya yönteminde karmaşıklığını ölçüsüdür. Kod ölçümleri hakkında daha fazla bilgi [ölçüm karmaşıklığı ve yönetilen kod bakımı](../code-quality/code-metrics-values.md).
+Bakımı dizini aşağıdaki ölçümler kullanılarak hesaplanır: kod satırları, program hacmi ve döngüsel karmaşıklığı. Program birimi, koddaki işleç ve işlenen sayısını temel alan bir tür veya yöntemin anlaşılmasından zorluk ölçüsüne ilişkin bir ölçüdür. Döngüsel karmaşıklığı, tür veya metodun yapısal karmaşıklığına yönelik bir ölçüdür. Kod ölçümleri hakkında daha fazla bilgi için [Ölçü karmaşıklığı ve yönetilen kodun bakımlığından](../code-quality/code-metrics-values.md)daha fazla bilgi edinebilirsiniz.
 
-Düşük bakım dizini bir türün veya yöntemin korumak muhtemelen koruması zor olan ve yeniden tasarlamanız için iyi bir aday olabilir gösterir.
+Düşük bakım dizini, bir tür veya yöntemin bakımını yapmak zor olabilir ve yeniden tasarımı için iyi bir aday olacaktır.
 
-## <a name="how-to-fix-violations"></a>İhlaller nasıl düzeltilir?
+## <a name="how-to-fix-violations"></a>İhlalleri çözme
 
-Bu ihlali gidermek için tür veya yöntem yeniden tasarlayın ve daha küçük ve daha fazla odaklanmış türleri veya yöntemleri bölmek deneyin.
+Bu ihlalin giderilmesi için tür veya yöntemi yeniden tasarlayıp daha küçük ve daha odaklanmış tür ya da yöntemlere bölmeyi deneyin.
 
-## <a name="when-to-suppress-warnings"></a>Uyarılar bastırıldığında
+## <a name="when-to-suppress-warnings"></a>Uyarıların ne zaman bastırılamıyor
 
-Bu uyarı, tür veya yöntem bölünemez veya en büyük boyutuna rağmen sürdürülebilir olarak kabul edilir gösterilmemesini sağlayabilirsiniz.
+Tür veya yöntem bölünemiyor veya büyük boyutuna karşın bakım yapılabilir olarak kabul edildiğinde, bu uyarıyı bastırın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [Bakım uyarıları](../code-quality/maintainability-warnings.md)
-- [Ölçüm karmaşıklığı ve yönetilen kod bakımı](../code-quality/code-metrics-values.md)
+- [Bakımsız uyarılar](../code-quality/maintainability-warnings.md)
+- [Yönetilen kodun ölçüm karmaşıklığı ve bakımma](../code-quality/code-metrics-values.md)

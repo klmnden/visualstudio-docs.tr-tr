@@ -1,5 +1,5 @@
 ### YamlMime:Hub
-title: Visual Studio Belgeleri
+title: Visual Studio belgeleri
 summary: Platformlarınızın ve cihazlarınızın tercih ettiğiniz dilde uygulamaları, hizmetleri ve araçları geliştirmek için Visual Studio 'Yu nasıl kullanacağınızı öğrenin.
 brand: visual-studio
 metadata:
@@ -10,12 +10,12 @@ metadata:
   monikerRange: '>=vs-2017'
   f1_keywords:
   - MSDNSTART
-  ms.openlocfilehash: f8d8ed358779471d68a460ae923df5f9d316c2b0
-  ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
+  ms.openlocfilehash: f754d62f95dee9531429f9421571982307af9966
+  ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
   ms.translationtype: MT
   ms.contentlocale: tr-TR
-  ms.lasthandoff: 09/19/2019
-  ms.locfileid: "71128255"
+  ms.lasthandoff: 09/24/2019
+  ms.locfileid: "71238137"
 highlightedContent:
   items:
   - title: Kurulum ve yükleme
@@ -132,7 +132,7 @@ additionalContent:
       url: ide/compiling-and-building-in-visual-studio.md
     - title: Hata ayıklama
       summary: Araştırma ve kodunuzda hataları düzeltin.
-      url: debugger/index.md
+      url: debugger/index.yml
     - title: Test
       summary: Projeleriniz üzerinde testler çalıştırın.
       url: test/improve-code-quality.md

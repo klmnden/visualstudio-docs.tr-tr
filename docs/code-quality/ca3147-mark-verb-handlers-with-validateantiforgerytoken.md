@@ -9,12 +9,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 0cd54f932a99ea79bf792ebe4175ddc6a031ddcb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 01b290a4e4656aef079b27ce3abb2a66d7adeb75
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62541070"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71236993"
 ---
 # <a name="ca3147-mark-verb-handlers-with-validateantiforgerytoken"></a>CA3147: ValidateAntiForgeryToken ile fiil işleyicilerini işaretleme
 
@@ -23,41 +23,41 @@ ms.locfileid: "62541070"
 |TypeName|MarkVerbHandlersWithValidateAntiForgeryToken|
 |CheckId|CA3147|
 |Kategori|Microsoft.Security|
-|Yeni Değişiklik|Bozucu olmayan|
+|Son değişiklik|Kırılmamış|
 
 ## <a name="cause"></a>Sebep
 
-Bir ASP.NET MVC denetleyici eylem yöntemi ile işaretlenmemiş [ValidateAntiForgeryTokenAttribute](/previous-versions/aspnet/dd492108(v=vs.118)), ya da HTTP fiili gibi belirten bir özniteliği [HttpGetAttribute](/previous-versions/aspnet/ee470993(v%3dvs.118)) veya [ AcceptVerbsAttribute](/previous-versions/aspnet/dd470553%28v%3dvs.118%29).
+Bir ASP.NET MVC denetleyici eylemi yöntemi, [Validateantiforgeryıtokenattribute](/previous-versions/aspnet/dd492108(v=vs.118))veya [HttpGetAttribute](/previous-versions/aspnet/ee470993(v%3dvs.118)) veya [AcceptVerbsAttribute](/previous-versions/aspnet/dd470553%28v%3dvs.118%29)gibi http fiilini belirten bir öznitelik ile işaretlenmez.
 
 ## <a name="rule-description"></a>Kural açıklaması
 
-ASP.NET MVC denetleyicisi tasarlarken siteler arası istek sahteciliği saldırılarına oluşturduğunu unutmayın. Siteler arası istek Sahtekarlığı Saldırısı, kimliği doğrulanmış bir kullanıcıdan, ASP.NET MVC denetleyicisine kötü amaçlı istek gönderebilirsiniz. Daha fazla bilgi için [ASP.NET MVC ve web sayfalarında XSRF/CSRF önleme](/aspnet/mvc/overview/security/xsrfcsrf-prevention-in-aspnet-mvc-and-web-pages).
+Bir ASP.NET MVC denetleyicisi tasarlarken, siteler arası istek sahteciliği saldırılarına karşı daha fazla saldırı yapın. Siteler arası istek sahteciliği saldırısı, kimliği doğrulanmış bir kullanıcıdan ASP.NET MVC denetleyicinize kötü amaçlı istekler gönderebilir. Daha fazla bilgi için bkz. [ASP.NET MVC ve Web sayfalarında XSRF/CSRF önleme](/aspnet/mvc/overview/security/xsrfcsrf-prevention-in-aspnet-mvc-and-web-pages).
 
-Bu kural denetler, ASP.NET MVC denetleyici eylem yöntemleri ya da:
+Bu kural, ASP.NET MVC denetleyicisi eylem yöntemlerinin birini denetler:
 
-- Sahip [ValidateAntiforgeryTokenAttribute](/previous-versions/aspnet/dd492108%28v%3dvs.118%29) ve HTTP GET içermeden, izin verilen HTTP fiilleri belirtin.
+- [Validateantiforgeri Tokenattribute](/previous-versions/aspnet/dd492108%28v%3dvs.118%29) ve http get dahil değil ızın verilen http fiillerini belirtin.
 
-- HTTP GET, izin verilen bir fiili belirtin.
+- HTTP GET 'i izin verilen fiil olarak belirtin.
 
-## <a name="how-to-fix-violations"></a>İhlaller nasıl düzeltilir?
+## <a name="how-to-fix-violations"></a>İhlalleri çözme
 
-- HTTP GET isteklerini işleyen ve potansiyel olarak zararlı yan etkileri yoksa ASP.NET MVC denetleyici eylemleri için ekleme bir [HttpGetAttribute](/previous-versions/aspnet/ee470993%28v%3dvs.118%29) yöntemi.
+- HTTP GET isteklerini işleyen ve zararlı olabilecek yan etkileri olmayan ASP.NET MVC denetleyici eylemleri için yöntemine bir [HttpGetAttribute](/previous-versions/aspnet/ee470993%28v%3dvs.118%29) ekleyin.
 
-   Bir ASP.NET MVC HTTP GET'ini işler denetleyici eylemi ister ve hassas verileri değiştirme gibi zararlı yan etkileri varsa, uygulamanızı siteler arası istek sahteciliği saldırılarına karşı savunmasız.  Hassas işlemleri yalnızca HTTP POST, PUT ve DELETE isteklerini gerçekleştirmek için uygulamanızı yeniden tasarlamanız gerekir.
+   HTTP GET isteklerini işleyen ve hassas verileri değiştirme gibi zararlı olabilecek yan etkileri olan bir ASP.NET MVC denetleyiciniz varsa, uygulamanız siteler arası istek güvenliği saldırılarına karşı savunmasız olur.  Yalnızca HTTP POST, PUT veya DELETE isteklerinin hassas işlemler gerçekleştirmesi için uygulamanızı yeniden tasarlamanız gerekir.
 
-- HTTP POST işleyen, ASP.NET MVC denetleyici eylemleri için PUT veya DELETE istekleri, ekleme [ValidateAntiForgeryTokenAttribute](/previous-versions/aspnet/dd492108(v=vs.118)) ve izin verilen HTTP fiilleri belirten öznitelikler ([AcceptVerbsAttribute](/previous-versions/aspnet/dd470553%28v%3dvs.118%29) [HttpPostAttribute](/previous-versions/aspnet/ee264023%28v%3dvs.118%29), [HttpPutAttribute](/previous-versions/aspnet/ee470909%28v%3dvs.118%29), veya [HttpDeleteAttribute](/previous-versions/aspnet/ee470917%28v%3dvs.118%29)). Ayrıca, çağırmanız gerekir [HtmlHelper.AntiForgeryToken()](/previous-versions/aspnet/dd504812%28v%3dvs.118%29) MVC görünümü veya Razor web sayfası yöntemi. Bir örnek için bkz. [düzenleme metotlarını inceleme ve düzenleme görünümü](/aspnet/mvc/overview/getting-started/introduction/examining-the-edit-methods-and-edit-view).
+- HTTP POST, PUT veya DELETE isteklerini işleyen ASP.NET MVC denetleyici eylemleri için, [Validateantiforgeritokenattribute](/previous-versions/aspnet/dd492108(v=vs.118)) ve ızın verilen http fiillerini belirten öznitelikler ([AcceptVerbsAttribute](/previous-versions/aspnet/dd470553%28v%3dvs.118%29), [HttpPostAttribute](/previous-versions/aspnet/ee264023%28v%3dvs.118%29) [) ekleyin HttpPutAttribute](/previous-versions/aspnet/ee470909%28v%3dvs.118%29)veya [HttpDeleteAttribute](/previous-versions/aspnet/ee470917%28v%3dvs.118%29)). Ayrıca, MVC görünüminizden veya Razor Web sayfasından [HtmlHelper. Antiforgeritoken ()](/previous-versions/aspnet/dd504812%28v%3dvs.118%29) yöntemini çağırmanız gerekir. Bir örnek için bkz. [düzenleme yöntemlerini ve düzenleme görünümünü İnceleme](/aspnet/mvc/overview/getting-started/introduction/examining-the-edit-methods-and-edit-view).
 
-## <a name="when-to-suppress-warnings"></a>Uyarılar bastırıldığında
+## <a name="when-to-suppress-warnings"></a>Uyarıların ne zaman bastırılamıyor
 
-Bu, bu kuraldan bir uyarıyı bastırmak güvenli değil:
+Şu durumlarda bu kuraldan bir uyarı bastırmak güvenlidir:
 
-- ASP.NET MVC denetleyicisi eylemi zararlı yan etkileri vardır.
+- ASP.NET MVC denetleyici eyleminin zararlı bir yan etkisi yoktur.
 
-- Uygulamayı farklı bir yolla antiforgery belirteci doğrular.
+- Uygulama, antiforgery belirtecini farklı bir şekilde doğrular.
 
-## <a name="validateantiforgerytoken-attribute-example"></a>ValidateAntiForgeryToken öznitelik örneği
+## <a name="validateantiforgerytoken-attribute-example"></a>Validateantiforgeryıtoken özniteliği örneği
 
-### <a name="violation"></a>İhlali
+### <a name="violation"></a>Edildiği
 
 ```csharp
 namespace TestNamespace
@@ -98,9 +98,9 @@ namespace TestNamespace
 }
 ```
 
-## <a name="httpget-attribute-example"></a>HttpGet öznitelik örneği
+## <a name="httpget-attribute-example"></a>HttpGet özniteliği örneği
 
-### <a name="violation"></a>İhlali
+### <a name="violation"></a>Edildiği
 
 ```csharp
 namespace TestNamespace

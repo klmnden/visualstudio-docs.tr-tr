@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6946434708e38bde7f6efcfc8404da14f91b41ee
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: f924e9530a7ee43ec2222366141c3af6be2efc29
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66744697"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71233606"
 ---
 # <a name="ca1812-avoid-uninstantiated-internal-classes"></a>CA1812: Örneklenmemiş iç sınıflardan kaçının
 
@@ -27,18 +27,18 @@ ms.locfileid: "66744697"
 |-|-|
 |TypeName|AvoidUninstantiatedInternalClasses|
 |CheckId|CA1812|
-|Kategori|Microsoft.Performance|
-|Yeni Değişiklik|Bölünemez|
+|Kategori|Microsoft. Performance|
+|Son değişiklik|Kırılmamış|
 
 ## <a name="cause"></a>Sebep
 
-Hiç örneklenmemiş bir iç (derleme düzeyi) türü.
+İç (derleme düzeyi) türü hiçbir şekilde örneklenemez.
 
 ## <a name="rule-description"></a>Kural açıklaması
 
-Bu kural, bir tür oluşturucular bir çağrı bulmaya çalışır ve hiçbir çağrı bulunursa bir ihlali raporlar.
+Bu kural, türün oluşturucularından birine yönelik çağrıyı bulmaya çalışır ve hiçbir çağrı bulunmazsa bir ihlalin bildirir.
 
-Aşağıdaki türleri bu kural tarafından incelenir değil:
+Aşağıdaki türler bu kural tarafından incelendi:
 
 - Değer türleri
 
@@ -48,29 +48,29 @@ Aşağıdaki türleri bu kural tarafından incelenir değil:
 
 - Temsilciler
 
-- Derleyici yayılan dizi türleri
+- Derleyicinin yayınlaması dizi türleri
 
-- Olamaz başlatılamaz ve yalnızca tanımlayan türler [ `static` ](/dotnet/csharp/language-reference/keywords/static) ([ `Shared` Visual Basic'te](/dotnet/visual-basic/language-reference/modifiers/shared)) yöntemleri.
+- Örneklenemez ve yalnızca [`static`](/dotnet/csharp/language-reference/keywords/static) ([ `Shared` Visual Basic](/dotnet/visual-basic/language-reference/modifiers/shared)) yöntemlerinde tanımlanmış olan türler.
 
-Uygularsanız, <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute?displayProperty=fullName> analiz ediliyor. derleme için bu kural olarak işaretlenmiş türler işaretlemez [ `internal` ](/dotnet/csharp/language-reference/keywords/internal) ([ `Friend` Visual Basic'te](/dotnet/visual-basic/language-reference/modifiers/friend)) çünkü bir alan olabilir friend derlemesi tarafından kullanılır.
+' I çözümlenmekte <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute?displayProperty=fullName> olan derlemeye uygularsanız, bir alan bir Friend derlemesi tarafından kullanılabilir olduğundan, bu kural ([ `Friend` Visual Basic](/dotnet/visual-basic/language-reference/modifiers/friend)) [`internal`](/dotnet/csharp/language-reference/keywords/internal) olarak işaretlenen türlere bayrak uygulamaz.
 
-## <a name="how-to-fix-violations"></a>İhlaller nasıl düzeltilir?
+## <a name="how-to-fix-violations"></a>İhlalleri çözme
 
-Bu kural ihlalini düzeltmek için türünü kaldırmak veya onu kullanan kodu ekleyin. Türü yalnızca içeriyorsa `static` yöntemleri, derleyici varsayılan bir ortak örnek oluşturucusu yayma gelen önlemek için türü için aşağıdakilerden birini ekleyin:
+Bu kural ihlalini onarmak için, türü kaldırın veya onu kullanan kodu ekleyin. Tür yalnızca `static` Yöntemler içeriyorsa, derleyicinin varsayılan bir ortak örnek Oluşturucu yaymasını engellemek için aşağıdaki birini türüne ekleyin:
 
-- `static` Değiştiricisini C# .NET Framework 2.0 veya sonraki sürümünü hedefleyen türleri.
+- .NET Framework 2,0 veya C# sonraki bir sürümü hedefleyen türler için değiştirici.`static`
 
-- .NET Framework sürümleri 1.0 ve 1.1 hedef türleri için özel bir oluşturucu.
+- 1,0 ve 1,1 sürümlerini .NET Framework hedefleyen türler için özel Oluşturucu.
 
-## <a name="when-to-suppress-warnings"></a>Uyarılar bastırıldığında
+## <a name="when-to-suppress-warnings"></a>Uyarıların ne zaman bastırılamıyor
 
-Bu kuraldan bir uyarıyı bastırmak güvenlidir. Aşağıdaki durumlarda bu uyarının gösterilmemesi gerektiğini öneririz:
+Bu kuraldan bir uyarıyı gizlemek güvenlidir. Aşağıdaki durumlarda bu uyarıyı bastırmalarını öneririz:
 
-- Sınıfı gibi geç bağlanan yansıma yöntemleri ile oluşturulan <xref:System.Activator.CreateInstance%2A?displayProperty=fullName>.
+- Sınıfı, gibi geç bağlantılı yansıma yöntemleriyle <xref:System.Activator.CreateInstance%2A?displayProperty=fullName>oluşturulur.
 
-- Sınıf, ASP.NET ve çalışma zamanı tarafından otomatik olarak oluşturulur. Uygulayan bazı örnekler otomatik olarak oluşturulan sınıfların olanlardır <xref:System.Configuration.IConfigurationSectionHandler?displayProperty=fullName> veya <xref:System.Web.IHttpHandler?displayProperty=fullName>.
+- Sınıf, çalışma zamanı veya ASP.NET tarafından otomatik olarak oluşturulur. Otomatik olarak oluşturulan sınıfların bazı örnekleri, veya <xref:System.Configuration.IConfigurationSectionHandler?displayProperty=fullName> <xref:System.Web.IHttpHandler?displayProperty=fullName>uygulamalarıdır.
 
-- Sınıf olan bir tür parametresi geçirilir bir [ `new` kısıtlaması](/dotnet/csharp/language-reference/keywords/new-constraint). Aşağıdaki örnek, kural tarafından CA1812 işaretlenir:
+- Sınıfı [ `new` kısıtlaması](/dotnet/csharp/language-reference/keywords/new-constraint)olan bir tür parametresi olarak geçirilir. Aşağıdaki örnek Rule CA1812 tarafından işaretlenir:
 
     ```csharp
     internal class MyClass
@@ -91,8 +91,8 @@ Bu kuraldan bir uyarıyı bastırmak güvenlidir. Aşağıdaki durumlarda bu uya
     mc.Create();
     ```
 
-## <a name="related-rules"></a>İlgili kuralları
+## <a name="related-rules"></a>İlgili kurallar
 
-- [CA1811: Çağrılmayan özel kodlardan kaçının](../code-quality/ca1811-avoid-uncalled-private-code.md)
-- [CA1801: Kullanılmayan parametreleri gözden geçir](../code-quality/ca1801-review-unused-parameters.md)
-- [CA1804: Kullanılmayan yerel öğeleri kaldırın](../code-quality/ca1804-remove-unused-locals.md)
+- [CA1811 Çağrılmadı özel koddan kaçının](../code-quality/ca1811-avoid-uncalled-private-code.md)
+- [CA1801 Kullanılmayan parametreleri gözden geçir](../code-quality/ca1801-review-unused-parameters.md)
+- [CA1804 Kullanılmayan yerelleri kaldır](../code-quality/ca1804-remove-unused-locals.md)

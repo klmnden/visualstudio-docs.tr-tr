@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 16cd44f00db13027d737b6a6b496877075ac6fa9
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 5f50be12f4d601161ec20659bbb6b710e5a7cf24
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68922273"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71235171"
 ---
 # <a name="ca1301-avoid-duplicate-accelerators"></a>CA1301: Yinelenen hızlandırıcılardan kaçının
 
@@ -28,7 +28,7 @@ ms.locfileid: "68922273"
 |TypeName|AvoidDuplicateAccelerators|
 |CheckId|CA1301|
 |Kategori|Microsoft. Globalization|
-|Yeni Değişiklik|Kırılmamış|
+|Son değişiklik|Kırılmamış|
 
 ## <a name="cause"></a>Sebep
 Bir tür, <xref:System.Windows.Forms.Control?displayProperty=fullName> bir kaynak dosyasında depolanan özdeş erişim anahtarlarına sahip iki veya daha fazla üst düzey denetimi genişletir ve içerir.

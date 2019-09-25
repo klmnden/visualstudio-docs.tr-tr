@@ -10,49 +10,49 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 603dc08650ca5e54cac3f590f5d32de98e3ae5da
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: bd454ffad1efc9d7df84d88630fe71eebc8ca6fc
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65841453"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71238115"
 ---
 # <a name="ca3001-review-code-for-sql-injection-vulnerabilities"></a>CA3001: SQL ekleme güvenlik açıkları için inceleme kodu
 
 |||
 |-|-|
-|TypeName|ReviewCodeForSqlInjectionsVulnerabilities|
+|TypeName|Belgekodu Koduforsqlinjectionsaçıklardan|
 |CheckId|CA3001|
 |Kategori|Microsoft.Security|
-|Yeni Değişiklik|Bozucu olmayan|
+|Son değişiklik|Kırılmamış|
 
 ## <a name="cause"></a>Sebep
 
-Potansiyel olarak güvenilmeyen HTTP istek girişi bir SQL komutunun metin ulaşır.
+Güvenilir olmayan HTTP isteği girişi bir SQL komutunun metnine ulaşır.
 
 ## <a name="rule-description"></a>Kural açıklaması
 
-Güvenilir olmayan girişlere ve SQL komutları ile çalışırken SQL ekleme saldırıları oluşturduğunu unutmayın. Bir SQL ekleme saldırısına, güvenlik ve uygulama bütünlüğünü tehlikeye kötü amaçlı SQL komutları yürütebilir. Tipik teknikleri bir açıklaması için iki kısa çizgi ve bir deyim sonu için noktalı virgül sınırlayıcı değişmez değer dizeleri için tek tırnak işareti veya kesme işareti kullanarak ekleyin. Daha fazla bilgi için [SQL ekleme](/sql/relational-databases/security/sql-injection).
+Güvenilmeyen giriş ve SQL komutlarıyla çalışırken, SQL ekleme saldırılarına karşı en az bir yer vardır. SQL ekleme saldırısı, kötü amaçlı SQL komutları yürütebilir ve uygulamanızın güvenliğini ve bütünlüğünü tehlikeye atabilirler. Tipik teknikler, tek tırnak işareti veya kesme işareti, bir açıklama için iki tire ve bir deyimin sonuna bir noktalı virgül kullanmayı içerir. Daha fazla bilgi için bkz. [SQL ekleme](/sql/relational-databases/security/sql-injection).
 
-Bu kural, bir SQL komutunun metin ulaşmasını HTTP isteklerinden alınan giriş bulmayı dener.
-
-> [!NOTE]
-> Bu kural, derlemeler arasında veri izleyemezsiniz. Örneğin, bir derleme HTTP istek girişi okur ve ardından SQL komutunu yürüten başka bir derlemeye geçirir, bu kural bir uyarı üreten olmaz.
+Bu kural, SQL komut metnine ulaşan HTTP isteklerinden giriş bulmaya çalışır.
 
 > [!NOTE]
-> Derinlikte bu kural veri akışı yöntem çağrıları arasında çözümler için yapılandırılabilir bir sınır yoktur. Bkz: [Çözümleyicisi yapılandırma](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis) sınırı bir EditorConfig dosyasında nasıl yapılandıracağınızı öğrenmek için.
+> Bu kural derlemeler genelinde verileri izleyemez. Örneğin, bir derleme HTTP istek girişini okuyup SQL komutunu çalıştıran başka bir derlemeye geçerse, bu kural bir uyarı oluşturmaz.
 
-## <a name="how-to-fix-violations"></a>İhlaller nasıl düzeltilir?
+> [!NOTE]
+> Bu kuralın, yöntem çağrılarında veri akışını ne kadar analiz edip bu kurala ilişkin yapılandırılabilir bir sınır vardır. Bir EditorConfig dosyasında sınırı yapılandırma hakkında bilgi için bkz. [çözümleyici yapılandırması](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis) .
 
-Parametreli SQL komutlarını ya da saklı yordamlar, güvenilmeyen girişler içeren parametreleriyle kullanın.
+## <a name="how-to-fix-violations"></a>İhlalleri çözme
 
-## <a name="when-to-suppress-warnings"></a>Uyarılar bastırıldığında
+Parametreli SQL komutlarını veya saklı yordamları, güvenilmeyen girişi içeren parametrelerle birlikte kullanın.
 
-Giriş her zaman güvenli karakter kümesi bilinen karşı doğrulandı biliyorsanız, bu kuraldan bir uyarıyı bastırmak güvenlidir.
+## <a name="when-to-suppress-warnings"></a>Uyarıların ne zaman bastırılamıyor
+
+Girişin, bilinen bir güvenli karakter kümesi için her zaman doğrulandığını biliyorsanız, bu kuraldan bir uyarının görüntülenmesini güvenli hale gelir.
 
 ## <a name="pseudo-code-examples"></a>Sözde kod örnekleri
 
-### <a name="violation"></a>İhlali
+### <a name="violation"></a>Edildiği
 
 ```csharp
 using System;
@@ -107,7 +107,7 @@ Namespace VulnerableWebApp
 End Namespace
 ```
 
-### <a name="parameterized-solution"></a>Parametreli çözümü
+### <a name="parameterized-solution"></a>Parametreli çözüm
 
 ```csharp
 using System;

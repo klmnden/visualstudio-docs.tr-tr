@@ -2,7 +2,7 @@
 title: Visual Studio 2019’daki yenilikler
 titleSuffix: ''
 description: Visual Studio 2019 ' deki yeni özellikler hakkında bilgi edinin.
-ms.date: 09/23/2019
+ms.date: 09/24/2019
 helpviewer_keywords:
 - Visual Studio, what's new
 - what's new [Visual Studio]
@@ -15,12 +15,12 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: c2caed210edbed5f17d74ee78a55612aa0afa4cb
-ms.sourcegitcommit: 88f576ac32af31613c1a10c1548275e1ce029f4f
+ms.openlocfilehash: 5871e782ee84e49762d26a925380ad481e3623d1
+ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "71186483"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71211336"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Visual Studio 2019’daki yenilikler
 
@@ -107,6 +107,12 @@ Daha fazla bilgi için bkz. [Visual Studio 2019 blog gönderisi Ile daha iyi ço
 **16,2 sürümündeki yenilikler**: Test Gezgini, büyük test kümelerinin daha iyi işlenmesini, daha kolay filtrelenmesini, daha keşfedilebilir komutları, sekmeli çalma listesi görünümlerini ve özelleştirilebilir sütunları, hangi test bilgilerinin görüntülendiğini ayarlamanıza olanak sağlayacak şekilde güncelleştirdik.
 
    ![Test Gezgininde Kullanıcı arabirimi geliştirmelerini gösteren ekran görüntüsü](media/vs-2019/test-explorer-ui.png)
+
+### <a name="net-core"></a>.NET Core
+
+**16,3 sürümündeki yenilikler**: .NET Core 3,0 için destek sunuyoruz. Platformlar arası, açık kaynak&mdash;ve Microsoft tarafından tam olarak desteklenmektedir. 
+
+Daha fazla bilgi için bkz. [.NET Core 3,0](https://devblogs.microsoft.com/dotnet/announcing-net-core-3-0/) blog gönderisi duyurusu.
 
 ## <a name="collaborate"></a>İşbirliği
 

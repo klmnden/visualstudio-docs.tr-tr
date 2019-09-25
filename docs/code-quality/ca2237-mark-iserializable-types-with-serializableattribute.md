@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a047ec190652e3559e8bf83fe14834ed95d8a69
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 53d049cad426201a8aaa48662061a4a424116b26
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68920105"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71237934"
 ---
 # <a name="ca2237-mark-iserializable-types-with-serializableattribute"></a>CA2237: ISerializable türleri SerializableAttribute ile işaretleyin
 
@@ -31,7 +31,7 @@ ms.locfileid: "68920105"
 |TypeName|MarkISerializableTypesWithSerializable|
 |CheckId|CA2237|
 |Kategori|Microsoft. Usage|
-|Yeni Değişiklik|Kırılmamış|
+|Son değişiklik|Kırılmamış|
 
 ## <a name="cause"></a>Sebep
 Dışarıdan görünen bir tür <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName> arabirimini uygular ve tür, <xref:System.SerializableAttribute?displayProperty=fullName> özniteliğiyle işaretlenmez. Kural, temel türü seri hale getirilebilir olmayan türetilmiş türleri yoksayar.

@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: c0cd59ec30ce45c94ac3422c4271959d74073bff
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: cf2e30956879c0c61bb57d65b89445962f34959a
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68920056"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71237900"
 ---
 # <a name="ca2239-provide-deserialization-methods-for-optional-fields"></a>CA2239: İsteğe bağlı metotlar için serileştirme kaldırma metotları sağlayın
 
@@ -31,7 +31,7 @@ ms.locfileid: "68920056"
 |TypeName|ProvideDeserializationMethodsForOptionalFields|
 |CheckId|CA2239|
 |Kategori|Microsoft. Usage|
-|Yeni Değişiklik|Kırılmamış|
+|Son değişiklik|Kırılmamış|
 
 ## <a name="cause"></a>Sebep
 Bir tür, <xref:System.Runtime.Serialization.OptionalFieldAttribute?displayProperty=fullName> özniteliğiyle işaretlenmiş bir alana sahip ve tür, serileştirme olay işleme yöntemleri sağlamıyor.

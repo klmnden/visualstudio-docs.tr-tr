@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ee5b1d92a6c7a813eea6efb409d3c2a22f68547c
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 88fbd5bbe873ae8bec9a506efbdb20d3fc77a2c1
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68921118"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71232795"
 ---
 # <a name="ca2109-review-visible-event-handlers"></a>CA2109: Görünen olay işleyicilerini gözden geçirin
 
@@ -28,7 +28,7 @@ ms.locfileid: "68921118"
 |TypeName|ReviewVisibleEventHandlers|
 |CheckId|CA2109|
 |Kategori|Microsoft.Security|
-|Yeni Değişiklik|Yeni|
+|Son değişiklik|Yeni|
 
 ## <a name="cause"></a>Sebep
 Ortak veya korunan olay işleme yöntemi algılandı.

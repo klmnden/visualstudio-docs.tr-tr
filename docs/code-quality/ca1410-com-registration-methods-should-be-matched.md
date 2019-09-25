@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: a424e3c884d47b7deb848b418fbf0f3344d6c379
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: bca9e06c861ab2bcaceead8bf8ee195b64e45c83
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66714738"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71234744"
 ---
 # <a name="ca1410-com-registration-methods-should-be-matched"></a>CA1410: COM kayıt metotları eşleşmelidir
 
@@ -30,35 +30,35 @@ ms.locfileid: "66714738"
 |-|-|
 |TypeName|ComRegistrationMethodsShouldBeMatched|
 |CheckId|CA1410|
-|Kategori|Microsoft.Interoperability|
-|Yeni Değişiklik|Bölünemez|
+|Kategori|Microsoft. çalışabilirliği|
+|Son değişiklik|Kırılmamış|
 
 ## <a name="cause"></a>Sebep
 
-İle işaretlenmiş bir yöntem bir tür bildirir <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute?displayProperty=fullName> özniteliği ancak ile işaretlenmiş bir yöntemi bildirmez <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute?displayProperty=fullName> özniteliği, ya da tam tersi.
+Bir tür, <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute?displayProperty=fullName> özniteliğiyle işaretlenmiş ancak <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute?displayProperty=fullName> özniteliğiyle işaretlenmiş bir yöntemi bildirmeyen bir yöntemi bildirir veya tam tersi de geçerlidir.
 
 ## <a name="rule-description"></a>Kural açıklaması
 
-Bileşen Nesne Modeli (COM) istemcilerin bir .NET türü oluşturmak için türü önce kayıtlı olması gerekir. Varsa, ile işaretlenmiş bir yöntemi <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute> özniteliği, kullanıcı tarafından belirtilen kodu çalıştırmak için kayıt işlemi sırasında çağrılır. Karşılık gelen ile işaretlenmiş bir yöntemi <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute> özniteliği, kayıt yöntemini işlemleri tersine çevirmek için kayıt silme işlemi sırasında çağrılır.
+Bileşen nesne modeli (COM) istemcilerinin bir .NET türü oluşturması için öncelikle türün kaydedilmesi gerekir. Varsa, Kullanıcı tarafından belirtilen kodu çalıştırmak için kayıt işlemi sırasında <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute> özniteliğiyle işaretlenmiş bir yöntem çağrılır. Kayıt yönteminin işlemlerini tersine çevirmek için, <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute> özniteliği ile işaretlenen karşılık gelen bir yöntem, kayıt silme işlemi sırasında çağrılır.
 
-## <a name="how-to-fix-violations"></a>İhlaller nasıl düzeltilir?
+## <a name="how-to-fix-violations"></a>İhlalleri çözme
 
-Bu kural ihlalini düzeltmek için karşılık gelen bir kayıt veya silme yöntemi ekleyin.
+Bu kural ihlalini onarmak için ilgili kayıt veya kayıt silme yöntemini ekleyin.
 
-## <a name="when-to-suppress-warnings"></a>Uyarılar bastırıldığında
+## <a name="when-to-suppress-warnings"></a>Uyarıların ne zaman bastırılamıyor
 
 Bu kuraldan uyarıyı bastırmayın.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek kuralını ihlal eden bir tür gösterir. Açıklamalı kod düzeltme ihlali gösterir.
+Aşağıdaki örnek, kuralı ihlal eden bir türü gösterir. Açıklamalı kod, ihlalin düzeltmesini gösterir.
 
 [!code-csharp[FxCop.Interoperability.ComRegistration#1](../code-quality/codesnippet/CSharp/ca1410-com-registration-methods-should-be-matched_1.cs)]
 [!code-vb[FxCop.Interoperability.ComRegistration#1](../code-quality/codesnippet/VisualBasic/ca1410-com-registration-methods-should-be-matched_1.vb)]
 
-## <a name="related-rules"></a>İlgili kuralları
+## <a name="related-rules"></a>İlgili kurallar
 
-[CA1411: COM kayıt yöntemleri görünebilir olmamalıdır](../code-quality/ca1411-com-registration-methods-should-not-be-visible.md)
+[CA1411 COM kayıt yöntemleri görünür olmamalıdır](../code-quality/ca1411-com-registration-methods-should-not-be-visible.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

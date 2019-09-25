@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 644c581757a559311b6660a77c4d9190a7361314
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: dcb5937f58088684e7bfc204ab4143434b0684ae
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62779553"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71236403"
 ---
 # <a name="ca1011-consider-passing-base-types-as-parameters"></a>CA1011: Parametre olarak temel türleri geçmeyi düşünün
 
@@ -32,40 +32,40 @@ ms.locfileid: "62779553"
 |TypeName|ConsiderPassingBaseTypesAsParameters|
 |CheckId|CA1011|
 |Kategori|Microsoft.Design|
-|Yeni Değişiklik|Yeni|
+|Son değişiklik|Yeni|
 
 ## <a name="cause"></a>Sebep
 
-Yalnızca parametrenin temel türün üyeleri yöntemini çağırır ve yöntem bildiriminde türetilmiş bir tür bir biçimsel parametre içerir.
+Yöntem bildirimi türetilmiş bir tür olan biçimsel bir parametre içerir ve yöntem yalnızca parametrenin temel türünün üyelerini çağırır.
 
 ## <a name="rule-description"></a>Kural açıklaması
 
-Temel tür yöntem bildiriminde parametre olarak belirtildiğinde temel türünden türetilen herhangi bir tür yöntemine karşılık gelen bağımsız değişken olarak geçirilebilir. Bağımsız değişken bir yöntem gövdesi içinde kullanıldığında, yürütülen belirli yöntem bağımsız değişkenin türüne bağlıdır. Türetilmiş tür tarafından sağlanan ek işlevler gerekmiyorsa, temel tür kullanımı yöntemi daha geniş kullanımını sağlar.
+Temel tür yöntem bildiriminde parametre olarak belirtildiğinde temel türünden türetilen herhangi bir tür yöntemine karşılık gelen bağımsız değişken olarak geçirilebilir. Metot gövdesi içinde bağımsız değişken kullanıldığında, yürütülen özel yöntem bağımsız değişkenin türüne bağlıdır. Türetilmiş tür tarafından belirtilen ek işlevler gerekmiyorsa, temel tür kullanımı yöntemin daha geniş kullanımına izin verir.
 
-## <a name="how-to-fix-violations"></a>İhlaller nasıl düzeltilir?
+## <a name="how-to-fix-violations"></a>İhlalleri çözme
 
-Bu kural ihlalini düzeltmek için kendi temel türü için parametre türünü değiştirin.
+Bu kuralın ihlalini onarmak için parametrenin türünü temel türüne değiştirin.
 
-## <a name="when-to-suppress-warnings"></a>Uyarılar bastırıldığında
+## <a name="when-to-suppress-warnings"></a>Uyarıların ne zaman bastırılamıyor
 
-Bu kuraldan bir uyarıyı bastırmak güvenlidir
+Bu kuraldan bir uyarıyı gizlemek güvenlidir
 
-- yöntem türetilmiş türü tarafından sağlanan belirli işlevleri gerektiriyorsa
+- yöntemi, türetilmiş tür tarafından belirtilen belirli işlevselliği gerektiriyorsa
 
      \- veya -
 
-- yalnızca türetilmiş tür ya da daha fazla türetilmiş bir türü, yönteme geçirilen zorlamak için.
+- yalnızca türetilmiş tür veya daha türetilmiş bir tür metoduna zorlamak için yöntemine geçirilir.
 
-Bu durumlarda, kod derleyici ve çalışma zamanı tarafından sağlanan güçlü tür denetimi nedeniyle daha sağlam olacaktır.
+Bu durumlarda, derleyici ve çalışma zamanı tarafından belirtilen güçlü tür denetimi nedeniyle kod daha sağlam olacaktır.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek bir yöntemi gösterir `ManipulateFileStream`, yalnızca ile kullanılabilecek bir <xref:System.IO.FileStream> bu kuralı ihlal nesnesidir. İkinci bir yöntem `ManipulateAnyStream`, kural değiştirerek karşılayan <xref:System.IO.FileStream> parametresi kullanılarak bir <xref:System.IO.Stream>.
+Aşağıdaki örnek, yalnızca bir `ManipulateFileStream` <xref:System.IO.FileStream> nesnesi ile kullanılabilen ve bu kuralı ihlal eden bir yöntemi gösterir. İkinci bir yöntem `ManipulateAnyStream`, <xref:System.IO.FileStream> parametresini bir <xref:System.IO.Stream>kullanarak değiştirerek kuralını karşılar.
 
 [!code-csharp[FxCop.Design.ConsiderPassingBaseTypes#1](../code-quality/codesnippet/CSharp/ca1011-consider-passing-base-types-as-parameters_1.cs)]
 [!code-cpp[FxCop.Design.ConsiderPassingBaseTypes#1](../code-quality/codesnippet/CPP/ca1011-consider-passing-base-types-as-parameters_1.cpp)]
 [!code-vb[FxCop.Design.ConsiderPassingBaseTypes#1](../code-quality/codesnippet/VisualBasic/ca1011-consider-passing-base-types-as-parameters_1.vb)]
 
-## <a name="related-rules"></a>İlgili kuralları
+## <a name="related-rules"></a>İlgili kurallar
 
-[CA1059: Üyeler belirli somut türleri göstermemelidir](../code-quality/ca1059-members-should-not-expose-certain-concrete-types.md)
+[CA1059 Üyeler belirli somut türleri kullanıma sunmamalıdır](../code-quality/ca1059-members-should-not-expose-certain-concrete-types.md)

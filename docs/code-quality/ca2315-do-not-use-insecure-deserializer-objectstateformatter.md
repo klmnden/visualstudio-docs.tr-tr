@@ -1,5 +1,5 @@
 ---
-title: "CA2315: Güvenli olmayan seri durumdan çıkarıcının ObjectStateFormatter'ın kullanmayın"
+title: 'CA2315: Güvenli olmayan seri kaldırıcı ObjectStateFormatter kullanmayın'
 ms.date: 05/01/2019
 ms.topic: reference
 author: dotpaul
@@ -13,43 +13,43 @@ ms.workload:
 f1_keywords:
 - CA2315
 - DoNotUseInsecureDeserializerObjectStateFormatter
-ms.openlocfilehash: 793fa9df333eed7e485d7d8829849ae30d9c93a2
-ms.sourcegitcommit: db30651dc0ce4d0b274479b23a6bd102a5559098
+ms.openlocfilehash: 30e9d55fa5aa9c909c29935988f76107a4b5556d
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65135577"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71237680"
 ---
-# <a name="ca2315-do-not-use-insecure-deserializer-objectstateformatter"></a>CA2315: Güvenli olmayan seri durumdan çıkarıcının ObjectStateFormatter'ın kullanmayın
+# <a name="ca2315-do-not-use-insecure-deserializer-objectstateformatter"></a>CA2315: Güvenli olmayan seri kaldırıcı ObjectStateFormatter kullanmayın
 
 |||
 |-|-|
 |TypeName|DoNotUseInsecureDeserializerObjectStateFormatter|
 |CheckId|CA2315|
 |Kategori|Microsoft.Security|
-|Yeni Değişiklik|Bozucu olmayan|
+|Son değişiklik|Kırılmamış|
 
 ## <a name="cause"></a>Sebep
 
-A <xref:System.Web.UI.ObjectStateFormatter?displayProperty=nameWithType> seri durumundan çıkarma yöntemi çağrılan veya başvurulan.
+<xref:System.Web.UI.ObjectStateFormatter?displayProperty=nameWithType> Seri kaldırma yöntemi çağrıldı veya başvuruluyor.
 
 ## <a name="rule-description"></a>Kural açıklaması
 
 [!INCLUDE[insecure-deserializers-description](includes/insecure-deserializers-description-md.md)]
 
-Bu kural bulur <xref:System.Web.UI.ObjectStateFormatter?displayProperty=nameWithType> yöntem çağrıları veya başvurular seri durumdan çıkarma.
+Bu kural, <xref:System.Web.UI.ObjectStateFormatter?displayProperty=nameWithType> seri kaldırma yöntemi çağrılarını veya başvurularını bulur.
 
-## <a name="how-to-fix-violations"></a>İhlaller nasıl düzeltilir?
+## <a name="how-to-fix-violations"></a>İhlalleri çözme
 
 [!INCLUDE[insecure-deserializers-fixes-for-always-insecure-deserializers](includes/insecure-deserializers-fixes-for-always-insecure-deserializers-md.md)]
 
-## <a name="when-to-suppress-warnings"></a>Uyarılar bastırıldığında
+## <a name="when-to-suppress-warnings"></a>Uyarıların ne zaman bastırılamıyor
 
 [!INCLUDE[insecure-deserializers-common-safe-to-suppress](includes/insecure-deserializers-common-safe-to-suppress-md.md)]
 
 ## <a name="pseudo-code-examples"></a>Sözde kod örnekleri
 
-### <a name="violation"></a>İhlali
+### <a name="violation"></a>Edildiği
 
 ```csharp
 using System.IO;

@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: e968cef6491e1c24d98e5f64248b5104db8c5b65
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: db4f767aa2ecb31bca3a5530e1b4bbf5ce15729d
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62797401"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71234554"
 ---
 # <a name="ca1502-avoid-excessive-complexity"></a>CA1502: Aşırı karmaşıklıktan kaçının
 
@@ -31,46 +31,46 @@ ms.locfileid: "62797401"
 |-|-|
 |TypeName|AvoidExcessiveComplexity|
 |CheckId|CA1502|
-|Kategori|Microsoft.Maintainability|
-|Yeni Değişiklik|Bölünemez|
+|Kategori|Microsoft. Bakımolmaması|
+|Son değişiklik|Kırılmamış|
 
 ## <a name="cause"></a>Sebep
 
-Bir yönteme bir aşırı döngüzel karmaşıklığına sahip.
+Bir yöntemin aşırı döngüsel karmaşıklığı vardır.
 
 ## <a name="rule-description"></a>Kural açıklaması
 
-*Döngüsel karmaşıklık* sayısı ve karmaşıklığı koşullu dalları tarafından belirlenir yöntemi giden doğrusal bağımsız yolların sayısını ölçer. Düşük döngüzel karmaşıklığına genellikle anlamak, test etme ve korumak kolay bir yöntemi gösterir. Döngüsel karmaşıklık yönteminin denetim akışı grafikten hesaplanır ve aşağıda verilmiştir:
+*Döngüsel karmaşıklığı* , koşullu dalların sayısı ve karmaşıklığı tarafından belirlenen yöntemi aracılığıyla, doğrusal olarak bağımsız yolların sayısını ölçer. Düşük bir döngüsel karmaşıklığı genellikle anlaşılması, test etmek ve sürdürmek kolay bir yöntemi gösterir. Döngüsel karmaşıklığı, yönteminin bir denetim akışı grafiğinden hesaplanır ve aşağıdaki gibi verilmiştir:
 
-Döngüsel karmaşıklık kenarlar - düğüm sayısını + 1 sayısı =
+Döngüsel karmaşıklığı = kenar sayısı-düğüm sayısı + 1
 
-A *düğüm* mantıksal dal noktasını temsil eder ve bir *edge* düğümler arasında bir satırı temsil eder.
+*Düğüm* , bir mantık dal noktasını temsil eder ve bir *kenar* , düğümler arasındaki çizgiyi temsil eder.
 
-Döngüsel karmaşıklık 25'ten fazla olduğunda kuralı ihlal bildirir.
+Kural, döngüsel karmaşıklığı 25 ' ten fazla olduğunda bir ihlalin bildirir.
 
-Kod ölçümleri hakkında daha fazla bilgi [ölçmek yönetilen kod karmaşıklığı](../code-quality/code-metrics-values.md).
+Kod ölçümleri hakkında daha fazla bilgi edinmek için [yönetilen kodun ölçü karmaşıklığı](../code-quality/code-metrics-values.md).
 
-## <a name="how-to-fix-violations"></a>İhlaller nasıl düzeltilir?
+## <a name="how-to-fix-violations"></a>İhlalleri çözme
 
-Bu kural ihlalini düzeltmek için döngüsel karmaşıklığı azaltmak için yöntemi yeniden düzenleyin.
+Bu kural ihlalini onarmak için, döngüsel karmaşıklığını azaltmak üzere yöntemi yeniden düzenleyin.
 
-## <a name="when-to-suppress-warnings"></a>Uyarılar bastırıldığında
+## <a name="when-to-suppress-warnings"></a>Uyarıların ne zaman bastırılamıyor
 
-Karmaşık bir kolayca azaltılamaz ve anlaşılması, test ve korumak kolay bir yöntemdir bu kuraldan bir uyarıyı bastırmak güvenlidir. Özellikle, bir büyük içeren bir yöntem `switch` (`Select` içinde [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) deyimi dışlama için aday olduğunu. Kod tabanı geç geliştirme döngüsü ya da beklenmeyen bir çalışma zamanı davranışını daha önce sevk edilen kodda değişiklik giriş kodu yeniden düzenlemeye bakım avantajlarını gölgede bırakabilir destabilizing riskini.
+Karmaşıklığın kolayca azaltılamamasının ve yöntemin anlaşılması, test edilmesi ve bakımının kolay olması durumunda bu kuraldan bir uyarının gösterilmesinin güvenli olması güvenlidir. Özellikle, büyük `switch` (`Select` ın [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) ifadesini içeren bir yöntem, dışlama için bir adaydır. Kod tabanını geliştirme döngüsündeki geç hale getirme veya daha önce sevk edilen koddaki çalışma zamanı davranışında beklenmedik bir değişikliği tanıtma riski, kodu yeniden düzenlemenin bakım avantajlarının ağır olduğunu ortadan kaldırır.
 
-## <a name="how-cyclomatic-complexity-is-calculated"></a>Döngüsel karmaşıklık nasıl hesaplanır
+## <a name="how-cyclomatic-complexity-is-calculated"></a>Döngüsel karmaşıklığı nasıl hesaplanır
 
-Döngüsel karmaşıklık 1 aşağıdaki ekleyerek hesaplanır:
+Döngüsel karmaşıklığı aşağıdaki 1 eklenerek hesaplanır:
 
-- Dal sayısıyla (gibi `if`, `while`, ve `do`)
+- Dal sayısı ( `if`, `while`ve `do`gibi)
 
-- Sayısı `case` deyimlerinde bir `switch`
+- `case` İçindeki deyim sayısı`switch`
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnekler, değişen döngüsel karmaşıklık içeren yöntemleri gösterir.
+Aşağıdaki örneklerde, değişen döngüsel karmaşıklıkları olan Yöntemler gösterilmektedir.
 
-**Döngüsel karmaşıklık 1**
+**1 döngüsel karmaşıklığı**
 
 [!code-cpp[FxCop.Maintainability.AvoidExcessiveComplexity#1](../code-quality/codesnippet/CPP/ca1502-avoid-excessive-complexity_1.cpp)]
 [!code-vb[FxCop.Maintainability.AvoidExcessiveComplexity#1](../code-quality/codesnippet/VisualBasic/ca1502-avoid-excessive-complexity_1.vb)]
@@ -78,7 +78,7 @@ Aşağıdaki örnekler, değişen döngüsel karmaşıklık içeren yöntemleri 
 
 ## <a name="example"></a>Örnek
 
-**Döngüsel karmaşıklık 2**
+**2 döngüsel karmaşıklığı**
 
 [!code-cpp[FxCop.Maintainability.AvoidExcessiveComplexity#2](../code-quality/codesnippet/CPP/ca1502-avoid-excessive-complexity_2.cpp)]
 [!code-vb[FxCop.Maintainability.AvoidExcessiveComplexity#2](../code-quality/codesnippet/VisualBasic/ca1502-avoid-excessive-complexity_2.vb)]
@@ -86,7 +86,7 @@ Aşağıdaki örnekler, değişen döngüsel karmaşıklık içeren yöntemleri 
 
 ## <a name="example"></a>Örnek
 
-**Döngüsel karmaşıklık 3**
+**3 döngüsel karmaşıklığı**
 
 [!code-cpp[FxCop.Maintainability.AvoidExcessiveComplexity#3](../code-quality/codesnippet/CPP/ca1502-avoid-excessive-complexity_3.cpp)]
 [!code-vb[FxCop.Maintainability.AvoidExcessiveComplexity#3](../code-quality/codesnippet/VisualBasic/ca1502-avoid-excessive-complexity_3.vb)]
@@ -94,15 +94,15 @@ Aşağıdaki örnekler, değişen döngüsel karmaşıklık içeren yöntemleri 
 
 ## <a name="example"></a>Örnek
 
-**Döngüsel karmaşıklık 8**
+**8 döngüsel karmaşıklığı**
 
 [!code-cpp[FxCop.Maintainability.AvoidExcessiveComplexity#4](../code-quality/codesnippet/CPP/ca1502-avoid-excessive-complexity_4.cpp)]
 [!code-vb[FxCop.Maintainability.AvoidExcessiveComplexity#4](../code-quality/codesnippet/VisualBasic/ca1502-avoid-excessive-complexity_4.vb)]
 [!code-csharp[FxCop.Maintainability.AvoidExcessiveComplexity#4](../code-quality/codesnippet/CSharp/ca1502-avoid-excessive-complexity_4.cs)]
 
-## <a name="related-rules"></a>İlgili kuralları
+## <a name="related-rules"></a>İlgili kurallar
 
-[CA1501: Aşırı devralmadan kaçının](../code-quality/ca1501-avoid-excessive-inheritance.md)
+[CA1501 Aşırı devralmadan kaçının](../code-quality/ca1501-avoid-excessive-inheritance.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -10,12 +10,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e8c8c58a01b9527df472907c8b55a9d175dd91d
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: 4965c9df3c2256511b8e44de8d388a9155d0d8f9
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65841604"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71237371"
 ---
 # <a name="ca3004-review-code-for-information-disclosure-vulnerabilities"></a>CA3004: Bilgilerin açığa çıkmasıyla ilgili güvenlik açıkları için inceleme kodu
 
@@ -24,35 +24,35 @@ ms.locfileid: "65841604"
 |TypeName|ReviewCodeForInformationDisclosureVulnerabilities|
 |CheckId|CA3004|
 |Kategori|Microsoft.Security|
-|Yeni Değişiklik|Bozucu olmayan|
+|Son değişiklik|Kırılmamış|
 
 ## <a name="cause"></a>Sebep
 
-Özel durum iletisi, yığın izlemesi veya dize gösterimi web çıkış ulaşır.
+Bir özel durumun iletisi, yığın izlemesi veya dize temsili Web çıktısına ulaşır.
 
 ## <a name="rule-description"></a>Kural açıklaması
 
-Özel durum bilgilerini açığa çıkarmaktan saldırganlar yardımcı olur, uygulamanızın iç işlevleri hakkında bilgi bulmak diğer güvenlik açıklarından yararlanma saldırganlar sağlar.
+Özel durum bilgilerini kapatma, saldırganlar uygulamanızın iç içgörüleri hakkında bilgi verir ve bu da saldırganların açıktan yararlanmaya yönelik diğer güvenlik açıklarını bulmasına yardımcı olabilir.
 
-Bu kural, bir özel durum iletisi, yığın izlemesi veya çıkış için bir HTTP yanıtı olan dize gösterimi bulmaya çalışır.
-
-> [!NOTE]
-> Bu kural, derlemeler arasında veri izleyemezsiniz. Örneğin, bir bütünleştirilmiş kod bir özel durumu yakalar ve özel durum veren başka bir derlemeye geçirir, bu kural bir uyarı üreten olmaz.
+Bu kural bir HTTP yanıtına çıkış yapmak için bir özel durum iletisi, yığın izlemesi veya dize temsili bulmaya çalışır.
 
 > [!NOTE]
-> Derinlikte bu kural veri akışı yöntem çağrıları arasında çözümler için yapılandırılabilir bir sınır yoktur. Bkz: [Çözümleyicisi yapılandırma](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis) sınırı bir EditorConfig dosyasında nasıl yapılandıracağınızı öğrenmek için.
+> Bu kural derlemeler genelinde verileri izleyemez. Örneğin, bir derleme bir özel durumu yakalar ve sonra özel durumu çıkaran başka bir derlemeye geçerse, bu kural bir uyarı oluşturmaz.
 
-## <a name="how-to-fix-violations"></a>İhlaller nasıl düzeltilir?
+> [!NOTE]
+> Bu kuralın, yöntem çağrılarında veri akışını ne kadar analiz edip bu kurala ilişkin yapılandırılabilir bir sınır vardır. Bir EditorConfig dosyasında sınırı yapılandırma hakkında bilgi için bkz. [çözümleyici yapılandırması](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis) .
 
-Özel durum bilgilerini HTTP yanıtları için çıktı yok. Bunun yerine, genel bir hata iletisi sağlayın. Bkz: [OWASP'ın hata işleme sayfası](https://www.owasp.org/index.php/Error_Handling) daha fazla kılavuzluk için.
+## <a name="how-to-fix-violations"></a>İhlalleri çözme
 
-## <a name="when-to-suppress-warnings"></a>Uyarılar bastırıldığında
+Özel durum bilgilerini HTTP yanıtlarına gönderme. Bunun yerine, genel bir hata iletisi sağlayın. Daha fazla rehberlik için bkz. [OWASP 'Nin hata işleme sayfası](https://www.owasp.org/index.php/Error_Handling) .
 
-Web çıkışınızı uygulamanızın güven sınırı içinde ve dışında hiçbir zaman kullanıma sunulan, bu uyarının gösterilmemesi için biliyorsanız. Bu nadir olarak rastlanıyor. Uygulamanızın güven sınırı ve veri akışlarını, zaman içinde değişebilir dikkate alın.
+## <a name="when-to-suppress-warnings"></a>Uyarıların ne zaman bastırılamıyor
+
+Web çıktınızın uygulamanızın güven sınırının içinde olduğunu ve hiç gösterilmediğini biliyorsanız, bu uyarıyı bastırmak normaldir. Bu çok nadir bir durumdur. Uygulamanızın güven sınırının ve veri akışlarının zaman içinde değişeceği göz önünde bulundurun.
 
 ## <a name="pseudo-code-examples"></a>Sözde kod örnekleri
 
-### <a name="violation"></a>İhlali
+### <a name="violation"></a>Edildiği
 
 ```csharp
 using System;

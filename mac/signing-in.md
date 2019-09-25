@@ -3,18 +3,18 @@ title: Mac için Visual Studio oturum açma
 description: Mac için Visual Studio oturum açma
 author: asb3993
 ms.author: amburns
-ms.date: 08/08/2019
+ms.date: 09/18/2019
 ms.assetid: E4CFD03C-03AF-48CA-B409-6DB1CA45E991
-ms.openlocfilehash: a3911826314710f5b47fb248e452b4a10b56e2dd
-ms.sourcegitcommit: 6f3cf7a1bfc81a61f9a603461a1c34fd2221f100
+ms.openlocfilehash: 7b1e912583cf0ac63307bf1c75912059c39fe427
+ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/12/2019
-ms.locfileid: "68957356"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71213665"
 ---
 # <a name="sign-in-to-visual-studio-for-mac"></a>Mac için Visual Studio oturum açın
 
-Mac için Visual Studio oturum açma, [aboneliğinizi](enable-subscription.md)nasıl etkinleştirirsiniz. Mac için Visual Studio yüklediğinizde, her zaman Community Edition 'ı varsayılan olarak alırsınız. [Profesyonel veya kurumsal lisansınız](https://visualstudio.microsoft.com/vs/compare/)varsa, ek özelliklerin kilidini açmak için ilk çalıştırmada oturum açmanız gerekir. Ayrıca şunları da alacaksınız:
+Mac için Visual Studio oturum açma, [aboneliğinizi nasıl etkinleştirirsiniz](enable-subscription.md). Mac için Visual Studio yüklediğinizde, her zaman Community Edition 'ı varsayılan olarak alırsınız. [Profesyonel veya kurumsal lisansınız](https://visualstudio.microsoft.com/vs/compare/)varsa, ek özelliklerin kilidini açmak için ilk çalıştırmada oturum açmanız gerekir. Ayrıca şunları da alacaksınız:
 
 * **Visual Studio Dev Essentials programına erişim** – bu program ücretsiz yazılım teklifleri, eğitim, destek ve daha fazlasını içerir. Bkz: [Visual Studio Dev Essentials](https://aka.ms/vsdevhelp) daha fazla bilgi için.
 
@@ -29,17 +29,17 @@ Mac için Visual Studio ilk kez başlattığınızda, bir Microsoft hesabı kull
 > [!TIP]
 > Mac için Visual Studio için oturum açmadan önce internet 'e bağlı olduğunuzdan emin olun. > Abonelikler yalnızca çevrimiçi olarak etkinleştirilebilir. Bağlı değilseniz, "Bunu daha sonra yapacağım" seçeneğini belirleyin ve bağlandığınızda menüde oturum açın.
 
-Mac için Visual Studio oturum açmak için aşağıdaki adımları uygulayın:
+İlk başlatmada Mac için Visual Studio oturum açmak için aşağıdaki adımları uygulayın:
 
 1. Oturum açma penceresindeki **Microsoft hesabıyla oturum açın** düğmesine tıklayın:
 
-    ![Mac için Visual Studio içindeki hesaplar iletişim kutusu](media/signing-in-image12.png)
+    ![Mac için Visual Studio içindeki hesaplar iletişim kutusu](media/ide-tour-2019-start-signin.png)
 
 2. Microsoft kimlik bilgilerinizi girin:
 
     ![Microsoft kimlik bilgileri iletişim kutusu](media/signing-in-image13.png)
 
-3. Oturum açtıktan sonra, Mac için Visual Studio 2019 başlangıç penceresini görürsünüz. Buradan, yeni bir proje açabilir veya oluşturabilirsiniz:
+4. Oturum açtıktan sonra klavye kısayollarını seçme seçeneğini görürsünüz. Kullanmak istediğiniz seçeneği belirleyin ve **devam edin**. Daha sonra Mac için Visual Studio 2019 başlangıç penceresi istenir. Buradan, yeni bir proje açabilir veya oluşturabilirsiniz:
 
     ![Oturum başarıyla açıldı](media/signing-in-image14.png)
 

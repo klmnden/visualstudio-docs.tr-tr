@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: bd3e9c56bb02995d9b99b57bb2799ab69b51a42d
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 0a83d0afffc50c7697fad98c4dc49e31770d63d4
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68921562"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71233747"
 ---
 # <a name="ca1804-remove-unused-locals"></a>CA1804: Kullanılmayan yerelleri kaldırın
 
@@ -31,7 +31,7 @@ ms.locfileid: "68921562"
 |TypeName|RemoveUnusedLocals|
 |CheckId|CA1804|
 |Kategori|Microsoft. Performance|
-|Yeni Değişiklik|Kırılmamış|
+|Son değişiklik|Kırılmamış|
 
 ## <a name="cause"></a>Sebep
 Bir yöntem yerel bir değişken bildirir, ancak muhtemelen bir atama ifadesinin alıcısı olarak bu değişkeni kullanmaz. Bu kurala göre analiz için, sınanan derleme hata ayıklama bilgileri ile oluşturulmalıdır ve ilişkili program veritabanı (. pdb) dosyası kullanılabilir olmalıdır.

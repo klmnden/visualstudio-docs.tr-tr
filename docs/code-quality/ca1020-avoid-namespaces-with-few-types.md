@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 396208b9594e46aa179c3eebddc5a552ce0fca3c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6e5c50f607253304b05dd7ab9350646a0df05e70
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62779540"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71236239"
 ---
 # <a name="ca1020-avoid-namespaces-with-few-types"></a>CA1020: Az tür içeren ad alanlarından kaçının
 
@@ -28,23 +28,23 @@ ms.locfileid: "62779540"
 |TypeName|AvoidNamespacesWithFewTypes|
 |CheckId|CA1020|
 |Kategori|Microsoft.Design|
-|Yeni Değişiklik|Yeni|
+|Son değişiklik|Yeni|
 
 ## <a name="cause"></a>Sebep
 
-Genel ad başka bir ad alanı Beşten az türleri içerir.
+Genel ad alanı dışındaki bir ad alanı beşten az tür içerir.
 
 ## <a name="rule-description"></a>Kural açıklaması
 
-Her ad alanlarınıza mantıksal düzenlemesi vardır ve seyrek doldurulmuş bir ad alanına türleri koymak için geçerli bir nedeni var olduğundan emin olun. Ad alanları, birlikte Çoğu senaryoda kullanılan türler içermelidir. Uygulamalarını karşılıklı olarak birbirini dışlar, ayrı ad alanlarında türleri bulunmalıdır. Örneğin, <xref:System.Web.UI> ad alanı, web uygulamalarında kullanılan türler içerir ve <xref:System.Windows.Forms> ad alanı olarak kullanılan türler içerir [!INCLUDE[TLA#tla_mswin](../code-quality/includes/tlasharptla_mswin_md.md)]-tabanlı uygulamaları. Kullanıcı arabirimi özelliklerini denetleyen türleri her iki ad alanına sahip olsa da, bu türleri aynı uygulamada kullanılmak üzere tasarlanmamıştır. Bu nedenle, bunlar ayrı ad alanlarında bulunur. Bir özelliğin bulunabilirliğini artıracağı için dikkatli ad kuruluş de yararlı olabilir. Ad alanı hiyerarşisi inceleyerek kitaplığı tüketicileri bir özelliği uygulayan türler bulabilir olması gerekir.
+Ad alanlarınızın her birinin mantıksal bir kuruluşa sahip olduğundan ve türleri çok seyrek doldurulmuş bir ad alanına koymak için geçerli bir nedenin bulunduğundan emin olun. Ad alanları Çoğu senaryoda birlikte kullanılan türleri içermelidir. Uygulamaları birbirini dışlıyor olduğunda türler ayrı ad alanlarında bulunmalıdır. Örneğin, <xref:System.Web.UI> ad alanı Web uygulamalarında kullanılan türleri içerir <xref:System.Windows.Forms> ve ad alanı, tabanlı uygulamalarda kullanılan [!INCLUDE[TLA#tla_mswin](../code-quality/includes/tlasharptla_mswin_md.md)]türleri içerir. Her iki ad alanı da Kullanıcı arabiriminin yönlerini denetleyen türlere sahip olsa da, bu türler aynı uygulamada kullanılmak üzere tasarlanmamıştır. Bu nedenle, ayrı ad alanlarında bulunur. Bir özelliğin bulunabilirliği arttığı için dikkatli bir ad alanı organizasyonu da yararlı olabilir. Ad alanı hiyerarşisini inceleyerek, kitaplık tüketicileri bir özelliği uygulayan türleri bulabilmelidir.
 
 > [!NOTE]
-> Tasarım zamanı türlerinde ve izinlerde bu kılavuzu ile uyum sağlamak için diğer ad alanları içine birleştirilmesini değil. Bu tür, kendi ad alanlarında, ana ad alanının altındaki ait ve ad alanlarını bitmelidir `.Design` ve `.Permissions`sırasıyla.
+> Tasarım zamanı türleri ve izinleri, bu kılavuza uyum sağlamak için diğer ad alanlarıyla birleştirilmemelidir. Bu türler, ana ad alanlarınızın altındaki kendi ad alanlarına aittir ve ad alanları sırasıyla `.Design` ve ile `.Permissions`bitmelidir.
 
-## <a name="how-to-fix-violations"></a>İhlaller nasıl düzeltilir?
+## <a name="how-to-fix-violations"></a>İhlalleri çözme
 
-Bu kural ihlalini düzeltmek için tek bir ad alanına birkaç türlerini içeren ad alanları birleştirmek deneyin.
+Bu kuralın ihlalini onarmak için, yalnızca birkaç tür içeren ad alanlarını tek bir ad alanında birleştirmeyi deneyin.
 
-## <a name="when-to-suppress-warnings"></a>Uyarılar bastırıldığında
+## <a name="when-to-suppress-warnings"></a>Uyarıların ne zaman bastırılamıyor
 
-Ad alanı, diğer ad alanlarında türleri ile kullanılan türler içermediğinde bu kuraldan bir uyarıyı bastırmak güvenlidir.
+Ad alanı diğer ad boşluklarınızın türleriyle kullanılan türler içermiyorsa, bu kuraldan bir uyarının görüntülenmesini güvenli hale gelir.

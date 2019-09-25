@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a20feb514b87f2906fd4db32dfb38d3d9b661999
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 8d9e74daa464a55a543b5eb8c189c9ddf1295301
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68922824"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71236019"
 ---
 # <a name="ca1035-icollection-implementations-have-strongly-typed-members"></a>CA1035: ICollection uygulamalarının kesin türde üyeleri vardır
 
@@ -28,7 +28,7 @@ ms.locfileid: "68922824"
 |TypeName|ICollectionImplementationsHaveStronglyTypedMembers|
 |CheckId|CA1035|
 |Kategori|Microsoft.Design|
-|Yeni Değişiklik|Yeni|
+|Son değişiklik|Yeni|
 
 ## <a name="cause"></a>Sebep
 Ortak veya korumalı bir tür uygular <xref:System.Collections.ICollection?displayProperty=fullName> , ancak için <xref:System.Collections.ICollection.CopyTo%2A?displayProperty=fullName>kesin olarak belirlenmiş bir yöntem sağlamaz. Türü kesin belirlenmiş olan <xref:System.Collections.ICollection.CopyTo%2A> sürümü iki parametreyi kabul etmelidir ve ilk parametresi <xref:System.Object?displayProperty=fullName> olarak <xref:System.Array?displayProperty=fullName> bir veya dizisine sahip olamaz.

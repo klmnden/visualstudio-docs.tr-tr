@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 8422427997db291aa24bc8a8bacfdc59abe35998
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 5cb5631da1bcf455874d459a69216b45062a5754
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68923074"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71236214"
 ---
 # <a name="ca1019-define-accessors-for-attribute-arguments"></a>CA1019: Öznitelik bağımsız değişkenleri için erişimciler tanımlayın
 
@@ -31,7 +31,7 @@ ms.locfileid: "68923074"
 |TypeName|DefineAccessorsForAttributeArguments|
 |CheckId|CA1019|
 |Kategori|Microsoft.Design|
-|Yeni Değişiklik|Kırılmamış|
+|Son değişiklik|Kırılmamış|
 
 ## <a name="cause"></a>Sebep
 Yapıcısında bir öznitelik, karşılık gelen özellikleri olmayan bağımsız değişkenleri tanımlar.

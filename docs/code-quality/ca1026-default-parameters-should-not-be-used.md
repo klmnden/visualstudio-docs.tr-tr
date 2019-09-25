@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 888e1b5d551e357eb732dfe3f7661d51cbdf089d
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 62de7654083f3fd64f95401f95e5ee593effb27d
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68923136"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71236127"
 ---
 # <a name="ca1026-default-parameters-should-not-be-used"></a>CA1026: Varsayılan parametreler kullanılmamalıdır
 
@@ -28,7 +28,7 @@ ms.locfileid: "68923136"
 |TypeName|DefaultParametersShouldNotBeUsed|
 |CheckId|CA1026|
 |Kategori|Microsoft.Design|
-|Yeni Değişiklik|Yeni|
+|Son değişiklik|Yeni|
 
 ## <a name="cause"></a>Sebep
 Dışarıdan görünen bir tür, varsayılan bir parametre kullanan dışarıdan görünür bir yöntem içerir.

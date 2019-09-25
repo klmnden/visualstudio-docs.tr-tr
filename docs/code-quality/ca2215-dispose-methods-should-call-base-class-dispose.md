@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f3c118b097dbcd9eba8a5755672bde9c11cb13a
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 468b63ca554ea126bbd621a2502e54540e6ed068
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68920301"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71231274"
 ---
 # <a name="ca2215-dispose-methods-should-call-base-class-dispose"></a>CA2215: Atma metotları taban sınıf atmayı çağırmalıdır
 
@@ -29,7 +29,7 @@ ms.locfileid: "68920301"
 |TypeName|DisposeMethodsShouldCallBaseClassDispose|
 |CheckId|CA2215|
 |Kategori|Microsoft. Usage|
-|Yeni Değişiklik|Kırılmamış|
+|Son değişiklik|Kırılmamış|
 
 ## <a name="cause"></a>Sebep
 Uygulayan <xref:System.IDisposable?displayProperty=fullName> bir tür, Ayrıca uygulayan <xref:System.IDisposable>bir türden devralır. <xref:System.IDisposable.Dispose%2A> Devralan türün <xref:System.IDisposable.Dispose%2A> yöntemi üst tür yöntemini çağırmıyor.

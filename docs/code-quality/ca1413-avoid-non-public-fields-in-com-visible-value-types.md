@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 3eb216af1b6cd742aff83b248b6752adea292345
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 0d4fed5b16120ec069eaa4101670c88ad8f3a247
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68921835"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71234648"
 ---
 # <a name="ca1413-avoid-non-public-fields-in-com-visible-value-types"></a>CA1413: COM görünebilir değer türleri içinde genel olmayan alanlardan kaçının
 
@@ -31,7 +31,7 @@ ms.locfileid: "68921835"
 |TypeName|AvoidNonpublicFieldsInComVisibleValueTypes|
 |CheckId|CA1413|
 |Kategori|Microsoft. çalışabilirliği|
-|Yeni Değişiklik|Yeni|
+|Son değişiklik|Yeni|
 
 ## <a name="cause"></a>Sebep
 Özellikle bileşen nesne modeli (COM) tarafından görünür olarak işaretlenen bir değer türü, ortak bir örnek alanı bildirir.

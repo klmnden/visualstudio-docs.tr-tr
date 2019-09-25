@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a73ce207d8efb0c6309ba52648c7231f89bc7984
-ms.sourcegitcommit: 0f44ec8ba0263056ad04d2d0dc904ad4206ce8fc
+ms.openlocfilehash: 6de48bf273a5c93afcd14e7bab2c5d4c4c4b5a7c
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70766052"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71233833"
 ---
 # <a name="ca1801-review-unused-parameters"></a>CA1801: Kullanılmayan parametreleri gözden geçirin
 
@@ -29,7 +29,7 @@ ms.locfileid: "70766052"
 |TypeName|ReviewUnusedParameters|
 |CheckId|CA1801|
 |Kategori|Microsoft. Usage|
-|Yeni Değişiklik|Parçalara ayırma, yaptığınız değişiklikten bağımsız olarak, üyenin derleme dışında görünür olmaması.<br /><br /> Parçalama-üyeyi, gövdesi içinde parametresini kullanacak şekilde değiştirirseniz.<br /><br /> Parçalama-parametreyi kaldırırsanız ve derleme dışında görünür hale gelir.|
+|Son değişiklik|Bozuk olmayan-üye, yaptığınız değişiklikten bağımsız olarak, derleme dışında görünür değilse.<br /><br /> Parçalama-üyeyi, gövdesi içinde parametresini kullanacak şekilde değiştirirseniz.<br /><br /> Parçalama-parametreyi kaldırırsanız ve derleme dışında görünür hale gelir.|
 
 ## <a name="cause"></a>Sebep
 

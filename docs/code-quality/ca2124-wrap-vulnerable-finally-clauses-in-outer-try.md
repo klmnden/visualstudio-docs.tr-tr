@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c75c7c240f694b18caacefc0f9b1ee07f54faf36
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 0008767f7d37e2c088dad58a328b025f81090ad8
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68920794"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71232445"
 ---
 # <a name="ca2124-wrap-vulnerable-finally-clauses-in-outer-try"></a>CA2124: Savunmasız sonunda yan tümcelerini dış deneme içine sarmalayın
 
@@ -28,7 +28,7 @@ ms.locfileid: "68920794"
 |TypeName|WrapVulnerableFinallyClausesInOuterTry|
 |CheckId|CA2124|
 |Kategori|Microsoft.Security|
-|Yeni Değişiklik|Kırılmamış|
+|Son değişiklik|Kırılmamış|
 
 ## <a name="cause"></a>Sebep
 .NET Framework 1,0 ve 1,1 sürümlerinde, genel veya korumalı bir `try` Yöntem bir / `catch` / `finally` blok içerir. Blok güvenlik durumunu sıfırlayıp bir `finally` blok içine alınmaz. `finally`

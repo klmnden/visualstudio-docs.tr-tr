@@ -7,12 +7,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: 478efc77bd1fb14f6241e026cfe280355a90746a
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 27570e282c230d4bec47e70aa1bcdd053b75597c
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68919452"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71236753"
 ---
 # <a name="best-practices-and-examples-sal"></a>En İyi Yöntemler ve Örnekler (SAL)
 Kaynak kodu ek açıklama dilinden (SAL) en iyi şekilde yararlanmak ve bazı yaygın sorunlardan kaçınmak için bazı yollar aşağıda verilmiştir.
@@ -238,11 +238,11 @@ Bu örnekte, `_Out_opt_` önkoşulun bir parçası olarak işaretçinin null ola
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Sal ekC++ açıklamalarını](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)[, Sal](../code-quality/annotating-function-parameters-and-return-values.md)
-
-
-açıklama ekleme işlev parametrelerini ve dönüş değerleri[işlev davranışına](../code-quality/annotating-function-behavior.md) [](../code-quality/understanding-sal.md)
-Açıklamaolarakanlamakiçinkullanma [Yapı ve sınıflara](../code-quality/annotating-structs-and-classes.md)
-açıklama ekleme, bir ek açıklamanın[iç işlevleri](../code-quality/intrinsic-functions.md) [ne zaman ve nerede uygulanacağını](../code-quality/specifying-when-and-where-an-annotation-applies.md)
-belirten[kilitleme davranışına](../code-quality/annotating-locking-behavior.md)
-açıklama ekleme
+[C/C++ Kod Hatalarını Azaltmak için SAL Ek Açıklamalarını Kullanma](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)  
+[SAL'yi Anlama](../code-quality/understanding-sal.md)  
+[İşlev Parametrelerini ve Dönüş Değerlerini Açıklama](../code-quality/annotating-function-parameters-and-return-values.md)  
+[İşlev Davranışını Yorumlama](../code-quality/annotating-function-behavior.md)  
+[Yapıları ve Sınıfları Yorumlama](../code-quality/annotating-structs-and-classes.md)  
+[Kilitlenme Davranışını Yorumlama](../code-quality/annotating-locking-behavior.md)  
+[Açıklamanın Ne Zaman ve Nereye Uygulanacağını Belirtme](../code-quality/specifying-when-and-where-an-annotation-applies.md)  
+[İç İşlevler](../code-quality/intrinsic-functions.md)  

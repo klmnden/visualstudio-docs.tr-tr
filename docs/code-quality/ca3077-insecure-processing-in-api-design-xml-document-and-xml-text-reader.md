@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ca39cef1fb4f1bf1114673dd96a91a1ac8e105cc
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 68aada736b2a22b623502d8586415dc8024c2622
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68919873"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71237059"
 ---
 # <a name="ca3077-insecure-processing-in-api-design-xml-document-and-xml-text-reader"></a>CA3077: API Tasarımı, XML Belgesi ve XML Metin Okuyucusunda Güvensiz İşleme
 
@@ -22,7 +22,7 @@ ms.locfileid: "68919873"
 |TypeName|Insecuredtdprocessingınapidesign|
 |CheckId|CA3077|
 |Kategori|Microsoft.Security|
-|Yeni Değişiklik|Kırılmamış|
+|Son değişiklik|Kırılmamış|
 
 ## <a name="cause"></a>Sebep
 XMLDocument ve XMLTextReader 'dan türetilmiş bir API tasarlarken, en <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A>az bir olmalıdır.  Dış varlık kaynaklarının başvurulması veya çözümlenmesi veya XML 'deki güvenli olmayan değerlerin ayarlanması sırasında güvenli olmayan DTDProcessing örnekleri kullanmak bilgilerin açığa çıkmasına neden olabilir.

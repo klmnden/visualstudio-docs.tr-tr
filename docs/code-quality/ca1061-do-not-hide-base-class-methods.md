@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8f13ac29028472384cfadbf9c397e578f6509670
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: eacd20dee0758ff481b259807ba52bb78b26f5d2
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68922424"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71235384"
 ---
 # <a name="ca1061-do-not-hide-base-class-methods"></a>CA1061: Temel sınıf metotlarını gizlemeyin
 
@@ -28,7 +28,7 @@ ms.locfileid: "68922424"
 |TypeName|DoNotHideBaseClassMethods|
 |CheckId|CA1061|
 |Kategori|Microsoft.Design|
-|Yeni Değişiklik|Yeni|
+|Son değişiklik|Yeni|
 
 ## <a name="cause"></a>Sebep
 Türetilmiş bir tür, aynı ada sahip ve temel yöntemlerinden biri ile aynı sayıda parametreye sahip bir yöntem bildirir; bir veya daha fazla parametre, temel yöntemde karşılık gelen parametrenin temel türüdür; ve kalan parametrelerde, temel yöntemde karşılık gelen parametrelerle özdeş olan türler vardır.

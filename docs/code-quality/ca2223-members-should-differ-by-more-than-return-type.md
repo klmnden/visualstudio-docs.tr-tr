@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: de64e0271370a3cdcc6f0963dbf06925621b9b65
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 5283c96a484f47fe280a07c5889b8db877db5ffc
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68920183"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71230992"
 ---
 # <a name="ca2223-members-should-differ-by-more-than-return-type"></a>CA2223: Üyeler dönüş türünden daha fazla farklı olmalıdır
 
@@ -28,7 +28,7 @@ ms.locfileid: "68920183"
 |TypeName|MembersShouldDifferByMoreThanReturnType|
 |CheckId|CA2223|
 |Kategori|Microsoft. Usage|
-|Yeni Değişiklik|Yeni|
+|Son değişiklik|Yeni|
 
 ## <a name="cause"></a>Sebep
 İki ortak veya korumalı üyenin, dönüş türü dışında aynı imzaları vardır.

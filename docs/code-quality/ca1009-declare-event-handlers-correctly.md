@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: a98ec47688f289fadba66401aca9fcee7b602cdc
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: e923730213ca31a4429d8547fdaaf980692f9a96
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68923563"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71236485"
 ---
 # <a name="ca1009-declare-event-handlers-correctly"></a>CA1009: Olay işleyicileri doğru olarak bildirin
 
@@ -32,7 +32,7 @@ ms.locfileid: "68923563"
 |TypeName|DeclareEventHandlersCorrectly|
 |CheckId|CA1009|
 |Kategori|Microsoft.Design|
-|Yeni Değişiklik|Yeni|
+|Son değişiklik|Yeni|
 
 ## <a name="cause"></a>Sebep
 Ortak veya korumalı bir olayı işleyen bir temsilcinin doğru imza, dönüş türü veya parametre adı yoktur.

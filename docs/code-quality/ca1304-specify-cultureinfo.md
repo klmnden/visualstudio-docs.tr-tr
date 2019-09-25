@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f6d4776f6bcbf89e95301bd2c7ef4f6f6b5680d9
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: 2539cef9e6b2fe20513943f686aeaa1ff7a79013
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66714351"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71235099"
 ---
 # <a name="ca1304-specify-cultureinfo"></a>CA1304: CultureInfo belirt
 
@@ -27,12 +27,12 @@ ms.locfileid: "66714351"
 |-|-|
 |TypeName|SpecifyCultureInfo|
 |CheckId|CA1304|
-|Kategori|Microsoft.Globalization|
-|Yeni Değişiklik|Bölünemez|
+|Kategori|Microsoft. Globalization|
+|Son değişiklik|Kırılmamış|
 
 ## <a name="cause"></a>Sebep
 
-Yöntem veya Oluşturucu kabul eden aşırı yüklenmiş bir üyeyi çağıran bir <xref:System.Globalization.CultureInfo?displayProperty=nameWithType> parametresi ve yöntem veya Oluşturucu alan aşırı yüklemesini çağırmaz <xref:System.Globalization.CultureInfo> parametresi. Bu kural aşağıdaki yöntemlere yapılan çağrılar yok sayar:
+Bir yöntem veya Oluşturucu bir <xref:System.Globalization.CultureInfo?displayProperty=nameWithType> parametreyi kabul eden aşırı yüküne sahip bir üyeyi çağırır ve yöntem veya Oluşturucu <xref:System.Globalization.CultureInfo> parametreyi alan aşırı yüklemeyi çağırmaz. Bu kural, aşağıdaki yöntemlere yapılan çağrıları yoksayar:
 
 - <xref:System.Activator.CreateInstance%2A?displayProperty=nameWithType>
 - <xref:System.Resources.ResourceManager.GetObject%2A?displayProperty=nameWithType>
@@ -40,36 +40,36 @@ Yöntem veya Oluşturucu kabul eden aşırı yüklenmiş bir üyeyi çağıran b
 
 ## <a name="rule-description"></a>Kural açıklaması
 
-Olduğunda bir <xref:System.Globalization.CultureInfo> veya <xref:System.IFormatProvider?displayProperty=nameWithType> nesnesi sağlanmadı, aşırı yüklü üye tarafından sağlanan varsayılan değer, tüm yerel ayarlarda istediğiniz etkiyi vermeyebilir. Ayrıca, .NET üyeleri varsayılan kültür seçin ve biçimlendirme, kodunuz için doğru olmayabilir varsayımlar dayanır. Kod senaryolarınız için beklendiği gibi çalıştığından emin olmak için aşağıdaki kılavuzlara göre kültüre özgü bilgileri vermeniz gerekir:
+<xref:System.Globalization.CultureInfo> Veya<xref:System.IFormatProvider?displayProperty=nameWithType> nesnesi sağlanmadığında, aşırı yüklenmiş üye tarafından sağlanan varsayılan değer, tüm yerel ayarlarda istediğiniz etkiye sahip olmayabilir. Ayrıca, .NET üyeleri, kodunuz için doğru olmayan varsayımlar temelinde varsayılan kültür ve biçimlendirme seçeneklerini de tercih edebilir. Senaryolarınız için kodun beklendiği gibi çalıştığından emin olmak için, aşağıdaki yönergelere göre kültüre özgü bilgiler sağlamalısınız:
 
-- Değeri kullanıcıya görüntülenir, geçerli kültür kullanın. Bkz. <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=nameWithType>.
+- Değer kullanıcıya görüntülenecektir, geçerli kültürü kullanın. Bkz. <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=nameWithType>.
 
-- Diğer bir deyişle, bir dosya ya da veritabanı, kalıcı bir değeri depolanan ve yazılım tarafından erişilen, sabit kültür kullanın. Bkz. <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=nameWithType>.
+- Değer, yazılım tarafından depolanacaksa, diğer bir deyişle, bir dosya veya veritabanına kalıcı hale getirilir, sabit kültür ' i kullanın. Bkz. <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=nameWithType>.
 
-- Hedef değerin bilmiyorsanız, veri tüketici sahip veya sağlayıcıyı kültür.
+- Değerin hedefini belirtmediğinizde, veri tüketicisinin veya sağlayıcının kültürü belirtmesini sağlayabilirsiniz.
 
-Varsayılan davranışı, aşırı yüklü üye gereksinimleriniz için uygun olsa bile, böylece kendi belge ve daha kolay tutulan kodunuzu kültüre özgü aşırı açıkça çağırmak daha iyidir.
+Aşırı yüklenmiş üyenin varsayılan davranışı gereksinimlerinize uygun olsa da, kodunuzun kendi kendine belgelenmesi ve daha kolay tutulması için kültüre özgü aşırı yüklemeyi açıkça çağırmak daha iyidir.
 
 > [!NOTE]
-> <xref:System.Globalization.CultureInfo.CurrentUICulture%2A?displayProperty=nameWithType> yalnızca bir örneğini kullanarak yerelleştirilmiş kaynakları almak için kullanılan <xref:System.Resources.ResourceManager?displayProperty=nameWithType> sınıfı.
+> <xref:System.Globalization.CultureInfo.CurrentUICulture%2A?displayProperty=nameWithType>yalnızca <xref:System.Resources.ResourceManager?displayProperty=nameWithType> sınıfının bir örneğini kullanarak yerelleştirilmiş kaynakları almak için kullanılır.
 
-## <a name="how-to-fix-violations"></a>İhlaller nasıl düzeltilir?
+## <a name="how-to-fix-violations"></a>İhlalleri çözme
 
-Bu kural ihlalini düzeltmek için alan aşırı yüklemesini kullanın. bir <xref:System.Globalization.CultureInfo> bağımsız değişken.
+Bu kural ihlalini onarmak için bir <xref:System.Globalization.CultureInfo> bağımsız değişken alan aşırı yüklemeyi kullanın.
 
-## <a name="when-to-suppress-warnings"></a>Uyarılar bastırıldığında
+## <a name="when-to-suppress-warnings"></a>Uyarıların ne zaman bastırılamıyor
 
-Varsayılan kültürü doğru seçimdir belirli olduğunda ve kod bakımı önemli geliştirme önceliği olmadığı bu kuraldan bir uyarıyı bastırmak güvenlidir.
+Varsayılan kültürün doğru seçim olması ve kodun bakımınızın önemli bir geliştirme önceliği olmaması durumunda bu kuraldan gelen bir uyarının görüntülenmesini güvenli hale gelir.
 
-## <a name="example-showing-how-to-fix-violations"></a>İhlaller nasıl düzeltilir gösteren örnek
+## <a name="example-showing-how-to-fix-violations"></a>İhlallerin nasıl düzeltileceğini gösteren örnek
 
-Aşağıdaki örnekte, `BadMethod` iki bu kural ihlalleri neden olur. `GoodMethod` Sabit kültür için geçirerek ilk ihlali düzeltir <xref:System.String.Compare%2A?displayProperty=nameWithType>ve geçerli kültürü için geçirerek ikinci ihlali düzeltir <xref:System.String.ToLower%2A?displayProperty=nameWithType> çünkü `string3` kullanıcıya görüntülenir.
+Aşağıdaki örnekte, `BadMethod` bu kuralın iki ihlaline neden olur. `GoodMethod`Sabit kültürü öğesine <xref:System.String.Compare%2A?displayProperty=nameWithType>geçirerek ilk ihlayi düzeltir ve geçerli <xref:System.String.ToLower%2A?displayProperty=nameWithType> kültürü `string3` kullanıcıya geçirilerek ikinci ihlalin düzeltmesini düzeltir.
 
 [!code-csharp[FxCop.Globalization.CultureInfo#1](../code-quality/codesnippet/CSharp/ca1304-specify-cultureinfo_1.cs)]
 
-## <a name="example-showing-formatted-output"></a>Biçimlendirilmiş çıktı örneği gösterme
+## <a name="example-showing-formatted-output"></a>Biçimlendirilen çıktıyı gösteren örnek
 
-Aşağıdaki örnek, varsayılan olarak geçerli kültürü etkisini gösterir <xref:System.IFormatProvider> tarafından seçilen <xref:System.DateTime> türü.
+Aşağıdaki örnek, geçerli <xref:System.IFormatProvider> <xref:System.DateTime> kültürün, türü tarafından seçilen varsayılan değer olan etkisini gösterir.
 
 [!code-csharp[FxCop.Globalization.IFormatProvider#1](../code-quality/codesnippet/CSharp/ca1304-specify-cultureinfo_2.cs)]
 
@@ -80,9 +80,9 @@ Bu örnek aşağıdaki çıktıyı üretir:
 06/04/1900 12:15:12
 ```
 
-## <a name="related-rules"></a>İlgili kuralları
+## <a name="related-rules"></a>İlgili kurallar
 
-- [CA1305: Iformatprovider belirtin](../code-quality/ca1305-specify-iformatprovider.md)
+- [CA1305 IFormatProvider belirt](../code-quality/ca1305-specify-iformatprovider.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl yapılır: Derleme çıkış dizinini değiştirme'
+title: 'Nasıl Yapılır: Derleme çıkış dizinini değiştirme'
 ms.date: 05/15/2019
 ms.technology: vs-ide-compile
 ms.topic: conceptual
@@ -11,12 +11,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e006be2099d5132ce7445f1e8fe74b0f2752c260
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
+ms.openlocfilehash: 493de227174b60b4834c2732ddbf16a5586fa49e
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68416789"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71238182"
 ---
 # <a name="how-to-change-the-build-output-directory"></a>Nasıl yapılır: Derleme çıkış dizinini değiştirme
 
@@ -43,6 +43,15 @@ Projeniz tarafından oluşturulan çıktının yapılandırma bazında (hata ay�
    Çıkış oluşturmak için yolu yazın (kök proje dizinine mutlak veya göreli) veya bunun yerine bu klasöre gitmek için **Gözden** geçirme ' yi seçin.
 
    ![Visual Studio C# projesi için çıkış yolu özelliği](media/output-path.png)
+   
+   > [!NOTE]
+   > Bazı projeler varsayılan olarak yapı yolundaki Framework ve Runtime içerir. Bunu değiştirmek için **Çözüm Gezgini**' de proje düğümüne sağ tıklayın, **Proje dosyasını Düzenle**' yi seçin ve aşağıdakileri ekleyin:
+   > ```xml
+   > <PropertyGroup>
+   >   <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+   >   <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
+   > </PropertyGroup>
+   > ```
 
 > [!TIP]
 > Çıktı belirttiğiniz konuma oluşturulmadığından, Visual Studio menü çubuğunda ilgili yapılandırmayı (örneğin, **hata ayıklama** veya **Sürüm**) oluştururken emin olun.

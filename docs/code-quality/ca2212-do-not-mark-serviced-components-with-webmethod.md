@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a47b7e703d811ff5dce421db103af89bb3a76512
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7b2ace5f6e51fc7a8d29faab14cc2332fd808f93
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62796442"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71231662"
 ---
 # <a name="ca2212-do-not-mark-serviced-components-with-webmethod"></a>CA2212: Servis verilen bileşenleri WebMethod ile işaretlemeyin
 
@@ -27,24 +27,24 @@ ms.locfileid: "62796442"
 |-|-|
 |TypeName|DoNotMarkServicedComponentsWithWebMethod|
 |CheckId|CA2212|
-|Kategori|Microsoft.Usage|
-|Yeni Değişiklik|Yeni|
+|Kategori|Microsoft. Usage|
+|Son değişiklik|Yeni|
 
 ## <a name="cause"></a>Sebep
 
-Devralınan bir türde bir yöntemin <xref:System.EnterpriseServices.ServicedComponent?displayProperty=fullName> ile işaretlenmiş <xref:System.Web.Services.WebMethodAttribute?displayProperty=fullName>.
+Öğesinden <xref:System.EnterpriseServices.ServicedComponent?displayProperty=fullName> devralan bir tür yöntemi ile <xref:System.Web.Services.WebMethodAttribute?displayProperty=fullName>işaretlenir.
 
 ## <a name="rule-description"></a>Kural açıklaması
 
-<xref:System.Web.Services.WebMethodAttribute> ASP.NET kullanarak oluşturulan bir XML web hizmeti yöntemlerini uygular; yöntem çağrılabilir Uzak web istemcilerinden kolaylaştırır. Sınıf ve yöntem, genel ve çalışan bir ASP.NET web uygulamasında olması gerekir. <xref:System.EnterpriseServices.ServicedComponent> türleri COM + uygulamaları tarafından barındırılan ve COM + Hizmetleri kullanabilir. <xref:System.Web.Services.WebMethodAttribute> uygulanmaz <xref:System.EnterpriseServices.ServicedComponent> çünkü aynı senaryolar için tasarlanmamıştır. Özellikle, öznitelik için ekleme <xref:System.EnterpriseServices.ServicedComponent> yöntemi yapmaz yöntemi çağrılabilir Uzak web istemcilerinden. Çünkü <xref:System.Web.Services.WebMethodAttribute> ve <xref:System.EnterpriseServices.ServicedComponent> yöntemine sahip çakışan davranışları ve bağlam ve işlem akışı, yöntemin davranışını gereksinimleri bazı senaryolarda yanlış olacaktır.
+<xref:System.Web.Services.WebMethodAttribute>ASP.NET kullanılarak oluşturulmuş bir XML Web hizmeti içindeki yöntemler için geçerlidir; yöntemi, uzak Web istemcilerinden çağrılabilir hale getirir. Yöntem ve sınıf ortak olmalıdır ve bir ASP.NET Web uygulamasında yürütmelidir. <xref:System.EnterpriseServices.ServicedComponent>türler COM+ uygulamaları tarafından barındırılır ve COM+ Hizmetleri kullanılabilir. <xref:System.Web.Services.WebMethodAttribute>, aynı senaryolar için <xref:System.EnterpriseServices.ServicedComponent> düşünülmediği için türlere uygulanmaz. Özellikle, özniteliği <xref:System.EnterpriseServices.ServicedComponent> yöntemine eklemek yöntemi uzak Web istemcilerinden çağrılabilir hale getirir. Ve <xref:System.Web.Services.WebMethodAttribute> bir<xref:System.EnterpriseServices.ServicedComponent> yönteminde bağlam ve işlem akışı için çakışan davranışlar ve gereksinimler olduğundan, metodun davranışı bazı senaryolarda yanlış olacaktır.
 
-## <a name="how-to-fix-violations"></a>İhlaller nasıl düzeltilir?
+## <a name="how-to-fix-violations"></a>İhlalleri çözme
 
-Bu kural ihlalini düzeltmek için özniteliği kaldırın. <xref:System.EnterpriseServices.ServicedComponent> yöntemi.
+Bu kuralın ihlalini onarmak için, <xref:System.EnterpriseServices.ServicedComponent> yönteminden özniteliğini kaldırın.
 
-## <a name="when-to-suppress-warnings"></a>Uyarılar bastırıldığında
+## <a name="when-to-suppress-warnings"></a>Uyarıların ne zaman bastırılamıyor
 
-Bu kuraldan uyarıyı bastırmayın. Bu öğeleri birleştirme doğru olduğu senaryo vardır.
+Bu kuraldan uyarıyı bastırmayın. Bu öğelerin birleştirilmesinin doğru olduğu bir senaryo yoktur.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

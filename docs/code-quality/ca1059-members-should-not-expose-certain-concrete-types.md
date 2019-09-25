@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f24881d04599677c5d45c93fc940286f115d593
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 97ee4e11ceb3380c204d00203b9e81397a39e362
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68922521"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71235472"
 ---
 # <a name="ca1059-members-should-not-expose-certain-concrete-types"></a>CA1059: Üyeler belirli somut türleri kullanıma sunmamalıdır
 
@@ -28,7 +28,7 @@ ms.locfileid: "68922521"
 |TypeName|MembersShouldNotExposeCertainConcreteTypes|
 |CheckId|CA1059|
 |Kategori|Microsoft.Design|
-|Yeni Değişiklik|Yeni|
+|Son değişiklik|Yeni|
 
 ## <a name="cause"></a>Sebep
 Dışarıdan görünür bir üye belirli bir somut türdür veya parametrelerinden biri veya dönüş değeri aracılığıyla belirli somut türleri gösterir. Şu anda, bu kural aşağıdaki somut türlerin görünürlüğünü raporlar:

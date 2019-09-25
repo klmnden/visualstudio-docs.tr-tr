@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d466a508eade835563627a829f937416a24972a0
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 66b9e7cb0eba06b00b30c2b7d00fac78206d222f
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68920644"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71232240"
 ---
 # <a name="ca2135-level-2-assemblies-should-not-contain-linkdemands"></a>CA2135: Düzey 2 derlemeler LinkDemands içermemelidir
 
@@ -24,7 +24,7 @@ ms.locfileid: "68920644"
 |TypeName|SecurityRuleSetLevel2MethodsShouldNotBeProtectedWithLinkDemands|
 |CheckId|CA2135|
 |Kategori|Microsoft.Security|
-|Yeni Değişiklik|Yeni|
+|Son değişiklik|Yeni|
 
 ## <a name="cause"></a>Sebep
 Sınıf veya sınıf üyesi, düzey 2 güvenliği <xref:System.Security.Permissions.SecurityAction> kullanan bir uygulamada bir kullanıyor.

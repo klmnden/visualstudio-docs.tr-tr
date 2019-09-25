@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cf9475ad208a229057700fa2965984fbdcb17abf
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: e333e53fea1b965b250bdc97924e93728d55805a
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68923097"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71236176"
 ---
 # <a name="ca1021-avoid-out-parameters"></a>CA1021: out parametrelerinden kaçının
 
@@ -28,7 +28,7 @@ ms.locfileid: "68923097"
 |TypeName|AvoidOutParameters|
 |CheckId|CA1021|
 |Kategori|Microsoft.Design|
-|Yeni Değişiklik|Yeni|
+|Son değişiklik|Yeni|
 
 ## <a name="cause"></a>Sebep
 Ortak türde ortak veya korumalı yöntemin bir `out` parametresi vardır.

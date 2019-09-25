@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a45b7061ae9d183ec7ee02a3b733ee9340b3689
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: d878572c4391805773a9a711ee88e7b58f507c65
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68921310"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71233291"
 ---
 # <a name="ca1901-pinvoke-declarations-should-be-portable"></a>CA1901: P/Invoke bildirimleri taşınabilir olmalıdır
 
@@ -28,7 +28,7 @@ ms.locfileid: "68921310"
 |TypeName|PInvokeDeclarationsShouldBePortable|
 |CheckId|CA1901|
 |Kategori|Microsoft. taşınabilirlik|
-|Yeni Değişiklik|Parçalama-P/Invoke derlemenin dışında görünüyorsa. Bölünmez olmayan-P/Invoke derlemenin dışında görünür değilse.|
+|Son değişiklik|Parçalama-P/Invoke derlemenin dışında görünüyorsa. Bölünmez olmayan-P/Invoke derlemenin dışında görünür değilse.|
 
 ## <a name="cause"></a>Sebep
 Bu kural, her parametrenin boyutunu ve bir P/Invoke dönüş değerini değerlendirir ve 32-bit ve 64 bit platformlarındaki yönetilmeyen koda sıralanmış olarak bunların boyutunun doğru olduğunu doğrular. Bu kuralın en yaygın ihlali, platforma bağımlı, işaretçi boyutunda bir değişkenin gerekli olduğu sabit boyutlu bir tamsayıyı iletmektir.

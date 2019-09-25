@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9aecfe8e0be0f5d32df41b7eb164423fd4d405db
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b52f4412b1b048c41033f74200828f70361c1ea3
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62545009"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71232499"
 ---
 # <a name="ca2121-static-constructors-should-be-private"></a>CA2121: Statik oluşturucular özel olmalıdır
 
@@ -28,28 +28,28 @@ ms.locfileid: "62545009"
 |TypeName|StaticConstructorsShouldBePrivate|
 |CheckId|CA2121|
 |Kategori|Microsoft.Security|
-|Yeni Değişiklik|Yeni|
+|Son değişiklik|Yeni|
 
 ## <a name="cause"></a>Sebep
 
-Özel olmayan statik Oluşturucu türü vardır.
+Türün özel olmayan bir statik Oluşturucusu vardır.
 
 ## <a name="rule-description"></a>Kural açıklaması
 
-Statik Oluşturucu, bir sınıf oluşturucu olarak da bilinen, bir tür başlatmak için kullanılır. Sistem, türünün ilk örneğinin oluşturulmasından önce statik oluşturucuyu çağırır veya herhangi bir statik üyeye başvurur. Kullanıcının statik Oluşturucu ne zaman çağrıldığını üzerinde denetimi yoktur. Statik oluşturucu özel değilse, sistem dışındaki kod tarafından çağrılabilir. Oluşturucu içinde gerçekleştirilen işlemlere bağlı olarak bu, beklenmeyen davranışlara neden olabilir.
+Sınıf oluşturucusu olarak da bilinen statik bir Oluşturucu, bir türü başlatmak için kullanılır. Sistem, türünün ilk örneğinin oluşturulmasından önce statik oluşturucuyu çağırır veya herhangi bir statik üyeye başvurur. Statik Oluşturucu çağrıldığında kullanıcının denetimi yoktur. Statik oluşturucu özel değilse, sistem dışındaki kod tarafından çağrılabilir. Oluşturucu içinde gerçekleştirilen işlemlere bağlı olarak bu, beklenmeyen davranışlara neden olabilir.
 
-Bu kural, C# ve Visual Basic derleyiciler tarafından uygulanır.
+Bu kural, C# ve Visual Basic derleyicileri tarafından zorlanır.
 
-## <a name="how-to-fix-violations"></a>İhlaller nasıl düzeltilir?
+## <a name="how-to-fix-violations"></a>İhlalleri çözme
 
-İhlalleri, genellikle aşağıdaki eylemlerden birini kaynaklanır:
+İhlaller genellikle aşağıdaki eylemlerden biri nedeniyle oluşur:
 
-- Statik Oluşturucu türünüz için tanımlanan ve özel göstermedi.
+- Türü için bir statik Oluşturucu tanımladınız ve özel hale gelmedi.
 
-- Programlama dili derleyici türünüz için varsayılan bir statik Oluşturucu eklendi ve özel göstermedi.
+- Programlama dili derleyicisi, türüne varsayılan bir statik Oluşturucu ekledi ve özel hale gelmedi.
 
-İlk tür ihlalinin düzeltmek için bir statik oluşturucu özel yapın. İkinci tür düzeltmek için türünüz için özel bir statik oluşturucu ekleyin.
+İlk ihlalin türünü onarmak için statik oluşturucuyu özel yapın. İkinci türü onarmak için, türünüz için bir özel statik oluşturucu ekleyin.
 
-## <a name="when-to-suppress-warnings"></a>Uyarılar bastırıldığında
+## <a name="when-to-suppress-warnings"></a>Uyarıların ne zaman bastırılamıyor
 
-İhlalleri bastırmayın. Yazılım tasarımı açık bir statik Oluşturucu çağrı gerektiriyorsa, tasarım ciddi sorunlar içeriyor ve gözden geçirilmesi gereken olasıdır.
+Bu ihlalleri engellemez. Yazılım tasarımınız statik bir oluşturucuya açık bir çağrı gerektiriyorsa, tasarımın ciddi kusurlar içermesi ve incelenmesi gerekir.

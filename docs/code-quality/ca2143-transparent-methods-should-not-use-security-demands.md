@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 532a10740b0617f32e4f970da8dc2a7e2807f792
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: a182beba738e583fad83c3f51d7efa312761906d
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68920479"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71231976"
 ---
 # <a name="ca2143-transparent-methods-should-not-use-security-demands"></a>CA2143: Saydam metotlar güvenlik taleplerini kullanmamalıdır
 
@@ -24,7 +24,7 @@ ms.locfileid: "68920479"
 |TypeName|TransparentMethodsShouldNotDemand|
 |CheckId|CA2143|
 |Kategori|Microsoft.Security|
-|Yeni Değişiklik|Yeni|
+|Son değişiklik|Yeni|
 
 ## <a name="cause"></a>Sebep
 Bir Tranparent türü ya da yöntemi bildirimli olarak bir <xref:System.Security.Permissions.SecurityAction?displayProperty=fullName> `.Demand` talep ile işaretlenir <xref:System.Security.CodeAccessPermission.Demand%2A?displayProperty=fullName> ya da Yöntemi yöntemini çağırır.

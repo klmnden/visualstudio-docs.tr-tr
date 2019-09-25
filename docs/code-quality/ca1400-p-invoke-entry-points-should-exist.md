@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b292c58e666c11130fb25f67c234bfd2282fe463
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 5503f00995a4720207ea0ea9c29201d379e70adb
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68922251"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71234912"
 ---
 # <a name="ca1400-pinvoke-entry-points-should-exist"></a>CA1400: P/Invoke giriş noktaları bulunmalıdır
 
@@ -28,7 +28,7 @@ ms.locfileid: "68922251"
 |TypeName|PInvokeEntryPointsShouldExist|
 |CheckId|CA1400|
 |Kategori|Microsoft. çalışabilirliği|
-|Yeni Değişiklik|Kırılmamış|
+|Son değişiklik|Kırılmamış|
 
 ## <a name="cause"></a>Sebep
 Ortak veya korumalı bir yöntem ile <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName>işaretlenir. Yönetilmeyen kitaplık bulunamadı ya da yöntem için bir işlev kitaplığında eşleştirilemedi. Kural, yöntem adını tam olarak belirtilen şekilde bulamazsa, yöntem adını ' A ' veya ' W ' ile birlikte düzelterek metodun ANSI veya geniş karakterli sürümlerini arar. Eşleşme bulunmazsa, kural __stdcall ad biçimini kullanarak bir işlevi bulmaya çalışır (_MyMethod@12burada, 12 bağımsız değişkenlerin uzunluğunu temsil eder). Eşleşme bulunmazsa ve Yöntem adı ' # ' ile başlıyorsa, kural, işlevi bir ad başvurusu yerine bir sıralı başvuru olarak arar.

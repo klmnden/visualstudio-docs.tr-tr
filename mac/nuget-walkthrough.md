@@ -3,15 +3,15 @@ title: Projenize bir NuGet paketi dahil etme
 description: Bu belge, Mac için Visual Studio kullanarak bir projeye NuGet paketinin nasıl ekleneceğini kapsar. Bir paketi bulmayı ve indirmeyi, Ayrıca IDE tümleştirme özelliklerini tanıtmayı da açıklar.
 author: jmatthiesen
 ms.author: jomatthi
-ms.date: 09/17/2019
+ms.date: 09/18/2019
 ms.assetid: 5C800815-0B13-4B27-B017-95FCEF1A0EA2
 ms.custom: conceptual
-ms.openlocfilehash: 22b2e07509403d8e19e3a3e920d45b064c2e51c0
-ms.sourcegitcommit: 541a0556958201ad6626bc8638406ad02640f764
+ms.openlocfilehash: 55b4691a7adb03d4ee8fd5e05e7bd9d7daa28f13
+ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71079478"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71213694"
 ---
 # <a name="install-and-manage-nuget-packages-in-visual-studio-for-mac"></a>Mac için Visual Studio NuGet paketlerini yükleyip yönetme
 
@@ -23,17 +23,17 @@ Mac için Visual Studio 'de NuGet kullanma girişi için bkz [. hızlı başlang
 
 ## <a name="find-and-install-a-package"></a>Paket bulma ve yüklemeyi
 
-1. Mac için Visual Studio bir proje açıkken, **çözüm bölmesi** **Bağımlılıklar** klasörüne (Xamarin projesi kullanılıyorsa**paketler** klasörü) sağ tıklayın ve **paket Ekle**' yi seçin.
+1. Mac için Visual Studio bir proje açıkken, **çözüm bölmesi** **Bağımlılıklar** klasörüne (Xamarin projesi kullanılıyorsa**paketler** klasörü) sağ tıklayın ve **NuGet Paketlerini Yönet..** . seçeneğini belirleyin.
 
-    ![Yeni NuGet paketi bağlam eylemi Ekle](media/nuget-walkthrough-PackagesMenu.png)
+    ![Yeni NuGet paketi bağlam eylemi Ekle](media/nuget-walkthrough-packages-menu.png)
 
-2. Bu, **paket Ekle** penceresini başlatır. İletişim kutusunun sol üst köşesindeki kaynak açılan kutusunun olarak `nuget.org`ayarlandığından emin olun.
+2. Bu, **NuGet Paketlerini Yönet** penceresi başlatılır. İletişim kutusunun sol üst köşesindeki kaynak açılan kutusunun olarak `nuget.org`ayarlandığından emin olun.
 
-    ![NuGet paketlerini listeleme](media/nuget-walkthrough-AddPackages1.png)
+    ![NuGet paketlerini listeleme](media/nuget-walkthrough-add-packages1.png)
 
 3. Belirli bir paketi bulmak için sağ üst köşedeki arama kutusunu kullanın (örneğin `EntityFramework`,). Kullanmak istediğiniz bir paket bulduğunuz zaman, yüklemeyi başlatmak için paketi seçin ve **paket Ekle** düğmesine tıklayın.
 
-    ![Azure NuGet paketi ekleme](media/nuget-walkthrough-AddPackages2.png)
+    ![EntityFramework NuGet paketi Ekle](media/nuget-walkthrough-add-packages2.png)
 
 4. Paket indirildikten sonra projenize eklenir. Bu çözüm, düzenlemekte olduğunuz projenin türüne bağlı olarak değişir:
 
@@ -43,7 +43,7 @@ Mac için Visual Studio 'de NuGet kullanma girişi için bkz [. hızlı başlang
     
     **.NET Core projeleri**
 
-    **NuGet düğümü > bağımlılıklar** , Indirdiğiniz her NuGet paketini görüntüler. Bu listeden bir paketi güncelleştirebilir veya kaldırabilirsiniz.
+    * **NuGet düğümü > bağımlılıklar** , Indirdiğiniz her NuGet paketini görüntüler. Bu listeden bir paketi güncelleştirebilir veya kaldırabilirsiniz.
 
 ## <a name="using-nuget-packages"></a>NuGet paketlerini kullanma
 
@@ -59,11 +59,11 @@ using Newtonsoft.Json;
 
 ## <a name="updating-packages"></a>Paketler güncelleştiriliyor
 
-Paket güncelleştirmeleri tek seferde, **Bağımlılıklar** düğümüne (veya Xamarin projeleri için **paketler** düğümüne) sağ tıklanarak veya her bir bileşende ayrı ayrı yapılabilir.
+Paket güncelleştirmeleri, **Bağımlılıklar** düğümüne sağ tıklanarak (Xamarin projeleri için**paketler** düğümü) veya her bir pakette ayrı ayrı tek bir şekilde yapılabilir. NuGet paketinin yeni bir sürümü kullanılabilir olduğunda, bir güncelleştirme simgesi, daireyle ![](media/nuget-walkthrough-update-icon.png)birlikte görüntülenir.
 
-Bağlam menüsüne erişmek için **bağımlılıklara** sağ tıklayın:
+Bağlam menüsüne erişmek için **Bağımlılıklar** ' a sağ tıklayın ve tüm paketleri güncelleştirmek için **Güncelleştir** ' i seçin:
 
-![Paketler menüsü](media/nuget-walkthrough-PackagesMenu.png)
+![Paketler menüsü](media/nuget-walkthrough-packages-menu-update.png)
 
 * **NuGet Paketlerini Yönet** -projeye daha fazla paket eklemek için pencereyi açar.
 * **Güncelleştir** -kaynak sunucuyu her bir paket için denetler ve daha yeni sürümleri indirir.

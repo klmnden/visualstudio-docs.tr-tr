@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 631be1a93318cd24af4251fefbc710294fa52bf7
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 57450f80a8c630e2186de8804f8bb88974564e46
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68922003"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71234876"
 ---
 # <a name="ca1407-avoid-static-members-in-com-visible-types"></a>CA1407: COM görünebilir türler içinde statik üyelerden kaçının
 
@@ -28,7 +28,7 @@ ms.locfileid: "68922003"
 |TypeName|AvoidStaticMembersInComVisibleTypes|
 |CheckId|CA1407|
 |Kategori|Microsoft. çalışabilirliği|
-|Yeni Değişiklik|Kırılmamış|
+|Son değişiklik|Kırılmamış|
 
 ## <a name="cause"></a>Sebep
 Özellikle bileşen nesne modeli (com) tarafından görünür olarak işaretlenen bir tür, bir `public``static` yöntemi içerir.
