@@ -7,19 +7,19 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5c10a624d78c1dc362c9d0e5d7c0e58e24efc3cf
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: f7a912ff25e2782490b711d909a64c5d9438ed8f
+ms.sourcegitcommit: 9a3972eb85de5443ac2bc03964c5a251c39b2921
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68918364"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "71301700"
 ---
 # <a name="overview-of-test-agents-and-test-controllers-for-running-load-tests"></a>Yük testlerini çalıştırmak için Test aracılarına ve test denetleyicilerine genel bakış
 
 Visual Studio benzetilmiş yük kullanarak uygulamanız için fiziksel veya sanal makineler oluşturabilirsiniz. Bu makineler, tek bir test denetleyicisi ve bir veya daha fazla test aracıları ayarlanmalıdır. Test denetleyicisi ve test aracıları tek bir bilgisayar başına oluşturabilirsiniz daha fazla yük oluşturmak için kullanabilirsiniz.
 
 > [!NOTE]
-> Sitenize aynı anda erişen birçok kullanıcının yükünü oluşturan sanal makineler sağlamak için bulut tabanlı yük testi de kullanabilirsiniz. Bulut tabanlı yük testi hakkında daha fazla bilgi [Azure Test planlarını kullanarak çalışma yük testleri](/azure/devops/test/load-test/get-started-simple-cloud-load-test?view=vsts).
+> Sitenize aynı anda erişen birçok kullanıcının yükünü oluşturan sanal makineler sağlamak için bulut tabanlı yük testi de kullanabilirsiniz. Ancak, bulutta barındırılan sanal makinelerde test denetleyicisi/test Aracısı kurulumu kullanılması desteklenmez. Bulut tabanlı yük testi hakkında daha fazla bilgi [Azure Test planlarını kullanarak çalışma yük testleri](/azure/devops/test/load-test/get-started-simple-cloud-load-test?view=vsts).
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
