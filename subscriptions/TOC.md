@@ -41,6 +41,7 @@
 ##### [WhiteSource Bolt](vs-whitesource.md)
 ##### [Windows Geliştirici Hesabı](vs-windows-dev.md)
 #### Profesyonel geliştirme
+##### [CODE Magazine](vs-code-magazine.md)
 ##### [DataCamp](vs-datacamp.md)
 ##### [LinkedIn Learning](vs-linkedin-learning.md)
 ##### [MSDN Magazine aboneliği](vs-msdn.md)

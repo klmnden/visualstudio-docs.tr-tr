@@ -95,6 +95,10 @@
 ## [Xamarin ile mobil uygulamalar](/visualstudio/mac/xamarin)
 
 # [Erişilebilirlik](accessibility.md)
+## [IDE erişilebilirlik seçeneklerini ayarlama](accessibility-ide-options.md)
+## [macOS erişilebilirlik araçlarını kullanma](accessibility-macos.md)
+### [Klavye ile gezinmeyi kullanma](accessibility-keyboard.md)
+### [VoiceOver kullanma](accessibility-voiceover.md)
 
 # Sorun giderme
 ## [Günlükler ve Özel Durumlar](troubleshooting.md)
