@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl yapılır: Program aracılığıyla Word iletişim kutularını gizli modda kullanma'
+title: 'Nasıl yapılır: Gizli modda program aracılığıyla Word iletişim kutuları kullanma'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,32 +14,32 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e7a422e9548fabefa2066fb439c01e382586cd36
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e32c97069e3400b447f8756f9638c9d88d38d99a
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62961611"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71255842"
 ---
-# <a name="how-to-programmatically-use-word-dialog-boxes-in-hidden-mode"></a>Nasıl yapılır: Program aracılığıyla Word iletişim kutularını gizli modda kullanma
-  Microsoft Office Word yerleşik iletişim kutularında kullanıcıya görüntülenmeden çağırarak bir yöntem çağrısı ile karmaşık işlemleri gerçekleştirebilir. Kullanarak bunu yapabilirsiniz <xref:Microsoft.Office.Interop.Word.Dialog.Execute%2A> yöntemi <xref:Microsoft.Office.Interop.Word.Dialog> çağırmadan nesne <xref:Microsoft.Office.Interop.Word.Dialog.Display%2A> yöntemi.
+# <a name="how-to-programmatically-use-word-dialog-boxes-in-hidden-mode"></a>Nasıl yapılır: Gizli modda program aracılığıyla Word iletişim kutuları kullanma
+  Microsoft Office Word içindeki yerleşik iletişim kutularını kullanıcıya görüntülemeden çağırarak, tek bir yöntem çağrısıyla karmaşık işlemler gerçekleştirebilirsiniz. Yöntemi çağırmak <xref:Microsoft.Office.Interop.Word.Dialog> <xref:Microsoft.Office.Interop.Word.Dialog.Execute%2A> zorundakalmadannesneyönteminikullanarakbunuyapabilirsiniz<xref:Microsoft.Office.Interop.Word.Dialog.Display%2A> .
 
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
 
 ## <a name="examples"></a>Örnekler
- Aşağıdaki kod örneğinde nasıl kullanılacağını gösteren **sayfa yapısı** iletişim kutusunda birden fazla sayfası kullanıcı girişi gerektirmeyen kurulum özellikleri ayarlamak için gizli modu. Örneklerde bir <xref:Microsoft.Office.Interop.Word.Dialog> nesnenin özel bir sayfa boyutu yapılandırın. Üst kenar boşluğu, alt kenar boşluğu ve benzeri gibi sayfa yapısı için özel ayarlar geç bağlama özellikleri olarak kullanılabilir <xref:Microsoft.Office.Interop.Word.Dialog> nesne. Bu özellikler, Word tarafından çalışma zamanında dinamik olarak oluşturulur.
+ Aşağıdaki kod örnekleri, Kullanıcı girişi olmadan birden çok sayfa kurulum özelliği ayarlamak için **sayfa yapısı** iletişim kutusunun gizli modda nasıl kullanılacağını göstermektedir. Örnekler özel bir sayfa <xref:Microsoft.Office.Interop.Word.Dialog> boyutunu yapılandırmak için bir nesnesi kullanır. Sayfa kurulumu için, üst kenar boşluğu, alt kenar boşluğu vb. gibi belirli ayarlar <xref:Microsoft.Office.Interop.Word.Dialog> nesnenin geç bağlı özellikleri olarak kullanılabilir. Bu özellikler, çalışma zamanında Word tarafından dinamik olarak oluşturulur.
 
- Aşağıdaki örnek, Visual Basic projelerinde bu görevi gerçekleştirmek gösterilmiştir burada **Option Strict** hedefleyen devre dışı ve Visual C# projelerinde olduğu [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]. Bu projeler Visual Basic ve Visual C# Derleyicileri geç bağlama özellikleri kullanabilirsiniz. Bu örneği kullanmak için çalıştırın `ThisDocument` veya `ThisAddIn` projenizdeki sınıfı.
+ Aşağıdaki örnek, **seçeneğinin Strict** olduğu ve öğesini hedefleyen C# [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]görsel projelerdeki Visual Basic projelerinde bu görevin nasıl gerçekleştirileceğini gösterir. Bu projelerde Visual Basic ve Visual C# derleyicilerinin geç bağlama özelliklerini kullanabilirsiniz. Bu örneği kullanmak için, projenizdeki `ThisDocument` veya `ThisAddIn` sınıfından çalıştırın.
 
  [!code-vb[Trin_VstcoreWordAutomation#123](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#123)]
  [!code-csharp[Trin_VstcoreWordAutomation#123](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#123)]
 
- Aşağıdaki örnek, Visual Basic projelerinde bu görevi gerçekleştirmek gösterilmiştir burada **Option Strict** açıktır. Bu projeler, geç bağlanan özelliklerine erişmek için yansıma kullanmanız gerekir. Bu örneği kullanmak için çalıştırın `ThisDocument` veya `ThisAddIn` projenizdeki sınıfı.
+ Aşağıdaki örnek, bu görevin, **seçeneğinin Strict** olduğu Visual Basic projelerinde nasıl gerçekleştirileceğini gösterir. Bu projelerde, geç bağlantılı özelliklere erişmek için yansıma kullanmanız gerekir. Bu örneği kullanmak için, projenizdeki `ThisDocument` veya `ThisAddIn` sınıfından çalıştırın.
 
  [!code-vb[Trin_VstcoreWordAutomation#104](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#104)]
 
 ## <a name="see-also"></a>Ayrıca bkz.
-- [Nasıl yapılır: Word yerleşik iletişim kutularını program aracılığıyla kullanma](../vsto/how-to-programmatically-use-built-in-dialog-boxes-in-word.md)
+- [Nasıl yapılır: Word 'de yerleşik iletişim kutularını program aracılığıyla kullanma](../vsto/how-to-programmatically-use-built-in-dialog-boxes-in-word.md)
 - [Word nesne modeline genel bakış](../vsto/word-object-model-overview.md)
 - [Office çözümlerinde geç bağlama](../vsto/late-binding-in-office-solutions.md)
 - [Yansıma (C#)](/dotnet/csharp/programming-guide/concepts/reflection)

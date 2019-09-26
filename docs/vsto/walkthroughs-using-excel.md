@@ -13,46 +13,46 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4d6c092daf02ccd6546621fbeff3422cd87fb0db
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b802d61c4e30fa9dd13279c54c2a9bfa343f322f
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62947837"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71255059"
 ---
 # <a name="walkthroughs-using-excel"></a>Excel kullanarak izlenecek yollar
-  Aşağıdaki izlenecek yollar, Microsoft Office Excel otomatikleştirmek ve kullanıcı arabirimini (UI) özelleştirmek için belge düzeyi özelleştirmeleri ve VSTO eklentileri kullanabileceğiniz yollar gösterilir.
+  Aşağıdaki izlenecek yollar, Excel Microsoft Office otomatikleştirebilmek ve Kullanıcı arabirimini (UI) özelleştirmek için belge düzeyi özelleştirmelerini ve VSTO eklentilerini kullanma yollarını gösterir.
 
-## <a name="document-level-walkthroughs"></a>Belge düzeyi izlenecek yollar
-- [İzlenecek yol: Excel için ilk belge düzeyi özelleştirmeyi oluşturma](../vsto/walkthrough-creating-your-first-document-level-customization-for-excel.md) Excel için temel bir belge düzeyi özelleştirmeyi oluşturma işlemini gösterir.
+## <a name="document-level-walkthroughs"></a>Belge düzeyinde izlenecek yollar
+- [İzlenecek yol: Excel](../vsto/walkthrough-creating-your-first-document-level-customization-for-excel.md) için ilk belge düzeyi özelleştirmeyi oluşturma Excel için temel bir belge düzeyi özelleştirmesi oluşturmayı gösterir.
 
-- [İzlenecek yol: Şerit Tasarımcısını kullanarak özel sekme oluşturma](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md) bir Excel çalışma kitabı Şerite özel sekme ekleneceği gösterilmektedir.
+- [İzlenecek yol: Şerit Tasarımcısını](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md) kullanarak özel sekme oluşturma bir Excel çalışma kitabının Şeritine nasıl özel bir sekme ekleneceğini gösterir.
 
-- [İzlenecek yol: Bir Windows formu kullanarak veri toplama](../vsto/walkthrough-collecting-data-using-a-windows-form.md) kullanıcı girişini toplamak üzere bir Windows formu kullanarak ve sonra bir Excel çalışma sayfasındaki bir hücreyi girişi göndererek göstermektedir.
+- [İzlenecek yol: Windows formu](../vsto/walkthrough-collecting-data-using-a-windows-form.md) kullanarak veri toplama bir Windows formu kullanarak Kullanıcı girişini toplayıp, sonra da bir Excel çalışma sayfasındaki bir hücreye göndermeyi gösterir.
 
-- [İzlenecek yol: CheckBox denetimlerini kullanarak çalışma sayfası biçimlendirmesini değiştirme](../vsto/walkthrough-changing-worksheet-formatting-using-checkbox-controls.md) biçimlendirmeyi değiştirmek için Excel çalışma sayfasındaki onay kutuları kullanma ile ilgili temel bilgileri gösterir.
+- [İzlenecek yol: CheckBox denetimlerini](../vsto/walkthrough-changing-worksheet-formatting-using-checkbox-controls.md) kullanarak çalışma sayfası biçimlendirmesini değiştirme biçimlendirme değiştirmek için bir Excel çalışma sayfasındaki onay kutularını kullanmanın temellerini gösterir.
 
-- [İzlenecek yol: Düğme kullanarak çalışma sayfasındaki metin kutusunda metin görüntüleme](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-worksheet-using-a-button.md) düğme ve metin kutusu, Excel çalışma sayfalarında kullanmanın temellerini gösterir.
+- [İzlenecek yol: Çalışma sayfasındaki metin kutusunda bulunan metni bir düğme](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-worksheet-using-a-button.md) kullanarak görüntüle Excel çalışma sayfalarında düğme ve metin kutusu kullanmanın temellerini gösterir.
 
-- [İzlenecek yol: NamedRange denetimi olaylarına karşı programlama](../vsto/walkthrough-programming-against-events-of-a-namedrange-control.md) eklemek adım adım yönergeler sağlar. bir <xref:Microsoft.Office.Tools.Excel.NamedRange> çalışma ve olaylarına karşı programlama denetimi.
+- [İzlenecek yol: NamedRange denetiminin](../vsto/walkthrough-programming-against-events-of-a-namedrange-control.md) olaylarına karşı program, bir çalışma sayfasına ve programa bir <xref:Microsoft.Office.Tools.Excel.NamedRange> denetim ekleme hakkında adım adım yönergeler sağlar.
 
-- [İzlenecek yol: Belge düzeyi projede basit veri bağlama](../vsto/walkthrough-simple-data-binding-in-a-document-level-project.md) Excel adlandırılmış aralıkta bir tek veri alan bir SQL Server veritabanında bağlama ile ilgili temel bilgileri gösterir.
+- [İzlenecek yol: Belge düzeyi projesindeki](../vsto/walkthrough-simple-data-binding-in-a-document-level-project.md) basit veri bağlama, bir SQL Server veritabanındaki tek bir veri alanını Excel 'deki adlandırılmış bir aralığa bağlamanın temellerini gösterir.
 
-- [İzlenecek yol: Belge düzeyi projede karmaşık veri bağlama](../vsto/walkthrough-complex-data-binding-in-a-document-level-project.md) alanları Northwind SQL Server veritabanındaki birden çok hücre bir Excel çalışma sayfasındaki bağlama ile ilgili temel bilgileri gösterir.
+- [İzlenecek yol: Belge düzeyindeki bir projede](../vsto/walkthrough-complex-data-binding-in-a-document-level-project.md) karmaşık veri bağlama, Northwind SQL Server veritabanındaki alanlara bir Excel çalışma sayfasında birden çok hücre bağlamanın temellerini gösterir.
 
-- [İzlenecek yol: Önbellekteki veri kümesini kullanarak bir ana ayrıntı ilişkisi oluşturma](../vsto/walkthrough-creating-a-master-detail-relation-using-a-cached-dataset.md) çalışma sayfasında ana/ayrıntı ilişkisi oluşturma ve böylece çözüm çevrimdışı kullanılabilir verileri önbelleğe alma işlemlerini gösterir.
+- [İzlenecek yol: Önbelleğe alınmış bir veri kümesini](../vsto/walkthrough-creating-a-master-detail-relation-using-a-cached-dataset.md) kullanarak ana ayrıntı ilişkisi oluşturma bir çalışma sayfasında ana/ayrıntı ilişkisi oluşturmayı ve çözümün çevrimdışı kullanılabilmesi için verileri önbelleğe almayı gösterir.
 
-- [İzlenecek yol: Bir radyo düğmelerini kullanarak çalışma sayfasında grafik güncelleştirme](../vsto/walkthrough-updating-a-chart-in-a-worksheet-using-radio-buttons.md) radyo düğmelerini kullanarak bir Excel çalışma sayfasında grafik stilleri değiştirme temellerini gösterir.
+- [İzlenecek yol: Radyo düğmelerini](../vsto/walkthrough-updating-a-chart-in-a-worksheet-using-radio-buttons.md) kullanarak çalışma sayfasındaki bir grafiği güncelleştirme bir Excel çalışma sayfasındaki radyo düğmelerini kullanarak grafik stillerinin değiştirilmesine ilişkin temel bilgileri gösterir.
 
-- [İzlenecek yol: Excel eylemler bölmesindeki denetimlere veri bağlama](../vsto/walkthrough-binding-data-to-controls-on-an-excel-actions-pane.md) Excel'de eylemler bölmesi için bir veri kaynağına bağlı denetimler eklemeyi açıklar.
+- [İzlenecek yol: Excel eylemler bölmesindeki](../vsto/walkthrough-binding-data-to-controls-on-an-excel-actions-pane.md) denetimlere veri bağlama bir veri kaynağına bağlı denetimlerin Excel 'deki eylemler bölmesine nasıl ekleneceğini açıklar.
 
-## <a name="application-level-walkthroughs"></a>Uygulama düzeyi izlenecek yollar
-- [İzlenecek yol: Excel için ilk VSTO eklentinizi oluşturma](../vsto/walkthrough-creating-your-first-vsto-add-in-for-excel.md) Excel için temel bir VSTO eklentisi oluşturma işlemini gösterir.
+## <a name="application-level-walkthroughs"></a>Uygulama düzeyinde izlenecek yollar
+- [İzlenecek yol: Excel](../vsto/walkthrough-creating-your-first-vsto-add-in-for-excel.md) için ilk VSTO eklentisini oluşturma Excel için temel bir VSTO eklentisi oluşturmayı gösterir.
 
-- [İzlenecek yol: Çalışma zamanında VSTO eklenti projesindeki çalışma sayfasına denetimler ekleme](../vsto/walkthrough-adding-controls-to-a-worksheet-at-run-time-in-vsto-add-in-project.md) bir VSTO eklenti kullanarak çalışma sayfasına denetimler ekleme işlemi gösterilmektedir.
+- [İzlenecek yol: Çalışma zamanında VSTO eklenti projesindeki](../vsto/walkthrough-adding-controls-to-a-worksheet-at-run-time-in-vsto-add-in-project.md) çalışma sayfasına denetimler ekleme, bir VSTO eklentisi kullanılarak çalışma sayfasına nasıl denetim ekleneceğini gösterir.
 
-- [İzlenecek yol: Bir VSTO eklenti VBA'dan kod çağırma](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md) VSTO eklentisi VBA kodu çalışma kitabında bulunan bir nesnenin nasıl sunacağınızı öğrenin gösterir.
+- [İzlenecek yol: Bir VSTO eklentisinde VBA](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md) 'daki çağrı kodu, bir çalışma kitabındaki VBA kodunda bir VSTO eklentisi içindeki bir nesneyi nasıl kullanıma sunılacağını gösterir.
 
-- [İzlenecek yol: Özel görev bölmesini Şerit düğmesi ile eşitleme](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md) kullanıcılar gizleme veya görüntüleme şeridinde iki durumlu düğmesini tıklatarak bir özel görev bölmesi oluşturma işlemini gösterir.
+- [İzlenecek yol: Özel görev bölmesini Şerit düğmesi](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md) ile zaman uyumlu hale getirmek, kullanıcıların Şeritteki iki durumlu düğmeye tıklayarak gizleyebileceğiniz veya görüntüleyeceği özel bir görev bölmesi oluşturmayı gösterir.
 
-- [İzlenecek yol: VSTO eklenti projesinde karmaşık veri bağlama](../vsto/walkthrough-complex-data-binding-in-vsto-add-in-project.md) SQL Server veritabanındaki bir tabloyu bağlamak yapmayı gösteren bir <xref:Microsoft.Office.Tools.Excel.ListObject> Excel bir VSTO eklentisi içinde.
+- [İzlenecek yol: VSTO eklenti projesinde](../vsto/walkthrough-complex-data-binding-in-vsto-add-in-project.md) karmaşık veri bağlama, bir SQL Server veritabanındaki bir tablonun Excel için VSTO <xref:Microsoft.Office.Tools.Excel.ListObject> eklentideki öğesine nasıl bağlanacağını gösterir.

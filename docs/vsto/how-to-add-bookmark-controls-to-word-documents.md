@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl yapılır: Word belgelerine yer işareti denetimi ekleme'
+title: 'Nasıl yapılır: Word belgelerine yer Işareti denetimleri ekleme'
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -16,120 +16,120 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7948af3a6a77fd100a6965f9e50cda70ac7b868d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: ce77736bfefdc2c2e70c489a91b147cb0d2ed74a
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63427780"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71255990"
 ---
-# <a name="how-to-add-bookmark-controls-to-word-documents"></a>Nasıl yapılır: Word belgelerine yer işareti denetimi ekleme
-  Belge düzeyinde projelerde eklediğiniz <xref:Microsoft.Office.Tools.Word.Bookmark> belgenin tasarım zamanında veya çalışma zamanında, projenizdeki denetimler. Projelerinde, VSTO eklentisi, eklediğiniz <xref:Microsoft.Office.Tools.Word.Bookmark> herhangi bir açık belgeye çalışma zamanında denetimler.
+# <a name="how-to-add-bookmark-controls-to-word-documents"></a>Nasıl yapılır: Word belgelerine yer Işareti denetimleri ekleme
+  Belge düzeyi projelerde, tasarım zamanında veya çalışma zamanında <xref:Microsoft.Office.Tools.Word.Bookmark> projenizdeki belgeye denetim ekleyebilirsiniz. VSTO eklenti projelerinde, çalışma zamanında herhangi bir açık belgeye <xref:Microsoft.Office.Tools.Word.Bookmark> denetimler ekleyebilirsiniz.
 
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
 
- Bu konuda, aşağıdaki görevleri açıklanmaktadır:
+ Bu konuda aşağıdaki görevler açıklanmaktadır:
 
-- [Tasarım zamanında yer işareti denetimi ekleme](#designtime)
+- [Tasarım zamanında Bookmark denetimleri ekleme](#designtime)
 
-- [Çalışma zamanında bir belge düzeyi projede yer işareti denetimi ekleme](#runtimedoclevel)
+- [Belge düzeyindeki bir projede çalışma zamanında yer Işareti denetimleri ekleme](#runtimedoclevel)
 
-- [Çalışma zamanında VSTO eklenti projesinde yer işareti denetimi ekleme](#runtimeaddin)
+- [VSTO eklenti projesindeki çalışma zamanında yer Işareti denetimleri ekleme](#runtimeaddin)
 
-  Hakkında daha fazla bilgi için <xref:Microsoft.Office.Tools.Word.Bookmark> denetimlerini, [yer işareti denetimi](../vsto/bookmark-control.md).
+  Denetimler hakkında <xref:Microsoft.Office.Tools.Word.Bookmark> daha fazla bilgi için bkz. [Bookmark Control](../vsto/bookmark-control.md).
 
-## <a name="designtime"></a> Tasarım zamanında yer işareti denetimi ekleme
- Eklemek için çeşitli yollar vardır <xref:Microsoft.Office.Tools.Word.Bookmark> denetimleri tasarım zamanında bir belge düzeyinde projedeki belge:
+## <a name="designtime"></a>Tasarım zamanında Bookmark denetimleri ekleme
+ Belge düzeyindeki bir projede belgeye tasarım <xref:Microsoft.Office.Tools.Word.Bookmark> zamanında denetim eklemenin birkaç yolu vardır:
 
-- Visual Studio'dan **araç kutusu**.
+- Visual Studio **araç kutusundan**.
 
-   Sürükleyebilirsiniz <xref:Microsoft.Office.Tools.Word.Bookmark> denetimi **araç kutusu** belgenize. Zaten kullanıyorsanız, bu şekilde seçmek isteyebilirsiniz **araç kutusu** belgenize Windows Forms denetimleri ekleme.
+   <xref:Microsoft.Office.Tools.Word.Bookmark> Denetimi **araç kutusundan** belgenize sürükleyebilirsiniz. Belgenize Windows Forms denetimleri eklemek için **araç kutusunu** zaten kullanıyorsanız, bu yolu tercih edebilirsiniz.
 
-- Word'ün içinden.
+- Word içinden.
 
-   Ekleyebileceğiniz <xref:Microsoft.Office.Tools.Word.Bookmark> denetimi aynı şekilde belgenize yerel yer eklersiniz. Bu şekilde ekleme avantajı, oluşturma zamanında denetiminizi adlandırabilirsiniz olmasıdır.
+   Yerel yer işaretini ekleyeceğiniz <xref:Microsoft.Office.Tools.Word.Bookmark> şekilde belgenize denetim ekleyebilirsiniz. Bu şekilde eklemenin avantajı, denetiminizi oluşturduğunuz sırada bir kez ad olarak belirleyebilirsiniz.
 
-- Gelen **veri kaynakları** penceresi.
+- **Veri kaynakları** penceresinden.
 
-   Sürükleyebilirsiniz <xref:Microsoft.Office.Tools.Word.Bookmark> belgenizden denetimine **veri kaynakları** penceresi. Bu verileri aynı anda denetimine bağlamak istediğiniz durumlarda kullanışlıdır. Konak kontrolü ekleme bir Windows Form denetimi aynı şekilde ekleyebileceğiniz **veri kaynakları** penceresi. Daha fazla bilgi için [veri bağlama ve Windows Forms](/dotnet/framework/winforms/data-binding-and-windows-forms).
+   <xref:Microsoft.Office.Tools.Word.Bookmark> **Veri kaynakları** penceresinden denetimi belgenize sürükleyebilirsiniz. Bu, denetimi verilere aynı anda bağlamak istediğinizde yararlıdır. Konak denetimini, **veri kaynakları** penceresinden bir Windows form denetimi ekleyeceğiniz şekilde ekleyebilirsiniz. Daha fazla bilgi için bkz. [veri bağlama ve Windows Forms](/dotnet/framework/winforms/data-binding-and-windows-forms).
 
   [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
-#### <a name="to-add-a-bookmark-control-to-a-document-from-the-toolbox"></a>Araç kutusundan bir belgeye Bookmark denetimi eklemek için
+#### <a name="to-add-a-bookmark-control-to-a-document-from-the-toolbox"></a>Araç kutusu 'ndan bir belgeye bir yer Işareti denetimi eklemek için
 
-1. Açık **araç kutusu** tıklatıp **Word denetimleri** sekmesi.
+1. **Araç kutusunu** açın ve **Word denetimleri** sekmesine tıklayın.
 
-2. Sürükleme bir <xref:Microsoft.Office.Tools.Word.Bookmark> belgeye denetim.
+2. Belgeye bir <xref:Microsoft.Office.Tools.Word.Bookmark> denetim sürükleyin.
 
-     **Yer işareti Ekle** iletişim kutusu görüntülenir.
+     **Yer Işareti Ekle** iletişim kutusu görünür.
 
-3. Metin veya yer işareti olarak eklemek istediğiniz diğer öğeleri seçin.
+3. Yer işaretine eklemek istediğiniz metni veya diğer öğeleri seçin.
 
 4. **Tamam**'ı tıklatın.
 
-     Varsayılan yer işareti adı tutmak istemiyorsanız adı değiştirebilirsiniz **özellikleri** penceresi.
+     Varsayılan yer işaretinin adını korumak istemiyorsanız, adı **Özellikler** penceresinde değiştirebilirsiniz.
 
-#### <a name="to-add-a-bookmark-control-to-a-document-in-word"></a>Word belgesinde bir yer işareti denetimi eklemek için
+#### <a name="to-add-a-bookmark-control-to-a-document-in-word"></a>Word 'de belgeye bir yer Işareti denetimi eklemek için
 
-1. Barındırılan belge içindeki [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Tasarımcısı, yer işareti eklemek veya yer işaretinin içermesini istediğiniz metni seçmek istediğiniz imleci yerleştirin.
+1. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Tasarımcıda barındırılan belgede, yer işaretini eklemek istediğiniz yere yerleştirin veya yer işaretinin kapsamasını istediğiniz metni seçin.
 
-2. Üzerinde **Ekle** Şerit sekmesinde, **bağlantıları** grubunda **yer işareti** düğmesi.
+2. Şeridin **Ekle** sekmesinde, **Bağlantılar** grubunda **yer işareti** düğmesine tıklayın.
 
-3. İçinde **yer işareti** iletişim kutusunda, yeni yer işareti adını yazın ve tıklayın **Ekle**.
+3. **Yer işareti** iletişim kutusunda yeni yer işaretinin adını yazın ve **Ekle**' ye tıklayın.
 
-## <a name="runtimedoclevel"></a> Çalışma zamanında bir belge düzeyi projede yer işareti denetimi ekleme
- Ekleyebileceğiniz <xref:Microsoft.Office.Tools.Word.Bookmark> denetimlerini programlı olarak çalışma zamanında belgenize yöntemleri kullanılarak <xref:Microsoft.Office.Tools.Word.Document.Controls%2A> özelliği `ThisDocument` projenizdeki sınıfı. Eklemek için kullanabileceğiniz iki yöntem aşırı yüklemesi vardır bir <xref:Microsoft.Office.Tools.Word.Bookmark> aşağıdaki yollarla denetimi:
+## <a name="runtimedoclevel"></a>Belge düzeyindeki bir projede çalışma zamanında yer Işareti denetimleri ekleme
+ Projenizdeki <xref:Microsoft.Office.Tools.Word.Document.Controls%2A> <xref:Microsoft.Office.Tools.Word.Bookmark> sınıf`ThisDocument` özelliğinin yöntemlerini kullanarak çalışma zamanında belgenize programlı bir şekilde denetim ekleyebilirsiniz. Aşağıdaki yollarla bir <xref:Microsoft.Office.Tools.Word.Bookmark> denetim eklemek için kullanabileceğiniz iki yöntem aşırı yüklemesi vardır:
 
-- Ekleme bir <xref:Microsoft.Office.Tools.Word.Bookmark> belirtilen aralıkta.
+- <xref:Microsoft.Office.Tools.Word.Bookmark> Belirtilen bir aralığa ekleyin.
 
-- Ekleme bir <xref:Microsoft.Office.Tools.Word.Bookmark> belgedeki yerel bir yer işaretine dayanır (diğer bir deyişle, bir <xref:Microsoft.Office.Interop.Word.Bookmark>).
+- Belgedeki yerel <xref:Microsoft.Office.Tools.Word.Bookmark> bir yer işaretine (yani, a <xref:Microsoft.Office.Interop.Word.Bookmark>) dayalı bir ekleyin.
 
-  Dinamik olarak oluşturulan <xref:Microsoft.Office.Tools.Word.Bookmark> denetimleri belge kapatıldığında belgede sürdürülmez. Ancak, bir yerel <xref:Microsoft.Office.Interop.Word.Bookmark> belgede kalır. Yeniden oluşturabileceğinizi bir <xref:Microsoft.Office.Tools.Word.Bookmark> temel yerel bir yer işaretini belgenin sonraki açılışında. Daha fazla bilgi için [Office belgelerine çalışma zamanında denetimler ekleme](../vsto/adding-controls-to-office-documents-at-run-time.md).
+  Belge kapatıldığında <xref:Microsoft.Office.Tools.Word.Bookmark> dinamik olarak oluşturulan denetimler belgede kalıcı olmaz. Ancak, yerel <xref:Microsoft.Office.Interop.Word.Bookmark> bir belgede kalır. Belgenin bir sonraki açılışında <xref:Microsoft.Office.Tools.Word.Bookmark> yerel bir yer işaretine dayalı bir oluştur işlemi yapabilirsiniz. Daha fazla bilgi için bkz. [çalışma zamanında Office belgelerine denetim ekleme](../vsto/adding-controls-to-office-documents-at-run-time.md).
 
-#### <a name="to-add-a-bookmark-control-to-a-document-programmatically"></a>Belge, program aracılığıyla bir yer işareti denetimi eklemek için
+#### <a name="to-add-a-bookmark-control-to-a-document-programmatically"></a>Belgeye programlı bir Bookmark denetimi eklemek için
 
-1. İçinde `ThisDocument_Startup` projenizde, olay işleyicisi eklemek için aşağıdaki kodu ekleyin <xref:Microsoft.Office.Tools.Word.Bookmark> belgedeki ilk paragrafa denetimi.
+1. Projenizdeki olay işleyicisinde, <xref:Microsoft.Office.Tools.Word.Bookmark> denetimi belgedeki ilk paragrafa eklemek için aşağıdaki kodu ekleyin. `ThisDocument_Startup`
 
      [!code-csharp[Trin_VstcoreHostControlsWord#1](../vsto/codesnippet/CSharp/trin_vstcorehostcontrolsword/ThisDocument.cs#1)]
      [!code-vb[Trin_VstcoreHostControlsWord#1](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsWordVB/ThisDocument.vb#1)]
 
     > [!NOTE]
-    > Oluşturmak istiyorsanız bir <xref:Microsoft.Office.Tools.Word.Bookmark> varolan bir denetimi <xref:Microsoft.Office.Interop.Word.Bookmark>, kullanın <xref:Microsoft.Office.Tools.Word.ControlCollection.AddBookmark%2A> yöntemi ve mevcut geçişi <xref:Microsoft.Office.Interop.Word.Bookmark>.
+    > Varolan <xref:Microsoft.Office.Tools.Word.Bookmark> <xref:Microsoft.Office.Tools.Word.ControlCollection.AddBookmark%2A> <xref:Microsoft.Office.Interop.Word.Bookmark>bir denetimi oluşturmak istiyorsanız, yöntemini kullanın ve var olan öğesini geçirin. <xref:Microsoft.Office.Interop.Word.Bookmark>
 
-## <a name="runtimeaddin"></a> Çalışma zamanında VSTO eklenti projesinde yer işareti denetimi ekleme
- Ekleyebileceğiniz <xref:Microsoft.Office.Tools.Word.Bookmark> programlı bir şekilde herhangi bir açık belgeye bir VSTO eklenti kullanarak çalışma zamanında denetimler. Bunu yapmak için oluşturmak bir <xref:Microsoft.Office.Tools.Word.Document> barındıran bir açık belgeye dayalı öğesini ve ardından yöntemlerinin <xref:Microsoft.Office.Tools.Word.Document.Controls%2A> bu konak öğesi özelliği. Eklemek için kullanabileceğiniz iki yöntem aşırı yüklemesi vardır bir <xref:Microsoft.Office.Tools.Word.Bookmark> aşağıdaki yollarla denetimi:
+## <a name="runtimeaddin"></a>VSTO eklenti projesindeki çalışma zamanında yer Işareti denetimleri ekleme
+ VSTO eklentisini kullanarak <xref:Microsoft.Office.Tools.Word.Bookmark> çalışma zamanında herhangi bir açık belgeye program aracılığıyla denetimler ekleyebilirsiniz. Bunu yapmak için, açık bir <xref:Microsoft.Office.Tools.Word.Document> belgeyi temel alan bir konak öğesi oluşturun ve ardından bu konak öğesinin <xref:Microsoft.Office.Tools.Word.Document.Controls%2A> özelliğinin yöntemlerini kullanın. Aşağıdaki yollarla bir <xref:Microsoft.Office.Tools.Word.Bookmark> denetim eklemek için kullanabileceğiniz iki yöntem aşırı yüklemesi vardır:
 
-- Ekleme bir <xref:Microsoft.Office.Tools.Word.Bookmark> belirtilen aralıkta.
+- <xref:Microsoft.Office.Tools.Word.Bookmark> Belirtilen bir aralığa ekleyin.
 
-- Ekleme bir <xref:Microsoft.Office.Tools.Word.Bookmark> belgedeki yerel bir yer işaretine dayanır (diğer bir deyişle, bir <xref:Microsoft.Office.Interop.Word.Bookmark>).
+- Belgedeki yerel <xref:Microsoft.Office.Tools.Word.Bookmark> bir yer işaretine (yani, a <xref:Microsoft.Office.Interop.Word.Bookmark>) dayalı bir ekleyin.
 
-  Dinamik olarak oluşturulan <xref:Microsoft.Office.Tools.Word.Bookmark> denetimleri belge kapatıldığında belgede sürdürülmez. Ancak, bir yerel <xref:Microsoft.Office.Interop.Word.Bookmark> belgede kalır. Yeniden oluşturabileceğinizi bir <xref:Microsoft.Office.Tools.Word.Bookmark> temel yerel bir yer işaretini belgenin sonraki açılışında. Daha fazla bilgi için [Office belgelerinde Dinamik denetimleri kalıcı](../vsto/persisting-dynamic-controls-in-office-documents.md).
+  Belge kapatıldığında <xref:Microsoft.Office.Tools.Word.Bookmark> dinamik olarak oluşturulan denetimler belgede kalıcı olmaz. Ancak, yerel <xref:Microsoft.Office.Interop.Word.Bookmark> bir belgede kalır. Belgenin bir sonraki açılışında <xref:Microsoft.Office.Tools.Word.Bookmark> yerel bir yer işaretine dayalı bir oluştur işlemi yapabilirsiniz. Daha fazla bilgi için bkz. [Dinamik denetimleri Office belgelerinde kalıcı hale](../vsto/persisting-dynamic-controls-in-office-documents.md)getirme.
 
-  VSTO eklentisi projeleri, ana bilgisayar öğeleri oluşturma hakkında daha fazla bilgi için bkz. [genişletmek Word belgelerini ve Excel çalışma kitaplarını çalışma zamanında VSTO Add-Ins](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).
+  VSTO eklenti projelerinde konak öğeleri oluşturma hakkında daha fazla bilgi için bkz. [çalışma ZAMANıNDA VSTO Eklentilerindeki Word belgelerini ve Excel çalışma kitaplarını genişletme](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).
 
-#### <a name="to-add-a-bookmark-control-at-a-specified-range"></a>Belirli bir aralıkta yer işareti denetimi ekleme
+#### <a name="to-add-a-bookmark-control-at-a-specified-range"></a>Belirtilen aralığa bir yer Işareti denetimi eklemek için
 
-1. Kullanım <xref:Microsoft.Office.Tools.Word.ControlCollection.AddBookmark%2A> yöntemi ve geçişinde <xref:Microsoft.Office.Interop.Word.Range> eklemek istediğiniz <xref:Microsoft.Office.Tools.Word.Bookmark>.
+1. Yöntemini kullanın ve öğesini eklemek <xref:Microsoft.Office.Tools.Word.Bookmark>istediğiniz <xref:Microsoft.Office.Interop.Word.Range> yere geçirin. <xref:Microsoft.Office.Tools.Word.ControlCollection.AddBookmark%2A>
 
-     Aşağıdaki kod örneğinde yeni bir ekler <xref:Microsoft.Office.Tools.Word.Bookmark> etkin belgeyi başlangıcına. Bu örneği kullanmak için kodu çalıştırın `ThisAddIn_Startup` Word VSTO eklenti projesinde olay işleyicisi.
+     Aşağıdaki kod örneği, etkin belgenin başlangıcına <xref:Microsoft.Office.Tools.Word.Bookmark> yeni bir ekler. Bu örneği kullanmak için, `ThisAddIn_Startup` olay işleyicisindeki kodu bir Word VSTO eklenti projesinde çalıştırın.
 
      [!code-vb[Trin_WordAddInDynamicControls#4](../vsto/codesnippet/VisualBasic/trin_wordaddindynamiccontrols/ThisAddIn.vb#4)]
      [!code-csharp[Trin_WordAddInDynamicControls#4](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs#4)]
 
-#### <a name="to-add-a-bookmark-control-that-is-based-on-a-native-bookmark-control"></a>Yerel bir yer işareti denetimine bağlı bir yer işareti denetimi ekleme
+#### <a name="to-add-a-bookmark-control-that-is-based-on-a-native-bookmark-control"></a>Yerel bir yer Işareti denetimine dayalı bir yer Işareti denetimi eklemek için
 
-1. Kullanma <xref:Microsoft.Office.Tools.Word.ControlCollection.AddBookmark%2A> yöntemi ve mevcut geçişi <xref:Microsoft.Office.Interop.Word.Bookmark> yeni için temel olarak kullanmak istediğiniz <xref:Microsoft.Office.Tools.Word.Bookmark>.
+1. Yöntemini kullanın ve yeni <xref:Microsoft.Office.Interop.Word.Bookmark> <xref:Microsoft.Office.Tools.Word.Bookmark>için temel olarak kullanmak istediğiniz varolan ' ı geçirin. <xref:Microsoft.Office.Tools.Word.ControlCollection.AddBookmark%2A>
 
-     Aşağıdaki kod örneği yeni bir oluşturur <xref:Microsoft.Office.Tools.Word.Bookmark> diğer bir deyişle ilk göre <xref:Microsoft.Office.Interop.Word.Bookmark> etkin belgedeki. Bu örneği kullanmak için kodu çalıştırın `ThisAddIn_Startup` Word VSTO eklenti projesinde olay işleyicisi.
+     Aşağıdaki kod örneği, etkin belgede ilkini <xref:Microsoft.Office.Tools.Word.Bookmark> <xref:Microsoft.Office.Interop.Word.Bookmark> temel alan yeni bir oluşturur. Bu örneği kullanmak için, `ThisAddIn_Startup` olay işleyicisindeki kodu bir Word VSTO eklenti projesinde çalıştırın.
 
      [!code-vb[Trin_WordAddInDynamicControls#5](../vsto/codesnippet/VisualBasic/trin_wordaddindynamiccontrols/ThisAddIn.vb#5)]
      [!code-csharp[Trin_WordAddInDynamicControls#5](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs#5)]
 
 ## <a name="see-also"></a>Ayrıca bkz.
-- [Genişletilmiş nesneleri kullanarak Word'ü otomatikleştirirken](../vsto/automating-word-by-using-extended-objects.md)
-- [Konak öğelerine ve denetimlerine genel bakış](../vsto/host-items-and-host-controls-overview.md)
-- [Office belgelerine çalışma zamanında denetimler ekleme](../vsto/adding-controls-to-office-documents-at-run-time.md)
-- [Konak denetimlerinin ve konak öğelerinin programlama sınırlamaları](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)
-- [VSTO eklentilerini programlama](../vsto/programming-vsto-add-ins.md)
-- [Belge düzeyi özelleştirmelerini programlama](../vsto/programming-document-level-customizations.md)
-- [Nasıl yapılır: Yer işareti denetimlerini yeniden boyutlandırma](../vsto/how-to-resize-bookmark-controls.md)
+- [Genişletilmiş nesneleri kullanarak Word 'Ü otomatikleştirme](../vsto/automating-word-by-using-extended-objects.md)
+- [Konak öğeleri ve konak denetimlerine genel bakış](../vsto/host-items-and-host-controls-overview.md)
+- [Çalışma zamanında Office belgelerine denetim ekleme](../vsto/adding-controls-to-office-documents-at-run-time.md)
+- [Konak öğelerinin ve konak denetimlerinin programlama sınırlamaları](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)
+- [Program VSTO eklentileri](../vsto/programming-vsto-add-ins.md)
+- [Program belge düzeyi özelleştirmeleri](../vsto/programming-document-level-customizations.md)
+- [Nasıl yapılır: Yer Işareti denetimlerini yeniden boyutlandır](../vsto/how-to-resize-bookmark-controls.md)

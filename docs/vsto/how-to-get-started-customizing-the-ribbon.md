@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl yapılır: Şerit özelleştirmeye başlama'
+title: 'Nasıl yapılır: Şeriti özelleştirmeye başlama'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,29 +15,29 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f164a8f1d1c84725530e7a3afab5e63472ae257e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a9b0f1ef704f5dd1426374e23806e5950ed5f6bb
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62967904"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71255855"
 ---
-# <a name="how-to-get-started-customizing-the-ribbon"></a>Nasıl yapılır: Şerit özelleştirmeye başlama
-  Bir Microsoft Office uygulamasının Şeritine özelleştirmek için ekleyin bir **Şerit (Görsel Tasarımcı)** veya **Ribbon (XML)** bir Office projesi için öğesi.
+# <a name="how-to-get-started-customizing-the-ribbon"></a>Nasıl yapılır: Şeriti özelleştirmeye başlama
+  Bir Microsoft Office uygulamasının Şeridini özelleştirmek için bir Office projesine **Şerit (görsel Tasarımcı)** veya **Şerit (XML)** öğesi ekleyin.
 
  [!INCLUDE[appliesto_ribbon](../vsto/includes/appliesto-ribbon-md.md)]
 
-### <a name="to-add-a-ribbon-to-a-project"></a>Bir projeye bir Şerit eklemek için
+### <a name="to-add-a-ribbon-to-a-project"></a>Bir projeye Şerit eklemek için
 
-1. Üzerinde **proje** menüsünü tıklatın **Yeni Öğe Ekle**.
+1. **Proje** menüsünde **Yeni öğe Ekle**' ye tıklayın.
 
-2. İçinde **Yeni Öğe Ekle** iletişim kutusunda **Şerit (Görsel Tasarımcı)** veya **Ribbon (XML)**. Bu şablonlar hakkında daha fazla bilgi için bkz. [Şerite Genel Bakış](../vsto/ribbon-overview.md).
+2. **Yeni öğe Ekle** Iletişim kutusunda **Şerit (görsel Tasarımcı)** veya **Şerit (XML)** öğesini seçin. Bu şablonlar hakkında daha fazla bilgi için bkz. [Şerit 'e genel bakış](../vsto/ribbon-overview.md).
 
-3. İçinde **adı** Şerit öğesi için bir ad yazın.
+3. **Ad** kutusuna şerit öğesi için bir ad yazın.
 
-    Adları şu karakterleri içeremez:
+    Adlar aşağıdaki karakterleri içeremez:
 
-   - Pound (#)
+   - Sterlin (#)
 
    - Yüzde (%)
 
@@ -47,9 +47,9 @@ ms.locfileid: "62967904"
 
    - Dikey çubuk (|)
 
-   - Ters eğik çizgi (\\)
+   - Ters eğik\\çizgi ()
 
-   - İki nokta üst üste (:)
+   - İki nokta (:)
 
    - Çift tırnak işareti (")
 
@@ -61,16 +61,16 @@ ms.locfileid: "62967904"
 
    - Eğik çizgi (/)
 
-   - Baştaki veya sondaki boşlukları (' ')
+   - Baştaki veya sondaki boşluklar (' ')
 
-   - Windows veya DOS ("nul", "yedek", "con", "com1", "lpt1" vb. gibi) ayrılmış adları
+   - Windows veya DOS için ayrılan adlar ("nul", "AUX", "Con", "COM1", "lpt1" vb.)
 
 4. **Tamam**'ı tıklatın.
 
-   Şerit öğesi görünür **Çözüm Gezgini**. Sonraki adımlar hakkında daha fazla bilgi için bkz: [Şerite Genel Bakış](../vsto/ribbon-overview.md).
+   Şerit öğesi **Çözüm Gezgini**görünür. Sonraki adımlar hakkında daha fazla bilgi için bkz. [Şerite genel bakış](../vsto/ribbon-overview.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
-- [Şerit, çalışma zamanında erişme](../vsto/accessing-the-ribbon-at-run-time.md)
+- [Çalışma zamanında Şerite erişin](../vsto/accessing-the-ribbon-at-run-time.md)
 - [Şerit Tasarımcısı](../vsto/ribbon-designer.md)
 - [Şerit XML](../vsto/ribbon-xml.md)
 - [İzlenecek yol: Şerit Tasarımcısını kullanarak özel sekme oluşturma](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)

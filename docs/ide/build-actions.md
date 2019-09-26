@@ -8,12 +8,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eac31e0fe12d703e11d286b629e7e690f641f4e3
-ms.sourcegitcommit: 6b0503ed8d25454d6e39a8e606910b3fa58cf1d2
+ms.openlocfilehash: 35136ac0b7b0104f1812df7a9bf8ba81f6907374
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "68981100"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71254430"
 ---
 # <a name="build-actions"></a>Derleme eylemleri
 
@@ -37,14 +37,14 @@ Ve Visual Basic proje dosyaları için C# daha yaygın derleme eylemlerinden baz
 | **AdditionalFiles** | C#, Visual Basic | Giriş olarak C# veya Visual Basic derleyicisine geçirilen kaynak olmayan bir metin dosyası. Bu derleme eylemi, genellikle kod kalitesini doğrulamak üzere bir proje tarafından başvurulan [çözümleyiciler](../code-quality/roslyn-analyzers-overview.md) için giriş sağlamak üzere kullanılır. Daha fazla bilgi için bkz. [ek dosyaları kullanma](https://github.com/dotnet/roslyn/blob/master/docs/analyzers/Using%20Additional%20Files.md).|
 | **ApplicationDefinition** | WPF | Uygulamanızı tanımlayan dosya. İlk kez bir proje oluşturduğunuzda, bu *app. xaml*' dir. |
 | **CodeAnalysisDictionary** | .NET | Yazım denetimi için kod analizi tarafından kullanılan özel bir sözcük sözlüğü. Bkz [. nasıl yapılır: Kod Analizi sözlüğünü özelleştirme](../code-quality/how-to-customize-the-code-analysis-dictionary.md)|
-| **Se** | kaydedilmemiş | Dosya derleyiciye kaynak dosya olarak geçirilir.|
+| **Se** | Kaydedilmemiş | Dosya derleyiciye kaynak dosya olarak geçirilir.|
 | **İçeriği** | .NET | **İçerik** olarak işaretlenen bir dosya, çağırarak <xref:System.Windows.Application.GetContentStream%2A?displayProperty=nameWithType>akış olarak alınabilir. ASP.NET projelerinde, bu dosyalar, dağıtıldığı sırada sitenin bir parçası olarak dahil edilir.|
 | **DesignData** | WPF | Kullanıcı denetimlerinin tasarım zamanında, kukla türler ve örnek verilerle görüntülenmesini sağlamak için XAML ViewModel dosyaları için kullanılır. |
 | **DesignDataWithDesignTimeCreateable** | WPF | **Designdata**gibi, ancak gerçek türler.  |
 | **Gömülü kaynak** | .NET | Dosya, derlemeye gömülebilen bir kaynak olarak derleyiciye geçirilir. Derlemeden dosyayı okumak <xref:System.Reflection.Assembly.GetManifestResourceStream%2A?displayProperty=fullName> için öğesini çağırabilirsiniz.|
 | **EntityDeploy** | .NET | EF yapıtlarının dağıtımını belirten Entity Framework (EF). edmx dosyaları için. |
 | **Fakes** | .NET | Microsoft Fakes test çerçevesi için kullanılır. Bkz. [Microsoft Fakes kullanarak test edilen kodu yalıtma](../test/isolating-code-under-test-with-microsoft-fakes.md) |
-| **Yok.** | kaydedilmemiş | Dosya, herhangi bir şekilde derleme kapsamında değildir. Bu değer, örneğin "Benioku" dosyaları gibi belge dosyaları için kullanılabilir.|
+| **Yok.** | Kaydedilmemiş | Dosya, herhangi bir şekilde derleme kapsamında değildir. Bu değer, örneğin "Benioku" dosyaları gibi belge dosyaları için kullanılabilir.|
 | **Sayfa** | WPF | Çalışma zamanında daha hızlı yükleme yapmak için bir XAML dosyasını bir binary. BAML dosyasına derleyin. |
 | **Kaynak** | WPF | Dosyayı *. g. resources*uzantısına sahip bir derleme bildirimi kaynak dosyasına katıştırmayı belirtir. |
 | **Gölgeli** | .NET | Her satırda bir tane olmak üzere oluşturulan derleme dosya adlarının listesini içeren bir. accessor dosyası için kullanılır. Listedeki her derleme için, yalnızca orijinallere benzeyen, ancak özel yöntemler `ClassName_Accessor` yerine ortak yöntemlerle ortak sınıflar oluşturun. Birim testi için kullanılır. |

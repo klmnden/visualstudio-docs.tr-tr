@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 595b8ea35799effd36e4a8599c61b3ab42efb940
-ms.sourcegitcommit: a1e899248adaf104697fa7dea32a36e69e9cc119
+ms.openlocfilehash: 365037d3eeeec5077d724ca72d43cce5dcbe0ebd
+ms.sourcegitcommit: 528178a304e66c0cb7ab98b493fe3c409f87493a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "71159926"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71273357"
 ---
 # <a name="create-a-database-and-add-tables-in-visual-studio"></a>Visual Studio 'da veritabanı oluşturma ve tablo ekleme
 
@@ -68,6 +68,9 @@ Veri bağlantısının Özellikler penceresi açarak *SampleDatabase. mdf* dosya
 
 - Alternatif olarak, bu pencere zaten açık değilse**Sunucu Gezgini** **görüntüle** > ' yi seçebilirsiniz. **Veri bağlantıları** düğümünü genişleterek, *SampleDatabase. mdf*' ye sağ tıklayıp **Özellikler**' i seçerek Özellikler penceresi açın.
 
+  > [!TIP]
+  > Veri bağlantıları düğümünü genişletemiyorum veya SampleDatabase. mdf bağlantısı listelenmiyorsa Sunucu Gezgini araç çubuğundaki **veritabanına Bağlan** düğmesini seçin. **Bağlantı ekle** iletişim kutusunda, **veri kaynağı**altında **Microsoft SQL Server veritabanı dosyası** ' nın seçildiğinden emin olun ve SampleDatabase. mdf dosyasına gidip seçin. **Tamam ' ı**seçerek bağlantıyı eklemeyi tamamlayın.
+
 ## <a name="create-tables-and-keys-by-using-table-designer"></a>Tablo Tasarımcısı kullanarak tablo ve anahtarlar oluşturma
 
 Bu bölümde, iki tablo, her tabloda bir birincil anahtar ve birkaç örnek veri satırı oluşturacaksınız. Ayrıca, bir tablodaki kayıtların diğer tablodaki kayıtlara nasıl karşılık geldiğini belirtmek için bir yabancı anahtar da oluşturacaksınız.
@@ -75,6 +78,8 @@ Bu bölümde, iki tablo, her tabloda bir birincil anahtar ve birkaç örnek veri
 ### <a name="create-the-customers-table"></a>Müşteriler tablosunu oluşturma
 
 1. **Sunucu Gezgini**' de, **veri bağlantıları** düğümünü genişletin ve **SampleDatabase. mdf** düğümünü genişletin.
+
+   Veri bağlantıları düğümünü genişletemiyorum veya SampleDatabase. mdf bağlantısı listelenmiyorsa Sunucu Gezgini araç çubuğundaki **veritabanına Bağlan** düğmesini seçin. **Bağlantı ekle** iletişim kutusunda, **veri kaynağı**altında **Microsoft SQL Server veritabanı dosyası** ' nın seçildiğinden emin olun ve SampleDatabase. mdf dosyasına gidip seçin. **Tamam ' ı**seçerek bağlantıyı eklemeyi tamamlayın.
 
 2. **Tablolar** ' a sağ tıklayıp **Yeni Tablo Ekle**' yi seçin.
 

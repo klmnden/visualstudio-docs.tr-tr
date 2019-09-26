@@ -1,5 +1,5 @@
 ---
-title: Visual Studio 2017 genişletilebilirlikteki yeni değişiklikler
+title: Visual Studio 2017 genişletilebilirlikteki son değişiklikler
 titleSuffix: ''
 ms.date: 11/09/2016
 ms.topic: conceptual
@@ -9,66 +9,66 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0cc62384f2a413362f53ed0626031501e163d6a4
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: a1a12470530589c8d19a088428bc265c530b55f0
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67823813"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71252326"
 ---
-# <a name="changes-in-visual-studio-2017-extensibility"></a>Visual Studio 2017 genişletilebilirlik değişiklikleri
+# <a name="changes-in-visual-studio-2017-extensibility"></a>Visual Studio 2017 genişletilebilirlikteki değişiklikler
 
-Visual Studio 2017 sağlar bir [daha hızlı, daha basit Visual Studio yükleme deneyimi](https://devblogs.microsoft.com/visualstudio/faster-leaner-visual-studio-installer) özellikler ve iş yükleri üzerinde daha fazla seçeneğin kullanıcılar sağlarken kullanıcı sistemlerinde Visual Studio etkisini azaltacak yüklü. Bu geliştirmeler desteklemek için değişiklikler, bazı önemli değişiklikler dahil olmak üzere genişletilebilirlik modeline yaptık. Bu makalede, bu değişiklikleri ve hangi onları adreslemek üzere yapılabilir teknik ayrıntılarını açıklar.
-
-> [!NOTE]
-> Bazı bilgiler zaman içinde nokta uygulamasının Ayrıntılar ve daha sonra değiştirilebilir.
-
-## <a name="changes-affecting-vsix-format-and-installation"></a>VSIX biçimi ve yükleme etkileyen değişiklikler
-
-Tanıtılan VSIX v3 Visual Studio 2017 (sürüm 3) basit bir yükleme deneyimini destekleyecek biçimde.
-
-VSIX biçimi değişiklikler şunlardır:
-
-* Kurulum Önkoşulları bildirimi. Visual Studio, hızlı yükleme basit, ' promise üzerinde sunmak için yükleyici artık kullanıcılara daha fazla yapılandırma seçeneği sunar. Sonuç olarak, özellik ve uzantı tarafından gerekli bileşenleri yüklü olduğundan emin olun, uzantıları bağımlılıklarını bildirmeniz gerekir.
-
-  * Visual Studio 2017 yükleyicisi almak ve kullanıcı için gerekli olan bileşenler uzantınızı yüklemenin bir parçası olarak yüklemek otomatik olarak sunar.
-  * Kullanıcılar ayrıca, bildirimde 15.0 sürümünü hedefleyen olarak işaretlenmiş olsa bile yeni VSIX v3 biçimi kullanılarak oluşturulmamış bir uzantıyı yüklemeye çalıştığında bir uyarı alırsınız.
-
-* Gelişmiş özellikler için VSIX biçimi. Üzerinde teslim etmek için bir [low Impact yükleme](https://devblogs.microsoft.com/visualstudio/anatomy-of-a-low-impact-visual-studio-install) yan yana yüklemeleri de destekleyen Visual Studio, biz artık çoğu yapılandırma verileri, sistem kayıt defterine kaydetmek ve Visual Studio özel derlemeler GAC dışına taşındı. Biz de VSIX yükleme altyapısı ve VSIX biçimi yeteneklerini bazı yükleme türleri, uzantıları yüklemek için bunun yerine bir MSI veya EXE kullanmanıza olanak sağlayan artırdık.
-
-Yeni özellikler şunları içerir:
-
-* Belirtilen Visual Studio örneğinin içinde kayıt.
-* Yükleme dışında [uzantıları klasörüne](set-install-root.md).
-* İşlemci mimarisi algılanması.
-* Dil Ayrılmış dil paketlerini bağımlılığa.
-* Yükleme işlemine [NGEN desteği](ngen-support.md).
-
-## <a name="build-an-extension-for-visual-studio-2017"></a>Bir uzantıyı Visual Studio 2017 için derleme
-
-Tasarımcı yeni yazma araçları VSIX v3 bildirim biçimi Visual Studio 2017'de kullanılabilir. Eşlik eden belgesine bakın [nasıl yapılır: Genişletilebilirlik projeleri Visual Studio 2017'ye geçirme](how-to-migrate-extensibility-projects-to-visual-studio-2017.md) Tasarımcı araçlarını kullanarak veya projeye el ile güncelleştirmeler yapma hakkında bilgi ve VSIX v3 uzantılar geliştirmek için bildirimi.
-
-## <a name="change-visual-studio-user-data-path"></a>Değiştir: Visual Studio kullanıcı veri yolu
-
-Daha önce Visual Studio'nun her ana sürümüne tek bir yükleme, her bir makinede var olabilir. Visual Studio 2017'in yan yana yüklemeleri desteklemek için Visual Studio için birden çok kullanıcı veri yollarını kullanıcının makinesinde mevcut olmayabilir.
-
-Visual Studio işlemi içinde çalışan kod, Visual Studio ayarları Yöneticisi'ni güncelleştirilmelidir. Visual Studio işlemin dışında çalışan kod, belirli bir Visual Studio yüklemesini kullanıcı yolunu bulabilirsiniz [Buradaki yönergeleri izleyerek](locating-visual-studio.md).
-
-## <a name="change-global-assembly-cache-gac"></a>Değiştir: Genel Derleme Önbelleği (GAC)
-
-Çoğu Visual Studio çekirdek derlemeler GAC içine artık yüklenir. Visual Studio işlemde çalışan kod hala gerekli derlemeleri çalışma zamanında bulabilmesi için aşağıdaki değişiklikler yapılmıştır.
+Visual Studio 2017, kullanıcı sistemlerinde Visual Studio 'nun etkisini azaltan [daha hızlı, daha hafif bir Visual Studio yükleme deneyimi](https://devblogs.microsoft.com/visualstudio/faster-leaner-visual-studio-installer) sağlar. bu sayede, kullanıcılara yüklenen iş yükleri ve Özellikler üzerinde daha fazla seçenek sunar. Bu geliştirmeleri desteklemek için, bazı son değişiklikler dahil olmak üzere genişletilebilirlik modelinde değişiklikler yaptık. Bu makalede, bu değişikliklerin teknik ayrıntıları ve bunların ele getirilmesi için neler yapılabileceği açıklanmaktadır.
 
 > [!NOTE]
-> [INSTALLDİR] Visual Studio yükleme kök dizini aşağıda gösterir. *VSIXInstaller.exe* Otomatik Doldur ancak özel dağıtım kod yazmak için lütfen okuma [Visual Studio'yu bulma](locating-visual-studio.md).
+> Bazı bilgiler, zaman içinde uygulama ayrıntılarıdır ve daha sonra değiştirilebilir.
 
-* Yalnızca GAC içine yüklenen derlemeler:
+## <a name="changes-affecting-vsix-format-and-installation"></a>VSıX biçimini ve yüklemeyi etkileyen değişiklikler
 
-  Bu derlemeleri artık altında yüklü <em>[INSTALLDIR] \Common7\IDE\*, * [INSTALLDIR] \Common7\IDE\PublicAssemblies</em> veya *[INSTALLDIR] \Common7\IDE\PrivateAssemblies*. Bu klasör, Visual Studio işlemin algılama yolları bir parçasıdır.
+Visual Studio 2017, basit yükleme deneyimini desteklemek için VSıX v3 (sürüm 3) biçimini kullanıma sunmuştur.
 
-* Yoklama olmayan bir yol ve GAC'ye yüklenmiş derlemeleri:
+VSıX biçimindeki değişiklikler şunları içerir:
 
-  * GAC içindeki kopyalama Kurulum'dan kaldırıldı.
-  * A *.pkgdef* dosyası, derleme için bir kod temel giriş belirtmek için eklenmiştir.
+* Kurulum önkoşulları bildirimi. Hafif ve hızlı bir şekilde yüklenen Visual Studio 'nun taahhüdüne sunmak için, yükleyici artık kullanıcılara daha fazla yapılandırma seçeneği sunar. Sonuç olarak, bir uzantının gerektirdiği özellik ve bileşenlerin yüklü olduğundan emin olmak için uzantıların bağımlılıklarını bildirmesi gerekir.
+
+  * Visual Studio 2017 yükleyicisi, uzantınızı yüklemenin bir parçası olarak Kullanıcı için gerekli bileşenleri edinmeyi ve yüklemeyi otomatik olarak sağlar.
+  * Kullanıcılar ayrıca, yeni VSıX v3 biçimi kullanılarak derlenmeyen bir uzantıyı yüklemeye çalışırken de uyarılabilirler. Bu dosyalar, hedef sürüm 15,0 olarak bildirimde işaretlenmiş olsalar bile
+
+* VSıX biçimi için gelişmiş yetenekler. Aynı zamanda yan yana yüklemeleri de destekleyen, Visual Studio 'nun [düşük etkili bir yüklemesine](https://devblogs.microsoft.com/visualstudio/anatomy-of-a-low-impact-visual-studio-install) sunmak için, çoğu yapılandırma verisini sistem kayıt defterine kaydedemedik ve Visual Studio 'ya özgü derlemeleri GAC 'den dışarı taşıdık. Ayrıca VSıX biçimi ve VSıX yükleme altyapısının yeteneklerini de geliştirdik. Bu özellik, bazı yükleme türlerine yönelik uzantılarınızı yüklemek için bir MSI veya EXE yerine bunu kullanmanıza olanak sağlar.
+
+Yeni yetenekler şunlardır:
+
+* Belirtilen Visual Studio örneğine kaydolma.
+* [Uzantılar klasörü](set-install-root.md)dışında yükleme.
+* İşlemci mimarisinin algılanması.
+* Dile ayrılmış dil paketlerinde bağımlılık.
+* [Ngen desteğiyle](ngen-support.md)yükleme.
+
+## <a name="build-an-extension-for-visual-studio-2017"></a>Visual Studio 2017 için uzantı oluşturma
+
+Yeni VSıX v3 bildirim biçiminin yazılması için tasarımcı araçları Visual Studio 2017 ' de kullanılabilir. Eşlik eden belgeye [bkz. nasıl yapılır: Tasarımcı araçlarını kullanma veya projede el ile](how-to-migrate-extensibility-projects-to-visual-studio-2017.md) güncelleştirme yapma ve VSIX v3 uzantıları geliştirmeye yönelik bildirim için genişletilebilirlik projelerini Visual Studio 2017 ' ye geçirin.
+
+## <a name="change-visual-studio-user-data-path"></a>Değişebilir Visual Studio Kullanıcı veri yolu
+
+Daha önce her makinede, Visual Studio 'nun her bir ana sürümünün yalnızca bir yüklemesi bulunabilir. Visual Studio 2017 'nin yan yana yüklemelerini desteklemek için, kullanıcının makinesinde Visual Studio için birden çok kullanıcı veri yolu bulunabilir.
+
+Visual Studio işlem içinde çalışan kodun Visual Studio Settings Manager 'ı kullanmak için güncelleştirilmeleri gerekir. Visual Studio işleminin dışında çalışan kod, [buradaki kılavuzu izleyerek](locating-visual-studio.md)belirli bir Visual Studio yüklemesinin Kullanıcı yolunu bulabilir.
+
+## <a name="change-global-assembly-cache-gac"></a>Değişebilir Genel bütünleştirilmiş kod önbelleği (GAC)
+
+Visual Studio temel derlemelerinin çoğu artık GAC 'ye yüklenmez. Visual Studio işleminde çalışan kodun çalışma zamanında gerekli derlemeleri bulmaya devam edebilmesi için aşağıdaki değişiklikler yapılmıştır.
+
+> [!NOTE]
+> Aşağıdaki [ıNSTALLDIR], Visual Studio 'nun yükleme kök dizinine başvurur. *Valtınstaller. exe* bunu otomatik olarak dolduracaktır, ancak özel dağıtım kodu yazmak Için lütfen [Visual Studio 'yu bulma](locating-visual-studio.md)makalesini okuyun.
+
+* Yalnızca GAC 'ye yüklenmiş olan derlemeler:
+
+  Bu derlemeler artık <em>[INSTALLDİR] \Common7\IDE\*, * [INSTALLDİR] \Common7\IDE\PublicAssemblies</em> veya *[INSTALLDİR] \Common7\IDE\PrivateAssemblies*altına yüklendi. Bu klasörler, Visual Studio işleminin yoklama yollarının bir parçasıdır.
+
+* Yoklama dışı bir yola ve GAC 'ye yüklenmiş derlemeler:
+
+  * GAC 'deki kopya kurulumdan kaldırılmıştır.
+  * Derleme için bir kod tabanı girişi belirtmek üzere bir *. pkgdef* dosyası eklenmiştir.
 
     Örneğin:
 
@@ -80,42 +80,42 @@ Visual Studio işlemi içinde çalışan kod, Visual Studio ayarları Yöneticis
     "version"=15.0.0.0
     ```
 
-    Çalışma zamanında, Visual Studio pkgdef alt bu girişleri Visual Studio işlemin çalışma zamanı yapılandırma dosyasına birleştirir. (altında *[VSAPPDATA]\devenv.exe.config*) olarak [ `<codeBase>` ](/dotnet/framework/configure-apps/file-schema/runtime/codebase-element) öğeleri. Arama yolları yoklama aracılığıyla önlediği için derleme bulunamadı Visual Studio işlemini izin vermek için önerilen yöntem budur.
+    Çalışma zamanında, Visual Studio pkgdef alt sistemi bu girdileri Visual Studio işleminin çalışma zamanı yapılandırma dosyası ( *[VSAPPDATA] \devenv.exe.config*) öğesi olarak [`<codeBase>`](/dotnet/framework/configure-apps/file-schema/runtime/codebase-element) birleştirir. Bu, Visual Studio işleminin ayrıştırma yollarında aramayı önlediği için derlemenizi bulmasını sağlamak için önerilen yoldur.
 
-### <a name="reacting-to-this-breaking-change"></a>Bu bozucu bir değişiklik tepki verme
+### <a name="reacting-to-this-breaking-change"></a>Bu son değişikliğe yeniden davranıyor
 
-* Visual Studio işlemi içinde uzantınızın çalışıyorsa:
+* Uzantınızın Visual Studio işleminde çalışıyor olması durumunda:
 
-  * Kodunuzu Visual Studio çekirdek derlemeleri bulmak mümkün olacaktır.
-  * Kullanmayı bir *.pkgdef* gerekirse derlemelerinizin bir yol belirtmek için dosya.
+  * Kodunuz, Visual Studio temel derlemelerini bulabilecektir.
+  * Gerektiğinde derlemelerinize bir yol belirtmek için bir *. pkgdef* dosyası kullanmayı düşünün.
 
-* Visual Studio işlemi dışında uzantınızı çalışıyorsa:
+* Uzantınızın Visual Studio işlemi dışında çalışıyor olması durumunda:
 
-  Visual Studio çekirdek derlemeler aranıyor göz önünde bulundurun <em>[INSTALLDIR] \Common7\IDE\*, * [INSTALLDIR] \Common7\IDE\PublicAssemblies</em> veya *[INSTALLDIR] \Common7\IDE\PrivateAssemblies*yapılandırma dosyası veya bütünleştirilmiş kod çözücü kullanma.
+  Yapılandırma dosyası veya bütünleştirilmiş kod kullanarak <em>[INSTALLDİR] \Common7\IDE\*, * [INSTALLDİR] \Common7\IDE\PublicAssemblies</em> veya *[INSTALLDİR] \Common7\IDE\PrivateAssemblies* altında Visual Studio temel derlemelerini aramak için göz önünde bulundurun leyicisini.
 
-## <a name="change-reduce-registry-impact"></a>Değiştir: Kayıt defteri etkiyi azaltmak
+## <a name="change-reduce-registry-impact"></a>Değişebilir Kayıt defteri etkisini azaltma
 
-### <a name="global-com-registration"></a>Genel bir COM kayıt
+### <a name="global-com-registration"></a>Genel COM kaydı
 
-* Daha önce Visual Studio, birçok kayıt defteri anahtarlarını yerel COM kaydını desteklemek için HKEY_CLASSES_ROOT ve HKEY_LOCAL_MACHINE yığınlar yüklü. Bu etkiyi ortadan kaldırmak için Visual Studio artık kullanır [kayıtsız etkinleştirme için COM bileşenlerini](https://msdn.microsoft.com/library/ms973913.aspx).
-* Sonuç olarak, çoğu TLB / OLB / DLL dosyaları % ProgramFiles (x86) %\Common Files\Microsoft Shared\MSEnv altında artık Visual Studio tarafından varsayılan olarak yüklenir. Bu dosyalar Visual Studio ana bilgisayar işlemi tarafından kullanılan karşılık gelen Registration-Free COM bildirimleri ile [INSTALLDIR] altında artık yüklüdür.
-* Sonuç olarak, Visual Studio COM arabirimleri için genel bir COM kayıt dayanan dış kod artık bu kayıtları bulur. Visual Studio işlemi içinde çalışan kod, bir fark görmezsiniz.
+* Daha önce, Visual Studio yerel COM kaydını desteklemek için HKEY_CLASSES_ROOT ve HKEY_LOCAL_MACHINE kovanına birçok kayıt defteri anahtarı yükledi. Bu etkiyi ortadan kaldırmak için, Visual Studio artık [com bileşenleri Için kayıtsız etkinleştirme](https://msdn.microsoft.com/library/ms973913.aspx)kullanır.
+* Sonuç olarak,% ProgramFiles (x86)% \ Common Files\Microsoft Shared\MSEnv altındaki TLB/OLB/DLL dosyaları artık Visual Studio tarafından varsayılan olarak yüklenmez. Bu dosyalar artık, Visual Studio konak işlemi tarafından kullanılan ilgili kayıtsız COM bildirimleri ile [ıNSTALLDIR] altına yüklenir.
+* Sonuç olarak, Visual Studio COM arabirimleri için genel COM kaydına dayanan dış kod artık bu kayıtları bulamaz. Visual Studio işleminin içinde çalışan kod, bir fark görmez.
 
 ### <a name="visual-studio-registry"></a>Visual Studio kayıt defteri
 
-* Daha önce Visual Studio sisteme ait çok sayıda kayıt defteri anahtarlarını yüklü **HKEY_LOCAL_MACHINE** ve **HKEY_CURRENT_USER** yığınlarını Visual Studio özel anahtarı altında:
+* Daha önce Visual Studio, Visual Studio 'ya özgü bir anahtar altında sistemin **HKEY_LOCAL_MACHINE** ve **HKEY_CURRENT_USER** kovanına birçok kayıt defteri anahtarı yükledi:
 
-  * **HKLM\Software\Microsoft\VisualStudio\{sürüm}** : MSI yükleyiciler ve makine başına uzantılar tarafından oluşturulan kayıt defteri anahtarları.
-  * **HKCU\Software\Microsoft\VisualStudio\{sürüm}** : Kullanıcıya özel ayarları depolamak için Visual Studio tarafından oluşturulan kayıt defteri anahtarları.
-  * **HKCU\Software\Microsoft\VisualStudio\{sürüm} _Config**: Visual Studio HKLM anahtar yukarıdaki yanı sıra, kayıt defteri anahtarlarını bir kopyasını birleştirme kaynağı *.pkgdef* uzantıları dosyaları.
+  * **Hklm\software\microsoft\visualstudio\{sürümü}** : MSI yükleyicileri ve makine başına uzantılar tarafından oluşturulan kayıt defteri anahtarları.
+  * **Hkcu\software\microsoft\visualstudio\{sürümü}** : Kullanıcıya özgü ayarları depolamak için Visual Studio tarafından oluşturulan kayıt defteri anahtarları.
+  * **Hkcu\software\microsoft\visualstudio\{sürüm} _yapılandırma**: Yukarıdaki Visual Studio HKLM anahtarının bir kopyası ve *. pkgdef* dosyalarından, uzantıları tarafından birleştirilmiş kayıt defteri anahtarları.
 
-* Kayıt defteri üzerindeki etkiyi azaltmak için Visual Studio artık kullanır [RegLoadAppKey](/windows/desktop/api/winreg/nf-winreg-regloadappkeya) kayıt defteri anahtarları altında özel ikili dosyaları depolamak için işlev *[VSAPPDATA]\privateregistry.bin*. Visual Studio özel anahtarlar yalnızca çok az sayıda sistem kayıt defterinde kalır.
-* Visual Studio işlemi içinde çalışan mevcut kod etkilenmez. Visual Studio, özel kayıt defterine HKCU Visual Studio özel anahtarı altındaki tüm kayıt defteri işlemlerini yönlendirir. Diğer kayıt defteri konumlara yazma ve okuma sistem kayıt defterine kullanmaya devam eder.
-* Dış kod yükleme ve bu dosyayı Visual Studio kayıt defteri girişleri için okuma gerekecektir.
+* Kayıt defterindeki etkiyi azaltmak için, Visual Studio artık, kayıt defteri anahtarlarını *[VSAPPDATA] \privateregistry.bin*altında özel bir ikili dosyada depolamak üzere [Regloadappkey](/windows/desktop/api/winreg/nf-winreg-regloadappkeya) işlevini kullanır. Yalnızca çok az sayıda Visual Studio 'Ya özgü anahtar sistem kayıt defterinde kalır.
+* Visual Studio işleminin içinde çalışan mevcut kod etkilenmez. Visual Studio, HKCU Visual Studio 'ya özgü anahtar altındaki tüm kayıt defteri işlemlerini özel kayıt defterine yönlendirir. Diğer kayıt defteri konumlarına okuma ve yazma, sistem kayıt defterini kullanmaya devam edecektir.
+* Dış kodun, Visual Studio kayıt defteri girdileri için bu dosyadan yüklenmesi ve okunması gerekir.
 
-### <a name="react-to-this-breaking-change"></a>Bu bozucu bir değişiklik tepki
+### <a name="react-to-this-breaking-change"></a>Bu son değişikliğe tepki verme
 
-* Kayıtsız etkinleştirme için COM bileşenlerini de kullanmak için dış kod dönüştürülmesi.
-* Dış bileşenler, Visual Studio konumu bulabilir [Buradaki yönergeleri izleyerek](https://devblogs.microsoft.com/setup/changes-to-visual-studio-15-setup).
-* Dış bileşenler kullanmanızı öneririz [dış ayarları Yöneticisi](/dotnet/api/microsoft.visualstudio.settings.externalsettingsmanager) yerine doğrudan Visual Studio kayıt defteri anahtarları için okuma/yazma.
-* Uzantınızı kullanarak bileşenlerini kaydı için başka bir teknik uyguladınız mı denetleyin. Örneğin, hata ayıklayıcı uzantılarını yeni yararlanmak çözebileceğiniz [msvsmon JSON dosyası COM kayıt](migrate-debugger-COM-registration.md).
+* Dış kod, COM bileşenleri için de kayıt-ücretsiz etkinleştirmeyi kullanacak şekilde dönüştürülmelidir.
+* Dış bileşenler, [buradaki Kılavuzu Izleyerek](https://devblogs.microsoft.com/setup/changes-to-visual-studio-15-setup)Visual Studio konumunu bulabilir.
+* Dış bileşenlerin, doğrudan Visual Studio kayıt defteri anahtarlarına okumak/yazmak yerine [dış ayarlar yöneticisini](/dotnet/api/microsoft.visualstudio.settings.externalsettingsmanager) kullanmasını öneririz.
+* Uzantınızın kullandığı bileşenlerin kayıt için başka bir teknik uygulanıp uygulanmadığını denetleyin. Örneğin, hata ayıklayıcı uzantıları New [msvsmon JSON-FILE com kaydından](migrate-debugger-COM-registration.md)faydalanabilir.

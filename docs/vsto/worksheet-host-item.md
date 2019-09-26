@@ -20,46 +20,46 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e4a5287648d515d1aca340ab55d5f21b494610b5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 301b0a62efae4674432b1051451e5d982899c1b3
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62814737"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71254879"
 ---
 # <a name="worksheet-host-item"></a>Çalışma sayfası konak öğesi
-  <xref:Microsoft.Office.Tools.Excel.Worksheet> Konak öğesi olan bir türü genişleten <xref:Microsoft.Office.Interop.Excel.Worksheet> Excel için birincil birlikte çalışma bütünleştirilmiş koddan tür. <xref:Microsoft.Office.Tools.Excel.Worksheet> Konak öğesi tüm özellikleri, yöntemleri ve olayları olarak sağlayan bir <xref:Microsoft.Office.Interop.Excel.Worksheet> nesne, ancak ayrıca ek olayları ortaya koyan ve konak denetimleri ve Windows Forms denetimleri için kapsayıcı işlevi görür.
+  Konak öğesi, Excel için birincil birlikte çalışma derlemesinden <xref:Microsoft.Office.Interop.Excel.Worksheet> türü genişleten bir türdür. <xref:Microsoft.Office.Tools.Excel.Worksheet> Konak öğesi, aynı özellikleri, yöntemleri ve olayları bir <xref:Microsoft.Office.Interop.Excel.Worksheet> nesne olarak sağlar, ancak ayrıca ek olaylar sunar ve konak denetimleri ve Windows Forms denetimleri için bir kapsayıcı görevi görür. <xref:Microsoft.Office.Tools.Excel.Worksheet>
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
 
- Belge düzeyinde projelerde eklediğiniz <xref:Microsoft.Office.Tools.Excel.Worksheet> konak öğeleri projenize tasarım zamanında. VSTO eklentisi projelerinde oluşturabileceğiniz <xref:Microsoft.Office.Tools.Excel.Worksheet> öğelerinin çalışma zamanında barındırın.
+ Belge düzeyi projelerinde, tasarım zamanında projenize ana bilgisayar <xref:Microsoft.Office.Tools.Excel.Worksheet> öğeleri ekleyebilirsiniz. VSTO eklenti projelerinde, <xref:Microsoft.Office.Tools.Excel.Worksheet> çalışma zamanında konak öğeleri oluşturabilirsiniz.
 
-## <a name="understand-worksheet-host-items-in-document-level-projects"></a>Belge düzeyinde projelerde çalışma sayfası konak öğeleri anlama
- Excel için belge düzeyi projesi oluşturduğunuzda, Visual Studio otomatik olarak üç oluşturur <xref:Microsoft.Office.Tools.Excel.Worksheet> ana proje öğeleri. Varsayılan çalışma adlarıdır `Sheet1`, `Sheet2`, ve `Sheet3`. Mevcut bir çalışma kitabını temel alan bir proje oluşturursanız, ana öğe sayısını çalışma kitabındaki sayısına bağlıdır.
+## <a name="understand-worksheet-host-items-in-document-level-projects"></a>Belge düzeyi projelerdeki çalışma sayfası konak öğelerini anlama
+ Excel için belge düzeyi projesi oluşturduğunuzda, Visual Studio otomatik olarak projede üç <xref:Microsoft.Office.Tools.Excel.Worksheet> konak öğesi oluşturur. Çalışma sayfalarının varsayılan adları, `Sheet1` `Sheet2`ve `Sheet3`' dir. Var olan bir çalışma kitabını temel alan bir proje oluşturursanız, konak öğelerinin sayısı çalışma kitabındaki çalışma sayfası sayısına bağlıdır.
 
- Bu çalışma sayfası sınıflarından üyelerine erişim verin <xref:Microsoft.Office.Tools.Excel.Worksheet> özelleştirme, bir çalışma kitabının içeriğini değiştirme gibi temel görevleri gerçekleştirmek için konak öğesi. Bu sınıflar, denetimleri ekleme için de kullanabilirsiniz. Farklı denetim kümelerini birleştirerek ve verilere denetimler bağlayabilirsiniz kod yazarken, kullanıcıdan bilgi toplamak ve kullanıcı eylemlerine yanıt. Daha fazla bilgi için [Program belge düzeyi özelleştirmeleri](../vsto/programming-document-level-customizations.md).
+ Bu çalışma sayfası sınıfları, özelleştirmenizin çalışma sayfasının içeriğini <xref:Microsoft.Office.Tools.Excel.Worksheet> değiştirme gibi temel görevleri yerine getirmek için konak öğesi üyelerine erişmenizi sağlar. Ayrıca, çalışma sayfalarına denetim eklemek için bu sınıfları kullanabilirsiniz. Farklı denetim kümelerini birleştirerek ve kod yazarken, denetimleri verilere bağlayabilir, kullanıcıdan bilgi toplayabilir ve kullanıcı eylemlerine yanıt verebilirsiniz. Daha fazla bilgi için bkz. [Program belge düzeyi özelleştirmeleri](../vsto/programming-document-level-customizations.md).
 
- Çalışma sayfası sınıflarından, projenizde kod yazmaya başlayabilirsiniz bir konum sağlayın. Sınıfı, tüm özellikleri, yöntemleri ve olayları olarak sağladığından <xref:Microsoft.Office.Interop.Excel.Worksheet> nesne birincil birlikte çalışma derlemesi için Excel, ayrıca bu sınıfların Excel nesne modeline erişme için kullanabilirsiniz. Daha fazla bilgi için [Excel nesne modeline genel bakış](../vsto/excel-object-model-overview.md).
+ Çalışma sayfası sınıfları, projenizde kod yazmaya başlayabilmeniz için bir konum sağlar. Sınıfı, Excel için birincil birlikte çalışma derlemesindeki <xref:Microsoft.Office.Interop.Excel.Worksheet> nesne olarak aynı özellikleri, yöntemleri ve olayları sağladığından, Excel 'in nesne modeline erişmek için de bu sınıfları kullanabilirsiniz. Daha fazla bilgi için [Excel nesne modeline genel bakış](../vsto/excel-object-model-overview.md).
 
- Belge düzeyinde projelerde ek ekleyebilirsiniz <xref:Microsoft.Office.Tools.Excel.Worksheet> konak proje öğelerine tasarım zamanında çalışma kitabını tasarımcıda yeni çalışma ekleyerek.
+ Belge düzeyi projelerinde, Tasarımcıda çalışma kitabına yeni bir çalışma <xref:Microsoft.Office.Tools.Excel.Worksheet> sayfası ekleyerek, tasarım zamanında projeye ek konak öğeleri ekleyebilirsiniz.
 
-### <a name="rename-worksheets"></a>Çalışma sayfaları yeniden adlandır
- Bir belge düzeyi projede, Visual Studio tasarımcısı çalışma sayfaları yeniden adlandırabilirsiniz, ancak bu yalnızca çalışma görünen adını değiştirir. Programlı ad hala çalışma sayfasının varsayılan addır. Çalışma sayfasına yeniden adlandırırsanız **özellikleri** pencere, yalnızca bir programlı ad değiştirilir.
+### <a name="rename-worksheets"></a>Çalışma sayfalarını yeniden adlandırma
+ Belge düzeyi projesinde, Visual Studio tasarımcısında çalışma sayfalarını yeniden adlandırabilirsiniz, ancak bu yalnızca çalışma sayfasının görünen adını değiştirir. Programlı ad, hala çalışma sayfasının varsayılan adıdır. Çalışma sayfasını **Özellikler** penceresinde yeniden adlandırırsanız yalnızca programlı ad değiştirilir.
 
-### <a name="limitations-of-the-worksheet-host-item-in-document-level-projects"></a>Belge düzeyinde projelerde çalışma sayfası konak öğesi sınırlamaları
- Yeni oluşturulamıyor <xref:Microsoft.Office.Tools.Excel.Worksheet> konak öğelerini bir belge düzeyi projesi çalışma zamanında. Yeni bir Excel çalışma zamanında oluşturursanız, bu türü olacaktır <xref:Microsoft.Office.Interop.Excel.Worksheet>. Bir konak öğesi olmadığı için tüm konak veya Windows Forms denetimleri içeremez. Çalışma zamanında belgeler oluşturma hakkında daha fazla bilgi için bkz. [nasıl yapılır: Program aracılığıyla yeni çalışma kitaplarına ekleme](../vsto/how-to-programmatically-add-new-worksheets-to-workbooks.md).
+### <a name="limitations-of-the-worksheet-host-item-in-document-level-projects"></a>Belge düzeyi projelerdeki çalışma sayfası konak öğesi sınırlamaları
+ Belge düzeyindeki bir projede <xref:Microsoft.Office.Tools.Excel.Worksheet> çalışma zamanında yeni konak öğeleri oluşturamazsınız. Çalışma zamanında yeni bir Excel çalışma sayfası oluşturursanız, bu, türü <xref:Microsoft.Office.Interop.Excel.Worksheet>olacaktır. Konak öğesi olmadığından, hiçbir konak denetimi veya Windows Forms denetimi içeremez. Çalışma zamanında belge oluşturma hakkında daha fazla bilgi için bkz [. nasıl yapılır: Çalışma kitaplarına](../vsto/how-to-programmatically-add-new-worksheets-to-workbooks.md)program aracılığıyla yeni çalışma sayfaları ekleyin.
 
-## <a name="understand-worksheet-host-items-in-vsto-add-in-projects"></a>VSTO eklentisi projelerinde çalışma sayfası konak öğeleri anlama
- Uygulama düzeyi projelere içinde oluşturduğunuz bir <xref:Microsoft.Office.Tools.Excel.Worksheet> Excel'de herhangi bir çalışma sayfası için çalışma zamanında konak öğesi. Kullanabileceğiniz <xref:Microsoft.Office.Tools.Excel.Worksheet> ilgili çalışma sayfasına denetimler ekleme ya da kullanılabilir olan olayları işlemek için ana bilgisayar öğesi <xref:Microsoft.Office.Interop.Excel.Worksheet> nesneleri.
+## <a name="understand-worksheet-host-items-in-vsto-add-in-projects"></a>VSTO eklenti projelerinde çalışma sayfası konak öğelerini anlama
+ Uygulama düzeyi projelerinde, Excel 'de açık olan herhangi bir <xref:Microsoft.Office.Tools.Excel.Worksheet> çalışma sayfası için çalışma zamanında bir konak öğesi oluşturabilirsiniz. İlişkili çalışma sayfasına denetim <xref:Microsoft.Office.Tools.Excel.Worksheet> eklemek veya <xref:Microsoft.Office.Interop.Excel.Worksheet> nesnelerde kullanılamayan olayları işlemek için konak öğesini kullanabilirsiniz.
 
- Oluşturulacak bir <xref:Microsoft.Office.Tools.Excel.Worksheet> konak öğesi, kullanım `GetVstoObject` yöntemi. Daha fazla bilgi için [genişletmek Word belgelerini ve Excel çalışma kitaplarını çalışma zamanında VSTO Add-Ins](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).
+ Bir <xref:Microsoft.Office.Tools.Excel.Worksheet> konak öğesi oluşturmak için `GetVstoObject` yöntemini kullanın. Daha fazla bilgi için bkz. [çalışma ZAMANıNDA VSTO Eklentilerindeki Word belgelerini ve Excel çalışma kitaplarını genişletme](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 - [Office geliştirme örnekleri ve izlenecek yollar](../vsto/office-development-samples-and-walkthroughs.md)
-- [Word belgelerini ve Excel çalışma kitaplarını VSTO eklentileri çalışma zamanında genişletme](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)
+- [VSTO Eklentilerindeki Word belgelerini ve Excel çalışma kitaplarını çalışma zamanında genişletme](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)
 - [Office belgelerindeki denetimler](../vsto/controls-on-office-documents.md)
-- [Office belgelerine çalışma zamanında denetimler ekleme](../vsto/adding-controls-to-office-documents-at-run-time.md)
-- [Konak öğelerine ve denetimlerine genel bakış](../vsto/host-items-and-host-controls-overview.md)
+- [Çalışma zamanında Office belgelerine denetim ekleme](../vsto/adding-controls-to-office-documents-at-run-time.md)
+- [Konak öğeleri ve konak denetimlerine genel bakış](../vsto/host-items-and-host-controls-overview.md)
 - [Çalışma kitabı konak öğesi](../vsto/workbook-host-item.md)
 - [Genişletilmiş nesneleri kullanarak Excel'i otomatikleştirmek](../vsto/automating-excel-by-using-extended-objects.md)
-- [Konak denetimlerinin ve konak öğelerinin programlama sınırlamaları](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)
+- [Konak öğelerinin ve konak denetimlerinin programlama sınırlamaları](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)

@@ -18,66 +18,66 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 323286555bf1ed932b85ed6da84a344787fae265
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 3b5286a4bddff2b529abd0a565bb4dbeef7ffaf3
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63438782"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71251862"
 ---
 # <a name="listobject-control"></a>ListObject denetimi
-  <xref:Microsoft.Office.Tools.Excel.ListObject> Denetim olayları ortaya koyan ve verilere bağlı bir listedir. Bir çalışma sayfasına bir liste eklediğinizde, Visual Studio oluşturur bir <xref:Microsoft.Office.Tools.Excel.ListObject> Microsoft Office Excel nesne modeline geçiş yapmak zorunda kalmadan doğrudan programlayabileceğiniz denetimi.
+  <xref:Microsoft.Office.Tools.Excel.ListObject> Denetim, olayları ortaya çıkaran ve verilere bağlanabilen bir listesidir. Çalışma sayfasına bir liste eklediğinizde, Visual Studio Microsoft Office Excel nesne modelinde geçiş <xref:Microsoft.Office.Tools.Excel.ListObject> yapmak zorunda kalmadan doğrudan programlama yapabileceğiniz bir denetim oluşturur.
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
 
 ## <a name="create-the-control"></a>Denetim oluşturma
- Belge düzeyinde projelerde eklediğiniz <xref:Microsoft.Office.Tools.Excel.ListObject> tasarım zamanında veya çalışma zamanında çalışma. Projelerinde, VSTO eklentisi, eklediğiniz <xref:Microsoft.Office.Tools.Excel.ListObject> yalnızca çalışma zamanında çalışma sayfalarına denetimleri. Daha fazla bilgi için [nasıl yapılır: Çalışma sayfalarına ListObject denetimleri ekleme](../vsto/how-to-add-listobject-controls-to-worksheets.md).
+ Belge düzeyi projelerinde, tasarım zamanında veya çalışma zamanında <xref:Microsoft.Office.Tools.Excel.ListObject> çalışma sayfasına denetimler ekleyebilirsiniz. VSTO eklenti projelerinde, çalışma sayfalarına yalnızca çalışma zamanında denetim <xref:Microsoft.Office.Tools.Excel.ListObject> ekleyebilirsiniz. Daha fazla bilgi için [nasıl yapılır: Çalışma sayfalarına](../vsto/how-to-add-listobject-controls-to-worksheets.md)ListObject denetimleri ekleyin.
 
 > [!NOTE]
-> Varsayılan olarak, çalışma sayfasında dinamik olarak oluşturulan listenin nesneleri sürdürülmeyen çalışma kapatıldığında denetimleri gibi. Daha fazla bilgi için [Office belgelerine çalışma zamanında denetimler ekleme](../vsto/adding-controls-to-office-documents-at-run-time.md).
+> Varsayılan olarak, çalışma sayfası kapatıldığında dinamik olarak oluşturulan liste nesneleri çalışma sayfasında konak denetimleri olarak kalıcı olmaz. Daha fazla bilgi için bkz. [çalışma zamanında Office belgelerine denetim ekleme](../vsto/adding-controls-to-office-documents-at-run-time.md).
 
-## <a name="bind-data-to-the-control"></a>Veriyi denetime bağlama
- A <xref:Microsoft.Office.Tools.Excel.ListObject> denetimi, basit ve karmaşık veri bağlamayı destekler. <xref:Microsoft.Office.Tools.Excel.ListObject> Denetimi kullanarak bir veri kaynağına bağlanabilir <xref:Microsoft.Office.Tools.Excel.ListObject.DataSource%2A> ve <xref:Microsoft.Office.Tools.Excel.ListObject.DataMember%2A> tasarım zamanında özellikleri veya <xref:Microsoft.Office.Tools.Excel.ListObject.SetDataBinding%2A> zamanında yöntemi.
-
-> [!NOTE]
-> <xref:Microsoft.Office.Tools.Excel.ListObject> Gibi bir veri kaynağına bağlı olduğu zaman otomatik olarak güncelleştirilen bir <xref:System.Data.DataTable>, veriler değiştiğinde bir olay başlatır. Bağlarsanız <xref:Microsoft.Office.Tools.Excel.ListObject> veriler değiştiğinde olayları geçirmemesi için bir veri kaynağı, çağırmalısınız <xref:Microsoft.Office.Tools.Excel.ListObject.RefreshDataRow%2A> veya <xref:Microsoft.Office.Tools.Excel.ListObject.RefreshDataRows%2A> güncelleştirilecek yöntemi <xref:Microsoft.Office.Tools.Excel.ListObject>.
-
- Eklediğinizde bir <xref:Microsoft.Office.Tools.Excel.ListObject> bir çalışma sayfası hücresi yinelenen bir şema öğesine bu hücreye eşleyerek, Visual Studio otomatik olarak eşlenir <xref:Microsoft.Office.Tools.Excel.ListObject> üretilen veri kümesi için. Ancak, <xref:Microsoft.Office.Tools.Excel.ListObject> otomatik olarak verilere bağlı değil. Bağlamak üzere adım atabilirsiniz <xref:Microsoft.Office.Tools.Excel.ListObject> tasarım zamanında veya çalışma zamanında bir belge düzeyi projede veri kümesi için. Program aracılığıyla bağlayabilirsiniz <xref:Microsoft.Office.Tools.Excel.ListObject> veri kümesiyle çalışma zamanında VSTO eklenti.
-
- Veriler ayrı olduğundan <xref:Microsoft.Office.Tools.Excel.ListObject>, eklemek ve kaldırmak, ilişkili veri kümesini ve doğrudan aracılığıyla veri <xref:Microsoft.Office.Tools.Excel.ListObject>. Herhangi bir mekanizma aracılığıyla ilişkili veri kümesindeki veriler güncelleştirilirse <xref:Microsoft.Office.Tools.Excel.ListObject> denetimi otomatik olarak değişiklikleri yansıtır. Daha fazla bilgi için [Office çözümlerinde denetimlere veri bağlama](../vsto/binding-data-to-controls-in-office-solutions.md).
-
- Hızlı bir şekilde doldurmak için bir <xref:Microsoft.Office.Tools.Excel.ListObject> bağlayarak denetimi <xref:Microsoft.Office.Tools.Excel.ListObject> bir veri kaynağı. Verilere bağlı verileri düzenlerseniz <xref:Microsoft.Office.Tools.Excel.ListObject>, değişiklikler veri kaynağında da otomatik olarak yapılır. Doldurmak istiyorsanız bir <xref:Microsoft.Office.Tools.Excel.ListObject> ve sonra verileri değiştirmek kullanıcı etkinleştirme <xref:Microsoft.Office.Tools.Excel.ListObject> kullanabileceğiniz veri kaynağını değiştirmeden <xref:Microsoft.Office.Tools.Excel.ListObject.Disconnect%2A> yöntemini <xref:Microsoft.Office.Tools.Excel.ListObject> veri kaynağından. Daha fazla bilgi için [nasıl yapılır: ListObject denetimlerini veri ile doldurmak](../vsto/how-to-fill-listobject-controls-with-data.md).
+## <a name="bind-data-to-the-control"></a>Verileri denetime bağlama
+ Bir <xref:Microsoft.Office.Tools.Excel.ListObject> denetim basit ve karmaşık veri bağlamayı destekler. Denetim, <xref:Microsoft.Office.Tools.Excel.ListObject.DataSource%2A> tasarım zamanında <xref:Microsoft.Office.Tools.Excel.ListObject.DataMember%2A> veçalışmazamanındayöntemikullanılarakbirverikaynağınabağlanabilir.<xref:Microsoft.Office.Tools.Excel.ListObject.SetDataBinding%2A> <xref:Microsoft.Office.Tools.Excel.ListObject>
 
 > [!NOTE]
-> Veri bağlama çakışan üzerinde desteklenmiyor <xref:Microsoft.Office.Tools.Excel.ListObject> kontrol eder.
+> , Verileri değiştiğinde olayları başlatan bir <xref:System.Data.DataTable>veri kaynağına bağlandığında otomatik olarak güncelleştirilir. <xref:Microsoft.Office.Tools.Excel.ListObject> Verileri değiştiğinde <xref:Microsoft.Office.Tools.Excel.ListObject> olayları yükseltmez bir veri kaynağına bağlarsanız, öğesini güncelleştirmek için <xref:Microsoft.Office.Tools.Excel.ListObject.RefreshDataRow%2A> <xref:Microsoft.Office.Tools.Excel.ListObject>veya <xref:Microsoft.Office.Tools.Excel.ListObject.RefreshDataRows%2A> metodunu çağırmanız gerekir.
 
-### <a name="improve-performance-in-listobject-controls"></a>ListObject denetiminde performansı
- Verilere bağlı bir XML dosyası okunurken <xref:Microsoft.Office.Tools.Excel.ListObject> denetim eğilimlidir denetimi ilk bağlamak ve ardından arama yavaş olacak şekilde <xref:System.Data.DataSet.ReadXml%2A> DataSet'i doldurmak için. Performansı artırmak için çağrı <xref:System.Data.DataSet.ReadXml%2A> denetimi bağlamadan önce.
+ Yinelenen bir şema öğesini <xref:Microsoft.Office.Tools.Excel.ListObject> ilgili hücreyle eşleyerek çalışma sayfası hücresine bir eklediğinizde, Visual Studio otomatik olarak öğesini oluşturulan veri kümesiyle <xref:Microsoft.Office.Tools.Excel.ListObject> eşler. <xref:Microsoft.Office.Tools.Excel.ListObject> Ancak, otomatik olarak verilere bağlanmaz. Tasarım zamanında veya belge düzeyindeki bir projede <xref:Microsoft.Office.Tools.Excel.ListObject> çalışma zamanında veri kümesine bağlamak için gerekli adımları uygulayabilirsiniz. Bir VSTO eklentisinde çalışma zamanında <xref:Microsoft.Office.Tools.Excel.ListObject> veri kümesine programlı bir şekilde bağlanabilirsiniz.
 
-### <a name="disconnect-listobject-controls-from-the-data-source"></a>ListObject denetimlerini veri kaynağından bağlantısını kes
- Doldurduktan sonra bir <xref:Microsoft.Office.Tools.Excel.ListObject> denetim liste nesnesi verilerde yapılan değişiklikleri veri kaynağına etkilemez, böylece bir veri kaynağına bağlayarak veri ile kesebilirsiniz. Daha fazla bilgi için [nasıl yapılır: ListObject denetimlerini veri ile doldurmak](../vsto/how-to-fill-listobject-controls-with-data.md).
+ Veriler öğesinden <xref:Microsoft.Office.Tools.Excel.ListObject>ayrı olduğundan, doğrudan <xref:Microsoft.Office.Tools.Excel.ListObject>aracılığıyla değil, bağlantılı veri kümesi aracılığıyla veri eklemeli ve çıkarmanız gerekir. Bağlantılı veri kümesindeki veriler herhangi bir mekanizmaya göre güncelleştirilirse, <xref:Microsoft.Office.Tools.Excel.ListObject> denetim otomatik olarak değişiklikleri yansıtır. Daha fazla bilgi için bkz. [Office çözümlerinde verileri denetimlere bağlama](../vsto/binding-data-to-controls-in-office-solutions.md).
 
-### <a name="restore-column-and-row-order"></a>Sütun ve satır sırası geri yükleme
- Veri bağladığınızda bir <xref:Microsoft.Office.Tools.Excel.ListObject> Visual Studio çalışma kitabının kaydedilmiş her sütun ve satır sırasını izler tasarım zamanında, bir belgeye eklendikten sonra Denetim. Bir kullanıcı taşınırsa <xref:Microsoft.Office.Tools.Excel.ListObject> çalışma zamanı sırasında satırları veya sütunları yeni sipariş çalışma kitabı sonraki açılışında korunur ve <xref:Microsoft.Office.Tools.Excel.ListObject> denetimi veri kaynağına yeniden bağlar.
+ Bir <xref:Microsoft.Office.Tools.Excel.ListObject> denetimi hızlı bir şekilde bir veri kaynağına <xref:Microsoft.Office.Tools.Excel.ListObject> bağlayarak doldurabilirsiniz. Verileri veriye göre düzenlerseniz <xref:Microsoft.Office.Tools.Excel.ListObject>, değişiklikler otomatik olarak veri kaynağında de yapılır. ' I doldurup <xref:Microsoft.Office.Tools.Excel.ListObject> veri kaynağını değiştirmeden kullanıcının <xref:Microsoft.Office.Tools.Excel.ListObject> içindeki verileri değiştirmesini etkinleştirmek istiyorsanız, veri kaynağından ayırmak <xref:Microsoft.Office.Tools.Excel.ListObject> için <xref:Microsoft.Office.Tools.Excel.ListObject.Disconnect%2A> yöntemini kullanabilirsiniz. Daha fazla bilgi için [nasıl yapılır: ListObject denetimlerini verilerle](../vsto/how-to-fill-listobject-controls-with-data.md)doldur.
 
- Geri yüklemek istiyorsanız <xref:Microsoft.Office.Tools.Excel.ListObject> özgün sütun ve satır sırası için çağırabilirsiniz <xref:Microsoft.Office.Tools.Excel.ListObject.ResetPersistedBindingInformation%2A> yöntemi. Bu yöntem sütunuyla ilişkili özel belge özellikleri kaldırır ve belirtilen satır sırası <xref:Microsoft.Office.Tools.Excel.ListObject>. Bu yöntemi çağırın <xref:Microsoft.Office.Tools.Excel.Workbook.Shutdown> olay sütun ve satır sıralamasını korumak istemiyorsanız çalışma kitabının <xref:Microsoft.Office.Tools.Excel.ListObject>.
+> [!NOTE]
+> Çakışan <xref:Microsoft.Office.Tools.Excel.ListObject> denetimlerde veri bağlama desteklenmiyor.
+
+### <a name="improve-performance-in-listobject-controls"></a>ListObject denetimlerinde performansı geliştirme
+ Bir XML dosyasını bir veri bağlama <xref:Microsoft.Office.Tools.Excel.ListObject> denetimine okumak, önce denetimi bağladığınızda daha yavaş olacak şekilde, <xref:System.Data.DataSet.ReadXml%2A> sonra da veri kümesini dolduracak şekilde daha yavaş olur. Performansı artırmak için, denetimi <xref:System.Data.DataSet.ReadXml%2A> paylaşmadan önce çağırın.
+
+### <a name="disconnect-listobject-controls-from-the-data-source"></a>Veri kaynağından ListObject denetimlerinin bağlantısını kesme
+ Bir <xref:Microsoft.Office.Tools.Excel.ListObject> denetimi verileri bir veri kaynağına bağlayarak doldurduktan sonra, liste nesnesindeki verilerde yapılan değişikliklerin veri kaynağını etkilememesi için bağlantısını kesebilirsiniz. Daha fazla bilgi için [nasıl yapılır: ListObject denetimlerini verilerle](../vsto/how-to-fill-listobject-controls-with-data.md)doldur.
+
+### <a name="restore-column-and-row-order"></a>Sütun ve satır sırasını geri yükleme
+ Tasarım zamanında bir belgeye eklenen bir <xref:Microsoft.Office.Tools.Excel.ListObject> denetime veri bağladığınızda, Visual Studio çalışma kitabının kaydedildiği her seferinde sütun ve satır sırasını izler. Bir kullanıcı çalışma zamanında <xref:Microsoft.Office.Tools.Excel.ListObject> sütunları veya satırları taşısa, çalışma kitabının bir sonraki açılışında yeni sıra korunur <xref:Microsoft.Office.Tools.Excel.ListObject> ve denetim veri kaynağına yeniden bağlanır.
+
+ ' I özgün sütununa ve satır <xref:Microsoft.Office.Tools.Excel.ListObject> sırasına geri yüklemek istiyorsanız, <xref:Microsoft.Office.Tools.Excel.ListObject.ResetPersistedBindingInformation%2A> yöntemini çağırabilirsiniz. Bu yöntem, belirtilen <xref:Microsoft.Office.Tools.Excel.ListObject>sütun ve satır sırasıyla ilgili özel belge özelliklerini kaldırır. Öğesinin sütun ve satır sırasını <xref:Microsoft.Office.Tools.Excel.Workbook.Shutdown> korumak istemiyorsanız, <xref:Microsoft.Office.Tools.Excel.ListObject>çalışma kitabının olayından bu yöntemi çağırın.
 
 ## <a name="format"></a>Biçimi
- Uygulanabilir biçimlendirme bir <xref:Microsoft.Office.Interop.Excel.ListObject> uygulanabilir bir <xref:Microsoft.Office.Tools.Excel.ListObject> denetimi. Bu, kenarlık, yazı tipleri, sayı biçimini ve stilleri içerir. Son kullanıcılar, verilere bağlı sütunlar düzenleyebilirsiniz <xref:Microsoft.Office.Tools.Excel.ListObject>, ve bu değişiklikleri sağlanan belge ile kalıcı <xref:Microsoft.Office.Tools.Excel.ListObject> belgenin tasarım zamanında eklendi. Belgeyi bir sonraki açılışında liste nesnesi aynı veri kaynağına bağlı, ancak sütun sırasını kullanıcıların değişiklikleri yansıtır.
+ Bir <xref:Microsoft.Office.Interop.Excel.ListObject> <xref:Microsoft.Office.Tools.Excel.ListObject> denetime uygulanabilen biçimlendirme, bir denetime uygulanabilir. Buna kenarlık, yazı tipi, sayı biçimi ve stil dahildir. Son kullanıcılar, verileri bir veri ile bağlantılı <xref:Microsoft.Office.Tools.Excel.ListObject>olarak yeniden düzenleyebilir ve bu değişiklikler belge ile birlikte kalıcı hale getirilir, <xref:Microsoft.Office.Tools.Excel.ListObject> ancak belgeye tasarım zamanında eklenmiş olur. Belge bir dahaki sefer açıldığında, liste nesnesi aynı veri kaynağına bağlanır, ancak sütun sırası kullanıcıların değişikliklerini yansıtır.
 
-## <a name="add-and-remove-columns-at-runtime"></a>Ekleme ve çalışma zamanında sütunları kaldırma
- El ile ekleyemez veya verilere bağlı sütunları kaldırma <xref:Microsoft.Office.Tools.Excel.ListObject> çalışma zamanında denetim. Son kullanıcı, bir sütunu silmek çalışırsa, hemen geri yüklenecektir ve eklenen sütunlar kaldırılır. Bu nedenle, neden olamaz gerçekleştirdikleri bu eylemler hakkında kullanıcılara açıklamak üzere kod yazmak önemli bir <xref:Microsoft.Office.Tools.Excel.ListObject> verilere bağlı. Visual Studio üzerinde çeşitli etkinliklerde sağlar bir <xref:Microsoft.Office.Tools.Excel.ListObject> veri bağlama ile ilgili. Örneğin, kullanabileceğiniz <xref:Microsoft.Office.Tools.Excel.ListObject.OriginalDataRestored> bunlar silmeye çalıştı veri silinemez ve geri yüklendi kullanıcıları uyarmak için olay.
+## <a name="add-and-remove-columns-at-run-time"></a>Çalışma zamanında sütun ekleme ve kaldırma
+ Çalışma zamanında veriye <xref:Microsoft.Office.Tools.Excel.ListObject> dayalı bir denetimde sütunları el ile ekleyemez veya kaldıramazsınız. Son Kullanıcı bir sütunu silmeye çalışırsa, hemen geri yüklenir ve eklenen sütunlar kaldırılır. Bu nedenle, kullanıcılara, verilere bağlı olan bir üzerinde bu işlemleri gerçekleştiremediğini açıklayan bir <xref:Microsoft.Office.Tools.Excel.ListObject> kod yazmak önemlidir. Visual Studio, veri bağlama ile <xref:Microsoft.Office.Tools.Excel.ListObject> ilgili çeşitli olaylar sağlar. Örneğin, kullanıcıyı silmeye çalıştıkları verilerin silinemediğini ve geri yüklendiğini uyarmak için <xref:Microsoft.Office.Tools.Excel.ListObject.OriginalDataRestored> olayını kullanabilirsiniz.
 
-## <a name="add-and-remove-rows-at-runtime"></a>Ekleme ve çalışma zamanında satırları Kaldır
- El ile eklemek ve veri bağlama satırları Kaldır <xref:Microsoft.Office.Tools.Excel.ListObject> denetimi veri kaynağı yeni satırların eklenmesini sağlar ve salt okunur olmaması koşuluyla. Olaylara karşı kodu gibi yazabileceğiniz <xref:Microsoft.Office.Tools.Excel.ListObject.BeforeAddDataBoundRow> verileri doğrulamak için. Daha fazla bilgi için [nasıl yapılır: ListObject denetimine yeni bir satır eklendiğinde veri doğrulama](../vsto/how-to-validate-data-when-a-new-row-is-added-to-a-listobject-control.md).
+## <a name="add-and-remove-rows-at-run-time"></a>Çalışma zamanında satır ekleme ve kaldırma
+ Veri kaynağı yeni satırların eklenmesine izin verdiğinden ve salt okunmadığından, <xref:Microsoft.Office.Tools.Excel.ListObject> veri kaynağı denetimine satırları el ile ekleyebilir ve kaldırabilirsiniz. Verileri doğrulamak <xref:Microsoft.Office.Tools.Excel.ListObject.BeforeAddDataBoundRow> için gibi olaylara karşı kod yazabilirsiniz. Daha fazla bilgi için [nasıl yapılır: ListObject denetimine](../vsto/how-to-validate-data-when-a-new-row-is-added-to-a-listobject-control.md)yeni bir satır eklendiğinde verileri doğrulayın.
 
- Bazen veri kaynağı için liste nesne arasındaki ilişkiyi rutin hatalarına neden olur. Örneğin, görüntülenmesini istediğiniz sütunları eşleyebilirsiniz <xref:Microsoft.Office.Tools.Excel.ListObject>, null değerler alamaz gibi bir alan kısıtlamaları olan sütunları atlarsanız, bir satır oluşturulduğunda hatalar ortaya çıkar. Eksik değerleri için bir olay işleyicisi eklemek için kod yazabilirsiniz <xref:Microsoft.Office.Tools.Excel.ListObject.ErrorAddDataBoundRow> olay.
+ Bazen liste nesnesinin veri kaynağıyla ilişkisi rutin hatalara neden olur. Örneğin, içinde <xref:Microsoft.Office.Tools.Excel.ListObject>görünmesini istediğiniz sütunları eşleyebilirsiniz. bu nedenle, null değerleri kabul edemeyecek bir alan gibi kısıtlamalar bulunan sütunları atlarsanız, her satır oluşturulduğunda hatalar oluşur. <xref:Microsoft.Office.Tools.Excel.ListObject.ErrorAddDataBoundRow> Olay için bir olay işleyicisine eksik değerler eklemek için kod yazabilirsiniz.
 
-## <a name="rename-listobject-controls-in-excel"></a>Excel ListObject denetimleri yeniden adlandırma
- Excel kullanarak çalışma zamanında Excel tabloları adını değiştirmek kullanıcıların sağlar **tasarım** sekmesi. Ancak, <xref:Microsoft.Office.Tools.Excel.ListObject> denetimi, bu özelliği desteklemez. Bir kullanıcı için karşılık gelen bir Excel tabloyu yeniden adlandırma çalışırsa bir <xref:Microsoft.Office.Tools.Excel.ListObject>, çalışma kitabını kaydedildiğinde Excel tablosu adını otomatik olarak özgün adına geri döner.
+## <a name="rename-listobject-controls-in-excel"></a>Excel 'de ListObject denetimlerini yeniden adlandırma
+ Excel, **Tasarım** sekmesini kullanarak kullanıcıların çalışma zamanında Excel tablolarının adını değiştirmesine olanak sağlar. Ancak, <xref:Microsoft.Office.Tools.Excel.ListObject> denetim bu özelliği desteklemez. Bir Kullanıcı öğesine <xref:Microsoft.Office.Tools.Excel.ListObject>karşılık gelen bir Excel tablosunu yeniden adlandırmaya çalışırsa, çalışma kitabı kaydedildiğinde Excel tablosunun adı otomatik olarak özgün ada döndürülür.
 
 ## <a name="events"></a>Olaylar
- Aşağıdakiler için kullanılabilir <xref:Microsoft.Office.Tools.Excel.ListObject> denetimi:
+ <xref:Microsoft.Office.Tools.Excel.ListObject> Denetim için aşağıdaki olaylar mevcuttur:
 
 - <xref:Microsoft.Office.Tools.Excel.ListObject.BeforeAddDataBoundRow>
 
@@ -110,14 +110,14 @@ ms.locfileid: "63438782"
 ## <a name="see-also"></a>Ayrıca bkz.
 - [Genişletilmiş nesneleri kullanarak Excel'i otomatikleştirmek](../vsto/automating-excel-by-using-extended-objects.md)
 - [Nasıl yapılır: Çalışma sayfalarına ListObject denetimleri ekleme](../vsto/how-to-add-listobject-controls-to-worksheets.md)
-- [Nasıl yapılır: ListObject denetimlerinin boyutunu değiştirme](../vsto/how-to-resize-listobject-controls.md)
+- [Nasıl yapılır: ListObject denetimlerini yeniden boyutlandır](../vsto/how-to-resize-listobject-controls.md)
 - [Nasıl yapılır: ListObject denetimine yeni bir satır eklendiğinde verileri doğrulama](../vsto/how-to-validate-data-when-a-new-row-is-added-to-a-listobject-control.md)
-- [Nasıl yapılır: ListObject sütunlarıyla verileri eşleme](../vsto/how-to-map-listobject-columns-to-data.md)
-- [Nasıl yapılır: ListObject denetimlerini veri ile doldurabilirsiniz.](../vsto/how-to-fill-listobject-controls-with-data.md)
+- [Nasıl yapılır: ListObject sütunlarını verilerle eşleme](../vsto/how-to-map-listobject-columns-to-data.md)
+- [Nasıl yapılır: ListObject denetimlerini verilerle Doldur](../vsto/how-to-fill-listobject-controls-with-data.md)
 - [Office geliştirme örnekleri ve izlenecek yollar](../vsto/office-development-samples-and-walkthroughs.md)
-- [Office çözümlerinde denetimlere veri bağlama](../vsto/binding-data-to-controls-in-office-solutions.md)
-- [Word belgelerini ve Excel çalışma kitaplarını VSTO eklentileri çalışma zamanında genişletme](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)
+- [Office çözümlerinde verileri denetimlere bağlama](../vsto/binding-data-to-controls-in-office-solutions.md)
+- [VSTO Eklentilerindeki Word belgelerini ve Excel çalışma kitaplarını çalışma zamanında genişletme](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)
 - [Office belgelerindeki denetimler](../vsto/controls-on-office-documents.md)
-- [Office belgelerine çalışma zamanında denetimler ekleme](../vsto/adding-controls-to-office-documents-at-run-time.md)
-- [Nasıl yapılır: Çalışma sayfalarını veritabanı verileriyle doldurma](../vsto/how-to-populate-worksheets-with-data-from-a-database.md)
-- [Konak denetimlerinin ve konak öğelerinin programlama sınırlamaları](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)
+- [Çalışma zamanında Office belgelerine denetim ekleme](../vsto/adding-controls-to-office-documents-at-run-time.md)
+- [Nasıl yapılır: Çalışma sayfalarını bir veritabanındaki verilerle doldurma](../vsto/how-to-populate-worksheets-with-data-from-a-database.md)
+- [Konak öğelerinin ve konak denetimlerinin programlama sınırlamaları](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)

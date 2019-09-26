@@ -1,5 +1,5 @@
 ---
-title: Sprocs ve işlevlere (O R Designer) Map DataContext yöntemi
+title: DataContext metotlarını sprocs ve işlevlerle eşleyin (O-R Designer)
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: e7ca32f1-50b3-48af-ad92-ceafd749296a
@@ -8,53 +8,53 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 3051820be7972af93419833cc62617f6d7e524da
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 4c3769634bfbeb98fcc31e5c074177d950248292
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66260490"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71252903"
 ---
 # <a name="how-to-create-datacontext-methods-mapped-to-stored-procedures-and-functions-or-designer"></a>Nasıl yapılır: Saklı yordamlara eşlenen DataContext metotları oluşturma (O/R Tasarımcısı)
 
-Saklı yordamları ve işlevleri için ekleyebileceğiniz **O/R Tasarımcısı** olarak <xref:System.Data.Linq.DataContext> yöntemleri. Yöntemini çağırarak ve gerekli parametrelerin geçirme veritabanında saklı yordamı veya işlevi çalıştırır ve verileri dönüş türünü döndüren <xref:System.Data.Linq.DataContext> yöntemi. İlgili ayrıntılı bilgi için <xref:System.Data.Linq.DataContext> yöntemleri bkz [DataContext yöntemi (O/R Tasarımcısı)](../data-tools/datacontext-methods-o-r-designer.md).
+Saklı yordamları ve işlevleri Yöntem olarak <xref:System.Data.Linq.DataContext> **O/R tasarımcısına** ekleyebilirsiniz. Yöntemi çağırmak ve gerekli parametreleri geçirmek, veritabanında saklı yordamı veya işlevi çalıştırır ve <xref:System.Data.Linq.DataContext> yöntemin dönüş türündeki verileri döndürür. Yöntemler hakkında <xref:System.Data.Linq.DataContext> ayrıntılı bilgi için bkz. [DataContext yöntemleri (O/R Designer)](../data-tools/datacontext-methods-o-r-designer.md).
 
 > [!NOTE]
-> Varsayılan geçersiz kılmak için saklı yordamları kullanabilirsiniz [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] ekleme, güncelleştirme gerçekleştiren ve bir veritabanına varlık sınıflardan değişiklikler kaydedildiğinde siler çalışma zamanı davranışı. Daha fazla bilgi için [nasıl yapılır: Güncelleştirme, ekleme ve silme (O/R Tasarımcısı) gerçekleştirmek için saklı yordamlar atama](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md).
+> Ayrıca, değişiklikler varlık sınıflarından veritabanına kaydedildiğinde ekleme, güncelleştirme [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] ve silme işlemleri gerçekleştiren varsayılan çalışma zamanı davranışını geçersiz kılmak için saklı yordamları kullanabilirsiniz. Daha fazla bilgi için [nasıl yapılır: Güncelleştirme, ekleme ve silme işlemleri gerçekleştirmek için saklı yordamlar atayın (O/R Designer)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md).
 
-## <a name="create-datacontext-methods"></a>DataContext-metotları oluşturma
+## <a name="create-datacontext-methods"></a>DataContext yöntemleri oluşturma
 
-Oluşturabileceğiniz <xref:System.Data.Linq.DataContext> sürükleyerek yöntemler depolanan yordamları veya işlevlerden <strong>Sunucu Gezgini veya ** veritabanı Gezgini</strong> üzerine **O/R Tasarımcısı**.
+Saklı yordamları veya <xref:System.Data.Linq.DataContext> işlevleri <strong>Sunucu Gezgini veya * * veritabanı Gezgini</strong> ' dan **O/R tasarımcısına**sürükleyerek Yöntemler oluşturabilirsiniz.
 
 > [!NOTE]
-> Dönüş türü oluşturulan <xref:System.Data.Linq.DataContext> yöntemi farklı bağlı olarak burada saklı yordamı bırakın veya işlevini **O/R Tasarımcısı**. Öğeleri doğrudan mevcut bir varlık sınıfı üzerine bırakarak oluşturur bir <xref:System.Data.Linq.DataContext> yöntemi varlık sınıfı dönüş türüne sahip. Öğeleri boş bir alanının bırakarak **O/R Tasarımcısı** oluşturur bir <xref:System.Data.Linq.DataContext> otomatik olarak oluşturulan bir tür döndüren yöntem. Dönüş türünü değiştirebilirsiniz bir <xref:System.Data.Linq.DataContext> eklemeden sonra yöntemi **yöntemleri** bölmesi. İnceleme veya dönüş türünü değiştirmek için bir <xref:System.Data.Linq.DataContext> yöntemi seçin ve İnceleme **dönüş türü** özelliğinde **özellikleri** penceresi. Daha fazla bilgi için [nasıl yapılır: (O/R Tasarımcısı) bir DataContext yöntemin dönüş türünü değiştirmek](../data-tools/how-to-change-the-return-type-of-a-datacontext-method-o-r-designer.md).
+> Oluşturulan <xref:System.Data.Linq.DataContext> metodun dönüş türü, saklı yordamı veya işlevi **O/R tasarımcısında**nerede bıraktığınızda olduğuna bağlı olarak farklılık gösterir. Öğelerin doğrudan mevcut bir varlık sınıfına düşürülme, varlık <xref:System.Data.Linq.DataContext> sınıfının dönüş türüyle bir yöntem oluşturur. **O/R tasarımcısının** boş bir alanına öğe bırakma, otomatik olarak oluşturulan bir <xref:System.Data.Linq.DataContext> tür döndüren bir yöntem oluşturur. Bir <xref:System.Data.Linq.DataContext> yöntemin dönüş türünü, **Yöntemler** bölmesine eklendikten sonra değiştirebilirsiniz. Bir <xref:System.Data.Linq.DataContext> yöntemin dönüş türünü incelemek veya değiştirmek için, bunu seçin ve **Özellikler** penceresinde **dönüş türü** özelliğini inceleyin. Daha fazla bilgi için [nasıl yapılır: Bir DataContext yönteminin (O/R Designer)](../data-tools/how-to-change-the-return-type-of-a-datacontext-method-o-r-designer.md)dönüş türünü değiştirin.
 
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 
-### <a name="to-create-datacontext-methods-that-return-automatically-generated-types"></a>DataContext oluşturmak için otomatik olarak döndüren yöntemler türü oluşturuldu
+### <a name="to-create-datacontext-methods-that-return-automatically-generated-types"></a>Otomatik olarak oluşturulan türleri döndüren DataContext yöntemleri oluşturmak için
 
-1. İçinde **Sunucu Gezgini** veya **veritabanı Gezgini**, genişletme **saklı yordamlar** birlikte çalıştığınız veritabanı düğümü.
+1. **Sunucu Gezgini** veya **veritabanı Gezgini**' de, çalışmakta olduğunuz veritabanının **saklı yordamlar** düğümünü genişletin.
 
-2. İstenen saklı yordamı bulun ve boş bir alanı sürükleyin **O/R Tasarımcısı**.
+2. İstenen saklı yordamı bulun ve **u/R tasarımcısının**boş bir alanına sürükleyin.
 
-     <xref:System.Data.Linq.DataContext> Yöntemi otomatik olarak oluşturulan bir dönüş türü ile oluşturulur ve görünür **yöntemleri** bölmesi.
+     Yöntemi otomatik olarak oluşturulan bir dönüş türüyle oluşturulur ve Yöntemler bölmesinde görünür. <xref:System.Data.Linq.DataContext>
 
-### <a name="to-create-datacontext-methods-that-have-the-return-type-of-an-entity-class"></a>Bir varlık sınıfı dönüş türüne sahip bir DataContext yöntemi oluşturmak için
+### <a name="to-create-datacontext-methods-that-have-the-return-type-of-an-entity-class"></a>Bir varlık sınıfının dönüş türüne sahip DataContext yöntemleri oluşturmak için
 
-1. İçinde **Sunucu Gezgini** veya **veritabanı Gezgini**, genişletme **saklı yordamlar** birlikte çalıştığınız veritabanı düğümü.
+1. **Sunucu Gezgini** veya **veritabanı Gezgini**' de, çalışmakta olduğunuz veritabanının **saklı yordamlar** düğümünü genişletin.
 
-2. İstenen saklı yordamı bulun ve varolan bir varlık sınıfı sürükleyin **O/R Tasarımcısı**.
+2. İstenen saklı yordamı bulun ve **o/R tasarımcısında**mevcut bir varlık sınıfının üzerine sürükleyin.
 
-     <xref:System.Data.Linq.DataContext> Yöntemi seçili varlık sınıfı, dönüş türü ile oluşturulur ve görünür **yöntemleri** bölmesi.
+     Yöntemi, seçilen varlık sınıfının dönüş türüyle oluşturulur ve Yöntemler bölmesinde görünür. <xref:System.Data.Linq.DataContext>
 
 > [!NOTE]
-> Var olan dönüş türünü değiştirme hakkında bilgi için <xref:System.Data.Linq.DataContext> yöntemleri bkz [nasıl yapılır: (O/R Tasarımcısı) bir DataContext yöntemin dönüş türünü değiştirmek](../data-tools/how-to-change-the-return-type-of-a-datacontext-method-o-r-designer.md).
+> Mevcut <xref:System.Data.Linq.DataContext> yöntemlerin dönüş türünü değiştirme hakkında daha fazla bilgi için bkz [. nasıl yapılır: Bir DataContext yönteminin (O/R Designer)](../data-tools/how-to-change-the-return-type-of-a-datacontext-method-o-r-designer.md)dönüş türünü değiştirin.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [Visual Studio'da LINQ to SQL araçları](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
-- [DataContext yöntemi (O/R Tasarımcısı)](../data-tools/datacontext-methods-o-r-designer.md)
-- [İzlenecek yol: SQL sınıflarına LINQ oluşturma](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)
+- [Visual Studio 'da LINQ to SQL araçları](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
+- [DataContext yöntemleri (O/R Designer)](../data-tools/datacontext-methods-o-r-designer.md)
+- [İzlenecek yol: LINQ to SQL sınıfları oluşturma](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)
 - [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)
-- [Visual Basic'de LINQ'e giriş](/dotnet/visual-basic/programming-guide/language-features/linq/introduction-to-linq)
+- [Visual Basic LINQ 'e giriş](/dotnet/visual-basic/programming-guide/language-features/linq/introduction-to-linq)
 - [C# üzerinde LINQ](/dotnet/csharp/linq/linq-in-csharp)

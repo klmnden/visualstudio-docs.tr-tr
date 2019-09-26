@@ -8,12 +8,12 @@ ms.assetid: E2C9420F-A5D5-4472-9020-2B63FB27A133
 ms.technology: vs-unity-tools
 ms.workload:
 - unity
-ms.openlocfilehash: 82556ea0ed043c11cb9098383daf912ff17372ef
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0fb4560a196404687c60ce67f39b9c0754a24769
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62818515"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71253138"
 ---
 # <a name="using-net-4x-in-unity"></a>.NET kullanarak 4.x Unity
 
@@ -335,7 +335,7 @@ public class UsingStaticExample: MonoBehaviour
 
 Oyununuzu iOS gibi platformlarda verirken, Unity kendi ıl2cpp altyapısına "derleyin" IL ardından hedef platformu yerel derleyiciyi kullanarak derlenmiş C++ kodu için kullanır. Bu senaryoda, yansıma bölümlerini ve kullanımı gibi desteklenmeyen birden fazla .NET özellikleri vardır `dynamic` anahtar sözcüğü. Kendi kodunuzda bu özellikleri kullanmaya kontrol edebilirsiniz, ancak sorunlar ıl2cpp ve Unity ile göz önünde 3. parti DLL'ler ve değil yazılan SDK'ları kullanarak çalıştırabilirsiniz. Bu konu hakkında daha fazla bilgi için lütfen bkz [betik kısıtlamaları](https://docs.unity3d.com/Manual/ScriptingRestrictions.html) Unity'nın site açıktır.
 
-Ayrıca, yukarıdaki Json.NET örnekte belirtildiği gibi Unity kullanılmayan kodu ıl2cpp dışarı aktarma işlemi sırasında Şerit dener.  Bu genellikle, yansıma kullanan kitaplıkları ile ilgili bir sorun değildir; ancak, yanlışlıkla özellikleri veya dışarı aktarma anda belirlenemiyor zamanında çağrılacak yöntem çıkarmanız.  Bu sorunları düzeltmek için ekleme bir **link.xml** projenize derlemeler ve ad alanları stripping işlemine yönelik çalıştırmayı listesini içeren dosya.  Tüm Ayrıntılar için lütfen bkz [bytecode çıkarma üzerinde Unity'nın docs](https://docs.unity3d.com/Manual/IL2CPP-BytecodeStripping.html).
+Ayrıca, yukarıdaki Json.NET örnekte belirtildiği gibi Unity kullanılmayan kodu ıl2cpp dışarı aktarma işlemi sırasında Şerit dener.  Bu genellikle bir sorun olmasa da, yansıma kullanan kitaplıklar sayesinde, yanlışlıkla dışa aktarma zamanında belirlenemeyecek çalışma zamanında çağrılacak özellikleri veya yöntemleri açabilir.  Bu sorunları düzeltmek için ekleme bir **link.xml** projenize derlemeler ve ad alanları stripping işlemine yönelik çalıştırmayı listesini içeren dosya.  Tüm Ayrıntılar için lütfen bkz [bytecode çıkarma üzerinde Unity'nın docs](https://docs.unity3d.com/Manual/IL2CPP-BytecodeStripping.html).
 
 ## <a name="net-4x-sample-unity-project"></a>.NET 4.x örnek Unity projesi
 

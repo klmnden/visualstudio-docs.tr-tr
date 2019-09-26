@@ -32,29 +32,29 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e822ae5f50436a2f1b0b4863b7e6cf3a7d5d0963
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: ae8d89baf864c73bed42e4f478624bc930e3c143
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67826065"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71253617"
 ---
 # <a name="events-in-office-projects"></a>Office Projelerindeki Olaylar
-  Her Office proje şablonu, çeşitli olay işleyicileri otomatik olarak oluşturur. Belge düzeyi özelleştirmeleri için olay işleyicileri, VSTO eklentileri için olay işleyicileri biraz farklıdır.
+  Her Office proje şablonu otomatik olarak birkaç olay işleyicisi oluşturur. Belge düzeyi özelleştirmeleri için olay işleyicileri, VSTO eklentilerine yönelik olay işleyicilerinden biraz farklıdır.
 
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]
 
 ## <a name="document-level-projects"></a>Belge düzeyi projeleri
- Visual Studio, yeni veya varolan belgeleri ve belge düzeyi özelleştirmeleri çalışma sayfalarında arkasına oluşturulan kod sağlar. Bu kod, iki farklı olay oluşturur: **Başlangıç** ve **kapatma**.
+ Visual Studio, belge düzeyi özelleştirmelerde yeni veya mevcut belge veya çalışma sayfalarının arkasında oluşturulan kod sağlar. Bu kod iki farklı olay oluşturur: **Başlatma** ve **kapatmadan**.
 
 ### <a name="startup-event"></a>Startup olayı
- **Başlangıç** olayı her ana bilgisayar öğesi (belge, çalışma kitabı veya çalışma sayfası) oluşturulur belge çalışıyorken ve derlemedeki tüm başlatma kodları çalıştıktan sonra. Kodunuzun çalıştığı sınıfının oluşturucusu, çalıştırmak için son şeydir. Konak öğeleri hakkında daha fazla bilgi için bkz. [konak öğelerini ve denetimlerine genel bakış için ana bilgisayar](../vsto/host-items-and-host-controls-overview.md).
+ **Başlangıç** olayı, belge çalıştıktan sonra ana bilgisayar öğelerinin (belge, çalışma kitabı veya çalışma sayfası) her biri için oluşturulur ve derlemedeki tüm başlatma kodu çalıştırılır. Bu, kodunuzun üzerinde çalıştığı sınıfın oluşturucusunda çalıştırılacak son şeydir. Konak öğeleri hakkında daha fazla bilgi için bkz. [konak öğeleri ve konak denetimlerine genel bakış](../vsto/host-items-and-host-controls-overview.md).
 
- Bir belge düzeyi projesi oluşturduğunuzda, Visual Studio için olay işleyicileri oluşturur **başlangıç** oluşturulan kodda olay:
+ Belge düzeyinde bir proje oluşturduğunuzda, Visual Studio oluşturulan kod dosyalarındaki **Başlangıç** olayı için olay işleyicileri oluşturur:
 
-- Microsoft Office Word projeleri için olay işleyicisi adlı `ThisDocument_Startup`.
+- Microsoft Office Word projeleri için, olay işleyicisi olarak adlandırılır `ThisDocument_Startup`.
 
-- Microsoft Office Excel projelerinde olay işleyicileri aşağıdaki adlara sahiptir:
+- Microsoft Office Excel projeleri için, olay işleyicileri aşağıdaki adlara sahiptir:
 
   - `Sheet1_Startup`
 
@@ -65,13 +65,13 @@ ms.locfileid: "67826065"
   - `ThisWorkbook_Startup`
 
 ### <a name="shutdown-event"></a>Shutdown olayı
- **Kapatma** olayı her ana bilgisayar öğesi (belge veya çalışma sayfası) için oluşturulur, kodunuzu yüklendiği uygulama etki alanı olduğunda kaldırılmak üzere. Sınıfı, bunu çağırılacak çağrılması son şeydir.
+ Bir konak öğesi (belge veya çalışma sayfası), kodunuzun yüklendiği uygulama etki alanının kaldırılması ile ilgili olduğu her bir konak öğesi için (belge veya çalışma sayfası) tetiklenir. Bu,, ' i kaldırdığından, sınıfında çağrılacak son şeydir.
 
- Bir belge düzeyi projesi oluşturduğunuzda, Visual Studio için olay işleyicileri oluşturur **kapatma** oluşturulan kodda olay:
+ Belge düzeyinde bir proje oluşturduğunuzda, Visual Studio, oluşturulan kod dosyalarındaki **kapalı** olay için olay işleyicileri oluşturur:
 
-- Microsoft Office Word projeleri için olay işleyicisi adlı `ThisDocument_Shutdown`.
+- Microsoft Office Word projeleri için, olay işleyicisi olarak adlandırılır `ThisDocument_Shutdown`.
 
-- Microsoft Office Excel projelerinde olay işleyicileri aşağıdaki adlara sahiptir:
+- Microsoft Office Excel projeleri için, olay işleyicileri aşağıdaki adlara sahiptir:
 
   - `Sheet1_Shutdown`
 
@@ -82,26 +82,26 @@ ms.locfileid: "67826065"
   - `ThisWorkbook_Shutdown`
 
 > [!NOTE]
-> Program aracılığıyla denetimleri sırasında kaldırmayın **kapatma** belgenin olay işleyicisi. UI öğeleri artık kullanılabilir **kapatma** olayı oluşur. Denetimleri uygulama kapatılmadan önce kaldırmak isterseniz, kodunuzu başka bir olay işleyicisine aşağıdaki gibi ekleyin **BeforeClose** veya **BeforeSave**.
+> Belgenin **kapalı** olay işleyicisi sırasında denetimleri program aracılığıyla kaldırmayın. **Kapatmadan** önce belgenin UI öğeleri artık kullanılamaz. Uygulama kapanmadan önce denetimleri kaldırmak istiyorsanız, kodunuzu, **Beforeckaybetme** veya **BeforeSave**gibi başka bir olay işleyicisine ekleyin.
 
 ### <a name="event-handler-method-declarations"></a>Olay işleyicisi yöntem bildirimleri
- Her olay işleyicisi yöntem bildiriminde geçirilen aynı bağımsız değişkenlere sahiptir: *gönderen* ve *e*. Excel'de *gönderen* bağımsız değişken başvuran sayfa gibi `Sheet1` veya `Sheet2`; Word *gönderen* bağımsız değişken belgeye başvuruyor. *e* bağımsız değişkeni, bu durumda kullanılmayan standart için bağımsız değişkenler için olaya başvurur.
+ Her olay işleyicisi yöntemi bildirimi kendisine geçirilen bağımsız değişkenlere sahiptir: *gönderici* ve *e*. Excel 'de *gönderici* bağımsız değişkeni, `Sheet1` veya `Sheet2`gibi bir sayfaya başvurur, *Gönderen* bağımsız değişkeni belgeye başvurur. *E* bağımsız değişkeni, bu durumda kullanılmayan bir olayın standart bağımsız değişkenlerine başvurur.
 
- Aşağıdaki kod örneği, Word için belge düzeyi projelerine varsayılan olay işleyicileri gösterilmektedir.
+ Aşağıdaki kod örneği, Word için belge düzeyi projelerindeki varsayılan olay işleyicilerini gösterir.
 
  [!code-vb[Trin_VstcoreWordAutomation#121](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#121)]
  [!code-csharp[Trin_VstcoreWordAutomation#121](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#121)]
 
- Aşağıdaki kod örneği, Excel için belge düzeyi projelerine varsayılan olay işleyicileri gösterilmektedir.
+ Aşağıdaki kod örneği, Excel için belge düzeyi projelerindeki varsayılan olay işleyicilerini gösterir.
 
 > [!NOTE]
-> Aşağıdaki kod örneği, olay işleyicileri gösterilmektedir `Sheet1` sınıfı. Diğer ana bilgisayar öğesi sınıflardaki olay işleyicileri adlarını sınıf adına karşılık gelir. Örneğin, `Sheet2` sınıfı **başlangıç** olay işleyicisi adlı `Sheet2_Startup`. İçinde `ThisWorkbook` sınıfı **başlangıç** olay işleyicisi adlı `ThisWorkbook_Startup`.
+> Aşağıdaki kod örneği, `Sheet1` sınıfındaki olay işleyicilerini gösterir. Diğer konak öğesi sınıflarında bulunan olay işleyicilerinin adları, sınıf adına karşılık gelir. Örneğin, `Sheet2` sınıfında, **Başlangıç** olayı işleyicisi adlandırılır `Sheet2_Startup`. Sınıfında, **Başlangıç** olayı işleyicisi adlandırılır `ThisWorkbook_Startup`. `ThisWorkbook`
 
  [!code-csharp[Trin_VstcoreExcelAutomation#83](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#83)]
  [!code-vb[Trin_VstcoreExcelAutomation#83](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#83)]
 
-### <a name="order-of-events-in-document-level-excel-projects"></a>Belge düzeyi Excel projelerinde olayların sırası
- **Başlangıç** Excel projelerinde olay işleyicileri şu sırayla çağrılır:
+### <a name="order-of-events-in-document-level-excel-projects"></a>Belge düzeyindeki Excel projelerinde olay sırası
+ Excel projelerindeki **Başlangıç** olayı işleyicileri şu sırada çağrılır:
 
 1. `ThisWorkbook_Startup`.
 
@@ -111,9 +111,9 @@ ms.locfileid: "67826065"
 
 4. `Sheet3_Startup`.
 
-5. Sırayla diğer sayfaları.
+5. Sırayla diğer sayfalar.
 
-   **Kapatma** olay işleyicileri bir çalışma kitabı çözümde şu sırayla çağrılır:
+   Çalışma kitabı çözümündeki **kapalı** olay işleyicileri şu sırada çağrılır:
 
 6. `ThisWorkbook_Shutdown`.
 
@@ -123,38 +123,38 @@ ms.locfileid: "67826065"
 
 9. `Sheet3_Shutdown`.
 
-10. Sırayla diğer sayfaları.
+10. Sırayla diğer sayfalar.
 
-    Sırası, proje derlendiğinde belirlenir. Kullanıcının çalışma zamanında sayfaları düzenlerse, sonraki açışınızda bir çalışma kitabı açılamıyor veya tetiklenen olayları sırasını değiştirmez.
+    Sıra, proje derlendiğinde belirlenir. Kullanıcı çalışma zamanında sayfaları yeniden düzenler, çalışma kitabının bir sonraki açılışında veya kapatılışında olayların oluşturulma sırasını değiştirmez.
 
-## <a name="vsto-add-in-projects"></a>VSTO eklentisi projeleri
- Visual Studio, VSTO eklentileri üretilen kodda sağlar. Bu kod, iki farklı olay oluşturur: <xref:Microsoft.Office.Tools.AddInBase.Startup> ve <xref:Microsoft.Office.Tools.AddInBase.Shutdown>.
+## <a name="vsto-add-in-projects"></a>VSTO eklenti projeleri
+ Visual Studio, VSTO eklentilerinde oluşturulan kodu sağlar. Bu kod iki farklı olay oluşturur: <xref:Microsoft.Office.Tools.AddInBase.Startup> ve <xref:Microsoft.Office.Tools.AddInBase.Shutdown>.
 
 ### <a name="startup-event"></a>Startup olayı
- <xref:Microsoft.Office.Tools.AddIn.Startup> VSTO eklentisi yüklenir ve derlemedeki tüm başlatma kodları çalıştıktan sonra olayı oluşturulur. Bu olay tarafından işlenen `ThisAddIn_Startup` üretilen kod dosyasında yöntemi.
+ <xref:Microsoft.Office.Tools.AddIn.Startup> Olay, VSTO eklentisi yüklendikten sonra ve derlemedeki tüm başlatma kodları çalıştırıldıktan sonra tetiklenir. Bu olay, oluşturulan kod dosyasındaki `ThisAddIn_Startup` yöntemi tarafından işlenir.
 
- Kod `ThisAddIn_Startup` olay işleyicisi, çalıştırmak için ilk kullanıcı kod VSTO eklenti kılmadıkça <xref:Microsoft.Office.Tools.AddInBase.RequestComAddInAutomationService%2A> yöntemi. Bu durumda, `ThisAddIn_Startup` olay işleyicisi, sonra çağrılır <xref:Microsoft.Office.Tools.AddInBase.RequestComAddInAutomationService%2A>.
+ VSTO eklentisi <xref:Microsoft.Office.Tools.AddInBase.RequestComAddInAutomationService%2A> yöntemi geçersiz kılmadığı takdirde olayişleyicisindekikod,çalıştırılacakilkkullanıcıkodudur.`ThisAddIn_Startup` Bu durumda, `ThisAddIn_Startup` olay işleyicisi öğesinden sonra <xref:Microsoft.Office.Tools.AddInBase.RequestComAddInAutomationService%2A>çağrılır.
 
- Kod ekleme `ThisAdd-In_Startup` kodu açık bir belge gerektiriyorsa, olay işleyicisi. Bunun yerine, bu kod, bir kullanıcı oluşturur ya da bir belge açılır Office uygulaması oluşturan bir olay ekleyin. Daha fazla bilgi için [Office uygulaması başlatıldığında, bir belgeye erişme](../vsto/programming-vsto-add-ins.md#AccessingDocuments).
+ Kod bir belgenin açık olmasını `ThisAdd-In_Startup` gerektiriyorsa olay işleyicisine kod eklemeyin. Bunun yerine, bir Kullanıcı bir belge oluşturduğunda veya açtığında Office uygulamasının oluşturduğu bir olaya bu kodu ekleyin. Daha fazla bilgi için bkz. [Office uygulaması başladığında belgeye erişme](../vsto/programming-vsto-add-ins.md#AccessingDocuments).
 
- VSTO eklentileri başlatma sırası hakkında daha fazla bilgi için bkz. [mimarisi, VSTO eklentileri](../vsto/architecture-of-vsto-add-ins.md).
+ VSTO eklentilerinin başlangıç dizisi hakkında daha fazla bilgi için bkz. [VSTO eklentileri mimarisi](../vsto/architecture-of-vsto-add-ins.md).
 
 ### <a name="shutdown-event"></a>Shutdown olayı
- <xref:Microsoft.Office.Tools.AddInBase.Shutdown> Olayı kodunuzun yüklü uygulama etki alanı kaldırılmak üzere olduğunda oluşturulur. Bu olay tarafından işlenen `ThisAddIn_Shutdown` üretilen kod dosyasında yöntemi. Bu olay işleyicisi için VSTO eklentisi kaldırıldığında çalıştırmak için son kullanıcı kodudur.
+ <xref:Microsoft.Office.Tools.AddInBase.Shutdown> Olay, kodunuzun yüklendiği uygulama etki alanı boşaltılacak şekilde olduğunda tetiklenir. Bu olay, oluşturulan kod dosyasındaki `ThisAddIn_Shutdown` yöntemi tarafından işlenir. Bu olay işleyicisi, VSTO eklentisi kaldırıldığında çalıştırılacak son kullanıcı kodudur.
 
-#### <a name="shutdown-event-in-outlook-vsto-add-ins"></a>Kapatma olayı Outlook VSTO eklentileri
- <xref:Microsoft.Office.Tools.AddInBase.Shutdown> Yalnızca kullanıcı VSTO eklentisi Outlook'ta COM eklentileri iletişim kutusunu kullanarak devre dışı bıraktığında olayı oluşturulur. Outlook çıktığında çıkarılır değil. Outlook çıktığında, çalıştırılması gereken bir kodunuz varsa, aşağıdaki olaylardan biri ya da işler:
+#### <a name="shutdown-event-in-outlook-vsto-add-ins"></a>Outlook VSTO Eklentilerindeki kapalı olayı
+ <xref:Microsoft.Office.Tools.AddInBase.Shutdown> Olay yalnızca Kullanıcı Outlook 'ta com eklentileri iletişim kutusunu kullanarak VSTO eklentisini devre dışı bıraktığında tetiklenir. Outlook çıktığında bu değildir. Outlook 'Tan çıkıldığında çalışması gereken bir kodunuz varsa, aşağıdaki olaylardan birini işleyin:
 
-- <xref:Microsoft.Office.Interop.Outlook.ApplicationEvents_11_Event.Quit> Olayı <xref:Microsoft.Office.Interop.Outlook.Application> nesne.
+- <xref:Microsoft.Office.Interop.Outlook.Application> Nesnesinin <xref:Microsoft.Office.Interop.Outlook.ApplicationEvents_11_Event.Quit> olayı.
 
-- <xref:Microsoft.Office.Interop.Outlook.ExplorerEvents_10_Event.Close> Olayı <xref:Microsoft.Office.Interop.Outlook.Explorer> nesne.
+- <xref:Microsoft.Office.Interop.Outlook.Explorer> Nesnesinin <xref:Microsoft.Office.Interop.Outlook.ExplorerEvents_10_Event.Close> olayı.
 
 > [!NOTE]
-> Yükseltmek için Outlook zorlayabilirsiniz <xref:Microsoft.Office.Tools.AddInBase.Shutdown> kayıt defterini değiştirerek çıktığında olay. Yönetici bu ayarı döndürüyorsa, ancak herhangi için ekleme kodu `ThisAddIn_Shutdown` yöntemi artık Outlook çıkar olduğunda çalışır. Daha fazla bilgi için [kapatma Outlook 2010 için değişiklikleri](http://go.microsoft.com/fwlink/?LinkID=184614).
+> Outlook 'u, çıkış sırasında kayıt defteri <xref:Microsoft.Office.Tools.AddInBase.Shutdown> 'ni değiştirerek olayı daha sonra tetikleyerek uygulamayı zorlayabilirsiniz. Ancak, bir yönetici bu ayarı geri döndürüyorsa, `ThisAddIn_Shutdown` yönteme eklediğiniz herhangi bir kod artık Outlook 'tan çıkıldığında çalışmaz. Daha fazla bilgi için bkz. [Outlook 2010 için değişiklikleri kapatır](http://go.microsoft.com/fwlink/?LinkID=184614).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 - [Office çözümleri geliştirme](../vsto/developing-office-solutions.md)
-- [Nasıl yapılır: Visual Studio'da Office projeleri oluşturma](../vsto/how-to-create-office-projects-in-visual-studio.md)
-- [Belge düzeyi özelleştirmelerini programlama](../vsto/programming-document-level-customizations.md)
-- [VSTO eklentilerini programlama](../vsto/programming-vsto-add-ins.md)
+- [Nasıl yapılır: Visual Studio 'da Office projeleri oluşturma](../vsto/how-to-create-office-projects-in-visual-studio.md)
+- [Program belge düzeyi özelleştirmeleri](../vsto/programming-document-level-customizations.md)
+- [Program VSTO eklentileri](../vsto/programming-vsto-add-ins.md)
 - [Office proje şablonlarına genel bakış](../vsto/office-project-templates-overview.md)

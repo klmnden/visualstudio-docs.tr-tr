@@ -1,5 +1,5 @@
 ---
-title: Güncelleştirme Excel veya Word projesi .NET Framework 4'e geçişi / 4.5
+title: .NET Framework 4/4,5 ' e geçirilen Excel veya Word projesini güncelleştir
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,45 +12,45 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: afbfcf5cf9c3bbb02d4034251c7a3836056e314c
-ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
+ms.openlocfilehash: 4bc211f4d30359c885b22a45910363bbadca236f
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/22/2019
-ms.locfileid: "67329022"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71253714"
 ---
-# <a name="update-excel-and-word-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>.NET Framework 4 veya .NET Framework 4.5 için geçirdiğiniz Excel ve Word projelerini güncelleştirme
-  Aşağıdaki özelliklerden herhangi birini kullanan bir Excel veya Word'den projeniz varsa, hedef Framework'ü değiştirilirse kodunuzu değiştirmelisiniz [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] veya daha sonra:
+# <a name="update-excel-and-word-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>.NET Framework 4 ' e veya .NET Framework 4,5 ' ye geçirebileceğiniz Excel ve Word projelerini güncelleştirme
+  Aşağıdaki özelliklerden herhangi birini kullanan bir Excel veya Word projeniz varsa, hedef Framework [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] veya daha yeni olarak değiştirilirse kodunuzu değiştirmeniz gerekir:
 
-- [GetVstoObject ve HasVstoObject yöntemi](#GetVstoObject)
+- [GetVstoObject ve HasVstoObject yöntemleri](#GetVstoObject)
 
-- [Belge düzeyinde projelerde oluşturulan sınıflar](#generatedclasses)
+- [Belge düzeyi projelerinde oluşturulan sınıflar](#generatedclasses)
 
-- [Belgelerindeki Windows Forms denetimleri](#winforms)
+- [Belgelerde denetim Windows Forms](#winforms)
 
 - [Word içerik denetimi olayları](#ccevents)
 
 - [OLEObject ve OLEControl sınıfları](#ole)
 
-- [Controls.Item(Object) özelliği](#itemproperty)
+- [Controls. Item (nesne) özelliği](#itemproperty)
 
-- [CollectionBase'den türetilen koleksiyonları](#collections)
+- [CollectionBase 'den türetilen Koleksiyonlar](#collections)
 
-  Ayrıca kaldırmanız gerekir `Microsoft.Office.Tools.Excel.ExcelLocale1033Attribute` ve başvurular `Microsoft.Office.Tools.Excel.ExcelLocale1033Proxy` için yeniden hedeflendi Excel projeleri sınıftan [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] veya üzeri. Visual Studio bu öznitelik veya sınıf başvurusu, kaldırmaz.
+  Ayrıca, [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] veya daha sonra `Microsoft.Office.Tools.Excel.ExcelLocale1033Attribute` yeniden hedeflenen Excel projelerinin `Microsoft.Office.Tools.Excel.ExcelLocale1033Proxy` sınıfına olan başvurularını da kaldırmanız gerekir. Visual Studio bu özniteliği veya sınıf başvurusunu sizin için kaldırmaz.
 
-## <a name="remove-the-excellocale1033-attribute-from-excel-projects"></a>Excel projeleri ExcelLocale1033 özniteliğini kaldırın
- `Microsoft.Office.Tools.Excel.ExcelLocale1033Attribute` Hedefleyen çözümler için kullanılan Office çalışma zamanı için Visual Studio 2010 Araçları kısmından kaldırılan [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] veya üzeri. Ortak dil çalışma zamanı (CLR) [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ve daha sonra her zaman geçiş yerel kimliği1033 Excel nesne modeline ve artık bu öznitelik bu davranışı devre dışı bırakabilirsiniz. Daha fazla bilgi için [Genelleştirme ve yerelleştirme Excel çözümlerini](../vsto/globalization-and-localization-of-excel-solutions.md).
+## <a name="remove-the-excellocale1033-attribute-from-excel-projects"></a>ExcelLocale1033 özniteliğini Excel projelerinden kaldırma
+ , `Microsoft.Office.Tools.Excel.ExcelLocale1033Attribute` [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] Veya üstünü hedefleyen çözümler için kullanılan Office çalışma zamanı için Visual Studio 2010 Araçları ' nın bölümünden kaldırılmıştır. [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] Ve sonrasındaki ortak dil çalışma zamanı (CLR), her zaman 1033 yerel ayar kimliğini Excel nesne modeline geçirir ve bu özelliği artık bu davranışı devre dışı bırakmak için kullanamazsınız. Daha fazla bilgi için bkz. [Excel Çözümlerini Genelleştirme ve yerelleştirme](../vsto/globalization-and-localization-of-excel-solutions.md).
 
-### <a name="to-remove-the-excellocale1033attribute"></a>ExcelLocale1033Attribute kaldırmak için
+### <a name="to-remove-the-excellocale1033attribute"></a>ExcelLocale1033Attribute 'yi kaldırmak için
 
-1. Projeyi Visual Studio'da Aç açın **Çözüm Gezgini**.
+1. Visual Studio 'da proje açıkken **Çözüm Gezgini**açın.
 
-2. Altında **özellikleri** düğümü (C#) veya **Projem** (Visual Basic) düğümünü AssemblyInfo kod dosyası Kod Düzenleyicisi'nde açmak için çift tıklayın.
+2. **Özellikler** düğümü (için C#) veya **projem** düğümü altında (Visual Basic için), AssemblyInfo kod dosyasına çift tıklayarak kodu düzenleyici 'de açın.
 
     > [!NOTE]
-    > Visual Basic projelerinde tıklamanız **tüm dosyaları göster** düğmesine **Çözüm Gezgini** AssemblyInfo kod dosyasını görmek için.
+    > Visual Basic projelerinde, AssemblyInfo kod dosyasını görmek için **Çözüm Gezgini** **tüm dosyaları göster** düğmesini tıklamalısınız.
 
-3. Bulun `Microsoft.Office.Tools.Excel.ExcelLocale1033Attribute` ve dosyanın kaldırmak veya yorum çıkarın.
+3. Öğesini bulun `Microsoft.Office.Tools.Excel.ExcelLocale1033Attribute` ve dosyadan kaldırın ya da not edin.
 
     ```vb
     <Assembly: ExcelLocale1033Proxy(True)>
@@ -60,16 +60,16 @@ ms.locfileid: "67329022"
     [assembly: ExcelLocale1033Proxy(true)]
     ```
 
-## <a name="remove-a-reference-to-the-excellocal1033proxy-class"></a>Bir başvuru ExcelLocal1033Proxy sınıfı Kaldır
- Microsoft Office sistemi için Microsoft Visual Studio 2005 araçları kullanılarak oluşturulmuş projeler örneği Excel <xref:Microsoft.Office.Interop.Excel.Application> kullanarak nesne `Microsoft.Office.Tools.Excel.ExcelLocale1033Proxy` sınıfı. Bu sınıf hedefleyen çözümler için kullandığı Office çalışma zamanı için Visual Studio 2010 Araçları bölümünden kaldırıldı [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] veya üzeri. Bu nedenle, kaldırın veya bu sınıf başvuran kod satırı açıklama satırı yapın.
+## <a name="remove-a-reference-to-the-excellocal1033proxy-class"></a>ExcelLocal1033Proxy sınıfına bir başvuruyu kaldırma
+ Microsoft Office sistem için Microsoft Visual Studio 2005 araçları kullanılarak oluşturulan projeler, <xref:Microsoft.Office.Interop.Excel.Application> `Microsoft.Office.Tools.Excel.ExcelLocale1033Proxy` sınıfını kullanarak Excel nesnesini başlatır. Bu sınıf, [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] veya daha sonra hedeflenen çözümler için kullanılan Office çalışma zamanı için Visual Studio 2010 Araçları ' nın bölümünden kaldırılmıştır. Bu nedenle, bu sınıfa başvuran kod satırını kaldırmanız veya bir açıklama satırı oluşturmanız gerekir.
 
-### <a name="to-remove-the-reference-to-the-excellocal1033proxy-class"></a>ExcelLocal1033Proxy sınıfı başvuruyu kaldırmak için
+### <a name="to-remove-the-reference-to-the-excellocal1033proxy-class"></a>ExcelLocal1033Proxy sınıfına başvuruyu kaldırmak için
 
-1. Projeyi Visual Studio'da açın ve ardından açın **Çözüm Gezgini**.
+1. Projeyi Visual Studio 'da açın ve **Çözüm Gezgini**açın.
 
-2. İçinde **Çözüm Gezgini**, kısayol menüsünü açın *ThisAddIn.cs* (için C#) veya *ThisAddIn.vb* (için Visual Basic için) ve ardından **kodu görüntüle** .
+2. **Çözüm Gezgini**' de, *ThisAddin.cs* (for C#) veya *ThisAddIn. vb* için kısayol menüsünü açın (Visual Basic için) ve sonra **kodu görüntüle**' yi seçin.
 
-3. Kod Düzenleyicisi'nde, içinde `VSTO generated code` bölgesi, kaldırmak veya kodunun aşağıdaki satırı açıklama satırı yapın.
+3. Kod düzenleyicisinde, `VSTO generated code` bölgesinde aşağıdaki kod satırını kaldırın veya yorum yapın.
 
     ```vb
     Me.Application = CType(Microsoft.Office.Tools.Excel.ExcelLocale1033Proxy.Wrap(GetType(Excel.Application), Me.Application), Excel.Application)
@@ -81,8 +81,8 @@ ms.locfileid: "67329022"
 
     ```
 
-## <a name="GetVstoObject"></a> GetVstoObject ve HasVstoObject yöntemlerini kullanan kodu güncelleştirme
- .NET Framework 3. 5'i hedefleyen projelerde `GetVstoObject` veya `HasVstoObject` projenize aşağıdaki yerel nesne genişletme yöntemi olarak yöntemleri kullanılabilir: <xref:Microsoft.Office.Interop.Word.Document>, <xref:Microsoft.Office.Interop.Excel.Workbook>, <xref:Microsoft.Office.Interop.Excel.Worksheet>, veya <xref:Microsoft.Office.Interop.Excel.ListObject>. Bu yöntemi çağırdığınızda, bir parametre gerekmez. Aşağıdaki kod örneği, bir sözcük VSTO .NET Framework 3. 5'i hedefleyen eklentinin GetVstoObject yöntemini kullanmayı gösterir.
+## <a name="GetVstoObject"></a>GetVstoObject ve HasVstoObject yöntemlerini kullanan kodu güncelleştirme
+ .NET Framework 3,5 ' i `GetVstoObject` hedefleyen projelerde, veya `HasVstoObject` yöntemleri projenizdeki aşağıdaki yerel nesnelerden birinde uzantı yöntemleri olarak kullanılabilir: <xref:Microsoft.Office.Interop.Word.Document>, <xref:Microsoft.Office.Interop.Excel.Workbook>, <xref:Microsoft.Office.Interop.Excel.Worksheet>veya <xref:Microsoft.Office.Interop.Excel.ListObject>. Bu yöntemleri çağırdığınızda bir parametre geçirmeniz gerekmez. Aşağıdaki kod örneği, .NET Framework 3,5 ' i hedefleyen bir Word VSTO eklentisi içinde GetVstoObject yönteminin nasıl kullanılacağını gösterir.
 
 ```vb
 Dim vstoDocument as Microsoft.Office.Tools.Word.Document = _
@@ -94,9 +94,9 @@ Microsoft.Office.Tools.Word.Document vstoDocument =
     Globals.ThisAddIn.Application.ActiveDocument.GetVstoObject();
 ```
 
- ' İ hedefleyen projelerde [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] veya daha sonra bu yöntemler aşağıdaki yollardan biriyle erişmek için kodunuzu değiştirmeniz gerekir:
+ [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] Veya sonraki bir sürümü hedefleyen projelerde, aşağıdaki yöntemlerden biriyle bu yöntemlere erişmek için kodunuzu değiştirmeniz gerekir:
 
-- Bu yöntemler genişletme yöntemlerini üzerinde erişmeye devam edebilirsiniz <xref:Microsoft.Office.Interop.Word.Document>, <xref:Microsoft.Office.Interop.Excel.Workbook>, <xref:Microsoft.Office.Interop.Excel.Worksheet>, veya <xref:Microsoft.Office.Interop.Excel.ListObject> nesneleri. Bununla birlikte, artık tarafından döndürülen nesne geçmelidir `Globals.Factory` bu yöntemlere yapılan özelliği.
+- <xref:Microsoft.Office.Interop.Word.Document>Bu yöntemlere <xref:Microsoft.Office.Interop.Excel.Workbook> ,,veya<xref:Microsoft.Office.Interop.Excel.ListObject> nesnelerinde uzantı yöntemleri olarak erişmeye devam edebilirsiniz. <xref:Microsoft.Office.Interop.Excel.Worksheet> Ancak artık `Globals.Factory` özelliği tarafından döndürülen nesneyi bu yöntemlere geçirmeniz gerekir.
 
   ```vb
   Dim vstoDocument as Microsoft.Office.Tools.Word.Document = _
@@ -108,7 +108,7 @@ Microsoft.Office.Tools.Word.Document vstoDocument =
       Globals.ThisAddIn.Application.ActiveDocument.GetVstoObject(Globals.Factory);
   ```
 
-- Alternatif olarak, bu yöntem tarafından döndürülen nesne üzerinde erişebilirsiniz `Globals.Factory` özelliği. Bu yöntemler bu şekilde eriştiğinizde, yönteme genişletmek istediğiniz yerel nesne geçmesi gerekir.
+- Alternatif olarak, bu yöntemlere `Globals.Factory` özelliği tarafından döndürülen nesne üzerinde erişebilirsiniz. Bu yöntemlere bu şekilde eriştiğinizde, genişletmek istediğiniz yerel nesneyi yöntemine geçirmeniz gerekir.
 
   ```vb
   Dim vstoDocument as Microsoft.Office.Tools.Word.Document = _
@@ -120,32 +120,32 @@ Microsoft.Office.Tools.Word.Document vstoDocument =
       Globals.Factory.GetVstoObject(Globals.ThisAddIn.Application.ActiveDocument);
   ```
 
-  Daha fazla bilgi için [genişletmek Word belgelerini ve Excel çalışma kitaplarını çalışma zamanında VSTO Add-Ins](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).
+  Daha fazla bilgi için bkz. [çalışma ZAMANıNDA VSTO Eklentilerindeki Word belgelerini ve Excel çalışma kitaplarını genişletme](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).
 
-## <a name="generatedclasses"></a> Belge düzeyinde projelerde oluşturulan sınıfların örneklerini kullanan kodu güncelleştirme
- .NET Framework 3.5 hedefleyen belge düzeyinde projelerde aşağıdaki sınıflarda projelerde oluşturulan sınıflar türetilen [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]:
+## <a name="generatedclasses"></a>Belge düzeyi projelerde oluşturulan sınıfların örneklerini kullanan kodu güncelleştirme
+ .NET Framework 3,5 ' i hedefleyen belge düzeyi projelerde, projelerdeki oluşturulan sınıflar içinde [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]aşağıdaki sınıflardan türetilir:
 
 - `ThisDocument`: <xref:Microsoft.Office.Tools.Word.Document>
 
 - `ThisWorkbook`: <xref:Microsoft.Office.Tools.Excel.Workbook>
 
-- `Sheet` *n*: <xref:Microsoft.Office.Tools.Excel.Worksheet>
+- `Sheet`*n*:<xref:Microsoft.Office.Tools.Excel.Worksheet>
 
-- `Chart` *n*: <xref:Microsoft.Office.Tools.Excel.ChartSheet>
+- `Chart`*n*:<xref:Microsoft.Office.Tools.Excel.ChartSheet>
 
-  ' İ hedefleyen projelerde [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ya da sonraki içindeki türleri [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] yukarıda listelenen, sınıf yerine arayüzleridir. Oluşturulan projelerde hedefleyen sınıfları [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] veya daha sonra aşağıdaki yeni sınıflar türetilen [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]:
+  [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] Veya daha sonra hedeflenen projelerde, yukarıda [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] listelenen türler sınıflar yerine arayüzlerdir. [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] Veya sonrasını hedefleyen projelerde oluşturulan sınıflar, [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]içindeki aşağıdaki yeni sınıflardan türetilir:
 
 - `ThisDocument`: <xref:Microsoft.Office.Tools.Word.DocumentBase>
 
 - `ThisWorkbook`: <xref:Microsoft.Office.Tools.Excel.WorkbookBase>
 
-- `Sheet` *n*: <xref:Microsoft.Office.Tools.Excel.WorksheetBase>
+- `Sheet`*n*:<xref:Microsoft.Office.Tools.Excel.WorksheetBase>
 
-- `Chart` *n*: <xref:Microsoft.Office.Tools.Excel.ChartSheetBase>
+- `Chart`*n*:<xref:Microsoft.Office.Tools.Excel.ChartSheetBase>
 
-  Kodu, projenizdeki türetildiği temel sınıf olarak oluşturulan sınıflardan birini örneğine başvuruyorsa, kodu değiştirmeniz gerekir.
+  Projenizdeki kod, tarafından türetilen temel sınıf olarak oluşturulan sınıflardan birinin bir örneğine başvuruyorsa, kodu değiştirmeniz gerekir.
 
-  Örneğin, .NET Framework 3. 5'i hedefleyen bir Excel çalışma kitabı projesinde, oluşturulan örneklerinde bazı işini gerçekleştiren bir yardımcı yöntem olabilir `Sheet` *n* projeniz içerisindeki sınıflar.
+  Örneğin, .NET Framework 3,5 ' i hedefleyen bir Excel çalışma kitabı projesinde, projenizde oluşturulan `Sheet` *n* sınıflarının örnekleri üzerinde bazı çalışmalar gerçekleştiren bir yardımcı yönteminiz olabilir.
 
 ```vb
 Private Sub DoSomethingToSheet(ByVal worksheet As Microsoft.Office.Tools.Excel.Worksheet)
@@ -160,9 +160,9 @@ private void DoSomethingToSheet(Microsoft.Office.Tools.Excel.Worksheet worksheet
 }
 ```
 
- Proje için hedefi yeniden belirlerseniz [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] veya daha sonra aşağıdaki değişikliklerden birini kodunuza yapmanız gerekir:
+ Projeyi [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] veya sonraki bir sürümüne yeniden hedeflemeniz durumunda kodunuzda aşağıdaki değişikliklerden birini yapmalısınız:
 
-- Çağıran herhangi bir kod değiştirme `DoSomethingToSheet` geçirilecek yöntemi <xref:Microsoft.Office.Tools.Excel.WorksheetBase.Base%2A> özelliği bir <xref:Microsoft.Office.Tools.Excel.WorksheetBase> projenizdeki nesne. Bu özellik döndürür bir <xref:Microsoft.Office.Tools.Excel.Worksheet> nesne.
+- Projenizdeki bir `DoSomethingToSheet` nesnenin<xref:Microsoft.Office.Tools.Excel.WorksheetBase> özelliğini geçirmek için yöntemini çağıran herhangi bir <xref:Microsoft.Office.Tools.Excel.WorksheetBase.Base%2A> kodu değiştirin. Bu özellik bir <xref:Microsoft.Office.Tools.Excel.Worksheet> nesne döndürür.
 
     ```vb
     DoSomethingToSheet(Globals.Sheet1.Base)
@@ -172,7 +172,7 @@ private void DoSomethingToSheet(Microsoft.Office.Tools.Excel.Worksheet worksheet
     DoSomethingToSheet(Globals.Sheet1.Base);
     ```
 
-- Değiştirme `DoSomethingToSheet` beklenir yöntem parametresi bir <xref:Microsoft.Office.Tools.Excel.WorksheetBase> bunun yerine nesne.
+- Yöntem parametresini `DoSomethingToSheet` , bunun yerine bir <xref:Microsoft.Office.Tools.Excel.WorksheetBase> nesne beklediği şekilde değiştirin.
 
     ```vb
     Private Sub DoSomethingToSheet(ByVal worksheet As Microsoft.Office.Tools.Excel.WorksheetBase)
@@ -187,21 +187,21 @@ private void DoSomethingToSheet(Microsoft.Office.Tools.Excel.Worksheet worksheet
     }
     ```
 
-## <a name="winforms"></a> Belgelerindeki Windows Forms denetimleri kullanan kodu güncelleştirme
- Eklemelisiniz bir **kullanarak** (C#) veya **içeri aktarmalar** for deyimi (Visual Basic) <xref:Microsoft.Office.Tools.Excel> veya <xref:Microsoft.Office.Tools.Word> Windows eklemek için denetimleri özelliğini kullanan hiçbir kod dosyasının en üstüne ad alanı Belge veya çalışma sayfası denetimlerini programlı olarak oluşturur.
+## <a name="winforms"></a>Belgelerde Windows Forms denetimleri kullanan kodu güncelleştirme
+ Belge veya çalışma sayfasına Windows Forms denetimleriC#eklemek için Controls özelliğini kullanan herhangi bir kod dosyasının <xref:Microsoft.Office.Tools.Excel> en <xref:Microsoft.Office.Tools.Word> üstüne veya ad alanı için bir **using** () veya **Imports** (Visual Basic) ifadesini eklemeniz gerekir kullandığında.
 
- .NET Framework 3.5, Windows Forms denetimleri ekleme yöntemleri hedefleyen projelerde (gibi `AddButton` yöntemi) tanımlanan <xref:Microsoft.Office.Tools.Excel.ControlCollection> ve <xref:Microsoft.Office.Tools.Word.ControlCollection> sınıfları.
+ .NET Framework 3,5 ' i hedefleyen projelerde, Windows Forms denetimleri ( `AddButton` yöntemi gibi) ekleyen Yöntemler <xref:Microsoft.Office.Tools.Excel.ControlCollection> ve <xref:Microsoft.Office.Tools.Word.ControlCollection> sınıflarında tanımlanmıştır.
 
- ' İ hedefleyen projelerde [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ya da daha sonra bu yöntemleri denetimleri özelliği kullanılabilir genişletme yöntemleri. Bu uzantı yöntemleri kullanmak için yöntemleri kullanmak kod dosyası olmalıdır bir **kullanarak** veya **içeri aktarmalar** bildirimi <xref:Microsoft.Office.Tools.Excel> veya <xref:Microsoft.Office.Tools.Word> ad alanı. Bu bildirimi hedefleyen yeni projelerde otomatik olarak oluşturulan [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] veya üzeri. Projeyi yeniden hedeflediğinizde eklemelisiniz ancak, bu deyimi otomatik olarak projelerinde hedefleyen .NET Framework 3.5 eklenmez.
+ [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] Veya daha sonra hedeflenen projelerde, bu yöntemler denetimler özelliğinde kullanılabilen genişletme yöntemleridir. Bu uzantı yöntemlerini kullanmak için, yöntemlerini kullandığınız kod dosyası <xref:Microsoft.Office.Tools.Excel> veya <xref:Microsoft.Office.Tools.Word> ad alanı için bir **using** veya **Imports** bildirimine sahip olmalıdır. Bu ifade, [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] veya daha sonra hedeflenen yeni projelerde otomatik olarak oluşturulur. Ancak, bu ifade .NET Framework 3,5 ' i hedefleyen projelerde otomatik olarak eklenmez, bu nedenle projeyi yeniden hedeflediğinizde eklemeniz gerekir.
 
- Daha fazla bilgi için [Office belgelerine çalışma zamanında denetimler ekleme](../vsto/adding-controls-to-office-documents-at-run-time.md).
+ Daha fazla bilgi için bkz. [çalışma zamanında Office belgelerine denetim ekleme](../vsto/adding-controls-to-office-documents-at-run-time.md).
 
-## <a name="ccevents"></a> Word içerik denetim olaylarını işleme kodunu güncelleştirme
- .NET Framework 3. 5'i hedefleyen projelerde, Word içerik denetimleri olayları genel tarafından işlenen <xref:System.EventHandler%601> temsilci. ' İ hedefleyen projelerde [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] veya daha sonra bu olaylar diğer temsilcileri tarafından işlenir.
+## <a name="ccevents"></a>Word içerik denetimi olaylarını işleyen kodu güncelleştirme
+ .NET Framework 3,5 ' i hedefleyen projelerde, Word içerik denetimlerinin olayları genel <xref:System.EventHandler%601> temsilci tarafından işlenir. [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] Veya daha sonra hedeflenen projelerde, bu olaylar diğer temsilciler tarafından işlenir.
 
- Word içerik denetimi olayları ve hedefleyen projelerde bunlarla ilişkili temsilciler aşağıdaki tabloda listelenmektedir [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] veya üzeri.
+ Aşağıdaki tabloda, Word içerik denetim olayları ve bunlarla [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] veya daha sonra hedeflenen projelerde ilişkili temsilciler listelenmektedir.
 
-|Olay|Kullanılacak temsilci [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ve sonraki projeleri|
+|Olay|[!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] Ve sonraki projelerde kullanılacak temsilci|
 |-----------| - |
 |<xref:Microsoft.Office.Tools.Word.ContentControlBase.Added>|<xref:Microsoft.Office.Tools.Word.ContentControlAddedEventHandler>|
 |<xref:Microsoft.Office.Tools.Word.ContentControlBase.ContentUpdating>|<xref:Microsoft.Office.Tools.Word.ContentControlContentUpdatingEventHandler>|
@@ -210,28 +210,28 @@ private void DoSomethingToSheet(Microsoft.Office.Tools.Excel.Worksheet worksheet
 |<xref:Microsoft.Office.Tools.Word.ContentControlBase.Exiting>|<xref:Microsoft.Office.Tools.Word.ContentControlExitingEventHandler>|
 |<xref:Microsoft.Office.Tools.Word.ContentControlBase.StoreUpdating>|<xref:Microsoft.Office.Tools.Word.ContentControlStoreUpdatingEventHandler>|
 
-## <a name="ole"></a> OLEObject ve OLEControl sınıfları kullanan kodu güncelleştirme
- .NET Framework 3. 5'i hedefleyen projelerde, özel denetimler (örneğin, Windows Forms kullanıcı denetimleri) bir belge veya çalışma sayfasına ekleyebilirsiniz `Microsoft.Office.Tools.Excel.OLEObject` ve `Microsoft.Office.Tools.Word.OLEControl` sınıfları.
+## <a name="ole"></a>OLEObject ve OLEControl sınıfları kullanan kodu güncelleştirme
+ .NET Framework 3,5 ' i hedefleyen projelerde, `Microsoft.Office.Tools.Excel.OLEObject` ve sınıflarını kullanarak bir belgeye veya çalışma sayfasına özel denetimler (örneğin, `Microsoft.Office.Tools.Word.OLEControl` Windows Forms Kullanıcı denetimleri) ekleyebilirsiniz.
 
- ' İ hedefleyen projelerde [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] veya daha sonra bu sınıflar tarafından değiştirilmiştir <xref:Microsoft.Office.Tools.Excel.ControlSite> ve <xref:Microsoft.Office.Tools.Word.ControlSite> arabirimleri. Başvuran bir kodu değiştirmeniz gerekir `Microsoft.Office.Tools.Excel.OLEObject` ve `Microsoft.Office.Tools.Word.OLEControl` başvuracak şekilde <xref:Microsoft.Office.Tools.Excel.ControlSite> ve <xref:Microsoft.Office.Tools.Word.ControlSite>. Yeni adlar dışında bu denetimler, .NET Framework 3. 5'i hedefleyen projelerde aynı şekilde davranır.
+ [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] Veya daha sonra hedeflenen projelerde, bu sınıflar <xref:Microsoft.Office.Tools.Excel.ControlSite> ve <xref:Microsoft.Office.Tools.Word.ControlSite> arabirimleri ile değiştirilmiştir. `Microsoft.Office.Tools.Excel.OLEObject` Bunun yerine `Microsoft.Office.Tools.Word.OLEControl` öğesineveöğesinebaşvurankodudeğiştirmenizgerekir.<xref:Microsoft.Office.Tools.Excel.ControlSite> <xref:Microsoft.Office.Tools.Word.ControlSite> Yeni adlar dışında, bu denetimler .NET Framework 3,5 ' i hedefleyen projelerde yaptıkları gibi davranır.
 
- Daha fazla bilgi için [Office belgelerine çalışma zamanında denetimler ekleme](../vsto/adding-controls-to-office-documents-at-run-time.md).
+ Daha fazla bilgi için bkz. [çalışma zamanında Office belgelerine denetim ekleme](../vsto/adding-controls-to-office-documents-at-run-time.md).
 
-## <a name="itemproperty"></a> Controls.Item(Object) özelliği kullanan kodu güncelleştirme
- .NET Framework 3. 5'i hedefleyen projelerde Microsoft.Office.Tools.Excel.Worksheet.Controls Item(Object) özelliğini kullanabilirsiniz veya `Microsoft.Office.Tools.Excel.Worksheet.Controls` belge veya çalışma belirtilen bir denetim olup olmadığını belirlemek için koleksiyon.
+## <a name="itemproperty"></a>Controls. Item (Object) özelliğini kullanan kodu güncelleştirme
+ .NET Framework 3,5 ' i hedefleyen projelerde, bir belge veya çalışma sayfasının belirtilen denetime sahip olup olmadığını anlamak için Microsoft. Office. Tools. Word. Document. Controls veya `Microsoft.Office.Tools.Excel.Worksheet.Controls` Collection öğesinin Item (Object) özelliğini kullanabilirsiniz.
 
- ' İ hedefleyen projelerde [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] veya daha sonra bu koleksiyonlara Item(Object) özelliği kaldırıldı. Belge veya çalışma belirli bir denetimi içerip içermediğini belirlemek için Contains(System.Object) yöntemi kullanın. <xref:Microsoft.Office.Tools.Word.Document.Controls%2A> veya <xref:Microsoft.Office.Tools.Excel.Worksheet.Controls%2A> koleksiyonu yerine.
+ [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] Veya daha sonra hedeflenen projelerde, öğe (nesne) özelliği bu koleksiyonlardan kaldırılmıştır. Bir belge veya çalışma sayfasının belirtilen denetimi içerip içermediğini anlamak için, <xref:Microsoft.Office.Tools.Word.Document.Controls%2A> veya <xref:Microsoft.Office.Tools.Excel.Worksheet.Controls%2A> koleksiyonunun Contains (System. Object) yöntemini kullanın.
 
- Belgeler ve çalışma denetimlerini toplama hakkında daha fazla bilgi için bkz. [Office belgelerine çalışma zamanında denetimler ekleme](../vsto/adding-controls-to-office-documents-at-run-time.md).
+ Belge ve çalışma sayfalarının denetimler koleksiyonu hakkında daha fazla bilgi için bkz. [çalışma zamanında Office belgelerine denetim ekleme](../vsto/adding-controls-to-office-documents-at-run-time.md).
 
-## <a name="collections"></a> CollectionBase'den türetilen koleksiyonları kullanan kodu güncelleştirme
- .NET Framework 3. 5'i hedefleyen projelerde'nın çeşitli koleksiyon türlerini [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] öğesinden türetilen <xref:System.Collections.CollectionBase> gibi sınıf `Microsoft.Office.Tools.SmartTagCollection`, `Microsoft.Office.Tools.Excel.ControlCollection`, ve `Microsoft.Office.Tools.Word.ControlCollection`.
+## <a name="collections"></a>CollectionBase 'den türetilen koleksiyonları kullanan kodu güncelleştirme
+ .NET Framework 3,5 ' i hedefleyen projelerde,, [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] ve `Microsoft.Office.Tools.Word.ControlCollection`gibi <xref:System.Collections.CollectionBase> `Microsoft.Office.Tools.Excel.ControlCollection`sınıfından `Microsoft.Office.Tools.SmartTagCollection`türetilmiş çeşitli koleksiyon türleri.
 
- ' İ hedefleyen projelerde [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ya da daha sonra bu koleksiyon türleri artık öğesinden türetilen olmayan arabirimleri <xref:System.Collections.CollectionBase>. Bazı üyeleri artık gibi bu koleksiyon türleri üzerinde kullanılabilir <xref:System.Collections.CollectionBase.Capacity%2A>, <xref:System.Collections.CollectionBase.List%2A>, ve <xref:System.Collections.CollectionBase.InnerList%2A>.
+ [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] Veya daha sonra hedeflenen projelerde, bu koleksiyon türleri artık öğesinden <xref:System.Collections.CollectionBase>türetilmeyen arabirimlerdir. Bazı üyeler,, ve <xref:System.Collections.CollectionBase.Capacity%2A> <xref:System.Collections.CollectionBase.InnerList%2A>gibi bu koleksiyon türlerinde <xref:System.Collections.CollectionBase.List%2A>artık kullanılamaz.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 - [Office çözümlerini .NET Framework 4 veya sonraki sürümlere geçirme](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md)
 - [İçerik denetimleri](../vsto/content-controls.md)
-- [Word belgelerini ve Excel çalışma kitaplarını VSTO eklentileri çalışma zamanında genişletme](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)
-- [Office belgelerine çalışma zamanında denetimler ekleme](../vsto/adding-controls-to-office-documents-at-run-time.md)
-- [Office projelerindeki nesnelere genel erişim](../vsto/global-access-to-objects-in-office-projects.md)
+- [VSTO Eklentilerindeki Word belgelerini ve Excel çalışma kitaplarını çalışma zamanında genişletme](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)
+- [Çalışma zamanında Office belgelerine denetim ekleme](../vsto/adding-controls-to-office-documents-at-run-time.md)
+- [Office Projelerindeki Nesnelere Genel erişim](../vsto/global-access-to-objects-in-office-projects.md)

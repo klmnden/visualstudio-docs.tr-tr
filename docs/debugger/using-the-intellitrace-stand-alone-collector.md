@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e5219e6e3977be59d89b7835413092f1fbeb200
-ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
+ms.openlocfilehash: 5fe671b10a701bb355a476ff9bc577bb4cdca71b
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68680625"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71252524"
 ---
 # <a name="using-the-intellitrace-stand-alone-collector-c-visual-basic"></a>IntelliTrace tek başına toplayıcıyı kullanma (C#, Visual Basic)
 
@@ -70,7 +70,7 @@ ms.locfileid: "68680625"
 
 5. [Bir Web uygulamasından veya SharePoint uygulamasından veri topla](#BKMK_Collect_Data_from_IIS_Application_Pools)
 
-     -veya-
+     veya
 
      [Yönetilen bir uygulamadan veri toplama](#BKMK_Collect_Data_from_Executables)
 
@@ -195,7 +195,7 @@ ms.locfileid: "68680625"
 
         `icacls "C:\IntelliTraceLogFiles" /grant "IIS APPPOOL\SharePoint - 80":F`
 
-       -veya-
+       veya
 
    - Windows Gezgini (veya dosya Gezgini) ile izinleri ayarlamak için:
 
@@ -315,7 +315,7 @@ ms.locfileid: "68680625"
 
   - Uygulamayla ilgili olmayan olayları devre dışı bırakarak, başlangıç süresini azaltabilirsiniz. Örneğin, Windows Iş akışı kullanmayan uygulamalar için Windows Workflow olaylarını devre dışı bırakın.
 
-  - Kayıt defterine erişen ancak kayıt defteri ayarlarıyla ilgili sorunları göstermemekte olan uygulamalar için kayıt defteri olaylarını devre dışı bırakarak, başlatma ve çalışma zamanı performansını geliştirebilirsiniz.
+  - Kayıt defterine erişen ancak kayıt defteri ayarlarıyla ilgili sorunları göstermemekte olan uygulamalar için kayıt defteri olaylarını devre dışı bırakarak, başlatma ve çalışma süresi performansını geliştirebilirsiniz.
 
 - IntelliTrace 'in veri topladığı toplama planındaki modülleri gözden geçirin. Koleksiyon planını yalnızca ilgilendiğiniz modülleri içerecek şekilde düzenleyin:
 

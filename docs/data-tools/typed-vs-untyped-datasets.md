@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 31933e2045981fd6a0f38fb19a9480787c9f282a
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 1c5ae8c665c195a1a50e02afda97ec34ac163297
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68925579"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71252915"
 ---
 # <a name="typed-vs-untyped-datasets"></a>Yazılan ve yazılmayan veri kümelerinin karşılaştırması
 Türü belirtilmiş veri kümesi, ilk olarak temel <xref:System.Data.DataSet> sınıftan türetilmiş bir veri kümesidir ve sonra yeni ve türü kesin belirlenmiş bir veri kümesi sınıfı oluşturmak için bir. xsd dosyasında depolanan **veri kümesi Tasarımcısı**bilgileri kullanır. Şemadan alınan bilgiler (tablolar, sütunlar, vb.) oluşturulup ilk sınıf nesne ve özellik kümesi olarak bu yeni veri kümesi sınıfına derlenir. Türü belirtilmiş bir veri kümesi temel <xref:System.Data.DataSet> sınıftan devraldığı için, yazılan sınıf <xref:System.Data.DataSet> sınıfın tüm işlevselliğini varsayar ve bir <xref:System.Data.DataSet> sınıfın örneğini bir parametre olarak alan yöntemlerle birlikte kullanılabilir.
@@ -34,7 +34,7 @@ Buna karşılık, türsüz bir veri kümesiyle çalışıyorsanız, eşdeğer ko
 [!code-csharp[VbRaddataDatasets#5](../data-tools/codesnippet/CSharp/typed-vs-untyped-datasets_2.cs)]
 [!code-vb[VbRaddataDatasets#5](../data-tools/codesnippet/VisualBasic/typed-vs-untyped-datasets_2.vb)]
 
-Yazılan erişim yalnızca Visual Studio **Kod Düzenleyicisi**'nde IntelliSense tarafından tam olarak desteklenmekte, ancak aynı zamanda daha kolay okunabilir. İle çalışmanın yanı sıra, yazılan veri kümesinin sözdizimi, derleme zamanında tür denetlemesi sağlar ve veri kümesi üyelerine değer atarken hata olasılığını büyük ölçüde azaltır. Sınıfınıza <xref:System.Data.DataSet> bir sütunun adını değiştirip uygulamanızı derlerseniz, derleme hatası alırsınız. **Görev listesi**yapı hatasına çift tıklayarak, eski sütun adına başvuruda bulunan satır veya kod satırlarına doğrudan gidebilirsiniz. Yazılan bir veri kümesindeki tablo ve sütunlara erişim çalışma zamanında daha hızlı bir şekilde erişim, çalışma zamanında koleksiyonlar aracılığıyla değil, derleme zamanında belirlendiği için de biraz daha hızlıdır.
+Yazılan erişim yalnızca Visual Studio **Kod Düzenleyicisi**'nde IntelliSense tarafından tam olarak desteklenmekte, ancak aynı zamanda daha kolay okunabilir. İle çalışmanın yanı sıra, yazılan veri kümesinin sözdizimi, derleme zamanında tür denetlemesi sağlar ve veri kümesi üyelerine değer atarken hata olasılığını büyük ölçüde azaltır. Sınıfınıza <xref:System.Data.DataSet> bir sütunun adını değiştirip uygulamanızı derlerseniz, derleme hatası alırsınız. **Görev listesi**yapı hatasına çift tıklayarak, eski sütun adına başvuruda bulunan satır veya kod satırlarına doğrudan gidebilirsiniz. Belirlenmiş bir veri kümesindeki tablo ve sütunlara erişim, çalışma zamanında, çalışma zamanında koleksiyonlar aracılığıyla değil, derleme zamanında belirlendiği için, çalışma zamanında biraz daha hızlıdır.
 
 Yazılan veri kümelerinde birçok avantaj olsa da, türsüz bir veri kümesi çeşitli koşullarda yararlı olur. En belirgin senaryo, veri kümesi için kullanılabilir şema olmadığında olur. Bu durum, örneğin, uygulamanız veri kümesi döndüren bir bileşenle etkileşiyorsa, ancak yapısının ne olduğu konusunda bilgi sahibi değilseniz bu durum oluşabilir. Benzer şekilde, statik, öngörülebilir bir yapıya sahip olmayan verilerle çalışırken zamanlar da vardır. Bu durumda, yazılan veri kümesi sınıfını veri yapısındaki her değişiklik ile yeniden oluşturmanız gerektiğinden, türü belirtilmiş bir veri kümesi kullanılması pratik değildir.
 

@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 31f125c11bb364f2650384d8d5894f7f48a9bd3e
-ms.sourcegitcommit: 3cda0d58c5cf1985122b8977b33a171c7359f324
+ms.openlocfilehash: 5e9220df4f9abdb806495e6108fb6039b28e0b7b
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2019
-ms.locfileid: "70154927"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71254377"
 ---
 # <a name="step-6-use-the-polls-django-web-project-template"></a>6\. Adım: Docgo Web proje şablonunu Yoklat ' i kullanın
 
@@ -112,7 +112,7 @@ class Choice(models.Model):
         return self.text
 ```
 
-Gördüğünüz gibi bir yoklama bir açıklama tutar, `text` alan ve bir yayım tarihi içinde `pub_date`. Bu alanlar için yoklama veritabanındaki mevcut yalnızca olanlardır; `total_votes` çalışma zamanında hesaplanan alan.
+Gördüğünüz gibi bir yoklama bir açıklama tutar, `text` alan ve bir yayım tarihi içinde `pub_date`. Bu alanlar, veritabanında yoklama için mevcut olan tek alanlardır; `total_votes` alan çalışma zamanında hesaplanır.
 
 Seçim bir yoklama ilişkili `poll` alan, bir açıklama içeriyor `text`ve bu seçenek sayısını tutar `votes`. `votes_percentage` Alan çalışma zamanında hesaplanır ve veritabanında bulunamadı.
 
@@ -192,7 +192,7 @@ Genel olarak, Django'nın taşıma özelliğini, hiçbir zaman veritabanı şema
 
 ### <a name="question-what-happens-if-i-forget-to-run-the-migrate-command-after-making-changes-to-models"></a>Unuza Modellerinizde değişiklik yaptıktan sonra Migrate komutunu çalıştırmayı unutursam ne olur?
 
-Yanıtınıza Modeller veritabanındaki verilerle eşleşmezse, uygun özel durumlarla birlikte çalışma zamanında Docgo başarısız olur. Örneğin, önceki bölümde gösterilenle model değişikliği geçirmek, parantezi unutsanız bile bir hata görürsünüz **sütun yok: app_poll.author**:
+Yanıtınıza Modeller veritabanındaki verilerle eşleşmezse, uygun özel durumlarla birlikte, çalışma zamanında Docgo başarısız olur. Örneğin, önceki bölümde gösterilenle model değişikliği geçirmek, parantezi unutsanız bile bir hata görürsünüz **sütun yok: app_poll.author**:
 
 ![Ne zaman model değişikliği geçişi yapılmamış gösterilen hata](media/django/step06-exception-when-forgetting-to-migrate.png)biçimindeki telefon numarasıdır.
 

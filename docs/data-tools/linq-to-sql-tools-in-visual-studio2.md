@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4105a93d4ad459c8bc1cb3a7a20b37c69f311c12
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9511f2101c8dbac0ae8a9ba9e08f9a4f22067c3a
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62566426"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71252933"
 ---
 # <a name="linq-to-sql-tools-in-visual-studio"></a>Visual Studio'da LINQ to SQL araçları
 
@@ -40,7 +40,7 @@ Seçtiğinizde, *.dbml* dosya, Visual Studio gösterir **O/R Tasarımcısı** y�
 ![LINQ to SQL Tasarımcı](../data-tools/media/raddata-linq-to-sql-designer.png)
 
 > [!IMPORTANT]
-> **O/R Tasarımcısı** yalnızca 1:1 eşleme ilişkileri desteklediğinden, bir Basit Nesne İlişkisel eşleyicisidir. Diğer bir deyişle, bir varlık sınıfı yalnızca 1:1 eşleme ilişkisi olan bir veritabanı tablosu veya görünümü olabilir. Birleştirilmiş bir tabloya bir varlık sınıfı eşleme gibi karmaşık eşleme desteklenmiyor; Entity Framework için karmaşık eşleme kullanın. Ayrıca, bir tek yönlü bir kod oluşturucuyu Tasarımcısı olur. Başka bir deyişle, Tasarımcı yüzeyine yaptığınız değişiklikleri kod dosyasında yansıtılır. El ile yapılan kod dosyası değil yansıtılır **O/R Tasarımcısı**. Kod dosyasında el ile yaptığınız tüm değişiklikler Tasarımcı kaydedilir ve kod yeniden oluşturulursa üzerine yazılır. Kullanıcı kodu ekleyin ve tarafından oluşturulan sınıflar genişletme hakkında daha fazla bilgi için **O/R Tasarımcısı**, bkz: [nasıl yapılır: O/R tasarımcısı tarafından oluşturulan kodu genişletme](../data-tools/how-to-extend-code-generated-by-the-o-r-designer.md).
+> **O/R Tasarımcısı** yalnızca 1:1 eşleme ilişkileri desteklediğinden, bir Basit Nesne İlişkisel eşleyicisidir. Diğer bir deyişle, bir varlık sınıfı yalnızca 1:1 eşleme ilişkisi olan bir veritabanı tablosu veya görünümü olabilir. Birleştirilmiş bir tabloya bir varlık sınıfı eşleme gibi karmaşık eşleme desteklenmiyor; Entity Framework için karmaşık eşleme kullanın. Ayrıca, bir tek yönlü bir kod oluşturucuyu Tasarımcısı olur. Başka bir deyişle, Tasarımcı yüzeyine yaptığınız değişiklikleri kod dosyasında yansıtılır. El ile yapılan kod dosyası değil yansıtılır **O/R Tasarımcısı**. Kod dosyasında el ile yaptığınız tüm değişiklikler Tasarımcı kaydedilir ve kod yeniden oluşturulursa üzerine yazılır. Kullanıcı kodu ekleme ve **O/R Tasarımcısı**tarafından oluşturulan sınıfları genişletme hakkında daha fazla bilgi için bkz [. nasıl yapılır: O/R Tasarımcısı](../data-tools/how-to-extend-code-generated-by-the-o-r-designer.md)tarafından oluşturulan kodu genişletin.
 
 ## <a name="create-and-configure-the-datacontext"></a>Oluşturma ve DataContext yapılandırma
 
@@ -48,7 +48,7 @@ Siz ekledikten sonra bir **LINQ to SQL sınıfları** öğesi projeye ve açık 
 
 ## <a name="create-entity-classes-that-map-to-database-tables-and-views"></a>Veritabanı tabloları ve görünümleri eşleştiren varlık sınıfları oluşturma
 
-Veritabanı tabloları ve görünümleri sürükleyerek, tablolar ve görünümler ile eşlenen varlık sınıfları oluşturabilirsiniz **Sunucu Gezgini** veya **veritabanı Gezgini** üzerine **O/R Tasarımcısı**. Önceki bölümde belirtildiği gibi <xref:System.Data.Linq.DataContext> tasarım yüzeyine sürüklediğiniz ilk öğesi tarafından sağlanan bağlantı bilgileriyle yapılandırılır. Farklı bir bağlantı kullanan bir sonraki öğe için eklenip eklenmediğini **O/R Tasarımcısı**, bağlantı için değiştirebileceğiniz <xref:System.Data.Linq.DataContext>. Daha fazla bilgi için [nasıl yapılır: Tablolar ve görünümler (O/R Tasarımcısı) ile eşlenen SQL sınıflarına LINQ oluşturma](../data-tools/how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md).
+Veritabanı tabloları ve görünümleri sürükleyerek, tablolar ve görünümler ile eşlenen varlık sınıfları oluşturabilirsiniz **Sunucu Gezgini** veya **veritabanı Gezgini** üzerine **O/R Tasarımcısı**. Önceki bölümde belirtildiği gibi <xref:System.Data.Linq.DataContext> tasarım yüzeyine sürüklediğiniz ilk öğesi tarafından sağlanan bağlantı bilgileriyle yapılandırılır. Farklı bir bağlantı kullanan bir sonraki öğe için eklenip eklenmediğini **O/R Tasarımcısı**, bağlantı için değiştirebileceğiniz <xref:System.Data.Linq.DataContext>. Daha fazla bilgi için [nasıl yapılır: Tablolarla ve görünümlerle eşlenen LINQ to SQL sınıfları oluşturun (O/R Designer)](../data-tools/how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md).
 
 ## <a name="create-datacontext-methods-that-call-stored-procedures-and-functions"></a>Saklı yordamları ve işlevleri çağırma DataContext-metotları oluşturma
 
@@ -59,15 +59,15 @@ Oluşturabileceğiniz <xref:System.Data.Linq.DataContext> çağıran yöntemleri
 
 ## <a name="configure-a-datacontext-to-use-stored-procedures-to-save-data-between-entity-classes-and-a-database"></a>Bir DataContext varlık sınıfları ve veritabanı arasında veri kaydetmek için saklı yordamları kullanmak için yapılandırma
 
-Daha önce belirtildiği gibi oluşturabileceğiniz <xref:System.Data.Linq.DataContext> saklı yordamları ve işlevleri çağıran yöntemleri. Ayrıca, LINQ to SQL çalışma zamanı davranışı gerçekleştirir, güncelleştirmeler, ekler ve siler varsayılan için kullanılan saklı yordamlar da atayabilirsiniz. Daha fazla bilgi için [nasıl yapılır: Güncelleştirme, ekleme ve silme (O/R Tasarımcısı) gerçekleştirmek için saklı yordamlar atama](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md).
+Daha önce belirtildiği gibi oluşturabileceğiniz <xref:System.Data.Linq.DataContext> saklı yordamları ve işlevleri çağıran yöntemleri. Ayrıca, ekleme, güncelleştirme ve silme işlemleri gerçekleştiren varsayılan LINQ to SQL çalışma zamanı davranışı için kullanılan saklı yordamları da atayabilirsiniz. Daha fazla bilgi için [nasıl yapılır: Güncelleştirme, ekleme ve silme işlemleri gerçekleştirmek için saklı yordamlar atayın (O/R Designer)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md).
 
 ## <a name="inheritance-and-the-or-designer"></a>Devralma ve O/R Tasarımcısı
 
-Diğer nesneleri gibi LINQ to SQL sınıfları devralma kullanabilirsiniz ve diğer sınıflarından türetilmiş. Bir veritabanında kalıtım ilişkileri çeşitli yollarla oluşturulur. **O/R Tasarımcısı** ilişkisel sistemlerde sık uygulandığı şekilde tek tablolu devralma kavramını destekler. Daha fazla bilgi için [nasıl yapılır: O/R Tasarımcısı kullanarak devralmayı yapılandırma](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md).
+Diğer nesneleri gibi LINQ to SQL sınıfları devralma kullanabilirsiniz ve diğer sınıflarından türetilmiş. Bir veritabanında kalıtım ilişkileri çeşitli yollarla oluşturulur. **O/R Tasarımcısı** ilişkisel sistemlerde sık uygulandığı şekilde tek tablolu devralma kavramını destekler. Daha fazla bilgi için [nasıl yapılır: O/R tasarımcısını](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md)kullanarak devralmayı yapılandırın.
 
 ## <a name="linq-to-sql-queries"></a>LINQ to SQL sorguları
 
-Tarafından oluşturulan varlık sınıfları **O/R Tasarımcısı** ile kullanılmak üzere tasarlanmış [dil ile tümleşik sorgu (LINQ)](/dotnet/csharp/linq/). Daha fazla bilgi için [nasıl yapılır: Bilgi sorgulama](/dotnet/framework/data/adonet/sql/linq/how-to-query-for-information).
+Tarafından oluşturulan varlık sınıfları **O/R Tasarımcısı** ile kullanılmak üzere tasarlanmış [dil ile tümleşik sorgu (LINQ)](/dotnet/csharp/linq/). Daha fazla bilgi için [nasıl yapılır: Bilgi](/dotnet/framework/data/adonet/sql/linq/how-to-query-for-information)sorgula.
 
 ## <a name="separate-the-generated-datacontext-and-entity-class-code-into-different-namespaces"></a>Üretilen DataContext ve varlık sınıf kodunu farklı ad alanında ayrı
 

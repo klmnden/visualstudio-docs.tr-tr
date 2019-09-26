@@ -13,43 +13,43 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0044991b330594d80422f0c6ac1d1d64b1fec237
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 817cf9fe8698c2908e873246a8971f90fe72b460
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62951168"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71254450"
 ---
 # <a name="custom-actions-in-outlook-form-regions"></a>Outlook form bölgelerindeki özel eylemler
-  Bir Microsoft Office Outlook öğesine yanıt vermesine olanak sağlayan bir düğme eylemleri görüntüler. Örneğin, bir posta öğesine yanıt vermek için kullanıcılar'ı tıklatın **yanıt**, **Tümünü Yanıtla**, veya **İleri** eylem düğmeleri. Bu eylemlerin her biri yeni bir posta öğesi oluşturur ve öğenin alan özgün öğeden bilgileri kullanarak doldurur.
+  Eylemler, kullanıcıların bir Microsoft Office Outlook öğesine yanıt vermesini sağlayan düğmeleri görüntüler. Örneğin, bir posta öğesine yanıt vermek için, kullanıcılar **Yanıtla**, **Tümünü Yanıtla**veya **İleri git** düğmelerine tıklayın. Bu eylemlerin her biri yeni bir posta öğesi oluşturur ve özgün öğeden alınan bilgileri kullanarak öğenin alanlarını doldurur.
 
- Outlook öğesine herhangi bir türden açan özel bir eylem oluşturabilirsiniz. Örneğin, yeni bir randevu veya görev öğesi açan özel bir eylem ekleyebilirsiniz. Yeni öğe alanlarını doldurmak için özel kod kullanma ya da özel bir eylemin özelliklerini ayarlayın. Özel Eylemler görünür **özel eylemler** öğenin açık bir Outlook Inspector penceresinde açılır.
+ Herhangi bir tür Outlook öğesini açan özel bir eylem oluşturabilirsiniz. Örneğin, yeni bir randevu veya görev öğesi açan özel bir eylem ekleyebilirsiniz. Özel bir eylemin özelliklerini ayarlayın veya yeni öğenin alanlarını doldurmak için özel kod kullanın. Özel Eylemler, bir Outlook Inspector penceresinde açık olan bir öğenin **özel eylemler** açılan penceresinde görünür.
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 
-## <a name="add-custom-actions-to-a-form-region"></a>Özel Eylemler için form bölgesi ekleme
- Form bölgesine özel bir eylem eklemek için **özel eylemler** iletişim kutusu. Açabileceğiniz **özel eylemler** Form bölgesi olarak seçerek, iletişim kutusu **Çözüm Gezgini**, genişleyen **bildirim** düğümünde **özellikleri Pencere**u seçerek **CustomActions** özelliği ve ardından üç nokta düğmesine tıklayarak (![ASP.NET Mobil Tasarımcısı elips](../sharepoint/media/mwellipsis.gif "ASP.NET Mobil Tasarımcı elips")).
+## <a name="add-custom-actions-to-a-form-region"></a>Form bölgesine özel eylemler ekleme
+ Form bölgesine özel eylem eklemek için **özel eylemler** iletişim kutusunu kullanın. **Çözüm Gezgini**Içindeki form bölgesini seçerek **özel eylemler** Iletişim kutusunu açabilir, **Özellikler penceresinde** **bildirim** düğümünü genişleterek, **CustomActions** özelliğini seçip, ardından üç nokta düğmesi (![ASP.net Mobile Designer elips](../sharepoint/media/mwellipsis.gif "ASP.NET mobil tasarımcı elips")).
 
- Kullanabileceğiniz **özel eylemler** belirtmek için iletişim kutusunda bir *hedef form*. Kullanıcı özel eylemin çalıştırdığı zaman görüntülenen formdaki bir hedef biçimidir.
+ Bir *hedef form*belirtmek Için **özel eylemler** iletişim kutusunu kullanabilirsiniz. Hedef form, Kullanıcı özel eylemi çalıştırdığında görünen formdur.
 
- Ayrıca **özel eylemler** iletişim kutusu bilgilerini özgün öğeden hedef formda görünmesini nasıl istediğinizi belirtin.
+ **Özel eylemler** iletişim kutusunu ayrıca, özgün öğeden gelen bilgilerin hedef formda görünmesini nasıl istediğinizi belirtmek için de kullanabilirsiniz.
 
- Aşağıdaki tablo, kullanılabilen özellikleri tanımlar **özel eylemler** iletişim kutusu.
+ Aşağıdaki tabloda, **özel eylemler** iletişim kutusunda kullanılabilen özellikler açıklanmaktadır.
 
 |Özellik|Açıklama|
 |--------------|-----------------|
-|**AddressLike**|Hedef form nasıl ele alınacağını belirtir.|
-|**Gövde**|Özgün öğe gövdesi hedef formun nasıl eklenir belirtir.|
-|**Etkin**|Özel eylemin etkin olup olmadığını gösterir. Bu özellik ayarlanırsa **false**, özel eylemdeki devre dışı bırakıldı.|
-|**Yöntemi**|Özel eylem çalıştırıldığında kullanılabilir yanıtının türünü belirtir. Özel eylem form gönderme, formu açın veya bunlar göndermek veya formunu açmak isteyip istemediğinizi sorar.|
-|**Ad**|Bu özel eylem kodda başvurmak için kullanabileceğiniz iç adını belirtir.|
-|**ShowOnRibbon**|Özel eylem özgün öğesinin şeridinde görüntülenip görüntülenmeyeceğini gösterir.|
-|**SubjectPrefix**|Hedef form konu satırı başında eklenen metni belirtir.|
-|**TargetForm**|Hedef form ileti sınıfı adını belirtir. Örneğin **IPM. Görev** görev formu açın.|
-|**Başlık**|Özel eylem düğmesinin etiketi belirtir.|
+|**AddressLike**|Hedef formun nasıl giderilecektir belirtir.|
+|**Gövde**|Özgün öğenin gövdesinin hedef forma nasıl ekleneceğini belirtir.|
+|**Etkinletir**|Özel eylemin etkin olup olmadığını gösterir. Bu özellik **false**olarak ayarlandıysa, özel eylem devre dışıdır.|
+|**Yöntemi**|Özel eylem yürütüldüğünde kullanılabilir yanıt türünü belirtir. Özel eylem formu gönderebilir, formu açabilir veya formu göndermek ya da açmak isteyip istemedikleri konusunda kullanıcıyı uyarır.|
+|**Ad**|Koddaki bu özel eyleme başvurmak için kullanabileceğiniz dahili adı belirtir.|
+|**ShowOnRibbon**|Özel eylemin orijinal öğenin şeridinde görüntülenip görüntülenmeyeceğini gösterir.|
+|**SubjectPrefix**|Hedef formun konu satırının başlangıcına eklenen metni belirtir.|
+|**TargetForm**|Hedef formun ileti sınıfı adını belirtir. Örneğin, IPM yazın **.** Görev formunu açmak için görev.|
+|**Başlık**|Özel eylem düğmesinin etiketini belirtir.|
 
-## <a name="customize-a-custom-action-at-runtime"></a>Çalışma zamanında bir özel eylem özelleştirme
- Kod kullanarak özel bir eylem için davranış da ekleyebilirsiniz. Örneğin, e-posta alıcılarının adlarını alır ve yeni bir randevu öğesi katılanlar olarak bu adları eklediği kod ekleyebilirsiniz. Bunu yapmak için işleme [özel](/office/vba/api/Outlook.MailItem.CustomAction) olayı [MailItem Nesnesi](/office/vba/api/Outlook.MailItem).
+## <a name="customize-a-custom-action-at-run-time"></a>Çalışma zamanında özel bir eylemi özelleştirme
+ Ayrıca, kod kullanarak özel eyleme davranış ekleyebilirsiniz. Örneğin, e-posta alıcılarının adlarını alan ve bu adları yeni bir randevu öğesine katılımcı olarak ekleyen bir kod ekleyebilirsiniz. Bunu yapmak için, [MailItem nesnesinin](/office/vba/api/Outlook.MailItem) [CustomAction](/office/vba/api/Outlook.MailItem.CustomAction) olayını işleyin.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 - [Outlook form bölgeleri oluşturma](../vsto/creating-outlook-form-regions.md)

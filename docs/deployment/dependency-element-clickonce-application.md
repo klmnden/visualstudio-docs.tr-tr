@@ -1,5 +1,5 @@
 ---
-title: '&lt;bağımlılık&gt; öğesi (ClickOnce uygulaması) | Microsoft Docs'
+title: '&lt;Dependency&gt; öğesi (ClickOnce uygulaması) | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -26,15 +26,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 41e6e5bf2152fffb06acfb8b5e1f3283da75a19a
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 3aa949aa2f8e718ab0209c54a0ea2160c042a4eb
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66745951"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71252490"
 ---
-# <a name="ltdependencygt-element-clickonce-application"></a>&lt;bağımlılık&gt; öğesi (ClickOnce uygulaması)
-Uygulama için gerekli olan bir platform veya derleme bağımlılık tanımlar.
+# <a name="ltdependencygt-element-clickonce-application"></a>&lt;Dependency&gt; öğesi (ClickOnce uygulaması)
+Uygulama için gerekli olan platformu veya derleme bağımlılığını tanımlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -87,90 +87,90 @@ Uygulama için gerekli olan bir platform veya derleme bağımlılık tanımlar.
 ```
 
 ## <a name="elements-and-attributes"></a>Öğeler ve öznitelikler
- `dependency` Öğesi gereklidir. Birden çok örneğini olabilir `dependency` aynı uygulama bildiriminde.
+ `dependency` Öğe gereklidir. Aynı uygulama bildiriminde birden çok örneği `dependency` olabilir.
 
- `dependency` Öğesi özniteliklere sahip ve aşağıdaki alt öğeleri içerir.
+ `dependency` Öğesi özniteliklere sahip değildir ve aşağıdaki alt öğeleri içerir.
 
-### <a name="dependentos"></a>dependentOS
- İsteğe bağlı. İçeren `osVersionInfo` öğesi. `dependentOS` Ve `dependentAssembly` öğeleri karşılıklı olarak birbirini dışlar: birini veya diğerini için bulunmalıdır bir `dependency` öğesi, ancak ikisine birden değil.
+### <a name="dependentos"></a>Bağımlılık TOS
+ İsteğe bağlı. `osVersionInfo` Öğesini içerir. Ve öğeleri birbirini dışlıyor: bir veya diğeri bir `dependency` öğe için bulunmalıdır, ancak her ikisine birden değil. `dependentAssembly` `dependentOS`
 
- `dependentOS` Aşağıdaki öznitelikler destekler.
+ `dependentOS`Aşağıdaki öznitelikleri destekler.
 
 |Öznitelik|Açıklama|
 |---------------|-----------------|
-|`supportUrl`|İsteğe bağlı. Bağımlı bir platform için destek URL'sini belirtir. Bu URL, gerekli platformda bulunursa kullanıcıya gösterilir.|
-|`description`|İsteğe bağlı. Açıklar, insan tarafından okunabilir formda tarafından tanımlanan işletim sistemini `dependentOS` öğesi.|
+|`supportUrl`|İsteğe bağlı. Bağımlı platform için bir destek URL 'SI belirtir. Gerekli platform bulunursa, bu URL kullanıcıya gösterilir.|
+|`description`|İsteğe bağlı. `dependentOS` Öğesi tarafından tanımlanan işletim sistemini, insan tarafından okunabilen biçimde açıklar.|
 
 ### <a name="osversioninfo"></a>osVersionInfo
- Gerekli. Bu öğenin alt öğesi olan `dependentOS` öğesi ve içeren `os` öğesi. Bu öğenin öznitelikleri yok.
+ Gerekli. Bu öğe, `dependentOS` öğesinin bir alt öğesidir ve `os` öğesi içerir. Bu öğenin öznitelikleri yok.
 
-### <a name="os"></a>işletim sistemi
- Gerekli. Bu öğenin alt öğesi olan `osVersionInfo` öğesi. Bu öğe aşağıdaki özniteliklere sahiptir.
+### <a name="os"></a>atayamadı
+ Gerekli. Bu öğe, `osVersionInfo` öğesinin bir alt öğesidir. Bu öğe aşağıdaki özniteliklere sahiptir.
 
 |Öznitelik|Açıklama|
 |---------------|-----------------|
-|`majorVersion`|Gerekli. İşletim sistemi ana sürüm numarasını belirtir.|
-|`minorVersion`|Gerekli. İşletim sistemi alt sürümü sayısını belirtir.|
-|`buildNumber`|Gerekli. İşletim sistemi yapı sayısını belirtir.|
-|`servicePackMajor`|Gerekli. İşletim sistemi hizmet paketi ana sayısını belirtir.|
-|`servicePackMinor`|İsteğe bağlı. İşletim sistemi hizmet paketi alt sayısını belirtir.|
-|`productType`|İsteğe bağlı. Ürün türü değeri tanımlar. Geçerli değerler `server`, `workstation`, ve `domainController`. Örneğin, Windows 2000 Professional için bu öznitelik değeri olan `workstation`.|
-|`suiteType`|İsteğe bağlı. Sistem veya sistem yapılandırma türü mevcut bir ürün paketi tanımlar. Geçerli değerler `backoffice`, `blade`, `datacenter`, `enterprise`, `home`, `professional`, `smallbusiness`, `smallbusinessRestricted`, ve `terminal`. Örneğin, Windows 2000 Professional için bu öznitelik değeri olan `professional`.|
+|`majorVersion`|Gerekli. İşletim sisteminin ana sürüm numarasını belirtir.|
+|`minorVersion`|Gerekli. İşletim sisteminin ikincil sürüm numarasını belirtir.|
+|`buildNumber`|Gerekli. İşletim sisteminin yapı numarasını belirtir.|
+|`servicePackMajor`|Gerekli. İşletim sisteminin hizmet paketi ana numarasını belirtir.|
+|`servicePackMinor`|İsteğe bağlı. İşletim sisteminin hizmet paketi ikincil numarasını belirtir.|
+|`productType`|İsteğe bağlı. Ürün türü değerini tanımlar. Geçerli değerler `server`, `workstation`, ve `domainController`. Örneğin, Windows 2000 Professional için bu öznitelik değeri ' dir `workstation`.|
+|`suiteType`|İsteğe bağlı. Sistemde veya sistemin yapılandırma türünde bulunan bir ürün paketini tanımlar. Geçerli değerler şunlardır `backoffice` `blade` `datacenter` ,,`terminal`,,,,, ve. `enterprise` `home` `professional` `smallbusiness` `smallbusinessRestricted` Örneğin, Windows 2000 Professional için bu öznitelik değeri ' dir `professional`.|
 
 ### <a name="dependentassembly"></a>dependentAssembly
- İsteğe bağlı. İçeren `assemblyIdentity` öğesi. `dependentOS` Ve `dependentAssembly` öğeleri karşılıklı olarak birbirini dışlar: birini veya diğerini için bulunmalıdır bir `dependency` öğesi, ancak ikisine birden değil.
+ İsteğe bağlı. `assemblyIdentity` Öğesini içerir. Ve öğeleri birbirini dışlıyor: bir veya diğeri bir `dependency` öğe için bulunmalıdır, ancak her ikisine birden değil. `dependentAssembly` `dependentOS`
 
- `dependentAssembly` Aşağıdaki özniteliklere sahiptir.
+ `dependentAssembly`Aşağıdaki özniteliklere sahiptir.
 
 | Öznitelik | Açıklama |
 |-----------------------| - |
-| `dependencyType` | Gerekli. Bağımlılık türünü belirtir. Geçerli değerler `preprequisite` ve `install`. Bir `install` derlemenin bir parçası olarak yüklü [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulama. A `prerequisite` derleme genel derleme önbelleğinde (GAC) önce mevcut olmalıdır [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulama yükleyebilirsiniz. |
-| `allowDelayedBinding` | Gerekli. Derleme programlı olarak çalışma zamanında yüklenebilir olup olmadığını belirtir. |
-| `group` | İsteğe bağlı. Varsa `dependencyType` özniteliği `install`, isteğe bağlı olarak yalnızca yükleme derlemelerin adlandırılmış bir grubu belirtir. Daha fazla bilgi için [izlenecek yol: API tasarımcıyı kullanarak ClickOnce dağıtımı ile isteğe bağlı derlemeleri indirme](../deployment/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer.md).<br /><br /> Varsa kümesine `framework` ve `dependencyType` özniteliği `prerequisite`, .NET Framework'ün bir parçası olarak derlemeyi belirtir. Genel Derleme Önbelleği (GAC), bu derleme için .NET Framework 4 ve üzeri sürümlerde yüklerken işaretlenmemiştir. |
-| `codeBase` | Ne zaman gerekli `dependencyType` özniteliği `install`. Bağımlı derleme yolu. Mutlak bir yol veya bildirim kodunun göreli bir yol, temel olabilir. Bu yol, geçerli olması için bütünleştirilmiş kod bildirimi sırada geçerli bir URI olmalıdır. |
-| `size` | Ne zaman gerekli `dependencyType` özniteliği `install`. Bağımlı derlemenin bayt cinsinden boyutu. |
+| `dependencyType` | Gerekli. Bağımlılık türünü belirtir. Geçerli değerler ve `preprequisite` ' `install`dir. Derleme `install` ,[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulamanın bir parçası olarak yüklenir. Uygulamanın `prerequisite` yüklenebilmesi için [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] önce bir derlemenin genel derleme önbelleğinde (GAC) mevcut olması gerekir. |
+| `allowDelayedBinding` | Gerekli. Derlemenin çalışma zamanında programlı bir şekilde yüklenip yüklenemeyeceğini belirtir. |
+| `group` | İsteğe bağlı. `dependencyType` Özniteliği olarak`install`ayarlandıysa, yalnızca istek üzerine yüklenen bir adlandırılmış derleme grubunu belirtir. Daha fazla bilgi için bkz [. İzlenecek yol: Tasarımcıyı](../deployment/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer.md)kullanarak ClickOnce dağıtım API 'si Ile isteğe bağlı derlemeleri indirme.<br /><br /> Olarak `framework` ayarlıysa `prerequisite`ve özniteliği olarak ayarlanırsa, derlemeyi .NET Framework bir parçası olarak belirler. `dependencyType` Bu derleme için genel assemby Cache (GAC), .NET Framework 4 ve sonraki sürümlere yüklenirken denetlenmez. |
+| `codeBase` | `dependencyType` Özniteliği olarak`install`ayarlandığında gereklidir. Bağımlı derlemenin yolu. Mutlak bir yol veya bildirimin kod tabanına göreli bir yol olabilir. Bu yol, Derleme bildiriminin geçerli olması için geçerli bir URI olmalıdır. |
+| `size` | `dependencyType` Özniteliği olarak`install`ayarlandığında gereklidir. Bağımlı derlemenin bayt cinsinden boyutu. |
 
-### <a name="assemblyidentity"></a>assemblyIdentity
- Gerekli. Bu öğenin alt öğesi olan `dependentAssembly` öğesi ve aşağıdaki özniteliklere sahiptir.
+### <a name="assemblyidentity"></a>AssemblyIdentity
+ Gerekli. Bu öğe, `dependentAssembly` öğesinin bir alt öğesidir ve aşağıdaki özniteliklere sahiptir.
 
 |Öznitelik|Açıklama|
 |---------------|-----------------|
 |`name`|Gerekli. Uygulamanın adını tanımlar.|
-|`version`|Gerekli. Uygulamanın sürüm numarası şu biçimde belirtir: `major.minor.build.revision`|
-|`publicKeyToken`|İsteğe bağlı. Son 8 baytını temsil eden 16 karakterlik bir onaltılık dize belirtir `SHA-1` altında derleme veya uygulama imzalanan ortak anahtarı değerini karma. Katalog imzalamak için kullanılan ortak anahtar, 2048 bit veya daha fazla olmalıdır.|
-|`processorArchitecture`|İsteğe bağlı. İşlemciyi belirtir. Geçerli değerler `x86` 32-bit Windows için ve `I64` 64 bit Windows için.|
-|`language`|İsteğe bağlı. İki bölümlü dil kodları EN-US, derlemenin gibi tanımlar.|
+|`version`|Gerekli. Uygulamanın sürüm numarasını aşağıdaki biçimde belirtir:`major.minor.build.revision`|
+|`publicKeyToken`|İsteğe bağlı. Uygulamanın veya derlemenin imzalandığı ortak anahtarın `SHA-1` karma değerinin son 8 baytını temsil eden 16 karakterlik bir onaltılık dize belirtir. Kataloğu imzalamak için kullanılan ortak anahtar 2048 bit veya daha fazla olmalıdır.|
+|`processorArchitecture`|İsteğe bağlı. İşlemciyi belirtir. Geçerli değerler `x86` 32 bitlik Windows ve `I64` 64 bit Windows içindir.|
+|`language`|İsteğe bağlı. Derlemenin EN-US gibi iki bölüm dil kodunu tanımlar.|
 
 ### <a name="hash"></a>hash
- `hash` İsteğe bağlı bir alt öğedir `assemblyIdentity` öğesi. `hash` Öğesi özniteliklere sahip değildir.
+ Öğesi, `assemblyIdentity` öğesinin isteğe bağlı bir alt öğesidir. `hash` `hash` Öğesinde hiç öznitelik yok.
 
- [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] bir uygulamadaki tüm dosyaların algoritmik bir karma güvenlik denetimi, dosyaların hiçbiri dağıtımdan sonra değişmediğinden emin olmak için kullanır. Varsa `hash` öğesi dahil değildir, bu denetimi gerçekleştirilmeyecek. Bu nedenle, atlama `hash` öğesi önerilmez.
+ [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]herhangi bir dosyanın dağıtımdan sonra değişmediğinden emin olmak için, bir uygulamadaki tüm dosyaların bir güvenlik denetimi olarak algoritmik karmasını kullanır. `hash` Öğe dahil değilse, bu denetim gerçekleştirilmez. Bu nedenle, `hash` öğesinin atlanması önerilmez.
 
-### <a name="dsigtransforms"></a>dsig:Transforms
- `dsig:Transforms` Öğesi gerekli alt öğesi olan `hash` öğesi. `dsig:Transforms` Öğesi özniteliklere sahip değildir.
+### <a name="dsigtransforms"></a>dsig: dönüşümler
+ Öğesi, `hash` öğesinin gerekli bir alt öğesidir. `dsig:Transforms` `dsig:Transforms` Öğesinde hiç öznitelik yok.
 
-### <a name="dsigtransform"></a>dsig:Transform
- `dsig:Transform` Öğesi gerekli alt öğesi olan `dsig:Transforms` öğesi. `dsig:Transform` Öğesinde şu öznitelikler bulunur.
-
-| Öznitelik | Açıklama |
-|-------------| - |
-| `Algorithm` | Bu dosya için Özet hesaplamak için kullanılan algoritma. Şu anda kullanılan tek değer [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] olduğu `urn:schemas-microsoft-com:HashTransforms.Identity`. |
-
-### <a name="dsigdigestmethod"></a>dsig
- `dsig:DigestMethod` Öğesi gerekli alt öğesi olan `hash` öğesi. `dsig:DigestMethod` Öğesinde şu öznitelikler bulunur.
+### <a name="dsigtransform"></a>dsig: dönüştürme
+ Öğesi, `dsig:Transforms` öğesinin gerekli bir alt öğesidir. `dsig:Transform` `dsig:Transform` Öğesi aşağıdaki özniteliklere sahiptir.
 
 | Öznitelik | Açıklama |
 |-------------| - |
-| `Algorithm` | Bu dosya için Özet hesaplamak için kullanılan algoritma. Şu anda kullanılan tek değer [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] olduğu `http://www.w3.org/2000/09/xmldsig#sha1`. |
+| `Algorithm` | Bu dosya için Özeti hesaplamak için kullanılan algoritma. Şu anda tarafından [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] `urn:schemas-microsoft-com:HashTransforms.Identity`kullanılan tek değer. |
 
-### <a name="dsigdigestvalue"></a>DigestValue
- `dsig:DigestValue` Öğesi gerekli alt öğesi olan `hash` öğesi. `dsig:DigestValue` Öğesi özniteliklere sahip değildir. Metin değeri, belirtilen dosya için hesaplanan karmasıdır.
+### <a name="dsigdigestmethod"></a>dsig: DigestMethod
+ Öğesi, `hash` öğesinin gerekli bir alt öğesidir. `dsig:DigestMethod` `dsig:DigestMethod` Öğesi aşağıdaki özniteliklere sahiptir.
+
+| Öznitelik | Açıklama |
+|-------------| - |
+| `Algorithm` | Bu dosya için Özeti hesaplamak için kullanılan algoritma. Şu anda tarafından [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] `http://www.w3.org/2000/09/xmldsig#sha1`kullanılan tek değer. |
+
+### <a name="dsigdigestvalue"></a>dsig: DigestValue
+ Öğesi, `hash` öğesinin gerekli bir alt öğesidir. `dsig:DigestValue` `dsig:DigestValue` Öğesinde hiç öznitelik yok. Metin değeri, belirtilen dosya için hesaplanan karmadır.
 
 ## <a name="remarks"></a>Açıklamalar
- Uygulamanız tarafından kullanılan tüm derlemelerin karşılık gelen olmalıdır `dependency` öğesi. Bağımlı derlemeleri genel derleme önbelleğinde platformu derlemeleri ' önceden yüklenmiş derlemeleri içermez.
+ Uygulamanız tarafından kullanılan tüm derlemeler karşılık gelen `dependency` bir öğeye sahip olmalıdır. Bağımlı derlemeler, genel derleme önbelleğinde platform derlemeleri olarak önceden yüklenmiş olması gereken derlemeleri içermez.
 
 ## <a name="example"></a>Örnek
- Aşağıdaki kod örneğinde gösterilmiştir `dependency` öğelerinde bir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulama bildirimi. Bu kod örneği için sağlanan daha büyük bir örneğin parçasıdır [ClickOnce Uygulama bildirimi](../deployment/clickonce-application-manifest.md) konu.
+ Aşağıdaki kod örneği, bir `dependency` [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulama bildirimindeki öğeleri gösterir. Bu kod örneği, [ClickOnce uygulama bildirimi](../deployment/clickonce-application-manifest.md) konusu için sağlanmış daha büyük bir örneğin bir parçasıdır.
 
 ```xml
 <dependency>
@@ -217,5 +217,5 @@ Uygulama için gerekli olan bir platform veya derleme bağımlılık tanımlar.
 ```
 
 ## <a name="see-also"></a>Ayrıca bkz.
-- [ClickOnce Uygulama bildirimi](../deployment/clickonce-application-manifest.md)
-- [\<bağımlılık > öğesi](../deployment/dependency-element-clickonce-deployment.md)
+- [ClickOnce uygulama bildirimi](../deployment/clickonce-application-manifest.md)
+- [\<Dependency > öğesi](../deployment/dependency-element-clickonce-deployment.md)

@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/19/2019
 ms.author: ghogen
-ms.openlocfilehash: 900e677ce670c49036ea6d76596ff509129ce979
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 722c816329c70bb2efad03f9554e201bcc9fde16
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62572818"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71253467"
 ---
 # <a name="create-an-azure-cloud-service-project-with-visual-studio"></a>Visual Studio ile Azure bulut hizmeti projesi oluşturması
 
@@ -24,9 +24,9 @@ Visual Studio için Azure Araçları oluşturmanıza imkan tanıyan bir proje ş
 Bu bölüm bir veya daha fazla web rolleri ile Visual Studio'da bir Azure bulut hizmeti projesi oluşturma işleminde size yol gösterir.
 
 ::: moniker range="vs-2017"
-1. Visual Studio'yu yönetici olarak açın.
+1. Visual Studio 'Yu yönetici olarak açın.
 
-1. Ana menüden **dosya** > **yeni** > **proje**.
+1. Ana menüde **Dosya** > **Yeni** > **Proje**' yi seçin.
 
 1. Seçin **bulut** Visual C# veya Visual Basic şablonu düğümleri proje ve seçin **Azure bulut hizmeti** şablonları listesinden.
 
@@ -39,13 +39,13 @@ Bu bölüm bir veya daha fazla web rolleri ile Visual Studio'da bir Azure bulut 
 1. **Tamam**’ı seçin.
 ::: moniker-end
 ::: moniker range=">=vs-2019"
-1. Başlangıç penceresinden seçin **yeni bir proje oluşturma**.
+1. Başlangıç penceresinden **Yeni proje oluştur**' u seçin.
 
-1. Arama kutusuna yazın *bulut*ve ardından **Azure bulut hizmeti**.
+1. Arama kutusuna *Cloud*yazın ve ardından **Azure bulut hizmeti**' ni seçin.
 
    ![Yeni Azure bulut hizmeti](./media/vs-azure-tools-azure-project-create/vs-2019/new-project-cloud-service.png)
 
-1. Projeye bir ad verin ve seçin **Oluştur**.
+1. Projeye bir ad verin ve **Oluştur**' a tıklayın.
 
    ![Projeye bir ad verin](./media/vs-azure-tools-azure-project-create/vs-2019/new-project-cloud-service-2.png)
 ::: moniker-end
@@ -60,7 +60,7 @@ Bu bölüm bir veya daha fazla web rolleri ile Visual Studio'da bir Azure bulut 
 
 Visual Studio Azure project ilişkilendirmeleri rolü projeleri için çözüm vardır. Proje yöntemlerine *Hizmet tanım dosyası* ve *hizmet yapılandırma dosyasını*:
 
-- **Hizmet tanım dosyası** -uygulama, hangi roller gereklidir dahil olmak üzere, uç noktaları ve sanal makine boyutu için çalışma zamanı ayarlarını tanımlar.
+- **Hizmet tanımı dosyası** -uygulamanız için gerekli olan, uç noktaların ve sanal makine boyutu dahil olmak üzere çalışma zamanı ayarlarını tanımlar.
 - **Hizmet yapılandırma dosyasını** -kaç rol örneklerini çalıştırma ve bir rol için tanımlanan ayarlara değerleri olan yapılandırır.
 
 Bu dosyalar hakkında daha fazla bilgi için bkz. [Visual Studio ile bir Azure bulut hizmeti için rolleri yapılandırmak](vs-azure-tools-configure-roles-for-cloud-service.md).

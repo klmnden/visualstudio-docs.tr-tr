@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ab118197c29ef950907839e8c04d6e49a9843f1a
-ms.sourcegitcommit: 6f3cf7a1bfc81a61f9a603461a1c34fd2221f100
+ms.openlocfilehash: 644c73dea58936773acde98ccc535dfc61979288
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/12/2019
-ms.locfileid: "68957421"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71251697"
 ---
 # <a name="net-naming-conventions-for-editorconfig"></a>EditorConfig için .NET adlandırma kuralları
 
@@ -184,7 +184,7 @@ Adlandırma kuralları, EditorConfig dosyasında en çok özgü olan en büyük 
 
 ::: moniker range=">=vs-2019"
 
-Visual Studio 2019 sürüm 16,2 ' den başlayarak, adlandırma kurallarının bir EditorConfig dosyasında tanımlandığı sıra bu şekilde değildir. Bunun yerine, Visual Studio, adlandırma kurallarını kuralların tanımına göre otomatik olarak sıralar. [Editorconfig dil hizmeti uzantısı](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.EditorConfig) , bir editorconfig dosyasını çözümleyebilir ve dosyadaki kural sıralaması, derleyicinin çalışma zamanında kullandıklarıyla farklı olduğu durumlarda rapor verebilir.
+Visual Studio 2019 sürüm 16,2 ' den başlayarak, adlandırma kurallarının bir EditorConfig dosyasında tanımlandığı sıra bu şekilde değildir. Bunun yerine, Visual Studio, adlandırma kurallarını kuralların tanımına göre otomatik olarak sıralar. [Editorconfig dil hizmeti uzantısı](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.EditorConfig) , bir editorconfig dosyasını çözümleyebilir ve dosyadaki kural sıralaması derleyicinin çalışma zamanında kullandıklarıyla farklı olduğunda rapor durumlarını rapor edebilir.
 
 Visual Studio 'nun önceki bir sürümünü kullanıyorsanız, adlandırma kuralları, EditorConfig dosyasında en çok belirli olan en az özel olarak sıralanmalıdır. Uygulanabilecek ilk kural, uygulanan tek kuraldır. Ancak, aynı ada sahip birden fazla kural *özelliği* varsa, bu adı taşıyan en son bulunan özellik öncelik kazanır. Daha fazla bilgi için bkz. [Dosya hiyerarşisi ve önceliği](create-portable-custom-editor-options.md#file-hierarchy-and-precedence).
 

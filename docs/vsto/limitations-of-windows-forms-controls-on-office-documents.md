@@ -1,5 +1,5 @@
 ---
-title: Office belgelerindeki Windows Forms denetimleri sınırlamaları
+title: Office belgelerindeki Windows Forms denetimlerinin sınırlamaları
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -20,26 +20,26 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d5cb4bf5788e1d30933a807e2e97e064118fc076
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 81a7da585f49b2a2d1f7df4df11d0c78b7a35d69
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67823401"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71251924"
 ---
-# <a name="limitations-of-windows-forms-controls-on-office-documents"></a>Office belgelerindeki Windows Forms denetimleri sınırlamaları
+# <a name="limitations-of-windows-forms-controls-on-office-documents"></a>Office belgelerindeki Windows Forms denetimlerinin sınırlamaları
 
-Microsoft Office Word belgelerine veya Microsoft Office Excel çalışma sayfalarına eklenmiş Windows Forms denetimleri ve Windows Forms için eklenen Windows Formları arasında bazı farklar vardır. Örneğin, eklediğinizde bir <xref:Microsoft.Office.Tools.Word.Controls.Button> gibi bir belge, özellikleri denetlemek <xref:System.Windows.Forms.Control.Dock>, <xref:System.Windows.Forms.Control.Anchor>, ve <xref:System.Windows.Forms.Control.TabIndex> bekleyebileceğiniz gibi davranmayabilir.
+Microsoft Office Word belgelerine veya Microsoft Office Excel çalışma sayfalarına eklenen Windows Forms denetimleri ve Windows Forms eklenen Windows Forms denetimleri arasında bazı farklılıklar vardır. Örneğin <xref:Microsoft.Office.Tools.Word.Controls.Button> , belgeye bir denetim eklediğinizde,,, ve gibi özellikler <xref:System.Windows.Forms.Control.Dock> <xref:System.Windows.Forms.Control.Anchor>, beklendiğinde, ve <xref:System.Windows.Forms.Control.TabIndex> gibi davranmaz.
 
-Bu gibi durumlarda bu farklılıkların birçoğu, Windows Forms denetimleri barındırılan şekilde belgelerde kaynaklanır. Bir Windows Forms denetimini bir belgeye eklendiğinde [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] belge Windows Forms denetiminde'ı barındıran bir ActiveX denetimi ekler. Windows Forms denetimi doğrudan belge içinde gömülü.
+Bu farklılıkların birçoğu, Windows Forms denetimlerinin belgelerde barındırıldığı yönteme neden olmuştur. Bir belgeye [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] Windows Forms denetimi eklendiğinde, daha sonra belgedeki Windows Forms denetimini barındıran ActiveX denetimini gömer. Windows Forms denetimi doğrudan belgeye katıştırılmamış.
 
 [!INCLUDE[appliesto_controls](../vsto/includes/appliesto-controls-md.md)]
 
-## <a name="limitations-of-methods-and-properties-of-windows-forms-controls"></a>Yöntemleri ve özellikleri Windows Forms denetimleri sınırlamaları
+## <a name="limitations-of-methods-and-properties-of-windows-forms-controls"></a>Windows Forms denetimlerinin yöntemlerinin ve özelliklerinin sınırlamaları
 
-Bir dizi yöntem ve aynı şekilde bir Windows formunda yaptıkları ve bu nedenle, bunlar kullanılmaması önerilir gibi bir belgeyi çalışmaz Windows Forms denetimlerindeki özellikler vardır. Örneğin, gibi özellikleri ayarlamak <xref:System.Windows.Forms.Control.Dock> ve <xref:System.Windows.Forms.Control.Anchor> yalnızca belge yerine kapsayıcı ActiveX denetimi ile ilgili denetimin konumunu etkiler. Desteklenmeyen yöntem ve özellikleri Word ve Excel için Windows Forms denetimlerinin listesi verilmiştir:
+Bir Windows form üzerinde olduğu gibi bir belgede aynı şekilde çalışmayan Windows Forms denetimlerinin çeşitli yöntemleri ve özellikleri vardır ve bu nedenle kullanılmamalıdır. Örneğin, <xref:System.Windows.Forms.Control.Dock> ve <xref:System.Windows.Forms.Control.Anchor> gibi özelliklerinin ayarlanması, yalnızca denetimin konumunu belge yerine kapsayıcı ActiveX denetimine göre etkiler. Aşağıda Word ve Excel için Windows Forms denetimlerinin desteklenmeyen yöntemlerinin ve özelliklerinin bir listesi verilmiştir:
 
-- Excel denetimleri desteklenmeyen özellikler:
+- Excel denetimlerinin desteklenmeyen özellikleri:
 
   - <xref:System.Windows.Forms.Control.Anchor>
   - <xref:System.Windows.Forms.Control.Dock>
@@ -48,7 +48,7 @@ Bir dizi yöntem ve aynı şekilde bir Windows formunda yaptıkları ve bu neden
   - <xref:System.Windows.Forms.Control.TabStop>
   - <xref:System.Windows.Forms.Control.TopLevelControl>
 
-- Desteklenmeyen yöntem ve özellikleri Word denetimleri:
+- Word denetimlerinin desteklenmeyen yöntemleri ve özellikleri:
 
   - <xref:System.Windows.Forms.Control.Hide%2A>
   - <xref:System.Windows.Forms.Control.Show%2A>
@@ -60,47 +60,47 @@ Bir dizi yöntem ve aynı şekilde bir Windows formunda yaptıkları ve bu neden
   - <xref:System.Windows.Forms.Control.TopLevelControl>
   - <xref:System.Windows.Forms.Control.Visible>
 
-Ayarlayamazsınız <xref:System.Windows.Forms.Control.Left> veya <xref:System.Windows.Forms.Control.Top> bir Word belgesinde metinde olan Windows Forms denetimlerinin özelliği. Windows Forms denetimleri, metin aşağıdaki durumlarda uygun olarak eklenir:
+Ayrıca, <xref:System.Windows.Forms.Control.Left> bir Word belgesindeki metin <xref:System.Windows.Forms.Control.Top> ile satırdaki Windows Forms denetimlerinin veya özelliğini ayarlayamazsınız. Windows Forms denetimleri, aşağıdaki durumlarda metinle birlikte çizgiye eklenir:
 
-- Program aracılığıyla bir Word belgesi için denetim ekleme ve konum için bir aralık belirten bir yöntem kullanın.
+- Programlı olarak bir Word belgesine denetim ekler ve konum için bir Aralık belirten bir yöntem kullanırsınız.
 
-- Tasarım zamanında bir Word belgesi için bir Windows Forms denetimi ekleyin. Bu tasarımcıda bir denetime değiştirerek değiştirebilirsiniz.
+- Tasarım zamanında Word belgesine bir Windows Forms denetimi eklersiniz. Tasarımcıda denetimi değiştirerek bunu değiştirebilirsiniz.
 
-## <a name="differences-in-windows-forms-controls-on-office-documents"></a>Office belgelerindeki Windows Forms denetimleri farklılıkları
+## <a name="differences-in-windows-forms-controls-on-office-documents"></a>Office belgelerindeki Windows Forms denetimlerindeki farklılıklar
 
-Windows Forms denetimleri genellikle aynı davranışı bir Office belgesi üzerinde bir Windows formunda yaptıkları, ancak bazı farklılıklar da mevcut sahip. Aşağıdaki tabloda, Office belgelerindeki Windows Forms denetimleri için mevcut farklar açıklanmaktadır.
+Windows Forms denetimleri, bir Office belgesi üzerinde genellikle aynı davranışa sahiptir, ancak bazı farklılıklar vardır. Aşağıdaki tabloda Office belgelerindeki Windows Forms denetimleri için mevcut olan farklar açıklanmaktadır.
 
 |İşlevi|Fark|
 |-------------------|----------------|
-|Sekme düzenini denetleme|Aracılığıyla bir Excel çalışma sayfası veya Word belgesi denetimlerin sekme olamaz.|
-|Denetim gruplandırma|Kullanamazsınız bir <xref:System.Windows.Forms.GroupBox> diğer Office belgesinden denetimleri içermesi için denetimi. Belgeye birden çok radyo düğmeleri eklediğinizde, radyo düğmeleri birbirini dışlamaz. Radyo düğmeleri birbirini dışlayan yapmak için kod yazabilirsiniz; Ancak, tercih edilen bir kullanıcı denetimine radyo düğmeleri ekleme ve belgede kullanıcı denetimi eklemek için bir yaklaşımdır. Daha fazla bilgi için bkz: Word denetimleri örneği veya Excel denetimleri örneğini şurada [Office geliştirme örnekleri ve izlenecek yollar](../vsto/office-development-samples-and-walkthroughs.md).|
-|Denetim türü|Belgelerde kullanılan Windows Forms denetimleri tarafından sağlanan bir sınıftaki sarılır [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] Word belgesi ve Excel çalışma sayfası için ek işlevler belirli denetimler vermektedir. Örneğin, bir **düğmesi** türü olarak belirttiğinizden emin olun, denetim bir Excel çalışma sayfasında <xref:Microsoft.Office.Tools.Excel.Controls.Button> yerine <xref:System.Windows.Forms.Button> başvuru veya nesne atama.|
-|Denetimin konumu ve boyutu|Denetim konumu ve boyutu ' % s'kapsayıcı ActiveX denetiminin bir parçası olan özellikleri tarafından belirlenir. ActiveX denetimi özelliklerini farklı değerler eşdeğer bir Windows Forms denetimi özelliklerinden yararlanın. Ayarladığınızda `Top`, `Left`, `Height`, veya `Width` denetimin özelliklerini, onu ölçülür, piksel yerine işaret eder.|
-|Word belgesindeki denetimi konumu|Akış tabanlı bir düzene denetimleri eklerseniz, denetimler içeriğin bulunduğu içerik değiştikçe akar aklınızda bulundurun. Buradan sürüklediğinizde bir paragraf denetime bağlayamazsınız **araç kutusu** çünkü Word belgesine metinle denetim eklenir. Denetime çift gibi denetim eklemek için başka bir yöntem kullanırsanız, resim eklemek için ayarladığınız Word seçeneğe göre denetimi eklenir.<br /><br /> Ayarlayamazsınız `Left` veya `Top` satır içi metin ile denetimin özellik.<br /><br /> Üstbilgi ve altbilgisindeki veya bir alt denetimler yerleştiremezsiniz.|
-|Denetim olayları|Bir Denetim seçildiğinde, olaylar aşağıdaki sırada oluşur:<br /><br /> 1.  `Enter`<br />2.  `GotFocus`<br /><br /> Denetim seçili olmadığında, olaylar aşağıdaki sırada oluşur:<br /><br /> 1.  `Leave`<br />2.  `Validating`<br />3.  `Validated`<br />4.  `LostFocus`|
-|Denetimini ölçeklendirme|Bir belgenin yakınlaştırma ayarı % 100'den başka bir değere değiştirdiğinizde, bunlar görünmesine karşın denetimleri devre dışı bırakılır, belge ile ölçeklendirin. Örneğin, belgenizi %130 yakınlaştırma düzeyinde olduğunda bir düğmeye tıklarsanız, bir ileti gösterilir % 100 yakınlaştırma ayarlanana kadar denetim devre dışı olduğunu. % 100 yakınlaştırma değiştirdiğinizde denetimleri düzgün çalışmayacaktır.|
-|Özellik değerlerini denetleme|Bir Windows formundaki denetimler özelliklerini tamsayı değerine ayarlanır olsa da, tek bir Word belgesi denetimleri için ayarlanır. Excel'de denetimleri özellik değerlerini bir çift olarak ayarlanır. Varsa `Height` ve `Width` özelliği çalışma sayfasındaki bir denetimin çalışma sayfası veya ekran boyutunu aşıyor, değer kesilir.|
-|Denetimi yeniden boyutlandırma|Bir denetimde sekiz boyutlandırma tutamaçlarından birinin kullanarak belgeyi yeniden boyutlandırırsanız, yeni denetim boyutları yansıtılmaz **özellikleri** denetim yansıtımaz kadar penceresi.|
-|Denetimin davranışı|Çalışma sayfası pencerenin ayrıldığında bir Excel çalışma sayfasındaki denetimleri beklenmedik şekilde davranabilir. Örneğin, erişimi bir <xref:Microsoft.Office.Tools.Excel.Controls.TextBox> çalışma sayfasında yalnızca windows biri mevcut olabilir.|
-|Denetim adlandırma|Ayrılmış sözcükler adı denetimleri için kullanamazsınız. Örneğin eklerseniz, bir <xref:Microsoft.Office.Tools.Excel.Controls.Button> çalışma ve adla değiştirin **sistem**, projeyi oluşturduğunuzda hatalar oluşur.|
-|Programlı olarak denetim ekleme|Denetimin Oluşturucusu belgenizi çalışma zamanında bir denetim eklemek için kullanmayın. Bunun yerine, tarafından sağlanan yardımcı yöntemler kullanın [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]. Örneğin, <xref:Microsoft.Office.Tools.Excel.ControlExtensions.AddButton%2A> çalışma sayfasına bir düğme eklemek için yöntemi. Bu yardımcı yöntemler tarafından desteklenmeyen bir denetim eklemek istiyorsanız, kullanabileceğiniz `AddControl` yöntemi. Daha fazla bilgi için [Office belgelerine çalışma zamanında denetimler ekleme](../vsto/adding-controls-to-office-documents-at-run-time.md).|
-|Denetimleri kopyalama|Bir Windows Forms denetimini kopyalayın ve çalışma zamanında bir belgeye yapıştırın, boş bir kapsayıcı ActiveX denetimi belgeye yapıştırılır. Windows Forms denetimi yeni konuma görünmez ve özgün denetimin arka plan kod ActiveX denetimi kapsayıcısı için kopyalanmaz.|
+|Denetim sekmesi sırası|Excel çalışma sayfasına veya Word belgesine yerleştirilmiş denetimlerde sekmeye geçiş yapılamaz.|
+|Denetim gruplandırma|Bir Office belgesinde diğer <xref:System.Windows.Forms.GroupBox> denetimleri içeren bir denetim kullanamazsınız. Birden çok radyo düğmesini doğrudan belgeye eklediğinizde radyo düğmeleri birbirini dışlar. Radyo düğmelerini birbirini dışlamalı hale getirmek için kod yazabilirsiniz; Ancak, tercih edilen yaklaşım, radyo düğmelerini bir kullanıcı denetimine eklemek ve ardından belgeye Kullanıcı denetimini eklemektir. Daha fazla bilgi için bkz. [Office geliştirme örnekleri ve izlenecek yollar](../vsto/office-development-samples-and-walkthroughs.md)'da örnek veya Excel denetimleri örneği.|
+|Denetim türü|Belgelerde kullanılan Windows Forms denetimleri, [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] denetimleri Excel çalışma sayfasına veya Word belgesine özgü ek işlevselliği sağlayan tarafından sağlanmış bir sınıfa sarmalanır. Örneğin, bir Excel çalışma sayfasında <xref:System.Windows.Forms.Button> **düğme** denetiksahipseniz, nesneyi başvuru veya atama sırasında <xref:Microsoft.Office.Tools.Excel.Controls.Button> değil, türü belirttiğinizden emin olun.|
+|Denetim konumu ve boyutu|Denetimin boyutu ve konumu, kapsayıcı ActiveX denetiminin parçası olan özelliklere göre belirlenir. ActiveX denetim özellikleri, Windows Forms denetiminin denk özelliklerinden farklı değerler alır. `Top`Bir denetimin `Left` ,,veya`Width` özelliklerini ayarladığınızda, piksel yerine punto olarak ölçülür. `Height`|
+|Word belgelerindeki denetim konumu|Akış tabanlı bir düzene denetimler eklerseniz, denetimlerin içerik değiştikçe içerik ile akacağını aklınızda bulundurun. Denetim **araç** çubuğundan sürüklediğiniz sırada bir paragrafa bağlayamazsınız. Bu denetim, metin içeren satır içindeki Word belgesine eklenir. Denetimi eklemek için başka bir yöntem kullanıyorsanız (denetime çift tıklanması gibi), Denetim resim ekleme için ayarladığınız sözcük seçeneğine göre eklenir.<br /><br /> Metin ile satır içi `Left` bir `Top` denetimin veya özelliğini ayarlayamazsınız.<br /><br /> Bir üst bilgi veya altbilgiye veya bir alt belge içine denetim yerleştirebilirsiniz.|
+|Denetim olayları|Denetim seçildiğinde, olayları aşağıdaki sırayla başlatır:<br /><br /> 1.  `Enter`<br />2.  `GotFocus`<br /><br /> Denetim seçimi kaldırıldığında olayları aşağıdaki sırayla başlatır:<br /><br /> 1.  `Leave`<br />2.  `Validating`<br />3.  `Validated`<br />4.  `LostFocus`|
+|Denetim ölçeklendirme|Bir belgenin yakınlaştırma ayarını% 100 dışında bir şekilde değiştirdiğinizde, denetimler belge ile ölçeklendirilmesine rağmen devre dışı bırakılır. Örneğin, belgeniz% 130 yakınlaştırmadan bir düğmeye tıkladığınızda, yakınlaştırma% 100 olarak ayarlanana kadar denetimin devre dışı bırakıldığını belirten bir ileti gösterilir. Yakınlaştırmayı% 100 olarak değiştirdiğinizde denetimler doğru şekilde çalışır.|
+|Denetim özelliği değerleri|Bir Windows formundaki denetimlerin özellikleri bir tamsayı değerine ayarlanmış olsa da, bir Word belgesindeki denetimler için tek bir olarak ayarlanır. Excel 'de denetimlerin özellik değerleri Double olarak ayarlanır. Çalışma sayfasındaki bir `Width` denetimin veözelliğiçalışmasayfasınınveyaekranınboyutunuaşarsa,değerkesilir.`Height`|
+|Yeniden boyutlandırma denetimi|Belgedeki bir denetimi sekiz boyutlandırma tutamaçlarından birini kullanarak yeniden boyutlandırırsanız, yeni denetim boyutları denetim yeniden seçilene kadar **Özellikler** penceresinde yansıtılmaz.|
+|Denetim davranışı|Excel çalışma sayfasındaki denetimler, çalışma sayfası penceresi bölündüğünde tahmin edilemeyecek şekilde çalışmayabilir. Örneğin, çalışma sayfasındaki bir <xref:Microsoft.Office.Tools.Excel.Controls.TextBox> öğesine erişim yalnızca pencerelerin birinde kullanılabilir olabilir.|
+|Denetim adlandırması|Denetimleri adlandırmak için ayrılmış sözcükler kullanamazsınız. Örneğin, bir çalışma sayfasına bir <xref:Microsoft.Office.Tools.Excel.Controls.Button> ekler ve adı **sistem**olarak değiştirirseniz, projeyi oluşturduğunuzda hatalar oluşur.|
+|Programlı olarak denetim ekleme|Çalışma zamanında belgenize denetim eklemek için denetimin oluşturucusunu kullanmayın. Bunun yerine, tarafından sağlanmış olan [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]yardımcı yöntemlerini kullanın. Örneğin, bir çalışma sayfasına <xref:Microsoft.Office.Tools.Excel.ControlExtensions.AddButton%2A> düğme eklemek için yöntemini kullanın. Bu yardımcı yöntemler tarafından desteklenmeyen bir denetim eklemek istiyorsanız, `AddControl` yöntemini kullanabilirsiniz. Daha fazla bilgi için bkz. [çalışma zamanında Office belgelerine denetim ekleme](../vsto/adding-controls-to-office-documents-at-run-time.md).|
+|Denetimleri kopyalama|Bir Windows Forms denetimini kopyalayıp çalışma zamanında bir belgeye yapıştırırsanız, boş bir kapsayıcı ActiveX denetimi belgeye yapıştırılır. Windows Forms denetimi yeni konumda görünmez ve özgün denetimin arkasındaki kod kapsayıcı ActiveX denetimine kopyalanmaz.|
 
-## <a name="limitations-in-document-level-projects"></a>Belge düzeyi projelere sınırlamaları
+## <a name="limitations-in-document-level-projects"></a>Belge düzeyi projelerindeki sınırlamalar
 
-Belgelerindeki Windows Forms denetimleri kullanarak bazı sınırlamaları için belge düzeyi projelerine özgüdür.
+Belgeler üzerinde Windows Forms denetimleri kullanmanın bazı sınırlamaları belge düzeyi projelere özgüdür.
 
-### <a name="control-support-at-design-time"></a>Tasarım zamanında denetimi desteği
+### <a name="control-support-at-design-time"></a>Tasarım zamanında denetim desteği
 
-Bazı Windows Forms denetimleri çıkarılır **araç kutusu** ne zaman bir Excel çalışma sayfası veya Word belgesi açıksa Visual Studio Tasarımcısı'nda. Bu teknik sınırlamaları nedeniyle, veya işlevi zaten Word veya Excel içinde kullanılabilir. Excel ve Word projelerini desteklemek tüm Windows Forms denetimleri ve görünen diğer bileşenleri **araç kutusu** zaman belge odağa sahip ve bir çalışma sayfası veya belge de üçüncü taraf denetimleri ekleyebilirsiniz.
-
-> [!NOTE]
-> Tüm denetimleri çıkarılır **araç kutusu** ne zaman bir belge korunur. Belge koruması hakkında daha fazla bilgi için bkz. [koruma belge düzeyi çözümlerde belge](../vsto/document-protection-in-document-level-solutions.md).
+Visual Studio tasarımcısında bir Excel çalışma sayfası veya Word belgesi açıldığında bazı Windows Forms denetimleri **araç** çubuğundan kaldırılır. Bunun nedeni teknik sınırlamalardan veya işlevin Word veya Excel 'de zaten kullanılabilir olmasından kaynaklanır. Excel ve Word projeleri, belge odağa sahip olduğunda **araç kutusunda** görünen tüm Windows Forms denetimlerini ve diğer bileşenleri destekler ve ayrıca bir çalışma sayfasına veya belgeye üçüncü taraf denetimleri de ekleyebilirsiniz.
 
 > [!NOTE]
-> Üçüncü taraf denetimleri olmalıdır <xref:System.Runtime.InteropServices.ComVisibleAttribute> özniteliğini **true** Office çözümünü kullanılabilmesi için.
+> Bir Belge korunduğunda **araç** çubuğundan tüm denetimler kaldırılır. Belge koruma hakkında daha fazla bilgi için bkz. belge [düzeyi çözümlerinde belge koruma](../vsto/document-protection-in-document-level-solutions.md).
 
-Aşağıdaki denetimleri ve bileşenleri kullanılabilir olmayan **araç kutusu**:
+> [!NOTE]
+> Üçüncü taraf denetimleri, <xref:System.Runtime.InteropServices.ComVisibleAttribute> bir Office çözümünde kullanılabilmesi için özniteliği **true** olarak ayarlanmış olmalıdır.
+
+Aşağıdaki denetimler ve bileşenler **araç kutusunda**kullanılamaz:
 
 - <xref:System.Windows.Forms.BindingNavigator>
 
@@ -178,13 +178,13 @@ Aşağıdaki denetimleri ve bileşenleri kullanılabilir olmayan **araç kutusu*
 
 - <xref:System.Windows.Forms.ToolStripPanel>
 
-### <a name="support-for-legacy-activex-controls"></a>Eski ActiveX denetimleri için desteği
+### <a name="support-for-legacy-activex-controls"></a>Eski ActiveX denetimleri için destek
 
-ActiveX denetimlerini işlevselliğini kaybolmaz, mevcut bir Word belgesi veya ActiveX denetimlerini içeren Excel çalışma kitabı kullanan bir belge düzeyinde Office projesi oluşturursanız, Ancak, Visual Studio içinden belgelerinizi yeni ActiveX denetimleri ekleme desteği yoktur. Örneğin, Word belgesi bir düğmeyle varsa **denetimi** Visual Basic for Applications (VBA) makrosu araç kutusu, bu belge Office projeleri kullanıldıktan sonra makrosu çalışmaya devam edecek. Ancak, ActiveX denetimlerini ve VBA denetimlerini kaldırın ve bunları Windows Forms denetimleri ile değiştirin ve yönetilen kodla önerilir.
+ActiveX denetimleri içeren mevcut bir Word belgesi veya Excel çalışma kitabı kullanan belge düzeyi Office projesi oluşturursanız, ActiveX denetimlerinin işlevselliği kaybolmaz; Ancak, Visual Studio içinden belgelerinize yeni ActiveX denetimleri ekleme desteği yoktur. Örneğin, Word belgeniz bir Visual Basic for Applications (VBA) makrosunu çalıştıran **Denetim** araç kutusundan bir düğmeye sahipse, belge bir Office projesinde kullanıldıktan sonra makroyu çalıştırmaya devam edecektir. Ancak, ActiveX denetimlerini ve VBA makrolarını kaldırmanız ve bunları Windows Forms denetimleri ve yönetilen kodla değiştirmeniz önerilir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 - [Office belgelerindeki denetimler](../vsto/controls-on-office-documents.md)
 - [Windows Forms denetimlerine Office belgeleri genel bakış](../vsto/windows-forms-controls-on-office-documents-overview.md)
-- [Office belgelerine çalışma zamanında denetimler ekleme](../vsto/adding-controls-to-office-documents-at-run-time.md)
+- [Çalışma zamanında Office belgelerine denetim ekleme](../vsto/adding-controls-to-office-documents-at-run-time.md)
 - [Nasıl yapılır: Office belgelerine Windows Forms denetimleri ekleme](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)

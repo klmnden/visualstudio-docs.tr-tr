@@ -18,38 +18,38 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8710fb703b353b267e7057973865cf845ebf79a9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ebea0c3a09d08741523deddce94def170d844202
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62976502"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71253704"
 ---
 # <a name="document-host-item"></a>Belge konak öğesi
-  <xref:Microsoft.Office.Tools.Word.Document> Konak öğesi olan bir türü genişleten <xref:Microsoft.Office.Interop.Word.Document> Word için birincil birlikte çalışma bütünleştirilmiş koddan tür. <xref:Microsoft.Office.Tools.Word.Document> Konak öğesi tüm özellikleri, yöntemleri ve olayları olarak sağlayan bir <xref:Microsoft.Office.Interop.Word.Document> nesne, ancak ayrıca ek olayları ortaya koyan ve konak denetimleri ve Windows Forms denetimleri için kapsayıcı işlevi görür.
+  Konak öğesi, Word için birincil birlikte çalışma derlemesinden <xref:Microsoft.Office.Interop.Word.Document> türü genişleten bir türdür. <xref:Microsoft.Office.Tools.Word.Document> Konak öğesi, aynı özellikleri, yöntemleri ve olayları bir <xref:Microsoft.Office.Interop.Word.Document> nesne olarak sağlar, ancak ayrıca ek olaylar sunar ve konak denetimleri ve Windows Forms denetimleri için bir kapsayıcı görevi görür. <xref:Microsoft.Office.Tools.Word.Document>
 
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
 
- Belge düzeyinde projelerde bir varsayılan yok <xref:Microsoft.Office.Tools.Word.Document> projenizdeki belgeyi temsil eden konak öğesi. VSTO eklentisi projelerinde oluşturabileceğiniz <xref:Microsoft.Office.Tools.Word.Document> çalışma zamanında konak öğelerini.
+ Belge düzeyi projelerinde, projenizdeki belgeyi temsil eden bir varsayılan <xref:Microsoft.Office.Tools.Word.Document> konak öğesi vardır. VSTO eklenti projelerinde, <xref:Microsoft.Office.Tools.Word.Document> çalışma zamanında konak öğeleri oluşturabilirsiniz.
 
-## <a name="understand-the-document-host-item-in-document-level-projects"></a>Belge düzeyinde projelerde belge konak öğesi anlama
- Projenizdeki belgeye erişmek için `ThisDocument` sınıfı. Bir belge düzeyi projesi oluşturduğunuzda, Visual Studio'nun oluşturduğu `ThisDocument` Word özelleştirme kodunuzu arasındaki iletişimi bağlantı olarak hizmet verecek sınıfı. `ThisDocument` Sınıf üyelerine erişim sağlar <xref:Microsoft.Office.Tools.Word.Document> özelleştirme, belge açıldığında veya kod çalıştırma gibi temel görevleri gerçekleştirmek için konak öğesi. Sınıfı, belgeye denetim eklemek için de kullanabilirsiniz. Farklı denetim kümelerini birleştirerek ve verilere denetimler bağlayabilirsiniz kod yazarken, kullanıcıdan bilgi toplamak ve kullanıcı eylemlerine yanıt. Daha fazla bilgi için [Program belge düzeyi özelleştirmeleri](../vsto/programming-document-level-customizations.md).
+## <a name="understand-the-document-host-item-in-document-level-projects"></a>Belge düzeyi projelerdeki belge konak öğesini anlayın
+ Projenizdeki belgeye erişmek için `ThisDocument` sınıfını kullanın. Belge düzeyinde bir proje oluşturduğunuzda, Visual Studio Word ile özelleştirme kodunuz arasında `ThisDocument` iletişim bağlantısı olarak kullanılacak sınıfı oluşturur. Sınıfı, özelleştirme sırasında kod çalıştırma veya kapatma gibi <xref:Microsoft.Office.Tools.Word.Document> temel görevleri gerçekleştirmek için konak öğesinin üyelerine erişmenizi sağlar. `ThisDocument` Belgeye denetim eklemek için sınıfını da kullanabilirsiniz. Farklı denetim kümelerini birleştirerek ve kod yazarken, denetimleri verilere bağlayabilir, kullanıcıdan bilgi toplayabilir ve kullanıcı eylemlerine yanıt verebilirsiniz. Daha fazla bilgi için bkz. [Program belge düzeyi özelleştirmeleri](../vsto/programming-document-level-customizations.md).
 
- `ThisDocument` Sınıfı başlangıç projenizde kod yazma bir konum sağlar. Sınıfı, tüm özellikleri, yöntemleri ve olayları olarak sağladığından <xref:Microsoft.Office.Interop.Word.Document> nesne birincil birlikte çalışma derlemesi Word için de kullanabilirsiniz `ThisDocument` Word nesne modeli erişmek için. Daha fazla bilgi için [Word nesne modeline genel bakış](../vsto/word-object-model-overview.md).
+ Sınıfı `ThisDocument` , projenizde kod yazmaya başlayabilmeniz için bir konum sağlar. Sınıfı, Word için birincil birlikte çalışma derlemesindeki <xref:Microsoft.Office.Interop.Word.Document> nesne olarak aynı özellikleri, yöntemleri ve olayları sağladığından, Word nesne modeline erişmek için de kullanabilirsiniz. `ThisDocument` Daha fazla bilgi için bkz. [Word nesne modeline genel bakış](../vsto/word-object-model-overview.md).
 
-### <a name="limitations-of-the-document-host-item-in-document-level-projects"></a>Belge düzeyinde projelerde belge konak öğesi sınırlamaları
- Tek bir belge düzeyi projesi içerebilir <xref:Microsoft.Office.Tools.Word.Document> konak öğesi (diğer bir deyişle, `ThisDocument` sınıfı). Yeni eklenemiyor <xref:Microsoft.Office.Tools.Word.Document> konak öğeleri projenize tasarım zamanında ve yeni oluşturamazsınız <xref:Microsoft.Office.Tools.Word.Document> konak öğelerini bir belge düzeyi özelleştirmesinde zamanında.
+### <a name="limitations-of-the-document-host-item-in-document-level-projects"></a>Belge düzeyi projelerdeki belge konak öğesinin sınırlamaları
+ Belge düzeyindeki bir proje yalnızca bir <xref:Microsoft.Office.Tools.Word.Document> konak öğesi (yani `ThisDocument` , sınıfı) içerebilir. Tasarım zamanında projenize yeni <xref:Microsoft.Office.Tools.Word.Document> konak öğeleri ekleyemez ve çalışma zamanında belge düzeyi özelleştirmesindeki yeni <xref:Microsoft.Office.Tools.Word.Document> konak öğeleri oluşturamazsınız.
 
- Çalışma zamanında yeni bir Word belgesi oluşturun, türü olacaktır <xref:Microsoft.Office.Interop.Word.Document>. Bir konak öğesi olmadığı için tüm konak veya Windows Forms denetimleri içeremez. Çalışma zamanında belgeler oluşturma hakkında daha fazla bilgi için bkz. [nasıl yapılır: Program aracılığıyla yeni belgeler oluşturma](../vsto/how-to-programmatically-create-new-documents.md).
+ Çalışma zamanında yeni bir Word belgesi oluşturursanız, bu, türü <xref:Microsoft.Office.Interop.Word.Document>olacaktır. Konak öğesi olmadığından, hiçbir konak denetimi veya Windows Forms denetimi içeremez. Çalışma zamanında belge oluşturma hakkında daha fazla bilgi için bkz [. nasıl yapılır: Program aracılığıyla yeni belgeler](../vsto/how-to-programmatically-create-new-documents.md)oluşturun.
 
-## <a name="understand-document-host-items-in-application-level-projects"></a>Belge konak öğeleri uygulama düzeyi projelere anlama
- VSTO eklentisi projelerinde oluşturabileceğiniz bir <xref:Microsoft.Office.Tools.Word.Document> çalışma zamanında konak öğesi herhangi bir belgede Word'de açık. Kullanabileceğiniz <xref:Microsoft.Office.Tools.Word.Document> ilişkili belge için denetimler ekleme ya da kullanılabilir olan olayları işlemek için ana bilgisayar öğesi <xref:Microsoft.Office.Interop.Word.Document> nesneleri.
+## <a name="understand-document-host-items-in-application-level-projects"></a>Uygulama düzeyi projelerindeki belge konak öğelerini anlama
+ VSTO eklenti projelerinde, Word 'de açık olan herhangi bir belge <xref:Microsoft.Office.Tools.Word.Document> için çalışma zamanında bir konak öğesi oluşturabilirsiniz. İlişkili belgeye denetim eklemek <xref:Microsoft.Office.Tools.Word.Document> veya <xref:Microsoft.Office.Interop.Word.Document> nesnelerde kullanılamayan olayları işlemek için konak öğesini kullanabilirsiniz.
 
- Oluşturulacak bir <xref:Microsoft.Office.Tools.Word.Document> konak öğesi, kullanım `GetVstoObject` yöntemi. Daha fazla bilgi için [genişletmek Word belgelerini ve Excel çalışma kitaplarını çalışma zamanında VSTO Add-Ins](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).
+ Bir <xref:Microsoft.Office.Tools.Word.Document> konak öğesi oluşturmak için `GetVstoObject` yöntemini kullanın. Daha fazla bilgi için bkz. [çalışma ZAMANıNDA VSTO Eklentilerindeki Word belgelerini ve Excel çalışma kitaplarını genişletme](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
-- [Konak öğelerine ve denetimlerine genel bakış](../vsto/host-items-and-host-controls-overview.md)
-- [Genişletilmiş nesneleri kullanarak Word'ü otomatikleştirirken](../vsto/automating-word-by-using-extended-objects.md)
+- [Konak öğeleri ve konak denetimlerine genel bakış](../vsto/host-items-and-host-controls-overview.md)
+- [Genişletilmiş nesneleri kullanarak Word 'Ü otomatikleştirme](../vsto/automating-word-by-using-extended-objects.md)
 - [Word nesne modeline genel bakış](../vsto/word-object-model-overview.md)
-- [Konak denetimlerinin ve konak öğelerinin programlama sınırlamaları](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)
-- [Word belgelerini ve Excel çalışma kitaplarını VSTO eklentileri çalışma zamanında genişletme](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)
+- [Konak öğelerinin ve konak denetimlerinin programlama sınırlamaları](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)
+- [VSTO Eklentilerindeki Word belgelerini ve Excel çalışma kitaplarını çalışma zamanında genişletme](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)

@@ -1,5 +1,5 @@
 ---
-title: Belge düzeyi özelleştirmelerini programlama
+title: Program belge düzeyi özelleştirmeleri
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -27,40 +27,40 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 53003e2a88faf2ef29d3a1eb3df1da081f20ce57
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7d1908f72bce01956bbb2eeb62bb9bbc30a64b0d
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62561724"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71254028"
 ---
-# <a name="program-document-level-customizations"></a>Belge düzeyi özelleştirmelerini programlama
-  Microsoft Office Word veya Microsoft Office Excel belge düzeyi özelleştirmesi kullanılarak genişlettiğinizde aşağıdaki görevleri gerçekleştirebilirsiniz:
+# <a name="program-document-level-customizations"></a>Program belge düzeyi özelleştirmeleri
+  Belge düzeyi özelleştirmesi kullanarak Microsoft Office Word veya Excel Microsoft Office genişlettiğinizde, aşağıdaki görevleri gerçekleştirebilirsiniz:
 
-- Uygulama, nesne modelini kullanarak otomatik hale getirin.
+- Nesne modelini kullanarak uygulamayı otomatikleştirin.
 
 - Belge yüzeyine denetimler ekleyin.
 
-- Visual Basic belgedeki Applications (VBA) kodu için özelleştirme bütünleştirilmiş koddan çağırın.
+- Özelleştirme derlemesinden belgedeki Visual Basic for Applications (VBA) kodunu çağırın.
 
-- Özelleştirme bütünleştirilmiş koddan VBA kodu çağırın.
+- VBA 'dan özelleştirme derlemesinde kodu çağırın.
 
-- Microsoft Office'in yüklü olmayan bir sunucuda olsa bazı yönlerini belge yönetin.
+- Microsoft Office yüklü olmayan bir sunucuda olduğu sırada belgenin belirli yönlerini yönetin.
 
 - Uygulamanın kullanıcı arabirimini (UI) özelleştirin.
 
   [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]
 
-  Belge düzeyinde projelerde kod yazmayı bazı yönleri, Visual Studio'da projelerinin diğer türleri farklıdır. Bu farklılıkların birçoğu şekilde Office nesne modelleri, yönetilen kod için sunulan neden olur. Daha fazla bilgi için [Office çözümlerinde kod yazma](../vsto/writing-code-in-office-solutions.md).
+  Belge düzeyi projelerde kod yazmanın bazı yönleri, Visual Studio 'daki diğer proje türlerinden farklıdır. Bu farklılıkların birçoğu, Office nesne modellerinin yönetilen koda sunulma yoludur. Daha fazla bilgi için bkz. [Office çözümlerinde kod yazma](../vsto/writing-code-in-office-solutions.md).
 
-  Visual Studio'da Office geliştirme araçlarını kullanarak oluşturabileceğiniz belge düzeyi özelleştirmeleri ve diğer tür çözümler hakkında genel bilgi için bkz. [Office çözümleri geliştirmesine genel bakış &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).
+  Belge düzeyi özelleştirmeleri ve Visual Studio 'da Office geliştirme araçları 'nı kullanarak oluşturabileceğiniz diğer çözüm türleri hakkında genel bilgi için bkz. [Office çözümleri geliştirmesine genel &#40;bakış VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).
 
-## <a name="use-the-generated-classes-in-document-level-projects"></a>Belge düzeyinde projelerde üretilen sınıfları kullanın
- Bir belge düzeyi projesi oluşturduğunuzda, Visual Studio otomatik olarak kodunuzu yazmaya başlamak için kullanabileceğiniz bir projede bir sınıf oluşturur. Visual Studio, Word ve Excel için farklı sınıflar oluşturur:
+## <a name="use-the-generated-classes-in-document-level-projects"></a>Belge düzeyi projelerde oluşturulan sınıfları kullanma
+ Belge düzeyi projesi oluşturduğunuzda, Visual Studio projede kodunuzu yazmaya başlamak için kullanabileceğiniz bir sınıfı otomatik olarak oluşturur. Visual Studio Word ve Excel için farklı sınıflar oluşturur:
 
-- Word için belge düzeyinde projelerde sınıfı olarak adlandırılan `ThisDocument` varsayılan olarak.
+- Word için belge düzeyi projelerinde, sınıfı varsayılan olarak çağrılır `ThisDocument` .
 
-- Excel için belge düzeyi projelerine sahip birden çok oluşturulan sınıflar: çalışma kitabının kendisi için ve her çalışma sayfası için bir. Varsayılan olarak, bu sınıfları aşağıdaki adlara sahiptir:
+- Excel için belge düzeyi projeleri birden çok oluşturulmuş sınıfa sahiptir: biri çalışma kitabının kendisi için, diğeri her çalışma sayfası için. Varsayılan olarak, bu sınıflar aşağıdaki adlara sahiptir:
 
   - `ThisWorkbook`
 
@@ -70,23 +70,23 @@ ms.locfileid: "62561724"
 
   - `Sheet3`
 
-  Oluşturulan sınıfın belge açıldığında veya çağrılan olayı işleyicilerini içerir. Belge açıldığında kodu çalıştırmak için kod ekleyin. `Startup` olay işleyicisi. Belge kapatılmadan hemen önce kodu çalıştırmak için kod ekleyin. `Shutdown` olay işleyicisi. Daha fazla bilgi için [Office Projelerindeki Olaylar](../vsto/events-in-office-projects.md).
+  Oluşturulan sınıf, belge açıldığında veya kapandığında çağrılan olay işleyicilerini içerir. Belge açıldığında kodu çalıştırmak için `Startup` olay işleyicisine kod ekleyin. Belge kapatılmadan hemen önce kodu çalıştırmak için, `Shutdown` olay işleyicisine kod ekleyin. Daha fazla bilgi için bkz. [Office Projelerindeki Olaylar](../vsto/events-in-office-projects.md).
 
-### <a name="understand-the-design-of-the-generated-classes"></a>Oluşturulan sınıflar tasarımını anlayın
- ' İ hedefleyen projelerde [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] veya [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)], konak öğesi türleri içinde [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] olduğundan arabirimleri, kendi uygulamasından oluşturulan sınıflar türetilemez. Bunun yerine, üretilen sınıfları birçok üyelerini aşağıdaki temel sınıflarından:
+### <a name="understand-the-design-of-the-generated-classes"></a>Oluşturulan sınıfların tasarımını anlama
+ [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] Veya ' i hedefleyen projelerde, içindeki konak öğesi türleri arayüzlerdir, bu nedenle oluşturulan sınıflar bunlardan uygulanmasını [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]türetemez. Bunun yerine, oluşturulan sınıflar üyelerinin çoğunu aşağıdaki temel sınıflardan türetir:
 
-- `ThisDocument`: türetilen <xref:Microsoft.Office.Tools.Word.DocumentBase>.
+- `ThisDocument`: türetiliyor <xref:Microsoft.Office.Tools.Word.DocumentBase>.
 
-- `ThisWorkbook`: türetilen <xref:Microsoft.Office.Tools.Excel.WorkbookBase>.
+- `ThisWorkbook`: türetiliyor <xref:Microsoft.Office.Tools.Excel.WorkbookBase>.
 
-- `Sheet` *n*: türetilen <xref:Microsoft.Office.Tools.Excel.WorksheetBase>.
+- `Sheet`*n*: öğesinden <xref:Microsoft.Office.Tools.Excel.WorksheetBase>türetilir.
 
-  Temel sınıfların üyeleri tüm çağrıları karşılık gelen konak öğesi arabirimlerde iç uygulamaları yeniden yönlendirme [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]. Örneğin, eğer <xref:Microsoft.Office.Tools.Word.DocumentBase.Protect%2A> yöntemi `ThisDocument` sınıfı <xref:Microsoft.Office.Tools.Word.DocumentBase> sınıfı iç uygulanması bu çağrıyı yeniden yönlendiren <xref:Microsoft.Office.Tools.Word.Document> arabiriminde [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)].
+  Bu temel sınıflar, üyelerine tüm çağrıları, [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]içindeki karşılık gelen konak öğesi arabirimlerinin iç uygulamalarına yönlendirir. Örneğin, <xref:Microsoft.Office.Tools.Word.DocumentBase.Protect%2A> `ThisDocument` sınıfının yöntemini çağırırsanız, <xref:Microsoft.Office.Tools.Word.DocumentBase> sınıfı <xref:Microsoft.Office.Tools.Word.Document> bu çağrıyı içindeki [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]arabirimin iç uygulamasına yönlendirir.
 
-## <a name="access-the-object-model-of-the-host-application"></a>Konak uygulamanın nesne modeline erişme
- Konak uygulamanın nesne modeli erişmek için projenizde oluşturulan sınıfın üyeleri kullanın. Bu sınıfların her birini Excel veya Word nesne modelinde bir nesneye karşılık gelen ve özelliklerini, yöntemlerini ve olaylarını çoğunu içerir. Örneğin, `ThisDocument` Word aynı üyeleri çoğunu sağlar sınıfını bir belge düzeyi projede <xref:Microsoft.Office.Interop.Word.Document> Word nesne modelinde.
+## <a name="access-the-object-model-of-the-host-application"></a>Ana bilgisayar uygulamasının nesne modeline erişin
+ Konak uygulamasının nesne modeline erişmek için, projenizde oluşturulan sınıfın üyelerini kullanın. Bu sınıfların her biri Excel veya Word nesne modelindeki bir nesneye karşılık gelir ve aynı özelliklerin, yöntemlerin ve olayların çoğunu içerir. Örneğin, `ThisDocument` Word için belge düzeyi projesindeki sınıf, Word nesne modelindeki <xref:Microsoft.Office.Interop.Word.Document> nesne ile aynı üyelerin çoğunu sağlar.
 
- Aşağıdaki kod örneği, Word için belge düzeyi özelleştirmeyi parçası olan bir belgeyi kaydetmek için Word nesne modeli kullanmayı gösterir. Bu örnekte çalışmak üzere tasarlanmıştır `ThisDocument` sınıfı.
+ Aşağıdaki kod örneği, Word için belge düzeyi özelleştirmenin parçası olan belgeyi kaydetmek için Word nesne modelinin nasıl kullanılacağını gösterir. Bu örnek `ThisDocument` sınıfından çalıştırılmak üzere tasarlanmıştır.
 
 ```vb
 Me.Save()
@@ -96,7 +96,7 @@ Me.Save()
 this.Save();
 ```
 
- Dışından aynı şeyi yapmak için `ThisDocument` sınıfı, kullanın `Globals` nesne erişimi `ThisDocument` sınıfı. Dahil etmek istiyorsanız, bu kod Eylemler bölmesi kod dosyasına ekleyebileceğiniz bir **Kaydet** UI Eylemler bölmesinde düğmesi.
+ `ThisDocument` Sınıfın dışından aynı şeyi yapmak için, `ThisDocument` sınıfına erişmek için `Globals` nesnesini kullanın. Örneğin, Eylemler bölmesi Kullanıcı arabirimine bir **Kaydet** düğmesi eklemek istiyorsanız, bu kodu bir eylemler bölmesi kod dosyasına ekleyebilirsiniz.
 
 ```vb
 Globals.ThisDocument.Save()
@@ -106,69 +106,69 @@ Globals.ThisDocument.Save()
 Globals.ThisDocument.Save();
 ```
 
- Çünkü `ThisDocument` sınıf üyelerini çoğunu alır <xref:Microsoft.Office.Tools.Word.Document> konak öğesi `Save` bu kodu, çağrılan yöntem olan gerçekten <xref:Microsoft.Office.Tools.Word.Document.Save%2A> yöntemi <xref:Microsoft.Office.Tools.Word.Document> konak öğesi. Bu yöntem karşılık gelen <xref:Microsoft.Office.Interop.Word._Document.Save%2A> yöntemi <xref:Microsoft.Office.Interop.Word.Document> Word nesne modelinde.
+ <xref:Microsoft.Office.Tools.Word.Document> `Save` <xref:Microsoft.Office.Tools.Word.Document.Save%2A> Sınıf, üyelerinin çoğunu konak öğesinden edindiği için, <xref:Microsoft.Office.Tools.Word.Document> Bu kodda çağrılan yöntem aslında ana öğe öğesinin yöntemidir. `ThisDocument` Bu yöntem, Word nesne <xref:Microsoft.Office.Interop.Word._Document.Save%2A> modelindeki <xref:Microsoft.Office.Interop.Word.Document> nesnesinin yöntemine karşılık gelir.
 
- Word ve Excel nesne modelleri kullanma hakkında daha fazla bilgi için bkz. [Word nesne modeline genel bakış](../vsto/word-object-model-overview.md) ve [Excel nesne modeline genel bakış](../vsto/excel-object-model-overview.md).
+ Word ve Excel 'in nesne modellerini kullanma hakkında daha fazla bilgi için bkz. [Word nesne modeline genel bakış](../vsto/word-object-model-overview.md) ve [Excel nesne modeline genel bakış](../vsto/excel-object-model-overview.md).
 
- Hakkında daha fazla bilgi için `Globals` nesne, bkz: [Office projelerindeki nesnelere genel erişim](../vsto/global-access-to-objects-in-office-projects.md).
+ `Globals` Nesnesi hakkında daha fazla bilgi için bkz. [Office Projelerindeki Nesnelere Genel erişim](../vsto/global-access-to-objects-in-office-projects.md).
 
-## <a name="add-controls-to-documents"></a>Belgelere denetimler ekleme
- Belgenin kullanıcı arabirimini özelleştirmek için Windows Forms denetimleri ekleyebilirsiniz veya *konak denetimlerini* belge yüzeyine bırakın. Farklı denetim kümelerini birleştirerek ve verilere denetimler bağlayabilirsiniz kod yazarken, kullanıcıdan bilgi toplamak ve kullanıcı eylemlerine yanıt.
+## <a name="add-controls-to-documents"></a>Belgelere denetim ekleme
+ Belgenin Kullanıcı arabirimini özelleştirmek için belge yüzeyine Windows Forms denetimleri veya *konak denetimleri* ekleyebilirsiniz. Farklı denetim kümelerini birleştirerek ve kod yazarken, denetimleri verilere bağlayabilir, kullanıcıdan bilgi toplayabilir ve kullanıcı eylemlerine yanıt verebilirsiniz.
 
- Konak denetimleri bazı nesneler Word ve Excel nesne modelinde genişleten sınıflardır. Örneğin, <xref:Microsoft.Office.Tools.Excel.ListObject> konak kontrolü tüm işlevlerini sağlar <xref:Microsoft.Office.Interop.Excel.ListObject> Excel'de. Ancak, <xref:Microsoft.Office.Tools.Excel.ListObject> konak kontrolü ek olaylar ve veri bağlama özellikleri de vardır.
+ Konak denetimleri, Word ve Excel nesne modelindeki bazı nesneleri genişleten sınıflardır. Örneğin, <xref:Microsoft.Office.Tools.Excel.ListObject> konak denetimi Excel <xref:Microsoft.Office.Interop.Excel.ListObject> 'deki tüm işlevlerini sağlar. Ancak, <xref:Microsoft.Office.Tools.Excel.ListObject> konak denetiminde ek olaylar ve veri bağlama özellikleri de bulunur.
 
- Daha fazla bilgi için [konak öğelerini ve denetimlerine genel bakış için ana bilgisayar](../vsto/host-items-and-host-controls-overview.md) ve [Windows forms denetimlerine Office belgeleri genel bakış](../vsto/windows-forms-controls-on-office-documents-overview.md).
+ Daha fazla bilgi için bkz. [konak öğeleri ve konak denetimlerine genel bakış](../vsto/host-items-and-host-controls-overview.md) ve [Office belgelerindeki Windows Forms denetimlerine genel bakış](../vsto/windows-forms-controls-on-office-documents-overview.md).
 
 ## <a name="combine-vba-and-document-level-customizations"></a>VBA ve belge düzeyi özelleştirmelerini birleştirme
- Belge düzeyi özelleştirmesi parçası olan bir belgede VBA kodu kullanabilirsiniz. Özelleştirme bütünleştirilmiş koddan belgedeki VBA kodu çağırabilir ve özelleştirme derlemede kod çağırmak için belgedeki VBA kodu etkinleştirmek için projenizi de yapılandırabilirsiniz.
+ Belge düzeyinde özelleştirmenin parçası olan bir belgede VBA kodunu kullanabilirsiniz. Belgedeki VBA kodunu özelleştirme derlemesinden çağırabilirsiniz ve ayrıca projenizi özelleştirme derlemesindeki kodu çağırmak için belgede VBA kodunu etkinleştirecek şekilde yapılandırabilirsiniz.
 
- Daha fazla bilgi için [birleştirmek VBA ve belge düzeyi özelleştirmeleri](../vsto/combining-vba-and-document-level-customizations.md).
+ Daha fazla bilgi için bkz. [VBA ve belge düzeyi özelleştirmelerini birleştirme](../vsto/combining-vba-and-document-level-customizations.md).
 
-## <a name="manage-documents-on-a-server"></a>Bir sunucu üzerinde belgeleri yönetme
- Microsoft Office Word'ün yüklü olmadığı bir sunucuda belge düzeyi özelleştirmeleri birkaç farklı özelliklerini yönetebilir veya Microsoft Office Excel yüklü. Örneğin, erişim ve belgenin veri önbelleğindeki verileri değiştirme. Ayrıca, belge ile ilişkilendirilen özelleştirme bütünleştirilmiş kodu yönetebilirsiniz. Örneğin, program aracılığıyla derleme belge belge artık kodunuzun çalıştığı ya da belgeye bir derleme program aracılığıyla ekleyebilirsiniz kaldırabilirsiniz.
+## <a name="manage-documents-on-a-server"></a>Bir sunucudaki belgeleri yönetme
+ Belge düzeyi özelleştirmelerinin birçok farklı yönlerini, Microsoft Office Word veya Microsoft Office Excel yüklü olmayan bir sunucuda yönetebilirsiniz. Örneğin, belgenin veri önbelleğindeki verilere erişebilir ve verileri değiştirebilirsiniz. Ayrıca, belgeyle ilişkili özelleştirme derlemesini de yönetebilirsiniz. Örneğin, belgenin kodunuzu çalıştırmaması için derlemeyi belgeden program aracılığıyla kaldırabilir veya bir belgeye program aracılığıyla bir derlemeyi ekleyebilirsiniz.
 
- Daha fazla bilgi için [ServerDocument sınıfını kullanarak bir sunucu üzerinde belgeleri yönetme](../vsto/managing-documents-on-a-server-by-using-the-serverdocument-class.md).
+ Daha fazla bilgi için, bkz. [ServerDocument sınıfını kullanarak bir sunucudaki belgeleri yönetme](../vsto/managing-documents-on-a-server-by-using-the-serverdocument-class.md).
 
-## <a name="customize-the-user-interface-of-microsoft-office-applications"></a>Microsoft Office uygulamasının kullanıcı arabirimini özelleştirme
- Belge düzeyi özelleştirmesi kullanılarak Excel ve Word kullanıcı Arabirimi aşağıdaki şekillerde özelleştirebilirsiniz:
+## <a name="customize-the-user-interface-of-microsoft-office-applications"></a>Microsoft Office uygulamalarının Kullanıcı arabirimini özelleştirme
+ Belge düzeyi özelleştirmesi kullanarak Word ve Excel 'in Kullanıcı arabirimini aşağıdaki yollarla özelleştirebilirsiniz:
 
-- Konak veya Windows Forms denetimleri belge yüzeyine ekleyin.
+- Belge yüzeyine konak denetimleri veya Windows Forms denetimleri ekleyin.
 
-   Daha fazla bilgi için [otomatikleştirmek genişletilmiş nesneleri kullanarak Word'ü](../vsto/automating-word-by-using-extended-objects.md), [otomatikleştirmek genişletilmiş nesneleri kullanarak Excel](../vsto/automating-excel-by-using-extended-objects.md), ve [Windows Forms denetimleri Office belgeleri genel bakış](../vsto/windows-forms-controls-on-office-documents-overview.md).
+   Daha fazla bilgi için bkz. [genişletilmiş nesneleri kullanarak Word 'Ü otomatikleştirme](../vsto/automating-word-by-using-extended-objects.md), [genişletilmiş nesneleri kullanarak Excel 'ı otomatikleştirme](../vsto/automating-excel-by-using-extended-objects.md)ve [Office belgelerindeki Windows Forms denetimleri genel bakış](../vsto/windows-forms-controls-on-office-documents-overview.md).
 
-- Belgeye eylemler bölmesi ekleme.
+- Belgeye bir eylemler bölmesi ekleyin.
 
-   Daha fazla bilgi için [Eylemler bölmesine genel bakış](../vsto/actions-pane-overview.md).
+   Daha fazla bilgi için bkz. [eylemler bölmesine genel bakış](../vsto/actions-pane-overview.md).
 
-- Şeride özel sekmeler ekleme
+- Şerite özel sekmeler ekleyin.
 
-   Daha fazla bilgi için [Şerite Genel Bakış](../vsto/ribbon-overview.md).
+   Daha fazla bilgi için bkz. [Şerit 'e genel bakış](../vsto/ribbon-overview.md).
 
-- Şeritteki yerleşik bir sekmeyi özel gruplar ekleyin.
+- Şeritteki yerleşik bir sekmeye özel gruplar ekleyin.
 
-   Daha fazla bilgi için [nasıl yapılır: Yerleşik bir sekmeyi özelleştirme](../vsto/how-to-customize-a-built-in-tab.md).
+   Daha fazla bilgi için [nasıl yapılır: Yerleşik bir sekmeyi](../vsto/how-to-customize-a-built-in-tab.md)özelleştirin.
 
-  Microsoft Office UI uygulamaları özelleştirme hakkında daha fazla bilgi için bkz. [Office UI özelleştirmesi](../vsto/office-ui-customization.md).
+  Microsoft Office uygulamalarının Kullanıcı arabirimini özelleştirme hakkında daha fazla bilgi için bkz. [OFFICE UI özelleştirmesi](../vsto/office-ui-customization.md).
 
-## <a name="get-extended-objects-from-native-office-objects-in-document-level-customizations"></a>Genişletilmiş nesneleri belge düzeyi özelleştirmelerdeki yerel Office nesnelerden alma
- Office olayları için çok sayıda olay işleyicileri, çalışma kitabı, çalışma veya olayı oluşturan bir belgeyi temsil eden yerel bir Office nesnesi alır. Bazı durumlarda, yalnızca çalışma kitabı veya belge düzeyi özelleştirmenizdeki belge olayı, bazı kodlar çalıştırmak isteyebilirsiniz. Örneğin, Excel için belge düzeyi özelleştirmesinde kullanıcı özelleştirilmiş çalışma kitabının ve çalışma kağıtlarından biri etkinleştirirken, ancak kullanıcı çalışma kitabındaki aynı zamanda açık olmasını gerçekleşen bazı diğer etkinleştirdiğinde değil, bazı kodlar çalıştırmak isteyebilirsiniz.
+## <a name="get-extended-objects-from-native-office-objects-in-document-level-customizations"></a>Belge düzeyi özelleştirmelerde yerel Office nesnelerinden genişletilmiş nesneleri Al
+ Office olayları için pek çok olay işleyicisi, olayı oluşturan çalışma kitabını, çalışma sayfasını veya belgeyi temsil eden yerel bir Office nesnesi alır. Bazı durumlarda, yalnızca belge düzeyi özelleştirmesindeki çalışma kitabı veya belge olayı harekete çıktığında bazı kodları çalıştırmak isteyebilirsiniz. Örneğin, Excel için belge düzeyi özelleştirmesinde, Kullanıcı özelleştirilmiş çalışma kitabındaki çalışma sayfalarından birini etkinleştirdiğinde, ancak kullanıcı aynı anda açık olan başka bir çalışma kitabındaki çalışma sayfasını etkinleştirdiğinde, bazı kodları çalıştırmak isteyebilirsiniz.
 
- Yerel bir Office nesne varsa, bu nesne içine genişletilmiş olup olmadığını sınayabilirsiniz bir *konak öğesi* veya *konak kontrolü* belge düzeyi özelleştirmesinde. Konak denetimlerinin ve konak öğelerinin türleridir tarafından sağlanan [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] işlevsellik ekleyen Word veya Excel nesne modellerinde yerel olarak mevcut nesneleri (adlı *yerel Office nesneleri*). Konak denetimlerinin ve konak öğelerinin toplu olarak da adlandırılır *genişletilmiş nesneleri*. Konak denetimlerinin ve konak öğeleri hakkında daha fazla bilgi için bkz: [konak öğelerini ve denetimlerine genel bakış için ana bilgisayar](../vsto/host-items-and-host-controls-overview.md).
+ Yerel bir Office nesneniz varsa, bu nesnenin bir belge düzeyi özelleştirmesinde *konak öğesine* veya *konak denetimine* genişletilmiş olup olmadığını test edebilirsiniz. Konak öğeleri ve konak denetimleri, Word veya Excel nesne [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] modelleriyle ( *yerel Office nesneleri*olarak adlandırılır) yerel olarak var olan nesnelere işlev ekleyen, tarafından sunulan türlerdir. Toplu olarak, ana bilgisayar öğelerine ve konak denetimlerine de *Genişletilmiş nesneler*denir. Konak öğeleri ve konak denetimleri hakkında daha fazla bilgi için bkz. [konak öğeleri ve konak denetimlerine genel bakış](../vsto/host-items-and-host-controls-overview.md).
 
-## <a name="understand-the-getvstoobject-and-hasvstoobject-methods"></a>GetVstoObject ve HasVstoObject yöntemleri anlama
- Yerel bir Office nesne test etmek için `HasVstoObject` ve `GetVstoObject` projenizdeki yöntemleri:
+## <a name="understand-the-getvstoobject-and-hasvstoobject-methods"></a>GetVstoObject ve HasVstoObject yöntemlerini anlayın
+ Yerel bir Office nesnesini test etmek için, projenizdeki `HasVstoObject` ve `GetVstoObject` yöntemlerini kullanın:
 
-- Kullanım `HasVstoObject` yerel Office nesne özelleştirme sırasında genişletilmiş bir nesneye sahip olup olmadığını belirlemek istiyorsanız yöntemi. Bu yöntem döndürür **true** yerel Office nesne genişletilmiş bir nesne varsa ve **false** Aksi takdirde.
+- Yerel Office nesnesinin özelleştirmenizin genişletilmiş bir nesne içerip içermediğini anlamak istiyorsanız yönteminikullanın.`HasVstoObject` Bu yöntem, yerel Office nesnesi genişletilmiş bir nesne içeriyorsa **true** , aksi durumda **false** değerini döndürür.
 
-- Kullanım `GetVstoObject` uzatılmış nesne için yerel bir Office nesnesi almak istiyorsanız yöntemi. Bu yöntem döndürür bir <xref:Microsoft.Office.Tools.Excel.ListObject>, <xref:Microsoft.Office.Tools.Excel.Workbook>, <xref:Microsoft.Office.Tools.Excel.Worksheet>, veya <xref:Microsoft.Office.Tools.Word.Document> belirtilen yerel Office nesne varsa, nesne. Aksi takdirde, `GetVstoObject` döndürür **null**. Örneğin, `GetVstoObject` yöntemi döndürür bir <xref:Microsoft.Office.Tools.Word.Document> , belirtilen <xref:Microsoft.Office.Interop.Word.Document> Word belgesi projenizdeki belge için temel bir nesnedir.
+- Yerel bir Office nesnesi için genişletilmiş nesneyi almak istiyorsanız yönteminikullanın.`GetVstoObject` Bu yöntem, belirtilen <xref:Microsoft.Office.Tools.Excel.ListObject>yerel <xref:Microsoft.Office.Tools.Excel.Workbook>Office <xref:Microsoft.Office.Tools.Excel.Worksheet>nesnesinde bir <xref:Microsoft.Office.Tools.Word.Document> ,, veya nesnesi döndürür. Aksi takdirde `GetVstoObject` , **null**döndürür. Örneğin, nesne Word `GetVstoObject` belge projenizde belge <xref:Microsoft.Office.Tools.Word.Document> için temeldeki <xref:Microsoft.Office.Interop.Word.Document> nesnese, yöntemi döndürür.
 
-  Belge düzeyinde projelerde kullanamazsınız `GetVstoObject` yeni bir yöntem <xref:Microsoft.Office.Tools.Excel.Workbook>, <xref:Microsoft.Office.Tools.Excel.Worksheet>, veya <xref:Microsoft.Office.Tools.Word.Document> çalışma zamanında konak öğesi. Yalnızca tasarım zamanında projenizde oluşturulan mevcut konak öğelere erişmek için bu yöntemi kullanabilirsiniz. Yeni konak öğeleri çalışma zamanında oluşturmak istiyorsanız, bir VSTO eklenti projesi geliştirmeniz gerekir. Daha fazla bilgi için [konak denetimlerinin ve konak öğelerinin programlama sınırlamaları](../vsto/programmatic-limitations-of-host-items-and-host-controls.md) ve [genişletmek Word belgelerini ve Excel çalışma kitaplarını çalışma zamanında VSTO Add-Ins](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).
+  Belge düzeyi projelerinde `GetVstoObject` , çalışma zamanında yeni <xref:Microsoft.Office.Tools.Excel.Workbook>, <xref:Microsoft.Office.Tools.Excel.Worksheet>veya <xref:Microsoft.Office.Tools.Word.Document> konak öğesi oluşturmak için yöntemini kullanamazsınız. Bu yöntemi yalnızca, tasarım zamanında projenizde oluşturulan mevcut konak öğelerine erişmek için kullanabilirsiniz. Çalışma zamanında yeni konak öğeleri oluşturmak istiyorsanız, bir VSTO eklentisi projesi geliştirmeniz gerekir. Daha fazla bilgi için bkz. [konak öğeleri ve konak denetimleri Için programlama sınırlamaları](../vsto/programmatic-limitations-of-host-items-and-host-controls.md) ve [çalışma zamanında VSTO Eklentilerindeki Word belgelerini ve Excel çalışma kitaplarını genişletme](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).
 
-## <a name="use-the-getvstoobject-and-hasvstoobject-methods"></a>GetVstoObject ve HasVstoObject yöntemleri kullanın
- Çağrılacak `HasVstoObject` ve `GetVstoObject` yöntemi, kullanım `Globals.Factory.GetVstoObject` veya `Globals.Factory.HasVstoObject` yöntemi ve yerel Word veya Excel nesnesi geçirin (gibi bir <xref:Microsoft.Office.Interop.Word.Document> veya <xref:Microsoft.Office.Interop.Excel.Worksheet>) test etmek istediğiniz.
+## <a name="use-the-getvstoobject-and-hasvstoobject-methods"></a>GetVstoObject ve HasVstoObject yöntemlerini kullanma
+ `HasVstoObject` Ve <xref:Microsoft.Office.Interop.Word.Document> <xref:Microsoft.Office.Interop.Excel.Worksheet>yöntemini çağırmak için, `Globals.Factory.GetVstoObject` veya `Globals.Factory.HasVstoObject` yöntemini kullanın ve test etmek istediğiniz yerel sözcüğü ya da Excel nesnesini (veya gibi) geçirin. `GetVstoObject`
 
 ## <a name="see-also"></a>Ayrıca bkz.
 - [Office belgelerindeki denetimler](../vsto/controls-on-office-documents.md)
 - [VBA ve belge düzeyi özelleştirmelerini birleştirme](../vsto/combining-vba-and-document-level-customizations.md)
-- [ServerDocument sınıfını kullanarak bir sunucu üzerinde belgeleri yönetme](../vsto/managing-documents-on-a-server-by-using-the-serverdocument-class.md)
+- [ServerDocument sınıfını kullanarak bir sunucudaki belgeleri yönetme](../vsto/managing-documents-on-a-server-by-using-the-serverdocument-class.md)
 - [Office çözümlerinde kod yazma](../vsto/writing-code-in-office-solutions.md)

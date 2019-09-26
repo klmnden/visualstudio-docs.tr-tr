@@ -1,5 +1,5 @@
 ---
-title: Verileri (O/R Tasarımcısı) güncelleştirmek için LINQ to SQL'de saklı yordamlar kullanma
+title: Verileri güncelleştirmek için LINQ to SQL saklı yordamları kullanma (O/R Designer)
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: e88224ab-ff61-4a3a-b6b8-6f3694546cac
@@ -8,64 +8,64 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 58dfb1016097429eeab10c3b50262adc7015e818
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 3dfb55425934f00de41af7997ed1ed4b5a9bcf42
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66260803"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71252995"
 ---
-# <a name="how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-or-designer"></a>Nasıl yapılır: Güncelleştirme, ekleme ve silme işlemleri gerçekleştirmek için saklı yordamlar atama (O/R Tasarımcısı)
+# <a name="how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-or-designer"></a>Nasıl Yapılır: Güncelleştirme, ekleme ve silme işlemleri gerçekleştirmek için saklı yordamlar atama (O/R Tasarımcısı)
 
-Saklı yordamlar eklenebilir **O/R Tasarımcısı** ve tipik olarak yürütülen <xref:System.Data.Linq.DataContext> yöntemleri. ' % S'varsayılan LINQ ekleme, güncelleştirme gerçekleştiren ve bir veritabanına varlık sınıflardan değişiklikler kaydedildiğinde siler SQL çalışma zamanı davranışı için geçersiz kılmak için de kullanılabilir (örneğin, çağrılırken <xref:System.Data.Linq.DataContext.SubmitChanges%2A> yöntemi).
-
-> [!NOTE]
-> Depolanmış yordamınızdaki istemciye geri gönderilecek gereken değer döndürürse (örneğin, hesaplanan değerler saklı yordamda), saklı yordamlarınızı çıkış parametreleri oluşturun. Çıktı parametreleri kullanamıyorsanız, O/R tasarımcısı tarafından oluşturulan yazma güvenmek yerine bir kısmi yöntem uygulaması geçersiz kılar. Veritabanı tarafından oluşturulan değerleri için eşlenmiş üyeleri ekleme veya güncelleştirme işlemleri başarıyla tamamlanmadan sonra uygun değerler belirlemeniz gerekir. Daha fazla bilgi için [sorumlulukları geliştirici olarak geçersiz kılma varsayılan davranış](/dotnet/framework/data/adonet/sql/linq/responsibilities-of-the-developer-in-overriding-default-behavior).
+Saklı yordamlar **O/R tasarımcısına** eklenebilir ve tipik <xref:System.Data.Linq.DataContext> yöntemler olarak yürütülürler. Ayrıca, değişiklikler varlık sınıflarından veritabanına kaydedildiğinde ekleme, güncelleştirme ve silme işlemlerini gerçekleştiren varsayılan LINQ to SQL çalışma zamanı davranışını geçersiz kılmak için de kullanılabilir (örneğin, <xref:System.Data.Linq.DataContext.SubmitChanges%2A> yöntemi çağırırken).
 
 > [!NOTE]
-> LINQ to SQL veritabanı tarafından oluşturulan değerleri otomatik olarak kimlik (otomatik artış), rowguıdcol (veritabanı tarafından oluşturulan GUID) ve zaman damgası sütunları için işler. Veritabanı üretilmiş değerler diğer sütun türlerinde beklenmedik bir null değer neden olur. Veritabanı tarafından oluşturulan değerleri döndürülecek el ile ayarlamanız <xref:System.Data.Linq.Mapping.ColumnAttribute.IsDbGenerated%2A> için **true** ve <xref:System.Data.Linq.Mapping.ColumnAttribute.AutoSync%2A> aşağıdakilerden birine: [AutoSync.Always](<xref:System.Data.Linq.Mapping.AutoSync.Always>), [AutoSync.OnInsert](<xref:System.Data.Linq.Mapping.AutoSync.OnInsert>), veya [AutoSync.OnUpdate](<xref:System.Data.Linq.Mapping.AutoSync.OnUpdate>).
+> Saklı yordamınız istemciye geri gönderilmesi gereken değerler döndürürse (örneğin, saklı yordamda hesaplanan değerler), saklı yordamlarınızda çıkış parametreleri oluşturun. Çıkış parametrelerini kullanıdıysanız, O/R Tasarımcısı tarafından oluşturulan geçersiz kılmalara güvenmek yerine kısmi bir yöntem uygulamasını yazın. Veritabanı tarafından oluşturulan değerlerle eşlenen üyelerin ekleme veya GÜNCELLEŞTIRME işlemleri başarıyla tamamlandıktan sonra uygun değerlere ayarlanması gerekir. Daha fazla bilgi için, [varsayılan davranışı geçersiz kılan geliştiricinin sorumluluklarına](/dotnet/framework/data/adonet/sql/linq/responsibilities-of-the-developer-in-overriding-default-behavior)bakın.
 
-## <a name="configure-the-update-behavior-of-an-entity-class"></a>Bir varlık sınıfı güncelleştirme davranışını yapılandırma
+> [!NOTE]
+> LINQ to SQL kimlik (otomatik artış), ROWGUIDCOL (veritabanı tarafından üretilen GUID) ve zaman damgası sütunları için veritabanı tarafından oluşturulan değerleri otomatik olarak işler. Diğer sütun türlerindeki veritabanı tarafından oluşturulan değerler beklenmedik bir şekilde null değer oluşmasına neden olur. Veritabanı tarafından oluşturulan değerleri döndürmek için, **doğru** ve <xref:System.Data.Linq.Mapping.ColumnAttribute.AutoSync%2A> aşağıdakilerden birine el <xref:System.Data.Linq.Mapping.ColumnAttribute.IsDbGenerated%2A> ile ayarlamanız gerekir: [Oto Sync. Always](<xref:System.Data.Linq.Mapping.AutoSync.Always>), [oto Sync. OnInsert](<xref:System.Data.Linq.Mapping.AutoSync.OnInsert>)veya [oto Sync. OnUpdate](<xref:System.Data.Linq.Mapping.AutoSync.OnUpdate>).
 
-Varsayılan olarak, bir veritabanı (ekleme, güncelleştirme ve silme) veri LINQ to SQL varlık sınıfları için yapılan değişikliklerle güncelleştirmek için mantığı, LINQ to SQL çalışma zamanı tarafından sağlanır. Çalışma zamanı varsayılan tablo (sütun ve birincil anahtar bilgileri) şemaya dayalı INSERT, UPDATE ve DELETE komutlarını oluşturur. Varsayılan davranış istenildiği gibi gerekli ekleme, güncelleştirme ve silme Tablonuzdaki verileri işlemek için gerekli gerçekleştirmek için belirli saklı yordamlar atayarak güncelleştirme davranışını yapılandırabilirsiniz. Varlık sınıflarınızı görünümleriyle eşleme, varsayılan davranışı gibi değil oluşturulduğunda, aynı zamanda bunu yapabilirsiniz. Son olarak, veritabanı saklı yordamlar aracılığıyla tablo erişim gerektirdiğinde güncelleştirme varsayılan davranışı geçersiz kılabilirsiniz.
+## <a name="configure-the-update-behavior-of-an-entity-class"></a>Bir varlık sınıfının güncelleştirme davranışını yapılandırma
+
+Varsayılan olarak, bir veritabanını güncelleştirme mantığı (ekler, güncelleştirmeler ve siler) LINQ to SQL varlık sınıflarında verilerde yapılan değişikliklerle birlikte LINQ to SQL çalışma zamanı tarafından sağlanır. Çalışma zamanı, tablonun şemasını temel alan varsayılan INSERT, UPDATE ve DELETE komutlarını oluşturur (sütun ve birincil anahtar bilgileri). Varsayılan davranış istenmiyorsa, tablonuzdaki verileri işlemek için gerekli olan ekleme, güncelleştirme ve silme işlemlerini gerçekleştirmek için belirli saklı yordamları atayarak güncelleştirme davranışını yapılandırabilirsiniz. Bunun yanı sıra, varsayılan davranış oluşturulmayan, örneğin varlık sınıflarınız görünümlerle eşlenme olduğunda da yapabilirsiniz. Son olarak, veritabanı saklı yordamlar üzerinden tablo erişimi gerektirdiğinde varsayılan güncelleştirme davranışını geçersiz kılabilirsiniz.
 
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 
-### <a name="to-assign-stored-procedures-to-override-the-default-behavior-of-an-entity-class"></a>Bir varlık sınıfı varsayılan davranışı geçersiz kılmak için saklı yordamlar atama
+### <a name="to-assign-stored-procedures-to-override-the-default-behavior-of-an-entity-class"></a>Bir varlık sınıfının varsayılan davranışını geçersiz kılmak üzere saklı yordamlar atamak için
 
-1. Açık **LINQ to SQL** Tasarımcısı'nda dosya. (Çift **.dbml** dosyası **Çözüm Gezgini**.)
+1. Tasarımcıda **LINQ to SQL** dosyasını açın. ( **Çözüm Gezgini** **. dbml** dosyasına çift tıklayın.)
 
-2. İçinde **Sunucu Gezgini** veya **veritabanı Gezgini**, genişletme **saklı yordamlar** INSERT, Update, kullanma ve/veya silmek istediğiniz saklı yordamları bulun Varlık sınıfı komutları.
+2. **Sunucu Gezgini** veya **veritabanı Gezgini**' de, **saklı yordamlar** ' ı genişletin ve varlık sınıfının INSERT, Update ve/veya delete komutları için kullanmak istediğiniz saklı yordamları bulun.
 
-3. Saklı yordam üzerine sürükleyin **O/R Tasarımcısı**.
+3. Saklı yordamı **O/R tasarımcısına**sürükleyin.
 
-     Saklı yordam yöntemler bölmesi eklenen bir <xref:System.Data.Linq.DataContext> yöntemi. Daha fazla bilgi için [DataContext yöntemi (O/R Tasarımcısı)](../data-tools/datacontext-methods-o-r-designer.md).
+     Saklı yordam Yöntemler bölmesine <xref:System.Data.Linq.DataContext> Yöntem olarak eklenir. Daha fazla bilgi için [DataContext yöntemi (O/R Tasarımcısı)](../data-tools/datacontext-methods-o-r-designer.md).
 
-4. Güncelleştirmeleri gerçekleştirmek için saklı yordam kullanmak istediğiniz varlık sınıfı seçin.
+4. Güncelleştirme gerçekleştirmek için saklı yordamı kullanmak istediğiniz varlık sınıfını seçin.
 
-5. İçinde **özellikleri** penceresinde komut geçersiz kılmayı seçin (**Ekle**, **güncelleştirme**, veya **Sil**).
+5. **Özellikler** penceresinde, geçersiz kılmak için komutu seçin (**Insert**, **Update**veya **Delete**).
 
-6. Sözcükleri yanındaki üç nokta (...) tıklayın **kullanım çalışma zamanı** açmak için **davranışı Yapılandır** iletişim kutusu.
+6. **Çalışma zamanı kullan** **iletişim kutusunu** açmak için sözcüklerin yanındaki üç nokta (...) simgesine tıklayın.
 
 7. Seçin **özelleştirme**.
 
-8. İstenen saklı yordamda **Özelleştir** listesi.
+8. **Özelleştir** listesinde istenen saklı yordamı seçin.
 
-9. Listesini denetleyin **yöntem bağımsız değişkenleri** ve **sınıfı özellikleri** doğrulamak için **yöntem bağımsız değişkenleri** uygun eşleme **sınıfıözellikleri**. Özgün yöntemi bağımsız değişken eşleme (`Original_<ArgumentName>`) özgün özelliklerine (`<PropertyName> (Original)`) için `Update` ve `Delete` komutları.
-
-    > [!NOTE]
-    > Adları eşleştiğinde varsayılan olarak, yöntem bağımsız değişkenleri sınıfın özelliklerine eşlenir. Tablo arasında varlık sınıfı adları artık eşleşen özellik değiştirdiyseniz, Tasarımcı doğru Eşleme belirleyemiyorsa eşlemek için eşdeğer sınıf özelliği seçmek olabilir.
-
-10. Tıklayın **Tamam** veya **uygulamak**.
+9. Yöntem bağımsız değişkenlerinin ilgili **sınıf özellikleriyle** **eşlendiğini doğrulamak** için **Yöntem bağımsız değişkenlerinin** ve **Sınıf özelliklerinin** listesini inceleyin. Ve`Update` `Original_<ArgumentName>`komutlarıiçin`<PropertyName> (Original)`özgün Yöntem bağımsız değişkenlerini () özgün özelliklerine () eşleyin. `Delete`
 
     > [!NOTE]
-    > Tıkladığınız sürece her sınıf ve davranış birleşimini davranışını yapılandırmak devam **Uygula** her değişikliği yaptıktan sonra. Tıklamadan önce sınıf veya davranış değiştirirseniz **Uygula**, bir uyarı iletişim kutusu görünür ve yaptığınız değişiklikleri uygulamak için bir fırsat sunar.
+    > Varsayılan olarak, yöntem bağımsız değişkenleri, adlar eşleşiyorsa sınıf özellikleriyle eşlenir. Değiştirilen özellik adları, tablo ve varlık sınıfı arasında artık eşleşmezse, tasarımcı doğru eşlemeyi belirleyememesi durumunda eşlenecek eşdeğer sınıf özelliğini seçmeniz gerekebilir.
 
-Güncelleştirmeler için varsayılan çalışma zamanı mantığını kullanarak geri almak için yanındaki tıklayın **Ekle**, **güncelleştirme**, veya **Sil** komutunu **özellikleri**  penceresi ve ardından **çalışma zamanı kullanmak** içinde **davranışı Yapılandır** iletişim kutusu.
+10. **Tamam** ' a veya **Uygula**' ya tıklayın.
+
+    > [!NOTE]
+    > Her bir değişiklik yaptıktan sonra **Uygula** ' ya tıkladığınızda her bir sınıf ve davranış birleşimine yönelik davranışı yapılandırmaya devam edebilirsiniz. **Uygula**' ya tıklamadan önce sınıfı veya davranışı değiştirirseniz, bir uyarı iletişim kutusu görüntülenir ve yaptığınız değişiklikleri uygulamak için size bir fırsat sağlar.
+
+Güncelleştirmeler için varsayılan çalışma zamanı mantığını kullanmaya dönmek için, **Özellikler** penceresinde **Ekle**, **Güncelleştir**ve **Sil** komutunun yanındaki üç noktaya tıklayın ve ardından **Yapılandır davranışındaki** **çalışma zamanını kullan** ' ı seçin. iletişim kutusu.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [Visual Studio'da LINQ to SQL araçları](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
+- [Visual Studio 'da LINQ to SQL araçları](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
 - [DataContext metotları](../data-tools/datacontext-methods-o-r-designer.md)
 - [LINQ to SQL (.NET Framework)](/dotnet/framework/data/adonet/sql/linq/index)
 - [Ekleme, güncelleştirme ve silme işlemleri (.NET Framework)](/dotnet/framework/data/adonet/sql/linq/insert-update-and-delete-operations)

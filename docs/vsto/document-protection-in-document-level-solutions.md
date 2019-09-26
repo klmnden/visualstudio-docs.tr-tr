@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5a894f1e0fb9d5e9d55f46c442bc975de0bd900d
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: 6c5f019907495c3cad3fddef501455aedf345bb2
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68872079"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71253803"
 ---
 # <a name="document-protection-in-document-level-solutions"></a>Belge düzeyi çözümlerde Belge koruması
   Belge düzeyi projelerinde Microsoft Office Word ve Microsoft Office Excel 'in koruma özelliklerini kullanabilirsiniz. Bu özellikler yetkisiz kullanıcıların bir belgenin korunan bölümlerinde değişiklik yapmasını engeller.

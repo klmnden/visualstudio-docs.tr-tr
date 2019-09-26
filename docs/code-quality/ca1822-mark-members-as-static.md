@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 11f210b9d37f15b3ea92b92112e48eecd3c8b9e1
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 7ebbbbe01f1dd23dfc560e019133dacd3517b388
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71233415"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71253462"
 ---
 # <a name="ca1822-mark-members-as-static"></a>CA1822: Üyeleri static olarak işaretleyin
 
@@ -34,7 +34,7 @@ ms.locfileid: "71233415"
 Örnek verilerine erişmeyen bir üye statik olarak işaretlenmemiş (içinde [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]paylaşılan).
 
 ## <a name="rule-description"></a>Kural açıklaması
-Örnek veri veya çağrı örnek yöntemlerinin erişmez üyeleri işaretlenebilir olarak statik (paylaşılan [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]). Yöntemleri statik olarak işaretledikten sonra, derleyici sanal olmayan arama sitelerini bu üyelere yayar. Sanal olmayan çağrı sitelerini yayma, geçerli nesne işaretçisinin null olmadığından emin olan her bir çağrı için çalışma zamanında bir denetim yapılmasını engeller. Bu, performansa duyarlı kod için ölçülebilir bir performans kazancı elde edebilir. Bazı durumlarda, geçerli nesne örneğine erişim hatası, doğruluk sorununu temsil eder.
+Örnek veri veya çağrı örnek yöntemlerinin erişmez üyeleri işaretlenebilir olarak statik (paylaşılan [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]). Yöntemleri statik olarak işaretledikten sonra, derleyici sanal olmayan arama sitelerini bu üyelere yayar. Sanal olmayan çağrı siteleri yayması, geçerli nesne işaretçisinin null olmadığından emin olan her çağrının çalışma zamanında bir denetim yapılmasını engeller. Bu, performansa duyarlı kod için ölçülebilir bir performans kazancı elde edebilir. Bazı durumlarda, geçerli nesne örneğine erişim hatası, doğruluk sorununu temsil eder.
 
 ## <a name="how-to-fix-violations"></a>İhlalleri çözme
 Üyeyi statik (veya paylaşılan [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) olarak işaretleyin ya da uygunsa Yöntem gövdesinde ' this '/' Me ' kullanın.

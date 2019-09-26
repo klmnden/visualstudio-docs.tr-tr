@@ -33,98 +33,98 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2c5163de342415113321b6bd2337cd75ff528f6c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: cead0569ae067fcc503f7f2074807c609e6eed75
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62810792"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71255037"
 ---
 # <a name="write-code-in-office-solutions"></a>Office çözümlerinde kod yazma
-  Visual Studio'da proje türlerinde farklı Office projelerinde kod yazma bazı yönlerini vardır. Bu farklılıkların birçoğu, Office nesne modelleri, yönetilen kod için sunulan şekilde ilgilidir. Diğer farklar Office projeleri tasarımını ilgilidir.
+  Office projelerinde, Visual Studio 'daki diğer proje türlerinden farklı kod yazmanın bazı yönleri vardır. Bu farklılıkların birçoğu, Office nesne modellerinin yönetilen koda sunulma yöntemiyle ilgilidir. Diğer farklar Office projelerinin tasarımı ile ilgilidir.
 
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]
 
 ## <a name="managed-code-and-office-programming"></a>Yönetilen kod ve Office programlama
- Tümleşik Microsoft Office çözümünü oluşturmak mümkün kılan anahtar Bileşen Nesne Modeli (COM) teknolojisi parçası olan Otomasyon teknolojisidir. Otomasyon oluşturma ve herhangi bir uygulama tarafından DLL, kullanıma sunulan yazılım nesnelerini denetlemek için kod kullanmanıza olanak sağlar veya ActiveX denetimi uygun programlama arabirimleri destekler.
+ Tümleşik bir Microsoft Office çözümü oluşturmayı mümkün kılan temel teknoloji, bileşen nesne modeli (COM) teknolojisinin bir parçası olan otomatikleştirilmiştir. Otomasyon, uygun programlama arabirimlerini destekleyen herhangi bir uygulama, DLL veya ActiveX denetimi tarafından kullanıma sunulan yazılım nesnelerini oluşturmak ve denetlemek için kod kullanmanıza olanak sağlar.
 
 ### <a name="understand-primary-interop-assemblies"></a>Birincil birlikte çalışma derlemelerini anlama
- Microsoft Office uygulamaları, işlevlerinin çoğunu kullanıma sunar. Ancak, doğrudan Office uygulamalarını otomatikleştirmek için yönetilen kod (örneğin, Visual Basic veya C#) kullanamazsınız. Yönetilen kod kullanarak Office uygulamalarını otomatikleştirmek için Office birincil birlikte çalışma derlemeleri (PIA) kullanmanız gerekir. Birincil birlikte çalışma derlemelerini yönetilen kodun Office uygulamasının COM tabanlı nesne modeliyle etkileşimini sağlar.
+ Microsoft Office uygulamalar, işlevlerinin çoğunu Otomasyon olarak sunar. Ancak, Office uygulamalarını otomatik hale getirmek için yönetilen kodu (Visual Basic C#veya gibi) kullanamazsınız. Yönetilen kod kullanarak Office uygulamalarını otomatikleştirmek için Office birincil birlikte çalışma derlemelerini (PIA 'lar) kullanmanız gerekir. Birincil birlikte çalışma derlemeleri, yönetilen kodun Office uygulamalarının COM tabanlı nesne modeliyle etkileşime geçmesini sağlar.
 
- Her Microsoft Office uygulamasının PIA sahiptir. Visual Studio'da bir Office projesi oluşturduğunuzda, uygun PIA başvurusu otomatik olarak projeye eklenir. Diğer Office uygulamalarından Proje özelliklerinin otomatikleştirmek için uygun PIA başvurusu el ile eklemeniz gerekir. Daha fazla bilgi için [nasıl yapılır: Birincil birlikte çalışma derlemeleriyle Office uygulamalarını hedefleme](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md).
+ Her Microsoft Office uygulamasının bir PIA 'i vardır. Visual Studio 'da bir Office projesi oluşturduğunuzda, projeye uygun PIA başvurusu otomatik olarak eklenir. Projedeki diğer Office uygulamalarının özelliklerini otomatikleştirmek için, uygun PIA 'ye el ile bir başvuru eklemeniz gerekir. Daha fazla bilgi için [nasıl yapılır: Birincil birlikte çalışma derlemeleri](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)aracılığıyla Office uygulamalarını hedefleyin.
 
-### <a name="use-primary-interop-assemblies-at-design-time-and-runtime"></a>Birincil birlikte çalışma derlemelerini tasarım zamanı ve çalışma zamanı kullanın
- Office yüklü ve uygulamanızı geliştirme bilgisayarınızın genel derleme önbelleğinde kayıtlı çoğu geliştirme görevlerinin gerçekleştirilebilmek için PIA'ların olması gerekir. Daha fazla bilgi için [Office çözümleri geliştirmek için bilgisayarı yapılandırma](../vsto/configuring-a-computer-to-develop-office-solutions.md).
+### <a name="use-primary-interop-assemblies-at-design-time-and-runtime"></a>Tasarım zamanında ve çalışma zamanında birincil birlikte çalışma derlemelerini kullanın
+ Geliştirme görevlerinin çoğunu gerçekleştirmek için Office PIA 'Ları geliştirme bilgisayarınızda genel derleme önbelleğinde yüklü ve kayıtlı olmalıdır. Daha fazla bilgi için bkz. [Office çözümleri geliştirmek için bir bilgisayarı yapılandırma](../vsto/configuring-a-computer-to-develop-office-solutions.md).
 
- Office PIA'ların son kullanıcı bilgisayarlarında Office çözümlerini hedefleyen çalıştırmak için gerekli değildir [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] veya üzeri. Daha fazla bilgi için [tasarım ve Office çözümleri oluşturma](../vsto/designing-and-creating-office-solutions.md).
+ Office PIA 'ları, [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] son kullanıcı bilgisayarlarında veya daha sonra hedeflenen Office çözümlerini çalıştırmak için gerekli değildir. Daha fazla bilgi için bkz. [Office çözümleri tasarlama ve oluşturma](../vsto/designing-and-creating-office-solutions.md).
 
-### <a name="use-types-in-primary-interop-assemblies"></a>Birincil birlikte çalışma bütünleştirilmiş kodlarında türlerini kullanın
- Office PIA'ların Office uygulamalarını nesne modelini açığa çıkaran türleri ve doğrudan kodunuzda kullanılması amaçlanmamıştır ek altyapı türleri birleşimini içerir. Office PIA'ların türlerinde genel bakış için bkz: [sınıflar ve arabirimler Office birincil birlikte çalışma derlemelerindeki genel bakış](/previous-versions/office/office-12/ms247299\(v\=office.12\)).
+### <a name="use-types-in-primary-interop-assemblies"></a>Birincil birlikte çalışma derlemelerindeki türleri kullan
+ Office PIA 'Ları, Office uygulamalarının nesne modelini ve doğrudan kodunuzda kullanılması amaçlanan ek altyapı türlerini sunan türlerin bir birleşimini içerir. Office PIA 'leri türlerine genel bakış için bkz. [Office birincil birlikte çalışma derlemelerindeki sınıflara ve arabirimlere genel bakış](/previous-versions/office/office-12/ms247299\(v\=office.12\)).
 
- Office PIA'ların türleri COM tabanlı nesne modellerinde türlere karşılık geldiğinden, bu tür şekilde genellikle diğer yönetilen türleri farklıdır. Örneğin, Office birincil birlikte çalışma derlemesi isteğe bağlı parametrelere sahip yöntemleri çağırma yolunuz projenizde kullandığınız programlama diline bağlıdır. Daha fazla bilgi için aşağıdaki konulara bakın:
+ Office PIA ' deki türler COM tabanlı nesne modellerinde türlere karşılık geldiğinden, bu türleri kullanma yönteminiz genellikle diğer yönetilen türlerden farklıdır. Örneğin, bir Office birincil birlikte çalışma derlemesinde isteğe bağlı parametrelere sahip yöntemleri çağırma yöntemi, projenizde kullanmakta olduğunuz programlama diline bağlıdır. Daha fazla bilgi için aşağıdaki konulara bakın:
 
-- [Office çözümlerinde isteğe bağlı parametreler](../vsto/optional-parameters-in-office-solutions.md).
+- [Office çözümlerinde Isteğe bağlı parametreler](../vsto/optional-parameters-in-office-solutions.md).
 
 - [Office çözümlerinde geç bağlama](../vsto/late-binding-in-office-solutions.md).
 
-## <a name="program-model-of-office-projects"></a>Office projeleri program modeli
- Tüm Office projeleri, kodunuz için giriş noktası sağlayan bir veya daha fazla oluşturulan sınıflar içerir. Bu sınıflar, konak uygulamanın nesne modeline erişim ve Eylemler bölmesi ve özel görev bölmeleri gibi özelliklerine erişim olanağı da sağlar.
+## <a name="program-model-of-office-projects"></a>Office projelerinin program modeli
+ Tüm Office projeleri, kodunuz için giriş noktası sağlayan bir veya daha fazla oluşturulmuş sınıf içerir. Bu sınıflar Ayrıca, ana bilgisayar uygulamasının nesne modeline ve Eylemler bölmeleri ve özel görev bölmeleri gibi özelliklere erişim sağlar.
 
-### <a name="understand-the-generated-classes"></a>Oluşturulan sınıflar anlama
- Excel ve Word için belge düzeyinde projelerde oluşturulan sınıfın bir üst düzey nesnesi uygulamanın nesne modelinde benzer. Örneğin, oluşturulan `ThisDocument` sınıfta bir Word belgesi projesi olarak aynı üyelere <xref:Microsoft.Office.Interop.Word.Document> Word nesne modelinde sınıfı. Belge düzeyinde projelerde oluşturulan sınıflar hakkında daha fazla bilgi için bkz: [Program belge düzeyi özelleştirmeleri](../vsto/programming-document-level-customizations.md).
+### <a name="understand-the-generated-classes"></a>Oluşturulan sınıfları anlayın
+ Excel ve Word için belge düzeyi projelerinde oluşturulan sınıf, uygulamanın nesne modelindeki en üst düzey bir nesneye benzer. Örneğin, bir Word belgesi `ThisDocument` projesindeki oluşturulan sınıf, Word nesne modelindeki <xref:Microsoft.Office.Interop.Word.Document> sınıfla aynı üyeleri sağlar. Belge düzeyi projelerdeki oluşturulan sınıflar hakkında daha fazla bilgi için bkz. [Program belge düzeyi özelleştirmeleri](../vsto/programming-document-level-customizations.md).
 
- VSTO eklentisi projelerine adında oluşturulmuş bir sınıf sağlamanız `ThisAddIn`. Bu sınıf, bir sınıf konak uygulamanın nesne modelinde benzemez. Bunun yerine, bu sınıf, VSTO eklentisi kendisini temsil eder ve konak uygulamanın nesne modeline erişme ve VSTO eklentileri kullanılabilir diğer özelliklerine erişmek için kullanabileceğiniz üyeleri sağlar. Daha fazla bilgi için [Program VSTO eklentileri](../vsto/programming-vsto-add-ins.md).
+ VSTO eklenti projeleri adlı `ThisAddIn`oluşturulan bir sınıf sağlar. Bu sınıf, ana bilgisayar uygulamasının nesne modelindeki bir sınıfa benzemez. Bunun yerine, bu sınıf VSTO eklentisini temsil eder ve konak uygulamasının nesne modeline erişmek ve VSTO eklentileri için kullanılabilen diğer özelliklere erişmek için kullanabileceğiniz Üyeler sağlar. Daha fazla bilgi için bkz. [Program VSTO eklentileri](../vsto/programming-vsto-add-ins.md).
 
- Office projelerindeki tüm oluşturulan sınıfları `Startup` ve `Shutdown` olay işleyicileri. Kod yazmaya başlamak için genellikle bu olay işleyicilerine kod eklemeniz gerekir. VSTO eklenti başlatmak için kod ekleyebilirsiniz `Startup` olay işleyicisi. VSTO eklenti tarafından kullanılan kaynakları temizlemek için kod ekleyebilirsiniz `Shutdown` olay işleyicisi. Daha fazla bilgi için [Office Projelerindeki Olaylar](../vsto/events-in-office-projects.md).
+ Office projelerindeki tüm oluşturulan sınıflar, ve `Startup` `Shutdown` olay işleyicilerini içerir. Kod yazmaya başlamak için genellikle bu olay işleyicilerine kod eklersiniz. VSTO eklentisini başlatmak için `Startup` olay işleyicisine kod ekleyebilirsiniz. VSTO eklentisi tarafından kullanılan kaynakları temizlemek için `Shutdown` olay işleyicisine kod ekleyebilirsiniz. Daha fazla bilgi için bkz. [Office Projelerindeki Olaylar](../vsto/events-in-office-projects.md).
 
-### <a name="access-the-generated-classes-at-runtime"></a>Oluşturulan sınıflar, çalışma zamanında erişme
- Office çözümünü yüklendiğinde [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] her oluşturulan sınıflar, projenizdeki bir örneğini oluşturur. Kullanarak, projenizdeki herhangi bir kodu bu nesnelere erişebilirsiniz `Globals` sınıfı. Örneğin, kullanabileceğiniz `Globals` kodu çağırmak için sınıf `ThisAddIn` bir olay işleyicisi sınıfının bir VSTO eklentisi bir Şerit düğmesini.
+### <a name="access-the-generated-classes-at-run-time"></a>Çalışma zamanında oluşturulan sınıflara erişin
+ Bir Office çözümü yüklendiğinde, [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] projenizdeki her bir oluşturulan sınıfı başlatır. Bu nesnelere, `Globals` sınıfını kullanarak projenizdeki herhangi bir koddan erişebilirsiniz. Örneğin, bir VSTO eklentisinin içindeki bir `Globals` şerit düğmesine ait bir olay işleyicisinden `ThisAddIn` sınıfındaki kodu çağırmak için sınıfını kullanabilirsiniz.
 
- Daha fazla bilgi için [Office projelerindeki nesnelere genel erişim](../vsto/global-access-to-objects-in-office-projects.md).
+ Daha fazla bilgi için bkz. [Office Projelerindeki Nesnelere Genel erişim](../vsto/global-access-to-objects-in-office-projects.md).
 
-### <a name="namespace-considerations-in-office-solutions"></a>Office çözümlerinde Namespace konuları
- Değiştiremezsiniz *varsayılan ad alanı* (veya *kök ad alanı* Visual Basic'te), projeyi oluşturduktan sonra bir Office projesi. Varsayılan ad alanı her zaman proje oluşturulduğunda, belirtilen proje adı eşleşir. Projenizi yeniden adlandırırsanız, varsayılan ad alanı değiştirmez. Projelerinde varsayılan ad alanı hakkında daha fazla bilgi için bkz. [uygulama sayfası, Proje Tasarımcısı &#40;C&#35; &#41; ](../ide/reference/application-page-project-designer-csharp.md) ve [uygulama sayfası, Proje Tasarımcısı &#40;Visual Basic&#41; ](../ide/reference/application-page-project-designer-visual-basic.md).
+### <a name="namespace-considerations-in-office-solutions"></a>Office çözümlerinde ad alanı konuları
+ Projeyi oluşturduktan sonra bir Office projesinin *varsayılan ad alanını* (veya Visual Basic *kök ad alanını* ) değiştiremezsiniz. Varsayılan ad alanı, projeyi oluştururken belirttiğiniz proje adıyla her zaman eşleşmeyecektir. Projenizi yeniden adlandırırsanız, varsayılan ad alanı değişmez. Projelerdeki varsayılan ad alanı hakkında daha fazla bilgi için, bkz. [uygulama sayfası, proje &#40;Tasarımcısı&#35; C](../ide/reference/application-page-project-designer-csharp.md) ve [uygulama sayfası, proje &#40;Tasarımcısı&#41;Visual Basic](../ide/reference/application-page-project-designer-visual-basic.md).
 
-### <a name="change-the-namespace-of-host-item-classes-in-c-projects"></a>C# projelerinde, ana bilgisayar öğesi sınıflarının ad alanını değiştirme
- Ana bilgisayar öğesi sınıflarının (örneğin, `ThisAddIn`, `ThisWorkbook`, veya `ThisDocument` sınıfları) Visual C# Office projelerinde kendi isim uzaylarını sahip. Varsayılan olarak, projeyi oluşturduğunuzda, belirtilen proje adı, projenizdeki ana bilgisayar öğeleri için ad alanı ile eşleşir.
+### <a name="change-the-namespace-of-host-item-classes-in-c-projects"></a>C# Projelerdeki konak öğesi sınıflarının ad alanını değiştirme
+ Konak `ThisAddIn`öğesi sınıflarının (örneğin `ThisWorkbook`,, veya `ThisDocument` sınıflarının) Visual C# Office projelerinde kendi ad alanları vardır. Varsayılan olarak, projenizdeki konak öğeleri için ad alanı, projeyi oluştururken belirttiğiniz proje adıyla eşleşir.
 
- Visual C# Office projesinde ana bilgisayar öğesi ad alanı değiştirmek için kullanın **Namespace for Host Item** özelliği. Daha fazla bilgi için [Office projelerinde Özellikler](../vsto/properties-in-office-projects.md).
+ Visual C# ofis projesindeki konak öğelerinin ad alanını değiştirmek Için **konak öğesi özelliği için ad alanını** kullanın. Daha fazla bilgi için bkz. [Office projelerindeki Özellikler](../vsto/properties-in-office-projects.md).
 
 ## <a name="supported-programming-languages-in-office-projects"></a>Office projelerinde desteklenen programlama dilleri
- Visual Studio'da Office proje şablonları yalnızca Visual Basic ve Visual C# programlama dillerini destekler. Bu nedenle, bu proje şablonları yalnızca altında kullanılabilir **Visual Basic** ve **Visual C#** düğümlerinin **yeni proje** iletişim kutusunda [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Daha fazla bilgi için [nasıl yapılır: Visual Studio'da Office projeleri oluşturma](../vsto/how-to-create-office-projects-in-visual-studio.md).
+ Visual Studio 'daki Office proje şablonları yalnızca Visual Basic ve görsel C# programlama dillerini destekler. Bu nedenle, bu proje [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]şablonları yalnızca içindeki **Yeni proje** iletişim kutusunun **Visual Basic** ve  **C# görsel** düğümleri altında kullanılabilir. Daha fazla bilgi için [nasıl yapılır: Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)'da Office projeleri oluşturun.
 
-## <a name="language-choice-and-office-programming"></a>Dil Seçimi ve Office programlama
- Microsoft Office ve Visual Basic for Applications (VBA) uygulama özelleştirme iş akışını iyileştirmek için birlikte çalışmak üzere geliştirilmiştir. Visual Basic bu geliştirmelerin bazılarını devralınan izinlere sahip. Örneğin, Visual Basic, Visual C# kullandığınızda daha Microsoft Office birincil birlikte çalışma derlemelerindeki bazı yöntemleri çağrılırken daha az kod yazabilirsiniz anlamına gelir isteğe bağlı parametreleri destekler.
+## <a name="language-choice-and-office-programming"></a>Dil seçimi ve Office programlama
+ Microsoft Office ve Visual Basic for Applications (VBA), uygulama özelleştirmenin iş akışını iyileştirmek için birlikte çalışacak şekilde geliştirilmiştir. Visual Basic bu geliştirmelerin bazılarını devraldı. Örneğin, Visual Basic isteğe bağlı parametreleri destekler, bu, Microsoft Office birincil birlikte çalışma derlemesinde bazı yöntemleri çağırırken Visual C#kullandığınızda daha az kod yazabileceğiniz anlamına gelir.
 
-## <a name="program-with-visual-basic-vs-visual-c-in-office-solutions"></a>Visual Basic vs ile program. Visual C# Office çözümleri
- Visual Basic veya Visual C# kullanarak Office çözümleri oluşturabilirsiniz. Microsoft Office nesne modelleri ile Microsoft Visual Basic for Applications (VBA) kullanılmak üzere tasarlanmış olması nedeniyle, Visual Basic geliştiricileri rahatça Microsoft Office uygulamaları tarafından oluşturulan nesneleri ile çalışabilirsiniz. Visual C# geliştiricileri, Visual Basic geliştiricilerinin aynı özelliklerin çoğunu kullanabilirsiniz, ancak burada oldukları Office nesne modelini kullanmak için ek kod yazmanız gereken bazı durumlar vardır. Ofis geliştirmede temel programlama özelliklerini ve Visual Basic ve C# içinde yazılan yönetilen koda arasındaki bazı farklar vardır.
+## <a name="program-with-visual-basic-vs-visual-c-in-office-solutions"></a>Visual Basic ile program karşılaştırması Office C# çözümlerinde görsel
+ Office çözümlerini Visual Basic veya görseli C#kullanarak oluşturabilirsiniz. Microsoft Office nesne modelleri Microsoft Visual Basic for Applications (VBA) ile kullanılmak üzere tasarlandığından Visual Basic geliştiriciler Microsoft Office uygulamalar tarafından kullanıma sunulan nesnelerle rahatça çalıştırılabilir. Visual C# geliştiricileri Visual Basic geliştiricilerle aynı özelliklerden çoğunu kullanabilir, ancak Office nesne modellerini kullanmak için ek kod yazması gereken bazı durumlar vardır. Ayrıca, Office geliştirme ve Visual Basic ile C#yazılan Yönetilen koddaki temel programlama özellikleri arasında bazı farklılıklar vardır.
 
 <!-- markdownlint-disable MD003 MD020 -->
-## <a name="key-differences-between-visual-basic-and-visual-c"></a>Visual Basic ve Visual C# arasındaki farklar
+## <a name="key-differences-between-visual-basic-and-visual-c"></a>Visual Basic ve görsel arasındaki önemli farklılıklarC#
 <!-- markdownlint-enable MD003 MD020 -->
 
-Aşağıdaki tabloda Office geliştirme Visual Basic ve Visual C# arasındaki temel farklar gösterilmektedir.
+Aşağıdaki tabloda Office geliştirmede Visual Basic ve Visual C# arasındaki temel farklılıklar gösterilmektedir.
 
-|Özellik|Açıklama|Visual Basic desteği|Visual C# desteği|
+|Özellik|Açıklama|Visual Basic desteği|Görsel C# destek|
 |-------------|-----------------|--------------------------|------------------------|
-|İsteğe bağlı parametreler|Birçok Microsoft Office yöntemi yöntemi çağırdığınızda, gerekli olmayan parametrelere sahip. Parametre için değer iletilmezse, varsayılan değer kullanılır.|Visual Basic, isteğe bağlı parametreleri destekler.|Visual C# isteğe bağlı parametreler, çoğu durumda destekler. Daha fazla bilgi için [Office çözümlerinde isteğe bağlı parametreler](../vsto/optional-parameters-in-office-solutions.md).|
-|Parametreleri başvuruya göre geçirme|Microsoft Office birincil birlikte çalışma derlemelerini çoğunu isteğe bağlı parametreler değeri geçirilebilir. Ancak, bazı birincil birlikte çalışma derlemelerindeki, başvuru türlerini kabul eden isteğe bağlı parametreler başvuruya göre geçirilmelidir.<br /><br /> Değer ve başvuru türü parametreleri hakkında daha fazla bilgi için bkz. [bağımsız değişkenleri değere ve başvuruya göre geçirme &#40;Visual Basic&#41; ](/dotnet/visual-basic/programming-guide/language-features/procedures/passing-arguments-by-value-and-by-reference) (Visual Basic için) ve [parametreleri geçirmek &#40;C&#35; Programlama Kılavuzu&#41;](/dotnet/csharp/programming-guide/classes-and-structs/passing-parameters).|Ek bir iş tarafından başvuru parametreleri geçirmek için gereklidir. Visual Basic Derleyicisi, gerektiğinde başvuruya göre otomatik olarak parametrelerini geçirir.|Çoğu durumda, Visual C# derleyicisini gerektiğinde başvuruya göre otomatik olarak parametrelerini geçirir. Daha fazla bilgi için [Office çözümlerinde isteğe bağlı parametreler](../vsto/optional-parameters-in-office-solutions.md).|
-|Parametreli özellikler|Bazı özellikler parametreleri kabul eder ve salt okunur işlevler olarak davranır.|Visual Basic parametre kabul eden özellikleri destekler.|Visual C# parametrelerini kabul eden özellikleri destekler.|
-|Geç bağlama|Geç bağlama, nesnelerin özelliklerini tasarım zamanında nesne türüne atama değişkenler yerine, çalışma zamanında belirlenmesi dahildir.|Visual Basic geç bağlamayı gerçekleştirir **Option Strict** kapalıdır. Zaman **Option Strict** açıktır, gerekir açıkça dönüştürmeniz nesneleri ve kullanım türleri <xref:System.Reflection> geç bağlanan üyelere erişim için ad alanı. Daha fazla bilgi için [Office çözümlerinde geç bağlama](../vsto/late-binding-in-office-solutions.md).|Visual C# gerçekleştirir projelerinde hedefleyen geç bağlama [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]. Daha fazla bilgi için [Office çözümlerinde geç bağlama](../vsto/late-binding-in-office-solutions.md).|
+|İsteğe bağlı parametreler|Birçok Microsoft Office yöntemi, yöntemini çağırdığınızda gerekli olmayan parametrelere sahiptir. Parametresi için hiçbir değer geçirilmemişse, varsayılan bir değer kullanılır.|Visual Basic isteğe bağlı parametreleri destekler.|Visual C# , çoğu durumda isteğe bağlı parametreleri destekler. Daha fazla bilgi için bkz. [Office çözümlerinde Isteğe bağlı parametreler](../vsto/optional-parameters-in-office-solutions.md).|
+|Parametreleri başvuruya göre geçirme|Microsoft Office birincil birlikte çalışma derlemelerinin büyük bir kısmında isteğe bağlı parametreler, değer ile geçirilebilir. Ancak, bazı birincil birlikte çalışma derlemelerinde, başvuru türlerini kabul eden isteğe bağlı parametrelerin başvuruya göre geçirilmesi gerekir.<br /><br /> Değer ve başvuru türü parametreleri hakkında daha fazla bilgi için bkz. [bağımsız değişkenleri değere göre ve başvuruya &#40;göre&#41; geçirme Visual Basic](/dotnet/visual-basic/programming-guide/language-features/procedures/passing-arguments-by-value-and-by-reference) (Visual Basic için) ve [ &#40;parametreleri&#35; C programlama&#41;Kılavuzu](/dotnet/csharp/programming-guide/classes-and-structs/passing-parameters)olarak geçirin.|Parametreleri başvuruya göre geçirmek için ek bir iş gerekmez. Visual Basic derleyici gerektiğinde parametreleri otomatik olarak başvuruya göre geçirir.|Çoğu durumda, Visual C# derleyicisi gerektiğinde parametreleri otomatik olarak başvuruya göre geçirir. Daha fazla bilgi için bkz. [Office çözümlerinde Isteğe bağlı parametreler](../vsto/optional-parameters-in-office-solutions.md).|
+|Parametreli özellikler|Bazı özellikler parametreleri kabul eder ve salt okuma işlevleri olarak davranır.|Visual Basic, parametreleri kabul eden özellikleri destekler.|Visual C# , parametreleri kabul eden özellikleri destekler.|
+|Geç bağlama|Geç bağlama, tasarım zamanında değişkenleri nesne türüne atamak yerine çalışma zamanında nesnelerin özelliklerinin belirlenmesi içerir.|**Kesin seçeneği** kapalı olduğunda Visual Basic geç bağlamayı gerçekleştirir. **Option Strict** açık olduğunda, geç bağlı üyelere erişmek için nesneleri açıkça dönüştürmeniz ve <xref:System.Reflection> ad alanındaki türleri kullanmanız gerekir. Daha fazla bilgi için bkz. [Office çözümlerinde geç bağlama](../vsto/late-binding-in-office-solutions.md).|Görsel C# , [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]' i hedefleyen projelerde geç bağlamayı gerçekleştirir. Daha fazla bilgi için bkz. [Office çözümlerinde geç bağlama](../vsto/late-binding-in-office-solutions.md).|
 
-## <a name="key-differences-between-office-development-and-managed-code"></a>Office geliştirme ve yönetilen kod arasındaki farklar
- Aşağıdaki tabloda Office geliştirme ve Visual Basic veya Visual C# içinde yazılan yönetilen koda arasındaki temel farklar gösterilmektedir.
+## <a name="key-differences-between-office-development-and-managed-code"></a>Office geliştirme ve yönetilen kod arasındaki temel farklılıklar
+ Aşağıdaki tabloda Office geliştirme ve Visual Basic veya görselde C#yazılan yönetilen kod arasındaki önemli farklılıklar gösterilmektedir.
 
-|Özellik|Açıklama|Visual Basic ve Visual C# desteği|
+|Özellik|Açıklama|Visual Basic ve görsel C# destek|
 |-------------|-----------------|-----------------------------------------|
-|Dizi dizinleri|Microsoft Office uygulamalarında koleksiyonlarının alt dizi sınırı 1 ile başlar. Visual Basic ve Visual C#, 0 tabanlı diziler kullanın. Daha fazla bilgi için [diziler &#40;C&#35; Programlama Kılavuzu&#41; ](/dotnet/csharp/programming-guide/arrays/index) ve [Visual Basic'te diziler](/dotnet/visual-basic/programming-guide/language-features/arrays/index).|Microsoft Office uygulamasının nesne modelinde bir koleksiyonun ilk öğesine erişmek için dizin 1 yerine 0 kullanın.|
+|Dizi dizinleri|Microsoft Office uygulamalardaki koleksiyonların alt dizi sınırı 1 ' den başlar. Visual Basic ve görselde C# 0 tabanlı diziler kullanın. Daha fazla bilgi için bkz [. &#40;Arrays&#35; C programlama&#41; Kılavuzu](/dotnet/csharp/programming-guide/arrays/index) ve [diziler Visual Basic](/dotnet/visual-basic/programming-guide/language-features/arrays/index).|Bir Microsoft Office uygulamasının nesne modelinde bir koleksiyonun ilk öğesine erişmek için, 0 yerine 1 dizinini kullanın.|
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 - [Office çözümlerinde isteğe bağlı parametreler](../vsto/optional-parameters-in-office-solutions.md)
-- [Office projelerindeki nesnelere genel erişim](../vsto/global-access-to-objects-in-office-projects.md)
+- [Office Projelerindeki Nesnelere Genel erişim](../vsto/global-access-to-objects-in-office-projects.md)
 - [Office Projelerindeki Olaylar](../vsto/events-in-office-projects.md)
-- [Nasıl yapılır: Birincil birlikte çalışma derlemeleriyle Office uygulamalarını hedefleme](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)
+- [Nasıl yapılır: Birincil birlikte çalışma Derlemeleriyle Office uygulamalarını hedefleme](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)
 - [Nasıl yapılır: Office projelerinde olay işleyicileri oluşturma](../vsto/how-to-create-event-handlers-in-office-projects.md)
 - [Office çözümlerinde geç bağlama](../vsto/late-binding-in-office-solutions.md)
 - [Office çözümlerinin işbirlikçi geliştirmesi](../vsto/collaborative-development-of-office-solutions.md)

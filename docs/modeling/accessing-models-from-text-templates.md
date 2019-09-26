@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eb7dd7df55f67d486d03048860bf3d20f976a70f
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: b9e3b3762b127b1f66b43d6c961054b9cef04048
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68870709"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71254115"
 ---
 # <a name="access-models-from-text-templates"></a>Metin şablonlarından modellere erişin
 
@@ -136,7 +136,7 @@ For Each element As ExampleElement In Me.WorkModel.Elements
 ```
 
 ## <a name="loading-models-dynamically"></a>Modelleri dinamik olarak yükleme
- Hangi modellerin yükleneceğini çalışma zamanında anlamak istiyorsanız, DSL 'ye özgü yönergesini kullanmak yerine program kodunuzda dinamik olarak bir model dosyası yükleyebilirsiniz.
+ Hangi modellerdeki çalışma zamanında yükleneceğini öğrenmek isterseniz, DSL 'ye özgü yönergeyi kullanmak yerine program kodunuzda dinamik olarak bir model dosyası yükleyebilirsiniz.
 
  Ancak, DSL 'ye özgü yönergesinin işlevlerinden birine, şablon kodunun o DSL 'de tanımlanan etki alanı sınıflarını kullanabilmesi için DSL ad alanını içeri aktarmaları gerekir. Yönergesini kullanmadığınız için, yüklediğiniz tüm modeller için  **\<derleme >** ve  **\<içeri aktarma >** yönergeleri eklemeniz gerekir. Bu, yüklediğiniz farklı modeller aynı DSL 'nin tüm örnekleri ise kolay bir işlemdir.
 

@@ -20,44 +20,44 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e30ab9ce498134426caa35e0c3c9f9652f683535
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 797f1a55ec7632114e411bf0ba08e7f4e0cc146e
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445536"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71255078"
 ---
 # <a name="workbook-host-item"></a>Çalışma kitabı konak öğesi
-  <xref:Microsoft.Office.Tools.Excel.Workbook> Konak öğesi olan bir türü genişleten <xref:Microsoft.Office.Interop.Excel.Workbook> Excel için birincil birlikte çalışma bütünleştirilmiş koddan tür. <xref:Microsoft.Office.Tools.Excel.Workbook> Konak öğesi tüm özellikleri, yöntemleri ve olayları olarak sağlayan bir <xref:Microsoft.Office.Interop.Excel.Workbook> nesne, ancak ayrıca ek özellikler sağlar.
+  Konak öğesi, Excel için birincil birlikte çalışma derlemesinden <xref:Microsoft.Office.Interop.Excel.Workbook> türü genişleten bir türdür. <xref:Microsoft.Office.Tools.Excel.Workbook> Konak öğesi, aynı özellikleri, yöntemleri ve olayları bir <xref:Microsoft.Office.Interop.Excel.Workbook> nesne olarak sağlar, ancak ek özellikler de sağlar. <xref:Microsoft.Office.Tools.Excel.Workbook>
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
 
- Belge düzeyinde projelerde bir varsayılan yok <xref:Microsoft.Office.Tools.Excel.Workbook> temsil eder, projenizdeki çalışma kitabı konak öğesi. VSTO eklentisi projelerinde oluşturabileceğiniz <xref:Microsoft.Office.Tools.Excel.Workbook> öğelerinin çalışma zamanında barındırın.
+ Belge düzeyi projelerinde, projenizdeki çalışma kitabını temsil eden bir <xref:Microsoft.Office.Tools.Excel.Workbook> varsayılan konak öğesi vardır. VSTO eklenti projelerinde, <xref:Microsoft.Office.Tools.Excel.Workbook> çalışma zamanında konak öğeleri oluşturabilirsiniz.
 
-## <a name="understand-the-workbook-host-item-in-document-level-projects"></a>Belge düzeyinde projelerde çalışma kitabı konak öğesi anlama
- Çalışma kitabı, projenizdeki erişmek için `ThisWorkbook` sınıfı. `ThisWorkbook` Sınıf üyelerine erişim sağlar <xref:Microsoft.Office.Tools.Excel.Workbook> özelleştirme, çalışma kitabı açılamıyor veya kod çalıştırma gibi temel görevleri gerçekleştirmek için konak öğesi. Daha fazla bilgi için [Program belge düzeyi özelleştirmeleri](../vsto/programming-document-level-customizations.md).
+## <a name="understand-the-workbook-host-item-in-document-level-projects"></a>Belge düzeyi projelerdeki çalışma kitabı konak öğesini anlayın
+ Projenizdeki çalışma kitabına erişmek için `ThisWorkbook` sınıfını kullanın. Sınıfı, özelleştirmeinizdeki temel görevleri <xref:Microsoft.Office.Tools.Excel.Workbook> (çalışma kitabı açıldığında veya kapandığında kodu çalıştırmak gibi) gerçekleştirmek için konak öğesinin üyelerine erişmenizi sağlar. `ThisWorkbook` Daha fazla bilgi için bkz. [Program belge düzeyi özelleştirmeleri](../vsto/programming-document-level-customizations.md).
 
- `ThisWorkbook` Sınıfı başlangıç projenizde kod yazma bir konum sağlar. Sınıfı, tüm özellikleri, yöntemleri ve olayları olarak sağladığından <xref:Microsoft.Office.Interop.Excel.Workbook> nesne birincil birlikte çalışma derlemesi Excel için de kullanabilirsiniz `ThisWorkbook` Excel nesne modeline erişim. Daha fazla bilgi için [Excel nesne modeline genel bakış](../vsto/excel-object-model-overview.md).
+ Sınıfı `ThisWorkbook` , projenizde kod yazmaya başlayabilmeniz için bir konum sağlar. Sınıfı, Excel için birincil birlikte çalışma derlemesindeki <xref:Microsoft.Office.Interop.Excel.Workbook> nesne olarak aynı özellikleri, yöntemleri ve olayları sağladığından Excel 'in nesne modeline erişmek için de kullanabilirsiniz. `ThisWorkbook` Daha fazla bilgi için [Excel nesne modeline genel bakış](../vsto/excel-object-model-overview.md).
 
- Çift **ThisWorkbook** içinde proje öğesi **Çözüm Gezgini** çalışma kitabı Tasarımcısı'nı görüntüleyin ve çalışma kitabında olayları ve özellikleri görüntülemek için **özellikleri**penceresi.
+ Çalışma kitabı tasarımcısını görüntülemek ve **Özellikler** penceresinde çalışma kitabının özelliklerini ve olaylarını görüntülemek için **Çözüm Gezgini** içindeki **ThisWorkbook** proje öğesine çift tıklayın.
 
-### <a name="limitations-of-the-workbook-host-item-in-document-level-projects"></a>Belge düzeyinde projelerde çalışma kitabı konak öğesi sınırlamaları
- Tek bir belge düzeyi projesi içerebilir <xref:Microsoft.Office.Tools.Excel.Workbook> konak öğesi (diğer bir deyişle, `ThisWorkbook` sınıfı). Yeni eklenemiyor <xref:Microsoft.Office.Tools.Excel.Workbook> konak öğeleri projenize tasarım zamanında ve yeni oluşturamazsınız <xref:Microsoft.Office.Tools.Excel.Workbook> konak öğelerini bir belge düzeyi özelleştirmesinde zamanında.
+### <a name="limitations-of-the-workbook-host-item-in-document-level-projects"></a>Belge düzeyi projelerdeki çalışma kitabı konak öğesi sınırlamaları
+ Belge düzeyindeki bir proje yalnızca bir <xref:Microsoft.Office.Tools.Excel.Workbook> konak öğesi (yani `ThisWorkbook` , sınıfı) içerebilir. Tasarım zamanında projenize yeni <xref:Microsoft.Office.Tools.Excel.Workbook> konak öğeleri ekleyemez ve çalışma zamanında belge düzeyi özelleştirmesindeki yeni <xref:Microsoft.Office.Tools.Excel.Workbook> konak öğeleri oluşturamazsınız.
 
- Çalışma zamanında yeni bir Excel çalışma kitabı oluşturursanız, bu tür olacaktır <xref:Microsoft.Office.Interop.Excel.Workbook>. Bir konak öğesi olmadığı için tüm konak veya Windows Forms denetimleri içeremez. Çalışma kitaplarını çalışma zamanında oluşturma hakkında daha fazla bilgi için bkz. [nasıl yapılır: Program aracılığıyla yeni çalışma kitaplarını](../vsto/how-to-programmatically-create-new-workbooks.md).
+ Çalışma zamanında yeni bir Excel çalışma kitabı oluşturursanız, bu, türü <xref:Microsoft.Office.Interop.Excel.Workbook>olacaktır. Konak öğesi olmadığından, hiçbir konak denetimi veya Windows Forms denetimi içeremez. Çalışma zamanında çalışma kitapları oluşturma hakkında daha fazla bilgi için bkz [. nasıl yapılır: Program aracılığıyla yeni çalışma](../vsto/how-to-programmatically-create-new-workbooks.md)kitapları oluşturma.
 
- <xref:Microsoft.Office.Tools.Excel.Workbook> Konak denetimler için kapsayıcı olarak ana bilgisayar öğesi davranmaz. Bu nedenle, çalışma kitabına görünür bir denetim ekleyemezsiniz, ancak bileşenler gibi ekleyebilirsiniz bir <xref:System.Data.DataSet>, böylece bileşenlerin tüm çalışma sayfalarını tarafından paylaşılabilir. Bir belge düzeyi projede çalışma kitabına kullanılabilir bileşenler bulunabilir **bileşen** sekmesinde **veri** sekmesinde ve **tüm Windows Formları** sekmesinde  **Araç kutusu**.
+ <xref:Microsoft.Office.Tools.Excel.Workbook> Konak öğesi konak denetimleri için bir kapsayıcı görevi yapmaz. Bu nedenle, çalışma kitabına görünür denetimleri ekleyemezsiniz, ancak bileşenlerin tüm çalışma sayfaları tarafından paylaşılabilmesi için gibi bileşenler <xref:System.Data.DataSet>ekleyebilirsiniz. Belge düzeyindeki bir projede, çalışma kitabı için kullanılabilen bileşenler **bileşen** sekmesi, **veri** sekmesi ve **araç kutusunun** **tüm Windows Forms** sekmelerinde bulunabilir.
 
 > [!NOTE]
-> Visual Studio'da Office geliştirme araçları, paylaşılan çalışma kitapları desteklemez.
+> Visual Studio 'da Office geliştirme araçları paylaşılan çalışma kitaplarını desteklemez.
 
-## <a name="understand-workbook-host-items-in-vsto-add-in-projects"></a>VSTO eklentisi projelerinde çalışma kitabı konak öğeleri anlama
- VSTO eklentisi projelerinde oluşturabileceğiniz bir <xref:Microsoft.Office.Tools.Excel.Workbook> Excel'de herhangi bir çalışma kitabında çalışma zamanında konak öğesi. Oluşturulacak bir <xref:Microsoft.Office.Tools.Excel.Workbook> konak öğesi, kullanım `GetVstoObject` yöntemi. Daha fazla bilgi için [genişletmek Word belgelerini ve Excel çalışma kitaplarını çalışma zamanında VSTO Add-Ins](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).
+## <a name="understand-workbook-host-items-in-vsto-add-in-projects"></a>VSTO eklenti projelerinde çalışma kitabı konak öğelerini anlama
+ VSTO eklenti projelerinde, Excel 'de açık olan herhangi bir çalışma <xref:Microsoft.Office.Tools.Excel.Workbook> kitabı için çalışma zamanında bir konak öğesi oluşturabilirsiniz. Bir <xref:Microsoft.Office.Tools.Excel.Workbook> konak öğesi oluşturmak için `GetVstoObject` yöntemini kullanın. Daha fazla bilgi için bkz. [çalışma ZAMANıNDA VSTO Eklentilerindeki Word belgelerini ve Excel çalışma kitaplarını genişletme](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 - [Office geliştirme örnekleri ve izlenecek yollar](../vsto/office-development-samples-and-walkthroughs.md)
-- [Word belgelerini ve Excel çalışma kitaplarını VSTO eklentileri çalışma zamanında genişletme](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)
-- [Konak öğelerine ve denetimlerine genel bakış](../vsto/host-items-and-host-controls-overview.md)
+- [VSTO Eklentilerindeki Word belgelerini ve Excel çalışma kitaplarını çalışma zamanında genişletme](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)
+- [Konak öğeleri ve konak denetimlerine genel bakış](../vsto/host-items-and-host-controls-overview.md)
 - [Çalışma sayfası konak öğesi](../vsto/worksheet-host-item.md)
 - [Genişletilmiş nesneleri kullanarak Excel'i otomatikleştirmek](../vsto/automating-excel-by-using-extended-objects.md)
-- [Konak denetimlerinin ve konak öğelerinin programlama sınırlamaları](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)
+- [Konak öğelerinin ve konak denetimlerinin programlama sınırlamaları](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)

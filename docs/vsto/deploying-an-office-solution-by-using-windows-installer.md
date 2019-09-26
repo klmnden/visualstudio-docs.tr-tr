@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 20df85952b4e76e60d6e93067c1f1e7838b692cd
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/16/2019
+ms.lasthandoff: 09/25/2019
 ms.locfileid: "69551721"
 ---
 # <a name="deploy-an-office-solution-by-using-windows-installer"></a>Windows Installer kullanarak bir Office çözümünü dağıtma
@@ -251,7 +251,7 @@ Kurulum uygulamanızda, yalnızca aşağıdaki bileşenleri değil, çözümün�
 
 2. Menü çubuğunda**Açık** **görüntüle** > ' yi seçin.
 
-3. Özellikler listesinde, **InstallDir** özelliğinin yanındaki git düğmesini seçin.
+3. Özellikler listesinde, **InstallDir** özelliğinin yanındaki git **düğmesini seçin** .
 
 4. **INSTALLDIR ayarla** iletişim kutusunda, çözümü yüklemek istediğiniz kullanıcının bilgisayarında bir klasör seçin.
 

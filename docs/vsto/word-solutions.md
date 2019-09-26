@@ -26,12 +26,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5c8837c1c95dc5f032a10773645f93a46ec29662
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 3cef71cc5f6c4e25d04e6045be7059d81c06b484
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69551213"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71254935"
 ---
 # <a name="word-solutions"></a>Word çözümleri
   Visual Studio, Microsoft Office Word için belge düzeyi özelleştirmeler ve VSTO eklentileri oluşturmak için kullanabileceğiniz proje şablonları sağlar. Bu çözümleri, Word 'Ü otomatikleştirmek, Word özelliklerini genişletmek ve Word Kullanıcı arabirimini (UI) özelleştirmek için kullanabilirsiniz. Belge düzeyi özelleştirmeleri ve VSTO eklentileri arasındaki farklar hakkında daha fazla bilgi için bkz. [Office çözümleri geliştirmesine genel bakış &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).
@@ -114,5 +114,5 @@ ms.locfileid: "69551213"
 |[Windows Forms denetimlerine Office belgeleri genel bakış](../vsto/windows-forms-controls-on-office-documents-overview.md)|Word belgelerine nasıl Windows Forms denetimleri ekleyebileceğiniz açıklanmaktadır.|
 |[İzlenecek yol: Word için ilk belge düzeyi özelleştirmeyi oluşturma](../vsto/walkthrough-creating-your-first-document-level-customization-for-word.md)|Word için temel bir belge düzeyi özelleştirmesi oluşturmayı gösterir.|
 |[İzlenecek yol: Word için ilk VSTO eklentisini oluşturma](../vsto/walkthrough-creating-your-first-vsto-add-in-for-word.md)|Word için temel bir VSTO eklentisinin nasıl oluşturulacağını gösterir.|
-|[İzlenecek yol: VSTO eklentisinin çalışma zamanında belgeye denetim ekleme](../vsto/walkthrough-adding-controls-to-a-document-at-run-time-in-a-vsto-add-in.md)|VSTO eklentisi kullanılarak çalışma zamanında bir Windows Forms düğme ve <xref:Microsoft.Office.Tools.Word.RichTextContentControl> bir belgeye nasıl ekleneceğini gösterir.|
+|[İzlenecek yol: Bir VSTO eklentisinin çalışma zamanında belgeye denetim ekleme](../vsto/walkthrough-adding-controls-to-a-document-at-run-time-in-a-vsto-add-in.md)|VSTO eklentisi kullanılarak çalışma zamanında bir Windows Forms düğme ve <xref:Microsoft.Office.Tools.Word.RichTextContentControl> bir belgeye nasıl ekleneceğini gösterir.|
 |[Office geliştirmede Word 2010](http://go.microsoft.com/fwlink/?LinkId=199020)|Word çözümleri geliştirme (Visual Studio kullanarak Office geliştirmeye özgü değil) hakkındaki makalelere ve başvuru belgelerine bağlantılar sağlar.|

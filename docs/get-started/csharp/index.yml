@@ -1,119 +1,67 @@
-### YamlMime:YamlDocument
-documentType: LandingData
-title: 'Visual Studio öğreticiler |C#'
+### YamlMime:Landing
+title: Visual Studio öğreticileri |C#
+summary: Visual C# Studio ile uygulamalar oluşturun.
 metadata:
-  title: 'C#Visual Studio ile geliştirme | Microsoft Docs'
-  description: 'Öğreticiler ve geliştirme hakkında kavramsal makaleler C# uygulamaları Visual Studio ile.'
+  title: C#Visual Studio ile geliştirme
+  description: Visual C# Studio 'yu kullanarak uygulamalar oluşturun.
   ms.custom: seodec18
+  ms.topic: landing-page
+  ms.date: 09/20/2019
   author: ghogen
+  ms.author: ghogen
   manager: jillfra
   ms.prod: visual-studio-windows
   ms.technology: vs-acquisition
-  ms.topic: landing-page
-  ms.date: 10/30/2018
-  ms.author: ghogen
   dev_langs:
-    - CSharp
-abstract:
-  description: 'Bu sayfada nasıl oluşturulacağını öğrenmek için başlangıç öğreticileri bağlantılar içeriyor C# uygulamaları Visual Studio ile. Tam Visual Studio belgeleri için bkz. <a href="/visualstudio/ide/">Visual Studio</a>. İçin C# dil belgeleri görmek <a href="/dotnet/csharp"> C# Kılavuzu</a>.'
-sections:
-  - title: Başlarken
-    items:
-      - type: list
-        style: cards
-        className: cardsM
-        columns: 3
-        items:
-          - href: ../../install/install-visual-studio.md
-            html: <p></p>
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_setup.svg'
-            title: Visual Studio'yu yükleme
-          - href: visual-studio-ide.md
-            html: <p></p>
-            image:
-              src: 'https://docs.microsoft.com/media/logos/logo_visual-studio.svg'
-            title: Kılavuzlu Turu Başlat
-  - title: 'C#öğreticiler'
-    items:
-      - type: list
-        style: cards
-        className: cardsM
-        columns: 3
-        items:
-          - href: tutorial-console.md
-            html: <p></p>
-            image:
-              src: 'https://docs.microsoft.com/media/logos/logo_csharp.svg'
-            title: 'İlk C# uygulamanızı oluşturma'
-          - href: tutorial-aspnet-core.md
-            html: <p></p>
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_web-color.svg'
-            title: Web uygulaması oluşturma
-          - href: tutorial-uwp.md
-            html: <p></p>
-            image:
-              src: 'https://docs.microsoft.com/media/logos/logo_Windows.svg'
-            title: Bir evrensel Windows uygulaması oluşturma
-          - href: tutorial-wpf.md
-            html: <p></p>
-            image:
-              src: 'https://docs.microsoft.com/media/logos/logo_Windows.svg'
-            title: Bir Windows masaüstü uygulaması oluşturma
-          - href: /dotnet/csharp/tutorials/intro-to-csharp/
-            html: <p></p>
-            image:
-              src: 'https://docs.microsoft.com/media/logos/logo_csharp.svg'
-            title: 'Bilgi C# dil'
-  - title: Video öğreticiler
-    items:
-      - type: list
-        style: cards
-        classname: cardsM
-        columns: 3
-        items:
-          - href: tutorial-aspnet-core-ef-step-01.md
-            html: <p>Verileri kullanır ve bir web API'SİNİN kullanıma sunduğu bir web uygulaması oluşturmak için Visual Studio 2019'ı kullanın ve Azure'a dağıtın.</p>
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_video.svg'
-            title: İlk ASP.NET Core uygulamanızı oluşturma
-  - title: Visual Studio'yu öğrenin
-    items:
-      - type: paragraph
-        text: Visual Studio geliştirme görevleriniz için kullanmayı öğrenin.
-      - type: list
-        style: cards
-        className: cardsM
-        columns: 3
-        items:
-          - href: ../tutorial-open-project-from-repo.md?toc=/visualstudio/get-started/csharp/toc.json&bc=/visualstudio/get-started/csharp/breadcrumb/toc.json
-            html: <p></p>
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_pull-request.svg'
-            title: Açık kod deposundan
-          - href: tutorial-editor.md
-            html: <p></p>
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_code-edit.svg'
-            title: Kodu yazma ve düzenleme
-          - href: ../../ide/compiling-and-building-in-visual-studio.md
-            html: <p></p>
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_build.svg'
-            title: Derleme ve oluşturma
-          - href: ../csharp/tutorial-debugger.md
-            html: <p></p>
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_debug.svg'
-            title: Kodunuzda hata ayıklama
-          - href: ../../test/getting-started-with-unit-testing.md
-            html: <p></p>
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_test.svg'
-            title: Kodunuzu test etme
-          - href: ../../data-tools/create-a-sql-database-by-using-a-designer.md
-            html: <p></p>
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_generic-database.svg'
-            title: Verilere erişme
+  - CSharp
+  ms.openlocfilehash: cefa370c40ccd32a1ddd7b108ccc493d8019fcb2
+  ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+  ms.translationtype: MT
+  ms.contentlocale: tr-TR
+  ms.lasthandoff: 09/25/2019
+  ms.locfileid: "71252148"
+landingContent:
+- title: Kullanmaya başlayın
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Visual Studio'yu yükleme
+      url: ../../install/install-visual-studio.md
+  - linkListType: get-started
+    links:
+    - text: Kılavuzlu tura başla
+      url: visual-studio-ide.md
+- title: Uygulama C# oluşturma
+  linkLists:
+  - linkListType: tutorial
+    links:
+    - text: Konsol uygulaması oluşturma
+      url: tutorial-console.md
+    - text: Web uygulaması oluşturma
+      url: tutorial-aspnet-core.md
+    - text: İlk ASP.NET Core uygulamanızı oluşturma
+      url: tutorial-aspnet-core-ef-step-01.md
+    - text: Evrensel Windows Platformu uygulaması oluşturma
+      url: tutorial-uwp.md
+    - text: Windows masaüstü uygulaması oluşturma
+      url: tutorial-wpf.md
+    - text: C# Dil hakkında bilgi edinin
+      url: /dotnet/csharp/tutorials/intro-to-csharp/
+- title: Visual Studio'yu öğrenin
+  linkLists:
+  - linkListType: tutorial
+    links:
+    - text: Depodan kod açma
+      url: ../tutorial-open-project-from-repo.md?
+    - text: Kodu yazma ve düzenleme
+      url: tutorial-editor.md
+    - text: Derleme ve oluşturma
+      url: ../../ide/compiling-and-building-in-visual-studio.md
+    - text: Kodunuzda hata ayıklama
+      url: ../csharp/tutorial-debugger.md
+    - text: Kodunuzu test etme
+      url: ../../test/getting-started-with-unit-testing.md
+  - linkListType: how-to-guide
+    links:
+    - text: Verilere erişme
+      url: ../../data-tools/create-a-sql-database-by-using-a-designer.md

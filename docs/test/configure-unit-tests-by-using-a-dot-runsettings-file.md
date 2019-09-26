@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: bb338caa145ad8186b7a27fe94a7822e94c09a02
-ms.sourcegitcommit: b60a00ac3165364ee0e53f7f6faef8e9fe59ec4a
+ms.openlocfilehash: 25d0f49939a42d9a9b8cc56f03ed37ab83aa98f2
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70913290"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71251821"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>*. Runsettings* dosyasını kullanarak birim testlerini yapılandırma
 
@@ -165,7 +165,7 @@ Aşağıdaki XML, tipik bir *. runsettings* dosyasının içeriğini gösterir. 
     </DataCollectors>
   </DataCollectionRunSettings>
 
-  <!-- Parameters used by tests at runtime -->
+  <!-- Parameters used by tests at run time -->
   <TestRunParameters>
     <Parameter name="webAppUrl" value="http://localhost" />
     <Parameter name="webAppUserName" value="Admin" />
@@ -256,7 +256,7 @@ Diğer herhangi bir tanılama veri bağdaştırıcısı türünü özelleştirme
 </TestRunParameters>
 ```
 
-Test çalıştırması parametreleri, çalışma zamanında testler için kullanılabilen değişkenleri ve değerleri tanımlamak için bir yol sağlar. <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.Properties%2A?displayProperty=nameWithType> Özelliği kullanarak parametrelere erişin:
+Test çalıştırması parametreleri, çalışma zamanında testlerin kullanabileceği değişkenleri ve değerleri tanımlamak için bir yol sağlar. <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.Properties%2A?displayProperty=nameWithType> Özelliği kullanarak parametrelere erişin:
 
 ```csharp
 [TestMethod]

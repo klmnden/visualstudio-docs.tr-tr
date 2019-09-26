@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl yapılır: Çalışma sayfası hücreleri içinde denetimleri yeniden boyutlandırma'
+title: 'Nasıl yapılır: Çalışma sayfası hücrelerinin içindeki denetimleri yeniden boyutlandırma'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,50 +15,50 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b51f26a4ea2dec50c5ee90c38f49412866b6f866
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 08c65be450c45d7797984105723d5ae1b01a2d63
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62961497"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71252068"
 ---
-# <a name="how-to-resize-controls-within-worksheet-cells"></a>Nasıl yapılır: Çalışma sayfası hücreleri içinde denetimleri yeniden boyutlandırma
-  Çalışma sayfasında satırları veya sütunları yeniden boyutlandırdığınızda, hücreleri içinde herhangi bir ana bilgisayar denetimleri yeniden boyutlandırılmış hücre genişliği veya yüksekliği otomatik olarak yeniden boyutlandırın. Windows Forms denetimleri varsayılan olarak otomatik olarak yeniden boyutlandırma değil.
+# <a name="how-to-resize-controls-within-worksheet-cells"></a>Nasıl yapılır: Çalışma sayfası hücrelerinin içindeki denetimleri yeniden boyutlandırma
+  Çalışma sayfasındaki sütunları veya satırları yeniden boyutlandırdığınızda, hücrelerdeki tüm konak denetimleri yeniden boyutlandırıldı hücrenin Yükseklik veya genişliğine otomatik olarak yeniden boyutlandırılır. Windows Forms denetimleri varsayılan olarak otomatik olarak yeniden boyutlandırılır.
 
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]
 
- Tasarım zamanında denetimleri eklerseniz, her denetimi için seçenekleri konumlandırma ayarlamanız gerekir.
+ Denetimleri tasarım zamanında eklerseniz, her denetim için konumlandırma seçeneklerini ayarlamanız gerekir.
 
- Program aracılığıyla bir Windows Forms denetimi ekleyin ve bir aralığı bağımsız değişken sağlayın, bir hücre aralığı içinde yeniden boyutlandırıldığında denetimi otomatik olarak yeniden boyutlandırır. Daha fazla bilgi için [Office belgelerine çalışma zamanında denetimler ekleme](../vsto/adding-controls-to-office-documents-at-run-time.md).
+ Programlı olarak bir Windows Forms denetimi ekler ve bir Aralık bağımsız değişkeni sağlarsanız, Aralık içindeki bir hücre yeniden boyutlandırılırken denetim otomatik olarak yeniden boyutlandırılır. Daha fazla bilgi için bkz. [çalışma zamanında Office belgelerine denetim ekleme](../vsto/adding-controls-to-office-documents-at-run-time.md).
 
 ## <a name="resize-controls-at-design-time"></a>Tasarım zamanında denetimleri yeniden boyutlandırma
 
-### <a name="to-make-controls-resize-with-cells-at-design-time"></a>Denetimleri tasarım zamanında hücreleri yeniden boyutlandırmak için
+### <a name="to-make-controls-resize-with-cells-at-design-time"></a>Denetimlerin tasarım zamanında hücrelerle yeniden boyutlandırılmasını sağlamak için
 
-1. Gelen **araç kutusu**, çalışma için bir Windows Forms denetimi sürükleyin.
+1. **Araç kutusundan**bir Windows Forms denetimini çalışma sayfasına sürükleyin.
 
-2. Denetime sağ tıklayın ve ardından **biçim denetimi**.
+2. Denetime sağ tıklayın ve sonra **Biçim denetimi**' ne tıklayın.
 
-3. İçinde **biçim denetimi** iletişim kutusu, tıklayın **özellikleri** sekmesi.
+3. **Biçim denetimi** Iletişim kutusunda **Özellikler** sekmesine tıklayın.
 
-4. Altında **Nesne konumlandırma**seçin **taşıyın ve hücrelerle** seçeneğini ve ardından **Tamam**.
+4. **Nesne konumlandırma**altında, **Hücrelerle taşı ve Boyutlandır** seçeneğini belirleyin ve ardından **Tamam**' a tıklayın.
 
-     Denetimi içeren hücreye yeniden boyutlandırdığınızda, denetimin hücreye sığacak şekilde yeniden boyutlandırır.
+     Denetimi içeren hücreyi yeniden boyutlandırdığınızda, denetim hücreye sığacak şekilde yeniden boyutlandırılır.
 
-## <a name="resize-controls-at-runtime"></a>Çalışma zamanı denetimleri yeniden boyutlandırma
- Çalışma zamanında Windows Forms Denetim ekleme ve geçirin bir <xref:Microsoft.Office.Interop.Excel.Range> aralığı içeren çalışma sayfası hücresi yeniden boyutlandırıldığında denetimin konumu denetimi otomatik olarak yeniden boyutlandırılır.
+## <a name="resize-controls-at-run-time"></a>Çalışma zamanında denetimleri yeniden boyutlandırma
+ Çalışma zamanında bir Windows Forms denetimi ekler ve denetimin konumu olarak bir <xref:Microsoft.Office.Interop.Excel.Range> olarak geçirirseniz, aralığı içeren çalışma sayfası hücresi yeniden boyutlandırılırken denetim otomatik olarak yeniden boyutlandırılır.
 
-### <a name="to-make-controls-resize-with-cells-at-run-time"></a>Denetimleri hücrelerle çalışma zamanında yeniden boyutlandırmak için
+### <a name="to-make-controls-resize-with-cells-at-run-time"></a>Denetimlerin çalışma zamanında hücrelerle yeniden boyutlandırılması için
 
-1. A1 aralığı için bir denetim ekleyin.
+1. A1 aralığına bir denetim ekleyin.
 
      [!code-vb[Trin_VstcoreProgrammingControlsExcel#5](../vsto/codesnippet/VisualBasic/my excel chart/Sheet1.vb#5)]
      [!code-csharp[Trin_VstcoreProgrammingControlsExcel#5](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs#5)]
 
-     Denetimi içeren hücreye yeniden boyutlandırdığınızda, denetimin hücreye sığacak şekilde yeniden boyutlandırır.
+     Denetimi içeren hücreyi yeniden boyutlandırdığınızda, denetim hücreye sığacak şekilde yeniden boyutlandırılır.
 
 ## <a name="reset-control-placement"></a>Denetim yerleşimini Sıfırla
- Yerleştirme ve denetimin ayarlayarak yeniden boyutlandırma sıfırlayabilirsiniz `Placement` aşağıdakilerden birini özelliğini <xref:Microsoft.Office.Interop.Excel.XlPlacement> değerleri:
+ `Placement` Özelliği aşağıdaki<xref:Microsoft.Office.Interop.Excel.XlPlacement> değerlerden birine ayarlayarak denetimin yerleşimini ve yeniden boyutlandırılmasını sıfırlayabilirsiniz:
 
 - <xref:Microsoft.Office.Interop.Excel.XlPlacement.xlFreeFloating>
 
@@ -66,9 +66,9 @@ ms.locfileid: "62961497"
 
 - <xref:Microsoft.Office.Interop.Excel.XlPlacement.xlMoveAndSize>
 
-### <a name="to-change-the-behavior-of-a-control-so-that-it-does-not-resize-or-move-with-the-cell"></a>Böylece bırakmaz yeniden boyutlandırmak veya hücrenin taşıma denetiminin davranışını değiştirmek için
+### <a name="to-change-the-behavior-of-a-control-so-that-it-does-not-resize-or-move-with-the-cell"></a>Bir denetimin davranışını yeniden boyutlandırmaması veya hücreyle birlikte hareket ettirmek üzere değiştirmek için
 
-1. Denetimin yerleşimi özelliğini çağırın ve değeri <xref:Microsoft.Office.Interop.Excel.XlPlacement.xlFreeFloating>.
+1. Denetimin yerleşim özelliğini çağırın ve değerini olarak <xref:Microsoft.Office.Interop.Excel.XlPlacement.xlFreeFloating>ayarlayın.
 
      [!code-vb[Trin_VstcoreProgrammingControlsExcel#6](../vsto/codesnippet/VisualBasic/my excel chart/Sheet1.vb#6)]
      [!code-csharp[Trin_VstcoreProgrammingControlsExcel#6](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs#6)]
@@ -76,6 +76,6 @@ ms.locfileid: "62961497"
 ## <a name="see-also"></a>Ayrıca bkz.
 - [Office belgelerindeki denetimler](../vsto/controls-on-office-documents.md)
 - [Nasıl yapılır: Office belgelerine Windows Forms denetimleri ekleme](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)
-- [Nasıl yapılır: Yazdırırken çalışma sayfası denetimlerini gizleme](../vsto/how-to-hide-controls-on-worksheets-when-printing.md)
-- [Office belgelerine çalışma zamanında denetimler ekleme](../vsto/adding-controls-to-office-documents-at-run-time.md)
-- [Office belgelerindeki Windows Forms denetimleri sınırlamaları](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)
+- [Nasıl yapılır: Yazdırırken çalışma sayfalarındaki denetimleri gizle](../vsto/how-to-hide-controls-on-worksheets-when-printing.md)
+- [Çalışma zamanında Office belgelerine denetim ekleme](../vsto/adding-controls-to-office-documents-at-run-time.md)
+- [Office belgelerindeki Windows Forms denetimlerinin sınırlamaları](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)

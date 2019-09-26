@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 67d1a1c37a1c39e07dd5b8754fef223bfa8ad7a2
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 517588826983613c71a74296914b1dfeb3eaa2b4
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71232287"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71253311"
 ---
 # <a name="ca2134-methods-must-keep-consistent-transparency-when-overriding-base-methods"></a>CA2134: Metotlar taban metotları geçersiz kılarken tutarlı saydamlığı tutmalıdır
 
@@ -34,13 +34,13 @@ Bu kural, sanal bir yöntemi geçersiz kılarken veya bir arabirim uygulanırken
 ## <a name="rule-description"></a>Kural açıklaması
 Bu kural, devralma zincirinde daha fazla bir yöntemin güvenlik erişilebilirliğini değiştirme girişimleri üzerinde ateşlenir. Örneğin, bir temel sınıftaki sanal bir yöntem saydam veya kritik öneme sahip ise, türetilmiş sınıf onu saydam veya güvenli kritik bir yöntemle geçersiz kılmalıdır. Buna karşılık, sanal güvenlik açısından önemliyse, türetilen sınıfın onu bir güvenlik kritik yöntemiyle geçersiz kılması gerekir. Arabirim yöntemlerinin uygulanması için aynı kural geçerlidir.
 
-Saydamlık kuralları, bir kod çalışma zamanı yerine JıT olarak derlenirse, saydamlık hesaplamasının dinamik tür bilgilerine sahip olmaması halinde zorlanır. Bu nedenle, saydam hesaplamanın sonucu, dinamik türden bağımsız olarak, yalnızca JıT olarak derlenen statik türlerden belirlenebilmelidir.
+Saydamlık kuralları, kod çalışma zamanı yerine JıT olarak derlenirse, saydamlık hesaplamasının dinamik tür bilgilerine sahip olmaması için zorlanır. Bu nedenle, saydam hesaplamanın sonucu, dinamik türden bağımsız olarak, yalnızca JıT olarak derlenen statik türlerden belirlenebilmelidir.
 
 ## <a name="how-to-fix-violations"></a>İhlalleri çözme
 Bu kural ihlalini onarmak için, sanal bir yöntemi geçersiz kılan metodun saydamlığını değiştirin veya sanal ya da arabirim yönteminin saydamlığını eşleştirmek için bir arabirim uygulama.
 
 ## <a name="when-to-suppress-warnings"></a>Uyarıların ne zaman bastırılamıyor
-Bu kuraldan gelen uyarıları göstermez. Bu kuralın ihlalleri, düzey 2 saydamlığı kullanan derlemeler <xref:System.TypeLoadException> için çalışma zamanına neden olur.
+Bu kuraldan gelen uyarıları göstermez. Bu kuralın ihlalleri, düzey 2 saydamlığı kullanan derlemeler için <xref:System.TypeLoadException> çalışma zamanına neden olacak.
 
 ## <a name="examples"></a>Örnekler
 

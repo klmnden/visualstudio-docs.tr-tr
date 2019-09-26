@@ -16,12 +16,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: b719c78bd4800121e36346a095c2a4141b7e2de3
-ms.sourcegitcommit: 88f576ac32af31613c1a10c1548275e1ce029f4f
+ms.openlocfilehash: 4c2e9c890b0b676216a02a526cad5380df4ceb57
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "71186697"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71252467"
 ---
 # <a name="tutorial-get-started-with-c-and-aspnet-core-in-visual-studio"></a>Öğretici: Visual Studio 'da C# ve ASP.NET Core kullanmaya başlayın
 
@@ -170,7 +170,7 @@ Bu çözüm **Razor sayfası** tasarım modelini izler. Model ve denetleyici kod
 
     CSS, resim ve JavaScript kitaplıkları&mdash;&mdash;gibi statik site içeriğini doğrudan istediğiniz yollarla yerleştirebilirsiniz.
 
- 1. Proje ayrıca, çalışma zamanında Web uygulamasını yöneten yapılandırma dosyalarını da içerir. Varsayılan uygulama [yapılandırması](/aspnet/core/fundamentals/configuration) *appSettings. JSON*' da depolanır. Ancak, appSettings kullanarak bu ayarları geçersiz kılabilirsiniz *. Development. JSON*. AppSettings 'i görüntülemek için **appSettings. JSON** dosyasını genişletin **. Development. JSON** dosyası.
+ 1. Proje, çalışma zamanında Web uygulamasını yöneten yapılandırma dosyalarını da içerir. Varsayılan uygulama [yapılandırması](/aspnet/core/fundamentals/configuration) *appSettings. JSON*' da depolanır. Ancak, appSettings kullanarak bu ayarları geçersiz kılabilirsiniz *. Development. JSON*. AppSettings 'i görüntülemek için **appSettings. JSON** dosyasını genişletin **. Development. JSON** dosyası.
 
      ![Visual Studio 'daki Çözüm Gezgini yapılandırma dosyaları](media/csharp-aspnet-razor-solution-explorer-appsettingsjson.png)
 
@@ -273,7 +273,7 @@ Bu çözüm **Razor sayfası** tasarım modelini izler. Model ve denetleyici kod
 
     CSS, resim ve JavaScript kitaplıkları&mdash;&mdash;gibi statik site içeriğini doğrudan istediğiniz yollarla yerleştirebilirsiniz.
 
- 1. Proje ayrıca, çalışma zamanında Web uygulamasını yöneten yapılandırma dosyalarını da içerir. Varsayılan uygulama [yapılandırması](/aspnet/core/fundamentals/configuration) *appSettings. JSON*' da depolanır. Ancak, appSettings kullanarak bu ayarları geçersiz kılabilirsiniz *. Development. JSON*. AppSettings 'i görüntülemek için **appSettings. JSON** dosyasını genişletin **. Development. JSON** dosyası.
+ 1. Proje, çalışma zamanında Web uygulamasını yöneten yapılandırma dosyalarını da içerir. Varsayılan uygulama [yapılandırması](/aspnet/core/fundamentals/configuration) *appSettings. JSON*' da depolanır. Ancak, appSettings kullanarak bu ayarları geçersiz kılabilirsiniz *. Development. JSON*. AppSettings 'i görüntülemek için **appSettings. JSON** dosyasını genişletin **. Development. JSON** dosyası.
 
      ![Visual Studio 'daki Çözüm Gezgini yapılandırma dosyaları](media/csharp-aspnet-razor-solution-explorer-appsettingsjson.png)
 
@@ -304,7 +304,7 @@ Bu çözüm **Razor sayfası** tasarım modelini izler. Model ve denetleyici kod
 
 1. Şimdi bir kod değişikliği yapalim. **Privacy.cshtml.cs**seçin. Ardından, aşağıdaki kısayolu kullanarak `using` dosyanın en üstündeki yönergeleri temizleyin:
 
-   Gri `using` olmayan yönergelerden herhangi birini seçin ve hızlı bir [eylem](../../ide/quick-actions.md) ampul, yalnızca giriş işaretinin altında veya sol kenar boşluğunda görünür. Ampul ' i seçin ve ardından **gereksiz kullanımları kaldır**' ın üzerine gelin. 
+   Gri `using` olmayan yönergelerden herhangi birini seçin ve hızlı bir [eylem](../../ide/quick-actions.md) ampul, yalnızca giriş işaretinin altında veya sol kenar boşluğunda görünür. Ampul ' i seçin ve ardından **gereksiz kullanımları kaldır**' ın üzerine gelin.
 
    ![Privacy.cshtml.cs dosyasındaki gereksiz kullanımları kaldırma](media/vs-2019/csharp-aspnet-remove-unnecessary-usings.png)
 

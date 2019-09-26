@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: b8be913ab1f66e82038afce776bc326e5f91c7f2
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 435eb5a9fd7e41a69c873df4c728e42551734a37
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71233800"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71253362"
 ---
 # <a name="ca1802-use-literals-where-appropriate"></a>CA1802: Uygun yerlerde sabitleri kullanın
 
@@ -41,11 +41,11 @@ Bu kural varsayılan olarak yalnızca dışarıdan görünür alanlara bakar, an
 
 ## <a name="rule-description"></a>Kural açıklaması
 
-Bildirim türü için statik `static readonly` Oluşturucu çağrıldığında bir alanın değeri çalışma zamanında hesaplanır. `static readonly` Alan bildirildiği zaman başlatılır ve statik bir oluşturucu açıkça bildirilmemiş ise, derleyici alanı başlatmak için statik bir Oluşturucu yayar.
+Bir `static readonly` alanın değeri, bildirim türü için statik Oluşturucu çağrıldığında çalışma zamanında hesaplanır. `static readonly` Alan bildirildiği zaman başlatılır ve statik bir oluşturucu açıkça bildirilmemiş ise, derleyici alanı başlatmak için statik bir Oluşturucu yayar.
 
 Bir `const` alanın değeri, derleme zamanında hesaplanır ve meta verilerde depolanır, bu da bir `static readonly` alanla karşılaştırıldığında çalışma zamanı performansını artırır.
 
-Hedeflenen alana atanan değer derleme zamanında oluşturulabilir olduğundan, değeri çalışma zamanı yerine derleme zamanında hesaplanabilmesi için bildirimi bir `const` alanla değiştirin.
+Hedeflenen alana atanan değer derleme zamanında oluşturulabilir olduğundan, değeri çalışma zamanında değil, derleme zamanında hesaplanabilmesi için bildirimi `const` bir alanla değiştirin.
 
 ## <a name="how-to-fix-violations"></a>İhlalleri çözme
 

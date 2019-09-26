@@ -12,26 +12,26 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0087841e7f37d49da40817e1487b8529af1f87df
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 27feb1c6a85740d8a9287ce3a2a47800595e178a
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62978933"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71253787"
 ---
 # <a name="the-workbook-used-to-create-this-project-contains-activex-controls-that-the-designer-cannot-load"></a>Bu projeyi oluşturmak için kullanılan çalışma kitabı tasarımcının yükleyemeyeceği ActiveX denetimleri içeriyor
-  Bu hata, bir Word belgesi için bir denetim eklediğinizde veya Excel çalışma programlı olarak belge veya çalışma kitabını kaydedin ve belge veya çalışma kitabını temel alan yeni bir belge düzeyi çözümü oluşturup görüntülenir.
+  Program aracılığıyla bir Word belgesi veya Excel çalışma sayfasına bir denetim eklediğinizde, belgeyi veya çalışma kitabını kaydettiğinizde ve sonra belge veya çalışma kitabını temel alan yeni bir belge düzeyi çözümü oluşturduğunuzda bu hata görüntülenir.
 
- Yönetilen denetim türünü açıklayan bilgileri, belge veya çalışma kitabı ile birlikte kaydedilmez. Bu belge veya çalışma kitabını temel alan yeni bir çözüm oluşturduğunuzda, Visual Studio ana bilgisayar öğesi Tasarımcısı'nda denetimi yüklemek için yeterli bilgi yok.
+ Denetimin yönetilen türünü açıklayan bilgiler belge veya çalışma kitabıyla birlikte kaydedilmez. Bu belgeye veya çalışma kitabına dayalı yeni bir çözüm oluşturduğunuzda, Visual Studio 'Nun denetimi konak öğesi tasarımcısında yüklemek için yeterli bilgi yok.
 
 ## <a name="to-correct-this-error"></a>Bu hatayı düzeltmek için
 
-1. Belge veya çalışma kitabını açın.
+1. Belgeyi veya çalışma kitabını açın.
 
-2. Çalışma zamanında eklenen denetimlerini kaldırma. Belge veya çalışma kitabı ve tuşlarına basarak seçerek bunu yapabilirsiniz **Sil** anahtarı.
+2. Çalışma zamanında eklenen denetimleri kaldırın. Bunu belge veya çalışma kitabında seçerek ve **Delete** tuşuna basarak yapabilirsiniz.
 
-3. Belge veya çalışma kitabını temel alan bir belge düzeyi çözümü oluşturun.
+3. Belge veya çalışma kitabı temelinde belge düzeyi çözümü oluşturun.
 
 ## <a name="see-also"></a>Ayrıca bkz.
-- [Nasıl yapılır: Visual Studio'da Office projeleri oluşturma](../vsto/how-to-create-office-projects-in-visual-studio.md)
-- [Office belgelerine çalışma zamanında denetimler ekleme](../vsto/adding-controls-to-office-documents-at-run-time.md)
+- [Nasıl yapılır: Visual Studio 'da Office projeleri oluşturma](../vsto/how-to-create-office-projects-in-visual-studio.md)
+- [Çalışma zamanında Office belgelerine denetim ekleme](../vsto/adding-controls-to-office-documents-at-run-time.md)

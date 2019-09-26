@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl yapılır: ListObject denetimlerini veri ile doldurabilirsiniz.'
+title: 'Nasıl yapılır: ListObject denetimlerini verilerle Doldur'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -17,54 +17,54 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f65f6de7cfb336eb001de47fb6562b7200391419
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a0916ca11d4df5f6b69376d7223143afbb407f6e
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62967993"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71255887"
 ---
-# <a name="how-to-fill-listobject-controls-with-data"></a>Nasıl yapılır: ListObject denetimlerini veri ile doldurabilirsiniz.
-  Veri bağlama, hızlı bir şekilde belgenize veri eklemek için bir yol olarak kullanabilirsiniz. Verileri Liste nesnesine bağladıktan sonra verileri görüntüler ancak artık veri kaynağına bağlı olduğu için liste nesnesi kesebilirsiniz.
+# <a name="how-to-fill-listobject-controls-with-data"></a>Nasıl yapılır: ListObject denetimlerini verilerle Doldur
+  Belgenize hızlı bir şekilde veri eklemek için veri bağlamayı kullanabilirsiniz. Verileri bir liste nesnesine bağladıktan sonra, verileri görüntüleyecek ancak artık veri kaynağına bağlanmadığından, liste nesnesinin bağlantısını kesebilirsiniz.
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
 
- ![video bağlantı](../vsto/media/playvideo.gif "video bağlantı") ilgili video gösterimi için bkz. [nasıl yaparım? Bir SharePoint listesine bağlı Excel'de bir liste oluşturur? ](http://go.microsoft.com/fwlink/?LinkID=130263).
+ ![video bağlantısı](../vsto/media/playvideo.gif "video bağlantısı") İlgili video gösterimi için bkz [. nasıl yaparım?: Excel 'de SharePoint listesine bağlı bir liste oluşturun mi? ](http://go.microsoft.com/fwlink/?LinkID=130263).
 
-### <a name="to-bind-data-to-a-listobject-control"></a>ListObject denetimine veri bağlama için
+### <a name="to-bind-data-to-a-listobject-control"></a>ListObject denetimine veri bağlamak için
 
-1. Oluşturma bir <xref:System.Data.DataTable> sınıf düzeyinde.
+1. <xref:System.Data.DataTable> Sınıf düzeyinde oluşturun.
 
      [!code-csharp[Trin_VstcoreHostControlsExcel#20](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet4.cs#20)]
      [!code-vb[Trin_VstcoreHostControlsExcel#20](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet4.vb#20)]
 
-2. Örnek sütunlar ekleyip verileri `Startup` olay işleyicisine `Sheet1` sınıfı (belge düzeyi projede) veya `ThisAddIn` sınıfı (uygulama düzeyi projede).
+2. Sınıfın (belge düzeyi projesinde) veya `Startup` `ThisAddIn` sınıfında (uygulama düzeyi projesinde) olay işleyicisine örnek sütun ve veri ekleyin. `Sheet1`
 
      [!code-csharp[Trin_VstcoreHostControlsExcel#21](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet4.cs#21)]
      [!code-vb[Trin_VstcoreHostControlsExcel#21](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet4.vb#21)]
 
-3. Çağrı <xref:Microsoft.Office.Tools.Excel.ListObject.SetDataBinding%2A> yöntemi ve sütun adları göründükleri sırayla geçirin. Liste nesnesinde sütunların sırasını içinde görünen sırası farklı olabilir <xref:System.Data.DataTable>.
+3. <xref:Microsoft.Office.Tools.Excel.ListObject.SetDataBinding%2A> Yöntemi çağırın ve sütun adlarını görünmesi gereken sırada geçirin. Liste nesnesindeki sütunların sırası, <xref:System.Data.DataTable>içinde göründükleri sırayla farklılık gösterebilir.
 
      [!code-csharp[Trin_VstcoreHostControlsExcel#22](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet4.cs#22)]
      [!code-vb[Trin_VstcoreHostControlsExcel#22](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet4.vb#22)]
 
-### <a name="to-disconnect-the-listobject-control-from-the-data-source"></a>ListObject denetimi veri kaynağından bağlantısını kesmek için
+### <a name="to-disconnect-the-listobject-control-from-the-data-source"></a>ListObject denetiminin veri kaynağıyla bağlantısını kesmek için
 
-1. Çağrı <xref:Microsoft.Office.Tools.Excel.ListObject.Disconnect%2A> yöntemi `List1`.
+1. <xref:Microsoft.Office.Tools.Excel.ListObject.Disconnect%2A> Yöntemini`List1`çağırın.
 
      [!code-csharp[Trin_VstcoreHostControlsExcel#23](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet4.cs#23)]
      [!code-vb[Trin_VstcoreHostControlsExcel#23](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet4.vb#23)]
 
 ## <a name="compile-the-code"></a>Kod derleme
- Bu kod örneği, mevcut bir varsayar <xref:Microsoft.Office.Tools.Excel.ListObject> adlı `list1` bu kodu göründüğü çalışma.
+ Bu kod örneği, bu kodun göründüğü çalışma <xref:Microsoft.Office.Tools.Excel.ListObject> sayfasında `list1` var olan bir ada sahip olduğunuzu varsayar.
 
 ## <a name="see-also"></a>Ayrıca bkz.
-- [Word belgelerini ve Excel çalışma kitaplarını VSTO eklentileri çalışma zamanında genişletme](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)
+- [VSTO Eklentilerindeki Word belgelerini ve Excel çalışma kitaplarını çalışma zamanında genişletme](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)
 - [Office belgelerindeki denetimler](../vsto/controls-on-office-documents.md)
-- [Office belgelerine çalışma zamanında denetimler ekleme](../vsto/adding-controls-to-office-documents-at-run-time.md)
-- [Nasıl yapılır: ListObject sütunlarıyla verileri eşleme](../vsto/how-to-map-listobject-columns-to-data.md)
+- [Çalışma zamanında Office belgelerine denetim ekleme](../vsto/adding-controls-to-office-documents-at-run-time.md)
+- [Nasıl yapılır: ListObject sütunlarını verilerle eşleme](../vsto/how-to-map-listobject-columns-to-data.md)
 - [Genişletilmiş nesneleri kullanarak Excel'i otomatikleştirmek](../vsto/automating-excel-by-using-extended-objects.md)
 - [ListObject denetimi](../vsto/listobject-control.md)
-- [Office çözümlerinde denetimlere veri bağlama](../vsto/binding-data-to-controls-in-office-solutions.md)
-- [Nasıl yapılır: Çalışma sayfalarını veritabanı verileriyle doldurma](../vsto/how-to-populate-worksheets-with-data-from-a-database.md)
-- [Nasıl yapılır: Belgeleri hizmet verileriyle doldurma](../vsto/how-to-populate-documents-with-data-from-services.md)
+- [Office çözümlerinde verileri denetimlere bağlama](../vsto/binding-data-to-controls-in-office-solutions.md)
+- [Nasıl yapılır: Çalışma sayfalarını bir veritabanındaki verilerle doldurma](../vsto/how-to-populate-worksheets-with-data-from-a-database.md)
+- [Nasıl yapılır: Belgeleri hizmetlerdeki verilerle Doldur](../vsto/how-to-populate-documents-with-data-from-services.md)

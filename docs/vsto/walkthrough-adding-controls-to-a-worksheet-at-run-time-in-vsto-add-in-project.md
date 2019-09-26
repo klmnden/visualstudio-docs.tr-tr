@@ -15,25 +15,25 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: fbea2eaa226b590131f66003f37dfa52d7649270
-ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
+ms.openlocfilehash: 5bf2610ca1f3f3767082bf50953f821d37d1af2a
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/22/2019
-ms.locfileid: "67328408"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71253904"
 ---
-# <a name="walkthrough-add-controls-to-a-worksheet-at-runtime-in-vsto-add-in-project"></a>İzlenecek yol: Çalışma zamanında VSTO eklenti projesindeki çalışma sayfasına denetimler ekleme
-  Bir Excel VSTO eklentisi kullanarak herhangi bir açık çalışma sayfasına denetimler ekleyebilirsiniz. Bu izlenecek yol ekleme olanağı Şerit kullanmayı gösterir. bir <xref:Microsoft.Office.Tools.Excel.Controls.Button>, <xref:Microsoft.Office.Tools.Excel.NamedRange>ve bir <xref:Microsoft.Office.Tools.Excel.ListObject> çalışma. Bilgi için [Office belgelerine çalışma zamanında denetimler ekleme](../vsto/adding-controls-to-office-documents-at-run-time.md).
+# <a name="walkthrough-add-controls-to-a-worksheet-at-run-time-in-vsto-add-in-project"></a>İzlenecek yol: Çalışma zamanında VSTO eklenti projesindeki çalışma sayfasına denetimler ekleme
+  Excel VSTO eklentisini kullanarak, herhangi bir açık çalışma sayfasına denetim ekleyebilirsiniz. Bu izlenecek yol, kullanıcıların çalışma sayfasına bir <xref:Microsoft.Office.Tools.Excel.Controls.Button>, a <xref:Microsoft.Office.Tools.Excel.NamedRange>ve bir <xref:Microsoft.Office.Tools.Excel.ListObject> eklemek için şerit 'in nasıl kullanılacağını gösterir. Daha fazla bilgi için bkz. [çalışma zamanında Office belgelerine denetim ekleme](../vsto/adding-controls-to-office-documents-at-run-time.md).
 
- **Uygulama hedefi:** Bu konu başlığı altındaki bilgiler Excel için VSTO eklentisi projelerine yöneliktir. Daha fazla bilgi edinmek için bkz. [Office Uygulaması ve Proje Türüne Göre Kullanılabilen Özellikler](../vsto/features-available-by-office-application-and-project-type.md).
+ **Uygulama hedefi:** Bu konudaki bilgiler Excel için VSTO eklentisi projelerine yöneliktir. Daha fazla bilgi edinmek için bkz. [Office Uygulaması ve Proje Türüne Göre Kullanılabilen Özellikler](../vsto/features-available-by-office-application-and-project-type.md).
 
  Bu izlenecek yol aşağıdaki görevleri gösterir:
 
-- Bir kullanıcı arabirimi (UI) denetimler eklemek için çalışma sayfasına sağlama.
+- Çalışma sayfasına denetim eklemek için bir kullanıcı arabirimi (UI) sağlama.
 
 - Çalışma sayfasına denetimler ekleme.
 
-- Çalışma sayfasındaki denetimleri kaldırılıyor.
+- Çalışma sayfasından denetimler kaldırılıyor.
 
   [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
@@ -44,151 +44,151 @@ ms.locfileid: "67328408"
 
 - Excel
 
-## <a name="create-a-new-excel-vsto-add-in-project"></a>Yeni bir Excel VSTO eklentisi projesi oluşturun
- Excel VSTO eklenti projesinde oluşturarak başlayın.
+## <a name="create-a-new-excel-vsto-add-in-project"></a>Yeni bir Excel VSTO eklentisi projesi oluşturma
+ Bir Excel VSTO eklentisi projesi oluşturarak başlayın.
 
-### <a name="to-create-a-new-excel-vsto-add-in-project"></a>Yeni bir Excel VSTO eklenti projesi oluşturmak için
+### <a name="to-create-a-new-excel-vsto-add-in-project"></a>Yeni bir Excel VSTO eklentisi projesi oluşturmak için
 
-1. İçinde [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], adlı bir Excel VSTO eklentisi projesi oluşturun **ExcelDynamicControls**. Daha fazla bilgi için [nasıl yapılır: Visual Studio'da Office projeleri oluşturma](../vsto/how-to-create-office-projects-in-visual-studio.md).
+1. İçinde [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], **exceldynamiccontrols**adlı bir Excel VSTO eklenti projesi oluşturun. Daha fazla bilgi için [nasıl yapılır: Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)'da Office projeleri oluşturun.
 
-2. Bir başvuru ekleyin **Microsoft.Office.Tools.Excel.v4.0.Utilities.dll** derleme. Bu başvuru, bu kılavuzda daha sonra çalışma program aracılığıyla bir Windows Forms denetimi eklemek için gereklidir.
+2. **Microsoft. Office. Tools. Excel. v 4.0. Utilities. dll** derlemesine bir başvuru ekleyin. Bu izlenecek yolda daha sonra çalışma sayfasına bir Windows Forms denetimi eklemek için bu başvuru gerekir.
 
-## <a name="provide-a-ui-to-add-controls-to-a-worksheet"></a>Bir çalışma sayfasına denetimler eklemek için bir kullanıcı Arabirimi sağlar.
- Şerite özel sekme ekleyin. Kullanıcılar onay kutularını çalışma sayfasına denetimler eklemek için sekmesinde seçebilir.
+## <a name="provide-a-ui-to-add-controls-to-a-worksheet"></a>Çalışma sayfasına denetim eklemek için bir kullanıcı arabirimi sağlama
+ Excel şeridine özel bir sekme ekleyin. Kullanıcılar, çalışma sayfasına denetim eklemek için sekmedeki onay kutularını seçebilir.
 
-#### <a name="to-provide-a-ui-to-add-controls-to-a-worksheet"></a>Bir çalışma sayfasına denetimler eklemek için bir UI sağlamak için
+#### <a name="to-provide-a-ui-to-add-controls-to-a-worksheet"></a>Çalışma sayfasına denetim eklemek için bir kullanıcı arabirimi sağlamak için
 
-1. Üzerinde **proje** menüsünü tıklatın **Yeni Öğe Ekle**.
+1. **Proje** menüsünde **Yeni öğe Ekle**' ye tıklayın.
 
-2. İçinde **Yeni Öğe Ekle** iletişim kutusunda **Şerit (Görsel Tasarımcı)** ve ardından **Ekle**.
+2. **Yeni öğe Ekle** Iletişim kutusunda **Şerit (görsel Tasarımcı)** öğesini seçin ve ardından **Ekle**' ye tıklayın.
 
-     Adlı bir dosya **Ribbon1.cs** veya **Ribbon1.vb** Şerit Tasarımcısı'nda açılır ve varsayılan bir sekme ve grup görüntüler.
+     Şerit tasarımcısında **Ribbon1.cs** veya **Ribbon1. vb** adlı bir dosya açılır ve varsayılan bir sekme ve grup görüntüler.
 
-3. Gelen **Office Şerit denetimleri** sekmesinde **araç kutusu**, bir onay kutusu denetimi sürükleyin **group1**.
+3. **Araç kutusunun** **Office Şerit denetimleri** sekmesinden **Group1**üzerine bir CheckBox denetimi sürükleyin.
 
-4. Tıklayın **CheckBox1** seçin.
+4. Seçmek için **CheckBox1** öğesine tıklayın.
 
-5. İçinde **özellikleri** penceresinde, aşağıdaki özellikleri değiştirin.
+5. **Özellikler** penceresinde, aşağıdaki özellikleri değiştirin.
 
     |Özellik|Değer|
     |--------------|-----------|
     |**Ad**|**Düğme**|
     |**Etiket**|**Düğme**|
 
-6. İkinci bir onay kutusu ekleme **group1**ve ardından aşağıdaki özellikleri değiştirin.
+6. **Group1**öğesine ikinci bir onay kutusu ekleyin ve ardından aşağıdaki özellikleri değiştirin.
 
     |Özellik|Değer|
     |--------------|-----------|
     |**Ad**|**NamedRange**|
     |**Etiket**|**NamedRange**|
 
-7. Üçüncü bir onay kutusu ekleme **group1**ve ardından aşağıdaki özellikleri değiştirin.
+7. **Group1**öğesine üçüncü onay kutusu ekleyin ve ardından aşağıdaki özellikleri değiştirin.
 
     |Özellik|Değer|
     |--------------|-----------|
-    |**Ad**|**ListObject**|
-    |**Etiket**|**ListObject**|
+    |**Ad**|**Veriyi**|
+    |**Etiket**|**Veriyi**|
 
 ## <a name="add-controls-to-the-worksheet"></a>Çalışma sayfasına denetimler ekleme
- Yönetilen denetimleri kapsayıcıları olarak davranan konak öğeleri yalnızca eklenebilir. VSTO eklentisi projeleri ile herhangi bir açık çalışma çalıştığından, VSTO eklentisi çalışma sayfası konak öğesi dönüştürür ve denetim eklemeden önce var olan bir konak öğesi alır. Olay işleyicisine oluşturmak için her denetim için kod ekleme bir <xref:Microsoft.Office.Tools.Excel.Worksheet> açık çalışma sayfasını temel alan ana bilgisayar öğesi. Ardından ekleyin bir <xref:Microsoft.Office.Tools.Excel.Controls.Button>, <xref:Microsoft.Office.Tools.Excel.NamedRange>ve <xref:Microsoft.Office.Tools.Excel.ListObject> geçerli seçime konumunda.
+ Yönetilen denetimler yalnızca kapsayıcı olarak davranan ana bilgisayar öğelerine eklenebilir. VSTO eklentisi projeleri herhangi bir açık çalışma kitabıyla çalıştığı için, VSTO eklentisi çalışma sayfasını bir konak öğesine dönüştürür veya denetimi eklemeden önce var olan bir konak öğesini alır. Açık çalışma sayfasına dayalı bir <xref:Microsoft.Office.Tools.Excel.Worksheet> konak öğesi oluşturmak için her denetimin Click olay işleyicisine kod ekleyin. Sonra, çalışma sayfasındaki <xref:Microsoft.Office.Tools.Excel.Controls.Button>geçerli seçime <xref:Microsoft.Office.Tools.Excel.NamedRange>bir, a <xref:Microsoft.Office.Tools.Excel.ListObject> ve a ekleyin.
 
-### <a name="to-add-controls-to-a-worksheet"></a>Bir çalışma sayfasına denetimler ekleme
+### <a name="to-add-controls-to-a-worksheet"></a>Çalışma sayfasına denetim eklemek için
 
-1. Şerit Tasarımcısı'nda çift **düğmesi**.
+1. Şerit Tasarımcısı ' nda, **düğmesine**çift tıklayın.
 
-     <xref:Microsoft.Office.Tools.Ribbon.RibbonCheckBox.Click> Olay işleyicisine **düğmesi** onay kutusu, Kod Düzenleyicisi'nde açılır.
+     **Düğme onay** kutusunun olayişleyicisikoddüzenleyicisinde<xref:Microsoft.Office.Tools.Ribbon.RibbonCheckBox.Click> açılır.
 
-2. Değiştirin `Button_Click` aşağıdaki kod ile olay işleyicisi.
+2. `Button_Click` Olay işleyicisini aşağıdaki kodla değiştirin.
 
-     Bu kod `GetVstoObject` ilk çalışma kitabındaki temsil eder ve ardından ekleyen bir ana bilgisayar öğesi almak için yöntemi bir <xref:Microsoft.Office.Tools.Excel.Controls.Button> şu anda seçili hücreden denetimi.
+     Bu kod, çalışma `GetVstoObject` kitabındaki ilk çalışma sayfasını temsil eden bir konak öğesini almak için yöntemini kullanır ve ardından şu anda seçili olan <xref:Microsoft.Office.Tools.Excel.Controls.Button> hücreye bir denetim ekler.
 
      [!code-csharp[Trin_Excel_Dynamic_Controls#2](../vsto/codesnippet/CSharp/Trin_Excel_Dynamic_Controls/Ribbon1.cs#2)]
      [!code-vb[Trin_Excel_Dynamic_Controls#2](../vsto/codesnippet/VisualBasic/Trin_Excel_Dynamic_Controls/Ribbon1.vb#2)]
 
-3. İçinde **Çözüm Gezgini**seçin *Ribbon1.cs* veya *Ribbon1.vb*.
+3. **Çözüm Gezgini**' de *Ribbon1.cs* veya *Ribbon1. vb*' yi seçin.
 
-4. Üzerinde **görünümü** menüsünde tıklatın **Tasarımcısı**.
+4. **Görünüm** menüsünde **Tasarımcı**' ya tıklayın.
 
-5. Şerit Tasarımcısı'nda çift **NamedRange**.
+5. Şerit tasarımcısında, **NamedRange**' e çift tıklayın.
 
-6. Değiştirin `NamedRange_Click` aşağıdaki kod ile olay işleyicisi.
+6. `NamedRange_Click` Olay işleyicisini aşağıdaki kodla değiştirin.
 
-     Bu kod `GetVstoObject` ilk çalışma kitabındaki temsil eder ve ardından tanımlayan bir ana bilgisayar öğesi almak için yöntemi bir <xref:Microsoft.Office.Tools.Excel.NamedRange> şu anda seçili hücrenin veya hücre denetimi.
+     Bu kod, çalışma `GetVstoObject` kitabındaki ilk çalışma sayfasını temsil eden bir konak öğesini almak için yöntemini kullanır ve ardından şu anda seçili olan <xref:Microsoft.Office.Tools.Excel.NamedRange> hücre veya hücreler için bir denetim tanımlar.
 
      [!code-csharp[Trin_Excel_Dynamic_Controls#3](../vsto/codesnippet/CSharp/Trin_Excel_Dynamic_Controls/Ribbon1.cs#3)]
      [!code-vb[Trin_Excel_Dynamic_Controls#3](../vsto/codesnippet/VisualBasic/Trin_Excel_Dynamic_Controls/Ribbon1.vb#3)]
 
-7. Şerit Tasarımcısı'nda çift **ListObject**.
+7. Şerit tasarımcısında **ListObject**' e çift tıklayın.
 
-8. Değiştirin `ListObject_Click` aşağıdaki kod ile olay işleyicisi.
+8. `ListObject_Click` Olay işleyicisini aşağıdaki kodla değiştirin.
 
-     Bu kod `GetVstoObject` ilk çalışma kitabındaki temsil eder ve ardından tanımlayan bir ana bilgisayar öğesi almak için yöntemi bir <xref:Microsoft.Office.Tools.Excel.ListObject> şu anda seçili hücrenin veya hücre.
+     Bu kod, çalışma `GetVstoObject` kitabındaki ilk çalışma sayfasını temsil eden bir konak öğesini almak için yöntemini kullanır ve ardından şu anda seçili olan <xref:Microsoft.Office.Tools.Excel.ListObject> hücre veya hücreler için bir tanımlar.
 
      [!code-csharp[Trin_Excel_Dynamic_Controls#4](../vsto/codesnippet/CSharp/Trin_Excel_Dynamic_Controls/Ribbon1.cs#4)]
      [!code-vb[Trin_Excel_Dynamic_Controls#4](../vsto/codesnippet/VisualBasic/Trin_Excel_Dynamic_Controls/Ribbon1.vb#4)]
 
-9. Şerit kod dosyasının en üstüne aşağıdaki deyimleri ekleyin.
+9. Aşağıdaki deyimlerini Şerit kod dosyasının en üstüne ekleyin.
 
      [!code-csharp[Trin_Excel_Dynamic_Controls#1](../vsto/codesnippet/CSharp/Trin_Excel_Dynamic_Controls/Ribbon1.cs#1)]
      [!code-vb[Trin_Excel_Dynamic_Controls#1](../vsto/codesnippet/VisualBasic/Trin_Excel_Dynamic_Controls/Ribbon1.vb#1)]
 
-## <a name="remove-controls-from-the-worksheet"></a>Çalışma sayfasından denetimlerini kaldırma
- Çalışma kaydedildi ve denetimler kalıcı olmaz. Program aracılığıyla oluşturulan tüm Windows Formları denetimleri çalışma kaydedilir veya çalışma kitabını tekrar açıldığında yalnızca anahat denetimin görünür önce kaldırmanız gerekir. Kodu <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookBeforeSave> Windows Forms denetimleri oluşturulan konak öğesinin denetimleri koleksiyondan kaldırır. olay. Daha fazla bilgi için [Office belgelerinde Dinamik denetimleri kalıcı](../vsto/persisting-dynamic-controls-in-office-documents.md).
+## <a name="remove-controls-from-the-worksheet"></a>Çalışma sayfasından denetimleri kaldırma
+ Çalışma sayfası kaydedilip kapatıldığında denetimler kalıcı olmaz. Çalışma sayfası kaydedilmeden önce oluşturulan tüm Windows Forms denetimlerini program aracılığıyla kaldırmalı veya çalışma kitabı yeniden açıldığında yalnızca denetimin bir anahattı görünür. Oluşturulan konak öğesinin denetimler <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookBeforeSave> koleksiyonundan Windows Forms denetimlerini kaldıran olaya kod ekleyin. Daha fazla bilgi için bkz. [Dinamik denetimleri Office belgelerinde kalıcı hale](../vsto/persisting-dynamic-controls-in-office-documents.md)getirme.
 
-### <a name="to-remove-controls-from-the-worksheet"></a>Çalışma sayfasındaki denetimleri kaldırmak için
+### <a name="to-remove-controls-from-the-worksheet"></a>Çalışma sayfasından denetimleri kaldırmak için
 
-1. İçinde **Çözüm Gezgini**seçin *ThisAddIn.cs* veya *ThisAddIn.vb*.
+1. **Çözüm Gezgini**' de *ThisAddIn.cs* veya *ThisAddIn. vb*öğesini seçin.
 
-2. Üzerinde **görünümü** menüsünde tıklatın **kod**.
+2. **Görünüm** menüsünde **kod**' a tıklayın.
 
-3. Aşağıdaki yöntemi ekleyin `ThisAddIn` sınıfı. Bu kod ilk çalışma kitabında alır ve ardından `HasVstoObject` çalışma oluşturulan çalışma sayfası nesnesi sahip olup olmadığını denetlemek için yöntem. Oluşturulan çalışma sayfası nesnesi denetimleri varsa, kod söz konusu çalışma sayfası nesnesi alır ve denetimleri kaldırma denetim koleksiyonu yinelenir.
+3. `ThisAddIn` Sınıfına aşağıdaki yöntemi ekleyin. Bu kod çalışma kitabındaki ilk çalışma sayfasını alır ve sonra çalışma sayfasında oluşturulmuş `HasVstoObject` bir çalışma sayfası nesnesi olup olmadığını denetlemek için yöntemini kullanır. Oluşturulan çalışma sayfası nesnesinin denetimleri varsa, kod bu çalışma sayfası nesnesini alır ve denetim koleksiyonu aracılığıyla dolaşır, denetimleri kaldırır.
 
      [!code-csharp[Trin_Excel_Dynamic_Controls#6](../vsto/codesnippet/CSharp/Trin_Excel_Dynamic_Controls/ThisAddIn.cs#6)]
      [!code-vb[Trin_Excel_Dynamic_Controls#6](../vsto/codesnippet/VisualBasic/Trin_Excel_Dynamic_Controls/ThisAddIn.vb#6)]
 
-4. İçinde C#, bir olay işleyicisi için oluşturmalısınız <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookBeforeSave> olay. Bu kodu koyabilirsiniz `ThisAddIn_Startup` yöntemi. Olay işleyicileri oluşturma hakkında daha fazla bilgi için bkz. [nasıl yapılır: Office projelerinde olay işleyicileri oluşturma](../vsto/how-to-create-event-handlers-in-office-projects.md). Değiştirin `ThisAddIn_Startup` yöntemini aşağıdaki kod ile.
+4. İçinde C#, <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookBeforeSave> olay için bir olay işleyicisi oluşturmanız gerekir. Bu kodu `ThisAddIn_Startup` yöntemine yerleştirebilirsiniz. Olay işleyicileri oluşturma hakkında daha fazla bilgi için bkz [. nasıl yapılır: Office projelerinde](../vsto/how-to-create-event-handlers-in-office-projects.md)olay işleyicileri oluşturun. `ThisAddIn_Startup` Yöntemini aşağıdaki kodla değiştirin.
 
      [!code-csharp[Trin_Excel_Dynamic_Controls#5](../vsto/codesnippet/CSharp/Trin_Excel_Dynamic_Controls/ThisAddIn.cs#5)]
 
-## <a name="test-the-solution"></a>Çözüm test
- Denetimler, Şeritteki özel bir sekme seçerek çalışma sayfasına ekleyin. Çalışma sayfası kaydettiğinizde, bu denetimlerin kaldırılır.
+## <a name="test-the-solution"></a>Çözümü test etme
+ Şeritteki özel bir sekmeden seçerek çalışma sayfasına denetimler ekleyin. Çalışma sayfasını kaydettiğinizde, bu denetimler kaldırılır.
 
 ### <a name="to-test-the-solution"></a>Çözümü test etmek için.
 
-1. Tuşuna **F5** projeyi çalıştırın.
+1. Projenizi çalıştırmak için **F5** tuşuna basın.
 
-2. Sheet1'deki herhangi bir hücreyi seçin.
+2. Sheet1 ' deki herhangi bir hücreyi seçin.
 
-3. Tıklayın **eklentileri** sekmesi.
+3. **Eklentiler** sekmesine tıklayın.
 
-4. İçinde **group1** grubunda **düğmesi**.
+4. **Grup1** grubunda **düğme**' ye tıklayın.
 
-     Bir düğme seçili hücrede görünür.
+     Seçili hücrede bir düğme görünür.
 
-5. Sheet1 içinde farklı bir hücreyi seçin.
+5. Sayfa1 'de farklı bir hücre seçin.
 
-6. İçinde **group1** grubunda **NamedRange**.
+6. **Grup1** grubunda, **NamedRange**' e tıklayın.
 
-     Adlandırılmış aralık seçili hücre için tanımlanır.
+     Adlandırılmış bir Aralık seçili hücre için tanımlandı.
 
-7. Hücre bir dizi içinde Sayfa1 seçin.
+7. Sayfa1 'de bir hücre serisi seçin.
 
-8. İçinde **group1** grubunda **ListObject**.
+8. **Grup1** grubunda **ListObject**' e tıklayın.
 
-     Bir liste nesnesi için seçili hücreleri eklenir.
+     Seçili hücreler için bir liste nesnesi eklendi.
 
 9. Çalışma sayfasını kaydedin.
 
-     Sheet1 artık eklenen denetimleri görünür.
+     Sheet1 'e eklediğiniz denetimler artık görünmez.
 
 ## <a name="next-steps"></a>Sonraki adımlar
- Bu konu Excel VSTO eklentisi projeleri denetimleri hakkında daha fazla bilgi edinebilirsiniz:
+ Bu konudaki Excel VSTO eklenti projelerinde denetimler hakkında daha fazla bilgi edinebilirsiniz:
 
-- Bir çalışma sayfasına denetimler kaydetme hakkında bilgi edinmek için Excel VSTO eklenti dinamik bkz [Office geliştirme örnekleri ve izlenecek yollar](../vsto/office-development-samples-and-walkthroughs.md).
+- Denetimlerin çalışma sayfasına nasıl kaydedileceği hakkında bilgi edinmek için bkz. [Office geliştirme örnekleri ve izlenecek yollar](../vsto/office-development-samples-and-walkthroughs.md)KONUMUNDAKI Excel VSTO eklentisi dinamik denetimleri örneği.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 - [Excel çözümleri](../vsto/excel-solutions.md)
-- [Windows forms denetimleri Office belgeleri genel bakış](../vsto/windows-forms-controls-on-office-documents-overview.md)
+- [Office belgelerindeki Windows Forms denetimlerine genel bakış](../vsto/windows-forms-controls-on-office-documents-overview.md)
 - [Office belgelerindeki denetimler](../vsto/controls-on-office-documents.md)
 - [NamedRange denetimi](../vsto/namedrange-control.md)
 - [ListObject denetimi](../vsto/listobject-control.md)

@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4dec35fb978b3c751e07cb6d0612ff5da27c74e5
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 42581e632c08550fce3cd685949401a155a060f6
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69551121"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71253163"
 ---
 # <a name="frequently-asked-questions-about-fxcop-and-fxcop-analyzers"></a>FxCop ve FxCop çözümleyicileri hakkında sık sorulan sorular
 
@@ -43,7 +43,7 @@ FxCop çözümleyicileri 'ni çalıştırmak için önce bunlar için [NuGet pak
 
 ## <a name="i-get-warning-ca0507-even-after-ive-installed-the-fxcop-analyzers-nuget-package"></a>FxCop çözümleyicileri NuGet paketini yükledikten sonra bile uyarı CA0507 alıyorum
 
-FxCop çözümleyicileri yüklemişseniz ancak uyarı almaya devam ederseniz **, "" Kod analizini Çalıştır "özelliği derleme sırasında çalıştırılan FxCop çözümleyicileri lehçında kullanım dışı**bırakılmıştır, proje dosyanızdaki **RunCodeAnalysis** MSBuild özelliğini şu şekilde ayarlamanız gerekebilir **yanlış**. Aksi halde, eski analiz her derlemeden sonra yürütülür.
+FxCop çözümleyicileri yüklemişseniz ancak uyarı almaya devam ederseniz **, "" Kod analizini Çalıştır "özelliği derleme sırasında çalıştırılan FxCop çözümleyicileri yararına kullanım dışı**bırakılmıştır. projenizde **RunCodeAnalysis** MSBuild özelliğini ayarlamanız gerekebilir [ dosya](../ide/solutions-and-projects-in-visual-studio.md#project-file) **yanlış**. Aksi halde, eski analiz her derlemeden sonra yürütülür.
 
 ```xml
 <RunCodeAnalysis>false</RunCodeAnalysis>

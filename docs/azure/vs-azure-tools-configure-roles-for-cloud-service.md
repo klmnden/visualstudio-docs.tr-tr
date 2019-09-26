@@ -9,19 +9,19 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/21/2017
 ms.author: ghogen
-ms.openlocfilehash: 598ced6d3e924ecf1d2826be6a6976f56c02afa5
-ms.sourcegitcommit: 3cc73e74921a9ceb622542e0e263abeebc455c00
+ms.openlocfilehash: ded315917fb0e40159aed327ed98f747bb31c4b1
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "67624062"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71253594"
 ---
 # <a name="configure-azure-cloud-service-roles-with-visual-studio"></a>Visual Studio ile Azure bulut hizmeti rollerini yapılandırma
 Azure bulut hizmeti çalışan veya web rollerinin bir veya daha fazla olabilir. Her rol için bu rolü nasıl ayarlandığı tanımlayın ve bu rolü nasıl çalıştığını da yapılandırmanız gerekir. Cloud Services rolleri hakkında daha fazla bilgi edinmek için videoyu bkz [Azure bulut hizmetlerine giriş](https://channel9.msdn.com/Series/Windows-Azure-Cloud-Services-Tutorials/Introduction-to-Windows-Azure-Cloud-Services).
 
 Bulut hizmetiniz için bilgiler aşağıdaki dosyalarda saklanır:
 
-- **ServiceDefinition.csdef** -Hizmet tanım dosyası hangi roller gereklidir dahil olmak üzere bulut hizmeti, uç noktaları ve sanal makine boyutu için çalışma zamanı ayarlarını tanımlar. Depolanan verilerin hiçbiri `ServiceDefinition.csdef` rolünüz çalışırken değiştirilebilir.
+- **ServiceDefinition. csdef** -hizmet tanımı dosyası, gerekli rollerin, uç noktaların ve sanal makine boyutunun yanı sıra bulut hizmetiniz için çalışma zamanı ayarlarını tanımlar. Depolanan verilerin hiçbiri `ServiceDefinition.csdef` rolünüz çalışırken değiştirilebilir.
 - **ServiceConfiguration.cscfg** - hizmet yapılandırma dosyasının kaç rol örneklerini çalıştırma yapılandırır ve ayarlarının değerleri, bir rol için tanımlanmış. Depolanan veriler `ServiceConfiguration.cscfg` rolünüz çalışırken değiştirilebilir.
 
 Farklı değerler için bir rol nasıl çalıştığını denetleyen ayarları depolamak için birden çok hizmet yapılandırmaları tanımlayabilirsiniz. Her dağıtım ortamı için farklı hizmet yapılandırmasını kullanabilirsiniz. Örneğin, bir yerel hizmet yapılandırmasında yerel Azure depolama öykünücüsü kullanma ve bulutta Azure depolamanızı kullanmak için başka bir hizmet yapılandırması oluşturmak için depolama hesabı bağlantı dizesi ayarlayabilirsiniz.

@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ad4716b2408afb04242a8a71da3a96474dc42b99
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 8c72b6749dcba857d9a5059a36adc0fae6e0bacf
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65704470"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71254613"
 ---
 # <a name="measure-memory-usage-in-visual-studio"></a>Visual Studio'da ölçü bellek kullanımı
 
@@ -29,7 +29,7 @@ Her zaman bellek anlık görüntüleri toplama rağmen **bellek kullanımı** ar
 Hata ayıklayıcının dışında bellek Aracı'nı kullanabilirsiniz. Bkz: [hata ayıklama olmadan bellek kullanımı](../profiling/memory-usage-without-debugging2.md). Windows 7 ve daha sonra bağlı hiçbir hata ayıklayıcısı ile profil oluşturma araçları kullanabilirsiniz. Windows 8 ve üzeri, hata ayıklayıcısı ile profil oluşturma araçları çalıştırmak için gereklidir (**tanılama araçları** pencere).
 
 > [!NOTE]
-> **Özel ayırıcı desteği** yerel bellek profili Oluşturucu çalışır ayırma toplayarak [ETW](/windows-hardware/drivers/devtest/event-tracing-for-windows--etw-) sırasında çalışma zamanı tarafından yayınlanan olay verileri.  Böylece ayırma verilerini yakalanabilir ayırıcılar CRT ve Windows SDK'sı kaynak düzeyinde ek açıklama eklenen.  Kendi ayırıcılar yazıyorsanız sonra yeni ayrılmış yığın bellek için bir işaretçi döndüren herhangi işlevleri ile donatılmış [__declspec](/cpp/cpp/declspec)(Bu örnekte myMalloc görüldüğü ayırıcı):
+> **Özel ayırıcı desteği** Yerel bellek profili Oluşturucu çalışma zamanında yayılan ayırma [ETW](/windows-hardware/drivers/devtest/event-tracing-for-windows--etw-) olay verileri toplanarak çalışır.  Böylece ayırma verilerini yakalanabilir ayırıcılar CRT ve Windows SDK'sı kaynak düzeyinde ek açıklama eklenen. Kendi ayırıcılar yazıyorsanız sonra yeni ayrılmış yığın bellek için bir işaretçi döndüren herhangi işlevleri ile donatılmış [__declspec](/cpp/cpp/declspec)(Bu örnekte myMalloc görüldüğü ayırıcı):
 >
 > `__declspec(allocator) void* myMalloc(size_t size)`
 
@@ -63,11 +63,11 @@ Bu öğreticide şunları yapacaksınız:
      ![Tanılama araçları Özet sekmesi](../profiling/media/diag-tools-summary-tab-2.png "DiagToolsSummaryTab")
 
      > [!NOTE]
-     > Bellek anlık görüntüleri, veri, yerel veya karma mod uygulamaları hata ayıklama performansını etkileyebilir bellek toplamak için varsayılan olarak devre dışıdır. Anlık görüntüleri yerel veya karma mod uygulamalarında etkinleştirmek için hata ayıklama oturumu başlatın (kısayol tuşu: **F5**). Zaman **tanılama araçları** penceresi görüntülenirse, seçin **bellek kullanımı** sekmesine ve ardından **yığın profili oluşturmayı**.
+     > Bellek anlık görüntüleri, veri, yerel veya karma mod uygulamaları hata ayıklama performansını etkileyebilir bellek toplamak için varsayılan olarak devre dışıdır. Yerel veya karma moddaki uygulamalarda anlık görüntüleri etkinleştirmek için bir hata ayıklama oturumu başlatın (kısayol tuşu: **F5**). Zaman **tanılama araçları** penceresi görüntülenirse, seçin **bellek kullanımı** sekmesine ve ardından **yığın profili oluşturmayı**.
      >
      >  ![Anlık görüntüleri etkinleştir](../profiling/media/dbgdiag_mem_mixedtoolbar_enablesnapshot.png "DBGDIAG_MEM_MixedToolbar_EnableSnapshot")
      >
-     >  Durdur (kısayol tuşu: **Kaydırma**+**F5**) ve hata ayıklamayı yeniden başlatın.
+     >  Durdur (kısayol tuşu:SHIFT+**F5**) ve hata ayıklamayı yeniden başlatın.
 
 6. Hata ayıklama oturumunuzu başlangıcında bir anlık görüntüsünü almak için seçin **anlık görüntü Al** üzerinde **bellek kullanımı** özeti araç çubuğu. (Bu da bir kesme noktası Burada ayarlanan yardımcı olabilir.)
 
@@ -121,7 +121,7 @@ Bellek kullanımını analiz etme için bellek kullanımının ayrıntılı bir 
 
  **Başvurulan türleri** üst bölmede seçilen tür tarafından tutulan başvuru ağacı görüntüler.
 
- ![Yönetilen başvuru yapılan türlerin rapor görünümü](../profiling/media/dbgdiag_mem_managedtypesreport_referencedtypes.png "DBGDIAG_MEM_ManagedTypesReport_ReferencedTypes")
+ ![Yönetilen başvurulan türler rapor görünümü](../profiling/media/dbgdiag_mem_managedtypesreport_referencedtypes.png "DBGDIAG_MEM_ManagedTypesReport_ReferencedTypes")
 
  Seçili bir türün örneklerinin üst bölmede görüntülemek için seçin ![örneği simgesi](../profiling/media/dbgdiag_mem_instanceicon.png "DBGDIAG_MEM_InstanceIcon") simgesi.
 
@@ -150,13 +150,13 @@ Bellek kullanımını analiz etme için bellek kullanımının ayrıntılı bir 
 
 - Özet tablosunu hücrede değiştir bağlantısını seçin **bellek kullanımı** sekmesinde **tanılama araçları** penceresi.
 
-   ![Bir değişiklik seçin &#40;fark&#41; rapor](../profiling/media/dbgdiag_mem_choosediffreport.png "DBGDIAG_MEM_ChooseDiffReport")
+   ![Değişiklik &#40;fark&#41; raporu seçin](../profiling/media/dbgdiag_mem_choosediffreport.png "DBGDIAG_MEM_ChooseDiffReport")
 
 - Anlık görüntüde seçin **Karşılaştırılacak** yönetilen veya yerel bir rapor listesi.
 
    ![Bir anlık görüntüsünü karşılaştırmak için listeden seçin](../profiling/media/dbgdiag_mem_choosecompareto.png "DBGDIAG_MEM_ChooseCompareTo")
 
-Değişiklik raporu sütunları ekler (ile işaretlenen **(fark)**) temel anlık görüntü değeri ile karşılaştırma anlık görüntü arasındaki fark gösteren temel bir rapor. Bir yerel tür View fark raporu nasıl görünebileceği aşağıda verilmiştir:
+Değişiklik raporu sütunları ekler (ile işaretlenen **(fark)** ) temel anlık görüntü değeri ile karşılaştırma anlık görüntü arasındaki fark gösteren temel bir rapor. Bir yerel tür View fark raporu nasıl görünebileceği aşağıda verilmiştir:
 
 ![Yerel türler fark görünümü](../profiling/media/dbgdiag_mem_native_typesviewdiff.png "DBGDIAG_MEM_Native_TypesViewDiff")
 
@@ -164,7 +164,7 @@ Değişiklik raporu sütunları ekler (ile işaretlenen **(fark)**) temel anlık
 
 [Hata ayıklama sırasında CPU ve bellek çözümleme](https://devblogs.microsoft.com/visualstudio/analyze-cpu-memory-while-debugging/)
 
-[Visual C++ blogu: Visual C++ 2015'te bellek profili oluşturma](https://devblogs.microsoft.com/cppblog/memory-profiling-in-visual-c-2015/)
+[Görsel C++ blog: Visual C++ 2015 ' de bellek profili oluşturma](https://devblogs.microsoft.com/cppblog/memory-profiling-in-visual-c-2015/)
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

@@ -32,12 +32,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 292852207a595d34f35a433a86f6554b5e68cf9e
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: 93470ebcea306d3cea762d60e061994b2bf27cc8
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68872030"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71253843"
 ---
 # <a name="program-vsto-add-ins"></a>Program VSTO eklentileri
   Bir Microsoft Office uygulamasını bir VSTO eklentisi oluşturarak genişlettiğinizde, doğrudan projenizdeki `ThisAddIn` sınıfa karşı kod yazarsınız. Bu sınıfı, Microsoft Office ana bilgisayar uygulamasının nesne modeline erişim, uygulamanın kullanıcı arabirimini (UI) özelleştirme ve VSTO eklentiinizdeki nesneleri diğer Office çözümlerine sunma gibi görevleri gerçekleştirmek için kullanabilirsiniz.
@@ -145,7 +145,7 @@ Excel.Workbook newWorkbook = Globals.ThisAddIn.Application.Workbooks.Add(System.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 - [Office çözümleri geliştirme](../vsto/developing-office-solutions.md)
-- [Çalışma zamanında VSTO Eklentilerindeki Word belgelerini ve Excel çalışma kitaplarını genişletme](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)
+- [VSTO Eklentilerindeki Word belgelerini ve Excel çalışma kitaplarını çalışma zamanında genişletme](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)
 - [Diğer Office çözümlerindeki VSTO eklentilerindeki kodu çağırma](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md)
 - [İzlenecek yol: Bir VSTO eklentisinde VBA 'dan kod çağırma](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md)
 - [Genişletilebilirlik arabirimlerini kullanarak Kullanıcı arabirimi özelliklerini özelleştirme](../vsto/customizing-ui-features-by-using-extensibility-interfaces.md)

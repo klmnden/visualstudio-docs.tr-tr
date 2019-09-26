@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6cbade56f80d75e6ab8d735aaf586d45d2dedb42
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 9d2dc3afb69c2febdcd8e59618c43c52ab9294cf
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68926679"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71255694"
 ---
 # <a name="actions-pane-overview"></a>Eylemler bölmesine genel bakış
   Bir eylemler bölmesi, belirli bir Microsoft Office Word belgesine veya Microsoft Office Excel çalışma kitabına eklenen özelleştirilebilir bir **belge eylemleri** görev bölmesidir. Eylemler bölmesi Office görev bölmesinin içinde, Excel 'deki **XML kaynağı** görev bölmesi veya Word 'deki **Stiller ve biçimlendirme** görev bölmesi gibi diğer yerleşik görev bölmeleri ile birlikte barındırılır. Eylemler bölmesi Kullanıcı arabirimini tasarlamak için Windows Forms denetimleri veya WPF denetimleri kullanabilirsiniz.
@@ -122,7 +122,7 @@ ms.locfileid: "68926679"
  [!code-vb[Trin_VstcoreActionsPaneExcel#10](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneExcelVB/ThisWorkbook.vb#10)]
 
 ## <a name="anchor-controls"></a>Tutturucu denetimleri
- Kullanıcı çalışma zamanında eylemler bölmesini yeniden boyutlandırırsa, denetimler Eylemler bölmesi ile yeniden boyutlandırılabilir. Denetimleri eylemler bölmesine bağlamak <xref:System.Windows.Forms.Control.Anchor%2A> için bir Windows Forms denetiminin özelliğini kullanabilirsiniz. Ayrıca, Windows Forms denetimlerini aynı şekilde Kullanıcı denetimine de bağlayabilirsiniz. Daha fazla bilgi için [nasıl yapılır: Windows Forms](/dotnet/framework/winforms/controls/how-to-anchor-controls-on-windows-forms)denetimleri bağlayın.
+ Kullanıcı, çalışma zamanında eylemler bölmesini yeniden boyutlandırırsa, denetimler Eylemler bölmesi ile yeniden boyutlandırılabilir. Denetimleri eylemler bölmesine bağlamak <xref:System.Windows.Forms.Control.Anchor%2A> için bir Windows Forms denetiminin özelliğini kullanabilirsiniz. Ayrıca, Windows Forms denetimlerini aynı şekilde Kullanıcı denetimine de bağlayabilirsiniz. Daha fazla bilgi için [nasıl yapılır: Windows Forms](/dotnet/framework/winforms/controls/how-to-anchor-controls-on-windows-forms)denetimleri bağlayın.
 
 ## <a name="resize-the-actions-pane"></a>Eylemler bölmesini yeniden boyutlandır
  Görev bölmesinde gömülü olduğundan, <xref:Microsoft.Office.Tools.ActionsPane> <xref:Microsoft.Office.Tools.ActionsPane> bir öğesinin boyutunu doğrudan değiştiremezsiniz. Ancak görev bölmesini temsil <xref:Microsoft.Office.Core.CommandBar.Width%2A> <xref:Microsoft.Office.Core.CommandBar> eden öğesinin özelliğini ayarlayarak görev bölmesinin genişliğini programlı bir şekilde değiştirebilirsiniz. Görev bölmesinin yüksekliğini yatay olarak yuvalanmışsa veya kaydırılabiliyorsa değiştirebilirsiniz.

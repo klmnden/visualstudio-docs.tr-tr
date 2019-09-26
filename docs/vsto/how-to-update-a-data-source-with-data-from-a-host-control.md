@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl yapılır: Bir konak kontrolü verileriyle veri kaynağını güncelleme'
+title: 'Nasıl yapılır: Bir veri kaynağını konak denetimindeki verilerle güncelleştirme'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,109 +15,109 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 24bbd859b4867225e5ec5df95d298dd04146df46
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 41ccdc77c58ef95a63e3e5273b7ea00d4f942681
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63421012"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71255666"
 ---
-# <a name="how-to-update-a-data-source-with-data-from-a-host-control"></a>Nasıl yapılır: Bir konak kontrolü verileriyle veri kaynağını güncelleme
-  Konak kontrolü bir veri kaynağına bağlama ve veri kaynağını denetimi verilerde yapılan değişikliklerle güncelleştirin. Bu işlemde iki ana adım vardır:
+# <a name="how-to-update-a-data-source-with-data-from-a-host-control"></a>Nasıl yapılır: Bir veri kaynağını konak denetimindeki verilerle güncelleştirme
+  Bir konak denetimini bir veri kaynağına bağlayabilir ve veri kaynağını denetimdeki verilerde yapılan değişikliklerle güncelleştirebilirsiniz. Bu işlemde iki ana adım vardır:
 
-1. Bellek içi veri kaynağına denetiminde değiştirilen verileri ile güncelleştirin. Genellikle, bellek içi veri kaynağı, bir <xref:System.Data.DataSet>, <xref:System.Data.DataTable>, veya başka bir veri nesnesi.
+1. Bellekteki veri kaynağını denetimdeki değiştirilen verilerle güncelleştirin. Genellikle, bellek içi veri kaynağı bir, bir <xref:System.Data.DataSet> <xref:System.Data.DataTable>veya başka bir veri nesnesi olur.
 
-2. Veritabanı, bellek içi veri kaynağı değiştirilmiş verileri güncelleştirin. Bu seçenek, yalnızca veri kaynağı bir SQL Server veya Microsoft Office Access veritabanı gibi bir arka uç veritabanı bağlıysa geçerlidir.
+2. Veritabanını, bellek içi veri kaynağındaki değiştirilen verilerle güncelleştirin. Bu, yalnızca veri kaynağı bir SQL Server veya Microsoft Office Access veritabanı gibi bir arka uç veritabanına bağlıysa geçerlidir.
 
-   Konak denetimleri ve veri bağlama hakkında daha fazla bilgi için bkz. [konak öğelerini ve denetimlerine genel bakış için ana bilgisayar](../vsto/host-items-and-host-controls-overview.md) ve [Office çözümlerinde denetimlere veri bağlama](../vsto/binding-data-to-controls-in-office-solutions.md).
+   Konak denetimleri ve veri bağlama hakkında daha fazla bilgi için bkz. [konak öğeleri ve konak denetimlerine genel bakış](../vsto/host-items-and-host-controls-overview.md) ve [Office çözümlerinde verileri denetimlere bağlama](../vsto/binding-data-to-controls-in-office-solutions.md).
 
    [!INCLUDE[appliesto_controls](../vsto/includes/appliesto-controls-md.md)]
 
 ## <a name="update-the-in-memory-data-source"></a>Bellek içi veri kaynağını güncelleştirme
- Varsayılan olarak, basit veri bağlama (örneğin, içerik denetimleri bir Word belgesi veya Excel çalışma sayfasındaki bir adlandırılmış aralık denetimi) etkinleştirme konak denetimleri bellek içi veri kaynağına veri değişikliklerini kaydetmeyin. Diğer bir deyişle, son kullanıcı konak kontrolü değeri değiştirir ve ardından bir denetimin dışındaki bir yere gider, yeni değer denetiminde veri kaynağı için otomatik olarak kaydedilmez.
+ Varsayılan olarak, basit veri bağlamayı etkinleştiren ana bilgisayar denetimleri (bir Word belgesindeki içerik denetimleri veya bir Excel çalışma sayfasındaki adlandırılmış aralık denetimi), veri değişikliklerini bellek içi veri kaynağına kaydetmez. Diğer bir deyişle, bir son kullanıcı bir konak denetimindeki değeri değiştirdiğinde ve sonra denetimden uzaklaştığında, denetimdeki yeni değer otomatik olarak veri kaynağına kaydedilmez.
 
- Verileri veri kaynağına kaydetmek için çalışma zamanında belirli bir olaya yanıt olarak veri kaynağını güncelleştirir kod yazabileceğiniz veya denetiminde değeri değiştiğinde otomatik olarak veri kaynağını güncelleştirmek için denetimi yapılandırabilirsiniz.
+ Verileri veri kaynağına kaydetmek için, çalışma zamanında belirli bir olaya yanıt olarak veri kaynağını güncelleştiren bir kod yazabilir veya denetimdeki değer değiştiğinde denetimi veri kaynağını otomatik olarak güncelleştirecek şekilde yapılandırabilirsiniz.
 
- Kaydetmeniz gerekmez <xref:Microsoft.Office.Tools.Excel.ListObject> bellek içi veri kaynağına değiştirir. Bağladığınızda bir <xref:Microsoft.Office.Tools.Excel.ListObject> veri denetimine <xref:Microsoft.Office.Tools.Excel.ListObject> denetimi otomatik olarak yapılan değişiklikleri kaydeder bellek içi veri kaynağına ek kod gerek kalmadan.
+ Bellek içi veri kaynağına değişiklikleri kaydetmeniz <xref:Microsoft.Office.Tools.Excel.ListObject> gerekmez. Veriye bir <xref:Microsoft.Office.Tools.Excel.ListObject> denetim bağladığınızda <xref:Microsoft.Office.Tools.Excel.ListObject> denetim, ek kod gerekmeden bellekteki veri kaynağına yapılan değişiklikleri otomatik olarak kaydeder.
 
-### <a name="to-update-the-in-memory-data-source-at-runtime"></a>Çalışma zamanında bellek içi veri kaynağını güncelleştirmek için
+### <a name="to-update-the-in-memory-data-source-at-run-time"></a>Çalışma zamanında bellek içi veri kaynağını güncelleştirmek için
 
-- Çağrı <xref:System.Windows.Forms.Binding.WriteValue%2A> yöntemi <xref:System.Windows.Forms.Binding> nesnesini denetimi veri kaynağına bağlar.
+- Denetimi veri kaynağına bağlayan <xref:System.Windows.Forms.Binding> nesnenin yönteminiçağırın.<xref:System.Windows.Forms.Binding.WriteValue%2A>
 
-     Aşağıdaki örnek yapılan değişiklikleri kaydeder. bir <xref:Microsoft.Office.Tools.Excel.NamedRange> denetimi veri kaynağı bir Excel çalışma sayfasındaki. Bu örnekte, sahibi olduğunuzu varsayar bir <xref:Microsoft.Office.Tools.Excel.NamedRange> adlı Denetim `namedRange1` ile kendi <xref:Microsoft.Office.Tools.Excel.NamedRange.Value2%2A> özelliğe bir veri kaynağında bir alan için.
+     Aşağıdaki örnek, bir Excel çalışma sayfasındaki <xref:Microsoft.Office.Tools.Excel.NamedRange> denetimde yapılan değişiklikleri veri kaynağına kaydeder. Bu örnek, bir veri kaynağındaki bir <xref:Microsoft.Office.Tools.Excel.NamedRange> alana bağlanan `namedRange1` <xref:Microsoft.Office.Tools.Excel.NamedRange.Value2%2A> özelliği ile adlı bir denetiminizin olduğunu varsayar.
 
      [!code-csharp[Trin_VstcoreDataExcel#1](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#1)]
      [!code-vb[Trin_VstcoreDataExcel#1](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#1)]
 
-### <a name="automatically-update-the-in-memory-data-source"></a>Bellek içi veri kaynağı otomatik olarak güncelleştir
- Bellek içi veri kaynağı otomatik olarak güncelleştirilir, böylece bir denetim de yapılandırabilirsiniz. Bir belge düzeyi projede kod veya tasarımcı kullanarak bunu yapabilirsiniz. Bir VSTO eklenti projesinde kodu kullanmanız gerekir.
+### <a name="automatically-update-the-in-memory-data-source"></a>Bellek içi veri kaynağını otomatik olarak güncelleştir
+ Ayrıca, bellek içi veri kaynağını otomatik olarak güncelleştiren bir denetimi de yapılandırabilirsiniz. Belge düzeyi projesinde, kodu veya Tasarımcıyı kullanarak bunu yapabilirsiniz. VSTO eklenti projesinde kodu kullanmanız gerekir.
 
-#### <a name="to-set-a-control-to-automatically-update-the-in-memory-data-source-by-using-code"></a>Kod kullanarak bellek içi veri kaynağı otomatik olarak güncelleştirilecek bir denetimi ayarlama
+#### <a name="to-set-a-control-to-automatically-update-the-in-memory-data-source-by-using-code"></a>Kodu kullanarak bellek içi veri kaynağını otomatik olarak güncellemek üzere bir denetim ayarlamak için
 
-1. ' In modunu kullanmak <xref:System.Windows.Forms.Binding> nesnesini denetimi veri kaynağına bağlar. Veri kaynağını güncelleştirmek için iki seçenek vardır:
+1. Denetimi veri kaynağına bağlayan <xref:System.Windows.Forms.Binding> nesnenin System. Windows. Forms. DataSourceUpdateMode. OnPropertyChanged modunu kullanın. Veri kaynağını güncelleştirmek için iki seçenek vardır:
 
-   - Denetim doğrulandığında, veri kaynağını güncelleştirmek için System.Windows.Forms.DataSourceUpdateMode.OnValidation bu özelliği ayarlayın.
+   - Denetim doğrulandığında veri kaynağını güncelleştirmek için, bu özelliği System. Windows. Forms. DataSourceUpdateMode. OnValidation olarak ayarlayın.
 
-   - Denetimin veriye bağlı özelliğinin değeri değiştiğinde veri kaynağını güncelleştirmek için System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged bu özelliği ayarlayın.
+   - Denetimin veri bağlantılı özelliğinin değeri değiştiğinde veri kaynağını güncelleştirmek için, bu özelliği System. Windows. Forms. DataSourceUpdateMode. OnPropertyChanged olarak ayarlayın.
 
      > [!NOTE]
-     > Word Belge değişikliği veya denetim değişikliği bildirimleri gerçekleştirdiğinden System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged seçeneği Word konak denetimleri için geçerli değildir. Ancak, bu seçenek, Word belgelerine Windows Forms denetimleri için kullanılabilir.
+     > Word, belge değişikliği veya Denetim değişikliği bildirimleri sunmadığından, System. Windows. Forms. DataSourceUpdateMode. OnPropertyChanged seçeneği Word konak denetimlerine uygulanmaz. Ancak, bu seçenek Word belgelerindeki Windows Forms denetimleri için kullanılabilir.
 
-     Aşağıdaki örnek yapılandırır bir <xref:Microsoft.Office.Tools.Excel.NamedRange> denetiminde değeri değiştiğinde otomatik olarak veri kaynağını güncelleştirmek için denetimi. Bu örnekte, sahibi olduğunuzu varsayar bir <xref:Microsoft.Office.Tools.Excel.NamedRange> adlı Denetim `namedRange1` ile kendi <xref:Microsoft.Office.Tools.Excel.NamedRange.Value2%2A> özelliğe bir veri kaynağında bir alan için.
+     Aşağıdaki örnek, denetimdeki değer <xref:Microsoft.Office.Tools.Excel.NamedRange> değiştiğinde veri kaynağını otomatik olarak güncelleştirmek için bir denetim yapılandırır. Bu örnek, bir veri kaynağındaki bir <xref:Microsoft.Office.Tools.Excel.NamedRange> alana bağlanan `namedRange1` <xref:Microsoft.Office.Tools.Excel.NamedRange.Value2%2A> özelliği ile adlı bir denetiminizin olduğunu varsayar.
 
      [!code-csharp[Trin_VstcoreDataExcel#19](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#19)]
      [!code-vb[Trin_VstcoreDataExcel#19](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#19)]
 
-#### <a name="to-set-a-control-to-automatically-update-the-in-memory-data-source-by-using-the-designer"></a>Tasarımcıyı kullanarak bellek içi veri kaynağı otomatik olarak güncelleştirilecek bir denetimi ayarlama
+#### <a name="to-set-a-control-to-automatically-update-the-in-memory-data-source-by-using-the-designer"></a>Tasarımcı kullanarak bellek içi veri kaynağını otomatik olarak güncellemek üzere bir denetim ayarlamak için
 
-1. Visual Studio'da Word belgesi veya Excel çalışma kitabını tasarımcıda açın.
+1. Visual Studio 'da tasarımcıda Word belgesi veya Excel çalışma kitabı ' nı açın.
 
-2. Veri kaynağı otomatik olarak güncelleştirmek istediğiniz denetime tıklayın.
+2. Veri kaynağını otomatik olarak güncellemek istediğiniz denetime tıklayın.
 
-3. İçinde **özellikleri** penceresini genişletin **(DataBindings)** özelliği.
+3. **Özellikler** penceresinde **(DataBindings)** özelliğini genişletin.
 
-4. Yanındaki **(Gelişmiş)** özelliği, üç nokta düğmesini (![VisualStudioEllipsesButton ekran](../vsto/media/vbellipsesbutton.png "VisualStudioEllipsesButton ekran")).
+4. **(Gelişmiş)** özelliğinin yanında üç nokta düğmesine (![VisualStudioEllipsesButton ekran]görüntüsü(../vsto/media/vbellipsesbutton.png "VisualStudioEllipsesButton ekran görüntüsü")) tıklayın.
 
-5. İçinde **biçimlendirme ve Gelişmiş bağlama** iletişim kutusu, tıklayın **veri kaynağı güncelleştirme modu** aşağı açılır ve aşağıdaki değerlerden birini seçin:
+5. **Biçimlendirme ve Gelişmiş bağlama** iletişim kutusunda, **veri kaynağı güncelleştirme modu** aşağı açılan listesine tıklayın ve aşağıdaki değerlerden birini seçin:
 
-    - Denetim doğrulandığında, veri kaynağını güncelleştirmek için seçin **OnValidation'ı**.
+    - Denetim doğrulandığında veri kaynağını güncelleştirmek için **OnValidation**' ı seçin.
 
-    - Denetimin veriye bağlı özelliğinin değeri değiştiğinde veri kaynağını güncelleştirmek için seçin **OnPropertyChanged**.
+    - Denetimin veri bağlantılı özelliğinin değeri değiştiğinde veri kaynağını güncelleştirmek için **OnPropertyChanged**' ı seçin.
 
         > [!NOTE]
-        > **OnPropertyChanged** seçeneği çünkü Word Belge değişikliği veya denetim değişikliği bildirimlerini Word konak denetimleri için uygulanmaz. Ancak, bu seçenek, Word belgelerine Windows Forms denetimleri için kullanılabilir.
+        > Word, belge değişikliği veya Denetim değişikliği bildirimleri sunmadığından, **OnPropertyChanged** seçeneği Word ana bilgisayar denetimlerine uygulanmaz. Ancak, bu seçenek Word belgelerindeki Windows Forms denetimleri için kullanılabilir.
 
-6. Kapat **biçimlendirme ve Gelişmiş bağlama** iletişim kutusu.
+6. **Biçimlendirme ve Gelişmiş bağlama** iletişim kutusunu kapatın.
 
-## <a name="update-the-database"></a>Veritabanını Güncelleştir
- Bellek içi veri kaynağı bir veritabanıyla ilişkili ise, veri kaynağını değişikliklerle veritabanı güncelleştirmeniz gerekir. Bir veritabanını güncelleştirme hakkında daha fazla bilgi için bkz. [verileri yeniden veritabanına kaydetme](../data-tools/save-data-back-to-the-database.md) ve [TableAdapter kullanarak veri güncelleştirme](../data-tools/update-data-by-using-a-tableadapter.md) .
+## <a name="update-the-database"></a>Veritabanını güncelleştirme
+ Bellek içi veri kaynağı bir veritabanıyla ilişkiliyse veritabanını veri kaynağındaki değişikliklerle güncelleştirmeniz gerekir. Bir veritabanını güncelleştirme hakkında daha fazla bilgi için bkz. [bir TableAdapter kullanarak](../data-tools/update-data-by-using-a-tableadapter.md) [verileri veritabanına geri kaydetme](../data-tools/save-data-back-to-the-database.md) ve verileri güncelleştirme.
 
 ### <a name="to-update-the-database"></a>Veritabanını güncellemek için
 
-1. Çağrı <xref:System.Windows.Forms.BindingSource.EndEdit%2A> yöntemi <xref:System.Windows.Forms.BindingSource> denetimi.
+1. Denetim için<xref:System.Windows.Forms.BindingSource>yönteminiçağırın. <xref:System.Windows.Forms.BindingSource.EndEdit%2A>
 
-     <xref:System.Windows.Forms.BindingSource> Veriye bağlı denetim için bir belge veya çalışma kitabı tasarım zamanında eklediğinizde, otomatik olarak oluşturulur. <xref:System.Windows.Forms.BindingSource> Denetim türü belirtilmiş veri kümesi, projenizdeki bağlanır. Daha fazla bilgi için [BindingSource bileşenine genel bakış](/dotnet/framework/winforms/controls/bindingsource-component-overview).
+     <xref:System.Windows.Forms.BindingSource> Tasarım zamanında bir belgeye veya çalışma kitabına veri bağlantılı bir denetim eklediğinizde otomatik olarak oluşturulur. , <xref:System.Windows.Forms.BindingSource> Denetimi projenizdeki türü belirtilmiş veri kümesine bağlar. Daha fazla bilgi için bkz. [BindingSource Bileşenine Genel Bakış](/dotnet/framework/winforms/controls/bindingsource-component-overview).
 
-     Aşağıdaki kod örneği, projenizin içerdiğini varsaymaktadır bir <xref:System.Windows.Forms.BindingSource> adlı `customersBindingSource`.
+     Aşağıdaki kod örneği, projenizin adlandırılmış bir <xref:System.Windows.Forms.BindingSource> adı `customersBindingSource`içerdiğini varsayar.
 
      [!code-csharp[Trin_VstcoreDataExcel#20](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#20)]
      [!code-vb[Trin_VstcoreDataExcel#20](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#20)]
 
-2. Çağrı `Update` projenizde oluşturulan TableAdapter'ın yöntemi.
+2. Projenizde oluşturulan TableAdapter metodunu çağırın. `Update`
 
-     Veriye bağlı denetim için bir belge veya çalışma kitabı tasarım zamanında eklediğinizde, TableAdapter otomatik olarak oluşturulur. Yazılmış veri kümesi, projenizdeki, TableAdapter veritabanına bağlanır. Daha fazla bilgi için [TableAdapter genel bakışı](../data-tools/fill-datasets-by-using-tableadapters.md#tableadapter-overview).
+     Tasarım zamanında bir belgeye veya çalışma kitabına veri bağlantılı bir denetim eklediğinizde TableAdapter otomatik olarak oluşturulur. TableAdapter, projenizdeki türü belirtilmiş veri kümesini veritabanına bağlar. Daha fazla bilgi için bkz. [TableAdapter Overview](../data-tools/fill-datasets-by-using-tableadapters.md#tableadapter-overview).
 
-     Aşağıdaki kod örneği, Northwind veritabanındaki Müşteriler tablosunu bağlantı olduğunu ve projenizi adlı bir TableAdapter içeren varsayar `customersTableAdapter` ve adlı bir türü belirtilmiş veri kümesi `northwindDataSet`.
+     Aşağıdaki kod örneği, Northwind veritabanındaki Customers tablosuna bir bağlantı olduğunu ve projenizin adlı `customersTableAdapter` bir TableAdapter ve adlı türü belirtilmiş bir `northwindDataSet`veri kümesini içerdiğini varsayar.
 
      [!code-csharp[Trin_VstcoreDataExcel#21](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#21)]
      [!code-vb[Trin_VstcoreDataExcel#21](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#21)]
 
 ## <a name="see-also"></a>Ayrıca bkz.
-- [Office çözümlerinde denetimlere veri bağlama](../vsto/binding-data-to-controls-in-office-solutions.md)
+- [Office çözümlerinde verileri denetimlere bağlama](../vsto/binding-data-to-controls-in-office-solutions.md)
 - [Verileri yeniden veritabanına kaydetme](../data-tools/save-data-back-to-the-database.md)
 - [TableAdapter kullanarak verileri güncelleştirme](../data-tools/update-data-by-using-a-tableadapter.md)
 - [Nasıl yapılır: Çalışma sayfasındaki veritabanı kayıtları arasında kaydırma](../vsto/how-to-scroll-through-database-records-in-a-worksheet.md)
-- [Nasıl yapılır: Çalışma sayfalarını veritabanı verileriyle doldurma](../vsto/how-to-populate-worksheets-with-data-from-a-database.md)
-- [Nasıl yapılır: Belgeleri nesne verileriyle doldurma](../vsto/how-to-populate-documents-with-data-from-objects.md)
-- [Nasıl yapılır: Belgeleri veritabanı verileriyle doldurma](../vsto/how-to-populate-documents-with-data-from-a-database.md)
-- [Nasıl yapılır: Belgeleri hizmet verileriyle doldurma](../vsto/how-to-populate-documents-with-data-from-services.md)
+- [Nasıl yapılır: Çalışma sayfalarını bir veritabanındaki verilerle doldurma](../vsto/how-to-populate-worksheets-with-data-from-a-database.md)
+- [Nasıl yapılır: Nesneleri nesnelerdeki verilerle Doldur](../vsto/how-to-populate-documents-with-data-from-objects.md)
+- [Nasıl yapılır: Belgeleri bir veritabanındaki verilerle doldurma](../vsto/how-to-populate-documents-with-data-from-a-database.md)
+- [Nasıl yapılır: Belgeleri hizmetlerdeki verilerle Doldur](../vsto/how-to-populate-documents-with-data-from-services.md)

@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 60aefd40c48dc3789ab84ee5873aa6a53f4ee3fe
-ms.sourcegitcommit: b56dc6fadc6c924beed36bb4c2ccc16cf6bcfa1c
+ms.openlocfilehash: 74a43a0c601fa8a96c8737644bf5bd0261f59796
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "68740116"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71254052"
 ---
 # <a name="walkthrough-bind-to-data-from-a-service-in-a-vsto-add-in-project"></a>İzlenecek yol: VSTO eklenti projesindeki bir hizmetten veriye bağlama
   VSTO eklenti projelerinde verileri konak denetimlerine bağlayabilirsiniz. Bu izlenecek yol, Microsoft Office bir Word belgesine nasıl denetim ekleneceğini, denetimlerin MSDN Içerik hizmetinden alınan verilere nasıl bağlanacağını ve çalışma zamanında olaylara nasıl yanıt verileceğini gösterir.
@@ -28,7 +28,7 @@ ms.locfileid: "68740116"
 
  Bu izlenecek yol aşağıdaki görevleri gösterir:
 
-- Çalışma zamanında bir belgeye denetimekleme.<xref:Microsoft.Office.Tools.Word.RichTextContentControl>
+- Çalışma zamanında belgeye denetim ekleme. <xref:Microsoft.Office.Tools.Word.RichTextContentControl>
 
 - <xref:Microsoft.Office.Tools.Word.RichTextContentControl> Denetimi bir Web hizmetinden veriye bağlama.
 
@@ -73,8 +73,8 @@ ms.locfileid: "68740116"
 
 6. **Başvuru ekleme Sihirbazı** Iletişim kutusunda **son**' a tıklayın.
 
-## <a name="add-a-content-control-and-bind-to-data-at-runtime"></a>İçerik denetimi ekleme ve çalışma zamanında veriye bağlama
- VSTO eklenti projelerinde, çalışma zamanında denetimleri ekler ve bağlarsınız. Bu izlenecek yol için, Kullanıcı denetimin içine tıkladığında, içerik denetimini Web hizmetinden veri almaya yönelik şekilde yapılandırın.
+## <a name="add-a-content-control-and-bind-to-data-at-run-time"></a>Çalışma zamanında içerik denetimi ekleme ve verilere bağlama
+ VSTO eklenti projelerinde, çalışma zamanında denetimleri ekler ve bağlar. Bu izlenecek yol için, Kullanıcı denetimin içine tıkladığında, içerik denetimini Web hizmetinden veri almaya yönelik şekilde yapılandırın.
 
 ### <a name="to-add-a-content-control-and-bind-to-data"></a>İçerik denetimi eklemek ve verilere bağlamak için
 

@@ -5,16 +5,16 @@ ms.date: 03/14/2019
 author: asb3993
 ms.author: amburns
 ms.assetid: 48E06A61-7294-4EC8-A09D-1763C32AD910
-ms.openlocfilehash: 3e6ae24ea9e9a5dea263c2449a9b23b6027f7a96
-ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.openlocfilehash: b569887005d22a4eab7289c4ab940c9d9539d040
+ms.sourcegitcommit: 528178a304e66c0cb7ab98b493fe3c409f87493a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71211315"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71273327"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio-for-mac"></a>Mac için Visual Studio varsayılan klavye kısayolları
 
-Klavye erişilebilirliği hakkında daha fazla bilgi için [bkz. nasıl yapılır: Klavye gezintisi](~/accessibility.md#how-to-use-keyboard-navigation)kullanın.
+Klavye erişilebilirliği hakkında daha fazla bilgi için [bkz. nasıl yapılır: Klavye gezintisi](~/accessibility-keyboard.md)kullanın.
 
 Uygun klavye kısayolunu kullanarak Mac için Visual Studio çeşitli komutlara erişebilirsiniz. Bu belgede **Mac için Visual Studio** anahtar bağlama düzeni için varsayılan kısayollar listelenmektedir. Anahtar bağlama düzeninin nasıl değiştirileceği hakkında daha fazla bilgi için bkz. [IDE 'Yi özelleştirme](~/customizing-the-ide.md#key-bindings). Ayrıca, **Mac için Visual Studio** > **tercihleri** menü öğesini kullanarak bir komutun kısayollarını özelleştirebilir ve **Tercihler** penceresinde **ortam** > **anahtarı bağlamaları** ' nı seçebilirsiniz.
 

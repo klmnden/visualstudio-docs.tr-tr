@@ -1,29 +1,29 @@
 ---
-title: Visual Studio kapsayıcı araçları derleme genel bakış
+title: Visual Studio kapsayıcı araçları oluşturmaya genel bakış
 author: ghogen
-description: Kapsayıcı Araçları yapı işlemine genel bakış
+description: Kapsayıcı araçları derleme işlemine genel bakış
 ms.author: ghogen
 ms.date: 06/06/2019
 ms.technology: vs-azure
 ms.topic: conceptual
-ms.openlocfilehash: 9f2da112bfeebe4e0bce976736eee5696d888105
-ms.sourcegitcommit: c7b9ab1bc19d74b635c19b1937e92c590dafd736
+ms.openlocfilehash: edc4674e2468124ecb46b25a1411043ed4b66a2a
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67552822"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71253113"
 ---
-# <a name="building-containerized-apps-using-visual-studio-or-the-command-line"></a>Visual Studio veya komut satırını kullanarak uygulamaları kapsayıcıya alınmış oluşturma
+# <a name="building-containerized-apps-using-visual-studio-or-the-command-line"></a>Visual Studio veya komut satırı kullanarak Kapsayıcılı uygulamalar oluşturma
 
-Visual Studio IDE içinden oluştururken veya bir komut satırı derleme ayarlamaya, Visual Studio nasıl derler bilmeniz gereken olup olmadığını projelerinizi oluşturmaya Dockerfile'ı kullanır.  Performansla ilgili nedenlerden dolayı Visual Studio kapsayıcı uygulamaları için özel bir işlemi izler. Visual Studio projelerinizin nasıl derler anlama Dockerfile değiştirerek yapı işleminizi özelleştirme, özellikle önemlidir.
+Visual Studio IDE 'den oluşturuluyor veya bir komut satırı derlemesi ayarlıyoruz, Visual Studio derlemelerinizin projelerinizi oluşturmak için Dockerfile 'ı nasıl kullandığını bilmeniz gerekir.  Performans nedenleriyle, Visual Studio Kapsayıcılı uygulamalar için özel bir işlem izler. Visual Studio 'Nun projelerinizi nasıl derlemediğini anlamak, Dockerfile dosyasını değiştirerek yapı işleminizi özelleştirirken özellikle önemlidir.
 
-Visual Studio, Docker kapsayıcıları kullanmayan bir projeyi oluşturduğunda, yerel makinede MSBuild çağırır ve bir klasörde Çıkış dosyalarını oluşturur (genellikle `bin`) yerel Çözüm klasörünüz altında. Kapsayıcılı bir proje için ancak, kapsayıcılı uygulama oluşturma yönergeleri Dockerfile'nın hesabını oluşturma işlemi alır. Visual Studio kullanan Dockerfile, birden çok aşamalara bölünmüştür. Bu işlem üzerinde Docker's dayanır *aşamalı derleme* özelliği.
+Visual Studio, Docker Kapsayıcıları kullanmayan bir proje oluşturduğunda, yerel makinede MSBuild 'i çağırır ve çıkış dosyalarını yerel çözüm klasörünüzün altında bir klasörde (genellikle `bin`) oluşturur. Bununla birlikte, kapsayıcılı bir proje için yapı işlemi, Dockerfile 'ın Kapsayıcılı uygulama oluşturma yönergelerinin bir hesabını alır. Visual Studio 'Nun kullandığı Dockerfile birden çok aşamaya bölünmüştür. Bu işlem Docker 'ın *çok aşamalı derleme* özelliğini kullanır.
 
-## <a name="multistage-build"></a>Aşamalı derleme
+## <a name="multistage-build"></a>Çok aşamalı derleme
 
-Aşamalı yapı özelliği kapsayıcılar daha verimli oluşturma işleminin olmasına yardımcı olur ve uygulamanızın çalışma zamanında gereken BITS içermesini sağlayarak kapsayıcıları daha küçük yapar. Aşamalı bir derleme, .NET Framework projeleri .NET Core projeleri için kullanılır.
+Çoklu aşama oluşturma özelliği, kapsayıcıları oluşturma işleminin daha verimli olmasına yardımcı olur ve yalnızca uygulamanızın çalışma zamanında ihtiyaç duyacağı bitleri içermesine izin vererek kapsayıcıları daha küçük hale getirir. MultiStage derlemesi, .NET Framework projeleri değil .NET Core projeleri için kullanılır.
 
-Aşamalı derleme Ara görüntüleri oluşturmak ve aşamalar halinde oluşturulacak kapsayıcı görüntüleri sağlar. Örnek olarak, Visual Studio tarafından oluşturulan tipik bir Dockerfile göz önünde bulundurun - ilk aşama `base`:
+Hatlarında derlemesi, ara görüntü üreten aşamalarda kapsayıcı görüntülerinin oluşturulmasına izin verir. Örnek olarak, Visual Studio tarafından oluşturulan tipik bir Dockerfile 'ı düşünün; ilk aşama `base`:
 
 ```
 FROM mcr.microsoft.com/dotnet/core/aspnet:2.2-stretch-slim AS base
@@ -32,9 +32,9 @@ EXPOSE 80
 EXPOSE 443
 ```
 
-Dockerfile satırları Nanoserver görüntünün Microsoft Container registry'den (mcr.microsoft.com) ile başlayan ve Ara görüntü oluşturma `base` 80 ve 443 bağlantı noktalarını kullanıma sunar ve çalışma dizinini ayarlar `/app`.
+Dockerfile içindeki satırlar, Microsoft Container Registry (MCR.Microsoft.com) Nanoserver görüntüsünden başlar ve 80 ve 443 bağlantı noktalarını kullanıma sunan bir `base` ara görüntü oluşturur ve çalışma dizinini olarak `/app`ayarlar.
 
-Sonraki aşamasıdır `build`, şu şekilde görünür:
+Sonraki aşama `build`aşağıdaki gibi görünür:
 
 ```
 FROM mcr.microsoft.com/dotnet/core/sdk:2.2-stretch AS build
@@ -46,7 +46,7 @@ WORKDIR "/src/WebApplication43"
 RUN dotnet build "WebApplication43.csproj" -c Release -o /app
 ```
 
-Gördüğünüz gibi `build` aşaması başlar kayıt defterinden farklı orijinal görüntüden (`sdk` yerine `aspnet`), temel etmeden yerine.  `sdk` Görüntüsü bulunan tüm derleme araçları ve ASP.NET görüntüden daha çok büyük olduğu bu nedenle, yalnızca içeren çalışma zamanı bileşenleri. Dockerfile bekleyen baktığınızda ayrı bir görüntü kullanma nedenleri belirgin bir hale gelir:
+`build` Aşamanın, temelden devam etmek yerine, kayıt defterinden (`sdk` `aspnet`yerine) farklı bir orijinal görüntüden başlatıldığını görebilirsiniz.  `sdk` Görüntüde tüm derleme araçları bulunur ve bu nedenle yalnızca çalışma zamanı bileşenleri içeren ASPNET görüntüsünden çok daha büyük bir büyük olur. Dockerfile ' ın geri kalanına göz atadığınızda ayrı bir görüntü kullanmanın nedeni açık olur:
 
 ```
 FROM build AS publish
@@ -58,19 +58,19 @@ COPY --from=publish /app .
 ENTRYPOINT ["dotnet", "WebApplication43.dll"]
 ```
 
-Son aşama yeniden başlatılır `base`ve içerir `COPY --from=publish` yayımlanan çıkış son görüntüyü kopyalamak için. Bu işlem tüm olan derleme Araçları eklemek gerekli olmayan olduğundan çok daha küçük olacak şekilde son görüntü mümkün kılar `sdk` görüntü.
+Son aşama öğesinden `base`bir kez daha başlar ve yayımlanan çıktıyı `COPY --from=publish` son görüntüye kopyalamak için içerir. Bu işlem, `sdk` görüntüde bulunan tüm derleme araçlarını içermesi gerekmiyorsa nihai görüntünün çok daha küçük olmasını mümkün kılar.
 
-## <a name="faster-builds-for-the-debug-configuration"></a>Hata ayıklama yapılandırması daha hızlı yapılar
+## <a name="faster-builds-for-the-debug-configuration"></a>Hata ayıklama yapılandırması için daha hızlı yapılar
 
-Visual Studio ile kapsayıcılı projeler için derleme işleminin performansını yardımcı uğramadığını çeşitli iyileştirmeler vardır. Mümkünse, hata ayıklama (F5) başlattığınızda, önceden oluşturulmuş bir görüntüyü yeniden kullanılır. Önceki kapsayıcı yeniden kullanmak istemiyorsanız, kullanabileceğiniz **yeniden** veya **temiz** yeni bir kapsayıcı kullanmak için Visual Studio zorlamak için Visual Studio komutları.
+Visual Studio 'nun Kapsayıcılı projelere yönelik yapı sürecinin performansına yardımcı olan birkaç iyileştirmesi vardır. Hata ayıklamayı başlattığınızda (F5), mümkünse önceden oluşturulmuş bir görüntü yeniden kullanılır. Önceki kapsayıcıyı yeniden kullanmak istemiyorsanız, Visual Studio 'Nun yeni bir kapsayıcı kullanmasını zorlamak için Visual Studio 'da **yeniden oluşturma** veya **Temizleme** komutlarını kullanabilirsiniz.
 
-Ayrıca, performansı artırmak için kapsayıcı uygulamaları için derleme işlemi yalnızca bir Dockerfile içinde ana hatlarıyla belirtilen adımları izleyerek olarak basit değildir. Bir kapsayıcıyı, yerel makinede yapılandırmaktan çok yavaştır.  Bunu, derlerken **hata ayıklama** yapılandırma, Visual Studio projelerinizin yerel makinede geçilmişse ve ardından birim bağlama kullanarak kapsayıcıyı çıktı klasörüne paylaşır. Bu iyileştirme, etkin bir derleme olarak adlandırılan bir *hızlı* modu derleme.
+Ayrıca, performansı artırmak için Kapsayıcılı uygulamalar için derleme işlemi, Dockerfile içinde özetlenen adımları takip etmek kadar basittir. Kapsayıcıda derleme, yerel makinede oluşturmaktan çok daha yavaştır.  Bu nedenle, **hata ayıklama** yapılandırmasında derleme yaparken, Visual Studio projelerinizi gerçekten yerel makinede oluşturur ve ardından çıkış klasörünü birim bağlama kullanarak kapsayıcınıza paylaşır. Bu iyileştirme etkin olan bir yapıya *hızlı* mod oluşturma denir.
 
-İçinde **hızlı** modu, Visual Studio çağrıları `docker build` yalnızca oluşturmak için Docker söyleyen bir bağımsız değişkenli `base` aşaması.  Visual Studio Dockerfile içeriğini bakılmaksızın işleminin geri kalanı işler. Bu nedenle, Dockerfile, gibi kapsayıcı ortamı özelleştirmek veya ek bağımlılıklar'ı yüklemek için değiştirdiğinizde, ilk aşamada, değişikliklerinizi koymanız gerekir.  Herhangi bir özel adım yerleştirilen Dockerfile'da 's `build`, `publish`, veya `final` aşamaları yürütülmez.
+**Hızlı** modda, Visual Studio, Docker 'ın yalnızca `docker build` `base` aşamayı oluşturmasını söyleyen bir bağımsız değişkenle çağırır.  Visual Studio, Dockerfile içeriğiyle ilgili olarak işlemin geri kalanını işler. Bu nedenle, kapsayıcı ortamını özelleştirmek veya ek bağımlılıklar yüklemek gibi Dockerfile 'ı değiştirdiğinizde, değişikliklerinizi ilk aşamada koymanız gerekir.  Dockerfile 'ın `build`, `publish`veya `final` aşamalarına yerleştirilmiş özel adımlar yürütülmez.
 
-Bu performans iyileştirmesi, yalnızca yapı içinde oluşur **hata ayıklama** yapılandırma. İçinde **yayın** Dockerfile içinde belirtildiği gibi kapsayıcı yapılandırması, yapı oluşuyor.
+Bu performans iyileştirmesi yalnızca **hata ayıklama** yapılandırmasında derleme yaparken oluşur. **Yayın** yapılandırmasında, yapı, Dockerfile içinde belirtildiği gibi kapsayıcıda oluşur.
 
-Performans İyileştirme devre dışı bırakmak istediğiniz ve derleme Dockerfile belirtildiği gibi ardından ayarlarsanız **ContainerDevelopmentMode** özelliğini **normal** dosya projede aşağıdaki gibi:
+Dockerfile tarafından belirtildiği gibi performans iyileştirmesini ve derlemeyi devre dışı bırakmak istiyorsanız, proje dosyasında şu şekilde **Containerdevelopmentmode** özelliğini **normal** olarak ayarlayın:
 
 ```xml
 <PropertyGroup>
@@ -78,15 +78,15 @@ Performans İyileştirme devre dışı bırakmak istediğiniz ve derleme Dockerf
 </PropertyGroup>
 ```
 
-Performans iyileştirmesi geri yüklemek için proje dosyasından özelliği kaldırın.
+Performans iyileştirmesini geri yüklemek için, özelliği proje dosyasından kaldırın.
 
-## <a name="building-from-the-command-line"></a>Komut satırından derleme
+## <a name="building-from-the-command-line"></a>Komut satırından oluşturma
 
-Kullanabileceğiniz `docker build` veya `MSBuild` komut satırından oluşturmak için.
+Komut satırından oluşturmak `docker build` için `MSBuild` veya kullanabilirsiniz.
 
-### <a name="docker-build"></a>docker derleme
+### <a name="docker-build"></a>Docker derlemesi
 
-Komut satırından kapsayıcılı bir çözüm oluşturmak için genellikle komutunu kullanabilirsiniz `docker build <context>` çözümde her proje için. Sağladığınız *bağlam yapı* bağımsız değişken. *Bağlam yapı* için bir Dockerfile klasörü yerel makinede çalışma klasörü olarak görüntü oluşturmak için kullanılır. Örneğin, bu kapsayıcıya kopyaladığınızda gelen dosyaları kopyalayın klasördür.  .NET Core projelerinde, çözüm (.sln) dosyasını içeren klasörü kullanın.  Göreli bir yol ifade edilen, bu bağımsız değişken genellikle ise "..." için bir Dockerfile içinde bir proje klasörü ve kendi üst klasördeki çözüm dosyası.  .NET Framework projeleri için proje klasörü, Çözüm klasörü değil derleme bağlamıdır.
+Komut satırından kapsayıcılı bir çözüm oluşturmak için, genellikle komutunu `docker build <context>` çözümdeki her proje için kullanabilirsiniz. *Yapı bağlamı* bağımsız değişkenini sağlarsınız. Dockerfile için *derleme bağlamı* , yerel makinedeki, görüntüyü oluşturmak için çalışma klasörü olarak kullanılan klasördür. Örneğin, kapsayıcıya kopyaladığınız sırada dosyaları kopyaladığınız klasördür.  .NET Core projelerinde, çözüm dosyasını (. sln) içeren klasörü kullanın.  Göreli yol olarak ifade edilen bu bağımsız değişken, genellikle proje klasöründeki bir Dockerfile ve onun üst klasöründeki çözüm dosyası için ".." olur.  .NET Framework projeleri için, yapı bağlamı çözüm klasörü değil, proje klasörüdür.
 
 ```cmd
 docker build -f Dockerfile ..
@@ -94,17 +94,17 @@ docker build -f Dockerfile ..
 
 ### <a name="msbuild"></a>MSBuild
 
-Dockerfile'ları için .NET Framework projeleri (ve Visual Studio 2017 güncelleştirme 4'ün önceki Visual Studio sürümleriyle oluşturulan .NET Core projeleri için) Visual Studio tarafından oluşturulan aşamalı dockerfile'ları değildir.  Bu dockerfile'ları adımlarda kod derlenmiyor.  Bunun yerine, Visual Studio .NET Framework Dockerfile oluşturduğunda, ilk projenizi MSBuild kullanarak derler.  Visual Studio, sonra başarılı olduğunda, yalnızca yapı çıkışını MSBuild'den elde edilen bir Docker görüntüsü halinde kopyalar Dockerfile oluşturur.  Kodunuzu derlemek için adımları Dockerfile içinde yer almayan için .NET Framework kullanarak dockerfile'ları oluşturamaz `docker build` komut satırından. Bu projeleri derlemek için MSBuild kullanmanız gerekir.
+.NET Framework projeleri için Visual Studio tarafından oluşturulan dockerfiles (ve Visual Studio 2017 güncelleştirme 4 ' ten önceki Visual Studio sürümleriyle oluşturulan .NET Core projeleri için) çok aşamalı Dockerfiles değildir.  Bu Dockerfiles içindeki adımlar kodunuzu derlemez.  Bunun yerine, Visual Studio .NET Framework Dockerfile oluşturduğunda, öncelikle projenizi MSBuild kullanarak derler.  Bu başarılı olduğunda Visual Studio, yapı çıkışını MSBuild 'ten elde edilen Docker görüntüsüne kopyalayan Dockerfile öğesini oluşturur.  Kodunuzu derlemek için gereken adımlar dockerfile 'a dahil edilmediğinden, komut satırından kullanarak `docker build` .NET Framework dockerfiles derlenemez. Bu projeleri derlemek için MSBuild 'i kullanmanız gerekir.
 
-Bir görüntü için tek bir docker kapsayıcı proje derlemek için MSBuild ile kullanabilirsiniz `/t:ContainerBuild` seçeneği komutu. Örneğin:
+Tek Docker kapsayıcı projesi için bir görüntü oluşturmak üzere, MSBuild `/t:ContainerBuild` 'i komut seçeneğiyle kullanabilirsiniz. Örneğin:
 
 ```cmd
 MSBuild MyProject.csproj /t:ContainerBuild /p:Configuration=Release
 ```
 
-İçinde gördükleri için benzer bir çıktı görürsünüz **çıkış** penceresini Visual Studio IDE içinden çözümünüzü oluşturun. Her zaman `/p:Configuration=Release`, burada Visual Studio kullanan çok yapı durumlarda en iyi duruma getirme, sonuçları bu yana oluştururken **hata ayıklama** yapılandırma beklendiği gibi olmayabilir.
+Visual Studio IDE 'den Çözümünüzü oluştururken **Çıkış** penceresinde gördüklerinize benzer bir çıktı görürsünüz. Her zaman `/p:Configuration=Release`kullanın, Visual Studio 'nun çok aşamalı derleme iyileştirmesini kullandığı durumlarda, **hata ayıklama** yapılandırmasını oluştururken sonuçlar beklendiği gibi olmayabilir.
 
-Bir Docker Compose proje kullanıyorsanız, görüntüleri oluşturmak için komutu kullanın:
+Docker Compose projesi kullanıyorsanız, görüntüleri derlemek için komutunu kullanın:
 
 ```cmd
 msbuild /p:SolutionPath=<solution-name>.sln /p:Configuration=Release docker-compose.dcproj
@@ -112,10 +112,10 @@ msbuild /p:SolutionPath=<solution-name>.sln /p:Configuration=Release docker-comp
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-Daha fazla proje dosyalarınızı ek MSBuild özellikleri ayarlayarak derlemelerinizi özelleştirmeyi öğrenin. Bkz: [kapsayıcı projeleri için MSBuild özellikleri](container-msbuild-properties.md).
+Proje dosyalarınızda ek MSBuild özellikleri ayarlayarak derlemelerinizi nasıl özelleştireceğinizi öğrenin. Bkz. [kapsayıcı projeleri Için MSBuild özellikleri](container-msbuild-properties.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MSBuild](../msbuild/msbuild.md)
-[Windows üzerinde Dockerfile](/virtualization/windowscontainers/manage-docker/manage-windows-dockerfile)
-[Windows üzerinde Linux kapsayıcıları](/virtualization/windowscontainers/deploy-containers/linux-containers)
+[](../msbuild/msbuild.md)
+[Windows Linux kapsayıcılarındaki](/virtualization/windowscontainers/deploy-containers/linux-containers) MSBuild
+[dockerfile](/virtualization/windowscontainers/manage-docker/manage-windows-dockerfile)

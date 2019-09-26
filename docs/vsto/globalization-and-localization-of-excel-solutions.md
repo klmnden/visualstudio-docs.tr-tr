@@ -1,5 +1,5 @@
 ---
-title: Genelleştirme ve yerelleştirme Excel çözümleri
+title: Excel Çözümlerini Genelleştirme ve yerelleştirme
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,91 +12,91 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f8d21f1697ce3d566c27e9845ae4c2a9a9d5e068
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b0a7293672bb0b4e74515b71d2e0c4f961440b8c
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62972310"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71255974"
 ---
-# <a name="globalization-and-localization-of-excel-solutions"></a>Genelleştirme ve yerelleştirme Excel çözümleri
-  Bu bölüm Windows ayarları İngilizce dışındaki bilgisayarlarda çalışan Microsoft Office Excel çözümleri ilgili özel konular hakkında bilgi içerir. Diğer Visual Studio kullanarak çözüm türlerini oluşturduğunuzda karşılaşabileceğinizi birçok yönden Genelleştirme ve yerelleştirme Microsoft Office çözümleri aynı değildir. Genel bilgi için bkz. [Globalize ve uygulamalarını yerelleştirme](../ide/globalizing-and-localizing-applications.md).
+# <a name="globalization-and-localization-of-excel-solutions"></a>Excel Çözümlerini Genelleştirme ve yerelleştirme
+  Bu bölüm, Windows için Ingilizce olmayan ayarlara sahip bilgisayarlarda çalıştırılacak Microsoft Office Excel çözümlerinin özel konuları hakkında bilgiler içerir. Microsoft Office çözümlerin çoğu yönü, Visual Studio kullanarak diğer tür çözümler oluştururken karşılaştığınız ile aynıdır. Genel bilgiler için bkz. [globalize ve yerelleştirme uygulamaları](../ide/globalizing-and-localizing-applications.md).
 
- Varsayılan olarak, Microsoft Office Excel çalışma konak denetimleri düzgün Windows bölgesel ayarda herhangi geçirilen veya kullanılarak tüm verileri yönetilen kod sürece biçimlendirme İngilizce (Amerika Birleşik Devletleri) kullanılarak biçimlendirildiğinde. ' İ hedefleyen projelerde [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] veya [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)], bu davranış, ortak dil çalışma zamanı tarafından (CLR) denetlenir.
+ Varsayılan olarak, yönetilen kod kullanılarak iletilen veya geçen tüm veriler Ingilizce (Birleşik Devletler) biçimlendirme kullanılarak biçimlendirildiği sürece Excel Microsoft Office içindeki konak denetimleri herhangi bir Windows bölgesel ayarında doğru şekilde çalışır. [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] Veya öğesinihedefleyenprojelerde,budavranışortakdilçalışmazamanı(CLR)tarafındandenetlenir.[!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
 
-## <a name="format-data-in-excel-with-various-regional-settings"></a>Excel verileri biçimlendirme çeşitli bölgesel ayarları
- Yerel ayar duyarlı, tarihleri ve İngilizce (Amerika Birleşik Devletleri) veri biçimi (yerel ayar kimliği 1033), önce kullanarak para birimi gibi Microsoft Office Excel için geçti veya kod Office projenizdeki verileri okuyabilir biçimlendirme olan tüm verileri biçimlendirmeniz gerekir.
+## <a name="format-data-in-excel-with-various-regional-settings"></a>Excel 'deki verileri çeşitli bölgesel ayarlarla biçimlendirin
+ Tarih ve para birimi gibi yerel ayara duyarlı biçimlendirmeye sahip tüm verileri, Excel 'e Microsoft Office geçirmeden veya Office projenizdeki koddan verileri okuyabilmeniz için, Ingilizce (Birleşik Devletler) veri biçimini (yerel ayar KIMLIĞI 1033) kullanarak biçimlendirmeniz gerekir.
 
- Office çözümünü Visual Studio'da geliştirirken, varsayılan olarak, Excel nesne modeli (Bu da yerel ayar kimliği1033 nesne modelinde kilitleme adlandırılır) yerel kimliği1033 veri biçimlendirme bekliyor. Bu davranış, Visual Basic uygulamalar için uygun yolu eşleşir. Ancak, Office çözümlerinde bu davranışı değiştirebilirsiniz.
+ Varsayılan olarak, Visual Studio 'da bir Office çözümü geliştirirken, Excel nesne modeli yerel ayar KIMLIĞI 1033 veri biçimlendirmesini bekler (buna ayrıca nesne modelinin yerel ayar KIMLIĞI 1033 ' ye kilitlenmesi de denir). Bu davranış, Visual Basic for Applications çalışma yöntemiyle eşleşir. Ancak, Office çözümlerinizde bu davranışı değiştirebilirsiniz.
 
-### <a name="understand-how-the-excel-object-model-always-expects-locale-id-1033"></a>Excel nesne modeline her zaman yerel kimliği1033 bekliyor nasıl anlama
- Varsayılan olarak, Visual Studio kullanılarak oluşturulan Office çözümlerini son kullanıcının yerel ayarları tarafından etkilenmez ve her zaman yerel ayarı İngilizce (Amerika Birleşik Devletleri) olsa gibi davranır. Örneğin, get veya set <xref:Microsoft.Office.Interop.Excel.Range.Value2%2A> özelliğindeki, verileri yerel ayar kimliği 1033 bekliyor şekilde biçimlendirilmelidir. Farklı veri biçimi kullanırsanız, beklenmeyen sonuçlar alabilirsiniz.
+### <a name="understand-how-the-excel-object-model-always-expects-locale-id-1033"></a>Excel nesne modelinin her zaman yerel ayar KIMLIĞINI nasıl beklediğini anlayın 1033
+ Varsayılan olarak, Visual Studio kullanarak oluşturduğunuz Office çözümleri, son kullanıcının yerel ayarlarından etkilenmez ve her zaman yerel ayar Ingilizce (Birleşik Devletler) gibi davranır. Örneğin, Excel 'de <xref:Microsoft.Office.Interop.Excel.Range.Value2%2A> özelliği alırsanız veya ayarlarsanız, verilerin 1033 yerel ayar kimliği tarafından beklediği şekilde biçimlendirilmesi gerekir. Farklı bir veri biçimi kullanırsanız, beklenmeyen sonuçlar alabilirsiniz.
 
- Geçirilen veya yönetilen kod tarafından yönetilen veri için İngilizce (Amerika Birleşik Devletleri) biçimini kullanıyor olsanız da Excel yorumlar ve verileri doğru şekilde son kullanıcının yerel ayarına göre görüntüler. Yönetilen kodun yerel ayar kimliği1033 verileri İngilizce (ABD) olduğunu gösterir verileriyle birlikte biçimi geçirir ve kullanıcının yerel ayarı eşleştirilecek biçimlendirilmeli çünkü Excel verileri doğru şekilde biçimlendirebilirsiniz.
+ Yönetilen kod tarafından iletilen veya geçirilen veriler için Ingilizce (Birleşik Devletler) biçimini kullansanız bile, Excel verileri son kullanıcının yerel ayarlarına göre doğru şekilde Yorumlar ve görüntüler. Yönetilen 1033 kod, verilerin Ingilizce (Birleşik Devletler) biçiminde olduğunu ve bu nedenle kullanıcının yerel ayarıyla eşleşecek şekilde yeniden biçimlendirilmesi gerektiğini belirten verilerle birlikte, verileri doğru şekilde biçimlendirebilir.
 
- Örneğin, son kullanıcıların kendi Bölgesel Seçenekler Almanca (Almanya) yerel ayarını varsa, bu şekilde Biçimlendirilecek tarih 29 Haziran 2005 bekler: 29.06.2005. Ancak, çözümünüze bir dize olarak Excel'e tarihi geçerse, tarihe göre İngilizce (Amerika Birleşik Devletleri) biçimi biçimlendirmeniz gerekir: 6/29/2005. Hücrenin tarih hücresi olarak biçimlendirilmişse Excel tarihini Almanca (Almanya) biçiminde görüntüler.
+ Örneğin, son kullanıcılar bölgesel seçeneklerinin Almanca (Almanya) yerel ayarı olarak ayarlanmış olması halinde, 29 Haziran 2005 tarihleri bu şekilde biçimlendirilecek şekilde bekler: 29.06.2005. Ancak çözümünüz bir dize olarak tarihi Excel 'e geçerse, tarihi Ingilizce (Birleşik Devletler) biçime göre biçimlendirmeniz gerekir: 6/29/2005. Hücre bir tarih hücresi olarak biçimlendirildiyse, Excel tarihi Almanca (Almanya) biçiminde görüntüler.
 
-### <a name="pass-other-locale-ids-to-the-excel-object-model"></a>Excel nesne modeline diğer yerel ayar kimlikleri geçirme
- Ortak dil çalışma zamanı (CLR), tüm yöntemler ve yerel ayar duyarlı verileri kabul eden özellikleri Excel nesne modelinde 1033 yerel ayar Kimliğini otomatik olarak geçirir. Nesne modelini tüm çağrıları için otomatik olarak bu davranışı değiştirmek için hiçbir yolu yoktur. Belirli bir yöntem kullanarak farklı bir yerel ayar kimliği ancak geçirebilirsiniz <xref:System.Type.InvokeMember%2A> yöntemini çağırmak için ve yerel ayar kimliği için geçirerek *kültür* yönteminin parametresi.
+### <a name="pass-other-locale-ids-to-the-excel-object-model"></a>Diğer yerel kimlik kimliklerini Excel nesne modeline geçirme
+ Ortak dil çalışma zamanı (CLR), yerel ayara duyarlı verileri kabul eden Excel nesne modelindeki tüm yöntemlere ve özelliklere 1033 yerel ayar KIMLIĞINI otomatik olarak geçirir. Nesne modeline yapılan tüm çağrılar için bu davranışı otomatik olarak değiştirme yolu yoktur. Ancak, yöntemini çağırmak ve yerel ayar kimliğini metodun <xref:System.Type.InvokeMember%2A> *kültür* parametresine geçirerek, kullanarak belirli bir yönteme farklı bir yerel ayar kimliği geçirebilirsiniz.
 
-## <a name="localize-document-text"></a>Belge metninin yerelleştirme
- Belge, şablonu veya projenizdeki çalışma kitabı büyük olasılıkla derlemeden ayrı olarak yerelleştirilmiş ve yönetilen kaynakları olması gereken statik metin içerir. Bunu yapmak için basit bir yol, belgenin bir kopyasını alın ve Microsoft Office Word veya Microsoft Office Excel kullanarak metni Çevir sağlamaktır. Kod, hiçbir değişiklik olsa bile herhangi bir sayıda belgeleri aynı derlemeye bağlanabilir olduğundan bu işlem çalışır.
+## <a name="localize-document-text"></a>Belge metnini yerelleştirin
+ Projenizdeki belge, şablon veya çalışma kitabı muhtemelen, derlemeden ve diğer yönetilen kaynaklardan ayrı olarak yerelleştirilmesi gereken statik metni içerir. Bunu yapmanın kolay bir yolu, belgenin bir kopyasını oluşturmak ve metni Microsoft Office Word veya Microsoft Office Excel kullanarak çevirmedir. Herhangi bir sayıda belge aynı derlemeye bağlanabileceğinden, bu işlem kodda değişiklik yapmasanız bile işe yarar.
 
- Yine de herhangi bir bölümünü belge metninin ile etkileşime giren kodunuzun metin ve adlandırılmış aralıklar, bu yer işaretleri diliyle eşleşiyor devam eder ve tüm gerekli Office belgesinin biçimlendirme diğer görünen alanları uyum emin olmanız gerekir farklı dil bilgisi ve metin uzunluğu için ayarlayın. Görece küçük metin içeren belge şablonları için kaynak dosyalarında metin depolamak ve ardından metni çalışma zamanında yükleme düşünmek isteyebilirsiniz.
+ Yine de, belge metniyle etkileşim kuran kodunuzun herhangi bir bölümünün metnin diliyle eşleşecek şekilde devam ettiğinden ve bu yer işaretleri, adlandırılmış aralıklar ve diğer görüntüleme alanları, için gerekli olan Office belgesini yeniden biçimlendirme işlemiyle aynı olduğundan emin olmalısınız. farklı dilbilgisi ve metin uzunluğu için ayarlayın. Görece küçük metin içeren belge şablonlarında, metni kaynak dosyalarında depolamayı ve sonra metni çalışma zamanında yüklemeyi düşünmek isteyebilirsiniz.
 
 ### <a name="text-direction"></a>Metin yönü
- Excel'de, sağdan sola metin işlemek için çalışma özelliği ayarlayabilirsiniz. Konak denetimleri veya sahip herhangi bir denetime bir `RightToLeft` tasarımcıda otomatik olarak yerleştirilen özelliği, bu ayarlar çalışma zamanında eşleşmesi. Word için iki yönlü metnin (yalnızca değiştirmeniz, metin hizalamasını), bir belge ayarı yok denetimler için bu ayarı eşlenemez bu nedenle. Bunun yerine, her denetim için metin hizalamasını ayarlamanız gerekir. Tüm denetimleri yol ve bunları sağdan sola metin işlemek için zorlamak için kod yazmak mümkündür.
+ Excel 'de, çalışma sayfasının bir özelliğini metni sağdan sola işleyecek şekilde ayarlayabilirsiniz. Tasarımcı üzerine yerleştirilmiş konak denetimleri veya bir `RightToLeft` özelliği olan denetim, çalışma zamanında otomatik olarak bu ayarlarla eşleşir. Word, çift yönlü metin için bir belge ayarına sahip değildir (yalnızca metin hizalamasını değiştirirsiniz), bu nedenle denetimler bu ayarla eşlenemez. Bunun yerine, her denetim için metin hizalamasını ayarlamanız gerekir. Tüm denetimlerin üzerinde gezinmek için kod yazmak ve bunları sağdan sola metin işlemeye zorlamak mümkündür.
 
-### <a name="change-culture"></a>Kültürü değiştirme
- İçin her şey bu iş parçacığı üzerinde çalışan iş parçacığı kültürü için yaptığınız tüm değişiklikler etkiler, belge düzeyinde özelleştirme kodunuzun ana UI iş parçacığı Excel, genellikle paylaşır; değişiklik özelleştirmeniz için sınırlı değildir.
+### <a name="change-culture"></a>Kültürü Değiştir
+ Belge düzeyi özelleştirme kodunuz genellikle Excel 'in ana kullanıcı arabirimi iş parçacığını paylaşır, bu nedenle iş parçacığı kültürü üzerinde yaptığınız tüm değişiklikler o iş parçacığında çalışan diğer her şeyi etkiler; değişiklik, özelleştirmeinizdeki kısıtlı değildir.
 
- Windows Forms denetimleri, uygulama düzeyinde VSTO eklentileri konak uygulama tarafından başlatılan önce başlatılır. Bu gibi durumlarda, kullanıcı Arabirimi denetimleri ayarlamadan önce kültürü değiştirilmelidir.
+ Windows Forms denetimleri, uygulama düzeyi VSTO eklentileri ana bilgisayar uygulaması tarafından başlatılmadan önce başlatılır. Bu durumlarda, Kullanıcı arabirimi denetimleri ayarlamadan önce kültür değiştirilmelidir.
 
-## <a name="install-the-language-packs"></a>Dil paketlerini yükleme
- Windows için İngilizce olmayan ayarları varsa, yükleyebileceğiniz [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] görmek için dil paketlerini [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] Windows ile aynı dilde iletileri. Tüm son kullanıcılar, Windows için İngilizce olmayan ayarlarla çözümlerinizi çalıştırırsanız, bunlar Windows aynı dilde çalışma zamanı mesajlarını görmek için doğru dil paketi yüklü olmalıdır. [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] Dil paketlerini web'da [Microsoft İndirme Merkezi](http://www.microsoft.com/downloads).
+## <a name="install-the-language-packs"></a>Dil paketlerini yükler
+ Windows için İngilizce olmayan ayarlara sahipseniz, Windows ile aynı dildeki iletileri görmek [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] için dil paketlerini yükleyebilirsiniz. Herhangi bir son kullanıcı, çözümlerinizi Windows için Ingilizce olmayan ayarlarla çalıştırırsanız, çalışma zamanı iletilerini Windows ile aynı dilde görmek için doğru dil paketine sahip olmaları gerekir. Dil paketleri [Microsoft İndirme Merkezi](http://www.microsoft.com/downloads)' nden edinilebilir. [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]
 
- Ayrıca, .NET Framework yeniden dağıtılabilir dil paketleri için ClickOnce iletileri gereklidir. .NET Framework dil paketleri kullanılabilir [Microsoft İndirme Merkezi](http://www.microsoft.com/downloads).
+ Ayrıca, yeniden dağıtılabilir .NET Framework dil paketleri ClickOnce iletileri için gereklidir. .NET Framework dil paketleri [Microsoft İndirme Merkezi](http://www.microsoft.com/downloads)' nden edinilebilir.
 
 ## <a name="regional-settings-and-excel-com-calls"></a>Bölgesel ayarlar ve Excel COM çağrıları
- Yönetilen bir istemci bir COM nesnesi üzerinde bir yöntemi çağırır ve kültüre özgü bilgileri geçirmek ihtiyacı olduğunda, bunu kullanarak yaptığı <xref:System.Globalization.CultureInfo.CurrentCulture%2A> (yerel), geçerli iş parçacığı yerel ayarı eşleşir. Geçerli iş parçacığı yerel ayarı varsayılan olarak kullanıcının bölgesel ayarları devralınır. Ancak, Excel nesne modeline çağrı Visual Studio'da Office geliştirme araçları kullanılarak oluşturulan bir Excel çözümünden yapmak, İngilizce (Amerika Birleşik Devletleri) veri biçimi (yerel ayar kimliği 1033) Excel nesne modeline otomatik olarak geçirilir. Microsoft Office Excel geçirin veya proje kodunuzdan verileri okumak için önce İngilizce (Amerika Birleşik Devletleri) veri biçimi kullanarak tarihleri ve para birimi gibi yerel ayar duyarlı biçimlendirme olan tüm verileri biçimlendirmeniz gerekir.
+ Yönetilen bir istemci bir com nesnesinde bir yöntemi çağırdığında ve kültüre özgü bilgileri geçmesi gerektiğinde, bu, geçerli iş parçacığı yerel ayarıyla eşleşen <xref:System.Globalization.CultureInfo.CurrentCulture%2A> (yerel ayar) öğesini de kullanıyor. Geçerli iş parçacığı yerel ayarı, kullanıcının bölgesel ayarlarından varsayılan olarak devralınır. Ancak, Visual Studio 'da Office geliştirme araçları kullanılarak oluşturulan bir Excel çözümünden Excel nesne modeline bir çağrı yaptığınızda, Ingilizce (Birleşik Devletler) veri biçimi (yerel ayar KIMLIĞI 1033) Excel nesne modeline otomatik olarak geçirilir. Tarih ve para birimi gibi yerel ayara duyarlı biçimlendirmeye sahip tüm verileri, Excel Microsoft Office aktarmadan veya proje kodunuzda verileri okuyabilmeniz için önce Ingilizce (Birleşik Devletler) veri biçimini kullanarak biçimlendirmeniz gerekir.
 
-## <a name="considerations-for-storing-data"></a>Veri depolamak için dikkat edilmesi gerekenler
- Verilerinizi doğru olarak yorumlanır ve görüntülenen, bir uygulama içinde dize değişmez değerleri Excel çalışma sayfası formülleri gibi verileri depolarken sorunlar oluşabilir düşünmelisiniz emin olmak için (yerine kesin olarak belirlenmiş nesneler kodlanmış). Bir kültür sabit veya İngilizce (Amerika Birleşik Devletleri) (LCID değer 1033) stili varsayılarak biçimlendirilmiş veri kullanmanız gerekir.
+## <a name="considerations-for-storing-data"></a>Veri depolamaya ilişkin önemli noktalar
+ Verilerinizin doğru şekilde yorumlanması ve görüntülendiğinden emin olmak için, bir uygulama Excel çalışma sayfası formülleri gibi verileri, türü kesin belirlenmiş nesneler yerine dize sabit değerleri (sabit kodlanmış) olarak depoladığında, sorunların gerçekleşebileceğini de göz önünde bulundurmanız gerekir. Kültür sabiti veya Ingilizce (Birleşik Devletler) (LCıD değeri 1033) stili olarak biçimlendirilen verileri kullanmanız gerekir.
 
-### <a name="applications-that-use-string-literals"></a>Dize değişmez değerleri kullanan uygulamalar
- Sabit kodlanmış olabilir olası değerler, İngilizce (Amerika Birleşik Devletleri) biçimi ve yerelleştirilmiş işlev adlarını içeren Excel çalışma sayfası formüller yazılan tarih sabit değerleri içerir. Diğer bir olasılık "1,000" gibi bir sayı içeren bir sabit kodlanmış bir dize olabilir Bazı kültürlerin Bu bin yorumlanır, ancak diğer kültürde bu bir noktası sıfır temsil eder. Hesaplamaları ve yanlış biçim yapılan karşılaştırmalar yanlış veri kaybına neden.
+### <a name="applications-that-use-string-literals"></a>Dize sabit değerleri kullanan uygulamalar
+ Sabit kodlanmış olabilecek olası değerler şunlardır. Ingilizce (Birleşik Devletler) biçiminde yazılmış Tarih değişmez değerleri ve yerelleştirilmiş işlev adlarını içeren Excel çalışma sayfası formülleri. Başka bir olasılık da "1.000" gibi bir sayı içeren sabit kodlanmış bir dize olabilir. Bazı kültürlerde bu, 1000 olarak yorumlanır, ancak diğer kültürlerde bir noktayı sıfır temsil eder. Yanlış biçimde gerçekleştirilen hesaplamalar ve karşılaştırmalar yanlış veri oluşmasına neden olabilirler.
 
- Excel dizesiyle dizeleri geçirilen LCID uygun olarak yorumlar. Dize biçimi geçirilen LCID karşılık gelmiyorsa bu bir sorun olabilir. Excel çözümlerini Visual Studio'da Office geliştirme araçları kullanılarak oluşturulan tüm veri geçirirken LCID 1033'tür (en-US) kullanın. Excel verileri Excel kullanıcı arabirimi dili ve bölgesel ayarlarına göre görüntüler. Visual Basic for Applications (VBA) de bu şekilde çalışır; dizeleri en-US biçimlendirilir ve VBA, neredeyse her zaman 0 (dil belirsiz) LCID geçirir. Örneğin, aşağıdaki VBA kodu, doğru biçimlendirilmiş bir değer Mayıs 12, 2004 için geçerli kullanıcı yerel ayarı uygun olarak görüntüler:
+ Excel, dize ile geçilen LCıD 'ye uygun olarak tüm dizeleri yorumlar. Bu, dizenin biçimi geçilen LCıD 'ye karşılık gelmiyorsa bir sorun olabilir. Visual Studio 'da Office geliştirme araçları kullanılarak oluşturulan Excel çözümleri, tüm verileri geçirirken LCıD 1033 (en-US) kullanır. Excel, verileri bölgesel ayarlar ve Excel Kullanıcı arabirimi diline göre görüntüler. Visual Basic for Applications (VBA) bu şekilde da çalışmaktadır; dizeler en-US olarak biçimlendirilir ve VBA neredeyse her zaman LCıD olarak 0 (dilden bağımsız) geçirir. Örneğin, aşağıdaki VBA kodu, geçerli kullanıcı yerel ayarlarına uygun olarak 12 Mayıs 2004 için doğru biçimli bir değer görüntüler:
 
 ```vb
 'VBA
 Application.ActiveCell.Value2 = "05/12/04"
 ```
 
- Tarihi en-US stilinde biçimlendirildiğinde aynı sonuçları Excel'e COM birlikte çalışması yoluyla geçirilen ve Visual Studio'da Office geliştirme araçları kullanılarak oluşturulmuş bir çözümü kullanıldığında aynı kodu üretir.
+ Aynı kod, Visual Studio 'da Office geliştirme araçları kullanılarak oluşturulan ve COM birlikte çalışabilirliğine Excel 'e geçirilen bir çözümde kullanıldığında, tarih en-US stilinde biçimlendirilirken aynı sonuçları üretir.
 
  Örneğin:
 
  [!code-vb[Trin_VstcoreCreatingExcel#6](../vsto/codesnippet/VisualBasic/Trin_VstcoreCreatingExcelVB/Sheet1.vb#6)]
  [!code-csharp[Trin_VstcoreCreatingExcel#6](../vsto/codesnippet/CSharp/Trin_VstcoreCreatingExcelCS/Sheet1.cs#6)]
 
- Kesin türü belirtilmiş veri dize değişmez değerleri mümkün olduğunda yerine ile çalışması gerekir. Örneğin, bir dize sabit değeri bir tarih depolamak yerine olarak depolamak bir <xref:System.Double>, onu şöyle dönüştürün bir <xref:System.DateTime> işleme için nesne.
+ Mümkün olduğunda dize sabit değerleri yerine kesin olarak yazılmış verilerle çalışmanız gerekir. Örneğin, bir tarihi dize değişmez değerinde depolamak yerine, bir olarak depolayın, sonra bunu <xref:System.Double> <xref:System.DateTime> bir işleme için nesnesine dönüştürün.
 
- Aşağıdaki kod örneği, bir kullanıcı A5 hücreye girer, olarak depolayan bir tarihi alır bir <xref:System.Double>, kendisine dönüştürür bir <xref:System.DateTime> hücresinde A7 görüntülemek için nesne. Tarih görüntüleme için hücre A7 biçimlendirilmiş olması gerekir.
+ Aşağıdaki kod örneği, bir kullanıcının a5 hücresine girdiği bir tarihi alır, onu bir <xref:System.Double>olarak depolar, sonra A7 hücresinde görüntülenecek bir <xref:System.DateTime> nesneye dönüştürür. A7 hücresi bir tarih görüntüleyecek şekilde biçimlendirilmelidir.
 
  [!code-vb[Trin_VstcoreCreatingExcel#7](../vsto/codesnippet/VisualBasic/Trin_VstcoreCreatingExcelVB/Sheet1.vb#7)]
  [!code-csharp[Trin_VstcoreCreatingExcel#7](../vsto/codesnippet/CSharp/Trin_VstcoreCreatingExcelCS/Sheet1.cs#7)]
 
 ### <a name="excel-worksheet-functions"></a>Excel çalışma sayfası işlevleri
- Çalışma sayfası işlev adlarını Excel çoğu dil sürümleri için dahili olarak çevrilir. Ancak, olası dil ve COM birlikte çalışma sorunları nedeniyle, kodunuzda yalnızca İngilizce işlev adlarını kullanmanız önerilir.
+ Çalışma sayfası işlev adları, Excel 'in çoğu dil sürümü için dahili olarak çevrilir. Ancak, olası dil ve COM birlikte çalışma sorunları nedeniyle kodunuzda yalnızca Ingilizce işlev adları kullanmanız önerilir.
 
-### <a name="applications-that-use-external-data"></a>Dış veriler kullanan uygulamalar
- En-US yanı sıra herhangi bir biçimde kullanarak bu tür dosyaları dışarı aktardıysanız açar veya aksi takdirde eski bir sistemden dışarı virgülle ayrılmış değerler (CSV dosyaları) dosyaları gibi dış veri kullanan herhangi bir kod da etkilenebilir. Veritabanı dize olarak tarihleri depolar ya da ikili biçimi kullanmayan işlemleri gerçekleştirir sürece tüm değerleri ikili biçimde olmalıdır çünkü veritabanı erişimi etkilenmeyebilir. Ayrıca, Excel verilerini kullanarak SQL sorguları oluşturmak, en-US biçiminde kullanmanızı işlevi bağlı olarak olduklarından emin olmak gerekebilir.
+### <a name="applications-that-use-external-data"></a>Dış veri kullanan uygulamalar
+ Eski bir sistemden içe aktarılmış, virgülle ayrılmış değerler (CSV dosyaları) içeren dosyalar gibi dış verileri açan ya da başka bir şekilde kullanan herhangi bir kod, bu tür dosyalar, en-US dışında herhangi bir biçim kullanılarak verildiğinde da etkilenebilir. Veritabanı, tarihleri dizeler olarak depoladığından veya ikili biçimi kullanmayan işlemler gerçekleştirmediği sürece, tüm değerlerin ikili biçimde olması gerektiğinden veritabanı erişimi etkilenmeyebilir. Ayrıca, Excel 'den verileri kullanarak SQL sorguları oluşturursanız, kullandığınız işleve bağlı olarak bunların en-US biçiminde olduklarından emin olmanız gerekebilir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [Nasıl yapılır: Office Çok Dilde Kullanıcı arabirimini hedefleme](../vsto/how-to-target-the-office-multilingual-user-interface.md)
-- [Office çözümleri oluşturma ve tasarlama](../vsto/designing-and-creating-office-solutions.md)
+- [Nasıl yapılır: Office çok dilli kullanıcı arabirimini hedefleme](../vsto/how-to-target-the-office-multilingual-user-interface.md)
+- [Office çözümleri tasarlama ve oluşturma](../vsto/designing-and-creating-office-solutions.md)
 - [Office çözümlerinde isteğe bağlı parametreler](../vsto/optional-parameters-in-office-solutions.md)

@@ -13,85 +13,85 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5e7f82f667fffec09894ab65e277cea09d137a9b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d4f6ca2544f64433746f6aa57c9456fee11459db
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62826715"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71254685"
 ---
 # <a name="how-to-add-listobject-controls-to-worksheets"></a>Nasıl yapılır: Çalışma sayfalarına ListObject denetimleri ekleme
-  Ekleyebileceğiniz <xref:Microsoft.Office.Tools.Excel.ListObject> tasarım zamanında ve belge düzeyi projelere çalışma zamanında bir Microsoft Office Excel çalışma sayfasına denetimler.
+  Tasarım zamanında bir <xref:Microsoft.Office.Tools.Excel.ListObject> Microsoft Office Excel çalışma sayfasına ve belge düzeyi projelerinde çalışma zamanında denetim ekleyebilirsiniz.
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
 
- Ayrıca ekleyebilirsiniz <xref:Microsoft.Office.Tools.Excel.ListObject> VSTO eklentisi projeleri çalışma zamanında denetimler.
+ Ayrıca, VSTO eklenti <xref:Microsoft.Office.Tools.Excel.ListObject> projelerinde çalışma zamanında denetim ekleyebilirsiniz.
 
- Bu konuda, aşağıdaki görevleri açıklanmaktadır:
+ Bu konuda aşağıdaki görevler açıklanmaktadır:
 
 - [Tasarım zamanında ListObject denetimleri ekleme](#designtime)
 
-- [Çalışma zamanında bir belge düzeyi projede ListObject denetimleri ekleme](#runtimedoclevel)
+- [Belge düzeyindeki bir projede çalışma zamanında ListObject denetimleri ekleme](#runtimedoclevel)
 
-- [Çalışma zamanında VSTO eklenti projesinde ListObject denetimleri ekleme](#runtimeaddin)
+- [VSTO eklenti projesindeki ListObject denetimlerini çalışma zamanında ekleme](#runtimeaddin)
 
-  Hakkında daha fazla bilgi için <xref:Microsoft.Office.Tools.Excel.ListObject> denetimlerini, [ListObject denetimine](../vsto/listobject-control.md).
+  Denetimler hakkında <xref:Microsoft.Office.Tools.Excel.ListObject> daha fazla bilgi için bkz. [ListObject denetimi](../vsto/listobject-control.md).
 
-## <a name="designtime"></a> Tasarım zamanında ListObject denetimleri ekleme
- Eklemek için çeşitli yollar vardır <xref:Microsoft.Office.Tools.Excel.ListObject> tasarım zamanında bir belge düzeyi projesindeki çalışma sayfasına denetimler: Gelen Visual Studio'dan Excel'den **araç kutusu**, gelen ve giden **veri kaynakları** penceresi.
+## <a name="designtime"></a>Tasarım zamanında ListObject denetimleri ekleme
+ Tasarım zamanında belge düzeyindeki bir projedeki <xref:Microsoft.Office.Tools.Excel.ListObject> çalışma sayfasına denetim eklemenin birkaç yolu vardır: Excel içinden, Visual Studio **araç kutusundan**ve **veri kaynakları** penceresinden.
 
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
-### <a name="to-use-the-ribbon-in-excel"></a>Excel'de Şerit kullanma
+### <a name="to-use-the-ribbon-in-excel"></a>Şeriti Excel 'de kullanmak için
 
-1. Üzerinde **Ekle** sekmesinde **tabloları** grubunda **tablo**.
+1. **Ekle** sekmesinde, **Tablolar** grubunda, **tablo**' ya tıklayın.
 
-2. Veya daha fazla hücreyi tıklatın ve listeye eklemek istediğiniz seçin **Tamam**.
+2. Listeye eklemek istediğiniz hücreyi veya hücreleri seçin ve **Tamam**' a tıklayın.
 
 #### <a name="to-use-the-toolbox"></a>Araç kutusunu kullanmak için
 
-1. Gelen **Excel denetimleri** sekmesinde **araç kutusu**, sürükleyin bir <xref:Microsoft.Office.Tools.Excel.ListObject> çalışma.
+1. **Araç kutusunun** <xref:Microsoft.Office.Tools.Excel.ListObject> **Excel denetimleri** sekmesinden, çalışma sayfasına sürükleyin.
 
-     **ListObject Denetimi Ekle** iletişim kutusu görüntülenir.
+     **ListObject denetimi Ekle** iletişim kutusu görüntülenir.
 
-2. Veya daha fazla hücreyi tıklatın ve listeye eklemek istediğiniz seçin **Tamam**.
+2. Listeye eklemek istediğiniz hücreyi veya hücreleri seçin ve **Tamam**' a tıklayın.
 
-     Varsayılan adı bırakın istemiyorsanız adı değiştirebilirsiniz **özellikleri** penceresi.
+     Varsayılan adı korumak istemiyorsanız, adı **Özellikler** penceresinde değiştirebilirsiniz.
 
-#### <a name="to-use-the-data-sources-window"></a>Veri kaynakları penceresi kullanmak için
+#### <a name="to-use-the-data-sources-window"></a>Veri Kaynakları penceresini kullanmak için
 
-1. Açık **veri kaynakları** penceresi ve projeniz için bir veri kaynağı oluşturun. Daha fazla bilgi için [yeni bağlantı ekleme](../data-tools/add-new-connections.md).
+1. **Veri kaynakları** penceresini açın ve projeniz için bir veri kaynağı oluşturun. Daha fazla bilgi için bkz. [yeni bağlantılar ekleme](../data-tools/add-new-connections.md).
 
-2. Bir tablodan sürükleyin **veri kaynakları** çalışma penceresine.
+2. **Veri kaynakları** penceresinden bir tabloyu çalışma sayfanıza sürükleyin.
 
-     Verilere bağlı <xref:Microsoft.Office.Tools.Excel.ListObject> denetimi çalışma sayfasına eklenir. Daha fazla bilgi için [veri bağlama ve Windows Forms](/dotnet/framework/winforms/data-binding-and-windows-forms).
+     Çalışma sayfasına veriye dayalı <xref:Microsoft.Office.Tools.Excel.ListObject> bir denetim eklenir. Daha fazla bilgi için bkz. [veri bağlama ve Windows Forms](/dotnet/framework/winforms/data-binding-and-windows-forms).
 
-## <a name="runtimedoclevel"></a> Çalışma zamanında bir belge düzeyi projede ListObject denetimleri ekleme
- Ekleyebileceğiniz <xref:Microsoft.Office.Tools.Excel.ListObject> zamanında dinamik olarak denetim. Bu olaylara yanıt olarak konak denetimleri oluşturmanıza olanak sağlar. Dinamik olarak oluşturulan listenin nesneler, çalışma sayfasında sürdürülmez çalışma kapatıldığında denetimleri gibi. Daha fazla bilgi için [Office belgelerine çalışma zamanında denetimler ekleme](../vsto/adding-controls-to-office-documents-at-run-time.md).
+## <a name="runtimedoclevel"></a>Belge düzeyindeki bir projede çalışma zamanında ListObject denetimleri ekleme
+ <xref:Microsoft.Office.Tools.Excel.ListObject> Denetimi çalışma zamanında dinamik olarak ekleyebilirsiniz. Bu, olaylara yanıt olarak konak denetimleri oluşturmanızı sağlar. Çalışma sayfası kapatıldığında dinamik olarak oluşturulan liste nesneleri çalışma sayfasında konak denetimleri olarak kalıcı olmaz. Daha fazla bilgi için bkz. [çalışma zamanında Office belgelerine denetim ekleme](../vsto/adding-controls-to-office-documents-at-run-time.md).
 
-#### <a name="to-add-a-listobject-control-to-a-worksheet-programmatically"></a>ListObject denetimi bir çalışma sayfasına programlı olarak eklemek için
+#### <a name="to-add-a-listobject-control-to-a-worksheet-programmatically"></a>Bir çalışma sayfasına programlı bir ListObject denetimi eklemek için
 
-1. İçinde <xref:Microsoft.Office.Tools.Excel.Worksheet.Startup> olay işleyicisine `Sheet1`, eklemek için aşağıdaki kodu ekleyin bir <xref:Microsoft.Office.Tools.Excel.ListObject> denetim hücrelere **A1** aracılığıyla **A4**.
+1. <xref:Microsoft.Office.Tools.Excel.ListObject> ' In <xref:Microsoft.Office.Tools.Excel.Worksheet.Startup> `Sheet1`olay işleyicisinde, a1 ile a4 arası hücrelere bir denetim eklemek için aşağıdaki kodu ekleyin.
 
      [!code-csharp[Trin_VstcoreHostControlsExcel#2](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#2)]
      [!code-vb[Trin_VstcoreHostControlsExcel#2](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#2)]
 
-## <a name="runtimeaddin"></a> Çalışma zamanında VSTO eklenti projesinde ListObject denetimleri ekleme
- Ekleyebileceğiniz bir <xref:Microsoft.Office.Tools.Excel.ListObject> programlı bir şekilde bir VSTO eklenti projesinde herhangi bir açık çalışma sayfasına denetimi. Dinamik olarak oluşturulan listenin nesneler, çalışma sayfasında sürdürülmez çalışma kaydedilir ve sonra kapalı olduğunda denetimleri gibi. Daha fazla bilgi için [genişletmek Word belgelerini ve Excel çalışma kitaplarını çalışma zamanında VSTO Add-Ins](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).
+## <a name="runtimeaddin"></a>VSTO eklenti projesindeki ListObject denetimlerini çalışma zamanında ekleme
+ VSTO eklenti projesindeki herhangi <xref:Microsoft.Office.Tools.Excel.ListObject> bir açık çalışma sayfasına programlı olarak bir denetim ekleyebilirsiniz. Dinamik olarak oluşturulan liste nesneleri, çalışma sayfası kaydedilip kapatıldığında konak denetimleri olarak çalışma sayfasında kalıcı olmaz. Daha fazla bilgi için bkz. [çalışma ZAMANıNDA VSTO Eklentilerindeki Word belgelerini ve Excel çalışma kitaplarını genişletme](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).
 
-#### <a name="to-add-a-listobject-control-to-a-worksheet-programmatically"></a>ListObject denetimi bir çalışma sayfasına programlı olarak eklemek için
+#### <a name="to-add-a-listobject-control-to-a-worksheet-programmatically"></a>Bir çalışma sayfasına programlı bir ListObject denetimi eklemek için
 
-1. Açık bir çalışma sayfasına göre ve ardından ekleyen bir çalışma sayfası konak öğesi aşağıdaki kod oluşturur bir <xref:Microsoft.Office.Tools.Excel.ListObject> denetim hücrelere **A1** aracılığıyla **A4**.
+1. Aşağıdaki kod, açık çalışma sayfasına dayalı bir çalışma sayfası konak öğesi oluşturur ve sonra **a1** ile **a4**arası hücrelere <xref:Microsoft.Office.Tools.Excel.ListObject> bir denetim ekler.
 
      [!code-csharp[Trin_Excel_Dynamic_Controls#8](../vsto/codesnippet/CSharp/Trin_Excel_Dynamic_Controls/ThisAddIn.cs#8)]
      [!code-vb[Trin_Excel_Dynamic_Controls#8](../vsto/codesnippet/VisualBasic/Trin_Excel_Dynamic_Controls/ThisAddIn.vb#8)]
 
 ## <a name="see-also"></a>Ayrıca bkz.
-- [Word belgelerini ve Excel çalışma kitaplarını VSTO eklentileri çalışma zamanında genişletme](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)
+- [VSTO Eklentilerindeki Word belgelerini ve Excel çalışma kitaplarını çalışma zamanında genişletme](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)
 - [Office belgelerindeki denetimler](../vsto/controls-on-office-documents.md)
 - [ListObject denetimi](../vsto/listobject-control.md)
 - [Genişletilmiş nesneleri kullanarak Excel'i otomatikleştirmek](../vsto/automating-excel-by-using-extended-objects.md)
-- [Konak öğelerine ve denetimlerine genel bakış](../vsto/host-items-and-host-controls-overview.md)
-- [Nasıl yapılır: ListObject denetimlerinin boyutunu değiştirme](../vsto/how-to-resize-listobject-controls.md)
-- [Office çözümlerinde denetimlere veri bağlama](../vsto/binding-data-to-controls-in-office-solutions.md)
-- [Konak denetimlerinin ve konak öğelerinin programlama sınırlamaları](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)
+- [Konak öğeleri ve konak denetimlerine genel bakış](../vsto/host-items-and-host-controls-overview.md)
+- [Nasıl yapılır: ListObject denetimlerini yeniden boyutlandır](../vsto/how-to-resize-listobject-controls.md)
+- [Office çözümlerinde verileri denetimlere bağlama](../vsto/binding-data-to-controls-in-office-solutions.md)
+- [Konak öğelerinin ve konak denetimlerinin programlama sınırlamaları](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)

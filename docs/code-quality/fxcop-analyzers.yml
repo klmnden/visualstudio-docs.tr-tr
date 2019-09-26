@@ -1,104 +1,70 @@
-### YamlMime:YamlDocument
-documentType: LandingData
-title: İkili çözümleyiciden (FxCop) kaynak analizine (FxCop çözümleyicileri) geçiş
+### YamlMime:Landing
+title: Eski analizden (FxCop) kaynak analizine (FxCop çözümleyicileri) geçiş
+summary: Kodu ilk kez analiz etmeyi veya ikili analizden (FxCop) kaynak analizini (FxCop çözümleyicileri) kullanarak yönetilen kodu analiz etmenin yeni yoluna nasıl geçireceğinizi öğrenin.
 metadata:
   title: FxCop geçiş belgeleri
   description: Kodu analiz ettiğinizde eski ikili analizden (FxCop) kaynak analizine (FxCop çözümleyicileri) nasıl taşınacağını öğrenin.
-  ms.date: 07/11/2019
   ms.prod: visual-studio-dev16
   ms.technology: vs-ide-code-analysis
   ms.topic: landing-page
   f1_keywords:
-    - vs.projectpropertypages.codeanalysis
-  ms.author: gewarren
+  - vs.projectpropertypages.codeanalysis
   author: gewarren
+  ms.author: gewarren
   manager: jillfra
-abstract:
-  description: Kodu ilk kez analiz etmeyi veya ikili analizden (FxCop) kaynak analizini (FxCop çözümleyicileri) kullanarak yönetilen kodu analiz etmenin yeni yoluna nasıl geçireceğinizi öğrenin.
-  aside:
-    image:
-      alt: Ortak yönetim görevleri logosu
-      height: 133
-      width: 48
-      src: 'https://docs.microsoft.com/media/illustrations/bcs-partner-advanced-management-settings-8.svg'
-    title: null
-sections:
-  - title: Sık sorulan sorular
-    items:
-      - html: FxCop çözümleyicileri kullanarak ikili FxCop Analizi ve kaynak analizi arasındaki farklılıklar hakkında <a href="fxcop-analyzers-faq.md">sık sorulan bazı soruların</a> yanıtlarını alın.
-  - title: Kod analizinden yeni başladıysanız...
-    items:
-      - type: list
-        style: cards
-        className: cardsM
-        columns: 2
-        items:
-          - href: roslyn-analyzers-overview.md
-            html: <p>Çözümleyicilerin ne olduğunu öğrenin.</p>
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_learn-about.svg'
-            title: Çözümleyiciler genel bakış
-          - href: install-roslyn-analyzers.md
-            html: <p>Çözümleyiciler bir NuGet paketi veya Visual Studio uzantısı olarak nasıl yükleneceğini öğrenin.</p>
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_setup.svg'
-            title: Çözümleyicileri yükleiciler
-          - href: use-roslyn-analyzers.md
-            html: '<p>Çözümleyicilerin nasıl kullanılacağını ve kod Visual Basic için C# ihlalleri nasıl göstereceğinizi öğrenin.</p>'
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_config-tools.svg'
-            title: Kural önem derecesini ayarlama ve hataları gösterme
-          - href: 'use-roslyn-analyzers.md#command-line-usage'
-            html: <p>Komut satırından çözümleyiciler kullanmayı öğrenin.</p>
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_cligeneric.svg'
-            title: Komut satırı kullanımı
-  - title: Şu anda ikili analiz (FxCop) kullanıyorsanız...
-    items:
-      - type: list
-        style: cards
-        className: cardsM
-        columns: 2
-        items:
-          - href: 'roslyn-analyzers-overview.md#net-compiler-platform-based-analysis-versus-legacy-analysis'
-            html: <p>İkili analiz (FxCop) ve kaynak Analizi (FxCop çözümleyicileri) arasındaki farkları öğrenin.</p>
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_learn-about.svg'
-            title: Farklı nedir?
-          - href: install-fxcop-analyzers.md
-            html: <p>FxCop Çözümleyicisi paketini nasıl yükleyeceğinizi öğrenin.</p>
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_setup.svg'
-            title: FxCop çözümleyicilerini yükleme
-          - href: fxcop-rule-port-status.md
-            html: <p>Kaynak analizine (FxCop çözümleyicileri) eklenen ikili analiz (FxCop) kurallarını listeler.</p>
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_upgrade.svg'
-            title: Bağlantı noktası ve olmayan kurallar
-          - href: 'use-roslyn-analyzers.md#command-line-usage'
-            html: '<p>Genellikle komut satırından Kod analizini çalıştırırsanız, komut satırından çözümleyiciler kullanmayı öğrenin.</p>'
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_cligeneric.svg'
-            title: Komut satırı kullanımı
-          - href: analyzer-rule-sets.md
-            html: <p>Çözümleyici paketi kural kümeleri hakkında bilgi edinin.</p>
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_code-samples.svg'
-            title: Kural kümeleri
-  - title: İlgili makaleler
-    items:
-      - type: list
-        style: cards
-        className: cardsM
-        columns: 2
-        items:
-          - href: code-analysis-for-c-cpp-overview.md
-            html: <p>Yerel C++ kodda Kod analizini çalıştırmayı öğrenin. Yönetilen C++ kod analizi kullanım dışıdır.</p>
-            image:
-              src: 'https://docs.microsoft.com/media/logos/logo_Cplusplus.svg'
-            title: C++Kod Analizi
-          - href: code-metrics-values.md
-            html: <p>Kod ölçümlerini almayı öğrenin. Kod ölçümleri için Kullanıcı deneyimi değişmeden kalır.</p>
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_data-collection.svg'
-            title: Kod ölçümleri
+  ms.date: 09/24/2019
+  ms.openlocfilehash: c0f2a4bfbeebac879359955e9e4b23a8d3fc6356
+  ms.sourcegitcommit: 528178a304e66c0cb7ab98b493fe3c409f87493a
+  ms.translationtype: MT
+  ms.contentlocale: tr-TR
+  ms.lasthandoff: 09/25/2019
+  ms.locfileid: "71273294"
+landingContent:
+- title: Kod çözümlemesine giriş
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Kod Çözümleyicileri 'ne genel bakış
+      url: roslyn-analyzers-overview.md
+  - linkListType: download
+    links:
+    - text: Kod Çözümleyicileri yüklemesi
+      url: install-roslyn-analyzers.md
+  - linkListType: how-to-guide
+    links:
+    - text: Kural önem derecesini ayarlama ve hataları gösterme
+      url: use-roslyn-analyzers.md
+    - text: Komut satırı kullanımı
+      url: use-roslyn-analyzers.md#command-line-usage
+- title: Eski çözümlemeyi geçir
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Farklı olanlar
+      url: roslyn-analyzers-overview.md#net-compiler-platform-based-analysis-versus-legacy-analysis
+  - linkListType: get-started
+    links:
+    - text: FxCop çözümleyicileri hakkında SSS
+      url: fxcop-analyzers-faq.md
+  - linkListType: download
+    links:
+    - text: FxCop çözümleyicilerini yükleme
+      url: install-fxcop-analyzers.md
+  - linkListType: how-to-guide
+    links:
+    - text: FxCop çözümleyicileri yapılandırma
+      url: configure-fxcop-analyzers.md
+    - text: Önceden tanımlanmış kural kümelerini kullan
+      url: analyzer-rule-sets.md
+  - linkListType: reference
+    links:
+    - text: Bağlantı noktası ve olmayan kurallar
+      url: fxcop-rule-port-status.md
+- title: Diğer kod analizi türleri
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: C++Kod Analizi
+      url: code-analysis-for-c-cpp-overview.md
+    - text: Kod ölçümleri
+      url: code-metrics-values.md

@@ -11,12 +11,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9333f2fb1bff0fdb8a3f0dac8004f66156b8863d
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: 5c288764cf9182bc34233d312546f7915eed5975
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68870816"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71252175"
 ---
 # <a name="vsix-extension-schema-20-reference"></a>VSıX uzantı Şeması 2,0 başvurusu
 VSıX dağıtımı bildirim dosyası bir VSıX paketinin içeriğini açıklar. Dosya biçimi bir şemaya tabidir. Bu şemanın sürüm 2,0, özel türlerin ve özniteliklerin eklenmesini destekler.  Bildirimin şeması genişletilebilir. Bildirim yükleyicisi, anladığı XML öğelerini ve özniteliklerini yoksayar.
@@ -38,7 +38,7 @@ VSıX dağıtımı bildirim dosyası bir VSıX paketinin içeriğini açıklar. 
 
 - `<Assets>`-Bu bölüm, bu pakette bulunan tüm varlıkları içerir. Bu bölüm olmadan, bu paket herhangi bir içerik yüzeyine sahip değildir.
 
-- `<AnyElement>*`-Bildirim şeması, diğer öğelere izin vermek için yeterince esnektir. Bildirim yükleyicisi tarafından tanınmayan tüm alt öğeler, ek XmlElement nesneleri olarak Uzantı Yöneticisi API 'sinde kullanıma sunulur. VSıX uzantıları bu alt öğeleri kullanarak, Visual Studio 'da çalışan kodun çalışma zamanında erişebileceği bildirim dosyasında ek veriler tanımlayabilir. Bkz. [Microsoft. VisualStudio. ExtensionManager. IExtension. Adtionalelements](/previous-versions/visualstudio/visual-studio-2013/hh265266(v=vs.120)).
+- `<AnyElement>*`-Bildirim şeması, diğer öğelere izin vermek için yeterince esnektir. Bildirim yükleyicisi tarafından tanınmayan tüm alt öğeler, ek XmlElement nesneleri olarak Uzantı Yöneticisi API 'sinde kullanıma sunulur. VSıX uzantıları, bu alt öğeleri kullanarak, Visual Studio 'da çalışan kodun çalışma zamanında erişebileceği bildirim dosyasında ek veriler tanımlayabilir. Bkz. [Microsoft. VisualStudio. ExtensionManager. IExtension. Adtionalelements](/previous-versions/visualstudio/visual-studio-2013/hh265266(v=vs.120)).
 
 ### <a name="metadata-element"></a>Metadata öğesi
  Bu bölüm, paket, kimlik ve reklam bilgileri hakkındaki meta verilerdir. `<Metadata>`Aşağıdaki öğeleri içerir:
@@ -71,7 +71,7 @@ VSıX dağıtımı bildirim dosyası bir VSıX paketinin içeriğini açıklar. 
 
 - `<GettingStartedGuide>`-Bu isteğe bağlı öğe, bir HTML dosyasına yönelik göreli bir yoldur veya uzantının veya içeriğin Bu pakette nasıl kullanılacağı hakkında bilgi içeren bir Web sitesinin URL 'sidir. Bu kılavuz, bir yüklemenin parçası olarak başlatılır.
 
-- `<AnyElement>*`-Bildirim şeması, diğer öğelere izin vermek için yeterince esnektir. Bildirim yükleyicisi tarafından tanınmayan tüm alt öğeler, XmlElement nesnelerinin bir listesi olarak gösterilir. VSıX uzantıları bu alt öğeleri kullanarak, bildirim dosyasında ek veri tanımlayabilir ve bunları çalışma zamanında numaralandırabilirsiniz.
+- `<AnyElement>*`-Bildirim şeması, diğer öğelere izin vermek için yeterince esnektir. Bildirim yükleyicisi tarafından tanınmayan tüm alt öğeler, XmlElement nesnelerinin bir listesi olarak gösterilir. VSıX uzantıları bu alt öğeleri kullanarak, bildirim dosyasında ek veriler tanımlayabilir ve bunları çalışma zamanında numaralandırabilirler.
 
 ### <a name="installation-element"></a>Yükleme öğesi
  Bu bölüm, bu paketin yüklenebileceğine ve yüklenebileceğine yönelik uygulama SKU 'Larının yolunu tanımlar. Bu bölüm aşağıdaki öznitelikleri içerir:
@@ -90,7 +90,7 @@ VSıX dağıtımı bildirim dosyası bir VSıX paketinin içeriğini açıklar. 
 
 - `SystemComponent`-Bu isteğe bağlı öznitelik, bu paketin bir sistem bileşeni olarak kabul edilip edilmeyeceğini belirtir. Sistem bileşenleri Uzantı Yöneticisi Kullanıcı arabiriminde gösterilmez ve güncelleştirilemez. Varsayılan olarak, bu öznitelik, paketin bir sistem bileşeni olmadığını belirten false değeridir.
 
-- `AnyAttribute*`-Öğesi `Installation` , çalışma zamanında bir ad-değer çifti sözlüğü olarak sunulacak bir açık uçlu Öznitelikler kümesini kabul eder.
+- `AnyAttribute*`-Öğesi `Installation` , çalışma zamanında ad-değer çifti sözlüğü olarak sunulacak bir açık uçlu Öznitelikler kümesini kabul eder.
 
 - `<InstallationTarget>`-Bu öğe, VSıX yükleyicisinin paketi yüklediği konumu denetler. Eğer `Scope` özniteliğin değeri "ProductExtension" ise paketin, kendi içeriğinin bir parçası olarak bir bildirim dosyası yükleyen bir SKU 'yu hedeflemesi gerekir. Özniteliği açık veya varsayılan "ProductExtension" değerine sahip `<InstallationTarget>` olduğunda öğesi aşağıdaki `Scope` özniteliklere sahiptir:
 
@@ -133,7 +133,7 @@ VSıX dağıtımı bildirim dosyası bir VSıX paketinin içeriğini açıklar. 
 
     Visual Studio 2017 sürümleri için sürüm ifade edildiğinde, ikincil sürüm her zaman **0**olmalıdır. Örneğin, Visual Studio 2017 sürüm 15.3.26730.0, [15.0.26730.0, 16.0) olarak ifade edilmelidir. Bu yalnızca Visual Studio 2017 ve üzeri sürüm numaraları için gereklidir.
 
-  - `AnyAttribute*`-Öğesi `<InstallationTarget>` , ad-değer çifti sözlüğü olarak çalışma zamanında sunulan bir açık uçlu öznitelikler kümesine izin verir.
+  - `AnyAttribute*`-Öğesi `<InstallationTarget>` , çalışma zamanında bir ad-değer çifti sözlüğü olarak ortaya çıkarılan bir açık uçlu öznitelikler kümesine izin verir.
 
 ### <a name="dependencies-element"></a>Dependencies öğesi
  Bu öğe, bu paketin bildirdiği bağımlılıkların bir listesini içerir. Herhangi bir bağımlılık belirtilmişse, bu paketlerin (kendileri `Id`tarafından tanımlanan) daha önce yüklenmiş olması gerekir.
@@ -158,7 +158,7 @@ VSıX dağıtımı bildirim dosyası bir VSıX paketinin içeriğini açıklar. 
 
   - `Location`-Bu isteğe bağlı öznitelik, bu VSıX içindeki göreli yolu, iç içe geçmiş bir VSıX paketine ya da bağımlılık için indirme konumunun URL 'sini belirtir. Bu öznitelik, kullanıcının önkoşul paketini bulmasını sağlamak için kullanılır.
 
-  - `AnyAttribute*`-Öğesi `Dependency` , çalışma zamanında bir ad-değer çifti sözlüğü olarak sunulacak bir açık uçlu Öznitelikler kümesini kabul eder.
+  - `AnyAttribute*`-Öğesi `Dependency` , çalışma zamanında ad-değer çifti sözlüğü olarak sunulacak bir açık uçlu Öznitelikler kümesini kabul eder.
 
 ### <a name="assets-element"></a>Varlıklar öğesi
  Bu öğe, `<Asset>` bu paketin karşılaştığı her bir uzantı veya içerik öğesi için etiket listesi içerir.
@@ -187,9 +187,9 @@ VSıX dağıtımı bildirim dosyası bir VSıX paketinin içeriğini açıklar. 
 
   - `TargetVersion`-Belirtilen varlığın geçerli olduğu sürüm aralığı. Varlıkların birden çok sürümünü Visual Studio 'nun farklı sürümlerine teslim etmek için kullanılır. Geçerli olması için Visual Studio 2017,3 veya üstünü gerektirir.
 
-  - `AnyAttribute*`-Çalışma zamanında bir ad-değer çifti sözlüğü olarak gösterilen bir açık uçlu öznitelik kümesi.
+  - `AnyAttribute*`-Çalışma zamanında bir ad-değer çifti sözlüğü olarak ortaya çıkarılan bir açık uçlu öznitelik kümesi.
 
-    `<AnyElement>*`- `<Asset>` Başlangıç ve bitiş etiketi arasında yapılandırılmış içeriğe izin verilir. Tüm öğeler XmlElement nesnelerinin bir listesi olarak gösterilir. VSıX uzantıları, bildirim dosyasında yapılandırılmış türe özgü meta verileri tanımlayabilir ve çalışma zamanında bunları numaralandırır.
+    `<AnyElement>*`- `<Asset>` Başlangıç ve bitiş etiketi arasında yapılandırılmış içeriğe izin verilir. Tüm öğeler XmlElement nesnelerinin bir listesi olarak gösterilir. VSıX uzantıları, bildirim dosyasında yapılandırılmış türe özgü meta verileri tanımlayabilir ve bunları çalışma zamanında numaralandırır.
 
 ### <a name="sample-manifest"></a>Örnek bildirim
 

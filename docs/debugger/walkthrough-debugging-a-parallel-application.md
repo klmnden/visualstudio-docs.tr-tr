@@ -22,16 +22,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: efd3ffb81d8ef1ad69a24acc277b8f5fe10df436
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: dcc63eef048dd1e4ae205214ac62f8aa04d8a824
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62930736"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71252514"
 ---
-# <a name="walkthrough-debugging-a-parallel-application-in-visual-studio-c-visual-basic-c"></a>İzlenecek yol: Visual Studio'da paralel bir uygulamada hata ayıklaması (C#, Visual Basic, C++)
+# <a name="walkthrough-debugging-a-parallel-application-in-visual-studio-c-visual-basic-c"></a>İzlenecek yol: Visual Studio 'da paralel uygulamada hata ayıklama (C#, Visual Basic, C++)
 
-Bu izlenecek yolda nasıl kullanılacağını gösterir **Paralel Görevler** ve **Paralel Yığınlar** paralel uygulamada hata ayıklamak için windows. Bu windows anlamanıza ve çalışma zamanı davranışı kullanan kod doğrulama Yardım [görev paralel kitaplığı (TPL)](/dotnet/standard/parallel-programming/task-parallel-library-tpl) veya [eşzamanlılık çalışma zamanı](/cpp/parallel/concrt/concurrency-runtime). Bu izlenecek yol, yerleşik kesme noktaları olan örnek kodu sağlıyor. Kodları keser sonra izlenecek yolu nasıl kullanılacağını gösterir. **Paralel Görevler** ve **Paralel Yığınlar** bunu incelemek için windows.
+Bu izlenecek yolda nasıl kullanılacağını gösterir **Paralel Görevler** ve **Paralel Yığınlar** paralel uygulamada hata ayıklamak için windows. Bu pencereler, [görev paralel kitaplığı (TPL)](/dotnet/standard/parallel-programming/task-parallel-library-tpl) veya [Eşzamanlılık çalışma zamanı](/cpp/parallel/concrt/concurrency-runtime)kullanan kodun çalışma zamanı davranışını anlamanıza ve doğrulamanıza yardımcı olur. Bu izlenecek yol, yerleşik kesme noktaları olan örnek kodu sağlıyor. Kodları keser sonra izlenecek yolu nasıl kullanılacağını gösterir. **Paralel Görevler** ve **Paralel Yığınlar** bunu incelemek için windows.
 
  Bu izlenecek yol bu görevleri öğretir:
 
@@ -62,27 +62,27 @@ Bu izlenecek yolda nasıl kullanılacağını gösterir **Paralel Görevler** ve
 
 #### <a name="to-create-the-sample-project"></a>Örnek proje oluşturmak için
 
-1. Visual Studio'yu açın ve yeni bir proje oluşturun.
+1. Visual Studio 'Yu açın ve yeni bir proje oluşturun.
 
     ::: moniker range=">=vs-2019"
-    Tuşuna **Esc** başlangıç penceresini kapatın. Tür **Ctrl + Q** arama kutusunu açmak için şunu yazın **konsol** (veya **c ++** ), seçin **şablonları**ve ardından:
+    Başlangıç penceresini kapatmak için **ESC** tuşuna basın. **CTRL + Q** yazarak arama kutusunu açın, **konsol** (veya **c++** ) yazın, **Şablonlar**' ı seçin ve ardından:
 
-    - İçin C# veya Visual Basic seçin, **oluştur yeni konsol uygulaması (.NET Framework) projesi** ya da C# veya Visual Basic. Görünen iletişim kutusunda **Oluştur**.
-    - C++ için seçeneğini **yeni konsol uygulaması projesi oluşturma** C++ için. Görünen iletişim kutusunda **Oluştur**.
+    - Ya C# da Visual Basic için, C# veya Visual Basic için **Yeni konsol uygulaması (.NET Framework) projesi oluştur** ' u seçin. Görüntülenen iletişim kutusunda **Oluştur**' u seçin.
+    - İçin C++ **Yeni konsol uygulaması projesi oluştur** ' u seçin C++. Görüntülenen iletişim kutusunda **Oluştur**' u seçin.
 
-    Ardından, bir ad yazın veya varsayılan adı kullanın ve tıklayın **Oluştur**.
+    Ardından, bir ad yazın veya varsayılan adı kullanın ve **Oluştur**' a tıklayın.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    Üstteki menü çubuğundan seçin **dosya** > **yeni** > **proje**. Sol bölmesinde **yeni proje** iletişim kutusunda, aşağıdakileri seçin:
+    Üstteki menü çubuğundan seçin **dosya** > **yeni** > **proje**. **Yeni proje** iletişim kutusunun sol bölmesinde aşağıdakileri seçin:
 
-    - İçin bir C# uygulama altında **Visual C#** , seçin **Windows Masaüstü**seçip Ortadaki bölmeden **konsol uygulaması (.NET Framework)** .
-    - Bir Visual Basic uygulamasının altında **Visual Basic**, seçin **Windows Masaüstü**seçip Ortadaki bölmeden **konsol uygulaması (.NET Framework)** .
-    - Bir C++ uygulama altındaki **Visual C++** , seçin **Windows Masaüstü**,, seçip **Windows konsol uygulaması**.
+    - Bir C# uygulama için, **C#Visual**altında **Windows Masaüstü**' nün ardından orta bölmedeki **konsol uygulaması (.NET Framework)** seçeneğini belirleyin.
+    - Visual Basic bir uygulama için, **Visual Basic**altında **Windows Masaüstü**' ne ve ardından orta bölmedeki konsol uygulaması ' nı **(.NET Framework)** seçin.
+    - Bir C++ uygulama için, **C++Visual**altında **Windows Masaüstü**' nün ardından **Windows konsol uygulaması**' nı seçin.
 
-    Ardından, bir ad yazın veya varsayılan adı kullanın ve tıklayın **Tamam**.
+    Ardından, bir ad yazın veya varsayılan adı kullanın ve **Tamam**' a tıklayın.
     ::: moniker-end
 
-    Görmüyorsanız **konsol uygulaması** proje şablonu, Git **Araçları** > **araçları ve özellikleri Al...** , Visual Studio yükleyicisi açılır. Seçin **.NET masaüstü geliştirme** veya **C++ ile masaüstü geliştirme** iş yükü, ardından **Değiştir**.
+    **Konsol uygulaması** proje şablonunu görmüyorsanız Araçlar**ve Özellikler al.** .. ' a giderek Visual Studio yükleyicisi açan **Araçlar** > ' a gidin. **.Net masaüstü geliştirme** veya iş yükü **ile C++ masaüstü geliştirmeyi** seçin ve ardından **Değiştir**' i seçin.
 
 1. Projede .cpp, .cs veya .vb kod dosyasını açın. Boş bir kod dosyası oluşturmak için içeriğini silin.
 
@@ -290,7 +290,7 @@ Bu izlenecek yolda nasıl kullanılacağını gösterir **Paralel Görevler** ve
 
      Görev 5 tamamlandığından artık görüntülenmez. Bu durum, bilgisayarınızda değil ve kilitlenme gösterilmez, bir kez basarak adım **F11**.
 
-     Görev 3 ve 4. Görev artık birbirleri üzerinde bekleyen ve engellenir. 2. görev alt ve artık zamanlanmış 5 yeni görevleri de vardır. Zamanlanmış Görevler, kodda başlatıldı ancak henüz çalıştırmadıysanız görevlerdir. Bu nedenle, bunların **konumu** ve **iş parçacığı atama** sütunları boş.
+     Görev 3 ve 4. Görev artık birbirleri üzerinde bekleyen ve engellenir. 2\. görev alt ve artık zamanlanmış 5 yeni görevleri de vardır. Zamanlanmış Görevler, kodda başlatıldı ancak henüz çalıştırmadıysanız görevlerdir. Bu nedenle, bunların **konumu** ve **iş parçacığı atama** sütunları boş.
 
      Görünüm **Paralel Yığınlar** yeniden penceresi. Her kutusunun üst bilgisi, iş parçacığı kimlikleri ve adları gösteren bir araç ipucu yok. Görevler görünümüne geçiş **Paralel Yığınlar** penceresi. Aşağıdaki çizimde gösterildiği gibi görev kimliği, adı ve görevin durumunu görmek için bir üst bilgisinin üzerinde gelin.
 
@@ -312,7 +312,7 @@ Bu izlenecek yolda nasıl kullanılacağını gösterir **Paralel Görevler** ve
  Bu izlenecek yolda gösterilen **Paralel Görevler** ve **Paralel Yığınlar** hata ayıklayıcı, windows. Bu windows birden çok iş parçacıklı kod kullanan gerçek projelerde kullanın. C++, C# veya Visual Basic içinde yazılan paralel kod inceleyebilirsiniz.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
-- [Çok iş parçacıklı uygulamalarda hata ayıklama](../debugger/walkthrough-debugging-a-parallel-application.md)
+- [Çoklu Iş parçacıklı uygulamalarda hata ayıklama](../debugger/walkthrough-debugging-a-parallel-application.md)
 - [Hata ayıklayıcıya ilk bakış](../debugger/debugger-feature-tour.md)
 - [Yönetilen Kodda Hata Ayıklama](../debugger/debugging-managed-code.md)
 - [Paralel Programlama](/dotnet/standard/parallel-programming/index)

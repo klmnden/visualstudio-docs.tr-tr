@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 447a06d64691af1d77a634179631ce7822b6d43d
-ms.sourcegitcommit: 78e2637e4fbfadd4509b55276816b64f5c24c606
+ms.openlocfilehash: a40cbc30850edc96b569bd8d716b14b5d2035089
+ms.sourcegitcommit: 528178a304e66c0cb7ab98b493fe3c409f87493a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2019
-ms.locfileid: "70864694"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71273406"
 ---
 # <a name="developer-community-data-privacy"></a>Geliştirici Topluluğu veri gizliliği
 
@@ -70,10 +70,6 @@ Visual Studio 'dan **bir sorun rapor** başlatılmışsa, aşağıdaki veri tür
 
 - Varsa Windows Forms günlükleri
 
-> [!NOTE]
-> Günlük dosyaları yalnızca, dahil oldukları sorun raporunu göndererek izin sağladığınızda Microsoft 'a gönderilir. ' Sorun bildir ' penceresinin ' Özet ' adımında hangi dosyaların ekleneceğini görebilirsiniz (Bu notta yer alan ekran görüntüsüne bakın). Toplanan Günlükler% Temp% klasöründe depolanır ve her yükleme işleminden sonra düzenli olarak temizlenir. Sorun raporunuza bir günlük eklemek istemiyorsanız, raporu göndermeden önce dosyayı% Temp% klasöründen silin.  
-  > ![Sorun bildirme-toplanan günlüklerin Özeti](media/report-a-problem-logs-collected.png)
-
 - Bir ekran görüntüsü, eklemeyi tercih ederseniz
   
 - Verileri kaydetme, aşağıdakileri içeren bir kayıt eklemeyi tercih ederseniz:
@@ -84,8 +80,10 @@ Visual Studio 'dan **bir sorun rapor** başlatılmışsa, aşağıdaki veri tür
 
   - Döküm dosyası
 
-  > [!NOTE]
-  > Raporu göndermeden önce göndermek istemediğiniz kayıt verilerini silebilirsiniz.
+> [!NOTE]
+> Günlük dosyaları, ekran görüntüleri ve kayıt verileri yalnızca dahil oldukları sorun raporunu göndererek izin sağladığınızda Microsoft 'a gönderilir. ' Sorun bildir ' penceresinin ' Özet ' adımında hangi dosyaların ekleneceğini görebilirsiniz (Bu notta yer alan ekran görüntüsüne bakın). Toplanan Günlükler ve dosyalar% temp% klasöründe depolanır ve her yükleme işleminden sonra düzenli olarak temizlenir. Sorun raporunuza bir günlük eklemek istemiyorsanız, raporu göndermeden önce dosyayı% Temp% klasöründen silin.  
+  > ![Sorun bildirme-toplanan günlüklerin Özeti](media/report-a-problem-logs-collected.png)
+ 
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

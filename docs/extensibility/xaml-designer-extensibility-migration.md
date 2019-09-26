@@ -9,12 +9,12 @@ dev_langs:
 - csharp
 - vb
 monikerRange: vs-2019
-ms.openlocfilehash: 6ffa8888529586e23d6f9762c3ec5b724c708ca5
-ms.sourcegitcommit: ab2c49ce72ccf44b27b5c8852466d15a910453a6
+ms.openlocfilehash: 9f5085c7a655f186c3c8a4a6eecada8b440650cd
+ms.sourcegitcommit: 528178a304e66c0cb7ab98b493fe3c409f87493a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/14/2019
-ms.locfileid: "69024553"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71273212"
 ---
 # <a name="xaml-designer-extensibility-migration"></a>XAML Tasarımcısı genişletilebilirlik geçişi
 
@@ -26,7 +26,7 @@ Visual Studio 2019 ' de XAML Tasarımcısı iki farklı mimariyi destekler: tasa
 
 ![genişletilebilirlik-geçiş mimarisi](media/xaml-designer-extensibility-migration-architecture.png)
 
-Bu mimari geçişi nedeniyle, üçüncü taraf uzantıları artık üçüncü taraf denetim kitaplıklarıyla aynı işleme yüklenmez. Uzantılar artık denetim kitaplıklarında doğrudan bağımlılıklara sahip olamaz veya çalışma zamanı nesnelerine doğrudan erişemez. *Microsoft. Windows. Extensibility. dll* API 'si kullanılarak tasarımcı yalıtım mimarisi için daha önce yazılmış olan uzantılar, yüzey yalıtım mimarisiyle çalışmak için yeni bir yaklaşıma geçirilmelidir. Uygulamada, mevcut bir uzantının yeni genişletilebilirlik API Derlemeleriyle derlenmesi gerekir. Denetim kitaplıkları artık farklı bir işleme yüklendiğinden, [typeof](/dotnet/csharp/language-reference/keywords/typeof) veya Runtime örnekleri aracılığıyla çalışma zamanı denetim türlerine erişim değiştirilmelidir veya kaldırılmalıdır.
+Bu mimari geçişi nedeniyle, üçüncü taraf uzantıları artık üçüncü taraf denetim kitaplıklarıyla aynı işleme yüklenmez. Uzantılar artık denetim kitaplıklarında doğrudan bağımlılıklara sahip olamaz veya çalışma zamanı nesnelerine doğrudan erişemez. *Microsoft. Windows. Extensibility. dll* API 'si kullanılarak tasarımcı yalıtım mimarisi için daha önce yazılmış olan uzantılar, yüzey yalıtım mimarisiyle çalışmak için yeni bir yaklaşıma geçirilmelidir. Uygulamada, mevcut bir uzantının yeni genişletilebilirlik API Derlemeleriyle derlenmesi gerekir. Denetim kitaplıkları artık farklı bir işlemde yüklendiğinden, [typeof](/dotnet/csharp/language-reference/keywords/typeof) veya çalışma zamanı örnekleri aracılığıyla çalışma zamanı denetim türlerine erişim değiştirilmelidir veya kaldırılmalıdır.
 
 ## <a name="new-extensibility-api-assemblies"></a>Yeni genişletilebilirlik API derlemeleri
 
@@ -43,7 +43,7 @@ Yeni genişletilebilirlik API derlemeleri var olan genişletilebilirlik API derl
 
 Gerçek hedef çalışma zamanı (.NET Core veya UWP) için üçüncü taraf denetim kitaplıkları derlenirken, *. DesignTools. dll* uzantısının her zaman .NET Framework bir derleme olarak derlenmesi gerekir.
 
-## <a name="decouple-attribute-tables-from-runtime-types"></a>Çalışma zamanı türlerindeki öznitelik tablolarını ayrıştı
+## <a name="decouple-attribute-tables-from-run-time-types"></a>Çalışma zamanı türlerindeki öznitelik tablolarını ayrıştı
 
 Yüzey yalıtımı genişletilebilirlik modeli, uzantıların gerçek denetim kitaplıklarına bağlı olmasına izin vermez ve bu nedenle uzantılar denetim kitaplığından türlere başvuramaz. Örneğin, *MyLibrary. DesignTools. dll* *MyLibrary. dll*' de bir bağımlılığa sahip olmamalıdır.
 
@@ -103,6 +103,7 @@ End Class
 * `ContextMenuProvider`
 * `ParentAdapter`
 * `PlacementAdapter`
+* `DesignModeValueProvider`, tasarımcıda değiştirilmekte olan `TranslatePropertyValue` `InvalidateProperty` veya içinde değiştirildiğinde çağrılacak kısıtlamalarla desteklenir. Çalışma zamanı kodunda değiştirildiğinde çağrılmayacak.
 
 Özellik sağlayıcıları artık gerçek çalışma zamanı kodu ve denetim kitaplıklarından farklı bir işleme yüklendiğinden, artık çalışma zamanı nesnelerine doğrudan erişemeyecektir. Bunun yerine, ilgili model tabanlı API 'Leri kullanmak için tüm etkileşimlerin dönüştürülmesi gerekir. Model API <xref:System.Type> 'si güncelleştirilmiştir ve erişimi <xref:System.Object> artık yok ya da ile `TypeIdentifier` `TypeDefinition`değiştirilmiştir.
 
@@ -133,12 +134,15 @@ Surface yalıtım genişletilebilirlik API kümesinden kaldırılan API 'Ler:
 * `ModelFactory.CreateItem(EditingContext context, object item)`
 * `ViewItem.PlatformObject`
 * `ModelProperty.DefaultValue`
+* `AssemblyReferences.GetTypes(Type baseType)`
 
 Yerine kullanan `TypeIdentifier` API 'ler: <xref:System.Type>
 
 * `ModelFactory.CreateItem(EditingContext context, Type itemType, params object[] arguments)`
 * `ModelFactory.CreateItem(EditingContext context, Type itemType, CreateOptions options, params object[] arguments)`
 * `ModelFactory.CreateStaticMemberItem(EditingContext context, Type type, string memberName)`
+* `ModelFactory.ResolveType(EditingContext context, Type)`değiştirme`MetadataFactory.ResolveType(EditingContext context, TypeIdentifier typeIdentifier)`
+* `ModelService.ResolveType(TypeIdentifier typeIdentifier)`değiştirme`MetadataService.ResolveType(TypeIdentifier typeIdentifier)`
 * `ViewItem.ItemType`
 * `ModelEvent.EventType`
 * `ModelEvent.IsEventOfType(Type type)`
@@ -157,7 +161,6 @@ Ve yerine kullanan `TypeIdentifier` API 'ler artık Oluşturucu bağımsız değ
 
 Yerine kullanan `TypeDefinition` API 'ler: <xref:System.Type>
 
-* `ModelFactory.ResolveType(EditingContext context, TypeIdentifier typeIdentifier)`
 * `ValueTranslationService.GetProperties(Type itemType)`
 * `ValueTranslationService.HasValueTranslation(Type itemType, PropertyIdentifier identifier)`
 * `ValueTranslationService.TranslatePropertyValue(Type itemType, ModelItem item, PropertyIdentifier identifier, object value)`
@@ -172,15 +175,12 @@ Yerine kullanan `TypeDefinition` API 'ler: <xref:System.Type>
 * `FeatureManager.GetCustomAttributes(Type type, Type attributeType)`
 * `AdapterService.GetAdapter<TAdapterType>(Type itemType)`
 * `AdapterService.GetAdapter(Type adapterType, Type itemType)`
+* `PropertyEntry.PropertyType`
 
-Yerine kullanan `ModelItem` API 'ler: <xref:System.Object>
+Yerine kullanan `AssemblyIdentifier` API 'ler: `<xref:System.Reflection.AssemblyName?displayProperty=fullName>`
 
-* `ModelItemCollection.Insert(int index, object value)`
-* `ModelItemCollection.Remove(object value)`
-* `ModelItemDictionary.Add(object key, object value)`
-* `ModelItemDictionary.ContainsKey(object key)`
-* `ModelItemDictionary.Remove(object key)`
-* `ModelItemDictionary.TryGetValue(object key, out ModelItem value)`
+* `AssemblyReferences.ReferencedAssemblies`
+* `AssemblyReferences.LocalAssemblyName`değiştirme`AssemblyReferences.LocalAssemblyIdentifier`
 
 Ayrıca, `ModelItem` gibi `SetValue` API 'ler yalnızca, hedef çalışma zamanı için dönüştürülebilen temel türlerin veya yerleşik .NET Framework türlerinin örneklerini destekler. Şu anda bu türler desteklenir:
 

@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6481bbcca68c7471e4f25c7629e3b55fa407d175
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: ad26dcbbbef5a34796ca0aa134653c3c9df5d763
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71231715"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71253265"
 ---
 # <a name="ca2205-use-managed-equivalents-of-win32-api"></a>CA2205: Win32 API'sinin yönetilen eşdeğerlerini kullanın
 
@@ -39,7 +39,7 @@ Platform çağırma yöntemi tanımlanmıştır ve .NET 'te eşdeğer işlevsell
 
 ## <a name="rule-description"></a>Kural açıklaması
 
-Bir platform çağırma yöntemi, yönetilmeyen bir DLL işlevini çağırmak için kullanılır ve <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName> özniteliği `Declare` veya Visual Basic anahtar sözcüğü kullanılarak tanımlanır. Yanlış tanımlanmış bir platform çağırma yöntemi, yanlış adlandırılmış bir işlev, parametre ve dönüş değeri veri türlerinin hatalı eşlemesi ve çağırma kuralı ve karakteri gibi yanlış alan belirtimleri nedeniyle çalışma zamanı özel durumlarına neden olabilir kurmak. Varsa, daha basit ve yönetilmeyen yöntemi doğrudan çağırdığından, eşdeğer yönetilen yöntemi çağırmak daha basit ve daha az hataya açıktır. Platform çağırma yöntemini çağırmak, giderilmesi gereken ek güvenlik sorunlarına da yol açabilir.
+Bir platform çağırma yöntemi, yönetilmeyen bir DLL işlevini çağırmak için kullanılır ve <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName> özniteliği `Declare` veya Visual Basic anahtar sözcüğü kullanılarak tanımlanır. Yanlış tanımlanmış bir platform çağırma yöntemi, yanlış adlandırılmış bir işlev, parametre ve dönüş değeri veri türlerinin hatalı eşlemesi ve çağırma kuralı ve karakteri gibi yanlış alan belirtimleri nedeniyle çalışma zamanı özel durumlarına yol açabilir. kurmak. Varsa, daha basit ve yönetilmeyen yöntemi doğrudan çağırdığından, eşdeğer yönetilen yöntemi çağırmak daha basit ve daha az hataya açıktır. Platform çağırma yöntemini çağırmak, giderilmesi gereken ek güvenlik sorunlarına da yol açabilir.
 
 ## <a name="how-to-fix-violations"></a>İhlalleri çözme
 

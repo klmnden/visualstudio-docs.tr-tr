@@ -1,5 +1,5 @@
 ---
-title: Dinamik olarak menü öğeleri ekleme | Microsoft Docs
+title: Menü öğelerini dinamik olarak ekleme | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,38 +12,38 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 62ff05de5cfd6dfa01f8e93f22f9ac09b8e61575
-ms.sourcegitcommit: 3cc73e74921a9ceb622542e0e263abeebc455c00
+ms.openlocfilehash: 136ee925f1ee7505e7058eb643d7bac3a9222c06
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "67624475"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71252346"
 ---
-# <a name="dynamically-add-menu-items"></a>Dinamik olarak menü öğeleri ekleme
-Belirterek, çalışma zamanında menü öğesi ekleyebilirsiniz `DynamicItemStart` komutu Visual Studio komut tablosu bir yer tutucu düğmesi tanım işaretini ( *.vsct*) dosya ve ardından (kodda) görüntülemek için menü öğelerinin sayısını tanımlama ve komut işleme. VSPackage'ı yüklendiğinde, yer tutucu Dinamik menü öğeleri ile değiştirilir.
+# <a name="dynamically-add-menu-items"></a>Menü öğelerini dinamik olarak ekle
+Visual Studio komut tablosu ( *. vsct*) dosyasındaki bir `DynamicItemStart` yer tutucu düğme tanımında komut bayrağını belirterek, çalışma zamanında menü öğeleri ekleyebilirsiniz, sonra (kodda) komutları göstermek ve işlemek için menü öğelerinin sayısını tanımlayarak tanımlayabilirsiniz. VSPackage yüklendiğinde, yer tutucu dinamik menü öğeleriyle değiştirilmiştir.
 
- Visual Studio kullanan dinamik listelerinde **en son kullanılan** (MRU) listesinde, son açtığınız belgeleri adlarını görüntüler ve **Windows** windows adlarını gösteren liste şu anda açık olan.   `DynamicItemStart` Bir komut tanımı bayrağı VSPackage açılıncaya kadar komutu bir yer tutucu olduğunu belirtir. VSPackage'ı açıldığında, yer tutucu 0 ya da çalışma zamanında oluşturulan ve dinamik listeye eklenen diğer komutları ile değiştirilir. VSPackage'ı açılıncaya kadar dinamik listesi göründüğü menüsünde konumu görmek mümkün olmayabilir.  Dinamik listeyi doldurmak için VSPackage'ı ilk karakterine yer tutucu kimliği aynı olan bir Kimliğe sahip bir komut aramak için Visual Studio ister. Visual Studio eşleşen bir komut bulduğunda, komutun adını dinamik listesine ekler. Ardından kimliği artırır ve kalmayana kadar daha fazla dinamik komutları dinamik listeye eklemek için başka bir eşleşen komutunu arar.
+ Visual Studio, son zamanlarda açılan **en son kullanılanlar** (MRU) listesindeki dinamik listeleri kullanır ve o anda açık olan pencerelerin adlarını görüntüleyen **Windows** listesidir.   Bir komut tanımındaki bayrak, VSPackage açılmadan komutun bir yer tutucu olduğunu belirtir. `DynamicItemStart` VSPackage açıldığında, yer tutucu, çalışma zamanında oluşturulan ve dinamik listeye eklenen 0 veya daha fazla komutlarla değiştirilmiştir. Dinamik listenin, VSPackage açılmadan önce göründüğü menüde konumu göremeyebilirsiniz.  Dinamik listeyi doldurmak için, Visual Studio VSPackage 'a, ilk karakterleri yer tutucunun KIMLIĞIYLE aynı olan bir KIMLIĞE sahip bir komutu aramasını ister. Visual Studio eşleşen bir komut bulduğunda, komutun adını dinamik listeye ekler. Daha sonra KIMLIĞI artırır ve daha dinamik komut kalmayana kadar dinamik listeye eklemek için başka bir eşleşen komut arar.
 
- Bu izlenecek yol, üzerinde bir komut ile Visual Studio çözümünde başlangıç projesi ayarlama işlemi gösterilmektedir **Çözüm Gezgini** araç çubuğu. Etkin çözüm projeleri dinamik açılan listesine sahip bir menü denetleyicisi kullanır. Bu komut çözüm olduğunda görünmesini engellemek için açık olan veya açık çözüme tek bir proje varsa, yalnızca bir çözüm birden çok proje olduğunda VSPackage yüklenir.
+ Bu izlenecek yol, Visual Studio çözümünde başlangıç projesinin **Çözüm Gezgini** araç çubuğunda bir komutla nasıl ayarlanacağını gösterir. Etkin çözümdeki projelerin dinamik bir açılan listesine sahip olan bir menü denetleyicisi kullanır. Hiçbir çözüm açık olmadığında veya açık çözümün yalnızca bir projesi olduğunda, bu komutun görünmesini önlemek için, VSPackage yalnızca bir çözümde birden çok proje olduğunda yüklenir.
 
- Hakkında daha fazla bilgi için *.vsct* dosyaları görmek [Visual Studio komut tablosu (.vsct) dosyaları](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).
+ *. Vsct* dosyaları hakkında daha fazla bilgi için bkz. [Visual Studio komut tablosu (. vsct) dosyaları](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).
 
-## <a name="create-an-extension-with-a-menu-command"></a>Bir menü komutuyla uzantı oluşturma
+## <a name="create-an-extension-with-a-menu-command"></a>Menü komutuyla uzantı oluşturma
 
 1. Adlı bir VSIX projesi oluşturun `DynamicMenuItems`.
 
-2. Projeyi açtığında, bir özel komut öğe şablonu ekleyin ve adlandırın **DynamicMenu**. Daha fazla bilgi için [bir menü komutuyla uzantı oluşturma](../extensibility/creating-an-extension-with-a-menu-command.md).
+2. Proje açıldığında, özel bir komut öğesi şablonu ekleyin ve onu **DynamicMenu**olarak adlandırın. Daha fazla bilgi için bkz. [bir menü komutuyla uzantı oluşturma](../extensibility/creating-an-extension-with-a-menu-command.md).
 
-## <a name="setting-up-the-elements-in-the-vsct-file"></a>Öğeleri ayarlama *.vsct* dosyası
- Dinamik menü öğeleri araç çubuğuna menü denetleyicisi oluşturmak için aşağıdaki öğeleri belirtin:
+## <a name="setting-up-the-elements-in-the-vsct-file"></a>*. Vsct* dosyasındaki öğeleri ayarlama
+ Bir araç çubuğunda dinamik menü öğeleriyle bir menü denetleyicisi oluşturmak için aşağıdaki öğeleri belirtirsiniz:
 
-- Grupları, menü denetleyicisi içeren bir ve açılır menü öğelerini içeren başka iki komutu
+- Bir menü denetleyicisi ve açılan menüdeki menü öğelerini içeren başka iki komut grubu
 
-- Bir menü öğesi türü `MenuController`
+- Türünde bir menü öğesi`MenuController`
 
-- İki düğme, bir simge veya araç ipucu sağlayan bir yer tutucu menü öğeleri ve başka bir görevi görür.
+- İki düğme, bir menü öğeleri için yer tutucu görevi gören diğeri ve araç çubuğunda simge ve araç ipucunu sağlayan diğeri.
 
-1. İçinde *DynamicMenuPackage.vsct*, komut kimlikleri tanımlayın. Semboller bölümüne gidin ve Idsymbol öğeleri değiştirin **guidDynamicMenuPackageCmdSet** GuidSymbol blok. İki grup, menü denetleyicisi, yer tutucu komut ve bağlantı komutu için Idsymbol öğeleri tanımlamak gerekir.
+1. *Dynamicmenupackage. vsct*içinde, komut kimliklerini tanımlayın. Semboller bölümüne gidin ve **Guiddynamicmenupackagecmdset** GuidSymbol bloğundaki IDSymbol öğelerini değiştirin. İki grup, menü denetleyicisi, yer tutucu komutu ve tutturucu komutu için IDSymbol öğelerini tanımlamanız gerekir.
 
     ```xml
     <GuidSymbol name="guidDynamicMenuPackageCmdSet" value="{ your GUID here }">
@@ -58,7 +58,7 @@ Belirterek, çalışma zamanında menü öğesi ekleyebilirsiniz `DynamicItemSta
     </GuidSymbol>
     ```
 
-2. Grupları bölümünde, mevcut gruplarını silin ve az önce tanımladığınız iki gruplarını ekleyin:
+2. Gruplar bölümünde, mevcut grupları silin ve yeni tanımladığınız iki grubu ekleyin:
 
     ```xml
     <Groups>
@@ -75,7 +75,7 @@ Belirterek, çalışma zamanında menü öğesi ekleyebilirsiniz `DynamicItemSta
     </Groups>
     ```
 
-     MenuController ekleyin. Her zaman görünür olmadığından DynamicVisibility komut bayrağını ayarlayın. ButtonText görüntülenmez.
+     MenuController 'ı ekleyin. Her zaman görünür olmadığından DynamicVisibility komut bayrağını ayarlayın. ButtonText görüntülenmiyor.
 
     ```xml
     <Menus>
@@ -91,14 +91,14 @@ Belirterek, çalışma zamanında menü öğesi ekleyebilirsiniz `DynamicItemSta
     </Menus>
     ```
 
-3. Dinamik menü öğeleri için bir yer tutucu olarak biri diğeri bir yer işareti olarak iki düğme için MenuController ekleyin.
+3. Biri dinamik menü öğeleri için bir yer tutucu, diğeri ise Menuıcontroller için tutturucu olarak olmak üzere iki düğme ekleyin.
 
-     Yer tutucu düğmenin üst **MyMenuControllerGroup**. DynamicItemStart DynamicVisibility ve TextChanges komut bayrakları için yer tutucu düğmesi ekleyin. ButtonText görüntülenmez.
+     Yer tutucu düğmesinin üst öğesi **Mymenucontrollergroup**' dır. DynamicItemStart, DynamicVisibility ve TextChanges komut bayraklarını yer tutucu düğmesine ekleyin. ButtonText görüntülenmiyor.
 
-     Bağlantı düğmesi, simge ve araç ipucu metni içerir. Ayrıca üst bağlantı düğmesi olduğunu **MyMenuControllerGroup**. NoShowOnMenuController komut bayrak düğme açılan menüden denetleyicisi gerçekten etmediğinden emin olun ve kalıcı bağlantı yapmak için FixMenuController komut bayrağını ekleyin.
+     Tutturucu düğmesi simgeyi ve araç ipucu metnini barındırır. Tutturucu düğmesinin üst öğesi de **Mymenucontrollergroup**' dır. Düğmenin menü denetleyicisi açılan menüsünde gerçekten görünmediğinden emin olmak için NoShowOnMenuController komut bayrağını ve kalıcı bağlantı kurmak için FixMenuController komut bayrağını ekleyin.
 
     ```xml
-    <!-- The placeholder for the dynamic items that expand to N items at runtime. -->
+    <!-- The placeholder for the dynamic items that expand to N items at run time. -->
     <Buttons>
         <Button guid="guidDynamicMenuPackageCmdSet" id="cmdidMyDynamicStartCommand" priority="0x1000" >
           <Parent guid="guidDynamicMenuPackageCmdSet" id="MyMenuControllerGroup" />
@@ -128,9 +128,9 @@ Belirterek, çalışma zamanında menü öğesi ekleyebilirsiniz `DynamicItemSta
     </Buttons>
     ```
 
-4. Bir simge projeye ekleyin (içinde *kaynakları* klasör) ve ardından buna bir başvuru ekleyin *.vsct* dosya. Bu izlenecek yolda, proje şablonunda yer oklar simgesi kullanırız.
+4. Projeye bir simge ekleyin ( *kaynaklar* klasöründe) ve ardından başvurusunu *. vsct* dosyasına ekleyin. Bu kılavuzda, proje şablonunda bulunan oklar simgesini kullanırız.
 
-5. Semboller bölüm hemen önce komutları bölümüne dışında bir VisibilityConstraints bölümü ekleyin. (Sonra sembolleri eklerseniz, bir uyarı alabilirsiniz.) Bu bölümde, menü denetleyicisi, yalnızca zaman birden çok proje içeren bir çözüm yüklendikten göründüğünü emin olur.
+5. Semboller bölümünden hemen önce komutlar bölümünün dışında bir Visibilitykýsýtlamai bölümü ekleyin. (Simgelerden sonra eklerseniz bir uyarı alabilirsiniz.) Bu bölüm, menü denetleyicisinin yalnızca birden fazla proje içeren bir çözüm yüklendiğinde göründüğünden emin olmanızı sağlar.
 
     ```xml
     <VisibilityConstraints>
@@ -140,9 +140,9 @@ Belirterek, çalışma zamanında menü öğesi ekleyebilirsiniz `DynamicItemSta
     ```
 
 ## <a name="implement-the-dynamic-menu-command"></a>Dinamik menü komutunu uygulama
- Devralınan bir Dinamik menü komut sınıfı oluşturma <xref:Microsoft.VisualStudio.Shell.OleMenuCommand>. Bu uygulama, oluşturucu eşleşen komutları için kullanılacak bir koşulu belirtir. Geçersiz kılmanız gerekir <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.DynamicItemMatch%2A> bu koşul için kullanılacak yöntemi <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.MatchedCommandId%2A> özelliği çağrılacak komut tanımlar.
+ Öğesinden <xref:Microsoft.VisualStudio.Shell.OleMenuCommand>devralan dinamik bir menü komut sınıfı oluşturursunuz. Bu uygulamada, Oluşturucu eşleştirme komutları için kullanılacak bir koşul belirtir. Çağrılacak komutu tanımlayan <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.MatchedCommandId%2A> özelliğini <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.DynamicItemMatch%2A> ayarlamak için bu koşulu kullanmak için yöntemini geçersiz kılmanız gerekir.
 
-1. Adlı yeni bir C# sınıfı oluşturarak *DynamicItemMenuCommand.cs*, adlı bir sınıf ekleyin **DynamicItemMenuCommand** öğesinden devralan <xref:Microsoft.VisualStudio.Shell.OleMenuCommand>:
+1. DynamicItemMenuCommand.cs adlı yeni C# bir sınıf dosyasıoluşturun ve öğesinden <xref:Microsoft.VisualStudio.Shell.OleMenuCommand>devralan **dynamicıtemmenucommand** adlı bir sınıf ekleyin:
 
     ```csharp
     class DynamicItemMenuCommand : OleMenuCommand
@@ -152,7 +152,7 @@ Belirterek, çalışma zamanında menü öğesi ekleyebilirsiniz `DynamicItemSta
 
     ```
 
-2. Aşağıdaki using deyimlerini:
+2. Aşağıdaki using deyimlerini ekleyin:
 
     ```csharp
     using Microsoft.VisualStudio.Shell;
@@ -160,14 +160,14 @@ Belirterek, çalışma zamanında menü öğesi ekleyebilirsiniz `DynamicItemSta
     using System.ComponentModel.Design;
     ```
 
-3. Eşleşme koşulu depolamak için özel bir alan ekleyin:
+3. Eşleştirme koşulunu depolamak için bir özel alan ekleyin:
 
     ```csharp
     private Predicate<int> matches;
 
     ```
 
-4. Devralınan bir oluşturucu ekleyin <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> oluşturucu ve bir komut işleyici belirtir ve bir <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.BeforeQueryStatus> işleyici. Komut eşleme için bir koşul ekleyin:
+4. <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> Oluşturucuyu devralan bir Oluşturucu ekleyin ve bir komut işleyicisini <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.BeforeQueryStatus> ve işleyiciyi belirtin. Komutu eşleştirmek için bir koşul ekleyin:
 
     ```csharp
     public DynamicItemMenuCommand(CommandID rootId, Predicate<int> matches, EventHandler invokeHandler, EventHandler beforeQueryStatusHandler)
@@ -182,7 +182,7 @@ Belirterek, çalışma zamanında menü öğesi ekleyebilirsiniz `DynamicItemSta
     }
     ```
 
-5. Geçersiz kılma <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.DynamicItemMatch%2A> BT'nin eşleşme koşulu ve kümeleri çağırır yöntemi <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.MatchedCommandId%2A> özelliği:
+5. Yöntemi, eşleşmeler koşulunu çağıracak ve <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.MatchedCommandId%2A> özelliğini ayarlayan şekilde geçersiz kılın: <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.DynamicItemMatch%2A>
 
     ```csharp
     public override bool DynamicItemMatch(int cmdId)
@@ -202,17 +202,17 @@ Belirterek, çalışma zamanında menü öğesi ekleyebilirsiniz `DynamicItemSta
     }
     ```
 
-## <a name="add-the-command"></a>Komut ekleme
- Dinamik menüler ve menü öğeleri de dahil olmak üzere, menü komutlarını ayarladığınız DynamicMenu oluşturucudur.
+## <a name="add-the-command"></a>Komutu ekleyin
+ DynamicMenu Oluşturucusu, dinamik menüler ve menü öğeleri dahil olmak üzere menü komutlarını ayarladığınız yerdir.
 
-1. İçinde *DynamicMenuPackage.cs*, komut kümesi GUID'si ve komut Kimliğini ekleyin:
+1. *DynamicMenuPackage.cs*' de, komut kümesinin GUID 'ini ve komut kimliğini ekleyin:
 
     ```csharp
     public const string guidDynamicMenuPackageCmdSet = "00000000-0000-0000-0000-00000000";  // get the GUID from the .vsct file
     public const uint cmdidMyCommand = 0x104;
     ```
 
-2. İçinde *DynamicMenu.cs* dosyasında, aşağıdaki using deyimlerini:
+2. *DynamicMenu.cs* dosyasında, aşağıdaki using deyimlerini ekleyin:
 
     ```csharp
     using EnvDTE;
@@ -220,19 +220,19 @@ Belirterek, çalışma zamanında menü öğesi ekleyebilirsiniz `DynamicItemSta
     using System.ComponentModel.Design;
     ```
 
-3. İçinde `DynamicMenu` sınıfı, bir özel alan eklemek **dte2**.
+3. Sınıfında, DTE2 özel alanını ekleyin. `DynamicMenu`
 
     ```csharp
     private DTE2 dte2;
     ```
 
-4. Bir özel rootItemId alan ekleyin:
+4. Özel Rootıtemıd alanı ekle:
 
     ```csharp
     private int rootItemId = 0;
     ```
 
-5. DynamicMenu oluşturucusunun içinde menü komutunu ekleyin. Sonraki bölümde biz komut işleyicisi tanımlama olasılığınız `BeforeQueryStatus` eşleşme koşulu ve olay işleyicisi.
+5. DynamicMenu oluşturucusunda menü komutunu ekleyin. Sonraki bölümde, komut işleyicisini, `BeforeQueryStatus` olay işleyicisini ve eşleşme koşulunu tanımlayacağız.
 
     ```csharp
     private DynamicMenu(Package package)
@@ -260,10 +260,10 @@ Belirterek, çalışma zamanında menü öğesi ekleyebilirsiniz `DynamicItemSta
     }
     ```
 
-## <a name="implement-the-handlers"></a>İşleyicilerini uygulayan
- Dinamik menü öğelerini menü denetleyicisi üzerinde uygulamak için dinamik bir öğe tıklatıldığında komut işlemesi gerekir. Ayrıca, menü öğesi durumunu ayarlar mantığı uygulamalıdır. İşleyicileri eklemek `DynamicMenu` sınıfı.
+## <a name="implement-the-handlers"></a>İşleyicileri uygulama
+ Bir menü denetleyicisine dinamik menü öğeleri uygulamak için, bir dinamik öğeye tıklandığında komutu işlemeniz gerekir. Ayrıca, menü öğesinin durumunu ayarlayan mantığı da uygulamalısınız. İşleyicileri `DynamicMenu` sınıfına ekleyin.
 
-1. Uygulamak için **başlangıç projesi ayarlama** komutu, ekleme **OnInvokedDynamicItem** olay işleyicisi. Projenin adı çağrıldıktan ve mutlak yolu ayarlayarak başlangıç projesi olarak ayarlar komut metni ile aynı olan arar <xref:EnvDTE.SolutionBuild.StartupProjects%2A> özelliği.
+1. **Başlangıç projesini ayarla** komutunu uygulamak Için, **Onınvokeddynamicıtem** olay işleyicisini ekleyin. Bu, adı çağrılan komutun metniyle aynı olan projeyi arar ve <xref:EnvDTE.SolutionBuild.StartupProjects%2A> özellikte mutlak yolu ayarlayarak başlangıç projesi olarak ayarlar...
 
     ```csharp
     private void OnInvokedDynamicItem(object sender, EventArgs args)
@@ -286,7 +286,7 @@ Belirterek, çalışma zamanında menü öğesi ekleyebilirsiniz `DynamicItemSta
     }
     ```
 
-2. Ekleme `OnBeforeQueryStatusDynamicItem` olay işleyicisi. Bu önce adlı işleyici, bir `QueryStatus` olay. Menü öğesi bir "gerçek" öğesi, diğer bir deyişle, değil yer tutucu öğe olup olmadığını belirler ve olup (projeyi başlangıç projesi olarak zaten ayarlanmış anlamına gelir) zaten öğesi denetlenir.
+2. `OnBeforeQueryStatusDynamicItem` Olay işleyicisini ekleyin. Bu, bir `QueryStatus` olaydan önce çağrılan işleyicidir. Menü öğesinin bir "gerçek" öğe olup olmadığını, diğer bir deyişle, yer tutucu öğesi değil, öğenin zaten işaretli olup olmadığını (yani projenin zaten başlangıç projesi olarak ayarlanmış olduğunu) belirler.
 
     ```csharp
     private void OnBeforeQueryStatusDynamicItem(object sender, EventArgs args)
@@ -316,9 +316,9 @@ Belirterek, çalışma zamanında menü öğesi ekleyebilirsiniz `DynamicItemSta
     }
     ```
 
-## <a name="implement-the-command-id-match-predicate"></a>Komut kimliği eşleşme koşulu uygulama
+## <a name="implement-the-command-id-match-predicate"></a>Komut KIMLIĞI eşleşme koşulunu Uygula
 
-Eşleşme koşulu hemen uygulayın. İki şey belirlemek ihtiyacımız: ilk olarak mı komut kimliği (olduğu büyüktür veya eşittir bildirilen komut kimliği), geçerli ve saniye (Bu projeleri çözümdeki sayısından daha az) bir olası projesini olup olmadığını belirtir.
+Şimdi eşleşme koşulunu uygulayın. İki şeyi belirlememiz gerekir: ilk olarak, komut KIMLIĞININ geçerli olup olmadığı (belirtilen komut KIMLIĞINDEN büyük veya buna eşit) ve ikincisi, olası bir proje (çözümdeki proje sayısından daha az) olup olmadığını belirtir.
 
 ```csharp
 private bool IsValidDynamicItem(int commandId)
@@ -330,8 +330,8 @@ private bool IsValidDynamicItem(int commandId)
 }
 ```
 
-## <a name="set-the-vspackage-to-load-only-when-a-solution-has-multiple-projects"></a>Yalnızca bir çözüm birden çok proje olduğunda yüklenecek VSPackage'ı ayarlama
- Çünkü **başlangıç projesi ayarlama** komut değil mantıklı etkin çözüm birden fazla proje sahip olmadığı sürece, bu durumda yalnızca otomatik olarak yüklemek için VSPackage ayarlayabilirsiniz. Kullandığınız <xref:Microsoft.VisualStudio.Shell.ProvideAutoLoadAttribute> UI bağlamı birlikte <xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids.SolutionHasMultipleProjects>. İçinde *DynamicMenuPackage.cs* dosyası DynamicMenuPackage sınıfına aşağıdaki öznitelikler ekleyin:
+## <a name="set-the-vspackage-to-load-only-when-a-solution-has-multiple-projects"></a>VSPackage 'ı yalnızca bir çözümde birden çok proje olduğunda yüklenecek şekilde ayarlayın
+ Etkin çözümde birden fazla proje yoksa, **Başlangıç projesini ayarla** komutu anlamlı olmadığından, VSPackage 'ı yalnızca o durumda otomatik olarak yüklenecek şekilde ayarlayabilirsiniz. UI bağlamı <xref:Microsoft.VisualStudio.Shell.ProvideAutoLoadAttribute> <xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids.SolutionHasMultipleProjects>ile birlikte kullanırsınız. *DynamicMenuPackage.cs* dosyasında aşağıdaki öznitelikleri DynamicMenuPackage sınıfına ekleyin:
 
 ```csharp
 [PackageRegistration(UseManagedResourcesOnly = true)]
@@ -343,19 +343,19 @@ public sealed class DynamicMenuItemsPackage : Package
 {}
 ```
 
-## <a name="test-the-set-startup-project-command"></a>Test kümesi başlangıç projesi komutu
- Artık kodunuzu test edebilirsiniz.
+## <a name="test-the-set-startup-project-command"></a>Başlangıç projesini ayarla komutunu test etme
+ Şimdi kodunuzu test edebilirsiniz.
 
-1. Projeyi oluşturmak ve hata ayıklamaya başlayın. Deneysel örneği görüntülenmesi gerekir.
+1. Projeyi oluşturmak ve hata ayıklamaya başlayın. Deneysel örnek görünmelidir.
 
-2. Deneysel örneğinde, birden fazla proje içeren bir çözüm açın.
+2. Deneysel örnekte, birden fazla proje içeren bir çözüm açın.
 
-     Ok simgesini görürsünüz **Çözüm Gezgini** araç çubuğu. Çözüm içindeki farklı projelerde temsil eden bir menü öğeleri genişlettiğinizde, görüntülenmesi gerekir.
+     **Çözüm Gezgini** araç çubuğunda ok simgesini görmeniz gerekir. Genişlettikten sonra, çözümdeki farklı projeleri temsil eden menü öğeleri görünmelidir.
 
-3. Projelerden birine iade ettiğinizde, başlangıç projesi olur.
+3. Projelerden birini denetlediğinizde, bu, başlangıç projesi olur.
 
-4. Çözümü kapatın veya yalnızca bir proje içeren bir çözüm açın, araç çubuğu simgesi ortadan kalkması gerekir.
+4. Çözümü kapattığınızda veya yalnızca bir projesi olan bir çözümü açtığınızda, araç çubuğu simgesinin kaybolması gerekir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 - [Komutlar, menüler ve araç çubukları](../extensibility/internals/commands-menus-and-toolbars.md)
-- [VSPackage kullanıcı arabirimi öğelerini nasıl eklenir](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
+- [VSPackages Kullanıcı arabirimi öğeleri ekleme](../extensibility/internals/how-vspackages-add-user-interface-elements.md)

@@ -1,5 +1,5 @@
 ---
-title: ServerDocument sınıfını kullanarak bir sunucu üzerinde belgeleri yönetme
+title: ServerDocument sınıfını kullanarak bir sunucudaki belgeleri yönetme
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,56 +14,56 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 82763f78673391ab6a308ba026a6b9e53c3b474b
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 739946fc7fc6ea7014fb93010ca85094a7fc7056
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63438822"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71251926"
 ---
-# <a name="manage-documents-on-a-server-by-using-the-serverdocument-class"></a>ServerDocument sınıfını kullanarak bir sunucu üzerinde belgeleri yönetme
-  Kullanabileceğiniz `ServerDocument` sınıfını [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] Microsoft Office Word ve Microsoft Office Excel yüklü değilse, belge düzeyinde özelleştirmeler, çeşitli yönlerini yönetmek için. Aşağıdaki görevleri gerçekleştirebilirsiniz:
+# <a name="manage-documents-on-a-server-by-using-the-serverdocument-class"></a>ServerDocument sınıfını kullanarak bir sunucudaki belgeleri yönetme
+  Microsoft Office Word ve Microsoft Office `ServerDocument` Excel yüklenmemiş olsa [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] bile belge düzeyi özelleştirmelerinin çeşitli yönlerini yönetmek için içindeki sınıfını kullanabilirsiniz. Aşağıdaki görevleri gerçekleştirebilirsiniz:
 
-- Erişim ve bir belge veya çalışma kitabının veri önbelleğindeki verileri değiştirebilirsiniz. Daha fazla bilgi için [belgede önbelleğe alınan verilerle çalışmak](#CachedData).
+- Bir belge veya çalışma kitabının veri önbelleğindeki verilere erişin ve verileri değiştirin. Daha fazla bilgi için bkz. [belgedeki önbelleğe alınmış verilerle çalışma](#CachedData).
 
-- Bir belge ile ilişkilendirilen özelleştirme bütünleştirilmiş kodu yönetin. Daha fazla bilgi için [belge özelleştirme yönetme](#CustomizationInfo).
+- Bir belgeyle ilişkili özelleştirme derlemesini yönetin. Daha fazla bilgi için bkz. [belge özelleştirmesini yönetme](#CustomizationInfo).
 
   [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]
 
-## <a name="understand-the-serverdocument-class"></a>ServerDocument Sınıfını Anlama
- `ServerDocument` Sınıfı Office'in yüklü olmayan bilgisayarlarda kullanılmak üzere tasarlanmıştır. Bu nedenle, genellikle bu sınıf, Office ile konsol projeleri Windows Forms projeleri yerine veya gibi Office projeleri tümleştirmeyen uygulamalarda kullanılır. Kullanım <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> sınıfını *Microsoft.VisualStudio.Tools.Applications.ServerDocument.dll* derleme.
+## <a name="understand-the-serverdocument-class"></a>ServerDocument sınıfını anlayın
+ `ServerDocument` Sınıfı, Office yüklü olmayan bilgisayarlarda kullanılmak üzere tasarlanmıştır. Bu nedenle, genellikle bu sınıfı, Office projeleri yerine konsol projeleri veya Windows Forms projeleri gibi Office ile tümleştirilebilen uygulamalarda kullanırsınız. *Microsoft. VisualStudio. Tools. Applications. ServerDocument. dll* derlemesindeki sınıfınıkullanın.<xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument>
 
- `ServerDocument` Sınıfı kullanılarak oluşturulmuş olan belge düzeyi özelleştirmeleri üzerinde çalışılacak kullanılabilir [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)].
+ `ServerDocument` Sınıfı kullanılarak[!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)]oluşturulmuş belge düzeyi özelleştirmelerde işlem yapmak için kullanılabilir.
 
- Hakkında daha fazla bilgi için Visual Studio 2010 Araçları Office çalışma zamanı ve Office uzantıları için .NET Framework için bkz: [Office çalışma zamanına genel bakış için Visual Studio Araçları](../vsto/visual-studio-tools-for-office-runtime-overview.md).
+ Office çalışma zamanı için Visual Studio 2010 araçları ve .NET Framework için Office uzantıları hakkında daha fazla bilgi için, bkz. [Office çalışma zamanına genel bakış için Visual Studio Araçları](../vsto/visual-studio-tools-for-office-runtime-overview.md).
 
 > [!NOTE]
-> Kullanan eski bir uygulama varsa `ServerDocument` sınıfını `Visual Studio Tools for Office` sistem (sürüm 3.0 çalışma zamanı), `Visual Studio Tools for Office` sistem (sürüm 3.0 çalışma zamanı), uygulamayı çalıştıran bilgisayarlarda yüklü olması gerekir. `Visual Studio 2010 Tools for Office runtime` Bu uygulamaları çalıştıramazsınız.
+> Sisteminde sınıfını kullanan eski bir uygulamanız varsa (sürüm `Visual Studio Tools for Office` 3,0 çalışma zamanı), uygulamayı çalıştıran bilgisayarlarda sistem (sürüm 3,0 çalışma zamanı) yüklü olmalıdır. `ServerDocument` `Visual Studio Tools for Office` `Visual Studio 2010 Tools for Office runtime` Bu uygulamalar çalıştırılamaz.
 
-## <a name="CachedData"></a> Belge önbelleğe alınan verilerle çalışın
- `ServerDocument` Özelleştirilmiş belgeleri veri önbelleğindeki çalışmak için kullanabileceğiniz üyeleri sınıf sağlar. Önbelleğe alınan veriler hakkında daha fazla bilgi için bkz. [veriyi önbelleğe alma](../vsto/caching-data.md) ve [sunucudaki belgelerde verilere erişme](../vsto/accessing-data-in-documents-on-the-server.md).
+## <a name="CachedData"></a>Belgedeki önbelleğe alınmış verilerle çalışma
+ `ServerDocument` Sınıfı, özelleştirilmiş belgelerde veri önbelleğiyle çalışmak için kullanabileceğiniz Üyeler sağlar. Önbelleğe alınan veriler hakkında daha fazla bilgi için bkz. sunucudaki belgelerdeki verileri [önbelleğe alma](../vsto/caching-data.md) ve [verilere erişme](../vsto/accessing-data-in-documents-on-the-server.md).
 
- Aşağıdaki tabloda, önbelleğe alınan verilerle çalışmak için kullanabileceğiniz üyeleri listeler.
+ Aşağıdaki tabloda, önbelleğe alınmış verilerle çalışmak için kullanabileceğiniz üyeler listelenmektedir.
 
-|Görev|Üye kullanmak için|
+|Görev|Kullanılacak üye|
 |----------|-------------------|
-|Bir belge bir veri önbelleği olup olmadığını belirlemek için.|<xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.IsCacheEnabled%2A> Yöntemi.|
-|Bir belgede önbelleğe alınan verilere erişmek için.<br /><br /> Daha fazla bilgi için [sunucudaki belgelerde verilere erişme](../vsto/accessing-data-in-documents-on-the-server.md).|<xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.CachedData%2A> Özelliği.|
+|Bir belgenin veri önbelleğine sahip olup olmadığını belirleme.|<xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.IsCacheEnabled%2A> Yöntemi.|
+|Bir belgedeki önbelleğe alınmış verilere erişmek için.<br /><br /> Daha fazla bilgi için bkz. [sunucudaki belgelerdeki verilere erişme](../vsto/accessing-data-in-documents-on-the-server.md).|<xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.CachedData%2A> Özelliği.|
 
-## <a name="CustomizationInfo"></a> Belge özelleştirme yönetme
- Üyelerinin kullanabileceği `ServerDocument` bir belgeyle ilişkilidir özelleştirme bütünleştirilmiş kodu yönetmek için sınıf. Örneğin, böylece belge artık bir özelleştirme parçasıdır belgeden özelleştirme programlı olarak kaldırabilirsiniz.
+## <a name="CustomizationInfo"></a>Belge özelleştirmesini yönetme
+ Bir belgeyle ilişkili özelleştirme derlemesini yönetmek `ServerDocument` için sınıfının üyelerini kullanabilirsiniz. Örneğin, belgenin artık özelleştirmenin bir parçası olmaması için özelleştirmeyi bir belgeden program aracılığıyla kaldırabilirsiniz.
 
- Aşağıdaki tabloda özelleştirme bütünleştirilmiş kodu yönetmek için kullanabileceğiniz üyeleri listeler.
+ Aşağıdaki tabloda, özelleştirme derlemesini yönetmek için kullanabileceğiniz üyeler listelenmektedir.
 
-|Görev|Üye kullanmak için|
+|Görev|Kullanılacak üye|
 |----------|-------------------|
-|Bir belge olup olmadığını belirlemek için belge düzeyi özelleştirmesi parçasıdır.|<xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.GetCustomizationVersion%2A> Yöntemi.|
-|Program aracılığıyla bir belgeye çalışma zamanında bir özelleştirme eklemek için.<br /><br /> Daha fazla bilgi için [nasıl yapılır: Belgelere yönetilen kod uzantıları ekleme](../vsto/how-to-attach-managed-code-extensions-to-documents.md)|Aşağıdakilerden birini <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.AddCustomization%2A> yöntemleri.|
-|Program aracılığıyla bir özelleştirme çalışma zamanında bir belgeden kaldırmak için.<br /><br /> Daha fazla bilgi için [nasıl yapılır: Yönetilen kod uzantılarını kaldırma](../vsto/how-to-remove-managed-code-extensions-from-documents.md).|<xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.RemoveCustomization%2A> Yöntemi.|
-|Belge ile ilişkilendirilen dağıtım bildirimi URL'sini almak için.|<xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.DeploymentManifestUrl%2A> Özelliği.|
+|Belge düzeyi özelleştirmenin bir parçası olup olmadığını belirleme.|<xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.GetCustomizationVersion%2A> Yöntemi.|
+|Çalışma zamanında bir belgeye programlı bir şekilde özelleştirme eklemek için.<br /><br /> Daha fazla bilgi için [nasıl yapılır: Belgelere yönetilen kod uzantıları iliştirme](../vsto/how-to-attach-managed-code-extensions-to-documents.md)|<xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.AddCustomization%2A> Yöntemlerden biri.|
+|Çalışma zamanında bir belgeden program aracılığıyla özelleştirmeyi kaldırma.<br /><br /> Daha fazla bilgi için [nasıl yapılır: Yönetilen kod uzantılarını belgelerden](../vsto/how-to-remove-managed-code-extensions-from-documents.md)kaldırın.|<xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.RemoveCustomization%2A> Yöntemi.|
+|Belgeyle ilişkili dağıtım bildiriminin URL 'sini almak için.|<xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.DeploymentManifestUrl%2A> Özelliği.|
 
 ## <a name="see-also"></a>Ayrıca bkz.
-- [Nasıl yapılır: Belgelere yönetilen kod uzantıları ekleme](../vsto/how-to-attach-managed-code-extensions-to-documents.md)
+- [Nasıl yapılır: Belgelere yönetilen kod uzantıları iliştirme](../vsto/how-to-attach-managed-code-extensions-to-documents.md)
 - [Nasıl yapılır: Belgelerden yönetilen kod uzantılarını kaldırma](../vsto/how-to-remove-managed-code-extensions-from-documents.md)
 - [Office çalışma zamanına genel bakış için Visual Studio Araçları](../vsto/visual-studio-tools-for-office-runtime-overview.md)
-- [Verileri önbelleğe](../vsto/caching-data.md)
+- [Önbellek verileri](../vsto/caching-data.md)

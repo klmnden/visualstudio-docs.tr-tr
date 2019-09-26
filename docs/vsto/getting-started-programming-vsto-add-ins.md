@@ -1,5 +1,5 @@
 ---
-title: VSTO eklentileri programlama kullanmaya başlayın
+title: VSTO Eklentilerini Programlamaya Başlama
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -15,30 +15,30 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7b709012dafe0db3dcc0959908a1e6b4d9e07e21
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 39cf3e8d59a2ced26f878da979fa87fc663b5bab
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62788778"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71253585"
 ---
-# <a name="get-started-programming-vsto-add-ins"></a>VSTO eklentileri programlama kullanmaya başlayın
-  VSTO eklentileri, Microsoft Office uygulamalarını otomatikleştirmek, uygulamanın özelliklerini genişletmek ve uygulamanın kullanıcı arabirimini (UI) özelleştirmek için kullanabilirsiniz. Visual Studio kullanarak oluşturabileceğiniz nasıl VSTO Eklentileri Office çözümlerinin diğer türleri için karşılaştırma hakkında bilgi için bkz [Office çözümleri geliştirmesine genel bakış &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).
+# <a name="get-started-programming-vsto-add-ins"></a>VSTO Eklentilerini Programlamaya Başlama
+  Microsoft Office uygulamalarını otomatikleştirmek, uygulamanın özelliklerini genişletmek ve uygulamanın kullanıcı arabirimini (UI) özelleştirmek için VSTO Eklentilerini kullanabilirsiniz. VSTO eklentilerinin, Visual Studio kullanarak oluşturabileceğiniz diğer Office çözümü türleriyle nasıl Karşılaştırıldığı hakkında bilgi için bkz. [Office çözümleri geliştirmeye genel &#40;bakış VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).
 
  [!INCLUDE[appliesto_allapp](../vsto/includes/appliesto-allapp-md.md)]
 
-## <a name="create-vsto-add-in-projects"></a>VSTO eklentisi projeleri oluşturma
- VSTO eklentisi proje şablonlarını kullanarak VSTO eklentisi projeleri oluşturma **yeni proje** iletişim kutusu. Bu şablonlar, gerekli bütünleştirilmiş kod başvuruları ve proje dosyaları içerir. Visual Studio içinde Office uygulamalarının çoğu için VSTO eklentisi proje şablonları sağlar.
+## <a name="create-vsto-add-in-projects"></a>VSTO eklenti projeleri oluşturma
+ **Yeni proje** ILETIŞIM kutusundaki VSTO eklentisi proje şablonlarından bırını kullanarak VSTO eklenti projeleri oluşturun. Bu şablonlar gerekli derleme başvurularını ve proje dosyalarını içerir. Visual Studio, Office 'teki çoğu uygulama için VSTO eklentisi proje şablonları sağlar.
 
- Bir VSTO Eklenti projesinin nasıl oluşturulacağı hakkında daha fazla bilgi için bkz. [nasıl yapılır: Visual Studio'da Office projeleri oluşturma](../vsto/how-to-create-office-projects-in-visual-studio.md). Proje şablonları hakkında daha fazla bilgi için bkz. [Office proje şablonlarına genel bakış](../vsto/office-project-templates-overview.md).
+ VSTO eklenti projesi oluşturma hakkında daha fazla bilgi için bkz [. nasıl yapılır: Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)'da Office projeleri oluşturun. Proje şablonları hakkında daha fazla bilgi için bkz. [Office proje şablonlarına genel bakış](../vsto/office-project-templates-overview.md).
 
-## <a name="develop-vsto-add-in-projects"></a>VSTO eklentisi projeleri geliştirme
- Bir VSTO eklenti projesi oluşturduğunuzda, Visual Studio otomatik olarak oluşturur bir *ThisAddIn.vb* (içinde [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)]) veya *ThisAddIn.cs* (C# ') kod dosyası. Bu dosyayı içeren `ThisAddIn` , VSTO eklenti için temel sağlayan sınıf. Bu sınıfın üyeleri, VSTO eklentisi yüklenmedi veya kaldırıldığında, konak uygulamanın nesne modeline erişme ve uygulamanın özelliklerini genişletmek için kodu çalıştırmak için kullanabilirsiniz. Daha fazla bilgi için [Program VSTO eklentileri](../vsto/programming-vsto-add-ins.md).
+## <a name="develop-vsto-add-in-projects"></a>VSTO eklentisi projelerini geliştirme
+ VSTO eklenti projesi oluşturduğunuzda, Visual Studio otomatik olarak bir *ThisAddIn. vb* (ın [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)]) veya *ThisAddIn.cs* (ın C#) kod dosyası oluşturur. Bu dosya, VSTO `ThisAddIn` eklentisi için temel sağlayan sınıfını içerir. VSTO eklentisi yüklendiğinde veya kaldırıldığında, ana bilgisayar uygulamasının nesne modeline erişmek ve uygulamanın özelliklerini genişletmek için bu sınıfın üyelerini kullanabilirsiniz. Daha fazla bilgi için bkz. [Program VSTO eklentileri](../vsto/programming-vsto-add-ins.md).
 
-## <a name="automate-applications-by-using-the-object-models"></a>Nesne modelleri kullanarak uygulamaları otomatikleştirme
- Microsoft Office uygulamasının nesne modellerini bir VSTO eklenti programlayabileceğiniz birçok türü ortaya çıkarır. Bu türler uygulamayı otomatikleştirmek için kullanabilirsiniz. Örneğin, program aracılığıyla oluşturma ve Outlook içinde bir e-posta iletisi göndermek veya belgeyi açın ve içeriği Word'de ekleyin. Konak uygulama kodundaki nesne modeline erişme hakkında daha fazla bilgi için bkz. [Program VSTO eklentileri](../vsto/programming-vsto-add-ins.md).
+## <a name="automate-applications-by-using-the-object-models"></a>Nesne modellerini kullanarak uygulamaları otomatikleştirin
+ Microsoft Office uygulamaların nesne modelleri, VSTO Eklentilerindeki programlama yapabilecekleri birçok türü kullanıma sunar. Uygulamayı otomatikleştirebilmek için bu türleri kullanabilirsiniz. Örneğin, Outlook 'ta program aracılığıyla bir e-posta iletisi oluşturabilir ve gönderebilirsiniz ya da bir belgeyi açabilir ve Word 'e içerik ekleyebilirsiniz. Kod içinde ana bilgisayar uygulamasının nesne modeline erişme hakkında daha fazla bilgi için bkz. [Program VSTO eklentileri](../vsto/programming-vsto-add-ins.md).
 
- Belirli Microsoft Office uygulamasının nesne modelleri hakkında daha fazla bilgi için aşağıdaki konulara bakın:
+ Belirli Microsoft Office uygulamalarının nesne modelleri hakkında daha fazla bilgi için aşağıdaki konulara bakın:
 
 - [Excel nesne modeline genel bakış](../vsto/excel-object-model-overview.md)
 
@@ -54,41 +54,41 @@ ms.locfileid: "62788778"
 
 - [Visio nesne modeline genel bakış](../vsto/visio-object-model-overview.md)
 
-## <a name="customize-the-user-interface-of-applications"></a>Uygulamalar kullanıcı arabirimini özelleştirme
- Bir VSTO eklentisi kullanarak konak uygulamanın kullanıcı arabirimini özelleştirmek için birçok farklı yol vardır:
+## <a name="customize-the-user-interface-of-applications"></a>Uygulamaların kullanıcı arabirimini özelleştirme
+ VSTO eklentisini kullanarak konak uygulamasının Kullanıcı arabirimini özelleştirmenin birkaç farklı yolu vardır:
 
-- Excel ve Word için belge yönetilen denetimler ekleyebilirsiniz. Daha fazla bilgi için [genişletmek Word belgelerini ve Excel çalışma kitaplarını çalışma zamanında VSTO Add-Ins](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).
+- Excel ve Word için belgelere yönetilen denetimler ekleyebilirsiniz. Daha fazla bilgi için bkz. [çalışma ZAMANıNDA VSTO Eklentilerindeki Word belgelerini ve Excel çalışma kitaplarını genişletme](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).
 
-- Uygulama destekliyorsa, Şerit özelleştirebilirsiniz. Daha fazla bilgi için [Şerite Genel Bakış](../vsto/ribbon-overview.md).
+- Uygulama destekliyorsa, şeridi özelleştirebilirsiniz. Daha fazla bilgi için bkz. [Şerit 'e genel bakış](../vsto/ribbon-overview.md).
 
-- Uygulama destekliyorsa, özel görev bölmesi oluşturabilirsiniz. Daha fazla bilgi için [özel görev bölmeleri](../vsto/custom-task-panes.md).
+- Uygulama destekliyorsa, özel bir görev bölmesi oluşturabilirsiniz. Daha fazla bilgi için bkz. [özel görev bölmeleri](../vsto/custom-task-panes.md).
 
-- Outlook için özel form bölgesi oluşturabilirsiniz. Daha fazla bilgi için [oluşturma Outlook form bölgeleri](../vsto/creating-outlook-form-regions.md).
+- Outlook için özel bir form bölgesi oluşturabilirsiniz. Daha fazla bilgi için bkz. [Outlook form bölgeleri oluşturma](../vsto/creating-outlook-form-regions.md).
 
-- Tüm Microsoft Office uygulamaları için Windows Forms, VSTO eklenti içinde görüntüleyebilirsiniz.
+- Tüm Microsoft Office uygulamalar için, VSTO eklentiinizdeki Windows Forms görüntüleyebilirsiniz.
 
-  Microsoft Office UI uygulamaları özelleştirme hakkında daha fazla bilgi için bkz. [Office UI özelleştirmesi](../vsto/office-ui-customization.md).
+  Microsoft Office uygulamalarının Kullanıcı arabirimini özelleştirme hakkında daha fazla bilgi için bkz. [OFFICE UI özelleştirmesi](../vsto/office-ui-customization.md).
 
 ## <a name="next-steps"></a>Sonraki adımlar
- VSTO eklentileri oluşturma konusunda bilgi almak için aşağıdaki izlenecek yollar bakın:
+ VSTO eklentileri oluşturmayı öğrenmek için aşağıdaki izlenecek yollara bakın:
 
-- [İzlenecek yol: Excel için ilk VSTO eklentinizi oluşturma](../vsto/walkthrough-creating-your-first-vsto-add-in-for-excel.md)
+- [İzlenecek yol: Excel için ilk VSTO eklentisini oluşturma](../vsto/walkthrough-creating-your-first-vsto-add-in-for-excel.md)
 
-- [İzlenecek yol: İlk VSTO eklentinizi Outlook için oluşturma](../vsto/walkthrough-creating-your-first-vsto-add-in-for-outlook.md)
+- [İzlenecek yol: Outlook için ilk VSTO eklentisini oluşturma](../vsto/walkthrough-creating-your-first-vsto-add-in-for-outlook.md)
 
-- [İzlenecek yol: PowerPoint için ilk VSTO eklentinizi oluşturma](../vsto/walkthrough-creating-your-first-vsto-add-in-for-powerpoint.md)
+- [İzlenecek yol: PowerPoint için ilk VSTO eklentisini oluşturma](../vsto/walkthrough-creating-your-first-vsto-add-in-for-powerpoint.md)
 
-- [İzlenecek yol: İlk VSTO eklentinizi projesi oluşturma](../vsto/walkthrough-creating-your-first-vsto-add-in-for-project.md)
+- [İzlenecek yol: Proje için ilk VSTO eklentisini oluşturma](../vsto/walkthrough-creating-your-first-vsto-add-in-for-project.md)
 
-- [İzlenecek yol: Word için ilk VSTO eklentinizi oluşturma](../vsto/walkthrough-creating-your-first-vsto-add-in-for-word.md)
+- [İzlenecek yol: Word için ilk VSTO eklentisini oluşturma](../vsto/walkthrough-creating-your-first-vsto-add-in-for-word.md)
 
-  Bu izlenecek yollar size Office geliştirme araçlarını Visual Studio ve programlama modeli için VSTO eklentileri için tanıtır.
+  Bu izlenecek yollar, Visual Studio 'da Office geliştirme araçları ve VSTO eklentileri için programlama modeli sağlar.
 
-  Size bazı yaygın görevleri Office projelerinde yol konuların listesi için bkz. [Office programlarındaki ortak görevler](../vsto/common-tasks-in-office-programming.md).
+  Office projelerindeki yaygın görevlerden bazıları boyunca size kılavuzluk eden konuların listesi için bkz. [Office programlamada ortak görevler](../vsto/common-tasks-in-office-programming.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
-- [Nasıl yapılır: Visual Studio'da Office projeleri oluşturma](../vsto/how-to-create-office-projects-in-visual-studio.md)
-- [Başlama &#40;Visual Studio'da Office geliştirme&#41;](../vsto/getting-started-office-development-in-visual-studio.md)
+- [Nasıl yapılır: Visual Studio 'da Office projeleri oluşturma](../vsto/how-to-create-office-projects-in-visual-studio.md)
+- [Visual Studio &#40;'da Office geliştirme ile çalışmaya başlama&#41;](../vsto/getting-started-office-development-in-visual-studio.md)
 - [Office çözümlerinde kod yazma](../vsto/writing-code-in-office-solutions.md)
 - [VSTO Eklentileri Mimarisi](../vsto/architecture-of-vsto-add-ins.md)
-- [VSTO eklentilerini programlama](../vsto/programming-vsto-add-ins.md)
+- [Program VSTO eklentileri](../vsto/programming-vsto-add-ins.md)

@@ -17,28 +17,28 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3a56f8bdfed38d77a939ab8e8b159510da7fcb15
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 5a32cfc84aa9bc93761dc8b57c13651eb04031a2
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63438599"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71255518"
 ---
 # <a name="walkthrough-create-a-custom-tab-by-using-the-ribbon-designer"></a>İzlenecek yol: Şerit Tasarımcısını kullanarak özel sekme oluşturma
-  Şerit Tasarımcısını kullanarak, özel bir sekme oluşturabilir ve ardından ekleyin ve üzerinde denetimleri konumlandırma.
+  Şerit Tasarımcısını kullanarak özel bir sekme oluşturup bu sekmeye denetim ekleyip konumlandırabilirsiniz.
 
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]
 
  Bu izlenecek yol aşağıdaki görevleri gösterir:
 
-- [Eylemler bölmesi oluşturmak](#BKMK_CreateActionsPanes).
+- [Eylemler bölmesi oluşturun](#BKMK_CreateActionsPanes).
 
-- [Özel sekme oluşturma](#BKMK_CreateCustomTab).
+- [Özel bir sekme oluşturun](#BKMK_CreateCustomTab).
 
-- [Özel sekme üzerindeki düğmeleri kullanarak Eylemler bölmelerini gösterme ve gizleme](#BKMK_HideShowActionsPane).
+- [Özel sekmedeki düğmeleri kullanarak Eylemler bölmesini gizleyin ve gösterin](#BKMK_HideShowActionsPane).
 
 > [!NOTE]
-> Bilgisayarınız, aşağıdaki yönergelerde yer alan Visual Studio kullanıcı arabirimi öğelerinden bazıları için farklı adlar veya konumlar gösterebilir. Sahip olduğunuz Visual Studio sürümü ve kullandığınız ayarlar bu öğeleri belirler. Daha fazla bilgi için [Visual Studio IDE'yi kişiselleştirme](../ide/personalizing-the-visual-studio-ide.md).
+> Bilgisayarınız, aşağıdaki yönergelerde yer alan Visual Studio kullanıcı arabirimi öğelerinden bazıları için farklı adlar veya konumlar gösterebilir. Sahip olduğunuz Visual Studio sürümü ve kullandığınız ayarlar bu öğeleri belirler. Daha fazla bilgi için bkz. [Visual STUDIO IDE 'Yi kişiselleştirme](../ide/personalizing-the-visual-studio-ide.md).
 
 ## <a name="prerequisites"></a>Önkoşullar
  Bu izlenecek yolu tamamlamak için aşağıdaki bileşenlere ihtiyacınız vardır:
@@ -47,123 +47,123 @@ ms.locfileid: "63438599"
 
 - Microsoft Excel
 
-## <a name="create-an-excel-workbook-project"></a>Bir Excel çalışma kitabı projesi oluşturma
- Şerit Tasarımcısını kullanma adımları bütün Office uygulamaları için neredeyse aynıdır. Bu örnekte, bir Excel çalışma kitabı kullanılmıştır.
+## <a name="create-an-excel-workbook-project"></a>Excel çalışma kitabı projesi oluşturma
+ Şerit Tasarımcısını kullanma adımları tüm Office uygulamaları için neredeyse aynıdır. Bu örnek bir Excel çalışma kitabı kullanır.
 
-### <a name="to-create-an-excel-workbook-project"></a>Bir Excel çalışma kitabı projesi oluşturmak için
+### <a name="to-create-an-excel-workbook-project"></a>Excel çalışma kitabı projesi oluşturmak için
 
-- Adlı bir Excel çalışma kitabı projesi oluşturun **MyExcelRibbon**. Daha fazla bilgi için [nasıl yapılır: Visual Studio'da Office projeleri oluşturma](../vsto/how-to-create-office-projects-in-visual-studio.md).
+- **MyExcelRibbon**adlı bir Excel çalışma kitabı projesi oluşturun. Daha fazla bilgi için [nasıl yapılır: Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)'da Office projeleri oluşturun.
 
-     Visual Studio tasarımcıda yeni çalışma kitabını açar ve ekler **MyExcelRibbon** için proje **Çözüm Gezgini**.
+     Visual Studio tasarımcıda yeni çalışma kitabını açar ve **Çözüm Gezgini** **MyExcelRibbon** projesini ekler.
 
-## <a name="BKMK_CreateActionsPanes"></a> Eylemler bölmesi oluşturma
- Projeye iki özel eylem bölmesi ekleyin. Daha sonra gösteren ve özel sekmeye bu eylemler bölmelerini gizleme düğmeler ekleyeceksiniz.
+## <a name="BKMK_CreateActionsPanes"></a>Eylem bölmeleri oluşturma
+ Projeye iki özel eylem bölmesi ekleyin. Daha sonra bu eylemler bölmelerini gösteren ve özel sekmeye gizleyecek düğmeler ekleyeceksiniz.
 
 ### <a name="to-create-actions-panes"></a>Eylemler bölmesi oluşturmak için
 
-1. Üzerinde **proje** menüsünde seçin **Yeni Öğe Ekle**.
+1. **Proje** menüsünde **Yeni öğe Ekle**' yi seçin.
 
-2. İçinde **Yeni Öğe Ekle** iletişim kutusunda **ActionsPaneControl**ve ardından **Ekle**.
+2. **Yeni öğe Ekle** iletişim kutusunda, **ActionsPaneControl**' u ve ardından **Ekle**' yi seçin.
 
-     **ActionsPaneControl1.cs** veya **ActionsPaneControl1.vb** dosyası tasarımcıda açılır.
+     **ActionsPaneControl1.cs** veya **ActionsPaneControl1. vb** dosyası tasarımcıda açılır.
 
-3. Gelen **ortak denetimleri** sekmesinde **araç kutusu**, Tasarımcı yüzeyine bir etiket ekleyin.
+3. **Araç kutusunun** **ortak denetimler** sekmesinden tasarımcı yüzeyine bir etiket ekleyin.
 
-4. İçinde **özellikleri** penceresinde **metin** label1'in özelliği **Actions Pane 1**.
+4. **Özellikler** penceresinde Label1 öğesinin **Text** özelliğini **Eylemler bölmesi 1**olarak ayarlayın.
 
-5. İkinci eylemler bölmesi ve etiketi oluşturmak için 1 ile 5 adımlarını tekrarlayın. Ayarlama **metin** özelliği İkinci etiketin **Actions Pane 2**.
+5. İkinci bir eylemler bölmesi ve etiketi oluşturmak için 1 ile 5 arasındaki adımları yineleyin. İkinci etiketin **Text** özelliğini **Eylemler bölmesi 2**olarak ayarlayın.
 
-## <a name="BKMK_CreateCustomTab"></a> Özel sekme oluşturma
- Office uygulaması tasarım yönergelerinden biri olduğundan, kullanıcıların Office uygulaması UI denetimini her zaman olmalıdır. Bu özelliği Eylemler bölmelerine uygulamak eklemek için Göster ve her bir özel Şerit sekmesinde Eylemler bölmesinde gizleyen düğmeler ekleyebilirsiniz. Özel sekme oluşturmak için bir **Şerit (Görsel Tasarımcı)** projeye öğe. Tasarımcı eklemenize ve yerleştirmenize, denetim özelliklerini ayarlamanıza ve denetim olaylarını yardımcı olur.
+## <a name="BKMK_CreateCustomTab"></a>Özel sekme oluşturma
+ Office uygulaması tasarım yönergelerinden biri, kullanıcıların her zaman Office uygulaması kullanıcı arabirimi denetimine sahip olması gerekir. Bu özelliği eylemler bölmesine eklemek için, Şeritteki özel bir sekmeden her bir eylem bölmesini gösteren ve gizleyen düğmeler ekleyebilirsiniz. Özel bir sekme oluşturmak için projeye bir **Şerit (görsel Tasarımcı)** öğesi ekleyin. Tasarımcı denetimleri eklemenize ve konumlandıramanıza, denetim özelliklerini ayarlamanıza ve denetim olaylarını işleymenize yardımcı olur.
 
-### <a name="to-create-a-custom-tab"></a>Özel sekme oluşturma
+### <a name="to-create-a-custom-tab"></a>Özel sekme oluşturmak için
 
-1. Üzerinde **proje** menüsünde seçin **Yeni Öğe Ekle**.
+1. **Proje** menüsünde **Yeni öğe Ekle**' yi seçin.
 
-2. İçinde **Yeni Öğe Ekle** iletişim kutusunda **Şerit (Görsel Tasarımcı)**.
+2. **Yeni öğe Ekle** Iletişim kutusunda **Şerit (görsel Tasarımcı)** öğesini seçin.
 
-3. Yeni Şeridin adını değiştirmek **MyRibbon**ve **Ekle**.
+3. Yeni şeridin adını **MyRibbon**olarak değiştirin ve **Ekle**' yi seçin.
 
-     **MyRibbon.cs** veya **MyRibbon.vb** dosyası Şerit Tasarımcısı'nda açılır ve varsayılan bir sekme ve grup görüntüler.
+     **MyRibbon.cs** veya **MyRibbon. vb** dosyası Şerit Tasarımcısı 'nda açılır ve varsayılan bir sekme ve grup görüntüler.
 
-4. Şerit Tasarımcısı'nda varsayılan sekmesini seçin.
+4. Şerit Tasarımcısında Varsayılan sekmesini seçin.
 
-5. İçinde **özellikleri** penceresini genişletin **ControlId** özelliği ve ardından **ControlIdType** özelliğini **özel**.
+5. **Özellikler** penceresinde **ControlID** özelliğini genişletin ve **ControlIdType** özelliğini **Custom**olarak ayarlayın.
 
-6. Ayarlama **etiket** özelliğini **bana özel sekme**.
+6. **Label** özelliğini **özel sekme**olarak ayarlayın.
 
-7. Şerit Tasarımcısı'nda **group1**.
+7. Şerit tasarımcısında **grup1**öğesini seçin.
 
-8. İçinde **özellikleri** penceresinde **etiket** için **Actions Pane Manager**.
+8. **Özellikler** penceresinde **etiketi** **Eylemler Bölmesi Yöneticisi**olarak ayarlayın.
 
-9. Gelen **Office Şerit denetimleri** sekmesinde **araç kutusu**, bir düğme sürükleyin **group1**.
+9. **Araç kutusunun** **Office Şerit denetimleri** sekmesinden, **grup1**üzerine bir düğme sürükleyin.
 
-10. Seçin **button1**.
+10. **Button1**' i seçin.
 
-11. İçinde **özellikleri** penceresinde **etiket** için **Show Actions Pane 1**.
+11. **Özellikler** penceresinde **etiketi** , **Eylemler bölmesi 1**' i gösterecek şekilde ayarlayın.
 
-12. İkinci bir düğme ekleyin **group1**, ayarlayıp **etiket** özelliğini **Show Actions Pane 2**.
+12. **Grup1**öğesine ikinci bir düğme ekleyin ve **başlık** özelliğini **Eylemler bölmesi 2**' yi gösterecek şekilde ayarlayın.
 
-13. Gelen **Office Şerit denetimleri** sekmesinde **araç kutusu**, sürükleyin bir **ToggleButton** denetimi **group1**.
+13. **Araç kutusunun** **Office Şerit denetimleri** sekmesinden, **grup1**üzerine bir **ToggleButton** denetimi sürükleyin.
 
-14. Ayarlama **etiket** özelliğini **Eylemler Bölmesini Gizle**.
+14. **Etiket** özelliğini **Eylemler bölmesini gizle**olarak ayarlayın.
 
-## <a name="BKMK_HideShowActionsPane"></a> Özel sekme üzerindeki düğmeleri kullanarak Eylemler bölmelerini gösterme ve gizleme
- Son adım kullanıcıya yanıt veren kodu eklemektir. Olay işleyicileri ekleme <xref:Microsoft.Office.Tools.Ribbon.RibbonButton.Click> iki düğmenin olayları ve <xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton.Click> iki durumlu düğmenin olay. Olay işleyicilere Eylemler bölmelerini gösterme ve gizleme etkinleştirmek için kod ekleyin.
+## <a name="BKMK_HideShowActionsPane"></a>Özel sekmedeki düğmeleri kullanarak Eylemler bölmesini gizleme ve gösterme
+ Son adım kullanıcıya yanıt veren kodu eklemektir. İki düğmenin <xref:Microsoft.Office.Tools.Ribbon.RibbonButton.Click> olayları <xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton.Click> ve iki durumlu düğmenin olayı için olay işleyicileri ekleyin. Eylemler bölmelerini gizlemeyi ve göstermeyi etkinleştirmek için bu olay işleyicilerine kod ekleyin.
 
-### <a name="to-hide-and-show-actions-panes-by-using-buttons-in-the-custom-tab"></a>Kullanarak özel sekmedeki düğmeleri kullanarak Eylemler bölmelerini göstermek ve gizlemek için
+### <a name="to-hide-and-show-actions-panes-by-using-buttons-in-the-custom-tab"></a>Özel sekmedeki düğmeleri kullanarak Eylemler bölmesini gizleme ve gösterme
 
-1. İçinde **Çözüm Gezgini**, kısayol menüsünü açın *MyRibbon.cs* veya *MyRibbon.vb*ve ardından **Kodu Görüntüle**.
+1. **Çözüm Gezgini**' de, *MyRibbon.cs* veya *MyRibbon. vb*kısayol menüsünü açın ve **kodu görüntüle**' yi seçin.
 
-2. Üstüne aşağıdaki kodu ekleyin `MyRibbon` sınıfı. Bu kod, iki Eylemler bölmesi nesnesi oluşturur.
+2. Aşağıdaki kodu `MyRibbon` sınıfının üst kısmına ekleyin. Bu kod iki eylem bölmesi nesnesi oluşturur.
 
      [!code-csharp[Trin_Ribbon_Custom_Tab#1](../vsto/codesnippet/CSharp/Trin_Ribbon_Custom_Tab/MyRibbon.cs#1)]
      [!code-vb[Trin_Ribbon_Custom_Tab#1](../vsto/codesnippet/VisualBasic/Trin_Ribbon_Custom_Tab/MyRibbon.vb#1)]
 
-3. Değiştirin `MyRibbon_Load` yöntemini aşağıdaki kod ile. Bu kod Eylemler bölmesi nesnelerini ekler <xref:Microsoft.Office.Tools.ActionsPane.Controls%2A> toplama ve nesneleri görünümden gizler. Visual C# kodu, ayrıca birçok Şerit denetim olaylarına temsilciler ekler.
+3. `MyRibbon_Load` Yöntemini aşağıdaki kodla değiştirin. Bu kod, Eylemler bölmesi nesnelerini <xref:Microsoft.Office.Tools.ActionsPane.Controls%2A> koleksiyona ekler ve nesneleri görünümden gizler. Görsel C# kod ayrıca çeşitli Şerit denetimi olaylarına temsilciler ekler.
 
      [!code-csharp[Trin_Ribbon_Custom_Tab#2](../vsto/codesnippet/CSharp/Trin_Ribbon_Custom_Tab/MyRibbon.cs#2)]
      [!code-vb[Trin_Ribbon_Custom_Tab#2](../vsto/codesnippet/VisualBasic/Trin_Ribbon_Custom_Tab/MyRibbon.vb#2)]
 
-4. Aşağıdaki üç olay işleyicisi yöntemini ekleyin `MyRibbon` sınıfı. Bu yöntemleri işleyen <xref:Microsoft.Office.Tools.Ribbon.RibbonButton.Click> iki düğmenin olayları ve <xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton.Click> iki durumlu düğmenin olay. Button1 ve button2 için olay işleyiciler alternatif Eylemler bölmelerini görüntüler. ToggleButton1 için olay işleyicisi etkin eylemler bölmesini gizler ve gösterir.
+4. Aşağıdaki üç olay işleyicisi yöntemini `MyRibbon` sınıfına ekleyin. Bu yöntemler iki düğmenin <xref:Microsoft.Office.Tools.Ribbon.RibbonButton.Click> olaylarını <xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton.Click> ve iki durumlu düğmenin olayını işler. Button1 ve Button2 için olay işleyicileri alternatif eylemler bölmelerini gösterir. ToggleButton1 için olay işleyicisi, etkin Eylemler bölmesini gösterir ve gizler.
 
      [!code-csharp[Trin_Ribbon_Custom_Tab#3](../vsto/codesnippet/CSharp/Trin_Ribbon_Custom_Tab/MyRibbon.cs#3)]
      [!code-vb[Trin_Ribbon_Custom_Tab#3](../vsto/codesnippet/VisualBasic/Trin_Ribbon_Custom_Tab/MyRibbon.vb#3)]
 
 ## <a name="test-the-custom-tab"></a>Özel sekmeyi test etme
- Programını çalıştırdığınızda proje, Excel başlatır ve **bana özel sekme** sekmesi, Şerit üzerinde görünür. Düğmeleri seçin **bana özel sekme** gösterip Eylemler bölmelerini gizleme.
+ Projeyi çalıştırdığınızda Excel başlar ve şeritte **özel sekme** sekmesi görüntülenir. Eylemler bölmelerini göstermek ve gizlemek için **özel Sekmesimde** bulunan düğmeleri seçin.
 
 ### <a name="to-test-the-custom-tab"></a>Özel sekmeyi test etmek için
 
-1. Tuşuna **F5** projeyi çalıştırın.
+1. Projenizi çalıştırmak için **F5** tuşuna basın.
 
-2. Seçin **bana özel sekme** sekmesi.
+2. **Özel sekme** sekmesini seçin.
 
-3. İçinde **özel eylem bölmesi Yöneticisi** Grup öğesini **Show Actions Pane 1**.
+3. **Özel Eylemler Bölmesi Yöneticisi** grubunda, **Eylemler bölmesi 1**' i göster ' i seçin.
 
-     Eylemler bölmesi görünür ve etiket görüntüler **Actions Pane 1**.
+     Eylemler bölmesi görünür ve **Eylemler bölmesi 1**etiketini görüntüler.
 
-4. Seçin **Göster Eylemler bölmesi 2**.
+4. **Eylemler bölmesini göster 2**' yi seçin.
 
-     Eylemler bölmesi görünür ve etiket görüntüler **Actions Pane 2**.
+     Eylemler bölmesi görüntülenir ve **Eylemler bölmesi 2**etiketini görüntüler.
 
-5. Seçin **Eylemler Bölmesini Gizle**.
+5. **Eylemler bölmesini gizle**' yi seçin.
 
-     Eylemler bölmesi artık görünür değildir.
+     Eylemler bölmeleri artık görünmez.
 
 ## <a name="next-steps"></a>Sonraki adımlar
- Aşağıdaki konulardan Office UI özelleştirme hakkında daha fazla bilgi edinebilirsiniz:
+ Aşağıdaki konulardan Office Kullanıcı arabirimini özelleştirme hakkında daha fazla bilgi edinebilirsiniz:
 
-- Tüm belge düzeyi özelleştirmesine Bağlam tabanlı UI ekleyin. Daha fazla bilgi için [Eylemler bölmesine genel bakış](../vsto/actions-pane-overview.md).
+- Herhangi bir belge düzeyi özelleştirmesine bağlam tabanlı kullanıcı arabirimi ekleyin. Daha fazla bilgi için bkz. [eylemler bölmesine genel bakış](../vsto/actions-pane-overview.md).
 
-- Bir standart veya özel Microsoft Office Outlook biçimini genişletin. Daha fazla bilgi için [izlenecek yol: Outlook form bölgesi tasarlama](../vsto/walkthrough-designing-an-outlook-form-region.md).
+- Bir standart veya özel Microsoft Office Outlook formunu genişletin. Daha fazla bilgi için bkz [. İzlenecek yol: Outlook form bölgesi](../vsto/walkthrough-designing-an-outlook-form-region.md)tasarlayın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
-- [Şerit, çalışma zamanında erişme](../vsto/accessing-the-ribbon-at-run-time.md)
+- [Çalışma zamanında Şerite erişin](../vsto/accessing-the-ribbon-at-run-time.md)
 - [Şerite Genel Bakış](../vsto/ribbon-overview.md)
 - [Şerit Tasarımcısı](../vsto/ribbon-designer.md)
-- [Outlook için Şerit özelleştirme](../vsto/customizing-a-ribbon-for-outlook.md)
-- [Nasıl yapılır: Şerit özelleştirmeye başlama](../vsto/how-to-get-started-customizing-the-ribbon.md)
+- [Outlook için şerit özelleştirme](../vsto/customizing-a-ribbon-for-outlook.md)
+- [Nasıl yapılır: Şeriti özelleştirmeye başlama](../vsto/how-to-get-started-customizing-the-ribbon.md)
 - [Nasıl yapılır: Şeritteki sekmenin konumunu değiştirme](../vsto/how-to-change-the-position-of-a-tab-on-the-ribbon.md)
 - [Nasıl yapılır: Yerleşik bir sekmeyi özelleştirme](../vsto/how-to-customize-a-built-in-tab.md)
 - [Nasıl yapılır: Backstage görünümüne denetimler ekleme](../vsto/how-to-add-controls-to-the-backstage-view.md)
