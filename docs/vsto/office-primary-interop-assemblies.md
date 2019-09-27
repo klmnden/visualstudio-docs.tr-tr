@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 385b2d451d8202356d56ab7b1a5fd5158d267f1c
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 6a709a59e85f65cf2e0caa0551610dd496bedda5
+ms.sourcegitcommit: 689ba54ea14257d13031de881f5d4fe937a36f56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71253748"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "71342509"
 ---
 # <a name="office-primary-interop-assemblies"></a>Office birincil birlikte çalışma derlemeleri
 
@@ -61,13 +61,13 @@ PIA 'ların bu kopyaları, Visual Studio 'nun farklı sürümleri genel derleme 
 
 Visual Studio 2017 ' den itibaren, PIA 'ların bu kopyaları geliştirme bilgisayarındaki aşağıdaki paylaşılan konumlara yüklenir:
 
-- *%ProgramFiles%\Microsoft Visual Studio\Shared\Visual Studio Tools for Office\pıa\*
+- `%ProgramFiles%\Microsoft Visual Studio\Shared\Visual Studio Tools for Office\PIA\`
 
-- (veya *% ProgramFiles (x86)% \ Microsoft Visual studio\shared\visual Studio Tools for office\pıa\* for 64-bit işletim sistemlerinde)
+- (veya 64 bit işletim sistemlerinde `%ProgramFiles(x86)%\Microsoft Visual Studio\Shared\Visual Studio Tools for Office\PIA\`)
 
 > [!NOTE]
-> Visual Studio 'nun eski sürümlerinde bu PIA 'ler, Visual Studio 'nun bu sürümü için *% ProgramFiles% klasörü altındaki Office\pıa için Visual Studio Araçları yüklenecek.
-> Örneğin: *% ProgramFiles (x86)% \ Microsoft Visual Studio 14.0 \ Visual Studio Araçları Office\pıa için\*
+> Visual Studio 'nun eski sürümlerinde bu PIA 'ler, bu Visual Studio sürümü için `%ProgramFiles%` klasörü altındaki Office\pıa için Visual Studio Araçları yüklenir.
+> Örneğin: `%ProgramFiles(x86)%\Microsoft Visual Studio 14.0\Visual Studio Tools for Office\PIA\`
 
 ### <a name="primary-interop-assemblies-in-the-global-assembly-cache"></a>Genel derleme önbelleğindeki birincil birlikte çalışma derlemeleri
 
@@ -86,7 +86,7 @@ Visual Studio 'daki her Office proje şablonu, tek bir Microsoft Office uygulama
 PIA 'leri genel derleme önbelleğine yükleyip kaydettirmiş olmanız durumunda derlemelerin bu sürümleri **başvuru Yöneticisi** Iletişim kutusunun **com** sekmesinde görünür. Bunları kullandığınızda oluşabilecek bazı geliştirme sorunları olduğu için derlemelerin bu sürümlerine başvuru eklememelisiniz. Örneğin, genel derleme önbelleğinde PIA 'ların farklı sürümlerini kaydettirdiğiniz takdirde, proje, **com** üzerinde derlemenin farklı bir sürümünü belirtseniz bile, projeniz son kaydedilen derlemenin sürümüne otomatik olarak bağlanır. **başvuru Yöneticisi** iletişim kutusunun sekmesi.
 
 > [!NOTE]
-> Bazı derlemeler, bunlara başvuran bir derleme eklendiğinde projeye otomatik olarak eklenir. Örneğin, Word, Excel, Outlook, Microsoft Forms veya Graph derlemelerine bir başvuru eklediğinizde *Office. dll* ve *Microsoft. Vbe. Interop. dll* derlemelerine yapılan başvurular otomatik olarak eklenir.
+> Bazı derlemeler, bunlara başvuran bir derleme eklendiğinde projeye otomatik olarak eklenir. Örneğin, Word, Excel, Outlook, Microsoft Forms veya Graph derlemelerine bir başvuru eklediğinizde `Office.dll` ve `Microsoft.Vbe.Interop.dll` derlemelerinin başvuruları otomatik olarak eklenir.
 
 <a name="pialist"></a>
 

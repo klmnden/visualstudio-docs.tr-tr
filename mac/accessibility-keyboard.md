@@ -1,57 +1,55 @@
 ---
 title: Mac için Visual Studio klavye gezintisi
-description: Klavye komutlarını kullanarak Mac için Visual Studio kullanma.
+description: Klavye komutlarıyla Mac için Visual Studio kullanma
 author: alanjclark
 ms.author: alcl
 ms.date: 09/23/2019
 ms.assetid: EF574E49-0465-4973-BE67-286DA20B8836
-ms.openlocfilehash: b2b7433a31d86c0392c3a055474fc21aade863fe
-ms.sourcegitcommit: 528178a304e66c0cb7ab98b493fe3c409f87493a
+ms.openlocfilehash: aad28b9cf9c697b05d43f2869ec8327ea6294b4f
+ms.sourcegitcommit: 689ba54ea14257d13031de881f5d4fe937a36f56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71274424"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "71342351"
 ---
 # <a name="keyboard-navigation-in-visual-studio-for-mac"></a>Mac için Visual Studio klavye gezintisi
 
-Mac için Visual Studio, en yaygın macOS klavye kısayollarının yanı sıra Mac için Visual Studio çok sayıda kullanarak klavye kullanıcıları tarafından erişilebilir. Burada her ikisi için de bazı temel klavye komutları ele alınacaktır ve Mac için Visual Studio klavye kısayollarının nasıl ayarlanacağı gösterilmektedir.
+Mac için Visual Studio, en yaygın macOS klavye kısayollarının yanı sıra Mac için Visual Studio özgü çok sayıda klavye ile erişilebilir. Burada, her ikisi için de bazı temel klavye komutları ve Mac için Visual Studio klavye kısayollarının nasıl ayarlanacağı hakkında bilgi edineceksiniz.
 
-## <a name="how-to-use-keyboard-navigation"></a>Nasıl yapılır: Klavye gezintisi kullanma
+## <a name="use-keyboard-navigation"></a>Klavye gezintisi kullanma
 
-Klavye gezintisi desteği macOS 'ta yerleşik olarak bulunur, ancak en kapsamlı deneyimlere sahip olmak için macOS 'u **Tüm denetimlerde**gezinmek üzere ayarlamanız gerekir:
+Klavye gezintisi desteği macOS 'ta doğrudan yerleşiktir. En kapsamlı deneyimi sağlamak için macOS ' u, klavye odağını **tüm denetimler**arasında taşımak üzere ayarlayın. Bu, bir pencere veya iletişim kutusundaki tüm denetimlerde geçiş yapmanıza olanak sağlar.
 
-![Sistem Tercihleri klavye tüm denetimler](media/accessibility-preferences-keyboard.png)
+![Tüm denetimler seçiliyken klavye seçeneklerinin ekran görüntüsü](media/accessibility-preferences-keyboard.png)
 
-**Tüm denetimlere** **tam klavye erişiminin** ayarlanması, bir pencere veya iletişim kutusundaki tüm denetimlerde gezinmeniz sağlar.
-
-## <a name="customizing-keyboard-shortcuts"></a>Klavye kısayollarını özelleştirme
+## <a name="customize-keyboard-shortcuts"></a>Klavye kısayollarını özelleştirme
 
 Mac için Visual Studio çeşitli görevler için bir dizi klavye kısayoluna sahiptir. Bu kısayolları aşağıdaki gibi görüntüleyebilir ve düzenleyebilirsiniz:
 
-1. **Visual Studio (menü) > tercihleri (&#8984;,)** kullanarak Mac için Visual Studio tercihlerini açın
+1. **Visual Studio (menü)**  > **tercihleri&#8984;(,)** seçeneğini belirleyin.
 
-1. **Ortam > anahtar bağlamalarını** gezin
+1. @No__t-1**anahtar bağlamalarını** **ortama**gidin.
 
-1. Listeyi kaydırın veya kısayolu ya da komutu arayın
+1. Listeyi kaydırın veya kısayol ya da komut için arama yapın.
 
-1. Komutu seçin
+1. Komutu seçin.
 
-1. **Anahtar bağlamayı** seçin ve bir anahtar birleşimi yazın
+1. **Anahtar bağlamayı**seçin ve bir anahtar birleşimi yazın.
 
-1. **Uygula** ' yı seçin
+1. **Uygula**’yı seçin.
 
 > [!TIP]
-> Diğer yaygın klavye kısayollarıyla (örneğin, Windows 'da Visual Studio) alışdıysanız, gereksinimlerinize en uygun şekilde bir anahtar bağlama düzeni listesi seçebilirsiniz.
+> Diğer yaygın klavye kısayollarıyla (örneğin, Windows 'da Visual Studio) alışdıysanız gereksinimlerinize en uygun olan anahtar bağlama şemaları listesinden seçim yapabilirsiniz.
 
 ## <a name="useful-keyboard-shortcuts"></a>Faydalı klavye kısayolları
 
 |Özellik         |Açıklama                                   |Kısayol         |
 |----------------|----------------------------------------------|-----------------|
-|Kullanıcı arabirimine gitme   |Kullanıcı arabiriminin tüm öğelerine git               |**⇥**, **⇧ ⇥**    |
-|Etkileşim        |Odaklanmakta olan denetimi seçin         |**␣**            |
-|Etkileşim        |Ekranda/iletişim kutusunda varsayılan denetimi seçin |**⏎**            |
-|Sekme Değiştir     |Açık dosyalar arasında geçiş yapma                      |**⌘ ⇧ [** , **⌘ ⇧]** |
-|Hata ayıklama           |Hata Ayıklamayı Başlat                               |**⌘ ⏎**           |
+|Kullanıcı arabirimine gitme   |Kullanıcı arabiriminin tüm öğeleri arasında geçiş yapın.               |**⇥**, **⇧ ⇥**    |
+|Etkileşim        |Odaklanmakta olan denetimi seçin.         |**␣**            |
+|Etkileşim        |Ekranda veya iletişim kutusunda varsayılan denetimi seçin. |**⏎**            |
+|Sekme Değiştir     |Açık dosyalar arasında geçiş yapın.                      |**⌘ ⇧ [** , **⌘ ⇧]** |
+|Hata ayıklama           |Hata ayıklama başlatılamıyor.                               |**⌘ ⏎**           |
 
 > [!TIP]
-> Klavye [kısayolları](keyboard-shortcuts.md) sayfasında, Klavye komutlarının kapsamlı bir listesi bulunabilir.
+> [Klavye kısayollarında](keyboard-shortcuts.md)Klavye komutlarının kapsamlı bir listesine bakın.

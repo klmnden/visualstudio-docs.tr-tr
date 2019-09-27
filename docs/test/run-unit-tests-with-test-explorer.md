@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d18f510b3b30207079b644e540d8b5db22609f97
-ms.sourcegitcommit: 673b9364fc9a96b027662dcb4cf5d61cab60ef11
+ms.openlocfilehash: 27ca8a39d39fcc8b4e5ddca2cbedf72e44c6cc81
+ms.sourcegitcommit: 689ba54ea14257d13031de881f5d4fe937a36f56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/21/2019
-ms.locfileid: "69891329"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "71342456"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Test Gezgini ile birim testleri çalıştırma
 
@@ -134,16 +134,16 @@ Test Gezgini, testlerinizi önceden tanımlanmış kategoriler halinde grupland�
 ### <a name="group-tests-in-the-test-list"></a>Test listesindeki testleri gruplandırma
 
 ::: moniker range="vs-2017"
-Testlerin düzenlenme şeklini değiştirmek için **Gruplandırma ölçütü** düğme ![test Gezgini grubu düğmesinin](../test/media/ute_groupby_btn.png) yanındaki aşağı oku seçin ve yeni bir gruplandırma ölçütü seçin.
+Testlerin düzenlenme şeklini değiştirmek için, **grupla** düğmesine ![Test Gezgini Grup düğmesi @ no__t-2 ' nin yanındaki aşağı oku seçin ve yeni bir gruplandırma ölçütü seçin.
 
 ![Test Gezgini 'nde kategoriye göre grup testleri](../test/media/ute_groupbycategory.png)
 ::: moniker-end
 ::: moniker range=">=vs-2019"
-Test Gezgini, testlerinizi bir hiyerarşiye gruplandırmanıza olanak tanır. Varsayılan hiyerarşi gruplandırması **Proje**, **ad alanı**ve daha sonra **sınıftır**. Testlerin düzenlenme şeklini değiştirmek için **grupla** düğmesine ![tıklayın Test Explorer grubu düğmesini](../test/media/ute_groupby_btn.png) seçin ve yeni bir gruplandırma ölçütü seçin.
+Test Gezgini, testlerinizi bir hiyerarşiye gruplandırmanıza olanak tanır. Varsayılan hiyerarşi gruplandırması **Proje**, **ad alanı**ve daha sonra **sınıftır**. Testlerin düzenlenme şeklini değiştirmek için **Gruplandırma ölçütü** düğmesini ![Test Gezgini grubu düğmesini @ no__t-2 ' yi seçin ve yeni bir gruplandırma ölçütü seçin.
 
 ![Test Gezgini 'nde kategoriye göre grup testleri](../test/media/vs-2019/test-explorer-groupby-162.png)
 
-Hiyerarşi ve gruplama düzeylerini tanımlayabilir ve sonra tercih ettiğiniz sırada grupla seçeneklerini belirleyerek **sınıfa** göre gruplandırabilirsiniz.
+Hiyerarşi ve gruplama düzeylerini **tanımlayabilir ve sonra** tercih ettiğiniz sırada grupla seçeneklerini belirleyerek **sınıfa** göre gruplandırabilirsiniz.
 
 ![Duruma göre Gruplandır ve sonra sınıfı](../test/media/vs-2019/test-explorer-groupby-state-16-2.png)
 ::: moniker-end
@@ -175,7 +175,7 @@ Bir nitelik genellikle kategori adı/değer çiftidir, ancak tek bir kategori de
 
 **Yönetilen kod için Microsoft birim testi çerçevesindeki nitelikler**
 
-Yönetilen uygulamalar için Microsoft birim testi çerçevesinde, bir <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute> öznitelikte nitelik ad/değer çifti tanımlarsınız. Test çerçevesi aşağıdaki önceden tanımlı nitelikleri de içerir:
+Yönetilen uygulamalar için Microsoft birim testi çerçevesinde, <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute> özniteliğinde bir nitelik ad/değer çifti tanımlarsınız. Test çerçevesi aşağıdaki önceden tanımlı nitelikleri de içerir:
 
 |Nitelik|Açıklama|
 |-|-----------------|
@@ -196,18 +196,18 @@ Yönetilen uygulamalar için Microsoft birim testi çerçevesinde, bir <xref:Mic
 
 ![Bir çalma listesi seçin](../test/media/ute_playlist.png)
 
-**Bir çalma listesi oluşturmak için**, test Gezgini 'nde bir veya daha fazla test seçin. Sağ tıklama menüsünde, **Yapılacaklar** > listesi**NewPlaylist**listesine ekle ' yi seçin. Dosyayı **Yeni çalma listesi oluştur** iletişim kutusunda belirttiğiniz ad ve konuma kaydedin.
+**Bir çalma listesi oluşturmak için**, test Gezgini 'nde bir veya daha fazla test seçin. Sağ tıklama menüsünde,  > **NewPlaylist** **listesine ekle**' yi seçin. Dosyayı **Yeni çalma listesi oluştur** iletişim kutusunda belirttiğiniz ad ve konuma kaydedin.
 
 **Bir çalma listesine test eklemek için**, test Gezgini 'nde bir veya daha fazla test seçin. Sağ tıklama menüsünde, **çalma listesine ekle**' yi seçin ve ardından testleri eklemek istediğiniz çalma listesini seçin.
 
-**Bir çalma listesi açmak için**Visual Studio menüsünden **Test** > **listesi** ' ni seçin ve son kullanılan çalma listeleri listesinden seçim yapın veya çalma listesini **Aç** ' ı seçerek şarkı listesinin adını ve konumunu belirtin.
+**Bir çalma listesi açmak için**, Visual Studio menüsünden **Test** > **çalma** listesini seçin ve son kullanılan çalma listeleri listesinden seçim yapın veya çalma listesini **Aç** ' ı seçerek şarkı listesinin adını ve konumunu belirtin.
 
 Bireysel testler herhangi bir sırada çalıştırılan engelleyen bağımlılık varsa, paralel test yürütme ile Aç ![ALIŞTIR&#95;parallelicon&#45;küçük](../test/media/ute_parallelicon-small.png) araç çubuğundaki iki durumlu düğme. Bu durum, tüm testleri çalıştırmak için geçen süre önemli ölçüde azaltabilir.
 ::: moniker-end
 ::: moniker range=">=vs-2019"
 Çalıştırmak veya bir grup olarak görüntülemek istediğiniz testlerin listesini oluşturabilir ve kaydedebilirsiniz. Bir çalma listesi seçtiğinizde, listedeki testler yeni bir test Gezgini sekmesinde görüntülenir. Birden fazla çalma listesine bir test ekleyebilirsiniz.
 
-**Bir çalma listesi oluşturmak için**, test Gezgini 'nde bir veya daha fazla test seçin. Sağ tıklama menüsünde, **Yapılacaklar** > listesi**Yeni çalma listesine**Ekle ' yi seçin.
+**Bir çalma listesi oluşturmak için**, test Gezgini 'nde bir veya daha fazla test seçin. Sağ tıklama menüsünde, @no__t Yapılacaklar **listesine ekle**' yi seçin,**Yeni çalma listesi**' ni seçin.
 
 ![Çalma listesi oluşturma](../test/media/vs-2019/test-explorer-playlist-16-2.png)
 
@@ -215,7 +215,7 @@ Yeni bir test Gezgini sekmesinde çalma listesi açılır. Bu çalma listesini b
 
 ![Çalma listesi ayrı test Gezgini sekmesinde açılıyor](../test/media/vs-2019/test-explorer-playlist-tab-16-2.png)
 
-**Bir çalma listesi oluşturmak için**, test Gezgini 'nde bir veya daha fazla test seçin. Sağ tıklayın ve**Yeni**çalma listesine **Ekle** > ' yi seçin.
+**Bir çalma listesi oluşturmak için**, test Gezgini 'nde bir veya daha fazla test seçin. Sağ tıklayın ve @no__t Yapılacaklar **listesine ekle**' yi seçin-1**Yeni çalma listesi**.
 
 **Bir çalma listesi açmak için**, Visual Studio araç çubuğunda çalma listesi simgesini seçin ve menüden önceden kaydedilmiş bir çalma listesi dosyası seçin.
 ::: moniker-end
@@ -273,7 +273,7 @@ Farklı ölçütlere göre filtrelemek için:
 |**Hata Iletisi**|Eşleşmeler için başarısız Onaylamalar tarafından döndürülen Kullanıcı tanımlı hata iletilerini arar.|
 |**Dosya yolu**|Test kaynak dosyalarının tam dosya adını eşleşmeler için arar.|
 |**Tam nitelikli ad**|Test ad alanları, sınıflar ve yöntemlerin tam adını eşleşmeler için arar.|
-|**Output**|Standart çıkış (STDOUT) veya standart hata (stderr) ile yazılan Kullanıcı tanımlı hata iletilerini arar. Çıkış mesajlarını belirten sözdizimi, birim test çerçevesi tarafından tanımlanır.|
+|**Çıktı**|Standart çıkış (STDOUT) veya standart hata (stderr) ile yazılan Kullanıcı tanımlı hata iletilerini arar. Çıkış mesajlarını belirten sözdizimi, birim test çerçevesi tarafından tanımlanır.|
 |**Sonucu**|Test Gezgini kategori adlarını eşleşmeler için arar: **Başarısız testler**, **Atlanan testler**, **başarılı testler**.|
 ::: moniker-end
 ::: moniker range=">=vs-2019"
@@ -294,7 +294,7 @@ Bir filtrenin sonuçlarının bir alt kümesini dışlamak için aşağıdaki s�
 FilterName:"Criteria" -FilterName:"SubsetCriteria"
 ```
 
-Örneğin, `FullName:"MyClass" - FullName:"PerfTest"` adında "perftest" da dahil olan testler hariç, adında "MyClass" içeren tüm testleri döndürür.
+Örneğin, `FullName:"MyClass" - FullName:"PerfTest"`, adında "PerfTest" da dahil olan testler hariç "MyClass" içeren tüm testleri döndürür.
 
 ## <a name="debug-and-analyze-unit-tests"></a>Hata ayıklama ve birim testlerini analiz etme
 
@@ -320,6 +320,7 @@ Visual Studio Enterprise sürümünde kullanılabilir olan Visual Studio kod kap
 Bir çözümde test yöntemleri için kod kapsamını çalıştırmak için:
 
 ::: moniker range="vs-2017"
+
 1. Üstteki menü çubuğunda **Test** ' i seçin ve ardından **kod kapsamını analiz et**' i seçin.
 
 2. Alt menüden aşağıdaki komutlardan birini seçin:
@@ -327,9 +328,13 @@ Bir çözümde test yöntemleri için kod kapsamını çalıştırmak için:
     - **Seçili testler** , test Gezgini 'nde seçtiğiniz test yöntemlerini çalıştırır.
 
     - **Tüm testler** Çözümdeki tüm test yöntemlerini çalıştırır.
+
 ::: moniker-end
+
 ::: moniker range=">=vs-2019"
+
 * Test Gezgini ' ne sağ tıklayın ve **Seçili testler Için kod kapsamını çözümle** ' yi seçin.
+
 ::: moniker-end
 
 **Kod kapsamı sonuçlarını** penceresi satır, işlevi, sınıf, ad alanı ve modül tarafından uygulanan ürünün kodu bloklarının yüzdesini görüntüler.
@@ -338,14 +343,14 @@ Daha fazla bilgi için [ne kadar kodun test edildiğini belirlemek için kod kap
 
 ## <a name="test-shortcuts"></a>Test kısayolları
 
-Testler test **Gezgini**'nden çalıştırılabilir ve test üzerindeki kod düzenleyicisine sağ tıklayıp **Test Çalıştır**' ı seçerek veya Visual Studio 'daki varsayılan [Test Gezgini kısayolları](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_testexplorerGLOBAL) kullanılarak çalıştırılabilir. Bazı kısayollar bağlam tabanlıdır. Bu, imlecinizin kod düzenleyicisinde olduğu yere göre testleri çalıştırdıkları veya hata ayıkladıkları anlamına gelir. İmlecinizin bir test yöntemi içindeyse, bu test yöntemi çalışır. İmlecinizin sınıf düzeyi ise, o sınıftaki tüm testler çalıştırılır. Bu, ad alanı düzeyi için de aynıdır.
+Testler test Gezgini 'nden, test üzerindeki kod düzenleyicisine sağ tıklayıp **Test Çalıştır** ' ı seçerek veya Visual Studio 'Daki varsayılan [Test Gezgini kısayolları](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_testexplorerGLOBAL) kullanılarak çalıştırılabilir. Bazı kısayollar bağlam tabanlıdır. Bu, imlecinizin kod düzenleyicisinde olduğu yere göre testleri çalıştırdıkları veya hata ayıkladıkları anlamına gelir. İmlecinizin bir test yöntemi içindeyse, bu test yöntemi çalışır. İmlecinizin sınıf düzeyi ise, o sınıftaki tüm testler çalıştırılır. Bu, ad alanı düzeyi için de aynıdır.
 
 |Sık kullanılan komutlar| Klavye Kısayolları|
 |-|------------------------|
-|TestExplorer.DebugAllTestsInContext|**CTRL** **R,** CTRL T++|
-|TestExplorer.RunAllTestsInContext|**CTRL**+**R**, **T**|
-|TestExplorer.RunAllTests|**CTRL**+**R**, **A**|
-|TestExplorer.RepeatLastRun|**CTRL**+**R**, **L**|
+|TestExplorer.DebugAllTestsInContext|**Ctrl**+**R**, **CTRL**+**t**|
+|TestExplorer.RunAllTestsInContext|**Ctrl**+**R**, **t**|
+|TestExplorer.RunAllTests|**Ctrl**+**R**, **A**|
+|TestExplorer.RepeatLastRun|**Ctrl**+**R**, **L**|
 
 > [!NOTE]
 > Testler yalnızca soyut sınıflarda tanımlandığından ve örneklenmemiş olduğundan, bir testi soyut bir sınıfta çalıştıramazsınız. Testleri soyut sınıflarda çalıştırmak için soyut sınıftan türeten bir sınıf oluşturun.

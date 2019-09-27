@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: abd5075d04f26b9795695bfcd4fcd387e1a15d24
-ms.sourcegitcommit: 541a0556958201ad6626bc8638406ad02640f764
+ms.openlocfilehash: 6416045f040e9825bab6eeb33dd4b75478166ee3
+ms.sourcegitcommit: 689ba54ea14257d13031de881f5d4fe937a36f56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71079581"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "71342481"
 ---
 # <a name="troubleshoot-code-coverage"></a>Kod kapsamı sorunlarını giderme
 
@@ -29,6 +29,7 @@ Daha fazla bilgi için [ne kadar kodun test edildiğini belirlemek için kod kap
 ## <a name="possible-reasons-for-seeing-no-results-or-old-results"></a>Sonuçları ya da eski sonuçları görmek için olası nedenler
 
 ### <a name="do-you-have-the-right-edition-of-visual-studio"></a>Visual Studio'nun doğru sürümüne sahip misiniz?
+
 Visual Studio Enterprise ihtiyacınız vardır.
 
 ### <a name="no-tests-were-executed"></a>Hiçbir sınama yürütülemedi
@@ -43,7 +44,7 @@ Açıklama&mdash;Testler çalışırken kod kapsamı analizi yapılır. Testler 
 
 Değiştirme ve testlerinizi yeniden çalıştırın, bir önceki kod kapsamı sonucu eski çalıştırmadan renklendirme kodu ile birlikte görünür olabilir.
 
-1. Kod Kapsamı Çözümlemeyi Çalıştırın.
+1. **Kod kapsamını analiz et**' i çalıştırın.
 
 2. En son sonuç kümesini seçtiğinizden emin olun **kod kapsamı sonuçlarını** penceresi.
 

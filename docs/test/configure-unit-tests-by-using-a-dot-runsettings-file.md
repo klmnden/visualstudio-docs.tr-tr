@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 25d0f49939a42d9a9b8cc56f03ed37ab83aa98f2
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 799d3f23a6b4e269c08bc889461596178e71b4c8
+ms.sourcegitcommit: 689ba54ea14257d13031de881f5d4fe937a36f56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71251821"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "71342491"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>*. Runsettings* dosyasını kullanarak birim testlerini yapılandırma
 
@@ -38,11 +38,11 @@ Dosya, test ayarları menüsünde görünür ve onu seçebilir veya seçimden ka
 
 ::: moniker range=">=vs-2019"
 
-IDE 'de bir çalıştırma ayarları dosyası belirtmek için, **Test Gezgini**' nde, **Ayarlar** düğmesini seçin ve ardından **ayarlar dosyası seç**' i seçin. *. Runsettings* dosyasına gidin ve seçin.
+IDE 'de bir çalıştırma ayarları dosyası belirtmek için **Test** > **seçim ayarları dosyası**' nı seçin. *. Runsettings* dosyasına gidin ve seçin.
 
-![Visual Studio 2019 'de test ayarları Dosya menüsünü seçin](media/vs-2019/select-test-settings-file.png)
+![Visual Studio 2019 'de test ayarları Dosya menüsünü seçin](media/vs-2019/select-settings-file.png)
 
-Dosya, test Gezgini 'ndeki ayarlar menüsünde görünür ve onu seçebilir veya seçimden kaldırabilirsiniz. Seçildiğinde, çalışma ayarları dosyası **kod kapsamını çözümle**' yi seçtiğiniz her seferinde geçerlidir.
+Dosya, Test menüsünde görünür ve onu seçebilir veya seçimden kaldırabilirsiniz. Seçildiğinde, çalışma ayarları dosyası **kod kapsamını çözümle**' yi seçtiğiniz her seferinde geçerlidir.
 
 ::: moniker-end
 
@@ -70,7 +70,7 @@ Komut satırından testleri çalıştırmak için *VSTest. Console. exe*' yi kul
    vstest.console.exe MyTestAssembly.dll /EnableCodeCoverage /Settings:CodeCoverage.runsettings
    ```
 
-   veya
+   or
 
    ```cmd
    vstest.console.exe --settings:test.runsettings test.dll
@@ -97,7 +97,7 @@ Testlerinizi bir *. runsettings* dosyası kullanarak özelleştirmek için şu a
 
 ::: moniker range=">=vs-2019"
 
-3. Çalışma ayarları dosyasını seçmek için, **Test Gezgini**' nde, **Ayarlar** düğmesini seçin ve ardından **ayarlar dosyası seç**' i seçin. Oluşturduğunuz *. runsettings* dosyasına gidin ve ardından **Tamam**' ı seçin.
+3. Çalışma ayarları dosyasını seçmek için **Test** > **seçim ayarları dosyası**' nı seçin. Oluşturduğunuz *. runsettings* dosyasına gidin ve ardından **Tamam**' ı seçin.
 
 ::: moniker-end
 
@@ -118,7 +118,7 @@ Aşağıdaki XML, tipik bir *. runsettings* dosyasının içeriğini gösterir. 
     <ResultsDirectory>.\TestResults</ResultsDirectory>
 
     <!-- x86 or x64 -->
-    <!-- You can also change it from the test settings menu; choose "Processor Architecture for AnyCPU Projects" -->
+    <!-- You can also change it from the Test menu; choose "Processor Architecture for AnyCPU Projects" -->
     <TargetPlatform>x86</TargetPlatform>
 
     <!-- Framework35 | [Framework40] | Framework45 -->
@@ -157,7 +157,7 @@ Aşağıdaki XML, tipik bir *. runsettings* dosyasının içeriğini gösterir. 
       <DataCollector uri="datacollector://microsoft/VideoRecorder/1.0" assemblyQualifiedName="Microsoft.VisualStudio.TestTools.DataCollection.VideoRecorder.VideoRecorderDataCollector, Microsoft.VisualStudio.TestTools.DataCollection.VideoRecorder, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" friendlyName="Screen and Voice Recorder">
         <!--Video data collector was introduced in Visual Studio 2017 version 15.5 -->
         <Configuration>
-           <!-- Change to "false" to only add video attachments to failed tests -->
+          <!-- Change to "false" to only add video attachments to failed tests -->
           <MediaRecorder sendRecordedMediaForPassedTestCase="true" xmlns="" />
         </Configuration>
       </DataCollector>

@@ -11,12 +11,12 @@ dev_langs:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 24bc4c54e455f43aa5fd5fee0ce0d5a44042e497
-ms.sourcegitcommit: b60a00ac3165364ee0e53f7f6faef8e9fe59ec4a
+ms.openlocfilehash: 1962a977cb282613405342f225d63140f1854453
+ms.sourcegitcommit: 689ba54ea14257d13031de881f5d4fe937a36f56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70913199"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "71342423"
 ---
 # <a name="use-code-coverage-to-determine-how-much-code-is-being-tested"></a>Kod kapsamını kullanarak ne kadar kodun test edildiğini belirleme
 
@@ -46,11 +46,11 @@ Kod kapsamı özelliği yalnızca Visual Studio Enterprise sürümünde kullanı
 
 ::: moniker range=">=vs-2019"
 
-1. **Test Gezgini**'nde **Çalıştır** menüsündeki **Tüm testler için kod kapsamını çözümle** ' yi seçin.
+1. **Test** menüsünde, **Tüm testler Için kod kapsamını çözümle**' yi seçin.
 
    ![VS 2019 ' de kod kapsamı menüsünü çözümle](../test/media/vs-2019/analyze-code-coverage.png)
 
-   **Test Gezgini** açık değilse, **Test** > **Windows** > **Test Gezgini**' ni seçerek açın veya **CTRL**+**E**,**T**'ye basın.
+   Kod kapsamını test Gezgini araç penceresinden de çalıştırabilirsiniz.
 
 ::: moniker-end
 

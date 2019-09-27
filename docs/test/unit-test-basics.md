@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5060b2a3b532de26d78eca4ce16661768748bbd7
-ms.sourcegitcommit: 673b9364fc9a96b027662dcb4cf5d61cab60ef11
+ms.openlocfilehash: aff50f5933d540297711e44487c775d93968f0fd
+ms.sourcegitcommit: 689ba54ea14257d13031de881f5d4fe937a36f56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/21/2019
-ms.locfileid: "69891351"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "71342439"
 ---
 # <a name="unit-test-basics"></a>Birim testi temel bilgileri
 
@@ -26,19 +26,19 @@ Test projelerini hızla oluşturmak ve kodunuzdan test yöntemleri veya ihtiyaç
 
 Test Gezgini, Test Gezgini eklentisi arabirimleri uyguladıysanız birim testi çerçevelerini üçüncü taraf ve açık kaynak da çalıştırabilirsiniz. Birçok Visual Studio Uzantı Yöneticisi ve Visual Studio Galerisi aracılığıyla bu çerçevesini ekleyebilirsiniz. Daha fazla bilgi için [üçüncü taraf birim testi çerçevelerini yükleme](../test/install-third-party-unit-test-frameworks.md).
 
-## <a name="get-started"></a>Kullanmaya başlayın
+## <a name="get-started"></a>başlarken
 
 Doğrudan kodlama içine alan birim testine giriş için aşağıdaki konulardan birine bakın:
 
-- [İzlenecek yol: Yönetilen kod için birim testleri oluşturma ve çalıştırma](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)
+- [İzlenecek yol: Yönetilen kod için birim testleri oluşturma ve çalıştırma @ no__t-0
 
-- [Hızlı Başlangıç: Test Gezgini ile test temelli geliştirme](../test/quick-start-test-driven-development-with-test-explorer.md)
+- [Hızlı Başlangıç: Test Gezgini ile test odaklı geliştirme @ no__t-0
 
 - [Visual Studio'da C/C++ için birim testleri yazma](../test/writing-unit-tests-for-c-cpp.md)
 
 ## <a name="the-mybank-solution-example"></a>MyBank çözümü örneği
 
-Bu makalede, örnek olarak adlandırılan `MyBank` kurgusal bir uygulamanın geliştirilmesini kullanırız. Bu konudaki açıklamaları izlemek için gerçek kod gerekmez. Test yöntemlerini C# dilinde yazılmış ve yönetilen kod için Microsoft birim testi çerçevesini kullanarak sunulur. Ancak, diğer dillerde ve çerçevelerde kavramları kolayca aktarılır.
+Bu makalede, örnek olarak `MyBank` adlı kurgusal bir uygulamanın geliştirilmesini kullanırız. Bu konudaki açıklamaları izlemek için gerçek kod gerekmez. Test yöntemlerini C# dilinde yazılmış ve yönetilen kod için Microsoft birim testi çerçevesini kullanarak sunulur. Ancak, diğer dillerde ve çerçevelerde kavramları kolayca aktarılır.
 
 ::: moniker range="vs-2017"
 ![MyBank çözümü](../test/media/ute_mybanksolution.png)
@@ -120,7 +120,7 @@ Birim testi projesi genellikle tek bir kod proje yapısını yansıtır. Adlı i
 
 **Birim testi projesi çözüme eklemek için:**
 
-1. **Çözüm Gezgini**, çözüme sağ tıklayın ve**Yeni** **Proje** **Ekle** > ' yi seçin.
+1. **Çözüm Gezgini**, çözüme sağ tıklayıp  > **Yeni** **Proje** **Ekle**' yi seçin.
 
 ::: moniker range="vs-2017"
 
@@ -137,7 +137,7 @@ Birim testi projesi genellikle tek bir kod proje yapısını yansıtır. Adlı i
 
 2. Kullanmak istediğiniz test çerçevesinin birim testi proje şablonunu bulmak için proje şablonu arama kutusunu kullanın.
 
-3. Sonraki sayfada, projeyi adlandırın. Örneğimizin `Accounts` projeyi test etmek için projeyi `AccountsTests`adlandırın.
+3. Sonraki sayfada, projeyi adlandırın. Örneğimizin `Accounts` projesini test etmek için, projeyi @no__t olarak adlandırın-1.
 
 ::: moniker-end
 
@@ -209,7 +209,7 @@ Microsoft birim testi çerçevelerini hakkında daha fazla bilgi için aşağıd
 
 ## <a name="set-timeouts-for-unit-tests"></a>Birim testleri için zaman aşımını ayarlayın
 
-MSTest çerçevesini kullanıyorsanız, tek bir test yönteminde bir zaman aşımı ayarlamak <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TimeoutAttribute> için kullanabilirsiniz:
+MSTest çerçevesini kullanıyorsanız, tek bir test yönteminde bir zaman aşımı ayarlamak için <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TimeoutAttribute> kullanabilirsiniz:
 
 ```csharp
 [TestMethod]
@@ -307,7 +307,7 @@ Daha fazla bilgi için [Test Gezgini ile birim testleri çalıştırma](../test/
 
 ## <a name="qa"></a>SORU- CEVAP
 
-**Ç Nasıl yaparım? hata ayıklama birimi testleri mi?**
+**Ç Nasıl yaparım? hata ayıklama birimi testleri?**
 
 **A** Testleriniz için bir hata ayıklama oturumu başlatmak için **Test Gezgini** 'ni kullanın. Kodunuzu Visual Studio hata ayıklayıcısı ile sorunsuz bir şekilde Adımlama, İleri ve geri birim testleri ve test altındaki projeye arasında sürer. Hata ayıklamayı başlatmak için:
 
@@ -363,13 +363,13 @@ public void AddIntegerHelper_DataDrivenValues_AllShouldPass()
 
 Daha fazla bilgi edinin [veri temelli birim testlerini](../test/how-to-create-a-data-driven-unit-test.md).
 
-**Ç Kodumun ne kadarının birim testlerim tarafından test edildiğini görebilir miyim?**
+**Ç Kodumun ne kadarının birim Testlerimin test edildiğini görüntüleyebilir miyim?**
 
 **A** Evet. Visual Studio Enterprise ' de Visual Studio kod kapsamı aracını kullanarak, birim testleriniz tarafından gerçekten test edilen kodunuzun miktarını belirleyebilirsiniz. Yerel ve yönetilen diller ve Birim Test çerçevesi tarafından çalıştırılabilir tüm birim testi çerçevelerini desteklenir.
 
 Kod kapsamı Seçili testler ya da bir çözümdeki tüm testleri çalıştırabilirsiniz. **Kod kapsamı sonuçlarını** penceresi satır, işlevi, sınıf, ad alanı ve modül tarafından uygulanan ürünün kodu bloklarının yüzdesini görüntüler.
 
-Bir çözümde test yöntemleri için kod kapsamını çalıştırmak için tercih **testleri** Visual Studio menüsünde seçip **kod kapsamını analiz etme**.
+Bir çözümde test yöntemlerine ait kod kapsamını çalıştırmak için **test** >  ' i**Tüm testler Için kod kapsamını analiz et**' i seçin.
 
 Kapsama sonuçlarını görünür **kod kapsamı sonuçlarını** penceresi.
 

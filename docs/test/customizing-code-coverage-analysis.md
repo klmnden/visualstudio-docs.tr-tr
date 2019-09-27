@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: a22bdbc30fc222e26c01a10afdd7a666eebcb9f6
-ms.sourcegitcommit: a2df993dc5e11c5131dbfcba686f0028a589068f
+ms.openlocfilehash: 517f3f5911df6c7de1f59232a4e836bcdc84c448
+ms.sourcegitcommit: 689ba54ea14257d13031de881f5d4fe937a36f56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "71150118"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "71342365"
 ---
 # <a name="customize-code-coverage-analysis"></a>Kod kapsamı analizini özelleştirme
 
@@ -40,7 +40,7 @@ Kod kapsamını özelleştirmek için aşağıdaki adımları izleyin:
 
 ::: moniker range=">=vs-2019"
 
-3. Çalışma ayarları dosyasını seçmek için, **Test Gezgini**' nde, **Ayarlar** düğmesini seçin ve ardından **ayarlar dosyası seç**' i seçin. Komut satırından testleri çalıştırmak için bir çalıştırma ayarları dosyası belirtmek için bkz. [birim testlerini yapılandırma](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md#command-line).
+3. Çalışma ayarları dosyasını seçmek için, **Test** menüsünde, **ayarlar dosyası seç**' i seçin. Komut satırından testleri çalıştırmak için bir çalıştırma ayarları dosyası belirtmek için bkz. [birim testlerini yapılandırma](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md#command-line).
 
 ::: moniker-end
 
@@ -59,7 +59,7 @@ Kod kapsamını özelleştirmek için aşağıdaki adımları izleyin:
 
 ::: moniker range=">=vs-2019"
 
-Özel ayarları kapatmak ve açmak için, **Test Gezgini**'ndeki **Ayarlar** menüsünde dosyayı seçimden kaldırın veya seçin.
+Özel ayarları kapatmak ve açmak için, **Test** menüsündeki dosyanın seçimini kaldırın veya seçin.
 
 ::: moniker-end
 
@@ -110,7 +110,7 @@ Aşağıdaki tabloda, derlemelerin ve üyelerin kod kapsamından içerme veya d�
 | ModulePath | Bütünleştirilmiş kod adı veya dosya yolu tarafından belirtilen derlemeleri eşleştirir. |
 | CompanyName | Derlemeleri **Şirket** özniteliğiyle eşleştirir. |
 | PublicKeyToken | İmzalı derlemeleri ortak anahtar belirteci ile eşleştirir. |
-| Kaynak | Öğelerin tanımlandıkları kaynak dosyanın yol adına göre eşleşir. |
+| Source | Öğelerin tanımlandıkları kaynak dosyanın yol adına göre eşleşir. |
 | Öznitelik | Belirtilen özniteliğine sahip öğeleri eşleştirir. Özniteliğin tam adını belirtin, örneğin `<Attribute>^System\.Diagnostics\.DebuggerHiddenAttribute$</Attribute>`.<br/><br/><xref:System.Runtime.CompilerServices.CompilerGeneratedAttribute> Özniteliğini hariç tutdıysanız,,, ve otomatik uygulanan özellikler gibi dil `async`özelliklerini `await` `yield return`kullanan kod, kod kapsamı analizinden hariç tutulur. Gerçekten üretilen kodu hariç tutmak için, yalnızca <xref:System.CodeDom.Compiler.GeneratedCodeAttribute> özniteliğini hariç tutun. |
 | İşlev | Parametre listesi de dahil olmak üzere tam olarak nitelenmiş ad ile yordamları, işlevleri veya yöntemleri eşleştirir. Ayrıca, bir [normal ifade](#regular-expressions)kullanarak adın bir bölümünü de eşleştirebilirsiniz.<br/><br/>Örnekler:<br/><br/>`Fabrikam.Math.LocalMath.SquareRoot(double);` (C#)<br/><br/>`Fabrikam::Math::LocalMath::SquareRoot(double)`(C++) |
 
@@ -270,7 +270,7 @@ Included items must then not match any entries in the exclude list to remain inc
             </PublicKeyTokens>
 
             <!-- We recommend you do not change the following values: -->
-            
+
             <!-- Set this to True to collect coverage information for functions marked with the "SecuritySafeCritical" attribute. Instead of writing directly into a memory location from such functions, code coverage inserts a probe that redirects to another function, which in turns writes into memory. -->
             <UseVerifiableInstrumentation>True</UseVerifiableInstrumentation>
             <!-- When set to True, collects coverage information from child processes that are launched with low-level ACLs, for example, UWP apps. -->

@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3bfe750e8dca68876ac5d894c0ca194f82a42f21
-ms.sourcegitcommit: b593bb889f049fcbdff502c30b73178ed17dbdf0
+ms.openlocfilehash: ca5a80c07cb64cfd638542da4e1deefe7e373b18
+ms.sourcegitcommit: 689ba54ea14257d13031de881f5d4fe937a36f56
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/20/2019
-ms.locfileid: "67291037"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "71342404"
 ---
 # <a name="customize-build-and-debug-tasks-for-open-folder-development"></a>Yapı özelleştirme ve hata ayıklama için "Klasör Aç" geliştirme görevleri
 
@@ -30,8 +30,8 @@ Visual Studio, birçok farklı dillerde çalıştırma bilir ve kod tabanlarınd
 
 |Dosya adı|Amaç|
 |-|-|
-|*tasks.vs.json*|Özel derleme komutları ve derleyici anahtarları rastgele (olmayan-ilgili derleme) belirtmek görevleri.<br>Aracılığıyla erişilen **Çözüm Gezgini** sağ menü öğesi **yapılandırma görevleri**.|
-|*launch.vs.json*|Hata ayıklama için komut satırı bağımsız değişkenlerini belirtin.<br>Aracılığıyla erişilen **Çözüm Gezgini** sağ menü öğesi **hata ayıklama ve başlatma ayarları**.|
+|*tasks.vs.json*|Özel derleme komutları ve derleyici anahtarları rastgele (olmayan-ilgili derleme) belirtmek görevleri.<br>**Çözüm Gezgini** sağ tıklama menü öğesi **görevleri Yapılandır**' ı kullanarak erişilir.|
+|*launch.vs.json*|Hata ayıklama için komut satırı bağımsız değişkenlerini belirtin.<br>**Çözüm Gezgini** menü öğesi **hata ayıklama ve başlatma ayarları**' na sağ tıklayın.|
 
 Bunlar *.json* dosyaları adlı gizli bir klasörde bulunan *.vs* temelinizin kök klasöründeki. *Tasks.vs.json* ve *launch.vs.json* dosyalarının oluşturulduğu Visual Studio tarafından bir gerektiği şekilde ya da seçtiğinizde **yapılandırma görevleri** veya **hata ayıklama ve başlatma ayarları** bir dosya veya klasör üzerinde **Çözüm Gezgini**. Bunlar *.json* dosyaları, kullanıcılar bunları kaynak denetimine kaydetmeye genellikle istemediğinden gizlidir. Ancak, kaynak denetimine denetlemek istiyorsanız, dosyaları burada görünür temelinizin, kök sürükleyin.
 
@@ -44,7 +44,7 @@ Derleme betikleri veya geçerli çalışma alanınızda doğrudan IDE'de görev 
 
 ![Görevler menüsü yapılandırın](../ide/media/customize-configure-tasks-menu.png)
 
-Oluşturur (veya açılır) *tasks.vs.json* dosyası *.vs* klasör. Bir derleme görevi ya da isteğe bağlı görev bu dosyada tanımlayabilir ve ondan verdiğiniz ad kullanarak çağırma **Çözüm Gezgini** sağ tıklama menüsü.
+Oluşturur (veya açılır) *tasks.vs.json* dosyası *.vs* klasör. Bu dosyada bir yapı görevi veya rastgele bir görev tanımlayabilir ve sonra **Çözüm Gezgini** sağ tıklama menüsünde bunu verdiğiniz adı kullanarak çağırabilirsiniz.
 
 Özel görevleri, dosyalara veya belirli bir türdeki tüm dosyalar için eklenebilir. Örneğin, "Paketleri geri yükle" görev için NuGet paket dosyaları yapılandırılabilir veya tüm kaynak dosyaları, tüm bir lint gibi statik analiz yer alan bir görev için yapılandırılabilir *.js* dosyaları.
 
@@ -117,7 +117,7 @@ bin:
 }
 ```
 
-Derleme görevleri tanımladıktan sonra *tasks.vs.json*, karşılık gelen dosyalar için de ek sağ tıklama menüsü (bağlam menüsü) öğeleri eklendi **Çözüm Gezgini**. Bu örnekte, "derleme", "yeniden" ve "temiz" seçeneklerini herhangi bağlam menüsüne eklenen *derleme görevleri dosyası* dosyaları.
+*Tasks. vs. JSON*içinde derleme görevleri tanımladıktan sonra, **Çözüm Gezgini**ilgili dosyalara sağ tıklama menüsü (bağlam menüsü) öğeleri eklenir. Bu örnekte, "derleme", "yeniden" ve "temiz" seçeneklerini herhangi bağlam menüsüne eklenen *derleme görevleri dosyası* dosyaları.
 
 ![derleme görevleri dosyası bağlam menüsü yapı ile yeniden oluşturun ve temizleme](media/customize-build-rebuild-clean.png)
 
@@ -147,7 +147,7 @@ Aşağıdaki örnekte gösterildiği bir *tasks.vs.json* tek bir görevi tanıml
 }
 ```
 
-- `taskName` sağ tıklama menüsünde görünen adını belirtir.
+- `taskName` sağ tıklama menüsünde görüntülenen adı belirtir.
 - `appliesTo` hangi dosyaların komutu gerçekleştirilebilir belirtir.
 - `command` Özellik çağrılacak komutu belirtir. Bu örnekte, `COMSPEC` ortam değişkeni komut satırı Yorumlayıcı, genellikle tanımlamak için kullanılan *cmd.exe*.
 - `args` Özelliği, çağrılan komutun geçirilecek bağımsız değişkenleri belirtir.
@@ -191,7 +191,7 @@ Birden çok *tasks.vs.json* dosyaları kök ve alt dizinleri bir kod temeli bulu
 - Kadar tüm kök dizini geçerli dizinin üst dizini.
 - Ayarlar dosyaları kök dizini.
 
-Bu toplama kuralları için geçerli *tasks.vs.json*. Diğer dosyasındaki ayarları nasıl toplanır hakkında daha fazla bilgi için bu makalede söz konusu dosya için ilgili bölümüne bakın.
+Bu toplama kuralları *Tasks. vs. JSON*için geçerlidir. Diğer dosyasındaki ayarları nasıl toplanır hakkında daha fazla bilgi için bu makalede söz konusu dosya için ilgili bölümüne bakın.
 
 ### <a name="properties-for-tasksvsjson"></a>Tasks.vs.json özellikleri
 
@@ -257,6 +257,9 @@ Görevler için herhangi bir dosya veya klasör adını belirterek oluşturabile
 
    Seçeneğini belirlediğinizde **F5**, hata ayıklayıcısını başlatan ve herhangi bir kesme noktasında durur zaten ayarlamadınız. Alıştığınız hata ayıklayıcı windows kullanılabilir ve çalışır.
 
+   > [!IMPORTANT]
+   > Açık klasör projelerindeki özel derleme ve hata ayıklama görevleri hakkında ek ayrıntılar için bkz. [Visual Studio 'da derleme C++ sistemleri için klasör açma desteği.](/cpp/build/open-folder-projects-cpp) C++
+
 ### <a name="specify-arguments-for-debugging"></a>Hata ayıklama için bağımsız değişkenlerini belirtme
 
 Hata ayıklama için geçirmek için komut satırı bağımsız değişkenlerini belirtebilirsiniz *launch.vs.json* dosya. Bağımsız değişken Ekle `args` , aşağıdaki örnekte gösterildiği gibi dizi:
@@ -307,7 +310,7 @@ Ayarları okuma *.gitignore* dosya, kendi ana dizini ve tüm alt dizinleri için
 ## <a name="see-also"></a>Ayrıca bkz.
 
 - [Projeler veya çözümler olmadan kod geliştirme](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md)
-- [C++ için Klasör projelerini açma](/cpp/build/open-folder-projects-cpp)
-- [CMake projeleri içinC++](/cpp/build/cmake-projects-in-visual-studio)
+- [C++ için klasör Proje Aç](/cpp/build/open-folder-projects-cpp)
+- [İçin CMake projeleriC++](/cpp/build/cmake-projects-in-visual-studio)
 - [NMAKE başvurusu](/cpp/build/reference/nmake-reference)
 - [Kod Düzenleyicisi özellikleri](../ide/writing-code-in-the-code-and-text-editor.md)
