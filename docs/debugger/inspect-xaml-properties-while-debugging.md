@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: fdb973718e56279e7bfb04c9d412bcd83410223d
-ms.sourcegitcommit: 0e482cfc15f809b564c3de61646f29ecd7bfcba6
+ms.openlocfilehash: 182c9e37764a247ec24b4b477975ccb7b8811c4b
+ms.sourcegitcommit: 4d2620bee4688fb881e09a07ea4a264b99f0743e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "70987748"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "71322541"
 ---
 # <a name="inspect-xaml-properties-while-debugging"></a>Hata ayıklama sırasında XAML özelliklerini denetleme
 **Canlı görsel ağaç** ve **canlı Özellik GEZGINI**ile çalışan xaml kodunuzun gerçek zamanlı bir görünümünü alabilirsiniz. Bu araçlar, çalışan XAML uygulamanızın kullanıcı arabirimi öğelerinin ağaç görünümünü sağlar ve seçtiğiniz herhangi bir kullanıcı arabirimi öğesinin çalışma zamanı özelliklerini gösterir.
@@ -81,7 +81,10 @@ Pencere geldiğinde, birkaç kez **öğe Ekle** düğmesine tıklayın. Şuna be
 
 Uygulama penceresine dönüp birkaç öğe daha ekleyin. **Canlı görsel ağaçta**daha fazla liste kutusu öğesi göründüğünü görmeniz gerekir.
 
-Şimdi liste kutusu öğelerinden birinin özelliklerine göz atalım. **Canlı görsel ağaçtaki** ilk liste kutusu öğesini seçin ve araç çubuğundaki **özellikleri göster** simgesine tıklayın. **Canlı Özellik Gezgini** görünmelidir. **İçerik** alanının "Item1" olduğunu ve **arka plan** alanının **#FFFFFFE0** (açık sarı) olduğunu unutmayın. **Canlı görsel ağaca** dönün ve ikinci liste kutusu öğesini seçin. **Canlı Özellik Gezgini** , **Içerik** alanının "Item2" olduğunu ve **arka plan** alanının **#FFD3D3D3** (açık gri) olduğunu göstermelidir.
+Şimdi liste kutusu öğelerinden birinin özelliklerine göz atalım. **Canlı görsel ağaçtaki** ilk liste kutusu öğesini seçin ve araç çubuğundaki **özellikleri göster** simgesine tıklayın. **Canlı Özellik Gezgini** görünmelidir. **İçerik** alanının "Item1" olduğunu ve **arka plan** > **rengi** alanının **#FFFFFFE0**olduğunu unutmayın. **Canlı görsel ağaca** dönün ve ikinci liste kutusu öğesini seçin. **Canlı Özellik Gezgini** **içerik** alanının "Item2" olduğunu ve **arka plan** > **rengi** alanının **#FFD3D3D3**olduğunu göstermelidir.
+
+> [!NOTE]
+> **Canlı Özellik Gezgini** içindeki bir özelliğin etrafında sarı bir kenarlık, özellik değerinin gibi `Color = {BindingExpression}`bir bağlama üzerinden ayarlandığı anlamına gelir. Yeşil kenarlık, değerinin gibi bir kaynak `Color = {StaticResource MyBrush}`kullanılarak ayarlandığı anlamına gelir.
 
 XAML gerçek yapısı, muhtemelen doğrudan ilgilenmediğiniz çok sayıda öğeye sahiptir ve kodun iyi olduğunu bilmiyorsanız, aradığınız şeyi bulmak için ağaçta gezinmek için bir sabit zaman olabilir. Bu nedenle, **canlı görsel ağaç** , incelemek istediğiniz öğeyi bulmanıza yardımcı olmak için uygulamanın kullanıcı arabirimini kullanmanıza olanak sağlayan birkaç yol içerir.
 

@@ -666,6 +666,10 @@
               href: how-to-step-into-wcf-services.md
             - name: Kendini barındıran WCF hizmetinde hata ayıklama
               href: how-to-debug-a-self-hosted-wcf-service.md
+    - name: İşbirliği
+      items:
+        - name: Live Share kullanarak kod yazma ve kodlarda hata ayıklama
+          href: /visualstudio/liveshare/use/vs
     - name: Döküm dosyaları
       items:
         - name: Döküm dosyalarını kullanma

@@ -1,5 +1,5 @@
 ---
-title: Waıtstart | Microsoft Docs
+title: WaitStart | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 6c737177-2dfb-4150-963e-a49ac9aaa591
@@ -8,36 +8,36 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6307dcad45b7e2c8164aa892c4598d577e4ea464
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a409a4fe4ffe843df536e3c9e17a3a5a3b6560db
+ms.sourcegitcommit: 4d2620bee4688fb881e09a07ea4a264b99f0743e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62998957"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "71322490"
 ---
 # <a name="waitstart"></a>WaitStart
-Waıtstart seçeneği nedenlerini *VSPerfCmd.exe* yalnızca profil oluşturucu başlatıldı veya belirtilen sayıda saniye geçtikten döndürmek için başlangıç alt komutu. Varsayılan olarak, başlangıç komut hemen döndürür. Başlangıç alt komutu, profil oluşturucu başlatma olmadan döndürürse, hata döndürülür. Saniye sayısı belirtilmezse, Start komutunu süresiz olarak bekler.
+WaitStart seçeneği, *VSPerfCmd. exe* Start alt komutunun yalnızca profil oluşturucu başlatıldığında veya belirtilen saniye sayısı geçtiğinde dönmesini sağlar. Varsayılan olarak start komutu hemen döndürür. Start Sub komutu, profil oluşturucuyu başlatmadan döndürürse bir hata döndürülür. Saniye sayısı belirtilmemişse, Başlat komutu süresiz olarak bekler.
 
- Bu profil oluşturucu başlatıldı sağlamak üzere toplu iş dosyalarında Waıtstart seçeneği kullanışlıdır.
+ WaitStart seçeneği, profil oluşturucunun başlatıldığından emin olmak için Batch dosyalarında faydalıdır.
 
 ## <a name="syntax"></a>Sözdizimi
 
 ```cmd
-VSPerfCmd.exe /Start:Method /Output:FileName[Options] /StartWait[:Seconds]
+VSPerfCmd.exe /Start:Method /Output:FileName[Options] /WaitStart[:Seconds]
 ```
 
 #### <a name="parameters"></a>Parametreler
- `Seconds` Başlangıç alt komuttan dönmeden önce beklenecek saniye sayısı.
+ `Seconds`Başlangıç alt komutundan döndürülmeden önce beklenecek saniye sayısı.
 
-## <a name="required-options"></a>Gerekli seçenekleri
- Waıtstart seçeneği yalnızca başlangıç alt komut ile kullanılabilir.
+## <a name="required-options"></a>Gerekli seçenekler
+ WaitStart seçeneği yalnızca start Sub-komutuyla birlikte kullanılabilir.
 
- **Çıkış:** `filename` Çıkış dosyası adını belirtir.
+ **Çıkış:** `filename`Çıkış dosyası adını belirtir.
 
 ## <a name="remarks"></a>Açıklamalar
 
 ## <a name="example"></a>Örnek
- Bu toplu dosya örnekte Start komutunu profil oluşturucuyu başlatmak 5 saniye bekler.
+ Bu toplu iş dosyasında, start komutu profil oluşturucunun başlatılması için 5 saniye bekler.
 
 ```cmd
 VSPerfCmd.exe /Start:Sample /Output:TestApp.exe.vsp /WaitStart:5

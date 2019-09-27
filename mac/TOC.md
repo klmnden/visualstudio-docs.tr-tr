@@ -1,5 +1,8 @@
 # [Mac için Visual Studio](index.yml)
-# [IDE Turu](ide-tour.md)
+
+# Başlarken
+## [IDE Turu](ide-tour.md)
+## [Windows Kullanıcılarına yönelik Mac için Visual Studio](vsmac-for-windows-users.md)
 
 # Yükleme
 ## [Mac için Visual Studio 2019’u Yükleme](installation.md)
@@ -94,11 +97,14 @@
 ### [Değişiklik Günlüğü](/visualstudio/cross-platform/change-log-visual-studio-tools-for-unity-mac/?context=visualstudio/mac/context)
 ## [Xamarin ile mobil uygulamalar](/visualstudio/mac/xamarin)
 
-# [Erişilebilirlik](accessibility.md)
+# Erişilebilirlik
+## [Genel bakış](accessibility.md)
 ## [IDE erişilebilirlik seçeneklerini ayarlama](accessibility-ide-options.md)
 ## [macOS erişilebilirlik araçlarını kullanma](accessibility-macos.md)
 ### [Klavye ile gezinmeyi kullanma](accessibility-keyboard.md)
 ### [VoiceOver kullanma](accessibility-voiceover.md)
+
+# [Windows Kullanıcılarına yönelik Mac için Visual Studio](vsmac-for-windows-users.md)
 
 # Sorun giderme
 ## [Günlükler ve Özel Durumlar](troubleshooting.md)
