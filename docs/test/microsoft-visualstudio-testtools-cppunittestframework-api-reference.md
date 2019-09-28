@@ -1,26 +1,24 @@
 ---
 title: Microsoft. VisualStudio. TestTools. CppUnitTestFramework API 'SI
-ms.date: 06/13/2019
+ms.date: 09/27/2019
 ms.topic: reference
 ms.author: mblome
 manager: jillfra
 ms.workload:
 - multiple
 author: mikeblome
-ms.openlocfilehash: 36681858506a05d5d8c9f0a5be25a70b833ee022
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: fca428a7a810453b3ddcbd9b0d10d6a8f13d0550
+ms.sourcegitcommit: 16175e0cea6af528e9ec76f0b94690faaf1bed30
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68926608"
+ms.lasthandoff: 09/28/2019
+ms.locfileid: "71481851"
 ---
 # <a name="microsoftvisualstudiotesttoolscppunittestframework-api-reference"></a>Microsoft. VisualStudio. TestTools. CppUnitTestFramework API başvurusu
 
 Bu konu, `Microsoft::VisualStudio::CppUnitTestFramework` ad alanının ortak üyelerini listeler. Microsoft yerel birim testi çerçevesini C++ temel alan birim testlerini yazmak Için bu API 'leri kullanın. Konunun sonunda bir [kullanım örneği](#example) vardır.
 
-Üst bilgi dosyaları _VisualStudio2012 [x86] InstallFolder_ **\Vc\unittest\ınclude** klasöründe bulunur.
-
-Lib dosyaları _VisualStudio2012 [x86] InstallFolder_ **\Vc\unittest\lib** klasöründe bulunur.
+Üst bilgi ve LIB dosyaları *\<Visual Studio yükleme klasörü > \VC\Auxiliary\VS\UnitTest*' nin altında bulunur.
 
 Üst bilgi ve LIB yolları yerel bir test projesinde otomatik olarak yapılandırılır.
 
@@ -104,7 +102,7 @@ Lib dosyaları _VisualStudio2012 [x86] InstallFolder_ **\Vc\unittest\lib** klas�
 TEST_CLASS(className)
 ```
 
-Test yöntemleri içeren her sınıf için gereklidir. *ClassName* bir test sınıfı olarak tanımlar. `TEST_CLASS`namescape Scope öğesinde bildirilmelidir.
+Test yöntemleri içeren her sınıf için gereklidir. *ClassName* bir test sınıfı olarak tanımlar. `TEST_CLASS`, namescape kapsamında bildirilmelidir.
 
 ```cpp
 TEST_METHOD(methodName)
@@ -113,7 +111,7 @@ TEST_METHOD(methodName)
 }
 ```
 
-*MethodName* öğesini bir test yöntemi olarak tanımlar. `TEST_METHOD`, yöntemin sınıfının kapsamında bildirilmelidir.
+*MethodName* öğesini bir test yöntemi olarak tanımlar. `TEST_METHOD`, metodun sınıfının kapsamında bildirilmelidir.
 
 ### <a name="Initialize_and_cleanup"></a>Başlatma ve Temizleme
 
@@ -126,7 +124,7 @@ TEST_METHOD_INITIALIZE(methodName)
 }
 ```
 
-*MethodName* öğesini, her test yöntemi çalıştırılmadan önce çalışan bir yöntem olarak tanımlar. `TEST_METHOD_INITIALIZE`, bir test sınıfında yalnızca bir kez tanımlanabilir ve test sınıfında tanımlanması gerekir.
+*MethodName* öğesini, her test yöntemi çalıştırılmadan önce çalışan bir yöntem olarak tanımlar. `TEST_METHOD_INITIALIZE`, test sınıfında yalnızca bir kez tanımlanabilir ve test sınıfında tanımlanmalıdır.
 
 ```cpp
 TEST_METHOD_CLEANUP(methodName)
@@ -135,7 +133,7 @@ TEST_METHOD_CLEANUP(methodName)
 }
 ```
 
-*MethodName* öğesini her test yöntemi çalıştırıldıktan sonra çalışan bir yöntem olarak tanımlar. `TEST_METHOD_CLEANUP`, bir test sınıfında yalnızca bir kez tanımlanabilir ve test sınıfının kapsamında tanımlanmalıdır.
+*MethodName* öğesini her test yöntemi çalıştırıldıktan sonra çalışan bir yöntem olarak tanımlar. `TEST_METHOD_CLEANUP`, test sınıfında yalnızca bir kez tanımlanabilir ve test sınıfının kapsamında tanımlanmalıdır.
 
 #### <a name="test_classes"></a>Test sınıfları
 
@@ -146,7 +144,7 @@ TEST_CLASS_INITIALIZE(methodName)
 }
 ```
 
-*MethodName* öğesini, her test sınıfı oluşturulmadan önce çalışan bir yöntem olarak tanımlar. `TEST_CLASS_INITIALIZE`, bir test sınıfında yalnızca bir kez tanımlanabilir ve test sınıfının kapsamında tanımlanmalıdır.
+*MethodName* öğesini, her test sınıfı oluşturulmadan önce çalışan bir yöntem olarak tanımlar. `TEST_CLASS_INITIALIZE`, test sınıfında yalnızca bir kez tanımlanabilir ve test sınıfının kapsamında tanımlanmalıdır.
 
 ```cpp
 TEST_CLASS_CLEANUP(methodName)
@@ -155,7 +153,7 @@ TEST_CLASS_CLEANUP(methodName)
 }
 ```
 
-*MethodName* öğesini her test sınıfı oluşturulduktan sonra çalışan bir yöntem olarak tanımlar. `TEST_CLASS_CLEANUP`, bir test sınıfında yalnızca bir kez tanımlanabilir ve test sınıfının kapsamında tanımlanmalıdır.
+*MethodName* öğesini her test sınıfı oluşturulduktan sonra çalışan bir yöntem olarak tanımlar. `TEST_CLASS_CLEANUP`, test sınıfında yalnızca bir kez tanımlanabilir ve test sınıfının kapsamında tanımlanmalıdır.
 
 #### <a name="test_modules"></a>Test modülleri
 
@@ -166,13 +164,13 @@ TEST_MODULE_INITIALIZE(methodName)
 }
 ```
 
-Bir modül yüklendiğinde çalıştırılan *MethodName* yöntemini tanımlar. `TEST_MODULE_INITIALIZE`, bir test modülünde yalnızca bir kez tanımlanabilir ve ad alanı kapsamında bildirilmelidir.
+Bir modül yüklendiğinde çalıştırılan *MethodName* yöntemini tanımlar. `TEST_MODULE_INITIALIZE`, test modülünde yalnızca bir kez tanımlanabilir ve ad alanı kapsamında bildirilmelidir.
 
 ```cpp
 TEST_MODULE_CLEANUP(methodName)
 ```
 
-Bir modül kaldırıldığında çalıştırılan *MethodName* yöntemini tanımlar. `TEST_MODULE_CLEANUP`, bir test modülünde yalnızca bir kez tanımlanabilir ve ad alanı kapsamında bildirilmelidir.
+Bir modül kaldırıldığında çalıştırılan *MethodName* yöntemini tanımlar. `TEST_MODULE_CLEANUP`, test modülünde yalnızca bir kez tanımlanabilir ve ad alanı kapsamında bildirilmelidir.
 
 ### <a name="create_test_attributes"></a>Test öznitelikleri oluşturma
 
@@ -185,9 +183,9 @@ BEGIN_TEST_METHOD_ATTRIBUTE(testMethodName)
 END_TEST_METHOD_ATTRIBUTE()
 ```
 
-*Testmethodname*test yöntemine bir veya daha fazla `TEST_METHOD_ATTRIBUTE` makro ile tanımlanan öznitelikleri ekler.
+Bir veya daha fazla `TEST_METHOD_ATTRIBUTE` makrosu ile tanımlanan öznitelikleri *Testmethodname*test yöntemine ekler.
 
-Makro, ÖznitelikAdı ve *AttributeValue*değeri olan bir özniteliği tanımlar. `TEST_METHOD_ATTRIBUTE`
+@No__t-0 *makrosu, ÖznitelikAdı ve* *AttributeValue*değeri olan bir özniteliği tanımlar.
 
 #### <a name="test_class_attributes"></a>Test sınıfı öznitelikleri
 
@@ -198,9 +196,9 @@ BEGIN_TEST_CLASS_ATTRIBUTE(testClassName)
 END_TEST_CLASS_ATTRIBUTE()
 ```
 
-*TestClassName*test sınıfına bir veya daha fazla `TEST_CLASS_ATTRIBUTE` makro ile tanımlanan öznitelikleri ekler.
+*TestClassName*test sınıfına bir veya daha fazla `TEST_CLASS_ATTRIBUTE` makrosu ile tanımlanmış öznitelikleri ekler.
 
-Makro, ÖznitelikAdı ve *AttributeValue*değeri olan bir özniteliği tanımlar. `TEST_CLASS_ATTRIBUTE`
+@No__t-0 *makrosu, ÖznitelikAdı ve* *AttributeValue*değeri olan bir özniteliği tanımlar.
 
 #### <a name="test_module_attributes"></a>Test modülü öznitelikleri
 
@@ -211,43 +209,43 @@ BEGIN_TEST_MODULE_ATTRIBUTE(testModuleName)
 END_TEST_MODULE_ATTRIBUTE()
 ```
 
-*TestModuleName*test modülüne bir veya daha fazla `TEST_MODULE_ATTRIBUTE` makro ile tanımlanan öznitelikleri ekler.
+*TestModuleName*test modülüne bir veya daha fazla `TEST_MODULE_ATTRIBUTE` makrosu ile tanımlanmış öznitelikleri ekler.
 
-Makro, ÖznitelikAdı ve *AttributeValue*değeri olan bir özniteliği tanımlar. `TEST_MODULE_ATTRIBUTE`
+@No__t-0 *makrosu, ÖznitelikAdı ve* *AttributeValue*değeri olan bir özniteliği tanımlar.
 
 #### <a name="pre_defined_attributes"></a>Önceden tanımlanmış öznitelikler
 
-Önceden tanımlanmış bu öznitelik makroları, yaygın durumlar için kolaylık olarak sağlanır. Yukarıda açıklanan makronun `TEST_METHOD_ATTRIBUTE` yerine kullanılabilir.
+Önceden tanımlanmış bu öznitelik makroları, yaygın durumlar için kolaylık olarak sağlanır. Yukarıda açıklanan @no__t (0) makrosunun yerine kullanılabilir.
 
 ```cpp
 TEST_OWNER(ownerAlias)
 ```
 
-`TEST_METHOD_ATTRIBUTE` *OwnerAlias*öğesinin Name `Owner` ve Attribute değeri ile bir tanımlar.
+@No__t-1 adı ve *ownerAlias*özniteliği değeri olan `TEST_METHOD_ATTRIBUTE` tanımlar.
 
 ```cpp
 TEST_DESCRIPTION(description)
 ```
 
-*Açıklaması ve açıklama*özniteliği değeri iletanımlar.`TEST_METHOD_ATTRIBUTE` `Description`
+@No__t-1 adı ve *Açıklama*özniteliği değeri olan `TEST_METHOD_ATTRIBUTE` tanımlar.
 
 ```cpp
 TEST_PRIORITY(priority)
 ```
 
-*Öncelik*değeri `TEST_METHOD_ATTRIBUTE` ile bir adı `Priority` ve özniteliği tanımlar.
+@No__t-1 adı ve *Priority*'nin öznitelik değeri ile `TEST_METHOD_ATTRIBUTE` tanımlar.
 
 ```cpp
 TEST_WORKITEM(workitem)
 ```
 
-Çalışma öğesinin `TEST_METHOD_ATTRIBUTE` adı `WorkItem` ve öznitelik değeri ile bir tanımlar.
+@No__t-1 adı ve *WorkItem*'ın öznitelik değeri ile `TEST_METHOD_ATTRIBUTE` tanımlar.
 
 ```cpp
 TEST_IGNORE()
 ```
 
-Adı `TEST_METHOD_ATTRIBUTE` `Ignore` veözniteliğideğeri`true`ile bir tanımlar.
+@No__t-1 adı ve `true` özniteliği değeri ile 0 @no__t tanımlar.
 
 ## <a name="cppUnitTestAssert_h"></a>CppUnitTestAssert. h
 

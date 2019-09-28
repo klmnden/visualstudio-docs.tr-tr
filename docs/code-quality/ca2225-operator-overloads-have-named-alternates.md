@@ -12,14 +12,14 @@ ms.assetid: af8f7ab1-63ad-4861-afb9-b7a7a2be15e1
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.workload:
-- multiple
-ms.openlocfilehash: c027bc4581919f814b4d93eacba77248349fdf8b
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+dev_langs:
+- CSharp
+ms.openlocfilehash: b4db3074d334fe32f95c4d1b8446921c4e4d47ba
+ms.sourcegitcommit: 16175e0cea6af528e9ec76f0b94690faaf1bed30
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71231082"
+ms.lasthandoff: 09/28/2019
+ms.locfileid: "71481768"
 ---
 # <a name="ca2225-operator-overloads-have-named-alternates"></a>CA2225: İşleç aşırı yüklemeleri adlandırılmış alternatiflere sahiptir
 
@@ -27,10 +27,10 @@ ms.locfileid: "71231082"
 |-|-|
 |TypeName|OperatorOverloadsHaveNamedAlternates|
 |CheckId|CA2225|
-|Kategori|Microsoft. Usage|
+|Category|Microsoft. Usage|
 |Son değişiklik|Kırılmamış|
 
-## <a name="cause"></a>Sebep
+## <a name="cause"></a>Nedeni
 
 Bir işleç aşırı yüklemesi algılandı ve beklenen adlandırılmış alternatif yöntem bulunamadı.
 
@@ -38,17 +38,21 @@ Bu kural varsayılan olarak yalnızca dışarıdan görünür türlere bakar, an
 
 ## <a name="rule-description"></a>Kural açıklaması
 
-İşleç aşırı yüklemesi, bir tür için hesaplamaları göstermek üzere simgelerin kullanılmasına izin verir. Örneğin, ek için artı simgesini (+) aşırı yükleyen bir tür, genellikle ' Add ' adlı alternatif bir üyeye sahip olur. Adlandırılmış alternatif üye, işleçle aynı işlevselliğe erişim sağlar ve aşırı yüklenmiş işleçleri desteklemeyen dillerde programlayan geliştiriciler için sağlanır.
+İşleç aşırı yüklemesi, bir tür için hesaplamaları göstermek üzere simgelerin kullanılmasına izin verir. Örneğin, ek için `+` ' ı aşırı yükleyen bir tür, genellikle `Add` adlı alternatif bir üyeye sahip olur. Adlandırılmış alternatif üye, işleçle aynı işlevselliğe erişim sağlar. Yazılım, aşırı yüklenmiş işleçleri desteklemeyen dillerde program kullananlar için verilmiştir.
 
-Bu kural, aşağıdaki tabloda listelenen işleçleri inceler.
+Bu kural şunları inceler:
 
-|C#|Visual Basic|C++|Alternatif ad|
-|---------|------------------|-----------|--------------------|
+- @No__t-0 ve `From<typename>` adlı yöntemleri denetleyerek bir türdeki örtük ve açık atama işleçleri.
+
+- Aşağıdaki tabloda listelenen işleçler:
+
+|C#|Visual Basic|C++|Alternatif yöntem adı|
+|-|-|-|-|
 |+ (ikili)|+|+ (ikili)|Ekle|
 |+=|+=|+=|Ekle|
 |&|And|&|Bitwiseve|
 |&=|Ve =|&=|Bitwiseve|
-|&#124;|Veya|&#124;|Bitwiseveya|
+|&#124;|Or|&#124;|Bitwiseveya|
 |&#124;=|Or =|&#124;=|Bitwiseveya|
 |--|Yok|--|Azaltma|
 |/|/|/|Sayısına|
@@ -56,14 +60,14 @@ Bu kural, aşağıdaki tabloda listelenen işleçleri inceler.
 |==|=|==|Eşittir|
 |^|XOR|^|XOR|
 |^=|XOR =|^=|XOR|
-|>|>|>|{1&gt;Karşılaştır&lt;1}|
-|>=|>=|>=|{1&gt;Karşılaştır&lt;1}|
+|>|>|>|CompareTo veya Compare|
+|>=|>=|>=|CompareTo veya Compare|
 |++|Yok|++|Ilamadı|
-|<>|!=|Eşittir|
+|!=|<>|!=|Eşittir|
 |<<|<<|<<|Leftshıft|
 |<<=|<<=|<<=|Leftshıft|
-|<|<|<|{1&gt;Karşılaştır&lt;1}|
-|<=|<=|\<=|{1&gt;Karşılaştır&lt;1}|
+|<|<|<|CompareTo veya Compare|
+|<=|<=|\<=|CompareTo veya Compare|
 |&&|Yok|&&|LogicalAnd|
 |&#124;&#124;|Yok|&#124;&#124;|LogicalOr|
 |!|Yok|!|LogicalNot|
@@ -81,15 +85,14 @@ Bu kural, aşağıdaki tabloda listelenen işleçleri inceler.
 |+ (birli)|Yok|+|Artı|
 |false|IsFalse|False|IsTrue (özellik)|
 
-Seçili dilde N/A = = aşırı yüklenemez.
+\* Yok, işlecin seçili dilde aşırı yüklü olamayacağı anlamına gelir.
 
-Kural Ayrıca, ve`SomeType` `ToSomeType` `FromSomeType`adlı yöntemleri denetleyerek bir tür () içinde örtük ve açık tür dönüştürme işleçlerini da kontrol eder.
-
-' C#De, bir ikili işleç aşırı yüklendiğinde, varsa karşılık gelen atama işleci de dolaylı olarak aşırı yüklenmiştir.
+> [!NOTE]
+> ' C#De, bir ikili işleç aşırı yüklendiğinde, varsa karşılık gelen atama işleci de dolaylı olarak aşırı yüklenmiştir.
 
 ## <a name="how-to-fix-violations"></a>İhlalleri çözme
 
-Bu kuralın ihlalini onarmak için, işleci için alternatif yöntemi uygulayın; Önerilen alternatif adı kullanarak adlandırın.
+Bu kural ihlalini onarmak için işleç için alternatif yöntemi uygulayın. Önerilen alternatif adı kullanarak adlandırın.
 
 ## <a name="when-to-suppress-warnings"></a>Uyarıların ne zaman bastırılamıyor
 

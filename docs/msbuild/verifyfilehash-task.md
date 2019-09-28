@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e7330e750d0f636979f52eacf398ca7d496c523
-ms.sourcegitcommit: 689ba54ea14257d13031de881f5d4fe937a36f56
+ms.openlocfilehash: 3acdaabffc35122616cced4113abbc5a43beb9a1
+ms.sourcegitcommit: 16175e0cea6af528e9ec76f0b94690faaf1bed30
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "71342413"
+ms.lasthandoff: 09/28/2019
+ms.locfileid: "71481968"
 ---
 # <a name="verifyfilehash-task"></a>VerifyFileHash görevi
 
@@ -34,7 +34,7 @@ Bu görev 15,8 ' ye eklenmiştir, ancak 16,0 ' nin altındaki MSBuild sürümler
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|`File`|Gerekli <xref:Microsoft.Build.Framework.ITaskItem> parametre.<br /><br />Karma hale getirilen ve doğrulanacak dosyalar.|
+|`File`|Gerekli `String` parametre.<br /><br />Karma hale getirilen ve doğrulanacak dosya.|
 |`Hash`|Gerekli `String` parametre.<br /><br />Dosyanın beklenen karması.|
 |`Algorithm`|İsteğe `String` bağlı parametre.<br /><br />Algoritma. İzin verilen değerler: `SHA256`, `SHA384`, `SHA512`. Varsayılan = `SHA256`.|
 |`HashEncoding`|İsteğe `String` bağlı parametre.<br /><br />Oluşturulan karmaları için kullanılacak kodlama. Varsayılan olarak `hex`. İzin verilen değerler = `hex`, `base64`.|

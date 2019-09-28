@@ -1,6 +1,6 @@
 ---
 title: PerfView ile ETL izlemesi toplama
-ms.date: 06/27/2019
+ms.date: 09/27/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - perfview
@@ -15,12 +15,12 @@ dev_langs:
 ms.workload:
 - multiple
 ms.description: Use perfview.exe to collect ETL traces for troubleshooting issues with Visual Studio
-ms.openlocfilehash: 6b1f61888fa642ed544c6da7d1cf77c43b52b2d9
-ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
+ms.openlocfilehash: ca2e44c41952a251d747f80fe27732c1d9dbd18b
+ms.sourcegitcommit: 16175e0cea6af528e9ec76f0b94690faaf1bed30
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68461547"
+ms.lasthandoff: 09/28/2019
+ms.locfileid: "71481945"
 ---
 # <a name="collect-an-etl-trace-with-perfview"></a>PerfView ile ETL izlemesi toplama
 
@@ -28,7 +28,7 @@ PerfView, Visual Studio ile ilgili bazı sorunların giderilmesi için yararlı 
 
 ## <a name="install-perfview"></a>PerfView 'ı yükler
 
-PerfView 'ı [Microsoft Indirme merkezi](http://www.microsoft.com/download/details.aspx?id=28567)' nden indirin.
+PerfView öğesini [GitHub](https://github.com/Microsoft/perfview/blob/master/documentation/Downloading.md)'dan indirin.
 
 ## <a name="run-perfview"></a>PerfView çalıştırma
 

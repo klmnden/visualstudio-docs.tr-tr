@@ -16,31 +16,34 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b9c73def1870e09a43485ddd423ee9d3000bbee
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: ca7df1c087e35fd188461382e4f44de6ab703964
+ms.sourcegitcommit: 16175e0cea6af528e9ec76f0b94690faaf1bed30
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65846219"
+ms.lasthandoff: 09/28/2019
+ms.locfileid: "71481961"
 ---
 # <a name="special-characters-to-escape"></a>Kaçış için özel karakterler
-Yalnızca özel bir anlamı, kullanıldıkları bağlam içinde oluşturulduysa özel karakterleri kaçış karakterleri eklenmelidir. Örneğin, yıldız işareti (*) bir özel karakter yalnızca bir öğe tanımının "Ekleme" ve "Dışarıda bırak" öznitelikleri veya bir çağrıda olduğu <xref:Microsoft.Build.Tasks.CreateItem>. Diğer durumlarda, yıldız işareti değişmez bir yıldız işareti kabul edilir. Her yerde proje dosyaları yıldız işareti kaçış gerekmez ancak bunun yapılması bir zararı şekilde yapar.
+Özel karakterler yalnızca kullanıldıkları bağlamda özel anlam içeriyorsa kaçışmalıdır. Örneğin, yıldız işareti (*) yalnızca bir öğe tanımının "Içerme" ve "hariç tutma" özniteliklerinde veya <xref:Microsoft.Build.Tasks.CreateItem> ' a yapılan çağrıda özel bir karakterdir. Diğer tüm durumlarda, yıldız işareti sabit bir yıldız işareti olarak değerlendirilir. Proje dosyalarında herhangi bir yerde yıldız işaretleri gerekmez, ancak bunu yapmak zarar vermez.
 
- Gösterim % kullanmak\<xx > özel karakter yerine burada \<xx > ASCII karakter onaltılık değerini temsil eder. Örneğin, sabit karakter olarak yıldız işareti (*) kullanmak için değerini kullanın. `%2A`.
+ @No__t-1xx >, ASCII karakterinin onaltılı değerini temsil ettiğinde özel karakteri yerine% \<XX > gösterimini kullanın. Örneğin, bir yıldız işareti (*) sabit karakter olarak kullanmak için `%2A` değerini kullanın.
 
- Kaçış için özel karakterler tam listesini aşağıdaki gibidir:
+ Kaçış için özel karakterlerin tam listesi aşağıdadır:
 
 |Karakter|Açıklama|
 |---------------|-----------------|
-|%|Meta veri başvurmak için kullanılan yüzde işareti.|
-|$|Dolar işareti, özellikleri başvurmak için kullanılır.|
-|@|Öğe listeleri başvurmak için kullanılan oturum sırasında.|
-|(|Açık parantez, listelerinde kullanılır.|
-|)|Kapatma parantezleri, listelerinde kullanılır.|
-|;|Noktalı virgül, liste ayırıcı.|
-|?|Soru işareti, bir öğenin dahil edin/dışlayın bölümünde bir dosya belirtimi tanımlarken bir joker karakter.|
-|*|Yıldız işareti, bir öğenin dahil edin/dışlayın bölümünde bir dosya belirtimi tanımlarken bir joker karakter.|
+|%|Meta verilere başvurmak için kullanılan yüzde işareti.|
+|$|Dolar işareti, özelliklere başvurmak için kullanılır.|
+|@|Öğesinde, öğe listelerine başvurmak için kullanılır.|
+|(|Listelerde kullanılan parantez açın.|
+|)|Listelerde kullanılan parantez kapatma.|
+|;|Noktalı virgül, liste ayırıcısı.|
+|?|Soru işareti, bir öğenin Içerme/hariç tutma bölümünde bir dosya belirtimini açıklayan bir joker karakterdir.|
+|*|Bir öğenin Içerme/hariç tutma bölümünde bir dosya belirtimini açıklayan bir joker karakter olan yıldız işareti.|
+
+> [!NOTE]
+> Bazı senaryolarda, `Exec` görevinde kullanırken olduğu gibi çift tırnak (") karakterlerini kaçış gerekebilir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
-- [Nasıl yapılır: Msbuild'de kaçış özel karakterleri](../msbuild/how-to-escape-special-characters-in-msbuild.md)
+- [Nasıl yapılır: MSBuild @ no__t-0 ' da kaçış özel karakterleri
 - [MSBuild başvurusu](../msbuild/msbuild-reference.md)
