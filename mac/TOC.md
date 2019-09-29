@@ -100,8 +100,9 @@
 # Erişilebilirlik
 ## [Genel bakış](accessibility.md)
 ## [IDE erişilebilirlik seçeneklerini ayarlama](accessibility-ide-options.md)
-## [macOS erişilebilirlik araçlarını kullanma](accessibility-macos.md)
-### [Klavye ile gezinmeyi kullanma](accessibility-keyboard.md)
+## macOS Erişilebilirlik Araçları ve Özellikleri
+### [macOS Erişilebilirlik Araçlarını Kullanma](accessibility-macos.md)
+### [Klavye ile Gezinmeyi Kullanma](accessibility-keyboard.md)
 ### [VoiceOver kullanma](accessibility-voiceover.md)
 
 # [Windows Kullanıcılarına yönelik Mac için Visual Studio](vsmac-for-windows-users.md)
