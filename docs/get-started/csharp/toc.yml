@@ -21,6 +21,8 @@
       href: tutorial-uwp.md
     - name: WPF uygulaması oluşturma
       href: tutorial-wpf.md
+    - name: Windows Forms uygulaması oluşturma
+      href: ../../ide/create-csharp-winform-visual-studio.md?toc=/visualstudio/get-started/csharp/toc.json&bc=/visualstudio/get-started/csharp/breadcrumb/toc.json
     - name: Öğretici Video - ASP.NET Core Web Uygulaması Oluşturma
       items:
         - name: 1 - Visual Studio’yu yükleme

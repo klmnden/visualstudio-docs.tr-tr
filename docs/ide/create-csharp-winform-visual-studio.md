@@ -1,28 +1,28 @@
 ---
-title: Visual Basic Windows Forms uygulama oluşturma
-description: Visual Basic, adım adım ile Visual Studio'da bir Windows Forms uygulaması oluşturmayı öğrenin.
-ms.date: 09/27/2019
+title: İle Windows Forms uygulama oluşturmaC#
+description: Visual Studio 'da, adım adım ile C#Windows Forms uygulama oluşturmayı öğrenin.
+ms.date: 09/26/2019
 ms.topic: tutorial
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
-ms.devlang: vb
+ms.devlang: CSharp
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 dev_langs:
-- VB
+- CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 8be3edaaab970dab7ef41bd8bce75c84bac54a2e
+ms.openlocfilehash: 4017ee2da040ccef36c58b17d896abab199c3517
 ms.sourcegitcommit: 13decf878b33fc0c5d665a88067170c2861b261b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 09/30/2019
-ms.locfileid: "71681587"
+ms.locfileid: "71682146"
 ---
-# <a name="create-a-windows-forms-app-in-visual-studio-with-visual-basic"></a>Bir Windows oluşturma Visual Basic ile Visual Studio'da Forms uygulaması
+# <a name="create-a-windows-forms-app-in-visual-studio-with-c"></a>Visual Studio 'da ile Windows Forms uygulama oluşturmaC#
 
-Bu kısa giriş Visual Studio tümleşik geliştirme ortamı (IDE) için bir Windows tabanlı kullanıcı arabirimi (UI) olan basit bir Visual Basic uygulama oluşturacaksınız.
+Visual Studio tümleşik geliştirme ortamına (IDE) bu kısa girişte, Windows tabanlı kullanıcı arabirimi (UI) olan C# basit bir uygulama oluşturacaksınız.
 
 ::: moniker range="vs-2017"
 
@@ -41,7 +41,7 @@ Visual Studio henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://v
 
 ## <a name="create-a-project"></a>Proje oluşturma
 
-İlk olarak, Visual Basic uygulama projesi oluşturacaksınız. Proje türü bile herhangi bir şey ekledik önce ihtiyacınız olacak tüm şablon dosyaları ile birlikte gelir.
+İlk olarak, bir C# uygulama projesi oluşturacaksınız. Proje türü bile herhangi bir şey ekledik önce ihtiyacınız olacak tüm şablon dosyaları ile birlikte gelir.
 
 ::: moniker range="vs-2017"
 
@@ -49,7 +49,7 @@ Visual Studio henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://v
 
 1. Üstteki menü çubuğundan **Dosya** > **Yeni** > **Proje**' yi seçin.
 
-1. İçinde **yeni proje** iletişim kutusunun sol bölmesinde, **Visual Basic**ve ardından **Windows Masaüstü**. Orta bölmede seçin **Windows Forms uygulaması (.NET Framework)** . Dosya adı `HelloWorld`.
+1. Sol bölmedeki **Yeni proje** iletişim kutusunda, **görsel C#** ' i genişletin ve ardından **Windows Masaüstü**' ne tıklayın. Orta bölmede seçin **Windows Forms uygulaması (.NET Framework)** . Dosya adı `HelloWorld`.
 
      Görmüyorsanız **Windows Forms uygulaması (.NET Framework)** proje şablonu, / İptal **yeni proje** iletişim kutusu ve üst menü çubuğundan seçin **Araçları**  >  **Araçları ve özellikleri Al**. Visual Studio Yükleyicisi'ni başlatır. Seçin **.NET masaüstü geliştirme** iş yükü, ardından **Değiştir**.
 
@@ -65,11 +65,11 @@ Visual Studio henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://v
 
    ![' Yeni proje oluştur ' penceresini görüntüleyin](../get-started/media/vs-2019/create-new-project-dark-theme.png)
 
-1. **Yeni proje oluştur** penceresinde Visual Basic Için **Windows Forms App (.NET Framework)** şablonunu seçin.
+1. **Yeni proje oluştur** penceresinde, Için C# **Windows Forms uygulama (.NET Framework)** şablonunu seçin.
 
-   (İsterseniz, istediğiniz şablona hızlıca ulaşmak için aramanızı iyileştirebilirsiniz. Örneğin, arama kutusuna *Windows Forms uygulama* girin veya yazın. Ardından, dil listesinden **Visual Basic** ' yi seçin ve ardından platform listesinden **Windows** ' u seçin.)  
+   (İsterseniz, istediğiniz şablona hızlıca ulaşmak için aramanızı iyileştirebilirsiniz. Örneğin, arama kutusuna *Windows Forms uygulama* girin veya yazın. Ardından, dil **C#** listesinden seçin ve ardından platform listesinden **Windows** ' u seçin.)  
 
-   ![Windows Forms uygulaması için Visual Basic şablonu seçin (.NET Framework)](../get-started/visual-basic/media/vs-2019/vb-create-new-project-search-winforms-filtered.png)
+   ![Windows Forms uygulaması C# için şablonu seçin (.NET Framework)](../get-started/csharp/media/vs-2019/csharp-create-new-winforms-project-nonfiltered.png)
 
    > [!NOTE]
    > **Windows Forms App (.NET Framework)** şablonunu görmüyorsanız, **Yeni proje oluştur** penceresinden yükleyebilirsiniz. **Aradığınızı bulamıyor musunuz?** iletisi için **daha fazla araç ve özellik yüklemeyi** seçin bağlantısına tıklayın.
@@ -84,7 +84,7 @@ Visual Studio henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://v
 
 1. **Yeni projeyi yapılandırın** penceresinde, **Proje adı** kutusuna *HelloWorld* yazın veya girin. Ardından **Oluştur**' u seçin.
 
-   ![' yeni projenizi yapılandırın ' penceresinde, projenizi ' HelloWorld ' olarak adlandırın](../get-started/visual-basic/media/vs-2019/vb-name-your-winform-project-helloworld.png)
+   ![' yeni projenizi yapılandırın ' penceresinde, projenizi ' HelloWorld ' olarak adlandırın](../get-started/csharp/media/vs-2019/csharp-name-your-winform-project-helloworld.png)
 
    Visual Studio yeni projenizi açar.
 
@@ -92,29 +92,29 @@ Visual Studio henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://v
 
 ## <a name="create-the-application"></a>Uygulama oluşturma
 
-Visual Basic projesi şablonu seçin ve dosyanızın adı sonra Visual Studio sizin için bir form açılır. Bir Windows kullanıcı arabirimi biçimidir. Forma denetimler ekleyerek bir "Merhaba Dünya" uygulaması oluşturacağız ve uygulamayı çalıştıracağız.
+C# Proje şablonunuzu seçtikten ve dosyanızı adınızla, Visual Studio sizin için bir form açar. Bir Windows kullanıcı arabirimi biçimidir. Forma denetimler ekleyerek bir "Merhaba Dünya" uygulaması oluşturacağız ve uygulamayı çalıştıracağız.
 
 ### <a name="add-a-button-to-the-form"></a>Forma bir düğme ekleyin
 
-1. Tıklayın **araç kutusu** araç kutusu çıkış penceresini açmak için.
+1. Araç **kutusu ' nu seçerek araç** kutusu açılır penceresini açın.
 
-     ![Araç araç kutusu penceresini açmak için tıklayın](../ide/media/vb-toolbox-toolwindow.png)
+     ![Araç kutusu penceresini açmak için araç kutusunu seçin](../ide/media/csharp-toolbox-toolwindow.png)
 
      (Görmüyorsanız **araç kutusu** çıkış seçeneği açabilirsiniz, menü çubuğundan. Bunu yapmak için  > **araç kutusunu** **görüntüleyin**. Veya basın **Ctrl**+**Alt**+**X**.)
 
-1. Tıklayın **PIN** simgesini yerleştirmek için **araç kutusu** penceresi.
+1. **Araç kutusu** penceresini sabitlemek için **raptiye** simgesini seçin.
 
-     ![Araç kutusu penceresini IDE sabitlemek için Raptiye simgesine tıklayın](../ide/media/vb-pin-the-toolbox-window.png)
+     ![Araç kutusu penceresini IDE 'ye sabitlemek için raptiye simgesini seçin](../ide/media/vb-pin-the-toolbox-window.png)
 
-1. Tıklayın **düğmesi** denetlemek ve ardından form üzerine sürükleyin.
+1. **Düğme** denetimini seçin ve ardından form üzerine sürükleyin.
 
-     ![Forma bir düğme ekleyin](../ide/media/vb-add-a-button-to-form1.png)
+     ![Forma bir düğme ekleyin](../ide/media/csharp-add-button-form1.png)
 
-1. **Özellikler** penceresinin **Görünüm** bölümünde (veya **Fonts** bölümünde) `Click this` yazın ve ardından **ENTER**tuşuna basın.
+1. **Özellikler** penceresinde, **metin**bulun, **button1** ' den adı `Click this` olarak değiştirin ve ardından **ENTER**tuşuna basın.
 
      ![Düğmeyi form üzerinde metin ekleme](../ide/media/vb-button-control-text.png)
 
-     (Görmüyorsanız **özellikleri** penceresinde açabilirsiniz, menü çubuğundan. Bunu yapmak için tıklatın **görünümü** > **Özellikler penceresi**. Veya basın **F4**.)
+     (Görmüyorsanız **özellikleri** penceresinde açabilirsiniz, menü çubuğundan. Bunu yapmak için  > **Özellikler penceresini** **görüntüle**' yi seçin. Veya basın **F4**.)
 
 1. İçinde **tasarım** bölümünü **özellikleri** penceresinde adını değiştirmek **Button1** için `btnClickThis`ve tuşuna **Enter**.
 
@@ -133,23 +133,23 @@ Bir eylem oluşturmak için bir düğme denetimi ekledik, metni göndermek için
 
 ### <a name="add-code-to-the-form"></a>Forma kod ekleyin
 
-1. İçinde **Form1.vb &#91;tasarım&#93;**  penceresinde çift **tıklatın** açmak için düğmeyi **Form1.vb** penceresi.
+1. **Form1.cs &#91;tasarım&#93;**  penceresinde **Bu düğmeye tıklayarak** **Form1.cs** penceresini açın.
 
-      (Alternatif olarak, genişletebilirsiniz **Form1.vb** içinde **Çözüm Gezgini**ve ardından **Form1**.)
+      (Alternatif olarak, **Çözüm Gezgini**' de **Form1.cs** genişletebilir ve ardından **Form1**' i seçebilirsiniz.)
 
-1. **Form1. vb** penceresinde, **özel alt** ve **bitiş alt** çizgileri arasında, aşağıdaki ekran görüntüsünde gösterildiği gibi `lblHelloWorld.Text = "Hello World!"` yazın veya girin:
+1. **Form1.cs** penceresinde, **özel void** satırından sonra, aşağıdaki ekran görüntüsünde gösterildiği gibi `lblHelloWorld.Text = "Hello World!";` yazın veya girin:
 
-     ![Forma kod ekleyin](../ide/media/vb-add-code-to-the-form.png)
+     ![Forma kod ekleyin](../get-started/csharp/media/csharp-winforms-add-code.png)
 
-## <a name="run-the-application"></a>Uygulamayı çalıştırın
+## <a name="run-the-application"></a>Uygulamayı çalıştırma
 
-1. Tıklayın **Başlat** uygulamayı çalıştırmak için düğme.
+1. Uygulamayı çalıştırmak için **Başlat** düğmesini seçin.
 
-     ![Uygulamayı çalıştırıp hata ayıklama Başlat'a tıklayın](../ide/media/vb-click-start-hello-world.png)
+     ![Hata ayıklamak ve uygulamayı çalıştırmak için Başlat 'ı seçin](../ide/media/vb-click-start-hello-world.png)
 
    Birden fazla işlem gerçekleşir. Visual Studio IDE'de **tanılama araçları** penceresi açılır ve bir **çıkış** penceresi açılır, çok. Ancak IDE dışında bir **Form1** iletişim kutusu görüntülenir. Dahil edilir, **tıklatın** düğme ve metin bildiren **Label1**.
 
-1. Tıklayın **tıklatın** düğmesine **Form1** iletişim kutusu. Dikkat **Label1** metin değişiklikleri **Merhaba Dünya!** .
+1. **Form1** iletişim kutusunda **Bu düğmeye tıklayın** . Dikkat **Label1** metin değişiklikleri **Merhaba Dünya!** .
 
     ![Label1 metin içeren bir Form1 iletişim kutusu ](../ide/media/vb-form1-dialog-hello-world.png)
 
@@ -164,6 +164,6 @@ Daha fazla bilgi edinmek için aşağıdaki öğreticiyle devam edin:
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-* [Daha fazla Visual Basic öğretici](/visualstudio/get-started/visual-basic/)
-* [C#izleyin](/visualstudio/get-started/csharp/)
+* [Diğer C# öğreticiler](/visualstudio/get-started/csharp/)
+* [Visual Basic öğreticileri](/visualstudio/get-started/visual-basic/)
 * [C++izleyin](/cpp/get-started/tutorial-console-cpp)

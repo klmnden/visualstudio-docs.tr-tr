@@ -1,26 +1,26 @@
 ---
 title: Visual C# koduna birim testi
-ms.date: 11/04/2016
+ms.date: 09/27/2019
 ms.topic: conceptual
 ms.author: gewarren
+author: gewarren
 manager: jillfra
 ms.workload:
 - uwp
-author: gewarren
-ms.openlocfilehash: dfb0ed5775e011471ba32d4962b0bf25cfcda2b1
-ms.sourcegitcommit: 16175e0cea6af528e9ec76f0b94690faaf1bed30
+ms.openlocfilehash: 0a724ab273401994faeb88ae197966ef538e842a
+ms.sourcegitcommit: 13decf878b33fc0c5d665a88067170c2861b261b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/28/2019
-ms.locfileid: "71481883"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "71681601"
 ---
 # <a name="unit-test-c-code"></a>C# birim testi sınıfı
 
-Bu makalede, UWP uygulamasında bir C# sınıf için birim testleri oluşturmanın bir yolu açıklanmaktadır. Rooter sınıfı, belirsiz bellek sınırı teorik, hesaplama bir tahminini verilen bir sayının kare kökünü hesaplayan bir işlevi uygulayarak gösterir. Matematik uygulama ardından eğlenceli bir kullanıcıya göstermek için bu işlevi kullanabilirsiniz matematik ile yapılabilir şeyler.
+Bu makalede, UWP uygulamasında bir C# sınıf için birim testleri oluşturmanın bir yolu açıklanmaktadır.
 
-Bu makalede, birim testi geliştirmede ilk adım olarak kullanma işlemini gösterir. Bu yaklaşım önce test ettiğiniz sistemde belirli bir davranış doğrulayan bir test yöntemi yazın ve ardından testin başarılı olması kod yazacaksınız. Aşağıdaki yordamlar sırasına göre değişiklikler yaparak, bu strateji ilk Yazımdan sonra birim testleri yazma ve test etmek istediğiniz kod tersine çevirebilirsiniz.
+Test altındaki sınıf olan **Rooter** sınıfı, belirli bir sayının kare kökünü tahmin eden bir işlevi uygular.
 
-Bu makalede ayrıca tek bir Visual Studio çözümü de ayrı projeler için birim testleri ve test etmek istediğiniz DLL oluşturur. Doğrudan DLL projede birim testleri de içerebilir veya birim testleri ve DLL için ayrı çözümler oluşturabilirsiniz.
+Bu makalede, *test odaklı geliştirme*gösterilmektedir. Bu yaklaşımda, öncelikle test ettiğiniz sistemde belirli bir davranışı doğrulayan bir test yazar ve ardından testi geçiren kodu yazarsınız.
 
 ## <a name="create-the-solution-and-the-unit-test-project"></a>Çözüm ve birim testi projesi oluşturma
 
@@ -28,47 +28,17 @@ Bu makalede ayrıca tek bir Visual Studio çözümü de ayrı projeler için bir
 
 2. **Boş uygulama (Evrensel Windows)** proje şablonunu arayın ve seçin.
 
-3. Projeyi `Maths`adlandırın.
+3. Projeyi **Maaltı**olarak adlandırın.
 
-4. İçinde **Çözüm Gezgini**, çözüm adı seçin, **Ekle** kısayol menüsünden seçin **yeni proje**.
+4. **Çözüm Gezgini**, çözüme sağ tıklayıp  > **Yeni proje** **Ekle**' yi seçin.
 
 5. **Birim testi uygulaması (Evrensel Windows)** proje şablonunu arayın ve seçin.
 
-6. Açık *UnitTest1.cs* Visual Studio düzenleyicisinde.
-
-   ```csharp
-   using System;
-   using System.Collections.Generic;
-   using System.Linq;
-   using System.Text;
-   using Microsoft.VisualStudio.TestTools.UnitTesting;
-   using Maths;
-
-   namespace RooterTests
-   {
-       [TestClass]
-       public class UnitTest1
-
-           [TestMethod]
-           public void TestMethod1()
-           {
-
-           }
-   ```
-
-   Aşağıdakilere dikkat edin:
-
-   - Her bir testi kullanılarak tanımlanmış <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute> özniteliği. Bir test yöntemi, boş değer döndürmelidir ve parametreye sahip olamaz.
-
-   - Test yöntemleri ile donatılmış bir sınıf olmalıdır <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute> özniteliği.
-
-        Testler çalıştırıldığında, her test sınıfının bir örneği oluşturulur. Test yöntemlerini belirtilmemiş sırayla çağrılır.
-
-   - Önce ve sonra her bir modül, sınıf veya yöntemi çağıran özel yöntemi tanımlayabilirsiniz. Daha fazla bilgi için [MSTest framework birim testleri kullanın](../test/using-microsoft-visualstudio-testtools-unittesting-members-in-unit-tests.md).
+6. Test projesi kökü \ **tertest**adını adlandırın.
 
 ## <a name="verify-that-the-tests-run-in-test-explorer"></a>Testleri Test Gezgini'nde çalıştırma doğrulayın
 
-1. Bazı test kodu içinde TestMethod1 eklemek *UnitTest1.cs* dosyası:
+1. *UnitTest.cs* dosyasına **testyöntemi1** ' ye bazı test kodu ekleyin:
 
    ```csharp
    [TestMethod]
@@ -78,21 +48,29 @@ Bu makalede ayrıca tek bir Visual Studio çözümü de ayrı projeler için bir
    }
    ```
 
-   Dikkat <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert> sınıfı yöntemleri test sonuçlarında doğrulamak için kullanabileceğiniz birkaç statik yöntemler sağlar.
+   @No__t-0 sınıfı, test yöntemlerinde sonuçları doğrulamak için kullanabileceğiniz çeşitli statik yöntemler sağlar.
 
-2. Üzerinde **Test** menüsünde seçin **çalıştırma** seçip **tümünü Çalıştır**.
+::: moniker range="vs-2017"
 
-   Test projesi oluşturur ve çalıştırır. **Test Gezgini** penceresi görünür ve test altında listelenen **başarılı testler**. **Özeti** pencerenin alt kısmındaki bölmesi, seçilen test hakkında ek ayrıntılar sağlar.
+2. **Test** menüsünde, **Çalıştır** > **Tüm testler**' i seçin.
 
-   ![Test Gezgini](../test/media/ute_cpp_testexplorer_testmethod1.png)
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+2. **Test** menüsünde **Tüm Testleri Çalıştır**' ı seçin.
+
+::: moniker-end
+
+   Test projesi oluşturur ve çalıştırır. Biraz uzun sürebileceğinden sabırlı olun. **Test Gezgini** penceresi görünür ve test altında listelenen **başarılı testler**. **Özeti** pencerenin alt kısmındaki bölmesi, seçilen test hakkında ek ayrıntılar sağlar.
 
 ## <a name="add-the-rooter-class-to-the-maths-project"></a>Matematik projeye Rooter sınıfı Ekle
 
-1. İçinde **Çözüm Gezgini**, seçin **matematik** proje adı. Kısayol menüsünden **Ekle**, ardından **sınıfı**.
+1. **Çözüm Gezgini**, **maaltı** projeye sağ tıklayın ve ardından  > **sınıfı** **Ekle**' yi seçin.
 
 2. Sınıf dosyasının adı *Rooter.cs*.
 
-3. Rooter sınıfa aşağıdaki kodu ekleyin *Rooter.cs* dosyası:
+3. Aşağıdaki kodu **Rooter** sınıfı *Rooter.cs* dosyasına ekleyin:
 
    ```csharp
    public Rooter()
@@ -106,23 +84,27 @@ Bu makalede ayrıca tek bir Visual Studio çözümü de ayrı projeler için bir
    }
    ```
 
-   `Rooter` Sınıfı Oluşturucu bildirir ve `SquareRoot` estimator yöntemi.
+   **Rooter** sınıfı bir Oluşturucu ve **SquareRoot** tahmin aracı metodunu bildirir. **SquareRoot** yöntemi yalnızca en az bir uygulama, test kurulumunun temel yapısını test etmek için yeterlidir.
 
-4. `SquareRoot` Yöntemdir en az bir uygulama yalnızca, test Kurulum temel yapısını test etmek yeterli.
+4. @No__t-0 anahtar sözcüğünü **Rooter** sınıfı bildirimine ekleyin, böylece test kodu buna erişebilir.
 
-## <a name="couple-the-test-project-to-the-app-project"></a>Birkaç uygulama projesi için test projesi
+   ```csharp
+   public class Rooter
+   ```
 
-1. Matematik uygulama başvuru RooterTests projeye ekleyin.
+## <a name="add-a-project-reference"></a>Bir proje başvurusu Ekle
 
-    1. İçinde **Çözüm Gezgini**, seçin **RooterTests** proje ve ardından **Başvuru Ekle** kısayol menüsünde.
+1. RooterTests projesinden Maon uygulamasına bir başvuru ekleyin.
 
-    2. İçinde **Başvuru Ekle - RooterTests** iletişim kutusunda **çözüm** ve **projeleri**. Ardından **matematik** öğesi.
+    1. **Çözüm Gezgini**, **RooterTests** projesine sağ tıklayın ve ardından **Add** > **başvurusu**' nı seçin.
+
+    2. İçinde **Başvuru Ekle - RooterTests** iletişim kutusunda **çözüm** ve **projeleri**. **Maaltı** projeyi seçin.
 
         ![Matematik projeye bir başvuru ekleyin](../test/media/ute_cs_windows_addreference.png)
 
-2. Kullanarak bir ekleme deyimi *UnitTest1.cs* dosyası:
+2. *UnitTest.cs* dosyasına `using` ifadesini ekleyin:
 
-    1. Açık *UnitTest1.cs*.
+    1. *UnitTest.cs*'i açın.
 
     2. Aşağıdaki bu kod ekleme `using Microsoft.VisualStudio.TestTools.UnitTesting;` satırı:
 
@@ -130,7 +112,7 @@ Bu makalede ayrıca tek bir Visual Studio çözümü de ayrı projeler için bir
        using Maths;
        ```
 
-3. Rooter işlevini kullanan bir test ekleyin. Aşağıdaki kodu ekleyin *UnitTest1.cs*:
+3. **Rooter** işlevini kullanan bir test ekleyin. Aşağıdaki kodu *UnitTest.cs*öğesine ekleyin:
 
    ```csharp
    [TestMethod]
@@ -144,19 +126,35 @@ Bu makalede ayrıca tek bir Visual Studio çözümü de ayrı projeler için bir
    }
    ```
 
-4. Çözümü oluşturun.
-
    Yeni test görünür **Test Gezgini** içinde **çalıştırılmamış testler** düğümü.
 
-5. İçinde **Test Gezgini**, seçin **tümünü Çalıştır**.
+4. "Yükün aynı hedef yolu ile iki veya daha fazla dosya içermesi" hatasını önlemek için, **Çözüm Gezgini**' de, **masekiz** projenin altındaki **Özellikler** düğümünü genişletin ve ardından *default. RD. xml* dosyasını silin.
 
-   ![Temel Test geçildi](../test/media/ute_cpp_testexplorer_basictest.png)
+::: moniker range="vs-2017"
 
-Test ve kod projelerini ayarlama sahiptir ve doğrulandı, kod projesinde işlevleri çalıştırmak testlerini çalıştırabilirsiniz. Şimdi gerçek test ve kod yazmaya başlayabilirsiniz.
+6. İçinde **Test Gezgini**, seçin **tümünü Çalıştır**.
+
+   Çözüm oluşturulur ve testler çalışır ve geçer.
+
+   ![Test Gezgini 'nde BasicTest geçildi](../test/media/ute_cpp_testexplorer_basictest.png)
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+6. **Test Gezgini**'Nde **Tüm Testleri Çalıştır**' ı seçin.
+
+   Çözüm oluşturulur ve testler çalışır ve geçer.
+
+   ![Test Gezgini 'nde temel test geçildi](../test/media/vs-2019/test-explorer-uwp-app.png)
+
+::: moniker-end
+
+Test ve uygulama projelerini ayarlamış ve uygulama projesindeki işlevleri çağıran testleri çalıştıracağınızı doğruladınız. Şimdi gerçek test ve kod yazmaya başlayabilirsiniz.
 
 ## <a name="iteratively-augment-the-tests-and-make-them-pass"></a>Yinelemeli olarak testleri genişletme ve onları geçirin
 
-1. Yeni bir test ekleyin:
+1. **Rangetest**adlı yeni bir test ekleyin:
 
    ```csharp
    [TestMethod]
@@ -174,20 +172,16 @@ Test ve kod projelerini ayarlama sahiptir ve doğrulandı, kod projesinde işlev
    ```
 
    > [!TIP]
-   > Geçmiş olan testleri değiştirmemenizi öneririz. Bunun yerine, yeni test Ekle, kod testin başarılı olması için güncelleştirin ve ardından başka bir test ekleyin ve benzeri.
-   >
-   > Kullanıcılarınızın gereksinimlerine değiştirdiğinizde, artık doğru testleri devre dışı bırakın. Yeni testler yazmak ve bunları teker teker artımlı aynı şekilde çalışır duruma getirin.
+   > Geçmiş olan testleri değiştirmemenizi öneririz. Bunun yerine yeni bir test ekleyin.
 
-2. İçinde **Test Gezgini**, seçin **tümünü Çalıştır**.
-
-3. Test başarısız olur.
+2. **Rangetest** testini çalıştırın ve başarısız olduğunu doğrulayın.
 
    ![RangeTest başarısız](../test/media/ute_cpp_testexplorer_rangetest_fail.png)
 
    > [!TIP]
-   > Hemen yazdıktan sonra her testin başarısız olduğunu doğrulayın. Bu, hiçbir zaman başarısız bir test yazma kolay onlardan yardımcı olur.
+   > Test yazdıktan hemen sonra, başarısız olduğunu doğrulamak için çalıştırın. Bu, hiçbir zaman başarısız bir test yazma kolay onlardan yardımcı olur.
 
-4. Yeni test geçer, test edilen kod geliştirin. Değişiklik `SquareRoot` işlevi *Rooter.cs* bu:
+3. Yeni test geçer, test edilen kod geliştirin. *Rooter.cs* içindeki **SquareRoot** işlevini şu şekilde değiştirin:
 
    ```csharp
    public double SquareRoot(double x)
@@ -204,101 +198,49 @@ Test ve kod projelerini ayarlama sahiptir ve doğrulandı, kod projesinde işlev
    }
    ```
 
-5. Çözümü derleyin ve ardından **Test Gezgini**, seçin **tümünü Çalıştır**.
+::: moniker range="vs-2017"
+
+4. İçinde **Test Gezgini**, seçin **tümünü Çalıştır**.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+4. **Test Gezgini**'Nde **Tüm Testleri Çalıştır**' ı seçin.
+
+::: moniker-end
 
    Üç testi şimdi geçirin.
 
 > [!TIP]
 > Aynı anda testleri bir ekleyerek kod geliştirin. Tüm testler her yinelemeden sonra başarılı olduğundan emin olun.
 
-## <a name="debug-a-failing-test"></a>Başarısız bir test hatalarını ayıklama
-
-1. Başka bir test eklemek *UnitTest1.cs*:
-
-    ```csharp
-    // Verify that negative inputs throw an exception.
-    [TestMethod]
-    public void NegativeRangeTest()
-    {
-        string message;
-        Rooter rooter = new Rooter();
-        for (double v = -0.1; v > -3.0; v = v - 0.5)
-        {
-            try
-            {
-                // Should raise an exception:
-                double actual = rooter.SquareRoot(v);
-
-                message = String.Format("No exception for input {0}", v);
-                Assert.Fail(message);
-            }
-            catch (ArgumentOutOfRangeException ex)
-            {
-                continue; // Correct exception.
-            }
-            catch (Exception e)
-            {
-                message = String.Format("Incorrect exception for {0}", v);
-                Assert.Fail(message);
-            }
-        }
-    }
-    ```
-
-2. İçinde **Test Gezgini**, seçin **tümünü Çalıştır**.
-
-   Test başarısız olur. Test adı seçmenize **Test Gezgini**. Onaylama başarısız vurgulanır. Hata iletisi ayrıntı bölmesinde görünür **Test Gezgini**.
-
-   ![NegativeRangeTests başarısız oldu](../test/media/ute_cpp_testexplorer_negativerangetest_fail.png)
-
-3. Testin neden başarısız görmek için işlev adım:
-
-    1. Başında bir kesme noktası ayarlamak `SquareRoot` işlevi.
-
-    2. Başarısız test kısayol menüsünde **seçilen Testlerde Hata Ayıkla**.
-
-        Kesme noktasında çalıştırma sona erdiğinde, kodda adım adım.
-
-    3. Özel durumu yakalamak için Rooter yöntemine kod ekleyin:
-
-        ```csharp
-        public double SquareRoot(double x)
-        {
-            if (x < 0.0)
-            {
-                throw new ArgumentOutOfRangeException();
-        }
-        ```
-
-4. İçinde **Test Gezgini**, seçin **tümünü Çalıştır** test düzeltilmiş yöntemi ve bir regresyon sunulan henüz emin olun.
-
-Artık tüm sınamaları geçmesi.
-
-![Tüm testler başarılı](../test/media/ute_ult_alltestspass.png)
-
 ## <a name="refactor-the-code"></a>Kodu yeniden düzenleyin
 
-**Merkezi hesaplamaya SquareRoot işlevi basitleştirin.**
+Bu bölümde, hem uygulama hem de test kodunu yeniden düzenleyin ve ardından devam ettiğinden emin olmak için testleri yeniden çalıştırın.
 
-1. Sonuç uygulamasını değiştirin
+### <a name="simplify-the-square-root-estimation"></a>Kare kök tahmini 'ni basitleştirme
+
+1. Bir kod satırını aşağıdaki gibi değiştirerek **SquareRoot** işlevindeki merkezi hesaplamayı kolaylaştırın:
 
     ```csharp
-    // old code
-    //result = result - (result*result - v)/(2*result);
-    // new code
-    result = (result + v/result) / 2.0;
+    // Old code
+    //estimate = estimate - (estimate * estimate - x) / (2 * estimate);
+
+    // New code
+    estimate = (estimate + x/estimate) / 2.0;
     ```
 
-2. Seçin **tümünü Çalıştır** test UIMap'e yeniden işlenmiş yöntemi ve bir regresyon sunulan henüz emin olun.
+2. Bir gerileme sunmadığınızdan emin olmak için tüm testleri çalıştırın. Hepsi başarılı olmalıdır.
 
 > [!TIP]
 > Kararlı bir dizi iyi birim testi kodu değiştirdiğinizde, yeni hatalar oluşturmadığından emin olmanızı sağlar.
 
-**Yinelenen kod ortadan kaldırmak için test kodu yeniden düzenleyin.**
+### <a name="eliminate-duplicated-code"></a>Yinelenen kodu kaldırın
 
-Unutmayın `RangeTest` yöntemi sabit kodları, paydası `tolerance` geçirilir değişkeni <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert> yöntemi. Aynı dayanıklılık hesaplamayı kullanan ek testleri eklemeyi planlıyorsanız, birden fazla konumda sabit kodlanmış bir değer kullanımını hatalarına neden.
+**Rangetest** yöntemi, <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert> yöntemine geçirilen *tolerans* değişkeninin paydasını sabit olarak kodlar. Aynı tolerans hesaplamasını kullanan ek testler eklemeyi planlıyorsanız, sabit kodlanmış bir değerin birden çok konumda kullanılması kodun bakımını daha zor hale getirir.
 
-1. Tolerans değeri hesaplamak için Unit1Test sınıfı özel bir yöntem ekleyin ve ardından bunun yerine bu yöntemi çağırın.
+1. Tolerans değerini hesaplamak için **UnitTest1** sınıfına özel bir yardımcı yöntemi ekleyin ve sonra bu yöntemi **rangetest**' ten çağırın.
 
     ```csharp
     private double ToleranceHelper(double expected)
@@ -312,16 +254,20 @@ Unutmayın `RangeTest` yöntemi sabit kodları, paydası `tolerance` geçirilir 
     public void RangeTest()
     {
         ...
-        // old code
+        // Old code
         // double tolerance = expected/1000;
-        // new code
+
+        // New code
         double tolerance = ToleranceHelper(expected);
-        Assert.AreEqual(expected, actual, tolerance);
     }
     ...
     ```
 
-2. Seçin **tümünü Çalıştır** UIMap'e yeniden işlenmiş yöntemi test ve hata sunulan henüz emin olun.
+2. Hala başarılı olduğundan emin olmak için **Rangetest** çalıştırın.
 
-> [!NOTE]
-> Görüntülenmesini istemediğiniz bir test sınıfı için bir yardımcı yöntem eklerseniz **Test Gezgini**, eklemeyin <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute> özniteliğini yöntemine.
+> [!TIP]
+> Test sınıfına bir yardımcı yöntemi eklerseniz ve **Test Gezgini**'nde görünmesini istemiyorsanız, yöntemine <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute> özniteliğini eklemeyin.
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+- [İzlenecek yol: Test Gezgini kullanarak test odaklı geliştirme @ no__t-0

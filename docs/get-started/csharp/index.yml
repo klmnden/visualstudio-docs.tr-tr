@@ -6,7 +6,7 @@ metadata:
   description: Visual C# Studio 'yu kullanarak uygulamalar oluşturun.
   ms.custom: seodec18
   ms.topic: landing-page
-  ms.date: 09/20/2019
+  ms.date: 09/27/2019
   author: ghogen
   ms.author: ghogen
   manager: jillfra
@@ -14,18 +14,18 @@ metadata:
   ms.technology: vs-acquisition
   dev_langs:
   - CSharp
-  ms.openlocfilehash: cefa370c40ccd32a1ddd7b108ccc493d8019fcb2
-  ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+  ms.openlocfilehash: 6c7e810e4370b1ea1fc0be5fbcd196b2e0ecf301
+  ms.sourcegitcommit: 13decf878b33fc0c5d665a88067170c2861b261b
   ms.translationtype: MT
   ms.contentlocale: tr-TR
-  ms.lasthandoff: 09/25/2019
-  ms.locfileid: "71252148"
+  ms.lasthandoff: 09/30/2019
+  ms.locfileid: "71681556"
 landingContent:
-- title: Kullanmaya başlayın
+- title: başlarken
   linkLists:
   - linkListType: how-to-guide
     links:
-    - text: Visual Studio'yu yükleme
+    - text: Visual Studio yükleme
       url: ../../install/install-visual-studio.md
   - linkListType: get-started
     links:
@@ -35,16 +35,18 @@ landingContent:
   linkLists:
   - linkListType: tutorial
     links:
-    - text: Konsol uygulaması oluşturma
+    - text: Bir konsol uygulaması oluşturma
       url: tutorial-console.md
     - text: Web uygulaması oluşturma
       url: tutorial-aspnet-core.md
-    - text: İlk ASP.NET Core uygulamanızı oluşturma
+    - text: ASP.NET Core uygulaması oluşturma
       url: tutorial-aspnet-core-ef-step-01.md
     - text: Evrensel Windows Platformu uygulaması oluşturma
       url: tutorial-uwp.md
     - text: Windows masaüstü uygulaması oluşturma
       url: tutorial-wpf.md
+    - text: Windows Forms uygulaması oluşturma
+      url: ../../ide/create-csharp-winform-visual-studio.md
     - text: C# Dil hakkında bilgi edinin
       url: /dotnet/csharp/tutorials/intro-to-csharp/
 - title: Visual Studio'yu öğrenin
