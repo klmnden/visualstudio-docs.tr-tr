@@ -64,7 +64,7 @@ ms.locfileid: "69551367"
 |32 bit:|*Kök*\software\microsoft\office\\*uygulama adı*\eklentiler\\*eklenti kimliği*|
 |64 bit|*Kök*\software\wow6432node\microsoft\office\\*uygulama adı*\addıns\\*eklenti kimliği*|
 
- **\**
+ **\\**
 
 |Office sürümü|Yapılandırma yolu|
 |--------------------|------------------------|
