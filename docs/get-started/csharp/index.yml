@@ -14,12 +14,12 @@ metadata:
   ms.technology: vs-acquisition
   dev_langs:
   - CSharp
-  ms.openlocfilehash: 6c7e810e4370b1ea1fc0be5fbcd196b2e0ecf301
-  ms.sourcegitcommit: 13decf878b33fc0c5d665a88067170c2861b261b
+  ms.openlocfilehash: b4db5aef6d4a91d684a588971ec23fa673aa98da
+  ms.sourcegitcommit: d3e423a9a4ed773a54d14b247e1b5bfc95de8816
   ms.translationtype: MT
   ms.contentlocale: tr-TR
-  ms.lasthandoff: 09/30/2019
-  ms.locfileid: "71681556"
+  ms.lasthandoff: 10/01/2019
+  ms.locfileid: "71693042"
 landingContent:
 - title: başlarken
   linkLists:
@@ -39,8 +39,6 @@ landingContent:
       url: tutorial-console.md
     - text: Web uygulaması oluşturma
       url: tutorial-aspnet-core.md
-    - text: ASP.NET Core uygulaması oluşturma
-      url: tutorial-aspnet-core-ef-step-01.md
     - text: Evrensel Windows Platformu uygulaması oluşturma
       url: tutorial-uwp.md
     - text: Windows masaüstü uygulaması oluşturma
@@ -49,6 +47,10 @@ landingContent:
       url: ../../ide/create-csharp-winform-visual-studio.md
     - text: C# Dil hakkında bilgi edinin
       url: /dotnet/csharp/tutorials/intro-to-csharp/
+  - linkListType: video
+    links:
+    - text: ASP.NET Core uygulaması oluşturma
+      url: tutorial-aspnet-core-ef-step-01.md
 - title: Visual Studio'yu öğrenin
   linkLists:
   - linkListType: tutorial
