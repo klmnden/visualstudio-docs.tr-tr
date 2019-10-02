@@ -708,7 +708,7 @@
         - name: Başlangıç davranışı
           displayName: Start page window
           href: ide/customizing-the-start-page-for-visual-studio.md
-        - name: Visual Studio uzantıları bulma ve kullanma
+        - name: Uzantıları yönetme
           href: ide/finding-and-using-visual-studio-extensions.md
           displayName: 'marketplace, gallery, vsix'
         - name: Dış araçları yönetme
