@@ -34,12 +34,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c2bf6a62bde77ce49c7723e435bc34c3cad74702
-ms.sourcegitcommit: 01c3c9dcade5d913bde2c7efa8c931a7b04e6cd0
+ms.openlocfilehash: b40c18c4b85b39e118ac59b97649253d27324854
+ms.sourcegitcommit: 8a3545329a58e446672181cfed2083f850e1ad14
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/25/2019
-ms.locfileid: "67365390"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "71814365"
 ---
 # <a name="use-breakpoints-in-the-visual-studio-debugger"></a>Visual Studio hata ayıklayıcıda kesme noktaları kullanma
 Kesme noktaları, geliştirici araç kutusundaki en önemli hata ayıklama tekniklerinden biridir. Hata ayıklayıcı yürütme duraklatmak istediğiniz yere kesme noktalarını ayarlayın. Örneğin, belirli bir kesme noktası çağrı yığınına bakın veya kod değişkenleri durumunu görmek isteyebilirsiniz. Bu, kodda hata ayıklamak için girişimde ilk kez ise, okumak isteyebilirsiniz [yeni başlayanlar için hata ayıklama](../debugger/debugging-absolute-beginners.md) bu makalede geçmeden önce.
@@ -59,7 +59,7 @@ Kesme noktaları, geliştirici araç kutusundaki en önemli hata ayıklama tekni
 
  ![Kesme noktası yürütme durduruldu](../debugger/media/breakpointexecution.png "kesme noktası yürütme")
 
- Hata ayıklayıcı kesme noktasında durdurulduğunda, değişkeni değerlerini ve çağrı yığını da dahil olmak üzere uygulama geçerli durumda bakabilirsiniz. Çağrı yığını hakkında daha fazla bilgi için bkz: [nasıl yapılır: Çağrı yığını penceresini kullanma](../debugger/how-to-use-the-call-stack-window.md).
+ Hata ayıklayıcı kesme noktasında durdurulduğunda, değişkeni değerlerini ve çağrı yığını da dahil olmak üzere uygulama geçerli durumda bakabilirsiniz. Çağrı yığını hakkında daha fazla bilgi için bkz. [Nasıl yapılır: Çağrı yığını penceresini kullanın @ no__t-0.
 
 - Bir iki durumlu kesme noktası olur. Tıklatın, basın **F9**, veya **hata ayıklama** > **iki durumlu kesme noktası** silme veya yeniden.
 
@@ -67,11 +67,11 @@ Kesme noktaları, geliştirici araç kutusundaki en önemli hata ayıklama tekni
 
 - Koşullar ve Eylemler ayarlamak, ekleyin ve etiketleri düzenle veya sağ ve uygun komutu veya üzerine gelin ve seçerek bir kesme noktası dışarı **ayarları** simgesi.
 
-## <a name="BKMK_Set_a_breakpoint_in_a_function"></a> Windows Hata Ayıklayıcı'dan kesme noktaları ayarlama
+## <a name="BKMK_Set_a_breakpoint_from_debugger_windows"></a> Windows Hata Ayıklayıcı'dan kesme noktaları ayarlama
 
 Gelen kesme noktaları da ayarlayabilirsiniz **çağrı yığını** ve **ayrıştırılmış kodu** hata ayıklayıcı, windows.
 
-### <a name="BKMK_Set_a_breakpoint_in_the_call_stack_window"></a> Çağrı yığını penceresinde bir kesme noktası ayarlayın
+### <a name="set-a-breakpoint-in-the-call-stack-window"></a>Çağrı yığını penceresinde bir kesme noktası ayarlayın
 
  Yönerge veya çağıran bir işlev döndürür satırı kesmek için bir kesme noktası ayarlayabilirsiniz **çağrı yığını** penceresi.
 
@@ -87,7 +87,7 @@ Gelen kesme noktaları da ayarlayabilirsiniz **çağrı yığını** ve **ayrı�
 
 Hata ayıklayıcı yönerge olduğunda yürütmeyi keser.
 
-Çağrı yığını hakkında daha fazla bilgi için bkz: [nasıl yapılır: Çağrı yığını penceresini kullanma](../debugger/how-to-use-the-call-stack-window.md).
+Çağrı yığını hakkında daha fazla bilgi için bkz. [Nasıl yapılır: Çağrı yığını penceresini kullanın @ no__t-0.
 
 Görsel olarak kesme noktalarını izlemek için kod yürütme sırasında bkz: [hata ayıklarken çağrı yığınında yöntemler harita](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md).
 
@@ -150,24 +150,24 @@ Görsel olarak kesme noktalarını izlemek için kod yürütme sırasında bkz: 
 
 ::: moniker range=">= vs-2019"
 
-## <a name="BKMK_set_a_data_breakpoint_managed"></a>Veri kesme noktaları (.NET Core 3.0 veya üzeri)
+## <a name="BKMK_set_a_data_breakpoint_managed"></a>Veri kesme noktaları ayarlama (.NET Core 3,0 veya üzeri)
 
-Veri kesme noktaları, belirli bir nesnenin özellik değiştiğinde yürütmeyi Kes.
+Belirli bir nesnenin özelliği değiştiğinde veri kesme noktaları yürütmeyi keser.
 
-**Veri kesme noktası ayarlamak için**
+**Bir veri kesme noktası ayarlamak için**
 
-1. Bir .NET Core projesinde hata ayıklamayı başlatmak ve bir kesme noktası ulaşılana kadar bekleyin.
+1. Bir .NET Core projesinde hata ayıklamayı başlatın ve bir kesme noktasına ulaşılana kadar bekleyin.
 
-2. İçinde **Otolar**, **Watch**, veya **Yereller** penceresinde bir özelliğe sağ tıklayın ve **değeri değiştiğinde kesmek** bağlam menüsünde.
+2. **Oto**, **İzle**veya **Yereller** penceresinde, bir özelliğe sağ tıklayın ve bağlam menüsünde **değer değiştiğinde kes** ' i seçin.
 
-    ![Veri kesme noktası yönetilen](../debugger/media/managed-data-breakpoint.png "yönetilen veri kesme noktası")
+    ![Yönetilen veri kesme noktası](../debugger/media/managed-data-breakpoint.png "yönetilen veri kesme noktası")
 
-.NET core'da veri kesme noktaları için çalışmaz:
+.NET Core 'daki veri kesme noktaları şu şekilde çalışmaz:
 
-- Araç İpucu'nda, Yereller, Otomatikler, Genişletilebilir olmayan ya da Gözcü penceresi özellikleri
+- Araç ipucunda, Yereller, oto veya izleme penceresi genişletilebilen Özellikler
 - Statik değişkenler
-- DebuggerTypeProxy özniteliği olan sınıfları
-- İçinde yapının alanları
+- DebuggerTypeProxy özniteliğiyle sınıflar
+- Yapılar içindeki alanlar
 
 ::: moniker-end
 
@@ -179,7 +179,7 @@ Veri kesme noktaları, belirli bir nesnenin özellik değiştiğinde yürütmeyi
 
 1. Bir C++ projesinde hata ayıklamayı başlatmak ve bir kesme noktası ulaşılana kadar bekleyin. Üzerinde **hata ayıklama** menüsünde seçin **yeni kesme noktası** > **veri kesme noktası**
 
-    Belirleyebilirsiniz **yeni** > **veri kesme noktası** içinde **kesme noktaları** penceresi ya da bir öğeyi sağ **Otolar**, **Watch**, veya **Yereller** penceresi ve select **değeri değiştiğinde kesmek**bağlam menüsünde.
+    Ayrıca, **kesme noktaları** penceresinde **Yeni** > **veri kesme noktası** seçebilir veya **kısayol,** **izleme**ya da **Yereller** penceresinde bir öğeye sağ tıklayabilir ve bağlam menüsünde **değer değiştiğinde kes** ' i seçebilirsiniz.
 
 2. İçinde **adresi** bir bellek adresi ya da bir bellek adresini değerlendiren bir ifade yazın. Örneğin `&avar` değiştiğinde ayırmak için değişken içeriğini `avar` değişiklikler.
 
@@ -189,7 +189,7 @@ Veri kesme noktaları, aşağıdaki koşullar altında çalışmaz:
 - Değil ayıklanmakta olan bir işlem bellek konumuna yazar.
 - Bellek konumu iki veya daha fazla işlemler arasında paylaşılır.
 - Bellek konumu çekirdek içinde güncelleştirilir. Örneğin bellek 32-bit Windows için iletilmezse `ReadFile` işlevi, güncelleştirmeyi hata ayıklayıcı kesme olmaz şekilde bellek çekirdek modundan güncelleştirilecek.
-- Burada Gözcü ifadesini 4 bayt donanım 32-bit ve 64 bit donanımda 8 bayt daha büyük. Bu bir sınırlamadır x86, mimari.
+- İzleme ifadesinin 32 bit donanımda 4 bayttan daha büyük olduğu ve 64 bit donanımda 8 baytlık olduğu durumlar. Bu, x86 mimarisinin bir sınırlamasıdır.
 
 > [!NOTE]
 > - Veri kesme noktaları belirli bellek adreslerinde bağlıdır. Değişkenin adresini, bir hata ayıklama oturumundan yanında, değiştirir, böylece veri kesme noktaları her hata ayıklama oturumu sonunda otomatik olarak devre dışıdır.
@@ -242,7 +242,7 @@ Koşullar kümesiyle kesme noktaları ile görünür bir **+** sembol kaynak kod
 <a name="BKMK_Specify_a_breakpoint_condition_using_a_code_expression"></a>
 ### <a name="conditional-expression"></a>Koşullu ifade
 
-Seçtiğinizde, **koşullu ifade**, iki koşul arasında seçim yapabilirsiniz: **True** veya **değiştirildiğinde**. Seçin **true** ifade karşılandığında, kesmek veya **değiştirildiğinde** ifade değeri değiştiğinde kesmek için.
+**Koşullu ifade**seçtiğinizde, iki koşul arasından seçim yapabilirsiniz: **True** **veya değiştiğinde**. Seçin **true** ifade karşılandığında, kesmek veya **değiştirildiğinde** ifade değeri değiştiğinde kesmek için.
 
  Aşağıdaki örnekte, kesme noktasına erişildiğinde yalnızca değerini `testInt` olduğu **4**:
 
@@ -259,6 +259,7 @@ Seçtiğinizde, **koşullu ifade**, iki koşul arasında seçim yapabilirsiniz: 
  >- Yerel kod için hata ayıklayıcı, kesme noktasına ilk değerlendirmede isabet etmez şekilde bir değişiklik, koşulun ilk değerlendirmesinin dikkate almaz.
  >- Yönetilen kod için hata ayıklayıcı kesme noktasına sonraki ilk değerlendirmede isabet **değiştirildiğinde** seçilir.
 
+<a name="using-object-ids-in-breakpoint-conditions-c-and-f"></a>
 ### <a name="using-object-ids-in-conditional-expressions-c-and-f-only"></a>Nesne kimlikleri koşullu ifadeler kullanma (C# ve F# yalnızca)
  Belirli bir nesneyi davranışını gözlemlemek istediğiniz zaman zamanlar vardır. Örneğin, neden bir nesne bir koleksiyona birden fazla kez eklendi kullanıma bulmak isteyebilirsiniz. İçinde C# ve F#, belirli örneklerini nesne kimlikleri oluşturabilirsiniz [başvuru türleri](/dotnet/csharp/language-reference/keywords/reference-types)ve kesme noktası koşulları kullanabilirsiniz. Nesne Kimliği hizmetlerinde hata ayıklama ortak dil çalışma zamanı tarafından (CLR) oluşturulan ve nesnesiyle ilişkili.
 
@@ -268,7 +269,7 @@ Seçtiğinizde, **koşullu ifade**, iki koşul arasında seçim yapabilirsiniz: 
 
 2. Hata ayıklamayı başlatmak ve yürütme kesme noktasında durakladığında seçin **hata ayıklama** > **Windows** > **Yereller** veya **Alt** + **4** açmak için **Yereller** penceresi.
 
-   Belirli bir nesne örneğinde Bul **Yereller** penceresinde sağ tıklatın ve seçin **nesne kimliği yap**.
+   **Yereller** penceresinde belirli nesne örneğini bulun, sağ tıklayın ve **nesne kimliği yap**' ı seçin.
 
    Görmelisiniz bir **$** bir sayıyı artı **Yereller** penceresi. Bu nesne kimliğidir.
 

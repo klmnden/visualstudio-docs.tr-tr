@@ -29,12 +29,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2673ed9a69a80b2e9ab9275ff54909e33e4434f4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d0b9fb6e809f1124a10a6a2b4e35bc59806787a6
+ms.sourcegitcommit: 8a3545329a58e446672181cfed2083f850e1ad14
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62906372"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "71814328"
 ---
 # <a name="view-the-call-stack-and-use-the-call-stack-window-in-the-debugger"></a>Çağrı yığınını görüntüleme ve hata ayıklayıcı çağrı yığını penceresini kullanma
 
@@ -86,7 +86,7 @@ Kullanıcı olmayan kod olduğu zaman gösterilmez herhangi bir kod [yalnızca k
 
 ## <a name="set-a-breakpoint-on-the-exit-point-of-a-function-call"></a>Bir işlev çağrısının çıkış noktası üzerinde bir kesme noktası ayarlayın
 
-- Bkz: [bir çağrı yığını işlevi bir kesme noktası ayarlamak](../debugger/using-breakpoints.md#BKMK_Set_a_breakpoint_in_the_call_stack_window).
+- Bkz: [bir çağrı yığını işlevi bir kesme noktası ayarlamak](../debugger/using-breakpoints.md#BKMK_Set_a_breakpoint_from_debugger_windows).
 
 ## <a name="display-calls-to-or-from-another-thread"></a>İçin veya başka bir iş parçacığından çağrıları görüntüleme
 
@@ -96,7 +96,7 @@ Kullanıcı olmayan kod olduğu zaman gösterilmez herhangi bir kod [yalnızca k
 
 Visual Studio Enterprise'da (yalnızca), hata ayıklama sırasında çağrı yığınını için kod haritaları görüntüleyebilir.
 
-- İçinde **çağrı yığını** penceresinde, kısayol menüsünü açın. Seçin **kod haritasında çağrı yığınını Göster** (**Ctrl** + **Shift** + **`**).
+- İçinde **çağrı yığını** penceresinde, kısayol menüsünü açın. Seçin **kod haritasında çağrı yığınını Göster** (**Ctrl** + **Shift** +  **`** ).
 
     Daha fazla bilgi için [hata ayıklarken çağrı yığınında yöntemler harita](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md).
 
@@ -108,7 +108,7 @@ Visual Studio Enterprise'da (yalnızca), hata ayıklama sırasında çağrı yı
 
 ## <a name="change-the-optional-information-displayed"></a>Görüntülenen isteğe bağlı bilgileri değiştirmek
 
-- Sağ **çağrı yığını** penceresi ve kümesi ya da temizleyin **Göster \<**  _istediğiniz bilgilerin_ **>**.
+- Sağ **çağrı yığını** penceresi ve kümesi ya da temizleyin **Göster \<**  _istediğiniz bilgilerin_ **>** .
 
 ## <a name="bkmk_symbols"></a> Bir modüle ilişkin simgeleri yüklemek (C#, C++, Visual Basic F#)
 

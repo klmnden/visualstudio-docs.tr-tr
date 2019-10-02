@@ -1,9 +1,7 @@
 ---
-title: ToolTaskExtension taban sınıfı | Microsoft Docs
+title: ToolTaskExtension temel sınıfı | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
-f1_keywords:
-- MSBuild.ToolTask.ToolCommandFailed
 dev_langs:
 - VB
 - CSharp
@@ -15,37 +13,37 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 061d78a1e6415d6e7386fdc4de76aa1dd8ddd6d6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7734f852da997836cf2f42fd3f6b96e9decdf8dd
+ms.sourcegitcommit: 628eb202a1153ebfe69c668f966f821b98b34b34
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62938921"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "71720564"
 ---
-# <a name="tooltaskextension-base-class"></a>ToolTaskExtension taban sınıfı
-Birçok görevi devralacak <xref:Microsoft.Build.Tasks.ToolTaskExtension> öğesinden devralan sınıf <xref:Microsoft.Build.Utilities.ToolTask> kendisi sınıfının devraldığı <xref:Microsoft.Build.Utilities.Task> sınıfı. Bu devralma zincirini aktarımlar görevleri birkaç parametre ekler. Bu parametreler, bu belgede listelenir.
+# <a name="tooltaskextension-base-class"></a>ToolTaskExtension temel sınıfı
+Birçok görev, kendisini <xref:Microsoft.Build.Utilities.Task> sınıfından devralan <xref:Microsoft.Build.Utilities.ToolTask> sınıfından devralan <xref:Microsoft.Build.Tasks.ToolTaskExtension> sınıfından devralınır. Bu devralma zinciri, bunlardan türetilen görevlere birkaç parametre ekler. Bu parametreler bu belgede listelenmiştir.
 
 ## <a name="parameters"></a>Parametreler
- Aşağıdaki tabloda temel sınıflarının parametreler açıklanmıştır.
+ Aşağıdaki tabloda temel sınıfların parametreleri açıklanmaktadır.
 
 | Parametre | Açıklama |
 | - | - |
-| <xref:Microsoft.Build.Utilities.Task.BuildEngine%2A> | İsteğe bağlı <xref:Microsoft.Build.Framework.IBuildEngine> parametresi.<br /><br /> Görevler için kullanılabilir derleme altyapısı arabirimi belirtir. Yapı altyapısının geri içine çağırmak görevlere izin vermek için bu parametreyi otomatik olarak ayarlar. |
-| <xref:Microsoft.Build.Utilities.Task.BuildEngine2%2A> | İsteğe bağlı <xref:Microsoft.Build.Framework.IBuildEngine2> parametresi.<br /><br /> Görevler için kullanılabilir derleme altyapısı arabirimi belirtir. Yapı altyapısının geri içine çağırmak görevlere izin vermek için bu parametreyi otomatik olarak ayarlar.<br /><br /> Bu sınıftan devralmayı görev yazarları, değerinden dönüştürme gerekmez. böylece bu kullanışlı bir özelliktir `IBuildEngine` için `IBuildEngine2`. |
-| <xref:Microsoft.Build.Utilities.Task.BuildEngine3%2A> | İsteğe bağlı <xref:Microsoft.Build.Framework.IBuildEngine3> parametresi.<br /><br /> Ana bilgisayar tarafından sağlanan yapı altyapısı arabirimi belirtir. |
-| <xref:Microsoft.Build.Utilities.ToolTask.EchoOff%2A> | İsteğe bağlı `bool` parametresi.<br /><br /> Ayarlandığında `true`, bu görev geçişlerini **/Q** için *cmd.exe* komut satırı stdout kopyalanmaz, komut satırı. |
-| <xref:Microsoft.Build.Utilities.ToolTask.EnvironmentVariables%2A> | İsteğe bağlı `String` dizi parametresi.<br /><br /> Ortam değişkenleri, eşittir işareti ile ayrılmış çiftleri dizisi. Bu değişkenler, geçirilen ek olarak üretilmiş yürütülebilir dosya ya da seçmeli olarak geçersiz kılma normal ortam bloğu. |
-| <xref:Microsoft.Build.Utilities.ToolTask.ExitCode%2A> | İsteğe bağlı `Int32` çıkış parametresi salt okunur.<br /><br /> Yürütülen komutun tarafından sağlanan çıkış kodu belirtir. Görev hataları günlüğe, ancak çıkış kodu 0 (başarılı) işlem gerekiyordu, bu -1 olarak ayarlanır. |
-| <xref:Microsoft.Build.Utilities.Task.HostObject%2A> | İsteğe bağlı <xref:Microsoft.Build.Framework.ITaskHost> parametresi.<br /><br /> (Null olabilir) konak nesne örneğini belirtir. Yapı altyapısının, IDE konak bir konak nesnesi bu belirli görev ile ilişkili varsa bu özelliği ayarlar. |
-| <xref:Microsoft.Build.Tasks.ToolTaskExtension.Log%2A> | İsteğe bağlı <xref:Microsoft.Build.Utilities.TaskLoggingHelper> salt okunur parametre.<br /><br /> Örneğini alır bir <xref:Microsoft.Build.Tasks.TaskLoggingHelperExtension> görev günlük yöntemlerini içeren sınıf. |
-| <xref:Microsoft.Build.Utilities.ToolTask.LogStandardErrorAsError%2A> | Seçenek `bool` parametresi.<br /><br /> Varsa `true`, standart hata akışına alınan tüm iletileri, hata olarak kaydedilir. |
-| <xref:Microsoft.Build.Utilities.ToolTask.StandardErrorImportance%2A> | İsteğe bağlı `String` parametresi.<br /><br /> Standart çıkış akışı'ndan metin oturum kullanılacak önemi. |
-| <xref:Microsoft.Build.Utilities.ToolTask.StandardOutputImportance%2A> | İsteğe bağlı `String` parametresi.<br /><br /> Standart çıkış akışı'ndan metin oturum kullanılacak önemi. |
-| <xref:Microsoft.Build.Utilities.ToolTask.Timeout%2A> | İsteğe bağlı sanal `Int32` parametresi.<br /><br /> Sonra yürütülebilir görev sonlandırıldığından, milisaniye cinsinden süre miktarını belirtir. Varsayılan değer `Int.MaxValue`, hiçbir zaman aşımı süresi olduğunu gösterir. Zaman aşımını milisaniye cinsindendir. |
-| <xref:Microsoft.Build.Utilities.ToolTask.ToolExe%2A> | İsteğe bağlı sanal `string` parametresi.<br /><br /> Projeleri, bu bir ToolName geçersiz kılmak için uygulayabilir. Görevler bu ToolName korumak için geçersiz kılabilir. |
-| <xref:Microsoft.Build.Utilities.ToolTask.ToolPath%2A> | İsteğe bağlı `string` parametresi.<br /><br /> Burada temel yürütülebilir dosya görev yükler konumu belirtir. Bu parametre belirtilmezse görev çalışıyor framework sürümüne karşılık gelen SDK yükleme yolunu kullanır. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. |
-| <xref:Microsoft.Build.Utilities.ToolTask.UseCommandProcessor%2A> | İsteğe bağlı `bool` parametresi.<br /><br /> Ayarlandığında `true`, bu görev, komut satırı için bir toplu iş dosyası oluşturur ve bu komutu yürütmek yerine doğrudan komut işleyicisi kullanarak yürütür. |
-| <xref:Microsoft.Build.Utilities.ToolTask.YieldDuringToolExecution%2A> | İsteğe bağlı `bool` parametresi.<br /><br /> Ayarlandığında `true`, görevi yürüttüğünde bu görevi düğümü verir. |
+| <xref:Microsoft.Build.Utilities.Task.BuildEngine%2A> | İsteğe <xref:Microsoft.Build.Framework.IBuildEngine> bağlı parametre.<br /><br /> Görevler için kullanılabilen derleme altyapısı arabirimini belirtir. Yapı altyapısı bu parametreyi otomatik olarak ayarlar ve görevlere geri çağrı yapmasına izin verir. |
+| <xref:Microsoft.Build.Utilities.Task.BuildEngine2%2A> | İsteğe <xref:Microsoft.Build.Framework.IBuildEngine2> bağlı parametre.<br /><br /> Görevler için kullanılabilen derleme altyapısı arabirimini belirtir. Yapı altyapısı bu parametreyi otomatik olarak ayarlar ve görevlere geri çağrı yapmasına izin verir.<br /><br /> Bu bir kullanışlı özelliktir. bu sınıftan devralan görev yazarlarının değeri `IBuildEngine` ' dan `IBuildEngine2` ' e dönüştürmek zorunda değildir. |
+| <xref:Microsoft.Build.Utilities.Task.BuildEngine3%2A> | İsteğe <xref:Microsoft.Build.Framework.IBuildEngine3> bağlı parametre.<br /><br /> Konak tarafından belirtilen derleme altyapısı arabirimini belirtir. |
+| <xref:Microsoft.Build.Utilities.ToolTask.EchoOff%2A> | İsteğe `bool` bağlı parametre.<br /><br /> @No__t-0 olarak ayarlandığında, bu görev **/q** komutunu komut satırı stdout 'a kopyalanmaması gibi *cmd. exe* komut satırına geçirir. |
+| <xref:Microsoft.Build.Utilities.ToolTask.EnvironmentVariables%2A> | İsteğe bağlı `String` dizi parametresi.<br /><br /> Ortam değişkenlerinin çiftler dizisi, eşittir işaretleriyle ayrılmıştır. Bu değişkenler, normal ortam bloğunu seçerek veya seçmeli olarak geçersiz kılmanın yanı sıra oluşturulan yürütülebilir dosyaya geçirilir. |
+| <xref:Microsoft.Build.Utilities.ToolTask.ExitCode%2A> | İsteğe bağlı `Int32` çıkış salt okunurdur parametresi.<br /><br /> Yürütülen komut tarafından belirtilen çıkış kodunu belirtir. Görev herhangi bir hata günlüğe açtıysa, ancak işlem 0 (başarılı) çıkış koduna sahipse bu,-1 ' e ayarlanır. |
+| <xref:Microsoft.Build.Utilities.Task.HostObject%2A> | İsteğe <xref:Microsoft.Build.Framework.ITaskHost> bağlı parametre.<br /><br /> Ana bilgisayar nesne örneğini belirtir (null olabilir). Konak IDE, bu görevle bir ana bilgisayar nesnesi ilişkilendirirse, derleme altyapısı bu özelliği ayarlar. |
+| <xref:Microsoft.Build.Tasks.ToolTaskExtension.Log%2A> | İsteğe bağlı <xref:Microsoft.Build.Utilities.TaskLoggingHelper> salt okunurdur parametresi.<br /><br /> Görev günlüğü yöntemlerini içeren <xref:Microsoft.Build.Tasks.TaskLoggingHelperExtension> sınıfının bir örneğini alır. |
+| <xref:Microsoft.Build.Utilities.ToolTask.LogStandardErrorAsError%2A> | Seçenek `bool` parametresi.<br /><br /> @No__t-0 ise, standart hata akışında alınan tüm iletiler hata olarak günlüğe kaydedilir. |
+| <xref:Microsoft.Build.Utilities.ToolTask.StandardErrorImportance%2A> | İsteğe `String` bağlı parametre.<br /><br /> Standart çıkış akışından metnin günlüğe kaydedileceği önem. |
+| <xref:Microsoft.Build.Utilities.ToolTask.StandardOutputImportance%2A> | İsteğe `String` bağlı parametre.<br /><br /> Standart çıkış akışından metnin günlüğe kaydedileceği önem. |
+| <xref:Microsoft.Build.Utilities.ToolTask.Timeout%2A> | Sanal isteğe bağlı `Int32` parametresi.<br /><br /> Görev yürütülebilir dosyasının sonlandırılacağı süre (milisaniye cinsinden) sayısını belirtir. Varsayılan değer `Int.MaxValue`, zaman aşımı süresi olmadığını gösterir. Zaman aşımı süresi milisaniyedir. |
+| <xref:Microsoft.Build.Utilities.ToolTask.ToolExe%2A> | Sanal isteğe bağlı `string` parametresi.<br /><br /> Projeler, bir ToolName 'yi geçersiz kılmak için bunu uygulayabilir. Görevler, ToolName 'yi korumak için bunu geçersiz kılabilir. |
+| <xref:Microsoft.Build.Utilities.ToolTask.ToolPath%2A> | İsteğe `string` bağlı parametre.<br /><br /> Görevin temel alınan yürütülebilir dosyayı yüklediği konumu belirtir. Bu parametre belirtilmezse, görev [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] çalıştıran Framework sürümüne karşılık gelen SDK yükleme yolunu kullanır. |
+| <xref:Microsoft.Build.Utilities.ToolTask.UseCommandProcessor%2A> | İsteğe `bool` bağlı parametre.<br /><br /> @No__t-0 olarak ayarlandığında, bu görev komut satırı için bir toplu iş dosyası oluşturur ve komutu doğrudan yürütmek yerine komut işlemcisini kullanarak yürütür. |
+| <xref:Microsoft.Build.Utilities.ToolTask.YieldDuringToolExecution%2A> | İsteğe `bool` bağlı parametre.<br /><br /> @No__t-0 olarak ayarlandığında, bu görev, görevi çalıştırıldığında düğümü verir. |
 
 ## <a name="see-also"></a>Ayrıca bkz.
 - [Görev başvurusu](../msbuild/msbuild-task-reference.md)
