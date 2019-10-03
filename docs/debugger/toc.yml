@@ -6,6 +6,8 @@
       href: what-is-debugging.md
     - name: Hata ayıklama teknikleri ve araçları
       href: write-better-code-with-visual-studio.md
+    - name: Hata ayıklama görevinizi bulma
+      href: find-your-debugging-task.md
 - name: Hızlı Başlangıçlar
   items:
     - name: Hata ayıklayıcıya ilk bakış
@@ -236,7 +238,7 @@
                   href: visual-cpp-custom-visualizer-compatibility.md
             - name: Özel görünümler (yönetilen)
               items:
-                - name: Yönetilen nesnelerin özel görünümlerini oluşturma
+                - name: Nesnelerin özel görünümlerini oluşturma
                   href: create-custom-views-of-dot-managed-objects.md
                 - name: Hata ayıklayıcıya ne göstereceğini söyleme
                   href: using-the-debuggerdisplay-attribute.md
@@ -334,7 +336,7 @@
       items:
         - name: Çok iş parçacıklı uygulamaların hatalarını ayıklama
           href: debug-multithreaded-applications-in-visual-studio.md
-        - name: Çok iş parçacıklı uygulamalarda Hata Ayıklamaya başlama
+        - name: Çok iş parçacıklı uygulamalarda hata ayıklamaya başlama
           href: get-started-debugging-multithreaded-apps.md
         - name: İş parçacıklarında ve işlemlerde hata ayıklama araçları
           items:
@@ -352,9 +354,9 @@
               href: how-to-use-the-gpu-threads-window.md
         - name: Birden çok işlemde hata ayıklama
           href: debug-multiple-processes.md
-        - name: 'İzlenecek yol: İş Parçacıkları penceresini kullanarak hata ayıklama'
+        - name: İş Parçacıkları penceresini kullanarak hata ayıklama
           href: how-to-use-the-threads-window.md
-        - name: 'İzlenecek yol: Paralel uygulamada hata ayıklama'
+        - name: Paralel uygulamada hata ayıklama
           href: walkthrough-debugging-a-parallel-application.md
         - name: Hata ayıklarken başka bir iş parçacığına geçme
           href: how-to-switch-to-another-thread-while-debugging.md
